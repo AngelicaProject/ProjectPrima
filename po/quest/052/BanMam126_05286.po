@@ -1,0 +1,194 @@
+# quest/052/BanMam126_05286 — « A Seasoning for Soup» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、調味料の素材を採ってきてほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja ist auf der Suche nach neuen Gewürzen.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja est à la recherche d'épices.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_SEQ_00:1"
+msgid "Kageel Ja is in need of seasonings.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_SEQ_01:1"
+msgid "Deliver the requested materials to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>イクブラーシャ付近の採掘場で<sheet Item $n5 0>を採掘<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>イクブラーシャ付近の草刈場で<sheet Item $n5 0>を草刈<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>シャダータラト・ゾユで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der Nähe von Iq Br'aax <noun-de Item 5 $n5 2 4 1> abbauen<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Nähe von Iq Br'aax <noun-de Item 5 $n5 2 4 1> sammeln<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Aus dem Xd'aa Talat Tsoly <noun-de Item 1 $n5 1 4 1> fischen<else>Kageel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près d'Iq Br'aax<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près d'Iq Br'aax<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au Xd'aa Talat Tsoly<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Xd'aa Talat Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Xd'aa Talat Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Xd'aa Talat Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: マムークの人たちって、実は調味料の類に疎いんだ。<br>これまで使われてたのは、辛水のセノーテ由来の塩だとか、<br>ナジュール由来の甘味、あとは魚を発酵させたものくらいでさ。
+#. de: Hier in Mamook kochen wir eher selten mit Gewürzen. Abgesehen vom Salz aus dem Bitternassen Cenote, der feinen Süße der Najool und einer Soße aus fermentiertem Fisch gibt es eigentlich keine Würzmittel, die unsere Gerichte verfeinern.
+#. fr: Les habitants de Mamook ne sont pas habitués à cuisiner avec des épices, ja. Jusqu'à récemment, on se contentait du sel récolté au cénote d'Aigres-Eaux, de sirop de najool et de sauces à base de poisson fermenté.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_001:1"
+msgid "Mamook's traditional dishes tend to be sparse when it comes to seasonings. Aside from the salt taken from Bitterbark Cenote, the sweet flavoring provided by najool, and a fermented fish sauce, there isn't much else we add to our food."
+msgstr ""
+
+#. ja: だから、トライヨラに出ていろんな味を体験した人にとっては、<br>ちょっと物足りないと感じることもあるみたいだ。
+#. de: Für diejenigen, die die vielseitige und aromatische Küche von Tuliyollal kennenlernen durften, könnte unser Essen zuge<shy>gebener<shy>maßen etwas fad sein<nbsp>...
+#. fr: Alors, pour ceux d'entre nous qui ont séjourné à la capitale, les plats d'ici manquent cruellement de goût.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_002:1"
+msgid "So for those who have gone on to experience Tuliyollal's varied cuisine, our local fare is decidedly lacking in comparison."
+msgstr ""
+
+#. ja: それで、ここに来るシュバラール族の人に聞いたところ、<br>ここの野菜スープに合いそうな調味料が、上の森で採れるらしい。<br>というわけで……
+#. de: Umso aufmerksamer wurde ich, als ein Besucher vom Volk der Xbr'aal vor einiger Zeit erwähnte, dass im oberen Wald einige Zutaten zu finden seien, die unsere traditionelle Gemüsesuppe noch schmackhafter machen könnten. Das will ich unbedingt ausprobieren!
+#. fr: Mes chers amis xbr'aal ont suggéré d'utiliser quelques herbes et autres ingrédients de chez eux pour agrémenter nos divers potages, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_003:1"
+msgid "On a related note, I've heard a Xbr'aal visitor mentioning certain ingredients found in the upper forest that might improve the taste of our vegetable soup..."
+msgstr ""
+
+#. ja: 前に採ってきてもらった調味料、マムークの人たちにも、<br>よく来るシュバラール族の人にも好評なんだ。
+#. de: Die Gewürze, die du letztes Mal für uns besorgt hast, haben sowohl bei den Mamool Ja als auch bei unseren Gästen große Begeisterung ausgelöst.
+#. fr: Les as<shy>sai<shy>son<shy>ne<shy>ments que tu m'as rapportés l'autre fois ont plu à tout le monde, Mamool Ja comme Xbr'aal<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_004:1"
+msgid "The seasoning you acquired for us the last time has been praised by both the local Mamool Ja and our visiting Xbr'aal friends."
+msgstr ""
+
+#. ja: おかげで、在庫がどんどん減ってしまって、<br>そろそろ補充したいなと思っていてね。<br>そんなわけで……
+#. de: Und zwar in dem Ausmaß, dass unsere Vorräte schon wieder zur Neige gehen<nbsp>...
+#. fr: Résultat, mes réserves ont fondu comme neige au soleil, ja<nbsp>! J'aurai bien besoin d'une nouvelle fournée, si tu le veux bien...
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_005:1"
+msgid "It's been so popular, in fact, that our stores are running dangerously low..."
+msgstr ""
+
+#. ja: 貴方にぜひ、イクブラーシャあたりで、<br>「<sheet Item 48075 0>」を採ってきてほしいんだよ。<br>辛水のセノーテの塩よりまろやかで、口当たりがいいみたい。
+#. de: Könntest du mir bitte ein paar <noun-de Item 5 48075 2 4 1> mitbringen, das in der Nähe von Iq Br'aax abgebaut wird? Es soll milder sein und daher ein angenehmeres Mundgefühl haben als das Salz aus dem Bitternassen Cenote. 
+#. fr: Pourrais-tu me ramener <noun-fr Item 1 48075 2 1><nbsp>? On en trouve près d'Iq Br'aax, et il paraît qu'il est bien meilleur que celui qu'on récupère au cénote d'Aigres-Eaux, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_006:1"
+msgid "Would you be so kind as to bring back some of the rock salt found near Iq Br'aax? It's said to have a smoother flavor than the stuff we extract from Bitterbark."
+msgstr ""
+
+#. ja: 貴方にぜひ、イクブラーシャあたりで、<br>「<sheet Item 48076 0>」を採ってきてほしいんだよ。<br>ピリリとした風味を加えることで、野菜の旨味が際立つみたい。
+#. de: Könntest du mir bitte ein paar <noun-de Item 5 48076 2 4 1> mitbringen, der in der Nähe von Iq Br'aax gefunden werden kann? Er soll genau die richtige Schärfe haben, um den Eigengeschmack unseres Gemüses perfekt hervorzuheben. 
+#. fr: Pourrais-tu me ramener <noun-fr Item 1 48076 2 1><nbsp>? On en trouve près d'Iq Br'aax, et d'après mes sources, ce petit goût relevé rehausse idéalement la saveur des légumes, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_007:1"
+msgid "Would you be so kind as to harvest some of the white pepper found near Iq Br'aax? It's said to have a spicy kick that enhances the flavor of the vegetables."
+msgstr ""
+
+#. ja: 貴方にぜひ、シャダータラト・ゾユで、<br>「<sheet Item 48077 0>」を採ってきてほしいんだよ。<br>乾燥させて粉にすると、スープに合うみたい。
+#. de: Könntest du mir bitte <noun-de Item 1 48077 1 4 1> aus dem Xd'aa Talat Tsoly besorgen? Getrocknet und zu Pulver verarbeitet lässt sich daraus eine schmackhafte Brühe für unsere Gemüsesuppen zaubern.
+#. fr: Pourrais-tu me pêcher <noun-fr Item 1 48077 1 1> au Xd'aa Talat Tsoly<nbsp>? Il faut ensuite la sécher, puis la broyer en poudre avant d'en ajouter à nos soupes, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_008:1"
+msgid "Would you be so kind as to pull up some algae from Xd'aa Talat Tsoly? It should go well with the soup once dried and ground into a powder."
+msgstr ""
+
+#. ja: 餌は<sheet Item 43849 0>を使うといいよ。<br>あのあたりだと、釣り餌に気付いた魚が、<br>藻をかき集めてくれるんだ。
+#. de: Am besten benutzt du <noun-de Item 5 43849 2 4 1> als Köder. Wenn ein Fisch anbeißt, wird er die Algen mit sich ziehen, die du dann ganz einfach aus dem Wasser holen kannst.
+#. fr: Tu peux utiliser <noun-fr Item 1 43849 1 1> comme appât, car les poissons intéressés vont arracher les algues aux alentours en s'approchant de ta ligne.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_009:1"
+msgid "Bait your hook with a golden stonefly nymph─an interested fish will drag the algae along for you to pluck free from the water."
+msgstr ""
+
+#. ja: イクブラーシャの近くで、<br>「<sheet Item 48075 0>」を採ってきてほしいんだ。<br>辛水のセノーテの塩よりまろやかで、口当たりがいいみたい。
+#. de: <sheet Item 48075 9> kann in der Nähe von Iq Br'aax abgebaut werden.
+#. fr: Il me faut <noun-fr Item 1 48075 2 1> qu'on trouve près d'Iq Br'aax, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_010:1"
+msgid "The rock salt in question should be found in the vicinity of Iq Br'aax."
+msgstr ""
+
+#. ja: イクブラーシャの近くで、<br>「<sheet Item 48076 0>」を採ってきてほしいんだ。<br>ピリリとした風味を加えることで、野菜の旨味が際立つみたい。
+#. de: <sheet Item 48076 9> kann in der Nähe von Iq Br'aax gefunden werden.
+#. fr: Il me faut <noun-fr Item 1 48076 2 1> qu'on trouve près d'Iq Br'aax, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_011:1"
+msgid "The white pepper in question should be found in the vicinity of Iq Br'aax."
+msgstr ""
+
+#. ja: シャダータラト・ゾユで、<br>「<sheet Item 48077 0>」を採ってきてほしいんだ。<br>乾燥させて粉にすると、スープに合うみたい。
+#. de: <sheet Item 48077 9> können aus dem Xd'aa Talat Tsoly gefischt werden.
+#. fr: Il me faut <noun-fr Item 1 48077 1 1> qu'on trouve au Xd'aa Talat Tsoly.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_012:1"
+msgid "You should be able to pull up the algae I spoke of from Xd'aa Talat Tsoly."
+msgstr ""
+
+#. ja: 餌は<sheet Item 43849 0>を使うといいよ。<br>あのあたりだと、釣り餌に気付いた魚が、<br>藻をかき集めてくれるんだ。
+#. de: Locke mithilfe von <noun-de Item 5 43849 2 3 1> Fische an, die dann die Algen zu dir bringen.
+#. fr: Et pour l'appât, tu peux utiliser <noun-fr Item 4 43849 2 1>, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_013:1"
+msgid "Attract the fish with golden stonefly nymphs and they'll bring the algae to you."
+msgstr ""
+
+#. ja: おかえり、調味料の素材は採れたかい？
+#. de: Hallo, <split " " 1><string $gs1></split>. War deine Mission erfolgreich?
+#. fr: Te revoilà<nbsp>! Alors, tu as trouvé tout ce qu'il fallait<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_014:1"
+msgid "How went your hunt for seasonings?"
+msgstr ""
+
+#. ja: そうそう、これだよ。<br>上の森は獣も多いのに、いつもありがとう。
+#. de: Eine beachtenswerte Ausbeute! Vielen Dank, dass du den Weg auf dich genommen hast<nbsp>- trotz der Gefahren, die im oberen Wald lauern.
+#. fr: Ah, c'est parfait<nbsp>! Merci d'avoir pris la peine de t'aventurer dans la haute-forêt, ja... Je sais que les monstres peuvent rôder en nombre là-bas.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_015:1"
+msgid "Yes, this will do nicely. My thanks for braving the beasts of the Ut'ohmu Horizon."
+msgstr ""
+
+#. ja: さっそく加工して、スープに入れてみてもらうよ。<br>最近はマムークの人たちもよく足を運んでくれるから、<br>彼らの舌にも合うといいね。
+#. de: Ich werde diese Zutat gleich verarbeiten und unsere traditionelle Gemüsesuppe damit würzen. Hoffentlich schmeckt sie dann auch unseren Freunden aus Mamook etwas besser<nbsp>...
+#. fr: Bon, il ne me reste plus qu'à transformer ces ingrédients pour les utiliser dans nos potages<nbsp>! J'espère que les habitants de Mamook seront satisfaits par ces petits ajouts, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_016:1"
+msgid "Right, I say we get this ingredient prepared and popped into a soup straightaway. Hopefully our Mamook customers find the taste to their liking."
+msgstr ""
+
+#. ja: 調味料、お客さんの舌に合ってよかったよ。<br>調理担当も、喜んでもらえたことでさらに気合が入ったみたい。
+#. de: Ich bin froh, dass die Suppe dank der neuen Zutat so viel Anklang gefunden hat. Dieses Erfolgs<shy>er<shy>leb<shy>nis scheint unsere Köche motiviert zu haben, mit neuen Geschmacksrichtungen und Gewürzen zu experimentieren.
+#. fr: Quel plaisir de voir nos clients revenir avec un grand sourire pour nous raconter à quel point ils ont adoré nos soupes. Et puis, les cuisiniers sont aussi ravis de pouvoir essayer de nouvelles recettes, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_017:1"
+msgid "Glad I am that our choice of ingredient found favor with the customers. Our cooks, too, seem thrilled to have a new flavor to experiment with."
+msgstr ""
+
+#. ja: この調味料、前に作った名物料理……<br>ティーカ・セルヴァースにも合うって好評なんだ。<br>スープとあわせて人気が出てくれて、嬉しいな。
+#. de: Die verfeinerte Suppe scheint auch gut zu Tiika Selvaas zu passen! Seit wir sie zusammen servieren, gehen die Bestellungen durch die Decke.
+#. fr: Ces condiments se marient aussi très bien au tiika selvaas. Avec une petite soupe en accompagnement, c'est un vrai délice<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_018:1"
+msgid "As it so happens, this flavor also complements tiika selvaas. Serving it with a side of tasty soup has only made our new dish all the more popular."
+msgstr ""
+
+#. ja: 研究に没頭したら食事を忘れがちなアンギルさんも、<br>料理を持っていったら残さず食べてくれてるんだ。<br>あの人の健康維持にひと役買ってるなら、なによりだよ。
+#. de: Wenn selbst Anggir sich durch dieses Gericht kurzzeitig von ihren Forschungen ablenken lässt, können wir uns sicher sein, dass wir einen Volltreffer gelandet haben!
+#. fr: Même Anggir, souvent absorbée par ses recherches jusqu'à en sauter des repas, laisse des assiettes vides derrière elle à présent. Je commençais un peu à m'inquiéter pour sa santé, mais me voilà rassuré, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam126_05286:TEXT_BANMAM126_05286_KAGEELJA_000_019:1"
+msgid "You know, if this can persuade even the studious Anggir to finish a meal over returning to her research, then I think we're onto a winner."
+msgstr ""

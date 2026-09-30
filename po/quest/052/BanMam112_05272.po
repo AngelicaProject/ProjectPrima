@@ -1,0 +1,164 @@
+# quest/052/BanMam112_05272 — « Fresh Cleaning Supplies» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、施設の維持に役立つ品を採ってきてほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja möchte, dass die Gebäude von Gok Golma in einem respektablen Zustand sind.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja voudrait entretenir les ins<shy>tal<shy>la<shy>tions agricoles de Gok Golma.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_SEQ_00:1"
+msgid "Kageel Ja believes the gainery's buildings have seen better days.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_SEQ_01:1"
+msgid "Deliver the requested materials to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>イクブラーシャ付近の採掘場で<sheet Item $n5 0>を採掘<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>イクブラーシャ付近の草刈場で<sheet Item $n5 0>を草刈<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>シャダータラト・ゾユで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In Iq Br'aax <sheet Item $n5 9> sammeln<else>Kageel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In Iq Br'aax <sheet Item $n5 9> sammeln<else>Kageel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Am Xd'aa Talat Tsoly <noun-de Item 1 $n5 1 4 1> fangen<else>Kageel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près d'Iq Br'aax<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près d'Iq Br'aax<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au Xd'aa Talat Tsoly<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Xd'aa Talat Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Xd'aa Talat Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Iq Br'aax<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Xd'aa Talat Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さん、ちょっとお手間なんだけど、<br>上の森での調達をお願いしてもいいかな。
+#. de: Es gibt wieder Arbeit für dich, <split " " 1><string $gs1></split>. Ich brauche etwas aus dem oberen Wald.
+#. fr: J'ai une requête un peu in<shy>ha<shy>bi<shy>tuelle pour toi, <split " " 1><string $gs1></split>. Elle consiste dans un premier temps à te rendre dans la haute-forêt.
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_001:1"
+msgid "Sorry, <split \" \" 1><string $gs1></split>, but I need you to make a trip to the upper forest. Are you up for it?"
+msgstr ""
+
+#. ja: ほら、ここは新しいマムークを目指して作られた農園だろう？<br>僕はこの場所を、人が集まる「外との窓口」にしたい……<br>だから建物なんかも、なるべく綺麗に保っておきたいんだよね。
+#. de: Unsere Felder sind doch sozusagen das Fundament, auf dem wir ein neues Mamook erbauen wollen. Daher wünsche ich mir, dass dieser Ort zu einem Tor zur Außenwelt wird, an dem viele verschiedene Leute zusammenkommen. Und da sollen auch unsere Gebäude repräsentabel aussehen!
+#. fr: Notre ferme est censée servir de socle pour bâtir une nouvelle Mamook, pas vrai<nbsp>? Je veux que cet endroit soit notre fenêtre sur le monde extérieur, où de nombreux visiteurs se rassemblent... Et pour les attirer, il serait bon que nos ins<shy>tal<shy>la<shy>tions brillent comme un sou neuf, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_002:1"
+msgid "Our gainery is the new face of Mamook, so I'd like it to be tidy and well-kept for all who come to visit."
+msgstr ""
+
+#. ja: そんなわけで貴方には、洗剤の材料になる、<br>「<sheet Item 48048 0>」の調達を頼みたいんだ。<br>イクブラーシャ付近の採掘場で採れるはずだよ。
+#. de: Bitte gehe nach Iq Br'aax und besorge mir <sheet Item 48048 9> aus einer Lagerstätte. Das lässt sich hervorragend bei der Reinigung verwenden.
+#. fr: Je compte donc sur ton sens aigu du travail efficace pour me rapporter <noun-fr Item 1 48048 2 1>. Il ne devrait pas être bien difficile de les trouver aux environs d'Iq Br'aax.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_003:1"
+msgid "With that said, I'd be grateful if you collected some Ut'ohmu natron from the vicinity of Iq Br'aax. It can be used as a cleaning agent."
+msgstr ""
+
+#. ja: そんなわけで貴方には、洗剤の材料になる、<br>「<sheet Item 48049 0>」の調達を頼みたいんだ。<br>イクブラーシャ付近の草刈場で採れるはずだよ。
+#. de: Bitte gehe nach Iq Br'aax und besorge mir drei <noun-de Item 5 48049 2 4 1> aus der örtlichen Vegetation. Die lassen sich hervorragend bei der Reinigung verwenden.
+#. fr: Je compte donc sur ton sens aigu du travail efficace pour me rapporter <noun-fr Item 1 48049 2 1>. Il ne devrait pas être bien difficile de les trouver aux environs d'Iq Br'aax.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_004:1"
+msgid "With that said, I'd be grateful if you collected some concentrated Ut'ohmu plant oil from the vicinity of Iq Br'aax. It can be used as a cleaning agent."
+msgstr ""
+
+#. ja: そんなわけで貴方には、艶出し剤の材料になる、<br>「<sheet Item 48050 0>」の調達を頼みたいんだ。<br>イクブラーシャ付近のシャダータラト・ゾユで釣れるはずだよ。
+#. de: Bitte gehe nach Iq Br'aax und besorge mir <noun-de Item 1 48050 1 4 1> aus dem Xd'aa Talat Tsoly. Die lässt sich hervorragend bei der Reinigung verwenden.
+#. fr: Je compte donc sur ton sens aigu du travail efficace pour me rapporter <noun-fr Item 1 48050 1 1>. Il ne devrait pas être bien difficile de la pêcher au Xd'aa Talat Tsoly.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_005:1"
+msgid "With that said, I'd be grateful if you collected an Ut'ohmu trout from Xd'aa Talat Tsoly. We can extract a decent polishing agent from it."
+msgstr ""
+
+#. ja: そうそう、釣る時の餌は<sheet Item 43849 0>がいいんだって。<br>もし持っていなければ、そこの売り場で少し買っていくといいよ。
+#. de: Vergiss nicht, vorher ein paar <noun-de Item 5 43849 2 4 1> als Köder einzupacken!
+#. fr: Et pour mettre toutes les chances de ton côté, n'oublie pas de te procurer <noun-fr Item 1 43849 2 1> s'il t'en manque avant de te mettre en route, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_006:1"
+msgid "Be sure to use golden stonefly nymphs as bait. We have some for sale here, in case you weren't aware."
+msgstr ""
+
+#. ja: 貴方には、イクブラーシャ付近の採掘場で、<br>「<sheet Item 48048 0>」を採ってきてほしいんだ。<br>洗剤の材料になるから、どうかよろしく頼むよ。
+#. de: Bitte gehe nach Iq Br'aax und besorge mir <sheet Item 48048 9> aus einer Lagerstätte. Das brauchen wir, um unsere Gebäude zu reinigen.
+#. fr: Je compte sur ton sens aigu du travail efficace pour me rapporter <noun-fr Item 1 48048 2 1>. Il ne devrait pas être bien difficile de les trouver aux environs d'Iq Br'aax.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_007:1"
+msgid "I would be grateful if you collected some Ut'ohmu natron from around Iq Br'aax. We'll need it as a cleaning agent."
+msgstr ""
+
+#. ja: 貴方には、イクブラーシャ付近の草刈場で、<br>「<sheet Item 48049 0>」を採ってきてほしいんだ。<br>洗剤の材料になるから、どうかよろしく頼むよ。
+#. de: Bitte gehe nach Iq Br'aax und besorge mir drei <noun-de Item 5 48049 2 4 1> aus der örtlichen Vegetation. Die brauchen wir, um unsere Gebäude zu reinigen.
+#. fr: Je compte sur ton sens aigu du travail efficace pour me rapporter <noun-fr Item 1 48049 2 1>. Il ne devrait pas être bien difficile de les trouver aux environs d'Iq Br'aax.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_008:1"
+msgid "I would be grateful if you collected some concentrated Ut'ohmu plant oil from around Iq Br'aax. We'll need it as a cleaning agent."
+msgstr ""
+
+#. ja: 貴方には、シャダータラト・ゾユで、<br>「<sheet Item 48050 0>」を釣ってきてほしいんだ。<br>艶出し剤の材料になるから、どうかよろしく頼むよ。
+#. de: Bitte gehe nach Iq Br'aax und besorge mir <noun-de Item 1 48050 1 4 1> aus dem Xd'aa Talat Tsoly. Die brauchen wir, um unsere Gebäude zu reinigen.
+#. fr: Je compte donc sur ton sens aigu du travail efficace pour me rapporter <noun-fr Item 1 48050 1 1>. Il ne devrait pas être bien difficile de la pêcher au Xd'aa Talat Tsoly.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_009:1"
+msgid "I would be grateful if you caught an Ut'ohmu trout from Xd'aa Talat Tsoly. We can extract a decent polishing agent from it."
+msgstr ""
+
+#. ja: そうそう、釣る時の餌は<sheet Item 43849 0>がいいんだって。<br>もし持っていなければ、そこの売り場で少し買っていくといいよ。
+#. de: Vergiss nicht, vorher ein paar <noun-de Item 5 43849 2 4 1> als Köder einzupacken!
+#. fr: Et pour mettre toutes les chances de ton côté, n'oublie pas de te procurer <noun-fr Item 1 43849 2 1> s'il t'en manque avant de te mettre en route, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_010:1"
+msgid "Be sure to bait your line with golden stonefly nymphs."
+msgstr ""
+
+#. ja: 遠くまでおつかれさま。<br>目当ての素材、採れたかな？
+#. de: Und? Hast du das Material bekommen?
+#. fr: Merci d'avoir fait tout ce chemin pour le compte des fermiers de Gok Golma<nbsp>! Montre-moi ça un peu, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_011:1"
+msgid "How did you fare?"
+msgstr ""
+
+#. ja: 確かに、お願いしていたもので間違いない。<br>いつもありがとう、助かってるよ。
+#. de: Ah, sehr schön! Gute Arbeit, wie immer.
+#. fr: Eh ben dis donc, la qualité est encore meilleure que ce à quoi je m'attendais. Quel talent, <split " " 1><string $gs1></split><nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_012:1"
+msgid "Perfect, exactly what I requested. Thank you."
+msgstr ""
+
+#. ja: 調達場所から察しているかもしれないけど、<br>今回お願いした品はどれも、<br>シュバラール族の人たちが普段からよく使うものなんだって。
+#. de: Vielleicht hast du es schon gemerkt: Das, worum ich dich gebeten habe, wird auch häufig von den Xbr'aal verwendet.
+#. fr: Comme tu l'as peut-être deviné en te rendant sur place, les produits que je t'ai demandés cette fois-ci sont tous connus pour être ré<shy>gu<shy>liè<shy>re<shy>ment utilisés par les Xbr'aal.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_013:1"
+msgid "You may have noticed during your venture, but the Xbr'aal people also use such cleaning agents in their daily lives."
+msgstr ""
+
+#. ja: 彼らは下の森に棲む僕らよりも風雨に晒される機会が多い分、<br>建物の維持にとても気を遣っているんだよね。
+#. de: Dafür gibt es einen guten Grund: Die Xbr'aal achten sehr auf die Instandhaltung ihrer Gebäude, da sie dem Wetter stärker ausgesetzt sind als unsere hier im unteren Wald.
+#. fr: Il y a une bonne raison à ça<nbsp>: les Xbr'aal font très attention à l'entretien de leurs bâtiments, car ils sont plus exposés aux intempéries que nous qui vivons en basse-forêt.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_014:1"
+msgid "The upper forest is far more exposed to the elements, which requires greater structural maintenance and upkeep."
+msgstr ""
+
+#. ja: そんなわけで、オススメの品を教えてもらったんだ。<br>好きに採って構わないとも言ってもらえたから、<br>今後もたびたび、調達をお願いさせてもらえると嬉しいよ。
+#. de: Deshalb bat ich sie, mir etwas für die Reinigung zu empfehlen. Und sie haben noch hinzugefügt, dass wir uns so oft bedienen können, wie wir wollen. Vielleicht schicke ich dich also bald wieder los.
+#. fr: C'est pourquoi je leur ai demandé de me recommander les meilleurs produits à leur con<shy>nais<shy>san<shy>ce. Ils m'ont également dit que nous pouvions nous servir autant que nous le voulions, ja. Tu auras donc déjà deviné que je te demanderai d'y retourner très bientôt, hé hé<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam112_05272:TEXT_BANMAM112_05272_KAGEELJA_000_015:1"
+msgid "So when I noticed our buildings needed some brushing up, I consulted our Xbr'aal neighbors. They were good enough to recommend some materials, and invited us to gather as much as we needed. If it's to keep this place presentable, I may well take them up on that offer again..."
+msgstr ""

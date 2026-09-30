@@ -1,0 +1,156 @@
+# quest/045/BanArk111_04561 — « Fresh Eats and Ripe Sweets» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラス・ジョブでのみ進行します。<br><br>スワルナの大蔵のマルルゥは、何やら計画していることがあるようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Maru möchte die Wächter im Wald mit Proviant versorgen.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>Il n'est possible de progresser dans cette quête qu'avec la classe ou le job qui a servi à la commencer.</i><br><br>Maru a une idée derrière la tête.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_SEQ_00:1"
+msgid "Maru is plotting something tasty.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 人々に<sheet EventItem 2003417 0>と<sheet EventItem 2003418 0>を渡す
+#. de: <capitalize><noun-de EventItem 5 2003417 2 4 1></capitalize> und <noun-de EventItem 5 2003418 2 4 1> verteilen
+#. fr: Livrer <noun-fr EventItem 2 2003417 2 1> et <noun-fr EventItem 2 2003418 2 1> aux travailleurs dans la jungle
+#. kind: objective
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_TODO_00:1"
+msgid "Deliver steaming victuals and amra to workers in the jungle."
+msgstr ""
+
+#. ja: マルルゥに報告
+#. de: Maru Bericht erstatten
+#. fr: Retourner voir Maru
+#. kind: objective
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_TODO_01:1"
+msgid "Report back to Maru."
+msgstr ""
+
+#. ja: 頼みたいことがあるんだけど、いい？<br>衆園の森で、寺院や遺跡の見回りをしてくれてる人たちに、<br>宣伝も兼ねて、お弁当の差し入れをしたいんだよね……。
+#. de: Hast du Lust, mir zu helfen? Ich würde gerne Essen an die Wächter bei den Tempeln und Ruinen im Schleier der Sangha verteilen lassen, um auf uns aufmerksam zu machen.
+#. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if> <split " " 1><string $gs1></split><nbsp>! Tu tombes bien, j'ai une tâche à te confier. J'ai préparé quelques paniers-repas et j'aimerais que tu ailles les distribuer aux travailleurs, près du temple dans la jungle des Sangha... Histoire de nous faire connaître.
+#. speaker: MARU
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_MARU_000_000:1"
+msgid "You got time to spare? 'Cause I've got grub to share. Specifically with the folks protectin' the ruins an' temples in the Shroud of the Samgha..."
+msgstr ""
+
+#. ja: あそこは、姐御やボクたちにとっても大切な場所だからさ。<br><split " " 1><string $gs1></split>が来たら、みんな喜ぶと思うし……。<br>このお弁当と、デザートの果物も一緒に渡しておいてー。
+#. de: Die Gegend hat für uns eine besondere Bedeutung, deshalb haben wir leckere Proviantpakete und Obst besorgt. Die Wächter werden sich bestimmt über deinen Besuch freuen.
+#. fr: C'est un endroit très important pour nous, et si les gens voient débarquer <string $gs1> en personne pour leur livrer nos petits plats, je te laisse imaginer l'engouement que ça suscitera. Je t'ai aussi mis des amra en guise de desserts, n'oublie pas d'en donner un avec chaque panier-repas<nbsp>!
+#. speaker: MARU
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_MARU_000_001:1"
+msgid "Here, take these sweets an' eats an' follow the sound of rumblin' bellies. Tell them the Hippo Riders sent you..."
+msgstr ""
+
+#. ja: どうした？<br>何か問題でも起きたか？
+#. de: Was willst du von mir? Ist etwas vorgefallen?
+#. fr: Vous ici<nbsp>? Il y a un problème dans le coin<nbsp>?
+#. speaker: RADIANTHOSTA04561
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_RADIANTHOSTA04561_000_010:1"
+msgid "What ho! Is something the matter?"
+msgstr ""
+
+#. ja: これを私にくれると！？<br>かたじけない！
+#. de: Für mich?! Oh, wie freundlich von dir!
+#. fr: Comment<nbsp>!? C'est pour moi<nbsp>? Eh bien, c'est très gentil à vous.
+#. speaker: RADIANTHOSTA04561
+#. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_RADIANTHOSTA04561_000_011:1"
+msgid "For me? Why, my greatest thanks to you, good <if $gn4>woman<else>man</if>!"
+msgstr ""
+
+#. ja: 星戦士団の体制が見直されて、<br>ようやく見回りを再開できたところなのだが……<br>まさか、差し入れを貰えるとは！
+#. de: Das Himmelsheer hat sich neu organisiert und wir konnten endlich die Patrouillen wieder aufnehmen. Mit einem Geschenk hatte ich jedoch nicht gerechnet!
+#. fr: Les soldats de l'Ost rayonnant ont enfin retrouvé leur routine... Mais c'est bien la première fois qu'on m'offre un <if ($gn11 < 12)><if ($gn11 < 4)>dîner<else>déjeuner</if><else><if ($gn11 < 17)>déjeuner<else>dîner</if></if> pendant le service<nbsp>!
+#. speaker: RADIANTHOSTA04561
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_RADIANTHOSTA04561_000_012:1"
+msgid "Of all the things to encounter in these jungles, a warm meal is a welcome surprise indeed."
+msgstr ""
+
+#. ja: 心遣いに感謝すると、伝えてほしい！
+#. de: Bitte richte den Hipporasern meinen aufrichtigen Dank aus!
+#. fr: Votre attention me touche beaucoup. Merci à vous et aux Hippotracteurs.
+#. speaker: RADIANTHOSTA04561
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_RADIANTHOSTA04561_000_013:1"
+msgid "We have resumed our regular patrols, so you may rest easy under the watchful eye of the Radiant Host. Be sure to pass along my regards to your Riders!"
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>じゃないか。<br>何をしてるんだい？
+#. de: <split " " 1><string $gs1></split>! Was machst du denn hier?
+#. fr: Tiens, mais c'est <split " " 1><string $gs1></split><nbsp>! Qu'est-ce qui vous amène ici<nbsp>?
+#. speaker: RADIANTHOSTB04561
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_RADIANTHOSTB04561_000_014:1"
+msgid "If it isn't <split \" \" 1><string $gs1></split>! What brings you out this far?"
+msgstr ""
+
+#. ja: あったかい弁当を食べられるなんて！<br>しかも、<sheet EventItem 2003418 0>まで……！<br>ちょうどお腹が空いてたところだったから、とっても嬉しいよ！
+#. de: Oh, eine warme Speise und sogar <noun-de EventItem 1 2003418 1 1 1>! Das kann ich gut gebrauchen. Mein Magen hat schon ordentlich geknurrt.
+#. fr: Un panier-repas et un succulent dessert par dessus le marché<nbsp>!? J'avais justement l'estomac qui criait famine<nbsp>!
+#. speaker: RADIANTHOSTB04561
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_RADIANTHOSTB04561_000_015:1"
+msgid "Warm vittles with ripe amra for dessert! Why, my empty stomach was just serenading me with discontent but moments ago─might you have heard it?"
+msgstr ""
+
+#. ja: ヒッポ便はたしか最近、出前を始めたんだよね？<br>今度、利用させてもらうよ！
+#. de: Die Hipporaser sind neu im Geschäft, oder? Ich werde ihren Kurierdienst bald einmal ausprobieren.
+#. fr: Et donc, les Hippotracteurs proposent désormais de livrer aussi de bons petits plats... C'est en effet bien pratique<nbsp>! Vous vous êtes fait une nouvelle cliente, pour sûr<nbsp>!
+#. speaker: RADIANTHOSTB04561
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_RADIANTHOSTB04561_000_016:1"
+msgid "If this aroma is to be believed, I daresay I shall soon become a true fanatic of the Hippo Riders' meal service. My thanks to you!"
+msgstr ""
+
+#. ja: おや、何か用かな？
+#. de: Hallo! Was führt dich zu mir?
+#. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if>, je peux vous aider<nbsp>?
+#. speaker: ROOKIESTEWARD04561
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_ROOKIESTEWARD04561_000_020:1"
+msgid "Oh, hello! Have you business with me?"
+msgstr ""
+
+#. ja: こいつはありがたい。<br>遠慮なく頂戴するよ！
+#. de: Oh, vielen Dank! Das Geschenk nehme ich gerne an.
+#. fr: Tout ça, pour moi<nbsp>? C'est bien généreux de votre part<nbsp>!
+#. speaker: ROOKIESTEWARD04561
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_ROOKIESTEWARD04561_000_021:1"
+msgid "Who would I be to deny such delectable generosity? I humbly accept!"
+msgstr ""
+
+#. ja: まだまだ、皆が苦しい想いをしているが、<br>そんな時だからこそ、私は守護者になったんだ。<br>貰った差し入れを食べたら、もうひと踏ん張り頑張るさ！
+#. de: Uns drohen noch viele Gefahren, aber gerade deshalb wollte ich unbedingt ein Wächter werden. Das Proviantpaket wird mir Kraft geben, um meine Pflicht zu erfüllen!
+#. fr: Même si le pire est derrière nous, la vie n'a pas encore repris son cours normal ici. C'est ce qui m'a poussé à devenir gardien. Votre panier-repas bien alléchant arrive à point nommé pour me donner la force de finir ma <if ($gn11 < 12)><if ($gn11 < 4)>soirée<else>journée</if><else><if ($gn11 < 17)>journée<else>soirée</if></if><nbsp>!
+#. speaker: ROOKIESTEWARD04561
+#. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_ROOKIESTEWARD04561_000_022:1"
+msgid "We are by no means yet free of the shadow of misfortune, but it is precisely for this reason that I became a steward. After I have partaken in your kindness, <if $gn4>madam<else>sir</if>, I shall finish the rest of my rounds with vigor!"
+msgstr ""
+
+#. ja: どうだった？<br>喜んで貰えた……？
+#. de: Na, haben sie sich über den Proviant gefreut?
+#. fr: Alors<nbsp>? Ils ont bien aimé mes paniers-repas<nbsp>?
+#. speaker: MARU
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_MARU_000_040:1"
+msgid "Did they like the grub?"
+msgstr ""
+
+#. ja: みんな喜んでたんだね、よかったー。<br>星戦士団や守護者たちは、森を護ってくれてるから、<br>彼らに少しでも恩返しができたんだったら、何より……。
+#. de: Ah, sehr gut! Die Soldaten des Himmelsheeres und die Wächter beschützen den Wald. Es freut mich, wenn wir uns bei ihnen erkenntlich zeigen können.
+#. fr: Ah, tant mieux<nbsp>! Les soldats de l'Ost rayonnant et les gardiens font un travail vital dans cette jungle, je suis heureux d'avoir pu leur rendre un peu la pareille de cette manière.
+#. speaker: MARU
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_MARU_000_041:1"
+msgid "I'm glad to hear it!"
+msgstr ""
+
+#. ja: これは届けてくれたお礼。<br>引き受けてくれて、どうもありがとー。
+#. de: Und auch du sollst selbst<shy>verständ<shy>lich nicht leer ausgehen. Hier, das hast du dir redlich verdient.
+#. fr: Merci encore d'avoir accepté de m'aider. Voilà d'ailleurs pour ta peine. À bientôt<nbsp>!
+#. speaker: MARU
+msgctxt "quest/045/BanArk111_04561:TEXT_BANARK111_04561_MARU_000_042:1"
+msgid "Those temples an' ruins are important parts of our culture, so sendin' out the occasional warm meal to our guardians is the least we can do. Here's a little somethin' for you, too..."
+msgstr ""

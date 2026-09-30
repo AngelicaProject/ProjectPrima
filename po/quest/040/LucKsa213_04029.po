@@ -1,0 +1,158 @@
+# quest/040/LucKsa213_04029 — «Let Me Holster That for You» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ガンゴッシュのクリヴは、ロストホルダーの保存容量を増やす実験に協力してほしいようだ。
+#. de: Kriv hat eine Idee, wie man mehr im Register für Verschollenes unterbringen könnte.
+#. fr: Kriv est en plein inventaire. Vous remarquez d'ailleurs que certaines des pièces entrent dans la composition de votre mémento.
+#. kind: journal
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_SEQ_00:1"
+msgid "Kriv believes he knows a way to increase your arsenal of lost actions."
+msgstr ""
+
+#. ja: <if ($n1 < $n2)><sheet Item 32201 0>を入手<else>クリヴに<sheet Item 32201 0>を渡す</if>
+#. de: <if ($n1 < $n2)><capitalize><noun-de Item 5 32201 1 4 1></capitalize> erbeuten<else>Kriv <noun-de Item 2 32201 1 4 1> geben</if>
+#. fr: <if ($n1 < $n2)>Obtenir des <noun-fr Item 12 32201 2 1><else>Remettre <noun-fr Item 2 32201 2 1> à Kriv, à Gangos</if>
+#. kind: objective
+#. macro: <if ($n1 < $n2)>Obtain pieces of Garlean synthetic fabric<else>Deliver the pieces of Garlean synthetic fabric to Kriv</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_TODO_00:1"
+msgid "<if ($n1 < $n2)>Obtain pieces of Garlean synthetic fabric<else>Deliver the pieces of Garlean synthetic fabric to Kriv</if>."
+msgstr ""
+
+#. ja: ふむ、お噂はかねがね聞いておりますが、<br>こうしてお会いするのは初めてですな、解放者殿。<br>私はクリヴ、「記憶」に関する調査と研究を担当しております。
+#. de: <split " " 1><string $gs1></split>, richtig? Ich heiße Kriv. Wir haben uns noch nicht getroffen, aber meine Erkenntnisse aus der Erforschung von Erinnerungen sollten dir vertraut sein.
+#. fr: <if $gn4>La grande libératrice<else>Le grand libérateur</if><nbsp>? Depuis le temps que j'entends parler de vous, c'est un honneur de vous rencontrer. Moi, c'est Kriv. Je m'intéresse à tout ce qui a trait à la mémoire. D'ailleurs, je chapeaute les recherches sur les éclats oubliés.
+#. speaker: KRIV
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_000:1"
+msgid "Blade <split \" \" 2><string $gs1></split>, yes? I don't believe we've met. My name is Kriv. I understand you are familiar with the fruits of my research in memory."
+msgstr ""
+
+#. ja: これが実に興味深く……。<br>御存知のとおり、ボズヤの戦場では、<br>記憶が込められたシャードが見つかることがありますな？
+#. de: Ein wirklich faszinierendes Forschungsgebiet. Mir ist zu Ohren gekommen, was du auf den Schlachtfeldern entdeckt hast.
+#. fr: Vous savez, ces cristaux qu'on peut parfois trouver sur les champs de bataille en Bozja... Dès qu'on a compris qu'il était possible d'en extraire des anciennes techniques de combat et des sorts oubliés depuis des lustres, on s'est vite mis au travail à la division logistique.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_001:1"
+msgid "As a matter of fact, our quartermasters have told me much of your findings on the front lines."
+msgstr ""
+
+#. ja: 我ら支援部門では、そこから抽出された戦技や魔法の知識を、<br>保存するための道具「ロストホルダー」を考案しました。<br>そして現在も、保存容量を増やすべく研究を行っております。
+#. de: Und ich glaube, dass wir dieses Wissen nutzen können, um das Register für verschollenes Kampfwissen zu erweitern.
+#. fr: Je constate d'ailleurs que vous êtes équipé<if $gn4>e</if> du fruit de nos recherches. Nos soldats avaient besoin de pouvoir transporter ces éclats sur le champ de bataille, nous avons donc mis au point ces mémentos. En ce moment, nous réfléchissons à un moyen d'augmenter leur capacité de stockage.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_002:1"
+msgid "And thanks to said findings, we believe it now possible to expand the lost finds holster even further than previously believed."
+msgstr ""
+
+#. ja: そこで、ひとつ最新の研究結果を検証するのに、<br>解放者殿にご協力を願いたいのですよ……。<br>もちろん、貴方にも益のあるお話ですので。
+#. de: Na ja, unsere Kollegen aus Garlemald hatten auch einen gewissen Anteil daran, aber gut.
+#. fr: Maintenant que j'y pense, vous pourriez peut-être nous y aider, tiens. Cette amélioration vous serait utile aussi, après tout.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_003:1"
+msgid "Though I suppose it only fair we give credit to the Garleans, albeit begrudgingly."
+msgstr ""
+
+#. ja: ホルダーの保存領域を増やすため、<br>私は、様々な技術を参考に研究を行っております。<br>それは、帝国の技術といえど例外ではありません。
+#. de: Ich habe erbeutetes Kriegsgerät analysiert und herausgefunden, dass ihre Uniformen aus einer künstlichen Faser gewoben sind, die besonders ätherresistent ist. Damit sollte das Register so zu isolieren sein, dass sein Inhalt ohne Gefahr erweitert werden kann.
+#. fr: Pour mener à bien mes recherches, je m'inspire de différentes technologies, y compris garlemaldaises. L'une d'elles s'est d'ailleurs révélée intéressante.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_004:1"
+msgid "You see, in salvaging gear and supplies from the front, we discovered their uniforms are made using synthetic fibers that are remarkably nonconductive to aether. We believe it may be suitable for insulating the holster, thus allowing us to safely increase its capacity."
+msgstr ""
+
+#. ja: その結果、帝国製の合成繊維が、<br>エーテル伝導率が低く有用だと判明したのです。<br>この素材を使えば、より安定して記憶を保存できそうだ、と。
+#. de: Das ist bislang nur eine Theorie, aber mit deiner Hilfe sollten wir sie belegen können.
+#. fr: Il se trouve que les fibres synthétiques que manufacture l'Empire ont une faible conductance éthérée, une propriété dont je pourrais faire usage pour stabiliser les éclats.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_005:1"
+msgid "Unfortunately, we are struggling to procure sufficient quantities of the material to test our theories. With your help, however, I believe we may be able to put them to the proof."
+msgstr ""
+
+#. ja: どうか、戦場へと赴き、<br>「<sheet Item 32201 0>」を回収してはいただけませんか？<br>もちろん拡張は、解放者殿のロストホルダーに行いますので。
+#. de: Wir brauchen noch mehr <noun-de Item 5 32201 2 4 1>. Bring mir alles davon, was du auf den Schlachtfeldern finden kannst.
+#. fr: Pourriez-vous en recueillir quelques échan<shy>til<shy>lons la prochaine fois que vous vous rendez sur le champ de bataille<nbsp>? En échange, j'offrirai à votre mémento la primeur de mon amélioration de stockage.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_006:1"
+msgid "We require more of their synthetic fabric to see our work complete. If you should find any when next you leave to the front lines, please bring it back to us."
+msgstr ""
+
+#. ja: 「<sheet Item 32201 0>」は、<br>セイブ・ザ・クイーン関連コンテンツの、スカーミッシュや、<br>クリティカルエンゲージメントなどの攻略で入手できます。
+#. de: <capitalize><noun-de Item 5 32201 2 1 1></capitalize> können zum Beispiel in Scharmützeln oder kritischen Gefechten der „Königinnenwache“-Auftragsreihe erbeutet werden.
+#. fr: Vous pouvez obtenir des <noun-fr Item 12 32201 2 1> en participant à des escarmouches et des af<shy>fron<shy>te<shy>ments cruciaux dans les missions liées à Garde-la-Reine.
+#. speaker: SYSTEM
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_SYSTEM_000_007:1"
+msgid "Garlean synthetic fabric can be obtained by participating in skirmishes and critical engagements in Save the Queen areas."
+msgstr ""
+
+#. ja: ロストホルダーの保存領域を拡張するため、<br>どうか戦場に赴き、「<sheet Item 32201 0>」を、<br>回収してはいただけませんか？
+#. de: Wir brauchen mehr <noun-de Item 5 32201 2 4 1>. Bring mir alles davon, was du auf den Schlachtfeldern finden kannst.
+#. fr: N'oubliez pas de ramasser quelques <noun-fr Item 12 32201 2 1> la prochaine fois que vous allez sur le champ de bataille, d'accord<nbsp>? Ils me permettront d'augmenter la capacité de stockage de votre mémento.
+#. speaker: KRIV
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_010:1"
+msgid "Please, Blade <split \" \" 2><string $gs1></split>, if you can retrieve any of their fabric─any at all─it would be a boon to our research."
+msgstr ""
+
+#. ja: 「<sheet Item 32201 0>」は、<br>セイブ・ザ・クイーン関連コンテンツの、スカーミッシュや、<br>クリティカルエンゲージメントなどの攻略で入手できます。
+#. de: <capitalize><noun-de Item 5 32201 2 1 1></capitalize> können zum Beispiel in Scharmützeln oder kritischen Gefechten der „Königinnenwache“-Auftragsreihe erbeutet werden.
+#. fr: Vous pouvez obtenir des <noun-fr Item 12 32201 2 1> en participant à des escarmouches et des af<shy>fron<shy>te<shy>ments cruciaux dans les missions liées à Garde-la-Reine.
+#. speaker: SYSTEM
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_SYSTEM_000_011:1"
+msgid "Garlean synthetic fabric can be obtained by participating in skirmishes and critical engagements in Save the Queen areas."
+msgstr ""
+
+#. ja: 製法さえわかれば生産できるのですが……<br>今は、戦利品を有効活用させていただきましょう。<br>「<sheet Item 32201 0>」は回収できましたでしょうか？
+#. de: Ich bin mir sicher, dass die Faser wie geplant verwendet werden kann. Aber ich brauche eine weitere Probe.
+#. fr: Avez-vous trouvé des <noun-fr Item 12 32201 2 1><nbsp>? Leur secret de fabrication nous est encore inconnu, nous devons donc malheureusement nous contenter des débris sur le champ de bataille.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_020:1"
+msgid "Once we have the necessary samples, we may begin the testing procedure."
+msgstr ""
+
+#. ja: さすがは解放者殿……欲していた繊維も綺麗なままです。<br>さっそく、ロストホルダーを改良してみましょう。
+#. de: Ja, ausgezeichnet. Das sollte funktionieren. Darf ich mir mal dein Register ansehen?
+#. fr: Vous êtes aussi efficace qu'on le dit. Ces <noun-fr Item 12 32201 2 1> sont en excellente condition, voilà qui me facilitera la tâche. Donnez-moi votre mémento, je vais tout de suite procéder aux mo<shy>di<shy>fi<shy>ca<shy>tions.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_025:1"
+msgid "Yes, yes, this will do nicely. Now, may I examine your holster?"
+msgstr ""
+
+#. ja: ……ええ、無事に機能しておりますな。<br>ロストホルダーの保存領域は、しっかり拡張されております。
+#. de: So. Fertig. Ja, jetzt ist wesentlich mehr Platz im Register.
+#. fr: Hmm, vous me direz après vous en être servi<if $gn4>e</if>, mais il m'a l'air de toujours aussi bien fonctionner malgré sa capacité augmentée. Un vrai succès.
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_026:1"
+msgid "And...there. Everything appears to be in order."
+msgstr ""
+
+#. ja: お力添え、ありがとうございました。<br>今後もミコト殿やゲロルト殿の手も借りつつ、<br>コツコツと研究を進めていく所存でございます。
+#. de: Ich hoffe, dass dir diese Erweiterung an der Front von Nutzen sein wird.
+#. fr: Merci pour votre aide. Vous pouvez compter sur moi pour poursuivre les recherches, je suis certain que nous atteindrons de nouveaux sommets. Après tout, je bénéficie de l'aide d'une grande sage sharlayanaise et d'un forgeron de génie<nbsp>!
+#. speaker: KRIV
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_027:1"
+msgid "Here you are. I pray your now-expanded arsenal will help further turn the tide of battle in our favor."
+msgstr ""
+
+#. ja: すべては、我らボズヤ・レジスタンスの悲願のために……。<br>戦場に立つ解放者殿や兵たちを、<br>私も微力ながら支えていく所存でございます。
+#. de: Mikoto und besonders Gerolt haben ihren eigenen Forschungsstil, aber zusammen werden wir dir in Zukunft bestimmt wieder helfen können. Es lebe der Widerstand!
+#. fr: Je suis loin de posséder votre force, mais je prie pour que ma modeste con<shy>tri<shy>bu<shy>tion nous rapproche de notre rêve d'indépendance... Bonne chance, <split " " 1><string $gs1></split>.
+#. speaker: KRIV
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_KRIV_000_028:1"
+msgid "With Mistress Mikoto and Master Gerolt's assistance, we will surely have more to offer you in the future. Safe travels, Blade <split \" \" 2><string $gs1></split>."
+msgstr ""
+
+#. ja: ロストホルダーの最大容量が、「10」増加しました！<br>今後の攻略に役立てましょう。
+#. de: Dein Register für Verschollenes wurde um 10 Plätze erweitert.
+#. fr: La capacité de stockage de votre mémento a augmenté de 10<nbsp>!
+#. speaker: SYSTEM
+msgctxt "quest/040/LucKsa213_04029:TEXT_LUCKSA213_04029_SYSTEM_000_030:1"
+msgid "The maximum capacity of the lost finds holster has been increased by 10."
+msgstr ""

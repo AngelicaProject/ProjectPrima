@@ -1,0 +1,148 @@
+# quest/052/BanMam111_05271 — « Stimulating Growth» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、薬品の材料を採ってきてほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja benötigt Zutaten für ein Wachstumsmittel.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja a besoin d'ingrédients pour un stimulant de croissance.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_SEQ_00:1"
+msgid "Kageel Ja requires materials for a concoction.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_SEQ_01:1"
+msgid "Deliver the requested materials to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>セノーテ・ジャユンジャ付近の岩場で<sheet Item $n5 0>を砕岩<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>セノーテ・ジャユンジャ付近の良木で<sheet Item $n5 0>を伐採<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>セノーテ・ジャユンジャで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der Nähe des Cenote Jayunja <sheet Item $n5 9> sammeln<else>Kageel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Nähe des Cenote Jayunja <noun-de Item 5 $n5 2 4 1> sammeln<else>Kageel Ja <noun-de Item 5 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Am Cenote Jayunja <noun-de Item 5 $n5 2 4 1> fangen<else>Kageel Ja <noun-de Item 5 $n5 2 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près du cénote Jayunja<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du cénote Jayunja<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au cénote Jayunja<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: 作物がより健康に育つように、<br>アンギルさんと相談して、グロースフォーミュラっていう、<br>外つ国の成長促進剤を使うことにしたんだ。
+#. de: Anggir möchte ein Wachstumsmittel entwickeln, um bestmögliche Erträge auf unseren Feldern zu garantieren.
+#. fr: Afin d'obtenir un meilleur rendement, Anggir veut développer une formule de croissance pour permettre aux végétaux de pousser plus sainement, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_001:1"
+msgid "After consulting Anggir, we've decided to use Sharlayan-developed growth formula on our crops."
+msgstr ""
+
+#. ja: だけどこの森が特殊だからか、既製品じゃ効果が薄いらしくてね。<br>環境に合わせて改良するために、<br>このあたりで採れる素材がほしいんだって。
+#. de: Herkömmliche Mittel zeigen wenig Wirkung, was wahrscheinlich auf die Besonderheiten unseres Waldes zurückzuführen ist. Sie möchte daher nur Zutaten verwenden, die auch hier zu finden sind.
+#. fr: Il se trouve que les produits déjà sur le marché semblent avoir peu d'effet, pro<shy>ba<shy>ble<shy>ment à cause des spécificités de notre forêt. Pour obtenir le résultat voulu, elle a donc besoin de matériaux qu'on ne trouve qu'ici.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_002:1"
+msgid "Due to the unique properties of our forest, however, the ingredients need to be modified. I was hoping you could gather some local materials for us."
+msgstr ""
+
+#. ja: 前に材料を採ってきてもらった植物の成長促進剤、<br>いい感じに効果が出ているんだ。<br>それで、増産のためにまた素材がほしいんだよ。
+#. de: Die Zutaten, die du letztes Mal mitgebracht hast, haben sich als hochwirksam erwiesen. Also braucht sie mehr davon!
+#. fr: Ce que tu nous as ramené la dernière fois s'étant révélé hautement efficace, Anggir te prie de bien vouloir remettre la main à la pâte, si tu n'y vois pas d'in<shy>con<shy>vé<shy>nient.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_003:1"
+msgid "The growth formula you helped us create last time was very effective. I was hoping we could count on you again for additional batches."
+msgstr ""
+
+#. ja: というわけで、セノーテ・ジャユンジャ付近で採れる、<br>「<sheet Item 48045 0>」の調達、貴方にお願いできると嬉しいな。
+#. de: Gehe zum Cenote Jayunja und bringe mir drei <noun-de Item 5 48045 2 4 1>.
+#. fr: Trois <noun-fr Item 12 48045 2 1> que tu trouveras près du cénote Jayunja devraient faire l'affaire, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_004:1"
+msgid "Salt of living light from Cenote Jayunja should be just what we need."
+msgstr ""
+
+#. ja: というわけで、セノーテ・ジャユンジャ付近で採れる、<br>「<sheet Item 48046 0>」の調達、貴方にお願いできると嬉しいな。
+#. de: Gehe zum Cenote Jayunja und bringe mir drei <noun-de Item 5 48046 2 4 1>.
+#. fr: Trois <noun-fr Item 12 48046 2 1> que tu trouveras près du cénote Jayunja devraient faire l'affaire, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_005:1"
+msgid "Mushrooms of living light from Cenote Jayunja should be just what we need."
+msgstr ""
+
+#. ja: というわけで、セノーテ・ジャユンジャで採れる、<br>「<sheet Item 48047 0>」の調達、貴方にお願いできると嬉しいな。<br>釣り餌は<sheet Item 43849 0>を使うといいみたい。
+#. de: Gehe zum Cenote Jayunja und bringe mir drei <noun-de Item 5 48047 2 4 1>. Dafür empfehle ich dir <noun-de Item 5 43849 2 4 1> als Köder.
+#. fr: <capitalize><noun-fr Item 1 48047 1 1></capitalize> que tu pourras pêcher au cénote Jayunja devrait faire l'affaire, ja. Et comme toujours, n'oublie pas d'utiliser <noun-fr Item 4 43849 1 1>.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_006:1"
+msgid "Shellfish of living light from Cenote Jayunja should be just what we need. You can reel them in with golden stonefly nymphs."
+msgstr ""
+
+#. ja: セノーテ・ジャユンジャ付近で採れる「<sheet Item 48045 0>」、<br>成長促進剤づくりのために、調達をお願いできると嬉しいよ。<br>採集できたら僕が受け取るから、よろしくね。
+#. de: Nur zur Erinnerung: Gehe zum Cenote Jayunja und bringe mir drei <noun-de Item 5 48045 2 4 1>. Die brauchen wir für Anggirs Wachstumsmittel.
+#. fr: Ramène-moi trois <noun-fr Item 12 48045 2 1> que tu trouveras près du cénote Jayunja, s'il te plaît. Pour la science, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_007:1"
+msgid "Once you reach Cenote Jayunja, you should be able to mine salt of living light from rocky outcrops in the area. We'll need some to concoct our growth formula, so I'm counting on you."
+msgstr ""
+
+#. ja: セノーテ・ジャユンジャ付近で採れる「<sheet Item 48046 0>」、<br>成長促進剤づくりのために、調達をお願いできると嬉しいよ。<br>採集できたら僕が受け取るから、よろしくね。
+#. de: Nur zur Erinnerung: Gehe zum Cenote Jayunja und bringe mir drei <noun-de Item 5 48046 2 4 1>. Die brauchen wir für Anggirs Wachstumsmittel.
+#. fr: Ramène-moi trois <noun-fr Item 12 48046 2 1> que tu trouveras près du cénote Jayunja, s'il te plaît. Pour la science, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_008:1"
+msgid "Once you reach Cenote Jayunja, you should be able to find plenty of mushrooms of living light in the area. We'll need them to concoct our growth formula, so I'm counting on you."
+msgstr ""
+
+#. ja: セノーテ・ジャユンジャで採れる「<sheet Item 48047 0>」、<br>成長促進剤づくりのために、調達をお願いできると嬉しいよ。<br>釣り餌は<sheet Item 43849 0>が有効みたいだから、よろしくね。
+#. de: Nur zur Erinnerung: Gehe zum Cenote Jayunja und bringe mir drei <noun-de Item 5 48047 2 4 1>. Die brauchen wir für Anggirs Wachstumsmittel. Für den Fang empfehle ich dir <noun-de Item 5 43849 2 4 1> als Köder.
+#. fr: Ramène-moi <noun-fr Item 1 48047 1 1> que tu pourras pêcher à l'aide d'<noun-fr Item 1 43849 1 1> au cénote Jayunja, s'il te plaît. Pour la science, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_009:1"
+msgid "Once you reach Cenote Jayunja, you should be able to catch shellfish of living light by using golden stonefly nymphs. We'll need the shellfish for our growth formula, so I'm counting on you."
+msgstr ""
+
+#. ja: どうかな、成長促進剤の素材、採れたかい？
+#. de: Hast du das Material für unser Wachstumsmittel?
+#. fr: Toi, je sens que tu as ramené de quoi produire un stimulateur de croissance du tonnerre, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_010:1"
+msgid "Were you able to procure what I requested?"
+msgstr ""
+
+#. ja: さすが<split " " 1><string $gs1></split>さん、いい仕事だよ。<br>素材の質もバッチリだ。
+#. de: Gute Arbeit, <split " " 1><string $gs1></split>! Anggir wird sich über die gute Qualität sicher freuen.
+#. fr: Bon travail, <split " " 1><string $gs1></split>. Anggir sera ravie de pouvoir mener son projet à terme.
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_011:1"
+msgid "You never disappoint, <split \" \" 1><string $gs1></split>. This is exactly what we need."
+msgstr ""
+
+#. ja: この成長促進剤は、植物自体の力を向上させて、<br>育ちやすくしたり、実をつけやすくしたりするものなんだ。<br>外つ国の農家もよく使ってるんだって。
+#. de: Das Wachstumsmittel gibt den Pflanzen auf unseren Feldern Kraft, dadurch wachsen sie schneller und werfen größere Erträge ab. In anderen Ländern sind solche Mittel längst gang und gäbe, wie ich gehört habe.
+#. fr: Le stimulateur de croissance améliorera la vigueur des plantes elles-mêmes, rendant leur croissance et leur culture d'autant plus simples. Apparemment, les agriculteurs d'outre-mer utilisent ce genre de produit depuis belle lurette, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_012:1"
+msgid "I understand from Anggir that growth formula is commonly used to strengthen flora and boost yields in lands across the salt."
+msgstr ""
+
+#. ja: 貴方やアンギルさんのおかげで新しい発見があるから、<br>最近、畑に向かうのが楽しいよ。<br>今後も工夫しながらやってくから、引き続きよろしくね。
+#. de: Ich habe schon so viel von Anggir und dir gelernt. Ich verspreche, dass ich mein Wissen zum Wohle aller einsetzen werde!
+#. fr: En ce qui me concerne, j'ai déjà fait plein de nouvelles découvertes grâce à Anggir et à toi. Comptez sur moi pour les mettre à profit lors de nos futures entreprises<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam111_05271:TEXT_BANMAM111_05271_KAGEELJA_000_013:1"
+msgid "I'm always interested to learn about different farming techniques, and with our knowledge combined, I'm certain our gainery will flourish. I hope you'll stay alongside us as it does!"
+msgstr ""

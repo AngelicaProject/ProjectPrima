@@ -1,0 +1,373 @@
+# quest/049/KinGla402_04990 — «Test of Talents» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ワチュメキメキ万貨街のシューニェは、冒険者たちの腕前を知りたいようだ。
+#. de: Shunye will deine Fä<shy>hig<shy>kei<shy>ten auf die Probe stellen.
+#. fr: Shunye veut s'assurer que vous êtes de la graine de récolteur.
+#. kind: journal
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SEQ_00:1"
+msgid "Shunye is eager to put your skills to the test."
+msgstr ""
+
+#. ja: シューニェから、お試しで商品調達を依頼された。「<sheet ItemMP 43899 0>」を6個、採集し、ワチュメキメキ万貨街の「シューニェ」へ納品しよう。「<sheet ItemMP 43899 0>」は、採掘師の場合オルコ・パチャのミープル・マテ茶園付近で、園芸師の場合オルコ・パチャのキーベル・カピー農園付近で採集できる。<br><br>※納品は、収集価値「240」以上で可能となりますが、「600」以上で納品した場合、より多くの報酬が得られます。
+#. de: Um eure Fä<shy>hig<shy>kei<shy>ten zu testen, gibt Shunye dir und Uvlo die Aufgabe, jeweils sechs <noun-de ItemMP 5 43899 2 4 1> zu sammeln und bei ihm abzuliefern.<br><br>※ Gärtner finden die Gegenstände bei Ciblus Kaffeehof, Minenarbeiter bei Miplus Mategarten.<br>※ Die Gegenstände können ab einem Sammlerwert von 240 abgegeben werden. Ab einem Sammlerwert von 600 erhältst du jedoch zusätzliche Belohnungen.
+#. fr: Shunye vous a confié la récolte de six <noun-fr ItemMP 12 43899 2 1>. Vous en trouverez près de la matéière de Miplu pour les mineurs, et près de la caféière de Ciblu pour les botanistes.<br><br>* La valeur de collection minimale requise pour la livraison est de 240. Les objets ayant une valeur supérieure ou égale à 600 rapportent une plus grande récompense. 
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SEQ_01:1"
+msgid "Shunye has asked that you supply him with his apothecary's staples.<br><br>※Shunye's Apothecary staples can be gathered from Miplu's Mate Garden by miners, and from Ciblu's Coffee Grounds by botanists.<br><br>※Minimum collectability rating for this delivery is 240. Delivering items with a rating of 600 or more will earn greater rewards."
+msgstr ""
+
+#. ja: シューニェに<sheet ItemMP 43899 0>を納品した。同じく依頼を果たしたウヴロはシューニェズ・アポサカリーの従業員となり、冒険者も都合がついたときには調達役として手を貸すこととなった。採集の腕を磨きつつ、折を見て店に顔を出そう。
+#. de: Du lieferst Shunye die gewünschten Gegenstände und er ist so zufrieden mit deiner und Uvlos Arbeit, dass er euch beide für zukünftige Lieferaufträge anheuert. Schau regelmäßig bei ihm vorbei, um zu sehen, ob er einen neuen Auftrag für dich hat.
+#. fr: Vous avez livré les produits requis à Shunye. En compagnie d'Uvlo, un Viéra originaire d'Othard venu pour étudier la culture des Shetona dont Shunye est issu, vous avez été engagés pour aider ce dernier à réapprovisionner ses stocks. Passez le voir ré<shy>gu<shy>liè<shy>re<shy>ment pour vérifier s'il n'aurait pas une nouvelle requête à vous confier.
+#. kind: journal
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SEQ_02:1"
+msgid "You deliver the requested items to Shunye, and he is so pleased with your and Uvlo's work that he agrees to hire you both for future delivery requests. He asks you to stop in from time to time to see if he has any tasks that require your singular talents."
+msgstr ""
+
+#. ja: <if ($gn68 == 16)>ミープル・マテ茶園付近で採集した<br><sheet ItemMP 43899 0>をシューニェに納品<else><if ($gn68 == 17)>キーベル・カピー農園付近で採集した<br><sheet ItemMP 43899 0>をシューニェに納品<else>採掘師または園芸師になり<br><sheet ItemMP 43899 0>をシューニェに納品</if></if>
+#. de: <if ($gn68 == 16)><capitalize><noun-de ItemMP 5 43899 2 4 1></capitalize> aus Miplus Mategarten bei Shunye abliefern<else><if ($gn68 == 17)><capitalize><noun-de ItemMP 5 43899 2 4 1></capitalize> aus Ciblus Kaffeehof bei Shunye abliefern<else>Als <if $gn4>Mi<shy>nen<shy>ar<shy>bei<shy>te<shy>rin<else>Minenarbeiter</if> oder <if $gn4>Gärtnerin<else>Gärtner</if><br><noun-de ItemMP 5 43899 2 4 1> bei Shunye abliefern</if></if>
+#. fr: <if ($gn68 == 16)>Récupérer <noun-fr ItemMP 1 43899 2 1> près de la matéière de Miplu et les livrer à Shunye<else><if ($gn68 == 17)>Récupérer <noun-fr ItemMP 1 43899 2 1> près de la caféière de Ciblu et les livrer à Shunye<else>Changer de classe pour devenir mineur ou botaniste puis livrer <noun-fr ItemMP 2 43899 2 1> à Shunye</if></if>
+#. kind: objective
+#. macro: <if ($gn68 == 16)>Deliver <noun-en ItemMP 1 43899 2 1> gathered from Miplu's Mate Garden to Shunye.<else><if ($gn68 == 17)>Deliver <noun-en ItemMP 1 43899 2 1> … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ItemMP 1 43899 2 1> — an English noun from a game data sheet, with article and number; sheet = ItemMP, form = 1, row = 43899, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn68 == 17)>Deliver <noun-en ItemMP 1 43899 2 1> gathered from Ciblu's Coffee Grounds to Shunye.<else>As a botanist or miner, deliver <noun-en ItemMP 1 43… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_TODO_00:1"
+msgid "<if ($gn68 == 16)>Deliver <noun-en ItemMP 1 43899 2 1> gathered from Miplu's Mate Garden to Shunye.<else><if ($gn68 == 17)>Deliver <noun-en ItemMP 1 43899 2 1> gathered from Ciblu's Coffee Grounds to Shunye.<else>As a botanist or miner, deliver <noun-en ItemMP 1 43899 2 1> to Shunye.</if></if>"
+msgstr ""
+
+#. ja: なるほど、お前もこの店で働くつもりなのか。<br>お互い、店主に認められるといいな。
+#. de: Du suchst auch Arbeit? Dann hoffe ich, dass wir beide es schaffen, Shunyes Anforderungen zu erfüllen!
+#. fr: Toi aussi, tu veux travailler ici<nbsp>? J'espère qu'on parviendra tous les deux à satisfaire les exigences du patron<nbsp>!
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_000:1"
+msgid "You seek work, too? Well, I hope we can call each other partner in due time."
+msgstr ""
+
+#. ja: おふたりには、オルコ・パチャに向かい、<br>「<sheet ItemMP 43899 0>」を調達してもらいたいと思います。
+#. de: Wenn ihr bereit seid, dann lasst uns direkt loslegen! Ich möchte, dass ihr euch auf den Weg nach Urqopacha macht und dort unsere beliebtesten <noun-de ItemMP 5 43899 2 4 1> sammelt. Das sind Produkte, die in keiner Hausapotheke fehlen dürfen!
+#. fr: Bien, et si nous passions sans plus tarder à une petite épreuve d'essai idéale pour se mettre en jambes<nbsp>? J'aurais besoin que vous vous rendiez à Urqopacha et que vous y récoltiez des produits pharmaceutiques essentiels.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_010:1"
+msgid "Now, shall we get started? I want both of you to head to Urqopacha and bring me back an assortment of my most popular staples."
+msgstr ""
+
+#. ja: 滋養強壮の効果がある、マカという植物か、<br>身体を温めるのに用いる石、春暖岩……。
+#. de: Und zwar bräuchte ich Maca, äußerst nährstoffreiche Pflanzen mit stärkender Wirkung, und Basaltsteine, die die Wärme besonders gut speichern können. Sie eignen sich ganz wunderbar für entspannende Anwendungen und lindern die ver<shy>schie<shy>den<shy>sten Beschwerden!
+#. fr: Je vous laisse le choix entre la maca, une plante dont les propriétés nutritives ne sont plus à prouver, ou bien la “roche printanière” ré<shy>gu<shy>liè<shy>re<shy>ment utilisée pour réchauffer les corps frigorifiés.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_011:1"
+msgid "Namely, I'm looking for maca, a plant which imparts unflagging vigor, and springstone, which is used to warm the body and soothe aches in the muscles. "
+msgstr ""
+
+#. ja: ご自身の採りやすい方で構いませんので、<br>状態のいいものを6つほど持ち帰っていただけますか？
+#. de: Ihr könnt euch selbst aussuchen, welches der zwei Produkte ihr mir bringen wollt. Ich würde sagen, für den Anfang reichen jeweils sechs Stück davon. 
+#. fr: Essayez de dégoter les meilleurs échan<shy>til<shy>lons possibles et ramenez-m'en six, ça devrait suffire.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_012:1"
+msgid "You can bring me whichever is easier for you to gather─either will sell just as quickly. Since this is only a trial, let's start with say...six or so?"
+msgstr ""
+
+#. ja: オルコ・パチャで、定番商品を6つだな……。<br>了解した、すぐに行ってくる。
+#. de: Sechs Stück von einem der zwei benötigten Apotheken-Produkte aus Urqopacha, geht klar! Die sollst du so schnell wie möglich erhalten. Bin schon auf dem Weg!
+#. fr: Six produits pharmaceutiques essentiels, c'est noté<nbsp>! Vous serez surpris de la vitesse à laquelle vous les aurez entre les mains, Patron<nbsp>!
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_013:1"
+msgid "Six springstones from Urqopacha... Understood. I shall return with haste."
+msgstr ""
+
+#. ja: 「シューニェズ・アポサカリー」への納品が開始されました！<br>依頼されたアイテムをシューニェに納品し、<br>貢献していきましょう！
+#. de: Die Lieferungen für Shunyes Apotheke wurden freigespielt! Liefere die gewünschten Gegenstände bei Shunye ab, um deinen Beitragsrang zu erhöhen und ihm dabei zu helfen, seine leeren Regale wieder aufzufüllen.
+#. fr: Vous pouvez désormais livrer des objets à la pharmacie de Shunye, au bazar des Mille Perles. Apportez-lui ce qu'il vous demande et aidez-le à atteindre son but<nbsp>!
+#. speaker: SYSTEM
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SYSTEM_000_014:1"
+msgid "You may now undertake deliveries for Shunye's Apothecary. By delivering the requested items to Shunye and raising yourself in his esteem, you can help him restock his empty shelves."
+msgstr ""
+
+#. ja: なお、依頼品の納品には一定の収集価値が必要となり、<br>価値が高いアイテムの場合は、報酬にボーナスがつきます。<br>まずは依頼品リストを確認してみましょう！
+#. de: Für die Abgabe der Auftragsgegenstände muss ein bestimmter Sammlerwert erreicht werden. Bei hochwertigen Gegenständen erhältst du zusätzliche Belohnungen. Wirf zunächst einen Blick auf die Liste der Auftragsgegenstände!
+#. fr: Une valeur de collection minimale est requise pour la livraison, mais les objets ayant une valeur supérieure vous rapporteront une plus grande récompense<nbsp>! Commencez par jeter un œil à ce dont il a besoin<nbsp>!
+#. speaker: SYSTEM
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SYSTEM_000_015:1"
+msgid "Items with a higher collectability will result in greater rewards upon delivery. Speak to Shunye to view the deliveries list."
+msgstr ""
+
+#. ja: オルコ・パチャに向かって、<br>「<sheet ItemMP 43899 0>」を調達してきてください。<br>植物と鉱石、あなたの採りやすい方で大丈夫ですよ。
+#. de: Bringe mir jeweils sechs unserer beliebtesten Verkaufsschlager mit, die in keiner Hausapotheke fehlen dürfen. Entweder Maca oder Basaltsteine, ich überlasse dir die Wahl. Du findest beides in Urqopacha!
+#. fr: Ramenez-moi six produits pharmaceutiques essentiels, ça devrait suffire. Peu importe que ce soit des plantes ou des pierres, je vous laisse voir ce qui vous convient le mieux. Je ne bouge pas d'ici, alors à tout à l'heure<nbsp>!
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_020:1"
+msgid "You can find the staples I require in Urqopacha. Either the maca or springstone will suffice─bring me whichever one is easier for you to acquire."
+msgstr ""
+
+#. ja: 確かに頂戴しました、ありがとうございます。<br>状態も申し分なしですね……<br>さっそく棚に並べちゃうとしましょうか。
+#. de: Das ist genau das, was ich brauche, vielen Dank! Die Produkte können direkt so in die Auslage wandern. Unsere Kunden werden sich freuen!
+#. fr: Merci beaucoup<nbsp>! Rien à redire, vous avez bien choisi. Ces produits peuvent directement aller sur mon étal, ils y seront à leur place la plus appropriée<nbsp>!
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_030:1"
+msgid "That was quicker than I expected. Let's see... Yes, yes, this delivery will do nicely. It's always comforting to see my shelves stocked."
+msgstr ""
+
+#. ja: おやまあ……。<br>確かに指定した品ですが、これほど上等なものとなると、<br>「定番」呼ばわりは後が怖いですね……。
+#. de: Oh, das sind ja wahre Prachtexemplare! Diese ausgezeichnete Qualität müssen wir auf jeden Fall besonders bewerben<nbsp>... Ich bin mir sicher, dass unsere Kunden dafür gerne mehr Geld hinlegen!
+#. fr: Oh mais dites-moi... Je vous ai demandé des produits “essentiels”, mais je ne m'attendais pas à recevoir le nec plus ultra des échan<shy>til<shy>lons<nbsp>! Mieux vaut les affubler d'un nouveau nom un peu original, sans oublier de réajuster le prix...
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_031:1"
+msgid "That was quicker than I expected. Let's see... Oh my, this delivery is better than I could've imagined. Almost too good, in fact─my customers might come to take such quality for granted, heh."
+msgstr ""
+
+#. ja: ありがとうございます。<br>さっそく棚に並べちゃうとしましょう。
+#. de: Auf alle Fälle vielen Dank, du hast meine Erwartungen übertroffen!
+#. fr: Un grand merci à vous, en tout cas. Ces produits peuvent directement aller sur mon étal, ils y seront à leur place la plus appropriée<nbsp>!
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_032:1"
+msgid "Thank you for your hard work. It's always comforting to see my shelves stocked."
+msgstr ""
+
+#. ja: 依頼品を納品したことで、<br>シューニェはあなたの貢献を実感しはじめました。
+#. de: Shunye registriert mit Freude deinen Beitrag zum Erfolg seiner Apotheke.
+#. fr: Shunye est satisfait de votre première livraison et apprécie vos efforts en faveur de sa pharmacie.
+#. speaker: SYSTEM
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SYSTEM_000_040:1"
+msgid "In making your first successful delivery, you have begun to earn Shunye's trust."
+msgstr ""
+
+#. ja: 今後も積極的に依頼品の納品を行い、<br>貢献度を蓄積させていきましょう！
+#. de: Bringe Shunye weitere Gegenstände, um deinen Beitrag stetig zu erhöhen!
+#. fr: Continuez à lui livrer des objets pour augmenter votre niveau de con<shy>tri<shy>bu<shy>tion et découvrir la suite de l'histoire<nbsp>!
+#. speaker: SYSTEM
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SYSTEM_000_041:1"
+msgid "Deliver the items Shunye needs, and deliver them often to improve the prospects of Shunye's Apothecary!"
+msgstr ""
+
+#. ja: おかげさまで商品が補充できました。<br>試す必要もないくらいの、完璧な仕事ぶりでしたねぇ。
+#. de: Sieht die Auslage nicht schon viel ansprechender aus? Das ist deinem beherzten Einsatz zu verdanken. Ich muss wohl kaum erwähnen, dass du die Prüfung mit Bravour bestanden hast!
+#. fr: Voilà, chaque produit est à sa place. Ils sont tous d'une qualité telle que j'ai presque honte d'avoir ne serait-ce qu'un tantinet douté de vous... Bref, inutile de préciser que vous avez brillamment réussi cette épreuve de test.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_050:1"
+msgid "I must say, there's no greater reassurance than knowing I have wares to sell. Even though this was but a trial run, you conducted yourself flawlessly."
+msgstr ""
+
+#. ja: いつの間にやら雑多な店になりましたが……<br>ああいった健康維持のための商品は、普遍的な需要があります。
+#. de: Als ich damals die Apotheke eröffnet habe, hätte ich nie gedacht, dass ich einmal eine so große Auswahl an Waren verkaufen würde. Manchmal denke ich, dass ich zu viel anbiete<nbsp>... Die Apotheke ähnelt fast schon einem Gemischtwarenladen. Aber das Wichtigste ist, dass alle unsere Waren der Gesundheit zuträglich sind. Das ist es schließlich, was die Kunden sich wünschen!
+#. fr: En observant mon étal, je me suis fait la réflexion que cette pharmacie avait de plus en plus l'allure d'une brocante. Mais quelle que soit leur nature, l'essentiel est que mes produits maintiennent ceux qui les consomment en bonne santé.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_051:1"
+msgid "Truth be told, when I first began this endeavor, I didn't imagine I would sell such a wide array of goods. But health is a goal we all share, and there are any number of ways to pursue it."
+msgstr ""
+
+#. ja: マカはオルコ・パチャ一帯に自生する植物で、<br>厳しい環境下で栄養を蓄えながら育つ……<br>それで、古くから滋養強壮に用いられてきました。
+#. de: Maca ist ein sehr gutes Beispiel dafür. Wo du auch suchst, du wirst nirgends eine so nährstoffreiche Pflanze finden, die selbst in einem trockenen Boden und unter derart rauen klimatischen Bedingungen wie in Urqopacha gedeihen kann.
+#. fr: Tenez, prenons la maca pour exemple. Vous aurez beau chercher, vous ne trouverez pas une plante plus riche en nutriments et capable de pousser même dans les sols les plus arides.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_052:1"
+msgid "Take maca, for instance. It thrives in the harsh climes of Urqopacha, accumulating nutrients from its unique environment. It has been a favorite since time immemorial for its nutritional value and invigorating properties."
+msgstr ""
+
+#. ja: 春暖岩は、火山岩の一種です。<br>研磨したものを温め、懐に入れたり、肌にあてたり……<br>寒くない地方でも、凝りの解消によく使われます。
+#. de: Der Basaltstein ist ein vulkanisches Gestein, das Wärme gut und lange speichern kann. Es wird abgebaut, in eine kompakte Steinform geschliffen und kann anschließend erwärmt und beispielsweise zur Linderung von Schmerzen oder gezerrten Muskeln verwendet werden. Warm und wohltuend wie die Frühlingssonne!
+#. fr: Quant à la “roche printanière”, il s'agit d'une variété locale de roche volcanique. Après avoir été polie et chauffée, elle est d'une efficacité redoutable pour maintenir une partie du corps à température idéale, et même pour apaiser certaines douleurs musculaires.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_053:1"
+msgid "Springstone, on the other hand, is a type of volcanic rock. It retains heat rather well, so after a bit of polishing and warming, you can place it in your pocket or directly on the skin. Even in hotter regions, it's used to relieve stiff muscles and troublesome aches."
+msgstr ""
+
+#. ja: 今回は働きに来てくださったわけですが……<br>お困りのことがあれば、お客様としても来てくださいね？
+#. de: Ich weiß, dass du eigentlich auf der Suche nach einer bezahlten Beschäftigung zu mir gekommen bist. Und ich bin sehr dankbar für deine Hilfe, aber falls du einmal selbst unter Beschwerden leiden solltest, bist du mir natürlich auch als <if $gn4>Kundin<else>Kunde</if> immer willkommen!
+#. fr: Vous vous êtes porté<if $gn4>e</if> volontaire pour m'aider à la boutique et j'en suis très heureux, mais n'oubliez surtout pas que vous serez aussi toujours <if $gn4>la bienvenue<else>le bienvenu</if> en tant que client<if $gn4>e</if>.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_054:1"
+msgid "I know you came to me seeking gainful employment, but you must place your own health first and foremost. If anything ever ails you, I would welcome your custom with open arms."
+msgstr ""
+
+#. ja: それにしても、もうひとりの彼……<br>ウヴロは大丈夫でしょうか。
+#. de: Aber wo wir gerade über fleißige Helfer sprechen<nbsp>... Wo steckt eigentlich Uvlo?
+#. fr: À ce propos, vous n'avez pas de nouvelles d'Uvlo, vous non plus<nbsp>?
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_055:1"
+msgid "Speaking of which, you haven't seen Uvlo, have you? I hope he hasn't gotten lost..."
+msgstr ""
+
+#. ja: あの口ぶりだと、トラル大陸に着いて間もなく、<br>この店に来ているはず。<br>勇んで出ていきましたが、土地勘もないのにどうやって……
+#. de: Seine Geschichte lässt vermuten, dass er erst vor kurzem auf Tural angekommen sein muss. Vielleicht war es zu überstürzt, ihn in unbekannte Gebiete zu schicken<nbsp>...? Ich hoffe, er hat sich nicht verlaufen<nbsp>...
+#. fr: Dès qu'il ouvre la bouche, on remarque im<shy>mé<shy>dia<shy>te<shy>ment à sa façon de parler qu'il n'est pas d'ici. J'apprécie son enthousiasme, mais il manque peut-être encore d'expérience pour être envoyé seul en expédition. Je commence à me demander si j'ai bien fait de l'engager...
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_056:1"
+msgid "Judging by his story, he arrived in Tural only shortly before visiting my shop. His confident stride suggested he knew where he was going, but how could he...?"
+msgstr ""
+
+#. ja: 今戻った。<br>店主、採ってきた品を確認してくれ。
+#. de: Hier bin ich wieder und ich habe alles mitgebracht, was du verlangt hast! Ich hoffe, diese Produkte entsprechen deinen Vorstellungen!
+#. fr: Me voilà, Patron<nbsp>! Regardez un peu ce que je vous ai ramené, vous m'en direz des nouvelles<nbsp>!
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_057:1"
+msgid "I am returned. Master Shunye, I hope my deliveries meet with your satisfaction."
+msgstr ""
+
+#. ja: 噂をすれば、ですねぇ。
+#. de: Ah, wir hatten gerade über dich gesprochen! Meine Sorgen waren wohl unbegründet. Na, dann zeig mal her, was du mir mitgebracht hast!
+#. fr: Eh bien, quand on parle du loup... Laissez-moi voir ça.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_058:1"
+msgid "Well, I suppose there was no need to worry."
+msgstr ""
+
+#. ja: ふむ……。<br>どれも良品だ、問題なく売れるでしょう。
+#. de: Oh ja, sehr schön<nbsp>... Alles von einwandfreier Qualität! Unsere Kunden werden deine Mühen mit Sicherheit zu schätzen wissen.
+#. fr: Oh, mais ce sont de remarquables échan<shy>til<shy>lons que vous m'avez procurés, Uvlo<nbsp>! Croyez-en mon expérience, il y a de grandes chances que les premiers clients à poser les yeux dessus les emportent aussitôt chez eux.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_059:1"
+msgid "Hmmm... Yes, these are good. They'll certainly sell."
+msgstr ""
+
+#. ja: あなた、前にもトラル大陸に来たことが？<br>それとも、誰かに案内を依頼したんでしょうか？
+#. de: Aber sag<nbsp>... du bist sicher nicht zum ersten Mal hier auf Tural, oder? So gut, wie du dich hier zurechtgefunden hast. Oder hast du etwa die Dienste eines Begleiters in Anspruch genommen?
+#. fr: Au fait, juste par curiosité... Seriez-vous déjà venu au Tural auparavant<nbsp>? Auriez-vous peut-être même été invité par un ami qui vous aurait servi de guide, par hasard<nbsp>?
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_060:1"
+msgid "Forgive my imposition, but have you been to Tural before? Or did you hire someone to guide you?"
+msgstr ""
+
+#. ja: いや……。<br>こっちに来たのは初めてだし、案内なんて頼む金はない。
+#. de: Doch, ich bin zum ersten Mal hier. Und nein, für die Dienste eines Begleiters habe ich leider kein Geld<nbsp>...
+#. fr: Rien de tout ça, Patron. C'est la première fois que je mets les pieds dans cette contrée. Quant au guide, ce serait pas de refus, mais comme je vous le disais plus tôt, il faudrait qu'il accepte de m'accompagner gratuitement car mes poches sont dé<shy>ses<shy>pé<shy>ré<shy>ment vides.
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_061:1"
+msgid "Neither. This is my first time in Tural, and I have no money for a guide."
+msgstr ""
+
+#. ja: だが、街には大勢の人がいる……<br>片っ端から聞いていけば、大抵はどうにかなるぞ。<br>最後は気合と根性だ。
+#. de: Aber zum Glück leben in dieser Stadt sehr viele nette und hilfsbereite Leute! So konnte ich mich Schritt für Schritt durchfragen. Man braucht nur etwas Geduld und muss für alles Weitere auf sein Bauchgefühl vertrauen!
+#. fr: Pour compenser, j'ai simplement interrogé quelques passants dans cette ville bourrée de monde, et une fois les in<shy>for<shy>ma<shy>tions es<shy>sen<shy>tielles obtenues, je me suis fié à mon instinct.
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_062:1"
+msgid "Yet this city is home to a great many people. If you ask around for information, you can piece together any puzzle in time. That is, of course, if you have the patience to do so."
+msgstr ""
+
+#. ja: それで、俺はこの店で雇ってもらえるのか……！？
+#. de: Ich hoffe, du bist zufrieden mit meiner Arbeit<nbsp>...?
+#. fr: J'espère que le résultat vous satisfait suf<shy>fi<shy>sam<shy>ment pour m'engager définitivement dans votre boutique, Patron<nbsp>!
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_063:1"
+msgid "Does this mean you've reached a decision regarding my employment?"
+msgstr ""
+
+#. ja: そうですねぇ。<br>腕は確かなようですし……。
+#. de: Hm<nbsp>... Ja, ich würde sagen, dass du deine Eignung als Sammler bewiesen hast.
+#. fr: Hmm... Tout bien réfléchi, vous me semblez avoir amplement fait vos preuves.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_064:1"
+msgid "Indeed. You did well today..."
+msgstr ""
+
+#. ja: いいでしょう。<br>当面の間、うちの従業員として商品調達をお願いします。
+#. de: Betrachte dich offiziell als eingestellt! Mach dich bereit, es gibt so einiges für dich zu tun!
+#. fr: Considérez-vous donc comme of<shy>fi<shy>ciel<shy>le<shy>ment embauché, mon cher Uvlo<nbsp>! Et ne vous reposez pas trop sur vos lauriers, car votre prochaine tâche pourrait tomber à n'importe quel moment.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_065:1"
+msgid "So, for the time being, I have no objection to continuing our business relationship."
+msgstr ""
+
+#. ja: もちろん、あなたにもお願いしたいのですが……<br>お話を伺うかぎり、常にここにいるのは難しいかと思いまして。
+#. de: Das gilt übrigens auch für dich, <split " " 1><string $gs1></split>! Aber du hast ja schon anklingen lassen, dass du üb<shy>lich<shy>er<shy>wei<shy>se nicht lange an einem Ort bleibst.
+#. fr: Il en va évidemment de même pour vous, <split " " 1><string $gs1></split>. Mon humble pharmacie et moi-même sommes ravis de pouvoir compter sur vos services.
+#. speaker: SHUNYE
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_066:1"
+msgid "And of course, I'd like to continue working with you as well, <split \" \" 1><string $gs1></split>. However, I understand you aren't the type to stay in one place overlong."
+msgstr ""
+
+#. ja: 都合がついたときに顔を出してもらう、という形でどうですか？<br>状況に応じて仕事を頼んで、報酬は都度お支払いします。
+#. de: Ich dachte, in deinem Fall könnten wir uns vielleicht auf ein lockeres Modell einigen: Komm vorbei, wann immer du Zeit für ein paar Aufgaben hast, und ich werde dich entsprechend entlohnen. Wärst du damit einverstanden?
+#. fr: Je n'ai aucune nouvelle requête à vous transmettre dans l'immédiat, mais je suis certain qu'elles ne tarderont pas à se présenter sur ma table de travail. N'hésitez pas à revenir me voir ré<shy>gu<shy>liè<shy>re<shy>ment, et attendez-vous à des récompenses dignes de vos efforts.
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_067:1"
+msgid "Let's keep it simple, shall we? Stop by whenever you have time for a few tasks, and I shall recompense you accordingly."
+msgstr ""
+
+#. ja: ありがとうございます。<br>頼りにしていますよ、<split " " 1><string $gs1></split>。
+#. de: Sehr schön. Ich zähle auf deine Hilfe, <split " " 1><string $gs1></split>!
+#. fr: Merci encore. Je compte sur vous, <split " " 1><string $gs1></split>.
+#. speaker: SHUNYE
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_068:1"
+msgid "Then it's settled. Don't be a stranger, <split \" \" 1><string $gs1></split>."
+msgstr ""
+
+#. ja: お前は<split " " 1><string $gs1></split>というのか。<br>ろくに挨拶もせず、悪かったな。
+#. de: Ah, dein Name ist also <split " " 1><string $gs1></split>? Bitte entschuldige, ich habe mich gar nicht richtig vorgestellt!
+#. fr: <split " " 1><string $gs1></split>, hein<nbsp>? Désolé, je me suis même pas présenté en bonne et due forme<nbsp>!
+#. speaker: UVLO
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_069:1"
+msgid "<split \" \" 1><string $gs1></split>? Forgive my rudeness for not introducing myself sooner."
+msgstr ""
+
+#. ja: 改めて、クグマの雲、ウヴロだ。<br>見たところ、ヴィエラ族同士……<br>同じ店で働く者としても、よろしく頼む。
+#. de: Mein Name ist Uvlo und ich komme aus Kuguma. Freut mich sehr, dich kennenzulernen! Was für ein Zufall, dass ausgerechnet zwei Viera am selben Tag hier auf dem Markt von Wachumeqimeqi eine Anstellung finden! Auf jeden Fall freue ich mich auf eine gute Zusammenarbeit.
+#. fr: Je m'appelle Uvlo, enchanté<nbsp>! On a beau être des Viéras tous les deux, tu m'as l'air bien plus expérimenté<if $gn4>e</if> que moi, alors je compte sur ta col<shy>la<shy>bo<shy>ra<shy>tion pour faire prospérer la pharmacie<nbsp>!
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_070:1"
+msgid "I am Uvlo, of Kuguma village. I look forward to working with a fellow Viera, and hope to learn much from your experience."
+msgstr ""
+
+#. ja: 改めて、クグマの雲、ウヴロだ。<br>同じ店で働くもの同士、これからよろしく頼む。
+#. de: Mein Name ist Uvlo und ich komme aus Kuguma. Freut mich sehr, dich kennenzulernen! Du scheinst viel Erfahrung mitzubringen. Ich freue mich darauf, von dir zu lernen, und natürlich auf eine gute Zusammenarbeit!
+#. fr: Je m'appelle Uvlo, enchanté<nbsp>! Tu m'as l'air bien plus expérimenté<if $gn4>e</if> que moi, alors je compte sur ta col<shy>la<shy>bo<shy>ra<shy>tion pour faire prospérer la pharmacie<nbsp>!
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_071:1"
+msgid "I am Uvlo, of Kuguma village. I hope to learn much from someone of your experience."
+msgstr ""
+
+#. ja: 店主にも感謝を。<br>シャトナ族について学びながら路銀を稼げるとは、<br>願ったり叶ったりだ。
+#. de: Auch nochmals vielen Dank an dich, Shu... Oh, ich glaube, es wäre angemessen, dich ab jetzt <i>Meister</i> Shunye zu nennen! Jedenfalls könnte ich mir nichts Besseres wünschen, als mehr über das Volk der Shetona zu erfahren und gleichzeitig meine Reisekasse aufzufüllen!
+#. fr: Et merci encore à vous, Patron. Je pourrais pas demander mieux que de travailler pour un Shetona<nbsp>! Ainsi, ça me permettra de gagner ma vie tout en vous écoutant me parler de votre culture, hé hé<nbsp>!
+#. speaker: UVLO
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_UVLO_000_072:1"
+msgid "Just as I hope to learn about the Shetona from you, Master Shunye. May we all prosper under your tutelage!"
+msgstr ""
+
+#. ja: ……まあ、私のような最低の甲斐性なしから、<br>シャトナ族の何を学べるやらですが。
+#. de: Ich werde mich bemühen, deinem Wunsch nachzukommen, aber ich kann nicht garantieren, dass du mit dem, was ich dir über mein Volk erzählen kann, zufrieden sein wirst<nbsp>...
+#. fr: Euh... Je veux bien faire un effort pour tenter de vous satisfaire, mais si c'est un historien spécialiste des Shetona que vous cherchez, vous n'avez vraiment pas frappé à la bonne porte...
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_073:1"
+msgid "Well, I may prove to be a worthless teacher in that regard, but I suppose I can try. As for our mutual prosperity, that depends on us..."
+msgstr ""
+
+#. ja: っと、そろそろ商いに戻りましょう。<br>欠品になっていたものを、どんどん調達して売っていかないと！
+#. de: Nun gut, die Arbeit ruft. Unsere Kunden werden sich freuen, dass die Vorräte dank eurer Hilfe nun endlich nach und nach wieder aufgefüllt werden!
+#. fr: Sur ce, veuillez m'excuser mais j'ai un commerce à faire tourner. Grâce à vous deux, je suis persuadé d'avoir quelques clients aujourd'hui malgré la pénurie apparente<nbsp>!
+#. speaker: SHUNYE
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SHUNYE_000_074:1"
+msgid "That is to say, we need to get selling! My customers will be pleased to see my stocks replenished at last."
+msgstr ""
+
+#. ja: シューニェズ・アポサカリーの貢献ランクが上昇しました！<br>シューニェはあなたのことを、<br>「春の若草のような職人」と感じているようです！
+#. de: Dein Beitragsrang in Shunyes Apotheke ist gestiegen! Shunye ist zufrieden mit deiner guten Arbeit und hält dich jetzt für <if $gn4>eine erblühende Sammlerin<else>einen erblühenden Sammler</if>!
+#. fr: Votre rang de con<shy>tri<shy>bu<shy>tion a changé. Shunye vous considère maintenant comme une jeune pousse printanière<nbsp>!
+#. speaker: SYSTEM
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SYSTEM_000_075:1"
+msgid "Shunye is pleased with your efforts. He now considers you a <ui-color 500><ui-edge-color 501>Greenhorn Gatherer</ui-edge-color></ui-color>!"
+msgstr ""
+
+#. ja: また、次のクエストは「園芸師／採掘師」の、<br>いずれかがレベル93以上になると、<br>ワチュメキメキ万貨街の「シューニェ」から受注可能です。
+#. de: Sobald du als <if $gn4>Gärtnerin<else>Gärtner</if> oder <if $gn4>Mi<shy>nen<shy>ar<shy>bei<shy>te<shy>rin<else>Minenarbeiter</if> Stufe 93 erreicht hast, kannst du von Shunye einen neuen Auftrag erhalten.
+#. fr: Shunye propose la prochaine quête aux mineurs ou aux botanistes de niveau 93.
+#. speaker: SYSTEM
+msgctxt "quest/049/KinGla402_04990:TEXT_KINGLA402_04990_SYSTEM_000_080:1"
+msgid "The next request will be available from Shunye upon reaching level 93 as a botanist or miner."
+msgstr ""

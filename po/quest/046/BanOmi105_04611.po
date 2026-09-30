@@ -1,0 +1,166 @@
+# quest/046/BanOmi105_04611 — « Grounds for Improvement» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、コーヒーの改良を検討しているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 plant eine Geschmacksaufwertung des Kaffees im Wiegenstern.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 aimerait proposer de meilleurs cafés.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_SEQ_00:1"
+msgid "Stigma-4 is seeking an upgrade to the Last Dregs.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 納品受付型オミクロンに依頼された品を納品
+#. de: Dem Warenempfangs-Omikron die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à l'Omicron magasinier
+#. kind: journal
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_SEQ_01:1"
+msgid "Deliver the requested materials to the food processing unit."
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの農業区画で<sheet Item $n5 0>を砕岩<else>納品受付型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの農業区画で<sheet Item $n5 0>を草刈<else>納品受付型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの農業区画で<sheet Item $n5 0>を釣る<else>納品受付型オミクロンに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Agrarsektor Elysiums <sheet Item $n5 9> abbauen<else><capitalize><sheet Item $n5 9></capitalize> beim Warenempfangs-Omikron abliefern</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Agrarsektor Elysiums <sheet Item $n5 9> einsammeln<else><capitalize><sheet Item $n5 9></capitalize> beim Warenempfangs-Omikron abliefern</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Agrarsektor Elysiums <noun-de Item 1 $n5 1 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> beim Warenempfangs-Omikron abliefern</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à l'Omicron magasinier</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à l'Omicron magasinier</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1><else>Livrer <noun-fr Item 2 $n5 1 1> à l'Omicron magasinier</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if><e… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if>… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 1 1> to the food processing unit.</if><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 1 1> to the food processing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian fields.<else>Deliver <noun-en Item 2 $n5 1 1> to the food processing unit.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: 毛むくじゃらカフェマスターによると、<br>カフェのメニューにはコーヒーが不可欠……。<br>さらに、店ならではの独自性を出す必要ありとのこと。
+#. de: Der übermäßig behaarte Gastwirt hat heute zum 1322. Mal erwähnt, dass auf der Speisekarte des Wiegensterns vor allem eines fehle: guter Kaffee.
+#. fr: Selon la petite boule de poils, les cafés sont des boissons in<shy>dis<shy>pen<shy>sa<shy>bles au menu... d'un café. Il souhaiterait également se démarquer de la concurrence.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_000:1"
+msgid "According to verbal testimony of the malodorous manager, “delicious” and “unique” coffee is a vital component of any café. Although objective analysis of such inherently subjective categories proves difficult, current stores of coffee have been classified as insufficient."
+msgstr ""
+
+#. ja: よって、現状のコーヒーに対し、<br>アップグレードを実行するものである。<br>同盟者よ、この計画に必要な素材を調達されたし。
+#. de: Stigma-4 bittet <split " " 1><string $gs1></split> daher um Hilfe bei Beschaffung einer Zutat, die den Geschmack des Kaffees aufwerten soll.
+#. fr: Ainsi, nous désirons améliorer les breuvages ac<shy>tu<shy>el<shy>le<shy>ment proposés. Merci de bien vouloir livrer l'ingrédient demandé.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_001:1"
+msgid "Upgrading establishment coffee is predicted to result in clear strategic benefits. Your task is to procure necessary ingredients to achieve this goal."
+msgstr ""
+
+#. ja: エリュシオンの農業区画で「<sheet Item 38284 0>」を採集。<br>ラストレムナントの「納品受付型オミクロン」に納品を求む。
+#. de: Missionsziel wird definiert<nbsp>... \<biep> ... \<zzzt> ... Steinsalz akquirieren und an den Warenempfangs-Omikron aushändigen. Dringlichkeitsstufe der Mission >> Hoch!
+#. fr: Veuillez remettre trois morceaux de sel gemme aromatisant à l'Omicron magasinier des Dernières Réminiscences.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_002:1"
+msgid "Mine rock salt from the Elysian fields. When your task is complete, deliver the materials to the food processing unit in the Last Dregs."
+msgstr ""
+
+#. ja: エリュシオンの農業区画で「<sheet Item 38308 0>」を採集。<br>ラストレムナントの「納品受付型オミクロン」に納品を求む。
+#. de: Missionsziel wird definiert<nbsp>... \<biep> ... \<zzzt> ... Blütennektar akquirieren und an den Warenempfangs-Omikron aushändigen. Dringlichkeitsstufe der Mission >> Hoch!
+#. fr: Veuillez remettre trois pots de nectar aromatisant à l'Omicron magasinier des Dernières Réminiscences.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_003:1"
+msgid "Gather nectar from the Elysian fields. When your task is complete, deliver the materials to the food processing unit in the Last Dregs."
+msgstr ""
+
+#. ja: エリュシオンの農業区画で「<sheet Item 38332 0>」を採集。<br>ラストレムナントの「納品受付型オミクロン」に納品を求む。<br>採集に際しては<sheet Item 36588 0>の使用を推奨する。
+#. de: Missionsziel wird definiert<nbsp>... \<biep> ... \<zzzt> ... Juwelenalge akquirieren und an den Warenempfangs-Omikron aushändigen. Stigma-4-Datenbanken über aquatische Lebensformen empfehlen die Verwendung von gelbem Lachslaich als Köder. Dringlichkeitsstufe der Mission >> Hoch!
+#. fr: Veuillez remettre une sargasse tamamo aromatisante à l'Omicron magasinier des Dernières Réminiscences. Bip... Appât recommandé<nbsp>: rogue de saumon dorée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_004:1"
+msgid "Procure seaweed from the Elysian fields. When your task is complete, deliver the materials to the food processing unit in the Last Dregs. Gold salmon roe is recommended as bait for quickest completion of task."
+msgstr ""
+
+#. ja: 同盟者<split " " 1><string $gs1></split>と確認……<br>コーヒーのアップグレードの件、ですね？<br>ガガガ……依頼品を確認できず……出直してください。
+#. de: \<biep> ... \<ratter> ... Organische Lebensform identifiziert als <split " " 1><string $gs1></split>. Habseligkeiten werden durchleuchtet<nbsp>... In Auftrag gegebenes Objekt befindet sich nicht darunter. Bitte um sofortige Beschaffung.
+#. fr: Bip... Arrivée de l'entité alliée confirmée. Ingrédient demandé non trouvé. Merci de revenir lorsqu'il sera en votre possession.
+#. speaker: DELIVERER04611
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_DELIVERER04611_000_010:1"
+msgid "\\<whirr> Allied life-form <split \" \" 1><string $gs1></split> detected. This is in regards to the coffee upgrade, yes? Scanning for requested materials... Requested materials could not be detected. Please try again."
+msgstr ""
+
+#. ja: 同盟者<split " " 1><string $gs1></split>と確認……<br>コーヒーのアップグレードの件、ですね？<br>ガガガ……依頼品を確認、納品を求めます。
+#. de: \<biep> ... \<ratter> ... Organische Lebensform identifiziert als <split " " 1><string $gs1></split>. Habseligkeiten werden durchleuchtet<nbsp>... In Auftrag gegebenes Objekt befindet sich darunter. Bitte um sofortige Aushändigung.
+#. fr: Bip... Arrivée de l'entité alliée confirmée. Merci de me remettre l'ingrédient demandé.
+#. speaker: DELIVERER04611
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_DELIVERER04611_000_011:1"
+msgid "\\<whirr> Allied life-form <split \" \" 1><string $gs1></split> detected. This is in regards to the coffee upgrade, yes? Scanning for requested materials... Requested materials detected. Please place them carefully in this unit's receptacle."
+msgstr ""
+
+#. ja: 受領完了……ガガ……依頼品との一致を確認……<br>此度の協力に感謝します。<br>「スティグマ・フォー」から報酬を、お受け取りください。
+#. de: \<biep> ... Vergütung kann bei Stigma-4 abgeholt werden. Danke und auf Wieder<shy>sehen!
+#. fr: Vérifications en cours... Bip... Ingrédient bien reçu. Merci pour votre aide. Veuillez retourner auprès de Stigma-4 afin de recevoir votre récompense.
+#. speaker: DELIVERER04611
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_DELIVERER04611_000_012:1"
+msgid "\\<whirr> Receipt of materials confirmed. This unit thanks you for your efforts. Return to Stigma-4 for your recompense."
+msgstr ""
+
+#. ja: 納品受付型オミクロンより、通信報告を受領。<br>同盟者<split " " 1><string $gs1></split>の協力を評価する。
+#. de: Bericht von Warenempfangs-Omikron wird herangezogen. \<biep> ... \<zzzt> ... Missionsziel wurde erfüllt.
+#. fr: L'Omicron magasinier m'a contacté. Je vous félicite pour votre travail.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_020:1"
+msgid "Receptacle unit report received. Your cooperation is appreciated."
+msgstr ""
+
+#. ja: 毛むくじゃらカフェマスターによると、<br>岩塩から精製した塩をコーヒーに添加することで、<br>苦味と酸味が抑えられ、まろやかな風味になるとのこと。
+#. de: Durch die Zugabe von Steinsalz treten Bitterstoffe und Säure weniger stark hervor und der Kaffee schmeckt - Zitat: „himmlisch mild wie Möhrensuppe!“
+#. fr: Selon la petite boule de poils, ajouter une pincée de sel gemme aromatisant au café permettrait d'en réduire l'amertume et d'en adoucir la saveur.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_021:1"
+msgid "According to subjective analysis by bewhiskered manager, rock salt mitigates the natural bitterness of coffee, resulting in a mild flavor that is acceptable to a wide range of palates."
+msgstr ""
+
+#. ja: 毛むくじゃらカフェマスターによると、<br>花蜜から精製した甘味料をコーヒーに添加することで、<br>甘味が加えられ、脳が活性化するとのこと。
+#. de: Durch die Zugabe von Süßstoff, der aus Blütennektar gewonnen wurde, schmeckt der Kaffee - Zitat: „zuckerschockmäßig möhrenstark!“
+#. fr: Selon la petite boule de poils, ajouter du nectar aromatisant au café permettrait de le rendre plus doux et de stimuler les fonctions cognitives.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_022:1"
+msgid "According to subjective analysis by bewhiskered manager, nectar-derived compounds lend revitalizing sweetness to coffee."
+msgstr ""
+
+#. ja: 毛むくじゃらカフェマスターによると、<br>玉藻から精製した塩をコーヒーに添加することで、<br>苦味と酸味が抑えられ、まろやかな風味になるとのこと。
+#. de: Durch die Zugabe von Salz, das aus der Juwelenalge gewonnen wurde, treten Bitterstoffe und Säure weniger stark hervor und der Kaffee schmeckt - Zitat: „himmlisch mild wie Möhrensuppe!“
+#. fr: Selon la petite boule de poils, ajouter une sargasse tamamo aromatisante au café permettrait de le rendre plus doux et de stimuler les fonctions cognitives.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_023:1"
+msgid "According to subjective analysis by bewhiskered manager, salt extracted from dried seaweed mitigates the natural bitterness of coffee, resulting in a mild flavor that is widely acceptable to a range of palates."
+msgstr ""
+
+#. ja: このアップグレードによる、来客者の増加、<br>ひいては、宙域の幸福度の上昇を期待する。<br>今後も継続的な協力を求む。
+#. de: Die getroffenen Maßnahmen werden mit großer Wahr<shy>schein<shy>lich<shy>keit zu einem Anstieg der Kundenzufriedenheit führen, der sich wiederum positiv auf das Dynamis auswirken dürfte. \<biep> ... \<zzzt> ... Stigma-4 initiiert Übergabe von Vergütung und Standard-Abschiedsfloskel<nbsp>... Danke und bis zur nächsten Mission!
+#. fr: Nous pouvons espérer une plus importante affluence des clients grâce à cette amélioration, ainsi qu'une meilleure qualité de vie des civilisations de l'univers. En espérant pouvoir de nouveau compter sur votre col<shy>la<shy>bo<shy>ra<shy>tion.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi105_04611:TEXT_BANOMI105_04611_STIGMA4_000_024:1"
+msgid "Projections indicate that coffee upgrades will result in increased patronage and an overall improvement of morale among café occupants. Whether this upward trajectory shall continue depends on the further assistance of helpful organisms such as yourself."
+msgstr ""

@@ -1,0 +1,147 @@
+# quest/046/BanOmi111_04617 — « I'll Fish It Myself» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、調査のため依頼したいことがあるようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Irgendetwas an Stigma-4s blau pulsierendem Blick sagt dir, dass das Maschinenwesen einen Auftrag für dich hat.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 aurait besoin qu'on lui prête main-forte pour son enquête.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_SEQ_00:1"
+msgid "The Last Dregs is looking to resolve a fishy situation.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 汎用型オミクロンに依頼された品を納品
+#. de: Multifunktions-Omikron die geforderte Ware überbringen
+#. fr: Livrer ce qui vous a été demandé à l'Omicron polyvalent
+#. kind: journal
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_SEQ_01:1"
+msgid "Deliver the requested materials to the all-purpose service unit."
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を砕岩<else>汎用型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を草刈<else>汎用型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を釣る<else>汎用型オミクロンに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 5 $n5 2 4 1> abbauen<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Multifunktions-Omikron abliefern</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 5 $n5 2 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Multifunktions-Omikron abliefern</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 1 $n5 1 4 1> angeln<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> beim Multifunktions-Omikron abliefern</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à l'Omicron polyvalent</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à l'Omicron polyvalent</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1><else>Livrer <noun-fr Item 2 $n5 1 1> à l'Omicron polyvalent</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the all-purpose service unit.</if>… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the all-purpose service unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the all-purpose service unit.</i… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the all-purpose service unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the all-purpose service unit.</if… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the all-purpose service unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the all-purpose service unit.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the all-purpose service unit.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the all-purpose service unit.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: カフェへの魚介類の供給は、不漁や人材不足で常に不安定。<br>そこで、エリュシオンに生じた海洋区画にて、<br>実験的に魚の養殖を開始した。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... Einleitungsfloskeln werden geladen \<bzzz><nbsp>... Hallo, <split " " 1><string $gs1></split>. Zitiere jüngste Kundenrezension des Wiegensterns in der Omikron-Datensphäre vom Benutzer „Gourmet-Primus“: „Wenn ich nochmal ‚Eehs Forhnesh‘ vorgesetzt bekomme, kotze ich Gräten!“. Ende des Zitats. Analysen dieser Aussage weisen auf ein moderates Maß an Unzufriedenheit mit der Speisekarte hin. Die strategische Evaluierung von \<bzzz> Stigma-4 kommt zu dem Schluss, dass eine Erhöhung der Speisevielfalt zu einer höheren Kundenzufriedenheit führen könnte. Daher wurde damit begonnen, weitere Fischsorten zu akquirieren und auf Testbasis in das Tagesmenü zu integrieren.
+#. fr: En raison d'une mauvaise pêche et d'un manque de personnel, les livraisons en produits marins du café sont instables. Nous avons donc lancé un projet expérimental d'aquaculture sur Élysée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_000:1"
+msgid "The café is currently experiencing difficulties regarding fish-based foodstuffs. Methods of acquisition remain suboptimal and capable personnel shortages persist. To this end, staff has initiated a cultivation protocol to secure piscatory supply lines."
+msgstr ""
+
+#. ja: これが成功すれば、新鮮な魚介類の安定供給が実現する。<br>目下のところ、養殖用飼料の試験中。<br>ついては、同盟者にその素材調達を求む。
+#. de: Sollte diese Strategie erfolgreich sein, werden weitere Fischsorten auf regelmäßiger Basis in das Standardmenü integriert. Um die Experimentalphase zu beginnen, wird der richtige Köder benötigt, um unsere Erfolgswahrscheinlichkeit bei der nachhaltigen Akquise von Fischen zu steigern. Die Datenbanken besagen, dass <split " " 1><string $gs1></split> ebenfalls über die notwendigen Fä<shy>hig<shy>kei<shy>ten zur Beschaffung dieser speziellen biologischen Proben verfügt.
+#. fr: S'il réussit, nous aurons des produits frais à disposition. Nous testons ac<shy>tu<shy>el<shy>le<shy>ment divers types de fourrage et aimerions votre aide quant à la livraison des ingrédients.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_001:1"
+msgid "Testing of various feeds for aquaculture are presently underway. Your assistance is required to seek out additional materials."
+msgstr ""
+
+#. ja: エリュシオンの海洋区画で「<sheet Item 38287 0>」を入手。<br>オミクロン・ベースの「汎用型オミクロン」へ納品されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... \<bzzz><nbsp>... <split " " 1><string $gs1></split> soll im Meeressektor Elysiums folgenden Gegenstand akquirieren >> <sheet Item 38287 9>. Anschließend ist die Ware an den diensthabenden Multifunktions-Omikron zu liefern.
+#. fr: Vous pourrez obtenir trois morceaux de mousse à renne d'élevage dans les mers élyséennes. Veuillez les remettre à l'Omicron polyvalent se trouvant à la base des Omicrons.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_002:1"
+msgid "When you are prepared, please provide bryophyte samples from the Elysian seas to the all-purpose service unit."
+msgstr ""
+
+#. ja: エリュシオンの海洋区画で「<sheet Item 38311 0>」を入手。<br>オミクロン・ベースの「汎用型オミクロン」へ納品されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... \<bzzz><nbsp>... <split " " 1><string $gs1></split> soll im Meeressektor Elysiums drei Einheiten folgenden Gegenstands akquirieren >> <sheet Item 38311 9>. Anschließend ist die Ware an den diensthabenden Multifunktions-Omikron zu liefern.
+#. fr: Vous pourrez obtenir trois touffes d'algues d'élevage dans les mers élyséennes. Veuillez les remettre à l'Omicron polyvalent se trouvant à la base des Omicrons.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_003:1"
+msgid "When you are prepared, please provide seaweed samples from the Elysian seas to the all-purpose service unit."
+msgstr ""
+
+#. ja: エリュシオンの海洋区画で「<sheet Item 38335 0>」を入手。<br>オミクロン・ベースの「汎用型オミクロン」へ納品されたし。<br>なお、<sheet Item 36588 0>の使用を推奨。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... \<bzzz><nbsp>... <split " " 1><string $gs1></split> soll im Meeressektor Elysiums folgenden Gegenstand akquirieren >> <sheet Item 38335 9>. Anschließend ist die Ware an den diensthabenden Multifunktions-Omikron zu liefern. Stigma-4-Datenbanken über aquatische Lebensformen empfehlen die Verwendung von <sheet Item 36588 9> als Köder.
+#. fr: Vous pourrez obtenir un petit poisson d'élevage dans les mers élyséennes. Veuillez le remettre à l'Omicron polyvalent se trouvant à la base des Omicrons. Bip... Appât recommandé<nbsp>: rogue de saumon dorée.
+#. speaker: STIGMA4
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_004:1"
+msgid "When you are prepared, please provide stickleback samples from the Elysian seas to the all-purpose service unit. Purchase of gold salmon roe from unit<br>N-0598 is strongly advised."
+msgstr ""
+
+#. ja: スティグマ・フォーより情報は共有されています。<br>ガガガ……依頼品を確認できず……早急な入手を望みます。
+#. de: \<biep><nbsp>... \<ratter><nbsp>... Alle Informationen zu deinem Auftrag bereits von Stigma-4 erhalten. \<biep><nbsp>... Erwarte eine zügige Lieferung der angeforderten Ware zur Erfüllung der Aufgaben.
+#. fr: Stigma-4 m'a informé de la situation. Bip... Pschhh... Livraison demandée introuvable. Merci de vous la procurer le plus rapidement possible.
+#. speaker: OMICRON04617
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_OMICRON04617_000_010:1"
+msgid "Scanning inventory... \\<whirr> No aquaculture feed samples detected. Awaiting delivery of acceptable samples."
+msgstr ""
+
+#. ja: スティグマ・フォーより情報は共有しております。<br>ガガガ……依頼品を確認、提出を望みます。
+#. de: \<biep><nbsp>... \<ratter><nbsp>... Alle Informationen zu deinem Auftrag bereits von Stigma-4 erhalten. \<ratter><nbsp>... Sensoren bestätigen angeforderte Ware in Besitz dieser organischen Einheit. Bitte um zügige Aushändigung. \<biep><nbsp>...
+#. fr: Stigma-4 m'a informé de la situation. Bip... Pschhh... Livraison demandée en possession. Merci de me la remettre.
+#. speaker: OMICRON04617
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_OMICRON04617_000_011:1"
+msgid "Scanning inventory... \\<whirr> Potential aquaculture feed samples detected. Please insert samples to continue."
+msgstr ""
+
+#. ja: ガガ、ガガガ……スキャン完了、品質良好……<br>ピー、ガガガ……スティグマ・フォーへ報告を完了。<br>リサーチA4にて、報酬をお受け取りください。
+#. de: \<ratter><nbsp>...\<ratter><nbsp>... Scan abgeschlossen. \<biep> Ware von guter Qualität. Übermittele Lieferbestätigung der Waren an Stigma-4. \<ratter><nbsp>... Initiiere Abschiedsfloskel >> Vielen Dank für deine freundliche Unterstützung. Zum Erhalt der Belohnung kontaktiere bitte<nbsp>... Stigma-4. \<biep>
+#. fr: Bip, bip... Pschhh... Analyse terminée. Qualité correcte. Biiip, pschhh... Rapport envoyé à Stigma-4. Veuillez retourner auprès de lui pour récupérer votre récompense.
+#. speaker: OMICRON04617
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_OMICRON04617_000_012:1"
+msgid "Scanning samples... Nutritional levels acceptable. Please report to Stigma-4 for compensation."
+msgstr ""
+
+#. ja: 汎用型オミクロンより、通信報告を受領。<br>同盟者の協力を、高く評価する。
+#. de: Stigma-4 registriert Rückkehr von <split " " 1><string $gs1></split>. \<biep> Lieferbestätigung liegt vor. Auftragserfüllung bestätigt. Erfolgsquote liegt bei 99<nbsp>%.
+#. fr: L'Omicron polyvalent m'a envoyé un rapport. Je vous félicite pour votre travail.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_020:1"
+msgid "Report from the all-purpose service unit received. Your contributions are greatly appreciated."
+msgstr ""
+
+#. ja: 養殖が成功すれば、<br>より多くの顧客に魚介料理の提供が可能となり、<br>高確率で、客席がグレビュオフで埋まると予測される。
+#. de: \<biep> Sollte die Strategie aufgehen, werden schon bald weitere Fischgerichte im Wiegenstern angeboten. Mit dem Anstieg der Kundenzufriedenheit ist eine Erhöhung der Sitzauslastung zu erwarten. Außerdem wird eine Verringerung der Arbeitsanfragen durch den übermäßig behaarten Gastwirt erwartet, was sich positiv auf die Zeitressourcen dieser Einheit auswirken dürfte. 
+#. fr: Si l'aquaculture se déroule comme nous le souhaitons, notre clientèle comptera pro<shy>ba<shy>ble<shy>ment une majorité de Grébuloff.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_021:1"
+msgid "Extrapolating outcomes based on success of cultivation protocol... Should the café become reliably and adequately stocked with fish-based foodstuffs, Grebuloffs are predicted to experience the highest growth in satisfaction levels."
+msgstr ""
+
+#. ja: それでは、同盟者が調達した飼料の試験を開始する。<br>報酬を受領し、次の任務に備えられたし。
+#. de: \<biep> ... \<zzzt> ... Übergabe der Vergütung und abschließende Worte werden initiiert<nbsp>... Danke und ruh dich aus, denn deine Hilfe könnte schneller als erwartet wieder benötigt werden<nbsp>...
+#. fr: Nous allons désormais débuter l'expérience avec ce que vous avez livré. Veuillez accepter votre récompense.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi111_04617:TEXT_BANOMI111_04617_STIGMA4_000_022:1"
+msgid "Aquaculture testing will resume shortly. Please stand by and await further instructions."
+msgstr ""

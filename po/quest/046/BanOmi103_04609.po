@@ -1,0 +1,141 @@
+# quest/046/BanOmi103_04609 — « Well Below Standard» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、試料を求めているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 benötigt einige Stoffproben.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 a besoin de quelques échan<shy>til<shy>lons.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_SEQ_00:1"
+msgid "Stigma-4 requires materials for regularly scheduled environmental analysis.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: スティグマ・フォーに依頼された品を納品
+#. de: Stigma-4 die gewünschten Proben bringen
+#. fr: Livrer ce qui vous a été demandé à Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_SEQ_01:1"
+msgid "Deliver the requested items to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>逡巡の泉南方の岩場で<sheet Item $n5 0>を砕岩<else>スティグマ・フォーに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>逡巡の泉南方の草刈場で<sheet Item $n5 0>を草刈<else>スティグマ・フォーに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>逡巡の泉で<sheet Item $n5 0>を釣る<else>スティグマ・フォーに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Südlich des Quells der Reue einige <noun-de Item 5 $n5 2 4 1> entnehmen<else>Stigma-4 die <noun-de Item 5 $n5 2 4 1> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>Südlich des Quells der Reue einige <noun-de Item 5 $n5 2 4 1> entnehmen<else>Stigma-4 die <noun-de Item 5 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Aus dem Quell der Reue <noun-de Item 1 $n5 1 4 1> entnehmen<else>Stigma-4 <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à Stigma-4</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à Stigma-4</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1><else>Livrer <noun-fr Item 2 $n5 1 1> à Stigma-4</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> south of the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 2 1> to Stigma-4.</if><else><i… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> south of the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 2 1> to Stigma-4.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> south of the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 2 1> to Stigma-4.</if><else>… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> south of the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 2 1> to Stigma-4.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> in the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 1 1> to Stigma-4.</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> in the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 1 1> to Stigma-4.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> south of the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 2 1> to Stigma-4.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> south of the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 2 1> to Stigma-4.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> in the wellspring of regret.<else>Deliver <noun-en Item 2 $n5 1 1> to Stigma-4.</if></if></if></if>"
+msgstr ""
+
+#. ja: 現在、カフェ「ラストレムナント」では、<br>毛むくじゃらカフェマスターからの強力な要請に基づき、<br>飲用として「逡巡の泉」から採取した天然水を使用中……。
+#. de: Der übermäßig behaarte Gastwirt des Wiegensterns besteht darauf, seinen Gästen Quellwasser vom Quell der Reue anzubieten.
+#. fr: Suite à une insistante demande de la petite boule de poils, l'eau naturelle de la source des Velléitaires est utilisée aux Dernières Réminiscences.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_001:1"
+msgid "In accordance with protocol introduced by the flea-infested manager, the Last Dregs' water supply is currently sourced directly from the wellspring of regret."
+msgstr ""
+
+#. ja: しかし、有機生命体の肉体は極めて脆弱であり、<br>僅かな水質の変化でも、生存を脅かされる可能性大。<br>よって定期的な環境調査による汚染状況の確認が必須である。
+#. de: Dies birgt jedoch eine große Gefahr: Selbst geringste Verunreinigungen können bei organischen Lebensformen verheerende gesund<shy>heit<shy>liche Schäden zur Folge haben. Regelmäßige Ermittlungen des Kontaminationszustands sind daher unerlässlich.
+#. fr: Le corps des êtres organiques étant par<shy>ti<shy>cu<shy>liè<shy>rement fragile, le moindre changement dans la qualité de l'eau pourrait menacer leur survie. Il est donc nécessaire de procéder à des contrôles réguliers.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_002:1"
+msgid "As organic life-forms have a tendency to succumb to even minor environmental fluctuations, regular analysis and maintenance of the water supply is imperative to prevent widespread demise of café patrons."
+msgstr ""
+
+#. ja: 以上の事由により、同盟者<split " " 1><string $gs1></split>に要請。<br>逡巡の泉南方の岩場にて「<sheet Item 38282 0>」を採取せよ。<br>カフェ運営維持のため、迅速な任務遂行を期待する。
+#. de: \<biep> ... \<zzzt> ... Auftragsprotokoll wird referenziert. Stigma-4 bittet <split " " 1><string $gs1></split>, einige Mineralgesteinsproben von einem Felsen südlich des Quells der Reue zu entnehmen. Aufgrund der hohen Relevanz wird eine prompte Erfüllung der Mission begrüßt<nbsp>... 
+#. fr: Entité alliée <split " " 1><string $gs1></split>, j'ai besoin que vous m'apportiez trois échan<shy>til<shy>lons de minerai de contrôle qualité récupérés sur les roches au sud de la source des Velléitaires. Merci de bien vouloir exécuter cette tâche rapidement, afin de ne pas freiner les activités du café.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_003:1"
+msgid "Appropriate sample for analysis detected. Approximate coordinates: 13, 16, 2. Harmful agents can seep into solid stone, indicating current levels of environmental toxicity. Speedy completion of task objectives is highly recommended."
+msgstr ""
+
+#. ja: 以上の事由により、同盟者<split " " 1><string $gs1></split>に要請。<br>逡巡の泉南方の草刈場にて「<sheet Item 38306 0>」を採取せよ。<br>カフェ運営維持のため、迅速な任務遂行を期待する。
+#. de: \<biep> ... \<zzzt> ... Auftragsprotokoll wird referenziert. Stigma-4 bittet <split " " 1><string $gs1></split>, einige Pflanzenproben von südlich des Quells der Reue zu bringen. Aufgrund der hohen Relevanz wird eine prompte Erfüllung der Mission begrüßt<nbsp>...
+#. fr: Entité alliée <split " " 1><string $gs1></split>, j'ai besoin que vous m'apportiez trois échan<shy>til<shy>lons de plante de contrôle qualité coupés sur la végétation au sud de la source des Velléitaires. Merci de bien vouloir exécuter cette tâche rapidement, afin de ne pas freiner les activités du café.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_004:1"
+msgid "Appropriate sample for analysis detected. Approximate coordinates: 13, 14, 2. Harmful agents often seep into the soil, indicating current levels of environmental toxicity. Speedy completion of task objectives is highly recommended."
+msgstr ""
+
+#. ja: 以上の事由により、同盟者<split " " 1><string $gs1></split>に要請。<br>逡巡の泉にて「<sheet Item 38330 0>」を採取せよ。<br>捕獲時は<sheet Item 36588 0>の使用を推奨。
+#. de: \<biep> ... \<zzzt> ... Auftragsprotokoll wird referenziert. Stigma-4 bittet <split " " 1><string $gs1></split>, ihm eine Fischprobe aus dem Quell der Reue zu bringen. Stigma-4-Datenbanken über aquatische Lebensformen empfehlen die Verwendung von gelbem Lachslaich als Köder. Aufgrund der hohen Relevanz wird eine prompte Erfüllung der Mission begrüßt<nbsp>...
+#. fr: Entité alliée <split " " 1><string $gs1></split>, j'ai besoin que vous m'apportiez un échantillon d'organisme de contrôle qualité de la source des Velléitaires. Bip... Appât recommandé<nbsp>: rogue de saumon dorée. Merci de bien vouloir exécuter cette tâche rapidement, afin de ne pas freiner les activités du café.
+#. speaker: STIGMA4
+#. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_005:1"
+msgid "Appropriate sample for analysis detected. Approximate coordinates: 14, 11, 2. Resident fauna can be analyzed for harmful agents, indicating current levels of toxicity. Gold salmon roe, available for purchase from N<hyphen>0598, is estimated to further expediency of completing task objectives."
+msgstr ""
+
+#. ja: 逡巡の泉南方の岩場にて「<sheet Item 38282 0>」を採取せよ。<br>カフェ運営維持のため、迅速な任務遂行を期待する。
+#. de: Stigma-4 bittet <split " " 1><string $gs1></split> um einige Mineralproben von einem Felsen südlich des Quells der Reue. Dringlichkeitsstufe der Mission >> Hoch! 
+#. fr: J'ai besoin que vous m'apportiez trois échan<shy>til<shy>lons de minerai de contrôle qualité récupérés sur les roches au sud de la source des Velléitaires. Merci de bien vouloir exécuter cette tâche rapidement, afin de ne pas freiner les activités du café.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_006:1"
+msgid "Repeating task objectives: proceed to coordinates 13, 16, 2 and obtain requested sample. Every idle moment exacerbates potential corruption of the Last Dregs' water supply."
+msgstr ""
+
+#. ja: 逡巡の泉南方の草刈場にて「<sheet Item 38306 0>」を採取せよ。<br>カフェ運営維持のため、迅速な任務遂行を期待する。
+#. de: Stigma-4 bittet <split " " 1><string $gs1></split>, einige Pflanzenproben von südlich des Quells der Reue zu bringen. Dringlichkeitsstufe der Mission >> Hoch!
+#. fr: J'ai besoin que vous m'apportiez trois échan<shy>til<shy>lons de plante de contrôle qualité coupés sur la végétation au sud de la source des Velléitaires. Merci de bien vouloir exécuter cette tâche rapidement, afin de ne pas freiner les activités du café.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_007:1"
+msgid "Repeating task objectives: proceed to coordinates 13, 14, 2 and obtain requested sample. Every idle moment exacerbates potential corruption of the Last Dregs' water supply."
+msgstr ""
+
+#. ja: 逡巡の泉にて「<sheet Item 38330 0>」を採取せよ。<br>捕獲時は<sheet Item 36588 0>の使用を推奨……<br>カフェ運営維持のため、迅速な任務遂行を期待する。
+#. de: Stigma-4 bittet <split " " 1><string $gs1></split>, ihm eine Fischprobe aus dem Quell der Reue zu bringen. Dringlichkeitsstufe der Mission >> Hoch!
+#. fr: J'ai besoin que vous m'apportiez un échantillon d'organisme de contrôle qualité de la source des Velléitaires. Bip... Appât recommandé<nbsp>: rogue de saumon dorée. Merci de bien vouloir exécuter cette tâche rapidement, afin de ne pas freiner les activités du café.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_008:1"
+msgid "Repeating task objectives: purchase gold salmon roe from N-0598, proceed to coordinates 14, 11, 2, and obtain requested fish. Every idle moment exacerbates potential corruption of the Last Dregs' water supply."
+msgstr ""
+
+#. ja: 同盟者<split " " 1><string $gs1></split>の帰還を確認。<br>任務の経過報告を要求……。
+#. de: Stigma-4 registriert Rückkehr von <split " " 1><string $gs1></split>. Fordere Missionsbericht<nbsp>...
+#. fr: Bip... Retour de l'entité alliée confirmé. Veuillez me remettre l'ingrédient demandé.
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_009:1"
+msgid "Return of allied courier <split \" \" 1><string $gs1></split> confirmed. Requesting detailed report with deliverables."
+msgstr ""
+
+#. ja: ガガ、ガガガガ……納品された試料を解析……。<br>汎銀河保健衛生機構が定めた安全基準、<br>グレードBに適合すると判断。
+#. de: \<klick> ... \<zzzt> ... Proben werden analysiert und Wasserqualität abgeleitet<nbsp>... Der Reinheitsgrad entspricht gemäß den Standards der pangalaktischen Gesundheitsorganisation der Sicherheitsstufe B. 
+#. fr: Bip, bip... Pschhh... Analyse en cours... Bip... Analyse terminée. Rang<nbsp>: B. Résultat conforme aux normes fixées par l'or<shy>ga<shy>ni<shy>sa<shy>tion intergalactique de la santé.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_010:1"
+msgid "Analyzing delivered materials... In accordance with pan-galactic sanitation standards, the purity level of the water source has received a grade of B."
+msgstr ""
+
+#. ja: しかし、当機が再現する合成アルファトロン水素水であれば、<br>グレードAを超える安全性の確保が可能……。<br>天然水にこだわるカフェマスターは、極めて不合理と判断する。
+#. de: Zum Vergleich: Der Reinheitsgrad des Alphatron-Wasserstoffwassers, das diese Einheit reproduzieren könnte, entspräche einem A-Wert. Aus rationaler Sicht gibt es folglich keinen Grund, auf das Quellwasser zu bestehen. Daraus darf konkludiert werden, dass der übermäßig behaarte Gastwirt vernunftwidrig handelt<nbsp>...
+#. fr: En comparaison, l'eau hydrogénée originaire d'Alphatron que je suis capable de reproduire atteint pourtant le rang A. La décision du gérant d'utiliser uniquement de l'eau naturelle ne repose sur aucun fondement rationnel. 
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_011:1"
+msgid "In contrast, Alphatron water can be instantly synthesized to exceed a grade of A by all accepted standards. The foul-smelling manager's insistence on “natural” water is conclusively illogical."
+msgstr ""
+
+#. ja: ともあれ同盟者の働きを評価すべき事実に変化なし。<br>報酬を受け取り、次なる要請に備えて、<br>水分補給を行いつつ休息せよ。
+#. de: \<klick> ... \<zzzt> ... Stigma-4 initiiert Übergabe von Vergütung und Standard-Abschiedsfloskel<nbsp>... Danke und trink genug Wasser!
+#. fr: Cette conclusion ne change en rien votre in<shy>ves<shy>tis<shy>se<shy>ment dans cette tâche. Veuillez récupérer cette récompense et prenez une pause jusqu'à la prochaine mission, sans oublier de vous hydrater.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi103_04609:TEXT_BANOMI103_04609_STIGMA4_000_012:1"
+msgid "However, so long as its provision does not hinder current work objectives, B-grade water meets minimum safety standards. Receive your recompense for this task and await future instructions, perhaps while imbibing some technically nontoxic liquids."
+msgstr ""

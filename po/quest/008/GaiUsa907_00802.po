@@ -1,0 +1,93 @@
+# quest/008/GaiUsa907_00802 — «Broadening Horizons» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: チョ・モーイ牙兵長は、白狼門の通行許可を出してくれるようだ。
+#. de: Tyoh Moui ist bereit, dir Passage durch die Weißwolf-Pforte zu gewähren. 
+#. fr: La caporale Tyoh Moui est prête à vous donner l'au<shy>to<shy>ri<shy>sa<shy>tion de franchir la porte du Loup blanc.
+#. kind: journal
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_SEQ_00:1"
+msgid "Tyoh Moui would grant you passage through the White Wolf Gate."
+msgstr ""
+
+#. ja: 冒険者の活躍を聞いたチョ・モーイ牙兵長は、白狼門の通行許可を出してくれた。白狼門の「フランシュモンティオ」に「<sheet EventItem 2000791 0>」を渡そう。
+#. de: Aufgrund deiner vorbildlichen Leistungen als Abenteurer<if $gn4>in</if> hat die Bruderschaft der Morgenviper beschlossen, dich die Weißwolf-Pforte passieren zu lassen. Zeige den Passierschein, den Tyoh Moui dir gegeben hat, bei dem Wächter Franchemontiaux an der Pforte vor.
+#. fr: À la lumière des derniers services rendus, la caporale Tyoh Moui a décidé de vous autoriser à franchir la porte du Loup blanc. Allez montrer <noun-fr EventItem 2 2000791 1 1> à Franchemontiaux, le garde de la porte, pour qu'il vous laisse passer.
+#. kind: journal
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_SEQ_01:1"
+msgid "In recognition of your recent exploits, Serpent Corporal Tyoh Moui has opened the White Wolf Gate to you. To seek passage, show your gate pass to the gatekeeper, Franchemontiaux."
+msgstr ""
+
+#. ja: 白狼門を使えるようになった。白狼門を使いたいときは、フランシュモンティオに声をかけよう。
+#. de: Herzlichen Glückwunsch! Es ist dir von nun an offiziell gestattet, die Weißwolf-Pforte zu passieren. Sprich mit Franchemontiaux, wann immer du den Tiefen Wald betreten möchtest.
+#. fr: Vous pouvez désormais franchir librement la porte du Loup blanc. Parlez simplement à Franchemontiaux pour qu'il vous laisse passer.
+#. kind: journal
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_SEQ_02:1"
+msgid "With the presentation of your gate pass, you have been granted free passage through the White Wolf Gate. Any time you wish to pass, you need only speak to Franchemontiaux."
+msgstr ""
+
+#. ja: フランシュモンティオと話す
+#. de: Mit Franchemontiaux sprechen
+#. fr: Parler à Franchemontiaux
+#. kind: objective
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_TODO_00:1"
+msgid "Speak with Franchemontiaux."
+msgstr ""
+
+#. ja: あなたは、冒険者<split " " 2><string $gs1></split>ですね？<br>貴方の活躍は、多方面より聞いております。
+#. de: Du musst <string $gs1> sein! Es ist mir eine Ehre, heute deine Bekanntschaft zu machen. Überall sind die Leute voll des Lobes über dich!
+#. fr: Vous êtes <split " " 1><string $gs1></split><nbsp>? On m'a beaucoup parlé de vous.
+#. speaker: TYOHMOUI
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_TYOHMOUI_000_000:1"
+msgid "<split \" \" 1><string $gs1></split>, is it not? I've been following your exploits with great interest."
+msgstr ""
+
+#. ja: 今後もグリダニアで活躍していただくために、<br>貴方に<ruby>白狼門<rt>はくろうもん</ruby>の通行を認めましょう。
+#. de: Mit deiner Erfahrung und deinem Kampfgeschick sollte die Region hinter der Weißwolf-Pforte nicht länger eine Gefahr für dich darstellen.
+#. fr: Je vais vous donner l'au<shy>to<shy>ri<shy>sa<shy>tion de franchir la porte du Loup blanc pour que vous puissiez continuer à servir Gridania.
+#. speaker: TYOHMOUI
+#. macro: <switch $gn70><case>Limsa Lominsa<case>Gridania<case>Ul'dah</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = global number 70 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $gn70><case>Gridania's own<case>our<case>Gridania's own</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = global number 70 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_TYOHMOUI_000_001:1"
+msgid "You have served <switch $gn70><case>Limsa Lominsa<case>Gridania<case>Ul'dah</switch> well, but I believe your greatest accomplishments are yet to come. It is with such lofty expectations that I would grant you passage beyond <switch $gn70><case>Gridania's own<case>our<case>Gridania's own</switch> White Wolf Gate."
+msgstr ""
+
+#. ja: こちらの「<sheet EventItem 2000791 0>」をお持ちなさい。<br>これを白狼門の「フランシュモンティオ」に渡せば、<br>通行許可が下りるでしょう。
+#. de: Die Bruderschaft der Morgenviper erlaubt sich deshalb, dir diesen Passierschein auszustellen. Zeige ihn der Wache Franchemontiaux an der Pforte, und man wird dir mit sofortiger Wirkung Zutritt zum Tiefen Wald gewähren. Viel Glück da draußen!
+#. fr: Prenez <noun-fr EventItem 6 2000791 1 1> et donnez-<if "<sheet EventItem 2000791 6>">la<else>le</if> à Franchemontiaux, le garde de la porte, et il vous laissera passer.
+#. speaker: TYOHMOUI
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_TYOHMOUI_000_002:1"
+msgid "Take this pass and show it to Franchemontiaux, the gatekeeper. Gird yourself well for the battles to come, and I am sure that news of your deeds will reach me again before long."
+msgstr ""
+
+#. ja: 白狼門の先は危険な魔物が多い。<br>もし、この門を通りたいのであれば、<br><sheet EventItem 2000791 0>を持ってくるがいい。
+#. de: Die Gefilde hinter der Weißwolf-Pforte sind gefahrvoll und un<shy>be<shy>rechen<shy>bar. Nur wer im Besitz einer offiziellen Erlaubnis ist, darf hier passieren.
+#. fr: Seuls ceux qui ont une au<shy>to<shy>ri<shy>sa<shy>tion spéciale peuvent franchir ces portes, car il y a des monstres par<shy>ti<shy>cu<shy>liè<shy>rement féroces au-delà.
+#. speaker: FRANCHEMONTIAUX
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_FRANCHEMONTIAUX_000_020:1"
+msgid "Only those who possess a gate pass may travel through the White Wolf Gate. It is for your own good: the fearsome beasts that lurk beyond would tear an unprepared adventurer limb from limb."
+msgstr ""
+
+#. ja: これは<sheet EventItem 2000791 0>……。<br>双蛇党から通行許可が下りたのだな、よろしい。
+#. de: Aha! Ein Passierschein mit Siegel der Bruderschaft. An seiner Echtheit bestehen keine Zweifel.
+#. fr: Vous avez les papiers<nbsp>? Voyons voir... Oui, tout a l'air en ordre.
+#. speaker: FRANCHEMONTIAUX
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_FRANCHEMONTIAUX_000_021:1"
+msgid "You have papers? Let us see, now... Yes, everything appears to be in order."
+msgstr ""
+
+#. ja: 冒険者<string $gs1>よ。<br>以後、白狼門の先に用がある際は、私に声をかけるがよい。
+#. de: Nun denn, du darfst diese Pforte von nun an passieren. Gib mir Bescheid, und ich werde sie für dich öffnen. Aber lass dir deinen Ruhm nicht zu Kopfe steigen, hörst du? Du wärst nicht <if $gn4>die erste übermütige Abenteurerin, die<else>der erste übermütige Abenteurer, den</if> es dort draußen dahinrafft.
+#. fr: Que les Dieux vous protègent, <if $gn4>aventurière<else>aventurier</if>. Et lorsque vous voudrez passer à l'avenir, venez simplement me parler.
+#. speaker: FRANCHEMONTIAUX
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/008/GaiUsa907_00802:TEXT_GAIUSA907_00802_FRANCHEMONTIAUX_000_022:1"
+msgid "Go in safety, <split \" \" 1><string $gs1></split>. In the future, should you wish to pass, you need only say the word."
+msgstr ""

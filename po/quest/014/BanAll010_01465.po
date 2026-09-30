@@ -1,0 +1,143 @@
+# quest/014/BanAll010_01465 — «Call of the Wild (Twin Adder)» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 双蛇党：統合司令部のスカーレット少牙士は、5種族の信頼を勝ち取った冒険者に、折り入って頼みたいことがあるようだ。
+#. de: Scarlet möchte dir einen Auftrag vermitteln. Gefragt ist deine Hilfe als <if $gn4>Vertraute<else>Vertrauter</if> aller fünf Freundesvölker.
+#. fr: Maintenant que vous avez réussi à gagner la confiance de pas moins de cinq peuples alliés, Scarlet souhaite vous confier une nouvelle tâche.
+#. kind: journal
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SEQ_00:1"
+msgid "Scarlet would commend you for your work among the disparate societies of Eorzea, and entreat your further aid."
+msgstr ""
+
+#. ja: スカーレット少牙士は、冒険者に特別な任務を頼みたいようだ。双蛇党：統合司令部の「ガヴィン少牙士」から詳細を聞こう。
+#. de: Die Bruderschaft der Morgenviper benötigt deine guten Kontakte zu den Freundesvölkern. Melde dich am Abaton bei Schlangenpriester Gavin zum Dienst.
+#. fr: Comme vous vous en doutiez, la sous-lieutenante a une mission pour vous qui concerne les peuples alliés d'hommes-bêtes. Allez parler à Gavin, au quartier général de l'ordre des Deux Vipères, pour en savoir plus.
+#. kind: journal
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SEQ_01:1"
+msgid "Lieutenant Scarlet expresses her gratitude for your accomplishments, which have laid the groundwork upon which enduring peace with the beast tribes of Eorzea may one day be achieved. Valuing your diplomatic skills highly, she would seek your aid with an important task. Inquire with Lieutenant Gavin as to the details."
+msgstr ""
+
+#. ja: ガヴィン少牙士に声をかけた。任務の内容については、改めて説明するという。彼にもう一度声をかけ、任務について聞こう。
+#. de: Schlangenpriester Gavin ist froh, dass du dich zum Dienst gemeldet hast. Sprich ihn noch einmal an, um Genaueres über deine Sondermission zu erfahren.
+#. fr: Vous avez parlé à Gavin. Celui-ci se prépare à vous donner de plus amples in<shy>struc<shy>tions pour la mission à venir. Parlez-lui de nouveau pour la suite des opérations.
+#. kind: journal
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SEQ_02:1"
+msgid "Lieutenant Gavin is heartened by your presence, having heard of your peace-building exploits with the beast tribes. To learn more of the task the Twin Adder would entrust to you, speak with the lieutenant anew."
+msgstr ""
+
+#. ja: ガヴィン少牙士と話す
+#. de: Bei Gavin am Abaton zum Dienst melden
+#. fr: Parler à Gavin
+#. kind: objective
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_TODO_00:1"
+msgid "Speak with Gavin."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>殿。<br><if ($gn53 > 0)><if ($gn53 < 127)>貴官<else>君</if><else>君</if>の活躍に、まずは称賛と謝意を贈らせてほしい。
+#. de: Sei gegrüßt, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>. Du hast deiner Staatlichen Ge<shy>sell<shy>schaft bei ihren Bestrebungen, gute Verbindungen zu den Wilden Stämmen zu unterhalten, unschätzbare Dienste erwiesen.
+#. fr: <capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if></capitalize> <split " " 2><string $gs1></split>, je dois te <if ($gn53 > 0)><if ($gn53 < 127)>remercier<else>féliciter</if><else>féliciter</if> pour tes hauts faits. <if ($gn53 > 0)><if ($gn53 < 127)>Notre compagnie est fière de compter des personnes comme toi dans ses rangs.<else>Nous sommes heureux de pouvoir compter sur la col<shy>la<shy>bo<shy>ra<shy>tion de membres brillants d'autres compagnies.</if><else>Nous sommes heureux de pouvoir compter sur la col<shy>la<shy>bo<shy>ra<shy>tion de membres brillants d'autres compagnies.</if>
+#. speaker: SCARLET
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SCARLET_000_000:1"
+msgid "<if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>. On behalf of the entire Order of the Twin Adder, I extend to you our highest accolades."
+msgstr ""
+
+#. ja: イクサル族のみならず、エオルゼアの主要蛮族である5種族と、<br>信頼関係を築いたと聞き及んでいる。<br>その偉業、まさに感服の至り。
+#. de: Nicht nur mit den hier in Gridania heimischen Sylphen und Ixal hast du dich gut gestellt. Bei allen fünf Wilden Stämmen Eorzeas genießt du ein hohes Ansehen - eine Leistung, auf die du stolz sein kannst.
+#. fr: Car tu as réussi à tisser des liens d'amitié solides non seulement avec les Ixali, mais aussi avec les Amalj'aa, les Sahuagins, les Kobolds et les Sylphes, à ce qu'on m'a rapporté.
+#. speaker: SCARLET
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SCARLET_000_001:1"
+msgid "While lasting peace with the beast tribes will not come easily, your efforts have laid the foundation upon which such a peace may one day be built."
+msgstr ""
+
+#. ja: これも<if ($gn53 > 0)><if ($gn53 < 127)>貴官<else>君</if><else>君</if>の類まれな人徳の賜物。<br>……そんな<if ($gn53 > 0)><if ($gn53 < 127)>貴官<else>君</if><else>君</if>に是非、お願いしたいことがある。
+#. de: Für eine besonders heikle Mission bei den Wilden Stämmen suchen meine Kollegen in Gridania nun einen Spezialisten mit diplomatischem Geschick. Ich wüsste nicht, wer besser dafür geeignet wäre als du.
+#. fr: Les personnes comme toi sont un don du ciel pour <if ($gn53 > 0)><if ($gn53 < 127)>l'ordre des Deux Vipères<else>nous</if><else>nous</if>. Mais assez bavardé... J'ai une tâche à te confier. 
+#. speaker: SCARLET
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SCARLET_000_002:1"
+msgid "It is to you, our most accomplished ambassador, that I would entrust an assignment of the utmost importance."
+msgstr ""
+
+#. ja: 詳しくは、この「双蛇党：統合司令部」の門戸を守衛する、<br>「ガヴィン少牙士」から話を聞いてもらえるだろうか。<br><if ($gn53 > 0)><if ($gn53 < 127)>貴官<else>君</if><else>君</if>に、精霊のご加護のあらんことを！
+#. de: Wenn du dich dieser neuen Heraus<shy>forde<shy>rung stellen möchtest, dann melde dich bei Schlangenpriester Gavin zum Dienst. Du findest ihn gleich hier am Eingang zum Abaton. Viel Erfolg!
+#. fr: Nous avons une nouvelle mission pour toi. Tu recevras tes ordres de Gavin, sous-lieutenant du serpent, qui garde les portes <if ($gn53 > 0)><if ($gn53 < 127)>de notre quartier général<else>du quartier général de l'ordre des Deux Vipères</if><else>du quartier général de l'ordre des Deux Vipères</if>. Que les esprits de la forêt veillent sur toi<nbsp>!
+#. speaker: SCARLET
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SCARLET_000_003:1"
+msgid "Lieutenant Gavin will brief you on the particulars. Godsspeed, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>, and may the elementals watch over you."
+msgstr ""
+
+#. ja: <if ($gn53 > 0)><if ($gn53 < 127)>貴官<else>君</if><else>君</if>なら、必ずやこの任務を完遂できると信じている。<br>詳しくは「ガヴィン少牙士」から話を聞いてほしい。<br>彼なら、すぐそこにいる。
+#. de: Für eine besonders heikle Mission bei den Wilden Stämmen suchen meine Kollegen in Gridania nun einen Spezialisten mit diplomatischem Geschick. Ich wüsste nicht, wer besser dafür geeignet wäre als du. Melde dich am Abaton bei Schlangenpriester Gavin zum Dienst.
+#. fr: Je suis convaincue que tu accompliras cette nouvelle mission avec brio. Tu recevras tes ordres de Gavin, sous-lieutenant du serpent, qui garde les portes <if ($gn53 > 0)><if ($gn53 < 127)>de notre quartier général<else>du quartier général de l'ordre des Deux Vipères</if><else>du quartier général de l'ordre des Deux Vipères</if>. Que les esprits de la forêt veillent sur toi<nbsp>!
+#. speaker: SCARLET
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_SCARLET_000_005:1"
+msgid "Lieutenant Gavin will brief you on the particulars of your mission. Godsspeed, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>, and may the elementals watch over you."
+msgstr ""
+
+#. ja: おお、<split " " 1><string $gs1></split>殿か！？<br>双蛇党は今、貴公の話題で持ちきりなんだ。<br>是非今度、蛮族たちとの数々の冒険譚を聞かせてくれ！
+#. de: Oh, wenn das nicht <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split> ist. Schön, dich zu sehen. Deine Verdienste im Umgang mit den Wilden Stämmen haben sich unter den Offizieren der Bruderschaft herum<shy>ge<shy>sprochen. Zu gerne würde ich mich von dir mit Geschichten über deine Abenteuer bei den Wilden Stämmen unterhalten lassen. Du hast bestimmt haarsträubende Dinge erlebt.
+#. fr: Ah, <split " " 1><string $gs1></split>, c'est vous<nbsp>! On parle de vos hauts faits dans toute notre compagnie<nbsp>! Je dois vous dire que tout le monde est en admiration devant de tels exploits<nbsp>! J'espère que vous aurez l'occasion de me raconter une histoire croustillante sur les mœurs étranges des hommes-bêtes<nbsp>!
+#. speaker: GAVIN
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_GAVIN_000_010:1"
+msgid "<if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>! What I'd not give to hear of your adventures with the Ixal over a flagon of mead!"
+msgstr ""
+
+#. ja: ……オホン、失礼した。<br>スカーレット少牙士からの任務の件だな？<br>その件については、改めて説明させていただこう。
+#. de: Doch dafür ist leider keine Zeit. Es gibt eine wichtige Sache zu besprechen, die dich wieder zu den Wilden Stämmen führen wird. Sprich mich noch einmal an, dann erzähle ich dir in Ruhe, worum es geht.
+#. fr: ... Ahem<nbsp>! Je m'égare. C'est Scarlet qui vous envoie, n'est-ce pas<nbsp>? Je vous exposerai votre mission lorsque vous en aurez fini avec vos préparatifs<nbsp>; revenez me parler à ce moment-là.
+#. speaker: GAVIN
+msgctxt "quest/014/BanAll010_01465:TEXT_BANALL010_01465_GAVIN_000_011:1"
+msgid "...And yet I fear that more pressing matters demand our attention today. When you are ready for your briefing, you need only say the word."
+msgstr ""

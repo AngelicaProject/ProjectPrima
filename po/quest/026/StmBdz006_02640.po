@@ -1,0 +1,284 @@
+# quest/026/StmBdz006_02640 — «Gross Encounters» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: カストルム・オリエンスのスウェスリク大牙将は、実績のある冒険者を探しているようだ。
+#. de: Swethryk Brookstone braucht <if $gn4>eine erfahrene Abenteurerin<else>einen erfahrenen Abenteurer</if>.
+#. fr: Swethryk Brookstone a l'air ravi de vous voir.
+#. kind: journal
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SEQ_00:1"
+msgid "The look on Serpent Marshal Brookstone's face suggests he has received some distressing news."
+msgstr ""
+
+#. ja: 不滅隊の兵卒と話す
+#. de: Mit dem Legionsrekruten sprechen
+#. fr: Parler au soldat des Immortels
+#. kind: objective
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_TODO_00:1"
+msgid "Speak with the flame recruit."
+msgstr ""
+
+#. ja: 双蛇党の兵卒と話す
+#. de: Mit dem Bruderschaftsrekruten sprechen
+#. fr: Parler au soldat des Deux Vipères
+#. kind: objective
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_TODO_01:1"
+msgid "Speak with the serpent recruit."
+msgstr ""
+
+#. ja: <sheet EObj 2008814 0>で見渡す
+#. de: Am Zielort Ausschau halten
+#. fr: Observer les environs à l'endroit indiqué
+#. kind: objective
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_TODO_02:1"
+msgid "Survey the specified location."
+msgstr ""
+
+#. ja: <sheet BNpcName 5867 0>を討伐
+#. de: <capitalize><noun-de BNpcName 2 5867 1 4 1></capitalize> besiegen
+#. fr: Vaincre <noun-fr BNpcName 2 5867 1 1>
+#. kind: objective
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_TODO_03:1"
+msgid "Defeat the greatest morbol."
+msgstr ""
+
+#. ja: スウェスリク大牙将と話す
+#. de: Mit Swethryk Brookstone sprechen
+#. fr: Parler à Swethryk Brookstone
+#. kind: objective
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_TODO_04:1"
+msgid "Speak with Brookstone."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>だな。<br>実績のある冒険者にしか頼めない任務があるのだが、<br>聞いてもらえるか？
+#. de: Ich hätte da eine Aufgabe, die ich nur <if $gn4>einer erfahrenen Kämpferin<else>einem erfahrenen Kämpfer</if> wie dir anvertrauen möchte. Kannst du uns helfen?
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if>, vous tombez bien<nbsp>! J'ai justement une mission que je ne peux confier qu'à quelqu'un de votre carrure.
+#. speaker: SWETHRYKBROOKSTONE
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split>!<else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sh… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_000:1"
+msgid "<if ($gn52 > 0)><split \" \" 1><string $gs1></split>!<else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>!<else><split \" \" 1><string $gs1></split>!</if></if> We are in desperate need of your assistance."
+msgstr ""
+
+#. ja: 先ほど、魔物討伐作戦中の隊から、援軍要請があってな。<br>凶悪な<sheet BNpcName 5867 0>に、苦戦が続いているようだ。
+#. de: Vorhin haben wir den Hilferuf einer Einheit erhalten, die die Umgebung sichern und wilde Tiere vertreiben sollte. Sieht so aus, als könnten sie <noun-de BNpcName 1 5867 1 4 1> einfach nicht unter Kontrolle bringen.
+#. fr: Je viens de recevoir un message de détresse d'une unité partie patrouiller autour du fort. Nos hommes sont tombés sur un morbol par<shy>ti<shy>cu<shy>liè<shy>rement coriace qu'ils ne pourront maîtriser sans renforts.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_001:1"
+msgid "We dispatched a small unit on what we believed to be a simple extermination mission, but I received an urgent distress call just moments ago─they've been set upon by a giant morbol!"
+msgstr ""
+
+#. ja: 弱兵では、事態を悪化させるだけだろう。<br>魔物狩りの経験が豊かな、冒険者たる貴官に任せたい。<br>早急に、援護に向かってもらえないだろうか。
+#. de: Wenn ich noch mehr unerfahrene Leute hinschicke, wird es nur noch mehr Verletzte geben. Bei dir sieht die Sache gleich anders aus. Du hast so viel Kampf<shy>erfahrung wie meine gesamte Truppe zusammen. Kannst du sie da vielleicht rausschlagen? 
+#. fr: Plutôt que d'envoyer d'autres soldats au casse-pipe, je pense qu'il serait bien plus efficace qu'<if $gn4>une aventurière ex<shy>pé<shy>ri<shy>men<shy>tée<else>un aventurier expérimenté</if> comme vous aille régler son compte à la créature.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_002:1"
+msgid "To send anyone else would likely only complicate matters, but you─you have a gift for dealing with such monstrosities. I need you to find them and see to their safety."
+msgstr ""
+
+#. ja: 負傷兵の受け入れや、幻術士の手配はこちらでやる。<br>まずは、最後に連絡のあった南東の橋に向かい、<br>「不滅隊の兵卒」から話を聞いてくれ。
+#. de: Um die Verletzten kümmern wir uns. Die letzte Nachricht erreichte uns von der südöstlichen Brücke. Erkundige dich dort bei dem Legionsrekruten nach der Lage.
+#. fr: Ne vous en faites pas pour les blessés, nos élé<shy>men<shy>ta<shy>lis<shy>tes vont s'occuper d'eux. Rendez-vous plutôt près du pont au sud-est pour trouver le soldat des Immortels qui nous a envoyé le message de détresse.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_003:1"
+msgid "The morbol was spotted to the east of here near Pike Falls, but they're certain to have fled. Nevertheless, I would ask you start your search there."
+msgstr ""
+
+#. ja: 負傷兵の受け入れや、幻術士の手配はこちらでやる。<br>まずは、最後に連絡のあった南東の橋に向かい、<br>「不滅隊の兵卒」から話を聞いてくれ。
+#. de: Ich schicke einige Druiden zur Erstversorgung der Verletzten nach. Lauf zur südöstlichen Brücke und frag den Legionsrekruten, wie die Lage ist.
+#. fr: Pas d'inquiétude pour les blessés, nos élé<shy>men<shy>ta<shy>lis<shy>tes vont s'occuper d'eux. Rendez-vous plutôt près du pont au sud-est pour trouver le soldat des Immortels qui nous a envoyé le message de détresse.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_004:1"
+msgid "See them back safely and our healers will handle the rest."
+msgstr ""
+
+#. ja: アンタ……冒険者か？<br>あの化け物は……俺たちの歯が立つ相手じゃない。<br>それなのに、負傷した俺を助けるために、アイツら……。
+#. de: Puh, du bist im rechten Augenblick gekommen. Gegen diesen Riesen kommen wir einfach nicht an! Und nur, um mich zu retten, sind meine Kameraden<nbsp>...
+#. fr: C'est vous, les renforts<nbsp>? Cette créature est bien trop forte pour nous, on aurait mieux fait de pas lui chercher des noises... Je crois que les autres sont toujours en train de se battre, un peu plus loin.
+#. speaker: SOLDIERA02640
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SOLDIERA02640_000_010:1"
+msgid "An...an adventurer...? Please, you have to help! The morbol, they...they drew it away to save me, but they're no match for such a beast."
+msgstr ""
+
+#. ja: 頼む！<br><sheet BNpcName 5867 0>を追撃している、<br>「双蛇党の兵卒」を追いかけ、手を貸してやってくれ！
+#. de: Nein, es ist bestimmt noch nicht zu spät! Ich bitte dich, Abenteurer<if $gn4>in</if>, hilf ihnen! Such die anderen Rekruten und rette sie vor dem Giganten-Morbol!
+#. fr: Vite, allez donner un coup de main à mon camarade des Deux Vipères avant qu'un drame se produise<nbsp>! Attention, <noun-fr BNpcName 6 5867 1 1> est vraiment redoutable...
+#. speaker: SOLDIERA02640
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SOLDIERA02640_000_011:1"
+msgid "They've gone to the bridge south of here. Go, before it's too late."
+msgstr ""
+
+#. ja: 頼む！<br><sheet BNpcName 5867 0>を追撃している、<br>「双蛇党の兵卒」を追いかけ、手を貸してやってくれ！
+#. de: Es ist bestimmt noch nicht zu spät! Ich bitte dich, Abenteurer<if $gn4>in</if>, hilf den anderen Rekruten und rette sie vor <noun-de BNpcName 2 5867 1 3 1>!
+#. fr: Vite, allez donner un coup de main à mon camarade des Deux Vipères avant qu'un drame se produise<nbsp>! Attention, <noun-fr BNpcName 6 5867 1 1> est vraiment redoutable...
+#. speaker: SOLDIERA02640
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SOLDIERA02640_000_012:1"
+msgid "You needn't concern yourself with me. Go and save the others!"
+msgstr ""
+
+#. ja: ……君は、冒険者か？<br>スウェスリク大牙将が、援軍を送ってくれたんだな。<br>悔しいが、負傷した俺たちじゃ、あの化け物には勝てないだろう。
+#. de: Swethryk hat dich uns zu Hilfe geschickt? Den Göttern sei Dank! Wir kommen nicht gegen diese Bestie an! Fast hätte sie uns ausgelöscht!
+#. fr: Vous êtes l'<if $gn4>aventurière<else>aventurier</if> que le grand maréchal nous a <if $gn4>envoyée<else>envoyé</if><nbsp>? Le morbol s'est fait la malle pour l'instant, mais il faut absolument le rattraper avant qu'il fasse plus de dégâts<nbsp>!
+#. speaker: SOLDIERB02640
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SOLDIERB02640_000_020:1"
+msgid "The serpent marshal sent you? Oh, thank heavens. Any longer and we'd likely be in the morbol's belly. Felling such a fiend is beyond the likes of us, but perhaps you would be willing to carry on in our stead?"
+msgstr ""
+
+#. ja: まずは、このリンクパールを受け取ってくれ。<br>高台の上から見張っている、ドドグン闘軍曹と繋がっている。<br>うまく連携できれば、きっと奴を倒せるはずだ。
+#. de: Nimm diese Kontaktperle. Damit kannst du Dodogun stets erreichen. Er steht oben auf der Anhöhe und hält Ausschau. Gemeinsam könnt ihr das Biest bestimmt bezwingen.
+#. fr: Tenez, prenez cette linkperle pour communiquer avec le sergent Dodogun. Il s'est posté en hauteur pour suivre le cheminement de la créature, donc il pourra vous guider pour la débusquer.
+#. speaker: SOLDIERB02640
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SOLDIERB02640_000_021:1"
+msgid "Another of our comrades, Flame Sergeant Dodogun, has taken to high ground to better survey the area and provide us with information on our targets. Use this linkpearl to speak with him and track down the morbol."
+msgstr ""
+
+#. ja: ……負傷者がいては、足手まといになるだけだ。<br>俺たちは、ここで応急手当を行ってから自力で帰還する。<br>どうか貴方は、魔物の討伐に専念してくれ。
+#. de: Ich sehe zu, dass ich die Verletzten irgendwie ins Lager zurückbringe. Wir werden dir keine Hilfe im Kampf sein. Tut mir leid, dass du das nun über<shy>nehmen musst.
+#. fr: On aimerait bien vous donner un coup de main, mais on s'est fait trop salement amocher... Ne vous en faites pas pour nous, les secours ne devraient plus tarder. Allez plutôt donner une bonne leçon à ce sale morbol<nbsp>!
+#. speaker: SOLDIERB02640
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SOLDIERB02640_000_022:1"
+msgid "I will see the others back to Castrum Oriens. We're counting on you─that beast cannot be suffered to remain in these lands."
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)あれ？　キミみたいな人、隊にいたっけ？<br>あ、冒険者部隊の人か……うん、見えてるよ。<br>視力には、自信があるんだ。
+#. de: (-Dodoguns Stimme-)Hm? <if $gn4>Eine neue Rekrutin<else>Ein neuer Rekrut</if>, oder was ist mit deiner Stimme?<nbsp>... Ach, jetzt sehe ich dich. <if $gn4>Eine Abenteurerin<else>Ein Abenteurer</if>, sehr gut.
+#. fr: (-Voix de Dodogun-)Merci pour ton aide, <if $gn4>aventurière<else>aventurier</if>. Mal<shy>heu<shy>reu<shy>se<shy>ment, tu as manqué le morbol de peu<nbsp>! Mais ne t'en fais pas, il ne pourra pas nous échapper bien longtemps.
+#. speaker: DODOGUN
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_030:1"
+msgid "(-Dodogun-)Hello? Who is this?<br>...The silent type, eh? Well, follow my instructions, and we'll see that overgrown weed is exterminated once and for all."
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)それじゃ、魔物退治といこうか。<br>あいつがいそうな場所の、検討はついてる。<br>何カ所か候補を教えるから、そこで「見渡して」もらえるかな。
+#. de: (-Dodoguns Stimme-)Dann lass uns mal an die Arbeit gehen. Ich gebe dir die Koordinaten von einigen Stellen, an denen wir den Morbol gesichtet haben. Halte dort nach ihm Ausschau.
+#. fr: (-Voix de Dodogun-)De là où je suis, j'ai une bonne vue sur la cible. Je vais te dire par où elle est passée, alors écoute bien mes in<shy>struc<shy>tions pour nous en débarrasser au plus vite<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_031:1"
+msgid "(-Dodogun-)It seems to be heading for the Striped Hills. It's fast, but I think I can keep an eye on it until you get there."
+msgstr ""
+
+#. ja: ……負傷者がいては、足手まといになるだけだ。<br>俺たちは、ここで応急手当を行ってから自力で帰還する。<br>どうか貴方は、魔物の討伐に専念してくれ。
+#. de: Mach dir keine Sorgen, wir schaffen es schon irgendwie zurück ins Lager. Konzentrier dich auf den Morbol!
+#. fr: On aimerait bien vous donner un coup de main, mais on s'est fait trop salement amocher... Ne vous en faites pas pour nous, les secours ne devraient plus tarder. Allez plutôt donner une bonne leçon à ce sale morbol<nbsp>!
+#. speaker: SOLDIERB02640
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SOLDIERB02640_100_032:1"
+msgid "We're well enough to make it back to Castrum Oriens on our own. You must see to the morbol before anyone else comes to harm."
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)目標は、目の前にいるよ。<br>追跡の仕方は我流？<br>こんなに早くたどり着くなんて、なかなかやるね。
+#. de: (-Dodoguns Stimme-)Das Zielobjekt ist genau vor dir. Wie hast du das Biest so schnell aufgespürt? Du bist ja <if $gn4>eine fabelhafte Fährtenleserin<else>ein fabelhafter Fährtenleser</if>!
+#. fr: (-Voix de Dodogun-)Eh bien, ça a été plus rapide que je le pensais<nbsp>! Je pense que tu as un bon visuel sur la cible, maintenant.
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_032:1"
+msgid "(-Dodogun-)The morbol should be right ahead. If I didn't know better I would swear you've tracked animals before."
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)とにかく、僕の仕事はこれで終わった。<br>「<sheet BNpcName 5867 0>」を倒すのは、君に任せるよ。<br>終わったら、「スウェスリク大牙将」への報告をよろしく。
+#. de: (-Dodoguns Stimme-)Jetzt liegt es an dir. Wenn du <noun-de BNpcName 2 5867 1 4 1> nicht beseitigen kannst, kann es keiner von meinen Leuten.
+#. fr: (-Voix de Dodogun-)Mon travail s'arrête là. À toi de jouer, <if $gn4>aventurière<else>aventurier</if>, fais payer à cette horreur ce qu'elle a fait à mes hommes<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_033:1"
+msgid "(-Dodogun-)At any rate, there's nothing else I can do from here. It's up to you now to put an end to things. Good luck."
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)さっきまでそこにいたはずなんだけど、移動しちゃったかな。
+#. de: (-Dodoguns Stimme-)Nichts? Gerade vorhin habe ich ihn dort noch gesehen. Probier es am nächsten Ort!
+#. fr: (-Voix de Dodogun-)Tu es exactement là où la cible se trouvait il y a quelques minutes.
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_034:1"
+msgid "(-Dodogun-)Do you see anything? It was there just a moment ago."
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)待って、そこから「東」にいる！
+#. de: (-Dodoguns Stimme-)Warte! Ich seh ihn! Er ist östlich von dir!
+#. fr: (-Voix de Dodogun-)Elle est partie vers l'est, dépêche-toi<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_035:1"
+msgid "(-Dodogun-)Wait! It's over there, to the east!"
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)待って、そこから「北」にいる！
+#. de: (-Dodoguns Stimme-)Moment! Da ist er wieder! Lauf nach Norden, schnell!
+#. fr: (-Voix de Dodogun-)Je la vois, au nord de ta position<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_036:1"
+msgid "(-Dodogun-)Wait! It's over there, to the north!"
+msgstr ""
+
+#. ja: 「<sheet BNpcName 5867 0>」は、ここにはいないよ。<br>さあ、早く僕が指示した場所に向かうんだ。
+#. de: <capitalize><noun-de BNpcName 2 5867 1 1 1></capitalize> ist doch nicht hier bei mir, das hätte ich wohl gesehen! Los, sieh an den Orten nach, die ich dir gesagt habe!
+#. fr: Tu n'es pas du tout au bon endroit. Suis mes in<shy>struc<shy>tions, ou la cible va finir par nous échapper<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_037:1"
+msgid "Oh! So you were on the other end of the linkpearl. Well, you won't slay any morbols standing around up here with me. Get down there and find it!"
+msgstr ""
+
+#. ja: 無事、<sheet BNpcName 5867 0>を倒せたみたいだね。<br>それじゃ、「スウェスリク大牙将」への報告も頼むよ。
+#. de: Du hast <noun-de BNpcName 2 5867 1 4 1> unschädlich gemacht? Respekt. Melde dich gleich bei Swethryk zurück.
+#. fr: Bravo, j'ai adoré comme tu lui as fait ravaler ses tentacules<nbsp>! Mission accomplie, tu peux rentrer à Castrum Oriens pour prévenir le grand maréchal Swethryk.
+#. speaker: DODOGUN
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_DODOGUN_000_038:1"
+msgid "You didn't need to come up here and tell me what happened. I saw the whole thing. Serpent Marshal Brookstone, on the other hand, likely hasn't heard the news yet."
+msgstr ""
+
+#. ja: 敵が襲いかかってきた！！
+#. de: Du wirst angegriffen!
+#. fr: Vous êtes <if $gn4>attaquée<else>attaqué</if><nbsp>!
+#. speaker: POP_MESSAGE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_POP_MESSAGE_000_039:1"
+msgid "You are under attack!"
+msgstr ""
+
+#. ja: よくやってくれた。<br>ドドグン闘軍曹から、すでに報告は受けている。<br>君のおかげで戦死者はなく、負傷兵もすべて帰還した。
+#. de: Gut gemacht! Dodogun hat mir kurz über die Kontaktperle Entwarnung gegeben. Dank dir haben es alle Rekruten zurück ins Lager geschafft. Wir haben niemanden verloren.
+#. fr: Merci, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if>. Grâce à vous, nous n'avons aucune perte à déplorer et les blessés sont en sécurité.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_040:1"
+msgid "Excellent work. Thanks to you, we were able to keep casualties to a minimum."
+msgstr ""
+
+#. ja: 噂に違わぬ腕前だったそうだな。<br>追跡の達人であるドドグン闘軍曹も、<br>彼にしては珍しく、手放しで褒め称えていたぞ。
+#. de: Dodogun hat sich anerkennend über deine Leistung geäußert. Das will etwas heißen. Sonst kommt kein lobendes Wort über seine Lippen! 
+#. fr: Je savais que faire appel à vous était le bon choix. Évidemment, votre réputation vous précède, mais même un éternel sceptique comme le sergent Dodogun était im<shy>pres<shy>sion<shy>né par votre efficacité.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_041:1"
+msgid "As Flame Sergeant Dodogun tells it, you are every bit the adventurer they say. It's not often anyone can elicit praise from him."
+msgstr ""
+
+#. ja: 次に会ったら一杯奢らせてくれ、とも言っていた。<br>東岸の高台での監視任務に就いているゆえ、<br>なかなか会う機会も少ないとは思うがな。
+#. de: Er will dir sogar einen ausgeben, wenn du das nächste Mal in der Gegend bist! Na ja, auf seinem abgelegenen Posten werdet ihr euch wohl kaum zufällig über den Weg laufen, aber du kannst dich geehrt fühlen.
+#. fr: Il m'a même dit qu'il aimerait vous payer un coup à boire, un de ces jours<nbsp>! Mais pour ça, il faudrait d'abord qu'il descende de son poste d'observation, et croyez-moi, ce n'est pas gagné<nbsp>!
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_042:1"
+msgid "In fact, he's offered to buy you a drink when he next returns to Castrum Oriens."
+msgstr ""
+
+#. ja: 私からも、あらためて礼を言わせてくれ。<br>君のような冒険者を同盟軍に迎えられて、我々は幸運だった。<br>感謝する、そして今後とも、よろしく頼むぞ！
+#. de: Lass mich aber noch mal meinen herzlichen Dank aussprechen. Leute wie du sind eine Bereicherung für die Allianz und ein Vorbild für unsere Rekruten. Vielen Dank für deine Hilfe.
+#. fr: Quoi qu'il en soit, j'aimerais vous remercier une fois de plus. L'Alliance éorzéenne a vraiment de la chance de compter un élément tel que vous dans ses rangs<nbsp>! J'espère que nous aurons l'occasion de collaborer à nouveau.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_043:1"
+msgid "On behalf of all the soldiers here, you have my sincerest thanks. We're quite fortunate to have one such as you among our ranks."
+msgstr ""
+
+#. ja: （★未使用／削除予定★）
+#. de: （★未使用／削除予定★）
+#. fr: （★未使用／削除予定★）
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz006_02640:TEXT_STMBDZ006_02640_SWETHRYKBROOKSTONE_000_044:1"
+msgid "deleted"
+msgstr ""

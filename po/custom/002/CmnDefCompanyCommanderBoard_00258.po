@@ -1,0 +1,326 @@
+# custom/002/CmnDefCompanyCommanderBoard_00258
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 飛空艇を登録してください。
+#. de: Registriere ein Luftschiff.
+#. fr: Veuillez enregistrer un aéronef.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_SELECT_TITLE_0:1"
+msgid "Select an option."
+msgstr ""
+
+#. ja: 飛空艇を選択してください。<br>　探索機体数：<num $n2>/<num $n3>機<br>　保有燃料数：青燐水バレル　<num $n1>樽
+#. de: Wähle ein Luftschiff.<br>Erkundungsfahrzeuge im Einsatz: <num $n2>/<num $n3><br>Erdseim-Fässer in Besitz: <num $n1>
+#. fr: Choisissez un aéronef.<br>  Appareils expédiés<nbsp>: <num $n2>/<num $n3><br>  Barils de céruleum<nbsp>: <num $n1>
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_SELECT_TITLE:1"
+msgid "Vessels deployed: <num $n2>/<num $n3><br>Ceruleum tanks: <num $n1><br>Select an airship."
+msgstr ""
+
+#. ja: 飛空艇の新規登録（飛空艇登録手形×<num $n1>枚）
+#. de: Registrierung eines neuen Luftschiffs (<num $n1> Registriermarke<if ($n1 == 1)><else>n</if>)
+#. fr: Enregistrement d'un aéronef (requiert <num $n1> formulaire<if ($n1 <= 1)><else>s</if>)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_ADD_NEW_AIRSHIP:1"
+msgid "Outfit and register an airship. (Flight credits required: <num $n1>)"
+msgstr ""
+
+#. ja: <string $s1>  [Rank<num $n5>]  <switch $n2><case><case><case> [探索中:残り時間 <if ($n6 > 0)><num $n6>日</if><if ($n3 > 0)><num $n3>時間<else><if ($n6 > 0)><num $n3>時間</if></if><num $n4>分] <case> [乗船探索中:残り時間 <if ($n6 > 0)><num $n6>日</if><if ($n3 > 0)><num $n3>時間<else><if ($n6 > 0)><num $n3>時間</if></if><num $n4>分]<case> [アライアンス待機中]</switch>
+#. de: <i><string $s1></i> (Rang <num $n5>) <switch $n2><case><case><case>(Noch <if ($n6 > 0)><num $n6> Tag<if ($n6 == 1)><else>e</if> </if><if ($n3 > 0)><num $n3> Std <else><if ($n6 > 0)><num $n3> Std </if></if><num $n4> Min auf Erkundung)<case> (Noch <if ($n6 > 0)><num $n6> Tag<if ($n6 == 1)><else>e</if> </if><if ($n3 > 0)><num $n3> Std <else><if ($n6 > 0)><num $n3> Std </if></if><num $n4> Min auf Expedition)<case> (Wartet auf Allianz)</switch>
+#. fr: <i><string $s1></i> (Rang <num $n5>)<switch $n2><case><case><case> [Fin d'expédition dans <if ($n6 > 0)><num $n6>j </if><if ($n3 > 0)><num $n3>h<else><if ($n6 > 0)><num $n3>h</if></if><num $n4>m]<case> [Fin de mission dans <if ($n6 > 0)><num $n6>j </if><if ($n3 > 0)><num $n3>h<else><if ($n6 > 0)><num $n3>h</if></if><num $n4>m]<case> [Alliance en attente]</switch>
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+#. macro: <switch $n2><case><case><case> (Voyage complete in <if ($n6 > 0)><num $n6>d </if><if ($n3 > 0)><num $n3>h </if><num $n4>m) <case> (Mission complete in <if ($n6 … — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n6 > 0)><num $n6>d </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 6 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 > 0)><num $n3>h </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_NAME:1"
+msgid "<i><string $s1></i>. (Rank: <num $n5>) <switch $n2><case><case><case> (Voyage complete in <if ($n6 > 0)><num $n6>d </if><if ($n3 > 0)><num $n3>h </if><num $n4>m) <case> (Mission complete in <if ($n6 > 0)><num $n6>d </if><if ($n3 > 0)><num $n3>h </if><num $n4>m) <case> (Awaiting alliance parties)</switch>"
+msgstr ""
+
+#. ja: <string $s1>  [Rank<num $n5>]  <switch $n2><case><case><case> [探索完了]<case> [乗船探索完了]</switch>
+#. de: <i><string $s1></i> (Rang <num $n5>) <switch $n2><case><case><case> (Erkundung abgeschlossen)<case> (Expedition abgeschlossen)</switch>
+#. fr: <i><string $s1></i> (Rang <num $n5>)<switch $n2><case><case><case> [Expédition terminée]<case> [Mission terminée]</switch>
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+#. macro: <switch $n2><case><case><case> [Voyage complete]<case> [Mission complete]</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_NAME_FINISH:1"
+msgid "<i><string $s1></i>. (Rank: <num $n5>) <switch $n2><case><case><case> [Voyage complete]<case> [Mission complete]</switch>"
+msgstr ""
+
+#. ja: やめる
+#. de: Nichts
+#. fr: Annuler
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_SELECT_EXIT:1"
+msgid "Nothing."
+msgstr ""
+
+#. ja: <string $s1> [Rank<num $n3>]<br>　探索機体数：<num $n4>/<num $n5>機<br>　保有燃料数：青燐水バレル　<num $n2>樽
+#. de: Einstellungen an <i><string $s1></i> (Rang <num $n3>) vornehmen<br>Erkundungsfahrzeuge im Einsatz: <num $n4>/<num $n5><br>Erdseim-Fässer in Besitz: <num $n2>
+#. fr: <i><string $s1></i> (Rang <num $n3>)<br>  Appareils expédiés<nbsp>: <num $n4>/<num $n5><br>  Barils de céruleum<nbsp>: <num $n2>
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_TITLE:1"
+msgid "Vessels deployed: <num $n4>/<num $n5><br>Ceruleum tanks: <num $n2><br><i><string $s1></i> (Rank: <num $n3>) - Available"
+msgstr ""
+
+#. ja: ボイジャー出港
+#. de: Auf Erkundung gehen
+#. fr: Expédier l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_EXPEDITION:1"
+msgid "Deploy airship on exploratory voyage"
+msgstr ""
+
+#. ja: 前回のボイジャー報告
+#. de: Bericht der letzten Erkundung
+#. fr: Consulter le journal de la précédente expédition
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_RESULT:1"
+msgid "View previous voyage log"
+msgstr ""
+
+#. ja: パーツの変更
+#. de: Bauteile austauschen
+#. fr: Changer les éléments
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_PARTS:1"
+msgid "Change airship components"
+msgstr ""
+
+#. ja: パーツの修理
+#. de: Bauteile reparieren
+#. fr: Réparer des éléments
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_REPAIR_PARTS:1"
+msgid "Repair airship components"
+msgstr ""
+
+#. ja: 設定
+#. de: Einstellungen
+#. fr: Paramètres de l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_SETTING:1"
+msgid "Change airship preferences"
+msgstr ""
+
+#. ja: パーツの染色
+#. de: Bauteile färben
+#. fr: Teindre les éléments
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CONF_COLOR:1"
+msgid "Paint airship"
+msgstr ""
+
+#. ja: 名前の変更
+#. de: Name ändern
+#. fr: Renommer l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CONF_NAME:1"
+msgid "Change airship name"
+msgstr ""
+
+#. ja: 解体
+#. de: Demontieren
+#. fr: Démonter l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CONF_REMOVE:1"
+msgid "Dismantle airship"
+msgstr ""
+
+#. ja: 「ディアデム諸島」へ出発
+#. de: Zum Diadem fliegen
+#. fr: Explorer Le Diadème
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_B_EXPEDITION:1"
+msgid "Ready airship for exploratory mission"
+msgstr ""
+
+#. ja: 「ディアデム諸島」へ出発
+#. de: Zum Diadem fliegen
+#. fr: Explorer Le Diadème
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_CMD_B_EXPD2:1"
+msgid "Ready airship for exploratory mission"
+msgstr ""
+
+#. ja: <string $s1> [Rank<num $n2>]<br>　探索機体数：<num $n3>/<num $n4>機<br>　探索中:残り時間 <if ($n5 > 0)><num $n5>日</if><if ($n6 > 0)><num $n6>時間<else><if ($n5 > 0)><num $n6>時間</if></if><num $n7>分
+#. de: <i><string $s1></i> (Rang <num $n2>) auf Erkundung<br>Erkundungsfahrzeuge im Einsatz: <num $n3>/<num $n4><br>Rückkehr: <if ($n5 > 0)><num $n5> Tag<if ($n5 == 1)><else>e</if> </if><if ($n6 > 0)><num $n6> Std <else><if ($n5 > 0)><num $n6> Std </if></if><num $n7> Min
+#. fr: <i><string $s1></i> (Rang <num $n2>)<br>  Appareils expédiés<nbsp>: <num $n3>/<num $n4><br>  Retour<nbsp>: <if ($n5 > 0)><num $n5>j </if><if ($n6 > 0)><num $n6>h<else><if ($n5 > 0)><num $n6>h</if></if><num $n7>m
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n5 > 0)><num $n5>d </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 5 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+#. macro: <if ($n6 > 0)><num $n6>h </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 6 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
+#. macro: <num $n7> — a number; value = number parameter 7 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_VOY_TITLE:1"
+msgid "Vessels deployed: <num $n3>/<num $n4><br><i><string $s1></i> (Rank: <num $n2>) - Deployed<br>Voyage complete in <if ($n5 > 0)><num $n5>d </if><if ($n6 > 0)><num $n6>h </if><num $n7>m"
+msgstr ""
+
+#. ja: 探索の中止
+#. de: Erkundung abbrechen
+#. fr: Rappeler l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_VOY_CUR_COND:1"
+msgid "Recall airship"
+msgstr ""
+
+#. ja: 雲海図の確認
+#. de: Luftkarte einsehen
+#. fr: Vérifier la carte de la Mer de nuages
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_VOY_CUR_MAP:1"
+msgid "View navigational charts"
+msgstr ""
+
+#. ja: 飛空艇の確認
+#. de: Luftschiff überprüfen
+#. fr: Vérifier l'état de l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_VOY_CUR_STATUS:1"
+msgid "View airship status"
+msgstr ""
+
+#. ja: 飛空艇の名前を入力してください。
+#. de: Gib einen Namen für das Luftschiff ein.
+#. fr: Donner un nouveau nom à l'aéronef.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_NAME_TITLE:1"
+msgid "Rename your airship."
+msgstr ""
+
+#. ja: 飛空艇の名前
+#. de: Name des Luftschiffs
+#. fr: Nom de l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_NAME_CAPTION:1"
+msgid "Airship Name"
+msgstr ""
+
+#. ja: <br>名前には、アルファベット・数字・スペースと<br>以下の記号が使用できます。<br><ui-color 508><ui-edge-color 509>‘. , : ; ! ? & - _</ui-edge-color></ui-color><br>•スペースや_は2文字以上続けて使えません。<br>•先頭や末尾にスペースがある名前は使えません。<br>•記号だけの名前は使えません。
+#. de: Du kannst Buchstaben, Ziffern, die Leertaste und folgende Zeichen verwenden:<br><ui-color 508><ui-edge-color 509>'. , : ; ! ? & - _</ui-edge-color></ui-color><br>Zwei oder mehr aufeinanderfolgende Leerzeichen sind nicht möglich.<br>Das erste und letzte Zeichen darf kein Leerzeichen sein.<br>Ein Name nur aus Satzzeichen ist nicht möglich.
+#. fr: Le nom peut comprendre des lettres non accentuées, des chiffres, des espaces ou les symboles suivants<nbsp>:<br><ui-color 508><ui-edge-color 509>'<nbsp>. ,<nbsp>:<nbsp>;<nbsp>!<nbsp>? & - _</ui-edge-color></ui-color><br>- Deux espaces ou deux tirets bas ne peuvent pas se suivre.<br>- Il ne peut pas commencer ou se terminer par une espace.<br>- Il ne peut pas être composé uniquement de symboles.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <nbsp> — a non-breaking space (may be added or dropped)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_AIRSHIP_NAME_MES_0:1"
+msgid "Names must be formed from alphanumeric characters. The following punctuation marks are also allowed:<br><ui-color 508><ui-edge-color 509>'<nbsp>. , : ; ! ? & - _</ui-edge-color></ui-color><br>• Double spaces/underscores are not allowed.<br>• A space cannot be used before or after the name.<br>• Names consisting solely of punctuation marks are prohibited."
+msgstr ""
+
+#. ja: 飛空艇 <string $s1> を解体します。<br><ui-color 508><ui-edge-color 509>装備中のアイテムは返還されますが、<br>「飛空艇登録手形」は返還されません。<br>飛空艇のランクなどの情報は、すべてクリアされます。<br></ui-edge-color></ui-color>本当によろしいですか？
+#. de: <ui-color 508><ui-edge-color 509>Achtung: Die Bauteile erhältst du zurück, nicht aber die Registriermarken. Daten wie der Rang des Luftschiffs werden nicht gespeichert.</ui-edge-color></ui-color><br>Das Luftschiff wirklich demontieren?
+#. fr: L'aéronef “<string $s1>” va être démonté. Confirmer<nbsp>?<br><ui-color 508><ui-edge-color 509>Les éléments seront récupérés, mais les frais d'enregistrement, le rang et l'expérience seront perdus.</ui-edge-color></ui-color>
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_REMOVE_AIRSHIP_TITLE:1"
+msgid "Are you certain you wish to dismantle <i><string $s1></i>?<br><ui-color 508><ui-edge-color 509>Please note that while airship components will be returned, your airship's registration, rank, and accrued experience will be lost.</ui-edge-color></ui-color>"
+msgstr ""
+
+#. ja: 飛空艇を解体する
+#. de: Demontieren
+#. fr: Démonter l'aéronef
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_REMOVE_AIRSHIP_CHECK:1"
+msgid "Dismantle Airship."
+msgstr ""
+
+#. ja: 飛空艇の登録には、<br>「飛空艇登録手形」と「飛空艇パーツ」が必要です。
+#. de: Zur Registrierung sind Luftschiff-Bauteile sowie eine Gebühr in Form von Registriermarken erforderlich.
+#. fr: Pour équiper et enregistrer un aéronef, vous devez être en possession des éléments nécessaires et d'un “formulaire d'enregistrement d'aéronef”.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_REGISTRATION_1:1"
+msgid "To outfit and register an airship, you must have in your possession the requisite components and flight credits."
+msgstr ""
+
+#. ja: 「飛空艇登録手形」は、居住区担当官から、<br>カンパニークレジットと交換することで入手できます。
+#. de: Registriermarken können beim Unterkunftsbeamten mit Ge<shy>sell<shy>schaftstalern gekauft werden.
+#. fr: Les <ui-color 500><ui-edge-color 501>formulaires d'enregistrement d'aéronef</ui-edge-color></ui-color> peuvent être achetés auprès des officiers du logement contre des crédits de compagnie.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_REGISTRATION_2:1"
+msgid "<ui-color 500><ui-edge-color 501>Flight credits</ui-edge-color></ui-color> can be purchased from resident caretakers with company credits."
+msgstr ""
+
+#. ja: 「飛空艇パーツ」は、<br>「船体」「艤装」「船首」「船尾」の4種類が必要です。<br>これらは「カンパニー製作設備」で製作することで入手できます。
+#. de: Vier verschiedene Luftschiff-Bauteile sind nötig: Rumpf-, Takelage-, Bug- und Heckteile. Sie können in der Produktionsanlage der Freien Ge<shy>sell<shy>schaft hergestellt werden.
+#. fr: Les <ui-color 500><ui-edge-color 501>éléments d'aéronef</ui-edge-color></ui-color> (coque, gréement, proue et poupe) peuvent être construits dans l'atelier de compagnie.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_REGISTRATION_3:1"
+msgid "<ui-color 500><ui-edge-color 501>Airship components</ui-edge-color></ui-color> can be constructed in your company workshop. Please note that hull, rigging, forecastle, and aftcastle components are required to outfit an airship."
+msgstr ""
+
+#. ja: 飛空艇の出港には、「青燐水バレル」が必要となります。<br>「青燐水バレル」は、居住区担当官から、<br>カンパニークレジットと交換することで入手できます。
+#. de: Luftschiffe benötigen Erdseim als Treibstoff. Erdseim-Fässer können beim Unterkunftsbeamten mit Ge<shy>sell<shy>schaftstalern gekauft werden.
+#. fr: Vous ne pouvez pas expédier un aéronef de compagnie sans barils de céruleum. Ces derniers peuvent être achetés auprès des officiers du logement contre des crédits de compagnie.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_ENERGY:1"
+msgid "You cannot deploy your airship on exploratory voyages without ceruleum tanks, which can be purchased from resident caretakers with company credits."
+msgstr ""
+
+#. ja: 飛空艇の探索が完了すると「ボイジャー報告」が発行され、<br>各目的地での探索が、どのような結果となったのか、<br>詳細を確認することができます。
+#. de: Wenn eine Erkundung abgeschlossen ist, kann das Logbuch eingesehen werden, in dem alle Aktivitäten festgehalten sind.
+#. fr: À la fin d'une expédition, le pantin de l'atelier vous remettra le <ui-color 500><ui-edge-color 501>journal d'expédition</ui-edge-color></ui-color>.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_EXPLOG_1:1"
+msgid "Upon the completion of an exploratory voyage, your mammet will provide a <ui-color 500><ui-edge-color 501>voyage log</ui-edge-color></ui-color> detailing the results."
+msgstr ""
+
+#. ja: 「ボイジャー報告」には、探索のヒントとなる情報も載っています。<br>より良い探索の攻略を目指し、<br>飛空艇の装備を、工夫してみてください。
+#. de: Dieses Logbuch liefert Hinweise für die nächste Erkundungsreise. So kann die Effizienz der Erkundungen immer mehr erhöht werden.
+#. fr: Les in<shy>for<shy>ma<shy>tions sur les événements survenus au cours de l'exploration peuvent s'avérer utiles pour de futures expéditions.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_EXPLOG_2:1"
+msgid "The information contained in this log may prove useful in preparing for your next exploratory voyage."
+msgstr ""
+
+#. ja: また、「ボイジャー報告」は「過去1回分」が保存されるため、<br>フリーカンパニーのメンバー同士で内容を確認しあい、<br>次に製作する「飛空艇パーツ」を、一緒に考えてみましょう。
+#. de: Allerdings wird immer nur der letzte Logbucheintrag angezeigt. Wenn du ihn aber mit denen der Erkundungen anderer Mitglieder der Freien Ge<shy>sell<shy>schaft vergleichst, werdet ihr sicher herausfinden, wie ihr euer Luftschiff am besten ausstatten könnt.
+#. fr: Notez que seul le journal de la dernière expédition en date sera conservé.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_EXPLOG_3:1"
+msgid "Please note that only the log for the previous voyage will be retained."
+msgstr ""
+
+#. ja: 「飛空艇パーツ」の修理には、<br>「魔導機械修理材」が必要です。
+#. de: Luftschiff-Bauteile können mit speziellen Magitek-Reparaturkits repariert werden.
+#. fr: Pour réparer les éléments de votre aéronef, vous devez impérativement posséder des “kits de réparation d'appareil”.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NO_REPAIR_ITEM:1"
+msgid "You cannot repair airship components without the requisite materials."
+msgstr ""
+
+#. ja: 「雲海探索 ディアデム諸島 (Hard)」への航路を発見しました！<br>「雲海探索 ディアデム諸島 (Hard)」は、<br>レベルの高い敵が配置された、高難易度の探索となります。
+#. de: Du hast eine Route zum Diadem (schwer) gefunden! Diese Luftschiffexpedition bringt dich zu schweren Gegnern.
+#. fr: La voie aérienne vers “Le Diadème (brutal)” est désormais ouverte. Cette mission d'exploration est plus difficile, et les monstres y sont plus coriaces.
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_CONTENT_GUIDE:1"
+msgid "You have successfully charted a new course through the Sea of Clouds! You may now challenge the Diadem (Hard)."
+msgstr ""
+
+#. ja: ディアデム諸島に至る空路の風脈が乱れているため、<br>現在、探索を行うことができません。<br>風脈の安定をお待ちください。
+#. de: Wegen stürmischer Winde sind momentan keine Flüge zum Diadem möglich. Bitte gedulde dich, bis sich die Situation beruhigt hat.
+#. fr: Des perturbations dans les vents éthérés se produisent ac<shy>tu<shy>el<shy>le<shy>ment près de l'archipel du Diadème, empêchant toute liaison aérienne vers cet endroit. Les missions d'exploration sont suspendues en attendant que la situation se stabilise.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "custom/002/CmnDefCompanyCommanderBoard_00258:TEXT_CMNDEFCOMPANYCOMMANDERBOARD_00258_NOT_IMPLEMENTED_SORA2:1"
+msgid "ディアデム諸島に至る空路の風脈が乱れているため、<br>現在、探索を行うことができません。<br>風脈の安定をお待ちください。"
+msgstr ""

@@ -1,0 +1,134 @@
+# quest/038/BanQiq128_03833 — « Qhoterl's Chronicles» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ホパル古盤のコテルリ・パソリは、作りたいものがあるようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Qhoterl Pasol möchte etwas Besonderes anfertigen.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Qhoterl Pasol veut fabriquer quelque chose.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_SEQ_00:1"
+msgid "Qhoterl Pasol would set history right once and for all.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: コテルリ・パソリに依頼された品を納品
+#. de: Qhoterl Pasol die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Qhoterl Pasol
+#. kind: journal
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_SEQ_01:1"
+msgid "Deliver the requested supplies to Qhoterl Pasol."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>ミュリルの郷愁付近の採掘場で<sheet Item $n5 0>を採掘<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>ミュリルの郷愁付近の草刈場で<sheet Item $n5 0>を草刈<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>トゥシ・メキタ湖の水中で<sheet Item $n5 0>を刺突漁<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Bei Mjrls Sehnsucht <sheet Item $n5 9> abbauen<else>Qhoterl Pasol den <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>Bei Mjrls Sehnsucht <sheet Item $n5 9> ernten<else>Qhoterl Pasol den <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Tusi Mek'ta <noun-de Item 1 $n5 1 4 1> fangen<else>Qhoterl Pasol <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 1 1> près de la Nostalgie de Mjrl<else>Livrer <noun-fr Item 2 $n5 1 1> à Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 1 1> près de la Nostalgie de Mjrl<else>Livrer <noun-fr Item 2 $n5 1 1> à Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Harponner <noun-fr Item 1 $n5 1 1> dans le lac Tusi Mek'ta<else>Livrer <noun-fr Item 2 $n5 1 1> à Qhoterl Pasol</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine slabs of splendid black rock at Mjrl's Regret<else>Deliver the slabs of splendid black rock to Qhoterl Pasol</if><else><if … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine slabs of splendid black rock at Mjrl's Regret<else>Deliver the slabs of splendid black rock to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather tufts of splendid hemp at Mjrl's Regret<else>Deliver the tufts of splendid hemp to Qhoterl Pasol</if><else><if ($n4 == 18… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather tufts of splendid hemp at Mjrl's Regret<else>Deliver the tufts of splendid hemp to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Spearfish a splendid mammoth shellfish in the depths of Lake Tusi Mek'ta<else>Deliver the splendid mammoth shellfish to Qhoterl … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Spearfish a splendid mammoth shellfish in the depths of Lake Tusi Mek'ta<else>Deliver the splendid mammoth shellfish to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine slabs of splendid black rock at Mjrl's Regret<else>Deliver the slabs of splendid black rock to Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather tufts of splendid hemp at Mjrl's Regret<else>Deliver the tufts of splendid hemp to Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Spearfish a splendid mammoth shellfish in the depths of Lake Tusi Mek'ta<else>Deliver the splendid mammoth shellfish to Qhoterl Pasol</if></if></if></if>."
+msgstr ""
+
+#. ja: おかげさまで、発掘調査もだいぶ成果がございまして～、<br>判明した事実を、多くのヒトに知っていただきたく存じまする～。
+#. de: Wie Ausgrabungsarbeiten vorangehen? Gut, wirklich sehr gut! Qhoterl freut sich, dass <split " " 1><string $gs1></split> sich dafür interessiert. Tatsächlich hat Qhoterl in letzter Zeit viel nachgedacht, wie Erkenntnisse möglichst vielen Leuten nahegebracht werden können. 
+#. fr: Explorateurs avoir fait beaucoup beaucoup de découvertes dans cavernes<nbsp>! Monde entier pouvoir en apprendre plus sur secrets d'empire de Ronka<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_000:1"
+msgid "Thanks to your tireless efforts, our excavation is nearing its completion. The gifts of the past we've uncovered here will be a boon to future Qitari, to be sure, but we mustn't keep our discoveries to ourselves. No, I intend to spread knowledge of Ronka to every corner of the world!"
+msgstr ""
+
+#. ja: そこで、ロンカの歴史書を作ることにいたしました～。<br>版材に文字や図を刻み、石墨や染料を付けて紙に刷ることで、<br>効率良く多くの書を作ることができましょ～！
+#. de: Und so will Qhoterl Kompendium der Ronka-Geschichte zu<shy>sammen<shy>stellen. Geschickte Qitari schneiden Bilder und Zeichen in Druckplatten und dann drucken mit Tusche und Farbe auf Papier. So kann man schnell große Zahl von Büchern herstellen.
+#. fr: Qhoterl Pasol avoir donc décidé de fabriquer livres d'histoire de Ronka pour transmettre Histoire aux générations futuuures<nbsp>! Avoir besoin de matériaux, alors <split " " 1><string $gs1></split> aider à rassembler<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_001:1"
+msgid "To that end, I mean to author a definitive history of Ronka with my own hands. Moreover, I intend to use an ingenious system of woodblocks and ink to produce enough copies so that no curious mind goes unsated."
+msgstr ""
+
+#. ja: 正しき歴史を残すため、ご協力お願いいたしまする～。<br>ミュリルの郷愁付近で採れる、<br>「<sheet Item 29537 0>」を3つ採集してくださいましな～。
+#. de: Allerdings hat Qhoterl noch nicht Material zusammen. Kannst du helfen und bei Mjrls Sehnsucht <noun-de ItemHQ 5 29537 1 4 1> beschaffen?
+#. fr: Qhoterl Pasol avoir besoin <noun-fr Item 8 29537 1 1> de haute qualité<nbsp>! <split " " 1><string $gs1></split> pouvoir extraire près de Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_002:1"
+msgid "If you would be an ally of history, then I have just the task for you. Pray bring me a slab of black stone from Mjrl's Regret. While it may appear a common stone at first glance, we have long used it to make writing instruments."
+msgstr ""
+
+#. ja: 正しき歴史を残すため、ご協力お願いいたしまする～。<br>ミュリルの郷愁付近で採れる、<br>「<sheet Item 29563 0>」を3つ採集してくださいましな～。
+#. de: Allerdings hat Qhoterl noch nicht Material zusammen. Kannst du helfen und bei Mjrls Sehnsucht <noun-de ItemHQ 5 29563 1 4 1> beschaffen?
+#. fr: Qhoterl Pasol avoir besoin <noun-fr Item 8 29563 1 1> de haute qualité<nbsp>! <split " " 1><string $gs1></split> pouvoir récolter près de Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_003:1"
+msgid "If you would be an ally of history, then I have just the task for you. Pray bring me hemp from Mjrl's Regret. I can't start writing without paper, and the material made from this hemp is as sturdy as it comes."
+msgstr ""
+
+#. ja: 正しき歴史を残すため、ご協力お願いいたしまする～。<br>トゥシ・メキタ湖の水中で、刺突漁とやらで獲れる、<br>「<sheet Item 29589 0>」を採集してくださいましな～。
+#. de: Allerdings hat Qhoterl noch nicht Material zusammen. Kannst du helfen und <noun-de Item 5 29589 1 4 1> aus Schlangensee Tusi Mek'ta beschaffen?
+#. fr: Qhoterl Pasol avoir besoin <noun-fr Item 8 29589 1 1><nbsp>! <split " " 1><string $gs1></split> pouvoir harponner dans lac Tusi Mek'ta<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_004:1"
+msgid "If you would be an ally of history, then I have just the task for you. Pray return with a mammoth shellfish from the depths of Lake Tusi Mek'ta. Though they may be tricky to snag with your spear, their sacs contain enough ink to fill countless inkwells."
+msgstr ""
+
+#. ja: 正しき歴史を残すため、ご協力お願いいたしまする～。<br>ミュリルの郷愁付近で採れる、<br>「<sheet Item 29537 0>」を3つ採集してくださいましな～。
+#. de: Allerdings hat Qhoterl noch nicht Material zusammen. Kannst du helfen und bei Mjrls Sehnsucht <noun-de ItemHQ 5 29537 1 4 1> beschaffen?
+#. fr: Qhoterl Pasol avoir besoin <noun-fr Item 8 29537 1 1> de haute qualité<nbsp>! <split " " 1><string $gs1></split> pouvoir extraire près de Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_005:1"
+msgid "The world is eager to learn the truth of Ronka. Return here with the black stone and I shall begin writing at once!"
+msgstr ""
+
+#. ja: 正しき歴史を残すため、ご協力お願いいたしまする～。<br>ミュリルの郷愁付近で採れる、<br>「<sheet Item 29563 0>」を3つ採集してくださいましな～。
+#. de: Allerdings hat Qhoterl noch nicht Material zusammen. Kannst du helfen und bei Mjrls Sehnsucht <noun-de ItemHQ 5 29563 1 4 1> beschaffen?
+#. fr: Qhoterl Pasol avoir besoin <noun-fr Item 8 29563 1 1> de haute qualité<nbsp>! <split " " 1><string $gs1></split> pouvoir récolter près de Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_006:1"
+msgid "The world is eager to learn the truth of Ronka. Return here with the hemp and I shall begin writing at once!"
+msgstr ""
+
+#. ja: 正しき歴史を残すため、ご協力お願いいたしまする～。<br>トゥシ・メキタ湖の水中で、刺突漁とやらで獲れる、<br>「<sheet Item 29589 0>」を採集してくださいましな～。
+#. de: Allerdings hat Qhoterl noch nicht Material zusammen. Kannst du helfen und <noun-de Item 5 29589 1 4 1> aus Schlangensee Tusi Mek'ta beschaffen?
+#. fr: Qhoterl Pasol avoir besoin <noun-fr Item 8 29589 1 1><nbsp>! <split " " 1><string $gs1></split> pouvoir harponner dans lac Tusi Mek'ta<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_007:1"
+msgid "The world is eager to learn the truth of Ronka. Return here with the shellfish and I shall begin writing at once!"
+msgstr ""
+
+#. ja: 本クエストを進行するためには、<br>クエスト「「刺突漁」で魚を狙え」を完了し、<br>「刺突漁」を開放しておく必要があります。
+#. de: Um diesen Auftrag spielen zu können, muss das Speerfischen im Auftrag „Wie ein Fischer im Wasser“ erlernt worden sein.
+#. fr: Il est nécessaire de terminer la quête “La pêche au harpon, c'est bon” pour progresser dans celle-ci.
+#. speaker: SYSTEM
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_SYSTEM_000_008:1"
+msgid "In order to proceed with this quest, you must first complete the quest “A New Fishing Ex-spear-ience” and unlock spearfishing."
+msgstr ""
+
+#. ja: おつかれさまでございまする～。<br>書物用の素材は、調達していただけましたでしょか～？
+#. de: Qhoterl kann es gar nicht erwarten, erste Exemplare von Geschichte von Ronka in Händen zu halten. Hast du Material für Druck mitgebracht?
+#. fr: Avoir nécessaire<nbsp>?
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_010:1"
+msgid "I am always glad to see you, and now more than ever! Have you brought the materials I requested?"
+msgstr ""
+
+#. ja: ご協力に感謝いたしまする～！<br>ロンカの素晴らしい歴史を、ノルヴラントに広めることができれば、<br>きっと、そこから学んだ知恵を活かすことができましょ～！
+#. de: Vielen Dank! So kann faszinierende Kultur von Ronka in ganz Norvrandt verbreitet werden. Gibt vieles zu lernen von altem Volk!
+#. fr: Magnifique<nbsp>! Bientôt, histoire de Ronka ne plus avoir de secrets pour moindre habitant de Norvrandt<nbsp>! Gens devenir très cuuultivés et avoir nouveaux sujets de con<shy>ver<shy>sa<shy>tion<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_011:1"
+msgid "Splendid, as always! I eventually hope to distribute my chronicle throughout Norvrandt, although it would be prudent to begin with a smaller proving ground, such as the Greatwood. Assuming I meet with success here, my ambitions know no bounds!"
+msgstr ""
+
+#. ja: 書記の民としてのキタリにとりまして、<br>これ以上の誇りはございませぬ～！
+#. de: Qitari sind Chronisten. Überlieferung aufschreiben ist große, wichtige Aufgabe und erfüllt Qitari mit Stolz, ja!
+#. fr: Si Qhoterl Pasol pouvoir aussi laisser empreinte dans Histoire grâce à ça, rien ne pouvoir faire plus plaisir, hi hi<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq128_03833:TEXT_BANQIQ128_03833_QHOTERLPASOL_000_012:1"
+msgid "A Steward can ask for no greater honor than this task I've given myself, and I shan't rest until I see it done!"
+msgstr ""

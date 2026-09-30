@@ -1,0 +1,128 @@
+# quest/034/LucKze016_03450 — « Oh, Snap» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト</ui-edge-color></ui-color><br>スリザーバウのエルサベルは、冒険者に急ぎの頼みがあるようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung</ui-edge-color></ui-color><br>Ersabel sucht scheinbar dringend jemanden, der ihr helfen kann.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête</ui-edge-color></ui-color><br>Ersabel a urgemment besoin d'aide.
+#. kind: journal
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_SEQ_00:1"
+msgid "<ui-color 508><ui-edge-color 509> Quest Sync</ui-edge-color></ui-color><br>Ersabel looks at you expectantly, which can mean only one thing."
+msgstr ""
+
+#. ja: <sheet EObj 2009800 0>に<sheet EventItem 2002524 0>を使い、<br>現れた<sheet BNpcName 8992 0>を討伐
+#. de: Am Zielort <noun-de EventItem 2 2002524 1 4 1> ausgießen und das erscheinende Minzblatt-Springkraut besiegen
+#. fr: Utiliser <noun-fr EventItem 2 2002524 1 1> à l'endroit indiqué au nord-ouest de Serpentige et vaincre l'ennemi
+#. kind: objective
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_TODO_00:1"
+msgid "Use the sickly sweet nectar at the designated location and slay the snapmint for its leaves."
+msgstr ""
+
+#. ja: エルサベルに<sheet EventItem 2002525 0>を渡す
+#. de: Ersabel <noun-de EventItem 2 2002525 2 4 1> geben
+#. fr: Donner les <noun-fr EventItem 12 2002525 2 1> à Ersabel
+#. kind: objective
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_TODO_01:1"
+msgid "Deliver the snapmint leaves to Ersabel."
+msgstr ""
+
+#. ja: 炊事の時間が近いんだけれど、少し手を借りられないかい？<br>今日の献立の風味付けに欠かせないものを、<br>すっかり切らしていることに気が付いてね。
+#. de: Wir wollen bald mit dem Zubereiten haltbarer Nahrungsmittel für unser Lager anfangen und ich könnte wirklich deine Hilfe gebrauchen. Ich habe nämlich gerade bemerkt, dass uns eine wichtige Zutat ausgegangen ist. Diese Zutat ist unerlässlich für die Zubereitung des heutigen Gerichts.
+#. fr: C'est bientôt l'heure de faire le dîner, mais est-ce que vous pourriez m'aider un peu<nbsp>? Je viens de me rendre compte qu'il me manque un condiment nécessaire au menu d'aujourd'hui.
+#. speaker: ERSABEL
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>mealtime<else>supper</if><else><if ($gn11 < 17)>supper<else>mealtime</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>mealtime<else>supper</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>supper<else>mealtime</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_001:1"
+msgid "Pardon me, <if $gn4>miss<else>sir</if>, but could I trouble you to help me with preparations for <if ($gn11 < 12)><if ($gn11 < 4)>mealtime<else>supper</if><else><if ($gn11 < 17)>supper<else>mealtime</if></if>?"
+msgstr ""
+
+#. ja: ありがとう、助かるよ！<br>あたしが出向いて奮闘するより、<br>手練のあんたに頼むほうが、ずっと早いだろうからね。
+#. de: Du hilfst mir? Danke! Wenn sich <if $gn4>eine kampferprobte Reisende<else>ein kampferprobter Reisender</if> wie du darum kümmert, ist die Sache bestimmt viel schneller erledigt, als wenn ich mich damit abmühen würde.
+#. fr: Merci<nbsp>! Je pense que vous arriverez à trouver ça bien plus rapidement que moi<nbsp>!
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_002:1"
+msgid "Thank you. I have need of a rather peculiar herb, but I fear I am ill-suited to gathering it myself."
+msgstr ""
+
+#. ja: <sheet BNpcName 8992 0>の胴体に生えている、<br>「<sheet EventItem 2002525 0>」が2枚必要なんだけれど、<br>擬態が上手くて、なかなか見つけ出せなくてね。
+#. de: Ich benötige zwei <noun-de EventItem 5 2002525 2 4 1>, die auf den Körpern von Springkräutern wachsen, aber diese Biester können sich so gut tarnen, dass sie sehr schwer aufzuspüren sind.
+#. fr: Il me faudrait deux <noun-fr EventItem 12 2002525 2 1> qui poussent sur les <noun-fr BNpcName 12 8992 2 1>, mais elles sont difficiles à repérer avec leur camouflage.
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_003:1"
+msgid "It grows on snapmint, you see. Their camouflage makes them difficult to find, and even if I should, I would likely be devoured before I could pluck even a single leaf from their hides. "
+msgstr ""
+
+#. ja: 北の朽ちた木のあたりで、この「<sheet EventItem 2002524 0>」を撒いておくれ。<br>同族に縄張りを荒らされたと勘違いして、<br>茂みから飛び出してくるはずさ。
+#. de: Wenn du auf halbem Wege von hier zum Baum der Abgeschiedenheit den Inhalt <noun-de EventItem 6 2002524 1 2 1> auf dem Boden verteilst, werden die Springkräuter dort glauben, ein anderes Exemplar wäre in ihr Revier eingedrungen, und wütend das schützende Dickicht verlassen.
+#. fr: Essayez de répandre <noun-fr EventItem 6 2002524 1 1> près des arbres pourris au nord. Je pense que les monstres sortiront des buissons pour défendre leur territoire.
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_004:1"
+msgid "Take this nectar and sprinkle it about the fields to the north. When they come out of hiding, that will be your chance to strike."
+msgstr ""
+
+#. ja: まず、北の朽ちた木のあたりで「<sheet EventItem 2002524 0>」を撒くんだよ。<br>そうして現れた魔物を倒して、「<sheet EventItem 2002525 0>」を2枚、<br>集めてきてほしいのさ、頼んだよ。
+#. de: Wenn du auf halbem Wege von hier zum Baum der Abgeschiedenheit den Inhalt <noun-de EventItem 6 2002524 1 2 1> auf dem Boden verteilst, wird sicherlich ein Springkraut erscheinen. Besiege es und besorge mir bitte zwei <noun-de EventItem 5 2002525 2 4 1>, die auf seinem Körper wachsen.
+#. fr: Essayez de répandre <noun-fr EventItem 6 2002524 1 1> près des arbres pourris au nord. Je pense que les monstres sortiront des buissons pour défendre leur territoire, et vous pourrez alors récupérer deux <noun-fr EventItem 12 2002525 2 1>.
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_005:1"
+msgid "Once they catch the scent of the nectar, they will be compelled to show themselves. That will be your chance to strike."
+msgstr ""
+
+#. ja: やぁ、手間をかけたねぇ。<br>「<sheet EventItem 2002525 0>」は手に入れられたかい？
+#. de: Entschuldige, dass ich dir solche Umstände bereite. Hast du <noun-de EventItem 2 2002525 2 4 1> bekommen?
+#. fr: Ah, vous revoilà. Vous avez les <noun-fr EventItem 12 2002525 2 1><nbsp>?
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_020:1"
+msgid "Were you able to find any snapmint?"
+msgstr ""
+
+#. ja: おやまあ、立派な大きさだね！<br>ありがとう、早速使わせてもらうよ。
+#. de: Oh, die sind ja wunderbar groß! Die kommen gleich zum Einsatz. Herzlichen Dank!
+#. fr: Oh, c'est formidable, elles sont bien grandes<nbsp>! Merci beaucoup.
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_021:1"
+msgid "Goodness, these leaves are so large. Thank you."
+msgstr ""
+
+#. ja: これは、スリザーバウで造られる発酵食品、<br>プラホックの調理に欠かせない品なのさ。
+#. de: Ohne diese Blätter können wir kein Prahok zubereiten<nbsp>- das ist eines der bekanntesten Gerichte aus Schlangenzweig.
+#. fr: Cet ingrédient est in<shy>dis<shy>pen<shy>sa<shy>ble dans la préparation du prahok, une spécialité de Serpentige.
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_022:1"
+msgid "I could never hope to cook my prahok without this."
+msgstr ""
+
+#. ja: すりつぶした魚を発酵させたものでね、<br>それを肉なんかと混ぜて、この葉に包み込んで焼き上げるんだ。<br>素朴な味ながら、これが美味しいんだよ！
+#. de: Klein geriebener Fisch wird erst fermentiert und dann mit Fleisch vermischt in diese großen Blätter eingewickelt und über dem Feuer gegart. Prahok schmeckt zwar schlicht, aber so mögen wir es hier.
+#. fr: C'est une pâte de poisson écrasé que l'on fait fermenter. On y mélange de la viande et on l'enveloppe dans ces feuilles avant de la faire cuire. C'est un goût très unique, mais j'adore ça<nbsp>!
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_023:1"
+msgid "Are you familiar with this dish? After leaving our fish to dry, it is salted then fermented. Once ready, you then mix it with a grilled meat of your choice, and wrap it in leaves of snapmint."
+msgstr ""
+
+#. ja: プラホックは保存食だから、食べる機会が多い分、<br>みんなが飽きないように、いろいろ工夫したくてねぇ。
+#. de: Da es sich lange hält, wird dieses Gericht hier ziemlich häufig gegessen. Deshalb möchte ich heute ein bisschen mit dem Rezept herumprobieren. Wenn man nicht ab und zu den Geschmack ändert, haben die Leute es irgendwann satt.
+#. fr: Comme le prahok est un aliment à longue conservation, on en mange souvent, aussi on y apporte quelques touches pour éviter la monotonie.
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_024:1"
+msgid "It keeps quite well, so we eat it often. Though the recipe is simple, you can add all manner of herbs and spices to suit your tastes."
+msgstr ""
+
+#. ja: 取りに行ってもらえて助かったよ。<br>機会があれば、あんたもスリザーバウの味を試してみておくれ。
+#. de: Danke nochmals, dass du mir die Blätter besorgt hast. Probier doch bei Gelegenheit auch mal den Geschmack von Schlangenzweig.
+#. fr: Vous me rendez bien service. J'espère que vous goûterez la cuisine tra<shy>di<shy>tion<shy>nel<shy>le de Serpentige, à l'occasion.
+#. speaker: ERSABEL
+msgctxt "quest/034/LucKze016_03450:TEXT_LUCKZE016_03450_ERSABEL_000_025:1"
+msgid "Should you have the opportunity, I insist you try it for yourself."
+msgstr ""

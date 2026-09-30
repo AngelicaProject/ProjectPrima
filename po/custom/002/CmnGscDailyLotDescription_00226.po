@@ -1,0 +1,35 @@
+# custom/002/CmnGscDailyLotDescription_00226
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 「ミニ・くじテンダー」は、お気軽に挑戦可能な日めくりくじ。<br>今日という日の運試しに、<br>ぜひ「ミニ・くじテンダー」をご利用ください！
+#. de: Vorgestern war es nicht, gestern war es auch nicht ... aber heute ist dein Glückstag! Mini-Glückskaktor ist die beste Gelegenheit, Nymeia jeden Tag aufs Neue herauszufordern und dein Goldsaucer-Punktekonto aufzufüllen. Heute klappt's bestimmt!
+#. fr: Le Mini Cactpot est une loterie quotidienne peu onéreuse et ouverte à tous<nbsp>! Est-ce votre jour de chance<nbsp>? Demandez-le au Mini Cactpot<nbsp>!
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morning</if><else><if ($gn11 < 17)>day<else>evening</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>evening<else>morning</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>day<else>evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/002/CmnGscDailyLotDescription_00226:TEXT_CMNGSCDAILYLOTDESCRIPTION_00226_TALK_01:1"
+msgid "Good <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morning</if><else><if ($gn11 < 17)>day<else>evening</if></if>, fair traveler! I am the purveyor of Mini Cactpot tickets. Why not buy one to find out why we say “prosperity's but a scratch away”?"
+msgstr ""
+
+#. ja: 「ミニ・くじテンダー」は、1日につき、3回まで挑戦可能です。
+#. de: Mini-Glückskaktor kann bis zu dreimal pro Tag gespielt werden.
+#. fr: Vous pouvez tenter votre chance au Mini Cactpot trois fois par jour.
+msgctxt "custom/002/CmnGscDailyLotDescription_00226:TEXT_CMNGSCDAILYLOTDESCRIPTION_00226_TALK_02:1"
+msgid "You can purchase up to three Mini Cactpot tickets per day."
+msgstr ""
+
+#. ja: この挑戦回数は、<br>（地球時間）毎日、<reset-time 0><if ($hour >= 12)>午後<else>午前</if><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{0}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{0}</if>時にリセットされます。<br>挑戦回数を終えた場合は、リセット時刻までお待ちください。
+#. de: Der Timer wird jeweils um <set-time 1285081200><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>:00 Uhr (Erdenzeit) zurückgestellt.
+#. fr: Ce nombre de par<shy>ti<shy>ci<shy>pa<shy>tions est réinitialisé tous les jours à <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>h (temps réel).
+#. macro: <reset-time 0> — sets the time placeholders to the next daily or weekly reset; hour = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/002/CmnGscDailyLotDescription_00226:TEXT_CMNGSCDAILYLOTDESCRIPTION_00226_TALK_03:1"
+msgid "The counter for Mini Cactpot tickets resets daily at <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>p.m.<else>a.m.</if> (Earth time)."
+msgstr ""

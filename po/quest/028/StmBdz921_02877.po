@@ -1,0 +1,105 @@
+# quest/028/StmBdz921_02877 — «It's a Zu Out There» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ポルタ・プレトリアのムニフリッドは、戦闘経験の豊富な冒険者に任務を頼みたいようだ。
+#. de: Munifrid sucht einen kampferfahrenen Abenteurer.
+#. fr: Munifrid voudrait confier une mission à <if $gn4>une aventurière chevronnée<else>un aventurier chevronné</if>.
+#. kind: journal
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_SEQ_00:1"
+msgid "Munifrid seeks a seasoned adventurer for an important task."
+msgstr ""
+
+#. ja: <sheet BNpcName 5945 0>を討伐
+#. de: <capitalize><noun-de BNpcName 2 5945 1 4 1></capitalize> erlegen
+#. fr: Abattre <noun-fr BNpcName 2 5945 1 1>
+#. kind: objective
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_TODO_00:1"
+msgid "Slay the zu nestling."
+msgstr ""
+
+#. ja: ムニフリッドに報告
+#. de: Zu Munifrid zurückkehren
+#. fr: Faire un rapport à Munifrid
+#. kind: objective
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_TODO_01:1"
+msgid "Report to Munifrid."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>殿。<br>あなたは、戦闘経験が豊富な冒険者であると、伺っております。
+#. de: Sei gegrüßt, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if> <split " " 2><string $gs1></split>. Bist du bereit, auf eine Mission zu gehen, die dein Kampfgeschick herausfordert?
+#. fr: Salutations, <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if><nbsp>! Tout le monde dit que vous êtes <if $gn4>une aventurière<else>un aventurier</if> d'exception, et ce n'est pas tous les jours que j'entends de telles louanges.
+#. speaker: MUNIFRID
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_000:1"
+msgid "<capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, you are well known for your deeds as a soldier. On this day, however, I would call upon your broad experiences as an adventurer."
+msgstr ""
+
+#. ja: 私の任務は、ポルタ・プレトリア周辺の巡回なのですが、<br><sheet BNpcName 5945 0>が巡回路に棲み着いているのです。<br>避ければ監視の穴となり、帝国につけいる隙を与えかねません。
+#. de: Wir schicken Patrouillen in die Nähe von Porta Praetoria, aber die werden immer öfter aus der Luft attackiert. Nicht von Luftschiffen, sondern von einem brütenden Montisaurus. Das Muttertier hält die Patrouille wohl für eine Gefahr für seinen Nachwuchs.
+#. fr: Je suis chargé des patrouilles autour de Porta Praetoria, et j'ai pu constater qu'<noun-fr BNpcName 1 5945 1 1> était venu s'installer dans les alentours. Il nous empêche de maintenir l'ordre et de nous prémunir contre les éventuelles attaques des Impériaux.
+#. speaker: MUNIFRID
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_001:1"
+msgid "As for the situation at hand, it would seem that part of our patrol route has been claimed as territory by a fearsome zu nestling. Yet we cannot simply choose to circumvent the area, lest we risk providing an unobserved entry point for imperial scouts."
+msgstr ""
+
+#. ja: 軍隊相手の戦いなら、後れを取るつもりはありません。<br>しかし、狭い谷間を自由に飛びまわる、魔物が相手では、<br>対人を想定した戦い方など、ほとんど役には立ちませんでした。
+#. de: Meine Soldaten sind den Kampf gegen Flugungeheuer nicht gewohnt. Ein paar von ihnen wurden von dem Ungeheuer sogar schon in die Luft gehoben und aus großer Höhe wieder fallen gelassen. Ein grausiger Tod, den ich meinen Soldaten gerne ersparen würde.
+#. fr: Si c'étaient des humains qui posaient problème, nous leur aurions pro<shy>ba<shy>ble<shy>ment déjà réglé leur compte, mais je dois admettre que nous sommes nettement moins préparés à faire face à un volatile qui se meut librement dans les airs.
+#. speaker: MUNIFRID
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_002:1"
+msgid "My men and I will gladly go toe-to-toe with any military opponent. But nothing in our training has prepared us to combat a foe which can soar through the ravines and swoop down upon us with impunity."
+msgstr ""
+
+#. ja: 仲間の巡回兵も被害に遭っていて、<br>いつ命を落とす者が現れるともわかりません。<br>そこで、経験豊富な冒険者殿に、あやつの討伐を頼みたいのです。
+#. de: Aber <if $gn4>eine Abenteurerin<else>ein Abenteurer</if> wie du sollte doch mit so einer Aufgabe spielend fertig werden.
+#. fr: Plusieurs de mes camarades ont déjà été blessés, et si ça continue comme ça, nous aurons tôt ou tard des morts sur la conscience. Par conséquent, si vous pouviez vous occuper de cette créature à notre place, nous vous en serions très re<shy>con<shy>nais<shy>sants.
+#. speaker: MUNIFRID
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_003:1"
+msgid "My comrade here almost lost his arm to such an attack, and I fear it is only a matter of time ere the creature makes a kill...unless you kill it first."
+msgstr ""
+
+#. ja: 「<sheet BNpcName 5945 0>」は、北東の狭い岩場を根城にしています。<br>歴戦の冒険者にかける言葉では、ないのかもしれませんが、<br>どうか……お気をつけて。
+#. de: Begib dich in die Schluchten nördlich von hier, finde das Nest des Montisaurus und erlege das Ungeheuer. Bevor noch mehr von meinen Soldaten ein unsanftes Ende auf dem harten Felsboden finden.
+#. fr: <capitalize><noun-fr BNpcName 2 5945 1 1></capitalize> a fait son nid dans une zone rocheuse au nord-est. Faites bien attention à vous car il peut être très fourbe, et revenez-nous vite<nbsp>!
+#. speaker: MUNIFRID
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_004:1"
+msgid "The nestling surveys its domain from a narrow pillar of rock to the northeast. Pray find this predator, and end the threat to our patrols."
+msgstr ""
+
+#. ja: 「<sheet BNpcName 5945 0>」は、北東の狭い岩場を根城にしています。<br>歴戦の冒険者にかける言葉では、ないのかもしれませんが、<br>どうか……お気をつけて。
+#. de: Begib dich in die Schluchten nördlich von hier, finde das Nest des brütenden Montisaurus und erlege das Ungeheuer. Bevor noch mehr von meinen Soldaten ein unsanftes Ende auf dem harten Felsboden finden.
+#. fr: <capitalize><noun-fr BNpcName 2 5945 1 1></capitalize> a fait son nid dans une zone rocheuse au nord-est. Faites bien attention à vous car il peut être très fourbe, et revenez-nous vite<nbsp>!
+#. speaker: MUNIFRID
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_005:1"
+msgid "We might take the thing down eventually, but too much of our own blood would stain those rock walls. For a monster-slayer of your caliber, however, I should hope it will prove no great challenge..."
+msgstr ""
+
+#. ja: おお、奴を倒していただけたのですね！？<br>やはり専門家に任せて正解だったようです。
+#. de: Hast du das Ungeheuer erledigt? Sind meine Soldaten wieder sicher?
+#. fr: <capitalize><noun-fr BNpcName 2 5945 1 1></capitalize> mange les pissenlits par la racine<nbsp>? Merci, merci infiniment<nbsp>! Grâce à vous, mes camarades et moi n'aurons plus à craindre pour nos vies.
+#. speaker: MUNIFRID
+#. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_010:1"
+msgid "The nestling is slain, then? I knew I had chosen the right <if $gn4>woman<else>man</if> for the job."
+msgstr ""
+
+#. ja: 誰かが命を落としてしまう前に解決でき、本当によかった。<br>ご協力に感謝しますよ！
+#. de: Ich danke dir, <if $gn4>Abenteurerin<else>Abenteurer</if>. Du hast viele Leben gerettet. Und vielleicht hat der Ausflug in die luftigen Höhen dieser Region dich sogar das ein oder andere über die vorherrschenden Windätherquellen gelehrt. Das Wissen darüber könnte dir noch nützlich werden.
+#. fr: Vous êtes notre <if $gn4>héroïne<else>héros</if> à tout jamais<nbsp>! Revenez nous voir quand vous voulez, <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if><nbsp>!
+#. speaker: MUNIFRID
+msgctxt "quest/028/StmBdz921_02877:TEXT_STMBDZ921_02877_MUNIFRID_000_011:1"
+msgid "I am grateful you came along before any lives were lost to that monstrous bird. You have our thanks!"
+msgstr ""

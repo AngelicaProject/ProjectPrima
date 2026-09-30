@@ -1,0 +1,655 @@
+# custom/003/FesYkwMedalExchange_00348
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ああ、キミか……。<br>「妖怪メダル」と妖怪ミニオンの交換かい？<br>それとも、また別のものがお望みかな？
+#. de: Ah, du bist es. Möchtest du also einen Yo-kai-Begleiter erwerben? Oder darf es etwas anderes aus meinem Sortiment sein?
+#. fr: En quoi puis-je vous être utile, <if $gn4>ma<else>mon</if> ch<if $gn4>ère<else>er</if> ami<if $gn4>e</if><nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_000:1"
+msgid "A pleasure to see you again. Have you come to meet more Yo-kai? Or perhaps browse my array of special goods?"
+msgstr ""
+
+#. ja: おお、武器コレクターのキミか！<br>今日はオレに会いにきてくれたのかい？<br>それとも、まだ欲しい物でもあるのかな？
+#. de: Da ist ja <if $gn4>die fleißige Yo-kai-Waffensammlerin<else>der fleißige Yo-kai-Waffensammler</if>. Bist du hier, um einen Begleiter zu erwerben oder wolltest du mir nur einen guten <if ($gn11 < 12)><if ($gn11 < 4)>Abend<else>Morgen</if><else><if ($gn11 < 17)>Tag<else>Abend</if></if> wünschen?
+#. fr: C'est toujours un plaisir de vous revoir, <split " " 1><string $gs1></split>. Vous êtes assurément <if $gn4>ma<else>mon</if> meilleur<if $gn4>e</if> client<if $gn4>e</if>, ha ha ha<nbsp>!
+#. macro: <if $gn4>herself<else>himself</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_100_000:1"
+msgid "Well if it isn't the master weapons collector <if $gn4>herself<else>himself</if>! How may I be of service to you?"
+msgstr ""
+
+#. ja: 何をする？
+#. de: Was möchtest du machen?
+#. fr: Que voulez-vous faire<nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_Q1_000_001:1"
+msgid "What would you like to do?"
+msgstr ""
+
+#. ja: ミニオンの交換
+#. de: Einen Yo-kai-Begleiter erwerben.
+#. fr: Échanger des médailles Yo-kai
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A1_000_001:1"
+msgid "Purchase minions."
+msgstr ""
+
+#. ja: 武器の交換
+#. de: Eine Yo-kai-Waffe erwerben.
+#. fr: Échanger des médailles légendaires
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A1_000_002:1"
+msgid "Purchase weapons."
+msgstr ""
+
+#. ja: 話を聞く
+#. de: Mehr über Nohi erfahren.
+#. fr: Parler
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A1_000_003:1"
+msgid "Small talk."
+msgstr ""
+
+#. ja: キャンセル
+#. de: Nichts.
+#. fr: Annuler
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A1_000_004:1"
+msgid "Cancel."
+msgstr ""
+
+#. ja: どのミニオンと交換する？ <br>(必要妖怪メダル数:<num $n1>　所持数:<kilo "<num $n2>" ",">)
+#. de: Welchen Yo-kai möchtest du erwerben?<br>Benötigte Yo-kai-Medaillen: <num $n1> (in Besitz: <kilo "<num $n2>" ".">)
+#. fr: Quelle mascotte vous intéresse<nbsp>?<br>Médailles Yo-kai requises<nbsp>: <num $n1> (<kilo $n2 "<nbsp>"> possédée<if ($n2 <= 1)><else>s</if>)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_Q2_000_001:1"
+msgid "Which minion will you choose?<br>(Yo-kai Medals Required: <num $n1>, Bag: <num $n2>)"
+msgstr ""
+
+#. ja: <sheet Companion $n1 0>
+#. de: <capitalize><noun-de Companion 5 $n1 1 1 1></capitalize>
+#. fr: <sheet Companion $n1 0>
+#. macro: <sheet Companion $n1 0> — a value from a game data sheet, such as a name; sheet = Companion, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A2_000_001:1"
+msgid "<sheet Companion $n1 0>."
+msgstr ""
+
+#. ja: キャンセル
+#. de: Abbrechen.
+#. fr: Annuler
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A2_000_002:1"
+msgid "Cancel."
+msgstr ""
+
+#. ja: 本当に「<sheet Companion $n1 0>」と交換する？
+#. de: Bist du sicher, dass du den Yo-kai-Begleiter <noun-de Companion 5 $n1 1 1 1> erwerben möchtest?
+#. fr: Voulez-vous vraiment <sheet Companion $n1 0><nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_Q6_000_001:1"
+msgid "Choose this minion?"
+msgstr ""
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A6_000_001:1"
+msgid "Yes"
+msgstr ""
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A6_000_002:1"
+msgid "No"
+msgstr ""
+
+#. ja: どうやら、すべての妖怪とともだちになっているようだね。<br>もっと多くの妖怪と出会いたいなら……<br>オレの故郷まで旅してみるといいんじゃないかな？
+#. de: Du hast ja schon alle Yo-kai! Wenn du mehr haben möchtest, solltest du dich mal in meiner Heimat umsehen. Du wirst nicht glauben, wie viele es dort gibt!
+#. fr: Je suis sincèrement désolé, mais vous vous êtes déjà lié<if $gn4>e</if> d'amitié avec tous les Yo-kai que j'ai amenés avec moi. Si vous voulez en rencontrer d'autres, je vous suggère de visiter mon pays natal. Il y en a des centaines et des centaines<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_002:1"
+msgid "Why, you've befriended all the Yo-kai I've brought with me! Might it be said that you're quite taken by them? If so, I suggest you come and visit my homeland where you can find more. So many more."
+msgstr ""
+
+#. ja: おっと、「妖怪メダル」が足りないようだね。<br>もっとたくさん集めてから、声をかけてくれるかい？
+#. de: Du hast nicht genug Yo-kai-Medaillen. Komm wieder, wenn du mehr gefunden hast, ja?
+#. fr: Je regrette, mais vous n'avez pas assez de médailles pour obtenir ce Yo-kai... Repassez me voir quand vous en aurez suf<shy>fi<shy>sam<shy>ment accumulé, d'accord<nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_003:1"
+msgid "Hmm... You appear to be lacking the required medals. Apologies, but business is business─I'll have to ask you to come back when you've found some more."
+msgstr ""
+
+#. ja: 「妖怪メダル」は、「妖怪ウォッチ」を装備した状態で、<br>各地のF.A.T.E.を達成し、貢献した場合に入手できます。
+#. de: Sammle Yo-kai-Medaillen, um sie bei Nohi gegen Yo-kai-Begleiter einzutauschen. Die Medaillen bekommst du, indem du an FATEs teilnimmst und dabei die Yo-kai Watch angelegt hast. Vergiss nicht, sie anzulegen!
+#. fr: Réussir les ALÉA en étant équipé de la Yo-kai Watch permet d'obtenir des médailles Yo-kai en récompense.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_100_003:1"
+msgid "Yo-kai Medals can be obtained by completing FATEs while equipped with the Yo-kai Watch."
+msgstr ""
+
+#. ja: 対象地域は、中央ラノシア、低地ラノシア、<br>西ラノシア、高地ラノシア、外地ラノシア、<br>黒衣森:中央森林、東部森林、南部森林、北部森林……。
+#. de: Die FATEs finden in den folgenden Arealen statt, die auch im Journal aufgelistet sind:
+#. fr: Les zones concernées sont les suivantes<nbsp>: la Noscea centrale, la Basse-Noscea, la Noscea occidentale, la Haute-Noscea, la Noscea extérieure, la Forêt centrale, la Forêt de l'est, la Forêt du sud, la Forêt du nord...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_200_003:1"
+msgid "Yo-kai Medals can be found at FATEs in the following areas:"
+msgstr ""
+
+#. ja: 西ザナラーン、中央ザナラーン、東ザナラーン、<br>南ザナラーン、クルザス西部高地、アバラシア雲海、<br>高地ドラヴァニア、ドラヴァニア雲海、低地ドラヴァニア……。
+#. de: Finsterwald: Tiefer Wald, Nordwald, Südwald und Ostwald<br>La Noscea: Zentrales, östliches, oberes, unteres und äußeres La Noscea<br>Thanalan: Zentrales, südliches, westliches und östliches Thanalan<br>Westliches Hochland von Coerthas, Wolkenmeer, Dravanisches Vorland, Wallende Nebel, Dravanisches Hinterland
+#. fr: ... le Thanalan occidental, le Thanalan central, le Thanalan oriental, le Thanalan méridional, les Hautes terres du Coerthas occidental, L'Écume des cieux d'Abalathia, l'Avant-pays dravanien, L'Écume des cieux de Dravania, l'Arrière-pays dravanien...
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_300_003:1"
+msgid "The Black Shroud: Central, East, South, and North<br>La Noscea: Middle, Lower, Western, Upper, and Outer<br>Thanalan: Central, Western, Eastern, and Southern<br>Coerthas Western Highlands, the Sea of Clouds, the Dravanian Forelands, the Churning Mists, and the Dravanian Hinterlands"
+msgstr ""
+
+#. ja: 魔大陸アジス・ラー、ギラバニア辺境地帯、ギラバニア山岳地帯、<br>ギラバニア湖畔地帯、紅玉海、ヤンサ、アジムステップとなります。<br>積極的にF.A.T.E.に参加して、集めてみましょう。
+#. de: Azys Lla, Abanisches Grenzland, die Zinnen, das Fenn, Rubinsee, Yanxia, Azim-Steppe
+#. fr: ... Azys Lla, Les Marges de Gyr Abania, Les Pics de Gyr Abania, Les Lacs de Gyr Abania, la Mer de Rubis, Yanxia et la Steppe d'Azim.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_400_003:1"
+msgid "Azys Lla, the Fringes, the Peaks, the Lochs, the Ruby Sea, Yanxia, the Azim Steppe"
+msgstr ""
+
+#. ja: 所持品に空き枠がないか、すでに所持しているため、<br><sheet Item $n1 0>を入手できません。
+#. de: Du kannst den gewünschten Gegenstand nicht erhalten, weil du keinen Platz mehr im Inventar hast oder weil du ihn bereits besitzt.
+#. fr: Impossible d'obtenir <noun-fr Item 2 $n1 1 1>. Votre inventaire est plein.
+#. macro: <sheet Item $n1 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_004:1"
+msgid "Unable to obtain <sheet Item $n1 0> due to insufficient inventory space or having already obtained the item."
+msgstr ""
+
+#. ja: それじゃあ、紹介しよう……。<br>キミの新しいともだち「<sheet Companion $n1 0>」だ！<br>仲良くしてやってくれよな！
+#. de: Dann will ich euch mal bekanntmachen. Darf ich vorstellen, <noun-de Companion 5 $n1 1 1 1>! Vertragt euch gut, ja?
+#. fr: Laissez-moi faire les pré<shy>sen<shy>ta<shy>tions<nbsp>: voici <sheet Companion $n1 0><nbsp>! J'espère que vous vous entendrez bien<nbsp>!
+#. macro: <sheet Companion $n1 0> — a value from a game data sheet, such as a name; sheet = Companion, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_100_004:1"
+msgid "Let's get you acquainted, then. Meet your new friend, <sheet Companion $n1 0>! I hope you two will get along!"
+msgstr ""
+
+#. ja: どの武器と交換する？
+#. de: Welche Waffe möchtest du erwerben?
+#. fr: Quelle arme Yo-kai vous intéresse<nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_Q3_000_001:1"
+msgid "Which weapon will you purchase?"
+msgstr ""
+
+#. ja: <sheet Item $n3 0>:<kilo "<num $n4>" ",">/<num $n5>(<if ($n1 == 15208)>片手剣<else><if ($n1 == 15209)>格闘武器<else><if ($n1 == 15210)>両手斧<else><if ($n1 == 15211)>両手槍<else><if ($n1 == 15212)>弓<else><if ($n1 == 15213)>双剣<else><if ($n1 == 15214)>両手剣<else><if ($n1 == 15215)>銃<else><if ($n1 == 15216)>両手幻具<else><if ($n1 == 15217)>両手呪具<else><if ($n1 == 15218)>魔道書:召喚士<else><if ($n1 == 15219)>魔道書:学者<else><if ($n1 == 15220)>天球儀</if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else>＆盾</if>)
+#. de: <if ($n1 == 15208)>Gladiator-Schwert<else><if ($n1 == 15209)>Mönchs-Klauen<else><if ($n1 == 15210)>Marodeur-Axt<else><if ($n1 == 15211)>Pikenier-Speer<else><if ($n1 == 15212)>Barden-Bogen<else><if ($n1 == 15213)>Schurken-Dolche<else><if ($n1 == 15214)>Dunkelritter-Zweihänder<else><if ($n1 == 15215)>Maschinisten-Muskete<else><if ($n1 == 15216)>Druiden-Stock<else><if ($n1 == 15217)>Thaumaturgen-Stab<else><if ($n1 == 15218)>Beschwörer-Grimoire<else><if ($n1 == 15219)>Gelehrten-Kodex<else><if ($n1 == 15220)>Astrologen-Globus</if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else> und Schild</if> (<noun-de Item 5 $n3 2 1 1> <num $n4>/<num $n5>)
+#. fr: <if ($n1 == 15208)>Épée<else><if ($n1 == 15209)>Poings de moine<else><if ($n1 == 15210)>Hache de guerrier<else><if ($n1 == 15211)>Lance de chevalier dragon<else><if ($n1 == 15212)>Arc de barde<else><if ($n1 == 15213)>Dagues de ninja<else><if ($n1 == 15214)>Claymore de chevalier noir<else><if ($n1 == 15215)>Mousqueton de machiniste<else><if ($n1 == 15216)>Canne de mage blanc<else><if ($n1 == 15217)>Bâton de mage noir<else><if ($n1 == 15218)>Grimoire d'invocateur<else><if ($n1 == 15219)>Grimoire d'érudit<else><if ($n1 == 15220)>Globe d'astromancien</if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else> et bouclier de paladin</if> (<noun-fr Item 12 $n3 2 1> <kilo $n4 "<nbsp>">/<num $n5>)
+#. macro: <if ($n1 == 15208)>Paladin's Sword<else><if ($n1 == 15209)>Monk's Fists.<else><if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><i… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15208 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15209)>Monk's Fists.<else><if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15209 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15210 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15211 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Muske… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15212 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15213 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Bla… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15214 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner'… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15215 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's C… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15216 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15217 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's Globe.</if></if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15218 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's Globe.</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15219 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15220)>Astrologian's Globe.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15220 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 == 0)><else> and Shield.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet Item $n3 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 3, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A3_000_001:1"
+msgid "<if ($n1 == 15208)>Paladin's Sword<else><if ($n1 == 15209)>Monk's Fists.<else><if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's Globe.</if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else> and Shield.</if> (<sheet Item $n3 0>: <num $n4>/<num $n5>)"
+msgstr ""
+
+#. ja: キャンセル
+#. de: Abbrechen.
+#. fr: Annuler
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A3_000_002:1"
+msgid "Cancel."
+msgstr ""
+
+#. ja: 本当に「<sheet Item $n3 0>」<num $n5>枚を<br>「<sheet Item $n1 0>」<if ($n2 == 0)><else>＆「<sheet Item $n2 0>」</if>に交換する？
+#. de: Bist du sicher, dass du die Yo-kai-Waffe<if ($n2 == 0)><else>n</if> <noun-de Item 5 $n1 1 1 1><if ($n2 == 0)><else> und <noun-de Item 5 $n2 1 1 1></if> für <num $n5> Yo-kai-Medaillen erwerben möchtest?
+#. fr: Voulez-vous vraiment échanger <kilo $n5 "<nbsp>"> <noun-fr Item 12 $n3 $n5 1> contre <noun-fr Item 1 $n1 1 1><if ($n2 == 0)><else> et <noun-fr Item 1 $n2 1 1></if><nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_Q5_000_001:1"
+msgid "Purchase this weapon?"
+msgstr ""
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A5_000_001:1"
+msgid "Yes"
+msgstr ""
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A5_000_002:1"
+msgid "No"
+msgstr ""
+
+#. ja: 「<sheet Item $n1 ITEM_SGL>」が足りていないようだね。<br>レアなアイテムだから探すのは大変だろうが……<br>キミならきっと、見つけられるはずさ！
+#. de: Du hast nicht genug legendäre Medaillen. Ich weiß, die Dinger sind schwer zu finden, aber deswegen sind sie für mich ja so wertvoll. Häng dich rein, für <if $gn4>eine Abenteurerin<else>einen Abenteurer</if> von deinem Kaliber sollte das doch eigentlich kein Problem sein.
+#. fr: Je suis désolé, mais vous n'avez pas suf<shy>fi<shy>sam<shy>ment de médailles pour pouvoir procéder à l'échange... Bien sûr, je comprends par<shy>fai<shy>te<shy>ment la difficulté que cela représente d'en réunir une telle quantité, mais je vous assure que la récompense sera à la hauteur de vos efforts<nbsp>!<br>Vous pouvez le faire, <split " " 1><string $gs1></split>, je crois en vous<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_005:1"
+msgid "I'm afraid you'll have to come back when you acquire some Legendary Medals. I understand obtaining such rare pieces can be difficult, but think of the marvelous rewards you will reap for your efforts! I believe in you!"
+msgstr ""
+
+#. ja: 「妖怪レジェンドメダル」は、妖怪ミニオンを連れた状態で、<br>特定の地域のF.A.T.E.を達成し、貢献すると稀に入手できます。<br>「妖怪大辞典」で指定された地域を確認し、挑戦してみましょう。
+#. de: Sammle legendäre Medaillen, um sie bei Nohi gegen besondere Yo-kai-Waffen einzutauschen. Die Medaillen bekommst du mit etwas Glück, indem du an den FATEs teilnimmst, die im Yo-kai-Medaillium aufgeführt sind, und dabei von einem Yo-kai begleitet wirst. Vergiss nicht, den Yo-kai-Begleiter zu rufen!
+#. fr: Réussir les ALÉA des zones indiquées dans le Médallium des Yo-kai en étant accompagné de la mascotte Yo-kai correspondante permet parfois de recevoir également des médailles légendaires en récompense.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_100_005:1"
+msgid "Legendary Yo-kai Medals can be obtained, albeit at a low probability, by participating in FATEs designated in the Yo-kai Medallium while accompanied by the Yo-kai minion designated on the medal."
+msgstr ""
+
+#. ja: 所持品に空き枠がないか、すでに所持しているため、<br>「<sheet Item $n1 0>」と「<sheet Item $n2 0>」を入手できません。
+#. de: Du kannst die gewünschten Gegenstände nicht erhalten, weil du keinen Platz mehr im Inventar hast oder weil du sie bereits besitzt.
+#. fr: Impossible d'obtenir <noun-fr Item 2 $n1 1 1> et <noun-fr Item 2 $n2 1 1>. Votre inventaire est plein ou vous possédez déjà ces objets uniques.
+#. macro: <sheet Item $n1 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <sheet Item $n2 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_006:1"
+msgid "Cannot obtain <sheet Item $n1 0> and <sheet Item $n2 0> due to insufficient inventory space or having already obtained the items."
+msgstr ""
+
+#. ja: 所持品に空き枠がないか、すでに所持しているため、<br>「<sheet Item $n1 0>」を入手できません。
+#. de: Du kannst den gewünschten Gegenstand nicht erhalten, weil du keinen Platz mehr im Inventar hast oder weil du ihn bereits besitzt.
+#. fr: Impossible d'obtenir <noun-fr Item 2 $n1 1 1>. Votre inventaire est plein ou vous possédez déjà cet objet unique.
+#. macro: <sheet Item $n1 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_100_006:1"
+msgid "Cannot obtain <sheet Item $n1 0> due to insufficient inventory space or having already obtained the item."
+msgstr ""
+
+#. ja: 剣と盾を選ぶなんて、オレと気が合いそうだね！<br>さあ、これがキミの新たな武器「<sheet Item $n1 0>」……<br>そして、「<sheet Item $n2 0>」だ！
+#. de: Schwert und Schild, das sind auch meine bevorzugten Waffen ... Hier, bitte schön, <noun-de Item 1 $n1 1 1 1> und <noun-de Item 1 $n2 1 1 1>.
+#. fr: C'est un excellent choix que vous avez fait là. Il se trouve que moi aussi je suis un adepte de l'épée et du bouclier, hé hé hé... En tout cas, j'espère de tout cœur que cette <noun-fr Item 12 $n1 1 1> et cette <noun-fr Item 12 $n2 1 1> vous donneront sa<shy>tis<shy>fac<shy>tion<nbsp>!
+#. macro: <sheet Item $n1 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <sheet Item $n2 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_007:1"
+msgid "Sword and shield, eh? That's my favorite kind. Here you are, your <sheet Item $n1 0> and <sheet Item $n2 0>."
+msgstr ""
+
+#. ja: どうだい、カッコイイだろう？<br>これがキミの新たな武器「<sheet Item $n1 0>」だ！
+#. de: Hier, bitte schön, <noun-de Item 1 $n1 1 1 1>. Ich muss sagen, deine neue Yo-kai-Waffe steht dir ausgezeichnet!
+#. fr: C'est un très bon choix que vous avez fait là. Cette arme est l'une de mes préférées, hé hé hé... En tout cas, vous pouvez être assuré<if $gn4>e</if> que <noun-fr Item 6 $n1 1 1> vous donnera entière sa<shy>tis<shy>fac<shy>tion, car <if "<sheet Item $n1 6>">elle<else>il</if> a été conçu<if "<sheet Item $n1 6>">e</if> pour durer<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_008:1"
+msgid "Here you are, your new weapon! Go on, try it out!"
+msgstr ""
+
+#. ja: 妖怪武器の交換に必要となる<br>「妖怪レジェンドメダル」の数が増加しました。<br>積極的にF.A.T.E.に参加して、集めてみましょう。
+#. de: Die Anzahl an legendären Yo-kai-Medaillen, um eine weitere Yo-kai-Waffe zu erwerben, hat sich erhöht. Nimm weiter aktiv an FATEs teil, um noch mehr Medaillen zu finden.
+#. fr: Le nombre de médailles légendaires nécessaires pour acquérir une arme Yo-kai a augmenté. Continuez de participer activement aux ALÉA des zones concernées pour les obtenir<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_009:1"
+msgid "The number of Legendary Yo-kai Medals required to purchase Yo-kai weapons from Nohi has increased. Participate in FATEs to earn more medals."
+msgstr ""
+
+#. ja: エオルゼアに何をしに来たのかだって？<br>実は、親しいともだちを訪ねてやって来たのさ。<br>いつもジャラジャラしてるヤツでね……。
+#. de: Ich bin hier, um mich von den Strapazen meiner Arbeit zu erholen, denn in meiner Firma kann es manchmal ziemlich hoch hergehen. Der Gold Saucer ist der einzige Ort, den ich kenne, an dem ein gestandener Mann einen aufregenden Tag voller Nervenkitzel verbringen kann, ohne gleich das Schwert in die Hand nehmen zu müssen.<br>Außerdem bin ich nach Eorzea gekommen, um einen alten Freund zu besuchen. Ein geselliger Kerl - wo er ist, da erklingen mitreißende Lieder und packende Geschichten.
+#. fr: Vous voulez savoir ce que je suis venu faire en Éorzéa<nbsp>? Eh bien, du commerce, tout d'abord, mais je suis aussi venu rendre visite à un ami. C'est un homme qui aime vagabonder seul, selon son humeur et ses envies. En général, le tintamarre de ses bijoux le précède de loin...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_031:1"
+msgid "Why did I choose to travel to Eorzea? Aside from business, I also came to visit a friend of mine. He's prone to wandering himself, but I always know when he's close by the jangling sound he makes when he walks."
+msgstr ""
+
+#. ja: ところが道中で、道に迷う内に、<br>メダルを落としてしまったようでね。<br>集めてきてくれれば、お礼をするから……頼んだよ！
+#. de: Wie ich schon sagte, meine Heimat ist fern und ich bin weit gereist. Und weißt du was? Auf meiner langen Reise habe ich Medaillen aus meiner Heimat verloren. Seltene, wertvolle Medaillen. Äh, nicht wirklich wertvoll, denn hier in Eorzea sind sie eigentlich nur wertloser Plunder. In meiner Heimat aber, da sind sie etwas wert, und deshalb bin ich bereit, dir Gegenstände aus meiner Heimat im Tausch gegen diese Medaillen zu überlassen, wenn du mir welche zurückbringst.
+#. fr: En parlant de tintamarre, j'ai réalisé que ma bourse n'était pas aussi remplie que d'habitude après mon arrivée au Gold Saucer. Forcément, elle était trouée... Si jamais vous m'aidez à récupérer les médailles que j'ai perdues en cours de route, je vous récompenserai à la hauteur de vos efforts.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_032:1"
+msgid "Speaking of jangling, I found my coin pouch rather empty after I arrived at the Gold Saucer. I must have dropped some medals from my homeland when I made my way here after searching for Whisper."
+msgstr ""
+
+#. ja: 「妖怪メダル」は、「妖怪ウォッチ」を装備した状態で、<br>各地のF.A.T.E.を達成し、貢献した場合に入手できます。
+#. de: Sammle Yo-kai-Medaillen, um sie bei Nohi gegen Yo-kai-Begleiter einzutauschen. Die Medaillen bekommst du, indem du an FATEs teilnimmst und dabei die Yo-kai Watch angelegt hast. Vergiss nicht, sie anzulegen!
+#. fr: Réussir les ALÉA en étant équipé de la Yo-kai Watch permet d'obtenir des médailles Yo-kai en récompense.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_033:1"
+msgid "Yo-kai Medals can be obtained by completing FATEs while equipped with the Yo-kai Watch."
+msgstr ""
+
+#. ja: 対象地域は、中央ラノシア、低地ラノシア、<br>西ラノシア、高地ラノシア、外地ラノシア、<br>黒衣森:中央森林、東部森林、南部森林、北部森林……。
+#. de: Die FATEs finden in den folgenden Arealen statt, die auch im Journal aufgelistet sind:
+#. fr: Les zones concernées sont les suivantes<nbsp>: la Noscea centrale, la Basse-Noscea, la Noscea occidentale, la Haute-Noscea, la Noscea extérieure, la Forêt centrale, la Forêt de l'est, la Forêt du sud, la Forêt du nord...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_100_033:1"
+msgid "Yo-kai Medals can be found at FATEs in the following areas:"
+msgstr ""
+
+#. ja: 西ザナラーン、中央ザナラーン、東ザナラーン、<br>南ザナラーン、クルザス西部高地、アバラシア雲海、<br>高地ドラヴァニア、ドラヴァニア雲海、低地ドラヴァニア……。
+#. de: Finsterwald: Tiefer Wald, Nordwald, Südwald und Ostwald<br>La Noscea: Zentrales, östliches, oberes, unteres und äußeres La Noscea<br>Thanalan: Zentrales, südliches, westliches und östliches Thanalan<br>Westliches Hochland von Coerthas, Wolkenmeer, Dravanisches Vorland, Wallende Nebel, Dravanisches Hinterland
+#. fr: ... le Thanalan occidental, le Thanalan central, le Thanalan oriental, le Thanalan méridional, les Hautes terres du Coerthas occidental, L'Écume des cieux d'Abalathia, l'Avant-pays dravanien, L'Écume des cieux de Dravania, l'Arrière-pays dravanien...
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_200_033:1"
+msgid "The Black Shroud: Central, East, South, and North<br>La Noscea: Middle, Lower, Western, Upper, and Outer<br>Thanalan: Central, Western, Eastern, and Southern<br>Coerthas Western Highlands, the Sea of Clouds, the Dravanian Forelands, the Churning Mists, and the Dravanian Hinterlands"
+msgstr ""
+
+#. ja: 魔大陸アジス・ラー、ギラバニア辺境地帯、ギラバニア山岳地帯、<br>ギラバニア湖畔地帯、紅玉海、ヤンサ、アジムステップとなります。<br>積極的にF.A.T.E.に参加して、集めてみましょう。
+#. de: Azys Lla, Abanisches Grenzland, die Zinnen, das Fenn, Rubinsee, Yanxia, Azim-Steppe
+#. fr: ... Azys Lla, Les Marges de Gyr Abania, Les Pics de Gyr Abania, Les Lacs de Gyr Abania, la Mer de Rubis, Yanxia et la Steppe d'Azim.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_300_033:1"
+msgid "Azys Lla, the Fringes, the Peaks, the Lochs, the Ruby Sea, Yanxia, the Azim Steppe"
+msgstr ""
+
+#. ja: また「妖怪レジェンドメダル」は、妖怪ミニオンを連れた状態で、<br>特定の地域のF.A.T.E.を達成し、貢献すると稀に入手できます。<br>「妖怪大辞典」で指定された地域を確認し、挑戦してみましょう。
+#. de: Sammle legendäre Medaillen, um sie bei Nohi gegen besondere Waffen einzutauschen. Die Medaillen bekommst du mit etwas Glück, indem du an den FATEs teilnimmst, die im Yo-kai-Medaillium aufgeführt sind und dabei von einem Yo-kai begleitet wirst. Vergiss nicht, den Yo-kai-Begleiter zu rufen!
+#. fr: Réussir les ALÉA des zones indiquées dans le Médallium des Yo-kai en étant accompagné de la mascotte Yo-kai correspondante permet parfois de recevoir également des médailles légendaires en récompense.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_034:1"
+msgid "Legendary Medals can be obtained, albeit at a low probability, by participating in FATEs in areas designated in the Yo-kai Medallium while accompanied by the Yo-kai minion designated on the medal."
+msgstr ""
+
+#. ja: 「妖怪大辞典」は、<br>「だいじなもの」か「ミニオンリスト」から、<br>開くことができます。
+#. de: Das Medaillium kann unter <ui-color 500><ui-edge-color 501>Kuriositäten</ui-edge-color></ui-color> (Hauptmenü → Inhalte) oder im Begleiter-Verzeichnis geöffnet werden.
+#. fr: Le Médallium des Yo-kai peut être consulté à partir de l'encyclopédie des mascottes ou dans la liste des objets précieux.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_100_034:1"
+msgid "The Yo-kai Medallium can be accessed from the <ui-color 500><ui-edge-color 501>Collection</ui-edge-color></ui-color> menu or the <ui-color 500><ui-edge-color 501>Minion Guide</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: どうやら、武器を13種類も集めたみたいだね。<br>いやはやキミの努力には、驚かされるよ。<br>おめでとう！
+#. de: Da hast du doch tatsächlich alle Yo-kai-Waffen gesammelt! Alle Achtung, du siehst zäh aus, aber so viel Sammelleidenschaft hätte ich dir nicht zugetraut.
+#. fr: Vous avez déjà obtenu treize armes Yo-kai<nbsp>! Votre persévérance et votre détermination m'impressionnent.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_040:1"
+msgid "This must be one of the finest exchanges I've had in my travels. I cannot recall the last time an adventurer purchased so many of my weapons. I must say I'm impressed!"
+msgstr ""
+
+#. ja: おや、あれは……。<br>オレのともだちが来たみたいだぞ。
+#. de: Nanu? Da ist ja mein alter Freund, der Sänger!
+#. fr: Ah<nbsp>! On dirait que mon ami est venu me rendre visite<nbsp>!<nbsp>...<br>Eh bien, qu'est-ce que tu attends<nbsp>? Ne fais pas ton timide<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_041:1"
+msgid "Ah! It appears my old friend has come to visit me. Well, don't be shy, now! Come on over!"
+msgstr ""
+
+#. ja: 何やら楽しそうに話しているじゃないか。<br>いったい、どうしたって言うんだい？
+#. de: Na, sieh mal, wer da ist! Der gute Nohi! Sag, wie geht es dir und was führt dich nach Eorzea? Die Spiel<shy>leiden<shy>schaft? Wie ich sehe, schwatzt du wieder <if $gn4>einer schnittigen Abenteurerin<else>einem schneidigen Abenteurer</if> die Ohren voll.
+#. fr: Excuse-moi, Nohi. Je ne voulais pas interrompre la con<shy>ver<shy>sa<shy>tion...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_000_042:1"
+msgid "My apologies, Nohi. I did not want to intrude on what looked like a lively conversation between the two of you."
+msgstr ""
+
+#. ja: ちょうどいいところに来てくれたね。<br>今、この冒険者の偉業を、祝福していたところなんだ。<br>なにせ13種類の武器をそろえたんだからね。
+#. de: <if $gn4>Diese Abenteurerin<else>Dieser Abenteurer</if> hier ist <if $gn4>keine gewöhnliche<else>kein gewöhnlicher</if>. <if $gn4>Sie<else>Er</if> hat doch tatsächlich dreizehn Yo-kai-Waffen gesammelt. Eine ansehnliche Leistung, will ich meinen, und eine, für die ich <if $gn4>ihr<else>ihm</if> sehr dankbar bin.
+#. fr: Bien au contraire, tu arrives pile au bon moment. Figure-toi que cet<if $gn4>te aventurière<else> aventurier</if> vient juste d'acquérir sa treizième arme Yo-kai<nbsp>! Tu te rends compte<nbsp>!? <if $gn4>Elle<else>Il</if> a réuni assez de médailles légendaires pour obtenir tous ces artefacts<nbsp>!
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if $gn4>herself<else>himself</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_043:1"
+msgid "I'll say. <split \" \" 1><string $gs1></split> just finished acquiring thirteen of my finest weapons! Built <if $gn4>herself<else>himself</if> quite an arsenal, <if $gn4>she<else>he</if> did!"
+msgstr ""
+
+#. ja: 何だって……それはすごい！<br>僕からも、ぜひ祝福させてもらいたい！
+#. de: In der Tat! Diese Leistung lässt sich sehen! <if $gn4>Sie<else>Er</if> kann stolz auf sich sein.
+#. fr: Par tous les Dieux<nbsp>! C'est ef<shy>fec<shy>ti<shy>ve<shy>ment une très belle performance. Permettez-moi de vous adresser toutes mes félicitations.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_000_044:1"
+msgid "Thirteen!? Well then, allow me to extend my congratulations to you as well."
+msgstr ""
+
+#. ja: オレもライオンを手に入れた時には、<br>苦労した分、感情移入をしたものさ。
+#. de: Du sagst es. Ich weiß noch, wie ich mich fühlte, als ich in das Horn stieß, um meinen Kriegslöwen zu rufen. Ich platzte vor Stolz!
+#. fr: Aah, ça me rappelle cette fois où j'ai dû dompter un lion de guerre... Ce fut stressant et ardu, mais le résultat en valait la peine<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_045:1"
+msgid "It must have been as tedious as taming a warlion. I can imagine how thrilled you must feel, having obtained long sought-after rewards."
+msgstr ""
+
+#. ja: やはり、冒険者には挑みがいのある新たな挑戦と、<br>それに相応しい報酬が必要ということ！<br>その点について、少し話を……。
+#. de: Immer neue, schwierige Heraus<shy>forde<shy>rungen und großzügige Belohnungen - das ist es, wonach sich das Herz eines Abenteurers sehnt. Das erinnert mich ...
+#. fr: En parlant de peine, il va falloir qu'on termine notre discussion au sujet de <i>tu-sais-quoi</i><nbsp>!
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_100_045:1"
+msgid "Yes indeed, tantalizing rewards, for adventurers who throw themselves headfirst into the heat of <i>savage</i> battles. Wouldn't you agree, my minstrel friend?"
+msgstr ""
+
+#. ja: お、落ち着いてくれよ……。<br>込み入った話は、後でじっくりしようじゃないか。<br>それよりも今は、冒険者の偉業を……。
+#. de: Langsam, langsam, guter Freund! Erzähl mir das später in aller Ruhe. Lass uns zuerst die Leistung <if $gn4>der Abenteurerin<else>des Abenteurers</if> hier gebührend würdigen.
+#. fr: R-rassure-toi, je n'ai pas oublié<nbsp>! C'est juste que, euh... Disons que le moment est mal choisi pour parler de choses aussi compliquées. Après tout, nous sommes en train de célébrer l'exploit de cet<if $gn4>te intrépide aventurière<else> intrépide aventurier</if><nbsp>!
+#. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_200_045:1"
+msgid "W─Wait just a moment, we need not discuss such complicated matters now. After all, we are in the midst of celebrating <if $gn4>her<else>his</if> achievement, are we not?"
+msgstr ""
+
+#. ja: 確かに……改めて、おめでとうと言わせてくれ。<br>キミのような冒険者に出会うことができるなんて、<br>エオルゼアまで旅してきて、本当によかった。
+#. de: Du hast Recht. Hab noch einmal vielen Dank! Ich bin überglücklich, <if $gn4>eine so motivierte<else>einen so motivierten</if> <switch $gn71><case>Hyuran<case>Elezen<case>Lalafell<case>Miqo'te<case>Roegadyn<case>Au Ra<case>Hrothgar<case>Viera</switch> wie dich zu treffen. Ich will mir auch so viel Mühe bei der Arbeit geben wie du.
+#. fr: Tu as raison, ce n'est pas tous les jours qu'on a l'opportunité de fréquenter quelqu'un d'aussi talentueux. Sachez que je suis infiniment heureux d'avoir pu faire votre co...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_046:1"
+msgid "Indeed. It's a shame my stay in Eorzea is only temporary. I'm rather curious to see what becomes of your story. Rather, on behalf of my company, I would like to─"
+msgstr ""
+
+#. ja: ………………よし、逃げよう……。
+#. de: Das ist meine Chance zu verduften ... Ich hasse lange Geschichten, ist wohl eine Berufskrankheit. Also dann, bis später, alter Freund!
+#. fr: Désolé<nbsp>! Je viens de me rappeler que j'ai un rendez-vous important<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_100_046:1"
+msgid "Right, have fun, you two!"
+msgstr ""
+
+#. ja: おい！<br>話は終わってないからな！！
+#. de: He, was? Warte! Ich hab dir doch noch so viel zu erzählen!
+#. fr: Eh<nbsp>! Reviens<nbsp>! On n'a pas fini de parler, toi et moi<nbsp>!!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_200_046:1"
+msgid "Hey, come back here! I still have some affairs to speak with you about! Hmph. He's always so elusive when I mention the savagery of combat."
+msgstr ""
+
+#. ja: ……まったく……油断も隙もないよ。<br>とにかく、またどこかで出会ったときには、<br>いっしょに冒険してくれ！　ともだちとしてな！
+#. de: Ts ts ts. Was sagt man dazu?<br>Du lässt mich nicht im Stich, oder? Sag mal, welche Yo-kai-Waffe gefällt dir eigentlich am besten? Willst du sie mir nicht noch mal zeigen? Sie stehen dir alle wirklich ausgezeichnet ...
+#. fr: Hmpf<nbsp>! C'est toujours pareil avec lui<nbsp>!<nbsp>... En tout cas, j'espère que nous aurons à nouveau l'occasion de nous croiser tous les trois, et qui sait, peut-être de partir à l'aventure ensemble<nbsp>? Qui vivra verra...
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_300_046:1"
+msgid "Nevertheless, I was saying perhaps we can go on an adventure on our own somewhere in the future. As friends! Until then, <split \" \" 1><string $gs1></split>."
+msgstr ""
+
+#. ja: 武器の交換（ファイター）
+#. de: Eine Yo-kai-Waffe erwerben. (Krieger)
+#. fr: Échanger des médailles légendaires (guerre)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_PROG_DUMMY_001:1"
+msgid "Purchase weapons (DoW)."
+msgstr ""
+
+#. ja: 武器の交換（ソーサラー）
+#. de: Eine Yo-kai-Waffe erwerben. (Magier)
+#. fr: Échanger des médailles légendaires (magie)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_PROG_DUMMY_002:1"
+msgid "Purchase weapons (DoM)."
+msgstr ""
+
+#. ja: <sheet Item $n3 0>:<kilo "<num $n4>" ",">/<num $n5>(<if ($n1 == 15208)>片手剣<else><if ($n1 == 15209)>格闘武器<else><if ($n1 == 15210)>両手斧<else><if ($n1 == 15211)>両手槍<else><if ($n1 == 15212)>弓<else><if ($n1 == 15213)>双剣<else><if ($n1 == 15214)>両手剣<else><if ($n1 == 15215)>銃<else><if ($n1 == 15216)>両手幻具<else><if ($n1 == 15217)>両手呪具<else><if ($n1 == 15218)>魔道書:召喚士<else><if ($n1 == 15219)>魔道書:学者<else><if ($n1 == 15220)>天球儀<else><if ($n1 == 30807)>刀<else><if ($n1 == 30808)>細剣<else><if ($n1 == 30809)>ガンブレード<else><if ($n1 == 30810)>投擲武器</if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else>＆盾</if>)
+#. de: <if ($n1 == 15208)>Gladiator-Schwert<else><if ($n1 == 15209)>Mönchs-Klauen<else><if ($n1 == 15210)>Marodeur-Axt<else><if ($n1 == 15211)>Pikenier-Speer<else><if ($n1 == 15212)>Barden-Bogen<else><if ($n1 == 15213)>Schurken-Dolche<else><if ($n1 == 15214)>Dunkelritter-Zweihänder<else><if ($n1 == 15215)>Maschinisten-Muskete<else><if ($n1 == 15216)>Druiden-Stock<else><if ($n1 == 15217)>Thaumaturgen-Stab<else><if ($n1 == 15218)>Beschwörer-Grimoire<else><if ($n1 == 15219)>Gelehrten-Kodex<else><if ($n1 == 15220)>Astrologen-Globus<else><if ($n1 == 30807)>Hauptwaffe der Samurai<else><if ($n1 == 30808)>Rotmagier-Waffe<else><if ($n1 == 30809)>Revolver<shy>klinge<else><if ($n1 == 30810)>Hauptwaffe der Tänzer</if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else> und Schild</if> (<noun-de Item 5 $n3 2 1 1> <num $n4>/<num $n5>)
+#. fr: <if ($n1 == 15208)>Épée<else><if ($n1 == 15209)>Poings de moine<else><if ($n1 == 15210)>Hache de guerrier<else><if ($n1 == 15211)>Lance de chevalier dragon<else><if ($n1 == 15212)>Arc de barde<else><if ($n1 == 15213)>Dagues de ninja<else><if ($n1 == 15214)>Claymore de chevalier noir<else><if ($n1 == 15215)>Mousqueton de machiniste<else><if ($n1 == 15216)>Canne de mage blanc<else><if ($n1 == 15217)>Bâton de mage noir<else><if ($n1 == 15218)>Grimoire d'invocateur<else><if ($n1 == 15219)>Grimoire d'érudit<else><if ($n1 == 15220)>Globe d'astromancien<else><if ($n1 == 30807)>Katana de samouraï<else><if ($n1 == 30808)>Rapière de mage rouge<else><if ($n1 == 30809)>Pistolame de pistosabreur<else><if ($n1 == 30810)>Armes de jet de danseur</if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else> et bouclier de paladin</if> (<noun-fr Item 12 $n3 2 1> <kilo $n4 "<nbsp>">/<num $n5>)
+#. macro: <if ($n1 == 15208)>Paladin's Sword<else><if ($n1 == 15209)>Monk's Fists.<else><if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><i… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15208 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15209)>Monk's Fists.<else><if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15209 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15210 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15211 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Muske… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15212 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15213 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Bla… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15214 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner'… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15215 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's C… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15216 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15217 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's Globe.<else><if ($n1 == 30807)>Samurai's … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15218 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's Globe.<else><if ($n1 == 30807)>Samurai's Katana.<else><if ($n1 == 30808)>Red Mage's Ra… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15219 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 15220)>Astrologian's Globe.<else><if ($n1 == 30807)>Samurai's Katana.<else><if ($n1 == 30808)>Red Mage's Rapier.<else><if ($n1 == 30809)>Gunbreaker'… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 15220 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 30807)>Samurai's Katana.<else><if ($n1 == 30808)>Red Mage's Rapier.<else><if ($n1 == 30809)>Gunbreaker's Gunblade.<else><if ($n1 == 30810)>Dancer's … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 30807 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 30808)>Red Mage's Rapier.<else><if ($n1 == 30809)>Gunbreaker's Gunblade.<else><if ($n1 == 30810)>Dancer's Chakrams.</if></if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 30808 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 30809)>Gunbreaker's Gunblade.<else><if ($n1 == 30810)>Dancer's Chakrams.</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 30809 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 == 30810)>Dancer's Chakrams.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 30810 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 == 0)><else> and Shield.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet Item $n3 0> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 3, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_PROG_DUMMY_003:1"
+msgid "<if ($n1 == 15208)>Paladin's Sword<else><if ($n1 == 15209)>Monk's Fists.<else><if ($n1 == 15210)>Warrior's Axe.<else><if ($n1 == 15211)>Dragoon's Spear.<else><if ($n1 == 15212)>Bard's Bow.<else><if ($n1 == 15213)>Ninja's Knives.<else><if ($n1 == 15214)>Dark Knight's Claymore.<else><if ($n1 == 15215)>Machinist's Musketoon.<else><if ($n1 == 15216)>White Mage's Cane.<else><if ($n1 == 15217)>Black Mage's Rod.<else><if ($n1 == 15218)>Summoner's Grimoire.<else><if ($n1 == 15219)>Scholar's Codex.<else><if ($n1 == 15220)>Astrologian's Globe.<else><if ($n1 == 30807)>Samurai's Katana.<else><if ($n1 == 30808)>Red Mage's Rapier.<else><if ($n1 == 30809)>Gunbreaker's Gunblade.<else><if ($n1 == 30810)>Dancer's Chakrams.</if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if></if><if ($n2 == 0)><else> and Shield.</if> (<sheet Item $n3 0>: <num $n4>/<num $n5>)"
+msgstr ""
+
+#. ja: なんと驚いた、すべての武器を集め終えたんだね。<br>キミのコレクター精神は称賛に値するよ。<br>おめでとう！
+#. de: Nicht zu fassen, du hast tatsächlich bereits alle Waffen eingesammelt? Deine Sammlerleidenschaft kann gar nicht genug gepriesen werden! Meinen Glückwunsch!
+#. fr: Vous avez obtenu toutes mes armes<nbsp>! Votre intérêt pour elles me touche énormément. Depuis le début de ma longue carrière de négociant, jamais encore je n'avais eu affaire à un<if $gn4>e</if> client<if $gn4>e</if> aussi passionné<if $gn4>e</if> que vous...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_061:1"
+msgid "My word! It seems you have claimed one of each of the weapons I have on offer. I cannot imagine how you could possibly carry such an arsenal, let alone actually use it, but I feel congratulations are in order."
+msgstr ""
+
+#. ja: む、あれは……。<br>一度は逃げたはずのオレのともだちが来たみたいだぞ。
+#. de: Sieh mal einer an, wer kommt denn da?
+#. fr: Oh, tiens donc<nbsp>! Moi qui croyais que mon ami avait pris ses jambes à son cou, le voilà qui revient<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_062:1"
+msgid "And it would appear that another unlikely event is about to unfold, for my friend the minstrel has returned from his wandering."
+msgstr ""
+
+#. ja: ちょうど、冒険者の姿を見かけてね。<br>その様子だと、ついにすべての武器をそろえたんだろう？<br>ぜひ、僕からも祝福させてもらいたい。
+#. de: Haben mich meine Augen nicht getäuscht, <if $gn4>unsere Abenteurerin<else>unser Abenteurer</if> ist gekommen! Und wie es aussieht, hat <if $gn4>sie<else>er</if> sogar bereits alle Waffen eingesammelt! Auch von mir die herzlichsten Glückwünsche!
+#. fr: Ma muse m'a soufflé à l'oreille que notre ami<if $gn4>e</if> avait obtenu toutes les armes Yo-kai. Voilà un exploit qui mérite d'être salué en bonne et due forme, pas vrai<nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_000_063:1"
+msgid "I do hope I am not interrupting your celebrations...but am I to understand that someone has at last collected a full set of those charming instruments of destruction? A fine achievement, even if only for achievement's sake."
+msgstr ""
+
+#. ja: しかも、この限られた期間で、17種類すべてを集め終えたんだ。<br>……もう少しだけ求めるメダルの枚数を、<br>多くしておくべきだったか？
+#. de: Aber wie bitte geht das, dass man in so kurzer Zeit alle siebzehn Arten einsammeln kann? Vielleicht hätten wir die Zahl der dafür benötigten Medaillen doch etwas höher ansetzen sollen<nbsp>...
+#. fr: Réunir les dix-sept armes en un laps de temps aussi court, c'est même plus qu'un exploit, c'est un véritable prodige<nbsp>! Sans vouloir le discréditer, je me demande si nous n'aurions pas été un peu trop généreux quant au nombre de médailles requises...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_064:1"
+msgid "To have done so in such a short span of time is commendable indeed. Perhaps I should have charged more for them?"
+msgstr ""
+
+#. ja: な、なにを……その件については、<br>あれほど肉を喰らいながら話し合ったじゃないか！
+#. de: Was? Ich habe mich wohl verhört! Das Thema haben wir doch schon durchgekaut bis zum Gehtnichtmehr!
+#. fr: Comment ça, trop généreux<nbsp>? Je croyais que nos interminables débats de comptoir nous avaient mis d'accord, pourtant<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_000_065:1"
+msgid "If you had, I have no doubt this fine young adventurer would have risen to the challenge regardless."
+msgstr ""
+
+#. ja: 君はどう思うんだい？<br>偉業を成し遂げた者として、今回の試練について、<br>どう感じているのかを聞かせてくれ！
+#. de: Aber fragen wir doch mal jemanden, <if $gn4>die<else>der</if> sich damit auskennt. Wie fandest du die diesmaligen Aufgaben, <split " " 1><string $gs1></split>?
+#. fr: Puisque vous êtes là, pourriez-vous nous donner votre avis sur le niveau de difficulté de cette épreuve<nbsp>? N'ayez pas peur et soyez honnête, cela nous aidera à y voir plus clair.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_000_066:1"
+msgid "But rather than speak on your behalf, mayhap you might share your thoughts on this momentous undertaking?"
+msgstr ""
+
+#. ja: 何と言う？
+#. de: Was antwortest du?
+#. fr: Que répondez-vous<nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_Q7_000_067:1"
+msgid "What will you say?"
+msgstr ""
+
+#. ja: 簡単すぎた！
+#. de: Die waren viel zu leicht.
+#. fr: Un vrai jeu d'enfant, voire de nourrisson<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A7_000_068:1"
+msgid "Collecting a load of superfluous knickknacks is what I do best!"
+msgstr ""
+
+#. ja: 絶妙な難易度バランスだった！
+#. de: Die hatten genau den richtigen Schwie<shy>rig<shy>keits<shy>grad.
+#. fr: Je dirais que c'était par<shy>fai<shy>te<shy>ment équilibré.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A7_000_069:1"
+msgid "I feel my efforts were amply rewarded."
+msgstr ""
+
+#. ja: むしろ辛すぎた……
+#. de: Die waren doch ziemlich anstrengend.
+#. fr: J'ai failli jeter l'éponge plus d'une fois...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A7_000_070:1"
+msgid "I'd rather scrub a behemoth's backside than do that again..."
+msgstr ""
+
+#. ja: さすがは、歴戦の冒険者だ！<br>その燃え上がる挑戦心に敬意を示させてもらうよ！
+#. de: Für <if $gn4>eine solch kampferprobte Heldin<else>einen solch kampferprobten Helden</if> wie dich ist wohl nichts zu schwer. Bei einer derartigen Ent<shy>schlos<shy>sen<shy>heit kann man nur noch vor Ehrfurcht erstarren.
+#. fr: Voilà des paroles dignes d'un<if $gn4>e</if> aventuri<if $gn4>ère<else>er</if> confiant<if $gn4>e</if> et expérimenté<if $gn4>e</if><nbsp>! Je vous reconnais bien là<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_071:1"
+msgid "Most admirable! And for what it's worth, it was an honor to supply you with said knickknacks."
+msgstr ""
+
+#. ja: ふむ……なるほど、キミの発言には説得力があるね。<br>今回については、正しい判断だったと納得するとしよう。
+#. de: Nun, wenn du das sagst, dann stimmt das auch. Dann haben wir also dieses Mal alles richtig gemacht, gut zu wissen.
+#. fr: Vous m'en voyez ravi<nbsp>! Si l'expérience a été conforme à vos attentes, je ne vois pas grand-chose à ajouter.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_072:1"
+msgid "In which case, I can rest assured that the challenge I set was both fair and worthwhile for all involved."
+msgstr ""
+
+#. ja: なんだって……！？<br>つねに最先端を走り続けているキミらしくもない！<br>いや、これが時代の変化ということか……？
+#. de: Ach, tatsächlich? Das hätte ich jetzt nicht erwartet, wo du doch sonst immer vorneweg marschierst. So ändern sich die Zeiten<nbsp>...
+#. fr: V-vraiment<nbsp>!? Je n'aurais jamais cru vous entendre dire une chose pareille<nbsp>! Les aventuriers d'aujourd'hui ne seraient-ils donc plus que l'ombre d'eux-mêmes<nbsp>?
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_073:1"
+msgid "Well, I daresay it was character-building in some way. After all, a bit of seemingly pointless drudgery never killed anyone. Or at least I don't think it did..."
+msgstr ""
+
+#. ja: さて、冒険者から貴重な意見も聞けたことだし、<br>そろそろ僕は失礼させてもらうよ。<br>新作の冒険譚を考案する大仕事が残っているからね！
+#. de: Nun gut, hätten wir das auch geklärt. Dann werde ich mich jetzt empfehlen. Auf mich warten bereits die Kompositionen neuer Heldenballaden.
+#. fr: Notre ami<if $gn4>e</if> nous a donné le fond de sa pensée, et c'est le plus important. Sur ces belles paroles, je vous prie de m'excuser mais j'ai de nouveaux poèmes sur le feu<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_WANDERINGMINSTREL_000_074:1"
+msgid "In any case, the deed is done, and the time has come for me to bid you farewell. Until our paths next cross, adventurer!"
+msgstr ""
+
+#. ja: やれやれ、まったく忙しい男だな、彼は……。
+#. de: Schwer beschäftigt wie eh und je<nbsp>...
+#. fr: Toujours à faire semblant d'être plus occupé qu'il ne l'est vraiment, celui-là...
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_075:1"
+msgid "Where might his wandering take him next, I, ah...wonder."
+msgstr ""
+
+#. ja: といっても、キミにも新しい冒険が待っているはずだ。<br>もしも、またどこかでオレと出会ったときには、<br>親友として、いっしょに冒険してくれよな！
+#. de: Aber das gilt auch für dich, nehme ich an. Zweifellos warten bereits neue Abenteuer auf dich. Wenn wir uns irgendwann, irgendwo wieder einmal treffen sollten, wäre es mir eine Freude, dich auf deinen Abenteuern zu begleiten.
+#. fr: Enfin, je ne voudrais pas vous retenir plus longtemps. Je vous laisse retourner à vos aventures, en espérant en vivre une nouvelle à vos côtés très bientôt<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_076:1"
+msgid "Like him, you are also not wont to stay in one place overlong. I pray that when next we meet, we might have some new tales to share. Take care, my friend."
+msgstr ""
+
+#. ja: ポートレートの交換
+#. de: Ein Portrait erwerben.
+#. fr: Obtenir le portrait
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A1_000_005:1"
+msgid "Purchase framer's kit."
+msgstr ""
+
+#. ja: 「<sheet Item 41797 0>」の交換には、<br><kilo "<num $n1>" ",">MGPが必要となります。
+#. de: <capitalize><noun-de Item 2 41797 1 1 1></capitalize> kostet <kilo "<num $n1>" "."> MGP.
+#. fr: Obtenir <noun-fr Item 2 41797 1 1><nbsp>?<br>[PGS requis<nbsp>: <kilo $n1 "<nbsp>">]
+#. macro: <noun-en Item 3 41797 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = 41797, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_077:1"
+msgid "The <noun-en Item 3 41797 1 1> costs <kilo $n1 \",\"> MGP."
+msgstr ""
+
+#. ja: 本当に「<sheet Item 41797 0>」に交換する？<br>[必要MGP：<kilo "<num $n1>" ",">]<br>[所持MGP：<kilo "<num $n2>" ",">]
+#. de: Bist du sicher, dass du <noun-de Item 2 41797 1 4 1> erwerben willst?<br>Benötigte MGP: <kilo "<num $n1>" "."> (in Besitz: <kilo "<num $n2>" ".">)
+#. fr: Voulez-vous vraiment obtenir <noun-fr Item 2 41797 1 1> contre <kilo $n1 "<nbsp>"> PGS<nbsp>?<br>[PGS possédés<nbsp>: <kilo $n2 "<nbsp>">]
+#. macro: <noun-en Item 2 41797 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = 41797, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_Q8_000_001:1"
+msgid "Purchase <noun-en Item 2 41797 1 1> for <kilo $n1 \",\"> MGP?<br>You currently possess <kilo $n2 \",\">."
+msgstr ""
+
+#. ja: すでに修得済みのため、<br>「<sheet Item 41797 0>」を入手できません。
+#. de: Du kannst den gewünschten Gegenstand nicht erhalten, weil du ihn bereits erworben hast.
+#. fr: Impossible d'obtenir <noun-fr Item 2 41797 1 1>. Vous l'avez déjà enregistré<if "<sheet Item $n1 6>">e</if>.
+#. macro: <noun-en Item 2 41797 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = 41797, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_078:1"
+msgid "Unable to obtain <noun-en Item 2 41797 1 1>. You already have received one."
+msgstr ""
+
+#. ja: 所持品に空き枠がないか、すでに所持しているため、<br>「<sheet Item 41797 0>」を入手できません。
+#. de: Du kannst den gewünschten Gegenstand nicht erhalten, weil du keinen Platz mehr im Inventar hast oder weil du ihn bereits besitzt.
+#. fr: Impossible d'obtenir <noun-fr Item 2 41797 1 1>. Vous <if "<sheet Item $n1 6>">la<else>le</if> possédez déjà.
+#. macro: <noun-en Item 2 41797 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = 41797, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_079:1"
+msgid "Unable to obtain <noun-en Item 2 41797 1 1> due to insufficient inventory space or having already obtained the item."
+msgstr ""
+
+#. ja: おっと……ごめんよ。<br>これは、すべての妖怪とともだちになった人へのご褒美なんだ。<br>先に「妖怪メダル」を集めて、ともだちを増やしてくれ！
+#. de: Oh, tut mir Leid, aber das ist eine besondere Belohnung für diejenigen, die sich mit allen Yo-kai angefreundet haben. Sammle also erstmal ein paar Yo-kai-Medaillen und tausche sie gegen Yo-kai-Begleiter!
+#. fr: Vous m'en voyez vraiment navré, mais cet objet est exclusivement réservé aux personnes qui se sont liées d'amitié avec tous les Yo-kai. Je vous suggère donc de commencer par collecter des médailles pour faire de ces adorables petites créatures vos amies<nbsp>!
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_080:1"
+msgid "Terribly sorry, but this prize is meant only for those who have befriended each and every Yo-kai. If you wish to earn it, you can start by gathering Yo-kai Medals and growing your circle of companions!"
+msgstr ""
+
+#. ja: すべての妖怪とともだちになった証として……<br>「<sheet Item 41797 0>」を受け取ってくれ！<br>最高にカッコイイから、きっとキミも気に入るはずさ！
+#. de: Als Beleg dafür, dass du dich mit allen Yo-kai angefreundet hast<nbsp>... bitte sehr, <noun-de Item 1 41797 1 1 1>! Ich habe keine Zweifel, dass es dir gefallen wird!
+#. fr: Tenez, voici votre <noun-fr Item 12 41797 1 1>, la preuve que vous êtes l'ami<if $gn4>e</if> de tous les Yo-kai<nbsp>! Croyez-moi, vous pouvez en être fi<if $gn4>ère<else>er</if>.
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_HINOSHIN_000_081:1"
+msgid "You have proven yourself a loyal friend to Yo-kai of all shapes and sizes, and for that, you deserve this. A singular gift to reward your singular devotion!"
+msgstr ""
+
+#. ja: MGPが不足しています。<br>交換には「<kilo "<num $n1>" ",">MGP」が必要となります。
+#. de: Du besitzt nicht genügend MGP. Es werden <kilo "<num $n1>" "."> MGP benötigt.
+#. fr: Impossible de faire l'échange. <if ($n1 == 1)>Vous ne possédez pas de PGS<else>Vous ne possédez pas les <kilo $n1 "<nbsp>"> PGS nécessaires</if>.
+#. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_SYSTEM_000_082:1"
+msgid "Insufficient MGP. <kilo $n1 \",\"> MGP is needed to complete the purchase."
+msgstr ""
+
+#. ja: 調度品の交換
+#. de: Einrichtung erwerben.
+#. fr: Obtenir des meubles
+msgctxt "custom/003/FesYkwMedalExchange_00348:TEXT_FESYKWMEDALEXCHANGE_00348_A1_000_006:1"
+msgid "Purchase furnishings."
+msgstr ""

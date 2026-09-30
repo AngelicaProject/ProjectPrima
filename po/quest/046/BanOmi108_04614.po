@@ -1,0 +1,179 @@
+# quest/046/BanOmi108_04614 — « The Robot and the Sea» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、海洋区画の生体サンプルを求めているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 benötigt eine biologische Probe aus dem Meeressektor.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 aurait besoin d'un spécimen vivant des mers élyséennes.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_SEQ_00:1"
+msgid "There is still much Stigma-4 would learn of the Grebuloffs' new home.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 解析型オミクロンに依頼された品を納品
+#. de: Dem Analyse-Omikron die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à l'Omicron analyseur
+#. kind: journal
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_SEQ_01:1"
+msgid "Deliver the requested sample to the analysis unit."
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を砕岩<else>解析型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を草刈<else>解析型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を釣る<else>解析型オミクロンに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 5 $n5 2 4 1> abbauen<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> dem Analyse-Omikron bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 5 $n5 2 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> dem Analyse-Omikron bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 1 $n5 1 4 1> fangen<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> dem Analyse-Omikron bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à l'Omicron analyseur</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1><else>Livrer <noun-fr Item 2 $n5 2 1> à l'Omicron analyseur</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1><else>Livrer <noun-fr Item 2 $n5 1 1> à l'Omicron analyseur</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the analysis unit.</if><else><if (… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the analysis unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the analysis unit.</if><else><if… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the analysis unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the analysis unit.</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the analysis unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the analysis unit.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the analysis unit.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the analysis unit.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: 有機生命体グレビュオフは、エリュシオンにて問題なく活動中。<br>しかし、彼らの想いで現出した海洋区画に関して、<br>我々は未だ十分なデータを保持していない。
+#. de: Eine Analyse ergab kürzlich, dass sich die Grebuloff auf Elysium gut eingelebt haben. Allerdings sind keine Daten zum Meeressektor verfügbar, den diese organischen Lebensformen mit der Kraft ihrer Wünsche herbeibeschworen haben. 
+#. fr: Les êtres organiques que sont les Grébuloff vivent sans aucun problème sur Élysée. Cependant, nous disposons de peu de données concernant les mers élyséennes qui ont vu le jour grâce à eux.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_001:1"
+msgid "Analysis indicates that the Grebuloffs continue to abide on Elysion without difficulty. However, data insufficiencies remain regarding the oceans created through their influence on dynamis."
+msgstr ""
+
+#. ja: ついては、当地の生体解析に基づくデータ収集の必要ありと判断。<br>その解析を進めることで、海洋区画の環境保全、<br>並びに、グレビュオフの生活向上に貢献可能と推察する。
+#. de: Folglich besteht die Notwendigkeit, mittels biologischer Proben die Informationslücken zu füllen. Nur so kann der Schutz des Meeres und damit die Zufriedenheit der Grebuloff, die ursprünglich maritime Wesen waren, gewährleistet werden.
+#. fr: Bip... Nécessité d'obtenir des données de la zone<nbsp>: très élevée. Elles permettraient de protéger l'environnement marin et d'améliorer les conditions de vie des Grébuloff.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_002:1"
+msgid "With sufficient data, it will be possible to preserve such ocean environments and improve Grebuloff well-being. Initiating research and analysis protocol..."
+msgstr ""
+
+#. ja: 当該事由により、当機は同盟者に、<br>海洋区画にて「<sheet Item 38285 0>」の調達を要請。<br>その後、オミクロンベースの「解析型オミクロン」に納品を求む。
+#. de: Auftragsprotokoll wird referenziert. \<biep> ... \<zzzt> ... <split " " 1><string $gs1></split> soll im Meeressektor elysische Kalkorganismen akquirieren und sie an den Analyse-Omikron aushändigen.
+#. fr: Entité alliée <split " " 1><string $gs1></split>, merci de bien vouloir collecter trois organismes calcaires élyséens dans les mers et de les livrer à l'Omicron analyseur se trouvant à la base des Omicrons.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_003:1"
+msgid "Samples of limestone coral are required to proceed with analysis. Once procured, please deposit the samples in the analysis unit."
+msgstr ""
+
+#. ja: 当該事由により、当機は同盟者に、<br>海洋区画にて「<sheet Item 38309 0>」の調達を要請。<br>その後、オミクロンベースの「解析型オミクロン」に納品を求む。
+#. de: Auftragsprotokoll wird referenziert. \<biep> ... \<zzzt> ... <split " " 1><string $gs1></split> soll im Meeressektor elysische Stachelhäuter akquirieren und sie an den Analyse-Omikron aushändigen.
+#. fr: Entité alliée <split " " 1><string $gs1></split>, merci de bien vouloir collecter trois invertébrés élyséens dans les mers et de les livrer à l'Omicron analyseur se trouvant à la base des Omicrons.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_004:1"
+msgid "Elysian cucumber samples are required to proceed with analysis. Once procured, please deposit the samples in the analysis unit."
+msgstr ""
+
+#. ja: 当該事由により、当機は同盟者に、<br>海洋区画にて「<sheet Item 38333 0>」の調達を要請。<br>その後、オミクロンベースの「解析型オミクロン」に納品を求む。
+#. de: Auftragsprotokoll wird referenziert. \<biep> ... \<zzzt> ... <split " " 1><string $gs1></split> soll im Meeressektor einen elysischen Weichfisch fangen und ihn an den Analyse-Omikron aushändigen.
+#. fr: Entité alliée <split " " 1><string $gs1></split>, merci de bien vouloir collecter un poisson souple élyséen dans les mers et de le livrer à l'Omicron analyseur se trouvant à la base des Omicrons.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_005:1"
+msgid "An Elysian nudibranch sample is required to proceed with analysis. Once procured, please deposit the sample in the analysis unit."
+msgstr ""
+
+#. ja: なお、捕獲時は<sheet Item 36588 0>の使用を推奨する。
+#. de: \<biep> ... \<zzzt> ... Ratgeber „Missionen ohne Misserfolg“ wird konsultiert<nbsp>... Es wird empfohlen, gelben Lachslaich als Fischköder zu verwenden.
+#. fr: Bip... Appât recommandé<nbsp>: rogue de saumon dorée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_006:1"
+msgid "For maximum efficiency, use of gold salmon roe is strongly advised. All proceeds go to Omicron enhancement initiatives."
+msgstr ""
+
+#. ja: ガガ、ガガガガ……同盟者の所持品スキャンを開始。<br>用途不明、無益と思しき物質を多数確認。<br>にもかかわらず、調達対象物は未所持……出直してください。
+#. de: \<biep> ... \<ratter> ... Habseligkeiten von organischer Lebensform werden durchleuchtet<nbsp>... Unbekannte sowie unnütz erscheinende Materialien entdeckt. In Auftrag gegebenes Objekt befindet sich allerdings nicht darunter<nbsp>...
+#. fr: Bip, bip... Pschhh... Analyse de l'inventaire de l'entité alliée en cours... Plusieurs substances d'usage inconnu identifiées. Livraison demandée introuvable. Revenez lorsque vous l'aurez.
+#. speaker: OMICRON04614
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_OMICRON04614_000_010:1"
+msgid "Scanning inventory... Unidentified substances detected. Potential value and utilization factors...unclear.<br>Standing by for oceanic samples."
+msgstr ""
+
+#. ja: ガガ、ガガガガ……同盟者の所持品スキャンを開始。<br>調達対象物を確認……速やかな納品を求めます。
+#. de: \<biep> ... \<ratter> ... Habseligkeiten von organischer Lebensform werden durchleuchtet<nbsp>... In Auftrag gegebenes Objekt befindet sich darunter. Bitte um sofortige Aushändigung.
+#. fr: Bip, bip... Pschhh... Analyse de l'inventaire de l'entité alliée en cours... Livraison demandée détectée. Veuillez me la remettre.
+#. speaker: OMICRON04614
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_OMICRON04614_000_011:1"
+msgid "Scanning inventory... Oceanic samples detected. Please insert for analysis."
+msgstr ""
+
+#. ja: 納品物を受領……水棲の有機生命体と認識。<br>体内外に多数の細菌、およびそれが放つ微粒子を観測。<br>……当機の臭気センサーが、強く反応しています。
+#. de: Objekt wird analysiert<nbsp>... Es handelt sich um eine maritime, organische Lebensform. Wie <if $gn4>ihre<else>sein</if> <if $gn4>Überbringerin<else>Überbringer</if> ist sie von Myriaden von Mikroorganismen besiedelt. \<biep> ... \<schnüffel> ... Geruchssensor registriert üblen Fischgeruch<nbsp>...
+#. fr: Livraison reçue... Bip... Nombreuses bactéries relâchant des particules identifiées. Forte réaction des capteurs olfactifs.
+#. speaker: OMICRON04614
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_OMICRON04614_000_012:1"
+msgid "Analyzing... Sample possesses bacteria given to releasing foreign particulates. Olfactory sensors reaching critical. "
+msgstr ""
+
+#. ja: 結論、海洋区画の生命は、生臭い。<br>ガガガ……当機は引き続き、データの解析を行いましょう。<br>同盟者よ、アナタの働きに感謝します。
+#. de: \<biep> ... \<ratter> ... Danke und auf Wieder<shy>sehen. Ich werde die Analysearbeit fortsetzen, mir aber vorher eine Öl-Dusche genehmigen<nbsp>...
+#. fr: Conclusion<nbsp>: les êtres vivants des mers élyséennes dégagent une terrible odeur de poisson. Pschhh... Je vais poursuivre l'analyse. Merci pour votre travail, entité alliée.
+#. speaker: OMICRON04614
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_OMICRON04614_000_013:1"
+msgid "Conclusion: oceanic life-forms are prone to...unfavorable odor. Additional specimens required for further analysis."
+msgstr ""
+
+#. ja: 結論、海洋区画の生命は、相変わらず生臭い。<br>ガガガ……当機は引き続き、データの解析を行いましょう。<br>同盟者よ、アナタの働きに感謝します。
+#. de: \<biep> ... \<ratter> ... Danke und auf Wieder<shy>sehen. Ich werde die Analysearbeit fortsetzen, mir aber vorher eine Dusche in Form einer Ölreinigung genehmigen<nbsp>...
+#. fr: Conclusion<nbsp>: les êtres vivants des mers élyséennes dégagent toujours une terrible odeur de poisson. Pschhh... Je vais poursuivre l'analyse. Merci pour votre travail, entité alliée.
+#. speaker: OMICRON04614
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_OMICRON04614_000_014:1"
+msgid "Conclusion: ocean life-forms remain prone to unfavorable odor. Probability of fragrant life unlikely. Additional specimens required for further analysis."
+msgstr ""
+
+#. ja: 解析型オミクロンからの通信報告を受領。<br>生体サンプル納品により、海洋区画の研究が進行中とのこと。<br>同盟者<split " " 1><string $gs1></split>の行動を評価する。
+#. de: Report von Analyse-Omikron wird referenziert. \<biep> ... \<zzzt> Probe von <split " " 1><string $gs1></split> hat die Erforschung des Meeressektors vorangetrieben. Mission gilt als erfolgreich abgeschlossen.
+#. fr: L'Omicron analyseur m'a contacté. L'analyse des mers élyséennes se poursuit grâce à vous. Je vous félicite pour votre travail.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_015:1"
+msgid "Report from analysis unit received. Your contribution was deemed beneficial to research on Elysion's oceanic environment."
+msgstr ""
+
+#. ja: しかし、懸案事項あり……。<br>当該区画の生命が体内に多数の細菌を有するならば、<br>既存有機生命体に影響を及ぼす可能性の検証が必須。
+#. de: Die Unter<shy>such<shy>ung der biologischen Probe ergab, dass unzählige Mikroorganismen die maritimen Körper bevölkern. Die Frage, welchen Einfluss die Mikroorganismen auf andere Lebenseinheiten ausüben, bedarf weiterer Exploration.
+#. fr: Un point demeure cependant inquiétant... Il est nécessaire de vérifier si les nombreuses bactéries re<shy>pré<shy>sen<shy>tent un risque pour les êtres organiques.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_016:1"
+msgid "However, data insufficiencies remain. If discovered bacteria is present in all oceanic life-forms, verification of potential dissemination to other non-oceanic hosts is required."
+msgstr ""
+
+#. ja: ついては初期調査として、毛むくじゃらカフェマスターを、<br>海洋区画の海に突き落とし、身体への影響調査を実施予定。<br>結果如何では、光学兵器による滅菌処理も検討する……。
+#. de: Stigma-4 schlägt daher folgendes Experiment vor, um mögliche Auswirkungen zu untersuchen: Der übermäßig behaarte Gastwirt wird ins Meer geworfen, herausgefischt und gründlich untersucht. Sollten sich die Mikroorganismen als schädlich erweisen, können sie mittels Lasertechnik ausgemerzt werden<nbsp>...
+#. fr: Pour commencer, nous jetterons en mer la petite boule de poils et analyserons les effets sur sa santé. Selon les résultats, une stérilisation par arme photonique sera envisagée...
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_017:1"
+msgid "Proposal: submerge the redolent, fluffy manager in ocean water, and monitor odor fluctuations. Upon conclusion of this experiment, deployment of military-grade lasers may be authorized for decontamination purposes."
+msgstr ""
+
+#. ja: 当機は、今後も定期的にデータ収集が必要と推定。<br>同盟者に、環境保全のため、継続的な任務遂行を期待する。
+#. de: Weitere Analysen sind in Planung, für die Hilfe benötigt wird. Stigma-4 initiiert Übergabe von Vergütung und Standard-Abschiedsfloskel<nbsp>... Danke und bis zum nächsten Mal!
+#. fr: De nouvelles données seront pro<shy>chai<shy>ne<shy>ment nécessaires. Je compte sur votre coopération.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi108_04614:TEXT_BANOMI108_04614_STIGMA4_000_018:1"
+msgid "Periodic analysis of new specimens is required for continued research and environmental preservation. Your future cooperation is greatly appreciated."
+msgstr ""

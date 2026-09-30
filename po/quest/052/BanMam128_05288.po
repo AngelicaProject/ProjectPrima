@@ -1,0 +1,188 @@
+# quest/052/BanMam128_05288 — « Above-average Beverage» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、飲み物の材料を求めているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja ist voll und ganz mit der Kreation eines neuen Getränks beschäftigt.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja a envie de créer une nouvelle boisson.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_SEQ_00:1"
+msgid "Kageel Ja is pondering a new beverage.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_SEQ_01:1"
+msgid "Deliver the requested materials to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>気球発着場付近の採掘場で<sheet Item $n5 0>を採掘<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>ヤクアワク・ゾユ付近の良木で<sheet Item $n5 0>を伐採<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>ヤクアワク・ゾユで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Aus dem Yak Awak Tsoly nördlich des Ballonplatzes <noun-de Item 5 $n5 2 4 1> besorgen<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Gegend rund um den Yak Awak Tsoly <noun-de Item 5 $n5 2 4 1> sammeln<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Aus dem Yak Awak Tsoly <noun-de Item 5 $n5 2 4 1> fischen<else>Kageel Ja <noun-de Item 5 $n5 2 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près de l'embarcadère à ballons<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du Yak Awak Tsoly<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au Yak Awak Tsoly<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 =… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: うーん、新しい野菜ジュースなら、<br>彩りのいい野菜を選んで混ぜてみるとか……？<br>混ぜるといえば、上の森の食材と組み合わせるのもいいかな……。
+#. de: Hmm, vielleicht könnte ich versuchen, farbenfroheres Gemüse unterzumischen<nbsp>... Oh, oder ganz neue Zutaten aus dem oberen Wald!
+#. fr: Hmmm... Pour créer un nouveau jus de légumes, il faudrait prendre des ingrédients colorés pour rendre le tout appétissant... Ou on pourrait ajouter des produits de la haute-forêt, ja...
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_001:1"
+msgid "Hmmm, mixing in the more colorful vegetables might make the juice more appetizing... Oh, and we could try adding ingredients from the upper forest."
+msgstr ""
+
+#. ja: うーん、野菜をすり潰すだけじゃなくて、<br>布でこしたり、煮詰めて出汁をとってみたりしてもいいかな？
+#. de: Statt es zu pürieren, könnte man das Gemüse auch zerdrücken und durch ein feines Tuch abseihen, oder vielleicht zu einem Sud einkochen<nbsp>...
+#. fr: Hmmm... Presser les légumes en purée n'est pas suffisant, ja. Peut-être qu'il vaudrait mieux filtrer le jus à travers un tissu<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_002:1"
+msgid "Hmmm, maybe instead of just mashing the vegetables, we could strain them through cloth or boil them down into a stock...?"
+msgstr ""
+
+#. ja: 名物料理になったティーカ・セルヴァースと合わせるなら……<br>飲みやすく、かつコクが深い味にしたい。<br>だとすると、温かいほうが嬉しいかな……？
+#. de: Wir brauchen ein Getränk, das gut zu Tiika Selvaas passt. Es sollte auf jeden Fall das Gericht unterstreichen und schön geschmacksintensiv sein. Oh, ich hab's! Man könnte es ja heiß servieren, damit die Aromen so richtig herauskommen!
+#. fr: J'aimerais bien une boisson qui irait de pair avec le tiika selvaas... Quelque chose de doux, mais avec tout de même du goût. Est-ce que ce ne serait pas mieux chaud...<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_003:1"
+msgid "We need a drink that pairs well with the tiika selvaas. Maybe something smooth with a rich flavor...? In which case, it might be best to serve it hot..."
+msgstr ""
+
+#. ja: 樹海の恵みサラダや、チャイチャの煮込みスープと合う味に……。<br>なぜだか一部で人気のお鍋も風味が強いと聞くから、<br>少しあっさりめに……それか、あえて刺激的な味でもいいかも？
+#. de: Wir brauchen ein Getränk, das gut zu Yak T'el-Salat und geschmortem Ty'aitya passt. Vielleicht ein leichteres Getränk, um den kräftigen Geschmack des Gerichts auszugleichen? Oder mit etwas Schärfe für das gewisse Etwas! Hilft auch beim Verdauen.
+#. fr: Il me faudrait un accompagnement pour la salade Yak T'el et le ragoût de ty'aitya... Sans compter cette curieuse fondue au goût relevé qui fait fureur ces derniers temps... Une boisson fraîche et légère s'impose... Ou alors, un breuvage tout aussi épicé pour marquer la différence<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_004:1"
+msgid "We need a drink that pairs well with the Yak T'el salad and the stewed ty'aitya...and somehow also that suspicious-yet-popular soup. Perhaps a lighter beverage? Or maybe lean into an even spicier concoction?"
+msgstr ""
+
+#. ja: ……っと、失礼。<br>食事処で、新しい飲み物を振る舞いたくて、<br>最近ずっと考えているんだよ。
+#. de: Oh! Tut mir leid, ich war ganz in Gedanken vertieft. Ich entwickle gerade ein neues Getränk, das wir unseren Besuchern servieren können, aber das ist leichter gesagt als getan<nbsp>...
+#. fr: Ah... désolé <split " " 1><string $gs1></split>, je réfléchissais à voix haute<nbsp>! Je voudrais créer une nouvelle boisson pour notre cantine, ja.
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_005:1"
+msgid "...Oh, <split \" \" 1><string $gs1></split>! Sorry, I was just thinking about a new beverage we could serve at the kitchen."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さんにはぜひとも、<br>飲み物の材料を調達してほしくて……。<br>お手間をかけるけど、頼めるかな？
+#. de: Vor allem weil einige der Zutaten, die ich gerne benutzen möchte, nicht ganz so leicht zu beschaffen sind. Das führt mich zu meiner nächsten Frage<nbsp>... Wärst du bereit, mir dabei zu helfen?
+#. fr: Si tu as un peu de temps, tu voudrais bien me rendre un petit service<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_006:1"
+msgid "Are you busy at the moment? If not, I could use your help procuring the less common ingredients I have in mind..."
+msgstr ""
+
+#. ja: お願いしたいのは、「<sheet Item 48081 0>」。<br>気球発着場の北あたりで採れる品で、<br>冷やしても温めても、まろやかで美味しいんだって。
+#. de: Ich bräuchte ein paar <noun-de Item 5 48081 2 4 1> aus dem Yak Awak Tsoly, den du nördlich des Ballonplatzes finden kannst. Das Wasser ist besonders reich an Mineralstoffen und schmeckt sowohl gekühlt als auch erhitzt angenehm erfrischend.
+#. fr: J'aimerais bien mettre la main sur de l'eau de source de Yak Awak. Tu devrais en trouver près de l'embarcadère à ballons, un peu au nord. La grande pureté de cette eau est très prisée dans les pré<shy>pa<shy>ra<shy>tions chaudes comme froides, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_007:1"
+msgid "Specifically, a few bottles of spring water drawn from the reserves north of the dirigible landing. Chilled or heated, it's known for its smooth and clear taste."
+msgstr ""
+
+#. ja: ヤクアワク・ゾユの近くで採れる「<sheet Item 48082 0>」をお願い。<br>煎じ方がちょっと難しいけれど、<br>その分風味が出て、美味しいお茶になるって聞いたんだ。
+#. de: Ich bräuchte ein paar <noun-de Item 5 48082 2 4 1>, die in der Gegend rund um den Yak Awak Tsoly geerntet werden können. Diese Sorte ist nicht ganz einfach zuzubereiten, aber ich habe gehört, dass man mit einem unvergleichlich aromatischen Tee belohnt wird.
+#. fr: J'aimerais bien mettre la main sur des feuilles de thé croc-de-léopard. Tu devrais en trouver près du Yak Awak Tsoly. Leur torréfaction n'est pas des plus aisée, mais on peut en tirer un breuvage tout à fait exquis, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_008:1"
+msgid "Specifically, a few baskets of leopardfang tea leaves harvested from the area around Yak Awak Tsoly. It's not the easiest variety to brew, but I hear patience is rewarded with a most flavorful tea."
+msgstr ""
+
+#. ja: ヤクアワク・ゾユで採れる「<sheet Item 48083 0>」は、<br>セノーテの恵みがたっぷり含まれていて濃厚なコクがあると聞く。<br>でも、採るのが難しいから貴重な品でね。
+#. de: Ich bräuchte ein paar <noun-de Item 5 48083 2 4 1>, das im Yak Awak Tsoly zu finden ist. Durch Trocknen und Rösten der Pflanzen erhält man einen Tee mit einem unvergleichlich vollmundigen und intensiven Aroma, wurde mir erzählt. Der Segen des Cenote macht ihn zu einem äußerst wertvollen Produkt.
+#. fr: J'aimerais bien mettre la main sur <noun-fr Item 1 48083 1 1>. Tu pourras en trouver au Yak Awak Tsoly. Bien que ce soit une prise difficile à obtenir, on raconte qu'elle concentre tous les arômes du cénote, ce qui lui donne un goût unique, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_009:1"
+msgid "Specifically, a certain tea grass hauled up from Yak Awak Tsoly. I hear it has a rich and full-bodied flavor, bursting with the blessings of the cenote."
+msgstr ""
+
+#. ja: 釣り餌に<sheet Item 43849 0>を使えば……<br>腕のいい漁師ならば、うまいこと絡めとれるらしいよ。<br>ぜひ使いたいから、採ってきてくれると嬉しいな。
+#. de: Es heißt, dass nur erfahrene Fischer dazu imstande seien, das Seegras mithilfe von <noun-de Item 5 43849 2 3 1> aus dem Tsoly zu fischen. Aber nach alldem, was ich bisher gesehen habe, bin ich überzeugt davon, dass du der Aufgabe gewachsen sein wirst.
+#. fr: Comme tu es un<if $gn4>e</if> <if $gn4>pêcheuse<else>pêcheur</if> expérimenté<if $gn4>e</if>, j'imagine que tu n'auras pas de mal à en obtenir. Comme appât, tu peux utiliser <noun-fr Item 4 43849 2 1>, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_010:1"
+msgid "Yet only skilled fishers are able to use golden stonefly nymphs to snag the grass and fish up this precious treasure. I am, however, fully confident that you're up to the task."
+msgstr ""
+
+#. ja: 「<sheet Item 48081 0>」の調達をお願いするよ。<br>採れるのは上の森、気球発着場の北あたりだ。
+#. de: Bitte bringe mir ein paar <noun-de Item 5 48081 2 4 1> aus dem Yak Awak Tsoly, der sich nördlich des Ballonplatzes im oberen Wald befindet.
+#. fr: Il me faut de l'eau de source de Yak Awak que tu pourras puiser au nord de l'embarcadère à ballons.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_011:1"
+msgid "If you don't mind, I'll need a few bottles of spring water drawn from the reserves north of the dirigible landing in the upper forest."
+msgstr ""
+
+#. ja: 「<sheet Item 48082 0>」の調達をお願いするよ。<br>採れるのは上の森、ヤクアワク・ゾユの近くだ。
+#. de: Bitte bringe mir ein paar <noun-de Item 5 48082 2 4 1> aus der Gegend rund um den Yak Awak Tsoly.
+#. fr: Il me faut des feuilles de thé croc-de-léopard que tu pourras dénicher près du Yak Awak Tsoly.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_012:1"
+msgid "If you don't mind, I'll need a few baskets of leopardfang tea leaves harvested from the area around Yak Awak Tsoly."
+msgstr ""
+
+#. ja: 「<sheet Item 48083 0>」の調達をお願い。<br>ヤクアワク・ゾユで<sheet Item 43849 0>を使えば採れるよ。
+#. de: Bitte bringe mir ein paar <noun-de Item 5 48083 2 4 1>, das im Yak Awak Tsoly wächst. Es ist nicht ganz einfach, an die Pflanzen heranzukommen, aber mit ein paar <noun-de Item 5 43849 2 3 1> wird es dir sicherlich gelingen.
+#. fr: Il me faut <noun-fr Item 1 48083 1 1> que tu pourras trouver au Yak Awak Tsoly. N'oublie pas <noun-fr Item 4 43849 2 1>, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_013:1"
+msgid "If you don't mind, I'll need a certain tea grass hauled up from Yak Awak Tsoly. It's a little difficult to procure, but golden stonefly nymphs should help you with the task."
+msgstr ""
+
+#. ja: 目当ての材料は、採ってきてくれたかな？
+#. de: Da bist du ja wieder. Hast du gefunden, worum ich dich gebeten habe?
+#. fr: As-tu déniché l'ingrédient dont je t'ai parlé, ja<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_015:1"
+msgid "Do you have the ingredient I asked for?"
+msgstr ""
+
+#. ja: ……さすがだね、上質な品をありがとう。<br>これで作る飲み物も、食事処の新たな名物にできるかな。
+#. de: Ich hatte nichts anderes von dir erwartet. Und was für eine Qualität! Damit wird unser neues Getränk mit Sicherheit noch besser.
+#. fr: Je savais que je pouvais compter sur toi<nbsp>! Notre nouvelle boisson sera un succès, j'en suis persuadé, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_016:1"
+msgid "Yes, this is wonderful quality─as will be the beverage our kitchen makes with it."
+msgstr ""
+
+#. ja: ふむふむ、トライヨラにあるブネワ族のジュース屋か……。<br>いつか協業して、さらに色とりどりの飲み物を置けたら素敵だね。
+#. de: Es gibt also einen Saftstand in Tuliyollal? Interessante Idee<nbsp>... Es wäre toll, wenn wir eines Tages zu<shy>sammen<shy>arbeiten und neue, farbenfrohe Getränke entwickeln könnten! 
+#. fr: Hmmm... Un bar à jus à Tuliyollal tenu par une Boonewa<nbsp>? Qui sait, peut-être qu'un jour nous pourrons travailler ensemble pour créer de jolies boissons colorées<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_017:1"
+msgid "A juice stall in Tuliyollal, you say? I'd like to work with this Boonewa someday and see what colorful and delectable drinks we might create."
+msgstr ""
+
+#. ja: 料理もさることながら、飲み物の世界も奥が深いね……。<br>食事と合わせて楽しめるものだと思うから、<br>いろいろと試してみたいな。
+#. de: Kochen ist schon eine hohe Kunst, aber mit diesen Experimenten hat sich mir ein ganz neues kulinarisches Abenteuer aufgetan: die Welt der Getränke! Ich kann es kaum erwarten, verschiedene Mischungen auszuprobieren und zusammen mit unseren Gerichten anzubieten.
+#. fr: La cuisine c'est tout un art, mais la conception de jus et autres boissons n'est pas aisée non plus, ja<nbsp>! Et puisque j'ai envie que ces mélanges s'accordent aux plats proposés, je dois essayer plusieurs recettes pour trouver la bonne.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_018:1"
+msgid "Cooking is a fine art, but I see now the world of possibility in making drinks. I can't wait to try out different mixes and enjoy them alongside our foods!"
+msgstr ""
+
+#. ja: 種族も部族も超えて、これおすすめだよ、なんてお喋りしてさ。<br>自然とまた足を運びたいと思えるような……<br>この農園が、そういう憩いの場にもなってくれると嬉しいな。
+#. de: Stell dir vor, Gok Golma wäre ein Ort, an dem sich Leute aus allen Ecken des Landes zum Entspannen und Genießen zusammenfinden würden. Ein Treffpunkt, an den man immer wieder zurückkehren will<nbsp>... Wäre das nicht schön?
+#. fr: Gok Golma pourrait devenir un lieu d'échange entre les peuples, un rendez-vous gastronomique pour tous. Les gens viendraient y découvrir un tas de spécialités, et repartiraient avec l'envie de goûter à toute la carte. Voilà en tout cas le genre d'endroit que je veux créer<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam128_05288:TEXT_BANMAM128_05288_KAGEELJA_000_019:1"
+msgid "Imagine Gok Golma becoming a place where people from all over the nation come to relax─a place where they share their favorites from the menu, and make plans to return time and again. Wouldn't that be nice?"
+msgstr ""

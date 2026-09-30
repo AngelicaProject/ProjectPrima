@@ -1,0 +1,178 @@
+# custom/001/CmnDefRelicWeapon020Trade_00165
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 「アートマ」を用いて、お主の武器にさらなる力を与えよう！<br>お主が強化を求める「古の武器」はどれだね？<br>……さぁ、みせてみるがよい。
+#. de: Die Atmas werden deine Zenit-Waffe auf eine neue Entwicklungsstufe heben. Ich fühle mich geehrt, dir dabei behilflich sein zu dürfen.
+#. fr: Grâce aux âtma, votre arme antique jouira bientôt d'un pouvoir incommensurable. Je suis sûr que vous trépignez d'impatience à l'idée de ce qui va se passer, aussi ne perdons pas une minute de plus. Prêtez-moi l'arme que vous voulez renforcer et je m'occuperai du reste.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_000:1"
+msgid "Through the power of atma, I shall imbue your relic with such might as it has never known. Lend me the object you wish enhanced, and I shall see the deed done."
+msgstr ""
+
+#. ja: 強化する「古の武器・ゼニス」を選択してください
+#. de: Welche Zenit-Waffe möchtest du verstärken?
+#. fr: Choisissez l'arme antique zénith à renforcer
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_TITLE:1"
+msgid "Select the relic you wish to enhance."
+msgstr ""
+
+#. ja: <if ($n1 == 6257)>「<sheet Item 6257 0>」と「<sheet Item 6266 0>」を強化する<else>「<sheet Item $n1 0>」を強化する</if>
+#. de: <if ($n1 == 6257)><noun-de Item 5 6257 1 4 1> und <noun-de Item 5 6266 1 4 1> verstärken<else><noun-de Item 5 $n1 1 4 1> verstärken</if>
+#. fr: <if ($n1 == 6257)>Renforcer <noun-fr Item 2 6257 1 1> et <noun-fr Item 2 6266 1 1><else>Renforcer <noun-fr Item 2 $n1 1 1></if>
+#. macro: <if ($n1 == 6257)><capitalize><noun-en Item 2 6257 1 1></capitalize> and <noun-en Item 3 6266 1 1><else><sheet Item $n1 9></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 6257 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><noun-en Item 2 6257 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <noun-en Item 2 6257 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = 6257, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 6266 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = 6266, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Item $n1 9> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_CHOICES:1"
+msgid "<if ($n1 == 6257)><capitalize><noun-en Item 2 6257 1 1></capitalize> and <noun-en Item 3 6266 1 1><else><sheet Item $n1 9></if>"
+msgstr ""
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_CANCEL:1"
+msgid "Cancel"
+msgstr ""
+
+#. ja: <if ($n1 == 6257)>「<sheet Item 6257 0>」と「<sheet Item 6266 0>」を強化しますか？<else>「<sheet Item $n1 0>」を強化しますか？</if>
+#. de: <if ($n1 == 6257)><capitalize><noun-de Item 2 6257 1 4 1></capitalize> und <noun-de Item 2 6266 1 4 1> verstärken?<else><capitalize><noun-de Item 2 $n1 1 4 1></capitalize> verstärken?</if>
+#. fr: Voulez-vous renforcer <if ($n1 == 6257)><noun-fr Item 2 6257 1 1> et <noun-fr Item 2 6266 1 1><else><noun-fr Item 2 $n1 1 1></if><nbsp>?
+#. macro: <if ($n1 == 6257)><noun-en Item 2 6257 1 1> and <noun-en Item 2 6266 1 1><else><noun-en Item 2 $n1 1 1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 6257 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 2 6257 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = 6257, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 6266 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = 6266, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_MESSAGE:1"
+msgid "Have <if ($n1 == 6257)><noun-en Item 2 6257 1 1> and <noun-en Item 2 6266 1 1><else><noun-en Item 2 $n1 1 1></if> enhanced?"
+msgstr ""
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_YES:1"
+msgid "Yes"
+msgstr ""
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_NO:1"
+msgid "No"
+msgstr ""
+
+#. ja: おや……お主の強化したい「古の武器」が見当たらんぞ？<br>さぁ、早く私にみせてくれ。
+#. de: Ähem, die Waffe kann ich natürlich nur verstärken, wenn du sie in deinem Besitz hast und aus der Hand legst, <if $gn4>meine Liebe<else>mein Lieber</if>. Komm doch noch einmal wieder, wenn du die Waffe zum Tausch bereit gemacht hast.
+#. fr: Sauf erreur de ma part, cette arme ne se trouve pas dans votre sac...
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_020:1"
+msgid "Where is the relic? Perchance you forgot to bring it?"
+msgstr ""
+
+#. ja: 「古の武器・ゼニス」を強化したい場合は、<br>12種類の「アートマ」を手に入れた上で、<br>該当する装備品をジャルザーンに渡しましょう。
+#. de: Um eine Zenit-Waffe zu verstärken, benötigst du erst einmal alle zwölf Atmas.
+#. fr: Pour que Jalzahn puisse renforcer votre arme antique zénith, vous devez posséder au moins un exemplaire des douze types d'âtma dans votre inventaire.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_020:1"
+msgid "To have Jalzahn enhance a relic weapon zenith, you must be in possession of twelve unique varieties of atma."
+msgstr ""
+
+#. ja: なお、強化したい場合は、装備を外し、<br>「アーマリーチェスト」か「所持品」に収納した状態で、<br>ジャルザーンに話しかける必要があります。
+#. de: Erkämpfe dir die Atmas und lege dann deine Waffe zurück ins Arsenal oder dein Inventar, damit Jalzahn sie für dich verstärken kann.
+#. fr: En outre, vous devez vous assurer que votre personnage n'est pas déjà équipé de l'arme en question. Si c'est le cas, retirez-la et placez-la dans votre arsenal ou votre inventaire.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_025:1"
+msgid "Furthermore, please ensure that the relic you wish to enhance is placed in your Armoury Chest or inventory before speaking with Jalzahn."
+msgstr ""
+
+#. ja: （★未使用／削除予定★）
+#. de: （★未使用／削除予定★）
+#. fr: （★未使用／削除予定★）
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_100_030:1"
+msgid "I cannot well perform my work until you make room among your mess of possessions."
+msgstr ""
+
+#. ja: ほかに強化したい「古の武器」があるならば、<br>12種類の「アートマ」とともに、持ってくるがよい。
+#. de: Wenn ich eine weitere Zenit-Waffe für dich verstärken soll, dann überreiche sie mir bitte zusammen mit den zwölf Atmas.
+#. fr: Si vous désirez renforcer une autre relique, apportez-moi douze nouvelles âtma, et je m'occuperai du reste.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_030:1"
+msgid "If there are any other relics you wish enhanced, bring me twelve unique varieties of atma as before, and I shall see the deed done."
+msgstr ""
+
+#. ja: 「古の武器・ゼニス」を装備した状態で、<br>特定の地域で発生するF.A.T.E.に参加すると、<br>稀に「アートマ」と呼ばれるアイテムが手に入ります。
+#. de: Wenn du mit angelegter Zenit-Waffe an FATEs in bestimmten Regionen teilnimmst, hast du die Chance, Atmas zu erhalten.
+#. fr: Pour obtenir des âtma, vous devez vous équiper d'une arme antique zénith et participer à des ALÉA dans différentes régions d'Éorzéa.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_035:1"
+msgid "By participating in certain FATEs while equipped with a relic weapon zenith, you may obtain an atma crystal."
+msgstr ""
+
+#. ja: ジャルザーンに12種類の「アートマ」と、<br>「古の武器・ゼニス」を渡すことで、<br>「古の武器・アートマ」へと強化をすることができます。
+#. de: Es gibt zwölf verschiedene Atmas. Überreiche sie Jalzahn gemeinsam mit deiner Zenit-Waffe, und er wird sie zu einer Atma-Waffe verstärken.
+#. fr: Une fois les douze types d'âtma en votre possession, retournez au Moulin des Bois et parlez à Jalzahn pour accomplir le processus de renforcement.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_036:1"
+msgid "Once you have obtained twelve unique varieties of atma, you may present them to Jalzahn to have a relic weapon zenith enhanced."
+msgstr ""
+
+#. ja: ただし、ジョブ「ナイト」は、<br>「剣」と「盾」の両方の「古の武器・ゼニス」を<br>用意する必要があります。
+#. de: Paladine müssen sowohl das entsprechende Schwert als auch den Schild bereithalten.
+#. fr: Notez que les paladins devront avoir en leur possession à la fois leur épée et leur bouclier dans leur aspect zénith.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_036:1"
+msgid "Paladins must possess both Curtana Zenith and the Holy Shield Zenith."
+msgstr ""
+
+#. ja: なお、必要な「アートマ」の情報は、「ジャーナル」の<br>「コンプリートリスト」から、「サブクエスト：武器強化」内の<br>「英雄の武器を求めて」を見ることで、確認が可能です。
+#. de: Wo du an den FATEs teilnehmen kannst, erfährst du im Abschnitt „Szenario-Nebenaufträge“ deines Archivs unter „Waffenverstärkung“ und dem Eintrag „Die Waffen legendärer Streiter“.
+#. fr: Notez qu'il est possible de consulter à nouveau ces in<shy>for<shy>ma<shy>tions via le journal, en sélectionnant “Achevés”, “Sagas des armes légendaires”, puis la quête “L'âme des armes”.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_037:1"
+msgid "This information can be reviewed in the completed journal for the quest “Up in Arms,” which can be found under “Weapon Enhancement Sidequests.”"
+msgstr ""
+
+#. ja: お主が12種類の「アートマ」を集めたならば、<br>「古の武器」を強化してやることができるぞ。
+#. de: Worauf wartest du, <if $gn4>meine Liebe<else>mein Freund</if>? Streife durch Eorzea und erkämpfe dir die zwölf Atmas. Mit ihnen kann ich deine Zenit-Waffe verstärken. Der Weg ist lang und beschwerlich, doch es ist ein lohnenswerter Weg, glaube mir.
+#. fr: Revenez me voir quand vous aurez réussi à rassembler toutes les âtma et j'insufflerai leur pouvoir dans votre arme antique.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_040:1"
+msgid "How fare your efforts at procuring atma? Once you have twelve pieces in your possession, bring them hither, and I shall infuse their power into a relic of your choosing."
+msgstr ""
+
+#. ja: うむ、確かに揃っておる……よくぞ、集めてきたな！<br>この12種類の「アートマ」を用いて、<br>お主の「古の武器」に、さらなる力を与えよう！
+#. de: Ah, du warst fleißig, wie ich sehe! Ausgezeichnet, dann bin ich jetzt an der Reihe!
+#. fr: Donnez-moi les âtma maintenant.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_050:1"
+msgid "Ah, twelve unique varieties of atma! You have done well, my dear adventurer."
+msgstr ""
+
+#. ja: あとは、私の秘術に任せたまえ……。<br>古の武器「ゾディアックウェポン」よ、偉大な力をここに！<br>……さぁ、受け取るがいい！
+#. de: Man nehme die zwölf Atmas, ordne sie in einem ätherischen Kreis an, bringe die stellaren Schwingungen in Einklang und ...
+#. fr: Parfait<nbsp>! J'ai tout ce dont j'ai besoin. À mon tour de vous montrer de quoi je suis capable. Ne vous inquiétez pas, cela ne prendra pas longtemps.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_051:1"
+msgid "Pray leave the rest to me. I require but a moment."
+msgstr ""
+
+#. ja: 魂の欠片が、「古の武器」との融合を果たした……！<br>これが、お主の新しい武器……「<sheet Item $n1 0>」だ！
+#. de: Herzlichen Glückwunsch! Fertig ist <noun-de Item 2 $n1 1 1 1>!
+#. fr: Ma théorie s'est avérée correcte<nbsp>: les âmes contenues à l'intérieur des âtma ont fusionné avec votre relique. La force qui en émane est tout simplement fascinante. Oui, fascinante.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_056:1"
+msgid "...It is done! True to my theory, the souls housed within the atma have merged with your relic! Take it up once more, adventurer, and savor the newfound power that courses through it!"
+msgstr ""
+
+#. ja: 魂の欠片が、「古の武器」との融合を果たした……。<br>さぁ、これが「<sheet Item 7824 0>」……<br>そして「<sheet Item 7833 0>」だ！
+#. de: Herzlichen Glückwunsch! Fertig sind <noun-de Item 2 7824 1 1 1> und <noun-de Item 2 7833 1 1 1>!
+#. fr: Ma théorie s'est avérée correcte<nbsp>: les âmes contenues à l'intérieur des âtma ont fusionné avec vos reliques. La force qui en émane est tout simplement fascinante. Oui, fascinante.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_057:1"
+msgid "...It is done! True to my theory, the souls housed within the atma have merged with your blade and shield! Take them up once more, adventurer, and savor the newfound power that courses through them!"
+msgstr ""
+
+#. ja: 「古の武器・ゼニス」は強化され、<br>「古の武器・アートマ」となりました！
+#. de: Deine Zenit-Waffe wurde zu einer Atma-Waffe verstärkt!
+#. fr: Votre arme antique zénith s'est transformée en arme antique âtma<nbsp>!
+#. macro: <if ($n1 == 6257)>Your relics zenith have been reborn through the power of atma<else>Your relic weapon zenith has been reborn through the power of atma</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 6257 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_059:1"
+msgid "<if ($n1 == 6257)>Your relics zenith have been reborn through the power of atma<else>Your relic weapon zenith has been reborn through the power of atma</if>!"
+msgstr ""
+
+#. ja: ほかの「古の武器・ゼニス」を強化したい場合は、<br>再度、12種類の「アートマ」を集め、<br>武器とともに、ジャルザーンに渡しましょう。
+#. de: Wenn du weitere Zenit-Waffen verstärken möchtest, musst du erneut alle zwölf Atmas sammeln und abermals bei Jalzahn vorstellig werden.
+#. fr: Si vous désirez améliorer une autre arme antique zénith, vous devez de nouveau obtenir douze types d'âtma et les donner à Jalzahn en même temps que l'arme à renforcer.
+msgctxt "custom/001/CmnDefRelicWeapon020Trade_00165:TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_060:1"
+msgid "If you wish to have another relic weapon zenith enhanced, you may do so by repeating the process of obtaining twelve unique pieces of atma, and then presenting the objects to Jalzahn."
+msgstr ""

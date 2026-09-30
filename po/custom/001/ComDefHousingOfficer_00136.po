@@ -1,0 +1,1203 @@
+# custom/001/ComDefHousingOfficer_00136
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <switch $n1><case>ミスト・ヴィレッジ<case>ラベンダーベッド<case>ゴブレットビュート<case>シロガネ</switch>へようこそ。<br>こちらでは、ハウジングに関するご案内をしております。
+#. de: Einen schönen guten <if ($gn11 < 12)><if ($gn11 < 4)>Abend<else>Morgen</if><else><if ($gn11 < 17)>Tag<else>Abend</if></if>! Wenn du irgendwelche Fragen über die Unterkünfte hier <switch $n1><case>im Dorf des Nebels<case>in den Lavendelbeeten<case>auf der Kelchkuppe<case>in Shirogane</switch> hast, kannst du dich gerne an mich wenden.
+#. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if> et bienvenue à <switch $n1><case>Brumée<case>Lavandière<case>La Coupe<case>Shirogane</switch>. Je suis ici pour informer les aventuriers comme vous sur le logement.
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>eve<else>morn</if><else><if ($gn11 < 17)>day<else>eve</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>eve<else>morn</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>day<else>eve</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>Mist<case>the Lavender Beds<case>the Goblet<case>Shirogane</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_000:1"
+msgid "I pray this <if ($gn11 < 12)><if ($gn11 < 4)>eve<else>morn</if><else><if ($gn11 < 17)>day<else>eve</if></if> finds you well, <if $gn4>miss<else>sir</if>. As caretaker of <switch $n1><case>Mist<case>the Lavender Beds<case>the Goblet<case>Shirogane</switch>, it would be my pleasure to answer any queries you may have."
+msgstr ""
+
+#. ja: 何を聞く？
+#. de: Was möchtest du fragen?
+#. fr: Sur quoi vous renseignez-vous<nbsp>?
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2Q1_100_002:1"
+msgid "What would you like to ask about?"
+msgstr ""
+
+#. ja: キャンセル
+#. de: Nichts.
+#. fr: Annuler
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A11_111_002:1"
+msgid "Nothing."
+msgstr ""
+
+#. ja: 冒険者居住区とは？
+#. de: Was hat es mit diesem Ort auf sich?
+#. fr: Les quartiers résidentiels en général
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A1_101_002:1"
+msgid "This residential district."
+msgstr ""
+
+#. ja: 土地の購入や破棄について知りたい
+#. de: Wie kann ich Grundstücke kaufen und verkaufen?
+#. fr: L'achat et la cession d'un terrain
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CATEGORYA1_100_002:1"
+msgid "Land ownership."
+msgstr ""
+
+#. ja: 土地について
+#. de: Was gibt es über Grundstücke zu wissen?
+#. fr: Les types de terrains disponibles
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A2_102_002:1"
+msgid "What kinds of plots are available?"
+msgstr ""
+
+#. ja: 土地の購入
+#. de: Wie kann ich ein Grundstück erwerben?
+#. fr: L'achat d'un terrain
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A3_103_002:1"
+msgid "How do I purchase land?"
+msgstr ""
+
+#. ja: 土地の破棄
+#. de: Wie kann ich ein erworbenes Grundstück zurückgeben?
+#. fr: La cession d'un terrain
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A4_104_002:1"
+msgid "How do I relinquish land?"
+msgstr ""
+
+#. ja: 土地の自動撤去について
+#. de: Verliere ich mein Grundstück, wenn ich es nicht nutze?
+#. fr: La cession automatique des terrains
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A4_121_002:1"
+msgid "What happens if I abandon my estate?"
+msgstr ""
+
+#. ja: ハウスを建てて外観を飾りたい
+#. de: Wie kann ich Gebäude errichten und ihr Aussehen verändern?
+#. fr: La con<shy>struc<shy>tion et la personnalisation de l'extérieur d'une maison
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CATEGORYA1_101_002:1"
+msgid "Estate hall construction and exterior customization."
+msgstr ""
+
+#. ja: ハウスの建築
+#. de: Wie errichte ich ein Gebäude?
+#. fr: La con<shy>struc<shy>tion d'une maison
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A5_105_002:1"
+msgid "How do I build an estate hall?"
+msgstr ""
+
+#. ja: 外装の変更
+#. de: Kann ich bestimmen, wie mein Gebäude von außen aussieht?
+#. fr: La personnalisation de l'extérieur d'une maison
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A6_106_002:1"
+msgid "How do I customize the exterior of my estate hall?"
+msgstr ""
+
+#. ja: ガーデンに庭具を置く
+#. de: Wie kann ich etwas im Garten aufstellen?
+#. fr: La disposition du mobilier de jardin
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A7_107_002:1"
+msgid "How do I place outdoor furnishings?"
+msgstr ""
+
+#. ja: ハウス内を飾りたい
+#. de: Wie kann ich meine Unterkunft einrichten?
+#. fr: La personnalisation de l'intérieur d'une maison
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CATEGORYA1_102_002:1"
+msgid "Interior customization."
+msgstr ""
+
+#. ja: 内装の変更
+#. de: Kann ich bestimmen, wie mein Gebäude von innen aussieht?
+#. fr: La décoration de l'intérieur d'une maison
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A8_108_002:1"
+msgid "How do I customize the interior of my estate hall?"
+msgstr ""
+
+#. ja: ハウス内に調度品を置く
+#. de: Wie kann ich Zimmerausstattung aufstellen?
+#. fr: La disposition de meubles
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A9_109_002:1"
+msgid "How do I place indoor furnishings?"
+msgstr ""
+
+#. ja: 調光機能について
+#. de: Wie kann ich die Beleuchtung verändern?
+#. fr: Le réglage de la luminosité
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A4_122_002:1"
+msgid "How do I adjust the brightness of estate lighting?"
+msgstr ""
+
+#. ja: 調度品や庭具の取引属性とは？
+#. de: Kann man einmal platzierte Möbel wieder verkaufen?
+#. fr: Les restrictions sur les meubles usés
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A10_110_002:1"
+msgid "Restrictions on the sale of used furnishings."
+msgstr ""
+
+#. ja: フリーカンパニーのハウス専用の機能を知りたい
+#. de: Welche weiteren Möglichkeiten bieten Unterkünfte der Freien Ge<shy>sell<shy>schaft?
+#. fr: Les options disponibles dans une maison de compagnie libre
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CATEGORYA1_103_002:1"
+msgid "Free company estate features."
+msgstr ""
+
+#. ja: 個室の増築
+#. de: Was sind persönliche Zimmer und wie bekomme ich eines?
+#. fr: L'aménagement d'une chambre individuelle
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A12_112_002:1"
+msgid "How do I obtain private chambers?"
+msgstr ""
+
+#. ja: 個室の撤去
+#. de: Wie kann ich mein persönliches Zimmer wieder räumen?
+#. fr: La destruction d'une chambre individuelle
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A13_113_002:1"
+msgid "How do I vacate private chambers?"
+msgstr ""
+
+#. ja: 個室の自動撤去について
+#. de: Was passiert, wenn ich aus der Freien Ge<shy>sell<shy>schaft ausgeschlossen werde?
+#. fr: La récupération des objets d'une chambre détruite
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A13_114_002:1"
+msgid "What happens if I am dismissed from my free company?"
+msgstr ""
+
+#. ja: エーテリアルホイールについて
+#. de: Was sind Ätherräder?
+#. fr: Les tours éthéréens
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A13_115_002:1"
+msgid "What are aetherial wheels?"
+msgstr ""
+
+#. ja: 地下工房の撤去
+#. de: Wie kann ich eine Werkstätte entfernen?
+#. fr: La destruction d'un atelier de compagnie
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A13_116_002:1"
+msgid "How do I demolish a company workshop?"
+msgstr ""
+
+#. ja: 地下工房の増築
+#. de: Wie kann ich eine Werkstätte einrichten?
+#. fr: L'aménagement d'un atelier de compagnie
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A13_117_002:1"
+msgid "What are company workshops?"
+msgstr ""
+
+#. ja: 何を聞く？
+#. de: Was möchtest du fragen?
+#. fr: Sur quoi vous renseignez-vous<nbsp>?
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CATEGORYQ1_100_000:1"
+msgid "What will you ask?"
+msgstr ""
+
+#. ja: キャンセル
+#. de: Nichts.
+#. fr: Retour
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CATEGORYC1_100_000:1"
+msgid "Nothing."
+msgstr ""
+
+#. ja: リテイナーの配置について
+#. de: Wie platziere ich einen Gehilfen?
+#. fr: L'affectation de servants sur un terrain
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A10_120_002:1"
+msgid "Estate retainers."
+msgstr ""
+
+#. ja: ハウスシェアリングについて
+#. de: Was ist eine Wohngemeinschaft?
+#. fr: Le partage d'une maison individuelle
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A10_123_002:1"
+msgid "Estate sharing."
+msgstr ""
+
+#. ja: アパルトメントについて
+#. de: Wie kann ich eine Wohnung beziehen?
+#. fr: Les appartements
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A10_124_002:1"
+msgid "Apartments."
+msgstr ""
+
+#. ja: 引越について知りたい
+#. de: Ich habe Fragen zum Umzug.
+#. fr: Le déménagement
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CATEGORYA1_104_002:1"
+msgid "Relocation."
+msgstr ""
+
+#. ja: 引越について知りたい
+#. de: Wie kann ich mit meiner Unterkunft umziehen?
+#. fr: Le déménagement
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A25_125_002:1"
+msgid "Relocation."
+msgstr ""
+
+#. ja: 引越に伴う資産の移動について
+#. de: Was passiert mit den Möbeln bei einem Umzug?
+#. fr: Le transfert des biens lors du déménagement
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A26_126_002:1"
+msgid "Moving furnishings."
+msgstr ""
+
+#. ja: 引越についての補足
+#. de: Was gibt es sonst noch zu beachten?
+#. fr: Remarque sur le déménagement
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A27_127_002:1"
+msgid "Additional notes."
+msgstr ""
+
+#. ja: 倉庫について
+#. de: Was ist das Lagerhaus?
+#. fr: L'entrepôt
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_CHOICE2A28_128_002:1"
+msgid "Storeroom."
+msgstr ""
+
+#. ja: <switch $n1><case>グランドカンパニー「黒渦団」<case>グランドカンパニー「双蛇党」<case>グランドカンパニー「不滅隊」<case>クガネ</switch>では、<br>現在、冒険者招致活動を推進しています。
+#. de: Die Grundstücke <switch $n1><case>im Dorf des Nebels<case>in den Lavendelbeeten<case>in Kelchkuppe<case>in Shirogane</switch> erfreuen sich äußerster Beliebtheit in <switch $n1><case>Limsa Lominsa<case>Gridania<case>Ul'dah<case>Kugane</switch>. Sie bieten Aben<shy>teu<shy>re<shy>rin<shy>nen und Abenteurern die Chance, sich in einem rasant wachsenden Wohngebiet niederzulassen.
+#. fr: <switch $n1><case>Le Maelstrom<case>L'ordre des Deux Vipères<case>Les Immortels<case>La cité de Kugane</switch> <switch $n1><case>a<case>a<case>ont<case>a</switch> lancé un vaste plan d'action pour inciter les aventuriers à s'installer ici, <switch $n1><case>dans la Noscea<case>à Sombrelinceul<case>dans le Thanalan<case>à Shirogane</switch>.
+#. macro: <capitalize><switch $n1><case>Mist<case>The Lavender Beds<case>The Goblet<case>Shirogane</switch></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <switch $n1><case>Mist<case>The Lavender Beds<case>The Goblet<case>Shirogane</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>Limsa Lominsa's<case>Gridania's<case>Ul'dah's<case>Kugane's</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_010:1"
+msgid "<capitalize><switch $n1><case>Mist<case>The Lavender Beds<case>The Goblet<case>Shirogane</switch></capitalize> is <switch $n1><case>Limsa Lominsa's<case>Gridania's<case>Ul'dah's<case>Kugane's</switch> fastest growing community─a residential district exclusively for adventurers."
+msgstr ""
+
+#. ja: その一環として設けられた制度が、<br>冒険者の皆様の活動拠点となる「土地」と「ハウス」、<br>そして、アパルトメントの「部屋」を提供する制度です。
+#. de: Viele konnten von so einer Möglichkeit bisher nur träumen. Nun, der Traum ist wahr geworden - es steht euch allen nun frei, ein Grundstück zu erwerben und darauf ein Gebäude zu errichten, oder in eine Wohnung einzuziehen.
+#. fr: Pour cela, il a été jugé nécessaire de leur proposer un endroit qui puisse servir de base à leurs activités. Nous avons ainsi mis au point un système permettant d'acheter des terrains constructibles et des appartements.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_011:1"
+msgid "Here, you and like-minded adventurers are free to purchase apartments, or secure plots of land on which to build estates."
+msgstr ""
+
+#. ja: 土地を獲得し、ハウスを建てることができるのは、<br>ここ<switch $n1><case>ミスト・ヴィレッジ<case>ラベンダーベッド<case>ゴブレットビュート<case>シロガネ</switch>のような、<br>「冒険者居住区」と呼ばれる地域になります。
+#. de: Das Wohngebiet wurde unter der Federführung <switch $n1><case>des Mahlstroms<case>der Bruderschaft der Morgenviper<case>der Legion der Unsterblichen<case>des Magistrats von Kugane</switch> errichtet. Sie erhoffen sich damit einen noch größeren Zustrom an gut ausgebildeten Abenteurern aus aller Herren Länder.
+#. fr: C'est ici, au quartier résidentiel de <switch $n1><case>Brumée<case>Lavandière<case>La Coupe<case>Shirogane</switch>, que vous pouvez donc acquérir votre parcelle et y bâtir une maison. Comprenez bien que c'est dans l'intérêt de notre cité que vous vous installiez ici.
+#. macro: <switch $n1><case>Maelstrom<case>Order of the Twin Adder<case>Immortal Flames<case>Kugane government</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_012:1"
+msgid "This district has been established under the auspices of the <switch $n1><case>Maelstrom<case>Order of the Twin Adder<case>Immortal Flames<case>Kugane government</switch>, of course. It is their fondest hope that these favorable policies will facilitate immigration to our great nation."
+msgstr ""
+
+#. ja: 冒険者居住区は各都市の領土内に、<br>それぞれひとつずつ用意されています。
+#. de: Falls du dich und deine Fä<shy>hig<shy>kei<shy>ten bereits einer anderen Staatlichen Ge<shy>sell<shy>schaft verschrieben hast, ist das übrigens auch kein Problem. 
+#. fr: Sachez que diverses cités du monde mettent une zone d'habitation comme celle-ci à la disposition des aventuriers.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_013:1"
+msgid "In case you are concerned that your allegiance may bar you from residing here─do not be."
+msgstr ""
+
+#. ja: 獲得可能な土地やアパルトメントの部屋は、<br>グランドカンパニーの所属国に左右されませんので、<br>好きな地域の居住区で獲得するといいでしょう。
+#. de: Sei unbesorgt, wir stecken unsere Nasen nicht in die privaten An<shy>ge<shy>legen<shy>heiten unserer Bewohner. Auch als Mitglied einer anderen Staatlichen Ge<shy>sell<shy>schaft kannst du dich hier bedenkenlos niederlassen.
+#. fr: L'achat de terrain et d'appartement n'est aucunement limité par votre allégeance. Vous êtes libre d'élire domicile à l'endroit qui vous plaît.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_014:1"
+msgid "We do not concern ourselves with the private affairs of our residents. You may live here regardless of your affiliation."
+msgstr ""
+
+#. ja: 冒険者居住区は、いくつもの「区」にわかれています。<br>居住区へ移動する際は、まずどの区に行くのかを、<br>居住区への入り口で選択する必要があります。
+#. de: In den Wohngebieten kannst du Grundstücke erwerben. Auf diesen Grundstücken kannst du Häuser bauen und diese nach eigenen Wünschen gestalten.
+#. fr: Les quartiers résidentiels sont divisés en secteurs. Lorsque vous y accédez, vous devez d'abord choisir le secteur où vous désirez vous rendre.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_015:1"
+msgid "In residential districts, you may purchase <ui-color 500><ui-edge-color 501>plots</ui-edge-color></ui-color>, on which you may construct and maintain <ui-color 500><ui-edge-color 501>estate halls</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 冒険者居住区には、同じエリアが並列して複数存在します。<br>たとえば、第1区と第2区では、構造や景観こそ同じですが、<br>それぞれ異なる場所であり、土地の利用状況も異なります。
+#. de: Um sicherzustellen, dass alle Spieler ein ihren Wünschen entsprechendes Grundstück erwerben können, gibt es eine Vielzahl von Instanzen („Bezirken“) der gleichen Wohngebiete. Daher wirst du beim Betreten auch aufgefordert, den Bezirk anzugeben, den du betreten willst.
+#. fr: Les quartiers résidentiels sont composés de plusieurs zones parallèles. Par exemple, les secteurs 1 et 2 ont des structures et des paysages identiques, mais se trouvent à des endroits différents et à divers niveaux de développement.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_016:1"
+msgid "To ensure that there are sufficient plots for players, multiple <ui-color 500><ui-edge-color 501>instances</ui-edge-color></ui-color> of these districts have been created. Therefore, when entering a residential district, you will be prompted to choose the instance you wish to enter."
+msgstr ""
+
+#. ja: ハウスを建てるには、<br>冒険者居住区内にある「土地」を購入する必要があります。
+#. de: Komische Frage. Du benötigst ein Grundstück, um ein Gebäude darauf bauen zu dürfen, warum sonst? Hast du zum Beispiel schon mal versucht, ein Haus einfach in die Luft zu bauen? Davon kann ich dir nur abraten ...
+#. fr: Afin de bâtir une maison, il vous faut d'abord acheter un terrain dans le quartier résidentiel.
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_020:1"
+msgid "Some say a quality estate is built upon a quality foundation, but to them I would say, “What is a quality foundation built upon? Quality <i>land</i>, of course!”"
+msgstr ""
+
+#. ja: 土地の広さには、<br>「Ｓサイズ」「Ｍサイズ」「Ｌサイズ」の3種類があります。
+#. de: In jedem Wohngebiet gibt es Grundstücke in drei verschiedenen Größen - klein, mittelgroß und groß. Die Größe des Grundstücks bestimmt, welche Art von Gebäude darauf errichtet werden kann.
+#. fr: Il en existe de trois tailles différentes<nbsp>: petit, moyen et grand.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_021:1"
+msgid "<ui-color 500><ui-edge-color 501>Small</ui-edge-color></ui-color>, <ui-color 500><ui-edge-color 501>medium</ui-edge-color></ui-color>, and <ui-color 500><ui-edge-color 501>large</ui-edge-color></ui-color> plots are available for purchase in each residential district."
+msgstr ""
+
+#. ja: ハウスにも同じく3種類があり、ハウスの建築には、<br>「Ｓサイズの土地にはＳサイズのハウス」のように、<br>土地とハウスのサイズが合致している必要があります。
+#. de: Ein kleines Grundstück bietet Platz für eine Hütte, ein mittelgroßes für ein Haus und ein großes für eine Residenz. Es ist übrigens nicht möglich, eine Hütte, die für ein kleines Grundstück gedacht ist, auf einem großen Grundstück zu errichten. 
+#. fr: De même, les maisons ont trois formats, qui correspondent aux types de terrain. Il est nécessaire de construire un logement à la taille de la parcelle.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_022:1"
+msgid "Plot size determines the maximum number of furnishings that can be placed, as well as the type of estate hall that can be constructed. <ui-color 500><ui-edge-color 501>Cottages</ui-edge-color></ui-color> can be built upon small plots, <ui-color 500><ui-edge-color 501>houses</ui-edge-color></ui-color> upon medium plots, and <ui-color 500><ui-edge-color 501>mansions</ui-edge-color></ui-color> upon large plots."
+msgstr ""
+
+#. ja: 土地のサイズと、<br>そこに配置可能な調度品や庭具の数は比例していますので、<br>土地を購入する際は、よく考えて購入しましょう。
+#. de: Des Weiteren ist von der Grundstücks- und damit Gebäudegröße abhängig, mit wie vielen Gegenständen das Anwesen ausgestattet werden kann.
+#. fr: Le nombre de meubles qui peuvent être placés dans le jardin ou dans la maison varie en fonction de la taille du terrain. Ne l'oubliez pas lorsque vous déciderez d'en acheter un.
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_023:1"
+msgid "Please note that the estate hall must match the plot size; a cottage <i>cannot</i> be built upon a large plot, for example."
+msgstr ""
+
+#. ja: 土地を購入するには、「個人」で購入する場合と、<br>「フリーカンパニー」で購入する場合で、<br>必要な条件が異なります。
+#. de: Da muss man zunächst einmal unterscheiden, ob du das Grundstück für dich selbst oder im Namen deiner Freien Ge<shy>sell<shy>schaft kaufen willst. Beides ist ein wahres Kinderspiel! ... Nun ja, ein Spiel ist es wohl nicht wirklich - und bisher war auch noch kein Kind hier, das auch nur annähernd genug Gil hatte, um mein Interesse zu wecken, geschweige denn, sich ein Grundstück leisten zu können, haha. Außerdem gibt es verschiedene Bedingungen.
+#. fr: Les conditions requises pour pouvoir acheter un terrain diffèrent selon qu'il s'agisse d'une acquisition à titre <i>individuel</i> ou pour le compte d'une <i>compagnie libre</i>.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_030:1"
+msgid "The process is so simple that even a child could do it─well, an exceedingly wealthy child, but I digress. First of all, the requirements for purchasing land vary depending on whether you are a private buyer, or a representative of your free company."
+msgstr ""
+
+#. ja: 「個人」で土地を購入する場合は、<br>いずれかのクラスが、レベル50に達している必要があります。
+#. de: Um dir ein eigenes Grundstück zu kaufen, musst du in einer Klasse mindestens Stufe 50 erreicht haben.
+#. fr: Afin d'acheter un terrain pour soi-même, il est nécessaire d'avoir atteint le niveau 50 dans une classe.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_100_031:1"
+msgid "In order to purchase a plot of land privately, you must have at least one class at level 50."
+msgstr ""
+
+#. ja: また、所属しているグランドカンパニーの階級が、<br>黒渦団の場合は「少甲士」、双蛇党の場合は「少牙士」、<br>不滅隊の場合は「少闘士」以上である必要があります。
+#. de: Außerdem musst du in deiner Staatlichen Ge<shy>sell<shy>schaft mindestens den Rang eines Zweiten Sturmbootsmanns, Zweiten Schlangenpriesters oder Zweiten Legionsfähnrichs innehaben.
+#. fr: Par ailleurs, votre personnage doit avoir le grade de sous-lieutenant dans votre grande compagnie d'allégeance.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_101_031:1"
+msgid "Furthermore, you must hold a rank of second lieutenant or above in one of the Grand Companies."
+msgstr ""
+
+#. ja: 「フリーカンパニー」で土地を購入する場合は、<br>「土地保有権」を獲得している必要があります。
+#. de: Falls du Grund und Boden für deine Freie Ge<shy>sell<shy>schaft kaufst, musst du innerhalb dieser Ge<shy>sell<shy>schaft natürlich das Recht haben, ein Grundstück zu kaufen.
+#. fr: Si l'acquisition se fait au nom de la compagnie libre, il faut être à un rang de la hiérarchie ayant le droit de posséder un terrain pour pouvoir en acheter un.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_102_031:1"
+msgid "In order to purchase a plot of land for your free company, you must be authorized to acquire land."
+msgstr ""
+
+#. ja: 「シロガネ」の土地を購入するには、<br>メインクエスト「大洋を征く」を、<br>コンプリートしている必要があります。
+#. de: Um Grundstücke in Shirogane zu erwerben, muss der Auftrag des Hauptszenarios „Misere auf der <i>Misery</i>“ abgeschlossen sein.
+#. fr: Pour acheter un terrain à Shirogane, il est nécessaire d'avoir préalablement terminé la quête de l'épopée “Une grande traversée”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_103_031:1"
+msgid "In order to purchase a plot in Shirogane, you must first complete the main scenario quest “Not without Incident.”"
+msgstr ""
+
+#. ja: いずれの場合も、<br>各土地の前に設置してある「サインボード」を調べると、<br>その土地の価格を確認することができます。
+#. de: Unabhängig davon, ob du das Grundstück für dich oder für deine Freie Ge<shy>sell<shy>schaft kaufst: Der Preis ist in beiden Fällen derselbe. Direkt vor jedem Grundstück befindet sich eine Informationstafel. Auf ihr findest du den gegenwärtigen Verkaufspreis in Gil.
+#. fr: Dans les deux cas, vous pouvez consulter le prix de vente des terrains en examinant les panneaux d'information qui se trouvent dans les quartiers résidentiels.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_031:1"
+msgid "In both cases, to purchase an unowned plot, select the <ui-color 500><ui-edge-color 501>placard</ui-edge-color></ui-color> located at its entrance and select <ui-color 500><ui-edge-color 501>Purchase Land</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 土地はギルで購入することができ、<br>販売開始時の金額を最高金額として、6時間に1回ずつ、<br>決められた最低金額まで値下げが行われます。
+#. de: Dieser wird alle 6 Stunden Stück für Stück gesenkt, bis ein bestimmter Mindestverkaufspreis erreicht ist. Wie lange du wartest, bleibt allein dir überlassen.
+#. fr: Ce prix est en gils et baisse ré<shy>gu<shy>liè<shy>re<shy>ment toutes les 6 heures (temps réel) jusqu'à une valeur minimale déterminée.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_032:1"
+msgid "The listed price will be automatically reduced every six hours until it reaches a predetermined minimum."
+msgstr ""
+
+#. ja: 土地の購入は、先着順となります。<br>ほかのプレイヤーが所有している土地は購入できませんので、<br>ご注意ください。
+#. de: Es gilt Folgendes zu beachten: Wenn sich ein Mitspieler schneller entscheidet und das Grundstück vor dir erwirbt, gehst du leer aus und musst dich nach einem anderen Grundstück oder Bezirk umschauen.
+#. fr: Si un terrain a été acheté par un autre joueur, il est retiré de la vente.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_033:1"
+msgid "Though waiting may allow you to buy at a lower price, please keep in mind that plots are sold on a first-come-first-served basis."
+msgstr ""
+
+#. ja: 土地を破棄するには、すべての調度品、庭具、<br>そして、ハウス自体を撤去する必要があります。
+#. de: Zurückgeben? Wer würde mit einem solchen Gedanken auch nur spielen? ... Wenn du dies allerdings wirklich vorhaben solltest, musst du vorher wirklich alles von deinem Grundstück entfernen, was vor deinem Kauf auch noch nicht vorhanden war. Möbel, Gartenausstattung ... das gesamte Gebäude, mit allem, was dazugehört!
+#. fr: Pour céder un terrain, il est nécessaire d'en retirer préalablement tous les meubles et de démolir la maison qui y a été bâtie.
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_040:1"
+msgid "Relinquish? <i>Relinquish</i>!? Whyever would you wish to─ \\<sigh> Very well, if you must know, there is a strict procedure which must be followed."
+msgstr ""
+
+#. ja: ハウスの撤去が完了した状態で、<br>「ハウジング」メニューから「土地の放棄」を選択すると、<br>土地を破棄することができます。
+#. de: Sobald der Abbau deines Gebäudes getätigt und das Grundstück leer ist, kannst du unter „Unterkünfte“ (Hauptmenü → Soziales) dein Grundstück aufgeben.
+#. fr: Une fois la maison démolie, il suffit de sélectionner l'option “Céder le terrain” dans le menu “Logement”.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_041:1"
+msgid "You cannot relinquish a plot until any private chambers have been vacated, and the estate hall and all furnishings have been removed. Once the plot is completely vacant, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu, and select <ui-color 500><ui-edge-color 501>Estate Settings</ui-edge-color></ui-color>. Finally, select <ui-color 500><ui-edge-color 501>Relinquish Land</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: なお、土地の購入費用は返還されません。<br>土地を破棄する場合は、十分に注意をしてください。
+#. de: Aber überleg dir das gut, denn du bekommst den Verkaufspreis nicht zurück!
+#. fr: Notez toutefois que céder le terrain ne permet pas de récupérer les gils dépensés à l'achat.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_100_041:1"
+msgid "Please be warned that you will not be refunded the purchase price of the plot."
+msgstr ""
+
+#. ja: 冒険者居住区の保全のため、<br>長期間、ハウスのご利用がみとめられなかった場合、<br>土地を自動的に撤去させていただいております。
+#. de: Um eine aktive Gemeinschaft zu fördern, haben wir beschlossen, Grundstücke zu räumen, die lange Zeit nicht benutzt werden.
+#. fr: Afin de permettre au plus grand nombre d'aventuriers de jouir des bénéfices du logement, nous avons décidé que tout terrain qui n'a pas été utilisé pendant une longue période sera au<shy>to<shy>ma<shy>ti<shy>que<shy>ment cédé par son pro<shy>prié<shy>taire.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_100_045:1"
+msgid "To ensure that our community remains active and thriving, we have deemed it necessary to seize estates which have been left abandoned for an extended period of time."
+msgstr ""
+
+#. ja: 「オーナーキャラクター」がハウス内に居ない状態が、<br>（地球時間）30日間続いた場合、撤去の対象として、<br>「自動撤去準備」の状態になります。
+#. de: Wenn eine Unterkunft 30 Tage (Erdenzeit) lang nicht von ihren Besitzern betreten wird, beginnt die Vorbereitung der Zwangsräumung.
+#. fr: Si un pro<shy>prié<shy>taire n'entre pas dans la maison qui est bâtie sur son terrain pendant 30 jours (temps réel) d'affilée, ce dernier sera soumis à une procédure de cession automatique.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_182:1"
+msgid "Estate halls which have not been entered by their owner for <ui-color 500><ui-edge-color 501>thirty days</ui-edge-color></ui-color> (Earth time) will be designated abandoned and scheduled for <ui-color 500><ui-edge-color 501>auto-demolition</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 「オーナーキャラクター」がハウス内に居ない状態が、<br>（地球時間）45日間続くと、自動撤去が実行されます。
+#. de: Wurde die Unterkunft nach insgesamt 45 Tagen (Erdenzeit) immer noch nicht betreten, wird die Zwangsräumung durchgeführt.
+#. fr: Cette opération sera effective après 45 jours (temps réel) d'inactivité.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_001_182:1"
+msgid "Once the estate hall has not been entered for a total of <ui-color 500><ui-edge-color 501>forty-five days</ui-edge-color></ui-color> (Earth time), it will be demolished, and the plot will be put up for sale."
+msgstr ""
+
+#. ja: この場合の「オーナーキャラクター」とは、<br>「フリーカンパニーのハウス」では、<br>「フリーカンパニーメンバー全員」を指します。
+#. de: Bei einer Unterkunft einer Freien Ge<shy>sell<shy>schaft gelten alle Mitglieder der Freien Ge<shy>sell<shy>schaft als Besitzer.
+#. fr: Dans le cas d'un terrain appartenant à une compagnie libre, tous les membres de celle-ci sont considérés comme “pro<shy>prié<shy>taires”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_183:1"
+msgid "All members of a free company are considered owners of a company estate."
+msgstr ""
+
+#. ja: 「個人のハウス」では、「ハウスのオーナー」を指します。
+#. de: Persönliche Unterkünfte können jedoch nur einen registrierten Besitzer haben.
+#. fr: Dans le cas d'un terrain acheté à titre personnel, c'est le personnage à qui il appartient, et lui seul, qui est considéré comme “pro<shy>prié<shy>taire”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_001_183:1"
+msgid "However, private estates may only have a single recognized owner."
+msgstr ""
+
+#. ja: 自動撤去前に、「オーナーキャラクター」の誰かが、<br>ハウスに立ち入ることで、<br>「自動撤去準備」を解除することができます。
+#. de: Um die Zwangsräumung zu verhindern, reicht es, wenn ein Mitglied der Freien Ge<shy>sell<shy>schaft (bei einer Unterkunft einer Freien Ge<shy>sell<shy>schaft) bzw. der Besitzer (bei persönlichen Unterkünften) die Unterkunft betritt.
+#. fr: Il suffit qu'un personnage “pro<shy>prié<shy>taire” pénètre dans la maison avant échéance de la période de 45 jours (temps réel) d'inactivité pour que la cession automatique soit annulée.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_184:1"
+msgid "Therefore, while any member of a free company may enter a company estate hall to prevent auto-demolition, the only individual who can prevent the auto-demolition of a private estate is its owner."
+msgstr ""
+
+#. ja: 土地の自動撤去が実行されると、<br>土地、および土地に紐づく資産は、一部を除いて消滅します。
+#. de: Im Fall einer Zwangsräumung werden auch die darin befindlichen Gegenstände eingezogen.
+#. fr: Si le terrain est cédé au<shy>to<shy>ma<shy>ti<shy>que<shy>ment, tout ce qui y était lié sera perdu, à l'exception de certains biens.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_185:1"
+msgid "In the event your estate is demolished and your plot is sold, you will be able to claim indemnification for 80% of the plot's value. Furthermore, furnishings which can be safely removed will be stored for safekeeping by the resident caretaker."
+msgstr ""
+
+#. ja: なお、一部の調度品・庭具、購入時の土地代のギルの8割は、<br>自動撤去実行後、（地球時間）35日間のみ、<br>「居住区担当官」から回収することが可能です。
+#. de: Wiederverwendbare Einrichtungsobjekte werden nach der Zwangsräumung für 35 Tage (Erdenzeit) aufbewahrt und können beim Unterkunftsbeamten des jeweiligen Areals abgeholt werden, ebenso wie eine Entschädigung in Höhe von 80 % des bezahlten Grundstückspreises.
+#. fr: Notez toutefois qu'une partie des meubles ainsi qu'un montant en gils équivalent à 80% du prix du terrain au moment de son achat pourront être récupérés auprès des officiers du logement pendant une période de 35 jours (temps réel) à partir de la date de cession.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_186:1"
+msgid "However, please be advised that you will only be able to claim items and indemnification from the resident caretaker within <ui-color 500><ui-edge-color 501>thirty-five days</ui-edge-color></ui-color> (Earth time) following the demolition of your estate hall."
+msgstr ""
+
+#. ja: この時、「フリーカンパニーのハウス」の資産の回収は、<br>「土地の購入・放棄」の権限を持ったキャラクターに限られます。
+#. de: Mitglieder einer Freien Ge<shy>sell<shy>schaft müssen über die Berechtigung „Grundstück kaufen/zurückgeben“ verfügen, um Gegenstände ihrer Ge<shy>sell<shy>schaft abzuholen und die Entschädigung in Anspruch zu nehmen.
+#. fr: Dans le cas d'une maison de compagnie libre, seuls les membres ayant le droit d'acheter ou de céder un terrain seront en mesure de reprendre ces biens.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_187:1"
+msgid "Only free company members who have been granted the authority to purchase and relinquish land for the free company may claim items and indemnification for company estates."
+msgstr ""
+
+#. ja: また、「個人のハウス」の資産の回収は、<br>「個人のハウス」のオーナーのみとなります。
+#. de: Bei persönlichen Unterkünften kann nur der ehemalige Besitzer die Besitztümer abholen und die Entschädigung in Anspruch nehmen.
+#. fr: Dans le cas d'une maison individuelle, le personnage à qui appartenait le terrain est le seul qui peut récupérer les gils et les objets.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_188:1"
+msgid "However, only the former owner of a private estate may claim items and indemnification."
+msgstr ""
+
+#. ja: ハウスを建てるには「建築物権利証書」が必要です。
+#. de: Um ein Gebäude auf deinem Grundstück errichten zu dürfen, brauchst du natürlich eine Baugenehmigung.
+#. fr: Pour bâtir une maison, il est nécessaire d'obtenir un “permis de construire”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_050:1"
+msgid "A new home, full of hope and promise... The mere thought of it warms the cockles of my heart. Do understand, though, that there are certain regulations that must be observed before construction can proceed."
+msgstr ""
+
+#. ja: この権利証書には、いくつかの種類があります。<br>権利証書を入手する際には、<br>権利証書のサイズ、居住区の地域をよくご確認ください。
+#. de: Baugenehmigungen gibt es in ver<shy>schie<shy>den<shy>sten Ausführungen. Pass bloß auf, dass du die richtige bekommst, die genau zu deinem Grundstück passt!
+#. fr: Il en existe plusieurs types. Veuillez donc bien vérifier pour quelle taille de maison et pour quel quartier résidentiel ils sont faits.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_051:1"
+msgid "All residents must first obtain a valid building permit─one which applies to their plot's exact specifications."
+msgstr ""
+
+#. ja: 入手した権利証書のサイズ、居住区の地域と、<br>実際の土地のサイズ、居住区の地域が異なると、<br>ハウスを建てることができませんので、ご注意願います。
+#. de: Wenn sich die in deiner Baugenehmigung beurkundeten Spezifikationen nicht mit denen deines Grundstücks decken, kannst du kein Gebäude darauf errichten. Wir achten ganz genau darauf, dass das Gebäude die richtige Größe hat und von seiner Bauart her dem Wohngebiet entspricht. Ins Dorf des Nebels passt eben nur ein Riviera-Gebäude oder in die Lavendelbeete nur ein Wald-Gebäude. Was nicht passt, wird auch nicht passend gemacht.
+#. fr: Si la taille de la maison ou le quartier du permis de construire diffère de celle ou celui du terrain possédé, il sera impossible d'y bâtir un logement.
+#. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_052:1"
+msgid "Some find these restrictions arbitrary, but we feel them necessary to ensure proper land usage. Oh, and do bear in mind that permits are only valid in a given region─we will not recognize one issued by another city<hyphen>state."
+msgstr ""
+
+#. ja: 「建築物権利証書」を所持品に入れた状態で、<br>所有する土地にて「ハウジング」メニューから<br>「ハウスの建築」を選ぶと、ハウスを建てることができます。
+#. de: Sobald du eine Baugenehmigung erworben hast, kannst du unter „Unterkünfte“ (Hauptmenü → Soziales) ein Gebäude errichten, wenn du dich auf deinem Grundstück befindest.
+#. fr: Une fois le permis de construire dans votre inventaire, allez sur votre terrain et ouvrez le menu “Logement”, puis choisissez “Construire une maison”.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_053:1"
+msgid "To build an estate hall, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while on your property, select <ui-color 500><ui-edge-color 501>Estate Hall</ui-edge-color></ui-color>, select <ui-color 500><ui-edge-color 501>Build Estate Hall</ui-edge-color></ui-color>, then choose a valid permit from the list."
+msgstr ""
+
+#. ja: ハウスを建てたら、<br>外観をカスタマイズしてみましょう。
+#. de: Nun, zuerst muss das Gebäude natürlich errichtet werden. Danach gibt es allerdings viele Möglichkeiten, seine Außenansicht deinen Wünschen entsprechend zu gestalten.
+#. fr: Une fois votre maison bâtie, vous pourrez la personnaliser à votre gré.
+#. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_060:1"
+msgid "Rare is the <if $gn4>woman<else>man</if> satisfied with <if $gn4>her<else>his</if> abode. Fortunately, there are innumerable ways in which one might remodel their estate hall."
+msgstr ""
+
+#. ja: ハウスの外装は、「屋根」「外壁」「窓」「扉」<br>「看板」「塀」「屋根装飾」「外壁装飾」という、<br>8種類の「外装建材」で構成されています。
+#. de: Jedes Gebäudes besteht aus acht Elementen<nbsp>- Dach, Außenwand, Fenstern, Tür, Tafel, Zaun, Dachdekoration und Fassadendekoration.
+#. fr: L'extérieur d'une maison se compose de huit parties<nbsp>: le “toit”, la “façade”, les “fenêtres”, la “porte”, les “panneaux”, les “murets”, les “décorations de toit” et les “décorations de façade”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_061:1"
+msgid "You can customize the roof, roof decorations, exterior walls, exterior wall decorations, windows, door, placard, and fence of your estate."
+msgstr ""
+
+#. ja: 外装建材を所持品に入れた状態で、所有する土地にて<br>「ハウジング」メニューから「外装の変更」を選ぶと、<br>外装を変更することができます。
+#. de: Unter „Unterkünfte“ (Hauptmenü → Soziales) kannst du diese Elemente anpassen, indem du „Bauelemente ändern“ auswählst. Du musst dich dabei im Außenbereich deines Grundstücks befinden.
+#. fr: Pour pouvoir ajouter des éléments d'extérieur, vous devez les avoir dans votre inventaire. Ouvrez alors le menu “Logement” en étant sur votre terrain, puis choisissez l'option “Changer l'extérieur”.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_062:1"
+msgid "To change any of these elements, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while on your property but outside your estate hall, and select <ui-color 500><ui-edge-color 501>Remodel Exterior</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 一度取りつけた外装は、取り外すことができません。<br>所持品の中の外装建材アイテムは消費されますので、<br>外装を変更する際は、よく考えて実行しましょう。
+#. de: Es gilt zu beachten, dass einmal verwendete Bauelemente nicht mehr ins Inventar zurückgelegt werden können. Elemente, die durch andere ersetzt wurden, gehen also für immer verloren.
+#. fr: Attention<nbsp>: une fois placé, un élément d'extérieur disparaît de votre inventaire et ne peut plus être retiré.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_063:1"
+msgid "Please note that, once confirmed, all changes are permanent. Items used for remodeling cannot be retrieved, as replaced elements will be discarded."
+msgstr ""
+
+#. ja: 所有する土地の中で、<br>ハウスを除いたスペースのことを「ガーデン」といいます。
+#. de: Obwohl ich die starke Vermutung habe, dir nichts Neues zu erzählen, will ich doch an dieser Stelle kurz erwähnt haben, dass der Teil der Fläche deines Grundstückes, der nicht von den Außenmauern deines Gebäudes eingeschlossen wird, dein Garten ist.
+#. fr: L'espace de votre terrain qui n'est pas occupé par la maison constitue votre “jardin”.
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_070:1"
+msgid "Interested in flaunting your wealth, are you? Say no more, <if $gn4>miss<else>sir</if>."
+msgstr ""
+
+#. ja: ガーデンには、「庭具」を設置することができます。<br>ガーデンを飾りつけ、好みの見た目にして楽しみましょう。
+#. de: Deinen Garten kannst du ganz nach deinem persönlichen Geschmack gestalten und viele unserer Grundstücksbesitzer sind zweifellos sehr stolz auf ihre Gartenausstattung.
+#. fr: Vous pouvez y disposer du “mobilier de jardin” afin de l'enjoliver.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_071:1"
+msgid "Accentuating your estate with tasteful furnishings demonstrates culture and influence─both of which you have in abundance, I am certain."
+msgstr ""
+
+#. ja: 庭具を所持品に入れた状態で、所有する土地にて<br>「ハウジング」メニューから「庭具の配置」を選ぶと、<br>庭具を配置することができます。
+#. de: Wähle unter „Unterkünfte“ (Hauptmenü → Soziales) die Option „Gartenobjekt platzieren“, um deinen Garten auszustatten. Du musst dich dabei im Außenbereich deines Grundstücks befinden.
+#. fr: Pour pouvoir placer du mobilier de jardin, vous devez en avoir dans votre inventaire. Ouvrez alors le menu “Logement” en étant sur votre terrain, puis choisissez l'option “Mobilier de jardin”.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_072:1"
+msgid "To place outdoor furnishings, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while on your property but outside your estate hall, and select <ui-color 500><ui-edge-color 501>Outdoor Furnishings</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: ハウスの中では、<br>壁や床をカスタマイズすることができます。
+#. de: Ja, natürlich. Wir achten sehr darauf, dass den persönlichen Geschmäckern unserer Grundstücksbesitzer auch innerhalb ihrer eigenen vier Wände Genüge getan wird.
+#. fr: Sachez qu'il est possible de changer le parquet et le revêtement des murs à l'intérieur de votre maison.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_080:1"
+msgid "Home is indeed where the heart is, which is why creating a space which reflects your individuality is so very important."
+msgstr ""
+
+#. ja: ハウスの内装は、「内壁」「床」「天井照明」という、<br>3種類の「内装建材」で構成されています。
+#. de: Als Bauelemente für das Innere des Gebäudes können die Innenwand, der Boden und die Deckenbeleuchtung verändert werden.
+#. fr: L'intérieur de la maison est constitué de trois parties<nbsp>: les “murs”, le “plancher” et l'“éclairage”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_081:1"
+msgid "You can customize the interior walls, flooring, and ceiling lights of your estate hall."
+msgstr ""
+
+#. ja: 内装建材を所持品に入れた状態で、所有するハウス内にて<br>「ハウジング」メニューから「内装の変更」を選ぶと、<br>内装を変更することができます。
+#. de: Unter „Unterkünfte“ (Hauptmenü → Soziales) kannst du diese Elemente anpassen, indem du „Bauelemente ändern“ auswählst. Du musst dich dabei innerhalb deines Gebäudes befinden.
+#. fr: Pour ajouter des éléments d'intérieur, vous devez les avoir dans votre inventaire. Ouvrez alors le menu “Logement” en étant sur votre terrain, puis choisissez l'option “Modifier l'intérieur”.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_082:1"
+msgid "To change any of these elements, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while inside your estate hall, and select <ui-color 500><ui-edge-color 501>Remodel Interior</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 一度取りつけた内装建材は、取り外すことができません。<br>所持品の中の内装建材アイテムは消費されますので、<br>内装を変更する際は、よく考えて実行しましょう。
+#. de: Einmal verwendete Bauelemente können nicht mehr ins Inventar zurückgelegt werden. Elemente, die durch andere ersetzt wurden, gehen also für immer verloren.
+#. fr: Attention<nbsp>: une fois placé, un élément d'intérieur disparaît de votre inventaire et ne peut plus être retiré.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_083:1"
+msgid "Please note that, once confirmed, all changes are permanent. Items used for remodeling cannot be retrieved, as replaced elements will be discarded."
+msgstr ""
+
+#. ja: ハウスの中には、「調度品」を設置することができます。<br>ハウスを飾りつけ、好みの見た目にして楽しみましょう。
+#. de: Wie du es gerne hättest, haha ... na ja, mehr oder weniger.
+#. fr: Bien entendu, vous pouvez meubler votre logis comme bon vous semble. À vous d'ajouter votre touche personnelle à votre intérieur.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_090:1"
+msgid "Veritable treatises have been written on the subject of interior decoration. I will not profess to be an expert, but, if you will allow, I should be glad to share with you what I know."
+msgstr ""
+
+#. ja: 調度品を所持品に入れた状態で、所有するハウス内にて<br>「ハウジング」メニューから「調度品の配置」を選ぶと、<br>調度品を配置することができます。
+#. de: Unter „Unterkünfte“ (Hauptmenü → Soziales) kannst du Möbel platzieren. Du musst dich dabei innerhalb deiner Unterkunft befinden.
+#. fr: Pour placer des meubles, vous devez au préalable les posséder dans votre inventaire. Rendez-vous ensuite sur votre terrain, puis ouvrez le menu “Logement” et choisissez l'option “Mobilier”.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_091:1"
+msgid "To place indoor furnishings, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while inside your estate hall, and select <ui-color 500><ui-edge-color 501>Indoor Furnishings</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 調度品には、テーブルなどの卓上に置けるもの、<br>壁にかけられるもの、床に敷くものなど、<br>いくつかの設置バリエーションがあります。
+#. de: Wo du ein Möbelstück platzieren kannst, ist von seinem Typ abhängig. Tischdekorationen kannst du zum Beispiel nur auf Tischen, Ablagen und dem Boden platzieren, Wanddekorationen nur an der Wand.
+#. fr: Certains éléments peuvent être disposés sur des meubles comme les tables, accrochés aux murs ou bien placés pour recouvrir le plancher.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_092:1"
+msgid "Please note that the locations where you may place a furnishing are dictated by its type."
+msgstr ""
+
+#. ja: ハウス内の「照明」の明るさを調整し、<br>快適な環境を作りましょう。
+#. de: Viele unter<shy>schätzen, welch großen Einfluss die Beleuchtung auf die Atmosphäre hat.
+#. fr: Vous aimez les espaces éclairés, ou bien vous préférez la pénombre<nbsp>? Dans tous les cas, n'hésitez pas à choisir la luminosité qui vous convient le mieux chez vous.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_095:1"
+msgid "Well, I...I would have thought it a rather simple affair, but if you require an explanation..."
+msgstr ""
+
+#. ja: ハウス内の「照明」の明るさは、<br>フリーカンパニーのハウス、個人のハウス、個室のそれぞれで、<br>5段階に調光することができます。
+#. de: In allen Unterkünften kann die Lichtstärke in fünf Stufen angepasst werden.
+#. fr: Il est possible de régler la luminosité selon cinq degrés à l'intérieur des maisons, per<shy>son<shy>nelles ou de compagnie libre, et des chambres individuelles.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_191:1"
+msgid "To adjust the brightness of your estate hall or private chambers' lighting, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while inside and select <ui-color 500><ui-edge-color 501>Interior Settings</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 調光する場合は、<br>メインコマンド「ハウジング」内の「室内環境設定」から、<br>実行することができます。
+#. de: Die Anpassung erfolgt im Hauptmenü der Unterkunft über die Option „Innenraum anpassen“.
+#. fr: Pour cela, il suffit d'utiliser l'option “Paramètres d'ambiance” dans le menu du logement.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_192:1"
+msgid "You may select one of six different brightness levels. However, please note that certain furnishings will not be affected."
+msgstr ""
+
+#. ja: 調度品、庭具アイテムは、<br>ハウスやガーデンに設置した段階で中古品となり、<br>トレード、マーケット出品不可の属性がつきます。
+#. de: Nein. Sobald sie einmal platziert wurden, können Zimmer- und Gartenobjekte weder an andere Spieler weitergegeben noch auf dem Markt angeboten werden.
+#. fr: Une fois placés, le mobilier de jardin et les meubles deviennent liés et ne peuvent plus être échangés ou mis en vente.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_100:1"
+msgid "Placing a furnishing will <ui-color 500><ui-edge-color 501>bind</ui-edge-color></ui-color> it to you, preventing future trade or sale to other players."
+msgstr ""
+
+#. ja: また、調度品、庭具アイテムの中には、<br>一度設置すると、撤去の際に消滅してしまうものがあります。
+#. de: Außerdem können bestimmte Ausstattungsgegenstände nicht mehr ins Inventar genommen werden, sobald sie einmal aufgestellt wurden, und gehen für immer verloren, wenn sie entfernt werden.
+#. fr: Par ailleurs, certains de ces objets dis<shy>pa<shy>rais<shy>sent définitivement si on les retire après les avoir disposés.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_101:1"
+msgid "Moreover, certain furnishings cannot be retrieved once placed, and will be permanently discarded upon removal."
+msgstr ""
+
+#. ja: 対象のアイテムを設置、撤去する際は警告が出ますので、<br>注意して設置しましょう。
+#. de: Zur Sicherheit wird ein Warnhinweis angezeigt, wenn du solche Objekte aufstellst oder entfernst.
+#. fr: Un avertissement s'affichera à l'écran lorsque vous essaierez de retirer un de ces meubles.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_102:1"
+msgid "You will be prompted to confirm your decision before removing these furnishings."
+msgstr ""
+
+#. ja: フリーカンパニーのハウスには、<br>メンバー用の個室を増築することができます。
+#. de: Das Gebäude einer Freien Ge<shy>sell<shy>schaft kann um persönliche Zimmer für Mitglieder erweitert werden.
+#. fr: Les membres d'une compagnie libre ont la possibilité d'aménager chacun leur chambre individuelle dans la maison.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_110:1"
+msgid "For a nominal fee, you can purchase your very own private chambers, which will be added to your free company's estate."
+msgstr ""
+
+#. ja: 自分の「個室」を増築するには、増築費用となるギルのほかに、<br>いずれかのクラスがレベル50に達している必要があります。
+#. de: Um dein eigenes persönliches Zimmer einzurichten, musst du die Gebühr für die Umbauarbeiten bezahlen und außerdem in einer Klasse mindestens Stufe 50 erreicht haben.
+#. fr: Pour aménager votre chambre individuelle, vous devez vous acquitter des frais nécessaires et avoir atteint le niveau 50 dans une classe au moins.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_111:1"
+msgid "Private chambers can be purchased and accessed from within your free company's estate."
+msgstr ""
+
+#. ja: また、所属しているグランドカンパニーの階級が、<br>黒渦団の場合は「少甲士」、双蛇党の場合は「少牙士」、<br>不滅隊の場合は「少闘士」以上である必要があります。
+#. de: Außerdem musst du in deiner Staatlichen Ge<shy>sell<shy>schaft mindestens den Rang eines Zweiten Sturmbootsmanns, Zweiten Schlangenpriesters bzw. Zweiten Legionsfähnrichs bekleiden.
+#. fr: Vous devez également avoir au moins le grade de sous-lieutenant dans votre grande compagnie actuelle.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_112:1"
+msgid "Please note that you cannot purchase private chambers until you have attained level 50 in a single class."
+msgstr ""
+
+#. ja: 個室へは、ハウス内の扉に触れ、<br>「別室へ移動する」から移動できます。
+#. de: Interagiere mit der Tür im Gebäudeinneren, um dein Zimmer zu betreten.
+#. fr: Pour aller dans une chambre individuelle, il suffit d'utiliser la porte qui donne “accès vers les autres pièces”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_113:1"
+msgid "Moreover, you must also have attained the rank of second lieutenant in the Maelstrom, the Order of the Twin Adder, or the Immortal Flames."
+msgstr ""
+
+#. ja: 増築した「個室」が不要になった場合は、<br>撤去することもできます。
+#. de: Falls du dein persönliches Zimmer nicht mehr benötigst, kannst du es jederzeit wieder räumen.
+#. fr: Lorsqu'une chambre individuelle n'est plus utilisée, il est possible de la retirer.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_120:1"
+msgid "If you no longer require the privacy afforded by private chambers, you may choose to vacate them─provided you follow the necessary procedures."
+msgstr ""
+
+#. ja: 所有する土地、またはフリーカンパニーのハウス内にて、<br>「ハウジング」メニューから「個室の撤去」を選択すると、<br>「個室」を撤去することができます。
+#. de: Du musst dich dazu auf dem Anwesen deiner Freien Ge<shy>sell<shy>schaft befinden. Wähle dann unter „Unterkünfte“ (Hauptmenü → Soziales) „Zimmer räumen“.
+#. fr: Pour détruire une chambre individuelle, vous devez être dans la maison ou sur son terrain et choisir l'option correspondante dans les réglages du menu “Logement”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_121:1"
+msgid "In order to vacate your private chambers, you must first remove all furnishings."
+msgstr ""
+
+#. ja: ただし、「個室」を撤去する場合は、<br>あらかじめ、室内の調度品をすべて撤去する必要があります。
+#. de: Das Zimmer muss aber leer sein. Falls du noch Mobiliar dort abgestellt hast, musst du es vor dem Räumen des Zimmers entfernen. 
+#. fr: Mais pour cela, il est nécessaire d'avoir préalablement retiré tous les meubles qui y étaient disposés.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_122:1"
+msgid "Once your private chambers are completely empty, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while on your property, select <ui-color 500><ui-edge-color 501>Estate Settings</ui-edge-color></ui-color>, select <ui-color 500><ui-edge-color 501>Private Chambers</ui-edge-color></ui-color>, and then select <ui-color 500><ui-edge-color 501>Vacate Chambers</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: 「個室」を増築したあとに、<br>所属フリーカンパニーから除名された場合、<br>そのメンバーの個室は自動的に撤去されます。
+#. de: Sollten du und deine Freie Ge<shy>sell<shy>schaft irgendwann mal getrennte Wege gehen, kannst du dein persönliches Zimmer nicht länger betreten.
+#. fr: Si un membre qui a aménagé sa chambre individuelle dans la maison est ensuite exclu de la compagnie libre, cette pièce est au<shy>to<shy>ma<shy>ti<shy>que<shy>ment détruite.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_130:1"
+msgid "Should you be forced to part ways with your free company due to irreconcilable differences, you will no longer be able to avail yourself of your private chambers."
+msgstr ""
+
+#. ja: その際、個室内に設置されていた資産は、<br>こちらで一時的に保管しておきますので、<br>期日までに受け取りにきてください。
+#. de: Sämtliche Möbel in deinem Zimmer landen bei einer Aufbewahrungsstelle. Bitte beachte jedoch, dass dieser Dienst nur für eine begrenzte Zeit zur Verfügung steht.
+#. fr: Tous les objets qui se trouvaient à l'intérieur de la chambre sont alors conservés ici pour une durée limitée.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_131:1"
+msgid "Any furnishings in your chambers will be collected for safekeeping. However, please be advised that this service is only provided for a limited time."
+msgstr ""
+
+#. ja: 「個室」に設置していたアイテムは、<br>撤去から（地球時間）35日間まで保管されます。<br>居住区担当官に話しかけて回収してください。
+#. de: Wenn du aus deiner Freien Ge<shy>sell<shy>schaft entfernt wirst, wird dein persönliches Zimmer geräumt und sämtliche Möbel der Obhut des Unterkunftsbeamten übergeben.
+#. fr: Pour récupérer les objets qui étaient dans la chambre individuelle, il est nécessaire de s'adresser à un officier du logement dans les 35 jours (temps réel) qui suivent la destruction de la chambre individuelle.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_132:1"
+msgid "If you are dismissed from your free company, your private chambers will be demolished, and furnishings placed in your private chambers will be given into the care of the resident caretaker."
+msgstr ""
+
+#. ja: 回収期限の残り日数は、<br>メインコマンドの「コンテンツ情報一覧」から、<br>確認することができます。
+#. de: Der Unterkunftsbeamte bewahrt die Möbel für 35 Tage (Erdenzeit) auf. Nach Ablauf dieser Frist werden sie endgültig entsorgt.
+#. fr: Le nombre de jours restants peut être consulté à tout moment à partir du calendrier, dans le menu principal.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_133:1"
+msgid "Furnishings will be held by the resident caretaker for 35 days (Earth time), after which they will be permanently discarded."
+msgstr ""
+
+#. ja: なお、個室の増築費用と、内装アイテム、<br>撤去時に消滅してしまう調度品アイテムは、返還されません。
+#. de: Die verbleibende Zeit bis zur Entsorgung deiner Möbel kannst du im „Timer“ (Hauptmenü → Spielinhalte) nachsehen.
+#. fr: Notez toutefois que les frais d'aménagement de la chambre individuelle, les éléments d'intérieur (plancher, murs et éclairage) et les meubles qui dis<shy>pa<shy>rais<shy>sent lorsqu'ils sont retirés ne sont pas restitués.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_134:1"
+msgid "The time remaining until your furnishings are discarded can be confirmed by selecting <ui-color 500><ui-edge-color 501>Timers</ui-edge-color></ui-color> located under <ui-color 500><ui-edge-color 501>Duty</ui-edge-color></ui-color> in the <ui-color 500><ui-edge-color 501>main menu</ui-edge-color></ui-color>. "
+msgstr ""
+
+#. ja: フリーカンパニーの除名の際は、<br>十分に注意をしてください。
+#. de: Bitte beachte, dass bestimmte Objekte und Bauelemente nicht in die Obhut des Unterkunftsbeamten übergeben werden, und keine Rückerstattung der für den Kauf des persönlichen Zimmers ausgegebenen Gil stattfindet.
+#. fr: Veuillez bien prendre en compte ces points avant d'exclure un membre de la compagnie libre.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_135:1"
+msgid "Please be advised that certain furnishings as well as all interior fixtures will not be given into the care of resident caretakers, and you will not be refunded any gil used to purchase your private chambers."
+msgstr ""
+
+#. ja: 「エーテリアルホイール」は、<br>カンパニーアクションを生み出すことができる装置です。
+#. de: Ätherräder sind praktische Vorrichtungen, die in Unterkünften einer Freien Ge<shy>sell<shy>schaft aufgestellt werden können.
+#. fr: Les tours éthéréens sont des cristaux spéciaux qui permettent de diffuser une énergie bénéfique relativement similaire à celle octroyée par ce que vous autres aventuriers appelez “bienfait de compagnie”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_140:1"
+msgid "If you are a member of a free company, then I presume you are aware of the benefits provided by company actions. Aetherial wheels are another means by which one may acquire said actions."
+msgstr ""
+
+#. ja: 「エーテリアルホイール」でアクションを使用するには、<br>調度品「ホイールスタンド」を用いて、<br>魔力を充填させる必要があります。
+#. de: Aber sie arbeiten nicht einfach so. Man muss ihre magische Kraft aufladen, und das geht nur mit einem Ätherrad-Ständer.
+#. fr: Vous pouvez vous en procurer dans les échoppes ou en fabriquer vous-même, notez cependant que leur utilisation nécessite un socle particulier pour les charger en éther.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_141:1"
+msgid "However, before you can make use of aetherial wheels, you must first procure a suitable stand for your estate."
+msgstr ""
+
+#. ja: 調度品「ホイールスタンド」は、<br>冒険者居住区内のよろず屋から購入できます。
+#. de: Um ein Ätherrad zu platzieren, ist ein Ätherrad-Ständer erforderlich. Ätherrad-Ständer können bei den Händlern der Wohngebiete erworben werden.
+#. fr: Il est possible de se procurer des bases de tours éthéréens auprès des quincailliers des quartiers résidentiels.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_142:1"
+msgid "<ui-color 500><ui-edge-color 501>Aetherial wheels</ui-edge-color></ui-color> can be used to acquire company actions without the use of company credits. The aetherial wheel stands required to do so can be obtained from housing merchants in any residential district."
+msgstr ""
+
+#. ja: 配置した「ホイールスタンド」に<br>「エーテリアルホイール」を設置後、一定時間が経過すると、<br>魔力が充填され、「チャージドホイール」になります。
+#. de: Stelle zuerst den Ätherrad-Ständer auf und lade dann das Ätherrad damit auf. Der Name des Rads ändert sich nach einer bestimmten Zeit zu „geladenes Rad“.
+#. fr: Notez qu'il est nécessaire de charger les tours pour profiter de leurs effets.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_143:1"
+msgid "To charge an aetherial wheel, simply place it in a stand, and it will gradually accumulate aether over a period of time."
+msgstr ""
+
+#. ja: 「チャージドホイール」を変換すると、<br>対応したカンパニーアクションが使用可能になります。
+#. de: Der Effekt des Ätherrads kann mit einem Ge<shy>sell<shy>schaftskommando aktiviert werden.
+#. fr: Pour cela, il suffit de les placer dans un orifice libre et de patienter un certain temps.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_144:1"
+msgid "Once primed, you may remove the aetherial wheel and use the stand to convert it into a company action, or you may choose to store it until a later date."
+msgstr ""
+
+#. ja: 「リテイナーの配置」に興味をお持ちですか？<br>でしたら「営業証書：リテイナー」を利用するといいでしょう。
+#. de: Du möchtest einen Gehilfen in der Unterkunft platzieren? Dann brauchst du einen erweiterten Gehilfenvertrag. Ohne den geht's nicht.
+#. fr: Vous voulez affecter un servant sur votre terrain<nbsp>? C'est possible, en effet, mais il vous faut une au<shy>to<shy>ri<shy>sa<shy>tion spéciale pour ça.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_150:1"
+msgid "Residents are more than welcome to employ their retainers as merchants on their estate grounds─provided they obtain the necessary documentation in advance."
+msgstr ""
+
+#. ja: 「営業証書：リテイナー」は、<br>冒険者居住区内の酒保商人から購入できます。<br>これをガーデンに配置することで、リテイナーを配置できます。
+#. de: Erweiterte Gehilfenverträge können bei den Schankwirten der Wohngebiete erworben werden.
+#. fr: Il est possible de se procurer une au<shy>to<shy>ri<shy>sa<shy>tion de vente auprès des cantiniers des quartiers résidentiels. Il faut ensuite l'utiliser pour placer le servant dans le jardin.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_151:1"
+msgid "<ui-color 500><ui-edge-color 501>Expansion of duties permits</ui-edge-color></ui-color>, which can be purchased from independent sutlers in any residential district, can be used to place a retainer on your estate grounds outside the hall."
+msgstr ""
+
+#. ja: リテイナーを配置すると、<br>マーケット出品中のアイテムを、ガーデンでも販売できます。
+#. de: Damit kann ein Gehilfe im Garten einer Unterkunft aufgestellt werden und von dort aus Waren auf dem Markt verkaufen.
+#. fr: Une fois affecté sur le terrain, les joueurs peuvent lui acheter des objets directement, sans passer par les tableaux des ventes.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_152:1"
+msgid "Items currently placed on the market by your retainer can then be purchased by anyone who speaks with them."
+msgstr ""
+
+#. ja: 配置するリテイナーは、<br>自分が雇用しているリテイナーの中から選択できますが、<br>設置後にリテイナーを変更することも可能です。
+#. de: Du kannst entscheiden, welcher deiner aktuell angestellten Gehilfen platziert wird, und diese Auswahl später auch wieder ändern.
+#. fr: Bien sûr, il est possible de remplacer à tout moment le servant affecté par un autre.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_153:1"
+msgid "When using a permit, you will be prompted to select a retainer to place. However, should you wish to change retainers afterwards, you may do so freely."
+msgstr ""
+
+#. ja: なお、リテイナーが解雇されたり、<br>雇用主がフリーカンパニーから除名されたり・脱退しても、<br>配置されたリテイナーは、自動で撤去されません。
+#. de: Wenn der Eigentümer des Gehilfen die Freie Ge<shy>sell<shy>schaft verlässt, wird der Gehilfe nicht automatisch entfernt.
+#. fr: Notez que si vous le renvoyez définitivement ou que vous (ou son maître) quittez/êtes exclu(e) de la compagnie libre, il ne sera pas révoqué au<shy>to<shy>ma<shy>ti<shy>que<shy>ment.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_154:1"
+msgid "If you are placing a retainer on a free company estate, please be advised that, in the event you leave or are discharged from your free company, your retainer will not be automatically removed."
+msgstr ""
+
+#. ja: 配置する必要がなくなったリテイナーは、<br>権限を持っているカンパニーメンバーが撤去しましょう。
+#. de: Gehilfen, die nicht mehr gebraucht werden, sollten von berechtigten Mitgliedern der Freien Ge<shy>sell<shy>schaft manuell entfernt werden.
+#. fr: Les servants indésirables doivent être congédiés manuellement par un membre disposant des droits nécessaires.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_155:1"
+msgid "Once placed on a free company estate, retainers can only be removed by members who have the authority to do so."
+msgstr ""
+
+#. ja: 個人のハウスでは、ご友人とハウスを共有することができます。
+#. de: Auf vielfachen Wunsch hin wurde die Möglichkeit geschaffen, persönliche Unterkünfte mit Freunden zu teilen.
+#. fr: Vous vous sentez un peu seul<if $gn4>e</if> dans votre maison<nbsp>? Dans ce cas, pourquoi ne pas la partager avec des amis<nbsp>? Le règlement des quartiers résidentiels autorise la cohabitation dans les logements individuels.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_155:1"
+msgid "For quite some time, many of our residents have expressed a desire to formally share their estates with other individuals. After due consideration, we have enacted a new system to facilitate such arrangements."
+msgstr ""
+
+#. ja: 「ハウスシェアリング」とは「個人のハウス」の機能で、<br>自身のフレンドに、<br>ハウスの機能を共有（シェア）することができます。
+#. de: Der Eigentümer einer persönlichen Unterkunft kann eine Wohngemeinschaft gründen.
+#. fr: Le partage de la maison vous permet de faire bénéficier vos amis de certaines fonctions de votre logement.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_201:1"
+msgid "If you are the owner of a private estate, you may choose to share it with up to three friends, regardless of plot size."
+msgstr ""
+
+#. ja: ハウスの機能を共有するフレンドのことを、<br>「ハウスメイト」と呼びます。
+#. de: Um dies zu tun, braucht er nur Freunde dazu einladen, seine Mitbewohner zu werden.
+#. fr: Ces derniers deviennent alors des “cohabitants”.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_202:1"
+msgid "To welcome friends as tenants, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu, select <ui-color 500><ui-edge-color 501>Private Estate</ui-edge-color></ui-color>, then select <ui-color 500><ui-edge-color 501>Shared Estate Settings</ui-edge-color></ui-color>, followed by <ui-color 500><ui-edge-color 501>New Tenant</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: ハウスのオーナーは「ハウスメイト」を「3人」まで設定でき、<br>「ハウスメイト」は「2人」のオーナーと、<br>ハウス機能を共有できます。
+#. de: Ein Eigentümer einer persönlichen Unterkunft kann bis zu drei Mitbewohner aufnehmen und ihnen Rechte zur Nutzung bestimmter Einrichtungen und Funktionen seiner Unterkunft gewähren. Mitbewohner können in maximal zwei Wohngemeinschaften wohnen.
+#. fr: Vous pouvez accepter jusqu'à trois cohabitants dans votre maison. À l'inverse, un personnage peut devenir le cohabitant d'au maximum deux maisons individuelles.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_203:1"
+msgid "You may then grant these friends─or tenants─access to certain estate features, such as gardening, stable tending, and estate customization."
+msgstr ""
+
+#. ja: メインコマンド「ハウジング」からハウスの種類を選択し、<br>「ハウスシェアリング設定」から「ハウスメイト」の登録、<br>「ハウスメイト」の権限設定を行うことができます。
+#. de: Die Aufnahme von Mitbewohnern und die Vergabe ihrer Rechte erfolgt über das Hauptmenü der Unterkunft.
+#. fr: Pour ajouter un cohabitant, utilisez l'option “Réglages de partage de la maison” après avoir sélectionné votre maison individuelle dans le menu du logement. Vous pourrez également choisir quels droits accorder à cet ami à cette occasion.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_204:1"
+msgid "To grant or revoke authorizations, select a tenant, then select or deselect estate features as you see fit."
+msgstr ""
+
+#. ja: また、ハウスのオーナー、「ハウスメイト」は、<br>自身で「ハウスシェアリング」を解除することもできます。
+#. de: Der Besitzer kann Mitbewohner jederzeit aus der Wohngemeinschaft ausschließen.
+#. fr: Notez que le pro<shy>prié<shy>taire et le cohabitant peuvent chacun mettre fin à cette relation de partage de maison.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_205:1"
+msgid "Furthermore, you may evict tenants at any time by selecting their name, followed by <ui-color 500><ui-edge-color 501>Evict</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: フリーカンパニーのハウスには、<br>「地下工房」を増築することができます。
+#. de: Im Keller der Unterkunft einer Freien Ge<shy>sell<shy>schaft kann eine Ge<shy>sell<shy>schaftswerkstätte eingerichtet werden.
+#. fr: Vous avez la possibilité d'aménager un atelier au sous-sol de votre maison de compagnie libre.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_170:1"
+msgid "Should you and your fellow free company members have a mind to engage in more creative pursuits, you may consider purchasing a company workshop."
+msgstr ""
+
+#. ja: 地下工房では、「カンパニークラフト」を行うことができます。<br>また、「飛空艇」を建造し、<br>「アバラシア雲海」の未踏破地域を探索することも可能です。
+#. de: Die Mitglieder der Freien Ge<shy>sell<shy>schaft können dort Projekte wie etwa den Bau von Luftschiffen oder Tauchbooten in Angriff nehmen und damit auf Erkundungsreise gehen.
+#. fr: Les ins<shy>tal<shy>la<shy>tions qu'il contient vous donneront la possibilité de construire divers objets avec vos camarades, dont des aéronefs qui pourront explorer des endroits inconnus de la Mer de nuages.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_171:1"
+msgid "These workshops are furnished with facilities for constructing airships, which can then be deployed on exploratory voyages into the Sea of Clouds."
+msgstr ""
+
+#. ja: ただし、飛空艇の建造は非常に困難です。<br>フリーカンパニーの仲間と力を合わせて、挑戦しましょう！
+#. de: Die Konstruktion eines Fahrzeugs ist ein großes Unterfangen, bei dem alle Mitglieder der Ge<shy>sell<shy>schaft zu<shy>sammen<shy>arbeiten müssen!
+#. fr: Sachez toutefois que la fabrication de tels appareils est ex<shy>trê<shy>me<shy>ment ardue et requiert la coopération de plusieurs artisans chevronnés.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_172:1"
+msgid "It's all rather popular these days, I'm told. However, I should warn you that it is also quite demanding. Without the cooperation of your fellow free company members, you may struggle to make progress."
+msgstr ""
+
+#. ja: 「地下工房」を増築するには、<br>増築費用となるギルが必要となります。
+#. de: Um das Gebäude um eine Ge<shy>sell<shy>schaftswerkstätte zu erweitern, ist eine Gebühr erforderlich.
+#. fr: L'aménagement de l'atelier nécessite d'acquitter des frais en gils.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_173:1"
+msgid "A <ui-color 500><ui-edge-color 501>company workshop</ui-edge-color></ui-color> can be purchased from within your free company's estate."
+msgstr ""
+
+#. ja: 地下工房へは、ハウス内の扉に触れ、<br>「別室へ移動する」から移動できます。
+#. de: Ist die Werkstätte einmal eingerichtet, gelangst du über den „Eingang zu anderen Zimmern“ im Inneren des Gebäudes dorthin.
+#. fr: Une fois cela fait, il suffit d'utiliser la porte qui donne “accès vers les autres pièces” pour s'y rendre.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_174:1"
+msgid "After construction, it can be accessed in the same manner as private chambers."
+msgstr ""
+
+#. ja: 地下工房内における各施設の利用方法は、<br>工房内にいる「マメット014・アドベンチャラー」に、<br>聞いてみましょう。
+#. de: Anweisungen zur Bedienung der einzelnen Einrichtungen der Werkstätte erfährst du vor Ort von Abenteurer-Marionette Nr. 014.
+#. fr: Le pantin aventurier P014A qui se trouve dans l'atelier vous fournira diverses ex<shy>pli<shy>ca<shy>tions sur l'utilisation des éléments qui y sont installés.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_175:1"
+msgid "To learn more about the company workshop's facilities, speak with the mammet voyager #004A included with your purchase."
+msgstr ""
+
+#. ja: 増築した「地下工房」が不要になった場合は、<br>撤去することもできます。
+#. de: Wenn eine Ge<shy>sell<shy>schaftswerkstätte nicht mehr gebraucht wird, kann sie aufgegeben werden.
+#. fr: Si jamais vous ne deviez plus avoir besoin de votre atelier, vous pouvez tout simplement le détruire.
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_160:1"
+msgid "D-Demolish a workshop!? I suppose you <i>could</i> do so, if you truly had no more use for it..."
+msgstr ""
+
+#. ja: ただし、撤去した場合、「地下工房」で行われた活動記録は、<br>すべて消去されますので、ご注意ください。
+#. de: Alle Auf<shy>zeich<shy>nun<shy>gen über dort ausgeführte Projekte werden dabei verworfen.
+#. fr: Notez néanmoins que vous perdrez alors le registre de toutes les activités que vous y aurez conduites. Réfléchissez-y donc à deux fois, avant de prendre cette décision.
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_161:1"
+msgid "<i>Should</i> you do so, however, any time and gil spent will be for naught, as all records of your activities will be expunged."
+msgstr ""
+
+#. ja: 「地下工房」を撤去するには、<br>予めカンパニー製作設備の作業を完了させ、<br>「飛空艇」をすべて「解体」しておく必要があります。
+#. de: Um die Entfernung durchzuführen, musst du zuerst alle in Arbeit befindlichen Projekte abbrechen und alle Fahrzeuge demontieren.
+#. fr: Pour détruire l'atelier de compagnie, il est nécessaire de terminer tout projet de con<shy>struc<shy>tion en cours et de démonter les aéronefs de compagnie.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_162:1"
+msgid "To demolish your company workshop, open the <ui-color 500><ui-edge-color 501>Housing</ui-edge-color></ui-color> menu while on your property, select <ui-color 500><ui-edge-color 501>Estate Settings</ui-edge-color></ui-color>, select <ui-color 500><ui-edge-color 501>Free Company Estate</ui-edge-color></ui-color>, and then select <ui-color 500><ui-edge-color 501>Demolish Workshop</ui-edge-color></ui-color>."
+msgstr ""
+
+#. ja: なお、撤去を実行しても、増築費用は返還されません。<br>また、「地下工房」で行ったコンテンツの進行データは、<br>すべてリセットされますのでご注意ください。
+#. de: Die Gebühr für den Bau der Werkstätte wird nicht rückerstattet und der Fortschritt aller Ge<shy>sell<shy>schaftsprojekte zurückgesetzt.
+#. fr: Sachez toutefois que les frais d'aménagement ne vous seront pas rendus. Par ailleurs, toutes les données des activités relatives à l'atelier seront perdues.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_163:1"
+msgid "Please note that before you can demolish your company workshop, you must first complete or discontinue any projects in progress, as well as dismantle any airships currently in service."
+msgstr ""
+
+#. ja: 「地下工房」の撤去は、<br>フリーカンパニーのハウス内で「ハウジング」メニューから、<br>「地下工房の撤去」を選択すると、実行可能です。
+#. de: Die Aufgabe ist erst möglich, nachdem alle Arbeiten an Syntheseeinrichtungen beendet und alle Luftschiffe demontiert wurden.
+#. fr: Pour détruire l'atelier de compagnie, vous devez être dans la maison ou sur son terrain et choisir l'option correspondante dans les réglages du menu “Logement”.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_164:1"
+msgid "Moreover, please be advised that by choosing to demolish the company workshop, you will lose any progression made in company projects and exploratory voyages, and will not be refunded any gil used to purchase the facilities."
+msgstr ""
+
+#. ja: アパルトメントは、<br>冒険者向けに各冒険者居住区内に用意された、<br>「個人用の居住施設」です。
+#. de: Wenn du eine eigene Wohnung beziehen möchtest, musst du dich an eine der Staatlichen Ge<shy>sell<shy>schaften halten. Die haben nämlich Gebäude in den Abenteurer<shy>wohn<shy>gebieten erworben und bieten sie allen Aben<shy>teu<shy>re<shy>rin<shy>nen und Abenteurern zum Kauf an.
+#. fr: Les appartements sont des logements individuels que nous proposons aux aventuriers. Il en existe dans chaque quartier résidentiel, en marge des terrains constructibles.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_156:1"
+msgid "Apartments are cozy, one-room properties developed for the use of individual adventurers. Not everyone who moves to our residential district wishes to live in some sprawling estate!"
+msgstr ""
+
+#. ja: 各冒険者居住区に存在する、<br>「トップマスト」や「リリーヒルズ」、「ナナモ大風車」、<br>「紅梅御殿」という名の施設が、アパルトメントに該当します。
+#. de: Es gibt vier Ge<shy>sell<shy>schaftswohnhäuser: der Fockmast im Dorf des Nebels, den Lilienhügel in den Lavendelbeeten, das Nanamo-Windrad auf der Kelchkuppe und das Kobai Goten in Shirogane.
+#. fr: Vous trouverez des appartements à vendre au sein des résidences du Mât de hune à Brumée, de la Plaine-aux-Lys à Lavandière, du Souffle de la Sultane à La Coupe et de Kobai Goten à Shirogane.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_157:1"
+msgid "The Topmast, Lily Hills, Sultana's Breath, and Kobai Goten apartment buildings are found in the residential districts of Mist, the Lavender Beds, the Goblet, and Shirogane respectively."
+msgstr ""
+
+#. ja: アパルトメントの部屋の購入など、<br>詳しい利用方法は、各アパルトメント内にいる、<br>「アパルトメント担当官」に聞いてみましょう。
+#. de: Sprich mit dem Wohnungsbeamten in einem der Wohnhäuser, um zu erfahren, wie du dort eine Wohnung erwerben kannst.
+#. fr: Pour en savoir plus sur l'achat d'appartement, rendez-vous dans l'une des résidences sus-citées et parlez à l'officier en charge.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_158:1"
+msgid "For more information on apartment prices and features, speak with the apartment caretakers stationed in the lobbies of the aforementioned buildings."
+msgstr ""
+
+#. ja: 土地を所有している場合、<br>別の土地へと、引越することが出来ます。
+#. de: Du möchtest mit deiner <i>ganzen</i> Unterkunft einfach so an einen anderen Ort umziehen? ... Kein Problem!
+#. fr: L'emplacement de votre logement vous lasse<nbsp>? Dans ce cas, réjouissez-vous<nbsp>! Vous pouvez le transférer vers un autre terrain.
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_210:1"
+msgid "What!? You wish to take your <i>entire</i> estate hall and <i>move</i> it to another location!? ...Actually, that is perfectly possible."
+msgstr ""
+
+#. ja: 「引越」とは、<br>ハウスごと別の土地へ移転する機能です。<br>別のハウジングエリア、異なるサイズの土地へも移転できます。
+#. de: Es ist möglich, mit deiner Unterkunft auf ein anderes Grundstück umzuziehen. Das neue Grundstück kann dabei in einem beliebigen Wohngebiet liegen und auch die Größe spielt keine Rolle.
+#. fr: La fonction de déménagement vous permet de transférer l'intégralité de votre maison d'un terrain vers un autre, et ce, même en changeant de quartier résidentiel ou de taille de terrain.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_211:1"
+msgid "It is possible to relocate your estate hall to a new plot. The destination plot can be situated in any residential area and be of any size."
+msgstr ""
+
+#. ja: ハウス（個人）はオーナーが、<br>ハウス（フリーカンパニー）は、「土地の購入・放棄」権限を、<br>有しているメンバーが、引越を実行できます。
+#. de: Den Umzug durchführen kann der Besitzer der Unterkunft. Bei Unterkünften von Freien Ge<shy>sell<shy>schaften können nur Mitglieder mit dem Recht „Grundstück kaufen/aufgeben“ den Umzug durchführen.
+#. fr: Pour cela, vous devez être <if $gn4>la<else>le</if> pro<shy>prié<shy>taire dans le cas d'une maison individuelle, ou avoir le droit “Achat/Cession de terrain” s'il s'agit d'un logement de compagnie libre.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_212:1"
+msgid "Private estates may be relocated by their owners at will, while free company estates require those with authority to purchase and relinquish land."
+msgstr ""
+
+#. ja: すでに土地を所有している状態で、<br>「サインボード」を調べ、「土地を購入する」を選択すると、<br>選択肢が表示され、引越を実行できます。
+#. de: Um den Umzug zu starten, musst du lediglich mit der <ui-color 500><ui-edge-color 501>Informationstafel</ui-edge-color></ui-color> am Eingang des gewünschten neuen Grundstücks interagieren und <ui-color 500><ui-edge-color 501>Kaufen</ui-edge-color></ui-color> auswählen. Dann erscheint ein Dialogfenster für den Umzug.
+#. fr: Pour effectuer un déménagement, il vous suffit de consulter le <ui-color 506><ui-edge-color 507>panneau d'information</ui-edge-color></ui-color> d'un terrain libre, puis de choisir <ui-color 506><ui-edge-color 507>Acheter</ui-edge-color></ui-color>. Si vous en possédez déjà un, vous verrez une option vous permettant de transférer votre logement vers la nouvelle parcelle.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_213:1"
+msgid "To begin the process, inspect the <ui-color 500><ui-edge-color 501>placard</ui-edge-color></ui-color> located at the entrance of the destination plot and select <ui-color 500><ui-edge-color 501>Purchase Land</ui-edge-color></ui-color>. A prompt for relocation will appear."
+msgstr ""
+
+#. ja: 「引越先の土地代」から、<br>「所有している土地代」の最低額の3割を引いた差額が、<br>実行時に消費されます。
+#. de: Wenn du ein neues Grundstück kaufst, werden 30 % des Mindestwertes des alten Grundstücks auf den neuen Kaufpreis angerechnet.
+#. fr: L'équivalent de 30% de la valeur minimale du terrain possédé sera soustrait au prix du nouveau.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_214:1"
+msgid "When making the purchase, 30% of the minimum value of the old plot will be applied towards the price of the new."
+msgstr ""
+
+#. ja: 設置中の調度品、庭具は、引越先の倉庫に収納されます。<br>ただし、チョコボ厩舎とプライベート・エーテライトは、<br>例外として引越先の庭に配置されます。
+#. de: Beim Umzug werden platzierte Möbel ins Lagerhaus des neuen Grundstücks verbracht. Davon ausgenommen sind der Chocobo-Stall und der Miniatur-Ätheryt, die automatisch auf dem neuen Grundstück im Garten platziert werden.
+#. fr: Lors d'un déménagement, tous les meubles (intérieur/jardin) sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment rangés dans l'entrepôt, à l'exception de l'écurie à chocobos et de l'éthérite privée, qui sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment placées dans le jardin du nouveau terrain.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_221:1"
+msgid "Upon relocation, placed furnishings will be put in the storeroom at the destination plot, save for the chocobo stables and the miniature aetheryte, which will be placed in the garden."
+msgstr ""
+
+#. ja: なお、個室・地下工房のあるハウスの場合、<br>それぞれ引越先に、そのままの状態で引き継がれます。
+#. de: Persönliche Zimmer und Ge<shy>sell<shy>schaftswerkstätten werden so wie sie sind in die neue Unterkunft gebracht.
+#. fr: L'atelier de compagnie libre et les chambres individuelles sont transférées telles quelles lors du déménagement.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_222:1"
+msgid "Private chambers and company workshops will be moved in their entirety and retain their state."
+msgstr ""
+
+#. ja: ハウスの外装は、引越先のハウジングエリア、<br>土地のサイズに合ったものに、自動的に置き換えられます。
+#. de: Wenn der Umzug in ein anderes Wohngebiet oder zu einem Grundstück anderer Größe erfolgt, werden angebrachte Bauelemente entsprechend angepasst.
+#. fr: Les éléments d'extérieur de la maison sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment changés en fonction du quartier résidentiel et de la taille du terrain vers lequel le déménagement se fait.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_224:1"
+msgid "Exterior fixtures will be altered to match the new residential area and plot size, in the event that they are different."
+msgstr ""
+
+#. ja: ハウスの内装は、引越先に引き継がれます。<br>ただし、引越先によって、階層が無くなる場合、<br>その階層に設定されていた内装は消滅します。
+#. de: Die Innenelemente werden beibehalten, solange der Umzug nicht auf ein kleineres Grundstück erfolgt. In diesem Fall gehen die Elemente zusammen mit dem betroffenen Stockwerk verloren.
+#. fr: L'intérieur est conservé dans l'état où il était avant le déménagement, mais il peut arriver que certains étages dis<shy>pa<shy>rais<shy>sent en fonction de la destination, auquel cas les éléments correspondants sont perdus.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_225:1"
+msgid "Interior fixtures, meanwhile, will remain intact, unless the relocation results in an estate hall with fewer floors. In this case, the fixtures will be lost alongside the floor."
+msgstr ""
+
+#. ja: 「オーナーキャラクター」の誰かが、ハウス内にいない状態が、<br>30日以上続いている場合、引越は実行できません。
+#. de: Gebäude, die seit 30 Tagen (Erdenzeit) nicht von ihrem Besitzer betreten wurden, können nicht umziehen.
+#. fr: Il est impossible d'effectuer un déménagement si aucun personnage pro<shy>prié<shy>taire n'est entré dans la maison au cours des 30 derniers jours (temps réel).
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_231:1"
+msgid "Estate halls which have not been entered by their owner for thirty days (Earth time) cannot be relocated."
+msgstr ""
+
+#. ja: なお、引越を実行すると、<br>ハウス内に「オーナーキャラクター」が入った時と同様に、<br>自動撤去までの期日は、リセットされます。
+#. de: Ein Umzug hat den gleichen Effekt wie das Betreten eines Gebäudes durch seinen Besitzer und setzt die Zeit bis zur automatischen Rückgabe des Grundstücks zurück.
+#. fr: Notez que transférer un logement vers un nouveau terrain a pour effet de réinitialiser le décompte avant une éventuelle cession automatique, tout comme si un personnage pro<shy>prié<shy>taire avait pénétré dans la maison.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_232:1"
+msgid "Furthermore, initiating a relocation has the same effect as the owner entering his or her estate hall, and resets the period until auto-demolition."
+msgstr ""
+
+#. ja: すべてのハウス、個室、アパルトメントの部屋で、<br>調度品・庭具を収納できる「倉庫」が利用できます。<br>収納可能な調度品や庭具の数は、以下のとおりです。
+#. de: Unabhängig davon, ob es sich um eine voll ausgebaute Residenz oder gemütliche Wohnung handelt, verfügen alle Unterkünfte über ein Lager für die vorhandenen Möbel. Je größer die Unterkunft, desto größer das Lagerhaus.
+#. fr: Tous les logements, c'est-à-dire les maisons, chambres individuelles et appartements, sont pourvus d'un entrepôt permettant de ranger du mobilier. Les nombres maximums de meubles d'intérieur et de jardin pouvant respectivement y être remisés sont comme suit<nbsp>:
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_240:1"
+msgid "From fully fledged estate halls to cozy apartments, all types of housing come with a storeroom for keeping one's furnishings. The larger the residence, the bigger the storeroom."
+msgstr ""
+
+#. ja: Ｓサイズのハウスは、調度品200個、庭具20個まで、<br>Ｍサイズのハウスは、調度品300個、庭具30個まで、<br>Ｌサイズのハウスは、調度品400個、庭具40個まで。
+#. de: Die Lagerhäuser für Hütten haben Platz für 200 Zimmer- und 20 Gartenobjekte. Bei Häusern erhöht sich der Platz auf 300 Zimmer- und 30 Gartenobjekte, und bei Residenzen auf 400 Zimmer- und 40 Gartenobjekte.
+#. fr: Maisonnettes<nbsp>: 200/20<br>Pavillons<nbsp>: 300/30<br>Villas<nbsp>: 400/40
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_241:1"
+msgid "Cottages have storage for 200 indoor and 20 garden furnishings. This increases to 300 and 30 for houses, and 400 and 40 for mansions."
+msgstr ""
+
+#. ja: 個室とアパルトメントの部屋は、<br>調度品100個まで収納可能です。
+#. de: Im Lagerhaus für Wohnungen ist Platz für 100 Zimmerobjekte.
+#. fr: L'entrepôt des chambres individuelles et appartements peut contenir jusqu'à 100 meubles.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_242:1"
+msgid "Apartments, meanwhile, have storage for 100 indoor furnishings."
+msgstr ""
+
+#. ja: 例外として、チョコボ厩舎、<br>プライベート・エーテライトは、収納できません。<br>また、倉庫にアイテムがあると、ハウスは撤去できません。
+#. de: Chocobo-Ställe und Miniatur-Ätheryten können nicht eingelagert werden, sie werden automatisch im Garten der neuen Unterkunft platziert. Zudem kann ein Gebäude nicht entfernt werden, solange sich Gegenstände im Lagerhaus befinden.
+#. fr: Notez toutefois que les écuries à chocobos et les éthérites privées ne peuvent pas être entreposées. Par ailleurs, une maison dont l'entrepôt contient des objets ne peut pas être démolie.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_243:1"
+msgid "Please note that chocobo stables and miniature aetherytes alone cannot be stored."
+msgstr ""
+
+#. ja: 倉庫に「畑」「植木鉢」を入れた場合、作物の成長は停止します。<br>同様に倉庫内では「ホイールスタンド」の魔力充填も停止します。
+#. de: Beete und Blumentöpfe erhalten im Lagerhaus nicht genügend Licht, sodass das Wachstum der Pflanzen unterbrochen wird. Ätherrad-Ständer wechseln ebenfalls in einen inaktiven Zustand.
+#. fr: Si un potager ou un pot de fleurs est rangé dans l'entrepôt, la croissance des végétaux qui y sont plantés est arrêtée. De même, le rechargement d'énergie opéré par les bases de tours éthéréens est interrompu.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_244:1"
+msgid "Certain items, meanwhile, are stored in stasis. For instance, plants will cease to grow and wheel stands will cease to charge."
+msgstr ""
+
+#. ja: 引越を実行すると、設置中の調度品、庭具は、<br>引越先の倉庫に収納されます。<br>ただし、倉庫に収納しきれない場合は、引越できません。
+#. de: Beim Umzug werden platzierte Möbel ins Lagerhaus der neuen Unterkunft gepackt. Falls dort nicht genügend Platz vorhanden ist, kann der Umzug nicht stattfinden.
+#. fr: Lors d'un déménagement, tous les meubles (intérieur/jardin) sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment rangés dans l'entrepôt. S'il n'y a pas assez de place dedans, le déménagement ne pourra pas se faire.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_245:1"
+msgid "Upon relocation, placed furnishings will be put in the storeroom at the destination plot. If there is insufficient space, however, the relocation cannot proceed."
+msgstr ""
+
+#. ja: なお、ハウスが自動撤去された場合、<br>撤去から35日以内であれば、居住区担当官から、<br>倉庫内のアイテムを回収できます。
+#. de: Falls die Unterkunft geräumt worden sein sollte, können ihre Objekte innerhalb von 35 Tagen (Erdenzeit) beim Unterkunftsbeamten abgeholt werden. Danach gehen sie verloren.
+#. fr: Si une maison a fait l'objet d'une cession automatique, les objets qui étaient dans l'entrepôt peuvent être récupérés auprès d'un officier du logement pendant une période de 35 jours suivant ladite cession.
+msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_246:1"
+msgid "An estate hall cannot be removed while items are in storage. In the event that your estate hall is demolished, you may reclaim stored items by speaking with the resident caretaker within 35 days of repossession."
+msgstr ""

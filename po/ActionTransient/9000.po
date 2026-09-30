@@ -1,0 +1,530 @@
+# ActionTransient
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: トランス・バハムート状態になる。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>15秒<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>トライディザスターのリキャストタイムをリセットする。<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「エーテルフロー」</ui-edge-color></ui-color>2<br><br><ui-color 506><ui-edge-color 507>※「トランス・バハムート」の効果が終了したあとは、「トランス・フェニックス」に変化する。</ui-edge-color></ui-color>
+#. de: Du begibst dich in die <ui-color 506><ui-edge-color 507>Bahamut-Trance</ui-edge-color></ui-color>.<br>Zusatzeffekt: Setzt den Reaktivierungs-Timer von <ui-color 502><ui-edge-color 503>Trisaster</ui-edge-color></ui-color> zurück.<br><ui-color 506><ui-edge-color 507>Ätherfluss</ui-edge-color></ui-color>-Kosten: 2<br>Kommando ändert sich zu <ui-color 506><ui-edge-color 507>Phönix-Trance</ui-edge-color></ui-color>, sobald <ui-color 506><ui-edge-color 507>Bahamut-Trance</ui-edge-color></ui-color> geendet hat.
+#. fr: Active la Transe-Bahamut.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 15s<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> réinitialise le temps de recharge de <ui-color 500><ui-edge-color 501>Tri-désastre</ui-edge-color></ui-color>.<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Flux d'éther</ui-edge-color></ui-color> au 2e degré.<br><br><ui-color 504><ui-edge-color 505>* Devient <ui-color 500><ui-edge-color 501>Transe-Phénix</ui-edge-color></ui-color> à la fin de l'effet.</ui-edge-color></ui-color>
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9013:0:0"
+msgid "Enters <ui-color 506><ui-edge-color 507>Dreadwyrm Trance</ui-edge-color></ui-color>.<br><ui-color 504><ui-edge-color 505>Duration: </ui-edge-color></ui-color>15s<br><ui-color 504><ui-edge-color 505>Additional Effect: </ui-edge-color></ui-color>Resets <ui-color 500><ui-edge-color 501>Tri-disaster</ui-edge-color></ui-color> recast timer<br><ui-color 504><ui-edge-color 505>Aetherflow Gauge Cost:</ui-edge-color></ui-color> 2<br><br>※Action changes to <ui-color 500><ui-edge-color 501>Firebird Trance</ui-edge-color></ui-color> when effect ends."
+msgstr "Входит в состояние <ui-color 506><ui-edge-color 507>Транс Бахамута</ui-edge-color></ui-color>.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 15 сек.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> сбрасывает время перезарядки <ui-color 500><ui-edge-color 501>Три-бедствия</ui-edge-color></ui-color>.<br><ui-color 504><ui-edge-color 505>Затраты шкалы эфиропотока:</ui-edge-color></ui-color> 2<br><br>※По окончании эффекта действие меняется на <ui-color 500><ui-edge-color 501>Транс Феникса</ui-edge-color></ui-color>."
+
+#. ja: 対象とその周囲の敵に範囲魔法攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>2400<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「トランス・バハムート」</ui-edge-color></ui-color>効果中
+#. de: Du führst eine magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.<br>Attacke-Wert: 2.400<br>Bedingung: <ui-color 506><ui-edge-color 507>Bahamut-Trance</ui-edge-color></ui-color> aktiv
+#. fr: Effectue une attaque magique sur la cible et les ennemis autour.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 2400<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Transe-Bahamut</ui-edge-color></ui-color>.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9014:0:0"
+msgid "Deals unaspected damage with a potency of 2,400 to target and all enemies nearby it.<br>Can only be executed while under the effect of <ui-color 506><ui-edge-color 507>Dreadwyrm Trance</ui-edge-color></ui-color>."
+msgstr "Наносит цели и всем находящимся рядом с ней противникам беспредметный урон мощностью 2400.<br>Можно использовать только под действием <ui-color 506><ui-edge-color 507>Транса Бахамута</ui-edge-color></ui-color>."
+
+#. ja: ガウスバレルを解除する。
+#. de: Du entfernst den <ui-color 506><ui-edge-color 507>Gauß-Laufaufsatz</ui-edge-color></ui-color> von deiner Waffe.
+#. fr: Détache le canon Gauss de votre arme à feu.
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9015:0:0"
+msgid "Removes <ui-color 506><ui-edge-color 507>Gauss Barrel</ui-edge-color></ui-color> from your weapon."
+msgstr "Снимает с оружия <ui-color 506><ui-edge-color 507>ствол Гаусса</ui-edge-color></ui-color>."
+
+#. ja: 対象に物理攻撃。
+#. de: Du führst eine physische Attacke aus.
+#. fr: Effectue une attaque physique sur la cible.
+msgctxt "ActionTransient:9035:0:0"
+msgid "Delivers an impotent attack."
+msgstr "Наносит ничтожный урон."
+
+#. ja: ネロ製の怪しげな装置を使い、疑似的にレビテトを発生させる
+#. de: Neros ominöse Konstruktion lässt dich über dem Boden schweben.
+#. fr: Simule un sort de lévitation à l'aide d'un dispositif “fait maison” signé Nero tol Scaeva.
+msgctxt "ActionTransient:9066:0:0"
+msgid "Simulates the spell Levitate using Nero tol Scaeva's odd contraption."
+msgstr "С помощью странного устройства Неро тол Скаевает имитирует заклинание «Левитация»."
+
+#. de: Du schnellst zum Ziel hin und führst eine physische Attacke aus.<br>Attacke-Wert: 400<br>Bedingung: <ui-color 506><ui-edge-color 507>Stürmendes Enigma</ui-edge-color></ui-color><br>Kann nicht während <ui-color 500><ui-edge-color 501>Fessel</ui-edge-color></ui-color> ausgeführt werden.<br>Kann nicht im Kommandomenü angelegt werden.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9098:0:0"
+msgid "Rushes target and delivers an attack with a potency of 400.<br>Can only be executed while under the effect of <ui-color 506><ui-edge-color 507>Riddle of Wind</ui-edge-color></ui-color>.<br>Cannot be executed while bound.<br><br>※This action cannot be assigned to a hotbar."
+msgstr "Бросается к цели и наносит удар мощностью 400.<br>Можно использовать только под действием <ui-color 506><ui-edge-color 507>Загадки ветра</ui-edge-color></ui-color>.<br>Нельзя использовать под действием эффекта «Связь».<br><br>※Действие нельзя поместить на панель быстрого доступа."
+
+#. ja: エーテルジャマーを発動し、対象の周囲のエーテルを振動させる
+#. de: Versetzt den Umgebungsäther des Ziels in starke Schwingungen.
+#. fr: Active le brouilleur d'éther, créant des perturbations éthérées autour de la cible.
+msgctxt "ActionTransient:9102:0:0"
+msgid "Activates the instrument."
+msgstr "Активирует устройство."
+
+#. ja: 対象のＨＰを回復する。　<ui-color 504><ui-edge-color 505>回復力：</ui-edge-color></ui-color>1500<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color>フェアリー・エオスを召喚している。<br><br><ui-color 506><ui-edge-color 507>※このアクションはホットバーに登録することはできない。</ui-edge-color></ui-color>
+#. de: Regeneriert LP des Ziels.<br>Heilpotenzial: 1.500<br>Bedingung: <ui-color 506><ui-edge-color 507>Eos</ui-edge-color></ui-color> anwesend<br>Kann nicht im Kommandomenü angelegt werden.
+#. fr: Restaure les PV de la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 1500<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> Eos est invoquée.<br><br><ui-color 504><ui-edge-color 505>* Cette action ne peut pas être ajoutée aux barres de raccourcis.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9127:0:0"
+msgid "Restores target's HP.<br><ui-color 504><ui-edge-color 505>Cure Potency:</ui-edge-color></ui-color> 1,500<br>Can only be executed while <ui-color 506><ui-edge-color 507>Eos</ui-edge-color></ui-color> is summoned.<br><br>※This action cannot be assigned to a hotbar."
+msgstr "Восстанавливает HP цели.<br><ui-color 504><ui-edge-color 505>Сила лечения:</ui-edge-color></ui-color> 1500<br>Можно использовать, только если призвана <ui-color 506><ui-edge-color 507>Эос</ui-edge-color></ui-color>.<br><br>※Действие нельзя поместить на панель быстрого доступа."
+
+#. ja: 身に受けたラクシュミのエーテルを燃焼させ、疑似的に信徒を装う
+#. de: Verbrennt dem Körper anhaftenden Äther Lakshmis und tarnt sich so als Gläubiger.
+#. fr: Utilise les résidus d'éther de Lakshmi qui vous couvre pour vous donner l'apparence d'une de ses rêveuses dévouées.
+msgctxt "ActionTransient:9345:0:0"
+msgid "Use the aetheric residue lingering on your body to temporarily disguise yourself as one of Lakshmi's loyal dreamers."
+msgstr "Использует оставшийся на теле эфир Лакшми, чтобы ненадолго замаскироваться под одну из её преданных мечтательниц."
+
+#. ja: 設置しているタレットに強力な攻撃を実行させる。<br>タレットは実行後に消滅し、その後30秒間タレットを設置することができなくなる。<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color>タレットが存在する
+#. de: Du lässt den gefechtsbereiten Selbstschuss-Gyrocopter LÄUFER eine schwere Attacke ausführen, die den Gyrocopter beschädigt. Nach Ausführung verschwindet er und für 30 Sekunden kann kein Gyrocopter gerufen werden.
+#. fr: Ordonne à l'auto-tourelle d'effectuer une attaque puissante.<br>L'auto-tourelle disparaît après exécution, et il est impossible d'en placer une pendant 30s.
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9372:0:0"
+msgid "Sends deployed <ui-color 506><ui-edge-color 507>Bishop Autoturret</ui-edge-color></ui-color> into overdrive. While in overdrive, the autoturret will launch a powerful attack, damaging the unit. The autoturret is removed from the battlefield after execution for repairs and cannot be deployed for 30s."
+msgstr "Переводит установленную <ui-color 506><ui-edge-color 507>автоматическую турель «Бишоп»</ui-edge-color></ui-color> в режим перегрузки. В этом режиме турель совершает мощную атаку, повреждая себя. После атаки турель снимается с поля боя для ремонта. Установить турель снова можно будет через 30 сек."
+
+#. ja: 対象に魔法攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>1600<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「トランス・バハムート」</ui-edge-color></ui-color>効果中<br><br><ui-color 506><ui-edge-color 507>※このアクションはホットバーに登録することはできない。</ui-edge-color></ui-color>
+#. de: Du führst eine magische Attacke aus.<br>Attacke-Wert: 1.600<br>Bedingung: <ui-color 506><ui-edge-color 507>Bahamut-Trance</ui-edge-color></ui-color> aktiv<br>Kann nicht im Kommandomenü angelegt werden.
+#. fr: Effectue une attaque magique sur la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 1600<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> Transe-Bahamut.<br><br><ui-color 504><ui-edge-color 505>* Cette action ne peut pas être ajoutée aux barres de raccourcis.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9432:0:0"
+msgid "Deals unaspected damage with a potency of 1,600.<br>Can only be executed while under the effect of <ui-color 506><ui-edge-color 507>Dreadwyrm Trance</ui-edge-color></ui-color>.<br><br>※This action cannot be assigned to a hotbar."
+msgstr "Наносит беспредметный урон мощностью 1600.<br>Можно использовать только под действием <ui-color 506><ui-edge-color 507>Транса Бахамута</ui-edge-color></ui-color>.<br><br>※Действие нельзя поместить на панель быстрого доступа."
+
+#. ja: 対象に魔法攻撃。　<ui-color 504><ui-edge-color 505>コンボ時威力：</ui-edge-color></ui-color>2400<br><ui-color 504><ui-edge-color 505>コンボ条件：</ui-edge-color></ui-color>エンルドゥブルマン<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「ホワイトマナ」</ui-edge-color></ui-color>を20上昇させる。<br><br><ui-color 506><ui-edge-color 507>※このアクションはホットバーに登録することはできない。</ui-edge-color></ui-color>
+#. de: <ui-color 500><ui-edge-color 501>Kombo-Kommando</ui-edge-color></ui-color><br>Du führst eine magische Attacke aus.<br>Kombo-Bedingung: <ui-color 502><ui-edge-color 503>Magisches Redoublement</ui-edge-color></ui-color><br>Attacke-Wert: 2.400<br>Zusatzeffekt: +20 Weißes Mana<br>Kann nicht im Kommandomenü angelegt werden.
+#. fr: Effectue une attaque magique sur la cible.<br><ui-color 506><ui-edge-color 507>Combo<nbsp>:</ui-edge-color></ui-color> Redoublement enchanté<br><ui-color 506><ui-edge-color 507>Puissance du combo<nbsp>:</ui-edge-color></ui-color> 2400<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> remplit la <ui-color 502><ui-edge-color 503>Mana blanche</ui-edge-color></ui-color> de 20.<br><br><ui-color 504><ui-edge-color 505>* Cette action ne peut pas être ajoutée aux barres de raccourcis.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9433:0:0"
+msgid "Deals unaspected damage to target.<br><ui-color 504><ui-edge-color 505>Combo Action:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Enchanted Redoublement</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Combo Potency:</ui-edge-color></ui-color> 2,400<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Increases <ui-color 506><ui-edge-color 507>White Mana</ui-edge-color></ui-color> by 20<br><br>※This action cannot be assigned to a hotbar."
+msgstr "Наносит цели беспредметный урон.<br><ui-color 504><ui-edge-color 505>Комбо-действие:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Зачарованный редублеман</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Мощность комбо:</ui-edge-color></ui-color> 2400<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> повышает запас <ui-color 506><ui-edge-color 507>белой маны</ui-edge-color></ui-color> на 20<br><br>※Действие нельзя поместить на панель быстрого доступа."
+
+#. ja: 対象に魔法攻撃。　<ui-color 504><ui-edge-color 505>コンボ時威力：</ui-edge-color></ui-color>2400<br><ui-color 504><ui-edge-color 505>コンボ条件：</ui-edge-color></ui-color>エンルドゥブルマン<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「ブラックマナ」</ui-edge-color></ui-color>を20上昇させる。<br><br><ui-color 506><ui-edge-color 507>※このアクションはホットバーに登録することはできない。</ui-edge-color></ui-color>
+#. de: <ui-color 500><ui-edge-color 501>Kombo-Kommando</ui-edge-color></ui-color><br>Du führst eine magische Attacke aus.<br>Kombo-Bedingung: <ui-color 502><ui-edge-color 503>Magisches Redoublement</ui-edge-color></ui-color><br>Attacke-Wert: 2.400<br>Zusatzeffekt: +20 Schwarzes Mana<br>Kann nicht im Kommandomenü angelegt werden.
+#. fr: Effectue une attaque magique sur la cible.<br><ui-color 506><ui-edge-color 507>Combo<nbsp>:</ui-edge-color></ui-color> Redoublement enchanté<br><ui-color 506><ui-edge-color 507>Puissance du combo<nbsp>:</ui-edge-color></ui-color> 2400<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> remplit la <ui-color 502><ui-edge-color 503>Mana noire</ui-edge-color></ui-color> de 20.<br><br><ui-color 504><ui-edge-color 505>* Cette action ne peut pas être ajoutée aux barres de raccourcis.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9434:0:0"
+msgid "Deals fire damage to target.<br><ui-color 504><ui-edge-color 505>Combo Action:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Enchanted Redoublement</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Combo Potency:</ui-edge-color></ui-color> 2,400<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Increases <ui-color 506><ui-edge-color 507>Black Mana</ui-edge-color></ui-color> by 20<br><br>※This action cannot be assigned to a hotbar."
+msgstr "Наносит цели урон огнём.<br><ui-color 504><ui-edge-color 505>Комбо-действие:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Зачарованный редублеман</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Мощность комбо:</ui-edge-color></ui-color> 2400<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> повышает запас <ui-color 506><ui-edge-color 507>чёрной маны</ui-edge-color></ui-color> на 20<br><br>※Действие нельзя поместить на панель быстрого доступа."
+
+#. ja: 対象に魔法攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>1400<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「ホワイトマナ」</ui-edge-color></ui-color>と<ui-color 500><ui-edge-color 501>「ブラックマナ」</ui-edge-color></ui-color>を5上昇させる。<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>自身に<ui-color 500><ui-edge-color 501>「連続魔」</ui-edge-color></ui-color>を付与する。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>10秒<br><ui-color 504><ui-edge-color 505>連続魔効果：</ui-edge-color></ui-color>次の魔法を詠唱時間無しで実行することができる。<br><br><ui-color 506><ui-edge-color 507>※「ヴァルホーリー」および「ヴァルフレア」実行直後は、「スコーチ」に変化する。</ui-edge-color></ui-color>
+#. de: Du führst eine magische Attacke aus.<br>Attacke-Wert: 1.400<br>Zusatzeffekt: Je +5 Schwarzes Mana und Weißes Mana<br>Zusatzeffekt: Gewährt <ui-color 506><ui-edge-color 507>Doppelzauber</ui-edge-color></ui-color>, wodurch der nächste Zauber sofort gewirkt werden kann.<br>Dauer: 10 Sekunden<br>Kommando wird direkt nach Ausführung von  <ui-color 502><ui-edge-color 503>Erz-Sanctus</ui-edge-color></ui-color> oder <ui-color 502><ui-edge-color 503>Erzflare</ui-edge-color></ui-color> zu <ui-color 502><ui-edge-color 503>Versengung</ui-edge-color></ui-color>.
+#. fr: Effectue une attaque magique sur la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 1400<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> remplit la <ui-color 502><ui-edge-color 503>Mana noire</ui-edge-color></ui-color> et la <ui-color 502><ui-edge-color 503>Mana blanche</ui-edge-color></ui-color> de 5.<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> vous octroie <ui-color 500><ui-edge-color 501>Chaîne de sorts</ui-edge-color></ui-color>.<br><ui-color 506><ui-edge-color 507>Chaîne de sorts<nbsp>:</ui-edge-color></ui-color> permet à votre prochain sort d'être instantané.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 10s<br><br><ui-color 504><ui-edge-color 505>* Après avoir utilisé <ui-color 500><ui-edge-color 501>VerMiracle</ui-edge-color></ui-color> ou <ui-color 500><ui-edge-color 501>VerBrasier</ui-edge-color></ui-color>, devient <ui-color 500><ui-edge-color 501>Calcination</ui-edge-color></ui-color>.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9444:0:0"
+msgid "Deals unaspected damage with a potency of 1,400.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Increases both <ui-color 506><ui-edge-color 507>Black Mana</ui-edge-color></ui-color> and <ui-color 506><ui-edge-color 507>White Mana</ui-edge-color></ui-color> by 10<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Grants <ui-color 506><ui-edge-color 507>Dualcast</ui-edge-color></ui-color>, allowing next spell to be cast immediately<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 10s<br><br>※Action changes to <ui-color 500><ui-edge-color 501>Scorch</ui-edge-color></ui-color> after execution of <ui-color 500><ui-edge-color 501>Verholy</ui-edge-color></ui-color> or <ui-color 500><ui-edge-color 501>Verflare</ui-edge-color></ui-color>.<br>※<ui-color 506><ui-edge-color 507>Dualcast</ui-edge-color></ui-color> effect ends if an action other than an ability is used."
+msgstr "Наносит беспредметный урон мощностью 1400.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> повышает запасы <ui-color 506><ui-edge-color 507>чёрной маны</ui-edge-color></ui-color> и <ui-color 506><ui-edge-color 507>белой маны</ui-edge-color></ui-color> на 10<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> даёт эффект <ui-color 506><ui-edge-color 507>«Двойное колдовство»</ui-edge-color></ui-color>, позволяющий мгновенно произнести следующее заклинание<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 10 сек.<br><br>※После использования <ui-color 500><ui-edge-color 501>«Версвятости»</ui-edge-color></ui-color> или <ui-color 500><ui-edge-color 501>«Версполоха»</ui-edge-color></ui-color> действие меняется на <ui-color 500><ui-edge-color 501>«Опаление»</ui-edge-color></ui-color>.<br>※Эффект <ui-color 506><ui-edge-color 507>«Двойное колдовство»</ui-edge-color></ui-color> прекращается, если использовать действие, не являющееся способностью."
+
+#. ja: 自身の被ダメージを20％減少させる代わりに、自身の与ダメージを20％減少させる。<br>再使用で解除する。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>永続
+#. de: Du verringerst erlittenen Schaden um 20 %, dafür ist auch dein ausgeteilter Schaden um 20 % verringert.<br>Effekt endet bei erneuter Ausführung.
+#. fr: Réduit de 20% vos dégâts subis. En contrepartie, vos dégâts infligés sont réduits de 20%.<br>L'effet prend fin en relançant l'action.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "ActionTransient:9457:0:0"
+msgid "Reduces both damage taken and damage dealt by 20%.<br>Effect ends upon reuse."
+msgstr "На 20% снижает и получаемый, и наносимый урон.<br>Повторное использование снимает эффект."
+
+#. ja: 自身の被ダメージを20％減少させる代わりに、自身の与ダメージを20％減少させる。<br>再使用で解除する。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>永続
+#. de: Deine maximalen LP sind um 20 % erhöht, erhaltene Heileffekte um 20 % wirksamer, dafür ist dein ausgeteilter Schaden um 20 % verringert.<br>Effekt endet bei erneuter Ausführung.
+#. fr: Réduit de 20% les dégâts subis. En contrepartie, vos dégâts infligés sont réduits de 20%.<br>L'effet prend fin en relançant l'action.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "ActionTransient:9458:0:0"
+msgid "Reduces damage taken and damage dealt by 20%.<br>Effect ends upon reuse."
+msgstr "На 20% снижает получаемый и наносимый урон.<br>Повторное использование снимает эффект."
+
+#. ja: 自身の被ダメージを20％減少させる代わりに、自身の与ダメージを20％減少させる。<br>再使用で解除する。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>永続
+#. de: Du verringerst deinen erlittenen Schaden um 20 %, dafür ist auch dein ausgeteilter Schaden um 20 % verringert.<br>Effekt endet bei erneuter Ausführung.
+#. fr: Réduit de 20% les dégâts subis. En contrepartie, vos dégâts infligés sont réduits de 20%.<br>L'effet prend fin en relançant l'action.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "ActionTransient:9459:0:0"
+msgid "Reduces both damage taken and damage dealt by 20%.<br>Effect ends upon reuse."
+msgstr "На 20% снижает и получаемый, и наносимый урон.<br>Повторное использование снимает эффект."
+
+#. ja: 対象に物理攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>1500<br>この攻撃は<ui-color 500><ui-edge-color 501>「ディフェンダー」</ui-edge-color></ui-color>の与ダメージ減少ペナルティを無視する。<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>与ダメージの100％分のＨＰを吸収する。<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>自身の被ダメージを10％軽減させる。<br><ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>5秒<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「インナービースト」</ui-edge-color></ui-color>50<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「ディフェンダー」</ui-edge-color></ui-color>効果中<br><br><ui-color 506><ui-edge-color 507>※このアクションはホットバーに登録することはできない。</ui-edge-color></ui-color>
+#. de: Du führst eine physische Attacke aus. <br>Attacke-Wert: 1.500<br>Keine Reduktion ausgeteilten Schadens durch <ui-color 506><ui-edge-color 507>Verteidiger</ui-edge-color></ui-color>.<br>Zusatzeffekt: Du absorbierst 100 % des ausgeteilten Schadens als eigene LP<br>Zusatzeffekt: Erlittener Schaden wird um 10 % verringert<br>Dauer: 5 Sekunden<br>Urkraftbalken-Kosten: 50<br>Bedingung: <ui-color 506><ui-edge-color 507>Verteidiger</ui-edge-color></ui-color><br>Kann nicht im Kommandomenü angelegt werden.
+#. fr: Effectue une attaque physique sur la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 1500<br>Ignore la pénalité de dégâts de Défi.<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> absorbe en PV 100% des dégâts infligés.<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> réduit de 10% vos dégâts subis.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 5s<br><ui-color 506><ui-edge-color 507>Coût Jauge de la bête<nbsp>:</ui-edge-color></ui-color> 50<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Défi</ui-edge-color></ui-color><br><br><ui-color 504><ui-edge-color 505>* Cette action ne peut pas être ajoutée aux barres de raccourcis.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9460:0:0"
+msgid "Delivers an attack with a potency of 1,500.<br>Ignores the damage penalty inflicted by <ui-color 506><ui-edge-color 507>Defiance</ui-edge-color></ui-color>.<br>Can only be executed while under the effect of <ui-color 506><ui-edge-color 507>Defiance</ui-edge-color></ui-color>.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Absorbs 100% of damage dealt as HP<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Reduces damage taken by 10%<br><ui-color 504><ui-edge-color 505>Duration: </ui-edge-color></ui-color>5s<br><ui-color 504><ui-edge-color 505>Beast Gauge Cost:</ui-edge-color></ui-color> 50<br><br>※This action cannot be assigned to a hotbar."
+msgstr "Наносит удар мощностью 1500.<br>Игнорирует штраф к наносимому урону от <ui-color 506><ui-edge-color 507>«Защиты»</ui-edge-color></ui-color>.<br>Можно использовать только под действием <ui-color 506><ui-edge-color 507>«Защиты»</ui-edge-color></ui-color>.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> восстанавливает HP в размере 100% нанесённого урона<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> снижает получаемый урон на 10%<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 5 сек.<br><ui-color 504><ui-edge-color 505>Затраты шкалы зверя:</ui-edge-color></ui-color> 50<br><br>※Действие нельзя поместить на панель быстрого доступа."
+
+#. ja: 対象に物理攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>400<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>対象を沈黙させる。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>2秒
+#. de: Du führst eine physische Attacke aus.<br>Attacke-Wert: 400<br>Zusatzeffekt: <ui-color 506><ui-edge-color 507>Stumm</ui-edge-color></ui-color><br>Dauer: 2 Sekunden
+#. fr: Effectue une attaque physique sur la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 400<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> inflige Silence.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 2s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9461:0:0"
+msgid "Delivers an attack with a potency of 400.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> <ui-color 506><ui-edge-color 507>Silence</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 2s"
+msgstr "Наносит удар мощностью 400.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> накладывает на цель эффект <ui-color 506><ui-edge-color 507>«Немота»</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 2 сек."
+
+#. ja: パーティメンバーひとりを対象とする。<br>対象を自身の近くに引き寄せる。<br>対象が一部の状態異常を受けている場合は効果無し。
+#. de: Du ziehst ein Grup<shy>pen<shy>mit<shy>glied zu dir. Kein Effekt, wenn das Ziel unter bestimmten negativen Status steht.
+#. fr: Attire l'équipier ciblé près de vous.<br>Sans effet si la cible subit certaines altérations d'état.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "ActionTransient:9466:0:0"
+msgid "Instantly draws target party member to your side.<br>Will not execute when target is suffering certain detrimental effects."
+msgstr "Мгновенно притягивает выбранного участника группы к себе.<br>Не действует, если цель находится под действием некоторых отрицательных эффектов."
+
+#. ja: ネロ製の怪しげな装置を使い、疑似的にレビテトを発生させる
+#. de: Neros ominöse Konstruktion lässt dich über dem Boden schweben.
+#. fr: Simule un sort de lévitation à l'aide d'un dispositif “fait maison” signé Nero tol Scaeva.
+msgctxt "ActionTransient:9483:0:0"
+msgid "Simulates the spell Levitate using Nero tol Scaeva's odd contraption."
+msgstr "С помощью странного устройства Неро тол Скаевает имитирует заклинание «Левитация»."
+
+#. ja: 対象に魔法攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>1000<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>与ダメージの100％分のＨＰを吸収する。<br>さらに、自身のＭＰを1000回復する。<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>自身に<ui-color 500><ui-edge-color 501>「バハムートエーテル」</ui-edge-color></ui-color>を付与する。<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「エーテルフロー」</ui-edge-color></ui-color>
+#. de: Du führst eine magische Attacke aus.<br>Attacke-Wert: 1.000<br>Zusatzeffekt: Du regenerierst LP in der Höhe des ausgeteilten Schadens und 1.000 MP.<br>Zusatzeffekt: Du erhältst <ui-color 506><ui-edge-color 507>Bahamut-Äther</ui-edge-color></ui-color>.<br><ui-color 506><ui-edge-color 507>Ätherfluss</ui-edge-color></ui-color>-Kosten: 1
+#. fr: Effectue une attaque magique sur la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 1000<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> absorbe en PV 100% des dégâts infligés et restaure 1000 de vos PM.<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> vous octroie <ui-color 500><ui-edge-color 501>Éther de Bahamut</ui-edge-color></ui-color>.<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> consomme un <ui-color 500><ui-edge-color 501>Flux d'éther</ui-edge-color></ui-color>.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9618:0:0"
+msgid "Deals unaspected damage with a potency of 1,000.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Absorbs 100% of damage dealt as HP and restores 1,000 MP<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> <ui-color 506><ui-edge-color 507>Aethertrail Attunement</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Aetherflow Gauge Cost:</ui-edge-color></ui-color> 1"
+msgstr "Наносит беспредметный урон мощностью 1000.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> восстанавливает HP в размере 100% нанесённого урона и 1000 MP<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> накладывает эффект <ui-color 506><ui-edge-color 507>«Эфирный след»</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Затраты шкалы эфиропотока:</ui-edge-color></ui-color> 1"
+
+#. ja: 自身の周囲の敵に範囲魔法攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>1000<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>自身と周囲のパーティメンバーのＨＰを回復する<br><ui-color 504><ui-edge-color 505>回復力：</ui-edge-color></ui-color>2000
+#. de: Du führst eine magische Attacke auf alle umstehenden Gegner aus.<br>Attacke-Wert: 1.000<br>Zusatzeffekt: LP von dir und umstehenden Grup<shy>pen<shy>mit<shy>gliedern werden regeneriert.<br>Heilpotenzial: 2.000
+#. fr: Inflige des dégâts magiques aux ennemis alentour.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 1000<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> restaure vos PV et ceux des équipiers alentour.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 2000
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9620:0:0"
+msgid "Deals unaspected damage with a potency of 1,000 to all nearby enemies.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Restores own HP and the HP of nearby party members<br><ui-color 504><ui-edge-color 505>Cure Potency:</ui-edge-color></ui-color> 2,000"
+msgstr "Наносит беспредметный урон мощностью 1000 всем находящимся рядом противникам.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> восстанавливает собственные HP и HP находящихся рядом участников группы<br><ui-color 504><ui-edge-color 505>Сила лечения:</ui-edge-color></ui-color> 2000"
+
+#. ja: 自身またはパーティメンバーひとりを対象として、一定量のダメージを防ぐバリアを張る。<br>このバリアは回復力2500相当のダメージを軽減する。<br><ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>10秒<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>バリアがダメージを完全に吸収して消滅すると、白魔道士自身に<ui-color 500><ui-edge-color 501>「ヒーリングリリー」</ui-edge-color></ui-color>を付与する。
+#. de: Du errichtest eine Barriere um dich oder das Ziel, die Schaden entsprechend einem Heilpotenzial von 2.500 absorbiert.<br>Dauer: 10 Sekunden<br>Zusatzeffekt: Falls die Barriere den vollen Schaden absorbiert, erhältst du eine Lilie.
+#. fr: Crée une barrière sur vous ou l'équipier ciblé, absorbant un certain montant de dégâts.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 2500 <ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 10s<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> vous octroie un <ui-color 500><ui-edge-color 501>Lys</ui-edge-color></ui-color> quand la barrière a absorbé son montant de dégâts.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9621:0:0"
+msgid "Creates a barrier around target that absorbs damage equivalent to a heal of 2,500 potency.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 10s<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Adds a <ui-color 506><ui-edge-color 507>Lily</ui-edge-color></ui-color> to your <ui-color 500><ui-edge-color 501>Healing Gauge</ui-edge-color></ui-color> if the barrier is completely absorbed"
+msgstr "Накладывает на цель барьер, поглощающий урон, равный лечению силой 2500.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 10 сек.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> если барьер полностью поглотит урон, в <ui-color 500><ui-edge-color 501>шкале исцеления</ui-edge-color></ui-color> появится <ui-color 506><ui-edge-color 507>лилия</ui-edge-color></ui-color>."
+
+#. ja: 対象が受けるダメージを10％上昇させる。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>6秒
+#. de: Du erhöhst den erlittenen Schaden des Ziels um 10<nbsp>%.<br>Dauer: 6 Sekunden
+#. fr: Augmente de 10% les dégâts subis par la cible.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 6s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9622:0:0"
+msgid "Increases target's damage taken by 10%.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 6s"
+msgstr "На 10% увеличивает урон, получаемый целью.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 6 сек."
+
+#. ja: 対象の与ダメージを20％減少させる。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>5秒
+#. de: Du verringerst den ausgeteilten Schaden des Ziels um 20 %.<br>Dauer: 5 Sekunden
+#. fr: Réduit de 20% les dégâts infligés par la cible.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 5s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9623:0:0"
+msgid "Reduces the potency of target's attacks by 20%.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 5s"
+msgstr "На 20% снижает мощность атак цели.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 5 сек."
+
+#. ja: 対象に物理攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>750<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「旅神のメヌエット」</ui-edge-color></ui-color>および<ui-color 500><ui-edge-color 501>「軍神のパイオン」</ui-edge-color></ui-color>非効果中<br><br><ui-color 506><ui-edge-color 507>※「旅神のメヌエット」効果中は、「ピッチパーフェクト」に変化する。</ui-edge-color></ui-color><br><ui-color 506><ui-edge-color 507>※「軍神のパイオン」効果中は、「乱れ撃ち」に変化する。</ui-edge-color></ui-color>
+#. de: Du führst eine physische Attacke aus.<br>Attacke-Wert: 750<br>Bedingung: <ui-color 500><ui-edge-color 501>Menuett des Wanderers</ui-edge-color></ui-color> und <ui-color 500><ui-edge-color 501>Hymne der Krieger</ui-edge-color></ui-color> nicht aktiv<br>Kommando wird bei <ui-color 506><ui-edge-color 507>Menuett des Wanderers</ui-edge-color></ui-color> zu <ui-color 502><ui-edge-color 503>Absolutes Gehör</ui-edge-color></ui-color>, bei <ui-color 506><ui-edge-color 507>Hymne der Krieger</ui-edge-color></ui-color> zu <ui-color 502><ui-edge-color 503>Sperrfeuer</ui-edge-color></ui-color>.
+#. fr: Effectue une attaque physique sur la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 750<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Menuet du Vagabond</ui-edge-color></ui-color> ou <ui-color 500><ui-edge-color 501>Péan martial</ui-edge-color></ui-color> non octroyé.<br><br><ui-color 504><ui-edge-color 505>* Avec <ui-color 500><ui-edge-color 501>Menuet du Vagabond</ui-edge-color></ui-color>, devient <ui-color 500><ui-edge-color 501>Ton parfait</ui-edge-color></ui-color>.<br>* Avec <ui-color 500><ui-edge-color 501>Péan martial</ui-edge-color></ui-color>, devient <ui-color 500><ui-edge-color 501>Rafale de coups</ui-edge-color></ui-color>.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9624:0:0"
+msgid "Delivers an attack with a potency of 750.<br>Cannot use while under the effect of <ui-color 506><ui-edge-color 507>Army's Paeon</ui-edge-color></ui-color> or the <ui-color 506><ui-edge-color 507>Wanderer's Minuet</ui-edge-color></ui-color>.<br><br>※Action changes to <ui-color 500><ui-edge-color 501>Pitch Perfect</ui-edge-color></ui-color> while under the effect of <ui-color 506><ui-edge-color 507>Wanderer's Minuet</ui-edge-color></ui-color>.<br>※Action changes to <ui-color 500><ui-edge-color 501>Barrage</ui-edge-color></ui-color> while under the effect of the <ui-color 506><ui-edge-color 507>Army's Paeon</ui-edge-color></ui-color>."
+msgstr "Наносит удар мощностью 750.<br>Нельзя использовать под действием <ui-color 506><ui-edge-color 507>«Песни воителей»</ui-edge-color></ui-color> или <ui-color 506><ui-edge-color 507>«Менуэта странника»</ui-edge-color></ui-color>.<br><br>※Под действием <ui-color 506><ui-edge-color 507>«Менуэта странника»</ui-edge-color></ui-color> действие меняется на <ui-color 500><ui-edge-color 501>«Идеальный слух»</ui-edge-color></ui-color>.<br>※Под действием <ui-color 506><ui-edge-color 507>«Песни воителей»</ui-edge-color></ui-color> действие меняется на <ui-color 500><ui-edge-color 501>«Шквал»</ui-edge-color></ui-color>."
+
+#. ja: 効果時間中に実行する1回の単体対象ウェポンスキルを2回連続で発動させる。<br>また、追加効果は1回のみ発生する。<br><ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>5秒<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「軍神のパイオン」</ui-edge-color></ui-color>効果中かつ、<ui-color 500><ui-edge-color 501>「詩心」</ui-edge-color></ui-color>4<br><br><ui-color 506><ui-edge-color 507>※このアクションはホットバーに登録することはできない。</ui-edge-color></ui-color>
+#. de: Du führst die nächste Waf<shy>fen<shy>fer<shy>tig<shy>keit auf ein Einzelziel während der Wirkungsdauer 2 Mal hintereinander aus. Eventuelle Zusatzeffekte wirken aber nur ein Mal.<br>Dauer: 5 Sekunden<br>Bedingung: <ui-color 506><ui-edge-color 507>Hymne der Krieger</ui-edge-color></ui-color> und <ui-color 506><ui-edge-color 507>Virtuose</ui-edge-color></ui-color><br>Kann nicht im Kommandomenü angelegt werden.
+#. fr: Effectue 2 fois d'un coup votre prochaine technique d'arme à cible unique.<br>Les effets additionnels ne s'activent qu'une fois.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 5s<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Péan martial</ui-edge-color></ui-color> et <ui-color 500><ui-edge-color 501>Inspiration poétique</ui-edge-color></ui-color>.<br><br><ui-color 504><ui-edge-color 505>* Cette action ne peut pas être ajoutée aux barres de raccourcis.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9625:0:0"
+msgid "Doubles the number of strikes for a single-target weaponskill. Additional effects added only once.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 5s<br>Can only be executed while under the effect of both <ui-color 506><ui-edge-color 507>Army's Paeon</ui-edge-color></ui-color> and <ui-color 506><ui-edge-color 507>Repertoire</ui-edge-color></ui-color>.<br><br>※This action cannot be assigned to a hotbar."
+msgstr "Дважды наносит удар одним применением одиночного оружейного умения. Дополнительные эффекты срабатывают только один раз.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 5 сек.<br>Можно использовать, только если действуют эффекты <ui-color 506><ui-edge-color 507>«Песнь воителей»</ui-edge-color></ui-color> и <ui-color 506><ui-edge-color 507>«Поэтическое вдохновение»</ui-edge-color></ui-color>.<br><br>※Действие нельзя поместить на панель быстрого доступа."
+
+#. ja: 対象に沈黙を付与する。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>2秒
+#. de: Du fügst dem Ziel <ui-color 506><ui-edge-color 507>Stumm</ui-edge-color></ui-color> zu.<br>Dauer: 2 Sekunden
+#. fr: Inflige Silence à la cible.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 2s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9626:0:0"
+msgid "Silences target.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 2s"
+msgstr "Накладывает на цель эффект немоты.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 2 сек."
+
+#. ja: 対象に物理攻撃。　<ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>750<br><ui-color 504><ui-edge-color 505>ガウスバレル時追加効果：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「ヒート」</ui-edge-color></ui-color>を25上昇させる。<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「ヒート」</ui-edge-color></ui-color>50未満<br><br><ui-color 506><ui-edge-color 507>※「ガウスバレル」効果中かつ「ヒート」50以上のときは、「クールダウン」に変化する。</ui-edge-color></ui-color>
+#. de: Du führst eine physische Attacke aus.<br>Attacke-Wert: 750<br>Zusatzeffekt bei <ui-color 506><ui-edge-color 507>Gauß-Laufaufsatz</ui-edge-color></ui-color>: Hitzebalken füllt sich um 25.<br>Bedingung: Hitzebalken unter 50<br>Kommando wird bei <ui-color 506><ui-edge-color 507>Gauß-Laufaufsatz</ui-edge-color></ui-color> und Hitzebalken ab 50 zu <ui-color 502><ui-edge-color 503>Abkühlen</ui-edge-color></ui-color>.
+#. fr: Effectue une attaque physique sur la cible.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 750<br><ui-color 506><ui-edge-color 507>Effet additionnel avec Canon Gauss<nbsp>:</ui-edge-color></ui-color> remplit la <ui-color 502><ui-edge-color 503>Jauge de chaleur</ui-edge-color></ui-color> de 25.<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> <ui-color 502><ui-edge-color 503>chaleur</ui-edge-color></ui-color> \< 50.<br><br><ui-color 504><ui-edge-color 505>* Avec <ui-color 500><ui-edge-color 501>Canon Gauss</ui-edge-color></ui-color> et <ui-color 502><ui-edge-color 503>chaleur</ui-edge-color></ui-color> ≧ 50, devient <ui-color 500><ui-edge-color 501>Refroidissement</ui-edge-color></ui-color>.</ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9627:0:0"
+msgid "Delivers an attack with a potency of 750.<br><ui-color 504><ui-edge-color 505>Gauss Barrel Effect:</ui-edge-color></ui-color> Increases <ui-color 500><ui-edge-color 501>Heat Gauge</ui-edge-color></ui-color> by 25<br>Can only be used when <ui-color 500><ui-edge-color 501>Heat Gauge</ui-edge-color></ui-color> is below 50.<br><br>※Action changes to <ui-color 500><ui-edge-color 501>Cooldown</ui-edge-color></ui-color> while a <ui-color 506><ui-edge-color 507>Gauss Barrel</ui-edge-color></ui-color> is attached and the <ui-color 500><ui-edge-color 501>Heat Gauge</ui-edge-color></ui-color> is 50 or higher."
+msgstr "Наносит удар мощностью 750.<br><ui-color 504><ui-edge-color 505>Эффект ствола Гаусса:</ui-edge-color></ui-color> повышает показатель <ui-color 500><ui-edge-color 501>шкалы жара</ui-edge-color></ui-color> на 25<br>Можно использовать, только если показатель <ui-color 500><ui-edge-color 501>шкалы жара</ui-edge-color></ui-color> ниже 50.<br><br>※Если установлен <ui-color 506><ui-edge-color 507>ствол Гаусса</ui-edge-color></ui-color>, а показатель <ui-color 500><ui-edge-color 501>шкалы жара</ui-edge-color></ui-color> равен 50 или выше, действие меняется на <ui-color 500><ui-edge-color 501>«Остывание»</ui-edge-color></ui-color>."
+
+#. ja: 特殊弾を1発装填する。<br><ui-color 504><ui-edge-color 505>特殊弾効果：</ui-edge-color></ui-color>効果中に実行するウェポンスキルの威力を250上昇させ、自身のウェポンスキルのリキャストタイムを1.5秒にする。<br>さらに<ui-color 500><ui-edge-color 501>「ヒート」</ui-edge-color></ui-color>の上昇を抑える。<br>ウェポンスキルを1回実行するごとに1発消費する。<br><ui-color 504><ui-edge-color 505>最大スタック数：</ui-edge-color></ui-color>3　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>永続
+#. de: Du lädst ein Spezialprojektil nach. Spezialprojektile erhöhen den Attacke-Wert von Waf<shy>fen<shy>fer<shy>tig<shy>kei<shy>ten um 250, verringern die Re<shy>ak<shy>ti<shy>vie<shy>rungs<shy>zeit um 1,5 Sekunden und verlangsamen die Füllung des <ui-color 506><ui-edge-color 507>Hitzebalkens</ui-edge-color></ui-color>.<br>Ma<shy>xi<shy>mal<shy>sta<shy>pel<shy>zahl: 3
+#. fr: Charge 1 munition spéciale dans votre arme à feu.<br><ui-color 506><ui-edge-color 507>Munitions spéciales<nbsp>:</ui-edge-color></ui-color> augmente de 250 la puissance des techniques d'arme, et réduit de 1,5 leur temps de recharge.<br>Ralentit le remplissage de la <ui-color 502><ui-edge-color 503>Jauge de chaleur</ui-edge-color></ui-color>.<br>Une munition spéciale est consommée à chaque technique d'arme.<br><ui-color 506><ui-edge-color 507>Maximum<nbsp>:</ui-edge-color></ui-color> 3
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9628:0:0"
+msgid "Replenishes your ammunition by 1 (up to a maximum of 3). Ammunition is used when executing weaponskills, increasing potency by 250, reducing recast time to 1.5s, and reducing <ui-color 500><ui-edge-color 501>Heat Gauge</ui-edge-color></ui-color> increase."
+msgstr "Пополняет запас боеприпасов на 1 (максимум — 3). Боеприпасы расходуются при использовании оружейных умений: повышают их мощность на 250, сокращают время перезарядки до 1,5 сек. и замедляют рост показателя <ui-color 500><ui-edge-color 501>шкалы жара</ui-edge-color></ui-color>."
+
+#. ja: ドローしているカードを破棄する。<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color>カードをドローしている
+#. de: Du verwirfst die gerade gezogene Karte.
+#. fr: Défausse la carte tirée.
+msgctxt "ActionTransient:9629:0:0"
+msgid "Returns the currently drawn arcanum back to your deck."
+msgstr "Возвращает вытянутую карту в колоду."
+
+#. ja: <ui-color 500><ui-edge-color 501>「アストラルファイア」</ui-edge-color></ui-color>または<ui-color 500><ui-edge-color 501>「アンブラルブリザード」</ui-edge-color></ui-color>の効果を解除し、自身のＨＰとＭＰを最大値の25％分回復する。<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「アストラルファイア」</ui-edge-color></ui-color>または<ui-color 500><ui-edge-color 501>「アンブラルブリザード」</ui-edge-color></ui-color>効果中
+#. de: Du hebst <ui-color 506><ui-edge-color 507>Lichtfeuer</ui-edge-color></ui-color> oder <ui-color 506><ui-edge-color 507>Schatteneis</ui-edge-color></ui-color> auf, um 25 % deiner Maximal-LP und -MP zu regenerieren.
+#. fr: Met fin à <ui-color 500><ui-edge-color 501>Feu astral</ui-edge-color></ui-color> ou <ui-color 500><ui-edge-color 501>Glace ombrale</ui-edge-color></ui-color>, et restaure 25% de vos PV et PM maximums.<br><ui-color 506><ui-edge-color 507>Condition<nbsp>:</ui-edge-color></ui-color> <ui-color 500><ui-edge-color 501>Feu astral</ui-edge-color></ui-color> ou <ui-color 500><ui-edge-color 501>Glace ombrale</ui-edge-color></ui-color>.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9637:0:0"
+msgid "Restores 25% of maximum HP and MP.<br>Can only be executed while under the effect of <ui-color 506><ui-edge-color 507>Astral Fire</ui-edge-color></ui-color> or <ui-color 506><ui-edge-color 507>Umbral Ice</ui-edge-color></ui-color>. Removes <ui-color 506><ui-edge-color 507>Astral Fire</ui-edge-color></ui-color> or <ui-color 506><ui-edge-color 507>Umbral Ice</ui-edge-color></ui-color> upon execution."
+msgstr "Восстанавливает 25% максимального HP и MP.<br>Можно использовать только под действием <ui-color 506><ui-edge-color 507>«Астрального огня»</ui-edge-color></ui-color> или <ui-color 506><ui-edge-color 507>«Умбрального льда»</ui-edge-color></ui-color>. При использовании снимает эффект <ui-color 506><ui-edge-color 507>«Астральный огонь»</ui-edge-color></ui-color> или <ui-color 506><ui-edge-color 507>«Умбральный лёд»</ui-edge-color></ui-color>."
+
+#. ja: 自身の与ダメージを10％上昇させる。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>6秒<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>効果時間中に実行する1回のウェポンスキルの与ダメージを10％上昇させる。<br><ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>6秒
+#. de: Dein ausgeteilter Schaden ist um 10<nbsp>% erhöht.<br>Dauer: 6 Sekunden<br>Zusatzeffekt: Erhöht den Attacke-Wert der nächsten Waf<shy>fen<shy>fer<shy>tig<shy>keit während der Wirkungsdauer um 10<nbsp>%.<br>Dauer: 6 Sekunden
+#. fr: Augmente de 10% vos dégâts infligés.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 6s<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> augmente de 10% les dégâts de votre prochaine technique d'arme.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 6s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9639:0:0"
+msgid "Increases damage dealt by 10%.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 6s<br><ui-color 504><ui-edge-color 505>Additional Effect: </ui-edge-color></ui-color>Increases damage dealt by next weaponskill by 10%<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 6s"
+msgstr "На 10% увеличивает наносимый урон.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 6 сек.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> на 10% увеличивает урон от следующего оружейного умения<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 6 сек."
+
+#. ja: 自身と周囲のパーティメンバーの与ダメージを10％上昇させる。<br><ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>10秒
+#. de: Du erhöhst den ausgeteilten Schaden von dir und umstehenden Grup<shy>pen<shy>mit<shy>gliedern um 10<nbsp>%.<br>Dauer: 10 Sekunden
+#. fr: Augmente de 10% vos dégâts infligés et ceux des équipiers alentour.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 10s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9640:0:0"
+msgid "Increases damage dealt by self and nearby party members by 10%.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 10s"
+msgstr "На 10% увеличивает наносимый вами и находящимися рядом участниками группы урон.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 10 сек."
+
+#. ja: 自身またはパーティメンバーひとりを対象として、被ダメージを25％軽減させる。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>10秒<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>付与されている<ui-color 500><ui-edge-color 501>「ヒーリングリリー」</ui-edge-color></ui-color>の数に応じて、リキャストタイムを短縮させて実行することができる。<br><ui-color 504><ui-edge-color 505>ヒーリングリリー1つのときの短縮率：</ui-edge-color></ui-color>10％<br><ui-color 504><ui-edge-color 505>ヒーリングリリー2つのときの短縮率：</ui-edge-color></ui-color>25％<br><ui-color 504><ui-edge-color 505>ヒーリングリリー3つのときの短縮率：</ui-edge-color></ui-color>50％<br>実行時に<ui-color 500><ui-edge-color 501>「ヒーリングリリー」</ui-edge-color></ui-color>を全て消費する。
+#. de: Du verringerst den erlittenen Schaden eines Grup<shy>pen<shy>mit<shy>glieds oder von dir selbst um 25<nbsp>%.<br>Dauer: 10 Sekunden<br>Zusatzeffekt bei 1 Lilie: Re<shy>ak<shy>ti<shy>vie<shy>rungs<shy>zeit um 10<nbsp>% verkürzt<br>Bei 2 Lilien: 25<nbsp>%<br>Bei 3 Lilien: 50<nbsp>%<br>Bei Ausführung werden alle Lilien verbraucht.
+#. fr: Réduit de 25% vos dégâts subis ou ceux de l'équipier ciblé.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 10s<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> réduit le temps de recharge de <ui-color 500><ui-edge-color 501>Bouclier</ui-edge-color></ui-color> en fonction du nombre de <ui-color 500><ui-edge-color 501>Lys</ui-edge-color></ui-color> octroyés.<br><ui-color 506><ui-edge-color 507>1 Lys<nbsp>:</ui-edge-color></ui-color> 10%<br><ui-color 506><ui-edge-color 507>2 Lys<nbsp>:</ui-edge-color></ui-color> 25%<br><ui-color 506><ui-edge-color 507>3 Lys<nbsp>:</ui-edge-color></ui-color> 50%<br>Consomme tous les Lys de la <ui-color 502><ui-edge-color 503>Canne des soins</ui-edge-color></ui-color>.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9651:0:0"
+msgid "Reduces damage taken by a party member or self by 25%.<br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 10s<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> Reduces <ui-color 500><ui-edge-color 501>Protect</ui-edge-color></ui-color> recast time by a percentage corresponding to the number of healing <ui-color 506><ui-edge-color 507>Lilies</ui-edge-color></ui-color> stacked at time of action execution (at which time the <ui-color 506><ui-edge-color 507>Lilies</ui-edge-color></ui-color> are removed)<br><br><ui-color 504><ui-edge-color 505>1 Lily:</ui-edge-color></ui-color> 10%<br><ui-color 504><ui-edge-color 505>2 Lilies:</ui-edge-color></ui-color> 25%<br><ui-color 504><ui-edge-color 505>3 Lilies:</ui-edge-color></ui-color> 50%"
+msgstr "На 25% снижает получаемый урон для вас или выбранного участника группы.<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 10 сек.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> сокращает время перезарядки <ui-color 500><ui-edge-color 501>«Защиты»</ui-edge-color></ui-color> в зависимости от количества накопленных <ui-color 506><ui-edge-color 507>лилий</ui-edge-color></ui-color>. При использовании все <ui-color 506><ui-edge-color 507>лилии</ui-edge-color></ui-color> расходуются.<br><br><ui-color 504><ui-edge-color 505>1 лилия:</ui-edge-color></ui-color> 10%<br><ui-color 504><ui-edge-color 505>2 лилии:</ui-edge-color></ui-color> 25%<br><ui-color 504><ui-edge-color 505>3 лилии:</ui-edge-color></ui-color> 50%"
+
+#. ja: 魔力を込めた炸裂岩を設置する。
+#. de: Stellt eine Falle, die bei Kontakt ausgelöst wird.
+#. fr: Place un piège au sol qui se déclenche lorsqu'un ennemi passe dessus.
+msgctxt "ActionTransient:9823:0:0"
+msgid "Sets an enchanted trap that triggers upon contact."
+msgstr "Устанавливает зачарованную ловушку, которая срабатывает при соприкосновении."
+
+#. ja: 指定した地面の周囲に攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器威力：</ui-edge-color></ui-color>30000<br><ui-color 504><ui-edge-color 505>対オブジェクト・対オートマトン威力：</ui-edge-color></ui-color>3000
+#. de: Du feuerst ein Geschoss auf den anvisierten Bereich ab.<br>Attacke-Wert gegen PCs und Kriegsmaschinen: 30.000<br>Attacke-Wert gegen Objekte und Marionetten: 3.000
+#. fr: Effectue une attaque dans l'aire d'effet ciblée.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines)<nbsp>:</ui-edge-color></ui-color> 30 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs/automates)<nbsp>:</ui-edge-color></ui-color> 3000
+msgctxt "ActionTransient:9971:0:0"
+msgid "Deals damage with a potency of 30,000 to all opposing players and warmachina near point of impact. 3,000 when attacking a mammet or object."
+msgstr "Наносит урон мощностью 30 000 всем вражеским игрокам и боевым машинам рядом с местом попадания. При атаке манекена или объекта мощность урона — 3000."
+
+#. ja: 自身の前方に向かって扇範囲攻撃。<br><ui-color 504><ui-edge-color 505>対人・対オブジェクト・対オートマトン威力：</ui-edge-color></ui-color>5000<br><ui-color 504><ui-edge-color 505>対機工兵器威力：</ui-edge-color></ui-color>50000
+#. de: Du führst eine Attacke auf die fächerförmig vor dir stehenden Gegner aus.<br>Attacke-Wert gegen PCs, Objekte und Marionetten: 5.000<br>Attacke-Wert gegen Kriegsmaschinen: 50.000
+#. fr: Effectue une attaque dans une zone en éventail vers l'avant.<br><ui-color 506><ui-edge-color 507>Puissance (humains/dispositifs/automates)<nbsp>:</ui-edge-color></ui-color> 5000<br><ui-color 506><ui-edge-color 507>Puissance (machines)<nbsp>:</ui-edge-color></ui-color> 50 000
+msgctxt "ActionTransient:9973:0:0"
+msgid "Delivers an attack with a potency of 50,000 to all opposing warmachina in a cone before you. 5,000 when attacking a player, mammet, or object."
+msgstr "Наносит урон мощностью 50 000 всем вражеским боевым машинам в конусе перед собой. При атаке игрока, манекена или объекта мощность урона — 5000."
+
+#. ja: 自身の前方に向かって扇範囲攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器威力：</ui-edge-color></ui-color>50000<br><ui-color 504><ui-edge-color 505>対オブジェクト・対オートマトン威力：</ui-edge-color></ui-color>5000
+#. de: Du führst eine Attacke auf die fächerförmig vor dir stehenden Gegner aus.<br>Attacke-Wert gegen PCs und Kriegsmaschinen: 50.000<br>Attacke-Wert gegen Objekte und Marionetten: 5.000
+#. fr: Effectue une attaque dans une zone en éventail vers l'avant.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines)<nbsp>:</ui-edge-color></ui-color> 50 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs/automates)<nbsp>:</ui-edge-color></ui-color> 5000
+msgctxt "ActionTransient:9974:0:0"
+msgid "Delivers an attack with a potency of 50,000 to all opposing players and warmachina in a cone before you. 5,000 when attacking a mammet or object."
+msgstr "Наносит урон мощностью 50 000 всем вражеским игрокам и боевым машинам в конусе перед собой. При атаке манекена или объекта мощность урона — 5000."
+
+#. ja: 指定した地面の周囲に攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器・対オートマトン威力：</ui-edge-color></ui-color>20000<br><ui-color 504><ui-edge-color 505>対オブジェクト威力：</ui-edge-color></ui-color>1000000<br>効果範囲は30mまでおよび、着弾地点から離れるほど威力が減衰する。
+#. de: Du feuerst ein Geschoss auf den anvisierten Bereich ab.<br>Attacke-Wert gegen PCs, Kriegsmaschinen und Marionetten: 20.000<br>Attacke-Wert gegen Objekte: 1.000.000<br>Attacke-Wert nimmt mit der Entfernung zum Einschlagsort ab. Maximale Entfernung: 30y
+#. fr: Effectue une attaque dans l'aire d'effet ciblée.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines/automates)<nbsp>:</ui-edge-color></ui-color> 20 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs)<nbsp>:</ui-edge-color></ui-color> 1 000 000<br>L'attaque porte dans un rayon de 30y, mais la puissance diminue proportionnellement à la distance vis-à-vis du point d'impact.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "ActionTransient:9975:0:0"
+msgid "Deals damage with a potency of 1,000,000 to all objects near point of impact. 20,000 to opposing players, warmachina, or mammets.<br>Potency decreases the greater the target's distance from point of impact, to a maximum of 30 yalms."
+msgstr "Наносит урон мощностью 1 000 000 всем объектам рядом с местом попадания и 20 000 — вражеским игрокам, боевым машинам и манекенам.<br>Чем дальше цель от места попадания, тем ниже мощность урона. Радиус действия — до 30 ялмов."
+
+#. ja: 自身の周囲の敵に範囲攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器威力：</ui-edge-color></ui-color>10000<br><ui-color 504><ui-edge-color 505>対オブジェクト・対オートマトン威力：</ui-edge-color></ui-color>1000<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>対象を15mノックバックする。
+#. de: Du führst eine Attacke auf alle umstehenden Gegner aus.<br>Attacke-Wert gegen PCs und Kriegsmaschinen: 10.000<br>Attacke-Wert gegen Objekte und Marionetten: 1.000<br>Zusatzeffekt: Schleudert Ziele 15y zurück.
+#. fr: Effectue une attaque sur les ennemis alentour.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines)<nbsp>:</ui-edge-color></ui-color> 10 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs/automates)<nbsp>:</ui-edge-color></ui-color> 1000<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> projette 15 yalms en arrière.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9977:0:0"
+msgid "Deals damage to all opposing players and warmachina nearby with a potency of 10,000. 1,000 when attacking a mammet or object.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> 15-yalm knockback"
+msgstr "Наносит урон мощностью 10 000 всем находящимся рядом вражеским игрокам и боевым машинам. При атаке манекена или объекта мощность урона — 1000.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> отбрасывает цель на 15 ялмов"
+
+#. ja: 自身の前方に向かって扇範囲攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器威力：</ui-edge-color></ui-color>40000<br><ui-color 504><ui-edge-color 505>対人・対機工兵器追加効果：</ui-edge-color></ui-color>対象に火傷を付与する。<br><ui-color 504><ui-edge-color 505>威力：</ui-edge-color></ui-color>10000　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>12秒<br><ui-color 504><ui-edge-color 505>対オブジェクト・対オートマトン威力：</ui-edge-color></ui-color>4000
+#. de: Du führst eine Attacke auf die fächerförmig vor dir stehenden Gegner aus.<br>Attacke-Wert gegen PCs und Kriegsmaschinen: 40.000<br>Zusatzeffekt gegen PCs und Kriegsmaschinen: Brandwunde<br>Attacke-Wert: 10.000<br>Dauer: 12 Sekunden<br>Attacke-Wert gegen Objekte und Marionetten: 4.000
+#. fr: Effectue une attaque dans une zone en éventail vers l'avant.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines)<nbsp>:</ui-edge-color></ui-color> 40 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs/automates)<nbsp>:</ui-edge-color></ui-color> 10 000<br><ui-color 506><ui-edge-color 507>Effet additionnel (humains/machines)<nbsp>:</ui-edge-color></ui-color> inflige Brûlure.<br><ui-color 506><ui-edge-color 507>Puissance<nbsp>:</ui-edge-color></ui-color> 4000 <ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 12s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9978:0:0"
+msgid "Deals damage with a potency of 40,000 to all opposing players and warmachina in a cone before you. 4,000 when attacking a mammet or object.<br><ui-color 504><ui-edge-color 505>Additional Effect: </ui-edge-color></ui-color>Inflicts <ui-color 506><ui-edge-color 507>Burns</ui-edge-color></ui-color> on opposing players and warmachina<br><ui-color 504><ui-edge-color 505>Potency:</ui-edge-color></ui-color> 10,000<br><ui-color 504><ui-edge-color 505>Duration: </ui-edge-color></ui-color>12s"
+msgstr "Наносит урон мощностью 40 000 всем вражеским игрокам и боевым машинам в конусе перед собой. При атаке манекена или объекта мощность урона — 4000.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> накладывает на вражеских игроков и боевые машины эффект <ui-color 506><ui-edge-color 507>«Ожог»</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Мощность:</ui-edge-color></ui-color> 10 000<br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 12 сек."
+
+#. ja: 指定した地面の周囲に攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器・対オートマトン威力：</ui-edge-color></ui-color>30000<br><ui-color 504><ui-edge-color 505>対オブジェクト威力：</ui-edge-color></ui-color>600000<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>対象をスタンさせる。　<ui-color 504><ui-edge-color 505>効果時間：</ui-edge-color></ui-color>3秒
+#. de: Du feuerst ein Geschoss auf den anvisierten Bereich ab.<br>Attacke-Wert gegen PCs, Kriegsmaschinen und Marionetten: 30.000<br>Attacke-Wert gegen Objekte: 600.000<br>Zusatzeffekt: <ui-color 506><ui-edge-color 507>Betäubung</ui-edge-color></ui-color><br>Dauer: 3 Sekunden
+#. fr: Effectue une attaque dans l'aire d'effet ciblée.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines/automates)<nbsp>:</ui-edge-color></ui-color> 30 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs)<nbsp>:</ui-edge-color></ui-color> 600 000<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> inflige Étourdissement.<br><ui-color 506><ui-edge-color 507>Durée<nbsp>:</ui-edge-color></ui-color> 3s
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9979:0:0"
+msgid "Deals damage with a potency of 600,000 to all objects near point of impact. 30,000 when attacking opposing players, warmachina, or mammets.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> <ui-color 506><ui-edge-color 507>Stun</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Duration:</ui-edge-color></ui-color> 3s"
+msgstr "Наносит урон мощностью 600 000 всем объектам рядом с местом попадания. При атаке вражеских игроков, боевых машин или манекенов мощность урона — 30 000.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> <ui-color 506><ui-edge-color 507>«Оглушение»</ui-edge-color></ui-color><br><ui-color 504><ui-edge-color 505>Длительность:</ui-edge-color></ui-color> 3 сек."
+
+#. ja: 自身の前方に向かって前方直線範囲攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器威力：</ui-edge-color></ui-color>80000<br><ui-color 504><ui-edge-color 505>対オブジェクト・対オートマトン威力：</ui-edge-color></ui-color>8000<br><ui-color 504><ui-edge-color 505>追加効果：</ui-edge-color></ui-color>対象を30mノックバックする。
+#. de: Du führst eine Attacke auf alle Gegner in gerader Linie vor dir aus.<br>Attacke-Wert gegen PCs und Kriegsmaschinen: 80.000<br>Attacke-Wert gegen Objekte und Marionetten: 8.000<br>Zusatzeffekt: Schleudert Ziele 30y zurück.
+#. fr: Effectue une attaque en ligne droite vers l'avant.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines)<nbsp>:</ui-edge-color></ui-color> 80 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs/automates)<nbsp>:</ui-edge-color></ui-color> 8000<br><ui-color 506><ui-edge-color 507>Effet additionnel<nbsp>:</ui-edge-color></ui-color> projette 30 yalms en arrière.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "ActionTransient:9980:0:0"
+msgid "Delivers damage with a potency of 80,000 to all opposing players and warmachina in a straight line before you. 8,000 when attacking a mammet or object.<br><ui-color 504><ui-edge-color 505>Additional Effect:</ui-edge-color></ui-color> 30-yalm knockback"
+msgstr "Наносит урон мощностью 80 000 всем вражеским игрокам и боевым машинам по прямой перед собой. При атаке манекена или объекта мощность урона — 8000.<br><ui-color 504><ui-edge-color 505>Дополнительный эффект:</ui-edge-color></ui-color> отбрасывает цель на 30 ялмов"
+
+#. ja: 自身が搭乗している機工兵器のEPを5000回復する。<br><ui-color 504><ui-edge-color 505>発動条件：</ui-edge-color></ui-color><ui-color 500><ui-edge-color 501>「CE」</ui-edge-color></ui-color>25
+#. de: Du füllst den Tank der momentan gesteuerten Kriegsmaschine um 5.000 EP auf.<br>Bedingung: 25 Erdseim-Energie
+#. fr: Restaure 5000 PE de la machine de guerre manœuvrée.<br><ui-color 506><ui-edge-color 507>Coût<nbsp>:</ui-edge-color></ui-color> 25 <ui-color 502><ui-edge-color 503>CE</ui-edge-color></ui-color>
+msgctxt "ActionTransient:9981:0:0"
+msgid "Uses 25 units of ceruleum fuel (CE) to restore 5000 EP to currently mounted warmachina."
+msgstr "Тратит 25 единиц церулеума (CE), чтобы восстановить 5000 EP установленной боевой машины."
+
+#. ja: 指定した地面の周囲に攻撃。<br><ui-color 504><ui-edge-color 505>対人・対機工兵器威力：</ui-edge-color></ui-color>20000<br><ui-color 504><ui-edge-color 505>対オブジェクト・対オートマトン威力：</ui-edge-color></ui-color>2000
+#. de: Du feuerst ein Geschoss auf den anvisierten Bereich ab.<br>Attacke-Wert gegen PCs und Kriegsmaschinen: 20.000<br>Attacke-Wert gegen Objekte und Marionetten: 2.000
+#. fr: Effectue une attaque dans l'aire d'effet ciblée.<br><ui-color 506><ui-edge-color 507>Puissance (humains/machines)<nbsp>:</ui-edge-color></ui-color> 20 000<br><ui-color 506><ui-edge-color 507>Puissance (dispositifs/automates)<nbsp>:</ui-edge-color></ui-color> 2000
+msgctxt "ActionTransient:9982:0:0"
+msgid "Deals damage with a potency of 20,000 to all opposing players and warmachina near point of impact. 2,000 when attacking a mammet or object."
+msgstr "Наносит урон мощностью 20 000 всем вражеским игрокам и боевым машинам рядом с местом попадания. При атаке манекена или объекта мощность урона — 2000."

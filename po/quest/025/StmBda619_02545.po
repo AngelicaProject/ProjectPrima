@@ -1,0 +1,170 @@
+# quest/025/StmBda619_02545 — «Raubahn's Invitation» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: カストルム・アバニア前のラウバーンは、作戦の状況を確認している。
+#. de: Raubahn ist über den Erfolg der Operation erfreut.
+#. fr: Raubahn s'informe auprès des officiers de l'Alliance pour savoir si le castrum est bien sous contrôle.
+#. kind: journal
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_SEQ_00:1"
+msgid "Raubahn wishes to thank you for your service."
+msgstr ""
+
+#. ja: ラウバーンと話す
+#. de: Raubahn südlich von Radiata einholen
+#. fr: Parler à Raubahn
+#. kind: objective
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_TODO_00:1"
+msgid "Follow Raubahn to Coldhearth."
+msgstr ""
+
+#. ja: お仲間のひとりが負傷されたとか……。<br>我々にできることがあれば、何なりとおっしゃってください。
+#. de: Eure Kameradin wurde verwundet, wie ich sehen musste. Sag Bescheid, wenn wir etwas tun können, ja?
+#. fr: On m'a appris qu'une de vos camarades avait été blessée. S'il y a quoi que ce soit que mes hommes ou moi pouvons faire pour vous aider, n'hésitez pas à m'en faire part.
+#. speaker: SERPENTOFFICER
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_SERPENTOFFICER_000_001:1"
+msgid "I am told one of your comrades was injured during the operation. If there is aught we can do to help, pray do not hesitate to ask."
+msgstr ""
+
+#. ja: ひとまず「ラウバーン」局長と話そう。<br>クルルについての情報が見つかってないかも聞きたいしね。
+#. de: Lass uns erst mal Raubahn Bericht erstatten. Und wer weiß, vielleicht hat die Allianz ja Hinweise auf Krile gefunden.
+#. fr: Allons parler à Raubahn. Il saura peut-être nous dire si Krile était dans le castrum.
+#. speaker: LYSE
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_LYSE_000_005:1"
+msgid "...Maybe we should speak with General Aldynn. Just in case his men learned something about Krile."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>、リセ……<br>あらためて、礼を言わせてもらいたい。<br>よくぞ、カノン砲を封じてくれた。
+#. de: Ihr habt die Kanone also tatsächlich unter eure Kontrolle gebracht!
+#. fr: <split " " 1><string $gs1></split>, Lyse, je tiens à vous remercier pour le rôle que vous avez joué dans cette offensive. Grâce à vous, nous avons pu nous emparer de Castrum Abania sans crainte d'être la cible du canon.
+#. speaker: RAUBAHN
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><split " " 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMa… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><split " " 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridani… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_010:1"
+msgid "<if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><split \" \" 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize></if></if>, Commander Hext. Fine work you did today."
+msgstr ""
+
+#. ja: 「暁」とアラミゴ解放軍の活躍により、<br>本隊は、無傷のまま敵拠点に接近できたのは大きい。<br>被害も最小限に抑えられたしな。
+#. de: Dank eurer formidablen Leistung konnte die Allianz ohne nennenswerte Verluste an das Castrum heranrücken. Das war ein unschätzbarer Vorteil.
+#. fr: Les Héritiers et les résistants ont fait un travail admirable, et le fait que nous n'ayons que très peu de pertes à déplorer est le résultat de votre courage.
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_011:1"
+msgid "After Specula Imperatoris, we needed a resounding victory like this. Thanks to you, Rhalgr's star yet burns bright."
+msgstr ""
+
+#. ja: こっちも、大きな被害はなかったけど、<br>アリゼーが……。
+#. de: Ja ... Wir haben zwar auch niemanden verloren, aber leider wurde Alisaie verwundet.
+#. fr: Nous aussi, nous avons réussi à limiter les dégâts, mais hélas, Alisaie a été blessée lors du combat avec Fordola...
+#. speaker: LYSE
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_LYSE_000_012:1"
+msgid "I'm glad, I really am. But you should know that Alisaie was injured in the fighting..."
+msgstr ""
+
+#. ja: アリゼー嬢のことは心配だが、<br>命が助かったことは不幸中の幸いであろう。<br>しかし、髑髏連隊の女隊長が、そのような戯れ言をな……。
+#. de: Richtig, das wurde mir berichtet. Immerhin ist sie außer Lebensgefahr und wird sich mit Sicherheit bald erholen.
+#. fr: Je partage votre inquiétude pour votre amie, mais nous devrions cer<shy>tai<shy>ne<shy>ment nous réjouir que ses jours ne soient pas en danger. Je dois toutefois avouer que les mots de la jeune commandante des Crânes me surprennent.
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_013:1"
+msgid "...Regrettable, but I am pleased to hear that she will make a full recovery. Fordola's parting words, on the other hand, ring less favorably in my ears."
+msgstr ""
+
+#. ja: ならば、その「皇族主催の狩猟祭」とやらへの招待、<br>ありがたく受けてやろうではないか！<br>アラミゴの猛牛が簡単に狩れぬ獲物だと教えてくれる！
+#. de: Aber was die Kommandantin der Wolfsschädel da am Ende sagte - Zenos lädt uns zu seiner fröhlichen Jagd ein? Er soll nur nicht glauben, dass der Bulle von Ala Mhigo eine leichte Beute wäre!
+#. fr: Mais si Zenos croit qu'il va pouvoir nous traquer comme de vulgaires proies, il se trompe<nbsp>! Je vais lui montrer que le taureau d'Ala Mhigo n'est pas du genre à se laisser piéger facilement<nbsp>!
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_014:1"
+msgid "But if Zenos wishes to invite us to his so-called “royal hunt,” then this bull would fain accept!"
+msgstr ""
+
+#. ja: ……どうした、リセよ。<br>フォルドラの言葉を聞き、何か思うところが？
+#. de: Was ist los, Lyse?
+#. fr: Eh bien, qu'y a-t-il, Lyse<nbsp>? Ne me dis pas que les mots de Fordola t'ont touchée...
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_015:1"
+msgid "...What troubles you, Lyse?"
+msgstr ""
+
+#. ja: ……そんなこと、ないよ。<br>アタシは大丈夫だし、アラミゴの奪還まで、あと一歩。<br>それにクルルも助けなきゃいけない！
+#. de: Äh ... Ich ... bin natürlich bereit! Wir müssen dranbleiben ... dann wird Ala Mhigo bald frei sein. Und Krile müssen wir ja auch noch retten.
+#. fr: Ne vous inquiétez pas, tout va bien. La libération d'Ala Mhigo est proche, et nous devons retrouver et délivrer Krile. Je réalise qu'il nous reste encore beaucoup de choses à faire...
+#. speaker: LYSE
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_LYSE_000_016:1"
+msgid "O-Oh, it's nothing really, just that...we're almost to the end, but we've still got to save Krile and do so much more..."
+msgstr ""
+
+#. ja: そうだな。<br>クルル嬢の居所は、未だに判明していないが、<br>ピピンが進めている基地内の調査で、何かが判明するかもしれん。
+#. de: Richtig, Krile ist ja entführt worden. Wir wissen noch nicht, wo sie ist, aber wir sind guter Hoffnung, dass Pipins Leute bei der Durchsuchung des Castrums Hinweise finden.
+#. fr: Tu as raison. Concernant votre amie, je suis au regret de vous dire que nous n'avons pas pu la localiser pour le moment, mais Pipin se charge ac<shy>tu<shy>el<shy>le<shy>ment d'inspecter le castrum. Espérons qu'il découvrira quelque chose.
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_017:1"
+msgid "We'll find her soon enough. Pipin has his best men scouring the castrum's archives as we speak."
+msgstr ""
+
+#. ja: …………。
+#. de: ...
+#. fr: ...
+#. speaker: LYSE
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_LYSE_100_017:1"
+msgid "..."
+msgstr ""
+
+#. ja: ギラバニア湖畔地帯へ通じる坑道の安全確保を含めて、<br>いずれにせよ、今しばらく時間がかかるだろう。
+#. de: Bis wir einen sicheren Weg ins Abanische Fenn ausgekundschaftet haben, wird es noch etwas dauern. Darf ich euch in der Zwischenzeit kurz in Anspruch nehmen?
+#. fr: La sécurisation des galeries conduisant vers la région des Lacs devrait prendre un peu de temps.
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_018:1"
+msgid "...Listen, Lyse. It will take time for us to fully occupy the castrum and prepare to advance into the Lochs. While we wait, there is something I would like to show you. Both of you."
+msgstr ""
+
+#. ja: そこでだ……少し顔を貸してくれんか？<br>貴様たちに見せておきたい場所があるのだ。<br>帝国軍との決戦に臨む前にこそ……な。
+#. de: Ich würde euch gerne etwas zeigen. Gerade weil wir bald den Garlearn gegen<shy>über<shy>stehen werden.
+#. fr: En attendant, j'aimerais que vous m'accompagniez quelque part. Il y a un endroit près d'ici que je veux vous montrer avant de nous engager dans notre combat final avec l'Empire.
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_019:1"
+msgid "After all, this may be the last chance we have to catch our breath before the final push."
+msgstr ""
+
+#. ja: 構わないけれど……。
+#. de: Aber natürlich, General ...
+#. fr: Pourquoi pas...
+#. speaker: LYSE
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_LYSE_000_020:1"
+msgid "I don't see why not..."
+msgstr ""
+
+#. ja: では、ふたりとも吾輩についてきてくれ。<br>街道をラジアタまで戻り、南側の細道に向かうぞ。
+#. de: Das freut mich. Dann begleitet mich bitte. Der Ort liegt ein Stück weit südlich von Radiata.
+#. fr: Merci. Passez par Radiata, puis suivez le sentier qui se dirige vers le sud depuis là-bas.
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_021:1"
+msgid "Then come with me to Radiata. From there we'll need to follow another road south."
+msgstr ""
+
+#. ja: ずいぶん寂しい村だね……。<br>畑の実りも少なそうだし、活気もない……。
+#. de: Was für ein verfallenes Dorf. Und die Felder scheinen auch nicht mehr bestellt zu werden.
+#. fr: Ce village fait vraiment peine à voir. On dirait que rien n'y pousse et que toute vie l'a abandonné...
+#. speaker: LYSE
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_LYSE_000_035:1"
+msgid "I don't think I know this village. It's so small..."
+msgstr ""
+
+#. ja: フッ……相変わらずの光景だな……。<br>おっとすまない、つい懐かしい気分に浸ってしまってな。<br>ひとまず、よくぞ来てくれたと歓迎しておこう。
+#. de: Nichts hat sich verändert ...<br>Nun denn - herzlich willkommen.
+#. fr: Malgré toutes ces années, rien n'a changé. Ah, pardon, je me suis laissé aller à la nostalgie. Laisse-moi te souhaiter la bienvenue à Âtrefroid.
+#. speaker: RAUBAHN
+msgctxt "quest/025/StmBda619_02545:TEXT_STMBDA619_02545_RAUBAHN_000_040:1"
+msgid "Even after all these years, it's still the same... Ah, but I'm getting ahead of myself. You deserve a proper welcome."
+msgstr ""

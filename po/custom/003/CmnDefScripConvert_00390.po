@@ -1,0 +1,97 @@
+# custom/003/CmnDefScripConvert_00390
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 「<sheet Item $n1 0>」「<sheet Item $n2 0>」を、<br>「<sheet Item $n3 0>」「<sheet Item $n4 0>」に、<br>交換しています。
+#. de: Hast du Scheine, die du nicht mehr brauchst? Ich tausche <noun-de Item 3 $n1 2 4 1> und <noun-de Item 3 $n2 2 4 1> in <noun-de Item 5 $n3 2 1 1> und <noun-de Item 5 $n4 2 1 1> um.
+#. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if> aventuri<if $gn4>ère<else>er</if><nbsp>! Je peux échanger vos <noun-fr Item 12 $n1 2 1> et <noun-fr Item 12 $n2 2 1> contre des <noun-fr Item 12 $n3 2 1> ou des <noun-fr Item 12 $n4 2 1>, si vous voulez.
+#. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n3 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n4 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 4, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_TALK_GREETING_00000:1"
+msgid "Greetings, <if $gn4>madam<else>sir</if>. If you have any <noun-en Item 3 $n1 2 1> or <noun-en Item 3 $n2 2 1>, I should be glad to offer you <noun-en Item 3 $n3 2 1> and <noun-en Item 3 $n4 2 1> respectively in exchange."
+msgstr ""
+
+#. ja: どのスクリップを交換しますか？
+#. de: Welche Scheine möchtest du eintauschen?
+#. fr: Quel type d'assignats voulez-vous échanger<nbsp>?
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_ASK_SCRIP_Q000:1"
+msgid "Select the scrip you wish to exchange."
+msgstr ""
+
+#. ja: 「<sheet Item $n1 0>」
+#. de: <capitalize><noun-de Item 5 $n1 2 4 1></capitalize>
+#. fr: <capitalize><noun-fr Item 12 $n1 2 1></capitalize>
+#. macro: <title-case><noun-en Item 3 $n1 2 1></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_ASK_SCRIP_A001:1"
+msgid "<title-case><noun-en Item 3 $n1 2 1></title-case>."
+msgstr ""
+
+#. ja: 「<sheet Item $n1 0>」
+#. de: <capitalize><noun-de Item 5 $n1 2 4 1></capitalize>
+#. fr: <capitalize><noun-fr Item 12 $n1 2 1></capitalize>
+#. macro: <title-case><noun-en Item 3 $n1 2 1></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_ASK_SCRIP_A002:1"
+msgid "<title-case><noun-en Item 3 $n1 2 1></title-case>."
+msgstr ""
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_ASK_SCRIP_A003:1"
+msgid "Cancel."
+msgstr ""
+
+#. ja: あなたの「<sheet Item $n1 0>」<num $n2>枚を「<sheet Item $n3 0>」<num $n4>枚に交換しますか？
+#. de: Du willst also <noun-de Item 1 $n1 $n2 4 1> gegen <noun-de Item 1 $n3 $n4 4 1> eintauschen?
+#. fr: Échanger <num $n2> <noun-fr Item 12 $n1 "<num $n2>" 1> contre <num $n4> <noun-fr Item 12 $n3 "<num $n4>" 1><nbsp>?
+#. macro: <if ($n2 == 1)><num $n2> <noun-en Item 3 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 1)><num $n4> <noun-en Item 3 $n3 1 1><else><num $n4> <noun-en Item 3 $n3 $n4 1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n3 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n3 $n4 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = number parameter 4, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_ASK_EXCHANGE_Q000:1"
+msgid "Exchange <if ($n2 == 1)><num $n2> <noun-en Item 3 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if> for <if ($n4 == 1)><num $n4> <noun-en Item 3 $n3 1 1><else><num $n4> <noun-en Item 3 $n3 $n4 1></if>?"
+msgstr ""
+
+#. ja: 「<sheet Item $n1 0>」の所持上限を超えてしまいますが、本当に交換しますか？
+#. de: Achtung: Nach dem Tausch hättest du mehr <noun-de Item 5 $n1 2 4 1>, als du tragen kannst. Überschüssige <noun-de Item 5 $n1 2 4 1> gehen verloren. Trotzdem tauschen?
+#. fr: <ui-color 508><ui-edge-color 509>Attention<nbsp>: tous les <noun-fr Item 12 $n1 2 1> au-delà de la limite ne pourront pas être obtenu<if "<sheet Item $n1 6>">e</if>s.</ui-edge-color></ui-color><br><br>Confirmer l'échange<nbsp>?
+#. macro: <noun-en Item 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_ASK_LIMIT_Q000:1"
+msgid "Warning: You will not be able to receive all <noun-en Item 2 $n1 2 1>. Do you still wish to proceed?"
+msgstr ""
+
+#. ja: 「<sheet Item $n1 0>」<num $n2>枚を、<br>「<sheet Item $n3 0>」<num $n4>枚に交換しました。
+#. de: Tausch abgeschlossen.
+#. fr: Vous avez obtenu <num $n4> <noun-fr Item 12 $n3 "<num $n4>" 1> en échange de <num $n2> <noun-fr Item 12 $n1 "<num $n2>" 1>.
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_SYSTEM_EXCHANGE_00000:1"
+msgid "Exchange complete."
+msgstr ""
+
+#. ja: あなたは、「<sheet Item $n1 0>」を持っていないようですね。
+#. de: Moment, du hast ja gar <noun-de Item 4 $n1 2 4 1>!
+#. fr: Oh<nbsp>! Je crains que vous ne soyez pas en possession <noun-fr Item 8 $n1 2 1>...
+#. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_TALK_NOTOBTAINABLE_00000:1"
+msgid "Oh? You don't appear to have any <noun-en Item 3 $n1 2 1>..."
+msgstr ""
+
+#. ja: あなたは、これ以上「<sheet Item $n1 0>」を持てないようですね。
+#. de: Sieht so aus, als könntest du <noun-de Item 4 $n1 2 4 1> mehr tragen.
+#. fr: Ch<if $gn4>ère<else>er</if> client<if $gn4>e</if>, je suis au regret de vous dire que vous ne pouvez pas détenir davantage <noun-fr Item 8 $n1 2 1>...
+#. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/003/CmnDefScripConvert_00390:TEXT_CMNDEFSCRIPCONVERT_00390_TALK_MAXIMUM_00000:1"
+msgid "Oh? It seems you already possess the maximum number of <noun-en Item 3 $n1 2 1> permitted..."
+msgstr ""

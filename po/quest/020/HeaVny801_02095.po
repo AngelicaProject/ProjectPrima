@@ -1,0 +1,183 @@
+# quest/020/HeaVny801_02095 — «Inscrutable Tastes» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 清貧の凱旋門のモルゲインは、一流の職人である冒険者に仕事を紹介したいようだ。
+#. de: Morgayne hat eine Aufgabe für <if $gn4>eine erstklassige Handwerkerin<else>einen erstklassigen Handwerker</if> wie dich.
+#. fr: Morgayne a un tuyau pour les artisans ex<shy>pé<shy>ri<shy>men<shy>tés.
+#. kind: journal
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_SEQ_00:1"
+msgid "Morgayne is curious whether a talented individual like yourself is familiar with the latest fad."
+msgstr ""
+
+#. ja: モルゲインから、「収集品」について聞いた。興味があるならと、リディルロナという人物宛の紹介状を書いてもらった。モードゥナのレヴナンツトールにいる「リディルロナ」に「<sheet EventItem 2001784 0>」を渡そう。
+#. de: Morgayne erklärt dir, was Sammlerstücke sind. Eine gewisse Lydirlona kann dir angeblich noch mehr darüber sagen. Morgayne gibt dir <noun-de EventItem 1 2001784 1 4 1> für sie mit. Übergib ihr das Dokument in Geisterzoll.
+#. fr: Morgayne vous a parlé des “collectionnables” sans toutefois vous en dire plus, et vous somme d'aller remettre une lettre à une certaine Lydirlona au Glas des revenants.
+#. kind: journal
+#. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_SEQ_01:1"
+msgid "Apparently, there is a new “collectables” fad, which a <if $gn4>woman<else>man</if> with your talent stands to benefit from, should you choose to do so. Journey to Revenant's Toll and speak with Lydirlona to learn more."
+msgstr ""
+
+#. ja: リディルロナから「収集品」の説明を受けた。「収集品」を納品して対価を得る、「ロウェナ商会取引」の紹介を受けた。収集品の仕事をこなし、職人としての腕を磨いていこう。
+#. de: Lydirlona erklärt dir, dass es sich bei Sammlerstücken um gerade besonders nachgefragte Gegenstände handelt, für die du von Rowenas Sammlerstück-Händlerin als Gegenleistung sogenannte Sammlerscheine erhältst. Diese kannst du bei der Sammlerschein-Wechslerin wiederum gegen nützliche Sammler- und Handwerker-Ausrüstung eintauschen. Vielleicht solltest du versuchen, solche besonderen Gegenstände herzustellen oder zu sammeln.
+#. fr: Lydirlona vous a expliqué le principe des objets collectionnables<nbsp>: récoltés ou fabriqués avec des actions spéciales, ils peuvent être rachetés par la maison de commerce de Rowena en échange d'assignats. Essayez donc d'en apporter au responsable pour accumuler un maximum d'assignats ou obtenir de l'expérience.
+#. kind: journal
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_SEQ_02:1"
+msgid "The realm is filled with wealthy individuals who covet a great many things, yet have no intention of obtaining them themselves. They turn to Rowena's House of Splendors to supply them with the objects of their desire, and the consortium employs various tradesmen to procure the collectables in question. Such an opportunity is now available to you, should you be so inclined...and willing to receive payment in the form of scrips redeemable only with the House of Splendors."
+msgstr ""
+
+#. ja: レヴナンツトールのリディルロナに<sheet EventItem 2001784 0>を渡す
+#. de: Lydirlona in Geisterzoll <noun-de EventItem 2 2001784 1 4 1> übergeben
+#. fr: Livrer <noun-fr EventItem 2 2001784 1 1> au Glas des revenants
+#. kind: objective
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_TODO_00:1"
+msgid "Deliver the letter to Lydirlona in Revenant's Toll."
+msgstr ""
+
+#. ja: アンタ、見たところ、かなり腕の立つ職人のようだね……。<br>そんなアンタに、ちょいと面白い仕事の話があるんだ。<br>……「収集品」ってヤツに、手を出してみる気はないかい？
+#. de: Ah. Endlich jemand, der sich auf sein Handwerk versteht. Ich gehe doch richtig in der Annahme, dass du <if $gn4>eine gestandene<else>ein gestandener</if> <if ($gn4 == 0)><sheet ClassJob $gn68 0><else><sheet ClassJob $gn68 2></if> bist? Dann solltest du dich mal mit Sammlerstücken beschäftigen.
+#. fr: Dites donc, vous avez l'air d'avoir de la bouteille en matière d'artisanat. J'ai peut-être un tuyau qui pourrait vous intéresser. Z'avez déjà entendu parler des objets de collection<nbsp>?
+#. speaker: MORGAYNE
+#. macro: <if ($gn68 == 10)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 14)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 5)>an <sheet ClassJob $gn68 0><else><if ($gn… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet ClassJob $gn68 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = global number 68 (the player's current class or job, a ClassJob row), column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn68 == 14)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 5)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 26)>an <sheet ClassJob $gn68 0><else><if ($gn… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 14 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn68 == 5)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 26)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 33)>an <sheet ClassJob $gn68 0><else>a <sheet… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 5 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn68 == 26)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 33)>an <sheet ClassJob $gn68 0><else>a <sheet ClassJob $gn68 0></if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 26 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn68 == 33)>an <sheet ClassJob $gn68 0><else>a <sheet ClassJob $gn68 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 33 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_MORGAYNE_000_000:1"
+msgid "You're <if ($gn68 == 10)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 14)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 5)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 26)>an <sheet ClassJob $gn68 0><else><if ($gn68 == 33)>an <sheet ClassJob $gn68 0><else>a <sheet ClassJob $gn68 0></if></if></if></if></if>, yes? Aye, I thought so. I pride myself on having an eye for talent and you, <if $gn4>miss<else>sir</if>, have it in abundance."
+msgstr ""
+
+#. ja: アンタの話は聞いているよ、マイスター。<br>超一流の職人に相応しい仕事があるんだ。<br>……「収集品」ってヤツに、手を出してみる気はないかい？
+#. de: Du musst <if $gn4>die<else>der</if>jenige sein, <if $gn4>die<else>den</if> sie „<if $gn4>die Spezialistin<else>den Spezialisten</if>“ nennen. Ich habe schon von dir gehört. Wenn du dich wirklich so gut auf deinem Gebiet auskennst, dann solltest du dich unbedingt mal mit Sammlerstücken beschäftigen.
+#. fr: Salut, <if $gn4>la<else>le</if> spécialiste<nbsp>! J'ai peut-être un tuyau qui pourrait vous intéresser, vous qui êtes une sommité. Z'avez déjà entendu parler des objets collectionnables<nbsp>?
+#. speaker: MORGAYNE
+#. macro: <if $gn4>Mistress<else>Master</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_MORGAYNE_000_001:1"
+msgid "Why, if it isn't <if $gn4>Mistress<else>Master</if> <split \" \" 2><string $gs1></split>. Chosen a specialty yet? Ah, but leaving that aside for the moment..."
+msgstr ""
+
+#. ja: フフ、興味があるなら、この「紹介状」を、<br>「レヴナンツトール」の「リディルロナ」って女に渡しなよ。<br>アイツが懇切丁寧、説明してくれるはずさ。
+#. de: Ich könnte dir jetzt die Ohren vollreden, aber das überlasse ich lieber jemand anderem: Lydirlona in Geisterzoll. Ich gebe dir ein Empfeh<shy>lungs<shy>schreiben mit, dann brauchst du nichts zu erklären.
+#. fr: Hé hé, je vois que ça vous intéresse. Je vais griffonner un petit mot que vous n'aurez qu'à remettre à Lydirlona au Glas des revenants, pour qu'elle vous dise tout. Eh oui, tout fonctionne par pistons, dans ce bas monde<nbsp>!
+#. speaker: MORGAYNE
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_MORGAYNE_000_002:1"
+msgid "Don't suppose you've heard of this new “collectables” fad, have you? No? Oh, we've got to do something about that, then. Here, take this letter to Lydirlona in Revenant's Toll. She'll take care of the rest."
+msgstr ""
+
+#. ja: フフ、興味があるなら、この「紹介状」を、<br>「レヴナンツトール」の「リディルロナ」って女に渡しなよ。<br>アイツが懇切丁寧、説明してくれるはずさ。
+#. de: Lydirlona in Geisterzoll wird dir alles über die Sammlerstücke erklären. Ja, ganz recht, ich mache es ganz absichtlich spannend - wo bliebe sonst der Spaß im Handwerkerleben? Zeig ihr mein Empfeh<shy>lungs<shy>schreiben, dann brauchst du nichts zu erklären.
+#. fr: Remettez ma note à Lydirlona au Glas des revenants, et elle vous dira tout sur les objets collectionnables.
+#. speaker: MORGAYNE
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_MORGAYNE_000_003:1"
+msgid "Really now, someone with your talent ought to have learned about collectables by now! You should head to Revenant's Toll right this instant!"
+msgstr ""
+
+#. ja: ようこそいらっしゃいました、冒険者様。<br>こちらは「収集品」取引窓口でございますが、<br>何かご用でしょうか？
+#. de: Was kann ich für dich tun, Abenteurer<if $gn4>in</if>? Hier gibt es keine Freibriefe.
+#. fr: Bonjour, aventuri<if $gn4>ère<else>er</if>. Mon nom est Lydirlona et je suis responsable des objets collectionnables. Que puis-je pour vous<nbsp>?
+#. speaker: LYDIRLONA
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>eve<else>day</if><else><if ($gn11 < 17)>day<else>eve</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>eve<else>day</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>day<else>eve</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_000_010:1"
+msgid "Greetings, <if $gn4>miss<else>sir</if>. How may I assist you this <if ($gn11 < 12)><if ($gn11 < 4)>eve<else>day</if><else><if ($gn11 < 17)>day<else>eve</if></if>?"
+msgstr ""
+
+#. ja: ……これは、モルゲイン様からの紹介状。<br>なるほど、「収集品」にご興味がお有りと。<br>では、簡単ではありますが、説明させていただきます。
+#. de: Oh! Du willst dich über Sammlerstücke kundig machen? Dann bist du hier goldrichtig.
+#. fr: Ah, je reconnais l'écriture de Morgayne... Je vois, elle veut que je vous explique le principe de ces échanges. C'est d'accord... et je vous remercie d'avance de bien vouloir coopérer avec nous.
+#. speaker: LYDIRLONA
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_000_011:1"
+msgid "Very well. It would be my pleasure to enlighten you."
+msgstr ""
+
+#. ja: 「収集品」とは名のとおり、集めるための物。<br>世の中には、物を集めること自体を目的とする方がいます。<br>「収集品」は、そのような好事家に向けた品なのです。
+#. de: Sammlerstücke sind besonders gefragte Objekte, für die gewisse Leute horrende Summen auszugeben bereit sind. Du würdest nicht glauben, was man alles sammeln kann! Tja, es gibt seltsame Leute auf dieser Welt, aber das soll uns recht sein. Wir stellen bereit, was sie wollen.
+#. fr: Les objets collectionnables sont, comme leur nom l'indique, des objets précieux que certains amateurs accumulent. Il y a des gens qui y consacrent beaucoup de temps et d'énergie.
+#. speaker: LYDIRLONA
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_000_012:1"
+msgid "As you are doubtless aware, there are wealthy individuals who covet certain items, but who would rather pay others to procure them."
+msgstr ""
+
+#. ja: 我らの主、ロウェナ様の取引相手には好事家も多く、<br>さまざまな「収集品」のご注文があります。
+#. de: Wir kaufen im Namen unserer Chefin Rowena Sammlerstücke an, die sie mit Gewinn an Sammler weiterverkauft.
+#. fr: Or, notre patronne Rowena a beaucoup de... d'<i>originaux</i> parmi ses clients, et certains sont à la recherche de tels objets.
+#. speaker: LYDIRLONA
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_000_013:1"
+msgid "Rowena's House of Splendors is glad to receive the custom of such individuals."
+msgstr ""
+
+#. ja: 冒険者様が注文に合った「収集品」を持ち込んでくだされば、<br>その「収集価値」に応じ、適切な価格にて、<br>買い取らせていただきましょう。
+#. de: Wenn du uns liefern kannst, was unsere Kunden gerade begehren, lassen auch wir uns nicht lumpen. Je nach Sammlerwert bieten wir dir einen fairen Preis, um dich für deine Mühen zu entschädigen.
+#. fr: Si vous nous apportez un objet qui est ac<shy>tu<shy>el<shy>le<shy>ment demandé par l'un d'entre eux, nous vous proposerons une rétribution proportionnelle à sa valeur de collection.
+#. speaker: LYDIRLONA
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_000_014:1"
+msgid "To supply these collectables, we turn to men and women such as you who possess the talents to craft or procure them."
+msgstr ""
+
+#. ja: リムサ・ロミンサ、グリダニア、ウルダハの支店においても、<br>取引を行っていますので、あわせてご利用ください。
+#. de: Ich füge aber gleich hinzu, dass wir dich aus<shy>schließ<shy>lich in unserer eigenen Währung auszahlen können - in besonderen Scheinen, die nur bei uns Gültigkeit besitzen.
+#. fr: Vous pouvez également vous adressez à nos succursales à Limsa Lominsa, Gridania ou Ul'dah.
+#. speaker: LYDIRLONA
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_100_014:1"
+msgid "Compensation will be commensurate to the collectability of items provided and paid in scrips, which can be exchanged for all manner of fine wares."
+msgstr ""
+
+#. ja: なお、買い取り代金については、<br>ロウェナ商会の発行する代替貨幣での支払となりますので、<br>あしからず、ご了承ください。
+#. de: Du kannst uns die gefragten Objekte übrigens an eine beliebige Zweigstelle liefern, also auch in Limsa Lominsa, Gridania und Ul'dah.
+#. fr: Ah, notez que le règlement se fera par une monnaie d'échange de notre maison, appelée assignats.
+#. speaker: LYDIRLONA
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_000_015:1"
+msgid "You may sell these items to the House at any of our branch offices, including those in Limsa Lominsa, Gridania, and Ul'dah."
+msgstr ""
+
+#. ja: 説明は、以上になります。<br>冒険者様の「収集品」の持ち込みを、<br>心より、お待ち申し上げます。
+#. de: Ich würde mich freuen, wenn wir bald von dir bereitgestellte, hochwertige Sammlerstücke an unsere Kunden weitergeben könnten.
+#. fr: C'est tout ce que vous avez à savoir. Nous attendons avec impatience que vous nous ameniez des objets de collection<nbsp>! Nous vous les rachèterons aux meilleurs prix. Merci de bien vouloir coopérer avec nous.
+#. speaker: LYDIRLONA
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_LYDIRLONA_000_016:1"
+msgid "Please be advised that these terms are not negotiable, <if $gn4>miss<else>sir</if>. We appreciate your understanding."
+msgstr ""
+
+#. ja: 「ロウェナ商会取引」が開放されました！<br>専用のレシピやアクションにより、<br>「収集品」の製作や採集が可能になります。
+#. de: Die Ablieferung von „Sammlerstücken“ in Rowenas Haus der Wunder ist nun möglich! Mit besonderen Rezepten und Kommandos kannst du Sammlerstücke durch Synthese herstellen oder beim Sammeln finden.
+#. fr: Vous pouvez désormais échanger des objets collectionnables à la maison des splendeurs de Rowena<nbsp>!<br>Ces objets peuvent être fabriqués grâce à des recettes spécifiques ou récoltés en ayant recours à des actions spéciales.
+#. speaker: SYSTEM
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_SYSTEM_000_017:1"
+msgid "You can now craft and gather collectables!"
+msgstr ""
+
+#. ja: 製作、採集した「収集品」は、「収集品納品窓口」に納品すると、<br>経験値とともに、「クラフタースクリップ」、<br>もしくは「ギャザラースクリップ」を取得できます。
+#. de: Die so erhaltenen Sammlerstücke kannst du bei der Sammlerstücke-Händlerin in Rowenas Diensten verkaufen. Als Gegenleistung erhältst du Routine und Sammler- bzw. Handwerkerscheine. 
+#. fr: En les apportant à l'experte en objets collectionnables, vous obtiendrez des points d'expérience et des assignats d'artisan ou de récolteur.
+#. speaker: SYSTEM
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_SYSTEM_000_018:1"
+msgid "Collectables can be traded for crafter and gatherer scrips by speaking with appraisers employed by Rowena's House of Splendors."
+msgstr ""
+
+#. ja: これらの「スクリップ」は、「スクリップ取引窓口」で、<br>クラフターやギャザラー用のアイテムと取引できます。
+#. de: Mit diesen Sammlerscheinen kannst du bei der Scheinewechslerin nebenan nützliche Gegenstände für Handwerker und Sammler erwerben.
+#. fr: Ces assignats peuvent être à leur tour échangés contre des objets pour artisan ou récolteur, entre autres.
+#. speaker: SYSTEM
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_SYSTEM_100_018:1"
+msgid "These scrips can be exchanged for items usable by Disciples of the Land or Hand."
+msgstr ""
+
+#. ja: なお、「ロウェナ商会取引」についての詳しい説明は、<br>リディルロナから聞くことができます。
+#. de: Lydirlona steht jederzeit für Fragen zu Sammlerstücken und Sammlerscheinen zur Verfügung.
+#. fr: Pour en savoir plus sur la maison des splendeurs de Rowena, interrogez Lydirlona.
+#. speaker: SYSTEM
+msgctxt "quest/020/HeaVny801_02095:TEXT_HEAVNY801_02095_SYSTEM_000_019:1"
+msgid "To learn more about collectables, speak with Lydirlona."
+msgstr ""

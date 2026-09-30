@@ -1,0 +1,185 @@
+# quest/052/BanMam104_05264 — « Toil for the Soil» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、土壌の活性化を図りたいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja sorgt sich um die Bodentemperatur auf den Feldern.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja veut améliorer la fertilité des sols.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_SEQ_00:1"
+msgid "Kageel Ja is concerned about the gainery's soil.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job different from when you accepted this quest"
+msgstr ""
+
+#. ja: クベージャに依頼された品を納品
+#. de: Kubeel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kubeel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_SEQ_01:1"
+msgid "Deliver the requested supplies to Kubeel Ja."
+msgstr ""
+
+#. ja: カゲージャと話す
+#. de: Mit Kageel Ja sprechen
+#. fr: Parler à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_SEQ_02:1"
+msgid "Speak with Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>セノーテ・ネヨーゾテ付近の採掘場で<sheet Item $n5 0>を採掘<else>クベージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>セノーテ・ネヨーゾテ付近の良木で<sheet Item $n5 0>を伐採<else>クベージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>セノーテ・モシュトラルで<sheet Item $n5 0>を釣る<else>クベージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der Nähe des Cenote Neyozzote <sheet Item $n5 9> sammeln<else>Kubeel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Nähe des Cenote Neyozzote <sheet Item $n5 9> sammeln<else>Kubeel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Am Cenote Moxutural <noun-de Item 1 $n5 1 4 1> fangen<else>Kubeel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près du cénote Neyozzote<else>Livrer <noun-fr Item 2 $n5 2 1> à Kubeel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du cénote Neyozzote<else>Livrer <noun-fr Item 2 $n5 2 1> à Kubeel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au cénote de Moxutural<else>Livrer <noun-fr Item 2 $n5 1 1> à Kubeel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if><else><if ($n4 == 17)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 3 $n5 2 1> to Kubeel Ja</if><else><if ($n4 == 1… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 3 $n5 2 1> to Kubeel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Moxutural<else>Deliver <noun-en Item 1 $n5 1 1> to Kubeel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Moxutural<else>Deliver <noun-en Item 1 $n5 1 1> to Kubeel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 3 $n5 2 1> to Kubeel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Moxutural<else>Deliver <noun-en Item 1 $n5 1 1> to Kubeel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: カゲージャと話す
+#. de: Mit Kageel Ja sprechen
+#. fr: Parler à Kageel Ja
+#. kind: objective
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_TODO_01:1"
+msgid "Speak with Kageel Ja."
+msgstr ""
+
+#. ja: この森の農業では、土の温度というのが懸念になりがちなんだ。<br>樹々が空を覆ってるから日が当たらなくて、<br>畑の土が冷たくなってしまうんだよね。
+#. de: Die Bodentemperatur bereitet uns große Sorgen. Das dichte Laub der Bäume lässt kaum Sonnenstrahlen durch, um die Felder zu erwärmen.
+#. fr: La forêt des zones en contrebas nous préoccupe beaucoup à cause de la température du sol. Le feuillage touffu des arbres recouvre entièrement le ciel, et peu de rayons du soleil parviennent donc à chauffer le sol des champs.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_001:1"
+msgid "Given the lack of direct sunlight here in the Ja Tiika Heartland, the cooler temperatures of the soil continue to be a point of concern."
+msgstr ""
+
+#. ja: それだと植物の生育を妨げてしまうから、<br>アンギルさんが、土自体の温度を上げる方法を試したいらしい。<br>発酵肥料を使って、土壌を活性化させるんだって。
+#. de: Natürlich hat sich Anggir schon der Sache angenommen. Sie glaubt, das Problem mit Kompostdünger lösen zu können. Gärungsprozesse entwickeln nämlich Wärme.
+#. fr: Tu comprends donc bien que cet état de fait ne plaît guère à Anggir, qui veut trouver un moyen de résoudre ce problème, notamment en utilisant de l'engrais de fermentation, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_002:1"
+msgid "Thankfully for us, Anggir has arrived at a solution─fermented fertilizer. Apparently, it invigorates the soil, generating heat as the compost decomposes."
+msgstr ""
+
+#. ja: けれど、前に素材調達してもらって用意した発酵肥料で、<br>土の温度が上げられたんだ！<br>だから、またお願いしたくてさ。
+#. de: Der Kompostdünger, den du uns letztes Mal gebracht hast, hat wahre Wunder gewirkt! Höchste Zeit, die Vorräte wieder aufzufüllen!
+#. fr: Et figure-toi que l'engrais de fermentation que tu nous as ramené la dernière fois a fait des merveilles<nbsp>! Il est donc grand temps de réapprovisionner les stocks, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_003:1"
+msgid "The fermented fertilizer has proven more effective than we dared hope, which is why I would ask you help us procure more materials."
+msgstr ""
+
+#. ja: もちろん、呪光灯もしっかり畑を温めてくれているよ。<br>アンギルさんいわく、引き続き土壌活性化でも温度を上げて、<br>作物のためにより良い畑にしていきたいってことでね。
+#. de: Natürlich leistet die Beleuchtung schon einen großen Teil der Arbeit, aber Anggir meint, dass eine noch höhere Temperatur unseren geliebten Feldern nur guttun könne.
+#. fr: Bien sûr, les lanternes arcaniques font déjà une grosse partie du boulot, mais Anggir pense qu'une température encore plus élevée ne peut qu'être bénéfique à nos petits champs chéris, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_004:1"
+msgid "That's not to discount the efforts of the Boonewa mages, mind you. Their illuminations have also helped to warm the soil. Which is why our combined efforts will make the fields all the more productive."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さんには、セノーテ・ネヨーゾテのあたりで、<br>「<sheet Item 48030 0>」を採集してほしくて。<br>これには有機物がたくさん含まれていて、発酵しやすいんだ。
+#. de: Bitte sammle in der Nähe des Cenote Neyozzote drei <noun-de Item 5 48030 2 4 1> ein. Daraus lässt sich ein prächtiger Kompostdünger machen, der unseren Feldern ordentlich einheizt.
+#. fr: <split " " 1><string $gs1></split>, tu es donc <if $gn4>la candidate idéale<else>le candidat idéal</if> pour nous ramener <noun-fr Item 1 48030 2 1>. D'après Anggir, on trouve une sacrée pelletée de matières organiques près du cénote Neyozzote.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_005:1"
+msgid "For your part, I need you to find some suitable soil around Cenote Neyozzote. It should contain traces of organic material essential for fermentation."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さんには、セノーテ・ネヨーゾテのあたりで、<br>「<sheet Item 48031 0>」を採集してほしくて。<br>水でふやけて剥がれた樹皮は、発酵しやすいんだ。
+#. de: Bitte sammle in der Nähe des Cenote Neyozzote drei <noun-de Item 5 48031 2 4 1> ein. Daraus lässt sich ein prächtiger Kompostdünger machen, der unseren Feldern ordentlich einheizt.
+#. fr: <split " " 1><string $gs1></split>, tu es donc <if $gn4>la candidate idéale<else>le candidat idéal</if> pour nous ramener <noun-fr Item 1 48031 2 1>. D'après Anggir, on trouve une sacrée pelletée de matières organiques près du cénote Neyozzote.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_006:1"
+msgid "For your part, I need you to find some sodden tree bark around Cenote Neyozzote. The excess water makes it easier to ferment."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さんには、<br>「<sheet Item 48032 0>」を、<br>セノーテ・モシュトラルで釣ってきてもらいたいんだ。
+#. de: Bitte fang am Cenote Moxutural <noun-de Item 1 48032 1 4 1>. Daraus lässt sich ein prächtiger Kompostdünger machen, der unseren Feldern ordentlich einheizt.
+#. fr: <split " " 1><string $gs1></split>, tu es donc <if $gn4>la candidate idéale<else>le candidat idéal</if> pour nous ramener <noun-fr Item 1 48032 1 1>. D'après Anggir, on trouve une sacrée pelletée de matières organiques au cénote de Moxutural.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_007:1"
+msgid "For your part, I need you to catch a mudfish in the waters around Moxutural Zooj. They're fairly small, which makes them perfect for fishmeal."
+msgstr ""
+
+#. ja: 魚粉にしやすい小魚でね。<br>餌は、<sheet Item 43849 0>がオススメだよ。
+#. de: Als Köder empfehle ich dir, <noun-de Item 5 43849 2 4 1> zu benutzen.
+#. fr: Il n'y a rien de mieux pour produire de la farine de poisson, ja. Et pour le pêcher, n'oublie pas <noun-fr Item 4 43849 1 1>.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_008:1"
+msgid "If you have trouble getting them to bite, try golden stonefly nymphs. They're sure to be tugging on your line in no time at all."
+msgstr ""
+
+#. ja: 発酵させると熱を持つから、<br>肥料に混ぜると土の温度も上がる……って寸法さ。<br>素材を調達できたら、畑にいる「クベージャ」に渡してね。
+#. de: Kubeel Ja hat bereits kompostierfähiges Material vorbereitet und wartet nur auf die letzte Zutat. Bring deinen Fang also direkt zu ihm auf die Felder.
+#. fr: Quand tu auras terminé, rapporte tes trouvailles à Kubeel Ja. Une fois tout ça mélangé, la température de nos sols devrait augmenter comme celle d'un désert en plein cagnard<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_009:1"
+msgid "When you've finished, take anything you find to Kubeel Ja."
+msgstr ""
+
+#. ja: よお、カゲージャから聞いたぜ、<br>新しく肥料にする素材を調達してくれるんだってな。<br>俺ぁなかなか手が離せなくてさ、助かるよ。
+#. de: Da ist ja <if $gn4>unsere fleißige Helferin<else>unser fleißiger Helfer</if>! Bitte beeile dich und sammle das Kompostmaterial. Unsere Pflänzchen bekommen schon kalte Füße, äh, Wurzeln!
+#. fr: Kageel Ja m'a prévenu de ton arrivée, <if $gn4>héroïne<else>héros</if> de Mamook<nbsp>! Heu<shy>reu<shy>se<shy>ment que tu es là pour nous rapporter de l'engrais, parce que moi, je peux pas quitter mon poste une seule seconde, ja<nbsp>!
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KUBEELJA_000_013:1"
+msgid "Kageel Ja tells me you're bringing supplies for the new fertilizer. Well, my hands are quite full at the moment, so I'll take any help I can get."
+msgstr ""
+
+#. ja: ああ、新しく肥料にする素材を調達してくれたんだったか？<br>苦労かけたな、ありがとよ！
+#. de: Da ist ja <if $gn4>unsere fleißige Helferin<else>unser fleißiger Helfer</if>! Hast du das Kompostmaterial? Dann immer her damit. Unsere Pflänzchen haben schon kalte Füße, äh, Wurzeln!
+#. fr: Tu nous as encore rapporté de l'engrais, <if $gn4>héroïne<else>héros</if> de Mamook<nbsp>? Qu'est-ce qu'on ferait sans toi, ja<nbsp>?
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KUBEELJA_000_014:1"
+msgid "Arrived with those fertilizer supplies, have you? Well, let's have them."
+msgstr ""
+
+#. ja: これはまた立派な代物だな。<br>よし、さっそく発酵させて肥料に混ぜこんでみるよ。
+#. de: Sehr schön! Genau, was ich brauche, um die Gärungsprozesse in Gang zu bringen.
+#. fr: Magnifique, du travail de pro<nbsp>! Je me charge de préparer tout ça sur-le-champ, si tu le veux bien.
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KUBEELJA_000_018:1"
+msgid "Wonderful. I'll get to mixing the fertilizer right away."
+msgstr ""
+
+#. ja: 立派な素材をありがとよ。<br>さっそく、発酵肥料として活用させてもらうぜ。
+#. de: Vielen Dank für die Hilfe. Ich werde dafür sorgen, dass der Kompostdünger auf die Felder kommt und unseren Pflänzchen schön einheizt.
+#. fr: Merci pour tes efforts<nbsp>! Je me charge de préparer tout ça sur-le-champ, si tu le veux bien.
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KUBEELJA_000_019:1"
+msgid "Thanks again for those supplies. Won't be long before we have a fresh new pile of fertilizer."
+msgstr ""
+
+#. ja: おかえり、<split " " 1><string $gs1></split>さん。<br>良い素材を渡してきてくれたみたいだね、ありがとう。
+#. de: Ich habe es schon von Kubeel Ja gehört. Danke, dass du bei der Herstellung des Kompostdüngers geholfen hast.
+#. fr: Comment va, <split " " 1><string $gs1></split><nbsp>? Kubeel Ja m'a dit à quel point tu avais bien travaillé, mais je n'en attendais pas moins de toi.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_020:1"
+msgid "Finished handing off the supplies, I see. Kubeel Ja must have been thrilled."
+msgstr ""
+
+#. ja: 土の温度は、特に種が芽吹くときに大切でさ、<br>適温にしてあげる必要があるんだ。
+#. de: Neben der Bodenbeschaffenheit und dem Äthergehalt ist die Temperatur auf den Feldern von größter Wichtigkeit. 
+#. fr: Il est essentiel que le sol soit à la bonne température lorsque les graines germent. C'est peut-être un détail pour certains, mais pour nous, ça veut dire beaucoup, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_021:1"
+msgid "And relieved, I'm sure. The right soil temperature is absolutely crucial during the budding stage."
+msgstr ""
+
+#. ja: だから、土壌の活性化は継続的に取り組もうって、<br>アンギルさんとも話していてね。<br>ぜひまた、素材調達を依頼させてほしいな。
+#. de: Nur wenn alles passt, können wir den bestmöglichen Ertrag erzielen. Aber um die Bodentemperatur brauchen wir uns keine Sorgen mehr zu machen. Dank dir!
+#. fr: Et encore plus pour Anggir, qui sera ravie que tu reviennes nous aider dès que tu en auras l'occasion<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam104_05264:TEXT_BANMAM104_05264_KAGEELJA_000_022:1"
+msgid "With this fertilizer, the fields are certain to thrive, so I hope you'll help keep us stocked with supplies."
+msgstr ""

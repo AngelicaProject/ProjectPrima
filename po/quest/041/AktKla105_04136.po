@@ -1,0 +1,553 @@
+# quest/041/AktKla105_04136 — «Boric's Choice» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 工匠殿のルルシャは、頼みたいことがあるようだ。
+#. de: Rurusha möchte dich um einen Gefallen bitten.
+#. fr: Rurusha semble avoir quelque chose d'important à vous demander.
+#. kind: journal
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_SEQ_00:1"
+msgid "Rurusha has something to ask of you."
+msgstr ""
+
+#. ja: 仕入れ担当の商人と話す
+#. de: Mit der Warenhändlerin an Thaliaks Pforte sprechen
+#. fr: Parler à la responsable de l'approvisionnement
+#. kind: objective
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_TODO_00:1"
+msgid "Speak with the merchant."
+msgstr ""
+
+#. ja: ルルシャと話す
+#. de: Mit Rurusha sprechen
+#. fr: Retourner parler à Rurusha
+#. kind: objective
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_TODO_01:1"
+msgid "Speak with Rurusha."
+msgstr ""
+
+#. ja: <if ($n1 < $n2)>製作手帳 魔法大学取引：<sheet ItemHQ 35836 0>を製作<else>ルルシャに<sheet ItemHQ 35836 0>を納品</if>
+#. de: <if ($n1 < $n2)>Akademielieferung: <noun-de ItemHQ 5 35836 1 4 1> herstellen<else><capitalize><noun-de ItemHQ 5 35836 1 4 1></capitalize> bei Rurusha abliefern</if>
+#. fr: <if ($n1 < $n2)>Fabriquer <noun-fr ItemHQ 1 35836 1 1><else>Livrer <noun-fr ItemHQ 2 35836 1 1> à Rurusha</if>
+#. kind: objective
+#. macro: <if ($n1 < $n2)>Synthesize a gold core <sheet Addon 9 0><else>Deliver the gold core <sheet Addon 9 0> to Rurusha</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet Addon 9 0> — a value from a game data sheet, such as a name; sheet = Addon, row = 9, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_TODO_02:1"
+msgid "<if ($n1 < $n2)>Synthesize a gold core <sheet Addon 9 0><else>Deliver the gold core <sheet Addon 9 0> to Rurusha</if>."
+msgstr ""
+
+#. ja: いらっしゃい、<split " " 1><string $gs1></split>さん。<br>今日も顔を見られて嬉しいわ。
+#. de: Hallo, <split " " 1><string $gs1></split>! Wie schön, dich zu sehen.
+#. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if> <split " " 1><string $gs1></split>. Ça me fait plaisir de te voir aujourd'hui.
+#. speaker: RURUSHA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_001:1"
+msgid "Welcome back, <split \" \" 1><string $gs1></split>. So wonderful to see you again."
+msgstr ""
+
+#. ja: ちょうど今しがた、<br>心核素材の調達をお願いしていた商人さんが、<br>港に到着したって連絡が届いてねぇ……。
+#. de: Gerade eben hat sich die Warenhändlerin gemeldet und mir mitgeteilt, dass das bestellte Metall für die Energiequelle eingetroffen ist.
+#. fr: Je viens juste de recevoir un message m'informant que la marchande à qui Boric avait commandé le minerai pour le noyau de la relique était arrivée au port.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_002:1"
+msgid "We just received word our delivery of core materials has come into port."
+msgstr ""
+
+#. ja: ボリックに受け取ってきてもらうのだけど、<br>よかったら、同行をお願いしてもいいかしら？<br>品質に問題ないか、職人であるあなたに確かめてほしいのよ。
+#. de: Boric wird es abholen, aber sei doch bitte so gut und begleite ihn. Vergewissere dich, dass das Material keine Mängel aufweist. Das kannst du von uns allen am besten einschätzen.
+#. fr: Je comptais d'ailleurs envoyer Boric le récupérer, pourrais-tu l'accompagner<nbsp>? Ton œil d'artisan<if $gn4>e</if> saura sûrement jauger de la qualité de sa livraison<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_003:1"
+msgid "Boric was just leaving to go and fetch them, but now that you're here, might I ask you to accompany him? I would be certain of the quality of these goods, and I trust your discerning artisan's eye."
+msgstr ""
+
+#. ja: 行ってくれるのね、ありがとう。<br>ふたりとも、お願いねぇ。
+#. de: Vielen Dank! Ich kann es kaum erwarten, das Material in den Händen zu halten.
+#. fr: C'est gentil, merci<nbsp>! Je compte sur vous deux<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_004:1"
+msgid "Fantastic! Well, hurry along, you two."
+msgstr ""
+
+#. ja: じゃあ、一緒に知神の港へ向かって、<br>そこで「仕入れ担当の商人」を探しましょう～！
+#. de: Also dann, lass uns gleich zum Hafen gehen. Das Material wurde zu der Warenhändlerin an Thaliaks Pforte geliefert.
+#. fr: Bien, allons trouver la marchande responsable de l'approvisionnement au port de l'Érudit.
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_005:1"
+msgid "Let's be on our way, then. The merchant said she would be waiting for us in Scholar's Harbor."
+msgstr ""
+
+#. ja: 来てもらって早々、<br>お使いを頼んでしまって、ごめんなさいねぇ。
+#. de: Vielen Dank, dass du Boric begleitest. Er ist in letzter Zeit etwas durch den Wind.
+#. fr: Désolée de te demander de l'aide dès ton arrivée, <split " " 1><string $gs1></split><nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_010:1"
+msgid "Sorry for sending you off when you've only just arrived, but I would leave nothing to chance with these supplies."
+msgstr ""
+
+#. ja: あっ、<split " " 1><string $gs1></split>さん！<br>この人が、素材の調達を頼んだ商人です～！
+#. de: Hallo, <split " " 1><string $gs1></split>! Das ist die Warenhändlerin, bei der Rurusha das Material bestellt hat.
+#. fr: Ah, <split " " 1><string $gs1></split><nbsp>! Voici la marchande à qui j'ai commandé le minerai<nbsp>!
+#. speaker: BORIC
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_011:1"
+msgid "Ah, <split \" \" 1><string $gs1></split>! This is the merchant I was telling you about."
+msgstr ""
+
+#. ja: どうもどうもー！<br>魔法大学の方でしょうか？
+#. de: Seid gegrüßt! Ihr kommt bestimmt von der Magieakademie, nicht wahr?
+#. fr: Bien le <if ($gn11 < 12)><if ($gn11 < 4)>bonsoir<else>bonjour</if><else><if ($gn11 < 17)>bonjour<else>bonsoir</if></if><nbsp>! Vous êtes envoyé<if $gn4>e</if> par l'académie de magie de Sharlayan<nbsp>?
+#. speaker: MERCHANT04136
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_000_015:1"
+msgid "'Ello, 'ello! 'Ow are you on this fine day? You're both from the Studium, yes?"
+msgstr ""
+
+#. ja: えーっと……<br>ルルシャ考古学研究室の者なんですけど～。
+#. de: Ja, genau, Professorin Rurusha schickt uns, um<nbsp>...
+#. fr: Euh, je suis ici pour la commande du professeur Rurusha...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_100_015:1"
+msgid "Why yes, we are actually. We've been sent by Professor Rurusha for─"
+msgstr ""
+
+#. ja: ああ！<br>調達のご依頼をいただいていた、鉱石の件ですね。<br>ご注文の内容と相違ないか、ご確認ください！
+#. de: Ah ja, sie hat mich damit beauftragt, ein besonders seltenes Metall zu beschaffen. Hier, bitte überzeugt euch von der erstklassigen Qualität!
+#. fr: Oh, c'est vous qui l'assistez dans ses recherches, j'imagine<nbsp>! Vous aviez passé commande pour du minerai, n'est-ce pas<nbsp>? Pouvez-vous vérifier que la livraison est conforme à ce que vous vouliez<nbsp>?
+#. speaker: MERCHANT04136
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_000_016:1"
+msgid "Ah, so you'd be 'ere for the minerals then. 'Ave a gander at 'em and let me know if they meet with your approval."
+msgstr ""
+
+#. ja: ……たしかに、お願いしていた鉱石で間違いないみたいです。<br><split " " 1><string $gs1></split>さん、どうですかね～……？
+#. de: Ja, das sieht gut aus. <split " " 1><string $gs1></split>, was meinst du?
+#. fr: En effet, tout m'a l'air en ordre. <split " " 1><string $gs1></split>, qu'en pensez-vous<nbsp>?
+#. speaker: BORIC
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_017:1"
+msgid "Well, they seem to be what we asked for. Any thoughts, <split \" \" 1><string $gs1></split>?"
+msgstr ""
+
+#. ja: 品質のほうも問題なさそうですか！<br>あぁぁ、よかった～。
+#. de: Die Qualität stimmt also! Da bin ich aber erleichtert.
+#. fr: La marchandise a donc l'air d'être de bonne qualité<nbsp>! Ah, quel soulagement<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_018:1"
+msgid "Oh, that's great to hear! What a relief."
+msgstr ""
+
+#. ja: はい、お代も確かにいただきました。<br>またのご利用、お待ちしておりますー！
+#. de: Vielen Dank für das Vertrauen. Beehrt mich bitte wieder, wenn ihr etwas braucht!
+#. fr: Le compte y est, c'est parfait. Revenez quand vous voulez<nbsp>!
+#. speaker: MERCHANT04136
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_000_020:1"
+msgid "Pleasure doin' business with you!"
+msgstr ""
+
+#. ja: 魔法大学のナモノ・タヤモノだ。<br>先日頼んでおいた学術書は、仕入れられたか？
+#. de: Ich bin Namono Tayamono von der Magieakademie. Ich möchte das bestellte Buch abholen.
+#. fr: Je suis Namono Tayamono, de l'académie de magie de Sharlayan. Avez-vous reçu l'ouvrage que je vous avais commandé<nbsp>?
+#. speaker: NAMONOTAYAMONO
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_NAMONOTAYAMONO_000_021:1"
+msgid "Do you have the tome I recently ordered for the Studium? The order was placed under Namono Tayamono."
+msgstr ""
+
+#. ja: ああ、どうもナモノ教授！<br>ばっちり仕入れてありますよ。
+#. de: Ah ja, Professor Namono! Das Buch ist heute eingetroffen.
+#. fr: Professeur Namono<nbsp>! Tout à fait, il est là<nbsp>!
+#. speaker: MERCHANT04136
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_000_022:1"
+msgid "Ah, Professor Namono! Always a pleasure. Of course I do!"
+msgstr ""
+
+#. ja: ご希望のもので間違いないか、ご確認くださいー。
+#. de: Ich hoffe, es ist das richtige.
+#. fr: Est-ce bien conforme à ce que vous aviez commandé<nbsp>?
+#. speaker: MERCHANT04136
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_100_022:1"
+msgid "'Ere it is. I hope it's to your likin'."
+msgstr ""
+
+#. ja: 頼んでおいたものと相違ない。<br>……中身のほうは、期待外れだったが。
+#. de: Nun ja, es ist das Buch, das ich bestellt habe<nbsp>... Doch leider scheint es nicht das zu beinhalten, was ich mir erhofft habe.
+#. fr: Oui... Même s'il semblerait que son contenu ne réponde pas vraiment à mes attentes...
+#. speaker: NAMONOTAYAMONO
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_NAMONOTAYAMONO_000_023:1"
+msgid "Yes, this is indeed what I requested you acquire, though I must say its contents appear to be somewhat lacking."
+msgstr ""
+
+#. ja: おや、そうでしたかぁ。<br>どうしましょう、返品されますかー？
+#. de: Oh, das tut mir leid. Wollt Ihr es zurückgeben?
+#. fr: Vous m'en voyez désolée<nbsp>! Souhaitez-vous le retourner<nbsp>?
+#. speaker: MERCHANT04136
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_100_023:1"
+msgid "Deary me! Do you wish to return it, then?"
+msgstr ""
+
+#. ja: いや、いい。<br>君の仕入れに不備はない、対価は支払おう。
+#. de: Nein, du hast keinen Fehler begangen und sollst für deine Mühen entlohnt werden.
+#. fr: Non, ce ne sera pas nécessaire. C'est bien le livre que j'avais commandé, je vais vous payer ce que je vous dois.
+#. speaker: NAMONOTAYAMONO
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_NAMONOTAYAMONO_000_024:1"
+msgid "No, no. You did your job and deserve to be compensated accordingly."
+msgstr ""
+
+#. ja: はい、お支払いありがとうございます！<br>今後ともごひいきに！
+#. de: Das ist sehr großzügig. Vielen Dank! Ich bin Euch jederzeit gerne wieder zu Diensten.
+#. fr: Merci beaucoup<nbsp>! Au plaisir de refaire affaire avec vous.
+#. speaker: MERCHANT04136
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_000_025:1"
+msgid "Thank you kindly. If there's nothin' else, I'll be on my way."
+msgstr ""
+
+#. ja: この本は、君にくれてやろう。<br>内容を読めば、私が取り組んでいる研究の素晴らしさが、<br>少しは理解できるだろうからな。
+#. de: Hier, du kannst das Buch haben. Wenn du es liest, erhältst du einen Eindruck davon, wie viel<shy>ver<shy>sprechend meine Forschung ist.
+#. fr: Tiens, je te l'offre. Lis, et tu comprendras la grandeur des recherches que je mène...
+#. speaker: NAMONOTAYAMONO
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_NAMONOTAYAMONO_000_026:1"
+msgid "Here, perhaps with this you will learn something about what constitutes worthwhile research."
+msgstr ""
+
+#. ja: もしも、興味が湧いてきたら、私の研究室にきたまえ。<br>未知言語の解読には、膨大な量の資料整理が必要でな……。<br>君のように根気ある人材は歓迎だ！
+#. de: Wenn du dich dafür interessierst, dann schau gerne mal bei meinem Studienzimmer vorbei. Die Entzifferung alter Schriften erfordert einige Fleißarbeit. Dafür wärst du mit deiner unendlichen Geduld sicher gut geeignet.
+#. fr: Et si jamais ça t'intéresse, je t'accueillerai dans mon laboratoire. L'étude des langues inconnues nécessite une grande capacité d'or<shy>ga<shy>ni<shy>sa<shy>tion. Quelqu'un d'aussi patient que toi me sera sûrement très utile.
+#. speaker: NAMONOTAYAMONO
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_NAMONOTAYAMONO_000_027:1"
+msgid "If it piques your interest, then feel free to visit me in my office. I would gladly welcome someone as determined as you to join my staff; we could do with another pair of hands."
+msgstr ""
+
+#. ja: 本の内容、ざっと読んではみましたけど……<br>俺にはちょっと難しすぎますね～。
+#. de: Ich habe mir das Buch angesehen, aber der Inhalt übersteigt meinen Horizont.
+#. fr: J'ai un peu feuilleté le livre, mais je dois avouer que c'est un poil trop compliqué pour moi, tout ça...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_100_027:1"
+msgid "A compendium of linguistic research. I fear its contents are beyond me."
+msgstr ""
+
+#. ja: 俺、昔から考古学が好きだったんですけど、<br>学生時代の成績は、下から数えたほうが早い感じで……。<br>研究者としては二流もいいとこなんですよ～。
+#. de: Ich hatte zwar schon immer ein großes Interesse an der Archäologie, doch an der Akademie zählte ich nicht gerade zu den besten Studenten. Und auch als Forscher kann man mich allenfalls zweitklassig nennen.
+#. fr: J'ai toujours aimé l'archéologie, vous savez. Mais mes notes étaient catastrophiques à l'école... Je n'ai pas l'étoffe d'un chercheur.
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_027:1"
+msgid "Archaeology has always been my preferred field of study. However, my marks in school often left much to be desired... To even call me a second-rate researcher would be flattery."
+msgstr ""
+
+#. ja: でも、ルルシャ教授は、不出来な俺を見捨てることなく、<br>優しく丁寧に指導してくれた……恩人なんです。
+#. de: Aber Professorin Rurusha hat mich trotzdem als ihren Assistenten akzeptiert und gibt mir das Gefühl, nützlich zu sein. Ich stehe tief in ihrer Schuld.
+#. fr: Mais madame Rurusha a quand même accepté de me prendre sous son aile. Elle m'explique toujours tout patiemment, je lui dois beaucoup.
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_028:1"
+msgid "But that mattered little to Professor Rurusha. She took me under her wing in spite of my shortcomings, and my performance greatly improved thanks to her tutelage."
+msgstr ""
+
+#. ja: 教授のおかげで、聖コイナク財団から勧誘を受けたんですけど、<br>師への恩返しのために、それを断ってここに残ったんです。<br>今度は助手として、俺がルルシャ教授を支えようって……。
+#. de: Auf ihre Empfehlung hin wurde ich sogar von der Sankt Coinach-Stiftung eingeladen, aber ich wollte lieber bei Professorin Rurusha bleiben und sie weiter als Assistent unterstützen.
+#. fr: C'est pour lui témoigner ma recon<shy>nais<shy>san<shy>ce que j'ai refusé de joindre la Fondation de Saint-Coinach et que je suis resté à l'académie de magie de Sharlayan.
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_029:1"
+msgid "So much so, I was offered a position working at Saint Coinach's Find after graduation. But I couldn't accept it─I owe a great debt to the professor for all she has done for me. So long as she has need, I will remain at her side."
+msgstr ""
+
+#. ja: でも、今の俺はさっぱり役に立ててない。<br>いっそのこと、ナモノ教授のところで雑用でもやった方が、<br>考古学の発展に、多少なりとも貢献できるんでしょうかね～……。
+#. de: Momentan beschleicht mich aber das Gefühl, völlig nutzlos zu sein. Sollte ich doch lieber bei Professor Namono anspruchslose Aufgaben über<shy>nehmen? Vielleicht könnte ich so wenigstens einen kleinen Beitrag für die Archäologie leisten.
+#. fr: Malgré ça, je ne lui suis d'aucune aide... Je contribuerais cer<shy>tai<shy>ne<shy>ment plus au développement de l'archéologie en faisant des petits boulots pour le professeur Namono...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_030:1"
+msgid "Alas, I don't feel I've been much help to her of late. Perhaps it would be for the best if I took on a few odd jobs for Professor Namono. At least then I would be contributing to the field in some way, however insignificant it may be..."
+msgstr ""
+
+#. ja: 何と言う？
+#. de: Was sagst du?
+#. fr: Que répondez-vous<nbsp>?
+#. speaker: Q1
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_Q1_000_000:1"
+msgid "What will you say?"
+msgstr ""
+
+#. ja: ルルシャがひとりぼっちになってしまう
+#. de: Rurusha würde dich sicher vermissen.
+#. fr: Tu laisserais Rurusha toute seule<nbsp>?
+#. speaker: A1
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_A1_000_001:1"
+msgid "Then Professor Rurusha would be all on her own."
+msgstr ""
+
+#. ja: 自分のことは自分で決めるしかない
+#. de: Das musst du selbst entscheiden.
+#. fr: Il n'y a que toi qui peux en décider.
+#. speaker: A1
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_A1_000_002:1"
+msgid "Only you can decide how you live your life."
+msgstr ""
+
+#. ja: こき使われそうだなぁ……
+#. de: Ich glaube, da will dich jemand ausnutzen.
+#. fr: Tu serais son esclave...
+#. speaker: A1
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_A1_000_003:1"
+msgid "Namono would work you to the bone, you know."
+msgstr ""
+
+#. ja: うう……そう、ですよね。<br>もう少し、じっくり考えてみます……。
+#. de: Ja<nbsp>... Ich muss mir das in Ruhe durch den Kopf gehen lassen<nbsp>...
+#. fr: Vous... vous avez raison... Je vais prendre le temps d'y réfléchir un peu mieux...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_031:1"
+msgid "Ugh, you are right... This is not a decision to be made lightly."
+msgstr ""
+
+#. ja: 愚痴っぽくなっちゃって、本当にすみません～！<br>聞いてくれて、ありがとうございます。
+#. de: Tut mir leid, dass ich dich mit meinen Sorgen behelligt habe. Danke für dein Verständnis!
+#. fr: Ah, désolé, je ne voulais pas vous importuner avec mes plaintes<nbsp>! Merci de m'avoir écouté, en tout cas<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_032:1"
+msgid "Apologies for my jabbering. You did not come all this way to hear my lamentations."
+msgstr ""
+
+#. ja: 「ルルシャ」教授のところに……<br>工匠殿に戻りましょうか。
+#. de: Komm, Professorin Rurusha wartet auf uns.
+#. fr: On devrait retourner auprès de madame Rurusha. Elle doit nous attendre dans l'aile des Fabricateurs.
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_033:1"
+msgid "Come, let us return to the professor."
+msgstr ""
+
+#. ja: 悩ましいことばかりで、うぅ……。<br>俺が倒れる前に、チャタ号が動いてくれるといいんですけど～。
+#. de: Vor lauter Sorgen habe ich Kopfschmerzen. Hoffentlich erlebe ich noch den Abschluss dieses Projekts, ehe ich umkippe.
+#. fr: Je n'en peux plus de toute cette pression...<nbsp>! J'espère qu'on arrivera à restaurer com<shy>plè<shy>te<shy>ment la relique avant que je ne m'effondre<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_035:1"
+msgid "I do hope the relic is restored soon... I fear the stress of this endeavor may be the death of me."
+msgstr ""
+
+#. ja: ふたりとも、おかえりなさい。<br>心核の素材に問題はなかったかしら？
+#. de: Na endlich! Habt ihr das wertvolle Material bekommen?
+#. fr: Vous revoilà, tous les deux<nbsp>! Le minerai a bien été livré<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_040:1"
+msgid "Welcome back, you two. Everything went well I take it?"
+msgstr ""
+
+#. ja: そう、品質も問題なかったのね！<br>確認をしてくれて、助かったわ……ありがとうねぇ。
+#. de: Beruhigend zu wissen, dass du dich von der Qualität überzeugen konntest. Vielen Dank!
+#. fr: Tu as même pu t'assurer de sa qualité, alors<nbsp>? Fantastique, merci beaucoup<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_041:1"
+msgid "Good to hear! Thanks again for lending us that discerning eye of yours."
+msgstr ""
+
+#. ja: あら、ボリック。<br>その本はどうしたの？<br>何か面白い文献でも見つけたのかしら。
+#. de: Sag mal, Boric, was hast du denn da für ein Buch mitgebracht?
+#. fr: Tiens<nbsp>? Où as-tu trouvé ce livre, Boric<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_042:1"
+msgid "I say, Boric, what is that tome you have there?"
+msgstr ""
+
+#. ja: えっ！？<br>あ、え～っと……その……<br>商人のところで、ナモノ教授に会ったんですよ～。
+#. de: Ach das?! Äh<nbsp>... Also, bei der Warenhändlerin sind wir Professor Namono begegnet.
+#. fr: Hein<nbsp>!? Ah, euh... C'est que nous sommes tombés sur le professeur Namono au port de l'Érudit.
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_043:1"
+msgid "Oh, this? Er, well, we happened to run into Professor Namono when we met the merchant, and..."
+msgstr ""
+
+#. ja: 取り寄せた本がハズレだったようで、押し付けられまして。<br>それで、その～……興味があればうちで働かないか、と。
+#. de: Er hatte das Buch bestellt, aber es entsprach wohl nicht seinen Erwartungen. Da hat er es mir geschenkt<nbsp>... und mich gefragt, ob ich nicht für ihn arbeiten möchte.
+#. fr: C'est lui qui avait commandé ce livre, mais apparemment ce n'était pas exactement ce qu'il attendait, alors il a décidé de s'en débarrasser en me le donnant. Et puis... il m'a aussi proposé de travailler pour lui...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_044:1"
+msgid "...The tome he ordered seemed to underwhelm him, and so he shoved it into my hands. He, er, also asked if I might consider working for him."
+msgstr ""
+
+#. ja: あらあら！<br>ナモノ教授に勧誘されるなんて、<br>あなたすごいじゃないの。
+#. de: Sieh an, eine persönliche Einladung von Professor Namono. Herzlichen Glückwunsch!
+#. fr: Vraiment<nbsp>? C'est bien la preuve que tu as du potentiel<nbsp>! Le professeur Namono a du flair<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_045:1"
+msgid "Look at you! Getting scouted by other professors. You're coming up in the world, Boric."
+msgstr ""
+
+#. ja: い、いや、雑用の手数が足りないだけみたいですし～。<br>それに、俺の頭じゃ未知言語の解読なんて無理だって、<br>教授もわかってるでしょう……。
+#. de: Nun ja, ich glaube, er will Hilfe bei einfachen Tätigkeiten. Ihm dürfte klar sein, dass ich keine alten Schriften entziffern kann.
+#. fr: Oh non, il avait simplement besoin d'un larbin... Et puis, vous savez bien que je ne suis pas assez intelligent pour aider dans des recherches sur les langues inconnues<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_046:1"
+msgid "Alas, he only wanted me to help out with odd jobs. I could never hope to aid anyone in deciphering ancient languages, as you well know..."
+msgstr ""
+
+#. ja: うちの助手はね、自己評価が低すぎるのが玉に瑕なの。<br>そんな優秀な助手が調べて、手配してくれたこの素材で、<br>「<sheet ItemHQ 35836 0>」の準備、お願いねぇ。
+#. de: Der gute Boric sollte sein Licht nicht unter den Scheffel stellen. Hoffentlich fasst er mehr Vertrauen, wenn er das Ergebnis unserer gemeinsamen Bemühungen sieht. Bitte mach dich gleich an die Arbeit und fertige <noun-de ItemHQ 1 35836 1 4 1> an. 
+#. fr: Comme tu peux le voir, mon assistant n'a qu'un seul défaut, son cruel manque de confiance en lui. En attendant, je compte sur toi pour utiliser le minerai qu'il a commandé pour fabriquer un joli <noun-fr Item 12 35836 1 1>, d'accord<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_046:1"
+msgid "I do wish he wouldn't put himself down like this. He contributes more than his fair share to my work, at the very least. But let us set that aside for now. The time is come for you to get to work on the core."
+msgstr ""
+
+#. ja: もし素材が足りなくなったら、<br>「ボリック」に遠慮なく言ってちょうだい。
+#. de: Falls du noch mehr Material brauchst, wird dir Boric behilflich sein.
+#. fr: N'hésite pas à demander à Boric si tu manques de matériaux<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_047:1"
+msgid "If you should have need of additional materials, Boric will provide."
+msgstr ""
+
+#. ja: 教授は、本当に優しい方ですよね～……<br>あ、素材は多めに発注してあるので、<br>足りなくなったら、遠慮せず言ってください～！
+#. de: Professorin Rurusha ist wirklich eine herzensgute Person. Damit alles glatt läuft, habe ich genügend Material auf Vorrat besorgt. Sag Bescheid, wenn du etwas brauchst!
+#. fr: Madame Rurusha est vraiment une personne gentille... Ah, j'ai commandé un surplus de matériaux, n'hésitez à vous servir si vous en avez besoin<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_050:1"
+msgid "I made a point of ordering slightly more than we needed just in case something like this happened. Here you go!"
+msgstr ""
+
+#. ja: おお……完成した心核、とっても綺麗ですねぇ。<br>さっそく教授に渡してあげてください！
+#. de: Ah, der Energiekern macht einen guten Eindruck. Professorin Rurusha wird sich freuen.
+#. fr: Oh, il est magnifique<nbsp>! Dépêchez-vous de le donner à madame Rurusha<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_051:1"
+msgid "It's...beautiful. Go and show it to the professor!"
+msgstr ""
+
+#. ja: いよいよ修復作業も大詰めよ。<br>「<sheet ItemHQ 35836 0>」の準備をお願いね。
+#. de: Mit <noun-de ItemHQ 2 35836 1 3 1> rückt der Erfolg unseres Projekts in greifbare Nähe.
+#. fr: Enfin, nous avons bientôt terminé de restaurer la Dhyata dorée. J'ai hâte de remplacer son noyau par celui que tu auras fabriqué<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_052:1"
+msgid "We're so, so close. Let me know once you've finished making the core."
+msgstr ""
+
+#. ja: 心核の交換はかなり緊張したけれど、無事に終えられたわ。<br>用意してもらったものが、高品質だったおかげね。<br>あとは、動くことを祈るばかりよ……。
+#. de: Beim Austausch des Energiekerns war ich ganz schön nervös, aber er hat perfekt gepasst. Es bleibt nur noch zu hoffen, dass unsere Anstrengungen von Erfolg gekrönt werden.
+#. fr: Je dois avouer que j'étais très nerveuse à l'idée de remplacer le noyau, mais grâce à la grande qualité de ton artisanat tout s'est bien passé<nbsp>! Maintenant, il ne nous reste plus qu'à espérer qu'elle bouge<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_055:1"
+msgid "Well, that was nerve-racking work, but I've successfully replaced the old core with your new one. Now we need but pray that it works..."
+msgstr ""
+
+#. ja: 黄金のチャタ号が、一瞬だけ宙に浮かび上がった！<br>しかし、すぐに元の位置へ落下してしまい、<br>カタカタと物音をたてている。
+#. de: Der Goldene Dhyata ist kurz abgehoben, doch dann leider wieder zu Boden gestürzt. Dabei war ein knackendes Geräusch zu hören.
+#. fr: La Dhyata dorée s'est sou<shy>dai<shy>ne<shy>ment élevée dans les airs<nbsp>! Cependant, elle est im<shy>mé<shy>dia<shy>te<shy>ment retombée et émet maintenant d'étranges cliquetis.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_SYSTEM_000_056:1"
+msgid "For the briefest of moments, the Golden Dhyata took flight! Unfortunately, it immediately falls to the table. A rattling sound can now be heard coming from within."
+msgstr ""
+
+#. ja: あらまあ、すごいじゃない！<br>以前にボリックが言っていたとおり、<br>飛空艇みたいに、宙に浮くことができるんだわ……！
+#. de: Oh, wie wundervoll! Boric hatte Recht mit seiner Vermutung. Es handelt sich um ein Fluggerät!
+#. fr: Oh, mais c'est fantastique<nbsp>! Tu avais raison, Boric<nbsp>! Elle vole<nbsp>!
+#. speaker: RURUSHA
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_057:1"
+msgid "Well, what do you know? It really <i>can</i> fly like an airship!"
+msgstr ""
+
+#. ja: ま、まさか本当に、自律的に飛ぶなんて……！<br>アラグ文明の遺産ならまだしも、異なる時代の遺物なのに！<br>やっぱり、教授の勘に間違いは……
+#. de: Es kann fliegen?! Bei einem allagischen Artefakt hätte ich es noch erwartet, aber es stammt aus einer anderen Zeit! Professorin Rurusha hat sich nicht getäuscht<nbsp>... 
+#. fr: Elle... elle a vraiment volé<nbsp>! Le professeur avait raison, cette relique est incroyable...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_058:1"
+msgid "I can hardly believe my eyes! Are you certain it is not Allagan in origin? I can think of no other ancient civilization capable of fashioning such a mammet."
+msgstr ""
+
+#. ja: い、いや、でもですよ？<br>動力部品と心核の交換を終えた今、<br>これ以上、いったいどこを直そうっていうんですか……！？
+#. de: Aber wir haben doch schon alle wichtigen Bauteile ausgetauscht und es ist immer noch kaputt. Was sollen wir denn jetzt noch reparieren?!
+#. fr: Non, attendez... Je reconnais que cet artefact renferme une technologie im<shy>pres<shy>sion<shy>nante... Mais nous avons changé son noyau, son moteur, son armature... il n'y a plus rien à réparer<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_059:1"
+msgid "Hmm... Strange, though, that it continues to function poorly despite replacing all its parts."
+msgstr ""
+
+#. ja: これじゃあ……<br>このままじゃあ、ガラクタも同然ですよ～……！
+#. de: In dem Zustand ist es immer noch Schrott!
+#. fr: J'en viens à me dire que c'était bien une babiole sans valeur, finalement...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_060:1"
+msgid "Which leaves us with what is now essentially a prohibitively expensive ornament."
+msgstr ""
+
+#. ja: ふふ、そう慌てなくて大丈夫よ。<br>ボリックは、ちゃんと現状をしっかり理解できているわ。
+#. de: Ach, mein lieber Boric, beruhige dich! Ich gebe zu, wir sind noch nicht ganz am Ziel.
+#. fr: Ne désespère pas, Boric. Tout n'est pas encore perdu.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_061:1"
+msgid "I'll grant you our results thus far are somewhat less than satisfactory, but this is not cause for panic."
+msgstr ""
+
+#. ja: でもね、考古学研究というものは、<br>行き詰まったように思えるときが本当におもしろいものよ。
+#. de: Aber in der Archäologie wird es immer dann am spannendsten, wenn wir auf scheinbar unlösbare Rätsel stoßen.
+#. fr: Et puis tu sais, les recherches en archéologie sont plus in<shy>té<shy>res<shy>santes lorsque nous nous retrouvons au pied du mur<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_062:1"
+msgid "Archaeology is at its most interesting when you come up against a hurdle like this!"
+msgstr ""
+
+#. ja: だって、そこに解くべき謎があるということですもの。
+#. de: Und wir werden dieses Rätsel lösen!
+#. fr: Nous avons une nouvelle énigme à résoudre, n'est-ce pas passionnant<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_063:1"
+msgid "Don't you just love being challenged to solve a good mystery?"
+msgstr ""
+
+#. ja: で、でも…………
+#. de: A-Aber<nbsp>...
+#. fr: Mais...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_064:1"
+msgid "Well..."
+msgstr ""
+
+#. ja: チャタ号が役立つ魔法人形か、それとも玩具に過ぎないのか……<br>いずれにせよ、その答え合わせはしたいと思っているの。<br>私は研究者だもの、好奇心は抑えられないわ。
+#. de: Mein Forschergeist verlangt nach einer Antwort darauf, ob es sich bei dem Goldenen Dhyata um eine magische Marionette oder um ein Spielzeug handelt.
+#. fr: La Dhyata dorée est-elle un pantin enchanté ou un simple jouet<nbsp>? La seule façon de s'en assurer est de continuer nos recherches... N'es-tu pas curieux<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_065:1"
+msgid "Only time will tell if the Golden Dhyata is truly a mammet, or simply someone's old plaything. But I could never forgive myself were I to move on to another project without first uncovering all our friend's secrets."
+msgstr ""
+
+#. ja: まったく動くことのなかったこの子が、<br>一瞬でも浮かび上がったのは、大きな前進よ。
+#. de: Und ich finde, es ist bereits ein großer Fortschritt, dass wir diesem reglosen Gegenstand zumindest etwas Leben eingehaucht haben.
+#. fr: Elle ne bougeait pas du tout lorsque nous l'avons obtenue, et pourtant elle vient juste de s'envoler devant nos yeux<nbsp>! Nous avons fait de gros progrès, tu ne trouves pas<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_066:1"
+msgid "Just think back to the state we found it in, and yet it's now capable of flight for goodness' sake! We've made incredible progress."
+msgstr ""
+
+#. ja: ただ、さっき聞こえた音が気がかりねぇ……。<br>私の組み立て方が悪かったのかもしれないから、<br>一度ばらしてみて、改めて原因を探るしかなさそう。
+#. de: Das Geräusch, das eben zu hören war, bereitet mir Sorgen. Vielleicht ist mir bei der Reparatur ein Fehler unterlaufen. Ich werde die Einzelteile noch einmal ausbauen und genau unter die Lupe nehmen.
+#. fr: Je vais continuer mes recherches afin de découvrir la source du drôle de son qu'elle a émis tout à l'heure.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_067:1"
+msgid "That said, the rattling noise just now does have me worried. Perhaps I made a mistake somewhere when inserting the new parts. We'll need to dismantle it once more and see if we can't deduce what went wrong."
+msgstr ""
+
+#. ja: 少しだけ、時間をちょうだい。<br>私のほうでできることがないかも、調べておくわ。
+#. de: Das wird etwas Zeit in Anspruch nehmen. Bitte geduldet euch so lange.
+#. fr: Donnez-moi un peu de temps afin de décider de la suite des opérations, d'accord<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_068:1"
+msgid "Until then, I bid you get some rest. I will let you know the very moment we have finished."
+msgstr ""
+
+#. ja: 次のクエストは、<br>「鍛冶師／甲冑師／彫金師」のいずれかがレベル88以上になると、<br>工匠殿の「ルルシャ」から受注可能です。
+#. de: Sobald du als <if $gn4>Grobschmiedin<else>Grobschmied</if>, <if $gn4>Plattnerin<else>Plattner</if> oder <if $gn4>Goldschmiedin<else>Goldschmied</if> Stufe 88 erreicht hast, kannst du von Rurusha einen neuen Auftrag erhalten.
+#. fr: Rurusha propose la prochaine quête aux forgerons, armuriers ou orfèvres de niveau 88.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_SYSTEM_000_069:1"
+msgid "The next quest will be available from Rurusha upon reaching level 88 as a blacksmith, armorer, or goldsmith."
+msgstr ""
+
+#. ja: 本クエストで製作した「NQアイテム」を所持しています。<br>このアイテムは、使用することはありません。<br>売却もできませんので、不用でしたら破棄してください。
+#. de: Gegenstände normaler Qualität, die im Rahmen dieses Auftrags angefertigt wurden, sind nutzlos und sollten weggeworfen werden.
+#. fr: Les objets de qualité normale fabriqués au cours de cette quête n'ayant aucune utilité et ne pouvant être vendus, il est recommandé de les jeter.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_SYSTEM_100_070:1"
+msgid "Normal-quality items crafted in the course of this quest serve no purpose and cannot be sold. It is recommended that you discard them."
+msgstr ""

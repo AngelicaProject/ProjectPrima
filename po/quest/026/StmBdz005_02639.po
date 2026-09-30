@@ -1,0 +1,190 @@
+# quest/026/StmBdz005_02639 — «Magiteknical Failure» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: カストルム・オリエンスのルーツキルツ大甲士は、頼みごとがあるようだ。
+#. de: Loezkirz ist auf deine Kampf<shy>erfahrung angewiesen.
+#. fr: Le capitaine Loezkirz semble avoir besoin de votre aide.
+#. kind: journal
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_SEQ_00:1"
+msgid "Captain Loezkirz has lost something very important."
+msgstr ""
+
+#. ja: グ・ニブニパ少甲士と話す
+#. de: Mit G'nibnpha sprechen
+#. fr: Parler à G'nibnpha
+#. kind: objective
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_TODO_00:1"
+msgid "Speak with Lieutenant G'nibnpha."
+msgstr ""
+
+#. ja: 鹵獲魔導アーマーに騎乗してイーストエンド混交林東へ向かい<br>現れた<sheet BNpcName 5866 0>を討伐
+#. de: Auf Magitek-Kampfmaschine die neuartigen Schlitzer im östlichen Ostend-Mischwald beseitigen
+#. fr: Piloter une armure magitek et éliminer les lacératrices expérimentales, aux Confins est
+#. kind: objective
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_TODO_01:1"
+msgid "Pilot the magitek armor to East End and destroy the Garlean drones."
+msgstr ""
+
+#. ja: 鹵獲魔導アーマーに騎乗してベロジナ川北西へ向かい<br>現れた<sheet BNpcName 5866 0>を討伐
+#. de: Auf Magitek-Kampfmaschine die neuartigen Schlitzer am Nordwestufer des Velodyna beseitigen
+#. fr: Piloter une armure magitek et éliminer les lacératrices expérimentales, près de la Velodyna
+#. kind: objective
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_TODO_02:1"
+msgid "Pilot the magitek armor to Velodyna River and destroy the Garlean drones."
+msgstr ""
+
+#. ja: ルーツキルツ大甲士と話す
+#. de: Loezkirz Bericht erstatten
+#. fr: Parler à Loezkirz
+#. kind: objective
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_TODO_03:1"
+msgid "Report to Captain Loezkirz."
+msgstr ""
+
+#. ja: おぉ、<split " " 2><string $gs1></split><if ($gn52 > 0)><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>、いいところに！<br>緊急事態が発生したのだ、任務への協力を願えるか？
+#. de: Oh, <if ($gn52 > 0)><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split>! Du kommst wie gerufen! Kannst du uns bei einem Notfall helfen?
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if>, vous tombez bien<nbsp>! Votre aide serait la bienvenue pour débloquer une situation critique.
+#. speaker: LOEZKIRZ
+#. macro: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><string $gs1> of the Twin Adders<else><string $gs1> of the Immortal Flames</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_000:1"
+msgid "<if ($gn52 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><if ($gn53 > 0)><string $gs1> of the Twin Adders<else><string $gs1> of the Immortal Flames</if></if>. Just the <if $gn4>woman<else>man</if> I wanted to see."
+msgstr ""
+
+#. ja: 長城にて鹵獲した帝国軍の無人兵器を調査していたところ、<br>数機が突然暴走し、東の方角へ飛び去っていってしまったのだ。<br>民間人への危害を防ぐためにも、迅速に処理する必要がある。
+#. de: Wir haben am Wall einige beschädigte garleische Waffen untersucht, da haben sie auf einmal Reißaus genommen. Offenbar eine vorprogrammierte Funktion, falls sie dem Feind in die Hände fallen. Jedenfalls sind diese Magitek-Schlitzer in Richtung Osten verschwunden. Wir müssen sie unschädlich machen, bevor sie Zivilisten gefährden.
+#. fr: Alors que nos ingénieurs inspectaient des unités mécaniques autonomes de l'armée impériale saisies à la Muraille de Baelsar, plusieurs d'entre elles ont échappé à leur contrôle et se sont enfuies. La sécurité des civils est menacée.
+#. speaker: LOEZKIRZ
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_001:1"
+msgid "We've misplaced a number of Garlean drones taken from Baelsar's Wall. And by misplaced, I mean the damn things sprang to life and stormed out of the base. They need to be dealt with before any civilians come to harm."
+msgstr ""
+
+#. ja: 貴官は、魔導兵器との戦いに豊富な経験を持つそうだな。<br>追撃作戦を指揮している「グ・ニブニパ少甲士」に協力し、<br>無人兵器への対応を頼みたい！
+#. de: Du mit deiner reichhaltigen Erfahrung im Kampf gegen garleische Kampf<shy>maschinen solltest das doch schaffen. Können wir mit dir rechnen? G'nibnpha wird dir die Einzelheiten erklären.
+#. fr: J'ai chargé la sous-lieutenante G'nibnpha de mener la traque à l'aide d'armures magitek. Puisque votre dextérité aux commandes de ces engins n'est plus à démontrer, pourriez-vous aller lui proposer votre assistance<nbsp>?
+#. speaker: LOEZKIRZ
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_002:1"
+msgid "Being familiar with magitek as you are, I can think of no one better to assist us. If you would be willing to help, go and speak with Lieutenant G'nibnpha. She is overseeing the initiative to terminate the drones."
+msgstr ""
+
+#. ja: 作戦の詳細は、「グ・ニブニパ少甲士」から話を聞いてくれ。
+#. de: Sprich mit G'nibnpha, um die Einzelheiten über die außer Kontrolle geratenen Schlitzer zu erfahren.
+#. fr: J'ai chargé la sous-lieutenante G'nibnpha de mener la traque à l'aide d'armures magitek. Pourriez-vous aller lui proposer votre aide<nbsp>?
+#. speaker: LOEZKIRZ
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_003:1"
+msgid "Lieutenant G'nibnpha is well versed in magitek technology and should be able to answer any questions you have."
+msgstr ""
+
+#. ja: 助力に感謝します！<br>さっそくですが、暴走した無人兵器についての解説を……<br>件の機体は、新型装甲材の試験機であったことが判明しています。
+#. de: Vielen Dank für deine Hilfe! Loezkirz hat dir ja schon geschildert, was passiert ist. Die Kampf<shy>maschinen waren von einem neuartigen Typ, klein und wendig und mit einer fortschrittlichen Panzerung versehen.
+#. fr: Votre aide est la bienvenue<nbsp>! Sans plus attendre, laissez-moi vous en dire plus à propos des unités mécaniques autonomes qui ont prrris la fuite. D'après nos ingénieurs, il s'agirait de modèles expérimentaux.
+#. speaker: GNIBNPHA
+#. macro: <if ($gn52 > 0)>Ah, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)>Ah, <string $gs1><else>Ah, <string $gs1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_GNIBNPHA_000_010:1"
+msgid "<if ($gn52 > 0)>Ah, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><if ($gn53 > 0)>Ah, <string $gs1><else>Ah, <string $gs1></if></if>! Your assistance is greatly appreciated. The drones were not in our possession for very long, but a cursory inspection showed they are made with a heretofore unknown metal alloy."
+msgstr ""
+
+#. ja: そのため、通常兵器による攻撃は、効果が薄いでしょう。<br>そこで、ガーロンド・アイアンワークス社の協力の下、<br>無人制御機構を焼き切る、特殊エネルギー弾を用意しました。
+#. de: Deswegen konnten wir mit unseren Waffen nicht viel gegen sie ausrichten. Die Gar<shy>lond-Me<shy>tall<shy>wer<shy>ke haben uns aber glück<shy>licher<shy>weise mit schwerem Geschütz ausgestattet. Ein spezielles Hochenergie-Geschoss.
+#. fr: Leur cuirasse est faite d'un alliage spécial qui semble invulnérable à la plupart des attaques. Heu<shy>reu<shy>se<shy>ment, les Forges de Garlond ont réussi à développer un nouveau type de rayon capable de perrrcer cette protection.
+#. speaker: GNIBNPHA
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_GNIBNPHA_000_011:1"
+msgid "They are all but impervious to traditional firearms, which is why we commissioned Garlond Ironworks to fashion a weapon capable of penetrating their armor."
+msgstr ""
+
+#. ja: この対抗兵器を、鹵獲した魔導アーマーに搭載しましたので、<br><split " " 2><string $gs1></split><if ($gn52 > 0)><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>には、<br>その操縦をお任せしたいのです。
+#. de: Wir haben es auf eine Magitek-Kampfmaschine montiert, die wir gekapert haben. Kannst du so etwas steuern?
+#. fr: Le canon en question a déjà été installé sur une armure magitek qui est prrrête à être montée. Pourriez-vous vous en servir pour partir à la poursuite des unités impériales qui ont pris la fuite<nbsp>?
+#. speaker: GNIBNPHA
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_GNIBNPHA_000_012:1"
+msgid "It has since been fitted to a suit of magitek armor, which I would ask you to pilot."
+msgstr ""
+
+#. ja: 過去、カストルム・メリディアヌムでの戦いにおいても、<br>魔導アーマーを操縦した経験がおありだそうですね？<br>その技術を、どうかお貸しください！
+#. de: Wenn man mich recht informiert hat, hast du in der Schlacht in Castrum Meridianum bereits Erfahrung damit gesammelt. 
+#. fr: Personne mieux que vous ne sait piloter une arrrmure magitek, ici. Avec vous, nul doute que la menace qui pèse sur les civils de Castrum Oriens à cause de cet incident sera annihilée au plus vite<nbsp>!
+#. speaker: GNIBNPHA
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_GNIBNPHA_000_013:1"
+msgid "If I am not mistaken, this would not be the first time you've piloted one of these suits. It should take you no time, then, to familiarize yourself with the controls."
+msgstr ""
+
+#. ja: 偵察兵の報告によると、目標は「イーストエンド混交林」東部と、<br>「ベロジナ川」北西の沿岸にて、警戒態勢に入ったとのこと。<br>危険な任務ですが……どうか、よろしくお願いします！
+#. de: Wir haben die wildgewordenen Maschinen inzwischen gesichtet, und zwar im Osten des Ostend-Mischwalds und am Nordwestufer des Velodyna. Pass auf dich auf!
+#. fr: D'après nos éclairrreurs, les fuyards sont partis en direction des Confins est et de la Velodyna. <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if>, je compte sur vous<nbsp>!
+#. speaker: GNIBNPHA
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_GNIBNPHA_000_014:1"
+msgid "Now, the drones were last sighted due east of here and to the north along the Velodyna River. I fear recapturing them is out of the question, so do whatever you deem necessary to stop them."
+msgstr ""
+
+#. ja: 攻撃目標は、「イーストエンド混交林」東部と、<br>「ベロジナ川」北西の沿岸にて、警戒態勢に入っているとのこと。<br>鹵獲した魔導アーマーに搭乗し、速やかにこれを破壊してください。
+#. de: Wir haben die wildgewordenen Schlitzer im Osten des Ostend-Mischwalds und am Nordwestufer des Velodyna gesichtet. Pass auf dich auf, wir wissen nicht, ob unsere Kanone ihre Panzerung auch wirklich durchschlägt.
+#. fr: D'après nos éclaireurs, les unités autonomes sont parties en direction des Confins est et de la Velodyna. Je compte sur vous pour les mettre horrrs d'état de nuire au plus vite<nbsp>!
+#. speaker: GNIBNPHA
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_GNIBNPHA_000_015:1"
+msgid "I doubt they've gone much further than the Velodyna River. Please hurry, before anyone comes to harm."
+msgstr ""
+
+#. ja: おお、<if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>！<br>無事に無人兵器を破壊してくれたようだな！<br>隊を代表して、感謝させてもらいたい！
+#. de: Sag bloß, du hast es schon geschafft! Saubere Arbeit, <if ($gn52 > 0)><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split>!
+#. fr: Ça y est, vous avez éliminé les unités impériales qui s'étaient échappées<nbsp>? Merci, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if>, vous venez de nous enlever une belle épine du pied<nbsp>!
+#. speaker: LOEZKIRZ
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_020:1"
+msgid "Welcome back. I take it the drones have been disposed of, then. Excellent work."
+msgstr ""
+
+#. ja: 魔導アーマーの操縦経験を持つ貴官が、<br>たまたま、この場に居合わせてくれて助かった……。<br>この辺りは、今後の課題となりそうだな。
+#. de: Wir haben nicht gerade viele Leute hier, die eine Magitek-Kampfmaschine steuern können. Das müssen wir in Zukunft wohl ändern.
+#. fr: C'est une chance que vous ayez été parmi nous pour faire face à cette situation critique. Je ne sais pas si quelqu'un d'autre que vous aurait été en mesure de manier ce nouveau type de canon sur une armure magitek...
+#. speaker: LOEZKIRZ
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_021:1"
+msgid "We were quite fortunate for your presence. Save for Lieutenant G'nibnpha, none of my men can even activate a suit of magitek armor, let alone pilot one in combat."
+msgstr ""
+
+#. ja: それにしても、帝国も厄介な代物を造ってくれたものだ。<br>バエサルの長城には、活動停止中の無人兵器がまだあるらしいが、<br>またいつ暴走するとも限らない。
+#. de: Diese neuen Kampf<shy>maschinen sind eine wahre Plage. Auf dem Baelsar-Wall liegen noch unzählige davon herum, und wer weiß, wie viele sich irgendwann wieder selbst in Betrieb setzen.
+#. fr: L'important, c'est que les civils de Castrum Oriens soient hors de danger. Par contre, il reste encore un bon nombre d'unités autonomes du même type sur la Muraille de Baelsar, qui menacent de s'activer à tout moment...
+#. speaker: LOEZKIRZ
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_022:1"
+msgid "I only pray that isn't to our detriment in the future. There's still plenty more of those drones out there along Baelsar's Wall. If any more of them should suddenly stir..."
+msgstr ""
+
+#. ja: ガーロンド・アイアンワークス社と連携して、<br>調査についても、慎重に進めることにしよう。
+#. de: Hoffentlich können uns die Gar<shy>lond-Me<shy>tall<shy>wer<shy>ke bei der Beseitigung ein bisschen unter die Arme greifen.
+#. fr: Nos ingénieurs vont continuer à collaborer avec les Forges de Garlond pour tenter d'en savoir plus au sujet de ces machines. En attendant, si un nouvel incident se produit, j'espère qu'on pourra compter sur vous<nbsp>!
+#. speaker: LOEZKIRZ
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_LOEZKIRZ_000_023:1"
+msgid "At any rate, we will continue working with Garlond Ironworks so that should such a day come, we will be ready."
+msgstr ""
+
+#. ja: 無人兵器の撃破に成功したようですね。<br>「ルーツキルツ大甲士」に、報告をお願いします！
+#. de: Du hast die Schlitzer alle unschädlich gemacht? Vielen Dank! Bitte erstatte doch Loezkirz gleich Bericht.
+#. fr: Vous avez réussi à vous débarrasser des unités impériales qui avaient prrris la fuite<nbsp>? Quelle bonne nouvelle<nbsp>! Allez vite faire savoir au capitaine Loezkirz que la situation est sous contrôle.
+#. speaker: GNIBNPHA
+msgctxt "quest/026/StmBdz005_02639:TEXT_STMBDZ005_02639_GNIBNPHA_000_024:1"
+msgid "The drones have been destroyed? Thank goodness. Captain Loezkirz will be glad to hear it."
+msgstr ""

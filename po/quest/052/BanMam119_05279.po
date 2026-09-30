@@ -1,0 +1,172 @@
+# quest/052/BanMam119_05279 — « A Welcoming Fragrance» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、施設の改善のため手を貸してほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja braucht Hilfe zur Ein<shy>rich<shy>tungs<shy>ver<shy>bes<shy>se<shy>rung.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja voudrait vous réquisitionner pour rendre Gok Golma plus accueillant.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_SEQ_00:1"
+msgid "Kageel Ja seeks your aid in further improving Gok Golma.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_SEQ_01:1"
+msgid "Deliver the requested materials to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>気球発着場付近の採掘場で<sheet Item $n5 0>を採掘<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>ヤクアワク・ゾユ付近の良木で<sheet Item $n5 0>を伐採<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>ヤクアワク・ゾユで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der Nähe vom Ballonplatz <noun-de Item 5 $n5 2 4 1> abbauen<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Nähe vom Yak Awak Tsoly <noun-de Item 5 $n5 2 4 1> ernten<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Yak Awak Tsoly <noun-de Item 1 $n5 1 4 1> fangen<else>Kageel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> au nord de l'embarcadère à ballons<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du Yak Awak Tsoly<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au Yak Awak Tsoly<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 =… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さん、このあたりも、<br>だいぶ活気づいてきたと思わない？
+#. de: Es ist hier in letzter Zeit recht lebhaft geworden, findest du nicht auch, <split " " 1><string $gs1></split>?
+#. fr: Ah, <split " " 1><string $gs1></split><nbsp>! Tu ne trouves pas que la ferme est désormais bien plus vivante qu'à ses débuts, ja<nbsp>?
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_000:1"
+msgid "Things around here have become so much busier than when we began, eh, <split \" \" 1><string $gs1></split>?"
+msgstr ""
+
+#. ja: 農園に野菜の取引所が設けられて以来、<br>ブラーシャ狩猟団もここへ立ち寄ってくれるようになってね。<br>マムークからのお客さんと話したり、いい交流が続いてるんだ。
+#. de: Seit der Gemüsestand errichtet wurde, erhalten wir sogar regelmäßig Besuch von den Br'aax-Jägern, was den Austausch zwischen ihnen und den Einwohnern von Mamook positiv fördert.
+#. fr: Depuis qu'on a installé le comptoir de vente de légumes, les Pisteurs br'aax nous rendent visite très souvent. Cet endroit leur permet d'échanger avec nos clients venus de Mamook.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_001:1"
+msgid "Even the Brethren of Br'aax have been known to stop by and stay awhile. It's proven a great spot for them to interact with our customers from Mamook."
+msgstr ""
+
+#. ja: だからこそ、ここを誰もが落ち着ける場所にしたいんだよね。<br>そこで、シュバラール族の人に聞いてみたんだけど……<br>彼らには「いい香りのもの」を用意して安らぐ文化があるそうだ。
+#. de: Deshalb möchte ich sicherstellen, dass sich auch wirklich jeder bei uns wohlfühlen kann. Ich habe mich daher mit einigen Xbr'aal unterhalten, und wie es scheint, gibt es bei ihnen einen Brauch, sich mit wohlriechenden Düften zu entspannen.
+#. fr: Je voudrais m'assurer que cet endroit devienne un lieu de rencontre privilégié où tous se sentiront bienvenus, ja. J'ai discuté récemment avec un Xbr'aal de passage, et il m'a raconté que chez eux, ils utilisent des arômes pour créer une atmosphère agréable.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_002:1"
+msgid "Which is why I want to go one step further and make of the gainery a place where everyone can feel welcomed and relaxed. To that end, I spoke with one of our visitors and learned that the Xbr'aal use a pleasing aroma to create a restful atmosphere."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さんが採ってくれたいい香りの品、<br>ブラーシャ狩猟団の人たちからも、落ち着けるって好評だよ。
+#. de: Die Duftstoffe, die ich letztes Mal aus deinen Materialien herstellen konnte, wurden von den Br'aax-Jägern bis in die Himmel gelobt.
+#. fr: Les produits aromatiques que tu nous as ramenés la dernière fois ont rencontré un franc succès<nbsp>! Les Pisteurs br'aax m'ont dit qu'ils se sentaient à l'aise, comme s'ils étaient chez eux, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_003:1"
+msgid "The aromatic materials you procured for us were well praised by the Brethren of Br'aax─the scent made them feel right at home."
+msgstr ""
+
+#. ja: でも、この香りって長く続かないみたいで……<br>定期的に、新鮮なものを用意する必要があるんだ。
+#. de: Jedoch verfliegt ihr Aroma auch recht schnell, weshalb wir in regelmäßigen Abständen neue Vorräte benötigen.
+#. fr: Mal<shy>heu<shy>reu<shy>se<shy>ment, le parfum finit par s'estomper assez vite... Il va falloir remplir nos réserves si on veut continuer à ravir les narines de nos clients, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_004:1"
+msgid "As lovely as the aroma is, however, it only lasts for so long... We'll have to make gathering fresh batches a part of our regular duties."
+msgstr ""
+
+#. ja: そんなわけで貴方には、気球発着場の北あたりで、<br>「<sheet Item 48063 0>」を採ってきてほしいんだ。<br>それを使って、僕たちが香料を作るからさ。
+#. de: Ich würde mich deshalb freuen, wenn du nördlich vom Ballonplatz drei <noun-de Item 5 48063 2 4 1> abbauen könntest. Ich kann daraus dann die Duftstoffe herstellen.
+#. fr: Et donc, j'aurais besoin de <noun-fr Item 12 48063 2 1>. Tu pourras en récupérer au nord de l'embarcadère à ballons. Avec ça en poche, on devrait pouvoir fabriquer suf<shy>fi<shy>sam<shy>ment d'arômes pour un moment.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_005:1"
+msgid "Should you happen to be in the area, I'm told you can find deposits of aromatic salt north of the dirigible landing. A few pinches should be enough for us to create a welcoming fragrance."
+msgstr ""
+
+#. ja: そんなわけで貴方には、ヤクアワク・ゾユあたりで、<br>「<sheet Item 48064 0>」を採ってきてほしいんだ。<br>それを使って、僕たちが香料を作るからさ。
+#. de: Ich würde mich deshalb freuen, wenn du beim Yak Awak Tsoly drei <noun-de Item 5 48064 2 4 1> ernten könntest. Ich kann daraus dann die Duftstoffe herstellen.
+#. fr: Et donc, j'aurais besoin de <noun-fr Item 12 48064 2 1>. Tu pourras en récupérer près du Yak Awak Tsoly. Avec ça en poche, on devrait pouvoir fabriquer suf<shy>fi<shy>sam<shy>ment d'arômes pour un moment.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_006:1"
+msgid "Should you happen to be in the area, I'm told you can find sweet-smelling white flowers near Yak Awak Tsoly. A few blooms should be enough for us to create a welcoming fragrance."
+msgstr ""
+
+#. ja: そんなわけで貴方には、ヤクアワク・ゾユで、<br>「<sheet Item 48065 0>」を採ってきてほしいんだ。<br>それを使って、僕たちが香料を作るからさ。
+#. de: Ich würde mich deshalb freuen, wenn du im Yak Awak Tsoly <noun-de Item 1 48065 1 4 1> fangen könntest. Ich kann daraus dann die Duftstoffe herstellen.
+#. fr: Et donc, il me faudrait <noun-fr Item 1 48065 1 1>. Tu pourras en pêcher au Yak Awak Tsoly. Avec ça en poche, on devrait pouvoir fabriquer suf<shy>fi<shy>sam<shy>ment d'arômes pour un moment.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_007:1"
+msgid "Should you happen to be in the area, I'm told you can catch a species of sweetfish at Yak Awak Tsoly. One should be enough for us to create a welcoming fragrance."
+msgstr ""
+
+#. ja: そうそう、採るときは<sheet Item 43849 0>を使うといいらしいよ。
+#. de: Als Köder dafür sind wohl <noun-de Item 5 43849 2 1 1> gut geeignet.
+#. fr: Oh, et n'oublie pas d'utiliser <noun-fr Item 1 43849 1 1>, sinon tu rentreras <i>broujouille</i>, comme on dit à Mamook<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_008:1"
+msgid "Oh, and be sure to take a supply of golden stonefly nymphs to use as bait."
+msgstr ""
+
+#. ja: イクブラーシャの人たちが好むという、<br>「<sheet Item 48063 0>」の調達を頼むよ。<br>気球発着場の北あたりで採れるはずさ。
+#. de: Um den Duftstoff herzustellen, der von den Xbr'aal so geschätzt wird, benötige ich drei <noun-de Item 5 48063 2 4 1>. Das solltest du nördlich vom Ballonplatz abbauen können.
+#. fr: Je voudrais <noun-fr Item 1 48063 2 1>, il paraît que les Xbr'aal en raffolent. Tu pourras en récupérer au nord de l'embarcadère à ballons, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_010:1"
+msgid "If you've time on your hands, the Xbr'aal are said to favor the scent of a certain aromatic salt found north of the dirigible landing."
+msgstr ""
+
+#. ja: イクブラーシャの人たちが好むという、<br>「<sheet Item 48064 0>」の調達を頼むよ。<br>ヤクアワク・ゾユあたりで採れるはずさ。
+#. de: Um den Duftstoff herzustellen, der von den Xbr'aal so geschätzt wird, benötige ich drei <noun-de Item 5 48064 2 4 1>. Das solltest du beim Yak Awak Tsoly ernten können.
+#. fr: Je voudrais <noun-fr Item 1 48064 2 1>, il paraît que les Xbr'aal en raffolent. Tu pourras en récupérer près du Yak Awak Tsoly, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_011:1"
+msgid "If you've time on your hands, the Xbr'aal are said to favor the scent of a certain white flower found near Yak Awak Tsoly."
+msgstr ""
+
+#. ja: ヤクアワク・ゾユで、イクブラーシャの人たちが好むという、<br>「<sheet Item 48065 0>」の調達を頼むよ。<br><sheet Item 43849 0>で採れるはずさ。
+#. de: Um den Duftstoff herzustellen, der von den Xbr'aal so geschätzt wird, benötige ich <noun-de Item 1 48065 1 4 1>. Den solltest du im Yak Awak Tsoly mit <noun-de Item 5 43849 2 3 1> als Köder fangen können.
+#. fr: Je voudrais <noun-fr Item 1 48065 1 1>, il paraît que les Xbr'aal en raffolent. Tu pourras en pêcher au Yak Awak Tsoly. Et surtout, n'oublie pas <noun-fr Item 4 43849 2 1>, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_012:1"
+msgid "If you've time on your hands, the Xbr'aal are said to favor the scent of a certain species of sweetfish found at Yak Awak Tsoly. You should be able to catch them using golden stonefly nymphs as bait."
+msgstr ""
+
+#. ja: 「いい香りのもの」を見つけてきてくれたんだね？
+#. de: Konntest du die wohlriechenden Rohstoffe finden?
+#. fr: Ja<nbsp>! Tu as trouvé de quoi embaumer notre ferme, comme je te l'ai demandé<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_015:1"
+msgid "Can I assume you've brought our aromatic ingredient?"
+msgstr ""
+
+#. ja: やっぱり！<br>貴方からいい香りがしたから、すぐにわかったよ。
+#. de: Ha, wusste ich es doch! Du hast schon von weitem so gut gerochen!
+#. fr: Je savais que tu avais réussi... Il faut dire que ta besace sent tellement bon qu'on te repère de loin, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_016:1"
+msgid "I thought as much! I smelled such a pleasant scent as you approached."
+msgstr ""
+
+#. ja: ということは、シュバラール族が好む香りは、<br>僕たちマムージャ族も好ましく思う香りってことなのかな。<br>部族が違うし昔は争いもしたのに、なんだか不思議だね。
+#. de: Das bedeutet wohl, dass die Düfte, die den Xbr'aal gefallen, auch angenehm für uns Mamool Ja sind. Angesichts der blutigen Ver<shy>gangen<shy>heit unserer Völker ist das ein schöner, wenn auch leicht seltsamer Gedanke.
+#. fr: C'est amusant de constater que Xbr'aal et Mamool Ja partagent les mêmes affinités pour les parfums. Dire que nous avons passé tant d'années à nous battre, alors que nous avions peut-être plus en commun que nous ne le pensions...
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_017:1"
+msgid "...Hm, does that mean both Xbr'aal and Mamool Ja are fond of similar smells? We spent so many years in conflict over our differences, but I wonder what else we might have in common."
+msgstr ""
+
+#. ja: イクブラーシャの人々が訪れるようになったことで、<br>「香り」という新しい楽しみを知ることができた。<br>こうして、文化というのは豊かに発展していくんだな……。
+#. de: Dank der vielen Besucher aus Iq Br'aax können jetzt auch wir in einen neuen aromatischen Genuss kommen. Ein perfektes Beispiel dafür, wie Kulturen und Bräuche Grenzen überwinden können<nbsp>...
+#. fr: Je n'avais jamais imaginé que l'odeur d'un lieu pouvait autant dicter son atmosphère générale et apaiser les visiteurs. En tout cas, je serais resté ignorant sans l'aide des Pisteurs br'aax. C'est une belle leçon de partage à mon avis, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam119_05279:TEXT_BANMAM119_05279_KAGEELJA_100_018:1"
+msgid "Appreciating a calming fragrance is something I'd never considered until the brethren began their visits. Each of our cultures has much to learn from the other."
+msgstr ""

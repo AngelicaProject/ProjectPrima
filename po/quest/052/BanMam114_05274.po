@@ -1,0 +1,158 @@
+# quest/052/BanMam114_05274 — « A Measure of Influence» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、試料の収集に協力してほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja benötigt deine Hilfe bei der Erforschung des Umweltäthers.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja a besoin de produits naturels destinés à des recherches.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_SEQ_00:1"
+msgid "Kageel Ja requires someone capable of making a distant journey.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_SEQ_01:1"
+msgid "Deliver the requested items to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>ショブリト灰戦場の岩場で<sheet Item $n5 0>を砕岩<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>ショブリト灰戦場の良木で<sheet Item $n5 0>を伐採<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>イクラシュ・ゾユで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>An der Aschenfront von Xobr'it <sheet Item $n5 9> sammeln<else>Kageel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>An der Aschenfront von Xobr'it <sheet Item $n5 9> sammeln<else>Kageel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Am Iq Rrax Tsoly <noun-de Item 1 $n5 1 4 1> fangen<else>Kageel Ja <noun-de Item 1 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> aux plaines cendrées de Xobr'it<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> aux plaines cendrées de Xobr'it<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> à l'Iq Rrax Tsoly<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Xobr'it Cinderfield<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 =… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Xobr'it Cinderfield<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Xobr'it Cinderfield<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Xobr'it Cinderfield<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Iq Rrax Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Iq Rrax Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Xobr'it Cinderfield<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Xobr'it Cinderfield<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Iq Rrax Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さん、<br>よければ、上の森での採集をお願いできないかな？<br>アンギルさんの調査に必要な試料を集めてほしいんだ。
+#. de: Hallo, <split " " 1><string $gs1></split>. Würdest du bitte wieder in den oberen Wald gehen? Anggir und unsere Bauern brauchen ein paar Versuchsobjekte aus genau dieser Gegend.
+#. fr: <split " " 1><string $gs1></split>, tu veux bien retourner dans la haute-forêt<nbsp>? Anggir et nos fermiers ont besoin de produits naturels qu'on ne trouve que là-bas.
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_000:1"
+msgid "<split \" \" 1><string $gs1></split>, are you free for some gathering on the Ut'ohmu Horizon? Anggir needs samples for her research."
+msgstr ""
+
+#. ja: なんでも、環境エーテルを多く含む自然物を調べることで、<br>農園の発展が地脈に影響を及ぼしてないか知りたいんだって。<br>僕たちは下の森の試料を集めるから、頼むよ。
+#. de: Nach Unter<shy>such<shy>ung von natürlichen Substanzen, die mit Umweltäther aufgeladen sind, möchten sie die Auswirkungen von landwirtschaftlichen Betrieben auf die dortigen Ätherströme bewerten. An dieser Stelle trittst du auf den Plan.
+#. fr: En étudiant des substances naturelles chargées d'éther environnemental, ils aimeraient évaluer l'impact du développement d'ex<shy>ploi<shy>ta<shy>tions agricoles sur le flux éthéré terrestre. C'est à ce moment-là que tu entres en scène, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_001:1"
+msgid "She's hoping to see if Gok Golma's development has affected the flow of ambient energy in Yak T'el. I'll collect samples from the Ja Tiika Heartland, so with your help we can form a full picture of our gainery's influence."
+msgstr ""
+
+#. ja: 目当ての「<sheet Item 48051 0>」は、<br>ショブリト灰戦場で採集するのがいいみたい。<br>それじゃ、よろしくね。
+#. de: Gehe zur Aschenfront von Xobr'it und sammle mehrere <noun-de Item 5 48051 2 4 1>. Das sollte nicht zu schwer sein.
+#. fr: En te baladant un peu aux plaines cendrées de Xobr'it, tu devrais pouvoir nous ramener quelques <noun-fr Item 12 48051 2 1> sans trop de difficultés.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_005:1"
+msgid "Anggir said she'd like stones from the Xobr'it Cinderfield. Simple enough if you can handle the trek, eh?"
+msgstr ""
+
+#. ja: 目当ての「<sheet Item 48052 0>」は、<br>ショブリト灰戦場で採集するのがいいみたい。<br>それじゃ、よろしくね。
+#. de: Gehe zur Aschenfront von Xobr'it und sammle ein paar <noun-de Item 5 48052 2 4 1>. Das sollte nicht zu schwer sein.
+#. fr: En te baladant un peu aux plaines cendrées de Xobr'it, tu devrais pouvoir nous ramener quelques <noun-fr Item 12 48052 2 1> sans trop de difficultés.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_006:1"
+msgid "Anggir said she'd like bark from trees in the Xobr'it Cinderfield. Simple enough if you can handle the trek, eh?"
+msgstr ""
+
+#. ja: 目当ての「<sheet Item 48053 0>」は、<br>イクラシュ・ゾユで採集するのがいいみたい。<br>採るときは<sheet Item 43849 0>を使うといいよ。
+#. de: Gehe zum Iq Rrax Tsoly und fange ein paar <noun-de Item 5 48053 2 4 1>. Wenn du <noun-de Item 5 43849 2 4 1> als Köder benutzt, sollte das nicht zu schwer sein.
+#. fr: En te baladant un peu à l'Iq Rrax Tsoly et en utilisant <noun-fr Item 1 43849 1 1>, tu devrais pouvoir nous ramener <noun-fr Item 1 48053 1 1> sans trop de difficultés.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_007:1"
+msgid "Anggir said she'd like a moss sample from Iq Rrax Tsoly. Simple enough if you can handle the trek, eh? Remember to bring golden stonefly nymphs for bait."
+msgstr ""
+
+#. ja: ショブリト灰戦場で、<br>試料として「<sheet Item 48051 0>」を採ってきてほしいんだ。<br>ちょっと遠いけど、よろしく頼むよ。
+#. de: Gehe zur Aschenfront von Xobr'it und sammle mehrere <noun-de Item 5 48051 2 4 1>. Das sollte nicht zu schwer sein.
+#. fr: En te baladant un peu aux plaines cendrées de Xobr'it, tu devrais pouvoir nous ramener quelques <noun-fr Item 12 48051 2 1> sans trop de difficultés.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_010:1"
+msgid "Remember, Anggir is looking for stones from the Xobr'it Cinderfield. It's rather far, but I trust your legs are up for it."
+msgstr ""
+
+#. ja: ショブリト灰戦場で、<br>試料として「<sheet Item 48052 0>」を採ってきてほしいんだ。<br>ちょっと遠いけど、よろしく頼むよ。
+#. de: Gehe zur Aschenfront von Xobr'it und sammle ein paar <noun-de Item 5 48052 2 4 1>. Das sollte nicht zu schwer sein.
+#. fr: En te baladant un peu aux plaines cendrées de Xobr'it, tu devrais pouvoir nous ramener quelques <noun-fr Item 12 48052 2 1> sans trop de difficultés.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_011:1"
+msgid "Remember, Anggir is looking for bark from the Xobr'it Cinderfield. It's rather far, but I trust your legs are up for it."
+msgstr ""
+
+#. ja: イクラシュ・ゾユで、<br>試料として「<sheet Item 48053 0>」を調達してほしいんだ。<br><sheet Item 43849 0>で採れるはずだから、よろしくね。
+#. de: Gehe zum Iq Rrax Tsoly und fange ein paar <noun-de Item 5 48053 2 4 1>. Wenn du <noun-de Item 5 43849 2 4 1> als Köder benutzt, sollte das nicht zu schwer sein.
+#. fr: En te baladant un peu à l'Iq Rrax Tsoly et en utilisant <noun-fr Item 1 43849 1 1>, tu devrais pouvoir nous ramener <noun-fr Item 1 48053 1 1> sans trop de difficultés.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_012:1"
+msgid "Remember, Anggir is looking for a moss sample from Iq Rrax Tsoly. It's rather far, but I trust your legs are up for it. Oh, and don't forget your golden stonefly nymphs."
+msgstr ""
+
+#. ja: 遠いところまでおつかれさま！<br>試料、集まったかい？
+#. de: Schon wieder zurück? Dann zeig mal, was du gefunden hast.
+#. fr: Eh ben, quelle rapidité<nbsp>! Pourtant, c'est pas la porte à côté, ja<nbsp>!
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_015:1"
+msgid "You're back even quicker than I expected, <split \" \" 1><string $gs1></split>. Were you able to find the samples Anggir asked for?"
+msgstr ""
+
+#. ja: うん、バッチリだ！<br>これならアンギルさんも満足だと思うよ。
+#. de: Wunderschön, das ist genau das, was Anggir wollte! Sie wird sicher begeistert sein.
+#. fr: Magnifique, c'est exactement ce qu'Anggir voulait<nbsp>! Je doute pas une seconde qu'elle sera une nouvelle fois ravie de tes services.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_016:1"
+msgid "Ah, she'll be quite pleased with this. Excellent work!"
+msgstr ""
+
+#. ja: 実はアンギルさんは、農園を作り始めたころから、<br>周辺の環境エーテル推移を調べていたそうなんだ。
+#. de: Es ist nämlich so, dass Anggir schon seit Beginn unserer Arbeiten die durch Äther verursachten Umweltveränderungen untersucht.
+#. fr: En réalité, Anggir faisait des recherches sur l'évolution environnementale due à l'éther depuis le tout début de la con<shy>struc<shy>tion de cette ferme, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_017:1"
+msgid "You know, Anggir has actually been studying the flow of energy around the area ever since Gok Golma was established."
+msgstr ""
+
+#. ja: これまで、農園のためにいろいろ手を加えてきただろう？<br>それで森の環境を壊してしまったら本末転倒だからね、<br>定期的に調査をしているんだ。
+#. de: Du arbeitest jetzt schon eine ganze Weile mit uns zusammen. Dann muss ich dir nicht lange erklären, dass wir uns von unseren Träumen verabschieden können, wenn wir den Wald schädigen.
+#. fr: Tu collabores avec nous depuis un petit moment maintenant, pas vrai<nbsp>? Pas besoin de te faire un dessin pour t'expliquer que si on abîme le milieu forestier, on peut dire adieu à nos rêves.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_018:1"
+msgid "We've done quite a bit of work on the gainery since then, but our accomplishments would mean little if we're negatively impacting the forest as a whole. Anggir takes these inspections very seriously."
+msgstr ""
+
+#. ja: だから、とても大事なことなんだよ。<br>また試料集めを手伝ってくれたらありがたい。
+#. de: Deswegen war dieser Auftrag, obwohl die Versuchsobjekte so simpel waren, von hoher Wichtigkeit!
+#. fr: C'est pourquoi il est essentiel de l'examiner ré<shy>gu<shy>liè<shy>re<shy>ment. Il va sans dire que tu seras toujours <if $gn4>la bienvenue<else>le bienvenu</if> pour nous filer un coup de pouce, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_019:1"
+msgid "So you can see why we needed your trustworthy hands for the task. We would be grateful if you could help us when we need samples again."
+msgstr ""
+
+#. ja: 貴方が試料を集めてくれたおかげで、<br>森の環境を知ることができて助かってるってさ。<br>また定期的な調査をお願いできると嬉しいよ。
+#. de: Wie du weißt, können wir uns von unseren Träumen verabschieden, wenn wir dem Wald zu viel Schaden zufügen. Deswegen ist es so wichtig, die Ätherströme laufend zu untersuchen. Ich werde bestimmt bald wieder Arbeit für dich haben.
+#. fr: Si on abîme le milieu forestier, on peut dire adieu à nos rêves. C'est pourquoi il est essentiel de l'examiner ré<shy>gu<shy>liè<shy>re<shy>ment. Il va sans dire que tu seras toujours <if $gn4>la bienvenue<else>le bienvenu</if> pour nous filer un coup de pouce, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam114_05274:TEXT_BANMAM114_05274_KAGEELJA_000_020:1"
+msgid "These samples will help us understand how the forest is doing for now. I hope you'll lend us a hand when Anggir does her next survey."
+msgstr ""

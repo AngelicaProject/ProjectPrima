@@ -1,0 +1,270 @@
+# quest/028/StmBdz916_02872 — «Falling Down on the Job» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: カストルム・オリエンスのスウェスリク大牙将は、再び冒険者に頼みたいことがあるようだ。
+#. de: Swethryk Brookstone hat einen weiteren Auftrag für dich.
+#. fr: Swethryk Brookstone a un autre service à vous demander.
+#. kind: journal
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SEQ_00:1"
+msgid "Serpent Marshal Brookstone finds himself once again in need of a good soldier."
+msgstr ""
+
+#. ja: ドドグン闘軍曹と話す
+#. de: Mit Dodogun sprechen
+#. fr: Parler à Dodogun
+#. kind: objective
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_TODO_00:1"
+msgid "Speak with Dodogun."
+msgstr ""
+
+#. ja: 双蛇党の兵卒を探し、敵が現れたら討伐
+#. de: Den Rekruten der Bruderschaft in Sathya Maga suchen
+#. fr: Trouver le soldat des Deux Vipères et vaincre les éventuels ennemis
+#. kind: objective
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_TODO_01:1"
+msgid "Find the serpent recruit."
+msgstr ""
+
+#. ja: 双蛇党の兵卒と話す
+#. de: Mit dem Rekruten der Bruderschaft sprechen
+#. fr: Parler au soldat des Deux Vipères
+#. kind: objective
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_TODO_02:1"
+msgid "Speak with the serpent recruit."
+msgstr ""
+
+#. ja: スウェスリク大牙将と話す
+#. de: Swethryk Brookstone Bericht erstatten
+#. fr: Parler à Swethryk Brookstone
+#. kind: objective
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_TODO_03:1"
+msgid "Report to Serpent Marshal Brookstone."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>か。<br>ちょうどよい所に来てくれた。<br>緊急で、君の手を借りたい。
+#. de: Ah, <split " " 2><string $gs1></split>. Du kommst gerade recht. Ich brauche nämlich dringend deine Hilfe.
+#. fr: Vous arrivez à point nommé, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if>. J'ai justement une mission urgente à vous confier.
+#. speaker: SWETHRYKBROOKSTONE
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_000:1"
+msgid "<if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>. You've come at a good time."
+msgstr ""
+
+#. ja: さきほど、哨戒部隊から応援要請が入ったのだが、<br>別件の任務に人手を取られ、すぐに動ける兵力がない。
+#. de: Eine Patrouille hat gerade Verstärkung angefordert, aber ich kann hier niemanden entbehren.
+#. fr: Je viens tout juste de recevoir une demande de renforts de la part d'une patrouille, mais tous mes hommes sont déjà en mission. Je compte sur vous pour vous en charger.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_001:1"
+msgid "I received a rather urgent call for assistance from one of our scouts and all of my men are preoccupied with duties elsewhere. "
+msgstr ""
+
+#. ja: 東の高台で、要請を出した「ドドグン闘軍曹」が待っている。<br>急ぎ、向かってくれ。
+#. de: Der Notruf kam vom Legionsgefreiten Dodogun. Eile zu ihm, er wartet auf den Gestreiften Hügeln östlich von hier.
+#. fr: Allez trouver le sergent des sables Dodogun sur le terrain en hauteur à l'est. Faites vite, je vous prie<nbsp>!
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_002:1"
+msgid "I'd like you to go and speak with Flame Sergeant Dodogun. You'll find him at his post near Gyr Kehim."
+msgstr ""
+
+#. ja: 東の高台で、要請を出した「ドドグン闘軍曹」が待っている。<br>急ぎ、向かってくれ。
+#. de: Dodogun hat östlich von hier einen Notruf abgesetzt. Eile ihm zu Hilfe.
+#. fr: Allez trouver le sergent des sables Dodogun sur le terrain en hauteur à l'est. Faites vite, je vous prie<nbsp>!
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_003:1"
+msgid "Flame Sergeant Dodogun wouldn't call unless it was of the utmost importance. I suggest you hurry to him."
+msgstr ""
+
+#. ja: 応援って、君のことだったのか。<br><sheet BNpcName 5867 0>の一件では、世話になったね。<br>まあいいや、とりあえず状況の説明をするよ。
+#. de: Die Verstärkung bist <i>du</i>? Na, das stimmt mich doch gleich etwas hoffnungsvoller. Lass mich dir alles erklären.
+#. fr: C'est encore vous, les renforts<nbsp>? Parfait<nbsp>! Merci pour le morbol de la dernière fois. Laissez-moi vous expliquer la situation présente.
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_010:1"
+msgid "So they've sent the morbol slayer, have they? I suppose you'll do."
+msgstr ""
+
+#. ja: 少し前、ここからサトヤ・マガを監視していたら、<br>解放軍とアナンタ族が、小競り合いをしているのが見えたんだ。<br>同盟軍は、現地民同士の争いには関与しないのが前提だけど……。
+#. de: Wir waren neulich auf Patrouille, als wir in Richtung Sathya Maga ein Scharmützel zwischen der Be<shy>freiungs<shy>armee und ein paar Ananta beobachteten. Eigentlich versucht die Allianz ja, sich aus solchen An<shy>ge<shy>legen<shy>heiten rauszuhalten.
+#. fr: J'étais en train de surveiller Sathya Maga, quand j'ai aperçu une échauffourée entre des Anantas et des soldats de l'armée de libération. Je sais que nous avons reçu pour ordre de ne pas nous mêler des conflits entre populations locales, mais je pense que nous devrions faire une exception pour cette fois.
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_011:1"
+msgid "A few bells ago, I spotted what looked like a Resistance fighter in a skirmish with the Ananta. As a general rule the Alliance doesn't intervene in local disputes, but I suspect something is amiss. "
+msgstr ""
+
+#. ja: でも、あそこはカリヤナ・ニリヤとウィルラ・ニリヤを結ぶ裏道で、<br>本来、人の往来がない場所だから、解放軍がいること自体おかしい。<br>念のため、偵察に行かせた新兵も、戻ってこなくてね。
+#. de: Allerdings wurden wir stutzig, da an dem Ort eigentlich niemand lebt und die Be<shy>freiungs<shy>armee dort nichts zu befreien hat. Also habe ich einen jungen Rekruten als Späher geschickt, aber der meldet sich nicht zurück.
+#. fr: L'af<shy>fron<shy>te<shy>ment avait lieu sur le chemin qui relie Qalyana Nilya et Vira Nilya, et qu'aucun humain ne prend d'habitude. Le fait d'y voir des soldats m'a mis la puce à l'oreille, et j'ai donc envoyé un éclaireur pour obtenir plus d'in<shy>for<shy>ma<shy>tions, mais il n'est toujours pas revenu.
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_012:1"
+msgid "The altercation took place along a path between the Qalyana and Vira settlements, and neither the Alliance nor the Resistance has any business being there. I wouldn't have been overly concerned if not for the fact that the man I sent down there to investigate hasn't returned."
+msgstr ""
+
+#. ja: 君は「サトヤ・マガ」に行って、「双蛇党の兵卒」を探して。<br>何かあったら、リンクパールで連絡するから。<br>じゃあ、頼んだよ。
+#. de: Spüre ihn bitte auf. Wenn sich hier irgendwas tut, melde ich mich per Kontaktperle bei dir.
+#. fr: L'éclaireur en question est un soldat des Deux Vipères. Allez à Sathya Maga et essayez de le retrouver. En cas de besoin, je vous contacterai par linkperle. Bonne chance<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_013:1"
+msgid "I'd like you to go to Sathya Maga and see if he's gotten himself into any trouble. If you find anything, you can contact me via the linkpearl we gave you."
+msgstr ""
+
+#. ja: 「サトヤ・マガ」に行って、「双蛇党の兵卒」を探してね。<br>頼んだよ。
+#. de: Such den Späher in Sathya Maga. Viel Erfolg!
+#. fr: L'éclaireur en question est un soldat des Deux Vipères. Allez à Sathya Maga et essayez de le retrouver. En cas de besoin, je vous contacterai par linkperle. Bonne chance<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_014:1"
+msgid "The recruit I sent down there should have been back by now. If you find anything at Sathya Maga, don't hesitate to contact me."
+msgstr ""
+
+#. ja: 敵が襲いかかってきた！！
+#. de: Du wirst angegriffen!
+#. fr: Vous êtes attaqué<if $gn4>e</if><nbsp>!
+#. speaker: POP_MESSAGE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_POP_MESSAGE_000_015:1"
+msgid "You are under attack!"
+msgstr ""
+
+#. ja: た、助かりました。<br>アナンタ族が怒り猛っていたため、<br>説得も交渉も……会話すら、ろくにできませんでした。
+#. de: D-Danke ... Die Ananta waren völlig außer sich und ließen gar nicht erst mit sich reden - geschweige denn verhandeln. Aber das hast du ja am eigenen Leib erfahren.
+#. fr: M-merci beaucoup... Sans vous, je me serais fait dévorer tout cru par cette Ananta. J'ai essayé de la convaincre que je venais en paix, mais elle n'a rien voulu savoir.
+#. speaker: RECRUIT02872
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_RECRUIT02872_000_020:1"
+msgid "Phew. Thank you, <if $gn4>miss<else>sir</if>. I've never seen one of the Ananta so angry. She wouldn't even speak─only ceaseless hissing with seemingly murderous intent. If not for you I would likely be dead like that gentleman just over there."
+msgstr ""
+
+#. ja: 唯一理解できた内容は、そこで死んでいる解放軍の兵士が、<br>奴らの砦から、クリスタルを盗み出したということだけです。<br>蛮神召喚に使われるのを、防ぐためだったのでしょうか？
+#. de: Das Einzige, was ich verstanden habe, ist, dass die Befreier angeblich versucht haben, ihnen ihre Kristalle zu stibitzen. Vermutlich um zu verhindern, dass sie ihren Primae beschwören?
+#. fr: Cependant, avant de me faire attaquer, j'ai découvert que les soldats de l'armée de libération qui se battaient contre les Anantas leur avaient dérobé des cristaux. Peut-être qu'ils voulaient les empêcher d'invoquer leur Primordiale une nouvelle fois<nbsp>?
+#. speaker: RECRUIT02872
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_RECRUIT02872_000_021:1"
+msgid "From what I could gather before we were assaulted, he was seizing crystals from their encampment. I assumed it was to stop the summoning of a primal."
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)話はリンクパールを通じて聞いていた。<br>まず、そいつらは正規の解放軍ではない可能性が高い。<br>装備に統一性がないのは、多分、戦場で死体から盗んだものだから。
+#. de: (-Dodoguns Stimme-)Ich habe über die Kontaktperle alles mitgehört. Zieh keine voreiligen Schlüsse, wir wissen nicht mal, ob die überhaupt wirklich zur Be<shy>freiungs<shy>armee gehören. Wer weiß, woher der Tote seine Kleidung bekommen hat, vielleicht hat er sie mit seiner Gruppe von irgendeinem Schlachtfeld gefleddert.
+#. fr: (-Voix de Dodogun-)Ou peut-être que c'étaient des brigands déguisés en soldats<nbsp>? Vu leur accoutrement, ça me paraît être une possibilité non négligeable. Leurs pièces d'équipement proviennent toutes d'armures différentes. À mon avis, ils les ont récupérées sur des cadavres un peu partout dans la région.
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_022:1"
+msgid "(-Flame Sergeant Dodogun-)Ahem. Forgive the intrusion, but judging by his uniform, I'm not so sure he was a member of the Resistance to begin with. Well, I wouldn't call it a uniform so much as an unconvincing costume. He likely stole bits and pieces off of fallen soldiers. "
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)戦後の混乱を狙った、野盗ってとこかな。<br>確かに、クリスタルが目的のように偽装してるけど、<br>見てみなよ……懐から宝飾品が、はみ出してるよ。
+#. de: (-Dodoguns Stimme-)Vermutlich war es eine Gruppe Banditen, die die Nachkriegswirren ausnutzen wollte. Indem sie die Aufmerksamkeit auf die Kristalle gelenkt haben, wollten sie vermutlich von ihrem eigentlichen Vorhaben ablenken. Sieh doch, aus einer Tasche des Toten schaut Schmuck hervor.
+#. fr: (-Voix de Dodogun-)Le chaos provoqué par la guerre a dû les convaincre que c'était le bon moment pour se déguiser et faire une razzia. Voyez un peu tous ces bijoux qui dépassent de leurs poches<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_023:1"
+msgid "(-Flame Sergeant Dodogun-)I also very much doubt he was here for crystals. You can clearly see the jewelry hanging out of his satchel. Nothing but a petty thief if you ask me."
+msgstr ""
+
+#. ja: そ、そんな遠くから、見えるのですか？
+#. de: D-Das kannst du von deiner Position aus sehen?
+#. fr: V-vous arrivez à voir tout ça d'aussi loin, Sergent<nbsp>?
+#. speaker: RECRUIT02872
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_RECRUIT02872_000_024:1"
+msgid "Y-You can see all of this from your post!?"
+msgstr ""
+
+#. ja: (-ドドグン闘軍曹の声-)視力がいいのは知ってるだろう？<br>怪我がないのなら、お前はすぐに戻ってこい。<br>「スウェスリク大牙将」への報告は、冒険者君に任せるよ。
+#. de: (-Dodoguns Stimme-)Zweifelst du etwa an meinen Adleraugen? Überhaupt: Wenn du nichts Besseres zu tun hast, dann komm gefälligst auf der Stelle zurück. <split " " 1><string $gs1></split>, kannst du bitte Swethryk Bericht erstatten?
+#. fr: (-Voix de Dodogun-)J'ai onze sur dix aux deux yeux, ha ha<nbsp>! Mais trêve de plai<shy>san<shy>te<shy>ries. Ta mission est terminée, soldat. Quant à vous, aventuri<if $gn4>ère<else>er</if>, je vous laisse retourner auprès du grand maréchal Brookstone pour lui faire votre rapport.
+#. speaker: DODOGUN
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><split " " 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMa… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><split " " 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridani… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_025:1"
+msgid "(-Flame Sergeant Dodogun-)There's a reason <i>I'm</i> stationed up here and not you, soldier. If you're well enough to walk I suggest you return to base immediately. <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><split \" \" 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split></if></if>, report to Serpent Marshal Brookstone."
+msgstr ""
+
+#. ja: 私は、ひとりでも戻れます。<br>冒険者殿、ありがとうございました。
+#. de: Danke für deine Hilfe. Zurück komm ich alleine.
+#. fr: Ne vous en faites pas, je ferai le chemin du retour tout seul. Merci encore pour votre aide<nbsp>!
+#. speaker: RECRUIT02872
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_RECRUIT02872_000_026:1"
+msgid "I think I can manage on my own. Thank you again for your help."
+msgstr ""
+
+#. ja: 相変わらず、鮮やかな手並みだったね。<br>ああいう輩がいなくならない限り、暇になることはないだろうなぁ。<br>残念だけど、君に酒を奢るのは、また次の機会かな。
+#. de: Das lief ja mal wieder wie geschmiert, was? Leider werd ich wohl keine Zeit finden, dir einen Drink auszugeben, solange ich diesen unfähigen Rekruten am Hals habe.
+#. fr: Vous avez été remarquable, comme toujours<nbsp>! Mal<shy>heu<shy>reu<shy>se<shy>ment, nous allons devoir attendre encore un peu pour trinquer à nos succès. Je ne peux pas quitter mon poste tant que des bandits rôdent dans la région<nbsp>!
+#. speaker: DODOGUN
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_DODOGUN_000_030:1"
+msgid "You did well out there. I'd treat you to that drink I promised, but, as you can see, the new recruits keep us busy. Maybe next time."
+msgstr ""
+
+#. ja: 戻ったようだな。<br>報告を頼む、<if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>。
+#. de: Ah, du bist zurück. Ist alles im Lot auf den Gestreiften Hügeln?
+#. fr: Ah, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if>. Je suis tout ouïe<nbsp>!
+#. speaker: SWETHRYKBROOKSTONE
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_031:1"
+msgid "Welcome back, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>. What have you to report?"
+msgstr ""
+
+#. ja: ふむ、ドドグン闘軍曹は、野盗の仕業だと思っているようだが、<br>正規の解放軍闘士である可能性も、考慮するべきだろう。<br>解放軍といっても、実態は、さまざまな組織の寄せ集めだ。
+#. de: Soso, Dodogun glaubt also, da waren Diebe am Werk? Ich will nichts ausschließen. Es könnte aber genauso gut die Be<shy>freiungs<shy>armee gewesen sein, denn da ist längst nicht alles Gold, was glänzt.
+#. fr: Hmm... Le sergent Dodogun peut penser ce qu'il veut, mais tant que nous n'avons pas de preuve irréfutable que ces hommes étaient des brigands, nous ne pouvons pas écarter la possibilité qu'il s'agissait de soldats de l'armée de libération. Après tout, celle-ci est composée de nombreuses factions.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_032:1"
+msgid "I see. It's not often I disagree with the flame sergeant, but I'm not so sure this man was some wayward thief. After all, the Resistance is quite expansive, and comprised of many different groups."
+msgstr ""
+
+#. ja: ラールガーズリーチの駐留部隊は、<br>士気も高く、共に戦った戦友でもあり、信用はおける。<br>しかし、別組織の中には、野盗同然の者もいると聞く。
+#. de: Dem Hauptmann in Rhalgrs Wacht traue ich. Der hat mit uns gekämpft. Aber nicht alle sind so ehrenvolle Leute wie er.
+#. fr: L'unité en poste à L'Étendue de Rhalgr a toute notre confiance. Ils nous ont prouvé qu'ils étaient des combattants valeureux sur le champ de bataille. Néanmoins, j'ai entendu dire que d'autres unités étaient en partie composées d'hommes qui ne valaient pas mieux que des criminels.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_033:1"
+msgid "While the forces stationed at Rhalgr's Reach are the most involved in our fight against the Garleans, there are other smaller factions─some even formed haphazardly─who claim to be Resistance fighters if only for the chance to loot and plunder."
+msgstr ""
+
+#. ja: ラールガーズリーチに伝令を送り、死体の身元を調べさせよう。<br>報告如何によっては、組織を見直さねばならんな。<br>やれやれ……優秀な部下がいなければ、途方に暮れているところだ。
+#. de: Ich werde ihn be<shy>nach<shy>rich<shy>ti<shy>gen und darum bitten, die Leiche zu identifizieren. Das sollte uns Aufschluss verschaffen. Junge, Junge, ich bin wirklich froh, dass ich so aufmerksame Leute habe.
+#. fr: Je vais envoyer un de mes hommes enquêter sur place pour que nous puissions en avoir le cœur net. J'espère que nous n'aurons pas à faire le ménage au sein de nos alliés...
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_034:1"
+msgid "It is imperative this man is identified to determine who can be held accountable. \\<sigh> If we had more recruits like you we likely wouldn't have to worry about such things."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>。<br>また、なにかあったら頼むぞ。
+#. de: Und dich natürlich! Rechne damit, dass du wieder von mir hörst, wenn etwas anliegt.
+#. fr: Quoi qu'il en soit, vous avez fait de l'excellent travail. Merci et à bientôt, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if><nbsp>!
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/028/StmBdz916_02872:TEXT_STMBDZ916_02872_SWETHRYKBROOKSTONE_000_035:1"
+msgid "At any rate, you've been of great help. If we should have need of you again, you can be certain we will contact you."
+msgstr ""

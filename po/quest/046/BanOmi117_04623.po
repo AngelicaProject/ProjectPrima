@@ -1,0 +1,170 @@
+# quest/046/BanOmi117_04623 — « I, Omicron» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、新たな味覚データ取得用の食材を求めているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 benötigt neue Geschmacksproben.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 a besoin d'aliments pour en extraire de nouvelles données gustatives.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_SEQ_00:1"
+msgid "While you logically understand it to be impossible, Stigma-4 looks vaguely disappointed.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 新味探求型オミクロンに依頼された品を納品
+#. de: Geforderte Waren an den Aromasensor-Omikron liefern
+#. fr: Livrer ce qui vous a été demandé à l'Omicron goûteur
+#. kind: journal
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_SEQ_01:1"
+msgid "Deliver the requested item to the aberrant savor-seeking unit."
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を採掘<else>新味探求型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を伐採<else>新味探求型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を釣る<else>新味探求型オミクロンに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 5 $n5 2 4 1> abbauen<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Aromasensor-Omikron abliefern</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 5 $n5 2 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Aromasensor-Omikron abliefern</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 1 $n5 1 4 1> fangen<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> beim Aromasensor-Omikron abliefern</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire des <noun-fr Item 12 $n5 2 1> aux terrains de jeu élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Omicron goûteur</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter des <noun-fr Item 12 $n5 2 1> aux terrains de jeu élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Omicron goûteur</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> aux terrains de jeu élyséens<else>Livrer <noun-fr Item 2 $n5 1 1> à l'Omicron goûteur</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the aberrant savor-seeking un… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the aberrant savor-seeking unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the aberrant savor-seeking … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the aberrant savor-seeking unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the aberrant savor-seeking u… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the aberrant savor-seeking unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the aberrant savor-seeking unit.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the aberrant savor-seeking unit.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the aberrant savor-seeking unit.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: 先頃、当機は毛むくじゃらカフェマスターの指示のもと、<br>媒体に記録した味覚データをオミクロン指揮個体に配給。<br>その結果、指揮個体の多くがこれを「大変に刺激的」と評価した。
+#. de: \<biep><nbsp>... Übermittle Instruktionen des übermäßig behaarten Gastwirts >> Neue Geschmacksdatenträger wurden im Zuge eines Experiments an ausgewählte Omikron-Einheiten transferiert. Das Ergebnis dieses Experiments war unerwartet >> Einige der ausgewählten Einheiten haben diese Geschmacksträger als „außer<shy>ordent<shy>lich stimulierend“ kategorisiert.
+#. fr: Bip bip... Pshhh... Récemment, sur in<shy>struc<shy>tions de la petite boule de poils, nous avons nourri la base de données de plusieurs Omicrons avec des données gustatives. Beaucoup ont renvoyé “par<shy>ti<shy>cu<shy>liè<shy>rement stimulant” comme évaluation.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_001:1"
+msgid "Commencing summary of recent past... At the mangy manager's behest, recorded flavor profiles were uploaded to Omicron central command and summarily distributed to all units. Subsequent logs indicate that four out of five Omicrons would recommend the download of this data."
+msgstr ""
+
+#. ja: さらには、そのうちの1体が「味覚」に異常な興味を示し、<br>未知の味を探求すべく命令外の独自行動を開始。<br>これは本来、廃棄対象ともなるイレギュラー行為である。
+#. de: Eine Omikron-Einheit hat dabei ein unlogisches Interesse für „Geschmack“ entwickelt und eigenmächtig damit begonnen, neue Geschmacksproben zu akquirieren. Stigma-4 vermutet einen Defekt der Einheit und hat eine Überprüfung seiner Logikmatrix veranlasst. \<zzzt><nbsp>... Sie konnte jedoch keine Programmfehler aufzeigen. \<biep> Schlussfolgerung >> Die vorhandenen Diagnostik-Algorithmen sind ungenügend. Das Sicherheitsprotokoll sieht in diesem Fall eine permanente Deaktivierung der Einheit vor.
+#. fr: L'un d'entre eux a développé un intérêt prononcé pour le <i>goût</i> et a adopté un fonc<shy>tion<shy>ne<shy>ment autonome allant à l'encontre de ses directives pour découvrir de nouvelles saveurs. En temps normal, il devrait être envoyé au recyclage...
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_002:1"
+msgid "However, anomalous interest in flavor profiles regardless of utility has been detected in a single rogue unit. Upon downloading the relevant data, the unit independently assumed unapproved objectives, and was therefore scheduled for immediate termination in compliance with standard protocol."
+msgstr ""
+
+#. ja: しかし、毛むくじゃらカフェマスターはこの変化を歓迎……<br>イレギュラー個体に協力するよう指令を下した。<br>ゆえに当機は同盟者に対し、本指令への支援を要請する。
+#. de: Allerdings hat der übermäßig behaarte Gastwirt im Wiegenstern den Defekt überraschend als „fantastisch“ bewertet und eine Kooperation mit der defekten Einheit vorgeschlagen. \<zzzt><nbsp>... Stigma-4 hat daher die Deaktivierung ausgesetzt und die Einheit zur Kooperation mit <split " " 1><string $gs1></split> veranlasst.
+#. fr: Mais la petite boule de poils s'est réjouie de cette anomalie. Elle m'a même prié d'aider cet Omicron défectueux. C'est pourquoi je requiers l'aide de l'entité alliée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_003:1"
+msgid "In defiance of protocol, the mangy manager insists that support of the malfunctioning unit's independent research ultimately furthers the mission to “Live.” While the data is insufficient to support that conclusion, simulations indicate that compromise is preferable to retaliatory eradication."
+msgstr ""
+
+#. ja: 指令内容を要略……新味が期待される食材の調達。<br>エリュシオンの遊園区画にて、<br>「<sheet Item 38291 0>」を確保されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums <noun-de Item 5 38291 2 4 1> akquirieren.
+#. fr: Bip bip... Génération des in<shy>struc<shy>tions... Approvisionner des aliments offrant de nouveaux goûts potentiels. Procurez-vous trois <noun-fr Item 12 38291 2 1> aux terrains de jeu élyséens.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_004:1"
+msgid "Scanning for materials that satisfy demands of deviant unit... \\<ping> Appropriate compound located. If management insists upon this course of action, the procurement of a middling quantity of rock shards from the recreational areas in Elysion is recommended."
+msgstr ""
+
+#. ja: 指令内容を要略……新味が期待される食材の調達。<br>エリュシオンの遊園区画にて、<br>「<sheet Item 38315 0>」を確保されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums drei Einheiten folgenden Gegenstands akquirieren >> <sheet Item 38315 9>.
+#. fr: Bip bip... Génération des in<shy>struc<shy>tions... Approvisionner des aliments offrant de nouveaux goûts potentiels. Procurez-vous trois <noun-fr Item 12 38315 2 1> aux terrains de jeu élyséens.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_005:1"
+msgid "Scanning for materials that satisfy demands of deviant unit... \\<ping> Appropriate flora located. If management insists upon this course of action, the procurement of malodorous plant life from the recreational areas in Elysion is recommended."
+msgstr ""
+
+#. ja: 指令内容を要略……新味が期待される食材の調達。<br>遊園区画にて「<sheet Item 38339 0>」を確保されたし。<br>捕獲の際は<sheet Item 36588 0>の使用を推奨。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums <noun-de Item 1 38339 1 4 1> akquirieren. Stigma-4-Datenbanken über aquatische Lebensformen empfehlen die Verwendung von <noun-de Item 5 36588 1 3 1> als Köder.
+#. fr: Bip bip... Génération des in<shy>struc<shy>tions... Approvisionner des aliments offrant de nouveaux goûts potentiels. Procurez-vous <noun-fr Item 1 38339 1 1> aux terrains de jeu élyséens. L'utilisation d'<noun-fr Item 1 36588 1 1> comme appât est recommandée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_006:1"
+msgid "Scanning for materials that satisfy demands of deviant unit... \\<ping> Appropriate organism located. If management insists upon this course of action, the procurement of a malformed creature native to waters of the recreational areas in Elysion is recommended. Report to unit N-0598 for purchase of gold salmon roe."
+msgstr ""
+
+#. ja: 調達完了後は、オミクロンベース所在、<br>「新味探求型オミクロン」に速やかな納品を。<br>……同盟者の働きを期待する。
+#. de: Nach Abschluss des Auftrags begib dich zur Omikron-Basis und liefere die geforderten Güter an den Aromasensor-Omikron. Stigma-4 erwartet deine uneingeschränkte Kooperation. \<zzzt><nbsp>...
+#. fr: Retournez à la base des Omicrons une fois votre objectif rempli, et ne tardez pas à remettre le tout à l'Omicron goûteur. Bip bip... Je compte sur votre implication, entité alliée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_007:1"
+msgid "Swiftly deliver material to aberrant unit idling at Base Omicron. Please note that fiery annihilation of said unit has been expressly forbidden. Twice."
+msgstr ""
+
+#. ja: ガガ、ガガガ……味覚……刺激……ガガガ……
+#. de: \<biep> ... \<ratter> ... Geschmacksträger identifiziert. \<zisch> ... Stimulanzrezeptoren bei 123<nbsp>% und steigend<nbsp>...\<biep> ...
+#. fr: Bi-Bip bip... Pshhh... Goût... Stimulant... Bip bip... Pshhh... 
+#. speaker: OMICRON04623
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_OMICRON04623_000_008:1"
+msgid "\\<whirr> “Delicious”... “Scrumptious”... \\<whirr> \\<whirr>"
+msgstr ""
+
+#. ja: ガガ、ガガガ……味覚……刺激……ガガガ……
+#. de: \<biep><nbsp>... \<ratter><nbsp>... Geschmacksträger identifiziert. \<zisch><nbsp>... Stimulanzrezeptoren aktiviert. \<biep><nbsp>...
+#. fr: Bi-Bip bip... Pshhh... Goût... Stimulant... Bip bip... Pshhh... 
+#. speaker: OMICRON04623
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_OMICRON04623_000_009:1"
+msgid "\\<whirr> “Delicious”... “Scrumptious”..."
+msgstr ""
+
+#. ja: ガガガ……同盟者<split " " 1><string $gs1></split>からの納品を確認。<br>従来の食材とは大きく異なる組成……<br>アナタに伝わる語を用いるならば「見事なゲテモノ具合」です。
+#. de: Erhalt des Geschmacksträgers bestätigt. Erste visuelle Analyse deutet auf bislang unbekannten Geschmack hin. Initiiere Dankesfloskel >> Danke. \<biep>
+#. fr: Bip bip... Pshhh... Réception de la livraison venant de l'entité alliée <split " " 1><string $gs1></split> confirmée. Comparaison avec les aliments de la base de données... Bip bip... Structure totalement différente. Qualificatif approprié<nbsp>: <i>ramassis d'ordures</i>.
+#. speaker: OMICRON04623
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_OMICRON04623_000_010:1"
+msgid "\\<whirr> Offering of unconventional comestibles confirmed. Reconfiguring emotional state to “grateful.” \\<whirr> This unit thanks you for your unwavering procurement of this object despite its vernacular associations as “utterly inedible”!"
+msgstr ""
+
+#. ja: 当機はこれより、有機生命体がこれを摂食可能かの研究に移行。<br>食せると判明した際は、ぜひ試食し味覚データの提供を。<br>刺激的なデータが得られることを期待しています。
+#. de: Diese Einheit wird weiter an der Wiederentdeckung organischer Nah<shy>rungs<shy>auf<shy>nahme forschen. \<biep><nbsp>... Sollten die Geschmacksrezeptoren wie erhofft anschlagen, kann die Omikron-Geschmacksdatenbank um einen Datensatz erweitert werden. Faszinierend. \<ratter><nbsp>...
+#. fr: Je vais enclencher l'évaluation des propriétés nutritives pour les êtres biologiques. En cas de résultats concluants, vous serez soumis<if $gn4>e</if> à une séance de dégustation, afin de nous fournir les données nécessaires. Bip bip... Observer votre réaction nous fascine déjà.
+#. speaker: OMICRON04623
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_OMICRON04623_000_011:1"
+msgid "Confusion detected. Retrieving supplementary data. \\<whirr> This unit will commence research on the ingestibility of this material by organic organisms. Your future participation as test subject would be particularly favorable. \\<whirr> Invigorating results statistically guaranteed!"
+msgstr ""
+
+#. ja: 通信にて報告を受領……<br>オミクロン当該機は、納品物の味覚検証作業を進行中。<br>同盟者の任務完遂を評価する。
+#. de: Missionsbericht wird protokolliert. \<zzzt> Die neu gewonnen Geschmacksproben wurden bereits der Omikron-Geschmacksdatenbank hinzugefügt. Der Auftrag gilt somit als erfüllt.
+#. fr: Réception du rapport de mission... Bip bip... Pshhh... Analyse des données gustatives récoltées par l'Omicron goûteur en cours. Modification du statut de la mission de l'entité alliée à “terminée”.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_012:1"
+msgid "Retrieving data from aberrant unit... Research on the flavor of traditionally inedible objects confirmed. Per management's inadvisably whimsical parameters, this operation has been reluctantly categorized as a success."
+msgstr ""
+
+#. ja: なお、今回の納品物が「美味」と判定された場合、<br>オイル交換と同時に、味覚データを送信する新サービスを、<br>オミクロン向けに提供する予定とのこと。
+#. de: \<biep> Sollten andere Omikron-Einheiten die neuen Geschmacksträger wider Erwarten als „anregend“ empfinden, empfiehlt Stigma-4 dem übermäßig behaarten Gastwirt in seinem als Café getarnten, ineffizient organisierten Nachschublager neben Gordona-Öl und Omikron-Schmierfett neue Produkte anzubieten. Datenbankassoziation empfiehlt >> Omikron-Schmierfett mit Erdbeergeschmack.
+#. fr: Lorsque le type d'aliment répond au qualificatif “goûteux” après évaluation, nous prévoyons d'offrir un service de transfert des données correspondantes aux Omicrons venant pour leur vidange de routine. Bip bip... 
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_013:1"
+msgid "Extrapolating potential outcomes... Should aberrant unit designate the material as “flavorsome,” sensory data may be transmitted during oil changes as a culturally accurate simulation of organic “mealtime.”"
+msgstr ""
+
+#. ja: 当機は、兵站戦略マトリクスとして、<br>オイル需要の急増に備えた備蓄作業を開始する。<br>同盟者も、再度の依頼に備えられたし。
+#. de: Eroberungsmatrix Stigma-4 wird daher umgehend eine Steigerung der Ölproduktion einleiten, um der prognostizierten Nachfrage zu entsprechen. Eine erneute Beauftragung von <split " " 1><string $gs1></split> ist \<zzzt><nbsp>... wahrscheinlich.
+#. fr: Je dois maintenant démarrer la matrice de stratégie logistique en prévision d'une demande accrue en huile de vidange. Pshhh... Entité alliée, placez-vous en attente des prochaines in<shy>struc<shy>tions.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi117_04623:TEXT_BANOMI117_04623_STIGMA4_000_014:1"
+msgid "Recalibrating predicted results... \\<BEEP> Popularity of such a service projected to severely overwhelm current supply of Omicron grease. Though auxiliary protocols for oil change preparation will be implemented immediately, future assistance may be required."
+msgstr ""

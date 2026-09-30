@@ -1,0 +1,172 @@
+# quest/052/BanMam106_05266 — « All Tools' Maintenance» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、農具の手入れ用品を求めているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja hat dir etwas über die Unumstößlichkeit der Naturgesetze zu sagen.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja est à la recherche de produits d'entretien pour les outils.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_SEQ_00:1"
+msgid "A few extra supplies never hurt anyone. Especially not Kageel Ja.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: クベージャに依頼された品を納品
+#. de: Kubeel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kubeel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_SEQ_01:1"
+msgid "Deliver the requested materials to Kubeel Ja."
+msgstr ""
+
+#. ja: カゲージャと話す
+#. de: Mit Kageel Ja sprechen
+#. fr: Parler à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_SEQ_02:1"
+msgid "Speak with Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>気球発着場付近の採掘場で<sheet Item $n5 0>を採掘<else>クベージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>ヤクアワク・ゾユ付近の良木で<sheet Item $n5 0>を伐採<else>クベージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>ヤクアワク・ゾユで<sheet Item $n5 0>を釣る<else>クベージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Am Ballon-Landeplatz <sheet Item $n5 9> sammeln<else>Kubeel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>Beim Yak Awak Tsoly <sheet Item $n5 9> sammeln<else>Kubeel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Am Yak Awak Tsoly <noun-de Item 1 $n5 1 4 1> fangen<else>Kubeel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près de l'embarcadère à ballons<else>Livrer <noun-fr Item 2 $n5 2 1> à Kubeel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du Yak Awak Tsoly<else>Livrer <noun-fr Item 2 $n5 2 1> à Kubeel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au Yak Awak Tsoly<else>Livrer <noun-fr Item 2 $n5 1 1> à Kubeel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> north of the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if><else><if ($… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> north of the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if><else><if ($n4 == 18)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kubeel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kubeel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> north of the dirigible landing<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 2 1> to Kubeel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Yak Awak Tsoly<else>Deliver <noun-en Item 2 $n5 1 1> to Kubeel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: カゲージャと話す
+#. de: Mit Kageel Ja sprechen
+#. fr: Parler à Kageel Ja
+#. kind: objective
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_TODO_01:1"
+msgid "Speak with Kageel Ja."
+msgstr ""
+
+#. ja: 働いていると、どうしても疲れがたまってくるよね。<br>それは僕たちだけじゃなく、農具も同じ……<br>だから、日々の手入れが欠かせないのさ。
+#. de: Die Gesetze der Natur sind unumstößlich: Je mehr wir arbeiten, desto müder werden wir. Das gilt auch für unsere Werkzeuge! Der tägliche Umgang mit ihnen führt zu Abnutzungserscheinungen, die eine regelmäßige Pflege erfordern.
+#. fr: Les lois de la nature sont immuables<nbsp>: plus on bouge, plus on se fatigue. Eh bien, sache qu'il en va de même pour nos outils, ja<nbsp>! Les utiliser au quotidien provoque une usure qui nécessite un entretien tout aussi régulier.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_001:1"
+msgid "Fieldwork takes its toll on all of us─our tools included. Daily upkeep is as vital to a tool as good soil is to our crops."
+msgstr ""
+
+#. ja: というわけで<split " " 1><string $gs1></split>さん、<br>不足しがちな手入れ用品の補充、頼んでもいいかな？
+#. de: Und die Pflege wiederum erfordert einen ständigen Nachschub an geeigneten Produkten. Würdest du dich bitte darum kümmern, mir welche zu bringen?
+#. fr: Et l'entretien, quant à lui, exige un réapprovisionnement constant en produits adéquats. Tu veux bien te charger de m'en apporter, s'il te plaît<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_002:1"
+msgid "That said, repair supplies are in high demand around the gainery, and we could use a hand replenishing our stock."
+msgstr ""
+
+#. ja: 調達できる場所は、気球発着場の北あたり。<br>そこで採れる「<sheet Item 48033 0>」は刃物を磨くのに便利でね、<br>シュバラール族の人たちも利用してる、オススメの品なんだって。
+#. de: Nördlich des Ballon-Landeplatzes solltest du <noun-de Item 1 48033 1 4 1> finden. Damit lassen sich stumpfe Klingen wieder auf Vordermann bringen. Die Xbr'aal verwenden ihn seit Urzeiten.
+#. fr: Près de l'embarcadère à ballons, tu devrais trouver <noun-fr Item 1 48033 2 1> permettant de polir les métaux bien comme il faut, ja. Les Xbr'aal en savent quelque chose, ils les utilisent depuis la nuit des temps.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_003:1"
+msgid "We're currently in need of aqueous tsolystones─you'll find them north of the dirigible landing. The Xbr'aal often sharpen their scythe blades with those stones, and we'd do well to learn from their example."
+msgstr ""
+
+#. ja: 調達できる場所は、ヤクアワク・ゾユあたり。<br>そこで採れる「<sheet Item 48034 0>」は腐食予防に便利で、<br>シュバラール族の人たちも利用してる、オススメの品なんだって。
+#. de: Beim Yak Awak Tsoly solltest du etwas <sheet Item 48034 9> finden. Damit kann man alle möglichen Geräte vor Rost schützen. Die Xbr'aal verwenden es seit Urzeiten.
+#. fr: Près du Yak Awak Tsoly, tu devrais trouver <noun-fr Item 1 48034 2 1> permettant d'empêcher la nourriture de s'avarier, ja. Les Xbr'aal en savent quelque chose, ils en utilisent depuis la nuit des temps.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_004:1"
+msgid "To prevent their tools from rusting, the Xbr'aal often coat their tools with natural plant oils from the Ut'ohmu Horizon, and we mean to do the same. I'm told you'll be able to gather your fill by Yak Awak Tsoly."
+msgstr ""
+
+#. ja: 調達できる場所は、ヤクアワク・ゾユ。<br>そこで採れる「<sheet Item 48035 0>」は泥を落とすのに便利でね、<br>シュバラール族の人たちも利用してる、オススメの品なんだって。
+#. de: Am Yak Awak Tsoly solltest du <noun-de Item 1 48035 1 4 1> fangen können. Damit lassen sich alle möglichen Geräte von Schmutz befreien. Die Xbr'aal verwenden ihn seit Urzeiten.
+#. fr: Au Yak Awak Tsoly, tu devrais pouvoir pêcher <noun-fr Item 1 48035 1 1> permettant d'éliminer les impuretés, ja. Les Xbr'aal en savent quelque chose, ils l'utilisent depuis la nuit des temps.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_005:1"
+msgid "The soft flesh of tsoly sponges is ideal for keeping our tools free of dirt and grime. The Xbr'aal use them regularly as well. As their name implies, you'll find them dwelling among the fresh waters of Yak Awak Tsoly."
+msgstr ""
+
+#. ja: そうそう、採るときは<sheet Item 43849 0>を使うといいらしいよ。
+#. de: Ich empfehle dir, dafür <noun-de Item 5 43849 2 4 1> als Köder zu benutzen.
+#. fr: Et bien sûr, n'oublie pas <noun-fr Item 2 43849 1 1> permettant de l'attraper.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_006:1"
+msgid "They're quite fond of golden stonefly nymphs, so I suggest you stock up on them if you haven't already."
+msgstr ""
+
+#. ja: 無事に採ってこられたら、農具管理役……<br>畑近くにいるクベージャに渡してあげて。<br>それじゃ、よろしくね！
+#. de: Bring das gewünschte Pflegemittel bitte direkt zu Kubeel Ja. Er wartet schon auf dich.
+#. fr: Je pense que c'est tout pour cette fois... Quand tu auras récupéré la marchandise, donne-la à Kubeel Ja. Il t'attend déjà avec impatience, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_007:1"
+msgid "Once you've gathered enough, make for the fields and find Kubeel Ja, who manages our tool supply. He'll see to it that your provisions are put to good use."
+msgstr ""
+
+#. ja: よう、農具の手入れ用品を採ってきてくれるんだって？<br>上の森は、気軽に……っていうにはちょっと遠いから、<br>あんたみたいに身軽な人がいてくれて、本当に助かるよ。
+#. de: Hast du das Pflegemittel für Kageel Ja gefunden? Ich würde ja selbst gehen, aber ich habe hier so viel zu tun und du bist so viel schneller als ich.
+#. fr: T'as dégoté les produits d'entretien demandés par Kageel Ja<nbsp>? J'y serais bien allé moi-même, je t'assure, mais j'ai tellement de boulot ici... et t'es tellement plus rapide que moi...
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KUBEELJA_100_010:1"
+msgid "Ah, I take it you're the one responsible for procuring the repair supplies? Travel to the upper reaches of the forest is, well... It's no easy journey for us, you understand. Your assistance is much appreciated."
+msgstr ""
+
+#. ja: おう、カゲージャから聞いてるぜ、<br>農具の手入れ用品を採ってきてくれたんだな？
+#. de: Hast du das Pflegemittel, um das ich Kageel Ja gebeten habe?
+#. fr: Ça y est, t'as ramené d'autres produits d'entretien pour Kageel Ja<nbsp>?
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KUBEELJA_100_011:1"
+msgid "You must be the one Kageel Ja mentioned. Here to contribute some repair supplies for the tools, yes?"
+msgstr ""
+
+#. ja: うむ、確かに。<br>質のいい品を届けてくれて助かるよ、<br>のちほど倉庫に運んでおくとしよう。
+#. de: Ja, das ist es! Danke, das wird von Nutzen sein. Ich lasse es sofort in die Werkstatt bringen.
+#. fr: En voilà du bon boulot, ja<nbsp>! En plus, tu nous as pas déniché de la camelote de seconde main. Fais-moi confiance, ça arrivera à destination très bientôt.
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KUBEELJA_100_012:1"
+msgid "Hm... This should do nicely. I'll add it to the storehouse as soon as I'm able. Many thanks for the assistance."
+msgstr ""
+
+#. ja: 質のいい品を届けてくれて助かるよ、<br>のちほど倉庫に運んでおくとしよう。
+#. de: Danke, das Pflegemittel wird von Nutzen sein. Ich lasse es sofort in die Werkstatt bringen.
+#. fr: En voilà du bon boulot, ja<nbsp>! En plus, tu nous as pas déniché de la camelote de seconde main. Fais-moi confiance, ça arrivera à destination très bientôt.
+#. speaker: KUBEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KUBEELJA_200_012:1"
+msgid "You have a good eye for quality materials, friend. I'll be sure to bring your supplies to the storehouse as soon as I'm able."
+msgstr ""
+
+#. ja: おかえり<split " " 1><string $gs1></split>さん。<br>手入れ用品を調達してくれたようで、ありがとう。
+#. de: Danke für das Pflegemittel, <split " " 1><string $gs1></split>. Es ist bereits in guten Händen. Bald werden unsere Werkzeuge wieder wie am ersten Tag glänzen.
+#. fr: <split " " 1><string $gs1></split>, revoir ta bonne bouille est un plaisir sans cesse renouvelé, ja<nbsp>! Merci pour les produits d'entretien, ils sont déjà entre de bonnes mains qui feront briller nos outils comme au premier jour d'ici peu.
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_013:1"
+msgid "There you are, <split \" \" 1><string $gs1></split>. I hear you made quick work of procuring the extra repair supplies."
+msgstr ""
+
+#. ja: 道具ってのは使っているとどうしても傷むものだから、<br>毎日の手入れが欠かせないんだ。<br>農業では日々畑に手をかけ続けるわけだから、余計にね。
+#. de: Noch sind keine unverwüstlichen Werkzeuge erfunden worden, also müssen wir uns um die, die wir haben, gut kümmern. Denn ohne Werkzeuge können wir uns von einer guten Ernte verabschieden.
+#. fr: Le matériel inusable n'ayant pas encore été inventé en ce bas monde, il nous faut chouchouter nos outils ré<shy>gu<shy>liè<shy>re<shy>ment afin qu'ils gardent toute leur efficacité. Sans ça, on peut dire adieu aux futures récoltes, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_014:1"
+msgid "You have my thanks. Every tool inevitably takes on wear and tear with time─even more so with daily use. Proper maintenance and care is essential if we're to keep them in tip-top condition."
+msgstr ""
+
+#. ja: もちろん、それは僕たちの身体も同じこと。<br>だから貴方も、疲れたらちゃんと休むんだよ、<br>今後もいろいろと仕事をお願いしたいからさ！
+#. de: Uns selbst dürfen wir natürlich auch nicht überstrapazieren! Die Gesetze der Natur sind schließlich unumstößlich. Deswegen: Gönne dir doch eine kleine Pause!
+#. fr: Comme je le disais tout à l'heure, tout s'entretient, le corps comme les outils. Si tu as un coup de barre, n'hésite surtout pas à piquer un petit roupillon<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam106_05266:TEXT_BANMAM106_05266_KAGEELJA_000_015:1"
+msgid "The same can be said for the folks who use the tools as well. So when your body needs a break, you'd best listen to it, you hear? We've plenty more to ask of you, after all, and we'd prefer you stay well rested for the tasks ahead!"
+msgstr ""

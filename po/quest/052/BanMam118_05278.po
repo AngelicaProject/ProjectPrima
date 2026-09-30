@@ -1,0 +1,140 @@
+# quest/052/BanMam118_05278 — « Remedies at the Ready» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、常備薬の材料を調達してほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja benötigt Materialien, um eine Hausapotheke anzulegen.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja voudrait constituer un stock d'objets curatifs.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_SEQ_00:1"
+msgid "Kageel Ja needs you to procure medicinal ingredients.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_SEQ_01:1"
+msgid "Deliver the requested materials to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>セノーテ・ネヨーゾテ付近の採掘場で<sheet Item $n5 0>を採掘<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>セノーテ・ネヨーゾテ付近の良木で<sheet Item $n5 0>を伐採<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>辛水のセノーテで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der Nähe vom Cenote Neyozzote <noun-de Item 5 $n5 2 4 1> abbauen<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Nähe vom Cenote Neyozzote <noun-de Item 5 $n5 2 4 1> ernten<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Bitternassen Cenote <noun-de Item 1 $n5 1 4 1> fangen<else>Kageel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près du cénote Neyozzote<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du cénote Neyozzote<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au cénote d'Aigres-Eaux<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 1… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Bitterbark Cenote<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Bitterbark Cenote<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Bitterbark Cenote<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: 最近、外つ国やトライヨラに行っていた人たちが、<br>ぽつぽつとマムークに戻ってきてくれているんだ。
+#. de: In letzter Zeit kehren nach und nach jene Leute nach Mamook zurück, die die Stadt ursprünglich für Tuliyollal oder Länder jenseits der See verlassen haben.
+#. fr: Ces derniers temps, un bon nombre de nos semblables reviennent à Mamook après un périple à l'étranger ou un séjour à Tuliyollal.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_001:1"
+msgid "In recent days, we've had a steady drip of locals returning to Mamook from Tuliyollal and across the salt."
+msgstr ""
+
+#. ja: 元傭兵の同胞が畑の警備を買って出てくれているんだけど、<br>見張りをしたり魔物を追い払ったり、けっこう大変みたいでね。<br>そんな彼らのために、常備薬を用意しておきたいのさ。
+#. de: Die ehemaligen Söldner unter ihnen halten nun Wache auf den Feldern, was alles andere als eine leichte Aufgabe ist. Deshalb möchte ich zur Sicherheit eine kleine Hausapotheke zu<shy>sammen<shy>stellen.
+#. fr: Beaucoup d'anciens mercenaires sont ravis de pouvoir travailler ici, en montant la garde près des champs, ja. En revanche, même ceux qui ont déjà bien roulé leur bosse finissent par se blesser contre les monstres des alentours.<br>Alors, je voudrais leur proposer des remèdes et autres pré<shy>pa<shy>ra<shy>tions curatives.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_002:1"
+msgid "The former mercenaries among them have been eager to take up posts as gainery guards, but even the best suffer minor wounds during their tussles with encroaching wildlife. In order to treat these injuries and ailments, I'd like to keep a good stock of healing medicines on hand."
+msgstr ""
+
+#. ja: というわけで、「<sheet Item 48060 0>」の調達をお願い。<br>セノーテ・ネヨーゾテ付近で採れるはずだから、よろしく頼むよ。
+#. de: An Materialien bräuchte ich dafür drei <noun-de Item 5 48060 2 4 1>. Soweit ich weiß, solltest du die in der Nähe des Cenote Neyozzote finden können. Ich wünsche gutes Sammeln!
+#. fr: Tu pourrais me ramener <noun-fr Item 1 48060 2 1><nbsp>? On peut en trouver près du cénote Neyozzote, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_003:1"
+msgid "Yak T'el moss is always a useful ingredient. I would appreciate whatever you can bring me from the vicinity of Cenote Neyozzote."
+msgstr ""
+
+#. ja: というわけで、「<sheet Item 48061 0>」の調達をお願い。<br>セノーテ・ネヨーゾテ付近で採れるはずだから、よろしく頼むよ。
+#. de: An Materialien bräuchte ich dafür drei <noun-de Item 5 48061 2 4 1>. Soweit ich weiß, solltest du die in der Nähe des Cenote Neyozzote finden können. Ich wünsche gutes Sammeln!
+#. fr: Tu pourrais me ramener <noun-fr Item 1 48061 2 1><nbsp>? On peut en trouver près du cénote Neyozzote, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_004:1"
+msgid "Ja Tiika cranberries are always a useful ingredient. I would appreciate whatever you can bring me from the vicinity of Cenote Neyozzote."
+msgstr ""
+
+#. ja: というわけで「<sheet Item 48062 0>」の調達をお願い。<br>餌は<sheet Item 43849 0>がいいかな。<br>辛水のセノーテで採れるはずだから、よろしく頼むよ。
+#. de: An Materialien bräuchte ich dafür <noun-de Item 1 48062 1 4 1>. Soweit ich weiß, solltest du den im Bitternassen Cenote angeln können. <capitalize><noun-de Item 5 43849 2 1 1></capitalize> sollten gut als Köder funktionieren.
+#. fr: Tu pourrais me ferrer <noun-fr Item 1 48062 1 1><nbsp>? On peut en trouver au cénote d'Aigres-Eaux. Quant à l'appât, n'oublie pas <noun-fr Item 4 43849 2 1>, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_005:1"
+msgid "Cexudross fish are always a useful ingredient. I would appreciate whatever you can catch from Bitterbark Cenote. As always, golden stonefly nymphs will serve you well."
+msgstr ""
+
+#. ja: 常備薬のために「<sheet Item 48060 0>」の調達をお願い。<br>セノーテ・ネヨーゾテ付近で採れるはずだから、よろしく頼むよ。
+#. de: Zur Herstellung der Medizin für die Hausapotheke bräuchte ich drei <noun-de Item 5 48060 2 4 1>. Soweit ich weiß, solltest du die in der Nähe des Cenote Neyozzote finden können. Ich wünsche gutes Sammeln!
+#. fr: Il me faut <noun-fr Item 1 48060 2 1>. On peut en trouver près du cénote Neyozzote, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_006:1"
+msgid "If you have the time, we could use a few clumps of Yak T'el moss from the vicinity of Cenote Neyozzote."
+msgstr ""
+
+#. ja: 常備薬のために「<sheet Item 48061 0>」の調達をお願い。<br>セノーテ・ネヨーゾテ付近で採れるはずだから、よろしく頼むよ。
+#. de: Zur Herstellung der Medizin für die Hausapotheke bräuchte ich drei <noun-de Item 5 48061 2 4 1>. Soweit ich weiß, solltest du die in der Nähe des Cenote Neyozzote finden können. Ich wünsche gutes Sammeln!
+#. fr: Il me faut <noun-fr Item 1 48061 2 1>. On peut en trouver près du cénote Neyozzote, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_007:1"
+msgid "If you have the time, we could use some Ja Tiika cranberries from the vicinity of Cenote Neyozzote."
+msgstr ""
+
+#. ja: 常備薬のために「<sheet Item 48062 0>」の調達をお願い。<br>餌は<sheet Item 43849 0>がいいかな。<br>辛水のセノーテで採れるはずだから、よろしく頼むよ。
+#. de: Zur Herstellung der Medizin für die Hausapotheke bräuchte ich <noun-de Item 1 48062 1 4 1>. Soweit ich weiß, solltest du den im Bitternassen Cenote angeln können. <capitalize><noun-de Item 5 43849 2 1 1></capitalize> sollten gut als Köder funktionieren.
+#. fr: Il me faut <noun-fr Item 1 48062 1 1>, ja. On peut en trouver au cénote d'Aigres-Eaux. Et n'oublie pas <noun-fr Item 4 43849 2 1> pour te servir d'appât<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_008:1"
+msgid "If you have the time, we could use a Cexudross fish or two from Bitterbark Cenote. As always, golden stonefly nymphs will serve you well."
+msgstr ""
+
+#. ja: 常備薬の材料、どうだった？<br>無事に採れたかい？
+#. de: Und, ist alles gut gelaufen? Konntest du die Materialien finden?
+#. fr: Alors, alors<nbsp>? Tu as mis la main sur ce que je t'ai demandé<nbsp>?
+#. speaker: KAGEELJA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_009:1"
+msgid "Hello, <split \" \" 1><string $gs1></split>. Did you find the ingredients we're looking for?"
+msgstr ""
+
+#. ja: うん、確かにこれであってる。<br>遠かっただろう、わざわざありがとう。
+#. de: Genau, wonach ich gesucht hatte! Tut mir leid, dass ich dir so einen weiten Weg aufgebürdet habe.
+#. fr: Excellent, ja<nbsp>! Et merci d'avoir fait le déplacement aussi loin.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_010:1"
+msgid "Yes, this is exactly what we need. Thank you for going to the trouble─getting to some of these cenotes can be a journey in itself."
+msgstr ""
+
+#. ja: これを使って作る薬はマムーク伝来のものでね、<br>シュバラール族との戦争時にも、戦士たちに配られていたらしい。<br>その際の調達は、戦いが苦手な者の仕事でもあったんだって。
+#. de: Die Rezeptur dieser Medizin, die sich hieraus herstellen lässt, wird schon seit Generationen in Mamook weitergegeben<nbsp>- sie wurde wohl bereits von den Soldaten im Krieg gegen die Xbr'aal verwendet. Damals wurden diejenigen, denen der Kampf nicht lag, mit dem Sammeln der Materialien beauftragt.
+#. fr: Les remèdes fabriqués avec ces ingrédients sont une vieille tradition de Mamook, ja. Ils étaient distribués aux soldats lors de la guerre contre les Xbr'aal. Traditionnellement, ceux qui n'étaient pas doués avec les armes s'occupaient de récolter les ressources nécessaires.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_011:1"
+msgid "It's said that the traditional medicines made from these ingredients are the same as those handed out to soldiers during our war with the Xbr'aal. In those days, it was the duty of those unsuited to battle to gather the necessary materials."
+msgstr ""
+
+#. ja: ともあれ、さっそく調合の手配をしておこう。<br>また足りなくなったらお願いさせてもらうよ。
+#. de: Aber genug von der Ver<shy>gangen<shy>heit, was jetzt zählt, ist die Gegenwart. Sobald wir wieder Nachschub benötigen, melde ich mich bei dir, ja?
+#. fr: Heu<shy>reu<shy>se<shy>ment, cette époque est révolue<nbsp>! Mais les remèdes restent toujours aussi efficaces, ja. Je risque de demander de nouvelles livraisons si jamais notre réserve vient à s'épuiser<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam118_05278:TEXT_BANMAM118_05278_KAGEELJA_100_012:1"
+msgid "That time has passed, thankfully, but the healing remedies still prove as effective as ever. I may call on you again if our stock of ingredients runs low."
+msgstr ""

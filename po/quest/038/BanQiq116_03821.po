@@ -1,0 +1,126 @@
+# quest/038/BanQiq116_03821 — « Meat and Greet» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ホパル古盤のコテルリ・パソリは、保存食を作りたいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Qhoterl Pasol will Nahrungsmittel konservieren.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Qhoterl Pasol veut faire des réserves de nourriture.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_SEQ_00:1"
+msgid "Qhoterl Pasol faces an unprecedented dilemma: a disastrous deluge of dead deer delicacies.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: コテルリ・パソリに依頼された品を納品
+#. de: Qhoterl Pasol die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Qhoterl Pasol
+#. kind: journal
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_SEQ_01:1"
+msgid "Deliver the requested items to Qhoterl Pasol."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>クムル星遺跡群の岩場で<sheet Item $n5 0>を砕岩<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>クムル星遺跡群の草刈場で<sheet Item $n5 0>を草刈<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>トゥシ・メキタ湖の水中で<sheet Item $n5 0>を刺突漁<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der K'mul-Astropolis <sheet Item $n5 9> herausbrechen<else>Qhoterl Pasol das <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der K'mul-Astropolis <sheet Item $n5 9> ernten<else>Qhoterl Pasol die <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Schlangensee Tusi Mek'ta <noun-de Item 1 $n5 1 4 1> fangen<else>Qhoterl Pasol <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> à l'Astropole des K'mul<else>Livrer <noun-fr Item 2 $n5 2 1> à Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> à l'Astropole des K'mul<else>Livrer <noun-fr Item 2 $n5 2 1> à Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Harponner <noun-fr Item 1 $n5 1 1> dans le lac Tusi Mek'ta<else>Livrer <noun-fr Item 2 $n5 1 1> à Qhoterl Pasol</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine splendid rock salt in the K'mul Astropolis<else>Deliver the splendid rock salt to Qhoterl Pasol</if><else><if ($n4 == 17)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine splendid rock salt in the K'mul Astropolis<else>Deliver the splendid rock salt to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather splendid tree bark in the K'mul Astropolis<else>Deliver the splendid tree bark to Qhoterl Pasol</if><else><if ($n4 == 18)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather splendid tree bark in the K'mul Astropolis<else>Deliver the splendid tree bark to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Spearfish a splendid Night's bass in the depths of Lake Tusi Mek'ta<else>Deliver the splendid Night's bass to Qhoterl Pasol</if>… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Spearfish a splendid Night's bass in the depths of Lake Tusi Mek'ta<else>Deliver the splendid Night's bass to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine splendid rock salt in the K'mul Astropolis<else>Deliver the splendid rock salt to Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather splendid tree bark in the K'mul Astropolis<else>Deliver the splendid tree bark to Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Spearfish a splendid Night's bass in the depths of Lake Tusi Mek'ta<else>Deliver the splendid Night's bass to Qhoterl Pasol</if></if></if></if>."
+msgstr ""
+
+#. ja: ヴィース族から、ブルーディアーの肉をお裾分けいただきました～。<br>さっそく、日持ちがするよう燻製にしたいと思いまする～！<br>どうか、保存食作りに力を貸してくださいましな～。
+#. de: Nette Viis haben uns ganz viel Fleisch von Blauantilope geschenkt. Qhoterl will es räuchern, damit nicht verdirbt. Kannst du vielleicht auch helfen?
+#. fr: Gentilles Viis avoir offert viande de daine bleue à Qitari en gage d'amitié<nbsp>! Qhoterl Pasol vouloir fumer bons gros bouts de viande pour conserver longtemps longtemps<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_000:1"
+msgid "Our Viis friends have presented us with an enormous haul of venison as a sign of their appreciation for our work. The only problem is, there's so much of it, we'll need to smoke the meat before it goes rotten!"
+msgstr ""
+
+#. ja: クムル星遺跡群で、<br>「<sheet Item 29529 0>」を3つ、採ってきてくださいましな～！<br>煙で燻す前に、塩漬けにしておくのでございまする～。
+#. de: Müsstest du drei <noun-de Item 5 29529 2 4 1> aus K'mul-Astropolis besorgen. Vor Räuchern muss man Fleisch nämlich gut einsalzen. Qitari-Methode für kombiniertes Konservieren!
+#. fr: <split " " 1><string $gs1></split> aller à Astropole des K'mul et extraire trois <noun-fr Item 12 29529 2 1> pour bien saler viande avant de fumer<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_001:1"
+msgid "Could I be awfully impertinent and ask you to bring me some rock salt? Sprinkling it on the meat beforehand draws out the rich, gamy flavors!"
+msgstr ""
+
+#. ja: クムル星遺跡群で、<br>「<sheet Item 29555 0>」を3つ、採ってきてくださいましな～！<br>香り高い樹皮を使って、燻製にするのでございまする～。
+#. de: Müsstest du drei <noun-de Item 5 29555 2 4 1> aus K'mul-Astropolis besorgen. Für Räuchern braucht man nämlich aromatische Baumrinde. Spezielle Qitari-Methode!
+#. fr: <split " " 1><string $gs1></split> aller à Astropole des K'mul et récolter trois <noun-fr Item 12 29555 2 1> pour bien aromatiser viande avant de fumer<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_002:1"
+msgid "Could I be awfully impertinent and ask you to bring me some tree bark? Naturally, only the most splendid will suffice."
+msgstr ""
+
+#. ja: トゥシ・メキタ湖で、「<sheet Item 29581 0>」を、<br>刺突漁とやらで、獲ってきてくださいましな～！<br>ブルーディアーの肉と一緒に、燻製にするのでございまする～。
+#. de: Bringst du bitte <noun-de Item 5 29581 1 4 1> aus Schlangensee Tusi Mek'ta. Wenn Qhoterl schon räuchert, kann auch gleich Fisch miträuchern. Spart Räucherrinde und Zeit!
+#. fr: <split " " 1><string $gs1></split> aller harponner <noun-fr Item 12 29581 1 1> dans lac Tusi Mek'ta pour accompagner viande avant de fumer<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_003:1"
+msgid "Could I be awfully impertinent and ask you to spear me a Night's bass? It may not be the most obvious choice, but apparently, smoking it together with the deer meat helps to preserve it."
+msgstr ""
+
+#. ja: クムル星遺跡群で、<br>「<sheet Item 29529 0>」を3つ、採ってきてくださいましな～。<br>煙で燻す前に、塩漬けにしておくのでございまする～。
+#. de: Kannst du drei <noun-de Item 5 29529 2 4 1> aus K'mul-Astropolis bringen, bitte? Vor Räuchern muss man Fleisch nämlich gut einsalzen. Qitari-Methode für kombiniertes Konservieren!
+#. fr: <split " " 1><string $gs1></split> aller à Astropole des K'mul et extraire trois <noun-fr Item 12 29529 2 1> pour bien saler viande avant de fumer<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_004:1"
+msgid "If I could tear myself away from my duties here, I'd probably start by searching around the K'mul Astropolis. Something about the place simply screams “splendid,” wouldn't you agree?"
+msgstr ""
+
+#. ja: クムル星遺跡群で、<br>「<sheet Item 29555 0>」を3つ、採ってきてくださいましな～。<br>香り高い樹皮を使って、燻製にするのでございまする～。
+#. de: Kannst du drei <noun-de Item 5 29555 2 4 1> aus K'mul-Astropolis bringen, bitte? Für Räuchern braucht man nämlich aromatische Baumrinde. Spezielle Qitari-Methode!
+#. fr: <split " " 1><string $gs1></split> aller à Astropole des K'mul et récolter trois <noun-fr Item 12 29555 2 1> pour bien aromatiser viande avant de fumer<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_005:1"
+msgid "If I could tear myself away from my duties here, I'd probably start by searching around the K'mul Astropolis. Something about the place simply screams “splendid,” wouldn't you agree?"
+msgstr ""
+
+#. ja: トゥシ・メキタ湖で、「<sheet Item 29581 0>」を、<br>刺突漁とやらで、獲ってきてくださいましな～。<br>ブルーディアーの肉と一緒に、燻製にするのでございまする～。
+#. de: Bringst du bitte <noun-de Item 5 29581 1 4 1> aus Schlangensee Tusi Mek'ta? Wenn Qhoterl schon räuchert, kann auch gleich Fisch miträuchern. Spart Räucherrinde und Zeit!
+#. fr: <split " " 1><string $gs1></split> aller harponner <noun-fr Item 12 29581 1 1> dans lac Tusi Mek'ta pour accompagner viande avant de fumer<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_006:1"
+msgid "If I could tear myself away from my duties here, and I had even the slightest inkling of how spearfishing works, I'd probably try my luck at Lake Tusi Mek'ta."
+msgstr ""
+
+#. ja: 本クエストを進行するためには、<br>クエスト「「刺突漁」で魚を狙え」を完了し、<br>「刺突漁」を開放しておく必要があります。
+#. de: Um diesen Auftrag spielen zu können, muss das Speerfischen im Auftrag „Wie ein Fischer im Wasser“ erlernt worden sein.
+#. fr: Il est nécessaire de terminer la quête “La pêche au harpon, c'est bon” pour progresser dans celle-ci.
+#. speaker: SYSTEM
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_SYSTEM_000_007:1"
+msgid "In order to proceed with this quest, you must first complete the quest “A New Fishing Ex-spear-ience” and unlock spearfishing."
+msgstr ""
+
+#. ja: おつかれさまでございまする～。<br>保存食用の材料は、調達していただけましたでしょか～？
+#. de: Hast du Sachen für Räuchern mitgebracht? Fleisch darf man nicht zu lange rumliegen lassen.
+#. fr: (renifle) (renifle)... Toi sentir très bon<nbsp>! Petit doigt de Qhoterl Pasol dire que toi avoir rapporté nécessaire<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_010:1"
+msgid "Have you brought that which I requested? Time is of the essence!"
+msgstr ""
+
+#. ja: これはこれは、質の良い素材のようで～！<br>肉を塩漬けにしてから、煙でじっくりと燻すことで、<br>旨味も出て、日持ちもするのでございまする～！
+#. de: Ooh! Bessere kann man nicht finden! Jetzt wird Qhoterl Fleisch einsalzen und zusammen mit Fisch räuchern. Köstlicher Vorrat für lange, lange Zeit!
+#. fr: Miam miam<nbsp>! Tout être de hauuute qualité<nbsp>! Après avoir fumé viande selon technique ancestrale, Qitari se régaler pendant des semaines, oui oui<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_011:1"
+msgid "My word, this is splendid! Just the fragrance alone makes me want to gobble it all up, even without the venison..."
+msgstr ""
+
+#. ja: 燻製は、貴重な食料を無駄にしないための知恵でございまする～。<br>発掘隊には、しっかり食べて体力を付けてもらいましょ～！<br>さあて、ヴィース族へのお返しも考えねばなりませぬな～。
+#. de: Qitari haben schon lange verstanden, dass Essen nicht verkommen darf. Und Grabende Pfoten brauchen ordentliche Mahlzeit, sonst haben nicht genug Kraft. Jetzt muss Qhoterl sich nur noch Gegengeschenk für nette Viis überlegen!
+#. fr: Quand explorateurs avoir ventre bien rempli, avoir tous sens en alerte<nbsp>! Trouuuver plein d'objets et même clic clic, hi hi<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq116_03821:TEXT_BANQIQ116_03821_QHOTERLPASOL_000_012:1"
+msgid "Ah, of course, that would rather defeat the purpose of having you rush around before the meat spoils. And we wouldn't want the Viis' generous gift to go to waste, now, would we?"
+msgstr ""

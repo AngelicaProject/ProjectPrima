@@ -1,0 +1,216 @@
+# quest/045/BanArk124_04574 — « Blood from a Stonemason» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラス・ジョブでのみ進行します。<br><br>スワルナの大蔵のマルルゥは、悩ましい案件を抱えているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Maru hat ein heikles Problem.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>Il n'est possible de progresser dans cette quête qu'avec la classe ou le job qui a servi à la commencer.</i><br><br>Maru semble préoccupé.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_SEQ_00:1"
+msgid "Something seems to be troubling Maru.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: ギガントガル採石場にいる常連の石工に<br>エモート「問い詰める」をする
+#. de: Die Stammgäste am Gallenerz-Feld beschuldigen
+#. fr: <i>/questionner</i> les habitués aux mines de fiel-de-géant
+#. kind: objective
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_TODO_00:1"
+msgid "/doubt the stonemasons at the Giantsgall Grounds."
+msgstr ""
+
+#. ja: マルルゥに<sheet EventItem 2003411 0>を渡す
+#. de: <capitalize><noun-de EventItem 2 2003411 1 4 1></capitalize> bei Maru abliefern
+#. fr: Donner les paiements récupérés à Maru
+#. kind: objective
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_TODO_01:1"
+msgid "Deliver the sacks of gil owed to Maru."
+msgstr ""
+
+#. ja: 酒場が増設されてからというもの、<br>島の各地から、いろんな人が集まるようになってね。<br>酒場の亭主も忙しいながらも、楽しくやってるみたい。
+#. de: Unsere Schenke läuft prächtig und zieht eine Menge Gäste an. Der Wirt hat alle Hände voll zu tun.
+#. fr: Depuis que la taverne a été agrandie, des clients venus des quatre coins de l'île se bousculent au portillon. Le gérant est bien plus occupé qu'avant, mais c'est avec plaisir qu'il travaille.
+#. speaker: MARU
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_000:1"
+msgid "Our meyhane setup's been bringin' in folk from all over the island and beyond. It's hard work, but the proprietor couldn't be happier to keep the libations flowin'."
+msgstr ""
+
+#. ja: けど、問題もあってさ……<br>常連の何人かが、ツケ払い続きで困ってるんだって。
+#. de: Problematisch ist nur, dass manche Stammgäste dauernd anschreiben lassen, ohne ihre Zeche zu begleichen.
+#. fr: Il y a cependant un léger problème<nbsp>: certains habitués remettent toujours leur paiement à plus tard...
+#. speaker: MARU
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_001:1"
+msgid "That bein' said, no paradise is without its faults. We've got more than a few regulars who keep promisin' to pay, yet keep showin' up with empty purses and goin' home with full bellies."
+msgstr ""
+
+#. ja: いつ支払ってくれるのか、何度か聞いてるんだけど、<br>上手く流されちゃうみたいなんだよね。<br>そこで、ちょっと頼みがあるんだけど……
+#. de: Bei jedem Besuch vertrösten sie den Wirt aufs Neue. Vielleicht kannst du der Forderung ein wenig Nachdruck verleihen.
+#. fr: On a beau leur demander de régler leur note, ils font toujours preuve d'un talent indéniable pour noyer le poisson... J'ai donc besoin de ton aide.
+#. speaker: MARU
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_002:1"
+msgid "We keep askin' them to pay up, but it seems our words slip their mind as soon as the liquor slides down their gullet. I was wonderin' if maybe you could help us out with this little problem."
+msgstr ""
+
+#. ja: 「ギガントガル採石場」に、<br>ツケ払いをした常連の石工が、3人働いているはずなんだ。<br>ヤツらに支払う気があるのか、「問い詰め」てきて……！
+#. de: Drei der Stammgäste arbeiten als Steinhauer auf dem Gallenerz-Feld. Bitte mache ihnen klar, dass sie endlich bezahlen sollen.
+#. fr: Ils travaillent tous les trois aux mines de fiel-de-géant. Tu pourrais aller les <i>questionner</i> à ce sujet, s'il te plaît<nbsp>?
+#. speaker: MARU
+#. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_003:1"
+msgid "Three of these delinquents are at this very moment workin' at the Giantsgall Grounds. I think if a fierce-lookin' <if $gn4>woman<else>man</if> like yourself were to <ui-color 500><ui-edge-color 501>doubt</ui-edge-color></ui-color> their intentions to settle with us, they might think twice before shirkin' their debt again."
+msgstr ""
+
+#. ja: 何だ？<br>作業中なんだ、どいてくれ……。
+#. de: Was willst du von mir? Ich bin beschäftigt<nbsp>...
+#. fr: Qu'est-ce que tu veux<nbsp>? Tu vois pas que je suis en plein travail<nbsp>?
+#. speaker: BUSYMAN04574
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_BUSYMAN04574_000_010:1"
+msgid "Hey, I'm workin' here! I don't have time for chitchat!"
+msgstr ""
+
+#. ja: どうやら、話を聞いてくれそうにない。<br>エモート「問い詰める」をしてみよう。
+#. de: Der Stammgast scheint dich nicht ernst zu nehmen. Verleih deiner Forderung mit dem Emote „Beschuldigen“ (Textbefehl: /schuld) Nachdruck.
+#. fr: Il n'a pas l'air de vouloir vous écouter. Essayez de le <i>questionner</i> avec plus d'insistance.
+#. speaker: SYSTEM
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_SYSTEM_100_010:1"
+msgid "This man has no interest in conversation, but a healthy dose of <ui-color 500><ui-edge-color 501>doubt</ui-edge-color></ui-color> might earn his attention."
+msgstr ""
+
+#. ja: えっ、いつツケを支払うのかって……！？<br>ま、待ってくれ、そう怒らずにさ……<br>ほら、これを持っていってくれ。
+#. de: Jaja, schon gut! War ja nicht böse gemeint. Hier, das sollte reichen, um meine Rechnung zu begleichen.
+#. fr: Quand est-ce que je vais payer mon ardoise<nbsp>? A-attends, pas la peine de s'énerver... Tiens, prends ça.
+#. speaker: BUSYMAN04574
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_BUSYMAN04574_000_011:1"
+msgid "Huh? The Hippo Riders sent you? H-Hey now, you don't have to scowl at me like that. I have their money—here, take it."
+msgstr ""
+
+#. ja: 支払いが遅くなっちまったことは、この通り謝るからさ！<br>どうか悪いようには言わないでおくれよ、なっ……！？
+#. de: Tut mir leid, dass es etwas länger gedauert hat. Kommt nicht wieder vor!
+#. fr: Je suis sincèrement désolé du retard<nbsp>! Arrange-toi pour qu'ils ne m'en veulent pas trop, d'accord<nbsp>?
+#. speaker: BUSYMAN04574
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_BUSYMAN04574_000_012:1"
+msgid "I should've settled up earlier, but you know how things go...right? I'll make the proper apologies soon enough, so you go and tell them how cooperative I was, eh? ...Please?"
+msgstr ""
+
+#. ja: ツケてる分の支払いをどうするかって？<br>俺のダチが、あそこの酒場で働いてて話は通してあるよ。<br>それに、別に逃げたりするつもりもないから安心してくれって。
+#. de: Was mit meiner Rechnung ist? Na, keine Sorge, ich lauf schon nicht weg! Der Wirt ist doch mein guter Freund.
+#. fr: Quoi, le paiement de l'ardoise<nbsp>? Un de mes potes travaille à la taverne, on s'est arrangés. Je compte pas m'enfuir sans payer, t'inquiète.
+#. speaker: ONABREAKMAN04574
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_ONABREAKMAN04574_000_013:1"
+msgid "What, you think I'm some kind of thief!? I'll have you know a friend of mine works at the meyhane, and he's been hounding me to no end. Don't worry—if I was going to run, I'd have done it already."
+msgstr ""
+
+#. ja: どうやら、あまり気にしていないようだ。<br>エモート「問い詰める」をしてみよう。
+#. de: Der Stammgast scheint dich nicht ernst zu nehmen. Verleih deiner Forderung mit dem Emote „Beschuldigen“ (Textbefehl: /schuld) Nachdruck.
+#. fr: Il n'a pas l'air très préoccupé par le sujet... Essayez de le <i>questionner</i> avec plus d'insistance.
+#. speaker: SYSTEM
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_SYSTEM_100_013:1"
+msgid "He doesn't seem too worried about his mounting debt. Perhaps you make him <ui-color 500><ui-edge-color 501>doubt</ui-edge-color></ui-color> his current financial strategy."
+msgstr ""
+
+#. ja: ……ん、そんなに怒ってる感じなのか？<br>それはちょいと、想定外だったな。
+#. de: Huch, der Wirt meint es also wirklich ernst?! Das war mir nicht klar.
+#. fr: Il est si énervé que ça<nbsp>? Je pensais pas...
+#. speaker: ONABREAKMAN04574
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_ONABREAKMAN04574_000_014:1"
+msgid "...Huh? You're really in a fit of pique, aren't you? I didn't know the meyhane needed funds <i>that</i> badly."
+msgstr ""
+
+#. ja: 出入り禁止にされるのはイヤだし、<br>今度行くときに、キッチリこれまでの分を持っていくとするよ。<br>確かにそう言ってたって、伝えておいてくれるか？
+#. de: Ich habe keine Lust, Hausverbot zu bekommen. Bitte richte ihm aus, dass ich bei meinem nächsten Besuch alles bezahlen werde.
+#. fr: J'aimerais pas être interdit d'entrée, je paierai la prochaine fois que j'irai sur place. Tu veux bien transmettre le message<nbsp>?
+#. speaker: ONABREAKMAN04574
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_ONABREAKMAN04574_000_015:1"
+msgid "All right, all right, I'll pay what I owe. Don't know what I'd do with my evenings if I couldn't spend them at the meyhane. You go ahead and tell Maru I'll be along with his money within the bell."
+msgstr ""
+
+#. ja: すみません。<br>ちょっと忙しいので、お話ならまた今度に……。
+#. de: Entschuldige, aber ich habe gerade keine Zeit<nbsp>...
+#. fr: Désolée, mais je suis occupée, là...
+#. speaker: CHECKINGWOMAN04574
+#. macro: <if $gn4>miss<else>mister</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_CHECKINGWOMAN04574_000_016:1"
+msgid "Excuse me, <if $gn4>miss<else>mister</if>, but as you can see, I'm quite busy..."
+msgstr ""
+
+#. ja: どうやら、話を聞いてくれそうにない。<br>エモート「問い詰める」をしてみよう。
+#. de: Der Stammgast scheint dich nicht ernst zu nehmen. Verleih deiner Forderung mit dem Emote „Beschuldigen“ (Textbefehl: /schuld) Nachdruck.
+#. fr: Elle n'a pas l'air de vouloir vous écouter. Essayez de la <i>questionner</i> avec plus d'insistance.
+#. speaker: SYSTEM
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_SYSTEM_100_016:1"
+msgid "She seems distracted by her work. Make her <ui-color 500><ui-edge-color 501>doubt</ui-edge-color></ui-color> her priorities."
+msgstr ""
+
+#. ja: ええっ！<br>ツケが、そんなに溜まってるんですか！？<br>いつも会計の頃の記憶がないから、払ってたとばかり……！
+#. de: Huch, so viel schulde ich dem Wirt?! Ehrlich gesagt sind meine Erinnerungen an die Abende etwas schummrig. Ich dachte, ich hätte alles bezahlt.
+#. fr: Quoi, j'ai tant de paiements en retard<nbsp>!? Mince alors, je croyais avoir déjà tout réglé...
+#. speaker: CHECKINGWOMAN04574
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_CHECKINGWOMAN04574_000_017:1"
+msgid "What!? You said I owe <i>how</i> much!? I'm embarrassed to say, but I'm always four sheets to the wind by the time I settle the bill..."
+msgstr ""
+
+#. ja: これを持っていってくれるかしら？<br>迷惑料込みでも、きっと足りるはずだから……<br>あと、本当にごめんなさいって代わりに言っておいてくれる？
+#. de: Hier, das sollte reichen, um meine Schulden zu bezahlen. Der Rest ist eine Wieder<shy>gut<shy>machung für die Umstände, die ich bereitet habe. Bitte sag dem Wirt, dass es mir leidtut.
+#. fr: Tiens, prends cet argent, il devrait y en avoir assez... Et transmets-leur mes excuses, s'il te plaît.
+#. speaker: CHECKINGWOMAN04574
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_CHECKINGWOMAN04574_000_018:1"
+msgid "Can you take this to the kind people at Svarna? I've even put in a bit extra by way of apology for my...oversight. And while I'll tell them myself when next I see them, for now I'd be grateful if you apologized in my stead."
+msgstr ""
+
+#. ja: 首尾はどうだった……？
+#. de: Wie ist es gelaufen?
+#. fr: Alors, comment ça s'est passé<nbsp>?
+#. speaker: MARU
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_020:1"
+msgid "I hope there wasn't any trouble. While they can be surly with a few drinks in 'em, they're good-natured in the daylight. Or so I hope."
+msgstr ""
+
+#. ja: 上手く話を付けてくれたんだね、助かったよ……。<br>実は、ボクたちの仲間も、知り合いや家族が、<br>何人か、ギガントガル採石場で働いているんだよね。
+#. de: Danke, dass du uns Gehör verschafft hast. Auf dem Gallenerz-Feld arbeiten viele Freunde von uns.
+#. fr: Oh, alors tu as réussi à les convaincre, tant mieux... Nos camarades ont aussi de la famille ou des amis qui travaillent aux mines.
+#. speaker: MARU
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_021:1"
+msgid "Well, well─you're still plenty persuasive, it seems. Truth be told, more'n a few of the quarriers comin' to the meyhane to blow off steam are friends and relatives of the good folks helpin' us out here in Svarna."
+msgstr ""
+
+#. ja: だから仲も良くって、仕事の話も弾むんだ。<br>毎回せっつくのはどうかと思って、黙ってたんだけど、<br>もうちょっと厳しくしないとダメかもね……。
+#. de: Wir waren wohl etwas zu nachlässig mit ihnen. In Zukunft müssen wir strenger sein.
+#. fr: Il y avait une bonne ambiance, alors on ne voulait pas leur rappeler à chaque fois... On sera un peu plus stricts dorénavant.
+#. speaker: MARU
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_022:1"
+msgid "In the interest of maintainin' good relations, I never pestered them overmuch, but now I'm comin' to realize that some just can't help takin' a malm if you give them an ilm."
+msgstr ""
+
+#. ja: 酒場の亭主にも、相談しておくとするよ。<br>協力してくれて、ありがとー。
+#. de: Ich werde mit dem Wirt darüber sprechen. Er soll sich ein Beispiel an dir nehmen!
+#. fr: J'en parlerai au tavernier. Merci pour ton aide<nbsp>!
+#. speaker: MARU
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/045/BanArk124_04574:TEXT_BANARK124_04574_MARU_000_023:1"
+msgid "I'll have a talk with the proprietor about how we should deal with this problem in the future... I'm thinkin' we'll be needin' a solution sooner rather than later. Thanks for your help today, <split \" \" 1><string $gs1></split>."
+msgstr ""

@@ -1,0 +1,101 @@
+# quest/007/GaiUsa902_00797 — «Digging in the Dark» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 山師の岩窟の山師アデマルは、夜間作業の必需品を調達してきて欲しいようだ。
+#. de: Der Bergmann Ademar möchte seine Arbeitslampe für die nächste Nachtschicht präparieren.
+#. fr: Ademar a besoin de votre aide pour pouvoir continuer à travailler.
+#. kind: journal
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_SEQ_00:1"
+msgid "Ademar is in the dark and needs an adventurer's aid."
+msgstr ""
+
+#. ja: 夜を徹しての作業の前に、ランプが切れてしまったらしい。<sheet BNpcName 2189 0>を弱らせてから「<sheet EventItem 2000627 0>」を使い、「<sheet EventItem 2000628 0>」を入手しよう。
+#. de: Ademar ist das Lampenöl ausgegangen. Doch der findige Bergmann kennt einen Trick. Schwäche zwei <noun-de BNpcName 5 2189 2 4 1> und fange sie mit <noun-de EventItem 2 2000627 2 3 1> ein, die Ademar dir gegeben hat.
+#. fr: Ademar n'a presque plus d'huile pour sa lanterne, et il va bientôt être obligé d'arrêter de prospecter. Pour se fabriquer des lampes de fortune, il vous a demandé d'affaiblir <noun-fr BNpcName 1 2189 2 1> puis de les enfermer dans <noun-fr EventItem 1 2000627 2 1>.
+#. kind: journal
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_SEQ_01:1"
+msgid "Ademar has exhausted his supply of lantern oil, making it impossible for him to prospect at night. Procure an alternate light source for him by weakening bright balloons and then capturing them with his lamps."
+msgstr ""
+
+#. ja: <sheet EventItem 2000628 0>を手に入れることができた。山師の岩窟の「アデマル」に渡そう。
+#. de: Du hast die Lampen präpariert. Bringe sie zu Ademar an der Prospektoren-Höhle.
+#. fr: Vous avez en votre possession deux <noun-fr EventItem 12 2000628 2 1>. Retournez à la falaise des Trouveurs pour les apporter à Ademar.
+#. kind: journal
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_SEQ_02:1"
+msgid "You have successfully fashioned two balloon lamps. Deliver them to Ademar."
+msgstr ""
+
+#. ja: アデマルは冒険者に感謝しているようだ。夜間も休まぬ山師の仕事……かなり根気のいる作業のようだ。
+#. de: Ademar war dir überaus dankbar. Das Leben eines Bergmannes scheint wahrlich kein Zucker<shy>schlecken zu sein.
+#. fr: Ademar vous a exprimé ses re<shy>mer<shy>cie<shy>ments et s'est aussitôt remis à creuser. La vie de prospecteur n'est décidément pas de tout repos.
+#. kind: journal
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_SEQ_03:1"
+msgid "Ademar expresses his thanks, then promptly returns to his digging. The life of a prospector affords little time for idle banter."
+msgstr ""
+
+#. ja: 弱らせた<sheet BNpcName 2189 0>に<sheet EventItem 2000627 0>を使って捕獲
+#. de: Geschwächte <noun-de BNpcName 5 2189 2 4 1> mit <noun-de EventItem 5 2000627 2 3 1> einfangen
+#. fr: Utiliser <noun-fr EventItem 1 2000627 1 1> sur <noun-fr BNpcName 1 2189 2 1> affaiblis
+#. kind: objective
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_TODO_00:1"
+msgid "Weaken and then capture bright balloons with lamps."
+msgstr ""
+
+#. ja: アデマルに<sheet EventItem 2000628 0>を渡す
+#. de: <capitalize><noun-de EventItem 5 2000628 2 4 1></capitalize> zu Ademar bringen
+#. fr: Apporter <noun-fr EventItem 2 2000628 2 1> à Ademar
+#. kind: objective
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_TODO_01:1"
+msgid "Deliver the lamps to Ademar."
+msgstr ""
+
+#. ja: これから夜通し作業するのに、ランプの油が切れちまってね。<br>そこで思ったんだ、「<sheet BNpcName 2189 0>」を、<br>捕まえてくれば油要らずだってね。
+#. de: So was Dummes aber auch. Muss mir das Lampenöl ausgerechnet ausgehen, wenn meine Nachtschicht ansteht? Einen Ausweg gäbe es zwar, aber der ist nicht ganz ungefährlich.
+#. fr: Hé, l'aventuri<if $gn4>ère<else>er</if>, j'ai b'soin d'ton aide<nbsp>! J'ai presque plus d'huile pour ma lampe, et j'crains de pas pouvoir <if ($gn11 < 12)><if ($gn11 < 4)>passer la nuit<else>tenir longtemps après l'coucher du soleil</if><else><if ($gn11 < 17)>tenir longtemps après l'coucher du soleil<else>passer la nuit</if></if>.
+#. speaker: ADEMAR
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>through the night<else>long past sundown</if><else><if ($gn11 < 17)>long past sundown<else>through the night</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>through the night<else>long past sundown</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>long past sundown<else>through the night</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_ADEMAR_000_000:1"
+msgid "Pray help me, friend. I've run clean out o' lantern fuel, and I'm afeared I won't make it <if ($gn11 < 12)><if ($gn11 < 4)>through the night<else>long past sundown</if><else><if ($gn11 < 17)>long past sundown<else>through the night</if></if>."
+msgstr ""
+
+#. ja: 「<sheet BNpcName 2189 0>」を適度に弱らせてから、<br>この「<sheet EventItem 2000627 0>」に閉じこめてくれ。<br>2体ぶんでいいからさ、お前さん、ちょっと頼まれてくれよ。
+#. de: Es ist möglich, geschwächte <noun-de BNpcName 5 2189 2 4 1> mit unseren <noun-de EventItem 5 2000627 2 3 1> einzufangen. Die Funzeln glimmen dann einige Glockenschläge nach. Zwei Lampen würden mich durch die Nacht bringen. Traust du dir das zu?
+#. fr: Je n'ai jamais essayé moi-même, mais j'ai entendu qu'on peut faire une lampe de fortune en enfermant <noun-fr BNpcName 1 2189 2 1> à l'intérieur d'<noun-fr EventItem 1 2000627 1 1>. Bien sûr, il faut les affaiblir avant, si tu vois c'que j'veux dire...
+#. speaker: ADEMAR
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_ADEMAR_000_001:1"
+msgid "I've not tried it meself, but I've heard that ye can fashion makeshift lanterns by sealin' those flying balloons inside these here lamps. 'Course, it might take some coercin' before they goes in, if ye know what I mean."
+msgstr ""
+
+#. ja: <sheet BNpcName 2189 0>のHPが減っている時に、「<sheet EventItem 2000627 0>」を使って燃料を手に入れる×2
+#. de: <sheet BNpcName 2189 0>のHPが減っている時に、「<sheet EventItem 2000627 0>」を使って燃料を手に入れる×2
+#. fr: <sheet BNpcName 2189 0>のHPが減っている時に、「<sheet EventItem 2000627 0>」を使って燃料を手に入れる×2
+#. speaker: DUMMY
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_DUMMY_000_010:1"
+msgid "//: fight balloons, get balloon lamp"
+msgstr ""
+
+#. ja: どうだい？<br><sheet BNpcName 2189 0>をランプに閉じこめることはできたかい？
+#. de: Haha, ich kann das Glimmen bereits durch den Stoff deiner Taschen erkennen! Es ist dir tatsächlich gelungen, <noun-de BNpcName 2 2189 2 4 1> einzufangen?
+#. fr: Alors, t'as réussi à enfermer <noun-fr BNpcName 6 2189 2 1> dans des lampes<nbsp>?
+#. speaker: ADEMAR
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_ADEMAR_000_020:1"
+msgid "Were ye able to fashion some lamps for me, friend?"
+msgstr ""
+
+#. ja: ありがてぇ、助かったよ。<br>こいつさえあれば、夜の採掘も油要らずだな！<br>落石落盤に気を付けて～エンヤコラ～っと。
+#. de: Potz Blitz, du bist wahrlich <if $gn4>eine furchtlose Gesellin<else>ein furchtloser Geselle</if>! Nachts ist es hier stockdunkel und ich habe mir den Kopf schon viel zu oft an kantigen Felsvorsprüngen gestoßen. Hab vielen Dank, <if $gn4>meine Gute<else>mein Guter</if>.
+#. fr: T'es m<if $gn4>a sauveuse<else>on sauveur</if><nbsp>! Grâce à toi, je vais pouvoir <if ($gn11 < 12)><if ($gn11 < 4)>m'remettre à creuser tout d'suite<else>continuer à creuser jusqu'à tard ce soir</if><else><if ($gn11 < 17)>continuer à creuser jusqu'à tard ce soir<else>m'remettre à creuser tout d'suite</if></if>. <i>Siffler en travaillant</i>...♪
+#. speaker: ADEMAR
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>I can get back to me diggin'<else>I'll be diggin' long past sundown tonight</if><else><if ($gn11 < 17)>I'll be diggin' long pas… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>I can get back to me diggin'<else>I'll be diggin' long past sundown tonight</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>I'll be diggin' long past sundown tonight<else>I can get back to me diggin'</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/007/GaiUsa902_00797:TEXT_GAIUSA902_00797_ADEMAR_000_025:1"
+msgid "Yer a godssend. Thanks to you, <if ($gn11 < 12)><if ($gn11 < 4)>I can get back to me diggin'<else>I'll be diggin' long past sundown tonight</if><else><if ($gn11 < 17)>I'll be diggin' long past sundown tonight<else>I can get back to me diggin'</if></if>. Them's gold in thar hills, high-ho!♪"
+msgstr ""

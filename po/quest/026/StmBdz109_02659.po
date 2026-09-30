@@ -1,0 +1,278 @@
+# quest/026/StmBdz109_02659 — «A Good Role Model» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: カストルム・オリエンスのスウェスリク大牙将は、実戦経験の豊富な冒険者を探しているようだ。
+#. de: Swethryk Brookstone braucht die Hilfe <if $gn4>einer kampferfahrenen Abenteurerin<else>eines kampferfahrenen Abenteurers</if>.
+#. fr: Swethryk Brookstone aimerait vous parler de ses jeunes recrues.
+#. kind: journal
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SEQ_00:1"
+msgid "Serpent Marshal Brookstone is looking to make an example out of someone."
+msgstr ""
+
+#. ja: <sheet BNpcName 5681 0>を討伐
+#. de: <capitalize><noun-de BNpcName 5 5681 2 4 1></capitalize> besiegen
+#. fr: Chasser <noun-fr BNpcName 1 5681 2 1>, près des chutes de la Pique
+#. kind: objective
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_TODO_00:1"
+msgid "Slay tracer antlions."
+msgstr ""
+
+#. ja: 双蛇党の新兵と話す
+#. de: Mit den Rekruten der Bruderschaft sprechen
+#. fr: Parler aux jeunes recrues des Deux Vipères
+#. kind: objective
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_TODO_01:1"
+msgid "Speak with the Twin Adder recruits."
+msgstr ""
+
+#. ja: スウェスリク大牙将と話す
+#. de: Mit Swethryk Brookstone sprechen
+#. fr: Parler à Swethryk Brookstone, à Castrum Oriens
+#. kind: objective
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_TODO_02:1"
+msgid "Speak with Brookstone."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>か。<br>君は、経験、実力ともに冒険者部隊でも指折りの存在だ。
+#. de: Ah, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>! Du mit deiner Kampf<shy>erfahrung kommst wie gerufen.
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if>, vous êtes sans aucun doute l<if $gn4>a<else>e</if> plus expérimenté<if $gn4>e</if> et l<if $gn4>a<else>e</if> plus efficace de nos éléments, donc j'aimerais vous confier une mission.
+#. speaker: SWETHRYKBROOKSTONE
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>Good evening<else>Good morning</if><else><if ($gn11 < 17)>Good day to you<else>Good evening</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>Good evening<else>Good morning</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>Good day to you<else>Good evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_000:1"
+msgid "<if ($gn11 < 12)><if ($gn11 < 4)>Good evening<else>Good morning</if><else><if ($gn11 < 17)>Good day to you<else>Good evening</if></if>, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>. Still fighting the good fight, I take it? Would that we had more soldiers like you."
+msgstr ""
+
+#. ja: 我々は、森での戦い方は熟知しているが、<br>ギラバニアのような、開けた土地での実戦経験は浅い。
+#. de: Unsere Soldaten von der Bruderschaft der Morgenviper sind auf den Kampf im Wald spezialisiert. Die offene Landschaft von Gyr Abania bereitet uns Probleme.
+#. fr: Vous n'êtes pas sans savoir que les hommes de l'ordre des Deux Vipères savent mieux que quiconque comment combattre en forêt. Mais ils manquent d'expérience en terrain dégagé, comme ici en Gyr Abania.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_001:1"
+msgid "I cannot speak for the Immortal Flames or the Maelstrom, but we of the Twin Adder are not accustomed to combat in such wide-open expanses."
+msgstr ""
+
+#. ja: 付近の魔物は存外に手強く、<br>最前線に配置されたばかりの、新兵たちの手には余るようだ。<br>そこで君の実力を見込んで頼みたい。
+#. de: Zudem sind die Monster in der Umgebung ziemlich harte Brocken. Unsere neuen Rekruten haben solche Angst, dass sie kaum zu gebrauchen sind. Vielleicht fassen sie sich ein Herz, wenn du ihnen zeigst, wie man mit Monstern umgeht.
+#. fr: Les monstres de la région sont plus coriaces que ceux de Sombrelinceul, et nos soldats novices qui sont envoyés en première ligne doivent parfois battre en retraite. C'est là que vous intervenez.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_002:1"
+msgid "The beasts that roam these lands are quite dangerous, and to be frank, our new recruits are simply not up to the task of fending them off. For you, I imagine it would be like crushing ants underfoot."
+msgstr ""
+
+#. ja: パイクフォールズにいる「<sheet BNpcName 5681 0>」を3体倒し、<br>彼らに、荒野での戦い方を説いてやってもらえるだろうか。
+#. de: Erledige ein paar <noun-de BNpcName 5 5681 2 4 1> bei Pikensturz und erklär anschließend unseren Rekruten, wie man in dieser Ödnis kämpft.
+#. fr: J'aimerais que vous alliez aux chutes de la Pique pour chasser quelques <noun-fr BNpcName 12 5681 2 1> et donner quelques conseils à nos jeunes recrues. Vous jouissez d'une certaine aura auprès d'eux, donc ils vous écouteront sans broncher.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_003:1"
+msgid "That is why I would ask you to give my men a brief lesson in combat by slaying the antlions at Pike Falls. I've instructed them to stay well out of sight, so you should have no trouble fighting without distraction. When you've finished, any advice you can offer them would no doubt be invaluable to their training."
+msgstr ""
+
+#. ja: パイクフォールズにいる「<sheet BNpcName 5681 0>」を3体倒し、<br>新兵たちに、荒野での戦い方を説いてやってもらえるだろうか。
+#. de: Erledige ein paar <noun-de BNpcName 5 5681 2 4 1> bei Pikensturz und erklär anschließend unseren Rekruten, wie man in dieser Ödnis kämpft.
+#. fr: Allez aux chutes de la Pique pour chasser quelques <noun-fr BNpcName 12 5681 2 1> et donner quelques conseils à nos jeunes recrues. Vous dégagez une certaine aura auprès d'eux, donc ils vous écouteront sans broncher.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_004:1"
+msgid "They've been instructed to watch you closely, albeit from a safe distance. I'm sure they will take to heart any advice you can offer them afterward."
+msgstr ""
+
+#. ja: はぁ……はぁ……。<br>あんな魔物一匹倒せないで、森を守れるものか……！
+#. de: Puh ... wie soll ich Gridania verteidigen, wenn ich nicht einmal eins dieser Biester besiege?
+#. fr: (souffle)... (souffle)... On m'a jamais appris à combattre des monstres comme ça, pendant ma formation à Gridania...
+#. speaker: SOLDIERMAN02659
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERMAN02659_000_005:1"
+msgid "I'll never be a match for the Garleans if I can't even defeat an antlion."
+msgstr ""
+
+#. ja: 「<sheet BNpcName 5681 0>」が、<br>あんなに強いなんて……。
+#. de: <capitalize><noun-de BNpcName 2 5681 2 4 1></capitalize> sind ganz schön stark ...
+#. fr: Ces <noun-fr BNpcName 12 5681 2 1> sont bien trop forts pour moi...
+#. speaker: SOLDIERWOMAN02659
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERWOMAN02659_000_006:1"
+msgid "I wasn't expecting the antlions to be so tough."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>殿、ですね。<br>お会いできて光栄です。<br><sheet BNpcName 5681 0>との戦いのお話、ぜひお聞かせください。
+#. de: <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>, deine Anwesenheit ehrt mich. Darf ich fragen, wie du <noun-de BNpcName 2 5681 2 4 1> besiegt hast?
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if>, c'est un honneur de vous rencontrer<nbsp>! Auriez-vous un conseil à me donner pour vaincre ces fourmilions<nbsp>?
+#. speaker: SOLDIERMAN02659
+#. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERMAN02659_000_010:1"
+msgid "It's an honor to meet you, <if $gn4>miss<else>sir</if>. To watch you fight was quite inspiring. Tell me, did you have any tactics in mind before engaging the antlions?"
+msgstr ""
+
+#. ja: 何を話す？
+#. de: Wie hast du die Ameisenlöwen besiegt?
+#. fr: Que répondez-vous<nbsp>?
+#. speaker: CHOICE1Q1
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_CHOICE1Q1_000_011:1"
+msgid "What will you say?"
+msgstr ""
+
+#. ja: 硬い甲殻の隙間を狙う
+#. de: Ich habe auf die Schwachstellen in ihren Panzern gezielt.
+#. fr: Il faut viser les points faibles de leur cuirasse.
+#. speaker: CHOICE1A1
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_CHOICE1A1_000_012:1"
+msgid "Finding their weak points is key."
+msgstr ""
+
+#. ja: 適当にやれば勝てる
+#. de: Ich bin meinen Instinkten gefolgt.
+#. fr: Il suffit de combattre comme contre les autres monstres.
+#. speaker: CHOICE1A2
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_CHOICE1A2_000_013:1"
+msgid "Only to keep swinging until victory was assured."
+msgstr ""
+
+#. ja: 硬い甲殻の隙間を狙う……ですか。<br>戦いの最中に実践する自信はありませんが、弱音は吐けません。<br>すぐにでも訓練に戻り、今のお話を活かしたいと思います。
+#. de: Die Schwachstellen im Panzer ... verstehe. Ich traue es mir noch nicht selbst zu, aber ich werde das bei den anstehenden Übungskämpfen beherzigen.
+#. fr: Je vois... Je ne suis pas certain d'être capable de frapper des endroits aussi précis dans le feu du combat, mais je vais mettre à profit votre conseil et m'entraîner dur pour y arriver<nbsp>!
+#. speaker: SOLDIERMAN02659
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERMAN02659_000_014:1"
+msgid "Yes, of course. I noticed how you consistently aimed for what seemed to be soft spots between their shell plating. I can't promise your words will remain with me in the heat of battle, but I will do my best not to disappoint you or my superiors."
+msgstr ""
+
+#. ja: さ……さすがは、歴戦の冒険者の言葉……。<br>そこに至るまでに、相当の努力を積み重ねてきたのでしょう。<br>すぐにでも訓練に戻り、少しでも追いつけるように頑張ります。
+#. de: Das kann nur <if $gn4>eine Veteranin<else>ein Veteran</if> wie du, denn solche Instinkte erfordern viel Erfahrung. Ich werde umgehend mit dem Training fortfahren.
+#. fr: Quel flegme<nbsp>! On sent que vous avez affronté d'innombrables adversaires bien plus redoutables que ces fourmilions... C'est décidé, je vais redoubler d'efforts à l'en<shy>traî<shy>ne<shy>ment pour devenir plus fort<nbsp>!
+#. speaker: SOLDIERMAN02659
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERMAN02659_000_015:1"
+msgid "I...I see... Yes, I suppose all enemies eventually yield to your superior strength. \\<sigh> I have much, much more training ahead of me, don't I?"
+msgstr ""
+
+#. ja: ……<if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>殿！<br>お噂はかねがね……じゃなくて、お話は伺っております！<br>本日はお日柄もよく、ご、ご教授を……いただきます！
+#. de: <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split> ... ich dachte schon, mein letztes Stündlein hätte geschlagen, aber mein Gebet wurde erhört. Wie hast du die Ameisenlöwen besiegt?
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if>, c'est vraiment vous<nbsp>? Dites-moi comment vaincre ces fourmilions, je vous en prie<nbsp>!
+#. speaker: SOLDIERWOMAN02659
+#. macro: <if ($gn52 > 0)><string $gs1> of the Maelstrom!<else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERWOMAN02659_000_016:1"
+msgid "<if ($gn52 > 0)><string $gs1> of the Maelstrom!<else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>!<else><string $gs1> of the Immortal Flames!</if></if> The rumors of your prowess do no justice to what I just witnessed. What is your secret?"
+msgstr ""
+
+#. ja: 何を話す？
+#. de: Wie hast du die Ameisenlöwen besiegt?
+#. fr: Que répondez-vous<nbsp>?
+#. speaker: CHOICE1Q1
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_CHOICE1Q1_000_017:1"
+msgid "What will you say?"
+msgstr ""
+
+#. ja: 攻撃を避けつつ当てる
+#. de: Getreu nach dem Motto: Angriff ist die beste Verteidigung.
+#. fr: Il faut esquiver leurs attaques pour riposter au moment propice.
+#. speaker: CHOICE1A1
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_CHOICE1A1_000_018:1"
+msgid "Keep moving and wait for an opening."
+msgstr ""
+
+#. ja: 気がついたら勝っていた
+#. de: Ich musste mich nicht groß anstrengen.
+#. fr: Il n'y a pas de secret, c'est juste une question d'habitude.
+#. speaker: CHOICE1A2
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_CHOICE1A2_000_019:1"
+msgid "Battles just seem to work out in my favor."
+msgstr ""
+
+#. ja: さすが冒険者殿、参考になら……なるお話です。<br>魔物の猛攻を避けながら、絶え間なく攻撃を続けるなんて、<br>簡単に言ってしまうところに、感動です……！
+#. de: Hm ... das ist bestimmt leichter gesagt als getan, aber ich will es mir zu Herzen nehmen. Ich darf also nicht ängstlich sein, sondern muss mutig in die Offensive gehen. Vielen Dank!
+#. fr: Je comprends mieux pourquoi j'étais si vite fatiguée, maintenant... Je crois que je vais m'exercer dif<shy>fé<shy>rem<shy>ment afin de gagner en endurance et en agilité. Merci pour ce précieux conseil<nbsp>!
+#. speaker: SOLDIERWOMAN02659
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERWOMAN02659_000_020:1"
+msgid "Seeing your nimble footwork firsthand, it is hard to refute the truth in that. Truth be told I'm a rather clumsy fellow, but I will practice every day until I'm as sure-footed as the illustrious <string $gs1>."
+msgstr ""
+
+#. ja: さすが冒険者殿、参考になら……なるお話です。<br>意識せずに、身体が動いてしまうってことですよね。<br>それを、簡単に言ってしまうところに、感動です……！
+#. de: Danke, <if $gn4>Abenteurerin<else>Abenteurer</if>, das bringt mich nicht ... ich meine, das bringt mich weiter. Du meinst also, wenn man nicht zu viel nachdenkt, reagiert der Körper wie von selbst? Ich werde es ausprobieren. Vielen Dank!
+#. fr: C'est vrai qu'à vous regarder, j'avais le sentiment que vous auriez vaincu ces créatures les yeux fermés... Je suis encore bien loin de votre niveau, mais ce spectacle m'a motivée pour m'entraîner plus intensément que jamais<nbsp>!
+#. speaker: SOLDIERWOMAN02659
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERWOMAN02659_000_021:1"
+msgid "What? Do you mean to say you've come all this way simply because the unseen hands of fate demand you be victorious? If only I could have armor so thick as that..."
+msgstr ""
+
+#. ja: そ、それでは訓練に戻りますので、失礼いたします！
+#. de: Ich gehe jetzt zurück zur Ausbildung. Auf Wieder<shy>sehen!
+#. fr: Encore merci pour vos conseils<nbsp>!
+#. speaker: SOLDIERWOMAN02659
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SOLDIERWOMAN02659_000_022:1"
+msgid "Pray excuse me, I...I need time to think on this..."
+msgstr ""
+
+#. ja: 実力が違いすぎて、参考にならなかったようだな。<br>だが、無駄だったわけでもない。<br>英雄と呼ばれる冒険者と話せたことで、新兵の士気もあがった。
+#. de: Unsere Rekruten können sich nicht mit dir messen und deine Ratschläge auch nicht so einfach umsetzen, aber dein Einsatz war nicht vergeblich. Allein das Gespräch mit dir hat die Motivation unserer Rekruten gestärkt.
+#. fr: Il existe une telle différence de niveau entre nos recrues et vous... Je ne sais pas s'ils ont vraiment compris vos conseils, mais ce qui est sûr, c'est qu'ils étaient très émus d'avoir parlé avec vous<nbsp>!
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_030:1"
+msgid "Welcome back. The men seem transformed having met you, though I suppose you're accustomed to having that effect on people. "
+msgstr ""
+
+#. ja: 私では、そうはいかない。<br>上官は憧れの対象ではないし、そうであってはならないのだ。
+#. de: Ein gut gemeinter Rat von mir hätte nicht dieselbe Wirkung gehabt. Die Rekruten haben zwar Respekt vor mir, aber ich bin für sie kein Held.
+#. fr: Ce n'est pas avec moi que ça arriverait, et c'est très bien comme ça. Un supérieur se doit d'être le symbole de l'autorité, pas la coqueluche de la bleusaille.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_031:1"
+msgid "Sadly I have no memorable acts of daring with which I can inspire them."
+msgstr ""
+
+#. ja: 時に我らは兵士たちに、死地に赴けと命じることもある。<br>だが、そんなときでさえも、生存してくれと念じずにはいられない。<br>だからこそ、兵たちには少しでも逞しくなってほしいのだ。
+#. de: Als Offizier bin ich für meine Soldaten verantwortlich, aber manchmal muss ich sie dennoch in tödliche Gefahren führen. Um zu überleben, müssen sie ihre Angst besiegen, und du hast ihnen dabei geholfen.
+#. fr: Vous savez, je devrai peut-être un jour envoyer ces jeunes à une mort certaine... Mais si cela arrive, j'espère bien qu'ils se battront pour survivre. C'est pour ça que je veux qu'ils deviennent plus forts.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_032:1"
+msgid "Still, I'm heartened to know there are those like you whom they can look up to, who will inspire them to train harder."
+msgstr ""
+
+#. ja: 君たち冒険者からは、学ぶべきことも多い。<br>以前は、私も冒険者部隊の設立には懐疑的だったが、<br>今では誰よりも、その重要性を認識しているつもりだ。
+#. de: Früher war ich gegen die Einführung einer Einheit aus Abenteurern, aber mittlerweile halte ich sie für einen großen Gewinn. Es gibt viel, was wir von euch Abenteurern lernen können.
+#. fr: Pour être honnête, j'ai d'abord été opposé à la création d'une unité d'aventuriers dans l'Alliance éorzéenne. Mais les événements récents m'ont fait comprendre que nous avons tous beaucoup à apprendre de vous.
+#. speaker: SWETHRYKBROOKSTONE
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_033:1"
+msgid "I'll be the first to admit I was skeptical when they first began enlisting adventurers in the Grand Companies, but I'm glad my doubts were proven unfounded."
+msgstr ""
+
+#. ja: 感謝する、<if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>。
+#. de: Vielen Dank, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>!
+#. fr: Encore merci, <capitalize><if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if></capitalize>. C'est un honneur de vous avoir à nos côtés.
+#. speaker: SWETHRYKBROOKSTONE
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+msgctxt "quest/026/StmBdz109_02659:TEXT_STMBDZ109_02659_SWETHRYKBROOKSTONE_000_034:1"
+msgid "Safe travels, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize><else><split \" \" 1><string $gs1></split></if></if>."
+msgstr ""

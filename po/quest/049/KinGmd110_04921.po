@@ -1,0 +1,324 @@
+# quest/049/KinGmd110_04921 — «Pick up the Pieces» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ベイサイド・ベヴィーのアリゼーは、倒れた敵兵を見つめている。
+#. de: Alisaie mustert den feindlichen Soldaten vor sich mit ernster Miene.
+#. fr: Alisaie regarde la sentinelle au sol d'un air pensif.
+#. kind: journal
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_SEQ_00:1"
+msgid "Alisaie regards the fallen soldier thoughtfully."
+msgstr ""
+
+#. ja: 横たわる兵士を調べる
+#. de: Den feindlichen Soldaten untersuchen
+#. fr: Examiner la sentinelle au sol
+#. kind: objective
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_TODO_00:1"
+msgid "Inspect the fallen soldier."
+msgstr ""
+
+#. ja: アリゼーと話す
+#. de: Mit Alisaie sprechen
+#. fr: Parler à Alisaie
+#. kind: objective
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_TODO_01:1"
+msgid "Speak with Alisaie."
+msgstr ""
+
+#. ja: アリゼーと話す
+#. de: Erneut mit Alisaie sprechen
+#. fr: Parler à Alisaie
+#. kind: objective
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_TODO_02:1"
+msgid "Speak with Alisaie."
+msgstr ""
+
+#. ja: 金凰の間のウクラマトと話す
+#. de: Mit Wuk Lamat sprechen
+#. fr: Parler à Wuk Lamat, dans la salle de l'Aurore
+#. kind: objective
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_TODO_03:1"
+msgid "Speak with Wuk Lamat at Sunperch."
+msgstr ""
+
+#. ja: これ、人じゃないのは確かなんだけど……<br>エオルゼアの魔法人形とも、帝国の魔導兵器とも似ていないわ。
+#. de: Lebendig ist der auf jeden Fall nicht<nbsp>- und das war er wohl auch nie. Außerdem ähnelt er weder unseren magischen Marionetten noch Garlemalds Magitek<nbsp>...
+#. fr: Une chose est sûre<nbsp>: ce n'est pas un être humain. Et ça ne ressemble en rien aux pantins éorzéens ou aux armes magitek de l'empire garlemaldais.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_001:1"
+msgid "It's clearly not a person, but it doesn't look like any automaton or magitek weapon I've ever seen."
+msgstr ""
+
+#. ja: だから、あなたの意見も聞いてみたいと思ってたの。<br>私よりも、いろいろな物を見てきたと思うから……。
+#. de: Deine Meinung ist also gefragt, <if $gn4>meine Liebe<else>mein Lieber</if>. Schließlich bist du von allen Personen, die ich kenne, mit Abstand am meisten herumgekommen.
+#. fr: C'est pour cette raison que je me suis dit que j'aimerais avoir ton avis là-dessus. Tu en as pro<shy>ba<shy>ble<shy>ment vu bien plus que moi au cours de tes périples.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_002:1"
+msgid "As far and wide as you've traveled, though, perhaps you've encountered something similar before."
+msgstr ""
+
+#. ja: ゾラージャが手に入れた力が何なのか知るためにも、<br>この「横たわる兵士」を、少し観察してもらえないかしら？<br>気づいたことがあれば、あとでみんなに共有しましょ。
+#. de: Nimm ihn doch auch mal unter die Lupe. Nicht zuletzt, um der Wahrheit hinter Zoraal Jas mysteriöser Macht ein Stück näher zu kommen<nbsp>... Unsere Funde können wir dann später mit den anderen teilen.
+#. fr: Pour comprendre sur quel genre de pouvoir Zoraal Ja a mis la main, nous devons examiner cette sentinelle. Si tu découvres quoi que ce soit, je te propose d'en faire part aux autres après.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_003:1"
+msgid "Would you mind taking a closer look? It may yield some clues as to Zoraal Ja's new powers."
+msgstr ""
+
+#. ja: 「横たわる兵士」の観察を開始します。<br>気になる部分にズームし、<br><if ($gn80 == 0)><ui-color 546>左クリック</ui-color><else><icon2 15>ボタン/<icon2 8>ボタン</if>で確認しましょう！
+#. de: Untersuche den Soldaten im Detail. Du kannst die Kamera bewegen und rein- und rauszoomen. Fokussiere eine Stelle und betätige <if ($gn80 == 0)><ui-color 546>die linke Maustaste</ui-color><else><icon2 15> oder <icon2 8>-Taste</if>, um sie dir genauer anzusehen.
+#. fr: La visée interactive va débuter. Utilisez la caméra pour inspecter les différentes parties de la sentinelle au sol, puis validez votre choix avec <if ($gn80 == 0)><else><icon2 15>/<icon2 8></if>.
+#. speaker: SYSTEM
+#. macro: <if ($gn80 == 0)><ui-color 546></ui-color><else><icon2 15> / <icon2 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 80 == 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <ui-color 546> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 546 (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <icon2 15> — an inline icon that depends on the input device; icon = 15 (game data: keep it; it may move or repeat)
+#. macro: <icon2 8> — an inline icon that depends on the input device; icon = 8 (game data: keep it; it may move or repeat)
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_SYSTEM_000_010:1"
+msgid "Examine the fallen soldier. You may move the camera, as well as zoom in or out. Target an area and inspect it with <if ($gn80 == 0)><ui-color 546></ui-color><else><icon2 15> / <icon2 8></if>."
+msgstr ""
+
+#. ja: どう？<br>何か気づいたことはあった？
+#. de: Und? Konntest du etwas herausfinden?
+#. fr: Alors<nbsp>? Ça donne quoi<nbsp>?
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_011:1"
+msgid "So, what do you think?"
+msgstr ""
+
+#. ja: 何と言う？
+#. de: Was antwortest du?
+#. fr: Que répondez-vous<nbsp>?
+#. speaker: Q1
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_Q1_100_000:1"
+msgid "What will you say?"
+msgstr ""
+
+#. ja: 今までに見たことがない文明のものだ
+#. de: Diese Technologie entstammt keiner mir bekannten Kultur.
+#. fr: C'est la première fois que je vois cette technologie.
+#. speaker: A1
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_A1_100_001:1"
+msgid "It's unlike anything I've ever seen."
+msgstr ""
+
+#. ja: 人の姿をしているが機械のようだ
+#. de: Er wirkt fast lebendig<nbsp>... und doch wie eine Maschine.
+#. fr: Ça a tout l'air d'une machine humanoïde.
+#. speaker: A1
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_A1_100_002:1"
+msgid "It looks like a person, but it's clearly mechanical."
+msgstr ""
+
+#. ja: あなたでも知らない文明の機械なのね……。<br>気味が悪いほど、人に似た形をしているし、<br>顔は甲冑みたいで味気ないけれど……動力源は何かしら？
+#. de: Eine Maschine einer uns gänzlich unbekannten Kultur<nbsp>... Ich muss schon sagen<nbsp>- er ist mir echt nicht geheuer. Aber trotzdem hat er Arme, Beine und sonstige Gliedmaßen, genau wie wir alle. Aufgrund des helmartigen Kopfes ist lediglich sein Gesicht etwas<nbsp>... nichtssagend. Wie bewegt er sich bloß?
+#. fr: Toi non plus, tu n'as jamais vu de machine de ce genre, n'est-ce pas<nbsp>? Le plus dérangeant, c'est qu'elle a une forme très proche de celle d'un être humain. Son visage ressemble toutefois à une pièce d'armure et est com<shy>plè<shy>te<shy>ment inexpressif. Je me demande ce qui peut l'alimenter.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_012:1"
+msgid "Indeed... While it resembles a person, it has features that make it uncanny, the lack of a face not least of all. Did you see any sign of a power source?"
+msgstr ""
+
+#. ja: なるほど、青燐機関のようなものも見られないし、<br>動力源も不明、か……。
+#. de: Verstehe<nbsp>... Und er scheint auch keinen Erdseim-Antrieb oder Ähnliches zu besitzen. Hmm<nbsp>...
+#. fr: En effet, il n'y a pas de générateur à céruleum. Nous ignorons donc ce qui lui sert de source d'énergie.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_013:1"
+msgid "So it probably doesn't run on ceruleum or any other conventional fuels."
+msgstr ""
+
+#. ja: さっき、試しにエーテルを込めてみたんだけど、<br>特になにも反応しなかったわ……。<br>もしかしたら、魔法生物のように動くかもと思ったのだけど。
+#. de: Ich habe vorhin schon versucht ihm etwas Äther zukommen zu lassen, aber auch das brachte rein gar nichts<nbsp>... Und da dachte ich schon, er würde vielleicht ähnlich den uns bekannten magischen Geschöpfen funktionieren.
+#. fr: Tout à l'heure, j'ai essayé d'y insuffler de l'éther en me disant qu'elle était peut-être semblable à une entité arcanique, mais je n'ai constaté aucun effet.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_014:1"
+msgid "I tried channeling aether into it earlier, but there was no response. That would seem to rule it out as an arcane entity."
+msgstr ""
+
+#. ja: いったい何なのかしら……。<br>襲撃中は絶えまなく動き回ってたのに、<br>今はピクリともしないし。
+#. de: Was soll man davon nur halten ...? Im Gefecht vorhin bewegte er sich noch ohne Unterlass, doch nun ist zumindest dieser hier absolut regungslos<nbsp>...
+#. fr: Je me demande ce que ça peut bien être. Lors de l'attaque, cette sentinelle se déplaçait sans cesse, mais là, elle est com<shy>plè<shy>te<shy>ment immobile et sans vie.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_015:1"
+msgid "It's completely lifeless now─a far cry from the unstoppable enemy it was in battle..."
+msgstr ""
+
+#. ja: そもそも素材すらわからないわ。<br>金属でもないし、質感はどちらかと言えば、石……？<br>って……つい最近、どこかで似たようなものを見なかった？
+#. de: Und überhaupt<nbsp>... Was ist das nur für ein Material? Metall jedenfalls nicht. Eher<nbsp>... eine Art Stein?! Moment! Etwas Ähnliches haben wir doch erst vor kurzem gesehen, oder nicht?
+#. fr: Je n'ai pas non plus la moindre idée des matériaux qui la composent. Ça n'a pas l'air d'être du métal. En fait, on dirait plutôt de la pierre. Attends une minute<nbsp>! Il me semble avoir vu quelque chose de similaire il n'y a pas très longtemps.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_016:1"
+msgid "Even the material it's made of is a mystery. Rather than a metal, it's more akin to stone... Wait. Haven't we seen this somewhere recently?"
+msgstr ""
+
+#. ja: 何と言う？
+#. de: Was sagst du?
+#. fr: Que dites-vous<nbsp>?
+#. speaker: Q1
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_Q1_000_000:1"
+msgid "What will you say?"
+msgstr ""
+
+#. ja: 天深きセノーテで見た
+#. de: Im Himmelstiefen Cenote!
+#. fr: Oui, c'était au cénote des Cieux infinis.
+#. speaker: A1
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_A1_000_001:1"
+msgid "We have─in the Skydeep Cenote."
+msgstr ""
+
+#. ja: 連王宮も石でできている！
+#. de: Der Palast ist doch aus Stein!
+#. fr: Le palais<nbsp>? Il est en pierre, lui aussi.
+#. speaker: A1
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_A1_000_002:1"
+msgid "The palace is made of stone too!"
+msgstr ""
+
+#. ja: そう、そうよ……！<br>黄金郷の扉がある部屋の、光る石……！
+#. de: Ja<nbsp>... Ja, genau! Das ist es! Das leuchtende Gestein bei der Pforte zur Stadt aus Gold!
+#. fr: C'est ça<nbsp>! Cette étrange pierre lumineuse dans la salle où se trouve la porte de la cité d'or<nbsp>!
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_018:1"
+msgid "That's right! The glowing stone used in the chamber with the gate to the golden city!"
+msgstr ""
+
+#. ja: たしかに連王宮は石造りだけど……<br>私が言いたかったのは、<br>表面がつるっとしていて輝きを帯びた石材ってことよ。
+#. de: ... Da hast du zwar nicht ganz Unrecht, aber die Beschaffenheit scheint mir doch grundverschieden. Was ich meinte, war dieses glatte Gestein, das so mysteriös funkelte.
+#. fr: En effet, le palais est en pierre, mais je voulais surtout te faire remarquer l'aspect lisse et lumineux de cet étrange matériau.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_019:1"
+msgid "Uh, yes, it certainly is. But it's nothing like what was used to craft this machine."
+msgstr ""
+
+#. ja: ……そうだわ！<br>天深きセノーテの最奥……黄金郷の扉がある部屋の、光る石……！
+#. de: Du weißt schon! Was wir damals in in den Tiefen der Himmelstiefen Cenote an der Pforte zur Stadt aus Gold vorgefunden haben!
+#. fr: Ah, je sais<nbsp>! C'est le même que celui de la salle où se trouve la porte de la cité d'or, tout au fond du cénote des Cieux infinis<nbsp>!
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_020:1"
+msgid "Its stone is smooth and has a glow─like that which we saw in the chamber with the gate to the golden city."
+msgstr ""
+
+#. ja: ねえ、この兵士の黒い部分や、空に浮かんでる軍艦は、<br>「黄金郷の扉」を構成していた石材に、<br>そっくりだと思わない？
+#. de: Und sieh nur! Nicht nur der schwärzliche Teil seiner Rüstung, sondern auch die Schiffe da oben ähneln unserem mysteriösen Gestein doch ganz schön deutlich, findest du nicht?
+#. fr: Dis, tu ne trouves pas que la partie noire de cette sentinelle et les étranges vaisseaux dans le ciel semblent constitués de ces mêmes minéraux<nbsp>?
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_021:1"
+msgid "And while the soldiers are a different color, the warships are the same black as the stone of the gate itself."
+msgstr ""
+
+#. ja: 何か繋がりがあるかもしれないし、<br>「金凰の間」に戻ったら、みんなに共有しましょ！
+#. de: Da gibt es doch bestimmt einen Zusammenhang! Jedenfalls sollten wir unseren Freunden im Sonnensitz schnellstens Bericht erstatten.
+#. fr: Il doit y avoir un lien. Partageons cette découverte avec les autres lorsque nous retournerons à la salle de l'Aurore<nbsp>!
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_022:1"
+msgid "There has to be a connection. Let's share our observations with the others when we gather at Sunperch."
+msgstr ""
+
+#. ja: それにしても、不気味なほど人に近い動きをしていたのよね。<br>本当に誰かが中に入ってるんじゃないかって、<br>疑っちゃうくらいに……。
+#. de: Ich muss schon sagen<nbsp>... Die Art, wie sich diese mechanischen Soldaten bewegen<nbsp>... Fast so, als wäre da wirklich jemand unter dem Helm<nbsp>...
+#. fr: Ses mouvements ressemblaient à s'y méprendre à ceux d'une personne vivante. On aurait presque dit qu'il y avait un être humain à l'intérieur.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_023:1"
+msgid "The sooner we get to the bottom of this mystery, the better."
+msgstr ""
+
+#. ja: 最初に見たときには、甲冑を装備した人だと思ったけど、<br>斬りつけてみて実感したわ。<br>人じゃないって……。
+#. de: Zuerst dachte ich noch, es handele sich einfach um eine Person in Rüstung. Doch als mein Rapier ihn dann durchbohrte, spürte ich sofort, dass ich mit meiner Einschätzung falsch lag<nbsp>... 
+#. fr: La première fois que j'ai croisé une de ces sentinelles, j'ai cru avoir affaire à un soldat en armure, mais j'ai bien compris que ce n'était pas le cas quand je l'ai frappée.
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_025:1"
+msgid "At first, I assumed they were soldiers in armor. But when I cut them down, it became clear that wasn't the case."
+msgstr ""
+
+#. ja: ほかのみんなも集まってるみたいよ。
+#. de: Der Rest hat sich bereits versammelt.
+#. fr: Bon, j'imagine que toute l'équipe nous attend à l'intérieur<nbsp>!
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_030:1"
+msgid "Looks like everyone is here already."
+msgstr ""
+
+#. ja: 何とかしてドームに乗り込んで、<br>巻き込まれた人の安否を確認しましょう！
+#. de: Dann sind wir jetzt wohl an der Reihe! Wir müssen herausfinden, was aus den Leuten in Yyasulani geworden ist!
+#. fr: Nous devons pénétrer dans le dôme par n'importe quel moyen et nous assurer que les gens de la Yyasulani sont sains et saufs<nbsp>!
+#. speaker: ALISAIE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALISAIE_000_040:1"
+msgid "We'll find a way to breach the dome, and we'll make sure everyone inside is safe."
+msgstr ""
+
+#. ja: 残るとは言ったものの……敵の攻撃に備えるためには、<br>少しでも多く情報を集めたいところだね。
+#. de: Ich sagte zwar, ich würde hierbleiben, einen kurzen Ausflug in Richtung Kuppel zur Informationsbeschaffung muss ich aber trotzdem tätigen. Schließlich wollen wir ja wissen, worauf genau es sich vorzubereiten gilt.
+#. fr: J'ai dit que je restais ici, mais je vais devoir recueillir autant d'in<shy>for<shy>ma<shy>tions que possible pour nous prémunir d'une nouvelle attaque ennemie.
+#. speaker: ALPHINAUD
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ALPHINAUD_000_045:1"
+msgid "I fear we need to know more if we're to defend against another assault."
+msgstr ""
+
+#. ja: 未知の鏡像世界……<br>なぜ、このタイミングで接点ができたのか……。
+#. de: Eine unbekannte Welt verbindet sich mit dem Ursprung<nbsp>... Aber warum gerade jetzt ...?
+#. fr: Je me demande pourquoi ce reflet inconnu est entré en contact avec notre monde à ce moment précis.
+#. speaker: YSHTOLA
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_YSHTOLA_000_050:1"
+msgid "Another reflection encroaches upon our own, but how, and why now?"
+msgstr ""
+
+#. ja: 留守を預かってくれたオジカには感謝するしかない……。<br>そのぶん、しっかり働いてみせないとな。
+#. de: Dafür, dass Ojika im Annex bestimmt gerade arbeitet bis zum Umfallen, sollten wir uns später erkenntlich zeigen. Nur dank seines unermüdlichen Einsatzes ist es mir möglich, jetzt hier zu sein.
+#. fr: Une chance qu'Ojika Tsunjika ait accepté de rrrester à Sharlayan pendant notre absence. À nous de faire tout notre possible pour élucider ces mystères.
+#. speaker: GRAHATIA
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_GRAHATIA_000_055:1"
+msgid "I'm indebted to Ojika for overseeing our operations in my absence. I will endeavor to make myself as useful as I can here."
+msgstr ""
+
+#. ja: 自分が鏡像世界の生まれだなんて、まだ信じられない。<br>でも、それなら私の魂は薄いってことなのかしら……。
+#. de: Ich<nbsp>... Ich kann es einfach nicht fassen. Komme ich wirklich aus einer anderen Welt? Und meine Seele<nbsp>... Ist sie dann weniger dicht als eure?
+#. fr: J'ai encore du mal à croire que je viens d'un autre reflet. Est-ce que cela signifie que mon âme est moins dense<nbsp>?
+#. speaker: KRILE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_KRILE_000_060:1"
+msgid "I struggle to believe I am from another reflection. I wonder, does this mean my soul is thinner than a native of the Source?"
+msgstr ""
+
+#. ja: ううん、もしそうだったとしたら、<br>ヤ・シュトラが真っ先に気付くはずだし……。<br>ううっ、わからないことだらけで頭が爆発しそう……。
+#. de: Hmm<nbsp>... Aber dann wäre das Y'shtola sicherlich bereits aufgefallen<nbsp>... \<seufz> Jetzt habe ich nur noch mehr Fragen.
+#. fr: Non, si c'était le cas Y'shtola l'aurait im<shy>mé<shy>dia<shy>te<shy>ment remarqué. Aaah<nbsp>! Il y a tellement de choses qui me turlupinent que j'en ai la tête qui tourne<nbsp>!
+#. speaker: KRILE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_KRILE_000_065:1"
+msgid "Surely not. Y'shtola would have noticed. Gods, there's so much I don't understand, my head is ripe to burst..."
+msgstr ""
+
+#. ja: どうか、無事であってくれ……。
+#. de: Bitte<nbsp>... Bitte sei am Leben ...!
+#. fr: Pourvu que mon village natal soit intact<nbsp>!
+#. speaker: ERENVILLE
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_ERENVILLE_000_070:1"
+msgid "Please be safe..."
+msgstr ""
+
+#. ja: アタシが今やるべきこと……。<br>これだけは、今向き合わないとならねぇんだ。
+#. de: Der Nebel auf meinem Pfad hat sich verzogen. Ich weiß nun, was zu tun ist. 
+#. fr: Le moment est venu pour moi d'embrasser mon rôle d'Aurarque de la Force.
+#. speaker: WUKLAMAT
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_WUKLAMAT_000_090:1"
+msgid "I know what I have to do now."
+msgstr ""
+
+#. ja: どうぞ、お入りください。<br>連王様方がお待ちです。
+#. de: Bitte tretet ein. Die verehrten Kronen erwarten Euch bereits.
+#. fr: Veuillez entrer, s'il vous plaît. Leurs Majestés vous attendent.
+#. speaker: SUNPERCHGATEKEEPER
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_SUNPERCHGATEKEEPER_000_100:1"
+msgid "Vow Wuk Lamat and the others are waiting for you. Right this way."
+msgstr ""
+
+#. ja: 「金凰の間」へ移動しますか？
+#. de: Den Sonnensitz betreten?
+#. fr: Aller dans la salle de l'Aurore<nbsp>?
+#. speaker: SYSTEM
+msgctxt "quest/049/KinGmd110_04921:TEXT_KINGMD110_04921_SYSTEM_000_101:1"
+msgid "Enter Sunperch?"
+msgstr ""

@@ -1,0 +1,181 @@
+# quest/046/BanOmi116_04622 — « Ea Epicurious» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、イーア族に食材を届けてほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 hat einen Auftrag zur Beschaffung von Lebensmittelzutaten für die Ea.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 voudrait que vous livriez des provisions aux Éas.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_SEQ_00:1"
+msgid "Stigma-4 seems to be chewing on something─strictly in the metaphorical sense.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 食に興味を示したイーアに依頼された品を納品
+#. de: Ware an den geschmacksinteressierten Ea liefern
+#. fr: Livrer ce qui vous a été demandé à l'Éa gourmet
+#. kind: journal
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_SEQ_01:1"
+msgid "Deliver the requested items to the intrigued Ea."
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの農業区画で<sheet Item $n5 0>を砕岩<else>食に興味を示したイーアに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの農業区画で<sheet Item $n5 0>を草刈<else>食に興味を示したイーアに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの農業区画で<sheet Item $n5 0>を釣る<else>食に興味を示したイーアに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Agrarsektor Elysiums <noun-de Item 5 $n5 2 4 1> abbauen<else> <capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim geschmacksinteressierten Ea abliefern</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Agrarsektor Elysiums <noun-de Item 5 $n5 2 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim geschmacksinteressierten Ea abliefern</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Agrarsektor Elysiums <noun-de Item 1 $n5 1 4 1> fangen<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> beim geschmacksinteressierten Ea abliefern</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire des <noun-fr Item 12 $n5 2 1> aux champs élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Éa gourmet</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter des <noun-fr Item 12 $n5 2 1> aux champs élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Éa gourmet</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> aux champs élyséens<else>Livrer <noun-fr Item 2 $n5 1 1> à l'Éa gourmet</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the intrigued Ea.</if><else><if ($… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the intrigued Ea.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the intrigued Ea.</if><else><if … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the intrigued Ea.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 1 1> to the intrigued Ea.</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 1 1> to the intrigued Ea.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the intrigued Ea.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 2 1> to the intrigued Ea.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> in the Elysian fields.<else>Deliver <noun-en Item 2 $n5 1 1> to the intrigued Ea.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: オストラコン・トゥリアのイーア族から、<br>カフェにコンタクトあり。<br>新星の特定食材を提供してほしいとのこと。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... \<zzzt><nbsp>... Einleitungsfloskeln werden geladen<nbsp>... Sei gegrüßt, <split " " 1><string $gs1></split>. Ea aus Ostrakon Tria haben kürzlich Kontakt mit dem Wiegenstern aufgenommen und neue Nahrungsproben aus Elysium angefordert.
+#. fr: Bip bip... Pshhh... J'ai reçu une communication en provenance des Éas de l'Ostrakon Tria pour le café. Ils ont demandé à recevoir des produits alimentaires d'Ultima Thulé.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_001:1"
+msgid "The Ea request delivery of Elysian foodstuffs for further experimentation of indeterminate nature."
+msgstr ""
+
+#. ja: これに対し、毛むくじゃらカフェマスターは軽率にも、<br>兵站戦略マトリクスたる当機への相談もなく受諾……<br>調達、および配達指令を発した。
+#. de: \<biep><nbsp>... Leider hat der übermäßig behaarte Gastwirt den Auftrag entgegen aller Vernunft angenommen, bevor die Nachricht die Sensoren von Stigma-4 zur Evaluierung erreichte. Nun ist eine Lieferung der geforderten Proben zwingend notwendig geworden. \<bzzzt>
+#. fr: L'impétueuse petite boule de poils a accepté la requête, sans en référer à la matrice de stratégie logistique que je représente. Pshhh... Des in<shy>struc<shy>tions d'approvisionnement et de livraison ont été transmises.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_002:1"
+msgid "Request accepted by flea-infested manager in reckless subversion of approved workflow. Café effort still recovering from resulting casualties of time and efficiency. Reasserting task-distribution authority..."
+msgstr ""
+
+#. ja: ついては同盟者<split " " 1><string $gs1></split>よ、<br>まずはエリュシオンの農業区画にて、<br>「<sheet Item 38290 0>」を調達されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... \<bzzz><nbsp>... <split " " 1><string $gs1></split> soll im Agrarsektor Elysiums drei Einheiten folgenden Gegenstands akquirieren >> <sheet Item 38290 9>.
+#. fr: Bip bip... Entité alliée <split " " 1><string $gs1></split>, votre mission est de vous rendre aux Champs élyséens et de vous procurer trois <noun-fr Item 12 38290 2 1>.
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_003:1"
+msgid "<split \" \" 1><string $gs1></split>, you are hereby ordered to obtain moderate quantities of dark sodium compounds found in the Elysian fields. Imbibing, ingesting, or otherwise licking said material before delivery is strictly prohibited."
+msgstr ""
+
+#. ja: ついては同盟者<split " " 1><string $gs1></split>よ、<br>まずはエリュシオンの農業区画にて、<br>「<sheet Item 38314 0>」を調達されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... \<bzzz><nbsp>... <split " " 1><string $gs1></split> soll im Agrarsektor Elysiums drei Einheiten folgenden Gegenstands akquirieren >> <sheet Item 38314 9>.
+#. fr: Bip bip... Entité alliée <split " " 1><string $gs1></split>, votre mission est de vous rendre aux Champs élyséens et de vous procurer trois <noun-fr Item 12 38314 2 1>.
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_004:1"
+msgid "<split \" \" 1><string $gs1></split>, you are hereby ordered to obtain moderate quantities of colorful fauna in the Elysian fields. Errant mastication of items meant for delivery is strictly prohibited."
+msgstr ""
+
+#. ja: ついては同盟者<split " " 1><string $gs1></split>よ、<br>まずは農業区画にて「<sheet Item 38338 0>」の調達を。<br>その際は<sheet Item 36588 0>の使用を推奨する。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... \<bzzz><nbsp>... <split " " 1><string $gs1></split> soll im Agrarsektor Elysiums <noun-de Item 1 38338 1 4 1> akquirieren.
+#. fr: Bip bip... Entité alliée <split " " 1><string $gs1></split>, votre mission est de vous rendre aux Champs élyséens et de vous procurer <noun-fr Item 1 38338 1 1>. L'utilisation d'<noun-fr Item 1 36588 1 1> comme appât est recommandée.
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_005:1"
+msgid "<split \" \" 1><string $gs1></split>, you are ordered to obtain an unmistakably aquatic organism from waters in the Elysian fields. Gold salmon roe may be purchased from unit<br>N-0598 for a nominal fee. Personal consumption of any and all piscatory acquisitions is forbidden."
+msgstr ""
+
+#. ja: 依頼物入手後は、オストラコン・トゥリア所在、<br>「食に興味を示したイーア」に配達のこと。<br>……宙域の幸福度向上のため、同盟者の働きを期待する。
+#. de: Anschließend ist die Probe an den geschmacksinteressierten Ea in Ostrakon Tria auszuhändigen. \<klick><nbsp>... \<bzzz><nbsp>... Zur Steigerung der Zufriedenheit der Bewohner von Ultima Thule erwartet Stigma-4 deine uneingeschränkte Kooperation.
+#. fr: Bip bip... une fois votre objectif rempli, rendez-vous à l'Ostrakon Tria et remettez le tout à l'Éa gourmet. L'amélioration des niveaux de prospérité dans cette région de l'univers dépend de votre succès.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_006:1"
+msgid "Deliver the requested foodstuffs to the indicated Ea in Ostrakon Tria. Initiating encouragement sequence... Catering to the desires of local denizens furthers Last Dregs objectives. Enthusiasm is optional, but recommended."
+msgstr ""
+
+#. ja: おや、お客人、何かご用だろうか？<br>私は今、品物が届くのを待っているんだ。<br>なあに時間はまだまだある……思索しているうちに届くだろう。
+#. de: Oh, eine physische Manifestation!? Bist du gekommen, um meine bestellten Geschmacksproben zu liefern? Ich erkenne leider kein entsprechendes Gepäck bei dir<nbsp>... Auch wenn Zeit für einen Ea keine Rolle spielt, verspüre ich<nbsp>... <i>Ungeduld</i><nbsp>...
+#. fr: Un visiteur<nbsp>! Venu d'ailleurs<nbsp>! Voyez-vous, j'attends une livraison, mais ce n'est pas pressé. Je vais gamberger là un moment et elle finira bien par arriver...
+#. speaker: EA04622
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_EA04622_000_007:1"
+msgid "Greetings, corporeal being. I am currently awaiting the arrival of materiel most crucial, so if you would leave me to my contemplation..."
+msgstr ""
+
+#. ja: おや、お客人、何かご用だろうか？<br>私は今、品物が届くのを待っているんだ。
+#. de: Oh, eine physische Manifestation! Du bist gekommen, um meine bestellten Geschmacksproben zu liefern, nicht wahr?
+#. fr: Un visiteur<nbsp>! Venu d'ailleurs<nbsp>! Voyez-vous, j'attends une livraison, mais ce n'est pas pressé. Elle finira bien par arriver...
+#. speaker: EA04622
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_EA04622_000_008:1"
+msgid "Greetings, corporeal being. I am currently awaiting the arrival of materiel most crucial."
+msgstr ""
+
+#. ja: そう、これだ！<br>肉体を持つお客人よ、ありがとう。<br>これで実験が行えるというものだよ。
+#. de: Ja, das ist es! Ich verspüre<nbsp>... <i>Vorfreude</i>! Ich danke dir, wandelndes Biomassegefäß. Damit kann ich nun die Erforschung neuronaler Geschmacksrezeptoren fortführen.
+#. fr: Mais que voilà<nbsp>! Merci, visiteur corporel<nbsp>! Grâce à vous, je vais pouvoir mener à bien mes petites expériences.
+#. speaker: EA04622
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_EA04622_000_009:1"
+msgid "Why, this is it precisely! You have done well to deliver it to me, cumbersomely burdened by a bone-house though you are."
+msgstr ""
+
+#. ja: 先日、同胞が味覚の<ruby>感覚質<rt>クオリア</ruby>を再体験したろう？<br>その話は興味を持つに値するものだったが、<br>一方で、他者の協力が不可欠なのが難点のようにも思えた。
+#. de: Die gallertartige Gedankenmasse zwischen deinen Ohren hat es vielleicht noch gespeichert: Wir Ea wollen all die Aspekte des Fühlens, deren ursprüngliche Wahrnehmungsform wir aufgegeben haben, neu entdecken. Darunter auch unseren <i>Geschmackssinn</i>. Dazu forsche ich und benötige ständig neue Proben.
+#. fr: L'autre jour, mon compatriote a voulu ex<shy>pé<shy>ri<shy>men<shy>ter à nouveau les <i>qualia</i> du goût. C'est un sujet passionnant, mais la nécessité d'une in<shy>ter<shy>ven<shy>tion externe reste un obstacle de taille.
+#. speaker: EA04622
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_EA04622_000_010:1"
+msgid "I recently received word from my brethren who engaged in that sensory experimentation sponsored by your restaurant. An endeavor worthy of further inquiry, yet tragically reliant upon a third-party conduit. "
+msgstr ""
+
+#. ja: ゆえに私は、再受肉槽で味覚器官のみを培養し、<br>それに食材を投入して味覚情報を取得できないかと思案したのさ。<br>実現すれば、好きな時に味を楽しめる……さっそく試してこよう。
+#. de: Ich habe jüngst damit begonnen, Geschmacksorgane in einer Molekularretorte zu züchten und versuche nun, daraus Geschmacksinformationen zu extrahieren. Wenn ich Erfolg haben sollte, werden wir Ea uns fortan an allerlei Geschmacksdatensätzen erfreuen können, die normalerweise minderen biochemischen Organismen vorbehalten sind!
+#. fr: C'est pourquoi j'ai cultivé uniquement des organes gustatifs au vague de la Chair, et j'espère récupérer des données sur le goût des aliments que j'y intégrerai. Si tout se passe comme prévu, je pourrai en profiter quand bon me semble. D'ailleurs, allons essayer de ce pas...
+#. speaker: EA04622
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_EA04622_000_011:1"
+msgid "It is for this reason I plan to cultivate a comparable gustatory organ─yes, just the single piece─into which I may insert the foodstuffs you have brought me and perform “tastings” at my leisure. Ingenious, do you not agree? Now, if you will excuse me, I have corporeal mass to grow..."
+msgstr ""
+
+#. ja: 同盟者<split " " 1><string $gs1></split>の帰還を確認。<br>本件の依頼者、イーア族の様子を報告せよ。
+#. de: Stigma-4 registriert Rückkehr von <split " " 1><string $gs1></split>. Fordere Missionsbericht über Warenlieferung an Ea<nbsp>...
+#. fr: Bip bip... Pshhh... Confirmation du retour de l'entité alliée <split " " 1><string $gs1></split>. Je requiers votre rapport sur le statut des livraisons aux Éas. 
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_012:1"
+msgid "Return of <split \" \" 1><string $gs1></split> confirmed. Expression assessed as “queasy.” Requesting supplementary information."
+msgstr ""
+
+#. ja: 報告を受領……味覚に対するイーア族の関心が向上したことにより、<br>カフェ「ラストレムナント」の利用率向上に寄与する可能性大。<br>同盟者の任務完遂を評価する。
+#. de: Missionsbericht wird protokolliert. \<biep><nbsp>... \<bzzz><nbsp>... Alle Simulationen von Stigma-4 deuten darauf hin, dass der erfolgreiche Abschluss deiner Mission mit hoher Wahr<shy>schein<shy>lich<shy>keit zu einer statistisch signifikanten Zunahme von Ea im Café „Wiegenstern“ führen wird.
+#. fr: Réception du rapport... Bip bip... En raison de l'augmentation du paramètre d'intérêt des Éas envers le goût, probabilité d'une fréquentation accrue des Dernières Réminiscences. Modification du statut de la mission de l'entité alliée à “terminée”.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_013:1"
+msgid "Verbal analysis complete. Burgeoning interest in foodstuffs amongst the Ea suggests a potential increase in patronage for the Last Dregs. Additionally, successful creation of artificial taste receptors is projected to create demand for food delivery, which aligns with overall objectives."
+msgstr ""
+
+#. ja: なお、彼らの味覚検知実験が成功した場合、<br>テイクアウト需要が上昇するものと予測……。<br>当機は、今後の展開に備えた作戦立案に移行する。
+#. de: Sollte unser Auftraggeber Erfolg bei der Reproduktion von Geschmacksdaten haben, prognostiziert Stigma-4 zudem eine Zunahme von Lieferbestellungen für organische Speisen durch die Ea. \<biep> ... \<zzzt> ... Initiiere operative Planung künftiger Missionen für <split " " 1><string $gs1></split>.
+#. fr: Pshhh... De plus, en cas de succès des expériences de détection gustative des Éas, mes prévisions indiquent une augmentation des demandes de consommations à emporter... Je dois désormais planifier nos prochaines opérations en conséquence de ces nouvelles variables.
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi116_04622:TEXT_BANOMI116_04622_STIGMA4_000_014:1"
+msgid "In comparison, <split \" \" 1><string $gs1></split>'s queasiness is inconsequential. Shiny objects will be provided as a distraction from current digestive distress in the interest of maintaining morale."
+msgstr ""

@@ -1,0 +1,186 @@
+# quest/046/BanOmi125_04631 — « Not Forgotten» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、物資の配達を頼みたいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 hat einen neuen Auftrag für dich.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 voudrait vous demander une livraison de mar<shy>chan<shy>di<shy>ses.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_SEQ_00:1"
+msgid "Despite its incomparable processing capabilities, it would appear there are many concepts Stigma-4 has yet to understand.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 故郷に思いを馳せる竜に依頼された品を納品
+#. de: Ware an den nostalgischen Drachen liefern
+#. fr: Livrer ce qui vous a été demandé au dragon nostalgique
+#. kind: journal
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_SEQ_01:1"
+msgid "Deliver the requested items to the wistful dragon. "
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を採掘<else>故郷に思いを馳せる竜に<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を伐採<else>故郷に思いを馳せる竜に<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を釣る<else>故郷に思いを馳せる竜に<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 5 $n5 2 4 1> abbauen<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim nostalgischen Drachen abliefern</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 5 $n5 2 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim nostalgischen Drachen abliefern</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 1 $n5 1 4 1> fangen<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> beim nostalgischen Drachen abliefern</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire des <noun-fr Item 12 $n5 2 1> aux terrains de jeu élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> au dragon nostalgique</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter des <noun-fr Item 12 $n5 2 1> aux terrains de jeu élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> au dragon nostalgique</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> aux terrains de jeu élyséens<else>Livrer <noun-fr Item 2 $n5 1 1> au dragon nostalgique</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the wistful dragon.</if><else… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the wistful dragon.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the wistful dragon.</if><el… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the wistful dragon.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the wistful dragon.</if></if… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the wistful dragon.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the wistful dragon.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the wistful dragon.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the wistful dragon.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: 毛むくじゃらカフェマスターより指令。<br>オストラコン・デカオクトのドラゴン族に対し、<br>爪や翼の手入れに用いる品を、贈りたいとのこと。
+#. de: \<biep> Einleitungsfloskeln werden geladen. \<biep> Hallo, <split " " 1><string $gs1></split>. Übermittle Anfrage des übermäßig behaarten Gastwirts >> Zur besseren Auslastung seines Etablissements plant der semi-intelligente Nager, den Drachen von Ostrakon Deka-okto eine „Freude“ zu machen. \<bzzt> Utensilien zur Wartung von Krallen und Flügeln stehen dabei ganz oben auf seiner Anforderungsliste.
+#. fr: Bip bip... Pshhh... Ordre reçu en provenance de la petite boule de poils. Elle dit vouloir offrir aux dragons de l'Ostrakon Dékaokto des produits d'entretien pour leurs griffes et leurs ailes.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_001:1"
+msgid "The hirsute proprietor of the Last Dregs has decreed the dragons residing in Ostrakon Deka-okto be offered rudimentary tools for grooming─“gifts,” in its words─as a “gesture of kindness.”"
+msgstr ""
+
+#. ja: 当機は、完全なる再現品の提供を進言したものの、<br>カフェマスターは、天然物の代用物資の方が有益であると主張……。<br>ゆえに、同盟者に調達および配送を依頼するものである。
+#. de: \<bzzz> Stigma-4 schlug stattdessen die Herstellung von Ersatzklauen und -flügeln vor<nbsp>- eine um 0,462<nbsp>% kosteneffizientere Methode des Funktionserhalts. \<biep> Entgegen der Gesetze der Logik hat der übermäßig behaarte Gastwirt auf Naturprodukte zur Pflege bestanden. \<ratter><nbsp>...
+#. fr: Pshhh... J'ai proposé de fournir des articles par<shy>fai<shy>te<shy>ment reconstitués, mais la petite boule de poils a insisté pour que nous pourvoyions plutôt des produits naturels aux propriétés similaires. Les talents de l'entité alliée deviennent ipso facto nécessaires.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_002:1"
+msgid "The obstinate and prickly proprietor was advised the tools be synthetically recreated to no avail. It has instead been decided the implements be inferior substitutes of organic origin, as that would somehow be “more genuine.” Hence, the allied unit's services are required."
+msgstr ""
+
+#. ja: では同盟者よ、エリュシオン遊園区画にて、<br>「<sheet Item 38297 0>」を採集されたし。<br>その後、リア・ターラ所在「故郷に思いを馳せる竜」に納品を。
+#. de: Auftragsprotokoll wird referenziert. \<biep> <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums <noun-de Item 5 38297 2 4 1> akquirieren und an den nostalgischen Drachen in Reah Tahra aushändigen.
+#. fr: Rendez-vous donc aux terrains de jeu élyséens afin de vous procurer trois <noun-fr Item 12 38297 2 1>. Livraison au dragon nostalgique se trouvant à Reah Tahra.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_003:1"
+msgid "Further elucidation deemed unnecessary. Mission initiation requested. Proceed to Elysion and secure precisely three whetstones from rock formations in the recreational areas. Then, make your way to Reah Tahra, where you may offer the items to the saddest dragon you can find."
+msgstr ""
+
+#. ja: では同盟者よ、エリュシオン遊園区画にて、<br>「<sheet Item 38321 0>」を採集されたし。<br>その後、リア・ターラ所在「故郷に思いを馳せる竜」に納品を。
+#. de: Auftragsprotokoll wird referenziert. \<biep> <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums <noun-de Item 5 38321 2 4 1> akquirieren und an den nostalgischen Drachen in Reah Tahra aushändigen.
+#. fr: Rendez-vous donc aux terrains de jeu élyséens afin de vous procurer trois <noun-fr Item 12 38321 2 1>. Livraison au dragon nostalgique se trouvant à Reah Tahra.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_004:1"
+msgid "Further elucidation deemed unnecessary. Mission initiation requested. Proceed to Elysion and secure plants with an objectively soft and fluffy texture from the recreational areas. Then, make your way to Reah Tahra, where you may offer the items to the saddest dragon you can find."
+msgstr ""
+
+#. ja: では同盟者よ、エリュシオン遊園区画にて、<br>「<sheet Item 38345 0>」を採集されたし。<br>その際は<sheet Item 36588 0>の使用を推奨……。
+#. de: Auftragsprotokoll wird referenziert. \<biep> <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums <noun-de Item 1 38345 1 4 1> akquirieren. Stigma-4-Datenbanken über aquatische Lebensformen empfehlen die Verwendung von <noun-de Item 5 36588 1 3 1> als Köder.
+#. fr: Rendez-vous donc aux terrains de jeu élyséens afin de vous procurer <noun-fr Item 1 38345 1 1>. L'utilisation d'<noun-fr Item 1 36588 1 1> comme appât est recommandée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_005:1"
+msgid "Further elucidation deemed unnecessary. Mission initiation requested. Proceed to Elysion and secure a single clump of astral algae from water holes located within the recreational areas. Use of gold salmon roe in its retrieval recommended."
+msgstr ""
+
+#. ja: しかるのち、<br>リア・ターラ所在「故郷に思いを馳せる竜」に納品を。
+#. de: Anschließend ist die Ware an den nostalgischen Drachen in Reah Tahra auszuhändigen. \<biep>
+#. fr: Bip bip... Livraison au dragon nostalgique se trouvant à Reah Tahra.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_006:1"
+msgid "After procuring said item, you are to deliver it to the saddest dragon you can find in Reah Tahra."
+msgstr ""
+
+#. ja: 小さき者よ……<br>霧中の故郷を懐かしむ我に、何用か？
+#. de: Tritt näher, kleines Wesen. Was führt dich zu diesem wehmütigen Drachen?
+#. fr: Petit être... Pourquoi viens-tu troubler l'amertume de mes brumeuses contrées natales<nbsp>?
+#. speaker: DRAGON04631
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_DRAGON04631_000_007:1"
+msgid "Little one... Why hast thou come? I wish to be left in peace, that I may continue to reminisce upon the days of old..."
+msgstr ""
+
+#. ja: 小さき者よ……もしや、小うさぎ殿の使いであろうか？<br>彼の者は先日この地を訪れ、<br>我らに贈りたい品があると申していたのだが……。
+#. de: Tritt näher, kleines Wesen. Was führt dich zu diesem wehmütigen Drachen? Ein Geschenk vom sprechenden Hasen, sagst du?
+#. fr: Hum...<nbsp>? Serais-tu envoyé<if $gn4>e</if> par l'autre petit être à grandes oreilles<nbsp>? Il a dit vouloir nous offrir quelques présents durant notre précédente con<shy>ver<shy>sa<shy>tion.
+#. speaker: DRAGON04631
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_DRAGON04631_000_008:1"
+msgid "Little one... Art thou an ally of the strangely attired rabbit? It appeared before me not long ago, insisting it wished to offer me a gift... "
+msgstr ""
+
+#. ja: この荒肌の小石は……いったい……？
+#. de: Oh, diese Steine sehen nützlich aus. Das erinnert mich an unsere verlorene Heimat<nbsp>... \<seufz>
+#. fr: Quelle est donc cette petite pierre à la surface si rêche<nbsp>?
+#. speaker: DRAGON04631
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_DRAGON04631_000_009:1"
+msgid "Why hast thou presented me with this rough rock?"
+msgstr ""
+
+#. ja: この奇妙な植物は……いったい……？
+#. de: Oh, diese Pflanzen wirken wie die Wolle, die wir Drachen zur Pflege unserer Klauen und Flügel auf unserem Heimatstern verwendet haben!
+#. fr: Quelle est donc cette plante pour le moins singulière<nbsp>?
+#. speaker: DRAGON04631
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_DRAGON04631_000_010:1"
+msgid "A most peculiar plant...what is it for?"
+msgstr ""
+
+#. ja: この柔らかな水藻は……いったい……？
+#. de: Oh, der erfrischende Duft dieser Algen ... Und sie sind lang genug, um unsere Fänge zu säubern!
+#. fr: Quelle est donc cette algue par<shy>ti<shy>cu<shy>liè<shy>rement ployable<nbsp>?
+#. speaker: DRAGON04631
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_DRAGON04631_000_011:1"
+msgid "Soft flora indeed...but I do not understand thine intent in presenting it to me."
+msgstr ""
+
+#. ja: ふうむ……かつて我らが用いていた品を、<br>異星の素材で用立てたと？
+#. de: Hmm, ja. Ja, sehr gut. Und du sagst, du hast diese Gaben hier in Ultima Thule entdeckt? Erstaunlich.
+#. fr: Hum... Ainsi donc, vous êtes parvenus à glaner à Ultima Thulé des produits similaires à ceux que nous utilisions des éons auparavant.
+#. speaker: DRAGON04631
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_DRAGON04631_000_012:1"
+msgid "Thou wouldst gift me mementos of the Dragonstar? Hmm. Perhaps if I squint, I shall see some resemblance..."
+msgstr ""
+
+#. ja: 似ているかと問われれば、似ても似つかぬが……<br>我らが生くる様を想い、品を贈ってくれたことを嬉しく思う。<br>そなたに依頼した者にも、感謝を伝えてほしい。
+#. de: Das weckt bittersüße Erinnerungen. Ja ... Längst verloren geglaubt und doch ein immerwährender Dorn in meiner Seele. Wahrlich, ein Geschenk wie kein anderes. Bitte richte dem kleinen Gönner meinen Dank aus. Ich stehe in seiner Schuld.
+#. fr: La ressemblance est notable, mais il est difficile pour moi de me prononcer quant à leur authenticité. Quoi qu'il en soit, ces largesses améliorant notre quotidien sont appréciées. Veuillez transmettre toute notre gratitude au petit être à grandes oreilles.
+#. speaker: DRAGON04631
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_DRAGON04631_000_013:1"
+msgid "Regardless, 'tis heartening to know that some would remember us, even now. I thank thee and thine for the sentiment."
+msgstr ""
+
+#. ja: 同盟者の帰還を確認。<br>当機は、ドラゴン族による否定的な反応を予測。<br>任務の報告を行われたし。
+#. de: \<biep> \<bzzzt> Registriere Rückkehr von <split " " 1><string $gs1></split>. Entgegen dem prognostizierten Fehlschlag hat mich soeben Nachricht über die Erfüllung des Auftrags erreicht. \<biep>
+#. fr: Bip bip... Pshhh... Détection du retour de l'entité alliée. Mes calculs estiment une réaction de rejet de la part des dragons. Veuillez effectuer votre rapport.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_014:1"
+msgid "Allied unit has returned unscathed in spite of anticipated mission failure. Requesting full report."
+msgstr ""
+
+#. ja: ドラゴン族からの謝礼を受領……<br>当機による悲観的な予測に反する結果と評価する。
+#. de: Die Drachen haben ihre außer<shy>ordent<shy>liche Dankbarkeit zum Ausdruck gebracht. \<bzzzt> Das Ergebnis ist konträr zum erwarteten Missionsergebnis. Rekalibriere Algorithmen für eine verbesserte Prognose.
+#. fr: Bip bip... Remerciements des dragons dûment reçus... Ce résultat montre que nos prévisions étaient paramétrées avec un pessimisme exacerbé...
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_015:1"
+msgid "The dragon expressed...gratitude? Preposterous. Projections indicated cataclysmic results."
+msgstr ""
+
+#. ja: 毛むくじゃらカフェマスターの判断能力についても、<br>再評価を……エラー、エラー、エラー。<br>……同盟者よ、今後もさらなる成果を期待する。
+#. de: Neuberechnung des Intelligenzquotienten des übermäßig behaarten Gastwirts erfolgt<nbsp>... \<biep> Schwerer Ausnahmefehler 0E<nbsp>... \<ratter> Kalkulationsergebnis widerspricht den Gesetzen der Natur. \<bzzzt> Initiiere Abschiedsfloskel und starte zentrale Logikeinheit neu<nbsp>... \<knirsch> ... starte zentrale Logikeinheit... \<bzzzt> Initiie-e-e-e... \<bzzzt><nbsp>...
+#. fr: Nécessité de réévaluer les capacités décisionnaires de la petite boule de poils... Erreur, erreur, erreur... Pshhh... Entité alliée, nous comptons sur le succès de vos prochaines missions.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi125_04631:TEXT_BANOMI125_04631_STIGMA4_000_016:1"
+msgid "Reassessment of annoying proprietor's intelligence will be necessary. Commencing reevaluation...\\<bleep> Fatal error detected. Process terminated."
+msgstr ""

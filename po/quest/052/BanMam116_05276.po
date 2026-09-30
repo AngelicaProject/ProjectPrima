@@ -1,0 +1,138 @@
+# quest/052/BanMam116_05276 — « Rough Around the Edges» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、武具の手入れ用品を求めているようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja benötigt Materialien zur Rüstungspflege.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja voudrait mettre la main sur du matériel d'entretien.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_SEQ_00:1"
+msgid "Kageel Ja is looking to procure supplies for weapon maintenance.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_SEQ_01:1"
+msgid "Deliver the requested materials to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>セノーテ・ジャユンジャ付近の岩場で<sheet Item $n5 0>を砕岩<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>セノーテ・ジャユンジャ付近の良木で<sheet Item $n5 0>を伐採<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>セノーテ・ジャユンジャで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der Nähe des Cenote Jayunja <noun-de Item 5 $n5 2 4 1> herausbrechen<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Nähe des Cenote Jayunja <noun-de Item 5 $n5 2 4 1> ernten<else>Kageel Ja <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Cenote Jayunja <noun-de Item 1 $n5 1 4 1> fangen<else>Kageel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près du cénote Jayunja<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du cénote Jayunja<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au cénote Jayunja<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Jayunja<else>Deliver <noun-en Item 2 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: フビゴ族の皆に畑の警備をしてもらうようになってから、<br>魔物被害が減ってひと安心だよ！
+#. de: Seit unsere Hoobigo-Freunde die Felder bewachen, müssen wir uns kaum mehr Sorgen um Bestienangriffe machen. 
+#. fr: Depuis que les Hoobigo montent la garde près des champs, nous n'avons plus à nous inquiéter des ravages commis par les créatures sauvages de la forêt, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_001:1"
+msgid "We've had markedly less trouble with wildlife since our Hoobigo brethren began guarding the gainery."
+msgstr ""
+
+#. ja: 警備を担ってくれている彼らも、この農園の立派な仲間……<br>というわけで、フビゴ族の武具の手入れ用品も用意したいんだ。<br><split " " 1><string $gs1></split>さんに調達をお願いしてもいいかな？
+#. de: Als treue Unterstützer der Plantage können wir ihnen kaum genug danken. Deshalb möchten wir ihnen zumindest die Materialien zur Pflege ihrer Ausrüstung bereitstellen, um uns erkenntlich zu zeigen. Könnte ich dich mit der Lieferung beauftragen?
+#. fr: Leur présence est maintenant une composante essentielle de notre or<shy>ga<shy>ni<shy>sa<shy>tion à Gok Golma<nbsp>! Aussi, j'aimerais leur fournir de quoi maintenir leurs armes et équipements en bon état. Pourrais-tu me livrer du matériel d'entretien, ja<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_002:1"
+msgid "They've become an irreplaceable part of our operations, and as such, we would like to provide what they need to keep their arms and armor maintained. Can I ask your help in procuring these supplies?"
+msgstr ""
+
+#. ja: そうそう、前に調達してもらった武具補修の品、<br>警備のフビゴ族からも大層な評判でね。<br>また貴方に調達をお願いしたいんだ。
+#. de: Sie haben sich sehr über die Pflegematerialien von letztem Mal gefreut. Deshalb würde ich dich gerne auch mit der nächsten Lieferung beauftragen.
+#. fr: Ils ont tous grandement apprécié les matériaux d'entretien que tu nous as fournis la dernière fois. Tu penses pouvoir nous en livrer à nouveau, ja<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_003:1"
+msgid "Speaking of which, they were most impressed with the repair supplies you procured for their weapons last time. Which is why I would like to ask you to do so again."
+msgstr ""
+
+#. ja: セノーテ・ジャユンジャ近くで採れる「<sheet Item 48054 0>」は、<br>彼らの使う骨材の武具を研磨するのにちょうどいいらしい。<br>受け渡しは僕がするから、よろしく頼むよ。
+#. de: In der Nähe des Cenote Jayunja lassen sich <noun-de Item 5 48054 2 1 1> abbauen, die sich perfekt zum Polieren ihrer Rüstung eignen. Bring die Lieferung einfach zu mir, die Übergabe übernehme dann ich.
+#. fr: On raconte que <noun-fr Item 2 48054 2 1> qui se trouvent près du cénote Jayunja sont parfaites pour aiguiser les lames en tout genre, ja<nbsp>! Ramène-m'en donc quelques échan<shy>til<shy>lons, si tu le veux bien.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_004:1"
+msgid "I'm told the rock mined from around Cenote Jayunja makes perfect whetstones for honing and polishing the bone weaponry favored by our guards. Bring me a selection, and I'll see them into the right hands."
+msgstr ""
+
+#. ja: セノーテ・ジャユンジャ近くで採れる「<sheet Item 48055 0>」は、<br>武具の柄や刃のつなぎ目なんかに使えるらしい。<br>受け渡しは僕がするから、よろしく頼むよ。
+#. de: In der Nähe des Cenote Jayunja lassen sich <noun-de Item 5 48055 2 1 1> finden, womit sich Nähte und Verbindungsstellen ausbessern lassen. Bring die Lieferung einfach zu mir, die Übergabe übernehme dann ich.
+#. fr: On raconte que <noun-fr Item 2 48055 2 1> disponibles près du cénote Jayunja sont parfaits pour remplacer la garde des épées ou servir de manche pour des lances. Je veux bien que tu ailles m'en chercher quelques uns, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_005:1"
+msgid "I'm told the lumber harvested from trees around Cenote Jayunja is the perfect material for replacing hilts and handles and such. Bring me an armful, and I'll see it makes its way into the right hands."
+msgstr ""
+
+#. ja: セノーテ・ジャユンジャで採れる「<sheet Item 48056 0>」は、<br>マムージャ族伝統の細かい模様を拵えるのに向いているんだって。<br>釣り餌は<sheet Item 43849 0>がオススメって聞いたよ。
+#. de: Im Cenote Jayunja lassen sich <noun-de Item 5 48056 2 1 1> finden, aus denen sich leicht ein traditionelles Mamool Ja-Emblem fertigen lässt. Soweit ich weiß, wären <noun-de Item 5 43849 2 1 1> der beste Köder dafür.
+#. fr: La coquille de certains crustacés qui vivent dans les eaux du cénote Jaynuja est un matériau de choix dans la fabrication tra<shy>di<shy>tion<shy>nel<shy>le d'armes pour les Mamool Ja. Tu peux utiliser <noun-fr Item 1 43849 1 1> en guise d'appât<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_006:1"
+msgid "I'm told the shellfish caught in Cenote Jayunja are perfect for creating the intricate patterns that adorn our traditional weaponry. Take some golden stonefly nymphs for bait and you should have no trouble."
+msgstr ""
+
+#. ja: 調達をお願いしたいのは、<br>セノーテ・ジャユンジャ近くで採れる「<sheet Item 48054 0>」だよ。<br>受け渡しは僕がするから、よろしくね。
+#. de: <noun-de Item 5 48054 2 1 1> lassen sich in der Nähe des Cenote Jayunja abbauen. Bring die Lieferung einfach zu mir, die Übergabe übernehme dann ich.
+#. fr: Il me faudrait quelques <noun-fr Item 12 48054 2 1> qu'on trouve près du cénote Jayunja. Je compte sur toi, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_007:1"
+msgid "I'd like you to mine some rock around Cenote Jayunja. They should make the perfect whetstones for our Hoobigo's bone blades."
+msgstr ""
+
+#. ja: 調達をお願いしたいのは、<br>セノーテ・ジャユンジャ近くで採れる「<sheet Item 48055 0>」だよ。<br>受け渡しは僕がするから、よろしくね。
+#. de: <noun-de Item 5 48055 2 1 1> lassen sich in der Nähe des Cenote Jayunja finden. Bring die Lieferung einfach zu mir, die Übergabe übernehme dann ich.
+#. fr: Il me faudrait <noun-fr Item 1 48055 2 1> qu'on trouve près du cénote Jayunja. Je compte sur toi, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_008:1"
+msgid "I'd like you to harvest some lumber from the trees around Cenote Jayunja. It should be the perfect material for repairing or replacing weapon hilts and handles."
+msgstr ""
+
+#. ja: 調達をお願いしたいのは、<br>セノーテ・ジャユンジャで採れる「<sheet Item 48056 0>」。<br>釣り餌は<sheet Item 43849 0>がオススメって聞いたよ。
+#. de: <noun-de Item 5 48056 2 1 1> lassen sich im Cenote Jayunja finden. Soweit ich weiß, wären <noun-de Item 5 43849 2 1 1> der beste Köder dafür.
+#. fr: J'ai besoin que tu m'attrapes <noun-fr Item 1 48056 1 1> dans les eaux du cénote Jayunja. Et n'oublie surtout pas d'utiliser <noun-fr Item 1 43849 1 1> en guise d'appât<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_009:1"
+msgid "I'd like you to catch shellfish from Cenote Jayunja. Golden stonefly nymphs should make for suitable bait, or so I've heard."
+msgstr ""
+
+#. ja: どうだったかな、<br>武具補修に最適な材料は採れたかい？
+#. de: Und, konntest du alles finden?
+#. fr: Alors, ja<nbsp>? Tu as ce que je t'ai demandé<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_015:1"
+msgid "How did you fare? Were you able to find the materials we needed?"
+msgstr ""
+
+#. ja: ありがとう、これは立派な品だ！<br>いつもながら、貴方の腕前には感心するよ。<br>フビゴ族の警備隊に渡すのは任せてね。
+#. de: Vielen Dank, bessere Materialien hätte ich mir kaum wünschen können! Du beeindruckst mich immer wieder aufs Neue. Den Rest kannst du getrost mir überlassen.
+#. fr: Parfait<nbsp>! Décidément, on peut compter sur toi et tes talents en toute circonstance<nbsp>! Je m'occupe de distribuer le tout à nos gardes hoobigo.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_016:1"
+msgid "My thanks! I'm certain our Hoobigo friends will be as impressed with your eye for quality as I am."
+msgstr ""
+
+#. ja: 彼らが力を発揮できるのは、丁寧な武具の手入れあってこそ。<br>必要になったら、貴方にまた調達をお願いできると助かるよ。
+#. de: Ohne gut gepflegte Ausrüstung ist auch die beste Wache nur halb so stark. Wenn du mir deshalb auch bei zukünftigen Lieferungen aushelfen könntest, wäre ich dir sehr dankbar!
+#. fr: Les guerriers ne sont efficaces que si leurs outils sont bien entretenus, ja<nbsp>! Je risque d'avoir encore besoin de tes services, alors reste dans les parages, d'accord<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam116_05276:TEXT_BANMAM116_05276_KAGEELJA_000_017:1"
+msgid "Warriors are far more effective if they can keep their weapons in good repair. Such supplies will always be in demand, so I may call on your procurement expertise again in the future."
+msgstr ""

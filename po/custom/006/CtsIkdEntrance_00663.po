@@ -1,0 +1,180 @@
+# custom/006/CtsIkdEntrance_00663
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ここでは、漁師ギルド運営の大型漁船、<br>「エンデバー号」の乗船受付をしています。<br>ご興味がありましたら、まずは漁師ギルドへどうぞ！
+#. de: Bei mir kannst du dich für die große Fahrt auf der <i>Endeavor</i> anmelden. Vorher musst du dich allerdings erst in der Fischergilde melden.
+#. fr: Si vous aimez la pêche <i>et</i> la mer, nous sommes <if $gn4>faites<else>faits</if> pour nous entendre<nbsp>! Passez d'abord par la guilde des pêcheurs, et nous pourrons discuter ensemble des détails. À plus tard<nbsp>!
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_DRYSKTHOTA_000_000:1"
+msgid "Welcome to the <i>Endeavor</i>, pride and joy of the Fishermen's Guild. If the thought of embarking on a voyage to the high seas piques your interest, you may be pleased to know we are currently recruiting crew members. Any interested parties are welcome to report to the guild at Limsa Lominsa."
+msgstr ""
+
+#. ja: ようこそ！　漁師ギルドが誇る大型漁船……<br>「エンデバー号」への乗船希望ですか？
+#. de: Willkommen! Möchtest du mit der <i>Endeavor</i> auf große Fahrt gehen?
+#. fr: <if $gn4>Amie<else>Ami</if> de la pêche en mer, <if ($gn11 < 12)><if ($gn11 < 4)>bonsoir<else>bonjour</if><else><if ($gn11 < 17)>bonjour<else>bonsoir</if></if><nbsp>! Vous désirez monter à bord de l'Ambition<nbsp>?
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_DRYSKTHOTA_000_010:1"
+msgid "Welcome to the <i>Endeavor</i>! Will you be boarding the ship?"
+msgstr ""
+
+#. ja: 乗船受付中
+#. de: Anmeldung möglich
+#. fr: Embarquement en cours
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_005:1"
+msgid "Now accepting crew members."
+msgstr ""
+
+#. ja: 乗船受付時間外<br>次回の受付開始： <if ($n2 > 0)><num $n2>時間<if ($n3 > 1)><num $n3>分</if>後<else><if ($n3 > 1)><num $n3>分後<else>1分以内</if></if>
+#. de: Anmeldung geschlossen<br>Anmeldung öffnet in <if ($n2 > 0)><num $n2> Std <if ($n3 > 1)><num $n3> Min</if><else><if ($n3 > 1)><num $n3> Min<else>unter 1 Min</if></if>.
+#. fr: Prochain embarquement dans <if ($n2 > 0)><num $n2> h<if ($n3 > 0)> <num $n3> min</if><else><if ($n3 > 0)><num $n3> min<else>moins d'une minute</if></if>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <if ($n2 > 0)><num $n2> <if ($n2 == 1)>hour<else>hours</if><if ($n2 > 0)><if ($n3 > 0)> and </if></if><if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)>hour<else>hours</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 > 0)><if ($n3 > 0)> and </if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)> and </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if><else>less than 1 minute</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_010:1"
+msgid "No longer accepting crew members.<br>Recruitment will start again in <if ($n2 > 0)><num $n2> <if ($n2 == 1)>hour<else>hours</if><if ($n2 > 0)><if ($n3 > 0)> and </if></if><if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if></if><else><if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if><else>less than 1 minute</if></if>."
+msgstr ""
+
+#. ja: 「乗船受付」を行う
+#. de: Für eine große Fahrt anmelden
+#. fr: Embarquer
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_Q1_000_000:1"
+msgid "Register to board."
+msgstr ""
+
+#. ja: 「運行表」を見る
+#. de: Den Fahrplan ansehen
+#. fr: Voir les itinéraires
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_Q1_000_001:1"
+msgid "View sailing schedule."
+msgstr ""
+
+#. ja: 「オーシャンフィッシング」の詳細を確認する
+#. de: Mehr über die große Fahrt erfahren
+#. fr: Se renseigner sur la pêche en mer
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_Q1_000_002:1"
+msgid "Learn more about ocean fishing."
+msgstr ""
+
+#. ja: キャンセル
+#. de: Nichts
+#. fr: Annuler
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_Q1_000_003:1"
+msgid "Cancel."
+msgstr ""
+
+#. ja: どの航路に乗船する？
+#. de: Bei welcher Route mitfahren?
+#. fr: Embarquer pour quel itinéraire<nbsp>?
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_STM_TITLE:1"
+msgid "Which route will you embark upon?"
+msgstr ""
+
+#. ja: 「<sheet IKDRoute $n1 11>」に乗船する。
+#. de: Bei „<sheet IKDRoute $n1 11>“ mitfahren?
+#. fr: Embarquer pour la destination “<sheet IKDRoute $n1 11>”.
+#. macro: <sheet IKDRoute $n1 11> — a value from a game data sheet, such as a name; sheet = IKDRoute, row = number parameter 1, column = 11 (game data: keep it; it may move or repeat)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_STM_001:1"
+msgid "Embark to the <sheet IKDRoute $n1 11>."
+msgstr ""
+
+#. ja: 「<sheet IKDRoute $n1 11>」に乗船しますか？
+#. de: Bei „<sheet IKDRoute $n1 11>“ mitfahren?
+#. fr: Embarquer pour la destination “<sheet IKDRoute $n1 11>”<nbsp>?
+#. macro: <sheet IKDRoute $n1 11> — a value from a game data sheet, such as a name; sheet = IKDRoute, row = number parameter 1, column = 11 (game data: keep it; it may move or repeat)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_020:1"
+msgid "Embark to the <sheet IKDRoute $n1 11>?"
+msgstr ""
+
+#. ja: 「<sheet IKDRoute $n1 11>」に乗船しますか？<br><ui-color 506><ui-edge-color 507>※メインクエスト｢<sheet Quest $n2 QUEST_NAME>｣を、<br>　コンプリートしていないパーティメンバーがいる場合、<br>　この航路には乗船できません。</ui-edge-color></ui-color>
+#. de: Bei „<sheet IKDRoute $n1 11>“ mitfahren?<br><ui-color 506><ui-edge-color 507>※ Wenn sich in deiner Gruppe Mitglieder befinden, welche den Auftrag des Hauptszenarios „<sheet Quest $n2 QUEST_NAME>“ noch nicht abgeschlossen haben, kann diese Route nicht ausgewählt werden.</ui-edge-color></ui-color>
+#. fr: Embarquer pour la destination “<sheet IKDRoute $n1 11>”<nbsp>?<br><ui-color 506><ui-edge-color 507>* Vous ne pourrez pas embarquer pour cet itinéraire si tous les membres de l'équipe n'ont pas accompli la quête de l'épopée “<sheet Quest $n2 QUEST_NAME>”.</ui-edge-color></ui-color>
+#. macro: <sheet IKDRoute $n1 11> — a value from a game data sheet, such as a name; sheet = IKDRoute, row = number parameter 1, column = 11 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: <sheet Quest $n2 QUEST_NAME> — a value from a game data sheet, such as a name; sheet = Quest, row = number parameter 2, column = QUEST_NAME (game data: keep it; it may move or repeat)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_025:1"
+msgid "Embark to the <sheet IKDRoute $n1 11>?<br><ui-color 506><ui-edge-color 507>※Party members who have not completed the main scenario quest “<sheet Quest $n2 QUEST_NAME>” cannot embark upon this route.</ui-edge-color></ui-color>"
+msgstr ""
+
+#. ja: あら、釣り竿をどこかにお忘れですか？<br>エンデバー号は、漁師専用の大型漁船となりますので、<br>ぜひ、漁師としてご参加ください！
+#. de: Was ist los? Hast du deine Angelrute vergessen? Auf der <i>Endeavor</i> können nur Fischer mitfahren!
+#. fr: Attendez, où est votre canne à pêche<nbsp>? Que les choses soient claires<nbsp>: il ne s'agit pas d'un voyage d'agrément. Revenez <if $gn4>équipée<else>équipé</if> pour attraper du poisson, ou allez vous amuser sur une croisière.
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_DRYSKTHOTA_000_200:1"
+msgid "Hold on. Where is your fishing rod? I would have you know that this is no pleasure craft─the captain is deadly serious about his sport, and expects everyone aboard to be of like mind. Approach with rod in hand, however, and we shall welcome you aboard with open arms."
+msgstr ""
+
+#. ja: エンデバー号に乗船できるのは漁師のみとなります。<br>「乗船受付」を行いたい場合は、漁師になってから、<br>再度ドリスクトータに話しかけましょう。
+#. de: Zu einer großen Fahrt auf der <i>Endeavor</i> kannst du dich nur als <if $gn4>Fischerin<else>Fischer</if> anmelden.
+#. fr: Seuls les pêcheurs peuvent rejoindre l'équipage de l'Ambition. Pour monter à bord, équipez-vous de votre canne à pêche et reparlez à Dryskthota.
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_205:1"
+msgid "Only fishers may board the <i>Endeavor</i>. If you wish to register as a crew member, speak with Dryskthota after changing your class to fisher."
+msgstr ""
+
+#. ja: ごめんなさい！　乗船受付が間に合わず……。<br>すでに出航となってしまいました。<br>よければ、次回の航海にご参加ください。
+#. de: Tut mir leid, aber das Schiff hat bereits abgelegt. Wenn du möchtest, kannst du gerne an der nächsten Fahrt teilnehmen.
+#. fr: Toutes mes excuses, l'équipage est déjà complet<nbsp>! L'Ambition a quitté le port, mais je suis sûre qu'on pourra vous faire une place à bord pour le prochain voyage.
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_DRYSKTHOTA_000_300:1"
+msgid "I regret to inform you that we are no longer recruiting crew members. And even if we were, well, the ship has already sailed. If you would but wait until it returns, I am sure there will be room for you on the next voyage."
+msgstr ""
+
+#. ja: 「乗船受付」の受付時間が終了してしまったため、<br>乗船ができませんでした。
+#. de: Die Zeit für die Auswahl ist leider abgelaufen und das Schiff hat ohne dich abgelegt.
+#. fr: La période d'embarquement vient de se terminer. Veuillez attendre la prochaine pour monter à bord de l'Ambition.
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_305:1"
+msgid "The voyage is no longer accepting crew members."
+msgstr ""
+
+#. ja: 現在は、受付時間外となります！<br>次回航海の受付時間をお待ちください。
+#. de: Momentan kann ich keine Anmeldungen annehmen. Du musst dich bis zur nächsten Anmeldephase gedulden.
+#. fr: L'Ambition se trouve ac<shy>tu<shy>el<shy>le<shy>ment au large. Attendez son retour, et vous pourrez embarquer pour le prochain voyage<nbsp>!
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_DRYSKTHOTA_000_500:1"
+msgid "I regret to inform you that we are no longer recruiting crew members. Do not despair, however, for there is always another voyage on the horizon."
+msgstr ""
+
+#. ja: 「乗船受付」の受付時間外のため、受付が行えませんでした。<br>次の受付開始時刻は、「運行表」から確認できます。
+#. de: Anmeldungen werden erst kurz vor der Abfahrt angenommen. Die genauen Zeiten erfährst du im Fahrplan.
+#. fr: Pour connaître l'heure des prochaines périodes d'embarquement, veuillez consulter les itinéraires.
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_505:1"
+msgid "Registrations for new crew members are no longer being accepted. Departure times can be viewed from the Sailing Schedule."
+msgstr ""
+
+#. ja: ごめんなさい！<br>条件が整っておらず、乗船いただけないようです。<br>よければ、次回の航海にご参加ください。
+#. de: Tut mir leid, aber du kannst nicht zurück an Bord, bevor das Schiff wieder hier ist. Wir haben schließlich einen Fahrplan, den wir einhalten wollen.
+#. fr: Désolée, mais qui va à la chasse perd sa place<nbsp>! Et n'espérez pas pouvoir repêcher celle-là... Revenez pour le prochain voyage<nbsp>!
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_DRYSKTHOTA_000_600:1"
+msgid "I am sorry, but we cannot allow you back on board the ship until it returns for the next voyage. If we let people hop on and off at will, our carefully prepared schedule would fall to pieces!"
+msgstr ""
+
+#. ja: 前回、オーシャンフィッシングから途中退出しているため、<br>受付が行えませんでした。<br>次の受付開始時刻は、「運行表」から確認できます。
+#. de: Du hast eine Reise abgebrochen und musst warten, bis die nächste Reise beginnt. Die genaue Zeit erfährst du im Fahrplan.
+#. fr: Vous avez quitté le navire lors de votre dernière sortie de pêche en mer et ne pouvez plus embarquer pour ce voyage. Vous pourrez de nouveau vous inscrire la prochaine fois que l'Ambition quittera le port. Consultez les itinéraires pour connaître les périodes d'embarquement.
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_SYSTEM_000_605:1"
+msgid "You have recently abandoned a voyage and are unable to board until the next registration period. Departure times can be viewed from the Sailing Schedule."
+msgstr ""
+
+#. ja: ●乗船受付時間外（次回の受付開始まで：<num $n1>s）
+#. de: ●乗船受付時間外（次回の受付開始まで：<num $n1>s）
+#. fr: Prochaine période d'embarquement dans <num $n1> <if ($n1 <= 1)>seconde<else>secondes</if>
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/006/CtsIkdEntrance_00663:TEXT_CTSIKDENTRANCE_00663_PROG_TEST_000:1"
+msgid "No longer accepting crew members (Registration opens again in <num $n1>s)"
+msgstr ""

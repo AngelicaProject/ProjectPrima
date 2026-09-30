@@ -1,0 +1,231 @@
+# quest/042/AktKzd014_04238 — « A Place of Greater Safety» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト</ui-edge-color></ui-color><br>キャンプ・ブロークングラスのタロン少闘士は、仲間からの要請を受けている。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung</ui-edge-color></ui-color><br>Talon hat von einem Kameraden in Not irgendwo in der Stadt gehört.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête</ui-edge-color></ui-color><br>Le sous-lieutenant Talon a reçu un appel à l'aide d'un de ses camarades.
+#. kind: journal
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_SEQ_00:1"
+msgid "<ui-color 508><ui-edge-color 509> Quest Sync</ui-edge-color></ui-color><br>Talon has received word from a comrade in dire straits somewhere in the city."
+msgstr ""
+
+#. ja: 派遣団の捜索隊員に<sheet EventItem 2003244 0>を使う
+#. de: Die Tinktur auf den verwundeten Soldaten anwenden
+#. fr: Utiliser la potion de secours sur le soldat blessé
+#. kind: objective
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TODO_00:1"
+msgid "Use the proffered tincture on the injured soldier."
+msgstr ""
+
+#. ja: タロン少闘士と話す
+#. de: Mit Talon sprechen
+#. fr: Parler à Talon
+#. kind: objective
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TODO_01:1"
+msgid "Speak with Talon."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 1><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 1><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 1><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>、いいところに！<br>たったいま、派遣団の仲間から応援要請が入ったんだ！<br>帝国人の保護を担当している奴なんだが……
+#. de: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if></capitalize> <split " " 2><string $gs1></split><else><split " " 1><string $gs1></split></if></if>. Uns hat vor wenigen Augenblicken ein recht dringender Hilferuf erreicht. Einer unserer besten Kameraden hat einen Zivilisten ausfindig gemacht und wollte ihn in Sicherheit bringen, doch ihm wurde aufgelauert.
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize></if> <split " " 2><string $gs1></split>, vous tombez bien<nbsp>! Un des nôtres, parti secourir un civil garlemaldais, vient de nous contacter pour nous demander de lui envoyer de l'aide en urgence.
+#. speaker: TALON
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_000:1"
+msgid "<if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>. We've received a rather urgent call for assistance only moments ago. One of our finest located a civilian and meant to lead them to safety, but was waylaid."
+msgstr ""
+
+#. ja: 生存者を発見したはいいものの、<br>魔導兵器に襲われて負傷してしまったらしい。
+#. de: Sie kamen unter Magitek-Beschuss und unser Kamerad wurde in dem Sperrfeuer verwundet.
+#. fr: Apparemment, il a été attaqué par une arme magitek alors qu'il venait de localiser le civil en question.
+#. speaker: TALON
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_001:1"
+msgid "Magitek ordnance set upon them, and our comrade was wounded in the barrage."
+msgstr ""
+
+#. ja: 身動きがとれない状態らしく、急ぎ救援を送りたい。<br>帝都に入ったことがある、あなたなら適任なのだが、<br>引き受けてくれないか？
+#. de: Doch genug der Worte. Er benötigt verzweifelt unsere Hilfe. Die Straßen der Stadt können sich für unerfahrene Soldaten als tückisch erweisen, weshalb ich dich gerne mit dieser Mission beauftragen würde. Können wir auf deine Unterstützung zählen?
+#. fr: Notre homme étant à présent incapable de se mouvoir seul, il va sans dire que quelqu'un doit aller lui porter secours. Vous qui connaissez bien les rues de la capitale, accepteriez-vous de vous en charger<nbsp>?
+#. speaker: TALON
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_002:1"
+msgid "I shouldn't prattle on any longer. This is their most desperate hour and are in need of urgent help. The city streets can be treacherous to the inexperienced, which is why I would ask that you undertake this task. Can they count on your assistance?"
+msgstr ""
+
+#. ja: 引き受ける？
+#. de: Können sie auf deine Unterstützung zählen?
+#. fr: Acceptez-vous<nbsp>?
+#. speaker: Q1
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_Q1_000_000:1"
+msgid "Can your assistance be counted on?"
+msgstr ""
+
+#. ja: 助かるよ、ありがとう！<br>ではウルバニッシマ区で「派遣団の捜索隊員」を探して、<br>この<sheet EventItem 2003244 0>を使って救護してもらいたい！
+#. de: Ausgezeichnet. Suche unseren Mann in Regio Urbanissima auf und versorge ihn mit dieser Tinktur hier. Die sollte ihn wieder auf die Beine bringen und ihm mit etwas Glück genug Kraft geben, um es zusammen mit dem Zivilisten hierhin zurück zu schaffen.
+#. fr: Je savais que nous pouvions compter sur vous<nbsp>! Il se trouve quelque part dans Regio Urbanissima. Avant de partir, prenez cette potion de secours<nbsp>; elle vous permettra de soigner ses blessures.
+#. speaker: TALON
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_003:1"
+msgid "Excellent. Seek out our man in Regio Urbanissima and provide him with this tincture. That ought to set him on his feet again and, with any luck, grant him strength enough to get both himself and the civilian back here."
+msgstr ""
+
+#. ja: そうか……了解した。<br>急ぎ、ほかの兵に要請することにしよう。
+#. de: Natürlich. Du bist <if $gn4>eine beschäftigte Frau<else>ein beschäftigter Mann</if>. Das hätte ich mir denken sollen. Dann werde ich mich anderweitig nach Unterstützung umsehen müssen.
+#. fr: Je comprends... Je vais demander à quelqu'un d'autre.
+#. speaker: TALON
+#. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_004:1"
+msgid "Of course. You are a busy <if $gn4>woman<else>man</if>. I should not have presumed overmuch. I will seek assistance from another─someone attending to less pressing matters."
+msgstr ""
+
+#. ja: ウルバニッシマ区で「派遣団の捜索隊員」を探して、<br>「<sheet EventItem 2003244 0>」を使ってやってくれ！
+#. de: Beeil dich. Er schwebt vermutlich in größter Gefahr.
+#. fr: Celui que vous devez trouver doit être quelque part dans Regio Urbanissima. Prenez cette potion de secours et utilisez-la pour soigner ses blessures.
+#. speaker: TALON
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_010:1"
+msgid "Do hurry. From what we can tell, he is in grave danger."
+msgstr ""
+
+#. ja: ごめんなさい、ごめんなさい……！<br>私のせいで……！
+#. de: Verzeih mir. Das ist alles meine Schuld. Wenn ich sie doch nur eher bemerkt hätte<nbsp>...!
+#. fr: Pardonnez-moi<nbsp>! Tout est de ma faute...
+#. speaker: GARLEANCITIZEN04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_GARLEANCITIZEN04238_000_011:1"
+msgid "Forgive me. This is all my fault. If only I had noticed them sooner...!"
+msgstr ""
+
+#. ja: ありがとう、助かりました……！<br>襲ってきた魔導兵器は倒したものの、<br>救急用品が潰されてしまって、立ち往生していたんです。
+#. de: Ich kann dir gar nicht genug danken ... Ich wäre sicherlich meinen Verwundungen erlegen, wenn du nicht gekommen wärst. Eine Kriegsmaschine hat uns aus heiterem Himmel überfallen und meine medizinischen Vorräte sind bei der ersten Salve zerstört worden.
+#. fr: Merci, vous m'avez sauvé<nbsp>! J'ai réussi à me débarrasser de cette maudite arme magitek, mais mes fournitures de secours ont été détruites pendant l'échauffourée. Sans votre aide, nous n'aurions pas fait long feu.
+#. speaker: ILSABARDSOLDIER04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_ILSABARDSOLDIER04238_000_020:1"
+msgid "I cannot thank you enough... I would surely have succumbed to my injuries had you not come along. You see, a nightmare of a warmachina set upon us out of nowhere, and my medical supplies were destroyed in the opening volley."
+msgstr ""
+
+#. ja: こちらの女性が、<br>接近する魔導兵器に気づいて知らせてくれましてね。<br>そのおかげで、致命傷を負わずに済みました。
+#. de: Ich habe auch ordentlich was abbekommen, doch es hätte noch viel schlimmer geendet, wenn diese nette Dame den Gegner nicht bemerkt hätte. Ich verdanke ihr mein Leben.
+#. fr: La femme que vous voyez ici a eu la présence d'esprit de me prévenir juste à temps qu'une arme approchait. Sans cela, j'aurais peut-être reçu un coup mortel, qui sait<nbsp>?
+#. speaker: ILSABARDSOLDIER04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_ILSABARDSOLDIER04238_000_021:1"
+msgid "I took a rather nasty hit myself, but it would've been a lot worse if this kind lady had not noticed the enemy approaching. I owe her my life."
+msgstr ""
+
+#. ja: いいえ、いいえ、<br>あなたがたが助けにきてくださらなかったら、私は……！
+#. de: Das ist nichts im Vergleich zu Eurem Mut, den Ihr bei meiner Rettung bewiesen habt. Wenn Ihr nicht gewesen wärt, dann<nbsp>... Nein, ich mag gar nicht daran denken.
+#. fr: Mais ça n'enlève rien à la grandeur de votre acte<nbsp>! Encore une fois, votre in<shy>ter<shy>ven<shy>tion a fait toute la différence.
+#. speaker: GARLEANCITIZEN04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_GARLEANCITIZEN04238_000_022:1"
+msgid "It was nothing compared to the bravery you showed in rescuing me. If not for you, I... No, I shan't speak of it. It's too grisly a thought to put into words."
+msgstr ""
+
+#. ja: さあ、もう大丈夫。<br>キャンプ・ブロークングラスへ案内いたしますよ。
+#. de: Nun habt Ihr nichts mehr zu befürchten, das versichere ich Euch. Bitte erlaubt mir, Euch nach Camp Splitterglas zu eskortieren. Dort werdet Ihr Essen und Beistand erhalten.
+#. fr: Tout ira bien, vous verrez. Je vais vous escorter jusqu'au camp Bris-de-glace.
+#. speaker: ILSABARDSOLDIER04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_ILSABARDSOLDIER04238_000_023:1"
+msgid "You've nothing to worry about now, I assure you. Please, allow me to escort you to Camp Broken Glass. Food and succor await."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>さんも、<br>一緒に「タロン少闘士」のところへ戻りましょう。
+#. de: Wirst du uns begleiten, <split " " 1><string $gs1></split>? Der Soldat, der dich geschickt hat, kann es sicher kaum erwarten, deinen Bericht zu erhalten.
+#. fr: Je vous en prie, accompagnez-nous, <split " " 1><string $gs1></split><nbsp>! Nous devons informer Talon des récents événements.
+#. speaker: ILSABARDSOLDIER04238
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_ILSABARDSOLDIER04238_000_024:1"
+msgid "Join us, will you, <split \" \" 1><string $gs1></split>? The soldier who sent you here must be eager to hear of your exploits."
+msgstr ""
+
+#. ja: あなたの救援のおかげで、無事に帰還できました！
+#. de: Ich kann dir gar nicht genug danken. Ohne dich hätten wir es nicht zurück<shy>geschafft.
+#. fr: Merci de tout cœur. Nous n'aurions pas réussi à rentrer seuls...
+#. speaker: ILSABARDSOLDIER04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_ILSABARDSOLDIER04238_000_027:1"
+msgid "I cannot thank you enough. We would not have made it back without you."
+msgstr ""
+
+#. ja: 救助にきてくださって、本当にありがとうございます……！
+#. de: Wir verdanken dir wahrlich unser Leben.
+#. fr: Nous vous devons la vie... Je ne pourrai jamais vous remercier assez.
+#. speaker: GARLEANCITIZEN04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_GARLEANCITIZEN04238_000_028:1"
+msgid "We owe you our lives, truly."
+msgstr ""
+
+#. ja: ああ、みんな無事に戻ってくることができてよかった。<br>魔導兵器に襲われたと、救援要請を受けたときには、<br>どうなることかと思ったぞ。
+#. de: Es ist schön, dass du wieder bei uns bist. Du bist zwar ein wenig mitgenommen von dem Vorfall, aber du scheinst in besserer Verfassung zu sein, als ich erwartet hatte. Als ich von deinem Hilferuf hörte, befürchtete ich bereits, wir hätten dich verloren.
+#. fr: Comme je suis soulagé de te revoir parmi nous en un seul morceau<nbsp>! Lorsque tu nous as contactés pour nous informer du fait que tu avais subi l'assaut d'une arme magitek, j'avoue avoir imaginé le pire...
+#. speaker: TALON
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_030:1"
+msgid "It is good to see you among us again. Though I admit you're a little banged up from the escapade, you seem in better health than I had expected. When I first heard of your distress call, I feared we had lost you."
+msgstr ""
+
+#. ja: 彼女が、いち早く魔導兵器の接近に気づき、<br>警告を発してくれたんです。
+#. de: Und das hättest du auch, wenn diese mutige Dame und ihre scharfen Augen nicht gewesen wären. Sie warnte mich vor dem Angriff, was mir genug Zeit verschaffte, um tödliche Verwundungen zu vermeiden.
+#. fr: Si je suis encore en vie, c'est grâce à cette femme. En effet, elle m'a tout de suite averti que l'ennemi tentait de m'attaquer par surprise. Elle seule l'a vu.
+#. speaker: ILSABARDSOLDIER04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_ILSABARDSOLDIER04238_000_031:1"
+msgid "And you would have, if it weren't for this woman's bravery and keen eyes. She warned me of the coming attack, granting me the wherewithal to avoid any fatal injuries."
+msgstr ""
+
+#. ja: 物陰から近づいてくる大きなものの気配を、<br>この「第三の眼」で感じたもので……。
+#. de: Ich habe kaum etwas getan. Ich habe lediglich etwas Großes bemerkt, dass sich in den Schatten einiger Trümmer bewegte. Das muss an meinem dritten Auge liegen<nbsp>...
+#. fr: C'est mon troisième œil qui m'a informée de la présence de cette machine. Rien de plus.
+#. speaker: GARLEANCITIZEN04238
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_GARLEANCITIZEN04238_000_032:1"
+msgid "I hardly did anything. I merely noticed something large moving about in the shadows of some debris. It must've been because of this third eye of mine..."
+msgstr ""
+
+#. ja: ガレアン族は、先天的に魔法を使えない者が多い代わりに、<br>空間認識能力に優れるというのは、本当だったんだな……！
+#. de: Dann ist es also wahr, was man sich erzählt<nbsp>- die Garlear haben wirklich ein gesteigertes Bewusstsein!
+#. fr: J'avais entendu dire que les Garlemaldais naissent incapables d'utiliser la magie. En revanche, ils perçoivent avec une grande acuité les détails de l'espace qui les entoure. Aujourd'hui, j'ai pu vérifier qu'il ne s'agissait pas d'un mythe<nbsp>!
+#. speaker: TALON
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_033:1"
+msgid "So it's true what they say─the Garleans really do have heightened awareness! "
+msgstr ""
+
+#. ja: ともかく、貴女のおかげで仲間が救われたんだ。<br>どうか奥でゆっくりと休んでくれ。
+#. de: Aber wo bleiben denn meine Manieren? Bitte, komm hier entlang und ruh dich aus. Du hast einen harten Tag hinter dir.
+#. fr: Quoi qu'il en soit, c'est grâce à vous si notre compagnon n'a pas été tué par cette arme magitek. Allez donc prendre un peu de repos au fond.
+#. speaker: TALON
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_034:1"
+msgid "But where are my manners? You've had quite the trying day. Let us find you some food and a place where you might be able to relax."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 1><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 1><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 1><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>が迅速に、<br>救助へ向かったおかげで、ふたりとも助かって良かった。<br>本当にありがとう。
+#. de: Ah, bevor du gehst. Ich möchte auch dir gegenüber meine Dankbarkeit zum Ausdruck bringen, <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if></capitalize> <split " " 2><string $gs1></split><else><split " " 1><string $gs1></split></if></if>. Dein zügiges Handeln hat diesen beiden das Leben gerettet.
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize></if> <split " " 2><string $gs1></split>, avant que vous partiez, j'aimerais vous remercier à nouveau pour avoir secouru l'un des nôtres. D'ailleurs, votre in<shy>ter<shy>ven<shy>tion a permis de sauver deux vies<nbsp>! Nous ne l'oublierons pas.
+#. speaker: TALON
+#. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><she… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+msgctxt "quest/042/AktKzd014_04238:TEXT_AKTKZD014_04238_TALON_000_035:1"
+msgid "Ah, before you go. I would like to extend my gratitude to you as well, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><split \" \" 1><string $gs1></split></if></if>. Your expediency proved to be their saving grace this day."
+msgstr ""

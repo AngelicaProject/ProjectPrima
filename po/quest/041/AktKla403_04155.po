@@ -1,0 +1,367 @@
+# quest/041/AktKla403_04155 — «The Culture of Ceruleum» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 選者殿のヒナゲシは、研究に手ごたえを感じているようだ。
+#. de: Hinageshi ist Feuer und Flamme für den nächsten Forschungsauftrag.
+#. fr: Hinageshi semble avoir découvert quelque chose.
+#. kind: journal
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SEQ_00:1"
+msgid "Hinageshi is on a hot streak."
+msgstr ""
+
+#. ja: ヒナゲシから研究対象の採集を依頼された。「<sheet ItemMP 35601 0>」を6個、採集し、選者殿の「ヒナゲシ」へ納品しよう。「<sheet ItemMP 35601 0>」は、採掘師の場合ガレマルドの管理官舎G棟付近で、園芸師の場合ガレマルドのキャンプ・ブロークングラス付近で採集できる。<br><br>※納品は、収集価値「240」以上で可能となりますが、「600」以上で納品した場合、より多くの報酬が得られます。
+#. de: Hinageshi bittet dich, sechs <noun-de ItemMP 5 35601 2 4 1> bei ihr abzuliefern.<br><br>※ Gärtner finden die Gegenstände bei Camp Splitterglas, Minenarbeiter an der Direktionsstelle G.<br>※ Die Gegenstände können ab einem Sammlerwert von 240 abgegeben werden. Ab einem Sammlerwert von 600 erhältst du jedoch zusätzliche Belohnungen.
+#. fr: Hinageshi vous a confié la récolte de 6 <noun-fr ItemMP 12 35601 2 1>. Vous en trouverez près de la station d'observation G pour les mineurs, et près du camp Bris-de-glace pour les botanistes.<br><br>* La valeur de collection minimale requise pour la livraison est de 240. Les objets ayant une valeur supérieure ou égale à 600 rapportent une plus grande récompense. 
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SEQ_01:1"
+msgid "Hinageshi has asked that you supply her with Garlean staples.<br><br>※Garlean staples can be gathered from Monitoring Station G by miners, and from Camp Broken Glass by botanists.<br><br>※Minimum collectability rating for this delivery is 240. Delivering items with a rating of 600 or more will earn greater rewards."
+msgstr ""
+
+#. ja: ヒナゲシに「<sheet ItemMP 35601 0>」を納品した。彼女たちの恋愛の進展を見守りつつ、文化研究の準備が整い次第ふたたびヒナゲシに声をかけよう。
+#. de: Hinageshi nimmt deine Lieferung entgegen. Nach einem kurzen Anfall von Tagträumerei stellt sie jedoch fest, dass noch viel Arbeit vor euch liegt.
+#. fr: Vous avez livré les éléments nécessaires à Hinageshi. Malgré sa propension naturelle à bayer aux corneilles, la jeune femme sait qu'il lui reste encore beaucoup à accomplir, pour le bien de ses recherches, mais aussi pour gagner le cœur du professeur Tankin. 
+#. kind: journal
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SEQ_02:1"
+msgid "You deliver the Garlean staples to Hinageshi. Despite a momentary lapse into daydreaming, she realizes there is yet work to be done, both on her research and her relationship."
+msgstr ""
+
+#. ja: <if ($gn68 == 16)>管理官舎G棟付近で採集した<br><sheet ItemMP 35601 0>をヒナゲシに納品<else><if ($gn68 == 17)>キャンプ・ブロークングラス付近で採集した<br><sheet ItemMP 35601 0>をヒナゲシに納品<else>採掘師または園芸師になり<br><sheet ItemMP 35601 0>をヒナゲシに納品</if></if>
+#. de: <if ($gn68 == 16)><capitalize><noun-de ItemMP 5 35601 2 4 1></capitalize> aus der Direktionsstelle G bei Hinageshi abliefern<else><if ($gn68 == 17)><capitalize><noun-de ItemMP 5 35601 2 4 1></capitalize> aus Camp Splitterglas bei Hinageshi abliefern<else>Als <if $gn4>Mi<shy>nen<shy>ar<shy>bei<shy>te<shy>rin<else>Minenarbeiter</if> oder <if $gn4>Gärtnerin<else>Gärtner</if><br><noun-de ItemMP 5 35601 2 4 1> bei Hinageshi abliefern</if></if>
+#. fr: <if ($gn68 == 16)>Récupérer <noun-fr ItemMP 1 35601 2 1> près de la station d'observation G et les livrer à Hinageshi<else><if ($gn68 == 17)>Récupérer <noun-fr ItemMP 1 35601 2 1> près du camp Bris-de-glace et les livrer à Hinageshi<else>Changer de classe pour devenir mineur ou botaniste puis livrer <noun-fr ItemMP 2 35601 2 1> à Hinageshi</if></if>
+#. kind: objective
+#. macro: <if ($gn68 == 16)>Deliver <noun-en ItemMP 1 35601 2 1> gathered from Monitoring Station G to Hinageshi.<else><if ($gn68 == 17)>Deliver <noun-en ItemMP 1 35601 2… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ItemMP 1 35601 2 1> — an English noun from a game data sheet, with article and number; sheet = ItemMP, form = 1, row = 35601, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn68 == 17)>Deliver <noun-en ItemMP 1 35601 2 1> gathered from Camp Broken Glass to Hinageshi.<else>As a botanist or miner, deliver <noun-en ItemMP 1 3560… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TODO_00:1"
+msgid "<if ($gn68 == 16)>Deliver <noun-en ItemMP 1 35601 2 1> gathered from Monitoring Station G to Hinageshi.<else><if ($gn68 == 17)>Deliver <noun-en ItemMP 1 35601 2 1> gathered from Camp Broken Glass to Hinageshi.<else>As a botanist or miner, deliver <noun-en ItemMP 1 35601 2 1> to Hinageshi.</if></if>"
+msgstr ""
+
+#. ja: 本クエストを進行するためには、<br>「メインクエスト：暁月のフィナーレ」の<br>「霜雪を踏みしめて」を完了する必要があります。
+#. de: Um diesen Auftrag annehmen zu können, muss der Auftrag „Ein frostiger Empfang“ des Hauptszenarios (Endwalker) abgeschlossen sein.
+#. fr: Il est nécessaire de terminer la quête de l'épopée “Un accueil glacial” pour progresser dans celle-ci.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SYSTEM_000_001:1"
+msgid "In order to undertake this quest, you must complete the main scenario quest “A Frosty Reception.”"
+msgstr ""
+
+#. ja: 教授から、さっそく次のお仕事の依頼があるそうですよ！
+#. de: Der Professor hat direkt den nächsten Auftrag für uns! Ist das nicht toll?
+#. fr: Apparemment, le professeur a une autre tâche à vous confier.
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_010:1"
+msgid "You've come at a good time. I do believe the professor has another assignment for you."
+msgstr ""
+
+#. ja: さて、ぼくたちはラザハン様式の再現を通じて学んだ、<br>その特徴について、まとめていくつもりなのだが……<br>あなたには先行して、次の文化再現の準備に着手してもらいたい。
+#. de: Sei mir gegrüßt! Wir sind gerade dabei, unsere Ergebnisse der Betrachtung von Radz-at-Han zusammenzutragen. In der Zwischenzeit möchte ich dich schon einmal damit beauftragen, die nötigen Erzeugnisse für die nächste kulturelle Nachstellung zu beschaffen.
+#. fr: Te revoilà, <if $gn4>aventurière<else>aventurier</if><nbsp>! Avec tout ce que nous avons appris en reproduisant la culture de Radz-at-Han, nous allons pouvoir dresser une liste de ses spécificités. Pendant ce temps, j'aimerais que tu commences à préparer la reproduction de la culture suivante.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_020:1"
+msgid "Good to see you, my friend. We were in the midst of summarizing what we've learned living an approximation of the Hannish lifestyle. While we commit our thoughts to parchment, I would ask you to acquire a few things we need for our next sampling of culture."
+msgstr ""
+
+#. ja: それで……どこの文化にするんですか～？
+#. de: Und wo geht es hin? Nun macht es doch nicht so spannend!
+#. fr: Laquelle avez-vous en tête, Professeur<nbsp>?
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_021:1"
+msgid "And where did you have in mind, exactly?"
+msgstr ""
+
+#. ja: 次は……ガレマール帝国の文化にしようと思う。
+#. de: Nach Garlemald!
+#. fr: Celle de l'empire de Garlemald.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_022:1"
+msgid "Garlemald."
+msgstr ""
+
+#. ja: ええっ、帝国ですかぁ！？<br>それはなんていうか、ちょっとビックリですね。<br>理想の生活と結びつかないっていうか……。
+#. de: Ins Kaiserreich?! Damit hätte ich jetzt am wenigsten gerechnet. Was von dort sollte uns denn das Leben verschönern?
+#. fr: L'Empire, vraiment<nbsp>!? Je vous avoue que ce choix me surprend un peu. Je ne vois pas trop le lien entre Garlemald et notre recherche de la culture idéale...
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_023:1"
+msgid "The Empire!? Oh my. I certainly wasn't expecting that. Do you truly believe there is aught we can learn from them to improve our way of living?"
+msgstr ""
+
+#. ja: ガレマール帝国は、その成立以来、<br>世界各地に侵略の手を伸ばしてきた覇権主義国家だからね。<br>きみが戸惑うのも、わからないではない。
+#. de: Ich kann deine Vorbehalte durchaus verstehen. Wenn wir Garlemald hören, denken wir unweigerlich an Invasionen und unsägliches Leid.
+#. fr: Ton étonnement est légitime, Hinageshi. Il est vrai que, depuis sa création, l'empire de Garlemald s'est imposé comme un état conquérant n'ayant de cesse d'envahir de nouvelles terres pour prendre le contrôle de tout Hydaelyn.  
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_024:1"
+msgid "I understand your trepidation, Hinageshi. While their history is filled with countless invasions and much suffering, there may yet come a day where we live in peace alongside the people of Garlemald."
+msgstr ""
+
+#. ja: だが、そんな彼らとも融和し、<br>ともに暮らしていく時代が来るかもしれない。
+#. de: Doch auch mit den Garlearn werden wir eines Tages vielleicht Frieden schließen und Seite an Seite leben.
+#. fr: Mais qui sait<nbsp>? Un jour, peut-être, pourrons-nous coexister sans heurts.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_025:1"
+msgid "Though I realize how unlikely that may seem at present."
+msgstr ""
+
+#. ja: そこで、ガレアンのようにエーテル放射を不得手とする民を、<br>シャーレアンに迎え入れたときのことを想定し、<br>準備しておきたいんだ。
+#. de: Ich würde daher gerne einmal simulieren, wie wir Gästen, die der Nutzung des Äthers nicht mächtig sind, das Leben hier so angenehm wie möglich gestalten können.
+#. fr: Comme tu le sais, les Garlemaldais sont très sensibles aux radiations d'éther. Dans le futur, une catastrophe pourrait très bien survenir et les pousser à trouver refuge sur nos terres. Nous devons nous y préparer.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_026:1"
+msgid "But the winds of change blow fiercely now, and there may soon come a day when they seek shelter here in Sharlayan. Knowing they cannot manipulate aether as we do, I wish to better understand their culture should we need to play the hospitable host."
+msgstr ""
+
+#. ja: 未来に受け継ぐ最良の生活を検討するにあたって、<br>我々シャーレアン以外のことも、<br>しっかり視野に入れてるなんて、さすが教授ですね！
+#. de: Professor Tankin, Ihr seid und bleibt ein Mann der vielen Überraschungen! Ihr denkt nicht nur an das Hier und Jetzt, sondern habt auch zukünftige <i>Beziehungen</i> im Blick. Das ist ja so solide und vorausschauend von Euch!
+#. fr: Je vois. Sans perdre de vue votre intention première, qui est de transmettre le meilleur mode de vie qui soit aux générations futures de Sharlayan, vous gardez un œil sur l'extérieur. Je vous reconnais bien là, Professeur<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_027:1"
+msgid "Now I feel like a fool for thinking you were only pursuing this project to improve the lives of those who presently call Sharlayan home. Such genius!"
+msgstr ""
+
+#. ja: そんなわけで、あなたに調達してきていただきたいのは、<br>文化再現に不可欠、かつガレマルドのみで産する素材だ。
+#. de: Vielen Dank, Hinageshi. Jedenfalls hätte ich diesbezüglich eine Bitte an dich, <if $gn4>Abenteurerin<else>Abenteurer</if>. Für meinen Versuch bräuchte ich etwas, das sich nur in Garlemald beschaffen lässt.
+#. fr: J'apprécie ces paroles, Hinageshi. <if $gn4>Aventurière<else>Aventurier</if>, j'aimerais que tu me ramènes quelques petites choses qui ne se trouvent qu'à Garlemald. J'en ai absolument besoin pour reproduire la culture de l'Empire.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_028:1"
+msgid "To that end, I would ask you procure a most essential staple of Garlean living."
+msgstr ""
+
+#. ja: 極寒の地「ガレマルド」に向かい、<br>彼の地特有の鉱石や、耐寒性に優れた果実など、<br>「<sheet ItemMP 35601 0>」の調達をお願いしたい！
+#. de: Das könnte zum Beispiel ein regionsspezifisches Erz sein oder eine Frucht, die sich an die unerbittliche Kälte dort angepasst hat und gedeihen kann. 
+#. fr: Il s'agit <noun-fr Item 8 35601 2 1>. Je compte sur toi<nbsp>!
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_029:1"
+msgid "I speak of an ore unique to the region and a certain fruit there that has adapted to grow even in the coldest of climates. Oh, and do not fret─you do not need to bring back both. One or the other will suffice."
+msgstr ""
+
+#. ja: 「<sheet ItemMP 35601 0>」は、<br>ガレマルドの管理官舎G棟付近で採集することができます。
+#. de: <capitalize><noun-de ItemMP 5 35601 2 1 1></capitalize> können in der Nähe der Direktionsstelle G abgebaut werden.
+#. fr: <capitalize><noun-fr ItemMP 2 35601 2 1></capitalize> peuvent être trouvés près de la station d'observation G.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SYSTEM_100_029:1"
+msgid "The Garlean staples you require can be gathered around Monitoring Station G."
+msgstr ""
+
+#. ja: 「<sheet ItemMP 35601 0>」は、<br>ガレマルドのキャンプ・ブロークングラス付近で、<br>採集することができます。
+#. de: <capitalize><noun-de ItemMP 5 35601 2 1 1></capitalize> können um Camp Splitterglas geerntet werden.
+#. fr: <capitalize><noun-fr ItemMP 2 35601 2 1></capitalize> peuvent être trouvés près du camp Bris-de-glace.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SYSTEM_110_029:1"
+msgid "The Garlean staples you require can be gathered around Camp Broken Glass."
+msgstr ""
+
+#. ja: ガレマール帝国は、すでに崩壊の危機に瀕しているとも聞く。<br>なればこそ、その文化を保存し、継承する意義は大きい。<br>採集には危険がともなうだろうけれど、やり遂げてほしい！
+#. de: Wenn die Berichte stimmen, dann steht das garleische Kaiserreich kurz vor dem Zusammenbruch. Umso wichtiger ist es, seine kulturellen Errungenschaften zu bewahren und für die Nachwelt zu erhalten. Dieser Auftrag ist gefährlich, aber mindestens ebenso bedeutsam! 
+#. fr: On dit que l'empire de Garlemald est sur le point de se désintégrer, ce qui donne tout son sens à la pré<shy>ser<shy>va<shy>tion et à la transmission de sa culture. Garde cela en tête lorsque tu feras face au danger, et va jusqu'au bout de ta quête.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_040:1"
+msgid "Word has it the Garlean Empire may not be long for this world, which is precisely why I see value in preserving their culture. Pray keep your wits about you when you're there—the region is anything but safe."
+msgstr ""
+
+#. ja: 文化の再現は、ヌーメノン大書院所蔵の資料や、<br>先達の研究論文を参考にしているんですけど、<br>実際に体験してみて、初めてわかることも多いんですよ～！
+#. de: Für die Nachbildung kultureller Errungenschaften stützen wir uns auf die vielen Schriften aus dem Noumenon und wissenschaftliche Abhandlungen anderer Forscher. Aber vieles versteht man erst richtig, wenn man es selbst ausprobieren kann!
+#. fr: Nous avons beau nous être basés sur les documents disponibles au Noumène pour la reproduction des cultures étrangères, il y a beaucoup de choses que nous n'aurions pas pu comprendre sans en faire l'expérience sensible.
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_050:1"
+msgid "We have been relying on the tomes in Noumenon and existing theses in order to accurately emulate foreign cultures, and I have realized that there are a great many things you would never discover without experiencing them firsthand."
+msgstr ""
+
+#. ja: ありがとうございます～！<br>極寒の地で採取してきたことを想像するだけで、<br>感謝の念も倍増ですよ～！
+#. de: Vielen, vielen Dank! Wenn ich bedenke, was für einer Kälte du trotzen musstest, um das in die Finger zu bekommen, dann wächst meine Achtung vor dir nur noch mehr!
+#. fr: De tout cœur, merci<nbsp>! Quand je vous imagine en train de vous démener dans cette région glaciale pour trouver ce que nous vous avons envoyé<if $gn4>e</if> chercher, je me sens si redevable<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_060:1"
+msgid "Thank you so much! To even picture you searching out there in those cold climes sends a shiver down my spine. Truly, we are in your debt."
+msgstr ""
+
+#. ja: わぁ、これはとても品質が良いですね～！<br>これなら、荒廃する以前のガレマルドの文化を、<br>見事に再現することができそうな気がします～！
+#. de: Was für eine tolle Qualität! Damit wird es uns ganz sicher gelingen, Garlemald so nachzubilden, wie es vor dem Bürgerkrieg war! In Ausschnitten, versteht sich natürlich!
+#. fr: Hé bien, je vois que vous nous avez ramené des articles de choix<nbsp>! Avec ces éléments, je suis certaine que nous pourrons reproduire la culture de l'Empire telle qu'elle était à son apogée<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_061:1"
+msgid "Goodness, I did not expect you to bring back specimens of such quality. This will make our work much easier."
+msgstr ""
+
+#. ja: 採集してきて頂いた鉱石は、<br>超硬アダマン鋼を始めとする合金を作るのに欠かせません。<br>ガレマルドの魔導技術を支える素材なんですよ！
+#. de: Das Mineral, das du besorgt hast, ist zur Herstellung extrem harter Legierungen wie Adamantit unabdingbar. Ohne dieses Material hätte es die garleische Magitek-Technologie in ihrer heutigen Form nicht gegeben.
+#. fr: Les minerais que vous avez trouvés sont nécessaires à la fabrication d'alliages possédant une grande dureté, tel l'adamantium. Ceux-ci sont d'ailleurs très utilisés dans la technologie magitek<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_100_061:1"
+msgid "They use this ore to create alloys like adamantite, you know. Magitek couldn't exist without it."
+msgstr ""
+
+#. ja: 採集してきて頂いた果実は、耐寒性に優れた作物です。<br>温暖な地域とは採れる食材も異なりますから、<br>特有の食文化が花開いたんですね！
+#. de: Die Frucht, die du besorgt hast, wächst selbst bei extremer Kälte. Viele Anbauprodukte aus wärmeren Regionen hätten in Garlemald keine Chance. Kein Wunder also, dass sich dort eine einzigartige Esskultur herausgebildet hat. 
+#. fr: Les fruits que vous avez trouvés résistent très bien au froid. Étant différents de ceux qui poussent dans les régions tempérées, je pense qu'on peut dire qu'ils ouvrent la voie à une culture unique<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_110_061:1"
+msgid "This fruit is fantastic at growing in even the coldest conditions. Oh, I can't wait to experience Garlean cuisine for myself and see firsthand how it's been shaped by their climate."
+msgstr ""
+
+#. ja: 納品した素材を用いて、文化の再現が行われた！
+#. de: Mit den Erzeugnissen, die du beschafft hast, vollenden Professor Tankin und Hinageshi ihre Nachstellung der garleischen Kultur.
+#. fr: Les matériaux livrés ont permis de reproduire la culture de Garlemald<nbsp>!
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SYSTEM_100_070:1"
+msgid "Professor Tankin and Hinageshi take the items you brought them and set to work emulating Garlean culture."
+msgstr ""
+
+#. ja: 本格的な防寒着に、魔導技術を使った暖房設備……<br>最高に暖かいですね～！<br>これはシャーレアンでも重宝されますよ！
+#. de: Wie mollig warm das ist! Die Kleidung hat tolle isolierende Eigenschaften, und die Magitek-Heizungen erzeugen eine sehr angenehme Wärme! Die Sharlayaner werden Kopf stehen, wenn sie das sehen! 
+#. fr: Ces vêtements épais et ces chauffages utilisant la technologie magitek sont très agréables. Je pense que les Sharlayanais les adoreraient<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_070:1"
+msgid "I must say I'm warming up to these cozy clothes and magitek heaters. All of this would definitely improve life in Sharlayan!"
+msgstr ""
+
+#. ja: ああ、でもこの暖房は研究のため、<br>大学に特別に用意してもらったものでね。<br>残念だけど、今はここだけの使用に留めてほしい。
+#. de: Da pflichte ich dir bei, meine Liebe. Allerdings wurden uns die Heizungen nur für die Dauer dieses Projektes zur Verfügung gestellt. Danach müssen wir sie an die Akademie zurückgeben.
+#. fr: Navré de devoir tempérer ton enthousiasme, Hinageshi, mais cet équipement nous a été fourni par l'académie dans le seul but de nous permettre de mener à bien cette expérience. N'en fais pas un usage personnel, je te prie.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_100_070:1"
+msgid "Alas, we've only been granted permission to use the heaters for the duration of our research. We'll have to return them to the Studium after we're done."
+msgstr ""
+
+#. ja: わかりました！<br>……でも、さすがに屋内だと蒸れますね。
+#. de: Vielleicht ist das gar nicht so schlimm<nbsp>... Mir läuft nämlich schon der Schweiß den Rücken runter. Puh, ist das heiß.
+#. fr: Entendu<nbsp>! De toute façon, j'aurais du mal à concevoir ces vêtements comme une tenue d'intérieur. Ils tiennent vraiment chaud. Un peu trop, peut-être...
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_071:1"
+msgid "...That said, I think I just felt a bead of sweat trickle down my neck. Perhaps I won't miss them as much as I thought. "
+msgstr ""
+
+#. ja: では、魔導機器を用いて調理した、<br>アツアツのガレアン料理は要らなかったかな？
+#. de: Dann willst du die heiße Suppe, die ich mit dem eigens dafür gebauten Magitek-Herd gekocht habe, vermutlich nicht probieren, hm?
+#. fr: Tu ne voudrais pas goûter de ce plat garlemaldais, tout chaud sorti des fourneaux<nbsp>? Je l'ai préparé grâce aux appareils magitek.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_072:1"
+msgid "Then I take it you have no need of this piping hot Garlean cuisine, cooked with magitek kitchen utensils?"
+msgstr ""
+
+#. ja: いえ、食べます！<br>いただきます！
+#. de: W-Wie?! Doch, natürlich! Wie könnt ich mir die entgehen lassen?!
+#. fr: Si, bien sûr, Professeur<nbsp>! 
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_073:1"
+msgid "Oh, Professor. No, I would gladly sample any food prepared with skillful hands such as yours!"
+msgstr ""
+
+#. ja: 魔導技術の中核を成す青燐機関……。<br>自然現象を応用した風力や水力と違い、青燐水の備蓄さえあれば、<br>いつ、どんな場所でも、安定してエネルギーを供給できる。
+#. de: Magitek-Geräte fußen auf Erdseim-Antrieben. Im Gegensatz zu natürlichen Energiequellen wie Wasser- oder Windkraft sind diese völlig unabhängig von Witterungsbedingungen und ermöglichen überall und jederzeit eine beständige Energieversorgung.
+#. fr: Le moteur au céruleum est l'élément-clef de tout appareil magitek. Con<shy>trai<shy>re<shy>ment à l'énergie éolienne ou hydraulique, dont l'utilisation dépend directement de l'environnement, ce type de moteur se révèle efficace dans toutes les conditions.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_074:1"
+msgid "Provided one is given the necessary instruction, even a child could operate these magitek devices."
+msgstr ""
+
+#. ja: これを動力源とした機械は、<br>手引書に従えば、子どもにだって扱うことができる。
+#. de: Darüber hinaus ist das Ganze, in einer Maschine verbaut, auch relativ ungefährlich und kann<nbsp>- ein ordentliches Handbuch vorausgesetzt<nbsp>- spielend leicht bedient werden.
+#. fr: D'ailleurs, les machines utilisant un moteur au céruleum sont très simples d'utilisation. Montrez à un enfant comment en allumer une, et même lui saura s'en servir.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_075:1"
+msgid "And at the heart of all magitek lies ceruleum. A most efficient and convenient energy source, indifferent to the whims of nature like wind and hydraulic power."
+msgstr ""
+
+#. ja: 大量生産による機械技術の普及により、生産力は向上を続け、<br>浮いた時間と労力を、さらなる発明に向けて投入……。<br>かくして帝国は、技術力を急速に高めたに違いない。
+#. de: Kein Wunder also, dass das Kaiserreich so sehr auf den technologischen Fortschritt gesetzt hat: Massenhaft hergestellte Maschinen haben die Produktivität angekurbelt, und die so freigewordenen Ressourcen an Zeit und Arbeitskraft konnte man wiederum für die Entwicklung neuer Technologien verwenden.
+#. fr: Vous devez savoir que la technologie magitek devenue accessible au plus grand nombre, la vitesse de production de ces mêmes machines a augmenté tandis que le temps de travail des concepteurs a diminué, ce qui leur permit d'inventer de nouveaux modèles. 
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_076:1"
+msgid "Its mass production allowed the Empire to bring magitek to the people at large, with further refinements to their manufacturing process affording them surplus time and manpower, which they applied to even greater innovations."
+msgstr ""
+
+#. ja: ただし、青燐水の枯渇も視野に入れておく必要がある。<br>代替エネルギーを模索し、<br>併用していくことも研究するべきだろう。
+#. de: Allerdings darf man nicht außer Acht lassen, dass die Vorräte an Erdseim endlich sind. Man müsste also bereits jetzt mit der Suche nach einer alternativen Energiequelle beginnen.
+#. fr: De toute évidence, cet effet domino a permis à l'Empire de faire des progrès technologiques ex<shy>trê<shy>me<shy>ment rapides. Il faut toutefois que les Garlemaldais gardent à l'esprit que les sources de céruleum finiront par se tarir. Trouver ou créer un combustible aux propriétés équivalentes leur permettrait, dans un premier temps, de repousser le jour où le céruleum disparaîtra<nbsp>; dans un second temps, d'en faire un véritable produit de substitution.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_077:1"
+msgid "That said, the importance of alternatives to ceruleum cannot be ignored. It is, after all, a finite resource."
+msgstr ""
+
+#. ja: そもそも、星のエネルギーを人類だけが独占し、<br>使い切るわけにはいかない。<br>環境に優しく、持続可能な生活をしなければね。
+#. de: Außerdem wäre es vermessen von uns, die Schätze des Planeten einzig für uns beanspruchen und aufbrauchen zu wollen. Es muss also eine nachhaltige und umweltschonende Lösung gefunden werden. 
+#. fr: De toute manière, les humains ne peuvent se permettre d'accaparer l'énergie de la planète. Tous ensemble, nous devons la ménager en prenant garde à ne pas dilapider ses ressources.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_100_077:1"
+msgid "Should we completely squander the world's resources, we will inevitably suffer for our lack of foresight."
+msgstr ""
+
+#. ja: いや～、それにしても美味しそうです～！<br>ラザハン文化の再現をした時にも思ったんですが、<br>教授って、料理お上手なんですね！
+#. de: Dafür schmeckt Eure Suppe aber einfach phänomenal, Professor! Es war mir ja schon bei unser Versuchsreihe zu Radz-at-Han aufgefallen, aber Ihr seid wirklich ein aus<shy>gezeich<shy>neter Koch!
+#. fr: En tout cas, ça a l'air très bon, Professeur<nbsp>! D'ailleurs, je m'étais déjà fait la réflexion que vous étiez bon cuisinier lorsque nous avions reproduit la culture de Radz-at-Han.
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_078:1"
+msgid "Professor, this looks exquisite! I thought as much when we were studying Hannish culture, but you really are a fantastic cook."
+msgstr ""
+
+#. ja: いやぁ、レシピの通りに再現してみただけだよ。<br>でも、そんなに喜んでもらえるなら、悪い気はしないな。
+#. de: Ach was, ich habe mich lediglich nach bestehenden Rezepten gerichtet. Aber es freut mich natürlich, dass es dir schmeckt.
+#. fr: Je n'ai fait que suivre la recette, tu sais. Mais je dois dire que te voir aussi enthousiaste à l'égard de ma cuisine me réjouit<nbsp>!
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_079:1"
+msgid "You flatter me, Hinageshi. I would be nothing without the recipes that guide me. Although, it does warm my heart to see you enjoy my cooking so."
+msgstr ""
+
+#. ja: まだまだ試してみたい料理はたくさんあるし、<br>きみさえ良ければ、これからは毎日ぼくが作ろう。
+#. de: Es gibt noch so viele Gerichte, die ich gerne ausprobieren möchte. Wenn es dir nichts ausmacht, dann koche ich ab heute jeden Tag für dich.
+#. fr: Il y a encore beaucoup de plats que j'aimerais tester. Si tu le permets, je vais m'occuper seul de tous nos repas.
+#. speaker: TANKIN
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_TANKIN_000_080:1"
+msgid "There are many, many dishes I still wish to try my hand at, and I would be delighted if you were willing to sample them as well."
+msgstr ""
+
+#. ja: ふぉ、ふぉおお。<br>是非お願いしますー！
+#. de: Hihihi, aber natürlich nicht!
+#. fr: Oh, mais bien sûr<nbsp>! Faites comme vous l'entendez, Professeur<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_081:1"
+msgid "Oh, it would be my pleasure!"
+msgstr ""
+
+#. ja: な、なんだか、教授との距離が、<br>一気に近づいたような気がします……。
+#. de: Der Professor und ich sind uns auf einen Schlag so viel näher gekommen, findest du nicht?
+#. fr: J'ai l'impression que le professeur et moi nous sommes beaucoup rapprochés, ces derniers temps.
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_082:1"
+msgid "Is it my imagination or has the professor been more affectionate towards me of late?"
+msgstr ""
+
+#. ja: この調子で接近を続けていけば、<br>タンキン教授の研究が完遂する頃には……妄想が止まりません！<br>冒険者さん、引き続き研究への協力をお願いしますよ～！
+#. de: Wenn das so weitergeht, dann läuten zum Ende dieser Forschungsreihe ... Ohoho, ich krieg ja ganz rote Ohren! Du musst mich unbedingt weiter unterstützen, hörst du? Unbedingt!
+#. fr: Imaginez, si nous continuons à ce rythme... Oh non, il faut que j'arrête de penser à ce qu'il se passera lorsqu'il aura terminé ses recherches<nbsp>! Quoi qu'il en soit, j'ai toujours besoin de votre aide<nbsp>!
+#. speaker: HINAGESHI
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_HINAGESHI_000_083:1"
+msgid "It really makes me wonder what will become of our relationship when his research reaches its conclusion... Oh, but I must stop daydreaming. There is yet work to be done!"
+msgstr ""
+
+#. ja: 文化学部の貢献ランクが上昇しました！<br>ヒナゲシはあなたのことを、<br>「恋愛成就の応援者」と感じているようです！
+#. de: Dein Beitragsrang im Kulturwissenschaftlichen Institut ist gestiegen! Hinageshi ist beeindruckt von deiner guten Arbeit und sieht nun <if $gn4>eine fort<shy>ge<shy>schrit<shy>te<shy>ne Heiratsvermittlerin<else>einen fort<shy>ge<shy>schrit<shy>te<shy>nen Heiratsvermittler</if> in dir.
+#. fr: Votre rang de con<shy>tri<shy>bu<shy>tion a changé. Hinageshi vous considère maintenant comme <if $gn4>une<else>un</if> conseill<if $gn4>ère<else>er</if> <if $gn4>matrimoniale<else>matrimonial</if> novice<nbsp>!
+#. speaker: SYSTEM
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SYSTEM_000_084:1"
+msgid "Hinageshi is delighted with your efforts. She now considers you a <ui-color 500><ui-edge-color 501>Novice Matchmaker</ui-edge-color></ui-color>!"
+msgstr ""
+
+#. ja: 「採掘師／園芸師」のいずれかがレベル85以上になると、<br>選者殿の「ヒナゲシ」から、次のクエストが受注可能です。
+#. de: Sobald du als <if $gn4>Mi<shy>nen<shy>ar<shy>bei<shy>te<shy>rin<else>Minenarbeiter</if> oder <if $gn4>Gärtnerin<else>Gärtner</if> Stufe 85 erreicht hast, kannst du von Hinageshi im Sammlerkolleg einen neuen Auftrag erhalten.
+#. fr: Hinageshi propose la prochaine quête aux mineurs ou aux botanistes de niveau 85.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SYSTEM_000_090:1"
+msgid "The next quest will be available from Hinageshi upon reaching level 85 as a miner or botanist."
+msgstr ""
+
+#. ja: 次のクエストを進行するためには、<br>「メインクエスト：暁月のフィナーレ」の<br>「月を繰る者たち」を完了する必要があります。
+#. de: Um den nächsten Auftrag annehmen zu können, muss der Auftrag „Hydaelyns bester Freund“ des Hauptszenarios (Endwalker) abgeschlossen sein.
+#. fr: Il est nécessaire de terminer la quête de l'épopée “À la rencontre de l'équipage” pour entamer la suivante.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla403_04155:TEXT_AKTKLA403_04155_SYSTEM_000_100:1"
+msgid "In order to undertake the subsequent quest, you must first complete the main scenario quest “Helping Hands.”"
+msgstr ""

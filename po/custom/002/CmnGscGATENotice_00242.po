@@ -1,0 +1,71 @@
+# custom/002/CmnGscGATENotice_00242
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 「<switch $n3><case>ワンダースクウェア東<case>イベントスクウェア<case>ラウンドスクウェア<case>くじテンダーボード</switch>」にて、ゴールドソーサー主催による、<br><switch $n2><case>「救出！ ミニオンレスキュー」<case>「激走！ ラプトル運送」<case>「追跡！ スキンチェンジャー」<case>「特訓！ ダンスマスター」<case>「暴風！ はないきフンガー」<case>「挑戦！ ジャンピングアスレチック」<case>「出撃！ エアフォースパイロット」<case>「一閃！ 斬魔・デ・三昧」</switch>の開催を予定しております。<br>ぜひ、参加してくださいね！
+#. de: <switch $n3><case>Auf dem Platz der Wunder (Ost)<case>Im Varieté-Saal<case>Im Rondell<case>Am Glückskaktor-Schalter</switch> findet in Kürze das GATE „<switch $n2><case>Rettet meinen Begleiter!<case>Achtung, zerbrechlich!<case>Haltet den Imp!<case>Schwing dein Bein!<case>Hungaaa, Hungaaa!<case>Kaktor-Kletterwand-Gekraxel<case>Luftwaffe, Feuer frei!<case>Der große Yojinbo</switch>“ statt!
+#. fr: L'attraction <switch $n2><case>“Mascotte en détresse”<case>“Attention, fragile”<case>“Sus à l'imp-osteur”<case>“Voulez-vous danser<nbsp>?”<case>“Un sacré courant d'air”<case>“Haute voltige”<case>“As de l'air”<case>“La coupe est pleine”</switch> commencera très bientôt au <switch $n3><case>square des merveilles<case>square des spectacles<case>square du rond-point<case>comptoir du Méga Cactpot</switch>. Venez nombreux<nbsp>!
+#. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n2><case>Cliffhanger<case>Vase Off<case>Skinchange We Can Believe In<case>The Time of My Life<case>Any Way the Wind Blows<case>Leap of Faith<case>Air F… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n3><case>in Wonder Square East<case>in Event Square<case>in Round Square<case>at the Cactpot Board</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/002/CmnGscGATENotice_00242:TEXT_CMNGSCGATENOTICE_00242_TALK_ACTOR:1"
+msgid "Greetings, <if $gn4>madam<else>sir</if>! Our next scheduled event, “<switch $n2><case>Cliffhanger<case>Vase Off<case>Skinchange We Can Believe In<case>The Time of My Life<case>Any Way the Wind Blows<case>Leap of Faith<case>Air Force One<case>The Slice Is Right</switch>,” will be held <switch $n3><case>in Wonder Square East<case>in Event Square<case>in Round Square<case>at the Cactpot Board</switch>. All guests are welcome to participate!"
+msgstr ""
+
+#. ja: 次回の「G.A.T.E.」は、（地球時間）<set-time $n1><if ($hour >= 12)>午後<else>午前</if><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{0}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{0}</if>時<num2 $min>分より、<br>「<switch $n3><case>ワンダースクウェア東<case>イベントスクウェア<case>ラウンドスクウェア<case>くじテンダーボード</switch>」で開催されます。<br>現地に現れる人物に話しかけて、参加してみましょう！
+#. de: Das nächste GATE findet um <set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>:<num2 $min> Uhr (Erdenzeit) <switch $n3><case>auf dem Platz der Wunder (Ost)<case>im Varieté-Saal<case>im Rondell<case>am Glückskaktor-Schalter</switch> statt!
+#. fr: Le prochain JACTA aura lieu à partir de <set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>h<num2 $min> (temps réel) au <switch $n3><case>square des merveilles<case>square des spectacles<case>square du rond-point<case>comptoir du Méga Cactpot</switch>. Pour participer, adressez-vous à la personne en charge.
+#. macro: <set-time $n1> — sets the time placeholders ($hour, $day, …) to a Unix time; time = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num2 $min> — a number with at least two digits, such as 05; value = minutes of the set time (game data: keep it; it may move or repeat)
+#. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n3><case>in Wonder Square East<case>in Event Square<case>in Round Square<case>at the Cactpot Board</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/002/CmnGscGATENotice_00242:TEXT_CMNGSCGATENOTICE_00242_TALK_SYSTEM:1"
+msgid "The next GATE will be held at <set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if> <switch $n3><case>in Wonder Square East<case>in Event Square<case>in Round Square<case>at the Cactpot Board</switch>."
+msgstr ""
+
+#. ja: ただいま、<switch $n1><case>「救出！ ミニオンレスキュー」<case>「激走！ ラプトル運送」<case>「追跡！ スキンチェンジャー」<case>「特訓！ ダンスマスター」<case>「暴風！ はないきフンガー」<case>「挑戦！ ジャンピングアスレチック」<case>「出撃！ エアフォースパイロット」<case>「一閃！ 斬魔・デ・三昧」</switch>が、<br>「<switch $n2><case>ワンダースクウェア東<case>イベントスクウェア<case>ラウンドスクウェア<case>くじテンダーボード</switch>」で開催中です。<br>ぜひ、参加してくださいね！
+#. de: Das GATE „<switch $n1><case>Rettet meinen Begleiter!<case>Achtung, zerbrechlich!<case>Haltet den Imp!<case>Schwing dein Bein!<case>Hungaaa, Hungaaa!<case>Kaktor-Kletterwand-Gekraxel<case>Luftwaffe, Feuer frei!<case>Der große Yojinbo</switch>“ findet gerade <switch $n2><case>auf dem Platz der Wunder (Ost)<case>im Varieté-Saal<case>im Rondell<case>am Glückskaktor-Schalter</switch> statt! Beeil dich, wenn du teilnehmen möchtest!
+#. fr: L'attraction <switch $n1><case>“Mascotte en détresse”<case>“Attention, fragile”<case>“Sus à l'imp-osteur”<case>“Voulez-vous danser<nbsp>?”<case>“Un sacré courant d'air”<case>“Haute voltige”<case>“As de l'air”<case>“La coupe est pleine”</switch> se déroule ac<shy>tu<shy>el<shy>le<shy>ment au <switch $n2><case>square des merveilles<case>square des spectacles<case>square du rond-point<case>comptoir du Méga Cactpot</switch>. Dépêchez-vous de participer<nbsp>!
+#. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>Cliffhanger<case>Vase Off<case>Skinchange We Can Believe In<case>The Time of My Life<case>Any Way the Wind Blows<case>Leap of Faith<case>Air F… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n2><case>Wonder Square East<case>Event Square<case>Round Square<case>the Cactpot Board</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/002/CmnGscGATENotice_00242:TEXT_CMNGSCGATENOTICE_00242_GATE_IN_SESSION:1"
+msgid "Greetings, <if $gn4>madam<else>sir</if>! If you wish to participate in “<switch $n1><case>Cliffhanger<case>Vase Off<case>Skinchange We Can Believe In<case>The Time of My Life<case>Any Way the Wind Blows<case>Leap of Faith<case>Air Force One<case>The Slice Is Right</switch>,” pray make haste to <switch $n2><case>Wonder Square East<case>Event Square<case>Round Square<case>the Cactpot Board</switch>!"
+msgstr ""
+
+#. ja: 開催場所まで案内しますか？
+#. de: Zum GATE führen lassen?
+#. fr: Accéder à l'attraction<nbsp>?
+msgctxt "custom/002/CmnGscGATENotice_00242:TEXT_CMNGSCGATENOTICE_00242_WARP_QUERY:1"
+msgid "Do you wish to participate in this GATE?"
+msgstr ""
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "custom/002/CmnGscGATENotice_00242:TEXT_CMNGSCGATENOTICE_00242_WARP_GO:1"
+msgid "Yes"
+msgstr ""
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "custom/002/CmnGscGATENotice_00242:TEXT_CMNGSCGATENOTICE_00242_WARP_CANCEL:1"
+msgid "No"
+msgstr ""
+
+#. ja: ただいま、<switch $n1><case>「救出！ ミニオンレスキュー」<case>「激走！ ラプトル運送」<case>「追跡！ スキンチェンジャー」<case>「特訓！ ダンスマスター」<case>「暴風！ はないきフンガー」<case>「挑戦！ ジャンピングアスレチック」<case>「出撃！ エアフォースパイロット」<case>「一閃！ 斬魔・デ・三昧」</switch>が、<br>「<switch $n2><case>ワンダースクウェア東<case>イベントスクウェア<case>ラウンドスクウェア<case>くじテンダーボード</switch>」で開催中です。<br>ぜひ、ステージをご観覧ください！
+#. de: Das GATE „<switch $n1><case>Rettet meinen Begleiter!<case>Achtung, zerbrechlich!<case>Haltet den Imp!<case>Schwing dein Bein!<case>Hungaaa, Hungaaa!<case>Kaktor-Kletterwand-Gekraxel<case>Luftwaffe, Feuer frei!<case>Der große Yojinbo</switch>“ findet gerade <switch $n2><case>auf dem Platz der Wunder (Ost)<case>im Varieté-Saal<case>im Rondell<case>am Glückskaktor-Schalter</switch> statt! Sieh dir das Treiben auf der Showbühne an!
+#. fr: L'attraction <switch $n1><case>“Mascotte en détresse”<case>“Attention, fragile”<case>“Sus à l'imp-osteur”<case>“Voulez-vous danser<nbsp>?”<case>“Un sacré courant d'air”<case>“Haute voltige”<case>“As de l'air”<case>“La coupe est pleine”</switch> se déroule ac<shy>tu<shy>el<shy>le<shy>ment au <switch $n2><case>square des merveilles<case>square des spectacles<case>square du rond-point<case>comptoir du Méga Cactpot</switch>. Tous les spectateurs sont les bienvenus<nbsp>!
+#. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>Cliffhanger<case>Vase Off<case>Skinchange We Can Believe In<case>The Time of My Life<case>Any Way the Wind Blows<case>Leap of Faith<case>Air F… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n2><case>in Wonder Square East<case>in Event Square<case>in Round Square<case>at the Cactpot Board</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "custom/002/CmnGscGATENotice_00242:TEXT_CMNGSCGATENOTICE_00242_GATE_CLOSE_SESSION:1"
+msgid "Greetings, <if $gn4>madam<else>sir</if>! “<switch $n1><case>Cliffhanger<case>Vase Off<case>Skinchange We Can Believe In<case>The Time of My Life<case>Any Way the Wind Blows<case>Leap of Faith<case>Air Force One<case>The Slice Is Right</switch>” is currently being held <switch $n2><case>in Wonder Square East<case>in Event Square<case>in Round Square<case>at the Cactpot Board</switch>. If you wish to observe, you must go there now, before the event ends!"
+msgstr ""

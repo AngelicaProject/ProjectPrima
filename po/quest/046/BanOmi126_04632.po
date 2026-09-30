@@ -1,0 +1,162 @@
+# quest/046/BanOmi126_04632 — « Checking for Cavities» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、届け物を頼みたいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 hat einen delikaten Auftrag für dich.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 voudrait vous demander une livraison de mar<shy>chan<shy>di<shy>ses.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_SEQ_00:1"
+msgid "Though you cannot be certain, you have the unsettling feeling that Stigma-4's giant, ever-staring eye is focused on your mouth.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 歯磨き特務型オミクロンに依頼された品を納品
+#. de: Ware an den Zahnpflege-Omikron liefern
+#. fr: Livrer ce qui vous a été demandé à l'Omicron dentiste
+#. kind: journal
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_SEQ_01:1"
+msgid "Deliver the requested items to the advanced dental polishing unit."
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を砕岩<else>歯磨き特務型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を草刈<else>歯磨き特務型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの海洋区画で<sheet Item $n5 0>を釣る<else>歯磨き特務型オミクロンに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 5 $n5 2 4 1> abbauen<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Zahnpflege-Omikron abliefern</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 5 $n5 2 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Zahnpflege-Omikron abliefern</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Meeressektor Elysiums <noun-de Item 1 $n5 1 4 1> fangen<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> beim Zahnpflege-Omikron abliefern</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire des <noun-fr Item 12 $n5 2 1> dans les mers élyséennes<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Omicron dentiste</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter des <noun-fr Item 12 $n5 2 1> dans les mers élyséennes<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Omicron dentiste</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> dans les mers élyséennes<else>Livrer <noun-fr Item 2 $n5 1 1> à l'Omicron dentiste</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the advanced dental polishing unit… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the advanced dental polishing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the advanced dental polishing un… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the advanced dental polishing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the advanced dental polishing uni… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the advanced dental polishing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the advanced dental polishing unit.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 2 1> to the advanced dental polishing unit.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> from the Elysian seas.<else>Deliver <noun-en Item 2 $n5 1 1> to the advanced dental polishing unit.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: 同盟者に対し、物資の採集および配達を要請。<br>目標はドラゴン族の口内手入れ用物資。<br>顧客に、食後の歯磨きサービスを行うためである。
+#. de: Einleitungsfloskeln werden übersprungen. \<biep> ... \<zzzt> Stigma-4 hat einen neuen Auftrag für <split " " 1><string $gs1></split>. \<biep> Ziel ist die Akquise natürlicher Materialien zur Herstellung eines Werkzeugs, das in den Schlund eines Drachen eingeführt und Reinigungsdienste am Drachenfang durchführen kann.
+#. fr: Bip bip... Pshhh... Entité alliée, vos talents de récolte et de livraison sont encore une fois requis. Nous avons besoin de produits servant à l'hygiène buccale des dragons. Nous pourrions ainsi diversifier notre offre avec des prestations de services de soins dentaires.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_001:1"
+msgid "In the leporid proprietor's dubious wisdom, it has been decided that teeth polishing tools are to be supplied for maintenance of the oral cavities of draconic clientele, and incorporated into a new service offered to café patrons."
+msgstr ""
+
+#. ja: 毛むくじゃらカフェマスター発案による本指令を受け、<br>当機は歯磨きに適する自然物の調査を実行……。<br>エリュシオン海洋区画にて発見に至った。
+#. de: Der übermäßig behaarte Gastwirt besteht auf die Notwendigkeit dieser „Zahnhygiene“. Er sagt, Zitat: „Heilige Möhrchen, ich befürchte, dass ganze Dodo-Keulen und Büffelrippen zwischen den Drachenbeißerchen hängen!“ Zitatende. \<zzzt> Die Aussagen sind logisch. Die Art der ineffizienten Nah<shy>rungs<shy>auf<shy>nahme macht diesen zusätzlichen Arbeitsaufwand notwendig und ist eindeutiger Beweis der Überlegenheit anorganischer Lebensformen. \<biep> Geeignetes Material zur Herstellung des Reinigungswerkzeugs wurde im Meeressektor Elysiums geortet.
+#. fr: À la suite des directives de la petite boule de poils, j'ai lancé une séquence de recherche sur les matériaux naturels adaptés au brossage de crocs... Bip bip... Plusieurs occurrences trouvées dans les mers élyséennes.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_002:1"
+msgid "Determining suitable matter to fulfill this purpose requires an extensive search covering billions of entries across thousands of databases...a trifling task. Material located."
+msgstr ""
+
+#. ja: 同盟者よ、ただちにエリュシオン海洋区画へ赴き、<br>岩場にて「<sheet Item 38299 0>」を採集されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Meeressektor Elysiums <noun-de Item 5 38299 2 4 1> akquirieren.
+#. fr: Veuillez donc vous procurer trois <noun-fr Item 12 38299 2 1> dans les mers élyséennes. 
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_005:1"
+msgid "Allied unit <split \" \" 1><string $gs1></split> is hereby requested to relocate to the Elysian seas, where it may procure porous stones from rocky outcrops in the vicinity."
+msgstr ""
+
+#. ja: 同盟者よ、ただちにエリュシオン海洋区画へ赴き、<br>草刈場にて「<sheet Item 38323 0>」を採集されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Meeressektor Elysiums <sheet Item 38323 9> akquirieren.
+#. fr: Veuillez donc vous procurer trois <noun-fr Item 12 38323 2 1> dans les mers élyséennes. 
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_006:1"
+msgid "Allied unit <split \" \" 1><string $gs1></split> is hereby requested to relocate to the Elysian seas, where it may procure suitably fibrous kelp from vegetation patches in the vicinity."
+msgstr ""
+
+#. ja: 同盟者よ、ただちにエリュシオン海洋区画へ赴き、<br>水場にて「<sheet Item 38347 0>」を採集されたし。<br>その際の餌は<sheet Item 36588 0>が最適と判断。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Meeressektor Elysiums <noun-de Item 1 38347 1 4 1> akquirieren. Stigma-4-Datenbanken über aquatische Lebensformen empfehlen die Verwendung von <noun-de Item 5 36588 1 3 1> als Köder.
+#. fr: Veuillez donc vous procurer <noun-fr Item 1 38347 1 1> dans les mers élyséennes. L'utilisation d'<noun-fr Item 1 36588 1 1> comme appât est recommandée.
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_007:1"
+msgid "Allied unit <split \" \" 1><string $gs1></split> is hereby requested to relocate to the Elysian seas, where it may procure helpless spongy life-forms. Use of gold salmon roe as a lure is projected to be effective."
+msgstr ""
+
+#. ja: その後の配送先は、リア・ターラ所在「歯磨き特務型オミクロン」。<br>納品確認後、当該機が物品加工および歯磨き特務を実行予定。<br>……同盟者の速やかな任務遂行を期待する。
+#. de: \<zzzt> Anschließend ist das Material in Reah Tahra beim Zahnpflege-Omikron abzuliefern, der den Reinigungsauftrag durchführen wird. \<biep>
+#. fr: Une fois en votre possession, remettez le tout à l'Omicron dentiste affecté à Reah Tahra. Il se chargera de la transformation en outil servant à l'entretien de la dentition des dragons.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_008:1"
+msgid "Samples may be delivered to the advanced dental polishing unit stationed in Reah Tahra, which will fabricate them into tools and perform experimental teeth maintenance. Your swift completion of objectives is appreciated."
+msgstr ""
+
+#. ja: ガガガ……納品物資を加工後、単独にてドラゴン族に接触、<br>口腔部の開放を要求し、内部の清掃および歯牙の研磨を実行。<br>当機の生存命令継続可能率は、1％未満と予想……。
+#. de: \<ratter> \<ratter> \<biep> Referenziere Auftrag. Nach Erhalt des Hygienewerkzeugs mit Drachen-Einheit interagieren. \<biep> Nahrungsluke öffnen. \<biep> Nahrungsstauraum mit Mahl- und Reißwerkzeugen von bakteriellen Verunreinigungen und Nahrungsresten befreien. \<biep> Hygieneziel >> Vernichtung von 99,99<nbsp>% aller Verunreinigungen. \<biep> Persönliche Motivation >> Reinigungsauftrag überleben. \<biep>
+#. fr: Bip bip... Pshhh... Après obtention de l'outil d'entretien, j'entrerai en contact avec les dragons. Une fois ma requête d'ouverture buccale validée, je me chargerai de nettoyer et polir leurs crocs. Estimations des chances de survie<nbsp>: inférieures à 1%...
+#. speaker: OMICRON04634
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_OMICRON04634_100_009:1"
+msgid "\\<whirr> Once requested samples have been converted into tools, this unit will approach the nearest dragon, demand the unclenching of said dragon's jaw, and proceed to climb inside of its mouth to perform extensive teeth polishing. Estimated chances of survival: less than one percent."
+msgstr ""
+
+#. ja: ガガガ……納品物資を加工後、単独にてドラゴン族に接触、<br>口腔部の開放を要求し、内部の清掃および歯牙の研磨を実行。<br>当機の生存命令継続可能率は、1％未満と予想……。
+#. de: \<ratter> \<ratter> \<biep> Referenziere Auftrag. Nach Erhalt des Hygieneutensils mit Drachen-Einheit interagieren. \<biep> Nahrungsluke öffnen. \<biep> Nah<shy>rungs<shy>auf<shy>nahmeraum mit Mahl- und Reißwerkzeugen von bakteriellen Verunreinigungen und Nahrungsresten befreien. \<biep> Voraussichtliche Überlebenswahrscheinlichkeit dieser Omikron-Einheit: Unter 1<nbsp>%. \<biep>
+#. fr: Bip bip... Pshhh... Après obtention de l'outil d'entretien, j'entrerai en contact avec les dragons. Une fois ma requête d'ouverture buccale validée, je me chargerai de nettoyer et polir leurs crocs. Estimations des chances de survie<nbsp>: inférieures à 1%...
+#. speaker: OMICRON04634
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_OMICRON04634_100_010:1"
+msgid "\\<whirr> Once requested samples have been converted into tools, this unit will approach a nearby dragon, demand the unclenching of said dragon's jaw, and proceed to climb inside of its mouth to perform extensive teeth polishing. Estimated chances of survival: less than one percent."
+msgstr ""
+
+#. ja: 物資の納品を確認、これより加工ののち、<br>任地にて歯磨き特務シーケンスへ移行します。<br>……グッバイ、同盟者よ。
+#. de: \<biep> ... \<ratter> ... Ausgehändigte Ware verifiziert. Starte Reinigungsauftrag. \<biep> Referenziere passende Abschiedsfloskel >> Lebe wohl, <split " " 1><string $gs1></split>.
+#. fr: Réception confirmée. Je passe désormais à l'étape de fabrication de l'outil d'entretien in<shy>dis<shy>pen<shy>sa<shy>ble à la phase suivante de l'opération de nettoyage dentaire. Adieu, entité alliée, ne m'oubliez pas... Pshhh...
+#. speaker: OMICRON04634
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_OMICRON04634_100_011:1"
+msgid "Initializing material conversion process... This unit will now transition to dental polishing protocols to carry out its mission. Good-bye, allied life-form..."
+msgstr ""
+
+#. ja: 同盟者の帰還を確認……<br>歯磨きサービスへの貢献を評価。<br>報酬を受領し、次なる任務に備えられたし。
+#. de: \<biep> ... \<zzzt> Missionsbericht des Zahnpflege-Omikron wird referenziert. Die geforderte Ware wurde in gutem Zustand ausgeliefert. \<biep> Missionsziel gilt somit als erfüllt. 
+#. fr: Bip bip... Pshhh... Confirmation du retour de l'entité alliée... Votre con<shy>tri<shy>bu<shy>tion au développement de services d'hygiène dentaire est appréciée. Veuillez accepter votre récompense et recharger vos batteries en attendant votre prochaine affectation.
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_012:1"
+msgid "Return of allied unit <split \" \" 1><string $gs1></split> acknowledged. Your contribution to the universe's aggregate dental hygiene levels is greatly appreciated. Initializing gratitude monologue..."
+msgstr ""
+
+#. ja: ……なお、竜星侵略時に収集したデータを参照するに、<br>ドラゴン族は岩石などを噛むことで、口内を清掃していた模様。<br>したがって「歯磨きサービス」の必要性は未知数。
+#. de: \<zzzt> Alten Datenbanken zufolge reinigen Drachen ihre Zähne durch Mahlen von Gestein und anderen harten Objekten. Sinnhaftigkeit der von Omikron durchgeführten Reinigungsdienste ist dadurch maximal zweifelhaft. \<biep>
+#. fr: Bip bip... D'après mes données de l'invasion de la planète des dragons, ces derniers nettoient l'intérieur de leur bouche en broyant des rochers avec leurs crocs. La nécessité d'un service d'hygiène bucco-dentaire était donc pour moi une variable inconnue...
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_013:1"
+msgid "...Review of records of conflict on the Dragonstar indicate dragons maintained oral hygiene by masticating on rocks and similar objects. Necessity of a dental polishing service now brought into question."
+msgstr ""
+
+#. ja: ただし、顧客から肯定的評価が得られた場合に備え、<br>歯磨き専用の小型ドローン生産も視野に入れつつ試行を継続。<br>同盟者よ、引き続き協力されたし。
+#. de: Ein Nebeneffekt könnte meinen Kalkulationen zufolge jedoch eine gesteigerte Kundenzufriedenheit im Wiegenstern sein. Sollte sich dies bewahrheiten, wäre die Herstellung von kompakten Zahnpflegedrohnen mit Hyperfrequenzbohrern und Hochenergielasern für alle Kunden in Erwägung zu ziehen. \<bzzz><nbsp>...
+#. fr: En cas de résultats concluants lors de cette première itération, je vais étudier la possibilité de produire des drones miniatures spécialisés dans l'entretien de la dentition des dragons. Le cas échéant, vous serez appelée à nouveau, entité alliée.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi126_04632:TEXT_BANOMI126_04632_STIGMA4_100_014:1"
+msgid "Nevertheless, there is a non-zero possibility of positive reception by café patrons. Production of specialized teeth cleaning drones added to queue, with trial runs to ensue. Allied unit's continued cooperation remains categorized as “necessary.”"
+msgstr ""

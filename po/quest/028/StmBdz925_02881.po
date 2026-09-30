@@ -1,0 +1,270 @@
+# quest/028/StmBdz925_02881 — «If I Were a Fish» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ポルタ・プレトリアのドロテー中闘士は、水中で活動できる冒険者に頼みたいことがあるようだ。
+#. de: Erster Legionsfähnrich Dorothe sucht einen Abenteurer, der nicht wasserscheu ist.
+#. fr: Dorothe a une mission aquatique à vous confier.
+#. kind: journal
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_SEQ_00:1"
+msgid "Lieutenant Dorothe needs a soldier who knows how to swim."
+msgstr ""
+
+#. ja: 不滅隊の工作員と話す
+#. de: Mit dem Geheimagenten der Bruderschaft sprechen
+#. fr: Parler à l'agent des Immortels
+#. kind: objective
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_TODO_00:1"
+msgid "Speak with the flame agent."
+msgstr ""
+
+#. ja: <sheet EObj 2008779 0>を入手
+#. de: Im Seldsee nach etwas Auffälligem suchen
+#. fr: Inspecter la zone indiquée
+#. kind: objective
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_TODO_01:1"
+msgid "Obtain the imperial secret."
+msgstr ""
+
+#. ja: 不滅隊の工作員に<sheet EventItem 2002313 0>を渡す
+#. de: <capitalize><noun-de EventItem 2 2002313 1 4 1></capitalize> zum Geheimagenten der Bruderschaft bringen
+#. fr: Donner <noun-fr EventItem 2 2002313 1 1> à l'agent des Immortels
+#. kind: objective
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_TODO_02:1"
+msgid "Deliver the imperial materiel crate to the flame agent."
+msgstr ""
+
+#. ja: ドロテー中闘士に報告
+#. de: Mit Dorothe sprechen
+#. fr: Faire un rapport à Dorothe
+#. kind: objective
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_TODO_03:1"
+msgid "Report to Dorothe."
+msgstr ""
+
+#. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>ですね？<br>あなたが東方の海にて、水中で活動するための秘術を会得したと、<br>「暁の血盟」の方から聞いたのですが、本当でしょうか……？
+#. de: <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> </if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> </if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> </if><split " " 2><string $gs1></split>, nicht wahr? Ich habe gehört, dass die Kojin dich mit einer äußerst praktischen Gabe gesegnet haben. Du kannst dich jetzt frei unter Wasser bewegen, richtig?
+#. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if>, n'est-ce pas<nbsp>? Un Héritier de la Septième Aube m'a raconté que vous étiez capable de rester très longtemps sous l'eau... Est-ce vrai<nbsp>?
+#. speaker: DOROTHE
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_DOROTHE_000_000:1"
+msgid "<capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, I presume? I've spoken with members of the Scions, and if I may be so bold as to ask... Is it true that you learned some Far Eastern technique for moving underwater as freely as a fish?"
+msgstr ""
+
+#. ja: なんと、まことでしたか！<br>ぜひ、そのお力をお借りしたいことがあるのです。
+#. de: Das ist ja wirklich fabelhaft! Dann bist du genau <if $gn4>die<else>der</if> Richtige für diesen Auftrag. Es geht um eine streng geheime Sache, aber den Leuten vom Bund der Morgenröte können wir vertrauen.
+#. fr: Oh, c'est fantastique<nbsp>! Dans ce cas, vous êtes la personne idéale pour nous aider à remplir notre mission<nbsp>!
+#. speaker: DOROTHE
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_DOROTHE_000_001:1"
+msgid "Then it was not an exaggeration!? Incredible. Would you be willing to put that ability to use for us?"
+msgstr ""
+
+#. ja: ご協力いただけるようでしたら、<br>ロッホ・セル湖の聖なる礼拝台にいる私の部下、<br>「不滅隊の工作員」から、詳細を伺ってください。
+#. de: Der Geheimagent am Platz der Verehrung wird dir alles Weitere erzählen. Geh gleich mal zu ihm hin und biete ihm deine Hilfe an.
+#. fr: Je vais prévenir mon subordonné, agent des Immortels de son état, de votre arrivée à l'Audience divine, au lac Seld. Il vous donnera tous les détails dont vous avez besoin.
+#. speaker: DOROTHE
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_DOROTHE_000_002:1"
+msgid "If so, I've an agent stationed underneath those towering steps by the loch who would dearly love to speak with you."
+msgstr ""
+
+#. ja: ご協力いただけるようでしたら、<br>ロッホ・セル湖の聖なる礼拝台にいる私の部下、<br>「不滅隊の工作員」から、詳細を伺ってください。
+#. de: Der Geheimagent am Platz der Verehrung wird dir alles Weitere erzählen. Geh gleich mal zu ihm hin und biete ihm deine Hilfe an.
+#. fr: Je vais prévenir mon subordonné, agent des Immortels de son état, de votre arrivée à l'Audience divine, au lac Seld. Il vous donnera tous les détails dont vous avez besoin.
+#. speaker: DOROTHE
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_DOROTHE_000_003:1"
+msgid "The agent I mentioned can be found underneath those grand steps the locals call the “Divine Audience.” Aye, that structure built over the waters of Loch Seld."
+msgstr ""
+
+#. ja: 応援に来てくださった、冒険者殿ですね？<br>ドロテー中闘士より、話は伺っております。<br>それでは、任務の詳細を説明いたします。
+#. de: Woher weißt du, dass ich ... Ach, Dorothe schickt dich? Und du willst mir helfen? Und du kannst dich frei im Wasser bewegen? Na, das trifft sich ja ausgezeichnet!
+#. fr: Vous êtes l'aventuri<if $gn4>ère<else>er</if> envoyé<if $gn4>e</if> par la lieutenante Dorothe, je présume<nbsp>? Merci d'être venu<if $gn4>e</if> aussi vite. Permettez-moi d'entrer sans plus tarder dans le vif du sujet.
+#. speaker: AGENT02881
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_010:1"
+msgid "Ah, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>! Lieutenant Dorothe said you might be on your way. Ready to get your boots wet, are you? I should probably begin from the beginning..."
+msgstr ""
+
+#. ja: 先日の、カストルム・アバニアの戦いで捕虜にした帝国兵が、<br>一枚の地図を隠し持っていました。
+#. de: Also, der Geheimdienst der Bruderschaft hat einen Garlear verhört, der zu den Gefangenen gehört, die wir in Castrum Abania gemacht haben. Dabei haben wir eine Karte gefunden, die er im Saum seiner Rüstung versteckt hatte.
+#. fr: L'autre jour, suite à une rixe à Castrum Abania, nous avons capturé un soldat impérial qui détenait une carte avec une zone marquée en rouge. Je vous le donne en mille, il s'agit du lac Seld.
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_011:1"
+msgid "One of the soldiers we captured during the battle at Castrum Abania was concealing a map on his person."
+msgstr ""
+
+#. ja: そこに意味ありげな印が記されていたので、<br>何を示しているのか尋問したのですが、一向に口を割りません。<br>頑なに秘匿するからには、何か理由があるはずです。
+#. de: Auf der Karte ist ein Ort markiert, aber auch nach intensiver Befragung wollte der Garlear nicht ausspucken, was da auf der Karte verzeichnet ist. Das alleine macht die Sache ja schon interessant.
+#. fr: Nous l'avons longuement interrogé pour découvrir ce que cette carte indique, mais il est resté motus et bouche cousue. Nous en avons conclu qu'il ne pouvait s'agir que d'une chose de grande valeur.
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_012:1"
+msgid "The map was marked with a curious symbol, but no matter how hard we cajoled or threatened, the prisoner would not tell us the symbol's significance."
+msgstr ""
+
+#. ja: そう考えた司令部から、印の場所の調査を命じられたのですが、<br>ロッホ・セル湖の湖上からは、何も発見できませんでした。<br>残された可能性は、湖の下……。
+#. de: Jetzt ist es aber so, dass die Markierung genau im Seldsee ist. An der Oberfläche ist nichts zu erkennen, also muss sich irgendwas auf dem Grund des Sees befinden.
+#. fr: La lieutenante m'a donc im<shy>mé<shy>dia<shy>te<shy>ment ordonné d'investiguer les lieux, mais je n'ai absolument rien trouvé à la surface. Il ne reste donc plus que le fond du lac...
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_013:1"
+msgid "This naturally piqued the curiosity of our commanders, and they immediately ordered a search of the marked area. Now, the problem is that the area mostly covers the water, and we found nothing of interest up above..."
+msgstr ""
+
+#. ja: そこで、水中の調査をお願いしたいというわけなのです。<br>調べていただきたい場所を、地図に書き記しておきました。
+#. de: Wir sind personell dünn besetzt und haben momentan keine Unter<shy>wasser<shy>einheit zur Verfügung. Aber dir als Mitglied des Bundes der Morgenröte können wir vertrauen.
+#. fr: Hélas, je suis un piètre nageur, et je suis bien content que vous ayez accepté de me prêter main-forte. Si vous le permettez, je vais indiquer la zone à examiner sur votre carte personnelle.
+#. speaker: AGENT02881
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_014:1"
+msgid "Meaning this secret, whatever it is, <i>must</i> be down below. We were eager indeed to enlist someone with your apparent talent for underwater exploration."
+msgstr ""
+
+#. ja: 該当箇所に向かって、周囲を探り、<br>秘匿物を発見した場合、回収できそうなら持ち帰ってください。<br>それでは、よろしくお願いいたします。
+#. de: Hier ist also dein Auftrag: Untersuche den Grund des Seldsees an der markierten Stelle und bringe alles von dort zurück, was du findest!
+#. fr: Si vous tombez sur quoi que ce soit d'intéressant, je compte sur vous pour le ramener à la surface. Bonne plongée<nbsp>!
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_015:1"
+msgid "I've circled the spot on your map that we'd like you to investigate. If it turns out to be something you can bring back, pray do so. Be careful down there."
+msgstr ""
+
+#. ja: 該当箇所に向かって、周囲を探り、<br>秘匿物を発見した場合、回収できそうなら持ち帰ってください。<br>それでは、よろしくお願いいたします。
+#. de: Untersuche den Grund des Seldsees an der markierten Stelle und bringe alles von dort zurück, was du findest!
+#. fr: J'ai indiqué la zone à examiner au fond du lac sur votre carte personnelle. Si vous tombez sur quoi que ce soit d'intéressant, je compte sur vous pour le ramener à la surface. Bonne plongée<nbsp>!
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_016:1"
+msgid "I don't know how deep the loch is, but I'm told holding your breath won't pose a problem. At least the water looks warm...?"
+msgstr ""
+
+#. ja: 印のあった場所で、何か発見できましたか？
+#. de: Hast du etwas gefunden?
+#. fr: Eh bien, avez-vous découvert quelque chose<nbsp>?
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_020:1"
+msgid "Anything of interest?"
+msgstr ""
+
+#. ja: <sheet EventItem 2002313 0>ですか……。<br>中身が気になるところですね……。<br>さっそく確認しましょう。
+#. de: Eine Materialkiste ... Sehr interessant. Der Inhalt muss außer<shy>ordent<shy>lich wichtig sein. Vielleicht ein Schatz? Geheime strategische Dokumente? Planungs<shy>skizzen für Magitek-Prototypen? Ich seh gleich mal nach.
+#. fr: Tiens donc, <noun-fr EventItem 1 2002313 1 1>... Je suis curieux de voir ce qu'elle contient.
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_021:1"
+msgid "This looks like an imperial materiel crate. I doubt anyone would bother sinking ordinary supplies, so I say we take a look inside..."
+msgstr ""
+
+#. ja: これは……高価な宝飾品が、この箱一杯に……！？
+#. de: Das sind ja alles ... Das sieht mir nach ziemlich wertvollen Schmuckstücken aus!
+#. fr: ... Mazette<nbsp>! Elle est remplie de bijoux qui doivent valoir une fortune<nbsp>!
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_022:1"
+msgid "Nald's breath! This thing's filled to the brim with gems and jewelry!"
+msgstr ""
+
+#. ja: どれもみな、ギラバニア様式であることを考えると、<br>アラミゴで作られたものなのでしょう。<br>それも、王族が身に付けていたような品に見えます。
+#. de: Der Fertigungsstil ist klar mhigisch. Ich würde sagen, die Schmuckstücke gehörten der königlichen Familie.
+#. fr: Vu leur forme typique des orfèvres de Gyr Abania, ils ont pro<shy>ba<shy>ble<shy>ment été fabriqués à Ala Mhigo. Avec un tel degré de finition, il est même possible qu'ils aient appartenu à la famille royale.
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_023:1"
+msgid "From what I can tell, these all seem to be of Gyr Abanian design. In fact, I'd say this collection is of damn near royal quality."
+msgstr ""
+
+#. ja: 湖に隠していたということは、非合法的に略奪したのでしょう。<br>兵役が終わって故郷に帰るときまで、<br>隠しておくつもりだったということか……。
+#. de: Der Garlear hat sie entweder selber geplündert oder sich die Materialkiste unter den Nagel gerissen und im See versteckt. Manche Soldaten verstecken Beutestücke, um sie bei der Rückkehr in ihre Heimat auszugraben und mitzunehmen.
+#. fr: À mon avis, si des objets d'une valeur pareille se trouvaient au fond d'un lac, c'est qu'ils ont été dérobés à leurs pro<shy>prié<shy>taires. Les pillards attendaient pro<shy>ba<shy>ble<shy>ment le moment opportun pour les récupérer et les revendre.
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_024:1"
+msgid "The bottom of a loch is not where I'd choose to keep such valuables, so it's safe to assume they were acquired in a less-than-honest fashion. Our prisoner likely hoped to hide them down there until his stint in the army was over..."
+msgstr ""
+
+#. ja: すでにアラミゴの王族は途絶えていますが、<br>今後の復興には、莫大な資金が必要なはずです。<br>この品は、アラミゴの民に還元するように計らうとします。
+#. de: Diese Schmuckstücke gehören dem Volk der Mhigiten. Ich werde dafür sorgen, dass sie wieder in die richtigen Hände gelangen. 
+#. fr: Après une si longue période d'occupation, tout Ala Mhigo est à reconstruire, et le peuple aura besoin d'énormément d'argent pour y parvenir. Puisque la lignée royale mhigoise a disparu, il me paraît logique que ces bijoux leur servent à arriver à leurs fins.
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_025:1"
+msgid "Rebuilding a country is an expensive job, eh? Ala Mhigo's royal family is no more, but we should return these to her citizens nonetheless."
+msgstr ""
+
+#. ja: ご協力いただきありがとうございました。<br>「ドロテー中闘士」に、報告をお願いできますか？
+#. de: Vielen Dank für deine Hilfe. Bitte sieh noch einmal bei Erster Legionsfähnrich Dorothe vorbei. Sie ist befugt, dir eine Belohnung auszuhändigen.
+#. fr: Quoi qu'il en soit, je vous remercie beaucoup pour votre aide, aventuri<if $gn4>ère<else>er</if><nbsp>! Saluez la lieutenante Dorothe de ma part.
+#. speaker: AGENT02881
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_026:1"
+msgid "Thank you for braving those waters, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>. Pray report to Lieutenant Dorothe, and I'll see that this crate is transported safely back to headquarters."
+msgstr ""
+
+#. ja: ご協力いただきありがとうございました。<br>「ドロテー中闘士」に、報告をお願いできますか？
+#. de: Bitte sieh noch einmal bei Erster Legionsfähnrich Dorothe vorbei. Sie ist befugt, dir eine Belohnung auszuhändigen.
+#. fr: Je vous remercie beaucoup pour votre aide, aventuri<if $gn4>ère<else>er</if><nbsp>! Saluez la lieutenante Dorothe de ma part.
+#. speaker: AGENT02881
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_AGENT02881_000_027:1"
+msgid "I'll start hauling the crate back to headquarters, but I'd appreciate it if you could have the lieutenant send a few large lads to help..."
+msgstr ""
+
+#. ja: 結果はどうでしたか？
+#. de: Ist alles gut gegangen?
+#. fr: Ah, vous revoilà. J'ai hâte d'entendre votre rapport<nbsp>!
+#. speaker: DOROTHE
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_DOROTHE_000_030:1"
+msgid "Welcome back, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>. Was there aught to be found?"
+msgstr ""
+
+#. ja: なるほど……高価な宝飾品が隠されていたのですね。<br>口を割らなかった理由も、それなら納得がいきます。
+#. de: Schmuckstücke des mhigischen Königshauses? Das nenne ich mal einen kostbaren Fund.
+#. fr: Vous avez trouvé une caisse de l'armée impériale remplie de bijoux au fond du lac<nbsp>? Je comprends mieux pourquoi ce soldat ne voulait pas piper un seul mot.
+#. speaker: DOROTHE
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_DOROTHE_000_031:1"
+msgid "A fortune in stolen jewelry, was it? That explains the prisoner's unwillingness to share."
+msgstr ""
+
+#. ja: 部下が言ったように、件の財宝は、<br>アラミゴ復興のため民に還元できるよう計らいましょう。<br>この度の協力、感謝致します！
+#. de: Ich bin mir sicher, dass wir nach und nach noch mehr Kriegsbeute finden. Es ist Teil unserer Aufgabe, sie den rechtmäßigen Besitzern zurückzugeben. Hier, nimm diese kleine Belohnung. Und vielen Dank.
+#. fr: Ne vous en faites pas, nous allons remettre ce trésor aux Mhigois pour aider à l'effort de recon<shy>struc<shy>tion. Un grand merci pour votre col<shy>la<shy>bo<shy>ra<shy>tion, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if><nbsp>!
+#. speaker: DOROTHE
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankGridaniaMaleText $gn53 8> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/028/StmBdz925_02881:TEXT_STMBDZ925_02881_DOROTHE_000_032:1"
+msgid "As my agent explained, we will see to it that those valuables are returned to Ala Mhigo's coffers. Thank you, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>─this will go a long way to helping the nation recover from the ravages of war!"
+msgstr ""

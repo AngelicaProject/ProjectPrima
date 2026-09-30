@@ -1,0 +1,152 @@
+# quest/046/BanOmi120_04626 — « Mush for Miw Miisv» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>リサーチA4のスティグマ・フォーは、イーア族からの依頼を伝えたいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Stigma-4 verlangt erneut nach deinen Diensten.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Stigma-4 a une demande des Éas à vous transmettre.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_SEQ_00:1"
+msgid "Stigma-4 either has a request from the Ea or needs a hug. You will only find out by asking.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: 納品受付型オミクロンに依頼された品を納品
+#. de: Geforderte Ware an den Logistik-Omikron liefern
+#. fr: Livrer ce qui vous a été demandé à l'Omicron magasinier
+#. kind: journal
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_SEQ_01:1"
+msgid "Deliver the requested items to the food processing unit."
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: journal
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_SEQ_02:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を採掘<else>納品受付型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を草刈<else>納品受付型オミクロンに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>エリュシオンの遊園区画で<sheet Item $n5 0>を釣る<else>納品受付型オミクロンに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 5 $n5 2 4 1> sammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Warenempfangs-Omikron abliefern</if><else><if ($n4 == 17)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 5 $n5 2 4 1> einsammeln<else><capitalize><noun-de Item 2 $n5 2 4 1></capitalize> beim Warenempfangs-Omikron abliefern</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Vergnügungssektor Elysiums <noun-de Item 1 $n5 1 4 1> fangen<else><capitalize><noun-de Item 2 $n5 1 4 1></capitalize> beim Warenempfangs-Omikron abliefern</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire des <noun-fr Item 12 $n5 2 1> aux terrains de jeu élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Omicron magasinier</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter des <noun-fr Item 12 $n5 2 1> aux terrains de jeu élyséens<else>Livrer les <noun-fr Item 12 $n5 2 1> à l'Omicron magasinier</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> aux terrains de jeu élyséens<else>Livrer <noun-fr Item 2 $n5 1 1> à l'Omicron magasinier</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the food processing unit.</i… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the food processing unit.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 2 1> to the food processing unit.</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at the Elysian playgrounds.<else>Deliver <noun-en Item 2 $n5 1 1> to the food processing unit.</if></if></if></if>"
+msgstr ""
+
+#. ja: スティグマ・フォーに報告
+#. de: Stigma-4 Bericht erstatten
+#. fr: Retourner voir Stigma-4
+#. kind: objective
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_TODO_01:1"
+msgid "Report to Stigma-4."
+msgstr ""
+
+#. ja: 「ミゥ・ミーシュ」の誕生以来、<br>イーア族がその育成と観察に従事している。<br>かの新生命体は、有機的な肉体を持つゆえ食事が必須。
+#. de: \<biep><nbsp>... Einleitungsfloskeln werden geladen >> Guten <if ($gn11 < 12)><if ($gn11 < 4)>Abend<else>Morgen</if><else><if ($gn11 < 17)>Tag<else>Abend</if></if>, <split " " 1><string $gs1></split>. Initiiere Gesprächsstart \<bzzz><nbsp>... Die Ea sind für Aufzucht und Beobachtung der Miw Miisv verantwortlich. Da diese neuen Lebewesen über einen biologischen Metabolismus verfügen, benötigen sie eine organische Energiequelle, auch als „Futter“ bezeichnet.
+#. fr: Bip bip... Pshhh... Depuis la naissance des miw miisv, les Éas s'occupent de les élever et de les étudier. Néanmoins, comme toute forme de vie corporelle, elles nécessitent d'absorber des nutriments.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_000:1"
+msgid "Initiating perfunctory explanation sequence... Since the inexplicable coalescence of the Miw Miisv, the Ea have fastidiously undertaken research and caretaking duties. Recently, they have requested suitable sustenance for the upkeep of their charges' corporeal forms."
+msgstr ""
+
+#. ja: 生まれて間もない個体は、食材を柔らかくして与えないと、<br>消化不良に陥るとのことで、カフェにて調理を行っている。<br>同盟者に、その素材調達を求む。
+#. de: \<biep><nbsp>... Nach dem Verlassen des Reproduktionsbehälters sind die Körper der Miw Miisv noch klein und wenig robust. Sie benötigen daher die regelmäßige Zufuhr von weichgekochten Proteinen und Ballaststoffen, die im Wiegenstern durch den übermäßig behaarten Gastwirt zubereitet werden. Deine Aufgabe ist es, die notwendigen Zutaten zur Nahrungsproduktion zu liefern.
+#. fr: Au café, nous cuisinons les ingrédients de manière à ce qu'ils soient suf<shy>fi<shy>sam<shy>ment mous pour les nouveau-nés et ne leur causent aucune défaillance digestive. Bip bip... Entité alliée, nous nécessitons votre support dans l'approvisionnement des matières premières.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_001:1"
+msgid "However, the infantile nature of the Miw Miisv begets a necessity for emollient ministrations to be applied to said comestibles before consumption. Rapid blinking detected. Reiterating in layman's terms: the Miw Miisv are babies and thus require soft food."
+msgstr ""
+
+#. ja: エリュシオンの遊園区画で「<sheet Item 38293 0>」を入手。<br>ラストレムナントの「納品受付型オミクロン」へ納品されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums <noun-de Item 5 38293 2 4 1> akquirieren und im Café Wiegenstern abliefern.
+#. fr: Rendez-vous aux terrains de jeu élyséens afin de vous procurer trois <noun-fr Item 12 38293 2 1>. Livraison à l'Omicron magasinier aux Dernières Réminiscences.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_002:1"
+msgid "A suitable organism has been located in Elysion for your convenience. Obtain worm-like fauna inhabiting the recreational areas. Softening protocol will commence upon delivery to the Last Dregs."
+msgstr ""
+
+#. ja: エリュシオンの遊園区画で「<sheet Item 38317 0>」を入手。<br>ラストレムナントの「納品受付型オミクロン」へ納品されたし。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll im Vergnügungssektor Elysiums <sheet Item 38317 9> akquirieren und im Café Wiegenstern abliefern.
+#. fr: Rendez-vous aux terrains de jeu élyséens afin de vous procurer trois <noun-fr Item 12 38317 2 1>. Livraison à l'Omicron magasinier aux Dernières Réminiscences.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_003:1"
+msgid "A suitable organism has been located in Elysion for your convenience. Obtain a sensible amount of fungal compound growing in the recreational areas. Softening protocol will commence upon delivery to the Last Dregs."
+msgstr ""
+
+#. ja: エリュシオンの遊園区画で「<sheet Item 38341 0>」を入手。<br>ラストレムナントの「納品受付型オミクロン」へ納品されたし。<br>捕獲時は<sheet Item 36588 0>の使用を推奨。
+#. de: Auftragsprotokoll wird referenziert. \<biep><nbsp>... <split " " 1><string $gs1></split> soll Vergnügungssektor Elysiums <noun-de Item 1 38341 1 4 1> akquirieren und im Café Wiegenstern abliefern. Stigma-4-Datenbanken über aquatische Lebensformen empfehlen die Verwendung von <noun-de Item 5 36588 1 3 1> als Köder.
+#. fr: Rendez-vous aux terrains de jeu élyséens afin de vous procurer <noun-fr Item 1 38341 1 1>. L'utilisation d'<noun-fr Item 1 36588 1 1> comme appât est recommandée. Livraison à l'Omicron magasinier aux Dernières Réminiscences.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_004:1"
+msgid "A suitable organism has been located in Elysion for your convenience. Obtain a sample of the arthropod native to the recreational areas and deliver to the Last Dregs for softening. Unit N-0598 will relinquish gold salmon roe if appropriately and cheerfully compensated."
+msgstr ""
+
+#. ja: 同盟者<split " " 1><string $gs1></split>と確認……<br>ミゥ・ミーシュ用の食材調達の件、ですね？<br>ガガガ……入手物を確認できず……完了後、改めてお越しを。
+#. de: \<biep> ... \<ratter> ... Organische Lebensform identifiziert als <split " " 1><string $gs1></split>. Habseligkeiten werden durchleuchtet<nbsp>... In Auftrag gegebenes Objekt befindet sich nicht darunter. Bitte um zeitnahe Lieferung. \<biep>
+#. fr: Recon<shy>nais<shy>san<shy>ce de l'entité alliée <split " " 1><string $gs1></split>... Est-ce au sujet du colis alimentaire pour les miw miisv<nbsp>? Bip bip... Pshhh... Livraison non détectée. Veuillez renouveler l'opération après récupération des ingrédients nécessaires.
+#. speaker: DELIVERER04626
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_DELIVERER04626_000_010:1"
+msgid "\\<whirr> Presence of <split \" \" 1><string $gs1></split> confirmed. Referencing expectations... Scanning personage... \\<whirr> You have not arrived with requested material. Reconfiguring emotional state to “disappointed”..."
+msgstr ""
+
+#. ja: 同盟者<split " " 1><string $gs1></split>と確認……<br>ミゥ・ミーシュ用の食材調達の件、ですね？<br>ガガガ……入手物を確認しました、納品を。
+#. de: \<biep> ... \<ratter> ... Organische Lebensform identifiziert als <split " " 1><string $gs1></split>. Habseligkeiten werden durchleuchtet<nbsp>... In Auftrag gegebenes Objekt befindet sich darunter. Bitte um sofortige Aushändigung.
+#. fr: Recon<shy>nais<shy>san<shy>ce de l'entité alliée <split " " 1><string $gs1></split>... Est-ce au sujet du colis alimentaire pour les miw miisv<nbsp>? Bip bip... Pshhh... Livraison détectée, transfert requis.
+#. speaker: DELIVERER04626
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_DELIVERER04626_000_011:1"
+msgid "\\<whirr> Presence of <split \" \" 1><string $gs1></split> confirmed. Referencing expectations... Scanning personage... \\<whirr> You have arrived with the requested material! Initiating vernacular request sequence. \\<whirr> Gimme, gimme!"
+msgstr ""
+
+#. ja: 受領完了……ガガ……入手物の確認完了、問題なし……。<br>此度の協力に感謝します。<br>「スティグマ・フォー」から報酬を、お受け取りください。
+#. de: Empfang des Objekts bestätigt. Vergütung kann bei Stigma-4 eingefordert werden. \<biep> ... \<ratter> ... 
+#. fr: Réception terminée... Bip bip... Demande de livraison close, aucune anomalie détectée... Votre service est apprécié. Veuillez récupérer votre compensation auprès de Stigma-4.
+#. speaker: DELIVERER04626
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_DELIVERER04626_000_012:1"
+msgid "Reconfiguring emotional state to “grateful.” \\<whirr> Thank you for your service! Report to Stigma-4 for compensatory distribution of pleasing and shiny objects."
+msgstr ""
+
+#. ja: 納品受付型オミクロンより、報告を受領。<br>同盟者<split " " 1><string $gs1></split>の協力を評価する。
+#. de: \<biep> ... \<zzzt> ... Missionsbericht des Logistik-Omikron wird referenziert. Zutaten für Proteinbrei wurden geliefert. Missionsziel wurde somit erfüllt. 
+#. fr: Bip bip... Pshhh... Réception du rapport de l'Omicron magasinier... Entité alliée <split " " 1><string $gs1></split>, votre con<shy>tri<shy>bu<shy>tion est évaluée “très satisfaisante”.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_020:1"
+msgid "Transmission received. Delivery confirmed. Mission success."
+msgstr ""
+
+#. ja: ミゥ・ミーシュなる生命体の誕生は想定外だったため、<br>現在、各種データの収集中である。<br>興味深いことに、イーア族との共通点が多数、見つかっている。
+#. de: Die Entstehung der Miw Miisv war ein unvorhergesehenes Ereignis. \<bzzz> Analyse aller vorhandenen Datensätze dauert noch an. Erste Indikatoren weisen auf zahlreiche Ähnlichkeiten mit den Ea hin. Erkenntnisse werden als „Interessant“ klassifiziert.
+#. fr: La naissance d'une forme de vie comme les miw miisv ne figurait pas dans nos équations. Nous sommes encore en cours d'analyse des données, mais les résultats préliminaires montrent un grand nombre de similitudes avec les Éas. Bip bip... Fascinant.
+#. speaker: STIGMA4
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_021:1"
+msgid "Supplementary information regarding factors such as behavior and appropriate nourishment of Miw Miisv remains largely unavailable due to anomalous origin. However, limited data suggests multitudinous similarities between Ea and Miw Miisv."
+msgstr ""
+
+#. ja: 謎めいた新生命体の生態を解明するため、<br>今後も、引き続き協力されたし。
+#. de: Deine Unterstützung bei der Ent<shy>schlüs<shy>se<shy>lung der mysteriösen Lebensform ist hilfreich. \<biep> Initiiere Abschiedsfloskel >> Danke für deine Dienste, <split " " 1><string $gs1></split>. Du hast dich als nützlicher erwiesen als ursprünglich prognostiziert. \<biep>
+#. fr: Préparez-vous à être de nouveau mis<if $gn4>e</if> à con<shy>tri<shy>bu<shy>tion. Votre aide nous sera précieuse afin de percer les secrets de cette nouvelle forme de vie... Pshhh...
+#. speaker: STIGMA4
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/046/BanOmi120_04626:TEXT_BANOMI120_04626_STIGMA4_000_022:1"
+msgid "Further demands of <split \" \" 1><string $gs1></split>'s assistance deemed highly probable. Accept these compensatory objects and stand by for future orders."
+msgstr ""

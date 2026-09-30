@@ -1,0 +1,177 @@
+# quest/052/BanMam101_05261 — « Root of the Problem» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ゴクゴルマ農園のカゲージャは、除草剤の材料を採ってきてほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Kageel Ja wartet ungeduldig auf einen Sammler, der Zutaten für ein Pflanzenschutzmittel besorgen kann.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Kageel Ja a besoin d'ingrédients pour préparer un herbicide.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_SEQ_00:1"
+msgid "Kageel Ja is eager to put an end to their weed problem.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job different from when you accepted this quest."
+msgstr ""
+
+#. ja: カゲージャに依頼された品を納品
+#. de: Kageel Ja die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Kageel Ja
+#. kind: journal
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_SEQ_01:1"
+msgid "Deliver the requested supplies to Kageel Ja."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>セノーテ・ネヨーゾテ付近の採掘場で<br><sheet Item $n5 0>を採掘<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>セノーテ・ネヨーゾテ付近の良木で<sheet Item $n5 0>を伐採<else>カゲージャに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>セノーテ・モシュトラルで<sheet Item $n5 0>を釣る<else>カゲージャに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In der Nähe des Cenote Neyozzote <sheet Item $n5 9> sammeln<else>Kageel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In der Nähe des Cenote Neyozzote <sheet Item $n5 9> sammeln<else>Kageel Ja <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Am Cenote Moxutural <noun-de Item 1 $n5 1 4 1> fangen<else>Kageel Ja <noun-de Item 2 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près du cénote Neyozzote<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près du cénote Neyozzote<else>Livrer <noun-fr Item 2 $n5 2 1> à Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> au cénote de Moxutural<else>Livrer <noun-fr Item 2 $n5 1 1> à Kageel Ja</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 2 $n5 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 5, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 1… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Moxutural<else>Deliver <noun-en Item 1 $n5 1 1> to Kageel Ja</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Moxutural<else>Deliver <noun-en Item 1 $n5 1 1> to Kageel Ja</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n5 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 5, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather <noun-en Item 3 $n5 2 1> near Cenote Neyozzote<else>Deliver <noun-en Item 2 $n5 2 1> to Kageel Ja</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch <noun-en Item 1 $n5 1 1> at Cenote Moxutural<else>Deliver <noun-en Item 1 $n5 1 1> to Kageel Ja</if></if></if></if>."
+msgstr ""
+
+#. ja: 苗は順調に育ってきているんだけど、<br>土が良くなったおかげか、雑草も際限なく出てきてしまうんだ。<br>手作業で対処するには限界があるから困ってて……。
+#. de: Die jungen Triebe wachsen gut, doch sie würden sich noch besser machen, wenn es nicht so viel Unkraut drumherum gäbe. Aber es ist einfach zu viel, um es mit den Händen auszureißen.
+#. fr: Les jeunes pousses... poussent bien comme il faut, mais elles pousseraient encore mieux s'il n'y avait pas autant de mauvaises herbes autour, et aucun d'entre nous n'a le temps de toutes les arracher avec ses petites mains, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_000:1"
+msgid "The improved quality of the soil has done wonders for our budding crops, but the weeds have also seen fit to grow in abundance."
+msgstr ""
+
+#. ja: そこで、アンギルさん直伝の除草剤を試してみようと思ってね。<br>どうか、必要な材料を採ってきてもらえないかな？
+#. de: Zu unserem Glück kennt Anggir ein Rezept für ein hochwirksames Unkrautmittel. Wenn du uns helfen könntest, die nötigen Zutaten zu sammeln, wären wir dir alle sehr dankbar!
+#. fr: Heu<shy>reu<shy>se<shy>ment pour nous, Anggir connaît une recette d'herbicide hautement efficace. Si tu pouvais nous aider à récolter les ingrédients nécessaires, on t'en serait tous très re<shy>con<shy>nais<shy>sants<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_001:1"
+msgid "A perfect opportunity to test a new concoction Anggir has devised to discourage their growth. Might I trouble you to help procure ingredients for it?"
+msgstr ""
+
+#. ja: アンギルさん直伝の除草剤は効果抜群で助かっているよ。<br>でも、雑草は何度も生えてくるから、<br>定期的に使わないといけないんだ。
+#. de: Anggirs Mittelchen ist wirklich wirksam, aber das Unkraut wächst mit unvorstellbarer Ge<shy>schwindig<shy>keit nach! Wir sind daher gezwungen, es immer wieder einzusetzen.
+#. fr: L'herbicide d'Anggir est des plus efficaces, mais les mauvaises herbes, ça repousse à une vitesse ini<shy>ma<shy>gi<shy>na<shy>ble, ja<nbsp>! On est donc obligés de les asperger ré<shy>gu<shy>liè<shy>re<shy>ment.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_002:1"
+msgid "The weeds in the fields seem to sprout nearly as fast as we can pull them. For a mercy, Anggir's weed killer has proven a boon in curbing their growth."
+msgstr ""
+
+#. ja: たびたび申し訳ないけれど、もう一度、<br>除草剤の材料を採りにいってもらえないかな。
+#. de: Deine Aufgabe, solltest du sie annehmen, ist es also, uns mehr und mehr Zutaten zu bringen, damit wir das Unkrautmittel immer wieder nachbrauen können!
+#. fr: Ta mission suivante, si tu l'acceptes, sera donc de nous ramener davantage d'ingrédients pour concocter toujours plus d'herbicide<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_003:1"
+msgid "I fear we're running low, however, so I would again ask that you help us procure ingredients."
+msgstr ""
+
+#. ja: お願いしたいのは「<sheet Item 48024 0>」。<br>セノーテ・ネヨーゾテのあたりで採れるんだけど、<br>あのあたりは暗いから、道に迷わないよう気を付けてね。
+#. de: Bring mir drei <noun-de Item 5 48024 2 4 1>. Diese glitzernde Zutat findest du in der Nähe des Cenote Neyozzote. Dort ist es sehr dunkel, also pass auf, dass du nicht vom Weg abkommst!
+#. fr: Ramène-moi donc <noun-fr Item 1 48024 2 1>, que tu trouveras près du cénote Neyozzote. Ça manque de lumière par là-bas, alors fais attention à ne pas te prendre les pieds dans une ronce, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_005:1"
+msgid "What we lack most at present is spring water from Cenote Neyozzote. Have care not to get lost─the paths there are said to be quite dark."
+msgstr ""
+
+#. ja: お願いしたいのは「<sheet Item 48025 0>」。<br>セノーテ・ネヨーゾテのあたりで採れるんだけど、<br>あのあたりは暗いから、道に迷わないよう気を付けてね。
+#. de: Bring mir drei <noun-de Item 5 48025 2 4 1>. Diese duftende Zutat findest du in der Nähe des Cenote Neyozzote. Dort ist es sehr dunkel, also pass auf, dass du nicht vom Weg abkommst!
+#. fr: Ramène-moi donc <noun-fr Item 1 48025 2 1>, que tu trouveras près du cénote Neyozzote. Ça manque de lumière par là-bas, alors fais attention à ne pas te prendre les pieds dans une ronce, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_006:1"
+msgid "If you search about Cenote Neyozzote, there are herbs whose oils are said to hinder the growth of other plants. Have care not to get lost, though─the paths are known to be quite dark."
+msgstr ""
+
+#. ja: お願いしたいのは「<sheet Item 48026 0>」。<br>セノーテ・モシュトラルで釣れるんだけど、<br>あのあたりは暗いから、道に迷わないよう気を付けてね。
+#. de: Bring mir <noun-de Item 1 48026 1 4 1>. Diese glitschige Zutat findest du im Cenote Moxutural. Dort ist es sehr dunkel, also pass auf, dass du nicht vom Weg abkommst!
+#. fr: Ramène-moi donc <noun-fr Item 1 48026 1 1>, que tu trouveras au cénote de Moxutural. Ça manque de lumière par là-bas, alors fais attention à ne pas te prendre les pieds dans une ronce, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_007:1"
+msgid "In the waters around Cenote Moxutural, there is a fish whose innards can be used to hinder the growth of weeds."
+msgstr ""
+
+#. ja: そうそう、釣るときは<sheet Item 43849 0>を使うといいらしいよ。
+#. de: Und verwende <noun-de Item 5 43849 2 4 1> als Köder!
+#. fr: Et n'oublie pas d'utiliser <noun-fr Item 1 43849 1 1>, sinon tu rentreras <i>broujouille</i>, comme on dit à Mamook<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_008:1"
+msgid "They're said to be quite fond of golden stonefly nymphs, so I would suggest bringing a few to use as bait. You'll know when you've caught one."
+msgstr ""
+
+#. ja: 除草剤の材料となる、<br>「<sheet Item 48024 0>」の調達を頼むよ。<br>セノーテ・ネヨーゾテのあたりで採れるはずだから。
+#. de: Bring mir drei <noun-de Item 5 48024 2 4 1>. Diese glitzernde Zutat für das Unkrautmittel findest du in der Nähe des Cenote Neyozzote. Dort ist es sehr dunkel, also pass auf, dass du nicht vom Weg abkommst!
+#. fr: Ramène-moi donc <noun-fr Item 1 48024 2 1>, que tu trouveras près du cénote Neyozzote. Ça manque de lumière par là-bas, alors attention à ne pas te prendre les pieds dans une ronce, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_010:1"
+msgid "Bring me spring water from Cenote Neyozzote, and I will see to the rest."
+msgstr ""
+
+#. ja: 除草剤の材料となる、<br>「<sheet Item 48025 0>」の調達を頼むよ。<br>セノーテ・ネヨーゾテのあたりで採れるはずだから。
+#. de: Bring mir drei <noun-de Item 5 48025 2 4 1>. Diese duftende Zutat für das Unkrautmittel findest du in der Nähe des Cenote Neyozzote. Dort ist es sehr dunkel, also pass auf, dass du nicht vom Weg abkommst!
+#. fr: Ramène-moi donc <noun-fr Item 1 48025 2 1>, que tu trouveras près du cénote Neyozzote. Ça manque de lumière par là-bas, alors fais attention à ne pas te prendre les pieds dans une ronce, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_011:1"
+msgid "Bring me a bundle of the herbs we need from Cenote Neyozzote, and I will see to the rest."
+msgstr ""
+
+#. ja: セノーテ・モシュトラルで、<br>除草剤の材料の「<sheet Item 48026 0>」の調達を頼むよ。<br><sheet Item 43849 0>で釣れるはずだから。
+#. de: Bring mir <noun-de Item 1 48026 1 4 1>. Diese glitschige Zutat für das Unkrautmittel findest du im Cenote Moxutural. Dort ist es sehr dunkel, also pass auf, dass du nicht vom Weg abkommst! Und verwende <noun-de Item 5 43849 2 4 1> als Köder!
+#. fr: Ramène-moi donc <noun-fr Item 1 48026 1 1>, que tu trouveras au cénote de Moxutural. Ça manque de lumière par là-bas, alors fais attention à ne pas te prendre les pieds dans une ronce, ja<nbsp>! Et n'oublie pas d'utiliser <noun-fr Item 1 43849 1 1>, sinon tu rentreras <i>broujouille</i>, comme on dit à Mamook<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_012:1"
+msgid "Bring me one of those fish from Cenote Moxutural, and I will see to the rest. Shouldn't take long for them to start biting with a golden stonefly nymph on your line."
+msgstr ""
+
+#. ja: 除草剤の材料、見つかったかい？
+#. de: Hast du die Zutat für das Unkrautmittel gefunden?
+#. fr: Tu as réussi à dégoter ce qu'il nous faut pour l'herbicide, ja<nbsp>?
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_015:1"
+msgid "So, how did you fare?"
+msgstr ""
+
+#. ja: ありがとう！<br>これだけあれば十分な量が作れそうだ。
+#. de: Hervorragend! Das sollte für die nächste Fuhre ausreichen.
+#. fr: Magnifique<nbsp>! Avec ça, on devrait pouvoir en fabriquer suf<shy>fi<shy>sam<shy>ment.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_016:1"
+msgid "Excellent! With this, I imagine we'll not want for deterrent for quite some time."
+msgstr ""
+
+#. ja: これまで雑草処理なんて、手作業ですぐ済む程度だった。<br>それが手が付けられなくなるほど広がるなんて、<br>正直いうと、嬉しい悲鳴なんだ。
+#. de: Bisher musste alles Unkraut mühsam per Hand gejätet werden. Um ehrlich zu sein, habe ich vor Freude geschrien, als ich erfuhr, dass es auch anders geht.
+#. fr: Jusqu'à présent, le désherbage ne pouvait se faire qu'à la main. Pour être honnête, j'ai hurlé de joie quand j'ai constaté que d'autres méthodes étaient envisageables.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_017:1"
+msgid "I can still remember when only a few hands were needed to quickly pick the weeds. That we need go to such lengths to contend with them can be frustrating, yet strangely gladdening."
+msgstr ""
+
+#. ja: なぜかって、それだけ生育環境が良くなったってことだからね。<br>この森のように、未来はお先真っ暗だと思っていたのに……<br>自分の胸にも、希望の種が芽吹きつつあるよ。
+#. de: Dieses Mittel macht uns zu Herren über die Schöpfung! Ein bisschen jedenfalls. Ich dachte, die Zukunft sei so dunkel wie dieser Wald, aber nun keimt die Saat der Hoffnung in mir.
+#. fr: Plus l'environnement est adéquat, plus nous pouvons le manipuler à notre guise. Moi qui croyais que l'avenir était aussi sombre que cette forêt, je constate avec plaisir que des graines d'espoir avaient été plantées dans mon cœur sans que je m'en aperçoive, ja.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_018:1"
+msgid "It is a reminder of the newfound bounty our land may provide given the proper care. Hope for a better tomorrow has taken root here in Yak T'el."
+msgstr ""
+
+#. ja: 土壌改良したことで、雑草まで元気になっちゃうなんて。<br>生育環境が良くなった手ごたえは感じられるけど、<br>大事な作物のためにはご退場願わないとね。
+#. de: Dank unserer Anstrengungen wird der Boden immer fruchtbarer und so wächst auch das Unkraut besser. Aber selbst dafür haben wir jetzt eine Lösung! Wir lassen uns von nichts unterkriegen!
+#. fr: Grâce à toi et à tous nos autres camarades, la terre est de plus en plus fertile, et les mauvaises herbes s'y font progressivement rares. Fais attention quand même à ne pas entraver la croissance de nos chères petites pousses en traînant trop près.
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_019:1"
+msgid "That's not to say our work has become easier, of course─the resilience of the weeds has seen to that."
+msgstr ""
+
+#. ja: 貴方が採ってきてくれた材料で、早速除草剤を作ってみるよ。<br>また必要になったら、手を貸してくれるかな。
+#. de: Ich lasse jetzt neues Unkrautmittel brauen. Das ist zwar bestimmt schnell aufgebraucht, aber ich zähle auf dich, wenn wir wieder neue Zutaten benötigen!
+#. fr: En tout cas, nous n'allons pas tarder à avoir de l'herbicide en quantité, grâce aux ingrédients que tu nous as ramenés<nbsp>! Je compte sur toi pour nous en rapporter encore plus la prochaine fois, ja<nbsp>!
+#. speaker: KAGEELJA
+msgctxt "quest/052/BanMam101_05261:TEXT_BANMAM101_05261_KAGEELJA_000_020:1"
+msgid "Now, if you'll excuse me, there are crops that want for tending, and weeds for wilting."
+msgstr ""

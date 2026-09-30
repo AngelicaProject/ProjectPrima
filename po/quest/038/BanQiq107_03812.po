@@ -1,0 +1,146 @@
+# quest/038/BanQiq107_03812 — « Making Scents» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ホパル古盤のコテルリ・パソリは、香水の素材を集めてほしいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Qhoterl Pasol braucht Zutaten für ein Duftwasser.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Qhoterl Pasol voudrait des ingrédients pour fabriquer du parfum.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_SEQ_00:1"
+msgid "Qhoterl Pasol has a nose for perfumes.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: コテルリ・パソリに依頼された品を納品
+#. de: Qhoterl Pasol die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Qhoterl Pasol
+#. kind: journal
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_SEQ_01:1"
+msgid "Deliver the requested items to Qhoterl Pasol."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>ミュリルの郷愁の採掘場で<sheet Item $n5 0>を採掘<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>ミュリルの郷愁の草刈場で<sheet Item $n5 0>を草刈<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>トゥシ・メキタ湖の水中で<sheet Item $n5 0>を刺突漁<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>In Mjrls Sehnsucht <sheet Item $n5 9> finden<else>Qhoterl Pasol den <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>In Mjrls Sehnsucht <sheet Item $n5 9> ernten<else>Qhoterl Pasol den <sheet Item $n5 9> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>Im Tusi Mek'ta <noun-de Item 1 $n5 1 4 1> fangen<else>Qhoterl Pasol <noun-de Item 1 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> à la Nostalgie de Mjrl<else>Livrer <noun-fr Item 2 $n5 2 1> à Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> à la Nostalgie de Mjrl<else>Livrer <noun-fr Item 2 $n5 2 1> à Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Harponner <noun-fr Item 1 $n5 1 1> dans le lac Tusi Mek'ta<else>Livrer <noun-fr Item 2 $n5 1 1> à Qhoterl Pasol</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine splendid amber at Mjrl's Regret<else>Deliver the splendid amber to Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine splendid amber at Mjrl's Regret<else>Deliver the splendid amber to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather splendid lavender at Mjrl's Regret<else>Deliver the splendid lavender to Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather splendid lavender at Mjrl's Regret<else>Deliver the splendid lavender to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Spearfish a splendid pirarucu in the depths of Lake Tusi Mek'ta<else>Deliver the splendid pirarucu to Qhoterl Pasol</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Spearfish a splendid pirarucu in the depths of Lake Tusi Mek'ta<else>Deliver the splendid pirarucu to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine splendid amber at Mjrl's Regret<else>Deliver the splendid amber to Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather splendid lavender at Mjrl's Regret<else>Deliver the splendid lavender to Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Spearfish a splendid pirarucu in the depths of Lake Tusi Mek'ta<else>Deliver the splendid pirarucu to Qhoterl Pasol</if></if></if></if>."
+msgstr ""
+
+#. ja: わたくしどもキタリ族の鼻の良さを、ご存知でしょか～？<br>真っ暗闇の中であっても、匂いだけで仲間を嗅ぎ分け、<br>その位置を知れるほどなので、ございまする～！
+#. de: Grabende Pfoten haben ja verdammt feine Nasen. Selbst im Stockdunkeln können andere Qitari an Geruch erkannt werden. Riechen sogar, wie weit sie weg stehen und in welcher Richtung.
+#. fr: Qitari avoir odorat très développé<nbsp>! Finaud finaud<nbsp>! Reconnaître odeur de camarades explorateurs entre mille dans cavernes ténébreuuuses<nbsp>!
+#. speaker: QHOTERLPASOL
+#. macro: <if $gn4>Mistress<else>Master</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_000:1"
+msgid "You're doubtless aware, <if $gn4>Mistress<else>Master</if> <split \" \" 1><string $gs1></split>, that we Qitari possess eminently keen noses. Even in pitch-black darkness, we can discern one of our own from another and locate them."
+msgstr ""
+
+#. ja: しかし、地下洞窟での探索では、<br>ガスなどで匂いが紛れる可能性がありましょ～。<br>それゆえ目印代わりの香水を、調合したいのでございまする～！
+#. de: Leider kommt vor, dass Gaswolken Geruch überdecken. Damit Qitari nicht Orientierung verlieren, wollen Duftwasser als Markierung verteilen.
+#. fr: Mais parfois, gaz nauséabonds des cavernes entraver odorat finaud<nbsp>! Qhoterl Pasol aussi alchimiste à heures perdues<nbsp>! Produire parfum suuurpuissant pour qu'explorateurs pouvoir continuer de se reconnaître entre eux<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_001:1"
+msgid "However, the caverns we explore can be filled with strange gases that confuse our sense of smell. To cut through this haze, we've taken to using a special perfume, which I would concoct with your assistance."
+msgstr ""
+
+#. ja: 調合に必要なのは、ミュリルの郷愁で採れる、<br>「<sheet Item 29522 0>」でございまする～。<br>それが3つもあれば、ひとまずは十分でございましょ～。
+#. de: Besorgst du dafür <sheet Item 29522 9> aus Mjrls Sehnsucht, ja? Drei sollten reichen.
+#. fr: Préparation du parfum nécessiter d'extraire trois <noun-fr Item 12 29522 2 1> pour donner odeuuur agréable<nbsp>! <split " " 1><string $gs1></split> trouver ça à Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_010:1"
+msgid "At Mjrl's Regret, it is possible to find amber─a key ingredient in the perfume. Will you not mine three pieces for me?"
+msgstr ""
+
+#. ja: 調合に必要なのは、ミュリルの郷愁で採れる、<br>「<sheet Item 29548 0>」でございまする～。<br>それが3つもあれば、ひとまずは十分でございましょ～。
+#. de: Besorgst du dafür <sheet Item 29548 9> aus Mjrls Sehnsucht, ja? Drei sollten reichen.
+#. fr: Préparation du parfum nécessiter de récolter trois <noun-fr Item 12 29548 2 1> pour donner odeuuur agréable<nbsp>! <split " " 1><string $gs1></split> trouver ça à Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_020:1"
+msgid "At Mjrl's Regret, it is possible to find lavender─a key ingredient in the perfume. Will you not gather three sprigs for me?"
+msgstr ""
+
+#. ja: 調合に必要なのは、トゥシ・メキタ湖に生息する、<br>「<sheet Item 29574 0>」でございまする～。<br>なんでも刺突漁とやらで、獲れるとか～。
+#. de: Besorgst du dafür <noun-de Item 5 29574 1 4 1>, ja? Fängst du ganz leicht mit Speerfischen im Tusi Mek'ta!
+#. fr: Préparation du parfum nécessiter de harponner <noun-fr Item 12 29574 1 1> pour donner odeuuur agréable<nbsp>! <split " " 1><string $gs1></split> trouver ça dans lac Tusi Mek'ta<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_030:1"
+msgid "In the waters of Lake Tusi Mek'ta dwells a fish called the pirarucu─a key ingredient in the perfume. Will you not catch one for me?"
+msgstr ""
+
+#. ja: たかが香水～、されど香水～。<br>これは探索の安全性を高めるための施策ゆえ、<br>どうか、ご協力くださいましな～。
+#. de: Kommt dir vielleicht komisch vor, aber glaub, Duftwasser rettet Leben!
+#. fr: Parfum agréable aux narines rendre exploration de cavernes plus sûûûre<nbsp>! Collaboration de gentil<if $gn4>le</if> <split " " 1><string $gs1></split> être très appréciée<nbsp>!
+#. speaker: QHOTERLPASOL
+#. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_040:1"
+msgid "That will suffice to make a goodly batch of the stuff to help keep us safe during our explorations. Much obliged, good <if $gn4>madam<else>sir</if>!"
+msgstr ""
+
+#. ja: 本クエストを進行するためには、<br>クエスト「「刺突漁」で魚を狙え」を完了し、<br>「刺突漁」を開放しておく必要があります。
+#. de: Um diesen Auftrag spielen zu können, muss das Speerfischen im Auftrag „Wie ein Fischer im Wasser“ erlernt worden sein.
+#. fr: Il est nécessaire de terminer la quête “La pêche au harpon, c'est bon” pour progresser dans celle-ci.
+#. speaker: SYSTEM
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_SYSTEM_100_040:1"
+msgid "In order to proceed with this quest, you must first complete the quest “A New Fishing Ex-spear-ience” and unlock spearfishing."
+msgstr ""
+
+#. ja: 香水の調合に必要なのは、ミュリルの郷愁で採れる、<br>「<sheet Item 29522 0>」でございまする～。<br>それを3つほど調達してくださいまし～。
+#. de: Besorgst du drei <sheet Item 29522 9> aus Mjrls Sehnsucht, ja?
+#. fr: Préparation du parfum nécessiter d'extraire trois <noun-fr Item 12 29522 2 1> pour donner odeuuur agréable<nbsp>! <split " " 1><string $gs1></split> trouver ça à Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_100_010:1"
+msgid "It is possible to find amber at Mjrl's Regret. I'd be much obliged if you could obtain three pieces for me."
+msgstr ""
+
+#. ja: 香水の調合に必要なのは、ミュリルの郷愁で採れる、<br>「<sheet Item 29548 0>」でございまする～。<br>それを3つほど調達してくださいまし～。
+#. de: Besorgst du drei <sheet Item 29548 9> aus Mjrls Sehnsucht, ja?
+#. fr: Préparation du parfum nécessiter de récolter trois <noun-fr Item 12 29548 2 1> pour donner odeuuur agréable<nbsp>! <split " " 1><string $gs1></split> trouver ça à Nostalgie de Mjrl<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_100_020:1"
+msgid "It is possible to find lavender at Mjrl's Regret. I'd be much obliged if you could obtain three sprigs for me."
+msgstr ""
+
+#. ja: 香水の調合に必要なのは、トゥシ・メキタ湖に生息する、<br>「<sheet Item 29574 0>」でございまする～。<br>なんでも刺突漁とやらで、獲れるとか～。
+#. de: Besorgst du <noun-de Item 5 29574 1 4 1>, ja? Fängst du ganz leicht mit Speerfischen im Tusi Mek'ta!
+#. fr: Préparation du parfum nécessiter de harponner <noun-fr Item 12 29574 1 1> pour donner odeuuur agréable<nbsp>! <split " " 1><string $gs1></split> trouver ça dans lac Tusi Mek'ta<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_100_030:1"
+msgid "It is possible to find pirarucu in the waters of Lake Tusi Mek'ta. I'd be much obliged if you could catch one for me."
+msgstr ""
+
+#. ja: この香りは……どうやら、首尾は上々のようで～。<br>ささっ、素材をお渡しくださいましな～。
+#. de: Bringst du Ware für guten Duft?
+#. fr: (renifle) (renifle)... Sentir bon, très bon<nbsp>! <split " " 1><string $gs1></split> avoir rapporté de quoi fabriquer parfum<nbsp>?
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_050:1"
+msgid "\\<sniff> \\<sniff> You've returned with what I seek, and no mistake. Now, if I might examine it..."
+msgstr ""
+
+#. ja: おお、野性的な香りが一段と強く～！<br>これほどの品なら、探索へ向かう者にかける香水が、<br>簡単に調合できましょ～。
+#. de: Ah, riecht stark nach Wildnis! Grabende Pfoten können sich gut im Dunkeln riechen, wenn sie damit markiert werden.
+#. fr: Ouaaah<nbsp>! Odeuuur tellement puissante<nbsp>! Percer narines de Qhoterl Pasol<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_060:1"
+msgid "My, such a potent smell! This will serve most splendidly, oh yes!"
+msgstr ""
+
+#. ja: このままでは紛らわしいので、嗅ぎ分けやすく加工して……。<br>ふふっ、調香師の腕の見せ所でございまするな～！
+#. de: Jetzt muss Qhoterl nur noch Ware in Flüssigkeit auflösen, damit leicht versprühen können. Bis bald!
+#. fr: Avec parfum fabriqué à partir de ça, explorateurs travailler tran<shy>quil<shy>le<shy>ment dans cavernes sombres<nbsp>! <split " " 1><string $gs1></split> gentil<if $gn4>le</if> gentil<if $gn4>le</if><nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq107_03812:TEXT_BANQIQ107_03812_QHOTERLPASOL_000_061:1"
+msgid "With a spot of refining, it will make a scent that is unmistakable in the caverns. Hehe, 'tis time once again to put my skills as a perfumer to use!"
+msgstr ""

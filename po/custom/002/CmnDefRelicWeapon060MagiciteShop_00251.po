@@ -1,0 +1,219 @@
+# custom/002/CmnDefRelicWeapon060MagiciteShop_00251
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: フフ……わかっていますよ。<br>さぁ、どの武器の「マハトマ」が欲しいのですか？<br>対価があれば、お譲りいたしましょう。
+#. de: Also gut, was kann ich für dich tun? Für den entsprechenden Betrag besorg ich dir jedes Mahatma.
+#. fr: Vous êtes ici pour mes mar<shy>chan<shy>di<shy>ses, n'est-ce pas<nbsp>? Très bien, montrez-moi la monnaie d'échange et je vous fournirai des mahatma pour l'arme du zodiaque que vous désirez.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_000:1"
+msgid "Well, well, you've come for my wares, haven't you? So I thought, so I thought. Well, produce my payment, and I will happily provide mahatma for whatever Zodiac Weapon you wish."
+msgstr ""
+
+#. ja: マハトマを入手する武器を選択してください
+#. de: Wähle die Waffe, für die du ein Mahatma erwerben möchtest.
+#. fr: Choisissez une arme du zodiaque
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_MENU_TITLE:1"
+msgid "Select a Zodiac Weapon to receive mahatma."
+msgstr ""
+
+#. ja: <if ($n1 == 9491)>「<sheet Item 9491 0>」と「<sheet Item 9500 0>」のマハトマを入手<else>「<sheet Item $n1 0>」のマハトマを入手</if>（残り<num $n2>個）
+#. de: <if ($n1 == 9491)>Mahatma für <sheet Item 9491 9> und <sheet Item 9500 9> erwerben<else>Mahatma für <sheet Item $n1 9> erwerben</if> (noch <num $n2>)
+#. fr: <if ($n1 == 9491)><sheet Item 9491 9> et <sheet Item 9500 9><else><sheet Item $n1 9></if> (<num $n2> mahatma <if ($n2 == 1)>restante<else>restantes</if>)
+#. macro: <if ($n1 == 9491)><sheet Item 9491 9> and <sheet Item 9500 9><else><sheet Item $n1 9></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 9491 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet Item 9491 9> — a value from a game data sheet, such as a name; sheet = Item, row = 9491, column = 9 (game data: keep it; it may move or repeat)
+#. macro: <sheet Item 9500 9> — a value from a game data sheet, such as a name; sheet = Item, row = 9500, column = 9 (game data: keep it; it may move or repeat)
+#. macro: <sheet Item $n1 9> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_MENU_CHOICES:1"
+msgid "<if ($n1 == 9491)><sheet Item 9491 9> and <sheet Item 9500 9><else><sheet Item $n1 9></if> (<num $n2> remaining)."
+msgstr ""
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_MENU_CANCEL:1"
+msgid "Nothing."
+msgstr ""
+
+#. ja: 「<sheet Relic6Magicite $n1 0>（<if ($n4 == 9491)><sheet Item 9491 0>と<sheet Item 9500 0><else><sheet Item $n4 0></if>用）」と「<sheet Item $n2 0>」×<num $n3>を交換しますか？
+#. de: Ein <sheet Relic6Magicite $n1 0> (für <if ($n4 == 9491)><sheet Item 9491 9> und <sheet Item 9500 9><else><noun-de Item 2 $n4 1 4 1></if>) gegen <num $n3> <noun-de Item 5 $n2 2 4 1> eintauschen?
+#. fr: Échanger <kilo $n3 "<nbsp>"> <noun-fr Item 12 $n2 2 1> contre une <lower><sheet Relic6Magicite $n1 0></lower> pour <if ($n4 == 9491)><noun-fr Item 12 9491 1 1> et <noun-fr Item 12 9500 1 1><else><noun-fr Item 2 $n4 1 1></if><nbsp>?
+#. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 9491)><noun-en Item 3 9491 1 1> and <noun-en Item 3 9500 1 1><else><capitalize><noun-en Item 3 $n4 1 1></capitalize></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 9491 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 3 9491 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = 9491, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 9500 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = 9500, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <capitalize><noun-en Item 3 $n4 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <noun-en Item 3 $n4 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 4, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_YESNO_MESSAGE:1"
+msgid "Trade <kilo $n3 \",\"> <noun-en Item 3 $n2 2 1> for <sheet Relic6Magicite $n1 0> (<if ($n4 == 9491)><noun-en Item 3 9491 1 1> and <noun-en Item 3 9500 1 1><else><capitalize><noun-en Item 3 $n4 1 1></capitalize></if>)?"
+msgstr ""
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_YESNO_YES:1"
+msgid "Yes"
+msgstr ""
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_YESNO_NO:1"
+msgid "No"
+msgstr ""
+
+#. ja: ……いいでしょう、取引成立です。<br><sheet Relic6Magicite $n1 0>をお渡ししましょう。<br>これは、魂の「<sheet Relic6Magicite $n1 1>」を目覚めさせると言われています。
+#. de: Wunderbar! Hier ist dein <sheet Relic6Magicite $n1 0>. Man sagt, es erwecke die <sheet Relic6Magicite $n1 1>, die in deiner Zodiak-Waffe schlummert.
+#. fr: Affaire conclue. Voici votre <lower><sheet Relic6Magicite $n1 0></lower>, un cristal qui saura éveiller un <sheet Relic6Magicite $n1 1> dans la conscience de votre arme.
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <sheet Relic6Magicite $n1 1> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_120:1"
+msgid "So we strike our accord. Here is your <sheet Relic6Magicite $n1 0>─a crystal said to awaken a sense of <sheet Relic6Magicite $n1 1> within souls."
+msgstr ""
+
+#. ja: さぁ、「<sheet Relic6Magicite $n1 0>」は、武器に装着しておきましたよ。<br>どうぞお持ちください。
+#. de: Ich setze es dir direkt in deine Waffe ein, guter Service ist schließlich mein Markenzeichen. Viel Spaß beim Kämpfen! 
+#. fr: Je me suis permis de la fixer à votre arme. C'est à vous de jouer, maintenant<nbsp>!
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_121:1"
+msgid "I've taken the liberty of affixing it to your arm. Now go forth and wield it!"
+msgstr ""
+
+#. ja: 「<sheet Relic6Magicite $n1 0>」を武器に装着しました。<br>「<sheet Relic6Magicite $n1 0>」を装着した武器を装備した状態で、<br>各種コンテンツを攻略すると、武器の「共鳴度」が高まります。
+#. de: Deine Zodiak-Waffe wurde mit einem <sheet Relic6Magicite $n1 0> versehen. Durch das Kämpfen mit der so präparierten Waffe kannst du die ätherische Konkordanz zwischen Mahatma und Waffe steigern.
+#. fr: Une <lower><sheet Relic6Magicite $n1 0></lower> a été fixée à votre arme du zodiaque. En participant à différentes missions, vous ferez augmenter son degré de résonance et permettrez ainsi à son âme de s'éveiller progressivement.
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_130:1"
+msgid "<sheet Relic6Magicite $n1 0> has been attached to your Zodiac Weapon. Completing certain activities with it equipped will now increase soul resonance."
+msgstr ""
+
+#. ja: 共鳴度を貯めると、ゾディアックウェポンが目覚め始めます。<br>「ゾディアックグラス」を用いることで、<br>武器の目覚めの度合いを、視覚的に確認することができます。
+#. de: Den Resonanzgrad kannst du jederzeit mit deinem Zodiak-Okular überprüfen.
+#. fr: Pour vérifier le degré de résonance atteint avec chaque type de mahatma, utilisez la lunette du zodiaque qui se trouve dans l'inventaire.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_131:1"
+msgid "As you increase the level of soul resonance, the sentience in your weapon will begin to awake. By using the Zodiac glass, it is possible to verify your progress with each variety of mahatma."
+msgstr ""
+
+#. ja: 12個すべての「マハトマ」を順番に用いて、<br>共鳴度を最大限に高め、武器を十分に目覚めさせたら、<br>「ジャルザーン」の元に行きましょう。
+#. de: Insgesamt gibt es 12 Arten von Mahatmas. Jede Zodiak-Waffe muss durch die vollständige Resonanz mit allen 12 Mahatmas erweckt werden. Ist dies geschehen, kannst du die Waffe zu Jalzahn bringen.
+#. fr: Une fois que vous aurez atteint le degré de résonance maximum avec les douze types de mahatma, allez mettre Jalzahn au courant.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_132:1"
+msgid "Once you have achieved full soul resonance with all twelve varieties of mahatma and your Zodiac Weapon has sufficiently awakened, return to Jalzahn."
+msgstr ""
+
+#. ja: ……おやおや、その武器の「マハトマ」はもう無いようです。<br>まったく、アナタもがんばりますね。
+#. de: Du hast bereits das letzte Mahatma für diese Waffe erworben, <if $gn4>meine Liebe<else>mein Lieber</if>. Dein Durchhaltevermögen ist wirklich beachtlich!
+#. fr: Je vous ai déjà fourni tous les types de mahatma différentes pour cette arme. On peut dire que vous ne chômez pas<nbsp>!
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_300:1"
+msgid "I'm afraid you've exhausted my supply of mahatma for that particular arm─and for that, you may color me deeply impressed!"
+msgstr ""
+
+#. ja: この武器に適した「マハトマ」はもうありません。<br>最後の「マハトマ」の共鳴度が貯まったら、<br>ハーストミルの「ジャルザーン」の元にいきましょう。
+#. de: Es gibt kein neues Mahatma mehr, das noch in deine Waffe eingesetzt werden könnte. Maximiere den Resonanzgrad des aktuellen Mahatmas und bringe die Waffe dann zu Jalzahn.
+#. fr: Vous ne pouvez plus fixer de nouvelles mahatma à votre arme. Lorsque vous aurez augmenté le degré de résonance de la dernière à son maximum, allez mettre Jalzahn au courant.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_310:1"
+msgid "There are no more varieties of mahatma that can be affixed to your arm. Once you have achieved full soul resonance with the final piece, return to Jalzahn in Hyrstmill."
+msgstr ""
+
+#. ja: ……おやおや、「<sheet Item 9491 0>」と、<br>「<sheet Item 9500 0>」が揃っていないようです。<br>ふたつ見せていただかねば、「マハトマ」は渡せませんね。
+#. de: Es tut mir leid, aber ich kann das Mahatma nur einsetzen, wenn du dein Schwert <i>und</i> deinen Schild angelegt hast. Ansonsten funktioniert das Anschwingen nicht für beide Gegenstände. Darf ich dich bitten, dich mit <sheet Item 9491 9> und <noun-de Item 2 9500 1 3 1> auszurüsten?
+#. fr: Excalibur et Aegis sont indissociables. Je crains que nous ne puissions faire affaire tant que vous ne me montrerez pas les deux en même temps.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_030:1"
+msgid "Excalibur and the Aegis Shield are an inseparable pair. I'm afraid we cannot do business unless they are both present before me."
+msgstr ""
+
+#. ja: 「マハトマ」を交換したい場合は、<br>片手剣と盾の「ゾディアックウェポン」を所持した状態で、<br>「レモン」に話しかけましょう。
+#. de: Rüste dich mit Schwert und Schild aus und sprich dann erneut mit Remon, um das Mahatma zu erwerben.
+#. fr: Pour acquérir des mahatma, adressez-vous à Remon équipé<if $gn4>e</if> d'Excalibur et d'Aegis.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_040:1"
+msgid "In order to purchase mahatma, speak to Remon with both Excalibur and the Aegis Shield equipped, in your Armoury Chest, or in your inventory."
+msgstr ""
+
+#. ja: 「<sheet Item $n1 0>」が足りないじゃないですか！<br>ボクが何のために、取引に応じていると思っているのですか！？
+#. de: Hm, du hast leider nicht genug <noun-de Item 5 $n1 2 1 1> ... Einen Rabatt kann ich dir leider nicht anbieten, da könnte ja jeder kommen. Sieh doch später noch mal vorbei.
+#. fr: Vous croyez que je travaille pour la gloire des Douze, peut-être<nbsp>? Eh bien, vous vous trompez<nbsp>! Revenez me voir quand vous aurez plus <noun-fr Item 8 $n1 2 1><nbsp>!
+#. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_050:1"
+msgid "You do not have nearly enough <noun-en Item 3 $n1 2 1>. Are you trying to cheat me!?"
+msgstr ""
+
+#. ja: 「<sheet Relic6Magicite $n1 0>」の共鳴が足りず、<br>魂の「<sheet Relic6Magicite $n1 1>」がまだ目覚めていませんね。<br>これでは、次の「マハトマ」を装着できませんよ？
+#. de: Das <sheet Relic6Magicite $n1 0> und deine Zodiak-Waffe resonieren noch nicht vollständig. Demzufolge ist auch die <sheet Relic6Magicite $n1 1> in der Waffe noch nicht erwacht. Und vorher wäre es sinnlos, ein neues Mahatma einzusetzen.
+#. fr: La <lower><sheet Relic6Magicite $n1 0></lower> n'a pas encore com<shy>plè<shy>te<shy>ment éveillé le <sheet Relic6Magicite $n1 1> dans la conscience de votre arme. Vous devez d'abord atteindre le degré de résonance maximum pour que je puisse y fixer une nouvelle mahatma.
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <sheet Relic6Magicite $n1 1> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_060:1"
+msgid "It would seem the <sheet Relic6Magicite $n1 0> has yet to awaken the sense of <sheet Relic6Magicite $n1 1> in your weapon. Until you've attained full soul resonance, I simply can't affix the next piece."
+msgstr ""
+
+#. ja: 武器に装着している「マハトマ」によって、<br>武器を十分に目覚めさせないと、<br>新たな「マハトマ」を入手することはできません。
+#. de: Das nächste Mahatma kannst du erst dann von Remon einsetzen lassen, wenn das aktuelle maximal in Schwingungen versetzt worden ist.
+#. fr: Vous ne pouvez fixer de nouvelle mahatma sur votre arme du zodiaque tant que celle qui y est déjà attachée n'a pas atteint le degré de résonance maximum.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_070:1"
+msgid "You cannot affix new mahatma to your Zodiac Weapon until you have achieved full soul resonance with the piece currently attached."
+msgstr ""
+
+#. ja: なお、「ゾディアックグラス」を用いることで、<br>武器の目覚めの度合いを、視覚的に確認することができます。
+#. de: Den Resonanzgrad kannst du jederzeit mit deinem Zodiak-Okular überprüfen.
+#. fr: Pour vérifier le degré de résonance atteint par une mahatma, utilisez la lunette du zodiaque qui se trouve dans l'inventaire.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_071:1"
+msgid "By using the Zodiac glass, it is possible to visually verify your progress with each variety of mahatma."
+msgstr ""
+
+#. ja: 「ゾディアックグラス」をなくした際は、<br>「ドレイク」に新たな物を用意してもらいましょう。
+#. de: Solltest du das Okular nicht mehr besitzen, stellt Drake in Mühlenhain dir Ersatz zur Verfügung.
+#. fr: Notez que si vous avez égaré votre lunette du zodiaque, vous pourrez en obtenir une nouvelle en vous adressant à Drake.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_SYSTEM_000_072:1"
+msgid "If you misplace your Zodiac glass, you may obtain a replacement by speaking with Drake at Hyrstmill."
+msgstr ""
+
+#. ja: 入手するマハトマを選択してください
+#. de: Welches Mahatma möchtest du erwerben?
+#. fr: Choisissez un type de mahatma
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_MAGICITE_MENU_TITLE:1"
+msgid "Select the mahatma you wish to obtain."
+msgstr ""
+
+#. ja: <sheet Relic6Magicite $n1 0>（覚醒済み）
+#. de: <sheet Relic6Magicite $n1 0> (Resonanzgrad maximiert)
+#. fr: <sheet Relic6Magicite $n1 0> (Terminé)
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_MAGICITE_DONE:1"
+msgid "<sheet Relic6Magicite $n1 0>. (Complete)"
+msgstr ""
+
+#. ja: <sheet Relic6Magicite $n1 0>（現在入手可能）
+#. de: <sheet Relic6Magicite $n1 0> (zum Verkauf)
+#. fr: <sheet Relic6Magicite $n1 0> (Disponible)
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_MAGICITE_NEXT:1"
+msgid "<sheet Relic6Magicite $n1 0>. (Available)"
+msgstr ""
+
+#. ja: <sheet Relic6Magicite $n1 0>
+#. de: <sheet Relic6Magicite $n1 0>
+#. fr: <sheet Relic6Magicite $n1 0>
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_MAGICITE_FUTURE:1"
+msgid "<sheet Relic6Magicite $n1 0>."
+msgstr ""
+
+#. ja: ……おやおや、もう忘れてしまったのですか？<br><sheet Relic6Magicite $n1 0>は、すでにお渡ししましたよ。
+#. de: Dein Gedächtnis ist nicht das beste, hm? Das <sheet Relic6Magicite $n1 0> hast du bereits bei mir erworben.
+#. fr: Je vous ai déjà procuré une <lower><sheet Relic6Magicite $n1 0></lower>, vous ne vous souvenez pas<nbsp>?
+#. macro: <sheet Relic6Magicite $n1 0> — a value from a game data sheet, such as a name; sheet = Relic6Magicite, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_070:1"
+msgid "Aren't you forgetting that I already gave you <sheet Relic6Magicite $n1 0>?"
+msgstr ""
+
+#. ja: それはまだ、アナタの武器には馴染みませんよ……。<br>アナタの武器を、効率よく目覚めさせるのには、<br>装着するマハトマの「順番」が重要なのです。
+#. de: Tut mir leid, aber dafür ist es noch zu früh. Um deine Zodiak-Waffe vollständig zu erwecken, musst du die Mahatmas in der richtigen Reihenfolge anbringen lassen.
+#. fr: Chaque chose en son temps. Vous devez utiliser les mahatma dans l'ordre adéquat, sans quoi leurs effets seront atténués et vous ne pourrez éveiller la conscience de votre arme du zodiaque.
+msgctxt "custom/002/CmnDefRelicWeapon060MagiciteShop_00251:TEXT_CMNDEFRELICWEAPON060MAGICITESHOP_00251_REMON_000_071:1"
+msgid "A bit premature for that, I think. You must use mahatma in the proper order, or their effects will be lessened and the sentience in your weapon will remain unstirred."
+msgstr ""

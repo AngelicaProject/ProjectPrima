@@ -1,0 +1,189 @@
+# quest/039/LucKsa104_03944 — «Lost No Longer» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: ウトヤ前哨地のドミタルは、冒険者に「ロストアクション」についての説明を行いたいようだ。
+#. de: Dmitar möchte dir etwas über besondere Techniken der Königinnenwache erklären.
+#. fr: Dmitar souhaite vous parler des éclats oubliés.
+#. kind: journal
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_SEQ_00:1"
+msgid "Dmitar would share news of a peculiar find in the southern front."
+msgstr ""
+
+#. ja: <if ($n1 < $n2)><sheet Item 30886 0>を入手<else>ドミタルに<sheet Item 30886 0>を見せる</if>
+#. de: <if ($n1 < $n2)><capitalize><noun-de Item 1 30886 1 4 1></capitalize> erbeuten<else>Dmitar <noun-de Item 2 30886 1 4 1> zeigen</if>
+#. fr: <if ($n1 < $n2)>Obtenir <noun-fr Item 1 30886 1 1><else>Montrer <noun-fr Item 1 30886 1 1> à Dmitar</if>
+#. kind: objective
+#. macro: <if ($n1 < $n2)>Obtain a forgotten fragment<else>Deliver the forgotten fragment to Dmitar</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_TODO_00:1"
+msgid "<if ($n1 < $n2)>Obtain a forgotten fragment<else>Deliver the forgotten fragment to Dmitar</if>."
+msgstr ""
+
+#. ja: 本クエストを進行するためには、<br>レジスタンスランクが「<num $n1>」以上である必要があります。
+#. de: Um mit diesem Auftrag fortzufahren, muss mindestens Widerstandsrang <num $n1> erreicht sein.
+#. fr: Votre rang de résistant<if $gn4>e</if> doit être au moins de <num $n1> pour commencer cette quête.
+#. speaker: SYSTEM
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_SYSTEM_100_000:1"
+msgid "A Resistance rank of <num $n1> is required to proceed with this quest."
+msgstr ""
+
+#. ja: 「レジスタンスの司令部付き将校」に戦果を報告することで、<br>レジスタンスランクを上げることが可能です。
+#. de: Steigere deinen Widerstandsrang, indem du dem Strategieoffizier des Widerstands von deinem im Kampf gewonnenen Wissen berichtest.
+#. fr: Pour faire grimper votre rang de résistant<if $gn4>e</if>, adressez-vous à l'officier d'état-major.
+#. speaker: SYSTEM
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_SYSTEM_100_001:1"
+msgid "Resistance rank can be increased by reporting to the Resistance commander after earning sufficient mettle."
+msgstr ""
+
+#. ja: 解放者殿！　お会いできてよかった！<br>もうひとつ貴方様のお耳に入れておきたいことがあるのですよ。
+#. de: Ah, <if $gn4>die Befreierin<else>der Befreier</if>. Hast du mit dem Strategieoffizier gesprochen? Gut. Ich habe wieder eine wichtige Information für dich.
+#. fr: <split " " 1><string $gs1></split><nbsp>! Quelle chance que vous passiez par là<nbsp>! J'ai eu vent d'une nouvelle qui vous intéressera grandement<nbsp>!
+#. speaker: DMITAR
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_000:1"
+msgid "You've come at a good time, Blade <split \" \" 2><string $gs1></split>. I have a rather interesting report to share with you."
+msgstr ""
+
+#. ja: 戦場に出た兵からの報告で、<br>かつてボズヤ女王に仕えた衛士たちが用いていたという、<br>特殊なシャードが、今も現存していることが判明したんです！
+#. de: Von der Front erreichen uns Berichte, dass besondere Kristallsplitter, wie sie einst die königliche Leibgarde einsetzte, gesichtet wurden.
+#. fr: On dit qu'autrefois, les lames de Gunnhildr utilisaient des éclats de cristaux particuliers pour se battre. Pour tout vous dire, nous pensions que c'était une légende, mais des soldats nous ont affirmé en avoir trouvé sur le champ de bataille<nbsp>!
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_001:1"
+msgid "While out on reconnaissance, our scouts happened upon relics we confirmed once belonged to Gunnhildr's Blades!"
+msgstr ""
+
+#. ja: なんでも、エーテルが結晶化したクリスタルの中には、<br>記憶が宿るという、不思議な特性を持つものがあるとか……。<br>かつてのボズヤにも、そうしたシャードが存在したのです。
+#. de: Geschichten über solch einen kristallisierten Äther, in dem Erinnerungen gespeichert sind, kursieren auf allen Kontinenten. Aber sie existieren eben auch in Bozja.
+#. fr: D'un point de vue purement technique, il s'agirait d'éther condensé aux propriétés étranges et qui renferme des souvenirs. Mais ce n'est pas tout...
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_002:1"
+msgid "It was long believed the queen's guard possessed crystals within which they stored the knowledge of their fighting techniques, and this discovery has removed all doubt. These forgotten fragments, as we call them, may very well turn the tide of the war in our favor."
+msgstr ""
+
+#. ja: 古の衛士たちは、このシャードに己が磨いた技や魔法を、<br>記憶させていたそうです。<br>おそらくは「覗覚石」に用いられた技術も応用して。
+#. de: Die alte Leibgarde nutzte diese Splitter, um ihr Wissen über Kampftechniken und Zaubersprüche weiterzugeben. Über die genauen Hintergründe kann ich nichts sagen, aber sie funktionieren wohl so ähnlich wie die uns bekannten Kristallfokusse.
+#. fr: Les guerriers de l'ancienne Bozja y insufflaient l'essence des techniques de combat qu'ils étaient parvenus à maîtriser. Probablement grâce à une magie similaire à celle qui permet d'utiliser les gemmes de scrutation.
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_003:1"
+msgid "You see, much to our surprise, Master Gerolt claims to have experience working with similar crystals, and believes that the memories contained within can be extracted."
+msgstr ""
+
+#. ja: 私たちは、この失われた英知が収められた結晶を、<br>「ロストシャード」と命名……。<br>ゲロルト殿の協力を得て、記憶の抽出法の確立に挑んでおりました。
+#. de: Ich habe diese Kristallsplitter Frontsplitter genannt und Gerolt um Hilfe gebeten, die darin enthaltenen Erinnerungen zu extrahieren.
+#. fr: Comme nous croyions avoir perdu ce savoir d'antan, nous avons appelé ces cristaux des “éclats oubliés”. Nous avons ensuite demandé à maître Gerolt de construire un appareil capable d'extraire leur contenu, et...
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_004:1"
+msgid "He has set fast to work on a means to do so, and assured us it won't be long before their secrets are revealed to us."
+msgstr ""
+
+#. ja: そして先ほど、抽出に成功したとの朗報が入ったのです！<br>ロストシャードより抽出された、古の技と魔法……<br>その名も、「ロストアクション」！
+#. de: Gerade eben habe ich Nachricht erhalten, dass die Extraktion geglückt ist! Und tatsächlich, die Splitter enthalten Kampftechniken und Zaubersprüche der alten Leibgarde: <i>bislang verschollene Kommandos</i>!
+#. fr: Il vient justement d'y parvenir<nbsp>! Tous les secrets que recèlent ces artefacts sont désormais à portée de main<nbsp>!
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_005:1"
+msgid "With their weapons and techniques at your command, you would be a true successor to the legacy of Gunnhildr's Blades."
+msgstr ""
+
+#. ja: ぜひとも、解放者殿にも「ロストアクション」を、<br>戦場でご活用いただきたいと考えております。<br>よければ抽出の手順をお試しいただきたく……。
+#. de: Sie wären dir auf dem Schlachtfeld sicherlich eine große Hilfe. Vielleicht machen sie den Unterschied zwischen Leben und Tod. Was meinst du? Willst du wissen, wie man sie extrahiert?
+#. fr: Je tiens à ce que vous, <if $gn4>la grande libératrice<else>le grand libérateur</if>, puissiez en faire usage lors de vos combats. Que diriez-vous d'essayer d'extraire le savoir contenu dans une de ces merveilles<nbsp>?
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_006:1"
+msgid "This assumes you are able to procure more of these fragments, of course."
+msgstr ""
+
+#. ja: それでは、まず「ロストシャード」の確保ですね！<br>シャードに込められた魔力に惹かれるのか、<br>野生の魔物が蓄えこんでいるようなんです。
+#. de: Gut. Finde zuerst einen Frontsplitter. Sie befinden sich in symbiotischer Verbindung mit den wilden Bestien dieser Region und sind mit ihnen verwachsen.
+#. fr: Parfait<nbsp>! Pour commencer, il vous faudra tout d'abord en trouver un<nbsp>! Pour cela, je vous conseille d'abattre quelques monstres. Étrangement, ils sont comme attirés par ces cristaux. Donc là où vous trouverez les uns, vous trouverez sûrement les autres.
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_007:1"
+msgid "Judging by our scouts' report, it will not be an easy task. It would appear that, wherever they could be found, formidable beasts were not far behind."
+msgstr ""
+
+#. ja: 戦場の魔物などから、<br>「<sheet Item 30886 0>」を回収してきていただけますか？<br>その後の手順は、回収後に改めてご説明させていただきますね。
+#. de: Erlege also ein Biest auf dem Schlachtfeld und sammle so einen Splitter ein. Bringe ihn zu mir und ich werde dir alles Weitere erklären.
+#. fr: Revenez me voir lorsque vous aurez déniché un de ces éclats oubliés non identifiés de perfectionnement. Je vous expliquerai le reste de la marche à suivre.
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_008:1"
+msgid "Still, it may prove beneficial to rid the battlefield of such creatures, not only for the sake of our fellow soldiers, but for the chance to acquire any fragments that may be in the vicinity. I wish you the best of luck."
+msgstr ""
+
+#. ja: 「未鑑定ロストシャード」は、フィールドの魔物を討伐するほか、<br>スカーミッシュやクリティカルエンゲージメントなどの攻略、<br>マーケットボード、トレードなどの利用により入手できます。
+#. de: Beteilige dich an der Südfront an Scharmützeln und kritischen Gefechten, und erbeute Frontsplitter von streunenden Kreaturen. Mit etwas Glück können sie auch am Marktbrett erworben oder direkt mit anderen Spielern gehandelt werden.
+#. fr: Vous pouvez obtenir des éclats oubliés non identifiés en abattant des monstres sur le champ de bataille, en participant à des escarmouches ou à des af<shy>fron<shy>te<shy>ments cruciaux, ou encore en les échangeant sur les marchés à partir des tableaux des ventes.
+#. speaker: SYSTEM
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_SYSTEM_000_010:1"
+msgid "Unidentified forgotten fragments can be obtained from felling monsters in the wild, as well as from skirmishes and critical engagements. They can also be traded or sold on the market board."
+msgstr ""
+
+#. ja: 戦場の魔物などから、<br>「<sheet Item 30886 0>」を回収してきていただけますか？<br>その後の手順は、回収後に改めてご説明させていただきますね。
+#. de: Hast du den Bestien auf dem Schlachtfeld <noun-de Item 1 30886 1 4 1> entreißen können? Nein? Dann komm wieder, wenn du es vollbracht hast.
+#. fr: Pourriez-vous essayer de trouver un éclat oublié non identifié de perfectionnement en abattant quelques monstres à l'extérieur de l'avant-poste<nbsp>? Ainsi, je pourrai vous expliquer comment on extrait le savoir qu'il contient.
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_020:1"
+msgid "If you can find even a single fragment, we can begin the next step."
+msgstr ""
+
+#. ja: 「未鑑定ロストシャード」は、フィールドの魔物を討伐するほか、<br>スカーミッシュやクリティカルエンゲージメントなどの攻略、<br>マーケットボード、トレードなどの利用により入手できます。
+#. de: Beteilige dich an der Südfront an Scharmützeln und kritischen Gefechten, und erbeute Frontsplitter von streunenden Kreaturen. Mit etwas Glück können sie auch am Marktbrett erworben oder direkt mit anderen Spielern gehandelt werden.
+#. fr: Vous pouvez obtenir des éclats oubliés non identifiés en abattant des monstres sur le champ de bataille, en participant à des escarmouches ou à des af<shy>fron<shy>te<shy>ments cruciaux, ou encore en les échangeant sur les marchés à partir des tableaux des ventes.
+#. speaker: SYSTEM
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_SYSTEM_000_021:1"
+msgid "Unidentified forgotten fragments can be obtained from felling monsters in the wild, as well as from skirmishes and critical engagements. They can also be traded or sold on the market board."
+msgstr ""
+
+#. ja: いかがでしょう？<br>「<sheet Item 30886 0>」は回収できましたか？
+#. de: Hast du den Bestien auf dem Schlachtfeld <noun-de Item 1 30886 1 4 1> entreißen können? Ja? Dann zeig mal her.
+#. fr: Avez-vous réussi à trouver un éclat oublié non identifié de perfectionnement<nbsp>?
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_045:1"
+msgid "How did you fare searching for forgotten fragments?"
+msgstr ""
+
+#. ja: はい……たしかに。<br>無事に「ロストシャード」を回収できましたね！
+#. de: Ja. Das ist ein Frontsplitter, ohne Zweifel.
+#. fr: Voyons voir... Oui<nbsp>! C'en est bien un<nbsp>!
+#. speaker: DMITAR
+#. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_050:1"
+msgid "Well done, Blade <split \" \" 2><string $gs1></split>! Well done, indeed."
+msgstr ""
+
+#. ja: それでは、以後の手順をご説明しましょう。<br>「ロストアクション」を利用するためには、<br>まず、「ロストシャード」の鑑定を行う必要があります。
+#. de: Um die darin enthaltene Technik zu extrahieren, muss der Splitter begutachtet werden.
+#. fr: La prochaine étape consiste à le faire identifier par un expert, car on ne peut pas l'utiliser tel quel.
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_100_050:1"
+msgid "Now, before you can begin the extraction process, these shards must first be appraised so that we can tell what sort of memories they contain."
+msgstr ""
+
+#. ja: 入手した「ロストシャード」を、南東側のテント前にいる、<br>「レジスタンスの鑑定係」にお渡しください。
+#. de: Gib ihn einfach dem Begutachtungsoffizier dort vor dem Zelt.
+#. fr: Nous en avons un dans cet avant-poste justement.
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_051:1"
+msgid "Henceforth, be sure to hand any fragments you find to one of our appraisers. "
+msgstr ""
+
+#. ja: 彼が、シャードに込められた技や魔法を鑑定して、<br>「ロストアクション」へと抽出してくれます。<br>より詳しい説明が聞きたいときも、彼のところへどうぞ！
+#. de: Er wird sich den Splitter genauestens ansehen und die darin enthaltene Technik identifizieren. Am besten sprichst du mal selbst mit ihm.
+#. fr: Il en sait bien plus que moi sur les éclats oubliés et sera en mesure de vous révéler quelle technique ancestrale se cache à l'intérieur du vôtre<nbsp>!
+#. speaker: DMITAR
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_DMITAR_000_052:1"
+msgid "In fact, one of them is stationed by that tent over there."
+msgstr ""
+
+#. ja: 「レジスタンスの鑑定係」が抽出した「ロストアクション」は、<br>鑑定係の横にある「ロストボックス」に収められます。<br>戦場に向かう際に、必要なものを取り出しましょう。
+#. de: Kommandos, die von dem Begutachtungsoffizier extrahiert wurden, werden in der Kiste für Verschollenes aufbewahrt. Bediene dich daran und wähle die gewünschten Techniken, bevor du in die Schlacht ziehst.
+#. fr: Une fois un éclat oublié identifié par l'expert, l'action qui s'y cachait est au<shy>to<shy>ma<shy>ti<shy>que<shy>ment transférée dans la malle du rappel à côté de lui. N'oubliez pas de consulter son contenu avant de partir au combat afin d'équiper les actions oubliées que vous souhaitez utiliser.
+#. speaker: SYSTEM
+msgctxt "quest/039/LucKsa104_03944:TEXT_LUCKSA104_03944_SYSTEM_000_061:1"
+msgid "Actions extracted from forgotten fragments are stored in the lost finds cache."
+msgstr ""

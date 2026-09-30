@@ -1,0 +1,305 @@
+# quest/041/AktKla103_04134 — «Gears of Gold» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 工匠殿のルルシャは、不足している部品に気づいたようだ。
+#. de: Rurusha braucht neue Ersatzteile.
+#. fr: Rurusha a besoin d'autres pièces pour ses recherches.
+#. kind: journal
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_SEQ_00:1"
+msgid "Rurusha has noticed components are missing from the relic."
+msgstr ""
+
+#. ja: ルルシャから部品の製作を依頼された。「<sheet ItemMP 35589 0>」を6個製作し、工匠殿の「ルルシャ」へ納品しよう。<br><br>※納品は、収集価値「140」以上で可能となりますが、「290」以上で納品した場合、より多くの報酬が得られます。
+#. de: Rurusha bittet dich abermals um deine handwerkliche Hilfe. Liefere sechs <noun-de ItemMP 5 35589 2 4 1> bei ihr ab.<br><br>※ Die Gegenstände können ab einem Sammlerwert von 140 abgegeben werden. Ab einem Sammlerwert von 290 erhältst du jedoch zusätzliche Belohnungen.
+#. fr: Rurusha vous a confié la fabrication de 6 <noun-fr ItemMP 12 35589 2 1>. Livrez-les lui une fois qu'ils seront prêts.<br><br>* La valeur de collection minimale requise pour la livraison est de 140. Les objets ayant une valeur supérieure ou égale à 290 rapportent une plus grande récompense. 
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_SEQ_01:1"
+msgid "Rurusha has tasked you with crafting gold cogs.<br><br>※Minimum collectability rating for this delivery is 140. Delivering items with a rating of 290 or more will earn greater rewards."
+msgstr ""
+
+#. ja: ルルシャに「<sheet ItemMP 35589 0>」を納品した。黄金のチャタ号が起動しない原因について、ルルシャの調査が終わるのを待とう。
+#. de: Rurusha zeigt sich begeistert von deiner Arbeit! Warte nun, bis sie eine Erklärung für die Fehlfunktion des Artefakts gefunden hat.
+#. fr: Vous avez livré les rouages à Rurusha, cependant la Dhyata dorée ne s'active toujours pas. Prenez votre mal en patience, le temps que la chercheuse détermine la cause de ce dysfonc<shy>tion<shy>ne<shy>ment.
+#. kind: journal
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_SEQ_02:1"
+msgid "You deliver the gold cogs to Rurusha, but even after their installation, the Golden Dhyata remains largely unresponsive. Rurusha resolves to unravel any lingering problems, and asks that you return when you have time to attempt further repairs."
+msgstr ""
+
+#. ja: ルルシャに<sheet ItemMP 35589 0>を納品
+#. de: <capitalize><noun-de ItemMP 5 35589 2 4 1></capitalize> bei Rurusha abliefern
+#. fr: Fabriquer et livrer <noun-fr ItemMP 1 35589 2 1> à Rurusha
+#. kind: objective
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_TODO_00:1"
+msgid "Deliver the gold cogs to Rurusha."
+msgstr ""
+
+#. ja: あらあら、よく来てくれたわねぇ。
+#. de: Ah, wie schön, dich zu sehen! Ohne deine Hilfe wäre ich aufgeschmissen.
+#. fr: Ah, <split " " 1><string $gs1></split><nbsp>! Te revoilà<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_001:1"
+msgid "Why, hello there!"
+msgstr ""
+
+#. ja: ああっ、よかった……<br>あなたがもう来なかったりしたら、どうしようかと！<br>もう心配で、心配で、資料の整理もままならなくてっ……！
+#. de: Puh, ich hatte schon Angst, du kreuzt nicht wieder auf! Vor lauter Sorgen bringe ich schon alles durcheinander.
+#. fr: Quel soulagement<nbsp>! Je m'inquiétais tellement de ne plus vous revoir<nbsp>! J'étais si anxieux que je n'ai pas du tout avancé dans mon travail<nbsp>!!!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_BORIC_000_002:1"
+msgid "Oh, thank the gods you're here. I was so worried you might not return that I couldn't focus on my work..."
+msgstr ""
+
+#. ja: ボリック、<split " " 1><string $gs1></split>さんは、<br>請け負ったことを、途中で放り出すような方じゃないわ。
+#. de: Boric, was <split " " 1><string $gs1></split> anfängt, bringt <if $gn4>sie<else>er</if> auch zu Ende.
+#. fr: Boric, ne sois pas médisant. <split " " 1><string $gs1></split> ne m'a pas l'air du genre à abandonner un projet alors qu'il n'est pas encore terminé.
+#. speaker: RURUSHA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_003:1"
+msgid "Honestly, Boric. Show a little faith. <split \" \" 1><string $gs1></split> doesn't strike me as someone who'd go back on <if $gn4>her<else>his</if> word."
+msgstr ""
+
+#. ja: すっ、すみませ～～んっ！<br>本当に悪気はまったくなくてですね！？<br>手伝いを断られることばかりだったから、とにかく心配で！
+#. de: Verzeihung, ich habe das nicht böse gemeint. Es ist nur so, dass wir wirklich dringend Hilfe brauchen. Sonst sind wir erledigt!
+#. fr: Dé-désolééé<nbsp>! Je ne voulais pas vous offenser, pas du tout<nbsp>! C'est que tout le monde a refusé de nous aider jusqu'à maintenant, vous comprenez<nbsp>! J'avais peur que vous ayez changé d'avis<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_BORIC_000_004:1"
+msgid "My apologies, I didn't mean anything by it. It's just that we've been turned down by so many others..."
+msgstr ""
+
+#. ja: どうか、気を悪くしないでちょうだいねぇ。<br>ボリックは、昔から心配性なところがあるから……。
+#. de: Boric war schon immer etwas ängstlich. Lass dich davon nicht aus der Ruhe bringen.
+#. fr: Ne le prends pas mal, va. Boric a toujours été d'un naturel angoissé.
+#. speaker: RURUSHA
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_005:1"
+msgid "As you've probably worked out by now, Boric has a penchant to worry far more than he has any right to. Please don't take anything he says <i>too</i> seriously."
+msgstr ""
+
+#. ja: それよりも、依頼についてお話ししましょう。<br>今回、お願いしたいのは、極小サイズの精密歯車よ。
+#. de: Viel wichtiger ist doch, dass wir mit unserem Projekt vorankommen! Als Nächstes brauchen wir besonders präzise gearbeitete Zahnräder.
+#. fr: Bon, parlons peu, parlons commande. Ce dont j'ai besoin cette fois, c'est de rouages de précision, de la plus petite taille possible.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_006:1"
+msgid "But that's enough of that for now! It's time we got back to discussing our little friend's woes. This time, I would ask you to craft minuscule cogs made of gold."
+msgstr ""
+
+#. ja: 外装部品の内側が傷ついていた原因を調べてみたのだけど、<br>欠けた歯車が悪さをしていたことが、判明したの……。<br>つまり頑丈さも必要なの、作れるかしら？
+#. de: Ich habe das Innere genau untersucht und dabei zerbrochene Zahnräder gefunden. Die Ersatzteile sollten also einiges aushalten.
+#. fr: Figure-toi que le mécanisme intérieur de la relique était abîmé, car un des rouages était cassé... J'ai donc besoin de pièces solides.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_008:1"
+msgid "While examining the insides of the relic, I discovered that it was missing some, which seems to have caused all the damage we've observed. Whatever you make will need to be tough as a coeurl. Are you up to the task?"
+msgstr ""
+
+#. ja: 何と言う？
+#. de: Was sagst du?
+#. fr: Que répondez-vous<nbsp>?
+#. speaker: Q1
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_Q1_000_000:1"
+msgid "What will you say?"
+msgstr ""
+
+#. ja: 問題なし！
+#. de: Na klar, kein Problem!
+#. fr: Aucun problème<nbsp>!
+#. speaker: A1
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_A1_000_001:1"
+msgid "Leave it to me!"
+msgstr ""
+
+#. ja: 難しい作業になりそうだ……
+#. de: Das klingt nach einer Heraus<shy>forde<shy>rung<nbsp>...
+#. fr: Ça m'a l'air bien compliqué...
+#. speaker: A1
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_A1_000_002:1"
+msgid "Sounds like hard work, but..."
+msgstr ""
+
+#. ja: ふふ、それじゃあ、<br>「<sheet ItemMP 35589 0>」の製作をお願いね。<br>今回も、あなたの知識と技術に期待しているわ。
+#. de: Wir brauchen <noun-de ItemMP 5 35589 2 4 1>. Ich vertraue da voll und ganz auf deine Fä<shy>hig<shy>kei<shy>ten!
+#. fr: Hi hi<nbsp>! En tout cas, je compte sur toi pour me fabriquer <noun-fr Item 1 35589 2 1> de toute beauté<nbsp>!
+#. speaker: RURUSHA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_009:1"
+msgid "Oh, it's great to know I can always count on you, <split \" \" 1><string $gs1></split>. Best of luck!"
+msgstr ""
+
+#. ja: 小さい遺物なので、内部の歯車もすっごく小さいんですよ～。<br>見立てでは第三星暦の……アラグ文明の品ではないものの、<br>技術力はそれに迫るものがありそうですよね……。
+#. de: Das Artefakt an sich ist schon klein. Daher sind die Zahnräder in seinem Inneren besonders klein und fein. Ich schätze, sie wurden in der Dritten Ära des Lichts angefertigt, zwar nicht von den Allagern, aber auf einem ähnlich hohen technischen Niveau.
+#. fr: C'est une petite relique, donc les engrenages à l'intérieur sont minuscules<nbsp>! D'après son apparence, je dirais que ce n'est pas un objet issu de la civilisation allagoise, mais la technologie semble s'en rapprocher...
+#. speaker: BORIC
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_BORIC_100_010:1"
+msgid "Any cog that fits inside that relic is going to be absolutely tiny. It's quite impressive technology when you consider it's from the Third Astral Era and not Allagan in origin. "
+msgstr ""
+
+#. ja: 「<sheet ItemMP 35589 0>」の製作をお願いね。<br>今回も、あなたの知識と技術に期待しているわ。
+#. de: Vielen Dank für deine Hilfe! Ich vertraue darauf, dass du <noun-de ItemMP 2 35589 2 4 1> anfertigen kannst.
+#. fr: Je compte sur toi pour me fabriquer <noun-fr Item 1 35589 2 1> de toute beauté<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_015:1"
+msgid "I have every confidence your work will be immaculate. Indeed, I very much look forward to seeing what you can do."
+msgstr ""
+
+#. ja: 歯車の準備、助かるわ。<br>あなたは本当に器用な職人さんなのねぇ……。
+#. de: Vielen Dank! Damit hast du dein Können erneut unter Beweis gestellt.
+#. fr: Tu me sauves avec ces rouages. Tu es vraiment très doué<if $gn4>e</if><nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_016:1"
+msgid "Solid work as always. Thank you!"
+msgstr ""
+
+#. ja: 歯車の準備、助かるわ。<br>こんなにも小さな部品なのに、とても精巧……。<br>あなたの細やかで丁寧な仕事ぶりが、うかがえるわねぇ。
+#. de: Tausend Dank! Das ist wirklich Präzisionsarbeit höchster Güte! Solche Meisterstücke konnte ich noch nicht oft bewundern.
+#. fr: Tu me sauves avec ces rouages. Quelle précision incroyable, sur de si petits objets<nbsp>! Je suis vraiment honorée de travailler avec toi sur ce projet.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_017:1"
+msgid "Solid work as always. Look at the detail, too─it's obvious you stand head and shoulders above your peers!"
+msgstr ""
+
+#. ja: あなたが作ってくれた歯車、綺麗に噛み合ってくれたわ。<br>これで動いてくれたら良いんだけれど……。
+#. de: Deine Zahnräder haben perfekt gepasst. Jetzt müsste die Mechanik wieder reibungslos funktionieren<nbsp>...
+#. fr: Les rouages que tu as fabriqués se sont par<shy>fai<shy>te<shy>ment insérés dans le mécanisme. J'espère que le pantin va réussir à bouger, avec ça<nbsp>!
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_020:1"
+msgid "The cogs were a perfect fit. Now, I would be even happier if she decided to move for us..."
+msgstr ""
+
+#. ja: 黄金のチャタ号が、ほんの少しだけ弾むように動いた！<br>しかし、遺物はそのまま沈黙してしまっている。<br>修復すべき箇所が、まだ残っているようだ。
+#. de: Der Goldene Dhyata hat sich bewegt! Aber irgendetwas scheint noch nicht in Ordnung zu sein.
+#. fr: La Dhyata dorée a fait un léger soubresaut, mais est retombée immobile tout aussi vite. Il semble qu'elle ne soit pas com<shy>plè<shy>te<shy>ment réparée.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_SYSTEM_000_021:1"
+msgid "The Golden Dhyata flinched ever so slightly! However, it soon returned to its former static state. It appears you still have work to do."
+msgstr ""
+
+#. ja: あらあら、まあまあ！<br>チャタ号、がんばってくれたじゃない。<br>この調子でいけば、じきにちゃんと起動してくれそうだわ。
+#. de: Na, auf jeden Fall sind wir auf einem guten Weg! Schon bald wird der kleine Kerl wieder voll funktionstüchtig sein!
+#. fr: Oh, oh<nbsp>! Ma petite Dhyata dorée a fait de son mieux<nbsp>! Un franc succès, qu'en dites-vous<nbsp>?
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_022:1"
+msgid "Oh, well done, little one! We'll have you moving properly in no time, don't worry."
+msgstr ""
+
+#. ja: いや、ちょっと動いただけで、すぐ止まっちゃいましたよ！？<br>ルルシャ教授～、本当に……ほんと～に、<br>この遺物の修復を続けて大丈夫なんですか？
+#. de: Ich weiß ja nicht<nbsp>... Er hat sich zwar bewegt, aber doch nur ganz kurz. Professorin Rurusha, ist es wirklich eine gute Idee, die Restaurierung weiter zu verfolgen?
+#. fr: Pardon<nbsp>!? Mais, Madame Rurusha, euh... Elle a à peine bougé<nbsp>! Vous êtes vraiment sûre que vous voulez continuer à travailler dessus<nbsp>?
+#. speaker: BORIC
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_BORIC_000_023:1"
+msgid "Well done? It merely flopped on the table like a dead fish. This is hardly cause for celebration."
+msgstr ""
+
+#. ja: 周囲の目も厳しくなる一方だし、<br>ルルシャ教授の評価も、このままだとどうなることか……。<br>俺は心配で心配で、どうにかなりそうですよ～っ！
+#. de: Unsere Kritiker zerreißen sich schon die Mäuler. Ich mache mir Sorgen um Euren guten Ruf, Professorin.
+#. fr: Tout le monde commence vraiment à être exaspéré... Votre réputation risque d'en prendre un coup, Madame<nbsp>! Oh là là, si vous saviez à quel point tout ça m'inquiète<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_BORIC_000_024:1"
+msgid "I'm growing increasingly worried that this will all come to nothing, and your reputation will end up in tatters!"
+msgstr ""
+
+#. ja: 大袈裟ねぇ、ボリックは。<br>この子は、魔道士らしき人物の墳墓で見つかった副葬品。<br>恐らく当時は、重要な品と考えられていたはずよ。
+#. de: Jetzt übertreib mal nicht, Boric. Das Artefakt wurde in dem Grab eines Magiers gefunden. Es ist bestimmt sehr wertvoll.
+#. fr: Du calme, Boric. Ce pantin a été trouvé dans la tombe d'un ancien mage. Il n'y était pas par hasard, c'était cer<shy>tai<shy>ne<shy>ment un artefact très important pour lui.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_025:1"
+msgid "Oh, calm down, Boric. Lest you forget, the relic was found buried with the body of what appeared to be a mage, possibly of some repute."
+msgstr ""
+
+#. ja: それに、同じ墳墓で見つかったのは、呪具や魔具の類ばかり。<br>いずれも魔法的な効果を持つ「実用的」な品だったというわ。<br>だとすれば、この子にだって……。
+#. de: Die übrigen Grabbeigaben waren allesamt magische Artefakte. Das spricht dafür, dass auch dieses Teil hier über magische Eigenschaften verfügt.
+#. fr: Sa sépulture était d'ailleurs remplie d'objets magiques en tout genre. Il n'y a aucune raison pour que ce pantin soit différent.
+#. speaker: RURUSHA
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_026:1"
+msgid "Their tomb also contained a range of tools used by those highly skilled in the arcane arts. I'm <i>positive</i> that this mammet possesses great power."
+msgstr ""
+
+#. ja: 可能性だけの話をするなら、<br>ただの思い出の品や、貢物の類かもしれないですし……。
+#. de: Es könnte aber auch einfach ein Erinnerungsstück oder eine Opfergabe gewesen sein.
+#. fr: Mais vous savez, il est aussi possible que c'eût simplement été quelque chose avec une valeur sentimentale, mais rien de plus<nbsp>!
+#. speaker: BORIC
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_BORIC_000_027:1"
+msgid "Well, if we're discussing what it <i>could</i> be, I would say it could just as easily be a trinket or charm they kept on their person."
+msgstr ""
+
+#. ja: それに、チャタ号を教授に売ったグリーナーは、<br>贋物を持ち込んだことがあったそうじゃないですか～！<br>彼の出土状況に関する証言だって、信用していいのか……。
+#. de: Außerdem ist es bekannt, dass der Klauber, der das Artefakt gefunden hat, früher schon einmal eine Fälschung verkauft hat.
+#. fr: Le glaneur qui vous a vendu la Dhyata dorée, on raconte qu'il fait un trafic de fausses reliques<nbsp>! Je ne sais pas si nous pouvons vraiment croire sa version des faits concernant l'endroit où il a trouvé ce pantin<nbsp>!
+#. speaker: BORIC
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_BORIC_000_028:1"
+msgid "And let us not forget the shady stories we heard about the gleaner who sold it to you in the first place! How are we meant to trust someone with a track record of peddling counterfeit wares?"
+msgstr ""
+
+#. ja: 一度の過ちを、いつまでも責め立てるのはよくないわ。<br>それでも、どうしても気になるというなら、<br>ここは私の勘を信じてちょうだい。
+#. de: Ach, und wenn schon, Boric, das ist Ver<shy>gangen<shy>heit. Falls du ihm aber nicht glaubst, dann vertrau wenigstens meiner Intuition.
+#. fr: Les erreurs du passé appartiennent au passé. Tu n'as qu'à faire confiance à mon intuition, Boric.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_029:1"
+msgid "Boric, how many times have I told you not to hold others' pasts against them? Everyone is capable of change, and I for one remain convinced that this relic is worthy of study."
+msgstr ""
+
+#. ja: ……ボリックが言っていた、グリーナーさんの話は事実よ。<br>稀少な品を扱う彼らにとって、真贋の見極めは不可欠。<br>けれど、誰だって間違えることぐらいあるわ。
+#. de: Es stimmt zwar, dass der Klauber in der Ver<shy>gangen<shy>heit einmal auf eine Fälschung hereingefallen ist, aber jeder macht doch Fehler.
+#. fr: Ce que Boric a dit sur ce glaneur, c'est la vérité. Dans leur travail, ils ont toujours des objets rares entre les mains et doivent posséder les con<shy>nais<shy>san<shy>ces nécessaires pour reconnaître les vrais des faux, mais tout le monde fait des erreurs.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_030:1"
+msgid "It is true that a gleaner's livelihood depends on their ability to discern what is a forgery and what is the genuine article. But no one is without error. Not even me."
+msgstr ""
+
+#. ja: それに、万が一この子が贋物だったとしたら、<br>買い取った私に、見る目がなかっただけのこと。<br>少なくとも、そうはならないと私は思っているわ。
+#. de: Ich müsste mich schon arg getäuscht haben, wenn es sich bei diesem Artefakt um eine Fälschung handeln sollte. Ich bin jedenfalls fest vom Gegenteil überzeugt.
+#. fr: Et puis, même s'il s'avérait que ce pantin était vraiment un faux, c'est moi qui serais en tort, de n'avoir pas su déceler la supercherie. Mais je suis certaine de ne pas me tromper.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_031:1"
+msgid "If our little friend here does turn out to be a fake, it simply means I've made one such error. Nothing more, nothing less. Although, I don't believe for a moment that I have done so."
+msgstr ""
+
+#. ja: 自分の判断は、自分で信じてあげないとねぇ。<br>もちろん、過信しすぎるのもよくはないけれど。
+#. de: Und es ist doch wichtig, zu seinen Überzeugungen zu stehen, nicht wahr?
+#. fr: Il faut toujours croire en ses intuitions. Mais attention, un trop plein de confiance en soi peut être une mauvaise chose.
+#. speaker: RURUSHA
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_032:1"
+msgid "After all, who will believe in me if I don't believe in myself? That's not to say I think myself infallible, mind you."
+msgstr ""
+
+#. ja: それはともかくとして、<br>今回うまく起動できなかった原因は、調べておくわ。<br>だからまた、時間があるときに顔を出してちょうだいねぇ。
+#. de: Ich werde mir die Mechanik noch einmal genauer ansehen und nach der Ursache für die Fehlfunktion suchen. Schau doch bitte wieder vorbei, wenn du Zeit hast.
+#. fr: En tout cas, je vais poursuivre mes recherches pour savoir ce qui empêche le mécanisme de se remettre à fonctionner. J'aurai sûrement encore besoin de tes services, n'hésite surtout pas à repasser<nbsp>!
+#. speaker: RURUSHA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_RURUSHA_000_033:1"
+msgid "Putting that aside for the moment, I shall examine our friend here, and see if I can determine what problems yet remain. When next you have time to spare, <split \" \" 1><string $gs1></split>, pray seek us out, and we will set about making further repairs."
+msgstr ""
+
+#. ja: 考古学部の貢献ランクが上昇しました！<br>ルルシャはあなたのことを、<br>「遺物修復の客員工匠」と感じているようです！
+#. de: Dein Beitragsrang im Archäologischen Institut ist gestiegen! Rurusha hält dich jetzt für <if $gn4>eine ehrenwerte Restaurateurin<else>einen ehrenwerten Restaurateur</if>.
+#. fr: Votre rang de con<shy>tri<shy>bu<shy>tion a changé. Rurusha vous considère maintenant comme <if $gn4>une<else>un</if> membre honorable du laboratoire de restauration de reliques<nbsp>!
+#. speaker: SYSTEM
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_SYSTEM_000_034:1"
+msgid "Rurusha is delighted with your efforts. She now considers you a <ui-color 500><ui-edge-color 501>Reasonable Relic Restorer</ui-edge-color></ui-color>!"
+msgstr ""
+
+#. ja: 次のクエストは、<br>「鍛冶師／甲冑師／彫金師」のいずれかがレベル85以上になると、<br>工匠殿の「ルルシャ」から受注可能です。
+#. de: Sobald du als <if $gn4>Grobschmiedin<else>Grobschmied</if>, <if $gn4>Plattnerin<else>Plattner</if> oder <if $gn4>Goldschmiedin<else>Goldschmied</if> Stufe 85 erreicht hast, kannst du von Rurusha einen neuen Auftrag erhalten.
+#. fr: Rurusha propose la prochaine quête aux forgerons, armuriers ou orfèvres de niveau 85.
+#. speaker: SYSTEM
+msgctxt "quest/041/AktKla103_04134:TEXT_AKTKLA103_04134_SYSTEM_000_040:1"
+msgid "The next quest will be available from Rurusha upon reaching level 85 as a blacksmith, armorer, or goldsmith."
+msgstr ""

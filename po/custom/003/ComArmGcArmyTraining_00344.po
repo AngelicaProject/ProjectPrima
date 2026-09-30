@@ -1,0 +1,279 @@
+# custom/003/ComArmGcArmyTraining_00344
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_YES:1"
+msgid "Yes"
+msgstr ""
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_NO:1"
+msgid "No"
+msgstr ""
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_CANCEL:1"
+msgid "Cancel"
+msgstr ""
+
+#. ja: 実行中の訓練： なし
+#. de: Momentane Ausbildung:<nbsp>-
+#. fr: Entraînement en cours<nbsp>: aucun
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_TITLE_WAITING:1"
+msgid "Current training course: None"
+msgstr ""
+
+#. ja: 実行中の訓練： <sheet GcArmyTraining $n1 4><br>完了予定：<if ($n2 > 0)>完了<else>残り<if ($n4 > 0)><num $n4>時間<if ($n3 > 0)><num $n3>分後</if><else><if ($n3 > 0)><num $n3>分<else>1分以内</if></if></if> [<set-time $n5><num $year>/<num $month>/<num $day> <num $hour>:<num2 $min>]
+#. de: Momentane Ausbildung:<br><sheet GcArmyTraining $n1 4><br>Voraussichtliches Ende:<br><if ($n2 > 0)>Bereits beendet!<else>In <if ($n4 > 0)><num $n4> Stunde<if ($n4 == 1)><else>n</if> <if ($n3 > 0)><num $n3> Minute<if ($n3 == 1)><else>n</if></if><else><if ($n3 > 0)><num $n3> Minute<if ($n3 == 1)><else>n</if><else>weniger als 1 Minute</if></if></if><br>(<set-time $n5><num $day>.<num $month>.<num $year> um <num $hour>:<num2 $min> Uhr)
+#. fr: Entraînement en cours<nbsp>: <sheet GcArmyTraining $n1 4><br>État<nbsp>: <if ($n2 > 0)>terminé<else>retour dans <if ($n4 > 0)><num $n4>h<if ($n3 > 0)><num $n3>m</if><else><if ($n3 > 0)><num $n3>m<else>moins d'une minute</if></if>  (<set-time $n5><num $day>.<num $month>.<num $year> à <num $hour>h<num2 $min>)</if>
+#. macro: <sheet GcArmyTraining $n1 4> — a value from a game data sheet, such as a name; sheet = GcArmyTraining, row = number parameter 1, column = 4 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <if ($n2 > 0)>Complete<else><if ($n4 > 0)><num $n4> <if ($n4 == 1)>hour<else>hours</if><if ($n3 > 0)><if ($n4 > 0)> and </if></if><if ($n3 > 0)><num $n3> <if ($… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 > 0)><num $n4> <if ($n4 == 1)>hour<else>hours</if><if ($n3 > 0)><if ($n4 > 0)> and </if></if><if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 1)>hour<else>hours</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)><if ($n4 > 0)> and </if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 > 0)> and </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if><else>Less than 1 minute</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <set-time $n5> — sets the time placeholders ($hour, $day, …) to a Unix time; time = number parameter 5 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 77 == 3 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $day> — a number; value = day of the month of the set time (game data: keep it; it may move or repeat)
+#. macro: <num $month> — a number; value = month of the set time (game data: keep it; it may move or repeat)
+#. macro: <num $year> — a number; value = year of the set time (game data: keep it; it may move or repeat)
+#. macro: <num $hour> — a number; value = hour of the set time, 0–23 (game data: keep it; it may move or repeat)
+#. macro: <num2 $min> — a number with at least two digits, such as 05; value = minutes of the set time (game data: keep it; it may move or repeat)
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_TITLE_TRAINING:1"
+msgid "Current training course: <sheet GcArmyTraining $n1 4><br>Training status: <if ($n2 > 0)>Complete<else><if ($n4 > 0)><num $n4> <if ($n4 == 1)>hour<else>hours</if><if ($n3 > 0)><if ($n4 > 0)> and </if></if><if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if></if><else><if ($n3 > 0)><num $n3> <if ($n3 == 1)>minute<else>minutes</if><else>Less than 1 minute</if></if> remaining</if> [<set-time $n5><if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> <num $hour>:<num2 $min>]"
+msgstr ""
+
+#. ja: 訓練メニューを開く
+#. de: Ausbildungsplan einsehen
+#. fr: Voir les en<shy>traî<shy>ne<shy>ments disponibles
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_SELECT_001:1"
+msgid "Training Courses"
+msgstr ""
+
+#. ja: 実行中の訓練を中止する
+#. de: Momentane Aktivität abbrechen
+#. fr: Annuler l'en<shy>traî<shy>ne<shy>ment en cours
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_SELECT_002:1"
+msgid "Abort Current Training Course"
+msgstr ""
+
+#. ja: 小隊情報を見る
+#. de: Soldaten anzeigen
+#. fr: Voir les ca<shy>rac<shy>té<shy>ris<shy>ti<shy>ques de l'escouade
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_MENU_SELECT_003:1"
+msgid "View Squadron Roster"
+msgstr ""
+
+#. ja: 命令を実行していないため、<br>中止することはできません。
+#. de: Momentan wird keine Ausbildung durchgeführt.
+#. fr: Il n'y a aucune activité en cours.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_TRAINING_ABORT_000:1"
+msgid "Your squadron is not currently training."
+msgstr ""
+
+#. ja: 実行した命令が完了しているため、<br>中止することはできません。
+#. de: Die Ausbildung wurde bereits beendet und kann nicht mehr abgebrochen werden.
+#. fr: Votre escouade est déjà rentrée.<br>Il n'y a aucune activité en cours.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_TRAINING_ABORT_010:1"
+msgid "Your squadron has already completed its current training course."
+msgstr ""
+
+#. ja: <sheet GcArmyTraining $n1 4><br>完了予定：<if ($n3 > 0)><num $n3>時間<if ($n2 > 0)><num $n2>分後</if><else><if ($n2 > 0)><num $n2>分<else>1分以内</if></if> [<set-time $n4><num $year>/<num $month>/<num $day> <num $hour>:<num2 $min>]<br>訓練を中止しますか？
+#. de: <sheet GcArmyTraining $n1 4><br>Voraussichtliches Ende:<br><if ($n3 > 0)><num $n3> Stunde<if ($n3 == 1)><else>n</if> <if ($n2 > 0)><num $n2> Minute<if ($n2 == 1)><else>n</if></if><else><if ($n2 > 0)><num $n2> Minute<if ($n2 == 1)><else>n</if><else>weniger als 1 Minute</if></if><br>(<set-time $n4><num $day>.<num $month>.<num $year> um <num $hour>:<num2 $min> Uhr)<br>Möchtest du die Ausbildung abbrechen?
+#. fr: Entraînement en cours<nbsp>: <sheet GcArmyTraining $n1 4><br>État<nbsp>: retour dans <if ($n3 > 0)><num $n3>h<if ($n2 > 0)><num $n2>m</if><else><if ($n2 > 0)><num $n2>m<else>moins d'une minute</if></if>  (<set-time $n4><num $day>.<num $month>.<num $year> à <num $hour>h<num2 $min>)<br>Voulez-vous annuler l'en<shy>traî<shy>ne<shy>ment<nbsp>?
+#. macro: <sheet GcArmyTraining $n1 4> — a value from a game data sheet, such as a name; sheet = GcArmyTraining, row = number parameter 1, column = 4 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <if ($n3 > 0)><num $n3> <if ($n3 == 1)>hour<else>hours</if><if ($n2 > 0)><if ($n3 > 0)> and </if></if><if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)>hour<else>hours</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 > 0)><if ($n3 > 0)> and </if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)> and </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if><else>Less than 1 minute</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <set-time $n4> — sets the time placeholders ($hour, $day, …) to a Unix time; time = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 77 == 3 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $day> — a number; value = day of the month of the set time (game data: keep it; it may move or repeat)
+#. macro: <num $month> — a number; value = month of the set time (game data: keep it; it may move or repeat)
+#. macro: <num $year> — a number; value = year of the set time (game data: keep it; it may move or repeat)
+#. macro: <num $hour> — a number; value = hour of the set time, 0–23 (game data: keep it; it may move or repeat)
+#. macro: <num2 $min> — a number with at least two digits, such as 05; value = minutes of the set time (game data: keep it; it may move or repeat)
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SELECT_ABORT:1"
+msgid "<sheet GcArmyTraining $n1 4><br>Training status: <if ($n3 > 0)><num $n3> <if ($n3 == 1)>hour<else>hours</if><if ($n2 > 0)><if ($n3 > 0)> and </if></if><if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if></if><else><if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if><else>Less than 1 minute</if></if> remaining [<set-time $n4><if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> <num $hour>:<num2 $min>]<br>Abort training?"
+msgstr ""
+
+#. ja: さっそく、「訓練」を開始するのですね！<br>それでは、どのようなメニューにするのか、<br>鍛えたい部分を意識しながら、選んでみてください！
+#. de: Unser Kommando ist bereit für die Ausbildung! Überlege dir gut, welche Eigenschaften deine Soldaten verbessern sollen, und ordne entsprechende Übungen an!
+#. fr: Il est temps de se mettre sé<shy>rieu<shy>se<shy>ment à l'en<shy>traî<shy>ne<shy>ment<nbsp>! Le tableau de bord stratégique est là pour vous aider à choisir un programme adapté à vos besoins.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_000_000:1"
+msgid "Ready to begin the squadron's training, Commander? I think you'll find the course names are fairly self-explanatory."
+msgstr ""
+
+#. ja: 「訓練」では、小隊の「小隊総合能力」、<br>すなわち「総合身体能力」、「総合精神力」、「総合戦術練度」を、<br>鍛え上げることができます。
+#. de: Bilde deine Soldaten in den Bereichen Kraft, Moral und Taktik aus, um die Schlagkraft deines Kommandos zu erhöhen.
+#. fr: L'en<shy>traî<shy>ne<shy>ment permettra à votre escouade de progresser dans différents domaines.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_001:1"
+msgid "Training courses will improve squadron attributes, providing increases to the unit's overall physical, mental, and tactical strength."
+msgstr ""
+
+#. ja: 選択した訓練の種類に応じて、<br>どの小隊総合能力が上昇しやすいのかが変わるので、<br>各小隊任務の達成に必要な能力値を目安に、訓練を行いましょう！
+#. de: Es gibt verschiedene Übungen, um unter<shy>schied<shy>liche Bereiche zu steigern. Überlege dir, welche Übung deinem Kommando am meisten nutzt.
+#. fr: À vous de faire en sorte que ses capacités physique, mentale ou tactique augmentent et vous permettent ainsi de mettre toutes les chances de votre côté pour réussir les missions proposées par le sergent.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_002:1"
+msgid "The focus on which attribute is improved varies from course to course, so consider the values required for completing the more difficult missions when planning a regimen for your recruits."
+msgstr ""
+
+#. ja: 「訓練」は、（地球時間）1時間ほどかかります。<br>完了時間は、メインコマンドの「コンテンツ情報」から、<br>「コンテンツ情報一覧」を選ぶと確認できます。
+#. de: Die Ausbildung dauert 1 Stunde (Erdenzeit). Die verbleibende Zeit kannst du im Timer (im Hauptmenü unter „Spielinhalte“) einsehen.
+#. fr: Une session d'en<shy>traî<shy>ne<shy>ment dure une heure (temps réel). Vous pouvez consulter à tout moment son heure de fin en choisissant <ui-color 506><ui-edge-color 507>Missions</ui-edge-color></ui-color> puis <ui-color 506><ui-edge-color 507>Calendrier</ui-edge-color></ui-color> dans le menu principal.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_003:1"
+msgid "Each training course takes 1 hour to complete (Earth time). The time remaining until a course is completed can be viewed by opening the <ui-color 500><ui-edge-color 501>Timers</ui-edge-color></ui-color> interface located under <ui-color 500><ui-edge-color 501>Duty</ui-edge-color></ui-color> in the main menu."
+msgstr ""
+
+#. ja: これ以降、「訓練」の実行と結果の確認は、<br><sheet EObj 2007150 0>より行うことができます。
+#. de: Ab jetzt kannst du jederzeit den Ausbildungsplan einsehen, um Ausbildungserfolge zu überprüfen und neue Übungen anzuordnen.
+#. fr: Une fois le programme terminé, jetez un œil au <noun-fr EObj 12 2007150 1 1> pour connaître les résultats de la séance.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_004:1"
+msgid "Examine the regimen board to begin training courses or check training results."
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: L'escouade s'est ex<shy>trê<shy>me<shy>ment bien débrouillée. L'en<shy>traî<shy>ne<shy>ment a porté ses fruits<nbsp>! Vous l'aurez compris<nbsp>: pour que vos recrues progressent toujours plus, il va falloir leur confier des missions et les envoyer s'entraîner sans relâche.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_000_010:1"
+msgid "It brings a tear to my eye to see how our little recruits have grown...because now we can push them twice as hard! What's next on the agenda, Commander?"
+msgstr ""
+
+#. ja: 「小隊総合能力」の合計が上限値に達しました。<br>これ以降は、特定の総合能力を上げようとする場合、<br>別の総合能力が下がってしまいます。
+#. de: Die Schlagkraft hat ihren Höchstwert erreicht. Wenn ab jetzt Kraft, Moral oder Taktik verbessert werden, sinkt automatisch ein anderer Wert.
+#. fr: Votre escouade a atteint le niveau maximum de ses capacités. Si vous souhaitez améliorer l'une de ses ca<shy>rac<shy>té<shy>ris<shy>ti<shy>ques physique, mentale ou tactique, vous devrez en faire baisser une autre en contrepartie.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_011:1"
+msgid "The total value for squadron attributes has reached its maximum limit. Now that this maximum has been reached, any attempt to raise a certain attribute will result in the reduction of another."
+msgstr ""
+
+#. ja: なお、「小隊総合能力」の上限値は、<br>「小隊ランク」を高めることで、引きあげることができます。<br>特殊な小隊任務を成功させ、ランクを上昇させましょう。
+#. de: Der Höchstwert kann nur gesteigert werden, indem dein Kommando im Rang aufsteigt. Dafür musst du bestimmte Einsätze bestehen, die mit einem ★ markiert sind.
+#. fr: Cette limite est cependant repoussée lorsque le rang de votre escouade augmente. Pour ce faire, vos troupes doivent accomplir certaines missions.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_012:1"
+msgid "Maximum attribute values can be increased by improving your squadron rank, which is accomplished by successfully completing special missions."
+msgstr ""
+
+#. ja: ただし、ランク上昇の条件となる小隊任務は、<br>その他の任務に比べて、難易度が高い傾向があります。<br>まずは、訓練や小隊任務を通じ、小隊員のレベルを上げましょう。
+#. de: Allerdings sind die Qualifikationseinsätze zur Erhöhung des Rangs besonders schwierig. Sorge dafür, dass die Soldaten entsprechend ausgebildet sind und genug Routine gesammelt haben.
+#. fr: Ces expéditions sont cependant plus difficiles que les autres. N'hésitez pas à envoyer vos troupes s'entraîner ou accomplir d'autres missions avant de vous lancer.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_013:1"
+msgid "Be aware, however, that rank promotion missions are generally more difficult than standard deployments. It is advised that you raise the levels of your recruits through training and missions to improve the squadron's chances of success."
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: L'escouade a bien travaillé. Je pense qu'en l'état, il sera difficile pour ne pas dire impossible de progresser plus encore. À moins bien sûr qu'elle ne parvienne à recevoir une promotion de rang...
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_000_020:1"
+msgid "I remember saying something about pushing the squadron twice as hard. That was a mistake. I should have said “thrice.”"
+msgstr ""
+
+#. ja: 「小隊総合能力」の合計が上限値に達しました。<br>これ以降は、特定の総合能力を上げようとする場合、<br>別の総合能力が下がってしまいます。
+#. de: Die Schlagkraft hat ihren Höchstwert erreicht. Wenn ab jetzt Kraft, Moral oder Taktik verbessert werden, sinkt automatisch ein anderer Wert.
+#. fr: Votre escouade a atteint le niveau maximum de ses capacités. Si vous souhaitez améliorer l'une de ses ca<shy>rac<shy>té<shy>ris<shy>ti<shy>ques physique, mentale ou tactique, vous devrez en faire baisser une autre en contrepartie.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_021:1"
+msgid "The total value for squadron attributes has reached its maximum limit. Now that this maximum has been reached, any attempt to raise a certain attribute will result in the reduction of another."
+msgstr ""
+
+#. ja: なお、「小隊総合能力」の上限値は、<br>「小隊ランク」を高めることで、引きあげることができます。<br>特殊な小隊任務を成功させ、ランクを上昇させましょう。
+#. de: Der Höchstwert kann nur gesteigert werden, indem dein Kommando im Rang aufsteigt. Dafür musst du bestimmte Einsätze bestehen, die mit einem ★ markiert sind.
+#. fr: Cette limite est cependant repoussée lorsque le rang de votre escouade augmente. Pour ce faire, vos troupes doivent accomplir certaines missions.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_022:1"
+msgid "Maximum attribute values can be increased by improving your squadron rank, which is accomplished by successfully completing special missions."
+msgstr ""
+
+#. ja: ただし、ランク上昇の条件となる小隊任務は、<br>その他の任務に比べて、難易度が高い傾向があります。<br>まずは、訓練や小隊任務を通じ、小隊員のレベルを上げましょう。
+#. de: Allerdings sind die Qualifikationseinsätze zur Erhöhung des Rangs besonders schwierig. Sorge dafür, dass die Soldaten entsprechend ausgebildet sind und genug Routine gesammelt haben.
+#. fr: Ces expéditions sont cependant plus difficiles que les autres. N'hésitez pas à envoyer vos troupes s'entraîner ou accomplir d'autres missions avant de vous lancer.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_SYSTEM_000_023:1"
+msgid "Be aware, however, that rank promotion missions are generally more difficult than standard deployments. It is advised that you raise the levels of your recruits through training and missions to improve the squadron's chances of success."
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: Vos recrues ont tant travaillé qu'il leur est désormais impossible d'être plus affûtées qu'aujourd'hui. Vous avez formé l'élite, la crème de la crème<nbsp>! Elles n'arriveront sans doute plus à assimiler de nouvelles in<shy>for<shy>ma<shy>tions, mais ça ne veut pas dire qu'elles ne pro<shy>gres<shy>se<shy>ront pas en s'entraînant ou en partant en expédition.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_000_030:1"
+msgid "We keep pushing those recruits, and they keep coming back for more! I say we pile on the pain, Commander!"
+msgstr ""
+
+#. ja: さっそく、「訓練」を開始するのですね！<br>それでは、どのようなメニューにするのか、<br>鍛えたい部分を意識しながら、選んでみてください！
+#. de: Also dann, die Ausbildung kann beginnen. Überlege dir gut, welche Eigenschaften deine Soldaten verbessern sollen, und ordne entsprechende Übungen an!
+#. fr: Il est temps de se mettre sé<shy>rieu<shy>se<shy>ment à l'en<shy>traî<shy>ne<shy>ment<nbsp>! Le tableau de bord stratégique est là pour vous aider à choisir un programme adapté à vos besoins.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_100_000:1"
+msgid "Ready to begin the squadron's training, Commander? I think you'll find the course names are fairly self-explanatory."
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: L'escouade s'est ex<shy>trê<shy>me<shy>ment bien débrouillée. L'en<shy>traî<shy>ne<shy>ment a porté ses fruits<nbsp>! Vous l'aurez compris<nbsp>: pour que vos recrues progressent toujours plus, il va falloir leur confier des missions et les envoyer s'entraîner sans relâche.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_100_010:1"
+msgid "It brings a tear to my eye to see how our little recruits have grown...because now we can push them twice as hard! What's next on the agenda, Commander?"
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: L'escouade a bien travaillé. Je pense qu'en l'état, il sera difficile pour ne pas dire impossible de progresser encore. À moins bien sûr qu'elle ne parvienne à recevoir une promotion de rang...
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_100_020:1"
+msgid "I remember saying something about pushing the squadron twice as hard. That was a mistake. I should have said “thrice.”"
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: Vos recrues ont tant travaillé qu'il leur est désormais impossible d'être plus affûtées qu'aujourd'hui. Vous avez formé l'élite, la crème de la crème<nbsp>! Elles n'arriveront sans doute plus à assimiler de nouvelles in<shy>for<shy>ma<shy>tions, mais ça ne veut pas dire qu'elles ne pro<shy>gres<shy>se<shy>ront pas en s'entraînant ou en partant en expédition.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_100_030:1"
+msgid "We keep pushing those recruits, and they keep coming back for more! I say we pile on the pain, Commander!"
+msgstr ""
+
+#. ja: さっそく、「訓練」を開始するのですね！<br>それでは、どのようなメニューにするのか、<br>鍛えたい部分を意識しながら、選んでみてください！
+#. de: Also dann, die Ausbildung kann beginnen. Überlege dir gut, welche Eigenschaften deine Soldaten verbessern sollen, und ordne entsprechende Übungen an!
+#. fr: Il est temps de se mettre sé<shy>rieu<shy>se<shy>ment à l'en<shy>traî<shy>ne<shy>ment<nbsp>! Le tableau de bord stratégique est là pour vous aider à choisir un programme adapté à vos besoins.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_200_000:1"
+msgid "Ready to begin the squadron's training, Commander? I think you'll find the course names are fairly self-explanatory."
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: L'escouade s'est ex<shy>trê<shy>me<shy>ment bien débrouillée. L'en<shy>traî<shy>ne<shy>ment a porté ses fruits<nbsp>! Vous l'aurez compris<nbsp>: pour que vos recrues progressent toujours plus, il va falloir leur confier des missions et les envoyer s'entraîner sans relâche.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_200_010:1"
+msgid "It brings a tear to my eye to see how our little recruits have grown...because now we can push them twice as hard! What's next on the agenda, Commander?"
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: L'escouade a bien travaillé. Je pense qu'en l'état, il sera difficile pour ne pas dire impossible de progresser plus encore. À moins bien sûr qu'elle ne parvienne à recevoir une promotion de rang...
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_200_020:1"
+msgid "I remember saying something about pushing the squadron twice as hard. That was a mistake. I should have said “thrice.”"
+msgstr ""
+
+#. ja: 小官が見たところ、我らが部隊は順調に経験を積み、<br>なかなかの実力を付けてきている様子……。<br>さらなる高みを目指すべく、訓練や小隊任務に励みましょう！
+#. de: Unsere Soldaten schlagen sich gut und sammeln bei ihren Einsätzen und in der Ausbildung immer mehr Erfahrung. Weiter so!
+#. fr: Vos recrues ont tant travaillé qu'il leur est désormais impossible d'être plus affûtées qu'aujourd'hui. Vous avez formé l'élite, la crème de la crème<nbsp>! Elles n'arriveront sans doute plus à assimiler de nouvelles in<shy>for<shy>ma<shy>tions, mais ça ne veut pas dire qu'elles ne pro<shy>gres<shy>se<shy>ront pas en s'entraînant ou en partant en expédition.
+msgctxt "custom/003/ComArmGcArmyTraining_00344:TEXT_COMARMGCARMYTRAINING_00344_PLATOONINSTRUCTOR_200_030:1"
+msgid "We keep pushing those recruits, and they keep coming back for more! I say we pile on the pain, Commander!"
+msgstr ""

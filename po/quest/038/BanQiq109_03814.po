@@ -1,0 +1,127 @@
+# quest/038/BanQiq109_03814 — « Prayers and Poison» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト受注クラス・ジョブ制限</ui-edge-color></ui-color><br>※本クエストは受注時のクラスでのみ進行します。<br><br>ホパル古盤のコテルリ・パソリは、万が一に備えておきたいようだ。
+#. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung (Job/Klasse darf nicht gewechselt werden)</ui-edge-color></ui-color><br><br>Qhoterl Pasol möchte für Notfälle vorsorgen.
+#. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête avec limitation de job ou de classe</ui-edge-color></ui-color><br><i>* Il n'est possible de progresser dans cette quête qu'avec la classe qui a servi à la commencer.</i><br><br>Qhoterl Pasol veut parer à toute éventualité.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_SEQ_00:1"
+msgid "Qhoterl Pasol knows that it pays to be prepared.<br><br>※Please note that the difficulty of this quest has been synced to your current level. Furthermore, you may not proceed with a class or job that is different from when you accepted this quest."
+msgstr ""
+
+#. ja: コテルリ・パソリに依頼された品を納品
+#. de: Qhoterl Pasol die gewünschte Ware bringen
+#. fr: Livrer ce qui vous a été demandé à Qhoterl Pasol
+#. kind: journal
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_SEQ_01:1"
+msgid "Deliver the requested items to Qhoterl Pasol."
+msgstr ""
+
+#. ja: <if ($n4 == 16)><if ($n1 < $n2)>割れた宝卵付近の岩場で<sheet Item $n5 0>を砕岩<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 17)><if ($n1 < $n2)>割れた宝卵付近の草刈場で<sheet Item $n5 0>を草刈<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if><else><if ($n4 == 18)><if ($n1 < $n2)>ミュリルの落涙で<sheet Item $n5 0>を釣る<else>コテルリ・パソリに<sheet Item $n5 0>を納品</if></if></if></if>
+#. de: <if ($n4 == 16)><if ($n1 < $n2)>Beim Verlorenen Juwel <sheet Item $n5 9> finden<else>Qhoterl Pasol den <sheet Item $n5 9> bringen</if><else><if ($n4 == 17)><if ($n1 < $n2)>Beim Verlorenen Juwel <noun-de Item 5 $n5 2 4 1> ernten<else>Qhoterl Pasol <noun-de Item 2 $n5 2 4 1> bringen</if><else><if ($n4 == 18)><if ($n1 < $n2)>In Mjrls Tränen <noun-de Item 1 $n5 1 4 1> fangen<else>Qhoterl Pasol <noun-de Item 1 $n5 1 4 1> bringen</if></if></if></if>
+#. fr: <if ($n4 == 16)><if ($n1 < $n2)>Extraire <noun-fr Item 1 $n5 2 1> près de La Coquille brisée<else>Livrer <noun-fr Item 2 $n5 2 1> à Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Récolter <noun-fr Item 1 $n5 2 1> près de La Coquille brisée<else>Livrer <noun-fr Item 2 $n5 2 1> à Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Pêcher <noun-fr Item 1 $n5 1 1> dans Les Larmes de Mjrl<else>Livrer <noun-fr Item 2 $n5 1 1> à Qhoterl Pasol</if></if></if></if>
+#. kind: objective
+#. macro: <if ($n4 == 16)><if ($n1 < $n2)>Mine splendid chalcanthite at the Husk<else>Deliver the splendid chalcanthite to Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 16 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Mine splendid chalcanthite at the Husk<else>Deliver the splendid chalcanthite to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 17)><if ($n1 < $n2)>Gather splendid tarantulas at the Husk<else>Deliver the splendid tarantulas to Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 17 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Gather splendid tarantulas at the Husk<else>Deliver the splendid tarantulas to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n4 == 18)><if ($n1 < $n2)>Catch a splendid poison catfish at Mjrl's Tears<else>Deliver the splendid poison catfish to Qhoterl Pasol</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 18 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 < $n2)>Catch a splendid poison catfish at Mjrl's Tears<else>Deliver the splendid poison catfish to Qhoterl Pasol</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_TODO_00:1"
+msgid "<if ($n4 == 16)><if ($n1 < $n2)>Mine splendid chalcanthite at the Husk<else>Deliver the splendid chalcanthite to Qhoterl Pasol</if><else><if ($n4 == 17)><if ($n1 < $n2)>Gather splendid tarantulas at the Husk<else>Deliver the splendid tarantulas to Qhoterl Pasol</if><else><if ($n4 == 18)><if ($n1 < $n2)>Catch a splendid poison catfish at Mjrl's Tears<else>Deliver the splendid poison catfish to Qhoterl Pasol</if></if></if></if>."
+msgstr ""
+
+#. ja: 「夜の民」の護符のおかげで、魔物を心配することなく、<br>探索を行うことができるようになりました～。<br>しかし、事故はつきもの、護符が効力を失うこともありましょ～！
+#. de: Dank Schutzamulette von Untertanen der Nacht können Bestien Qitari nichts anhaben! Aber manchmal verlieren Schutzamulette Wirkung.
+#. fr: Talismans de peuple de Nuit très très efficaces contre monstres des cavernes<nbsp>! Mais accident être vite arrivé, et quand talismans perdre leur pouuuvoir, explorateurs être en détresse<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_000:1"
+msgid "Thanks to the protective enchantments of the Night's Blessed, we may carry out our exploration without fear of fiends. Of course, enchantments are wont to lose effect over time, and when that happens, we must be prepared to protect ourselves."
+msgstr ""
+
+#. ja: そんな万が一に備え、己が身を守る手段として、<br>毒薬を準備しようと思いまする～。
+#. de: Brauchen Schutz vor solchen Notfällen! Zur Verteidigung wollen Grabende Pfoten Gift herstellen!
+#. fr: Qhoterl Pasol avoir eu idée de préparer potion toxique pour se protéger en cas de coup duuur<nbsp>! Avoir besoin ingrédients, alors toi aider parce que toi jamais dire non, hi hi<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_001:1"
+msgid "To that end, I intend to concoct a potent poison, and I would be most grateful if you could obtain an ingredient for me."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>殿は、毒薬に必要な、<br>「<sheet Item 29523 0>」を3つ、<br>割れた宝卵付近で採ってきてくださいましな～。
+#. de: <split " " 1><string $gs1></split>, bringst du für Gift drei <noun-de Item 5 29523 2 4 1>, ja? Findest du sicher bei Verlorenem Juwel!
+#. fr: <split " " 1><string $gs1></split> extraire trois <noun-fr Item 12 29523 2 1> près de Coquille brisée<nbsp>! Excellent ingrédient pour poison, ça<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_010:1"
+msgid "Chalcanthite is what I require, and it can be mined at the Husk. Three clusters or so should be suitable for our purposes."
+msgstr ""
+
+#. ja: <split " " 1><string $gs1></split>殿は、毒薬に必要な、<br>「<sheet Item 29549 0>」を3つ、<br>割れた宝卵付近で採ってきてくださいましな～。
+#. de: <split " " 1><string $gs1></split>, bringst du für Gift drei <noun-de Item 5 29549 2 4 1>, ja? Findest du sicher bei Verlorenem Juwel!
+#. fr: <split " " 1><string $gs1></split> récolter trois <noun-fr Item 12 29549 2 1> près de Coquille brisée<nbsp>! Excellent ingrédient pour poison, ça<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_020:1"
+msgid "Tarantulas are what I require, and they can be found at the Husk. Three or so should be suitable for our purposes."
+msgstr ""
+
+#. ja: そこで、毒薬に必要な「<sheet Item 29575 0>」を、<br>ミュリルの落涙で釣ってきてくださいましな～。<br><sheet Item 27582 0>を使えば、すぐに掛かりましょ～。
+#. de: <split " " 1><string $gs1></split>, bringst du für Gift <noun-de Item 5 29575 1 4 1>, ja? Fängst du ganz leicht mit <noun-de Item 5 27582 1 3 1> in Mjrls Tränen!
+#. fr: <split " " 1><string $gs1></split> pêcher <noun-fr Item 12 29575 1 1> dans Larmes de Mjrl avec <noun-fr Item 12 27582 1 1><nbsp>! Excellent ingrédient pour poison, ça<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_030:1"
+msgid "A poison catfish is what I require, and it can be caught at Mjrl's Tears with a fruit worm on your hook. A single creature should be suitable for our purposes."
+msgstr ""
+
+#. ja: 毒薬に必要な「<sheet Item 29523 0>」を3つ、<br>割れた宝卵付近で採ってきてくださいましな～。
+#. de: Bring für Gift drei <noun-de Item 5 29523 2 4 1>. Findest du sicher bei Verlorenem Juwel!
+#. fr: <split " " 1><string $gs1></split> extraire trois <noun-fr Item 12 29523 2 1> près de Coquille brisée<nbsp>! Excellent ingrédient pour poison, ça<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_040:1"
+msgid "Please bring me the three chalcanthite clusters I require to make my poison. Remember, they can be mined at the Husk."
+msgstr ""
+
+#. ja: 毒薬に必要な「<sheet Item 29549 0>」を3つ、<br>割れた宝卵付近で採ってきてくださいましな～。
+#. de: Bring für Gift drei <noun-de Item 5 29549 2 4 1>. Findest du sicher bei Verlorenem Juwel!
+#. fr: <split " " 1><string $gs1></split> récolter trois <noun-fr Item 12 29549 2 1> près de Coquille brisée<nbsp>! Excellent ingrédient pour poison, ça<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_050:1"
+msgid "Please bring me the three tarantulas I require to make my poison. Remember, they can be found at the Husk."
+msgstr ""
+
+#. ja: 毒薬に必要な「<sheet Item 29575 0>」を、<br>ミュリルの落涙で釣ってきてくださいましな～。<br><sheet Item 27582 0>を使えば、すぐに掛かりましょ～。
+#. de: Bring für Gift <noun-de Item 5 29575 1 4 1>. Fängst du ganz leicht mit <noun-de Item 5 27582 1 3 1> in Mjrls Tränen!
+#. fr: <split " " 1><string $gs1></split> pêcher <noun-fr Item 12 29575 1 1> dans Larmes de Mjrl avec <noun-fr Item 12 27582 1 1><nbsp>! Excellent ingrédient pour poison, ça<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_060:1"
+msgid "Please bring me the poison catfish I require to make my poison. Remember, they can be caught at Mjrl's Tears with a fruit worm on your hook."
+msgstr ""
+
+#. ja: 毒薬の元となる素材は、集まりましたでしょか～？
+#. de: Hast du Material für Gift gefunden?
+#. fr: Gentil<if $gn4>le</if> <split " " 1><string $gs1></split><nbsp>! Avoir nécessaire pour potion toxique dans besace<nbsp>?
+#. speaker: QHOTERLPASOL
+#. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_070:1"
+msgid "Pleased for your return, good <if $gn4>madam<else>sir</if>. Were you successful in procuring the ingredient I requested?"
+msgstr ""
+
+#. ja: ご協力、ありがとうございまする～。<br>この素材で作った毒薬をダーツに塗って使えば、<br>魔物の足止めくらいはできましょ～！
+#. de: Ah, sehr gut! Daraus machen Qitari Gift für Pfeile. So werden Bestien gelähmt, bevor sie mampfen können!
+#. fr: Merci merci<nbsp>! Grâce à fléchettes enduites de poison puissant, explorateuuurs montrer à monstres de quel bois se chauffer<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_080:1"
+msgid "Splendid, my thanks for your kind cooperation. Lest you wonder, the poison works by robbing fiends of their movement. Applied to dart tips, it won't slay outright, but it will afford us an opportunity to retreat to safety."
+msgstr ""
+
+#. ja: しかし、このようなものは使わぬに越したことはありませぬ～。<br>わたくしとしては、うちの子たちが安全に探索ができることを、<br>祈るばかりでございまする～。
+#. de: Ich hoffe, dass Grabende Pfoten sie nie einsetzen müssen, aber man weiß ja nie. Beten allein hilft nicht immer!
+#. fr: Qhoterl Pasol apprendre même à mari et enfants à s'en servir<nbsp>! Tout le monde dégommer monstres pas gentils, nyark nyark<nbsp>!
+#. speaker: QHOTERLPASOL
+msgctxt "quest/038/BanQiq109_03814:TEXT_BANQIQ109_03814_QHOTERLPASOL_000_081:1"
+msgid "Of course, I pray that our people needn't resort to such measures at all. May merciful Dalan ever bless us and keep us safe from harm."
+msgstr ""

@@ -1,0 +1,113 @@
+# quest/001/SubWil000_00149 — «Due Diligence» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 情報屋ワイモンドは、とある書類を格闘士ギルドに届けてほしいようだ。
+#. de: Wymond ist auf der Suche nach einem Abenteurer, der ein Schreiben für ihn überbringt.
+#. fr: Wymond, un informateur, aimerait que vous apportiez une enveloppe à la guilde des pugilistes.
+#. kind: journal
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_SEQ_00:1"
+msgid "Wymond would like to know what you think of Ul'dah."
+msgstr ""
+
+#. ja: 「格闘士ギルド」の受付にいる「ヨシアス」に、ワイモンドが用意した「無記名の封書」を届けに行こう。
+#. de: Information ist von unschätzbarem Wert, daher ist es wichtig, gut informierte Mitarbeiter zu haben - so sieht es zumindest Wymond. Bringe das Schreiben von Wymond zu Josias in der Faust<shy>kämpfer<shy>gilde im Inneren des Palais Platin.
+#. fr: Allez remettre l'enveloppe de Wymond à Josias, à l'accueil de la guilde des pugilistes.
+#. kind: journal
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_SEQ_01:1"
+msgid "Ever the consummate professional, Wymond has taken the opportunity to task you with a delivery. Do as bade and take his message to Josias at the Pugilists' Guild inside the Platinum Mirage."
+msgstr ""
+
+#. ja: 「無記名の封書」は、格闘士ギルドで請け負った護衛任務の調査資料だった。依頼人に報酬の支払い能力がないと判断された場合は、当然護衛任務は断る……ということらしい。
+#. de: Wenn ein Kunde mit der Faust<shy>kämpfer<shy>gilde in Kontakt tritt, um Schutz anzufordern, ermittelt die Gilde zunächst einmal dessen Bonität. Der Umschlag enthielt die Bewertung eines Kunden, dessen Finanzen zu wünschen übrig lassen. Und da das Palais Platin keine Wohlfahrtsveranstaltung ist ...
+#. fr: L'enveloppe vierge contenait en fait le compte-rendu d'une enquête menée pour déterminer la solvabilité d'un client souhaitant confier une mission de protection aux pugilistes. La guilde préfère prendre ses précautions et refuser ses services aux personnes n'ayant pas de quoi payer.
+#. kind: journal
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_SEQ_02:1"
+msgid "The Pugilists' Guild offers protective services, but only to those who can afford it. The unsigned envelope contained the assessment of a petitioner whose finances were found lacking. Alas, the Platinum Mirage is not a charity."
+msgstr ""
+
+#. ja: 格闘士ギルドのヨシアスに無記名の封書を渡す
+#. de: Umschlag bei Josias abliefern
+#. fr: Remettre l'enveloppe vierge à Josias
+#. kind: objective
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_TODO_00:1"
+msgid "Deliver the unsigned envelope to Josias."
+msgstr ""
+
+#. ja: よォ、冒険者。ウルダハには慣れたか？<br>ちょうどいい、ひとつ仕事を受けてくれよ。<br>何、ガキにもできる簡単な雑用さ。
+#. de: Und, wie gefällt's dir in Ul'dah? Schon 'ne Menge Kontakte geknüpft? Ich hoffe doch, du erwähnst bei den hohen Herrschaften auch ab und zu den guten alten Wymond.
+#. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if> aventuri<if $gn4>ère<else>er</if>. C'est moi, Wymond, l'informateur. Comment ça tu ne me reconnais pas<nbsp>? Tu as la mémoire courte, dis donc... Sinon, tu commences à t'habituer à Ul'dah<nbsp>?
+#. speaker: WYMOND
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if ($gn70 == 1)>Eh? How do I know your name? Heh! Information is my stock and trade, 'venturer. You'd be amazed by what I know.<else><if ($gn70 == 2)>Eh? How d… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 70 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn70 == 2)>Eh? How do I know your name? Heh! Information is my stock and trade, 'venturer. You'd be amazed by what I know.<else><if ($gn70 == 3)>Make any … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 70 == 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn70 == 3)>Make any new friends in high places yet? Hah! Well, when you have the sultana's ear one day, I hope you won't have forgotten about ol' Wymond!<… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 70 == 3 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_WYMOND_000_1:1"
+msgid "So, how're you takin' to Ul'dah, <split \" \" 1><string $gs1></split>? <if ($gn70 == 1)>Eh? How do I know your name? Heh! Information is my stock and trade, 'venturer. You'd be amazed by what I know.<else><if ($gn70 == 2)>Eh? How do I know your name? Heh! Information is my stock and trade, 'venturer. You'd be amazed by what I know.<else><if ($gn70 == 3)>Make any new friends in high places yet? Hah! Well, when you have the sultana's ear one day, I hope you won't have forgotten about ol' Wymond!<else>Eh? How do I know your name? Heh! Information is my stock and trade, 'venturer. You'd be amazed by what I know.</if></if></if>"
+msgstr ""
+
+#. ja: 「格闘士ギルド」の受付にいる「ヨシアス」に、<br>この「無記名の封書」を届けてくれないか？
+#. de: Information ist als Gut genauso wertvoll wie jedes andere auch, und die kann ich bieten. Oh, übrigens, ich hätte da was für dich. Tu mir doch bitte einen Gefallen und bring dieses Schreiben zu Josias beim Palais Platin.
+#. fr: Ça tombe bien, car j'ai un petit service à te demander. Tu veux bien apporter cette enveloppe vierge à Josias, à l'accueil de la guilde des pugilistes<nbsp>?
+#. speaker: WYMOND
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_WYMOND_000_2:1"
+msgid "Long as you're here, mayhap you can do me a favor an' take this missive to Josias at the Platinum Mirage."
+msgstr ""
+
+#. ja: ウルダハで最も高い値のつく物は「情報」だ。<br>情報屋の俺に恩を売っておいて、損はないぜ？
+#. de: Warum, fragst du? Nun, selbst als Neuankömmling wirst du sicherlich bald die Vorteile zu schätzen lernen, eine gute Beziehung zu jemandem wie mir zu haben. Und nun geh.
+#. fr: Dans notre cité, rien n'est plus important que le ren<shy>sei<shy>gne<shy>ment, tu sais. Si tu fais ça pour moi, je te garantis que tu ne le regretteras pas<nbsp>!
+#. speaker: WYMOND
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_WYMOND_000_3:1"
+msgid "It's just over yonder, an' the man'll even give you some gil for your trouble. If only all work in the city was this easy, eh?"
+msgstr ""
+
+#. ja: ワイモンドからの預かりものですって？<br>どれどれ、見せてください……。
+#. de: Was führt dich zum Palais Platin? Ein Schreiben von Wymond? Ausgezeichnet. Lass mich nur kurz einen Blick auf den Inhalt werfen ...
+#. fr: Oui, qu'est-ce que je peux faire pour vous<nbsp>? Oh, Wymond vous a demandé de me remettre cette enveloppe<nbsp>? 
+#. speaker: GAGARUNA
+#. macro: <if ($gn11 < 12)><if ($gn11 < 4)>this evening<else>this morning</if><else><if ($gn11 < 17)>today<else>this evening</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 4)>this evening<else>this morning</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gn11 < 17)>today<else>this evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_GAGARUNA_000_5:1"
+msgid "Do you have business with the Platinum Mirage <if ($gn11 < 12)><if ($gn11 < 4)>this evening<else>this morning</if><else><if ($gn11 < 17)>today<else>this evening</if></if>?"
+msgstr ""
+
+#. ja: ふむふむ、なるほど……。<br>さすがはウルダハ一番の情報屋、<br>彼に仕事を頼んで正解だったようです。
+#. de: Hm hm. Gute Arbeit. Wymond kriegt einfach alles raus ...
+#. fr: Il travaille vraiment très vite, sa réputation n'est pas usurpée. Voyons voir ce qu'il a découvert...
+#. speaker: GAGARUNA
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_GAGARUNA_000_6:1"
+msgid "A missive from Wymond? Alright then, let's have a look..."
+msgstr ""
+
+#. ja: 「依頼人に支払い能力ナシ。手を引くことを薦める」<br>……と、やはりそうでしたか。
+#. de: „Der Vogel ist gerupft. Überlass ihn den Hunden.“<br>\<seufz> Als ob ich's geahnt hätte.
+#. fr: “Le client n'a pas les moyens de payer, il vaut mieux refuser la mission.” Ma première impression était donc la bonne...
+#. speaker: GAGARUNA
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_GAGARUNA_000_7:1"
+msgid "\"Bird is barren. Let the hounds feast.“ \\<sigh> So it goes."
+msgstr ""
+
+#. ja: あ、この書類ですか？<br>我々格闘士ギルドは、護衛任務も請け負ってましてね。<br>これはその依頼人の身辺調査資料ですよ。
+#. de: Oh, was das ist? Nun, unsere Leute von der Faust<shy>kämpfer<shy>gilde werden häufig zum Personenschutz angeheuert. Leider sind Wymonds Nach<shy>for<shy>schungen zu den finanziellen Verhältnissen dieses potenziellen Kunden wenig erfreulich.
+#. fr: Ah, vous aimeriez savoir de quoi il s'agit<nbsp>? Comme vous nous avez aidés, je peux vous le dire... C'est le compte-rendu d'une enquête sur un client désireux de nous confier une mission de protection.
+#. speaker: GAGARUNA
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_GAGARUNA_000_8:1"
+msgid "Oh, this? Well you see, the guild is often contracted to provide protective services. Unfortunately for this particular petitioner, Wymond's investigation has revealed his finances to be...wanting."
+msgstr ""
+
+#. ja: 格闘士ギルドは体が資本。<br>安請け合いはできませんからね。
+#. de: Unsere Kämpfer sind unser Kapital, und das investieren wir nicht ohne Gegenleistung. Dieser schutzbedürftige <i>Vogel</i> wird sich wohl selbst verteidigen müssen.
+#. fr: Nous prenons ce genre de précautions car nous ne pouvons pas nous permettre de mettre en danger nos hommes bé<shy>né<shy>vo<shy>le<shy>ment, voyez-vous<nbsp>? Après tout, les affaires sont les affaires...
+#. speaker: GAGARUNA
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/001/SubWil000_00149:TEXT_SUBWIL000_00149_GAGARUNA_000_9:1"
+msgid "Maybe adventurers like you don't mind working for free, but we have a business to run. I myself have four mouths to feed, so this <i>bird</i> will have to fend for himself, I'm afraid."
+msgstr ""

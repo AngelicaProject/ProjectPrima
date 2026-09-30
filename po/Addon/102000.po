@@ -1,0 +1,2716 @@
+# Addon
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: <sheet Item $n1 0>を使って宝箱をあけますか？
+#. de: <capitalize><noun-de Item 2 $n1 1 4 1></capitalize> benutzen, um die Truhe zu öffnen?
+#. fr: Ouvrir le coffre avec <noun-fr Item 2 $n1 1 1><nbsp>?
+#. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102008:0:0"
+msgid "Use <noun-en Item 1 $n1 1 1> to open the chest?"
+msgstr "Использовать <noun-en Item 1 $n1 1 1>, чтобы открыть сундук?"
+
+#. ja: Unknown
+#. de: Unbekannt
+#. fr: Inconnu
+msgctxt "Addon:102101:0:0"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#. ja: 未知資源
+#. de: Unerreichbar
+#. fr: Matériau inconnu
+msgctxt "Addon:102102:0:0"
+msgid "Out of Reach"
+msgstr "Недоступно"
+
+#. ja: 採集する
+#. de: Sammeln
+#. fr: Récolter
+msgctxt "Addon:102103:0:0"
+msgid "Begin"
+msgstr "Начать"
+
+#. ja: 北
+#. de: Norden
+#. fr: Nord
+msgctxt "Addon:102104:0:0"
+msgid "north"
+msgstr "север"
+
+#. ja: 北東
+#. de: Nordosten
+#. fr: Nord-est
+msgctxt "Addon:102105:0:0"
+msgid "northeast"
+msgstr "северо-восток"
+
+#. ja: 東
+#. de: Osten
+#. fr: Est
+msgctxt "Addon:102106:0:0"
+msgid "east"
+msgstr "восток"
+
+#. ja: 南東
+#. de: Südosten
+#. fr: Sud-est
+msgctxt "Addon:102107:0:0"
+msgid "southeast"
+msgstr "юго-восток"
+
+#. ja: 南
+#. de: Süden
+#. fr: Sud
+msgctxt "Addon:102108:0:0"
+msgid "south"
+msgstr "юг"
+
+#. ja: 南西
+#. de: Südwesten
+#. fr: Sud-ouest
+msgctxt "Addon:102109:0:0"
+msgid "southwest"
+msgstr "юго-запад"
+
+#. ja: 西
+#. de: Westen
+#. fr: Ouest
+msgctxt "Addon:102110:0:0"
+msgid "west"
+msgstr "запад"
+
+#. ja: 北西
+#. de: Nordwesten
+#. fr: Nord-ouest
+msgctxt "Addon:102111:0:0"
+msgid "northwest"
+msgstr "северо-запад"
+
+#. ja: 技術力<num $n1>以上で採集可能
+#. de: Erfordert min. <num $n1> Expertise
+#. fr: Savoir-faire ≧ <num $n1> nécessaire
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102114:0:0"
+msgid "Requires <num $n1> Perception"
+msgstr "Для сбора требуется восприятие: <num $n1>"
+
+#. ja: 技術力<num $n1>以上
+#. de: Expertise min. <num $n1>
+#. fr: Savoir-faire ≧ <num $n1>
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102115:0:0"
+msgid "Perception ≥ <num $n1>"
+msgstr "Восприятие: не ниже <num $n1>"
+
+#. ja: <sheet PlaceName $n1 0>で任務を開始する
+#. de: Den Freibrief <sheet PlaceName $n1 8 2> beginnen
+#. fr: Commencer le mandat (lieu<nbsp>: <sheet PlaceName $n1 0>)
+#. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102201:0:0"
+msgid "Report to <noun-en PlaceName 2 $n1 2 1>."
+msgstr "Отправляйтесь в <noun-en PlaceName 2 $n1 2 1>."
+
+#. ja: 任務を遂行する
+#. de: Freibrief ausführen
+#. fr: Accomplir le mandat
+msgctxt "Addon:102202:0:0"
+msgid "Carry out leve objectives."
+msgstr "Выполните цели поручения."
+
+#. ja: <sheet PlaceName $n1 0>の<sheet ENpcResident $n2 0>に報告
+#. de: <sheet ENpcResident $n2 0> <sheet PlaceName $n1 8 2> Bericht erstatten
+#. fr: Faire un rapport à <sheet ENpcResident $n2 0> (<sheet PlaceName $n1 0>)
+#. macro: <sheet ENpcResident $n2 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if "<sheet PlaceName $n1 1>"><switch "<sheet PlaceName $n1 1>"><case>in <case>on </switch><else>at </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = text with macros (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet PlaceName $n1 1> — a value from a game data sheet, such as a name; sheet = PlaceName, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
+#. macro: <switch "<sheet PlaceName $n1 1>"><case>in <case>on </switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = text with macros (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102203:0:0"
+msgid "Report back to <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1>."
+msgstr "Вернитесь с докладом к <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>в </if><noun-en PlaceName 2 $n1 2 1>."
+
+#. ja: <sheet PlaceName $n1 0>の<sheet ENpcResident $n2 0>に納品
+#. de: Bestellung bei <sheet ENpcResident $n2 0> <sheet PlaceName $n1 8 2> abliefern
+#. fr: Apporter la livraison à <sheet ENpcResident $n2>
+#. macro: <sheet ENpcResident $n2 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if "<sheet PlaceName $n1 1>"><switch "<sheet PlaceName $n1 1>"><case>in <case>on </switch><else>at </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = text with macros (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet PlaceName $n1 1> — a value from a game data sheet, such as a name; sheet = PlaceName, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
+#. macro: <switch "<sheet PlaceName $n1 1>"><case>in <case>on </switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = text with macros (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102204:0:0"
+msgid "Deliver order to <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1>."
+msgstr "Доставьте заказ <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>в </if><noun-en PlaceName 2 $n1 2 1>."
+
+#. ja: 任務に再挑戦する
+#. de: Freibrief erneut versuchen
+#. fr: Retenter le mandat
+msgctxt "Addon:102205:0:0"
+msgid "Rechallenge levequest."
+msgstr "Повторить поручение"
+
+#. ja: <sheet Item $n1 0>を<sheet ENpcResident $n3 0>に納品
+#. de: <capitalize><if ($n2 == 1)><noun-de Item 5 $n1 1 4 1><else><noun-de Item 5 $n1 2 4 1></if></capitalize> bei <sheet ENpcResident $n3 0> abliefern
+#. fr: Livrer <num $n2> <noun-fr Item 12 $n1 $n2 1> à <sheet ENpcResident $n3 0>
+#. macro: <sheet ENpcResident $n3 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 3, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102206:0:0"
+msgid "Deliver the following to <sheet ENpcResident $n3 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1>"
+msgstr "Доставьте <sheet ENpcResident $n3 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1>"
+
+#. ja: <sheet Item $n1 0>×<num $n2>、<sheet Item $n3 0>×<num $n4>を<sheet ENpcResident $n5 0>に納品
+#. de: Folgendes bei <sheet ENpcResident $n5 0> abliefern:<br><capitalize><noun-de Item 1 $n1 $n2 4 1></capitalize><br><capitalize><noun-de Item 1 $n3 $n4 4 1></capitalize>
+#. fr: Livrer <num $n2> <noun-fr Item 12 $n1 $n2 1> et <num $n4> <noun-fr Item 12 $n3 $n4 1> à <sheet ENpcResident $n5 0>
+#. macro: <sheet ENpcResident $n5 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 5, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n3 $n4 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = number parameter 4, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102207:0:0"
+msgid "Deliver the following to <sheet ENpcResident $n5 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1><br><num $n4> <noun-en Item 3 $n3 $n4 1>"
+msgstr "Доставьте <sheet ENpcResident $n5 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1><br><num $n4> <noun-en Item 3 $n3 $n4 1>"
+
+#. ja: <sheet Item $n1 0>×<num $n2>、<sheet Item $n3 0>×<num $n4>、<sheet Item $n5 0>×<num $n6>を<sheet ENpcResident $n7 0>に納品
+#. de: Folgendes bei <sheet ENpcResident $n7 0> abliefern:<br><capitalize><noun-de Item 1 $n1 $n2 4 1></capitalize><br><capitalize><noun-de Item 1 $n3 $n4 4 1></capitalize><br><capitalize><noun-de Item 1 $n5 $n6 4 1></capitalize>
+#. fr: Livrer <num $n2> <noun-fr Item 12 $n1 $n2 1>, <num $n4> <noun-fr Item 12 $n3 $n4 1> et <num $n6> <noun-fr Item 12 $n5 $n6 1> à <sheet ENpcResident $n7 0>
+#. macro: <sheet ENpcResident $n7 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 7, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n3 $n4 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = number parameter 4, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n5 $n6 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = number parameter 6, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102208:0:0"
+msgid "Deliver the following to <sheet ENpcResident $n7 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1><br><num $n4> <noun-en Item 3 $n3 $n4 1><br><num $n6> <noun-en Item 3 $n5 $n6 1>"
+msgstr "Доставьте <sheet ENpcResident $n7 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1><br><num $n4> <noun-en Item 3 $n3 $n4 1><br><num $n6> <noun-en Item 3 $n5 $n6 1>"
+
+#. ja: <sheet Item $n1 0>×<num $n2>、<sheet Item $n3 0>×<num $n4>、<sheet Item $n5 0>×<num $n6>、<sheet Item $n7 0>×<num $n8>を<sheet ENpcResident $n9 0>に納品
+#. de: Folgendes bei <sheet ENpcResident $n9 0> abliefern:<br><capitalize><noun-de Item 1 $n1 $n2 4 1></capitalize><br><capitalize><noun-de Item 1 $n3 $n4 4 1></capitalize><br><capitalize><noun-de Item 1 $n5 $n6 4 1></capitalize><br><capitalize><noun-de Item 1 $n7 $n8 4 1></capitalize>
+#. fr: Livrer <num $n2> <noun-fr Item 12 $n1 $n2 1>, <num $n4> <noun-fr Item 12 $n3 $n4 1>, <num $n6> <noun-fr Item 12 $n5 $n6 1> et <num $n8> <noun-fr Item 12 $n7 $n8 1> à <sheet ENpcResident $n9 0>
+#. macro: <sheet ENpcResident $n9 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 9, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n3 $n4 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = number parameter 4, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n5 $n6 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 5, count = number parameter 6, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n8> — a number; value = number parameter 8 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n9 $n8 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 9, count = number parameter 8, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102209:0:0"
+msgid "Deliver the following to <sheet ENpcResident $n9 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1><br><num $n4> <noun-en Item 3 $n3 $n4 1><br><num $n6> <noun-en Item 3 $n5 $n6 1><br><num $n8> <noun-en Item 3 $n9 $n8 1>"
+msgstr "Доставьте <sheet ENpcResident $n9 0>:<br><num $n2> <noun-en Item 3 $n1 $n2 1><br><num $n4> <noun-en Item 3 $n3 $n4 1><br><num $n6> <noun-en Item 3 $n5 $n6 1><br><num $n8> <noun-en Item 3 $n9 $n8 1>"
+
+#. ja: <sheet Item $n1 0>を<sheet ENpcResident $n3 0>に納品
+#. de: <capitalize><if ($n2 == 1)><noun-de Item 5 $n1 1 4 1><else><noun-de Item 5 $n1 2 4 1></if></capitalize> bei <sheet ENpcResident $n3 0> abliefern
+#. fr: Livrer <num $n2> <noun-fr Item 12 $n1 $n2 1> à <sheet ENpcResident $n3 0>
+#. macro: <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><noun-en Item 3 $n1 2 1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet ENpcResident $n3 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 3, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102210:0:0"
+msgid "Deliver <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><noun-en Item 3 $n1 2 1></if> to <sheet ENpcResident $n3 0>."
+msgstr "Доставьте <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><noun-en Item 3 $n1 2 1></if> <sheet ENpcResident $n3 0>."
+
+#. ja: 渡す
+#. de: Übergeben
+#. fr: Échanger
+msgctxt "Addon:102216:0:0"
+msgid "Hand Over"
+msgstr "Передать"
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102217:0:0"
+msgid "Cancel"
+msgstr "Отмена"
+
+#. ja: <sheet Item $n1 0>
+#. de: <sheet Item $n1 9>
+#. fr: <sheet Item $n1 9>
+#. macro: <sheet Item $n1 9> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102218:0:0"
+msgid "<sheet Item $n1 9>"
+msgstr "<sheet Item $n1 9>"
+
+#. ja: 話す
+#. de: Plaudern
+#. fr: Parler
+msgctxt "Addon:102221:0:0"
+msgid "Small Talk"
+msgstr "Поболтать"
+
+#. ja: この内容でトレードを実行してよろしいですか？
+#. de: Den Handel so abschließen?
+#. fr: Effectuer l'échange<nbsp>?
+msgctxt "Addon:102223:0:0"
+msgid "Complete trade?"
+msgstr "Завершить обмен?"
+
+#. ja: OK
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102224:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: キャンセル
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102225:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: 経験値
+#. de: Routine
+#. fr: Expérience
+msgctxt "Addon:102232:0:0"
+msgid "Experience"
+msgstr "Опыт"
+
+#. ja: フリーカンパニーポイント
+#. de: Ge<shy>sell<shy>schaftstaler
+#. fr: Points de compagnie libre
+msgctxt "Addon:102233:0:0"
+msgid "Free Company Credits"
+msgstr "Очки свободной компании"
+
+#. ja: フリーカンパニー経験値
+#. de: Routine (Freie Ge<shy>sell<shy>schaft)
+#. fr: Expérience de compagnie libre
+msgctxt "Addon:102234:0:0"
+msgid "Free Company Experience"
+msgstr "Опыт свободной компании"
+
+#. ja: アニマ
+#. de: Anima
+#. fr: Anima
+msgctxt "Addon:102235:0:0"
+msgid "Anima"
+msgstr "Анима"
+
+#. ja: 現在のクラスレベルがクエスト受注条件レベルを下回るため獲得経験値が減少しています。それでも受け取りますか？
+#. de: Die Routine ist reduziert, weil deine momentane Stufe unter der liegt, die für den Auftrag erforderlich war. Trotzdem annehmen?
+#. fr: Le niveau de votre classe actuelle est plus bas que celui recommandé. Vous pouvez l'accepter mais vous recevrez moins d'expérience. Continuer<nbsp>?
+msgctxt "Addon:102236:0:0"
+msgid "Your current class level is lower than the recommended level for this quest. You may still complete the quest, but an experience point penalty will be incurred. Proceed?"
+msgstr "Уровень текущего класса ниже рекомендуемого для этого задания. Выполнить его всё равно можно, но полученный опыт будет снижен. Продолжить?"
+
+#. ja: OK
+#. de: Ja
+#. fr: OK
+msgctxt "Addon:102237:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: キャンセル
+#. de: Nein
+#. fr: Annuler
+msgctxt "Addon:102238:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: <sheet Item $n1 0>
+#. de: <sheet Item $n1 9>
+#. fr: <capitalize><sheet Item $n1 0></capitalize>
+#. macro: <sheet Item $n1 9> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102239:0:0"
+msgid "<sheet Item $n1 9>"
+msgstr "<sheet Item $n1 9>"
+
+#. ja: PvP EXP
+#. de: PvP-Routine
+#. fr: Points JcJ
+msgctxt "Addon:102240:0:0"
+msgid "PvP EXP"
+msgstr "Опыт PvP"
+
+#. ja: シリーズEXP
+#. de: Serien-Routine
+#. fr: EXP de série
+msgctxt "Addon:102241:0:0"
+msgid "Series EXP"
+msgstr "Опыт серии"
+
+#. ja: 選択報酬を1つ選んでください。
+#. de: Wähle die Vergütung.
+#. fr: Veuillez choisir une récompense.
+msgctxt "Addon:102242:0:0"
+msgid "Select a reward."
+msgstr "Выберите награду."
+
+#. ja: 基本報酬
+#. de: Vergütung bei Erfolg
+#. fr: Récompense de base
+msgctxt "Addon:102243:0:0"
+msgid "Base Reward"
+msgstr "Основная награда"
+
+#. ja: マウント：<sheet Mount $n1 0>に騎乗できる
+#. de: Benötigtes Reittier: <title-case><sheet Mount $n1 0></title-case>
+#. fr: Monture requise<nbsp>: <capitalize><sheet Mount $n1 0></capitalize>
+#. macro: <title-case><sheet Mount $n1 0></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <sheet Mount $n1 0> — a value from a game data sheet, such as a name; sheet = Mount, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102250:0:0"
+msgid "Required Mount: <title-case><sheet Mount $n1 0></title-case>"
+msgstr "Требуемое ездовое животное: <sheet Mount $n1 0>"
+
+#. ja: <sheet GrandCompany $n1 0>（<switch $n1><case><sheet GCRankLimsaMaleText $n2 0><case><sheet GCRankGridaniaMaleText $n2 0><case><sheet GCRankUldahMaleText $n2 0></switch>）
+#. de: <noun-de GrandCompany 5 $n1 1 1 1> (<if $gn4><switch $n1><case><sheet GCRankLimsaFemaleText $n2 0><case><sheet GCRankGridaniaFemaleText $n2 0><case><sheet GCRankUldahFemaleText $n2 0></switch><else><switch $n1><case><sheet GCRankLimsaMaleText $n2 0><case><sheet GCRankGridaniaMaleText $n2 0><case><sheet GCRankUldahMaleText $n2 0></switch></if>)
+#. fr: <sheet GrandCompany $n1 0> (<switch $n1><case><sheet GCRankLimsaMaleText $n2 0><case><sheet GCRankGridaniaMaleText $n2 0><case><sheet GCRankUldahMaleText $n2 0></switch>)
+#. macro: <sheet GrandCompany $n1 0> — a value from a game data sheet, such as a name; sheet = GrandCompany, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <switch $n1><case><sheet GCRankLimsaMaleText $n2 0><case><sheet GCRankGridaniaMaleText $n2 0><case><sheet GCRankUldahMaleText $n2 0></switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet GCRankLimsaMaleText $n2 0> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <sheet GCRankGridaniaMaleText $n2 0> — a value from a game data sheet, such as a name; sheet = GCRankGridaniaMaleText, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <sheet GCRankUldahMaleText $n2 0> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102251:0:0"
+msgid "<sheet GrandCompany $n1 0> (<switch $n1><case><sheet GCRankLimsaMaleText $n2 0><case><sheet GCRankGridaniaMaleText $n2 0><case><sheet GCRankUldahMaleText $n2 0></switch>)"
+msgstr "<sheet GrandCompany $n1 0> (<switch $n1><case><sheet GCRankLimsaMaleText $n2 0><case><sheet GCRankGridaniaMaleText $n2 0><case><sheet GCRankUldahMaleText $n2 0></switch>)"
+
+#. ja: エオルゼア時間：<num $n1>:<num2 $n2>～<num $n3>:<num2 $n4>
+#. de: Zeitraum: <num $n1>:<num2 $n2> bis <num $n3>:<num2 $n4> (Eorzäische Zeit)
+#. fr: Heure éorzéenne<nbsp>: <num $n1>:<num2 $n2> à <num $n3>:<num2 $n4>
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <num2 $n2> — a number with at least two digits, such as 05; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <num2 $n4> — a number with at least two digits, such as 05; value = number parameter 4 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102252:0:0"
+msgid "Schedule: <num $n1>:<num2 $n2>-<num $n3>:<num2 $n4> (Eorzea time)"
+msgstr "Расписание: <num $n1>:<num2 $n2>–<num $n3>:<num2 $n4> (эрзейское время)"
+
+#. ja: 制限人数：<num $n1>
+#. de: Teilnehmerzahl: <num $n1>
+#. fr: Taille maximum de l'équipe<nbsp>: <num $n1> <if ($n1 <= 1)>membre<else>membres</if>
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n1 == 1)>member<else>members</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102253:0:0"
+msgid "Maximum Party Size: <num $n1> <if ($n1 == 1)>member<else>members</if>"
+msgstr "Максимальный размер группы: <num $n1> <if ($n1 == 1)>участник<else>участника</if>"
+
+#. ja: 地球時間：<set-time $n1><num $month>月<num $day>日 <switch $weekday><case>日<case>月<case>火<case>水<case>木<case>金<case>土</switch>曜日  <if ($hour >= 12)>午後<else>午前</if><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{0}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{0}</if>時 以降
+#. de: Ab <set-time $n1><num $day>.<num $month>. um <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>:00 Uhr (Erdenzeit)
+#. fr: À partir de <set-time $n1><switch $weekday><case>dimanche<case>lundi<case>mardi<case>mercredi<case>jeudi<case>vendredi<case>samedi</switch> <num $day>.<num $month> à <num $hour>h<num2 $min> (temps réel)
+#. macro: <set-time $n1> — sets the time placeholders ($hour, $day, …) to a Unix time; time = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gn77 == 3)><num $day>/<num $month><else><num $month>/<num $day></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 77 == 3 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $day> — a number; value = day of the month of the set time (game data: keep it; it may move or repeat)
+#. macro: <num $month> — a number; value = month of the set time (game data: keep it; it may move or repeat)
+#. macro: <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($hour < 12)>a.m.<else>p.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 < 12 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102254:0:0"
+msgid "Available: <set-time $n1><if ($gn77 == 3)><num $day>/<num $month><else><num $month>/<num $day></if>  at <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour < 12)>a.m.<else>p.m.</if> (Earth time)"
+msgstr "Доступно: <set-time $n1><if ($gn77 == 3)><num $day>/<num $month><else><num $month>/<num $day></if> в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour < 12)>до полудня<else>после полудня</if> (земное время)"
+
+#. ja: 1人専用
+#. de: Nur solo
+#. fr: Solo
+msgctxt "Addon:102255:0:0"
+msgid "Solo"
+msgstr "Одиночное прохождение"
+
+#. ja: 開始都市：<sheet Town $n1 0>
+#. de: Stadt<shy>staat: <sheet Town $n1 0>
+#. fr: Cité-État<nbsp>: <sheet Town $n1 0>
+#. macro: <sheet Town $n1 0> — a value from a game data sheet, such as a name; sheet = Town, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102256:0:0"
+msgid "City-state: <sheet Town $n1 0>"
+msgstr "Город-государство: <sheet Town $n1 0>"
+
+#. ja: クエスト「<sheet Quest $n1 0>」のコンプリート
+#. de: „<sheet Quest $n1 0>“ abgeschlossen
+#. fr: Quête requise<nbsp>: <sheet Quest $n1 0>
+#. macro: <sheet Quest $n1 0> — a value from a game data sheet, such as a name; sheet = Quest, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102257:0:0"
+msgid "Quest Requirement: <sheet Quest $n1 0>"
+msgstr "Требуемое задание: <sheet Quest $n1 0>"
+
+#. ja: <sheet ClassJobCategory $n1 0>レベル<num $n2>以上
+#. de: <sheet ClassJobCategory $n1 0> auf Mindeststufe <num $n2>
+#. fr: <sheet ClassJobCategory $n1 0> nv <num $n2>
+#. macro: <capitalize><sheet ClassJobCategory $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <sheet ClassJobCategory $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJobCategory, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102258:0:0"
+msgid "<capitalize><sheet ClassJobCategory $n1 0></capitalize> (Lv. <num $n2>)"
+msgstr "<sheet ClassJobCategory $n1 0> (ур. <num $n2>)"
+
+#. ja: 現在のクラス・ジョブが、<sheet ClassJobCategory $n1 0>である
+#. de: Benötigte Klasse/Job: <sheet ClassJobCategory $n1 0>
+#. fr: Classe/job requis<nbsp>: <sheet ClassJobCategory $n1 0>
+#. macro: <capitalize><sheet ClassJobCategory $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <sheet ClassJobCategory $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJobCategory, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102259:0:0"
+msgid "Required Class/Job: <capitalize><sheet ClassJobCategory $n1 0></capitalize>"
+msgstr "Требуемый класс/профессия: <sheet ClassJobCategory $n1 0>"
+
+#. ja: レベル<num $n1>以上
+#. de: Mindestens Stufe <num $n1>
+#. fr: niveau <num $n1>
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102260:0:0"
+msgid "Level Requirement: Lv. <num $n1>"
+msgstr "Требуемый уровень: <num $n1>"
+
+#. ja: <sheet InstanceContent $n1 3>を攻略
+#. de: Dungeon-Voraussetzung: „<capitalize><sheet InstanceContent $n1 3></capitalize>“
+#. fr: Mission requise<nbsp>: <sheet InstanceContent $n1 3>
+#. macro: <capitalize><sheet InstanceContent $n1 3></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <sheet InstanceContent $n1 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 1, column = 3 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102261:0:0"
+msgid "Dungeon Requirement: <capitalize><sheet InstanceContent $n1 3></capitalize>"
+msgstr "Требуемое подземелье: <sheet InstanceContent $n1 3>"
+
+#. ja: 前日までに受注した友好部族クエスト：デイリークエストが進行中ではない
+#. de: Keine Aufträge der Freundesvölker von gestern oder früher aktiv
+#. fr: Aucune quête quotidienne des peuples alliés acceptée avant aujourd'hui ne doit être en cours.
+msgctxt "Addon:102262:0:0"
+msgid "No allied society daily quests accepted prior to today may be active."
+msgstr "Не должно быть активных ежедневных заданий союзных племён, принятых до сегодняшнего дня."
+
+#. ja: 本日の友好部族クエスト：デイリークエスト受注権
+#. de: Heute keine Aufträge der Freundesvölker mehr annehmbar
+#. fr: Quota de quêtes quotidiennes du jour
+msgctxt "Addon:102263:0:0"
+msgid "No remaining allied society daily quest allowances."
+msgstr "Не осталось доступных ежедневных заданий союзных племён."
+
+#. ja: イベント開催期間中
+#. de: Nur während der Dauer des saisonalen Ereignisses spielbar.
+#. fr: Effectuer la quête pendant l'événement saisonnier correspondant
+msgctxt "Addon:102264:0:0"
+msgid "Only available during the seasonal event."
+msgstr "Доступно только во время сезонного события."
+
+#. ja: ハウス・アパルトメントの部屋のいずれかを所持<br>もしくはハウスメイトである<br><br>ホームワールドである
+#. de: Hat eine Wohnung, Unterkunft oder ist in einer Wohngemeinschaft<br>Befindet sich auf der Stammwelt
+#. fr: Avoir une maison ou un appartement, ou bien bénéficier d'un partage de maison.<br><br>Être dans son Monde d'origine.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102265:0:0"
+msgid "Must own an apartment or an estate, or be sharing an estate.<br><br>Must be on Home World."
+msgstr "Нужно владеть квартирой или поместьем либо быть соседом по поместью.<br><br>Нужно находиться в родном мире."
+
+#. ja: 「<sheet ExVersion $n1 0>」を登録済みである
+#. de: Hat <sheet ExVersion $n1 0> registriert
+#. fr: <sheet ExVersion $n1 0> installé et enregistré
+#. macro: <sheet ExVersion $n1 0> — a value from a game data sheet, such as a name; sheet = ExVersion, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102266:0:0"
+msgid "<sheet ExVersion $n1 0> installed and registered."
+msgstr "Установлено и зарегистрировано: <sheet ExVersion $n1 0>."
+
+#. ja: 現在のクラス・ジョブが、受注時と同じ、<sheet ClassJob $n1 0>である
+#. de: Benötigte Klasse/Job: <sheet ClassJob $n1 0>
+#. fr: Même classe ou job qu'en commençant la quête<nbsp>: <sheet ClassJob $n1 0>
+#. macro: <capitalize><sheet ClassJob $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102267:0:0"
+msgid "Required Class/Job: <capitalize><sheet ClassJob $n1 0></capitalize>"
+msgstr "Требуемый класс/профессия: <sheet ClassJob $n1 0>"
+
+#. ja: 現在のクラス・ジョブが、レベル<num $n1>以上
+#. de: Ist in der momentanen Klasse min. Stufe <num $n1>
+#. fr: Être niveau <num $n1> ou plus dans la classe ou le job actuel
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102268:0:0"
+msgid "Level Requirement: Lv. <num $n1>"
+msgstr "Требуемый уровень текущего класса/профессии: <num $n1>"
+
+#. ja: 必要なアイテムを所持、もしくは装備している
+#. de: Hat den erforderlichen Gegenstand angelegt oder in Besitz.
+#. fr: Être en possession ou équipé<if $gn4>e</if> de l'objet requis
+msgctxt "Addon:102269:0:0"
+msgid "Must possess or have equipped the necessary item."
+msgstr "Нужно иметь при себе необходимый предмет или надеть его."
+
+#. ja: 必要なアイテムを所持している
+#. de: Hat die erforderlichen Gegenstände in Besitz.
+#. fr: Être en possession de l'objet requis
+msgctxt "Addon:102270:0:0"
+msgid "Must possess the necessary item."
+msgstr "Нужно иметь при себе необходимый предмет."
+
+#. ja: つよくてニューゲームでクエストを受注していない
+#. de: Kein Auftrag mit Neues Spiel+ aktiv.
+#. fr: Vous ne pouvez accepter plus d'une quête lors d'une Nouvelle partie +
+msgctxt "Addon:102271:0:0"
+msgid "Must not have a New Game+ quest currently in progress."
+msgstr "Не должно быть активных заданий «Новая игра+»."
+
+#. ja: 必要なアイテムを装備している
+#. de: Hat den erforderlichen Gegenstand angelegt.
+#. fr: Être équipé<if $gn4>e</if> de l'objet requis
+msgctxt "Addon:102272:0:0"
+msgid "Must have equipped the necessary item."
+msgstr "Необходимо надеть нужный предмет."
+
+#. ja: つよくてニューゲームガイドで「次のクエスト」に指定されている
+#. de: Auftrag ist in Neues Spiel+ aktiv.
+#. fr: Votre prochaine quête est indiquée par le guide Nouvelle partie +.
+msgctxt "Addon:102273:0:0"
+msgid "Must be in New Game+ mode."
+msgstr "Нужно находиться в режиме «Новая игра+»."
+
+#. ja: ホームポイント登録
+#. de: Als Heimatpunkt speichern
+#. fr: Enregistrer comme point de retour
+msgctxt "Addon:102301:0:0"
+msgid "Set Home Point."
+msgstr "Установить точку возвращения"
+
+#. ja: お気に入り登録
+#. de: Als Favoriten speichern
+#. fr: Enregistrer comme favori
+msgctxt "Addon:102302:0:0"
+msgid "Register Favored Destination."
+msgstr "Добавить в избранное"
+
+#. ja: ホームポイントに登録しますか？
+#. de: Diesen Ort als Heimatpunkt speichern?
+#. fr: Enregistrer cet endroit comme point de retour<nbsp>?
+msgctxt "Addon:102303:0:0"
+msgid "Set this location as your home point?"
+msgstr "Установить это место как точку возвращения?"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102304:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102305:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: お気に入りに登録しますか？
+#. de: Diesen Ort als Favoriten speichern?
+#. fr: Enregistrer cet endroit comme favori<nbsp>?
+msgctxt "Addon:102306:0:0"
+msgid "Register this location as a favored destination?"
+msgstr "Добавить это место в избранное?"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102307:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102308:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: 上書きするお気に入りを選択してください。
+#. de: Welcher Ort soll überschrieben werden?
+#. fr: Choisissez l'endroit favori à remplacer.
+msgctxt "Addon:102309:0:0"
+msgid "Select a favored destination to overwrite."
+msgstr "Выберите точку избранного, которую хотите заменить."
+
+#. ja: やめる
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102310:0:0"
+msgid "Quit."
+msgstr "Отмена"
+
+#. ja: 「お気に入り（Nintendo Switch Online特典無料枠）」には<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>が登録されています。<br>変更しますか？
+#. de: Diesen Ätheryten als kostenlosen Favoriten speichern (durch Nintendo Switch Online)?<br><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize> wird dabei entfernt.
+#. fr: L'éthérite <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> est ac<shy>tu<shy>el<shy>le<shy>ment votre favori gratuit (Nintendo Switch Online).<br>Changer de favori<nbsp>?
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102311:0:0"
+msgid "Register this location as your Nintendo Switch Online free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
+msgstr "Добавить это место в бесплатное избранное Nintendo Switch Online? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+
+#. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（Nintendo Switch Online特典無料枠）」に登録場所を変更しますか？
+#. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter Nintendo Switch Online speichern?
+#. fr: Cette éthérite est déjà un favori gratuit.<br>L'enregistrer comme favori gratuit (Nintendo Switch Online) à la place<nbsp>?
+msgctxt "Addon:102312:0:0"
+msgid "This location is currently registered as a different free destination. Register it as your Nintendo Switch Online free destination instead?"
+msgstr "Это место уже выбрано как другая бесплатная точка. Заменить её на бесплатную точку Nintendo Switch Online?"
+
+#. ja: 「お気に入り（Nintendo Switch Online特典無料枠）」に登録した場所へは無料でテレポできます。<br>このエーテライトはお気に入りに設定されていますが、解除して「お気に入り（Nintendo Switch Online特典無料枠）」に変更しますか？
+#. de: Dieser Ätheryt ist momentan als kostenpflichtiger Favorit gespeichert.<br>Stattdessen als kostenlosen Favoriten (durch Nintendo Switch Online) speichern?
+#. fr: Cette éthérite est un favori.<br>L'enregistrer comme favori gratuit (Nintendo Switch Online)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
+msgctxt "Addon:102313:0:0"
+msgid "This location is currently registered as a favored destination. Register it as your Nintendo Switch Online free destination instead?"
+msgstr "Это место уже в избранном. Заменить его бесплатной точкой Nintendo Switch Online?"
+
+#. ja: このエーテライトは「お気に入り（<if ($gn75 == 7)>Nintendo Switch Online<else>他プラットフォーム</if>特典無料枠）」に登録されています。<br>「お気に入り（<if ($gn75 == 7)>Nintendo Switch Online<else>他プラットフォーム</if>特典無料枠）」の登録を解除して、お気に入りに登録しますか？
+#. de: Dieser Ätheryt ist als kostenloser Favorit (durch <if ($gn75 == 7)>Nintendo Switch Online<else>die Plattform</if>) registriert.<br>Die Registrierung aufheben und als kostenpflichtigen Favoriten speichern?
+#. fr: Cette éthérite est un favori gratuit (<if ($gn75 == 7)>Nintendo Switch Online<else>autre plateforme</if>).<br>L'enregistrer comme favori payant<nbsp>?
+#. macro: <if ($gn75 == 7)>Nintendo Switch Online<else>platform-based</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 75 == 7 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102314:0:0"
+msgid "This location is currently registered as your <if ($gn75 == 7)>Nintendo Switch Online<else>platform-based</if> free destination. Register it as a favored destination instead?"
+msgstr "Это место уже выбрано как бесплатная точка <if ($gn75 == 7)>Nintendo Switch Online<else>другой платформы</if>. Заменить её обычной точкой избранного?"
+
+#. ja: ホームポイントは<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>に登録されています。<br>変更しますか？
+#. de: <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> ist als Heimatpunkt registriert. Ändern?
+#. fr: Point de retour actuel<nbsp>: <sheet PlaceName "<sheet Aetheryte $n1 8>" 0>.<br>Voulez-vous le changer<nbsp>?
+#. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102315:0:0"
+msgid "Change your home point from <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1>?"
+msgstr "Сменить точку возвращения с <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1>?"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102316:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102317:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: 「お気に入り（Nintendo Switch Online特典無料枠）」に登録した場所へは無料でテレポを利用できます。<br>「お気に入り（Nintendo Switch Online特典無料枠）」に登録しますか？
+#. de: Als kostenlosen Favoriten speichern (durch Nintendo Switch Online)?
+#. fr: Enregistrer comme favori gratuit (Nintendo Switch Online)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
+msgctxt "Addon:102318:0:0"
+msgid "Register this location as your Nintendo Switch Online free destination?"
+msgstr "Добавить это место в бесплатное избранное Nintendo Switch Online?"
+
+#. ja: <sheet PlaceName "<sheet Aetheryte $n1 8>" 0>を外して<sheet PlaceName "<sheet Aetheryte $n2 8>" 0>をエーテライトのお気に入り登録しますか？
+#. de: <sheet PlaceName "<sheet Aetheryte $n2 8>" 0> statt <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> als Favorit registrieren?
+#. fr: Retirer <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> de vos favoris et remplacer par <sheet PlaceName "<sheet Aetheryte $n2 8>" 0><nbsp>?
+#. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n2 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Aetheryte $n2 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 2, column = 8 (game data: keep it; it may move or repeat)
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102319:0:0"
+msgid "Add <noun-en PlaceName 2 \"<sheet Aetheryte $n2 8>\" 2 1> to your favored destinations? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
+msgstr "Добавить <noun-en PlaceName 2 \"<sheet Aetheryte $n2 8>\" 2 1> в избранное? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102320:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102321:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: <sheet PlaceName $n1 0>
+#. de: <sheet PlaceName $n1 0>
+#. fr: <sheet PlaceName $n1 0>
+#. macro: <sheet PlaceName $n1 0> — a value from a game data sheet, such as a name; sheet = PlaceName, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102322:0:0"
+msgid "<sheet PlaceName $n1 0>."
+msgstr "<sheet PlaceName $n1 0>."
+
+#. ja: <sheet PlaceName $n1 0>
+#. de: <sheet PlaceName $n1 0>
+#. fr: <sheet PlaceName $n1 0>
+#. macro: <sheet PlaceName $n1 0> — a value from a game data sheet, such as a name; sheet = PlaceName, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102323:0:0"
+msgid "<sheet PlaceName $n1 0>."
+msgstr "<sheet PlaceName $n1 0>."
+
+#. ja: 「お気に入り（PlayStation®Plus特典無料枠）」には<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>が登録されています。<br>変更しますか？
+#. de: Diesen Ätheryten als kostenlosen Favoriten speichern (durch PlayStation®Plus)?<br><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize> wird dabei entfernt.
+#. fr: L'éthérite <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> est ac<shy>tu<shy>el<shy>le<shy>ment votre favori gratuit (PlayStation®Plus).<br>Changer de favori<nbsp>?
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102324:0:0"
+msgid "Register this location as your PlayStation®Plus free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
+msgstr "Добавить это место в бесплатное избранное PlayStation®Plus? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+
+#. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（PlayStation®Plus特典無料枠）」に登録場所を変更しますか？
+#. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter PlayStation®Plus speichern?
+#. fr: Cette éthérite est déjà un favori gratuit.<br>L'enregistrer comme favori gratuit (PlayStation®Plus) à la place<nbsp>?
+msgctxt "Addon:102325:0:0"
+msgid "This location is currently registered as a different free destination. Register it as your PlayStation®Plus free destination instead?"
+msgstr "Это место уже выбрано как другая бесплатная точка. Заменить её на бесплатную точку PlayStation®Plus?"
+
+#. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（ワンタイムパスワード特典無料枠）」に登録場所を変更しますか？
+#. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter Einmalpasswort speichern?
+#. fr: Cette éthérite est déjà un favori gratuit.<br>L'enregistrer comme favori gratuit (identificateur) à la place<nbsp>?
+msgctxt "Addon:102326:0:0"
+msgid "This location is currently registered as a different free destination. Register it as your security token free destination instead?"
+msgstr "Это место уже выбрано как другая бесплатная точка. Заменить её на бесплатную точку для токена безопасности?"
+
+#. ja: 「お気に入り（PlayStation®Plus特典無料枠）」に登録した場所へは無料でテレポを利用できます。<br>「お気に入り（PS Plus特典無料枠）」に登録しますか？
+#. de: Als kostenlosen Favoriten speichern (durch PlayStation®Plus)?
+#. fr: Enregistrer comme favori gratuit (PS Plus)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
+msgctxt "Addon:102327:0:0"
+msgid "Register this location as your PlayStation®Plus free destination?"
+msgstr "Добавить это место в бесплатное избранное PlayStation®Plus?"
+
+#. ja: 「お気に入り（PlayStation®Plus特典無料枠）」に登録した場所へは無料でテレポできます。<br>このエーテライトはお気に入りに設定されていますが、解除して「お気に入り（PS Plus特典無料枠）」に変更しますか？
+#. de: Dieser Ätheryt ist momentan als kostenpflichtiger Favorit gespeichert.<br>Stattdessen als kostenlosen Favoriten (durch PlayStation®Plus) speichern?
+#. fr: Cette éthérite est un favori.<br>L'enregistrer comme favori gratuit (PS Plus)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
+msgctxt "Addon:102328:0:0"
+msgid "This location is currently registered as a favored destination. Register it as your PlayStation®Plus free destination instead?"
+msgstr "Это место уже в избранном. Заменить его бесплатной точкой PlayStation®Plus?"
+
+#. ja: 行き先を選択してください。<br>現在地：<string $s1>
+#. de: Wähle den Zielort.<br>Jetzt: <string $s1>
+#. fr: Choisissez une destination.<br>Lieu actuel<nbsp>: <string $s1>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102329:0:0"
+msgid "Select a destination.<br>Current Location: <string $s1>"
+msgstr "Выберите место назначения.<br>Текущее место: <string $s1>"
+
+#. ja: やめる
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102330:0:0"
+msgid "Quit."
+msgstr "Отмена"
+
+#. ja: 「お気に入り（Nintendo Switch Online特典無料枠）」として登録済みです。<br>登録を解除して「お気に入り（ワンタイムパスワード特典無料枠）」に登録場所を変更しますか？
+#. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert (Nintendo Switch Online).<br>Stattdessen unter Einmalpasswort speichern?
+#. fr: Cette éthérite est déjà un favori gratuit (Nintendo Switch Online).<br>L'enregistrer comme favori gratuit (identificateur) à la place<nbsp>?
+msgctxt "Addon:102331:0:0"
+msgid "This location is currently registered as your Nintendo Switch Online free destination. Register it as your security token free destination instead?"
+msgstr "Это место уже выбрано как бесплатная точка Nintendo Switch Online. Заменить её бесплатной точкой для токена безопасности?"
+
+#. ja: 「お気に入り（他プラットフォーム特典無料枠）」として登録済みです。<br>「お気に入り（PlayStation®Plus特典無料枠）」にも登録しますか？
+#. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert (andere Plattform).<br>Auch unter PlayStation®Plus speichern?
+#. fr: Cette éthérite est déjà un favori gratuit (autre plateforme).<br>L'enregistrer comme favori gratuit (PlayStation®Plus) à la place<nbsp>?
+msgctxt "Addon:102332:0:0"
+msgid "This location is currently registered as a different platform-based free destination. Register it as your PlayStation®Plus free destination as well?"
+msgstr "Это место уже выбрано как бесплатная точка другой платформы. Также добавить его в бесплатное избранное PlayStation®Plus?"
+
+#. ja: このエーテライトは「お気に入り（<if ($gn78 == 99)>PlayStation®Plus<else>他プラットフォーム</if>特典無料枠）」に登録されています。<br>「お気に入り（<if ($gn78 == 99)>PS Plus<else>他プラットフォーム</if>特典無料枠）」の登録を解除して、お気に入りに登録しますか？
+#. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert (<if ($gn78 == 99)>PlayStation®Plus<else>andere Plattform</if>).<br>Stattdessen als kostenpflichtiger Favorit speichern?
+#. fr: Cette éthérite est un favori gratuit (<if ($gn78 == 99)>PlayStation®Plus<else>autre plateforme</if>).<br>L'enregistrer comme favori payant<nbsp>?
+#. macro: <if ($gn78 == 99)>PlayStation®Plus<else>platform-based</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 99 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102333:0:0"
+msgid "This location is currently registered as your <if ($gn78 == 99)>PlayStation®Plus<else>platform-based</if> free destination. Register it as a favored destination instead?"
+msgstr "Это место уже выбрано как бесплатная точка <if ($gn78 == 99)>PlayStation®Plus<else>другой платформы</if>. Заменить её обычной точкой избранного?"
+
+#. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」に登録した場所へは無料でテレポを利用できます。<br>「お気に入り（ワンタイムパスワード特典無料枠）」に登録しますか？
+#. de: Als kostenlosen Favoriten speichern (durch Einmalpasswort)?
+#. fr: Enregistrer comme favori gratuit (Idendificateur)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
+msgctxt "Addon:102334:0:0"
+msgid "Register this location as your security token free destination?"
+msgstr "Зарегистрировать это место как бесплатное направление по токену безопасности?"
+
+#. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」には<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>が登録されています。<br>変更しますか？
+#. de: Diesen Ätheryten als kostenlosen Favoriten speichern (durch Einmalpasswort)?<br><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize> wird dabei entfernt.
+#. fr: L'éthérite <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> est ac<shy>tu<shy>el<shy>le<shy>ment votre favori gratuit (Identificateur).<br>Changer de favori<nbsp>?
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102335:0:0"
+msgid "Register this location as your security token free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
+msgstr "Зарегистрировать это место как бесплатное направление по токену безопасности? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+
+#. ja: このエーテライトは「お気に入り（ワンタイムパスワード特典無料枠）」に登録されています。<br>「お気に入り（ワンタイムパスワード特典無料枠）」の登録を解除して、お気に入りに登録しますか？
+#. de: Dieser Ätheryt ist als kostenloser Favorit (durch Einmalpasswort) registriert.<br>Die Registrierung aufheben und als kostenpflichtigen Favoriten speichern?
+#. fr: Cette éthérite est un favori gratuit (Identificateur).<br>L'enregistrer comme favori payant<nbsp>?
+msgctxt "Addon:102336:0:0"
+msgid "This location is currently registered as your security token free destination. Register it as a favored destination instead?"
+msgstr "Это место сейчас зарегистрировано как бесплатное направление по токену безопасности. Зарегистрировать его вместо этого как избранное направление?"
+
+#. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」に登録した場所へは無料でテレポを利用できます。<br>このエーテライトはお気に入りに設定されていますが、解除して「お気に入り（ワンタイムパスワード特典無料枠）」に変更しますか？
+#. de: Dieser Ätheryt ist momentan als ein kostenpflichtiger Favorit gespeichert.<br>Stattdessen als kostenlosen Favoriten (durch Einmalpasswort) speichern?
+#. fr: Cette éthérite est un favori.<br>L'enregistrer comme favori gratuit  (Identificateur)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
+msgctxt "Addon:102337:0:0"
+msgid "This location is currently registered as a favored destination. Register it as your security token free destination instead?"
+msgstr "Это место сейчас зарегистрировано как избранное направление. Заменить его бесплатным направлением по токену безопасности?"
+
+#. ja: 「お気に入り（他プラットフォーム特典無料枠）」として登録済みです。<br>「お気に入り（Nintendo Switch Online特典無料枠）」にも登録しますか？
+#. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert (andere Plattform).<br>Auch unter Nintendo Switch Online speichern?
+#. fr: Cette éthérite est déjà un favori gratuit (autre plateforme).<br>L'enregistrer comme favori gratuit (Nintendo Switch Online) à la place<nbsp>?
+msgctxt "Addon:102338:0:0"
+msgid "This location is currently registered as a different platform-based free destination. Register it as your Nintendo Switch Online free destination as well?"
+msgstr "Это место уже зарегистрировано как бесплатное направление для другой платформы. Зарегистрировать его также как бесплатное направление Nintendo Switch Online?"
+
+#. ja: エリア移動を行うと参加申請がキャンセルされます。<br>本当によろしいですか？
+#. de: Wenn du das Areal verlässt, wird deine Anmeldung zum Chocobo-Rennen zurückgezogen. Fortfahren?
+#. fr: L'inscription ou l'enregistrement en cours sera annulé si vous quittez la zone.<br>Continuer<nbsp>?
+msgctxt "Addon:102339:0:0"
+msgid "Your entry will be canceled upon leaving the area. Proceed?"
+msgstr "При выходе из области ваша заявка будет отменена. Продолжить?"
+
+#. ja: 達成数
+#. de: Erfüllt
+#. fr: Terminé
+msgctxt "Addon:102341:0:0"
+msgid "Completed"
+msgstr "Выполнено"
+
+#. ja: 記録数
+#. de: Erfüllt
+#. fr: Terminé
+msgctxt "Addon:102342:0:0"
+msgid "Completed"
+msgstr "Выполнено"
+
+#. ja: 設置数
+#. de: Erfüllt
+#. fr: Terminé
+msgctxt "Addon:102343:0:0"
+msgid "Completed"
+msgstr "Выполнено"
+
+#. ja: 評価値
+#. de: Bewertung
+#. fr: Évaluation
+msgctxt "Addon:102344:0:0"
+msgid "Evaluation"
+msgstr "Оценка"
+
+#. ja: 戻る
+#. de: Zurück
+#. fr: Retour
+msgctxt "Addon:102345:0:0"
+msgid "Return"
+msgstr "Назад"
+
+#. ja: <sheet PlaceName $n1 0>にて<if ($n2 == 1)>採掘<else>園芸</if>道具（主道具）を装備し、任務を開始
+#. de: <capitalize><sheet PlaceName $n1 8 2></capitalize> dein Hauptwerkzeug für <if ($n2 == 1)>Minenarbeiter<else>Gärtner</if> anlegen und mit der Arbeit beginnen
+#. fr: Aller <sheet PlaceName $n1 8 2>, s'équiper d'un outil principal de <if ($n2 == 1)>mineur<else>botaniste</if> et commencer la récolte
+#. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)>miner's<else>botanist's</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 == 1)>mining<else>logging</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102350:0:0"
+msgid "Travel to <noun-en PlaceName 2 $n1 2 1>, equip a <if ($n2 == 1)>miner's<else>botanist's</if> primary tool, and commence <if ($n2 == 1)>mining<else>logging</if>."
+msgstr "Отправляйтесь в <noun-en PlaceName 2 $n1 2 1>, экипируйте основной инструмент <if ($n2 == 1)>рудокопа<else>ботаника</if> и приступайте к <if ($n2 == 1)>добыче руды<else>лесозаготовке</if>."
+
+#. ja: <sheet PlaceName $n1 0>にて<if ($n2 == 1)>採掘<else>園芸</if>道具（副道具）を装備し、任務を開始
+#. de: <capitalize><sheet PlaceName $n1 8 2></capitalize> dein Nebenwerkzeug für <if ($n2 == 1)>Minenarbeiter<else>Gärtner</if> anlegen und mit der Arbeit beginnen
+#. fr: Aller <sheet PlaceName $n1 8 2>, s'équiper d'un outil secondaire de <if ($n2 == 1)>mineur<else>botaniste</if> et commencer la récolte
+#. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)>miner's<else>botanist's</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 == 1)>quarrying<else>harvesting</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102351:0:0"
+msgid "Travel to <noun-en PlaceName 2 $n1 2 1>, equip a <if ($n2 == 1)>miner's<else>botanist's</if> secondary tool, and commence <if ($n2 == 1)>quarrying<else>harvesting</if>."
+msgstr "Отправляйтесь в <noun-en PlaceName 2 $n1 2 1>, экипируйте дополнительный инструмент <if ($n2 == 1)>рудокопа<else>ботаника</if> и приступайте к <if ($n2 == 1)>добыче камня<else>сбору растений</if>."
+
+#. ja: このクエストを進行させるためには、<br>クエスト「<sheet Quest $n1 QUEST_NAME>」で実行中の、<br>特殊な状態を解除する必要があります。
+#. de: Um diesen Auftrag fortzuführen, muss erst der gegenwärtigen Missionsstatus des Auftrages „<sheet Quest $n1 QUEST_NAME>“ zurückgesetzt werden.
+#. fr: L'objectif que vous avez entrepris dans la quête “<sheet Quest $n1 QUEST_NAME>” vous a mis<if $gn4>e</if> dans une situation qui vous empêche de progresser dans celle-ci.
+#. macro: <sheet Quest $n1 QUEST_NAME> — a value from a game data sheet, such as a name; sheet = Quest, row = number parameter 1, column = QUEST_NAME (game data: keep it; it may move or repeat)
+msgctxt "Addon:102352:0:0"
+msgid "Certain statuses or effects granted in the quest “<sheet Quest $n1 QUEST_NAME>” must be dispelled before proceeding with this duty."
+msgstr "Чтобы продолжить это задание, нужно снять особые эффекты, полученные в ходе задания «<sheet Quest $n1 QUEST_NAME>»."
+
+#. ja: 特殊な状態を解除しますか？
+#. de: Missionsstatus zurücksetzen?
+#. fr: Réinitialiser cet ancien objectif pour progresser dans la quête actuelle<nbsp>?
+msgctxt "Addon:102353:0:0"
+msgid "Dispel effects and proceed?"
+msgstr "Снять эффекты и продолжить?"
+
+#. ja: チョコボポーター
+#. de: Linien-Chocobo
+#. fr: Relais à chocobos
+msgctxt "Addon:102381:0:0"
+msgid "Chocobo Porter"
+msgstr "Чокобо-перевозчик"
+
+#. ja: 行き先を選択してください
+#. de: Wähle ein Ziel
+#. fr: Choisissez votre destination
+msgctxt "Addon:102382:0:0"
+msgid "Select a destination."
+msgstr "Выберите пункт назначения."
+
+#. ja: <sheet ChocoboTaxiStand $n1 8> <num $n2>ギル/約<num $n3>分
+#. de: <sheet ChocoboTaxiStand $n1 8> (<num $n3> <if ($n3 == 1)>Minute<else>Minuten</if> für <kilo $n2 "."> Gil)
+#. fr: <sheet ChocoboTaxiStand $n1 8> (<num $n3> <if ($n3 == 1)>minute<else>minutes</if>/<kilo $n2 "<nbsp>"> gil<if ($n2 <= 1)><else>s</if>)
+#. macro: <sheet ChocoboTaxiStand $n1 8> — a value from a game data sheet, such as a name; sheet = ChocoboTaxiStand, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
+msgctxt "Addon:102383:0:0"
+msgid "<sheet ChocoboTaxiStand $n1 8>. (<num $n3> <if ($n3 == 1)>minute<else>minutes</if>/<kilo $n2 \",\"> gil)"
+msgstr "<sheet ChocoboTaxiStand $n1 8> (<num $n3> мин. / <kilo $n2 \",\"> гил)"
+
+#. ja: やめる
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102384:0:0"
+msgid "Quit."
+msgstr "Выйти"
+
+#. ja: 「<string $s1>」でよろしいですか？
+#. de: Bleibst du bei dem Namen „<string $s1>“?
+#. fr: Confirmer le nom “<string $s1>”<nbsp>?
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102391:0:0"
+msgid "Name your chocobo “<string $s1>”?"
+msgstr "Назвать чокобо «<string $s1>»?"
+
+#. ja: <string $s1>
+#. de: <capitalize>{$s1}</capitalize>
+#. fr: <capitalize>{$s1}</capitalize>
+#. macro: <capitalize>{$s1}</capitalize> — the content with its first letter in upper case (may be added or dropped)
+msgctxt "Addon:102401:0:0"
+msgid "<capitalize>{$s1}</capitalize>"
+msgstr "<capitalize>{$s1}</capitalize>"
+
+#. ja: <string $s1>
+#. de: <capitalize>{$s1}</capitalize>
+#. fr: <capitalize>{$s1}</capitalize>
+#. macro: <title-case>{$s1}</title-case> — the content with every word capitalized (may be added or dropped)
+msgctxt "Addon:102402:0:0"
+msgid "<title-case>{$s1}</title-case>"
+msgstr "<title-case>{$s1}</title-case>"
+
+#. ja: クエスト『<string $s1>』のバトルを開始します。<br>よろしいですか？<br><br><ui-color 506><ui-edge-color 507>※レベルシンク対象コンテンツです。<br>　上限を超えた場合、以下のように自動調整されます。<br>　レベル：<sheet QuestBattle $n2 3><if ($n3 > 0)><br>　アイテムレベル：<num $n3></if></ui-edge-color></ui-color>
+#. de: Den Kampf von „<string $s1>“ beginnen?<br><ui-color 506><ui-edge-color 507>Dieser Inhalt unterliegt einer automatischen Stufenanpassung. Wenn dein Charakter <if ($n3 > 0)>die folgenden Werte<else>den folgenden Wert</if> übersteigt, wird eine entsprechende Anpassung vorgenommen:<br>-  Stufe: <sheet QuestBattle $n2 3><if ($n3 > 0)><br>-  Gegen<shy>stands<shy>stufe: <num $n3></if></ui-edge-color></ui-color>
+#. fr: Commencer la bataille de la quête “<string $s1>”<nbsp>?<br><br><ui-color 506><ui-edge-color 507>* Cette bataille est sujette à la synchronisation de quête.<br>Si les ca<shy>rac<shy>té<shy>ris<shy>ti<shy>ques de votre personnage dépassent un certain niveau, elles seront ajustées de la façon suivante<nbsp>:<br> Niveau<nbsp>: <sheet QuestBattle $n2 3><if ($n3 > 0)><br> Niveau d'objet moyen<nbsp>: <num $n3></if></ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <sheet QuestBattle $n2 3> — a value from a game data sheet, such as a name; sheet = QuestBattle, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 > 0)><br> Item level: <num $n3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102421:0:0"
+msgid "Duty calls. Commence battle for<br>“<string $s1>”?<br><br><ui-color 500><ui-edge-color 501>※Level sync is in effect.</ui-edge-color></ui-color> If you are above the maximum allowed level, it will be synced as follows:<br><br> Level: <sheet QuestBattle $n2 3><if ($n3 > 0)><br> Item level: <num $n3></if></ui-edge-color></ui-color>"
+msgstr "Начать битву в задании<br>«<string $s1>»?<br><br><ui-color 500><ui-edge-color 501>※ Уровень будет синхронизирован.</ui-edge-color></ui-color> Если ваш уровень выше допустимого, он будет снижен до следующих значений:<br><br> Уровень: <sheet QuestBattle $n2 3><if ($n3 > 0)><br> Уровень предметов: <num $n3></if></ui-edge-color></ui-color>"
+
+#. ja: はい
+#. de: Ja
+#. fr: Continuer
+msgctxt "Addon:102422:0:0"
+msgid "Proceed"
+msgstr "Продолжить"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Annuler
+msgctxt "Addon:102423:0:0"
+msgid "Leave"
+msgstr "Выйти"
+
+#. ja: クエスト『<string $s1>』のバトルを開始します。<br>よろしいですか？<br><br><ui-color 506><ui-edge-color 507>※レベルシンク対象コンテンツです。<br>　上限を超えた場合、以下のように自動調整されます。<br>　レベル：<num $n2><if ($n3 > 0)><br>　アイテムレベル：<num $n3></if></ui-edge-color></ui-color>
+#. de: Den Kampf von „<string $s1>“ beginnen?<br><ui-color 506><ui-edge-color 507>Dieser Inhalt unterliegt einer automatischen Stufenanpassung. Wenn dein Charakter <if ($n3 > 0)>die folgenden Werte<else>den folgenden Wert</if> übersteigt, wird eine entsprechende Anpassung vorgenommen:<br>-  Stufe: <num $n2><if ($n3 > 0)><br>-  Gegen<shy>stands<shy>stufe: <num $n3></if></ui-edge-color></ui-color>
+#. fr: Commencer la bataille de la quête “<string $s1>”<nbsp>?<br><br><ui-color 506><ui-edge-color 507>* Cette bataille est sujette à la synchronisation de quête.<br>Si les ca<shy>rac<shy>té<shy>ris<shy>ti<shy>ques de votre personnage dépassent un certain niveau, elles seront ajustées de la façon suivante<nbsp>:<br> Niveau<nbsp>: <num $n2><if ($n3 > 0)><br> Niveau d'objet moyen<nbsp>: <num $n3></if></ui-edge-color></ui-color>
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 > 0)><br> Item level: <num $n3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102424:0:0"
+msgid "Duty calls. Commence battle for<br>“<string $s1>”?<br><br><ui-color 500><ui-edge-color 501>※Level sync is in effect.</ui-edge-color></ui-color> If you are above the maximum allowed level, it will be synced as follows:<br><br> Level: <num $n2><if ($n3 > 0)><br> Item level: <num $n3></if></ui-edge-color></ui-color>"
+msgstr "Начать битву в задании<br>«<string $s1>»?<br><br><ui-color 500><ui-edge-color 501>※ Уровень будет синхронизирован.</ui-edge-color></ui-color> Если ваш уровень выше допустимого, он будет снижен до следующих значений:<br><br> Уровень: <num $n2><if ($n3 > 0)><br> Уровень предметов: <num $n3></if></ui-edge-color></ui-color>"
+
+#. ja: はい
+#. de: Ja
+#. fr: Continuer
+msgctxt "Addon:102425:0:0"
+msgid "Proceed"
+msgstr "Продолжить"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Annuler
+msgctxt "Addon:102426:0:0"
+msgid "Leave"
+msgstr "Выйти"
+
+#. ja: クエスト『<string $s1>』のバトルを<br>推奨レベルより低いレベルで開始しようとしています。<br>本当によろしいですか？(推奨レベル <num $n2>)
+#. de: Du hast noch nicht die für den Kampf von „<string $s1>“ empfohlene <ui-color 506><ui-edge-color 507>Stufe <num $n2></ui-edge-color></ui-color> erreicht. Den Kampf trotzdem beginnen?
+#. fr: Le niveau recommandé pour la bataille de la quête “<string $s1>” est supérieur au vôtre. Êtes-vous sûr<if $gn4>e</if> de vouloir lancer le combat<nbsp>?
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102429:0:0"
+msgid "You are below the recommended level (<num $n2>) for this quest (<string $s1>). Proceed?"
+msgstr "Ваш уровень ниже рекомендуемого (<num $n2>) для задания «<string $s1>». Продолжить?"
+
+#. ja: OK
+#. de: Ok
+#. fr: OK
+msgctxt "Addon:102431:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102432:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: マテリアが装着されたアイテムをトレードしようとしています。<br>装着されているマテリアは戻ってきませんが、本当によろしいですか？
+#. de: An diesem Gegenstand ist Materia angebracht, welche nicht erstattet wird. Wirklich übergeben?
+#. fr: L'objet échangé est serti d'une ou plusieurs matérias qui ne seront pas restituées. Continuer<nbsp>?
+msgctxt "Addon:102433:0:0"
+msgid "Do you really want to trade an item with materia affixed? The materia will be lost."
+msgstr "Вы действительно хотите обменять предмет с установленной материей? Материя будет потеряна."
+
+#. ja: ハイクオリティ品がトレードされようとしています。<br>本当によろしいですか？
+#. de: Dies ist ein Gegenstand von hoher Qualität. Wirklich übergeben?
+#. fr: Un ou plusieurs objets échangés sont de haute qualité. Voulez-vous vraiment continuer<nbsp>?
+msgctxt "Addon:102434:0:0"
+msgid "Do you really want to trade a high-quality item?"
+msgstr "Вы действительно хотите обменять предмет высокого качества?"
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102441:0:0"
+msgid "Nothing"
+msgstr "Ничего"
+
+#. ja: DAILY QUEST
+#. de: AUFTRÄGE DER FREUNDESVÖLKER
+#. fr: Quêtes quotidiennes
+msgctxt "Addon:102442:0:0"
+msgid "Daily Quests"
+msgstr "Ежедневные задания"
+
+#. ja: 本日の残り受注権：<num $n1>
+#. de: Heute noch annehmbar: <num $n1>
+#. fr: Quota quotidien restant<nbsp>: <num $n1>
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102444:0:0"
+msgid "Today's Remaining Allowances: <num $n1>"
+msgstr "Осталось сегодня: <num $n1>"
+
+#. ja: 『<sheet Fate $n1 0>』を開始しますか？
+#. de: „<sheet Fate $n1 0>“ beginnen?
+#. fr: Voulez-vous commencer l'ALÉA “<sheet Fate $n1 0>”<nbsp>?
+#. macro: <sheet Fate $n1 0> — a value from a game data sheet, such as a name; sheet = Fate, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102445:0:0"
+msgid "Commence “<sheet Fate $n1 0>”?"
+msgstr "Начать событие «<sheet Fate $n1 0>»?"
+
+#. ja: 話を聞く
+#. de: Plaudern
+#. fr: Parler
+msgctxt "Addon:102446:0:0"
+msgid "Small Talk"
+msgstr "Непринуждённая беседа"
+
+#. ja: PvP PROFILE
+#. de: PVP-PROFIL
+#. fr: Profil JcJ
+msgctxt "Addon:102450:0:0"
+msgid "PvP Profile"
+msgstr "Профиль PvP"
+
+#. ja: Colosseum
+#. de: Wolfshöhle
+#. fr: Colisée
+msgctxt "Addon:102452:0:0"
+msgid "The Wolves' Den"
+msgstr "Логово Волков"
+
+#. ja: PvP Actions
+#. de: PvP-Kommandos
+#. fr: Actions JcJ
+msgctxt "Addon:102453:0:0"
+msgid "Actions & Traits"
+msgstr "Действия и особенности"
+
+#. ja: PVP RANK:
+#. de: PvP-Rang:
+#. fr: Rang JcJ<nbsp>:
+msgctxt "Addon:102454:0:0"
+msgid "PvP Rank: "
+msgstr "Ранг PvP: "
+
+#. ja: TOTAL:<num $n1>
+#. de: Gesamt: <kilo $n1 ".">
+#. fr: Total<nbsp>: <num $n1>
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102455:0:0"
+msgid "Total: <num $n1>"
+msgstr "Всего: <num $n1>"
+
+#. ja: NEXT:<if ($n2 > 0)><num $n1>/<num $n2><else>--/--</if>
+#. de: Nächster: <if ($n2 > 0)><kilo $n1 ".">/<kilo $n2 "."><else>--/--</if>
+#. fr: Suivant<nbsp>: <if ($n2 > 0)><num $n1>/<num $n2><else>--/--</if>
+#. macro: <if ($n2 > 0)><num $n1>/<num $n2><else><hyphen>/<hyphen></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
+msgctxt "Addon:102456:0:0"
+msgid "Next: <if ($n2 > 0)><num $n1>/<num $n2><else><hyphen>/<hyphen></if>"
+msgstr "Следующий: <if ($n2 > 0)><num $n1>/<num $n2><else><hyphen>/<hyphen></if>"
+
+#. ja: TOTAL ACTION POINTS:
+#. de: Gesamt-Kommandopunkte:
+#. fr: Total de points d'action
+msgctxt "Addon:102457:0:0"
+msgid "Action Points Available"
+msgstr "Доступно очков действий"
+
+#. ja: Total Result
+#. de: Gesamtbilanz
+#. fr: Résultats totaux
+msgctxt "Addon:102459:0:0"
+msgid "Overall Performance"
+msgstr "Общая статистика"
+
+#. ja: 合計試合数:
+#. de: Kämpfe:
+#. fr: Combats
+msgctxt "Addon:102460:0:0"
+msgid "Matches:"
+msgstr "Матчи:"
+
+#. ja: 合計勝利数:
+#. de: Siege:
+#. fr: Victoires
+msgctxt "Addon:102461:0:0"
+msgid "Victories:"
+msgstr "Победы:"
+
+#. ja: Weekly Result
+#. de: Wochenbilanz
+#. fr: Résultats hebdomadaires
+msgctxt "Addon:102462:0:0"
+msgid "Weekly Performance"
+msgstr "Статистика за неделю"
+
+#. ja: 週間試合数:
+#. de: Kämpfe:
+#. fr: Combats
+msgctxt "Addon:102463:0:0"
+msgid "Matches:"
+msgstr "Матчи:"
+
+#. ja: 週間勝利数:
+#. de: Siege:
+#. fr: Victoires
+msgctxt "Addon:102464:0:0"
+msgid "Victories:"
+msgstr "Победы:"
+
+#. ja: Name/Traits
+#. de: Name
+#. fr: Actions/Traits
+msgctxt "Addon:102465:0:0"
+msgid "Ability/Trait"
+msgstr "Действие/особенность"
+
+#. ja: Company
+#. fr: Compagnie
+msgctxt "Addon:102466:0:0"
+msgid "Company"
+msgstr "Компания"
+
+#. ja: Action Points
+#. de: KP
+#. fr: Pts d'action
+msgctxt "Addon:102467:0:0"
+msgid "AP"
+msgstr "ОД"
+
+#. ja: RANK
+#. de: Rang
+#. fr: Rang
+msgctxt "Addon:102468:0:0"
+msgid "Rank"
+msgstr "Ранг"
+
+#. ja: Name
+#. de: Name
+#. fr: Nom
+msgctxt "Addon:102470:0:0"
+msgid "Enhancement"
+msgstr "Усиление"
+
+#. ja: Action Points
+#. de: KP
+#. fr: Points d'action
+msgctxt "Addon:102471:0:0"
+msgid "AP"
+msgstr "ОД"
+
+#. ja: 「<sheet ActStr $n1 0>」を<sheet PvPAction $n2 1>アクションポイントを消費して修得します。本当によろしいですか？
+#. de: „<sheet ActStr $n1 0>“ für <sheet PvPAction $n2 1> Kommandopunkte erwerben?
+#. fr: Obtenir “<sheet ActStr $n1 0>” contre <sheet PvPAction $n2 1> points d'action<nbsp>?
+#. macro: <sheet PvPAction $n2 1> — a value from a game data sheet, such as a name; sheet = PvPAction, row = number parameter 2, column = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet ActStr $n1 0> — a value from a game data sheet, such as a name; sheet = ActStr, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102472:0:0"
+msgid "Spend <sheet PvPAction $n2 1> AP to acquire “<sheet ActStr $n1 0>”?"
+msgstr "Потратить <sheet PvPAction $n2 1> ОД, чтобы получить «<sheet ActStr $n1 0>»?"
+
+#. ja: <sheet ActStr $n1 0>
+#. de: <sheet ActStr $n1 0>
+#. fr: <sheet ActStr $n1 0>
+#. macro: <capitalize><sheet ActStr $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <sheet ActStr $n1 0> — a value from a game data sheet, such as a name; sheet = ActStr, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102473:0:0"
+msgid "<capitalize><sheet ActStr $n1 0></capitalize>"
+msgstr "<capitalize><sheet ActStr $n1 0></capitalize>"
+
+#. ja: 特性
+#. de: Eigenschaft
+#. fr: Traits
+msgctxt "Addon:102478:0:0"
+msgid "Trait"
+msgstr "Особенность"
+
+#. ja: PvP ACTIONS
+#. de: PvP-Kommandos
+#. fr: Actions JcJ
+msgctxt "Addon:102479:0:0"
+msgid "PvP Action"
+msgstr "Действия PvP"
+
+#. ja: LEARNING TRAIT
+#. de: EIGENSCHAFT ERWERBEN
+#. fr: Obtention de traits
+msgctxt "Addon:102481:0:0"
+msgid "Acquire Enhancement"
+msgstr "Изучение усилений"
+
+#. ja: 修得済みのPvPアクションを、特性を修得することで強化できます。
+#. de: Bereits erworbene PvP-Kommandos können durch Eigenschaften verstärkt werden.
+#. fr: Les traits permettent de renforcer l'effet des actions JcJ que vous avez déjà obtenues.
+msgctxt "Addon:102483:0:0"
+msgid "PvP actions and traits can be strengthened by their associated enhancements."
+msgstr "Усиления повышают эффективность связанных с ними действий и особенностей PvP."
+
+#. ja: <if $n3><i><icon 62>LEVEL <num $n1></i><else>LEVEL <num $n1></if>
+#. de: <if $n3><i><icon 62> Stufe <num $n1></i><else> Stufe <num $n1></if>
+#. fr: <if $n3><i><icon 62>Niveau <num $n1></i><else>Niveau <num $n1></if>
+#. macro: <if $n3><i><icon 62>Level <num $n1></i><else>Level <num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <icon 62> — an inline icon of the game font; icon = 62 (game data: keep it; it may move or repeat)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "Addon:102484:0:0"
+msgid "<if $n3><i><icon 62>Level <num $n1></i><else>Level <num $n1></if>"
+msgstr "<if $n3><i><icon 62>Уровень <num $n1></i><else>Уровень <num $n1></if>"
+
+#. ja: Front Line
+#. de: Carteneau
+#. fr: Front
+msgctxt "Addon:102488:0:0"
+msgid "Frontline"
+msgstr "Фронт"
+
+#. ja: 試合数:
+#. de: Kämpfe:
+#. fr: Campagnes
+msgctxt "Addon:102489:0:0"
+msgid "Campaigns:"
+msgstr "Кампании:"
+
+#. ja: 1位獲得回数:
+#. de: 1. Platz:
+#. fr: 1re place
+msgctxt "Addon:102490:0:0"
+msgid "1st Place:"
+msgstr "1-е место:"
+
+#. ja: 2位獲得回数:
+#. de: 2. Platz:
+#. fr: 2e place
+msgctxt "Addon:102491:0:0"
+msgid "2nd Place:"
+msgstr "2-е место:"
+
+#. ja: 3位獲得回数:
+#. de: 3. Platz:
+#. fr: 3e place
+msgctxt "Addon:102492:0:0"
+msgid "3rd Place:"
+msgstr "3-е место:"
+
+#. ja: (獲得率:<string $s1>%)
+#. de: (<string $s1> ％)
+#. fr: (<string $s1>%)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102493:0:0"
+msgid "(<string $s1>%)"
+msgstr "(<string $s1>%)"
+
+#. ja: 初期化
+#. de: Zurücksetzen
+#. fr: Réinitialiser
+msgctxt "Addon:102494:0:0"
+msgid "Default"
+msgstr "По умолчанию"
+
+#. ja: PvPアクションを初期化します。<br>よろしいですか？
+#. de: PvP-Kommandos auf die Voreinstellung zurücksetzen?
+#. fr: Les actions JcJ vont être réinitialisées. Continuer<nbsp>?
+msgctxt "Addon:102495:0:0"
+msgid "Restore PvP action defaults?"
+msgstr "Сбросить настройки действий PvP?"
+
+#. ja: Actions
+#. de: Kommandos
+#. fr: Actions
+msgctxt "Addon:102496:0:0"
+msgid "Actions"
+msgstr "Действия"
+
+#. ja: Season Result
+#. de: Saisonergebnisse
+#. fr: Résultats de la saison
+msgctxt "Addon:102497:0:0"
+msgid "Season Performance"
+msgstr "Сезонная статистика"
+
+#. ja: 最高Rate:
+#. de: Höchster Wert:
+#. fr: Meilleur score<nbsp>:
+msgctxt "Addon:102498:0:0"
+msgid "Highest Rating:"
+msgstr "Наивысший рейтинг:"
+
+#. ja: 最高到達階級:
+#. de: Höchste Kampfklasse:
+#. fr: Meilleur échelon atteint<nbsp>:
+msgctxt "Addon:102499:0:0"
+msgid "Highest Tier:"
+msgstr "Наивысший уровень:"
+
+#. ja: 耐性
+#. de: Widerstände
+#. fr: Résistances
+msgctxt "Addon:102500:0:0"
+msgid "Resistances"
+msgstr "Сопротивления"
+
+#. ja: Resists
+#. de: STATUS-RESISTENZ
+#. fr: Altérations d'état
+msgctxt "Addon:102501:0:0"
+msgid "Status Resistances"
+msgstr "Сопротивление статусам"
+
+#. ja: スロウ耐性
+#. de: Gemach
+#. fr: Lenteur
+msgctxt "Addon:102502:0:0"
+msgid "Slow Resistance"
+msgstr "Сопротивление замедлению"
+
+#. ja: 石化耐性
+#. de: Stein
+#. fr: Pétrification
+msgctxt "Addon:102503:0:0"
+msgid "Petrification Resistance"
+msgstr "Сопротивление окаменению"
+
+#. ja: 麻痺耐性
+#. de: Paralyse
+#. fr: Paralysie
+msgctxt "Addon:102504:0:0"
+msgid "Paralysis Resistance"
+msgstr "Сопротивление параличу"
+
+#. ja: 沈黙耐性
+#. de: Stumm
+#. fr: Silence
+msgctxt "Addon:102505:0:0"
+msgid "Silence Resistance"
+msgstr "Сопротивление немоте"
+
+#. ja: 暗闇耐性
+#. de: Blind
+#. fr: Cécité
+msgctxt "Addon:102506:0:0"
+msgid "Blind Resistance"
+msgstr "Сопротивление слепоте"
+
+#. ja: 毒耐性
+#. de: Gift
+#. fr: Poison
+msgctxt "Addon:102507:0:0"
+msgid "Poison Resistance"
+msgstr "Сопротивление отравлению"
+
+#. ja: スタン耐性
+#. de: Betäubung
+#. fr: Étourdissement
+msgctxt "Addon:102508:0:0"
+msgid "Stun Resistance"
+msgstr "Сопротивление оглушению"
+
+#. ja: 睡眠耐性
+#. de: Schlaf
+#. fr: Sommeil
+msgctxt "Addon:102509:0:0"
+msgid "Sleep Resistance"
+msgstr "Сопротивление сну"
+
+#. ja: バインド耐性
+#. de: Fessel
+#. fr: Entrave
+msgctxt "Addon:102510:0:0"
+msgid "Bind Resistance"
+msgstr "Сопротивление опутыванию"
+
+#. ja: ヘヴィ耐性
+#. de: Gewicht
+#. fr: Pesanteur
+msgctxt "Addon:102511:0:0"
+msgid "Heavy Resistance"
+msgstr "Сопротивление утяжелению"
+
+#. ja: 評判
+#. de: Ansehen
+#. fr: Réputation
+msgctxt "Addon:102512:0:0"
+msgid "Reputation"
+msgstr "Репутация"
+
+#. ja: Player Commendation
+#. de: Ehrungen als wertvollster Spieler
+#. fr: Honneurs
+msgctxt "Addon:102513:0:0"
+msgid "Player Commendation"
+msgstr "Похвалы игроков"
+
+#. ja: Tribal Relations
+#. de: Verbundenheit mit den Freundesvölkern
+#. fr: Rapport avec les peuples alliés
+msgctxt "Addon:102515:0:0"
+msgid "Societal Relations"
+msgstr "Отношения с племенами"
+
+#. ja: <sheet BeastTribe $n1 11>
+#. de: <noun-de BeastTribe 5 $n1 2 1 1>
+#. fr: <sheet BeastTribe $n1 11>
+#. macro: <title-case><sheet BeastTribe $n1 11></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <sheet BeastTribe $n1 11> — a value from a game data sheet, such as a name; sheet = BeastTribe, row = number parameter 1, column = 11 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102517:0:0"
+msgid "<title-case><sheet BeastTribe $n1 11></title-case>"
+msgstr "<title-case><sheet BeastTribe $n1 11></title-case>"
+
+#. ja: <ui-color $n2><num $n1>.<if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>
+#. de: <ui-color $n2><num $n1> <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>
+#. fr: <ui-color $n2><num $n1>.<if ($n3 == 0)> <sheet BeastReputationRank $n1 1><else> <sheet BeastReputationRank $n1 2></if></ui-color>
+#. macro: <ui-color $n2> — text color from the UIColor sheet; </ui-color> restores the previous color; color = number parameter 2 (formatting: keep it as often as the source has it)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet BeastReputationRank $n1 1> — a value from a game data sheet, such as a name; sheet = BeastReputationRank, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet BeastReputationRank $n1 2> — a value from a game data sheet, such as a name; sheet = BeastReputationRank, row = number parameter 1, column = 2 (game data: keep it; it may move or repeat)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "Addon:102518:0:0"
+msgid "<ui-color $n2><num $n1>. <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>"
+msgstr "<ui-color $n2><num $n1>. <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>"
+
+#. ja: <kilo $n1 ",">/<kilo $n2 ",">
+#. de: <kilo $n1 ".">/<kilo $n2 ".">
+#. fr: <kilo $n1 "<nbsp>">/<kilo $n2 "<nbsp>">
+#. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
+#. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
+msgctxt "Addon:102519:0:0"
+msgid "<kilo $n1 \",\">/<kilo $n2 \",\">"
+msgstr "<kilo $n1 \",\">/<kilo $n2 \",\">"
+
+#. ja: MIP推薦獲得数
+#. de: Anzahl der Ehrungen als wertvollster Spieler
+#. fr: Nombre d'honneurs reçus
+msgctxt "Addon:102520:0:0"
+msgid "Commendations Received"
+msgstr "Получено похвал"
+
+#. ja: <ui-color $n2><num $n1>.<sheet BeastReputationRank $n3 1></ui-color>
+#. de: <ui-color $n2><num $n1> <sheet BeastReputationRank $n3 1></ui-color>
+#. fr: <ui-color $n2><num $n1>. <sheet BeastReputationRank $n3 1></ui-color>
+#. macro: <ui-color $n2> — text color from the UIColor sheet; </ui-color> restores the previous color; color = number parameter 2 (formatting: keep it as often as the source has it)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <sheet BeastReputationRank $n3 1> — a value from a game data sheet, such as a name; sheet = BeastReputationRank, row = number parameter 3, column = 1 (game data: keep it; it may move or repeat)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "Addon:102521:0:0"
+msgid "<ui-color $n2><num $n1>. <sheet BeastReputationRank $n3 1></ui-color>"
+msgstr "<ui-color $n2><num $n1>. <sheet BeastReputationRank $n3 1></ui-color>"
+
+#. ja: OFFICIAL WEBSITES
+#. de: OFFIZIELLE WEBSEITEN
+#. fr: Site officiel
+msgctxt "Addon:102523:0:0"
+msgid "Official Sites"
+msgstr "Официальные сайты"
+
+#. ja: ファイナルファンタジーXIV公式Webサイトにアクセスします。
+#. de: Alle offiziellen FINAL FANTASY XIV-Seiten auf einen Blick.
+#. fr: Ressources en ligne de FINAL FANTASY XIV
+msgctxt "Addon:102525:0:0"
+msgid "Introducing official FINAL FANTASY XIV sites."
+msgstr "Официальные сайты FINAL FANTASY XIV"
+
+#. ja: News & Community
+#. de: Neuigkeiten & Community
+#. fr: Actualités et communauté
+msgctxt "Addon:102526:0:0"
+msgid "News & Community"
+msgstr "Новости и сообщество"
+
+#. ja: Play Guides & Informations
+#. de: Spielinfos & Anleitungen
+#. fr: Guides de jeu et in<shy>for<shy>ma<shy>tions
+msgctxt "Addon:102527:0:0"
+msgid "Play Guides & Information"
+msgstr "Руководства и информация об игре"
+
+#. ja: 最新のニュースやキャラクター情報、アイテムやクエストなどの詳しいゲームデータを知りたい時、まずはこちらの公式サイトをチェック！
+#. de: Hier findest du nicht nur Neuigkeiten, sondern auch Infos zu Charakteren, Gegenständen, Aufträgen und mehr.
+#. fr: Venez lire les dernières nouvelles, consulter les détails de votre personnage ou même la base de données du jeu à partir de la page d'accueil<nbsp>!
+msgctxt "Addon:102529:0:0"
+msgid "For recent news and detailed information on characters, items, quests, and more: "
+msgstr "Последние новости и подробная информация о персонажах, предметах, заданиях и многом другом:"
+
+#. ja: フリーカンパニーやリンクシェルなど、メンバー募集の最新情報が集まるサイトです。ゲーム内のフレンドや仲間を探すならここにアクセス！
+#. de: Rekrutiere Mitglieder für deine Freie Ge<shy>sell<shy>schaft und deine Kontaktkreise oder schließe neue Be<shy>kannt<shy>schaften.
+#. fr: Vous cherchez des équipiers, une compagnie libre ou autre<nbsp>? Vos partenaires d'aventure idéaux vous attendent<nbsp>!
+msgctxt "Addon:102533:0:0"
+msgid "For free company or linkshell recruitment information. Find allies to join you on your adventure:"
+msgstr "Информация о наборе в свободные компании и группы новостей. Найдите спутников для приключений:"
+
+#. ja: 画面の見方や操作方法など、ゲームを進めるための基本的な情報を見直したい時はこちらから。
+#. de: Lerne die Grundlagen des Spiels kennen und meistere die Spielwelt.
+#. fr: Renseignez-vous sur les différents réglages à votre disposition pour rendre votre aventure encore plus agréable<nbsp>!
+msgctxt "Addon:102537:0:0"
+msgid "Learn or review the basics to help you progress through the game with ease:"
+msgstr "Изучите основы игры или освежите знания, чтобы легче продвигаться вперёд:"
+
+#. ja: より快適にゲームを進めるためのUI（ユーザーインターフェース）の活用方法や、見落としがちな便利な小技はここで検索！
+#. de: Finde heraus, wie du Layout und Spielelemente nach deinen Wünschen gestalten und ändern kannst.
+#. fr: Votre écran est trop confus ou pas assez précis<nbsp>? Personnalisez votre interface utilisateur en suivant les trucs et astuces du guide<nbsp>!
+msgctxt "Addon:102541:0:0"
+msgid "Learn how to customize the UI and other game elements to your liking:"
+msgstr "Настройте интерфейс и другие игровые элементы по своему вкусу:"
+
+#. ja: 最新のアップデート内容や、これまでのパッチで追加されてきたゲーム情報はこちら。
+#. de: Alle Änderungen und Neuerungen aktueller und vergangener Versions-Updates im Überblick.
+#. fr: Consultez les notes de mise à jour et restez au courant des récents ajouts au jeu<nbsp>!
+msgctxt "Addon:102545:0:0"
+msgid "View the details of current and past game updates:"
+msgstr "Подробности текущих и предыдущих обновлений игры:"
+
+#. ja: アクセス
+#. de: Zur Website
+#. fr: Visiter le site officiel
+msgctxt "Addon:102547:0:0"
+msgid "Visit Website"
+msgstr "Посетить сайт"
+
+#. ja: コミュニティを探す
+#. de: Community-Suche
+#. fr: Recherche d'aventuriers
+msgctxt "Addon:102548:0:0"
+msgid "Community Finder"
+msgstr "Поиск сообщества"
+
+#. ja: MIP SETTING
+#. de: EINSTELLUNGEN FÜR WS-EHRUNG
+#. fr: Paramètres de la fenêtre d'honneurs
+msgctxt "Addon:102549:0:0"
+msgid "Player Commendation Settings"
+msgstr "Настройки похвалы игрокам"
+
+#. ja: 投票除名
+#. de: Ausschließen
+#. fr: Vote d'expulsion
+msgctxt "Addon:102551:0:0"
+msgid "Vote Dismiss"
+msgstr "Голосование за исключение"
+
+#. ja: <string $s1>の投票除名を開始します。
+#. de: Die Abstimmung über den Ausschluss von <string $s1> kann beginnen.
+#. fr: Le vote pour l'expulsion de <string $s1> va commencer.
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102552:0:0"
+msgid "Nominate <string $s1> for dismissal."
+msgstr "Выдвинуть <string $s1> на исключение."
+
+#. ja: 除名する理由を選択してください。
+#. de: Wähle einen Grund für den Ausschluss.
+#. fr: Choisissez une raison.
+msgctxt "Addon:102553:0:0"
+msgid "Select reason for dismissal."
+msgstr "Выберите причину исключения."
+
+#. ja: 離席
+#. de: Abwesend
+#. fr: Absence
+msgctxt "Addon:102554:0:0"
+msgid "AFK"
+msgstr "Отошёл от клавиатуры"
+
+#. ja: オフライン
+#. de: Offline
+#. fr: Déconnexion
+msgctxt "Addon:102555:0:0"
+msgid "Offline"
+msgstr "Не в сети"
+
+#. ja: 迷惑行為／ハラスメント
+#. de: Belästigung
+#. fr: Harcèlement
+msgctxt "Addon:102556:0:0"
+msgid "Harassment"
+msgstr "Домогательства"
+
+#. ja: 不正行為
+#. de: Unerlaubte Aktivitäten
+#. fr: Comportement
+msgctxt "Addon:102557:0:0"
+msgid "Cheating"
+msgstr "Мошенничество"
+
+#. ja: 投票開始
+#. de: Abstimmen
+#. fr: Lancer le vote
+msgctxt "Addon:102559:0:0"
+msgid "Commence"
+msgstr "Начать голосование"
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102560:0:0"
+msgid "Cancel"
+msgstr "Отмена"
+
+#. ja: <string $s1>の投票除名が開始されました。
+#. de: Die Abstimmung über den Ausschluss von <string $s1> hat begonnen.
+#. fr: Le vote pour l'expulsion de <string $s1> est ouvert.
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102561:0:0"
+msgid "<string $s1> has been nominated for dismissal from the party."
+msgstr "<string $s1> выдвинут на исключение из группы."
+
+#. ja: 除名理由：<string $s1>
+#. de: Ausschlussgrund: <string $s1>
+#. fr: Raison<nbsp>: <string $s1>
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102562:0:0"
+msgid "Reason: <string $s1>"
+msgstr "Причина: <string $s1>"
+
+#. ja: 除名を希望しますか？
+#. de: Willst du das Mitglied von der Gruppe ausschließen?
+#. fr: Souhaitez-vous expulser ce joueur<nbsp>?
+msgctxt "Addon:102563:0:0"
+msgid "Do you wish to dismiss this party member?"
+msgstr "Исключить этого участника группы?"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102564:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102565:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: <ui-color 508><ui-edge-color 509>正当な理由なく投票除名を行った場合は、<br>あなたが処罰対象になる可能性があります。</ui-edge-color></ui-color>
+#. de: <ui-color 508><ui-edge-color 509>Wer andere mit Ausschluss-Abstimmungen schikaniert, muss mit Strafen rechnen.</ui-edge-color></ui-color>
+#. fr: <ui-color 508><ui-edge-color 509>Attention<nbsp>: l'utilisation du vote d'expulsion à de mauvaises fins sera punie.</ui-edge-color></ui-color>
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "Addon:102566:0:0"
+msgid "<ui-color 508><ui-edge-color 509>Warning: Unjustified usage of vote dismiss is a punishable act.</ui-edge-color></ui-color>"
+msgstr "<ui-color 508><ui-edge-color 509>Необоснованное голосование за исключение может повлечь наказание.</ui-edge-color></ui-color>"
+
+#. ja: 設定を開く
+#. de: Einstellungen
+#. fr: Paramètres de la fenêtre d'honneurs
+msgctxt "Addon:102567:0:0"
+msgid "Settings"
+msgstr "Настройки"
+
+#. ja: MIP推薦時にポートレートを表示するか、設定できます。<br>※すでに他のメンバーが退出している場合は、次回から反映されます。
+#. de: Portraits zur Wahl anzeigen?<br>※ Ab dem nächsten Inhalt gültig, falls alle Mitglieder bereits die Gruppe verlassen haben.
+#. fr: Vous pouvez choisir d'afficher ou non les portraits des joueurs dans la fenêtre d'honneurs.<br>* Si tous les équipiers ont déjà quitté l'instance, ces paramètres seront appliqués lors de la prochaine mission.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102568:0:0"
+msgid "Enable portraits in commendations window?<br>※If all party members have left, settings will be reflected during the next duty."
+msgstr "Показывать портреты в окне похвалы?<br>※ Если все участники уже покинули группу, настройка вступит в силу со следующего подземелья."
+
+#. ja: MIP推薦にポートレートを表示する
+#. de: Portraits anzeigen
+#. fr: Afficher les portraits dans la fenêtre d'honneurs
+msgctxt "Addon:102569:0:0"
+msgid "Yes, display portraits."
+msgstr "Показывать портреты"
+
+#. ja: PLAYER COMMENDATION
+#. de: EHRUNGEN
+#. fr: Honneurs
+msgctxt "Addon:102570:0:0"
+msgid "Player Commendation"
+msgstr "Похвала игроку"
+
+#. ja: 一緒にプレイできて良かった！ と思った1人にMIP推薦が行えます。
+#. de: Wenn dir das Spielen mit jemandem besonders viel Spaß gemacht hat, kannst du ihn zum wertvollsten Spieler küren.
+#. fr: Vous pouvez “honorer” le joueur avec lequel vous avez le plus apprécié jouer durant cette mission.
+msgctxt "Addon:102572:0:0"
+msgid "Commend the player who left a positive impression upon you."
+msgstr "Похвалите игрока, который произвёл на вас хорошее впечатление."
+
+#. ja: 決定
+#. de: Ok
+#. fr: Confirmer
+msgctxt "Addon:102573:0:0"
+msgid "OK"
+msgstr "ОК"
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102574:0:0"
+msgid "Cancel"
+msgstr "Отмена"
+
+#. ja: MIP推薦
+#. de: Ehrung zum WS
+#. fr: Honorer un équipier
+msgctxt "Addon:102575:0:0"
+msgid "Player Commendation"
+msgstr "Похвала игроку"
+
+#. ja: 決定
+#. de: Bestätigen
+#. fr: Confirmer
+msgctxt "Addon:102576:0:0"
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#. ja: キャンセル
+#. de: Abbrechen
+#. fr: Annuler
+msgctxt "Addon:102577:0:0"
+msgid "Cancel"
+msgstr "Отмена"
+
+#. ja: マッチング後に辞退ボタンの押下、もしくは時間切れに<br>よる辞退を行うと、ペナルティが適用され、<br><ui-color 506><ui-edge-color 507>一定時間コンテンツへの参加申請ができなくなります。</ui-edge-color></ui-color><br><br>本当に辞退してもよろしいですか？
+#. de: Wird „Zurückziehen“ gewählt oder versäumt, rechtzeitig die Teilnahme an einem Inhalt zu bestätigen, <ui-color 506><ui-edge-color 507>können die Inhaltssuche oder die Raid-Suche vor<shy>über<shy>gehend nicht mehr genutzt werden</ui-edge-color></ui-color>.<br>Trotzdem zurückziehen?
+#. fr: Si vous annulez votre par<shy>ti<shy>ci<shy>pa<shy>tion à une mission en cliquant sur “Se retirer” ou en laissant le compte à rebours arriver à son terme, <ui-color 506><ui-edge-color 507>vous recevrez une pénalité et ne pourrez plus utiliser les outils de mission et de raid pendant un certain temps.</ui-edge-color></ui-color><br>Confirmer<nbsp>?
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102578:0:0"
+msgid "Withdrawing from a duty via the withdraw button or allowing the timer to run out will incur a temporary penalty preventing you from registering for duty.<br>Proceed?"
+msgstr "Отказ от участия в подземелье кнопкой или по истечении таймера повлечёт временное ограничение на регистрацию в подземелья.<br>Продолжить?"
+
+#. ja: コンテンツルーレット
+#. de: Zufallsinhalt
+#. fr: Missions aléatoires
+msgctxt "Addon:102580:0:0"
+msgid "Duty Roulette"
+msgstr "Случайное подземелье"
+
+#. ja: REWARD BONUS(<string $s1>)
+#. de: Bonus (<string $s1>)
+#. fr: Bonus (<string $s1>)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102581:0:0"
+msgid "Adventurer in Need (<string $s1>)"
+msgstr "Бонус: «Искатель приключений» (<string $s1>)"
+
+#. ja: <ui-color 500><ui-edge-color 501>報酬アイテム取得済み</ui-edge-color></ui-color>
+#. de: <ui-color 500><ui-edge-color 501>Gegenstand schon erhalten</ui-edge-color></ui-color>
+#. fr: <ui-color 500><ui-edge-color 501>Objet de récompense déjà obtenu</ui-edge-color></ui-color>
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "Addon:102582:0:0"
+msgid "<ui-color 500><ui-edge-color 501>Item already received</ui-edge-color></ui-color>"
+msgstr "<ui-color 500><ui-edge-color 501>Предмет уже получен</ui-edge-color></ui-color>"
+
+#. ja: <num $n1>人専用(TANK:<num $n2>/HEALER:<num $n3>/DPS:<num $n4>)
+#. de: Teilnehmer: <num $n1> Spieler<br>※ <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Angreifer
+#. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if> uniquement (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> soigneur<if ($n3 == 1)><else>s</if>, <num $n4> DPS)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n1 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102583:0:0"
+msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if> only<br> (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> healer<if ($n3 == 1)><else>s</if>, <num $n4> DPS)"
+msgstr "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> игрок<if ($n1 == 1)> только<else>ов только</if><br>(<num $n2> танк<if ($n2 == 1)><else>а</if>, <num $n3> лекар<if ($n3 == 1)>ь<else>я</if>, <num $n4> бойцов поддержки)"
+
+#. ja: <num $n1>人以下用(TANK:<num $n2>/HEALER:<num $n3>/DPS:<num $n4>)
+#. de: Teilnehmer: max. <num $n1> Spieler<br>※ Max. <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Angreifer
+#. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if> maximum (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> soigneur<if ($n3 == 1)><else>s</if>, <num $n4> DPS)
+#. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n1 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102584:0:0"
+msgid "Up to <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> player<if ($n1 == 1)><else>s</if><br> (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> healer<if ($n3 == 1)><else>s</if>, <num $n4> DPS)"
+msgstr "До <if $n1><if ($n1 <= 10)><switch $n1><case>одного<case>двух<case>трёх<case>четырёх<case>пяти<case>шести<case>семи<case>восьми<case>девяти<case>десяти</switch><else><num $n1></if><else><num $n1></if> игроков<br>(<num $n2> танк<if ($n2 == 1)><else>а</if>, <num $n3> лекар<if ($n3 == 1)>ь<else>я</if>, <num $n4> бойцов поддержки)"
+
+#. ja: <if ($n1 < $n2)><num $n1>～</if><num $n2>人用<if ($n3 > 0)>(TANK:<num $n4>/HEALER:<num $n5>/DPS:<num $n6>)</if>×<num $n7>パーティ
+#. de: Teilnehmer: <num $n7> Gruppe<if ($n7 == 1)><else>n</if> mit <if ($n1 < $n2)>je <num $n1> bis</if> <num $n2> Spielern<br>※ Pro Gruppe <if ($n3 > 0)><num $n4> Verteidiger, <num $n5> Heiler, <num $n6> Angreifer</if>
+#. fr: <num $n7> équipe<if ($n7 == 1)><else>s</if> de <if ($n1 < $n2)><num $n1> à </if><num $n2> joueur<if ($n2 <= 1)><else>s</if> <if ($n3 > 0)>(<num $n4> tank<if ($n4 == 1)><else>s</if>, <num $n5> soigneur<if ($n5 == 1)><else>s</if> et <num $n6> DPS)</if>
+#. macro: <if ($n1 < $n2)><capitalize><num $n1></capitalize> to</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><num $n1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n7> — a number; value = number parameter 7 (game data: keep it; it may move or repeat)
+#. macro: <if ($n7 == 1)>y<else>ies</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 7 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n3 > 0)> of <num $n4> tank<if ($n4 == 1)><else>s</if>, <num $n5> healer<if ($n5 == 1)><else>s</if>, <num $n6> DPS</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+#. macro: <if ($n5 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 5 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102585:0:0"
+msgid "<if ($n1 < $n2)><capitalize><num $n1></capitalize> to</if> <num $n2> players<br>(<num $n7> part<if ($n7 == 1)>y<else>ies</if><if ($n3 > 0)> of <num $n4> tank<if ($n4 == 1)><else>s</if>, <num $n5> healer<if ($n5 == 1)><else>s</if>, <num $n6> DPS</if>)"
+msgstr "<if ($n1 < $n2)><num $n1>–</if><num $n2> игроков<br>(<num $n7> групп<if ($n3 > 0)>: <num $n4> танк<if ($n4 == 1)><else>а</if>, <num $n5> лекар<if ($n5 == 1)>ь<else>я</if>, <num $n6> бойцов поддержки</if>)"
+
+#. ja: 2箇所以上の対応コンテンツへの参加条件を満たす
+#. de: Es müssen 2 oder mehr entsprechende Inhalte freigeschaltet sein.
+#. fr: Remplir les conditions nécessaires pour au moins deux missions
+msgctxt "Addon:102586:0:0"
+msgid "Fulfill the requirements for two or more duties."
+msgstr "Выполните условия для доступа к двум или более подземельям."
+
+#. ja: 報酬受領：1日1回
+#. de: Tägliche Vergütung
+#. fr: Récompense<nbsp>: 1 fois/jour
+msgctxt "Addon:102587:0:0"
+msgid "Awards Obtainable: Daily"
+msgstr "Награда: раз в день"
+
+#. ja: <ui-color 500><ui-edge-color 501>報酬受領済み</ui-edge-color></ui-color>
+#. de: <ui-color 500><ui-edge-color 501>Vergütung bereits erhalten</ui-edge-color></ui-color>
+#. fr: <ui-color 500><ui-edge-color 501>Récompense déjà obtenue</ui-edge-color></ui-color>
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "Addon:102588:0:0"
+msgid "<ui-color 500><ui-edge-color 501>Reward already received</ui-edge-color></ui-color>"
+msgstr "<ui-color 500><ui-edge-color 501>Награда уже получена</ui-edge-color></ui-color>"
+
+#. ja: 報酬受領：1週1回
+#. de: Wöchentliche Vergütung
+#. fr: Récompense<nbsp>: 1 fois/semaine
+msgctxt "Addon:102589:0:0"
+msgid "Awards Obtainable: Weekly"
+msgstr "Награда: раз в неделю"
+
+#. ja: 選択解除
+#. de: Auswahl aufheben
+#. fr: Tout désélectionner
+msgctxt "Addon:102590:0:0"
+msgid "Clear Selection"
+msgstr "Снять выделение"
+
+#. ja: <num $n1>人専用(TANK:<num $n2>/HEALER:<num $n3>/Melee DPS:<num $n4>/Ranged DPS:<num $n5>)
+#. de: Teilnehmer: <num $n1> Spieler<br>※ <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Nahkampf-, <num $n5> Fernkampfangreifer
+#. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if> uniquement (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> soigneur<if ($n3 == 1)><else>s</if>, <num $n4> DPS de mêlée, <num $n5> DPS à distance)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n1 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102591:0:0"
+msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if> only<br> (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> healer<if ($n3 == 1)><else>s</if>, <num $n4> melee DPS, <num $n5> ranged DPS)"
+msgstr "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> игрок<if ($n1 == 1)> только<else>ов только</if><br>(<num $n2> танк<if ($n2 == 1)><else>а</if>, <num $n3> лекар<if ($n3 == 1)>ь<else>я</if>, <num $n4> бойцов ближнего боя, <num $n5> бойцов дальнего боя)"
+
+#. ja: <num $n1>人以下用(TANK:<num $n2>/HEALER:<num $n3>/Melee DPS:<num $n4>/Ranged DPS:<num $n5>)
+#. de: Teilnehmer: max. <num $n1> Spieler<br>※ <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Nahkampf-, <num $n5> Fernkampfangreifer
+#. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if> maximum (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> soigneur<if ($n3 == 1)><else>s</if>, <num $n4> DPS de mêlée, <num $n5> DPS à distance)
+#. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n1 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102592:0:0"
+msgid "Up to <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> player<if ($n1 == 1)><else>s</if><br> (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> healer<if ($n3 == 1)><else>s</if>, <num $n4> melee DPS, <num $n5> ranged DPS)"
+msgstr "До <if $n1><if ($n1 <= 10)><switch $n1><case>одного<case>двух<case>трёх<case>четырёх<case>пяти<case>шести<case>семи<case>восьми<case>девяти<case>десяти</switch><else><num $n1></if><else><num $n1></if> игроков<br>(<num $n2> танк<if ($n2 == 1)><else>а</if>, <num $n3> лекар<if ($n3 == 1)>ь<else>я</if>, <num $n4> бойцов ближнего боя, <num $n5> бойцов дальнего боя)"
+
+#. ja: <if ($n1 == $n2)><num $n1>人用<else><num $n1>～<num $n2>人用</if><if ($n2 > 1)>(TANK:<num $n3>/HEALER:<num $n4>/Melee DPS:<num $n5>/Ranged DPS:<num $n6>)</if>
+#. de: Teilnehmer: <if ($n1 == $n2)><num $n1><else><num $n1> bis <num $n2></if> Spieler<if ($n2 > 1)><br>※ <num $n3> Verteidiger, <num $n4> Heiler, <num $n5> Nahkampf-, <num $n6> Fernkampfangreifer</if>
+#. fr: <if ($n1 == $n2)><num $n1> joueur<if ($n1 <= 1)><else>s</if><else><num $n1> à <num $n2> joueur<if ($n2 <= 1)><else>s</if></if><if ($n2 > 1)> (<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> soigneur<if ($n4 == 1)><else>s</if>, <num $n5> DPS de mêlée, <num $n6> DPS à distance)</if>
+#. macro: <if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n1 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+#. macro: <if ($n2 > 1)><br>(<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> healer<if ($n4 == 1)><else>s</if>, <num $n5> melee DPS, <num $n6> ranged DPS)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
+#. macro: <if ($n3 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
+#. macro: <if ($n4 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
+#. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102593:0:0"
+msgid "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if><else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> to <if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if> players</if> <if ($n2 > 1)><br>(<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> healer<if ($n4 == 1)><else>s</if>, <num $n5> melee DPS, <num $n6> ranged DPS)</if>"
+msgstr "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> игрок<if ($n1 == 1)><else>ов</if><else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>от одного<case>от двух<case>от трёх<case>от четырёх<case>от пяти<case>от шести<case>от семи<case>от восьми<case>от девяти<case>от десяти</switch><else>от <num $n1></if><else>от <num $n1></if></capitalize> до <if $n2><if ($n2 <= 10)><switch $n2><case>одного<case>двух<case>трёх<case>четырёх<case>пяти<case>шести<case>семи<case>восьми<case>девяти<case>десяти</switch><else><num $n2></if><else><num $n2></if> игроков</if> <if ($n2 > 1)><br>(<num $n3> танк<if ($n3 == 1)><else>а</if>, <num $n4> лекар<if ($n4 == 1)>ь<else>я</if>, <num $n5> бойцов ближнего боя, <num $n6> бойцов дальнего боя)</if>"
+
+#. ja: 「超える力」適用(常時)
+#. de: - Kraft des Transzendierens aktiv (immer)
+#. fr: L'Écho<nbsp>: attribué par défaut
+msgctxt "Addon:102594:0:0"
+msgid "The Echo: Applied upon commencement of duty"
+msgstr "Эхо: действует с начала подземелья"
+
+#. ja: 「超える力」適用(リスタート時)
+#. de: - Kraft des Transzendierens aktiv (nach K. o.)
+#. fr: L'Écho<nbsp>: attribué lorsque l'équipe a été vaincue
+msgctxt "Addon:102595:0:0"
+msgid "The Echo: Applied upon total party incapacitation"
+msgstr "Эхо: действует после полного поражения группы"
+
+#. ja: パーティ並び替え
+#. de: Gruppe sortieren
+#. fr: Tri de l'équipe
+msgctxt "Addon:102596:0:0"
+msgid "Sort Party List"
+msgstr "Сортировка списка группы"
+
+#. ja: 以下のコンテンツをコンプリートする
+#. de: Abgeschlossene Spielinhalte:
+#. fr: Terminer la ou les missions suivantes<nbsp>:
+msgctxt "Addon:102597:0:0"
+msgid "Completion of the Following:"
+msgstr "Необходимое условие: завершить"
+
+#. ja: ?????
+#. de: ???
+#. fr: ???
+msgctxt "Addon:102598:0:0"
+msgid "???"
+msgstr "???"
+
+#. ja: <num $n1>人用
+#. de: Teilnehmer: <num $n1>
+#. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if>
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($n1 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102599:0:0"
+msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if> only"
+msgstr "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> игрок<if ($n1 == 1)> только<else>ов только</if>"
+
+#. ja: グランドカンパニーに所属<br>※パーティで参加する場合は、所属グランドカンパニーの制限なくマッチングされるようになります。
+#. de: Nur für Mitglieder einer Staatlichen Ge<shy>sell<shy>schaft.<br>※ Gilt nicht bei Anmeldung als bestehende Gruppe.
+#. fr: Être membre d'une grande compagnie<br>* En cas d'enregistrement en équipe, le groupement automatique se fait systématiquement sans restriction d'allégeance.
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102600:0:0"
+msgid "Enlistment in a Grand Company<br>※When joining as a party, members will default to the freelance status."
+msgstr "Вступить в Великую компанию<br>※ При регистрации группой подбор будет проходить без ограничений по Великой компании участников."
+
+#. ja: 経過時間:<num $n1>分
+#. de: Verstrichene Zeit: <num $n1> Minute<if ($n1 == 1)><else>n</if>
+#. fr: Temps écoulé<nbsp>: <num $n1>m
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102601:0:0"
+msgid "Time elapsed: <num $n1>m"
+msgstr "Прошло времени: <num $n1> мин."
+
+#. ja: コンテンツを指定順に並び替えます。
+#. de: Nach Mindeststufe sortieren
+#. fr: Classer les missions par niveau.
+msgctxt "Addon:102602:0:0"
+msgid "Sort duty by level required for participation."
+msgstr "Сортировать подземелья по требуемому уровню."
+
+#. ja: 1～<num $n1>人用×3～9パーティ
+#. de: Teilnehmer: 3 bis 9 Gruppen zu je 1 bis <num $n1> Mitglied<if ($n1 == 1)><else>ern</if>
+#. fr: 3 à 9 équipes de 1 à <num $n1> joueur<if ($n1 <= 1)><else>s</if>
+#. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102603:0:0"
+msgid "Three to nine parties of one to <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> players."
+msgstr "От трёх до девяти групп по одному–<if $n1><if ($n1 <= 10)><switch $n1><case>одному<case>двое<case>трое<case>четверо<case>пятеро<case>шестеро<case>семеро<case>восьмеро<case>девятеро<case>десятеро</switch><else><num $n1></if><else><num $n1></if> игроков."
+
+#. ja: アイテムレベルシンク：<num $n1><br><if ($n2 > 0)>※アイテムレベルシンク中は、すべての装備品の性能がアイテムレベルシンク以下になるように調整されます。<else>※アイテムレベルシンク中は、すべての装備品の性能がアイテムレベルシンクの値になるように調整されます</if>
+#. de:  Anpassung auf G.-St. <num $n1><br><if ($n2 > 0)>※ Die Ausrüstungswerte werden für die Dauer der Anpassung unter das Limit gesenkt.<else>※ Die Ausrüstungswerte werden für die Dauer der Anpassung auf das Limit gesenkt.</if>
+#. fr:  Niveau d'objet synchronisé<nbsp>: <num $n1><br>Les attributs des pièces d'équipement sont réduits à des valeurs <if ($n2 > 0)>inférieures<else>équivalentes</if> au niveau d'objet synchronisé.
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102604:0:0"
+msgid "Item Level Sync: <num $n1><br>※While synced, all item stats are adjusted."
+msgstr " Синхронизация уровня предметов: <num $n1><br>※ При синхронизации характеристики экипировки корректируются."
+
+#. ja: 平均アイテムレベル <num $n1>～<br>アイテムレベルシンク：<num $n2><br>※アイテムレベルシンク中は、すべての装備品の性能がアイテムレベルシンク以下になるように調整されます。
+#. de: Ø Gegen<shy>stands<shy>stufe: min.  <num $n1><br> Anpassung auf G.-St. <num $n2><br>※ Die Ausrüstungswerte werden für die Dauer der Anpassung gesenkt.
+#. fr:  Niveau d'objet moyen <num $n1> ou plus<br> Niveau d'objet synchronisé<nbsp>: <num $n2><br>Les attributs des pièces d'équipement sont réduits à des valeurs équivalentes au niveau d'objet synchronisé.
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102605:0:0"
+msgid "Average Item Level: <num $n1><br>Item Level Sync: <num $n2><br>※While synced, all item stats are adjusted."
+msgstr " Средний уровень предметов: <num $n1><br> Синхронизация уровня предметов: <num $n2><br>※ При синхронизации характеристики экипировки корректируются."
+
+#. ja: レベルが低い順
+#. de: Stufe aufsteigend
+#. fr: Ordre croissant de niveau
+msgctxt "Addon:102606:0:0"
+msgid "Level (Ascending)"
+msgstr "По возрастанию уровня"
+
+#. ja: レベルが高い順
+#. de: Stufe absteigend
+#. fr: Ordre décroissant de niveau
+msgctxt "Addon:102607:0:0"
+msgid "Level (Descending)"
+msgstr "По убыванию уровня"
+
+#. ja: アイテムレベルシンクが適用されるコンテンツです。アイテムレベルシンク中は、すべての装備品の性能がアイテムレベルシンク以下になるように調整されます。
+#. de: Für die Dauer dieses Inhalts wird eine Anpassung der Gegen<shy>stands<shy>stufe vorgenommen. Die Parameter deiner Aus<shy>rüstungs<shy>gegen<shy>stände werden entsprechend gesenkt.
+#. fr: Cette mission fait l'objet d'une synchronisation du niveau d'objet.<br>Les attributs des pièces d'équipement sont réduits à des valeurs équivalentes au niveau d'objet synchronisé.
+msgctxt "Addon:102608:0:0"
+msgid "This duty is item level synced. All item levels will be adjusted to the level indicated."
+msgstr "В этом подземелье действует синхронизация уровня предметов. Уровень всей экипировки будет скорректирован до указанного значения."
+
+#. ja: 現在、自由なロール構成で参加できるコンテンツです。
+#. de: Ihr könnt eure Rollen frei wählen.
+#. fr: Cette mission ne fait l'objet d'aucune restriction de rôles.
+msgctxt "Addon:102609:0:0"
+msgid "Role requirements are not enforced for this duty."
+msgstr "Для этого подземелья ограничения по ролям не действуют."
+
+#. ja: 保留
+#. de: Warten
+#. fr: Réfléchir
+msgctxt "Addon:102610:0:0"
+msgid "Wait"
+msgstr "Подождать"
+
+#. ja: マッチング後に辞退ボタンの押下、もしくは時間切れに<br>よる辞退を行うと、ペナルティがカウントされます。<br><br><ui-color 506><ui-edge-color 507>1日にペナルティが3回以上カウントされた場合、<br>一定時間コンテンツへの参加申請ができなくなります。<br><br></ui-edge-color></ui-color>よろしいですか？
+#. de: Wird am selben Tag 3 Mal „Zurückziehen“ gewählt oder versäumt, rechtzeitig die Teilnahme an einem Inhalt zu bestätigen, <ui-color 506><ui-edge-color 507>können die Inhaltssuche oder die Raid-Suche vor<shy>über<shy>gehend nicht mehr genutzt werden</ui-edge-color></ui-color>.<br>Trotzdem zurückziehen?
+#. fr: Si vous annulez votre par<shy>ti<shy>ci<shy>pa<shy>tion à une mission au cours d'une journée en cliquant sur “Se retirer” ou en laissant le compte à rebours arriver à son terme, vous recevrez une pénalité.<br><ui-color 506><ui-edge-color 507>Accumulez trois pénalités ou plus, et vous ne pourrez plus utiliser les outils de mission et de raid pendant un certain temps.</ui-edge-color></ui-color><br>Confirmer<nbsp>?
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102611:0:0"
+msgid "Withdrawing from a duty three times a day, whether it be via the withdraw button or allowing the timer to run out, will incur a temporary <ui-color 506><ui-edge-color 507>penalty preventing you from registering for duty.</ui-edge-color></ui-color><br>Proceed?"
+msgstr "Если за день трижды отказаться от участия кнопкой или не принять приглашение до истечения таймера, на вас будет наложено временное <ui-color 506><ui-edge-color 507>ограничение на регистрацию в подземелья.</ui-edge-color></ui-color><br>Продолжить?"
+
+#. ja: バディを呼び出すとコンテンツファインダーの参加申請が取り消されます。<br>よろしいですか？
+#. de: Wenn du deinen Mitstreiter jetzt rufst, wird deine Registrierung in der Inhaltssuche abgebrochen. Trotzdem rufen?
+#. fr: Appeler votre compagnon annulera votre enregistrement dans l'outil de mission. Voulez-vous continuer<nbsp>?
+msgctxt "Addon:102612:0:0"
+msgid "Summoning a companion at this time will cancel your Duty Finder registration. Proceed?"
+msgstr "Если призвать спутника сейчас, регистрация в Поиске подземелий будет отменена. Продолжить?"
+
+#. ja: コンテンツ参加確認
+#. de: Inhaltssuche öffnen
+#. fr: Confirmation
+msgctxt "Addon:102613:0:0"
+msgid "Duty Participation Confirmation"
+msgstr "Подтверждение участия в подземелье"
+
+#. ja: PvPコンテンツ
+#. de: PvP-Inhalt
+#. fr: Contenu JcJ
+msgctxt "Addon:102614:0:0"
+msgid "PvP"
+msgstr "PvP"
+
+#. ja: 「<sheet ExVersion $n1 0>」が未登録
+#. de: <sheet ExVersion $n1 0> nicht registriert
+#. fr: <sheet ExVersion $n1 0> non enregistré
+#. macro: <sheet ExVersion $n1 0> — a value from a game data sheet, such as a name; sheet = ExVersion, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102615:0:0"
+msgid "<sheet ExVersion $n1 0> Unregistered"
+msgstr "<sheet ExVersion $n1 0> Не зарегистрировано"
+
+#. ja: レベル <num $n1><br>※PvPコンテンツではPvEのジョブレベルは適用されず、キャラクターのパラメータもPvP専用のものに切り替わります。
+#. de: Mindeststufe: <num $n1> (Teilnahme mit PvP-Werten)
+#. fr: Niveau <num $n1><br>* Le niveau JcE n'est pas pris en compte dans les instances JcJ. Des attributs propres au combat JcJ sont utilisés.
+#. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102616:0:0"
+msgid "Level <num $n1><br>※Player level and attributes are ignored during PvP and replaced with PvP-specific values."
+msgstr "Уровень <num $n1><br>※ В PvP не учитываются уровень и характеристики персонажа. Вместо них используются специальные PvP-характеристики."
+
+#. ja: 同一PvPチームメンバー限定
+#. de: Nur für Mitglieder des eigenen PvP-Teams
+#. fr: Membres d'<ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color> uniquement
+msgctxt "Addon:102617:0:0"
+msgid "Only PvP Team Members"
+msgstr "Только участники PvP-команды"
+
+#. ja: コンテンツリプレイ対応
+#. de: Inhaltsrückblende möglich
+#. fr: Visionnage de mission disponible
+msgctxt "Addon:102619:0:0"
+msgid "Duty Recording On"
+msgstr "Запись прохождения включена"
+
+#. ja: ギブアップ投票
+#. de: Abbruch vorschlagen
+#. fr: Vote d'abandon
+msgctxt "Addon:102620:0:0"
+msgid "Vote Abandon"
+msgstr "Голосование за прекращение"
+
+#. ja: ギブアップ投票を開始します。<br>過半数のメンバーの同意が得られると、インスタンスパーティが解散され、コンテンツが終了します。<br>※ギブアップ投票による退出にはペナルティは適用されません。
+#. de: Die Abstimmung über den Abbruch beginnt.<br>Wenn die Mehrheit der Grup<shy>pen<shy>mit<shy>glieder zustimmt, wird die Gruppe aufgelöst und der Inhalt beendet.<br>※ Der Abbruch führt nicht zu einer Sperre für die Teilnahme an Inhalten.
+#. fr: Le vote pour l'abandon de la mission va commencer.<br>Si la majorité des équipiers l'accepte, l'équipe sera dissoute et l'instance prendra fin.<br>* Aucune pénalité d'abandon ne sera infligée.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+msgctxt "Addon:102621:0:0"
+msgid "Initiate a vote to abandon the current duty.<br>If more than half the party members vote <ui-color 500><ui-edge-color 501>Yes</ui-edge-color></ui-color>, the party will be disbanded and the duty will end.<br>※Please note that penalties will not be incurred for abandoning a duty in this fashion."
+msgstr "Начать голосование за прекращение прохождения.<br>Если за него проголосует <ui-color 500><ui-edge-color 501>больше половины группы</ui-edge-color></ui-color>, группа будет распущена, а подземелье завершится.<br>※ За прекращение прохождения таким способом штраф не начисляется."
+
+#. ja: ギブアップ投票が開始されました。
+#. de: Die Abstimmung über den Abbruch beginnt.
+#. fr: Le vote pour l'abandon de la mission est ouvert.
+msgctxt "Addon:102622:0:0"
+msgid "Vote Abandon"
+msgstr "Голосование за прекращение"
+
+#. ja: 過半数のメンバーの同意が得られると、インスタンスパーティが解散され、コンテンツが終了します。<br>※ギブアップ投票による退出にはペナルティは適用されません。
+#. de: Wenn die Mehrheit der Grup<shy>pen<shy>mit<shy>glieder zustimmt, wird die Gruppe aufgelöst und der Inhalt beendet.<br>※ Der Abbruch führt nicht zu einer Sperre für die Teilnahme an Inhalten.
+#. fr: Si la majorité des équipiers l'accepte, l'équipe sera dissoute et l'instance prendra fin.<br>* Aucune pénalité d'abandon ne sera infligée.
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "Addon:102623:0:0"
+msgid "If more than half the party members vote <ui-color 500><ui-edge-color 501>Yes</ui-edge-color></ui-color>, the party will be disbanded and the duty will end.<br>※Please note that penalties will not be incurred for abandoning a duty in this fashion."
+msgstr "Если за прекращение проголосует <ui-color 500><ui-edge-color 501>больше половины группы</ui-edge-color></ui-color>, группа будет распущена, а подземелье завершится.<br>※ За прекращение прохождения таким способом штраф не начисляется."
+
+#. ja: ギブアップを希望しますか？
+#. de: Möchtest du den laufenden Inhalt abbrechen?
+#. fr: Désirez-vous abandonner cette mission<nbsp>?
+msgctxt "Addon:102624:0:0"
+msgid "Do you wish to abandon this duty?"
+msgstr "Прекратить прохождение подземелья?"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102625:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102626:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: ロットルール：GREED限定
+#. de: Beuteregel: Nur Gier
+#. fr: Règle du butin<nbsp>: juste cupidité
+msgctxt "Addon:102627:0:0"
+msgid "Loot Rule: Greed Only"
+msgstr "Правило добычи: только «Жадность»"
+
+#. ja: 対象コンテンツ開催期間<br>※開催されるコンテンツは毎日<reset-time 0><if ($hour >= 12)>午後<else>午前</if><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{0}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{0}</if>時に切り替わります。
+#. de: Zeitraum<br>※ Der aktuelle Inhalt ändert sich täglich um <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>:00 Uhr (Erdenzeit).
+#. fr: La mission change chaque jour à <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>h.
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <reset-time 0> — sets the time placeholders to the next daily or weekly reset; hour = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
+msgctxt "Addon:102628:0:0"
+msgid "Duty Availability<br>※Duty changes every day at <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>p.m.<else>a.m.</if> (Earth time)."
+msgstr "Доступность подземелья<br>※ Подземелье меняется ежедневно в <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 по времени Земли."
+
+#. ja: アチーブメント
+#. de: Errungenschaften
+#. fr: Hauts faits
+msgctxt "Addon:102629:0:0"
+msgid "Achievements"
+msgstr "Достижения"
+
+#. ja: 強制転送
+#. de: Zwangsteleport
+#. fr: Téléportation forcée
+msgctxt "Addon:102630:0:0"
+msgid "Teleportation Notice"
+msgstr "Уведомление о телепортации"
+
+#. ja: 封鎖空間へ強制転送します。<br>今すぐ移動しますか？
+#. de: Du wirst in einen abgesperrten Raum teleportiert. Jetzt fortfahren?
+#. fr: Vous allez vous téléporter dans une zone verrouillée. Souhaitez-vous continuer<nbsp>?
+msgctxt "Addon:102631:0:0"
+msgid "Move immediately to sealed area?"
+msgstr "Переместиться в закрытую зону сейчас?"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102632:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: 保留
+#. de: Warten
+#. fr: Non
+msgctxt "Addon:102633:0:0"
+msgid "Wait"
+msgstr "Подождать"
+
+#. ja: 達成間近
+#. de: Kurz vor Abschluss
+#. fr: Presque accomplis
+msgctxt "Addon:102634:0:0"
+msgid "Approaching Completion"
+msgstr "Скоро выполнены"
+
+#. ja: 現在のエリア
+#. de: Aktuelles Areal
+#. fr: Zone actuelle
+msgctxt "Addon:102635:0:0"
+msgid "Current Area"
+msgstr "Текущая область"
+
+#. ja: クロスワールドリンクシェル勧誘
+#. de: Einladungen in Welten-Kontaktkreise
+#. fr: Invitation (linkshell inter-Monde)
+msgctxt "Addon:102636:0:0"
+msgid "Cross-world Linkshell Invites"
+msgstr "Приглашения в межмировые группы новостей"
+
+#. ja: Focus
+#. de: Aktivitäten
+#. fr: Activités
+msgctxt "Addon:102637:0:0"
+msgid "Focus"
+msgstr "Занятия"
+
+#. ja: Seeking
+#. de: Sucht
+#. fr: Rôles recherchés
+msgctxt "Addon:102638:0:0"
+msgid "Seeking"
+msgstr "Ищу группу"
+
+#. ja: Active
+#. de: Aktiv
+#. fr: Période d'activité
+msgctxt "Addon:102639:0:0"
+msgid "Active"
+msgstr "Активность"
+
+#. ja: Recruitment
+#. de: Rekrutierung
+#. fr: Recrutement
+msgctxt "Addon:102640:0:0"
+msgid "Recruitment"
+msgstr "Набор"
+
+#. ja: 平日
+#. de: Wochentags
+#. fr: En semaine
+msgctxt "Addon:102641:0:0"
+msgid "Weekdays"
+msgstr "Будни"
+
+#. ja: 週末
+#. de: Wochenende
+#. fr: Week-end
+msgctxt "Addon:102642:0:0"
+msgid "Weekends"
+msgstr "Выходные"
+
+#. ja: 加入申請を受け付ける
+#. de: Beitrittsgesuche annehmen
+#. fr: Accepter les candidatures
+msgctxt "Addon:102643:0:0"
+msgid "Accept applications"
+msgstr "Принимать заявки"
+
+#. ja: Focus
+#. de: Aktivitäten
+#. fr: Activités
+msgctxt "Addon:102644:0:0"
+msgid "Focus"
+msgstr "Занятия"
+
+#. ja: Seeking
+#. de: Sucht
+#. fr: Rôles recherchés
+msgctxt "Addon:102645:0:0"
+msgid "Seeking"
+msgstr "Ищу группу"
+
+#. ja: Active
+#. de: Aktiv
+#. fr: Période d'activité
+msgctxt "Addon:102646:0:0"
+msgid "Active"
+msgstr "Активность"
+
+#. ja: Recruitment
+#. de: Rekrutierung
+#. fr: Recrutement
+msgctxt "Addon:102647:0:0"
+msgid "Recruitment"
+msgstr "Набор участников"
+
+#. ja: 加入申請を出す
+#. de: Gesuch stellen
+#. fr: Postuler
+msgctxt "Addon:102648:0:0"
+msgid "Submit Application"
+msgstr "Подать заявку"
+
+#. ja: 平日
+#. de: Wochentags
+#. fr: En semaine
+msgctxt "Addon:102649:0:0"
+msgid "Weekdays"
+msgstr "По будням"
+
+#. ja: 週末
+#. de: Wochenende
+#. fr: Week-end
+msgctxt "Addon:102650:0:0"
+msgid "Weekends"
+msgstr "По выходным"
+
+#. ja: 平日/週末
+#. de: Jeden Tag
+#. fr: Toute la semaine
+msgctxt "Addon:102651:0:0"
+msgid "Always"
+msgstr "Всегда"
+
+#. ja: 申請不可
+#. de: Nimmt keine Gesuche an
+#. fr: Candidatures refusées
+msgctxt "Addon:102652:0:0"
+msgid "Closed"
+msgstr "Закрыто"
+
+#. ja: 申請可
+#. de: Nimmt Gesuche an
+#. fr: Candidatures acceptées
+msgctxt "Addon:102653:0:0"
+msgid "Open"
+msgstr "Открыто"
+
+#. ja: APPLICATION
+#. de: BEITRITTSGESUCH
+#. fr: Dépôt de candidature
+msgctxt "Addon:102654:0:0"
+msgid "Application"
+msgstr "Заявка"
+
+#. ja: フリーカンパニー「<string $s1>」に加入申請を送ります。<br>よろしいですか？
+#. de: Ein Gesuch um Mitgliedschaft in „<string $s1>“ stellen?
+#. fr: Déposer une candidature pour rejoindre la compagnie “<string $s1>”<nbsp>?
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102656:0:0"
+msgid "Apply for membership with <string $s1>?"
+msgstr "Подать заявку на вступление в свободную компанию «<string $s1>»?"
+
+#. ja: 発行中の加入申請をキャンセルし、<br>新たにフリーカンパニー「<string $s1>」に加入申請を送ります。<br>よろしいですか？
+#. de: Du hast dich bereits bei einer anderen Freien Ge<shy>sell<shy>schaft beworben.<br>Möchtest du das Gesuch zurückziehen und dich bei <string $s1> bewerben?
+#. fr: Annuler la candidature précédemment envoyée et postuler pour rejoindre la compagnie “<string $s1>”<nbsp>?
+#. macro: <br> — a line break (may be added or dropped)
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102657:0:0"
+msgid "You have applied for membership with another free company.<br>Withdraw that application and apply for membership with <string $s1>?"
+msgstr "Ты уже подал заявку в другую свободную компанию.<br>Отозвать её и подать заявку на вступление в «<string $s1>»?"
+
+#. ja: 加入申請
+#. de: Gesuche
+#. fr: Candidatures
+msgctxt "Addon:102658:0:0"
+msgid "Applicants"
+msgstr "Кандидаты"
+
+#. ja: Message
+#. de: Nachricht
+#. fr: Message
+msgctxt "Addon:102659:0:0"
+msgid "Message"
+msgstr "Сообщение"
+
+#. ja: Date
+#. de: Datum
+#. fr: Date
+msgctxt "Addon:102660:0:0"
+msgid "Date"
+msgstr "Дата"
+
+#. ja: 加入申請を取り消す
+#. de: Gesuch zurückziehen
+#. fr: Annuler la candidature
+msgctxt "Addon:102661:0:0"
+msgid "Withdraw Application"
+msgstr "Отозвать заявку"
+
+#. ja: フリーカンパニー「<string $s1>」への加入申請を取り消します。<br>よろしいですか？
+#. de: Das Gesuch um Mitgliedschaft in „<string $s1>“ zurückziehen?
+#. fr: Annuler la candidature pour rejoindre la compagnie “<string $s1>”<nbsp>?
+#. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102662:0:0"
+msgid "Withdraw your application for membership with <string $s1>?"
+msgstr "Отозвать заявку на вступление в свободную компанию «<string $s1>»?"
+
+#. ja: 加入申請を受ける
+#. de: Gesuch annehmen
+#. fr: Accepter la candidature
+msgctxt "Addon:102663:0:0"
+msgid "Approve Application"
+msgstr "Принять заявку"
+
+#. ja: 加入申請を断る
+#. de: Gesuch ablehnen
+#. fr: Refuser la candidature
+msgctxt "Addon:102664:0:0"
+msgid "Deny Application"
+msgstr "Отклонить заявку"
+
+#. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の加入申請を承諾します。<br>よろしいですか？
+#. de: Das Beitrittsgesuch von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if> annehmen?
+#. fr: Accepter la candidature <if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 9 $gn7 1 1><else><if (9 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 9 36><string $gs2><else><sheet Attributive 9 28><string $gs2></if></if></if></if><nbsp>?
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102665:0:0"
+msgid "Approve <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s application for membership?"
+msgstr "Принять заявку на вступление от <if ($gs1 == $gs2)>себя<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>?"
+
+#. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の加入申請を拒否します。<br>相手側に通知を送りますが、<br>よろしいですか？
+#. de: Das Beitrittsgesuch von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if> ablehnen?
+#. fr: Refuser la candidature <if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 9 $gn7 1 1><else><if (9 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 9 36><string $gs2><else><sheet Attributive 9 28><string $gs2></if></if></if></if><nbsp>? Le postulant rejeté sera prévenu par un message.
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102666:0:0"
+msgid "Deny <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s application for membership?"
+msgstr "Отклонить заявку на вступление от <if ($gs1 == $gs2)>себя<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>?"
+
+#. ja: 加入申請数が上限に達しています。
+#. de: Die Ge<shy>sell<shy>schaft kann keine weiteren Gesuche annehmen.
+#. fr: La compagnie ne peut plus accepter de nouvelles candidatures pour le moment.
+msgctxt "Addon:102667:0:0"
+msgid "Your company cannot accept any more applications."
+msgstr "Твоя свободная компания не может принять больше заявок."
+
+#. ja: Focus
+#. de: Hauptaktivitäten
+#. fr: Activités principales
+msgctxt "Addon:102668:0:0"
+msgid "Focus"
+msgstr "Основные занятия"
+
+#. ja: Seeking
+#. de: Sucht
+#. fr: Rôles recherchés
+msgctxt "Addon:102669:0:0"
+msgid "Seeking"
+msgstr "Ищут"
+
+#. ja: Active
+#. de: Aktiv
+#. fr: Jours d'activité
+msgctxt "Addon:102670:0:0"
+msgid "Active"
+msgstr "Активность"
+
+#. ja: Recruitment
+#. de: Rekrutierung
+#. fr: Recrutement
+msgctxt "Addon:102671:0:0"
+msgid "Recruitment"
+msgstr "Набор участников"
+
+#. ja: 平日
+#. de: Wochentags
+#. fr: En semaine
+msgctxt "Addon:102672:0:0"
+msgid "Weekdays"
+msgstr "По будням"
+
+#. ja: 週末
+#. de: Wochenende
+#. fr: Week-end
+msgctxt "Addon:102673:0:0"
+msgid "Weekends"
+msgstr "По выходным"
+
+#. ja: 平日/週末
+#. de: Jeden Tag
+#. fr: Toute la semaine
+msgctxt "Addon:102674:0:0"
+msgid "Always"
+msgstr "Всегда"
+
+#. ja: 申請不可
+#. de: Kein Gesuch möglich
+#. fr: Candidatures refusées
+msgctxt "Addon:102675:0:0"
+msgid "Closed"
+msgstr "Закрыто"
+
+#. ja: 申請可
+#. de: Gesuch möglich
+#. fr: Candidatures acceptées
+msgctxt "Addon:102676:0:0"
+msgid "Open"
+msgstr "Открыто"
+
+#. ja: Message
+#. de: Nachricht
+#. fr: Message
+msgctxt "Addon:102677:0:0"
+msgid "Message"
+msgstr "Сообщение"
+
+#. ja: 申請一時不可
+#. de: Momentan kein Gesuch möglich
+#. fr: Candidatures impossibles temporairement
+msgctxt "Addon:102678:0:0"
+msgid "Temporarily Closed"
+msgstr "Временно закрыто"
+
+#. ja: 指定なし
+#. de: Keine Angabe
+msgctxt "Addon:102679:0:0"
+msgid "Not specified"
+msgstr "Не указано"
+
+#. ja: 指定なし
+#. de: Keine Angabe
+msgctxt "Addon:102680:0:0"
+msgid "Not specified"
+msgstr "Не указано"
+
+#. ja: 指定なし
+#. de: Keine Angabe
+msgctxt "Addon:102681:0:0"
+msgid "Not specified"
+msgstr "Не указано"
+
+#. ja: 指定なし
+#. de: Keine Angabe
+msgctxt "Addon:102682:0:0"
+msgid "Not specified"
+msgstr "Не указано"
+
+#. ja: 加入申請はありません。
+#. de: Keine Anträge.
+#. fr: Aucune candidature.
+msgctxt "Addon:102683:0:0"
+msgid "No applicants."
+msgstr "Заявок нет."
+
+#. ja: 保留
+#. de: Enthalten
+#. fr: Réfléchir
+msgctxt "Addon:102684:0:0"
+msgid "Wait"
+msgstr "Подождать"
+
+#. ja: テレポの実行に失敗しました。
+#. de: Teleport fehlgeschlagen.
+#. fr: La téléportation a échoué.
+msgctxt "Addon:102685:0:0"
+msgid "Teleport failed."
+msgstr "Не удалось телепортироваться."
+
+#. ja: <sheet Item $n1 0> (所持数：<num $n2>）を消費して、<br>無料でテレポしますか？
+#. de: <capitalize><noun-de Item 1 $n1 1 4 1></capitalize> (Besitz: <num $n2>) verbrauchen und gebührenfrei teleportieren?
+#. fr: Se téléporter gratuitement en échange d'<noun-fr Item 1 $n1 1 1> (<num $n2> possédé<if ($n2 <= 1)><else>s</if>)<nbsp>?
+#. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
+msgctxt "Addon:102686:0:0"
+msgid "Use <noun-en Item 1 $n1 1 1> to teleport free of charge? (Total: <num $n2>)"
+msgstr "Использовать <noun-en Item 1 $n1 1 1> для бесплатной телепортации? (Всего: <num $n2>)"
+
+#. ja: はい
+#. de: Ja
+#. fr: Oui
+msgctxt "Addon:102687:0:0"
+msgid "Yes"
+msgstr "Да"
+
+#. ja: いいえ
+#. de: Nein
+#. fr: Non
+msgctxt "Addon:102688:0:0"
+msgid "No"
+msgstr "Нет"
+
+#. ja: 話す
+#. de: Plaudern
+#. fr: Parler
+msgctxt "Addon:102700:0:0"
+msgid "Small Talk"
+msgstr "Непринуждённая беседа"

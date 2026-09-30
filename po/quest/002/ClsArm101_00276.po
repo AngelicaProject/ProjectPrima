@@ -1,0 +1,205 @@
+# quest/002/ClsArm101_00276 — «The Base Fundamentals» · in play order
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Source-Language: en\n"
+
+#. ja: 甲冑師ギルドのハ・ナンザは、新人甲冑師の作業の手伝いを頼みたいようだ。
+#. de: Gildenmeisterin H'naanza hofft, dass du einer begriffsstutzigen Schülerin auf die Sprünge helfen kannst.
+#. fr: Le maître de guilde H'naanza a besoin de quelqu'un pour aider une armurière novice.
+#. kind: journal
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_SEQ_00:1"
+msgid "Forgemaster H'naanza wants you to assist a novice armorer who is struggling with the basics of the craft."
+msgstr ""
+
+#. ja: 新人甲冑師グラネーが作るはずだった<sheet Item 5071 0>の納品が遅れているという。これを代わりに作り、グラネーを助けることが今回の課題となった。「<sheet Item 5071 0>」を12個調達し、甲冑師ギルドの「グラネー」に渡そう。
+#. de: Der angehenden Plattnerin Granae fallen sogar die einfachsten Arbeiten schwer. Du sollst <noun-de Item 5 5071 2 4 1> anfertigen und ihr bringen, wovon sie sich hoffentlich inspirieren lässt.
+#. fr: La fabrication des <noun-fr Item 12 5071 2 1> dont a été chargée la novice Granae n'avance pas. Forgez-en douze et remettez-les-lui.
+#. kind: journal
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_SEQ_01:1"
+msgid "Granae, a novice armorer, has fallen behind in her task of forging bronze plate. To supplement Granae's work, Forgemaster H'naanza has requested that you craft twelve sheets of bronze plate and deliver them directly to the novice, hoping that your good example might inspire her to display similar diligence."
+msgstr ""
+
+#. ja: グラネーに<sheet Item 5071 0>を12個渡すことができた。彼女は今回の作業を、初心者向けだとナメていたらしい。しかし、冒険者の実直な作業ぶりを見て、改心した。これでハ・ナンザに提示された課題は達成できたといえる。今後も、グラネーの手本であり続けられるよう、冒険者ギルドのチャ・モクリから受けられるギルドリーヴの「製作稼業」なども活用しながら、腕を磨いていこう。<br><br>※甲冑師のレベルが15以上になると、ハ・ナンザから次の甲冑師クエストを受注することができます。
+#. de: Du hast Granae die Bronzeplatten gebracht. Anscheinend war sie in Gedanken so sehr damit beschäftigt, welch prächtige Rüstungen sie anfertigen möchte, dass sie nicht genug über die Grundlagen nachgedacht hat. Deine gekonnte Arbeit hat die junge Dame dazu gebracht, ihre Einstellung zu überdenken. Von nun an will sie sich mehr Mühe geben und das Plattnerhandwerk ordentlich von Grund auf lernen. Zum Schluss gibt sie dir den Tipp, mit Freibriefen Gil zu verdienen. Falls du daran Interesse hast, kannst du dich bei T'mokkri in der Hafenbar „Zur Ertränkten Sorge“ melden.<br><br>※ Sobald du als <if $gn4>Plattnerin<else>Plattner</if> Stufe 15 erreicht hast, kannst du von H'naanza einen neuen Auftrag erhalten.
+#. fr: L'armurière novice Granae ne prenait pas son travail au sérieux, mais en voyant les 12 <noun-fr Item 12 5071 2 1> que vous avez fabriqué<if "<sheet Item 5071 6>">e</if>s pour l'aider, elle a décidé de s'y mettre pour de bon. Continuez de lui montrer l'exemple en tirant le meilleur parti des travaux d'artisanat que propose T'mokkri, au comptoir des mandats de guilde.<br>* H'naanza propose la prochaine quête aux armuriers de niveau 15.
+#. kind: journal
+#. macro: <br> — a line break (may be added or dropped)
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_SEQ_02:1"
+msgid "You have delivered the bronze plate to Granae. Her head swimming with visions of the fantastic armor she would forge, it seems the novice deemed her more mundane─though equally important─tasks unworthy of her time and effort. The sight of your exacting work, however, has convinced her otherwise. After promising to improve on her fundamental techniques, Granae suggests that you seek out T'mokkri at the Drowning Wench and try your hand at a few tradecraft leves.<br><br>※The next armorer quest will be available from H'naanza upon reaching level 15."
+msgstr ""
+
+#. ja: グラネーに<sheet Item 5071 0>を納品
+#. de: <capitalize><noun-de Item 5 5071 2 4 1></capitalize> an Granae übergeben
+#. fr: Donner des <noun-fr Item 12 5071 2 1> à Granae
+#. kind: objective
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_TODO_00:1"
+msgid "Deliver sheets of bronze plate to Granae."
+msgstr ""
+
+#. ja: やあ、あんたか、あれから息災かい？<br>だったら少しばっかり力を貸してほしいんだが。
+#. de: Ah, <split " " 1><string $gs1></split>. Kannst du mir einen Gefallen tun?
+#. fr: Salut, <split " " 1><string $gs1></split>. Tu viens me dire que tu t'es habitué<if $gn4>e</if> à trrra<shy>vail<shy>ler avec des pinces<nbsp>? Ça tombe à pic parce que j'ai justement une tâche à te confier.
+#. speaker: HNAANZA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#. macro: <if $gn4>lass<else>lad</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_1:1"
+msgid "Ah, <split \" \" 1><string $gs1></split>. Just the <if $gn4>lass<else>lad</if> I was hoping to see."
+msgstr ""
+
+#. ja: 回した仕事に手こずってる奴がいてね。<br>誰かの助けが必要みたいなんだよ。<br>それをあんたに頼みたい。
+#. de: Es gibt da so 'ne Schülerin, die etwas schwer von Begriff ist und mich mit ihrer Lernresistenz an den Rand der Ver<shy>zweif<shy>lung bringt. Hoffentlich kannst du ihr zumindest ein bisschen Verstand einbläuen.
+#. fr: Une de mes jeunes novices a quelques difficultés avec un travail que je lui ai confié. J'aimerais que tu lui donnes un coup de main.
+#. speaker: HNAANZA
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_2:1"
+msgid "I have a new initiate that has near exhausted my reserves of patience, and I think she would benefit from seeing the results of a peer's dedication and skill─specifically, yours."
+msgstr ""
+
+#. ja: 新入りのグラネーって職人がいるんだけど、<br>これがまた不器用な奴でさ。<br>マメに面倒見てやらないと、どうにもならない。
+#. de: Sie heißt Granae. Du kannst mir glauben: Wenn man ihr nicht alles haarklein vorkaut, bekommt sie absolut nichts auf die Reihe.
+#. fr: Elle s'appelle Granae et on ne peut pas dire qu'elle soit trrrès douée. Il faut donc quelqu'un pour l'épauler.
+#. speaker: HNAANZA
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_3:1"
+msgid "Her name is Granae, and, Builder help me, she is the most distracted, fumble-fingered craftswoman ever to lift a hammer."
+msgstr ""
+
+#. ja: 本当なら基礎中の基礎くらい、<br>助けなしに作れるよう、早くなってほしいんだが。
+#. de: Wenn sie endlich lernen würde, zumindest die einfachsten Arbeiten korrekt auszuführen, wäre schon viel gewonnen.
+#. fr: À vrai dire, je préférerais qu'elle apprenne les rudiments toute seule, mais je crains que ça ne prenne une éternité.
+#. speaker: HNAANZA
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_4:1"
+msgid "If she could but learn to forge the simplest of items without constant supervision, I would consider it a rare victory."
+msgstr ""
+
+#. ja: 全員があんたくらい仕事をこなせると、<br>ギルドとしては、ずいぶん楽なんだけどねぇ。
+#. de: \<seufz> Ach, <split " " 1><string $gs1></split>, hätte Byregot doch alle Plattner mit deinem Talent gesegnet ...
+#. fr: Si seulement tout le monde pouvait êtrrre aussi doué que toi, ça me simplifierait bien les choses...
+#. speaker: HNAANZA
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_5:1"
+msgid "\\<sigh> It is unfortunate that Byregot did not see fit to invest all of my armorers with your innate talents..."
+msgstr ""
+
+#. ja: もっとも多少の才能差はあれど、みんな最初は素人だ。<br>よちよち歩きのうちに見放したら、<br>いつまで経っても職人の数なんて増えやしない。
+#. de: Aber so ist es nun mal nicht, und jeder fängt mal klein an. Unsere Gilde muss sich auch um die Begriffsstutzigen kümmern, wenn wir dem Arbeitskräftemangel vorbeugen wollen.
+#. fr: Mais bon, malgré quelques différences d'affinités, on commence tous par le commencement, et il est de mon devoir, en tant que maître de guilde, de m'assurer que chacun devienne autonome dans son travail.
+#. speaker: HNAANZA
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_6:1"
+msgid "But I suppose we must all start somewhere─and if I abandoned every initiate that was slow to grasp a technique, our guild would have a grand total of, what, <i>nine</i> members? Mayhap ten. I jest...but 'twould be few enough for our clients in the Maelstrom to have to share breastplates."
+msgstr ""
+
+#. ja: そういうわけで、ちょっと助けてやってくれないか？<br>「<sheet Item 5071 0>」を12個ほど作って、<br>グラネーが担当してる分を補ってやってほしい。
+#. de: <split " " 1><string $gs1></split>, da kommst du ins Spiel. Greif Granae unter die Arme, indem du für sie 12 <noun-de Item 5 5071 2 4 1> anfertigst!
+#. fr: C'est pour cette raison que je voudrais que tu aides Granae en forrrgeant une douzaine <noun-fr Item 8 5071 2 1>.
+#. speaker: HNAANZA
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_7:1"
+msgid "So what say you, <split \" \" 1><string $gs1></split>? You need only craft a dozen sheets of bronze plate to supplement Granae's own."
+msgstr ""
+
+#. ja: 作ったら、直接彼女に渡してやってくれ。<br>先輩として助ける、これが今回の課題さ。<br>よろしく頼むよ。
+#. de: Bring die fertigen Platten dann bitte direkt zu ihr. Vielleicht wird sie sich von deiner vorbildlichen Arbeit inspirieren lassen und sich in Zukunft etwas mehr anstrengen.
+#. fr: Tu n'auras qu'à lui remettre directement lorsque tu auras fini. Dis-toi que c'est une façon de lui donner l'exemple en tant qu'aîné<if $gn4>e</if> dans la profession.
+#. speaker: HNAANZA
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_HNAANZA_000_8:1"
+msgid "When they are ready, I want you to deliver them to the lass in person. Mayhap your example will inspire her to take more care with her work."
+msgstr ""
+
+#. ja: こ、今回は自分の力不足のため、<br>ご迷惑をおかけして申し訳ないっす！<br>「<sheet Item 5071 0>」を12個、よろしくお願いしまっす！
+#. de: Hallo, du bist bestimmt <split " " 1><string $gs1></split>! Die Gildenmeisterin hat mir von dir erzählt. Kannst du mir mit den Bronzeplatten helfen?
+#. fr: B-bonjour. C-c'est vous que madame H'naanza a envoyé<if $gn4>e</if> pour m'aider à fabriquer des <noun-fr Item 12 5071 2 1><nbsp>? J'espère que ça ne vous ennuie pas trop d'en faire douze pour moi... En tout cas, merci d'avance<nbsp>!
+#. speaker: GRANAE
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_10:1"
+msgid "Oh, you must be <split \" \" 1><string $gs1></split>! The guildmaster told me you'd be─ Wait, where did I put my hammer? Ah, there it is! Sorry, what were you saying? Right, yes─I would be most grateful for the extra sheets of bronze plate."
+msgstr ""
+
+#. ja: これがセンパイの「<sheet Item 5071 0>」……。<br>じっくり見せてもらうっす！
+#. de: Die hast du selbst hergestellt?! Die sind ja der Hammer! Ups ... beinahe wären sie mir aus der Hand gerutscht ...
+#. fr: C-comment<nbsp>!? Vous avez déjà fini...<nbsp>!? Laissez-moi un peu voir comment vous les avez forgées, que je puisse m'en inspirer.
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_11:1"
+msgid "Gods...did you craft these yourself? Why, they are absolutely─ Whoa! Nearly dropped them! No harm done, though!"
+msgstr ""
+
+#. ja: じっくり見ると、センパイの仕事の丁寧さが、<br>この目でハッキリとわかるっす……。
+#. de: Na, das ist ja gerade noch mal gut gegangen, was? Auf jeden Fall bin ich beeindruckt, was du schon so alles kannst. Dabei bist du auch noch gar nicht so lange dabei ...
+#. fr: Eh bien, on peut dire que vous êtes soigneu<if $gn4>se<else>x</if> dans votre travail.
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_12:1"
+msgid "As I was saying, I can certainly see why the forgemaster speaks so highly of your work."
+msgstr ""
+
+#. ja: 素材の「<sheet Item 5056 0>」の扱い方からして、<br>センパイの仕事は自分とは段違いっす。
+#. de: Die Bronze hat genau die richtige Farbe und Stärke. Du musst das Kupfer und das Zinn genau abgewogen haben, nicht wahr? Ich mach immer zu viel Zinn rein, weißt du? Viel hilft viel, denke ich halt immer ...
+#. fr: Quand je vois la qualité de votre bronze, je réalise les progrès qu'il me reste encore à accomplir.
+#. speaker: GRANAE
+#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_13:1"
+msgid "The bronze is the perfect color and thickness, so I assume you carefully measured out the amounts of tin and copper...? I always add too much tin. Did you know metal can <i>shatter</i>?"
+msgstr ""
+
+#. ja: 「<sheet Item 5071 0>」なんて基礎の基礎。<br>早く、これを素材にした鎧や盾を作ってみたい、<br>なんて甘いこと考えてましたっす！
+#. de: Verdammt, ich war immer so verrückt darauf, abgefahrene Helme und Rüstungen zu schmieden, dass ich kaum über die Grundlagen der Materialkunde nachgedacht habe.
+#. fr: Je sais bien qu'il faut commencer par des objets basiques comme les rivets et les lingots, mais j'ai vraiment hâte de pouvoir forger des armures et des boucliers.
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_14:1"
+msgid "Well, I didn't. Truth be told, I've tended to put all my effort into making the armor itself, rather than bothering with the base materials. I mean, compared to hammering out glorious winged helms or ornate greaves, measuring out metals just seemed so...trivial."
+msgstr ""
+
+#. ja: 基本をナメてかかったからこそ、<br>自分は仕事をきちんと果たせなかったっす……。
+#. de: Das war offensichtlich ein Fehler, was? Jetzt bemerke ich zum ersten Mal die schlichte Schönheit einer einfachen Bronzeplatte ...
+#. fr: C'est sans doute à cause de ça que je n'arrivais pas à me motiver pour cette commande... et qu'il a fallu faire appel à vous.
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_15:1"
+msgid "But looking at your work, I'm beginning to wonder... I never realized how beautiful a simple sheet of bronze could be..."
+msgstr ""
+
+#. ja: いい「<sheet Item 5071 0>」がなきゃ<br>頑丈な鎧や盾なんて作れるはずないっす！<br>もはや、反省しかないっす。
+#. de: Daraus lassen sich bestimmt die herrlichsten Rüstungen machen.
+#. fr: Mais je me rends compte maintenant qu'on ne peut rien fabriquer de résistant sans des plaques de bronze de qualité.
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_16:1"
+msgid "With materials like this, just imagine the sturdy, shiny suits of armor one might create!"
+msgstr ""
+
+#. ja: これからはセンパイを目標にして、<br>真摯で丁寧な作業を心がけるっす。<br>そして、いつかセンパイに追いついてみせるっすよ！
+#. de: Ich wollte den Chocobo wohl von hinten aufzäumen, was? Na, das wird mir so schnell nicht wieder passieren, das schwöre ich dir. Von heute an achte ich auf die Grundlagen!
+#. fr: Vous m'avez ouvert les yeux, en quelque sorte. Je vais donc faire en sorte de donner du cœur à l'ouvrage en espérant atteindre votre niveau de finition.
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_17:1"
+msgid "It seems I've been putting the cart before the chocobo. From this moment onwards, I swear to focus all my attention and care on the task at hand. Even if the task at hand is forging bronze ingots."
+msgstr ""
+
+#. ja: だから、センパイもサボったりしないで、<br>いつまでも自分の目標でいてほしいっす！
+#. de: Vielleicht werde ich dann eines Tages so gut wie du, <split " " 1><string $gs1></split>, mein großes Vorbild!
+#. fr: Vous allez voir ce que vous allez voir, alors vous aussi continuez de vous per<shy>fec<shy>tion<shy>ner<nbsp>!
+#. speaker: GRANAE
+#. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
+#. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_18:1"
+msgid "And what of you, <split \" \" 1><string $gs1></split>? Do you have any grand projects waiting for you on the anvil?"
+msgstr ""
+
+#. ja: そうだ、センパイ知ってるっすか？<br>ギルドリーヴの製作稼業を受ければ、<br>ちょうどいい修行になるっすよ！
+#. de: Wer so viel draufhat wie du, kann sicher ordentlich Gil mit Freibriefen scheffeln, was?
+#. fr: Au fait, vous saviez que l'on peut faire des travaux d'artisanat en s'adressant au comptoir des mandats de guilde<nbsp>? C'est un peu trop tôt pour moi, mais cela pourrait vous servir d'en<shy>traî<shy>ne<shy>ment.
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_19:1"
+msgid "I overheard some of the senior armorers boasting about the coin they made through tradecraft leves. Might that be something you'd consider?"
+msgstr ""
+
+#. ja: 冒険者ギルドのチャ・モクリさんから、受けられるっす。<br>センパイもギルドリーヴで、もっと腕を磨いてくださいっす！<br>自分、その背中を見て頑張るっす！
+#. de: Ich hab gehört, dass man sich dafür bei T'mokkri in der Ertränkten Sorge melden muss, aber ich brauch es gar nicht erst zu versuchen. <i>Noch</i> nicht, zumindest!<br>... Halt mal, wo ist mein Hammer schon wieder hin ...?
+#. fr: Allez voir T'mokkri si cela vous intéresse. À bientôt<nbsp>!
+#. speaker: GRANAE
+msgctxt "quest/002/ClsArm101_00276:TEXT_CLSARM101_00276_GRANAE_000_20:1"
+msgid "They say T'mokkri over at the Drowning Wench is the one to talk to. And that's where I'll be heading once I improve my technique! Now where did I put that hammer...?"
+msgstr ""
