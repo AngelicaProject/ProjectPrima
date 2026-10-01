@@ -147,7 +147,7 @@ msgstr "Создано<br><set-time $n1><num $day>.<num $month>.<num $year> <num
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:6090:0:0"
 msgid "<title-case><string $s1></title-case> Backup Data <num $n2>"
-msgstr ""
+msgstr "<title-case><string $s1></title-case> — резервная копия <num $n2>"
 
 #. ja: 作成日時<br><set-time $n1><num $year>/<num $month>/<num $day> <num $hour>:<num2 $min>:<num2 $sec>
 #. de: Erstellt:<br><set-time $n1><num $day>.<num $month>.<num $year> um <num $hour>:<num2 $min>:<num2 $sec> Uhr
@@ -172,7 +172,7 @@ msgstr "Создано<br><set-time $n1><num $day>.<num $month>.<num $year> <num
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:6092:0:0"
 msgid "<capitalize><string $s1></capitalize> Duty Record #<num $n2>"
-msgstr ""
+msgstr "<capitalize><string $s1></capitalize> — запись задания №<num $n2>"
 
 #. ja: <sheet InstanceContent $n1 3><br><set-time $n2><num $year>/<num $month>/<num $day> <num $hour>:<num2 $min>:<num2 $sec>
 #. de: <sheet InstanceContent $n1 3><br><set-time $n2><num $day>.<num $month>.<num $year> <num $hour>:<num2 $min>:<num2 $sec>
@@ -2701,7 +2701,7 @@ msgstr "Готов"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:6498:0:0"
 msgid "In <if ($n1 > 0)><num $n1>m<else>less than 1m</if>"
-msgstr ""
+msgstr "За <if ($n1 > 0)><num $n1> мин<else>минуту</if>"
 
 #. ja: 訓練する
 #. de: Trainieren
@@ -3045,7 +3045,7 @@ msgstr "Обучить (<if ($n1 > 0)><num $n1> мин<else>меньше мин�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:6547:0:0"
 msgid "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize>'s rank has yet to reach the current cap or is already at the maximum. To raise a chocobo's rank, it must earn EXP in the field. Feeding your companion <noun-en Item 1 $n1 1 1> will not raise its rank cap.<br>Proceed anyway?"
-msgstr ""
+msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> пока не достиг предела ранга. Чтобы повысить ранг чокобо, он должен получать опыт в поле. Угощение <noun-en Item 1 $n1 1 1> не повысит предел ранга питомца.<br>Всё равно продолжить?"
 
 #. ja: メンバーのチョコボを訓練する場合、あたえた野菜が好物になったり、バディランクの上限が上がることはありません。<br>ご褒美として選択しますか？
 #. de: Wenn du den Chocobo eines Ge<shy>sell<shy>schaftsmitglieds trainierst, wird das gefütterte Gemüse nicht sein Lieblingsgemüse und auch der Maximalrang steigt nicht an. Trotzdem füttern?
@@ -3098,7 +3098,7 @@ msgstr "Перейти в район с квартирой"
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:6555:0:0"
 msgid "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize>'s rank has reached the maximum. Feeding your companion <noun-en Item 1 $n2 1 1> will not raise its rank further.<br>Proceed anyway?"
-msgstr ""
+msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> достиг максимального ранга. Угощение <noun-en Item 1 $n2 1 1> не повысит его ранг.<br>Всё равно продолжить?"
 
 #. ja: MARKET
 #. de: MARKT
@@ -3388,7 +3388,7 @@ msgstr "Завершить"
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
 msgctxt "Addon:6598:0:0"
 msgid "■<if ($n1 == 0)><else><digit $n1 2>h</if> <digit $n2 2>m elapsed　<hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen>"
-msgstr ""
+msgstr "■<if ($n1 == 0)><else><digit $n1 2> ч</if> <digit $n2 2> мин прошло　<hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen><hyphen>"
 
 #. ja: VOYAGE DETAILS
 #. de: ERKUNDUNG
@@ -3626,7 +3626,7 @@ msgstr "Нужные материалы"
 #. fr: Qté
 msgctxt "Addon:6642:0:0"
 msgid "Qty."
-msgstr ""
+msgstr "Кол."
 
 #. ja: 所持数
 #. de: Besitz
@@ -3643,7 +3643,7 @@ msgstr "В наличии"
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:6644:0:0"
 msgid "<kilo $n1 \",\"><if ($n3 > 0)>/ <kilo $n2 \",\"></if>"
-msgstr ""
+msgstr "<kilo $n1 \",\"><if ($n3 > 0)>/ <kilo $n2 \",\"></if>"
 
 #. ja: 報酬経験値
 #. de: Routine
@@ -4496,7 +4496,7 @@ msgstr "Сведения о квартире"
 #. macro: <sheet PlaceName $n1 0> — a value from a game data sheet, such as a name; sheet = PlaceName, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:6776:0:0"
 msgid "<if ($n1 == 425)><sheet PlaceName 1805 0> <else><if ($n1 == 426)><sheet PlaceName 1807 0> <else><if ($n1 == 427)><sheet PlaceName 1809 0> <else><if ($n1 == 2412)><sheet PlaceName 1905 0> <else><if ($n1 == 4139)><sheet PlaceName 3718 0><else>Public Apartments </if></if></if></if></if> <if ($n3 == 129)>Wing 1 <else>Wing 2 </if>Room #<num $n4>, <ordinal $n2> Ward, <sheet PlaceName $n1 0> "
-msgstr ""
+msgstr "<if ($n1 == 425)><sheet PlaceName 1805 0> <else><if ($n1 == 426)><sheet PlaceName 1807 0> <else><if ($n1 == 427)><sheet PlaceName 1809 0> <else><if ($n1 == 2412)><sheet PlaceName 1905 0><else><if ($n1 == 4139)><sheet PlaceName 3718 0><else>Общественные апартаменты </if></if></if></if></if> <if ($n3 == 129)>Крыло 1 <else>Крыло 2 </if>комната №<num $n4>, <ordinal $n2> участок, <sheet PlaceName $n1 0> "
 
 #. ja: SELECT APARTMENTS ROOM
 #. de: WOHNUNGEN
@@ -4743,7 +4743,7 @@ msgstr "Закрыть"
 #. macro: <if ($n1 == 3)>Portraits</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:6826:0:0"
 msgid "<if ($n1 == 1)>Sightseeing Log<else><if ($n1 == 2)>Landscapes<else><if ($n1 == 3)>Portraits</if></if></if>"
-msgstr ""
+msgstr "<if ($n1 == 1)>Журнал исследований<else><if ($n1 == 2)>Пейзажи<else><if ($n1 == 3)>Портреты</if></if></if>"
 
 #. ja: <sheet Item $n1 0>を<br>使用します。よろしいですか？
 #. de: <capitalize><noun-de Item 2 $n1 1 4 1></capitalize> einrahmen?
@@ -4928,7 +4928,7 @@ msgstr "В кладовой нет уличной мебели."
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "Addon:6853:0:0"
 msgid "<ui-color 506><ui-edge-color 507>※You will not be able to renovate if the total number of items in your storeroom exceeds the storage capacity. When relocating, capacity is temporarily increased to 600 indoor furnishings and 80 outdoor furnishings. Chocobo stables and aetherytes not included in limit.</ui-edge-color></ui-color>"
-msgstr ""
+msgstr "<ui-color 506><ui-edge-color 507>※Ремонт недоступен, если общее число предметов в хранилище превысит его вместимость.<br>При переезде лимит временно повышается до 600 предметов интерьера и 80 предметов для сада. Эфироиды и стойла для чокобо не учитываются.</ui-edge-color></ui-color>"
 
 #. ja: 閉じる
 #. de: Schließen
@@ -5096,7 +5096,7 @@ msgstr "Поместье комп."
 #. macro: <sheet PlaceName $n1 0> — a value from a game data sheet, such as a name; sheet = PlaceName, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:6876:0:0"
 msgid "<if ($n1 == 425)><sheet PlaceName 1805 0> <else><if ($n1 == 426)><sheet PlaceName 1807 0> <else><if ($n1 == 427)><sheet PlaceName 1809 0> <else><if ($n1 == 2412)><sheet PlaceName 1905 0><else><if ($n1 == 4139)><sheet PlaceName 3718 0><else>Public Apartments </if></if></if></if></if> <if ($n3 == 129)>Wing 1 <else>Wing 2 </if>Room #<num $n4>, <ordinal $n2> Ward, <sheet PlaceName $n1 0> "
-msgstr ""
+msgstr "<if ($n1 == 425)><sheet PlaceName 1805 0> <else><if ($n1 == 426)><sheet PlaceName 1807 0> <else><if ($n1 == 427)><sheet PlaceName 1809 0> <else><if ($n1 == 2412)><sheet PlaceName 1905 0><else><if ($n1 == 4139)><sheet PlaceName 3718 0><else>Общественные апартаменты </if></if></if></if></if> <if ($n3 == 129)>Крыло 1 <else>Крыло 2 </if>комната №<num $n4>, <ordinal $n2> участок, <sheet PlaceName $n1 0> "
 
 #. ja: <sheet PlaceName $n1 0> 第<num $n2>区 <num $n3>番地 [<switch $n4><case>Small<case>Medium<case>Large</switch>]
 #. de: <sheet PlaceName $n1 0> <num $n2>. Bezirk, <num $n3> (<switch $n4><case>Hütte<case>Haus<case>Residenz</switch>)
@@ -5236,7 +5236,7 @@ msgstr "Послание владельца"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:6896:0:0"
 msgid "<set-time $n1><num $month>/<num $day>/<num $year> (<if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>)"
-msgstr ""
+msgstr "<set-time $n1><num $day>.<num $month>.<num $year> (<if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min>)"
 
 #. ja: オーナーメッセージを編集
 #. de: Grußwort ändern
@@ -5322,7 +5322,7 @@ msgstr "Приватное послание"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:6908:0:0"
 msgid "<set-time $n1><num $month>/<num $day>/<num $year> (<if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>)"
-msgstr ""
+msgstr "<set-time $n1><num $day>.<num $month>.<num $year> (<if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min>)"
 
 #. ja: メッセージを書く
 #. de: Eintrag schreiben

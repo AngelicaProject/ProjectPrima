@@ -493,7 +493,7 @@ msgstr "Выходные"
 #. macro: <switch $n3><case><case>a.m.<case>p.m.</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:15072:0:0"
 msgid "<if ($n3 == 1)><num $n1><else><if ($n1 == 0)>{12}<else><num $n1></if></if>:<num2 $n2> <switch $n3><case><case>a.m.<case>p.m.</switch>"
-msgstr ""
+msgstr "<if ($n3 == 1)><num $n1><else><if ($n1 == 0)>{12}<else><num $n1></if></if>:<num2 $n2> <switch $n3><case><case>AM<case>PM</switch>"
 
 #. ja: 現在のクラス・ジョブ
 #. de: Momentane Klasse/Job
@@ -1641,7 +1641,7 @@ msgstr "Изменить имя на «<string $s1>»?<br>Продолжить?"
 #. macro: <num $year> — a number; value = year of the set time (game data: keep it; it may move or repeat)
 msgctxt "Addon:15239:0:0"
 msgid "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if> <if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if>"
-msgstr ""
+msgstr "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if> <if ($gn77 == 3)><num $day>.<num $month>.<num $year><else><num $month>.<num $day>.<num $year></if>"
 
 #. ja: 閉じる
 #. de: Schließen
@@ -5399,7 +5399,7 @@ msgstr "До конца <sheet CSBonusTextData \"<sheet CSBonusSeason $n1 15>\" 
 #. macro: <num $year> — a number; value = year of the set time (game data: keep it; it may move or repeat)
 msgctxt "Addon:15920:0:0"
 msgid "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if> <if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if>"
-msgstr ""
+msgstr "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if> <if ($gn77 == 3)><num $day>.<num $month>.<num $year><else><num $month>.<num $day>.<num $year></if>"
 
 #. ja: ？？？？
 #. de: ???
@@ -5724,7 +5724,7 @@ msgstr "※Для прохождения этажей с 31-го требует�
 #. macro: <noun-en PlaceName 2 $n18 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 18, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:15958:0:0"
 msgid "<sheet Addon 15955 0 \"<noun-en PlaceName 2 $n18 2 1>\" $n14 $n12 $n16 $n8>"
-msgstr ""
+msgstr "<sheet Addon 15955 0 \"<noun-en PlaceName 2 $n18 2 1>\" $n14 $n12 $n16 $n8>"
 
 #. ja: 合計釣果により、報酬の量が異なります。
 #. de: Die Belohnung richtet sich nach den erreichten Punkten.

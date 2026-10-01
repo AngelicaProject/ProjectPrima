@@ -1170,7 +1170,7 @@ msgstr "Купить уже полученную карту?"
 #. macro: <set-time $n2> — sets the time placeholders ($hour, $day, …) to a Unix time; time = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:9214:0:0"
 msgid "<set-time $n1><if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if> to <set-time $n2><if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>"
-msgstr ""
+msgstr "<set-time $n1><num $day>.<num $month>.<num $year> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min>–<set-time $n2><num $day>.<num $month>.<num $year> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min>"
 
 #. ja: <kilo $n1 ",">
 #. de: <kilo $n1 ".">
@@ -1719,7 +1719,7 @@ msgstr "<switch $n1><case><num $n2><case><num $n2> и <num $n3><case><num $n2>, 
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:9311:0:0"
 msgid "+<kilo $n1 \",\"> MGP"
-msgstr ""
+msgstr "+<kilo $n1 \",\"> МГП"
 
 #. ja: +<num $n1>%
 #. de: +<num $n1> %
@@ -1893,7 +1893,7 @@ msgstr "Осталось времени: <num $n1>:<num2 $n2>"
 #. macro: <if ($gs1 == $gs2)>take<else>takes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:9331:0:0"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>take<else>takes</if> up the pickaxe."
-msgstr ""
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>берёте<else>берёт</if> кирку."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は狙いを定めてかまえた！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>nimmst die Axt auf und holst<else>nimmt die Axt auf und holt</if> aus ...
@@ -1905,7 +1905,7 @@ msgstr ""
 #. macro: <if ($gs1 == $gs2)>take<else>takes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:9332:0:0"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>take<else>takes</if> up the hatchet."
-msgstr ""
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>берёте<else>берёт</if> топорик."
 
 #. ja: <string $s1>に成功しました！<br>ダブルアップに挑戦して獲得MGPを増やすことができますが、失敗するとMGPを受け取ることができなくなります。<br><br>ダブルアップはあと<num $n2>回可能です。<br>残り時間：<num $n3>:<num2 $n4><br>挑戦しますか？<br>[ダブルアップ成功後の獲得MGP：<num $n5> ⇒ <num $n6>]
 #. de: Gewonnen!<br>Du kannst das Spiel nun beenden und deinen Gewinn einstreichen, oder mit der verbleibenden Restzeit noch einmal spielen, um deinen Gewinn zu erhöhen - oder alles zu verlieren ...<br><br>Momentaner Gewinn: <num $n5> MGP<br>Erhöhter Gewinn: <num $n6> MGP<br>Restzeit: <num $n3>:<num2 $n4><br>Verbleibende „Alles oder nichts“-Chancen: <num $n2><br><br>Willst du es riskieren?
@@ -2304,7 +2304,7 @@ msgstr "Получено"
 #. macro: <sheet ChocoboRaceAbility $n1 0> — a value from a game data sheet, such as a name; sheet = ChocoboRaceAbility, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:9389:0:0"
 msgid "<if $n1><sheet ChocoboRaceAbility $n1 0><else> (None)</if>"
-msgstr ""
+msgstr "<if $n1><sheet ChocoboRaceAbility $n1 0><else> (нет)</if>"
 
 #. ja: Training
 #. de: Trainingsvermögen
@@ -2946,7 +2946,7 @@ msgstr "Отмена"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:9490:0:0"
 msgid "<set-time $n1><num $month>/<num $day> <set-time $n1><if ($n2 == 0)><num $hour>:<num2 $min> <else><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if> </if>"
-msgstr ""
+msgstr "<set-time $n1><num $day>.<num $month> <set-time $n1><if ($n2 == 0)><num $hour>:<num2 $min> <else><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if> </if>"
 
 #. ja: <switch $n1><case>ベーシックルール：<br><string $s2><case>アドバンスルール：<br><string $s2>/<string $s3><case>アドバンスルール：<br><string $s2>/<string $s3><br><string $s4><case>アドバンスルール：<br><string $s2>/<string $s3><br><string $s4>/<string $s5></switch>
 #. de: <switch $n1><case>★Grundregeln<br><string $s2><case>★Erweiterungsregeln<br><string $s2>/<string $s3><case>★Erweiterungsregeln<br><string $s2>/<string $s3><br><string $s4><case>★Erweiterungsregeln<br><string $s2>/<string $s3><br><string $s4>/<string $s5></switch>
@@ -3189,7 +3189,7 @@ msgstr "<kilo $n1 \",\">/<kilo $n2 \",\">"
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:9525:0:0"
 msgid "<kilo $n1 \",\"> MGP"
-msgstr ""
+msgstr "<kilo $n1 \",\"> МГП"
 
 #. ja: 参加登録中
 #. de: Gegnervermittlung aktiv
@@ -3596,7 +3596,7 @@ msgstr "RP"
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:9584:0:0"
 msgid "<if ($n2 == 0)><num $n1><else><if ($n2 > 0)><num $n1> （+<num $n2>）<else><num $n1> （<num $n2>）</if></if>"
-msgstr ""
+msgstr "<if ($n2 == 0)><num $n1><else><if ($n2 > 0)><num $n1> (+<num $n2>)<else><num $n1> (<num $n2>)</if></if>"
 
 #. ja: 勝ち点
 #. de: Punkte
@@ -3614,7 +3614,7 @@ msgstr "Очки"
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:9586:0:0"
 msgid "<if ($n2 == 0)><num $n1><else><if ($n2 > 0)><num $n1> （+<num $n2>）<else><num $n1> （<num $n2>）</if></if>"
-msgstr ""
+msgstr "<if ($n2 == 0)><num $n1><else><if ($n2 > 0)><num $n1> (+<num $n2>)<else><num $n1> (<num $n2>)</if></if>"
 
 #. ja: 大会勝敗数
 #. de: Turnierergebnisse
@@ -4474,7 +4474,7 @@ msgstr " × <num $n1>"
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:9722:0:0"
 msgid "<kilo $n1 \",\"> MGP"
-msgstr ""
+msgstr "<kilo $n1 \",\"> МГП"
 
 #. ja: 退出
 #. de: Verlassen
@@ -4898,7 +4898,7 @@ msgstr "<sheet ContentFinderCondition $n2 43><br><sheet Fate $n1 0>"
 #. macro: <sheet Fate $n1 0> — a value from a game data sheet, such as a name; sheet = Fate, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:9784:0:0"
 msgid "<capitalize><sheet PlaceName \"<sheet TerritoryType $n2 5>\" 0></capitalize><br><capitalize><sheet Fate $n1 0></capitalize>"
-msgstr ""
+msgstr "<capitalize><sheet PlaceName \"<sheet TerritoryType $n2 5>\" 0></capitalize><br><capitalize><sheet Fate $n1 0></capitalize>"
 
 #. ja: <level-pos $n2><br>対戦：<sheet ObjStr $n1 0>
 #. de: <level-pos $n2><br><capitalize><noun-de ObjStr 5 $n1 1 1 1></capitalize>
@@ -5693,7 +5693,7 @@ msgstr "Танцуй до упаду"
 #. fr: Lance-bombo
 msgctxt "Addon:9987:0:0"
 msgid "Monster Toss"
-msgstr ""
+msgstr "Монстроброс"
 
 #. ja: カフ ア カー
 #. de: Hau den Gilli

@@ -946,7 +946,7 @@ msgstr "Выберите пункт назначения."
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:102383:0:0"
 msgid "<sheet ChocoboTaxiStand $n1 8>. (<num $n3> <if ($n3 == 1)>minute<else>minutes</if>/<kilo $n2 \",\"> gil)"
-msgstr ""
+msgstr "<sheet ChocoboTaxiStand $n1 8> (<num $n3> мин./<kilo $n2 \",\"> гил)"
 
 #. ja: やめる
 #. de: Abbrechen
@@ -1865,7 +1865,7 @@ msgstr "<ui-color 500><ui-edge-color 501>Награда уже получена<
 #. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102583:0:0"
 msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if> only<br> (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> healer<if ($n3 == 1)><else>s</if>, <num $n4> DPS)"
-msgstr ""
+msgstr "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> игрок<if ($n1 == 1)><else>ов</if> только<br> (<num $n2> танк., <num $n3> целит., <num $n4> атак.)"
 
 #. ja: <num $n1>人以下用(TANK:<num $n2>/HEALER:<num $n3>/DPS:<num $n4>)
 #. de: Teilnehmer: max. <num $n1> Spieler<br>※ Max. <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Angreifer
@@ -1903,7 +1903,7 @@ msgstr "До <num $n1> игрок<if ($n1 == 1)><else>ов</if><br>(<num $n2> т
 #. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102585:0:0"
 msgid "<if ($n1 < $n2)><capitalize><num $n1></capitalize> to</if> <num $n2> players<br>(<num $n7> part<if ($n7 == 1)>y<else>ies</if><if ($n3 > 0)> of <num $n4> tank<if ($n4 == 1)><else>s</if>, <num $n5> healer<if ($n5 == 1)><else>s</if>, <num $n6> DPS</if>)"
-msgstr ""
+msgstr "<if ($n1 < $n2)><num $n1>–</if><num $n2> игроков<br>(<num $n7> групп<if ($n3 > 0)> по <num $n4> танк., <num $n5> целит., <num $n6> атак.</if>)"
 
 #. ja: 2箇所以上の対応コンテンツへの参加条件を満たす
 #. de: Es müssen 2 oder mehr entsprechende Inhalte freigeschaltet sein.
@@ -1962,7 +1962,7 @@ msgstr "Снять выбор"
 #. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102591:0:0"
 msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if> only<br> (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> healer<if ($n3 == 1)><else>s</if>, <num $n4> melee DPS, <num $n5> ranged DPS)"
-msgstr ""
+msgstr "<num $n1> игрок<if ($n1 == 1)><else>ов</if> только<br> (<num $n2> танк., <num $n3> целит., <num $n4> бойцов ближнего боя, <num $n5> бойцов дальнего боя)"
 
 #. ja: <num $n1>人以下用(TANK:<num $n2>/HEALER:<num $n3>/Melee DPS:<num $n4>/Ranged DPS:<num $n5>)
 #. de: Teilnehmer: max. <num $n1> Spieler<br>※ <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Nahkampf-, <num $n5> Fernkampfangreifer
@@ -2007,7 +2007,7 @@ msgstr "До <num $n1> игрок<if ($n1 == 1)><else>ов</if><br>(<num $n2> т
 #. macro: <num $n6> — a number; value = number parameter 6 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102593:0:0"
 msgid "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if><else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> to <if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if> players</if> <if ($n2 > 1)><br>(<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> healer<if ($n4 == 1)><else>s</if>, <num $n5> melee DPS, <num $n6> ranged DPS)</if>"
-msgstr ""
+msgstr "<if ($n1 == $n2)><num $n1> игрок<else><num $n1>–<num $n2> игроков</if><if ($n2 > 1)><br>(<num $n3> танк., <num $n4> целит., <num $n5> бойцов ближнего боя, <num $n6> бойцов дальнего боя)</if>"
 
 #. ja: 「超える力」適用(常時)
 #. de: - Kraft des Transzendierens aktiv (immer)
@@ -2055,7 +2055,7 @@ msgstr "???"
 #. macro: <if ($n1 == 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:102599:0:0"
 msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if> only"
-msgstr ""
+msgstr "<num $n1> игрок<if ($n1 == 1)><else>ов</if> только"
 
 #. ja: グランドカンパニーに所属<br>※パーティで参加する場合は、所属グランドカンパニーの制限なくマッチングされるようになります。
 #. de: Nur für Mitglieder einer Staatlichen Ge<shy>sell<shy>schaft.<br>※ Gilt nicht bei Anmeldung als bestehende Gruppe.
@@ -2184,7 +2184,7 @@ msgstr "PvP"
 #. macro: <sheet ExVersion $n1 0> — a value from a game data sheet, such as a name; sheet = ExVersion, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102615:0:0"
 msgid "<sheet ExVersion $n1 0> Unregistered"
-msgstr ""
+msgstr "<sheet ExVersion $n1 0>: нет регистрации"
 
 #. ja: レベル <num $n1><br>※PvPコンテンツではPvEのジョブレベルは適用されず、キャラクターのパラメータもPvP専用のものに切り替わります。
 #. de: Mindeststufe: <num $n1> (Teilnahme mit PvP-Werten)

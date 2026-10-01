@@ -226,7 +226,7 @@ msgstr "<set-time $n1><if ($gn77 == 3)><num $day>/<num $month><else><num $month>
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:28:0:0"
 msgid "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>"
-msgstr ""
+msgstr "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if>"
 
 #. ja: <set-time $n1><if ($hour < " 12")><num $hour><else><num $hour></if>:<num2 $min>
 #. de: <set-time $n1><if ($hour < " 12")><num $hour><else><num $hour></if>:<num2 $min>
@@ -238,7 +238,7 @@ msgstr ""
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:29:0:0"
 msgid "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>"
-msgstr ""
+msgstr "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if>"
 
 #. ja: <num $gn11>:<num2 $gn12>
 #. de: <num $gn11>:<num2 $gn12>
@@ -4134,7 +4134,7 @@ msgstr "Скрытно"
 #. fr: Rare
 msgctxt "Addon:628:0:0"
 msgid "Rare"
-msgstr ""
+msgstr "Редк"
 
 #. ja: HIDDEN
 #. de: Verborgen
@@ -4525,7 +4525,7 @@ msgstr "<title-case><sheet ActStr $n1 0></title-case><br><if $n2>ур. <num $n2>
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:690:0:0"
 msgid "<sheet ActStr $n1 0><br><if $n2>Lv. <num $n2> </if>HP: <num $n3>"
-msgstr ""
+msgstr "<sheet ActStr $n1 0><br><if $n2>ур. <num $n2> </if>HP: <num $n3>"
 
 #. ja: <sheet ActStr $n1 0><br><if $n2>Lv<num $n2> </if>MP:<num $n3>
 #. de: <sheet ActStr $n1 0><br><if $n2>St. <num $n2> </if>MP: <num $n3>
@@ -4538,7 +4538,7 @@ msgstr ""
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:691:0:0"
 msgid "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>Lv. <num $n2> </if>MP: <num $n3>"
-msgstr ""
+msgstr "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>ур. <num $n2> </if>MP: <num $n3>"
 
 #. ja: <sheet ActStr $n1 0><br><if $n2>Lv<num $n2> </if>MP:ALL
 #. de: <sheet ActStr $n1 0><br><if $n2>St. <num $n2> </if>MP: alle
@@ -4550,7 +4550,7 @@ msgstr ""
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:692:0:0"
 msgid "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>Lv. <num $n2> </if>MP: All"
-msgstr ""
+msgstr "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>ур. <num $n2> </if>MP: всё"
 
 #. ja: <sheet ActStr $n1 0><br><if $n2>Lv<num $n2> </if>TP:<num $n3>
 #. de: <sheet ActStr $n1 0><br><if $n2>St. <num $n2> </if>TP: <num $n3>
@@ -4562,7 +4562,7 @@ msgstr ""
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:693:0:0"
 msgid "<sheet ActStr $n1 0><br><if $n2>Lv. <num $n2> </if>TP: <num $n3>"
-msgstr ""
+msgstr "<sheet ActStr $n1 0><br><if $n2>ур. <num $n2> </if>TP: <num $n3>"
 
 #. ja: <sheet ActStr $n1 0><br><if $n2>Lv<num $n2> </if>TP:ALL
 #. de: <sheet ActStr $n1 0><br><if $n2>St. <num $n2> </if>TP: alle
@@ -4573,7 +4573,7 @@ msgstr ""
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:694:0:0"
 msgid "<sheet ActStr $n1 0><br><if $n2>Lv. <num $n2> </if>TP: All"
-msgstr ""
+msgstr "<sheet ActStr $n1 0><br><if $n2>ур. <num $n2> </if>TP: всё"
 
 #. ja: <sheet ActStr $n1 0><br><if $n2>Lv<num $n2> </if>GP:<num $n3>
 #. de: <sheet ActStr $n1 0><br><if $n2>St. <num $n2> </if>SP: <num $n3>
@@ -4586,7 +4586,7 @@ msgstr ""
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:695:0:0"
 msgid "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>Lv. <num $n2> </if>GP: <num $n3>"
-msgstr ""
+msgstr "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>ур. <num $n2> </if>GP: <num $n3>"
 
 #. ja: <sheet ActStr $n1 0><br><if $n2>Lv<num $n2> </if>CP:<num $n3>
 #. de: <sheet ActStr $n1 0><br><if $n2>St. <num $n2> </if>HP: <num $n3>
@@ -4599,7 +4599,7 @@ msgstr ""
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:696:0:0"
 msgid "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>Lv. <num $n2> </if>CP: <num $n3>"
-msgstr ""
+msgstr "<capitalize><sheet ActStr $n1 0></capitalize><br><if $n2>ур. <num $n2> </if>CP: <num $n3>"
 
 #. ja: <sheet ActStr $n1 0><br><if $n2>Lv<num $n2> </if>MP:<num $n3> TP:<num $n4>
 #. de: <sheet ActStr $n1 0><br><if $n2>St. <num $n2> </if>MP: <num $n3> TP: <num $n4>
@@ -4612,7 +4612,7 @@ msgstr ""
 #. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
 msgctxt "Addon:697:0:0"
 msgid "<sheet ActStr $n1 0><br><if $n2>Lv. <num $n2> </if>MP: <num $n3>  TP: <num $n4>"
-msgstr ""
+msgstr "<sheet ActStr $n1 0><br><if $n2>ур. <num $n2> </if>MP: <num $n3>  TP: <num $n4>"
 
 #. ja: <sheet ClassJob $n1 0>
 #. de: <sheet ClassJob $n1 0>
@@ -4823,7 +4823,7 @@ msgstr "(<num $n1>% отражено)"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:728:0:0"
 msgid " (<num $n1>% blocked)"
-msgstr ""
+msgstr " (<num $n1>% блок.)"
 
 #. ja: (<num $n1>% 受け流し)
 #. de: (<num $n1><nbsp>% pariert)
@@ -4831,7 +4831,7 @@ msgstr ""
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:729:0:0"
 msgid " (<num $n1>% parried)"
-msgstr ""
+msgstr " (<num $n1>% парир.)"
 
 #. ja: (+<num $n1>%)
 #. de: (+<num $n1><nbsp>%)

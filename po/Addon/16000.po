@@ -2746,7 +2746,7 @@ msgstr "<if $n3><i><icon 62><string $s1></i><else><string $s1></if>"
 #. macro: <kilo $n5 ","> — a number with a thousands separator; value = number parameter 5, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:16602:0:0"
 msgid "<if $n3><sheet ClassJob $n2 1>  <icon 62><i><string $s1></i><else><sheet ClassJob $n2 1>  <string $s1></if>    <if ($n7 > 0)> EXP <hyphen>/<hyphen><else><if ($n6 > 0)><icon 76>\\<WARNING: unknown macro code ('levelCapColor')> EXP <kilo $n4 \",\">/<kilo $n5 \",\">\\<WARNING: unknown macro code ('/levelCapColor')><else> EXP <kilo $n4 \",\">/<kilo $n5 \",\"></if></if>"
-msgstr ""
+msgstr "<if $n3><sheet ClassJob $n2 1>  <icon 62><i><string $s1></i><else><sheet ClassJob $n2 1>  <string $s1></if>    <if ($n7 > 0)>EXP <hyphen>/<hyphen><else><if ($n6 > 0)><icon 76>\\<WARNING: unknown macro code ('levelCapColor')>EXP <kilo $n4 \",\">/<kilo $n5 \",\">\\<WARNING: unknown macro code ('/levelCapColor')><else>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></if></if>"
 
 #. ja: <if $n3><i><icon 62><string $s1> <string $s2></i><else><if $n5><string $s1> <string $s2><else><if $n4><string $s2><else><string $s1> <string $s2></if></if></if>
 #. de: <if $n3><i><icon 62><string $s1> <string $s2></i><else><if $n5><string $s1> <string $s2><else><if $n4><string $s2><else><string $s1> <string $s2></if></if></if>
@@ -2791,7 +2791,7 @@ msgstr "<if $n1><string $s2> </if><if $n4> <string $s5></if><string $s3>"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:16606:0:0"
 msgid "<if ($n1 > 1)><num $n1><else>??</if>"
-msgstr ""
+msgstr "<if ($n1 > 1)><num $n1><else>??</if>"
 
 #. ja: 知見
 #. de: Wissen
@@ -3052,7 +3052,7 @@ msgstr "Осталось: <if ($n1 < 1)>меньше минуты<else><num $n1>
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:16646:0:0"
 msgid "<sheet MKDSupportJob $n1 0>　<if ($n2 > 99)>MASTERED<else>Lv. <num $n2></if>"
-msgstr ""
+msgstr "<sheet MKDSupportJob $n1 0>　<if ($n2 > 99)>Освоено!<else>ур. <num $n2></if>"
 
 #. ja: サポートジョブ詳細
 #. de: Details zum Phantomjob
@@ -3141,7 +3141,7 @@ msgstr "Список фантомных ролей"
 #. macro: <sheet Action $n2 0> — a value from a game data sheet, such as a name; sheet = Action, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:16660:0:0"
 msgid "<if ($n1 > 0)>Lv. <num $n1><nbsp></if><sheet Action $n2 0>"
-msgstr ""
+msgstr "<if ($n1 > 0)>ур. <num $n1><nbsp></if><sheet Action $n2 0>"
 
 #. ja: Lv<sheet MKDTrait $n1 1><nbsp><sheet MKDTrait $n1 3>
 #. de: St. <sheet MKDTrait $n1 1>:<nbsp><sheet MKDTrait $n1 3>
@@ -4102,7 +4102,7 @@ msgstr "FATE"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:16801:0:0"
 msgid " <if ($n2 > 0)><num $n2>h</if><if ($n1 == 0)><if ($n2 == 0)>less than 1m</if><else> <num $n1>m</if>"
-msgstr ""
+msgstr " <if ($n2 > 0)><num $n2> ч.</if><if ($n1 == 0)><if ($n2 == 0)>меньше 1 мин.</if><else> <num $n1> мин.</if>"
 
 #. ja: <set-time $n1>[<num $month>/<num $day> <num $hour>:<num2 $min>]
 #. de: <set-time $n1>(<num $day>.<num $month>. um <num $hour>:<num2 $min>)
@@ -4219,7 +4219,7 @@ msgstr "Тревога"
 #. macro: <sheet ClassJob $n3 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 3, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:16816:0:0"
 msgid "<capitalize><sheet ClassJob $n1 0></capitalize><if ($n2 > 0)> / <capitalize><sheet ClassJob $n2 0></capitalize></if><if ($n3 > 0)> / <capitalize><sheet ClassJob $n3 0></capitalize></if>"
-msgstr ""
+msgstr "<sheet ClassJob $n1 0><if ($n2 > 0)> / <sheet ClassJob $n2 0></if><if ($n3 > 0)> / <sheet ClassJob $n3 0></if>"
 
 #. ja: 残り時間：<num $n1>:<num2 $n2>
 #. de: Verbleibende Zeit: <num $n1>:<num2 $n2>
@@ -4933,7 +4933,7 @@ msgstr "Коллекц. ценность:"
 #. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
 msgctxt "Addon:16910:0:0"
 msgid "<num $n1> - <num $n2> ＝ <num $n3><if ($n4 > 0)> - <num $n4></if>"
-msgstr ""
+msgstr "<num $n1>–<num $n2> = <num $n3><if ($n4 > 0)>–<num $n4></if>"
 
 #. ja: スペシャルルーレットチャンス
 #. de: Galaktische Gelegenheit
@@ -5482,7 +5482,7 @@ msgstr "Сёрчингвей"
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:16986:0:0"
 msgid "<sheet PlaceName \"<sheet TerritoryType $n1 5>\" 0> <if ($n2 > 0)><if ($n2 > 9)>A<else><switch $n2><case><case><case><case><case><case><case><case><case></switch></if><else>{0}</if>. (<kilo $n3 \",\">) (Current instance)"
-msgstr ""
+msgstr "<sheet PlaceName \"<sheet TerritoryType $n1 5>\" 0> <if ($n2 > 0)><if ($n2 > 9)>A<else><switch $n2><case><case><case><case><case><case><case><case><case></switch></if><else>{0}</if>. (<kilo $n3 \",\">) (Текущий инстанс)"
 
 #. ja: ミッション未コンプリート状態のため、詳細を表示できません。
 #. de: Mission muss abgeschlossen sein, um Einzelheiten einzusehen.

@@ -691,7 +691,7 @@ msgstr "Вступить"
 #. macro: <num $n8> — a number; value = number parameter 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10093:0:0"
 msgid "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if><else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> to <if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if> players</if><br><if ($n2 > 1)>(<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> healer<if ($n4 == 1)><else>s</if>, <num $n5> melee DPS, <num $n6> physical ranged DPS, <num $n7> magical ranged DPS, <num $n8> other DPS)</if>"
-msgstr ""
+msgstr "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> игрок<else><num $n1>–<num $n2> игроков</if><br><if ($n2 > 1)>(<num $n3> танк., <num $n4> целит., <num $n5> бойцов ближнего боя, <num $n6> бойцов дальнего боя, <num $n7> магов, <num $n8> прочих бойцов)</if>"
 
 #. ja: クラス <sheet ClassJobCategory $n1 0> ジョブ専用
 #. de: <sheet ClassJobCategory $n1 0> (nur Jobs erlaubt)
@@ -887,7 +887,7 @@ msgstr "<icon2 10> Подкоманды"
 #. macro: <num $n9> — a number; value = number parameter 9 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10115:0:0"
 msgid "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> player<if ($n1 == 1)><else>s</if><else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> to <if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if> players</if><br><if ($n2 > 1)>(<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> pure healer<if ($n4 == 1)><else>s</if>, <num $n5> barrier healer<if ($n5 == 1)><else>s</if>, <num $n6> melee DPS, <num $n7> physical ranged DPS, <num $n8> magical ranged DPS, <num $n9> other DPS)</if> "
-msgstr ""
+msgstr "<if ($n1 == $n2)><capitalize><num $n1></capitalize> игрок<else><num $n1>–<num $n2> игроков</if><br><if ($n2 > 1)>(<num $n3> танк., <num $n4> чистых целит., <num $n5> барьерных целит., <num $n6> бойцов ближнего боя, <num $n7> бойцов дальнего боя, <num $n8> магов, <num $n9> прочих бойцов)</if>"
 
 #. ja: 【攻略手帳報酬】
 #. de: Agenda-Belohnungen
@@ -998,7 +998,7 @@ msgstr "Зал новичков"
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10132:0:0"
 msgid "<if ($n3 > 0)>Tactical<else><string $s1></if> Training - Exercise <num $n2>"
-msgstr ""
+msgstr "<if ($n3 > 0)>Тактика<else><string $s1></if> — упражнение <num $n2>"
 
 #. ja: 挑戦する！
 #. de: Beginnen
@@ -1119,7 +1119,7 @@ msgstr "Упр."
 #. macro: <string $s2> — a text value passed to the string; value = text parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10149:0:0"
 msgid "<if ($n4 > 0)>Tactical<else><string $s1></if> Training - Exercise <num $n3>: <string $s2>"
-msgstr ""
+msgstr "<if ($n4 > 0)>Тактика<else><string $s1></if> — упражнение <num $n3>: <string $s2>"
 
 #. ja: 合格済みの訓練がありません。
 #. de: Noch keine Übungen abgeschlossen.
@@ -2917,7 +2917,7 @@ msgstr "Сила"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10417:0:0"
 msgid "<if ($n1 > 0)>+<else> </if><num $n1>"
-msgstr ""
+msgstr "<if ($n1 > 0)>+</if><num $n1>"
 
 #. ja: 再生の石塔
 #. de: Totenleuchte
@@ -3275,7 +3275,7 @@ msgstr "Благовоние"
 #. macro: <sheet ClassJob $n2 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10469:0:0"
 msgid "<title-case><sheet ClassJob $n1 0></title-case><if ($n2 > 0)> / <title-case><sheet ClassJob $n2 0></title-case></if>"
-msgstr ""
+msgstr "<sheet ClassJob $n1 0><if ($n2 > 0)>/<sheet ClassJob $n2 0></if>"
 
 #. ja: 表示できる埋もれた財宝はありません。
 #. de: Keine verborgenen Schätze gefunden.
@@ -3706,7 +3706,7 @@ msgstr "Взвод приключенцев"
 #. macro: <num2 $min> — a number with at least two digits, such as 05; value = minutes of the set time (game data: keep it; it may move or repeat)
 msgctxt "Addon:10531:0:0"
 msgid " <if ($n1 == 0)><if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if><else>Less than 1 minute</if><else><num $n1> <if ($n1 == 1)>hour<else>hours</if><if ($n2 > 0)><if ($n1 > 0)> and </if></if><if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if></if></if> remaining [<set-time $n3><if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> <num $hour>:<num2 $min>]"
-msgstr ""
+msgstr " <if ($n1 == 0)><if ($n2 > 0)><num $n2> мин.<else>Меньше минуты</if><else><num $n1> ч.<if ($n2 > 0)> <num $n2> мин.</if></if> осталось [<set-time $n3><if ($gn77 == 3)><num $day>.<num $month>.<num $year><else><num $month>.<num $day>.<num $year></if> <num $hour>:<num2 $min>]"
 
 #. ja: 小隊行動
 #. de: Momentane Tätigkeit
@@ -3848,7 +3848,7 @@ msgstr "Завершить"
 #. macro: <if ($n1 == 0)>Mission Underway<else>Mission Complete</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:10553:0:0"
 msgid "<if ($n1 == 0)>Mission Underway<else>Mission Complete</if>"
-msgstr ""
+msgstr "<if ($n1 == 0)>Задание идёт<else>Задание окончено</if>"
 
 #. ja: <if ($n1 == 0)>訓練中<else>訓練終了</if>
 #. de: <if ($n1 == 0)>In Ausbildung<else>Ausbildung beendet</if>
@@ -4161,7 +4161,7 @@ msgstr "До завершения"
 #. macro: <num2 $min> — a number with at least two digits, such as 05; value = minutes of the set time (game data: keep it; it may move or repeat)
 msgctxt "Addon:10593:0:0"
 msgid " <if ($n1 == 0)><if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if><else>Less than 1 minute</if><else><num $n1> <if ($n1 == 1)>hour<else>hours</if><if ($n2 > 0)><if ($n1 > 0)> and </if></if><if ($n2 > 0)><num $n2> <if ($n2 == 1)>minute<else>minutes</if></if></if> [<set-time $n3><if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> <num $hour>:<num2 $min>]"
-msgstr ""
+msgstr " <if ($n1 == 0)><if ($n2 > 0)><num $n2> мин.<else>Меньше минуты</if><else><num $n1> ч.<if ($n2 > 0)> <num $n2> мин.</if></if> [<set-time $n3><if ($gn77 == 3)><num $day>.<num $month>.<num $year><else><num $month>.<num $day>.<num $year></if> <num $hour>:<num2 $min>]"
 
 #. ja: 閉じる
 #. de: Schließen
@@ -4447,7 +4447,7 @@ msgstr "Отложить"
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
 msgctxt "Addon:10664:0:0"
 msgid "<if ($n3 > 0)><num $n1>/<num $n2><else><hyphen>/<hyphen></if>"
-msgstr ""
+msgstr "<if ($n3 > 0)><num $n1>/<num $n2><else><hyphen>/<hyphen></if>"
 
 #. ja: <set-time $n1><num $year>/<num $month>/<num $day> 入隊
 #. de: Rekrutiert: <set-time $n1><num $day>.<num $month>.<num $year>
@@ -4656,7 +4656,7 @@ msgstr "－<num $n1>%"
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10691:0:0"
 msgid "<string $s1>  (Mastery: <num $n2>)"
-msgstr ""
+msgstr "<string $s1> (<num $n2>)"
 
 #. ja: 未修得
 #. de: Nicht erworben
@@ -5186,7 +5186,7 @@ msgstr "Прошло: <num $n1>:<num2 $n2>"
 #. macro: <sheet ContentType $n1 0> — a value from a game data sheet, such as a name; sheet = ContentType, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:10820:0:0"
 msgid "<capitalize><sheet ContentType $n1 0></capitalize> (ARR, Heavensward, Stormblood, Shadowbringers, Endwalker)"
-msgstr "<capitalize><sheet ContentType $n1 0></capitalize> (ARR, Небесный свод, Stormblood, Тёмные истоки, Странник конца)"
+msgstr "<capitalize><sheet ContentType $n1 0></capitalize> (ARR, Heavensward, Stormblood, Shadowbringers, Endwalker)"
 
 #. ja: 通常コンテンツ
 #. de: Normale Inhalte

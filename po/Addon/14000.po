@@ -387,7 +387,7 @@ msgstr "<set-time $n1><num $day>.<num $month>.<num $year> <num $hour>:<num2 $min
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:14062:0:0"
 msgid "<set-time $n1><num $year>/<num $month>/<num $day> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>"
-msgstr ""
+msgstr "<set-time $n1><num $day>.<num $month>.<num $year> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if>"
 
 #. ja: ステッカーのサイズ
 #. de: Größe
@@ -755,7 +755,7 @@ msgstr "Авторские права"
 #. macro: <sheet WorldDCGroupType $n3 WORLDDCGROUPTYPE_NAME> — a value from a game data sheet, such as a name; sheet = WorldDCGroupType, row = number parameter 3, column = WORLDDCGROUPTYPE_NAME (game data: keep it; it may move or repeat)
 msgctxt "Addon:14112:0:0"
 msgid "<string $s1> <icon 88> <string $s2> <if ($n3 >= 100)><else>[<sheet WorldDCGroupType $n3 WORLDDCGROUPTYPE_NAME>]</if>"
-msgstr ""
+msgstr "<string $s1> <icon 88> <string $s2> <if ($n3 >= 100)><else>[<sheet WorldDCGroupType $n3 WORLDDCGROUPTYPE_NAME>]</if>"
 
 #. ja: <sheet ClassJob $n1 0>
 #. de: <sheet ClassJob $n1 0>
@@ -2015,7 +2015,7 @@ msgstr "Дни"
 #. fr: Max
 msgctxt "Addon:14347:0:0"
 msgid "Max"
-msgstr ""
+msgstr "Макс."
 
 #. ja: 必要経費
 #. de: Kosten
@@ -2514,7 +2514,7 @@ msgstr "Звёзды побед <if ($n1 > 0)>(бонус за серию поб
 #. macro: <switch $n8><case>☆☆☆<case>★☆☆<case>★★☆<case>★★★</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 8 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:14426:0:0"
 msgid "<string $s1> <if ($n2 == 0)><if ($n3 > 0)><num $n3></if> <switch $n4><case>☆☆☆<case>★☆☆<case>★★☆<case>★★★</switch></if> → <string $s5> <if ($n6 == 0)><if ($n7 > 0)><num $n7></if> <switch $n8><case>☆☆☆<case>★☆☆<case>★★☆<case>★★★</switch></if>"
-msgstr ""
+msgstr "<string $s1><if ($n2 == 0)><if ($n3 > 0)> <num $n3></if> <switch $n4><case>☆☆☆<case>★☆☆<case>★★☆<case>★★★</switch></if> → <string $s5><if ($n6 == 0)><if ($n7 > 0)> <num $n7></if> <switch $n8><case>☆☆☆<case>★☆☆<case>★★☆<case>★★★</switch></if>"
 
 #. ja: クリスタルポイント
 #. de: Kristallpunkte
@@ -3646,7 +3646,7 @@ msgstr "Серьги"
 #. fr: Bague
 msgctxt "Addon:14640:0:0"
 msgid "Ring"
-msgstr ""
+msgstr "Кольц"
 
 #. ja: 決定
 #. de: Übernehmen

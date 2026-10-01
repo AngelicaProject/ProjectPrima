@@ -1281,7 +1281,7 @@ msgstr "Участники"
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:12195:0:0"
 msgid "<if ($n2 > 0)>★<else>　</if><switch $n1><case><icon 51><case><icon 52><case><icon 53></switch>The <sheet GrandCompany $n1 0><br>Tactical Rating"
-msgstr ""
+msgstr "<if ($n2 > 0)>★<else>　</if><switch $n1><case><icon 51><case><icon 52><case><icon 53></switch><sheet GrandCompany $n1 0><br>Тактический рейтинг"
 
 #. ja: 有効状態
 #. de: Aktiv
@@ -1360,7 +1360,7 @@ msgstr "Всего"
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:12205:0:0"
 msgid "<kilo $n1 \",\"><if ($n4 > 0)>/<kilo $n2 \",\"></if><if ($n5 > 0)>/<kilo $n3 \",\"></if>"
-msgstr ""
+msgstr "<kilo $n1 \",\"><if ($n4 > 0)>/<kilo $n2 \",\"></if><if ($n5 > 0)>/<kilo $n3 \",\"></if>"
 
 #. ja: 検索対象
 #. de: Ort
@@ -5486,7 +5486,7 @@ msgstr "Опубликовать опрос для участников сооб
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:12865:0:0"
 msgid "<set-time $n1><if ($gn77 == 3)><num $day>/<num $month>/<num $year><else><num $month>/<num $day>/<num $year></if> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>"
-msgstr ""
+msgstr "<set-time $n1><if ($gn77 == 3)><num $day>.<num $month>.<num $year><else><num $month>.<num $day>.<num $year></if> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if>"
 
 #. ja: 削除する
 #. de: Löschen

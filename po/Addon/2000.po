@@ -561,7 +561,7 @@ msgstr "Без предпочтений"
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:2092:0:0"
 msgid "<sheet PlaceName \"<sheet TerritoryType $n1 5>\" 0> <if ($n2 > 0)><if ($n2 > 9)>A<else><switch $n2><case><case><case><case><case><case><case><case><case></switch></if><else>{0}</if>. (<kilo $n3 \",\">) "
-msgstr ""
+msgstr "<sheet PlaceName \"<sheet TerritoryType $n1 5>\" 0> <if ($n2 > 0)><if ($n2 > 9)>A<else><switch $n2><case><case><case><case><case><case><case><case><case></switch></if><else>{0}</if>. (<kilo $n3 \",\">) "
 
 #. ja: 決定
 #. de: Bestätigen
@@ -853,7 +853,7 @@ msgstr "Закрыть"
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2179:0:0"
 msgid "<capitalize><sheet ClassJob $n1 0></capitalize> Lv. <num $n2>"
-msgstr ""
+msgstr "<capitalize><sheet ClassJob $n1 0></capitalize> <num $n2>"
 
 #. ja: SENT LETTER LIST
 #. de: SENDEVERLAUF
@@ -1459,7 +1459,7 @@ msgstr "Складка (ур. <num $n1><if ($n2 > 0)> +  80</if>)"
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2278:0:0"
 msgid "<capitalize><sheet InstanceContent $n1 3></capitalize> (Lv. <num $n2><if ($n3 > 0)> +  <num $n3></if>)"
-msgstr ""
+msgstr "<capitalize><sheet InstanceContent $n1 3></capitalize> (ур. <num $n2><if ($n3 > 0)> +  <num $n3></if>)"
 
 #. ja: 設定なし
 #. de: Nicht festgelegt
@@ -1572,7 +1572,7 @@ msgstr "<icon2 11> Искать <icon2 9> Закрыть"
 #. macro: <if ($n2 > 0)>, </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 > 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:2293:0:0"
 msgid "<capitalize><sheet ClassJob $n1 1></capitalize><if ($n2 > 0)>, </if>"
-msgstr ""
+msgstr "<capitalize><sheet ClassJob $n1 1></capitalize><if ($n2 > 0)>, </if>"
 
 #. ja: <sheet PlaceName $n1 0>(現在地)
 #. de: <sheet PlaceName $n1 0> (hier)
@@ -1692,7 +1692,7 @@ msgstr "GATE"
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2310:0:0"
 msgid "<string $s1>. (Contract suspended)"
-msgstr ""
+msgstr "<string $s1>. (Подписка приост.)"
 
 #. ja: <num $n1>～<num $n2>
 #. de: <num $n1> - <num $n2>
@@ -3241,7 +3241,7 @@ msgstr "<sheet PlaceName $n1 0>"
 #. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2513:0:0"
 msgid "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> <if ($n1 == 1)>player<else>players</if><else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> to <if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if> players</if> <if ($n2 > 1)>(<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> healer<if ($n4 == 1)><else>s</if>, <num $n5> DPS)</if>"
-msgstr ""
+msgstr "<if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> <if ($n1 == 1)>игрок<else>игроков</if><else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize>–<if $n2><if ($n2 <= 10)><switch $n2><case>одного<case>двух<case>трёх<case>четырёх<case>пяти<case>шести<case>семи<case>восьми<case>девяти<case>десяти</switch><else><num $n2></if><else><num $n2></if> игроков</if> <if ($n2 > 1)>(танки: <num $n3>, лекари: <num $n4>, атакующие: <num $n5>)</if>"
 
 #. ja: クラス <sheet ClassJobCategory $n1 0>
 #. de: Klasse: <sheet ClassJobCategory $n1 0>

@@ -2967,7 +2967,7 @@ msgstr "<switch $n1><case><case><case></switch>"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:11483:0:0"
 msgid "<set-time $n1><if ($n2 == 0)><num $hour>:<num2 $min><else><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if></if>"
-msgstr ""
+msgstr "<set-time $n1><if ($n2 == 0)><num $hour>:<num2 $min><else><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if></if>"
 
 #. ja: アラーム
 #. de: Termin
@@ -3662,7 +3662,7 @@ msgstr "Осталось"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11616:0:0"
 msgid "<if ($n1 < 1)>Less than 1m<else><num $n1>m</if>"
-msgstr ""
+msgstr "<if ($n1 < 1)>до минуты<else><num $n1> мин</if>"
 
 #. ja: 調査隊が定めた探索制限時間　<if ($n1 < 1)>1分以内<else><num $n1>分</if>
 #. de: Verbleibende Expeditionszeit: <if ($n1 < 1)>\< 1 Min.<else><num $n1> Min.</if>
@@ -3682,7 +3682,7 @@ msgstr "До конца экспедиции: <if ($n1 < 1)>меньше мин�
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
 msgctxt "Addon:11618:0:0"
 msgid "<if ($n2 > 0)><kilo $n1 \",\">/<kilo $n2 \",\"><else><hyphen>/<hyphen></if>"
-msgstr ""
+msgstr "<if ($n2 > 0)><kilo $n1 \",\">/<kilo $n2 \",\"><else><hyphen>/<hyphen></if>"
 
 #. ja: パーティを希望する
 #. de: Gruppen<shy>suche an
@@ -3870,7 +3870,7 @@ msgstr "Извлечь мнему"
 #. macro: <if ($n1 > 1)>the two mnemes<else>the mneme</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 > 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:11647:0:0"
 msgid "<if ($n1 > 1)>Mnemes<else>Mneme</if> extracted.<br>Activate a logos action to convert <if ($n1 > 1)>the two mnemes<else>the mneme</if> into a duty action."
-msgstr ""
+msgstr "Извлечено: <if ($n1 > 1)>мнемы<else>мнема</if>.<br>Активируйте действие логоса, чтобы превратить <if ($n1 > 1)>две мнемы<else>мнему</if> в действие задания."
 
 #. ja: <ui-color 508><ui-edge-color 509>記憶の抽出に失敗しました。</ui-edge-color></ui-color>
 #. de: <ui-color 508><ui-edge-color 509>Die Extraktion ist fehlgeschlagen.</ui-edge-color></ui-color>
@@ -4093,7 +4093,7 @@ msgstr "Продолжить?"
 #. macro: <icon2 11> — an inline icon that depends on the input device; icon = 11 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11677:0:0"
 msgid "<if ($gn80 == 1)>  <icon2 11> Logos Action</if>"
-msgstr ""
+msgstr "<if ($gn80 == 1)> <icon2 11> Логоса</if>"
 
 #. ja: <ui-color 506><ui-edge-color 507>星極ミキサーにもロゴスシャードがセットされていないと、記憶の抽出を実行できません。</ui-edge-color></ui-color>
 #. de: <ui-color 506><ui-edge-color 507>Um eine Erinnerung zu extrahieren, muss auch in dem Licht-Manipulator ein Logos-Splitter eingesetzt sein.</ui-edge-color></ui-color>
@@ -5063,7 +5063,7 @@ msgstr "Предложено создать PvP-команду."
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11852:0:0"
 msgid "<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> has submitted a request to create the PvP team “<string $s1>.” The team will be created once all members have granted their approval. Misbehavior by any team members at any time may result in the automatic disbandment of the team. Approve creation?"
-msgstr ""
+msgstr "<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> предлагает создать PvP-команду «<string $s1>». Команда будет создана, когда все участники дадут согласие. Нарушения со стороны участников команды могут привести к её автоматическому роспуску. Одобрить создание?"
 
 #. ja: チームの結成に同意しますか？
 #. de: Der Gründung des PvP-Teams zustimmen?
@@ -5311,7 +5311,7 @@ msgstr "Время регистрации"
 #. macro: <if ($n2 >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:11890:0:0"
 msgid "<string $s1>, <if ($n5 >= 25)>～<num $n6>:<digit $n4 2><else><if ($n6 >= 25)><num $n5>:<digit $n3 2>～<else><num $n5>:<digit $n3 2>～<num $n6>:<digit $n4 2></if> <if ($n1 >= 12)>p.m.<else>a.m.</if><if ($n2 >= 12)>p.m.<else>a.m.</if></if>"
-msgstr ""
+msgstr "<string $s1>, <if ($n5 >= 25)>до <num $n6>:<digit $n4 2><else><if ($n6 >= 25)>с <num $n5>:<digit $n3 2><else><num $n5>:<digit $n3 2>–<num $n6>:<digit $n4 2></if> <if ($n1 >= 12)>PM<else>AM</if><if ($n2 >= 12)>PM<else>AM</if></if>"
 
 #. ja: 戦略値
 #. de: Siegpunkte

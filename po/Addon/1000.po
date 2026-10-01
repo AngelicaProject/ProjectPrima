@@ -101,7 +101,7 @@ msgstr "ч"
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:1016:0:0"
 msgid "<if $n1> <if ($n2 > 0)>+</if><num $n2>% (Max <num $n3>)<else> <if ($n2 > 0)>+</if><num $n2></if>"
-msgstr ""
+msgstr "<if $n1> <if ($n2 > 0)>+</if><num $n2>% (макс. <num $n3>)<else> <if ($n2 > 0)>+</if><num $n2></if>"
 
 #. ja: 食事効果（取得経験値 +<num $n1>%）
 #. de: Nahrungseffekt<br>(Routine + <num $n1> %)
@@ -140,7 +140,7 @@ msgstr "<num $n1>"
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "Addon:1019:0:0"
 msgid "<if $n3><sheet ClassJob $n2 1>  <icon 62><i><string $s1></i><else><sheet ClassJob $n2 1>  <string $s1></if>    <if ($n7 > 0)>EXP <hyphen>/<hyphen><else><if ($n6 > 0)><icon 76><ui-color 515><ui-edge-color 516>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></ui-edge-color></ui-color><else>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></if></if>"
-msgstr ""
+msgstr "<if $n3><sheet ClassJob $n2 1>  <icon 62><i><string $s1></i><else><sheet ClassJob $n2 1>  <string $s1></if>    <if ($n7 > 0)>EXP <hyphen>/<hyphen><else><if ($n6 > 0)><icon 76><ui-color 515><ui-edge-color 516>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></ui-edge-color></ui-color><else>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></if></if>"
 
 #. ja: FULL PARTY
 #. de: VOLLER TRUPP
@@ -536,7 +536,7 @@ msgstr "Бонус отряда"
 #. macro: <switch $n3><case>Ctrl Key<case>Alt Key<case>Shift Key<case><icon2 15></switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:1076:0:0"
 msgid "<if ($n1 > 0)><if ($gn78 == 3)><switch $n1><case>Control Key<case>Option Key<case>Shift Key<case><icon2 14></switch><else><switch $n1><case>Ctrl Key<case>Alt Key<case>Shift Key<case><icon2 14></switch></if>  Display <switch $n2><case>high<case>normal</switch>-quality item details<if ($n3 > 0)>　</if></if><if ($n3 > 0)><if ($gn78 == 3)><switch $n3><case>Control Key<case>Option Key<case>Shift Key<case><icon2 15></switch><else><switch $n3><case>Ctrl Key<case>Alt Key<case>Shift Key<case><icon2 15></switch></if>  Hide item details</if>"
-msgstr ""
+msgstr "<if ($n1 > 0)><if ($gn78 == 3)><switch $n1><case>Control<case>Option<case>Shift<case><icon2 14></switch><else><switch $n1><case>Ctrl<case>Alt<case>Shift<case><icon2 14></switch></if>  Показать предмет высокого/<switch $n2><case>высокого<case>обычного</switch> качества<if ($n3 > 0)>　</if></if><if ($n3 > 0)><if ($gn78 == 3)><switch $n3><case>Control<case>Option<case>Shift<case><icon2 15></switch><else><switch $n3><case>Ctrl<case>Alt<case>Shift<case><icon2 15></switch></if>  Скрыть описание</if>"
 
 #. ja: Lv<num $n1>以下のみ有効
 #. de: Bis Stufe <num $n1>:
@@ -567,7 +567,7 @@ msgstr "Доступно до ур. <num $n1>"
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "Addon:1078:0:0"
 msgid "<if $n3><sheet ClassJob $n2 1>  <icon 62><i><string $s1></i><else><sheet ClassJob $n2 1>  <string $s1></if>    <if ($n7 > 0)>EXP <hyphen>/<hyphen><else><if ($n6 > 0)><icon 76><ui-color 515><ui-edge-color 516>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></ui-edge-color></ui-color><else>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></if></if>"
-msgstr ""
+msgstr "<if $n3><sheet ClassJob $n2 1>  <icon 62><i><string $s1></i><else><sheet ClassJob $n2 1>  <string $s1></if>    <if ($n7 > 0)>EXP <hyphen>/<hyphen><else><if ($n6 > 0)><icon 76><ui-color 515><ui-edge-color 516>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></ui-edge-color></ui-color><else>EXP <kilo $n4 \",\">/<kilo $n5 \",\"></if></if>"
 
 #. ja: <if $n3><i><icon 62><string $s1> <string $s2></i><else><if $n5><string $s1> <string $s2><else><if $n4><string $s2><else><string $s1> <string $s2></if></if></if>
 #. de: <if $n3><i><icon 62><string $s1> <string $s2></i><else><if $n5><string $s1> <string $s2><else><if $n4><string $s2><else><string $s1> <string $s2></if></if></if>
@@ -1000,7 +1000,7 @@ msgstr "Поддержка"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:1134:0:0"
 msgid "<switch $n2><case><case><case></switch> <if ($n2 == 1)><if ($n3 == 0)><num $gn11>:<num2 $gn12> <else><if $gn11><switch $gn11><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $gn12> <if ($gn11 >= 12)>p.m.<else>a.m.</if> </if><else><set-time $n1><if ($n3 == 0)><num $hour>:<num2 $min> <else><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if> </if></if>"
-msgstr ""
+msgstr "<switch $n2><case><case><case></switch> <if ($n2 == 1)><if ($n3 == 0)><num $gn11>:<num2 $gn12> <else><if $gn11><switch $gn11><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $gn12> <if ($gn11 >= 12)>PM<else>AM</if> </if><else><set-time $n1><if ($n3 == 0)><num $hour>:<num2 $min> <else><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if> </if></if>"
 
 #. ja: リプレイ再生中
 #. de: Rückblende wird abgespielt
@@ -3763,7 +3763,7 @@ msgstr "Дата церем."
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:1554:0:0"
 msgid "<set-time $n1><num $month>/<num $day>/<num $year> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if> "
-msgstr ""
+msgstr "<set-time $n1><num $day>.<num $month>.<num $year> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if> "
 
 #. ja: 招待状
 #. de: Einladungs-Vorlage
@@ -4209,7 +4209,7 @@ msgstr "<string $s1><br>(<float $n2 10 \".\">, <float $n3 10 \".\">)"
 #. macro: <if ($hour >= 12)><else></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:1644:0:0"
 msgid "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)><else></if>"
-msgstr ""
+msgstr "<set-time $n1><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)><else></if>"
 
 #. ja: GEARSET SEARCH RESULT
 #. de: AUSRÜSTUNGSSETS
@@ -5081,7 +5081,7 @@ msgstr "Телепорт"
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:1805:0:0"
 msgid "<title-case><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></title-case>"
-msgstr ""
+msgstr "<title-case><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></title-case>"
 
 #. ja: 最寄拠点にテレポ
 #. de: Zu Ätheryt in Zielnähe
@@ -5170,7 +5170,7 @@ msgstr "Выберите предмет"
 #. fr: Objet
 msgctxt "Addon:1819:0:0"
 msgid "Item"
-msgstr ""
+msgstr "Имя"
 
 #. ja: 分解クラス
 #. de: Klasse
@@ -6318,7 +6318,7 @@ msgstr "Не учитывать материю"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:1991:0:0"
 msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> materia affixed"
-msgstr ""
+msgstr "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>одна<case>две<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> материи"
 
 #. ja: <kilo $n1 ",">
 #. de: <kilo $n1 ".">
@@ -6366,7 +6366,7 @@ msgstr "<kilo $n1 \",\">–<kilo $n2 \",\">"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:1996:0:0"
 msgid "<set-time $n1><if ($gn77 == 3)><num $day>/<num $month><else><num $month>/<num $day></if> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>p.m.<else>a.m.</if>"
-msgstr ""
+msgstr "<set-time $n1><if ($gn77 == 3)><num $day>.<num $month><else><num $month>.<num $day></if> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:<num2 $min> <if ($hour >= 12)>PM<else>AM</if>"
 
 #. ja: 少し時間をおいてから検索してください。
 #. de: Warte kurz und versuch es dann wieder.
