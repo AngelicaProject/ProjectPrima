@@ -1,0 +1,145 @@
+# Harmonia feed. Added by Aeria; see docs/formats/feed-v1.md in the Aeria
+# repository.
+#
+# Rebuilds harmonia/feed-v1.json on GitHub Pages from the feed-entry.json
+# assets of this repository's harmonia/<version> releases, which Aeria
+# publishes. The feed lists the newest release of each channel. The workflow
+# needs no signing keys, and pack files are never copied to Pages. Set
+# Settings -> Pages -> Source to "GitHub Actions".
+#
+# The feed is built and deployed only from the default branch. A release
+# event runs with the release tag as its ref, which the github-pages
+# environment refuses, so it only starts a run of this workflow on the
+# default branch.
+name: Harmonia feed
+
+on:
+  release:
+    types: [published, unpublished, edited, deleted]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  dispatch:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: gh workflow run harmonia-feed.yml --repo "$GITHUB_REPOSITORY" --ref "$DEFAULT_BRANCH"
+
+  feed:
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    # Every run reads all releases, so a newer run supersedes an older one.
+    concurrency:
+      group: harmonia-feed
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}harmonia/feed-v1.json
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: aeria-pack.json
+          sparse-checkout-cone-mode: false
+
+      - name: Build feed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: python
+        run: |
+          import json, os, pathlib, re, urllib.request
+
+          api = os.environ["GITHUB_API_URL"]
+          repository = os.environ["GITHUB_REPOSITORY"]
+          token = os.environ["GITHUB_TOKEN"]
+          headers = {
+              "Authorization": f"Bearer {token}",
+              "X-GitHub-Api-Version": "2022-11-28",
+          }
+
+          class KeepRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, *args, **kwargs):
+                  return None
+
+          def get(url, accept="application/vnd.github+json"):
+              request = urllib.request.Request(url, headers={**headers, "Accept": accept})
+              try:
+                  with urllib.request.build_opener(KeepRedirect).open(request) as response:
+                      return response.read()
+              except urllib.error.HTTPError as error:
+                  if error.code not in (301, 302, 307, 308):
+                      raise
+                  # Asset downloads redirect to storage that must not receive the token.
+                  with urllib.request.urlopen(error.headers["Location"]) as response:
+                      return response.read()
+
+          settings = json.loads(pathlib.Path("aeria-pack.json").read_text(encoding="utf-8-sig"))
+          if settings.get("formatVersion") != 1:
+              raise SystemExit("aeria-pack.json: unsupported formatVersion")
+
+          entries = []
+          page = 1
+          while True:
+              releases = json.loads(get(f"{api}/repos/{repository}/releases?per_page=100&page={page}"))
+              for release in releases:
+                  match = re.fullmatch(r"harmonia/([0-9]{4}\.[0-9]{2}\.[0-9]{2}\.[0-9]{4})", release["tag_name"])
+                  if release["draft"] or not match:
+                      continue
+                  assets = [a for a in release["assets"] if a["name"] == "feed-entry.json"]
+                  if len(assets) != 1:
+                      print(f"::warning::{release['tag_name']} has no feed-entry.json; skipped")
+                      continue
+                  entry = json.loads(get(assets[0]["url"], "application/octet-stream").decode("utf-8"))
+                  if entry.get("version") != match.group(1):
+                      raise SystemExit(f"{release['tag_name']}: feed-entry.json has another version")
+                  if entry.get("channel") not in ("stable", "testing"):
+                      raise SystemExit(f"{release['tag_name']}: unknown channel")
+                  entries.append(entry)
+              if len(releases) < 100:
+                  break
+              page += 1
+
+          versions = [entry["version"] for entry in entries]
+          if len(versions) != len(set(versions)):
+              raise SystemExit("two releases have the same version")
+          # Versions have fixed widths, so text order is version order.
+          entries.sort(key=lambda entry: entry["version"], reverse=True)
+          kept = []
+          for channel in ("stable", "testing"):
+              kept += [entry for entry in entries if entry["channel"] == channel][:1]
+          kept.sort(key=lambda entry: entry["version"], reverse=True)
+
+          feed = {
+              "format": "harmonia-feed",
+              "version": 1,
+              "title": settings["title"],
+              "publisherKeyFingerprint": settings.get("signingKeyFingerprint"),
+              "releases": kept,
+          }
+          output = pathlib.Path("site/harmonia")
+          output.mkdir(parents=True, exist_ok=True)
+          (output / "feed-v1.json").write_text(
+              json.dumps(feed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+          print(f"Feed lists {len(kept)} of {len(entries)} releases")
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
