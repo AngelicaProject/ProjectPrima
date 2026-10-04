@@ -414,7 +414,7 @@ msgstr "Подводная лодка №<num $n2> «<i><string $s1></i>» за�
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6052:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>register<else>registers</if> company submersible No. <num $n1> - </i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> зарегистрировали подлодку №<num $n1> — <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы регистрируете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> регистрирует</if></capitalize> подводную лодку №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»."
 
 #. ja: <num $n2>機目の潜水艦名を「<string $s1>」に変更しました。
 #. de: Du hast den Namen von Tauchboot Nr. <num $n2> zu <capitalize><i><string $s1></capitalize></i> geändert.
@@ -452,7 +452,7 @@ msgstr "Подводная лодка №<num $n2> «<i><string $s1></i>» ра�
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6055:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>dismantle<else>dismantles</if> company submersible No. <num $n1> - </i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> разобрали подлодку №<num $n1> — <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы разбираете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> разбирает</if></capitalize> подводную лодку №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»."
 
 #. ja: 潜水艦のランクが足りないため実行できません。
 #. de: Die Erkundung kann nicht gestartet werden. Der Rang des Tauchboots ist nicht hoch genug.
@@ -508,7 +508,7 @@ msgstr "Путешествие подводной лодки «<i><capitalize><s
 #. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
 msgctxt "LogMessage:6060:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>finalize<else>finalizes</if> the subaquatic voyage for <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> подтвердили завершение экспедиции подлодки <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы завершаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> завершает</if></capitalize> исследовательский поход подводной лодки <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
 
 #. ja: 目的地「<sheet SubmarineExploration $n1 0>」を発見しました！
 #. de: Neues Erkundungsgebiet entdeckt: <capitalize><sheet SubmarineExploration $n1 0></capitalize>!
@@ -1134,7 +1134,7 @@ msgstr "Невозможно выполнить команду. Все учас�
 #. macro: <if ($gs1 == $gs3)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6989:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> not a Disciple of War or Magic."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> не относится к боевым или магическим классам."
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не принадлежите<else>не принадлежит</if> к последователям войны или магии."
 
 #. ja: 戦闘不能状態のパーティメンバーがいるため、実行できません。
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied ist kampfunfähig.
@@ -1154,7 +1154,7 @@ msgstr "Невозможно выполнить команду. Один или 
 #. macro: <if ($gs1 == $gs3)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6991:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> incapacitated."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> выведен<if ($gs1 == $gs3)>ы<else></if> из строя."
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не можете действовать<else>не может действовать</if>."
 
 #. ja: パーティメンバーが同じエリアにいないため、実行できません。
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied befindet sich nicht im selben Areal.
@@ -1181,7 +1181,7 @@ msgstr "Невозможно выполнить команду. Одному и�
 #. macro: <if ($gs1 == $gs3)>need<else>needs</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6995:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>need<else>needs</if> a timeout."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вам</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> нужно немного передохнуть."
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>нужно подождать<else>нужно подождать</if>."
 
 #. ja: アライアンス申請状態のため、実行できません。
 #. de: Nicht möglich, bis die Allianz vollständig ist.
@@ -1206,7 +1206,7 @@ msgstr "Невозможно выполнить команду, пока не с
 #. macro: <if $gn6>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 6 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6997:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>place<else>places</if> <if ($gs1 == $gs3)>your<else><if $gn8><if \"<sheet BNpcName $gn8 6>\">her<else>his</if><else><if $gn6>her<else>his</if></if></if> hand on the gate."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> кладёт <if $gn8><if \"<sheet BNpcName $gn8 6>\">свою<else>свою</if><else><if $gn6>свою<else>свою</if></if> руку на ворота."
+msgstr "<capitalize><if ($gs1 == $gs3)>Вы<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>кладёте руку<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> кладёт <if \"<sheet BNpcName $gn8 6>\">свою<else>свою</if> руку</if> на ворота."
 
 #. ja:  「<switch $n1><case>第二<case>第三<case>第四<case>第五<case>第六<case>最終</switch>区画」への扉が開いた！
 #. de: Das Tor zur <switch $n1><case>zweiten<case>dritten<case>vierten<case>fünften<case>sechsten<case>letzten</switch> Kammer öffnet sich.

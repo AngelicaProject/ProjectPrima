@@ -794,7 +794,7 @@ msgstr "Вы не ученик войны или магии."
 #. macro: <sheet DeepDungeonItem $n1 9> — a value from a game data sheet, such as a name; sheet = DeepDungeonItem, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7220:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> a <lower><sheet DeepDungeonItem $n1 9></lower>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> получаете <lower><sheet DeepDungeonItem $n1 9></lower>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <lower><sheet DeepDungeonItem $n1 9></lower>."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>たちは、<sheet DeepDungeonItem $n1 9>を手に入れた！
 #. de: Ihr habt ein <sheet DeepDungeonItem $n1 9> erhalten!
@@ -1231,7 +1231,7 @@ msgstr "Вы находите часть Проклятого клада!"
 #. macro: <if ($gs1 == $gs2)>obtain<else>obtains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7275:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> a piece of the Accursed Hoard."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> получаете часть проклятого клада."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> часть проклятого сокровища."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>たちは、埋もれた財宝を手に入れた！
 #. de: Ihr habt einen verborgenen Schatz aufgenommen!
@@ -1271,7 +1271,7 @@ msgstr "Э-Уна-Котор начала продавать новые това
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7279:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>discover<else>discovers</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> находите <noun-en Item 1 $n1 1 1>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы обнаруживаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> обнаруживает</if></capitalize> <noun-en Item 1 $n1 1 1>."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>たちは<sheet Item $n1 0>を発見した！
 #. de: Ihr habt <noun-de Item 1 $n1 1 4 1> gefunden!
@@ -1390,7 +1390,7 @@ msgstr "У вас больше нет этого дара."
 #. macro: <if (exp == 1)>point<else>points</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = exp == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7300:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>gain<else>gains</if> <kilo $n2 \",\"><if ($n3 == 0)><else><nbsp>(+<kilo $n3 \",\">%)</if> experience <if (exp == 1)>point<else>points</if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> получаете <kilo $n2 \",\"><if ($n3 == 0)><else><nbsp>(+<kilo $n3 \",\">%)</if> оч. опыта."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <kilo $n2 \",\"><if ($n3 == 0)><else><nbsp>(+<kilo $n3 \",\">%)</if> оч. опыта."
 
 #. ja: このコンテンツでは、戦闘中にログアウトを行ったキャラクターは、<br>戦闘不能状態で復帰します。
 #. de: Charaktere, die sich während dieses Kampfes ausloggen oder die Verbindung verlieren, sind bei erneutem Betreten kampfunfähig.
@@ -1456,7 +1456,7 @@ msgstr "Вы приглашаете <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</
 #. macro: <if ($gs1 == $gs3)>accept<else>accepts</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7321:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>accept<else>accepts</if> the custom match invite."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> принимает приглашение на бой по своим правилам."
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>принимаете<else>принимает</if> приглашение на матч по своим правилам."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>からカスタムマッチ参加申請に勧誘されました。
 #. de: Du wurdest von <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> zu einem Schaukampf eingeladen.
@@ -1828,7 +1828,7 @@ msgstr "Вызов на дуэль принят. Приготовьтесь к �
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7409:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>defeat<else>defeats</if> <if ($gs1 == $gs3)>you<else><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></if>!"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> побеждаете <if ($gs1 == $gs3)>себя<else><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></if> в дуэли!"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы побеждаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> побеждает</if></capitalize> <if ($gs1 == $gs3)>вас<else><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></if>!"
 
 #. ja: 戦闘不能状態のため、申請できませんでした。
 #. de: Keine Heraus<shy>forde<shy>rung möglich, da du kampfunfähig bist.
@@ -2922,7 +2922,7 @@ msgstr "Не удалось подать заявку. Слишком велик
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7556:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>acquire<else>acquires</if> <kilo $n1 \",\"> Series EXP."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> получаете <kilo $n1 \",\"> оч. опыта серии."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <kilo $n1 \",\"> оч. опыта серии."
 
 #. ja: シリーズレベルアップ！  <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、シリーズレベル<num $n1>になった。
 #. de: <if ($gs1 == $gs2)>Deine Serienstufe<else>Die Serienstufe von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if></if> ist auf <num $n1> gestiegen!
@@ -2935,7 +2935,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7557:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>attain<else>attains</if> Series level <num $n1>!"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> достигаете <num $n1>-го уровня серии!"
+msgstr "Повышение уровня серии! <capitalize><if ($gs1 == $gs2)>Вы достигаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> достигает</if></capitalize> <num $n1>-го уровня серии."
 
 #. ja: EXシリーズレベルアップ！  マルムストーンが<num $n1>になった。
 #. de: Extra-Stufe gestiegen! <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> Malmenstein <num $n1> erreicht!
@@ -2948,7 +2948,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7558:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>reach<else>reaches</if> Series malmstone <num $n1>!"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> достигаете <num $n1>-го уровня камня серии!"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы достигаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> достигает</if></capitalize> этапа серии №<num $n1>!"
 
 #. ja: このコンテンツでは通常のマップは開けません。
 #. de: In diesem Inhalt kannst du die normale Karte nicht öffnen.
@@ -3375,7 +3375,7 @@ msgstr "Вы меняете название PvP-команды на «<if $gn8>
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7623:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>change<else>changes</if> the PvP team name to “<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>.”"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> меняет название PvP-команды на «<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>»."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы меняете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> меняет</if></capitalize> название PvP-команды на «<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>»."
 
 #. ja: 前回の変更から30日以内は、PvPチーム名を変更することはできません。
 #. de: Namensänderung nicht möglich. Es müssen 30 Tage seit der letzten Änderung verstrichen sein.
@@ -3442,7 +3442,7 @@ msgstr "В бесплатной пробной версии нельзя под�
 #. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7631:0:5"
 msgid "PvP team member <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>have<else>has</if> logged in."
-msgstr "Участник PvP-команды <capitalize><if ($gs1 == $gs2)>вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> вошёл в игру."
+msgstr "Участник PvP-команды: <if ($gs1 == $gs2)>вы вошли в игру<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> вошёл в игру</if>."
 
 #. ja: PvPTeam - <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>がログアウトしました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> hat das Spiel verlassen.
@@ -3454,7 +3454,7 @@ msgstr "Участник PvP-команды <capitalize><if ($gs1 == $gs2)>вы<
 #. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7632:0:5"
 msgid "PvP team member <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>have<else>has</if> logged out."
-msgstr "Участник PvP-команды <capitalize><if ($gs1 == $gs2)>вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> вышел из игры."
+msgstr "Участник PvP-команды: <if ($gs1 == $gs2)>вы вышли из игры<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> вышел из игры</if>."
 
 #. ja: PvPコンテンツを開放していないため、PvPチーム結成に同意できませんでした。
 #. de: Zustimmung nicht möglich. Du hast PvP-Inhalte noch nicht freigespielt.
@@ -3492,7 +3492,7 @@ msgstr "Вы получили приглашение в PvP-команду от 
 #. macro: <if ($gs1 == $gs2)>decline<else>declines</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7636:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>decline<else>declines</if> your invite to the PvP team."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> отклоняет приглашение в PvP-команду."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы отклоняете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> отклоняет</if></capitalize> приглашение в PvP-команду."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>からのPvPチーム招待を辞退しました。
 #. de: Du hast die Einladung von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if> abgelehnt.
@@ -3580,7 +3580,7 @@ msgstr "Вы вступили в PvP-команду «<if $gn8><sheet ObjStr $gn
 #. macro: <if ($gs1 == $gs2)>join<else>joins</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7647:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>join<else>joins</if> your PvP team."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> вступает в вашу PvP-команду."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы вступаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> вступает</if></capitalize> в PvP-команду."
 
 #. ja: PvPチームの加入に失敗しました。<br>エリア移動をすることでこの問題が解消される可能性があります。
 #. de: Beitritt zum PvP-Team ist fehlgeschlagen.<br>Möglicherweise kann das Problem behoben werden, indem du das Areal wechselst.
@@ -3608,7 +3608,7 @@ msgstr "Вы покидаете PvP-команду «<if $gn8><sheet ObjStr $gn8
 #. macro: <if ($gs1 == $gs2)>leave<else>leaves</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7651:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>leave<else>leaves</if> the PvP team."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> покидает PvP-команду."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы покидаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> покидает</if></capitalize> PvP-команду."
 
 #. ja: PvPチームの脱退に失敗しました。
 #. de: Verlassen des PvP-Teams ist fehlgeschlagen.
@@ -3653,7 +3653,7 @@ msgstr "Вас исключили из PvP-команды «<if $gn8><sheet ObjS
 #. macro: <if ($gs1 == $gs2)>leave<else>leaves</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7657:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>leave<else>leaves</if> the PvP team."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> покидает PvP-команду."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы покидаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> покидает</if></capitalize> PvP-команду."
 
 #. ja: PvPチームのリーダーは除名できません。
 #. de: Aktion nicht möglich. Der Anführer kann nicht aus dem PvP-Team ausgeschlossen werden.
@@ -3688,7 +3688,7 @@ msgstr "Вы назначаете <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if
 #. macro: <if ($gs1 == $gs2)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7662:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are<else>is</if> promoted to PvP team subleader."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> назначен заместителем лидера PvP-команды."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы становитесь заместителем лидера<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> становится заместителем лидера</if></capitalize> PvP-команды."
 
 #. ja: PvPチームのサブリーダーは一人までしか任命できません。
 #. de: Aktion nicht möglich. Das Team hat bereits einen Zweiten Anführer.
@@ -3723,7 +3723,7 @@ msgstr "Вы снимаете с <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>
 #. macro: <if ($gs1 == $gs2)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7667:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are<else>is</if> no longer PvP team subleader."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> больше не заместитель лидера PvP-команды."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы больше не возглавляете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> больше не возглавляет</if></capitalize> PvP-команду."
 
 #. ja: PvPチームのサブリーダーの解任に失敗しました。
 #. de: Die Absetzung des Zweiten Anführers ist fehlgeschlagen.
@@ -3751,7 +3751,7 @@ msgstr "Вы назначаете <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if
 #. macro: <if ($gs1 == $gs2)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7671:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are<else>is</if> promoted to PvP team leader."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> назначен лидером PvP-команды."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы становитесь лидером PvP-команды<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> становится лидером PvP-команды</if></capitalize>."
 
 #. ja: PvPチームのチームリーダーの譲渡に失敗しました。
 #. de: Die Bestimmung eines neuen Anführers ist fehlgeschlagen.
@@ -3805,7 +3805,7 @@ msgstr "Вы изменили герб PvP-команды."
 #. macro: <if ($gs1 == $gs2)>change<else>changes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7680:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>change<else>changes</if> the PvP team crest design."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> меняет эмблему PvP-команды."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы меняете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> меняет</if></capitalize> оформление герба PvP-команды."
 
 #. ja: チームクレストデザインの変更に失敗しました。
 #. de: Die Änderung des Wappens ist fehlgeschlagen.
