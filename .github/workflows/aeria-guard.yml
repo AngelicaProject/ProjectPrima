@@ -1,0 +1,41 @@
+# Aeria Guard. Added by Aeria main 129819f; Aeria offers to update it.
+#
+# GitHub merges pull requests as plain text and lets files be edited on the
+# website, while Aeria checks every translation it saves and changes the
+# game's text only when it updates the project to a new game version. This
+# workflow runs aeria-guard on every pull request into the main branch and
+# every push to it: the project must read, every translation must pass
+# Aeria's checks, and the game's text must stay as the base has it. The
+# run's summary lists the changed strings for review.
+#
+# It runs on pull_request_target, so the check comes from the main branch
+# and a pull request cannot change or switch it off. It reads the files of
+# the pull request merged into the main branch and never runs them, and its
+# token can only read. Make "Aeria Guard" a required status check of the
+# main branch; Aeria offers the rules to import on GitHub.
+name: Aeria Guard
+
+# Safe here: no secrets, a read-only token, and the pull request is only read.
+on: # zizmor: ignore[dangerous-triggers]
+  pull_request_target:
+    branches: ["main"]
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aeria-guard-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  guard:
+    name: Aeria Guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: AngelicaProject/Aeria/guard@129819fc8b9a6def1ba5e5cbf12419f059d25933 # main 129819f
+        with:
+          project: "."
