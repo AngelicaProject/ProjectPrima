@@ -3402,6 +3402,7 @@ msgstr "Настройки не сохранены: не используетс�
 #. de: Das Grup<shy>pen<shy>mit<shy>glied, das „<sheet Leve $n1 0>“ besaß, ist verschwunden. Der Freibrief ist fehlgeschlagen.
 #. fr: Le mandat “<sheet Leve $n1 0>” a échoué. L'équipier qui le détenait a disparu.
 #. macro: <sheet Leve $n1 0> — a value from a game data sheet, such as a name; sheet = Leve, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Duty 1752c76d124c
 msgctxt "LogMessage:1430:0:5"
 msgid "The party member holding the guildleve for “<sheet Leve $n1 0>” has disappeared. Duty abandoned."
 msgstr "Участник группы с поручением «<sheet Leve $n1 0>» пропал. Задание провалено."
@@ -7193,7 +7194,7 @@ msgstr "Кто-то из группы отказался. Запись отме�
 #. macro: <sound 1 95> — plays a sound effect; kind = 1, sound = 95 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1990:0:5"
 msgid "Duty record started. Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
-msgstr "Запись задания началась. Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
+msgstr "Запись активности началась. Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
 
 #. ja: リプレイデータが存在しないため再生できません。
 #. de: Wiedergabe nicht möglich, weil keine Daten vorhanden sind.
@@ -7232,14 +7233,14 @@ msgstr "Нельзя воспроизвести запись: произошла
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "LogMessage:1995:0:5"
 msgid "Duty record conditions met. Commence the <ui-color 506><ui-edge-color 507>record ready check</ui-edge-color></ui-color> to begin recording."
-msgstr "Условия для записи испытания выполнены. Начните <ui-color 506><ui-edge-color 507>проверку готовности к записи</ui-edge-color></ui-color>, чтобы начать запись."
+msgstr "Условия для записи активности выполнены. Начните <ui-color 506><ui-edge-color 507>проверку готовности к записи</ui-edge-color></ui-color>, чтобы начать запись."
 
 #. ja: リプレイ記録待機中のキャッシュ上限を超えたため、リプレイの記録待機を解除します。
 #. de: Der Aufnahmevorgang wurde abgebrochen, weil der Zwischenspeicher voll ist.
 #. fr: Limite de la mémoire cache dépassée. Attente d'enregistrement annulée.
 msgctxt "LogMessage:1996:0:5"
 msgid "Duty record data cache limit exceeded. Unpausing recorder."
-msgstr "Превышен лимит кэша записи испытания. Запись возобновлена."
+msgstr "Превышен лимит кэша записи активности. Запись возобновлена."
 
 #. ja: リプレイデータを保存できるだけの容量（210MB）が確保できませんでした。<br><if ($gn0 == 99)>リプレイの記録を停止します。<else>リプレイの記録は行われません。</if>
 #. de: <if ($gn0 == 99)>Die Aufnahme wurde abgebrochen<else>Die Aufnahme ist nicht möglich</if>, weil nicht genügend Speicherplatz (210 MB) vorhanden ist.

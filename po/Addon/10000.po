@@ -404,7 +404,7 @@ msgstr "<ui-color 508><ui-edge-color 509>※ Выбор языков может 
 #. fr: Informations de mission
 msgctxt "Addon:10057:0:0"
 msgid "Duty Information"
-msgstr "Информация о задании"
+msgstr "Инфо об активности"
 
 #. ja: このまま閉じると設定が破棄されます。<br>よろしいですか？
 #. de: Einstellungen verwerfen und schließen?
@@ -429,7 +429,7 @@ msgstr "<if ($n1 > 0)>Японский </if><if ($n2 > 0)>Английский <
 #. fr: Fonctions en mission
 msgctxt "Addon:10060:0:0"
 msgid "Duty Menu"
-msgstr "Меню задания"
+msgstr "Меню активности"
 
 #. ja: コンテンツ内機能
 #. de: Optionen
@@ -502,7 +502,7 @@ msgstr "Если участников в группе стало меньше н
 #. fr: Affichage des détails
 msgctxt "Addon:10070:0:0"
 msgid "Display Duty Information"
-msgstr "Информация о задании"
+msgstr "Инфо об активности"
 
 #. ja: 現在参加しているコンテンツの詳細情報を表示します。<br><ui-color 506><ui-edge-color 507><if ($n1 == 1)>※ギルドオーダーでは「指令」が表示されます。<else><if ($n1 == 2)>※飛空艇探索では「探索任務」が表示されます。</if></if></ui-edge-color></ui-color>
 #. de: Die Details zum momentan aktiven Inhalt.<br><ui-color 506><ui-edge-color 507><if ($n1 == 1)>※ Bei Gildengeheißen werden die Tipps angezeigt<else><if ($n1 == 2)>※ Bei Luftschiffexpeditionen werden die Einzelheiten angezeigt</if></if></ui-edge-color></ui-color>
@@ -649,7 +649,7 @@ msgstr "※ Выбор фазы не позволяет пропустить п�
 #. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
 msgctxt "Addon:10090:0:0"
 msgid "<ui-color 506><ui-edge-color 507>※The “Duty Complete” option is only available for previously<br>　completed duties.<br><if ($n1 == 0)>※The “Duty Completion” option is only available if the<br>　weekly reward has yet to be obtained.<br></if>※Practice phase selection does not entail the actual skipping<br>　of phases.</ui-edge-color></ui-color><br><if ($n1 == 0)><ui-color 508><ui-edge-color 509>※If the registration period overlaps with the weekly reset,<br>　registration will be canceled.<br>※If 1 to 4 members have already received the weekly reward,<br>　or if a member logs out or disconnects, the number of rewards<br>　will be reduced. No coffers will appear if 5 or more members<br>　have received the reward.</ui-edge-color></ui-color></if>"
-msgstr "<ui-color 506><ui-edge-color 507>※ Условие «Завершено» доступно, только если вы уже проходили это задание.<br><if ($n1 == 0)>※ Цель «Завершение» доступна, только если недельная награда ещё не получена.<br></if>※ Выбор фазы для тренировки не позволяет пропустить фазы.</ui-edge-color></ui-color><br><if ($n1 == 0)><ui-color 508><ui-edge-color 509>※ Если время регистрации пересечётся с еженедельным сбросом, заявка будет отменена.<br>※ Если недельную награду уже получили 1–4 участника или кто-то выйдет из игры либо отключится, число наград уменьшится. Если награду получили 5 или больше участников, сундуки не появятся.</ui-edge-color></ui-color></if>"
+msgstr "<ui-color 506><ui-edge-color 507>※ Условие «Активность завершена» доступно, только если вы уже проходили эту активность.<br><if ($n1 == 0)>※ Цель «Завершение активности» доступна, только если недельная награда ещё не получена.<br></if>※ Выбор фазы для тренировки не позволяет пропустить фазы.</ui-edge-color></ui-color><br><if ($n1 == 0)><ui-color 508><ui-edge-color 509>※ Если время регистрации пересечётся с еженедельным сбросом, заявка будет отменена.<br>※ Если недельную награду уже получили 1–4 участника или кто-то выйдет из игры либо отключится, число наград уменьшится. Если награду получили 5 или больше участников, сундуки не появятся.</ui-edge-color></ui-color></if>"
 
 #. ja: 選択解除
 #. de: Auswahl aufheben
@@ -1204,7 +1204,7 @@ msgstr "Справка по поиску рейда"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:10160:0:0"
 msgid "<ui-color 514>Progress Record</ui-color><br>Progress within the latest Savage raids is<br>periodically saved, allowing for continuation<br>of the duty from that point.<br><br>Progress is reset every week on<br><reset-time 17 2><switch $weekday><case>Sunday<case>Monday<case>Tuesday<case>Wednesday<case>Thursday<case>Friday<case>Saturday</switch> at <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>p.m.<else>a.m.</if> (Earth time).<br><br><ui-color 514>Party Progress</ui-color><br>A party's starting point in the raid is<br>determined by the leader's past progress.<br>As long as all other conditions are met, <br>players who have not progressed as far as<br>the leader may still participate in the duty.<br><br>If a party member's progress was less<br>than that of the leader, then progress<br>will be updated to match.<br><br>If a party member's progress is beyond<br>that of the leader, that member's progress<br>will remain unaffected.<br><br><ui-color 514>Reward Restrictions</ui-color><br>Players will not earn rewards for completing<br>phases they have already completed.<br>Coffer quantity will vary based on the total<br>number of party members who have already<br>completed the duty.<br><br>When participating in the latest Savage raid<br>with a matched party, duty rewards may<br>change based on the progress level of<br>matched members.<br><br><ui-color 514>Job Distribution</ui-color><br>Parties formed with the Raid Finder do not<br>allow for two members with the same job<br>unless certain conditions are met.<br><br>DPS jobs are divided into the following roles:<br>Melee DPS, Physical Ranged DPS,<br>Magical Ranged DPS, and Not Specified.<br><br>When the raid purpose is set as “Duty Completion,”<br>the jobs that fall into Not Specified must be<br>different from the ones which fill the other three<br>DPS roles. When the raid purpose is set to “Practice,”<br>overlapping between specified and unspecified DPS<br>jobs is allowed.<br><br><ui-color 514>Loot Rules & Languages</ui-color><br>Loot rules and Language settings are imported<br>from current Duty Finder settings.<br><br><ui-color 514>Penalties</ui-color><br>Penalties for withdrawing from duties are<br>shared between all matched content."
-msgstr "<ui-color 514>Запись прогресса</ui-color><br>Прогресс в последних рейдах уровня «Эпохальный» периодически сохраняется, чтобы вы могли продолжить прохождение с того же места.<br><br>Прогресс сбрасывается каждую неделю в <reset-time 17 2><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среду<case>четверг<case>пятницу<case>субботу</switch> в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>вечера<else>утра</if> по земному времени.<br><br><ui-color 514>Прогресс группы</ui-color><br>Точка начала рейда зависит от прогресса лидера группы. Если остальные условия выполнены, к прохождению могут присоединиться игроки с меньшим прогрессом.<br><br>Прогресс участника, отстающего от лидера, обновится до уровня лидера.<br><br>Прогресс участника, опередившего лидера, не изменится.<br><br><ui-color 514>Ограничения на награды</ui-color><br>Награды за этапы, которые вы уже прошли, не выдаются. Количество сундуков зависит от числа участников, уже завершивших задание.<br><br>В рейде «Эпохальный», найденном через поиск, награды могут меняться в зависимости от прогресса подобранных игроков.<br><br><ui-color 514>Распределение классов</ui-color><br>В группах, собранных через поиск рейда, два участника не могут играть за один класс, если не выполнены определённые условия.<br><br>Атакующие делятся на четыре роли: ближнего боя, физического и магического дальнего боя, а также без ограничений.<br><br>При цели «Завершение задания» классы атакующих без ограничений должны отличаться от классов в остальных трёх ролях. При цели «Тренировка» совпадения разрешены.<br><br><ui-color 514>Правила добычи и языки</ui-color><br>Применяются настройки правил добычи и языка из поиска заданий.<br><br><ui-color 514>Штрафы</ui-color><br>Штрафы за выход из задания распространяются на весь контент с подбором группы."
+msgstr "<ui-color 514>Запись прогресса</ui-color><br>Прогресс в последних рейдах уровня «Эпохальный» периодически сохраняется, чтобы вы могли продолжить прохождение активности с того же места.<br><br>Прогресс сбрасывается каждую неделю в <reset-time 17 2><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среду<case>четверг<case>пятницу<case>субботу</switch> в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>вечера<else>утра</if> по земному времени.<br><br><ui-color 514>Прогресс группы</ui-color><br>Точка начала рейда зависит от прогресса лидера группы. Если остальные условия выполнены, к прохождению могут присоединиться игроки с меньшим прогрессом.<br><br>Прогресс участника, отстающего от лидера, обновится до уровня лидера.<br><br>Прогресс участника, опередившего лидера, не изменится.<br><br><ui-color 514>Ограничения на награды</ui-color><br>Награды за этапы, которые вы уже прошли, не выдаются. Количество сундуков зависит от числа участников, уже завершивших активность.<br><br>В рейде «Эпохальный», найденном через поиск, награды могут меняться в зависимости от прогресса подобранных игроков.<br><br><ui-color 514>Распределение классов</ui-color><br>В группах, собранных через поиск рейда, два участника не могут играть за один класс, если не выполнены определённые условия.<br><br>Атакующие делятся на четыре роли: ближнего боя, физического и магического дальнего боя, а также без ограничений.<br><br>При цели «Завершение активности» классы атакующих без ограничений должны отличаться от классов в остальных трёх ролях. При цели «Тренировка» совпадения разрешены.<br><br><ui-color 514>Правила добычи и языки</ui-color><br>Применяются настройки правил добычи и языка из поиска заданий.<br><br><ui-color 514>Штрафы</ui-color><br>Штрафы за выход из активности распространяются на весь контент с подбором группы."
 
 #. ja: 閉じる
 #. de: Schließen
@@ -1348,7 +1348,7 @@ msgstr "Пригласить в сеть новичков"
 #. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
 msgctxt "Addon:10180:0:0"
 msgid "You can now receive your mentor certification.<br><br>As a mentor, you are expected to actively perform the following:<br><ui-color 506><ui-edge-color 507>1. Provide gameplay advice for new adventurers and other players.<br>2. Be an exemplar for player etiquette.<br>3. Invite new adventurers to the Novice Network, and answer their queries in the chat channel.</ui-edge-color></ui-color><br><br>Accepting mentor certification will grant you access to the Novice Network and Duty Roulette: Mentor, as well as earn you a bonus to experience points when grouping with a new adventurer.<br><br><ui-color 500><ui-edge-color 501>※Mentors can participate in the Novice Network regardless of online status. You will also be able to register for Duty Roulette: Mentor, but your status will automatically switch to “Mentor” once inside the instance.<br>※Inappropriate mentor behavior may be reported.</ui-edge-color></ui-color>"
-msgstr "Теперь вы можете стать наставником.<br><br>От наставников ожидается, что они будут:<br><ui-color 506><ui-edge-color 507>1. Помогать новичкам и другим игрокам советами по игре.<br>2. Подавать пример хорошего поведения.<br>3. Приглашать новичков в сеть новичков и отвечать на их вопросы в чате.</ui-edge-color></ui-color><br><br>Статус наставника даст вам доступ к сети новичков и рулетке заданий «Наставник», а также бонус к опыту за группу с новичком.<br><br><ui-color 500><ui-edge-color 501>※ Наставники могут участвовать в сети новичков независимо от статуса в сети. В рулетку заданий «Наставник» тоже можно записаться при любом статусе, но в самом подземелье он автоматически сменится на «Наставник».<br>※ На неподобающее поведение наставника можно пожаловаться.</ui-edge-color></ui-color>"
+msgstr "Теперь вы можете стать наставником.<br><br>От наставников ожидается, что они будут:<br><ui-color 506><ui-edge-color 507>1. Помогать новичкам и другим игрокам советами по игре.<br>2. Подавать пример хорошего поведения.<br>3. Приглашать новичков в сеть новичков и отвечать на их вопросы в чате.</ui-edge-color></ui-color><br><br>Статус наставника даст вам доступ к сети новичков и рулетке активностей «Наставник», а также бонус к опыту за группу с новичком.<br><br><ui-color 500><ui-edge-color 501>※ Наставники могут участвовать в сети новичков независимо от статуса в сети. В рулетку активностей «Наставник» тоже можно записаться при любом статусе, но в самом подземелье он автоматически сменится на «Наставник».<br>※ На неподобающее поведение наставника можно пожаловаться.</ui-edge-color></ui-color>"
 
 #. ja: 上記内容に同意して「メンター」となる
 #. de: Einverstanden erklären und Mentor werden
@@ -1367,7 +1367,7 @@ msgstr "Принять условия и стать наставником."
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "Addon:10182:0:0"
 msgid "Do you wish to cancel all of your current mentor certifications?<br>By renouncing your mentor status, you forfeit access to the Novice Network and Duty Roulette: Mentor, and will also lose the bonus to experience points earned when grouping with a new adventurer.<br><br><ui-color 506><ui-edge-color 507>Mentor certification will be unavailable for 30 days following cancellation.</ui-edge-color></ui-color>"
-msgstr "Отменить все действующие статусы наставника?<br>Отказавшись от статуса, вы потеряете доступ к сети новичков и рулетке заданий «Наставник», а также бонус к опыту за группу с новичком.<br><br><ui-color 506><ui-edge-color 507>Снова стать наставником можно будет только через 30 дней после отказа.</ui-edge-color></ui-color>"
+msgstr "Отменить все действующие статусы наставника?<br>Отказавшись от статуса, вы потеряете доступ к сети новичков и рулетке активностей «Наставник», а также бонус к опыту за группу с новичком.<br><br><ui-color 506><ui-edge-color 507>Снова стать наставником можно будет только через 30 дней после отказа.</ui-edge-color></ui-color>"
 
 #. ja: 上記内容に同意して「メンター」をやめる
 #. de: Einverstanden erklären
@@ -5098,7 +5098,7 @@ msgstr "Регистрация на турнир"
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "Addon:10811:0:0"
 msgid "<ui-color 506><ui-edge-color 507>※The “Duty Complete” option is only available for previously<br>　completed duties.<br>※Practice phase selection does not entail the actual skipping of<br>　phases.</ui-edge-color></ui-color><br>"
-msgstr "<ui-color 506><ui-edge-color 507>※ Пункт «Пройдено» доступен, только если вы уже завершали это задание.<br>※ Выбор этапа для тренировки не позволяет пропустить предыдущие этапы.</ui-edge-color></ui-color><br>"
+msgstr "<ui-color 506><ui-edge-color 507>※ Пункт «Активность пройдена» доступен, только если вы уже завершали эту активность.<br>※ Выбор этапа для тренировки не позволяет пропустить предыдущие этапы.</ui-edge-color></ui-color><br>"
 
 #. ja: 複数コンテンツ選択不可
 #. de: - Keine gleichzeitige Suche nach anderen Inhalten
@@ -5193,14 +5193,14 @@ msgstr "<capitalize><sheet ContentType $n1 0></capitalize> (ARR, Heavensward, St
 #. fr: Missions normales
 msgctxt "Addon:10821:0:0"
 msgid "Regular Duty"
-msgstr "Обычное задание"
+msgstr "Обычн. активность"
 
 #. ja: 高難易度コンテンツ
 #. de: Schwierige Inhalte
 #. fr: Missions à difficulté élevée
 msgctxt "Addon:10822:0:0"
 msgid "High-end Duty"
-msgstr "Задание высокой сложности"
+msgstr "Активность выс. сложности"
 
 #. ja: パーティ募集中はコンテンツ参加申請ができません。<br>募集を取り下げますか？<br>
 #. de: Während einer aktiven Gruppen<shy>suche kann keine Inhaltssuche gestartet werden.<br>Die Gruppen<shy>suche abbrechen?
@@ -5756,7 +5756,7 @@ msgstr "Нет"
 #. fr: Réussir la mission
 msgctxt "Addon:10925:0:0"
 msgid "Duty Completion"
-msgstr "Прохождение"
+msgstr "Пройти активность"
 
 #. ja: 練習
 #. de: Zur Übung
@@ -5859,7 +5859,7 @@ msgstr "<ui-color 506><ui-edge-color 507>※ Эти настройки отоб�
 #. fr: “Déjà terminée” rend le recrutement accessible uniquement aux joueurs ayant réussi la mission choisie. “Pas terminée” le limite à ceux n'ayant pas encore réussi la mission.
 msgctxt "Addon:10939:0:0"
 msgid "Selecting “Duty Complete” signifies that only players who have completed a certain duty may join the party. Selecting “Duty Incomplete” signifies the opposite."
-msgstr "Если выбрать «Контент пройден», в группу смогут вступить только игроки, уже проходившие это подземелье. Если выбрать «Контент не пройден» — только те, кто его ещё не проходил."
+msgstr "Если выбрать «Активность пройдена», в группу смогут вступить только игроки, уже завершившие определённую активность. Если выбрать «Активность не пройдена» — только те, кто её ещё не проходил."
 
 #. ja: CONTACT LIST
 #. de: GRUPPENVERLAUF
@@ -5929,7 +5929,7 @@ msgstr "-"
 #. fr: Déjà terminée (récompense hebdo. obtenable)
 msgctxt "Addon:10949:0:0"
 msgid "Duty Complete (Weekly Reward Unclaimed)"
-msgstr "Контент пройден (еженедельная награда не получена)"
+msgstr "Активность пройдена (недельная награда не получена)"
 
 #. ja: 他ワールドでのオンライン状況を取得します。
 #. de: Online-Status von Freunden auf anderen Welten
