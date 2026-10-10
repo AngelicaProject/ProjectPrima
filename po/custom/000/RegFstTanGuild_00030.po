@@ -119,7 +119,7 @@ msgstr "Каждый кожевник должен помнить о своей 
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/000/RegFstTanGuild_00030:TEXT_REGFSTTANGUILD_00030_GEVA_000_020:1"
 msgid "Well, if it isn't my favorite apprentice. <if ($gn68 == 12)>I certainly hope you haven't been resting on your laurels, <split \" \" 1><string $gs1></split>. Now that you've made a name for yourself, I'm expecting only the best from you, and you wouldn't want to see me disappointed.<else>I almost didn't recognize you in that ridiculous getup, <split \" \" 1><string $gs1></split>. You'd best have a good excuse for showing up without your leatherworker's gear.</if>"
-msgstr "Ну и ну, моя любимая ученица. <if ($gn68 == 12)>Надеюсь, ты не почиваешь на лаврах, <split \" \" 1><string $gs1></split>. Теперь, когда ты прославилась, я жду от тебя только самого лучшего. Не хотелось бы, чтобы ты меня разочаровала.<else>Я тебя чуть не узнала в этом нелепом наряде, <split \" \" 1><string $gs1></split>. Надеюсь, у тебя есть веская причина явиться без кожевенного снаряжения.</if>"
+msgstr "Ну и ну, <if $gn4>моя любимая ученица<else>мой любимый ученик</if>. <if ($gn68 == 12)>Надеюсь, ты не почиваешь на лаврах, <split \" \" 1><string $gs1></split>. Теперь, когда ты <if $gn4>прославилась<else>прославился</if>, я жду от тебя только самого лучшего. Не хотелось бы, чтобы ты меня разочаровала.<else>Я тебя чуть не узнала в этом нелепом наряде, <split \" \" 1><string $gs1></split>. Надеюсь, у тебя есть веская причина явиться без снаряжения кожевника.</if>"
 
 #. ja: わざわざここに顔を出すなんて、<br>よっぽど大切な用事でもあったのかしら？<br>……あんたは、大変な状況らしいって聞いてるけど？
 #. de: Dich muss ja etwas sehr Dringendes zu mir treiben, dass du dich unter diesen Umständen extra bis in die Gilde wagst. Wirst du nicht wegen Mordes an der Sultana gesucht?
@@ -179,9 +179,10 @@ msgstr "Если ты передумала работать с Ателун, о�
 #. ja: 剥製を造ることで、革細工の腕が上がるだけでなく、<br>動物への理解も深まるはずだわ。<br>心して、おやんなさい。
 #. de: Die Herstellung von Tierpräparaten gibt uns die Gelegenheit, unsere Gerberkünste zu verbessern, und die Tierpräparate verbessern das Verständnis von den Tieren.
 #. fr: Fabriquer des pièces de taxidermie te donnera l'occasion de per<shy>fec<shy>tion<shy>ner tes techniques de tannage, mais aussi de remettre en question tes compétences dans ce domaine. Et même si ce n'est pas évident au premier abord, ça te permettra également de reconsidérer la condition animale.
+#, aeria-term-model-exception: job b3e546875adf
 msgctxt "custom/000/RegFstTanGuild_00030:TEXT_REGFSTTANGUILD_00030_GEVA_000_061:1"
 msgid "As I told you before, there is no one else I would entrust with a job like this. It requires a great deal of skill, but there is also much to be learned that would be wasted on a leatherworker lacking your understanding of the craft."
-msgstr "Как я уже говорила, никому другому я бы такое дело не доверила. Тут нужны немалые умения, да и многому можно научиться — но только тому, кто, как ты, понимает кожевенное дело."
+msgstr "Как я уже говорила, никому другому я бы такое дело не доверила. Тут нужны немалые умения, да и многому можно научиться — но всё это пропадёт даром для кожевника, который не понимает ремесла так, как ты."
 
 #. ja: なに、<split " " 1><string $gs1></split>。<br>エニオンなら、表で剥製を見てもらってるよ。
 #. de: Suchst du Enion? Der hält draußen mit einem Tierpräparat Zwiesprache.

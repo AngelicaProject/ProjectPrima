@@ -1332,6 +1332,7 @@ msgstr "Под руководством Ростнсталя ты освоил �
 #. ja: 歴代の占星術師の叡智が、心の内に流れ込む！
 #. de: Das astrologische Wissen vieler Jahrhunderte widerhallt tief in dir!
 #. fr: La sagesse des anciens astromanciens résonne pro<shy>fon<shy>dé<shy>ment en vous<nbsp>!
+#, aeria-term-model-exception: Echo a8596410ddf7
 msgctxt "LogMessage:5339:0:5"
 msgid "Divinations of astrologians transcended echo deep within your soul!"
 msgstr "Предсказания астрологов былых времён звучат в глубине твоей души!"
@@ -2680,7 +2681,7 @@ msgstr "Рыба здесь уже вас раскусила. В другом м
 #. fr: À vouloir obtenir le meilleur objet possible, vous avez laissé passer votre chance de récolte...
 msgctxt "LogMessage:5519:0:5"
 msgid "No longer able to gather collectables. The gathering point has lost all integrity."
-msgstr "На точке больше не осталось Честности, поэтому собрать коллекционные предметы не удалось..."
+msgstr "На точке больше не осталось Честности, поэтому собрать диковинки не удалось..."
 
 #. ja: 収集価値が最大になっているため、このアクションは使えません。
 #. de: Der Sammlerwert ist bereits auf sein Maximum gestiegen.
@@ -2694,7 +2695,7 @@ msgstr "Нельзя использовать действие: предмет �
 #. fr: Vous ne pouvez pas remettre à l'eau au<shy>to<shy>ma<shy>ti<shy>que<shy>ment des poissons qui ne sont pas encore dans votre nomenclature.
 msgctxt "LogMessage:5521:0:5"
 msgid "Fish which are not recorded in your fish guide cannot be selected on the release list."
-msgstr "Рыб, которых нет в вашем атласе, нельзя выбрать для отпускания."
+msgstr "Рыб, которых нет в вашем Справочнике рыб, нельзя выбрать для отпускания."
 
 #. ja: リリース一覧表示は、未知の釣り場では使用できません。
 #. de: An unerforschten Angelplätzen kann die Freilassliste nicht genutzt werden.
@@ -2740,7 +2741,7 @@ msgstr "Изменения сохранены."
 #. fr: La liste de remise à l'eau ne peut être utilisée qu'aux points de pêche dont des poissons ap<shy>pa<shy>rais<shy>sent dans votre nomenclature.
 msgctxt "LogMessage:5527:0:5"
 msgid "The release list can only be used at fishing holes which have fish that appear in the fish guide."
-msgstr "Список отпускания можно открыть только в местах ловли, где водится рыба из атласа."
+msgstr "Список отпускания можно открыть только в местах ловли, где водится рыба из Справочника рыб."
 
 #. ja: 釣り上げた<sheet Item $n1 0>×<num $n2>をリリースした。
 #. de: Du hast <num $n2> <if ($n2 == 1)><noun-de Item 5 $n1 1 4 1><else><noun-de Item 5 $n1 2 4 1></if> freigelassen.
@@ -2841,9 +2842,10 @@ msgstr "<sheet ENpcResident $n1 0> <switch $n2><case>принимает вашу
 #. fr: <sheet ENpcResident $n1 0> vous considère maintenant comme <switch $n2><case><if $gn4>une alliée des Leveilleur<else>un allié des Leveilleur</if> <case><if $gn4>la bienfaitrice des Leveilleur<else>le bienfaiteur des Leveilleur</if><case><if $gn4>l'héroïne des Leveilleur<else>le héros des Leveilleur</if><case><if $gn4>une membre de la famille Leveilleur<else>un membre de la famille Leveilleur</if></switch><nbsp>!
 #. macro: <sheet ENpcResident $n1 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <switch $n2><case>“Appointed to House Leveilleur.”<case>a “Benefactor of House Leveilleur.”<case>the “Champion of House Leveilleur.”<case>the “Honorary Scion of… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: Scion da06abc1e3a3
 msgctxt "LogMessage:5541:0:5"
 msgid "<sheet ENpcResident $n1 0> now considers you <switch $n2><case>“Appointed to House Leveilleur.”<case>a “Benefactor of House Leveilleur.”<case>the “Champion of House Leveilleur.”<case>the “Honorary Scion of House Leveilleur.”</switch>"
-msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>назначенной представительницей<else>назначенным представителем</if> дома Левейёр<case><if $gn4>благодетельницей<else>благодетелем</if> дома Левейёр<case><if $gn4>защитницей<else>защитником</if> дома Левейёр<case><if $gn4>почётной Потомкой<else>почётным Потомком</if> дома Левейёр</switch>."
+msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>назначенной представительницей<else>назначенным представителем</if> дома Левейёр<case><if $gn4>благодетельницей<else>благодетелем</if> дома Левейёр<case><if $gn4>защитницей<else>защитником</if> дома Левейёр<case><if $gn4>почётной наследницей<else>почётным наследником</if> дома Левейёр</switch>."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>が昇華した<sheet Item $n2 0>を入手した！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 1 4 1> in die Erhabenheit erhoben und <noun-de Item 1 $n2 1 4 1> erhalten!
@@ -3695,7 +3697,7 @@ msgstr "Вы уже состоите в этом сообществе."
 #. fr: Impossible de rejoindre une communauté du centre de données actuel.
 msgctxt "LogMessage:5658:0:5"
 msgid "You cannot join fellowships within your current Data Center."
-msgstr "Вы не можете вступить в сообщества своего центра обработки данных."
+msgstr "Вы не можете вступить в сообщества своего дата-центра."
 
 #. ja: リストに表示されていない加入済のフェローシップがあります。<br>不要なフェローシップから脱退することでリストに表示されるようになります。
 #. de: Du gehörst mehr Zirkeln an, als angezeigt werden können.<br>Bitte verlasse jene, in denen du inaktiv bist, um Platz auf der Liste zu schaffen.
@@ -3711,14 +3713,14 @@ msgstr "Вы состоите в большем числе сообществ, �
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "LogMessage:5660:0:5"
 msgid "You belong to more cross-world linkshells than can be displayed.<br>Select “Cross-world Linkshells” from the Social menu to organize them."
-msgstr "Вы состоите в большем числе межмировых линкселлов, чем можно показать.<br>Управлять ими можно в меню «Общение» — «Межмировые линкселлы»."
+msgstr "Вы состоите в большем числе межсерверных линкшеллов, чем можно показать.<br>Управлять ими можно в меню «Социум» — «Межсерверные линкшеллы»."
 
 #. ja: クロスワールドリンクシェルの加入数に変更があったため、画面を更新しました。
 #. de: Der Bildschirm wurde aktualisiert, da sich die Anzahl der Weltenkontakt-Kreise geändert hat.
 #. fr: Le nombre de linkshells inter-Monde auxquelles vous appartenez a changé. La fenêtre a été mise à jour.
 msgctxt "LogMessage:5661:0:5"
 msgid "The Cross-world Linkshells window has been updated. The number of active cross-world linkshells has changed."
-msgstr "Окно межмировых линкселлов обновлено: изменилось число линкселлов, в которых вы состоите."
+msgstr "Окно межсерверных линкшеллов обновлено: изменилось число линкшеллов, в которых вы состоите."
 
 #. ja: チョコボかばんが最新ではない可能性があります。一度開くと正確な結果になります。
 #. de: Die Daten deiner Chocobo-Satteltaschen sind möglicherweise nicht aktuell.
@@ -4176,21 +4178,21 @@ msgstr "Не удалось закрепить жетон поручения в 
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5800:0:5"
 msgid "Unable to execute command. Character is currently visiting the <string $s1> data center."
-msgstr "Не удалось выполнить команду. Персонаж сейчас путешествует по центру обработки данных <string $s1>."
+msgstr "Не удалось выполнить команду. Персонаж сейчас путешествует по дата-центру <string $s1>."
 
 #. ja: 他のデータセンターへ遊びに行くには、ホームワールドでログアウトしてください。
 #. de: Du musst dich auf deiner Stammwelt ausloggen, um auf ein anderes Datenzentrum reisen zu können.
 #. fr: Voyage vers un autre centre de traitement de données impossible. Veuillez d'abord vous déconnecter depuis votre Monde d'origine.
 msgctxt "LogMessage:5801:0:5"
 msgid "Unable to visit another data center. You must first log out from your Home World."
-msgstr "Не удалось отправиться в другой центр обработки данных. Сначала выйдите из игры в своём родном мире."
+msgstr "Не удалось отправиться в другой дата-центр. Сначала выйдите из игры в своём родном мире."
 
 #. ja: ホームワールドと異なるデータセンターにいる間は、キャラクター設定のバックアップはできません。
 #. de: Deine Charaktereinstellungen können gerade nicht gesichert werden, da du dich nicht auf dem Datenzentrum deiner Stammwelt befindest.
 #. fr: Sauvegarde des données de personnage impossible. Cette fonction n'est disponible que dans votre centre de traitement de données d'origine.
 msgctxt "LogMessage:5802:0:5"
 msgid "Unable to back up character settings while outside your Home Data Center."
-msgstr "Не удаётся сохранить настройки персонажа, пока вы находитесь не в родном центре обработки данных."
+msgstr "Не удаётся сохранить настройки персонажа, пока вы находитесь не в родном дата-центре."
 
 #. ja: ホームワールドに戻りキャラクターの名前を変更するまで、ホームワールド以外へ移動できません。
 #. de: Du kannst die Weltenreise erst nutzen, wenn du auf deine Stammwelt zurückgekehrt bist und den Namen deines Charakters geändert hast.
@@ -4211,14 +4213,14 @@ msgstr "Не удаётся отправиться в другие миры. С�
 #. fr: Impossible d'exécuter cette commande depuis le centre de données actuel.
 msgctxt "LogMessage:5805:0:5"
 msgid "Unable to execute this command within your current Data Center."
-msgstr "Эту команду нельзя выполнить в текущем центре обработки данных."
+msgstr "Эту команду нельзя выполнить в текущем дата-центре."
 
 #. ja: ホームワールドが現在のデータセンターにないキャラクターにはこの操作はできません。
 #. de: Dieser Vorgang kann nicht für Charaktere ausgeführt werden, deren Stammwelt nicht dem momentan ausgewählten Datenzentrum zugeordnet ist.
 #. fr: Impossible d'exécuter cette commande sur un personnage venant d'un autre centre de traitement de données.
 msgctxt "LogMessage:5806:0:5"
 msgid "Unable to execute command on characters visiting from other data centers."
-msgstr "Эту команду нельзя выполнить для персонажей, путешествующих из других центров обработки данных."
+msgstr "Эту команду нельзя выполнить для персонажей, путешествующих из других дата-центров."
 
 #. ja: <string $s1>の情報を取得しました。
 #. de: Die Daten von „<string $s1>“ wurden abgerufen.
@@ -4261,7 +4263,7 @@ msgstr "Не удалось получить данные персонажа."
 #. fr: L'ordre des linkshells inter-Monde auxquelles vous appartenez a été réinitialisé.
 msgctxt "LogMessage:5812:0:5"
 msgid "Sort order for cross-world linkshell channels has been reset."
-msgstr "Порядок сортировки каналов межмировых линкшеллов сброшен."
+msgstr "Порядок сортировки каналов межсерверных линкшеллов сброшен."
 
 #. ja: <string $s2>は「<sheet ExVersion $n1 0>」が必要な種族のため、他の種族を選択してください。
 #. de: Um als <string $s2> zu spielen, wird <sheet ExVersion $n1 0> benötigt. Bitte wähle ein anderes Volk.
@@ -4277,7 +4279,7 @@ msgstr "Чтобы выбрать расу <string $s2>, требуется <she
 #. fr: Impossible de sauvegarder les données du personnage ou vos paramètres dans ce centre de traitement de données.
 msgctxt "LogMessage:5814:0:5"
 msgid "Unable to back up character and system settings on this data center."
-msgstr "В этом центре обработки данных нельзя сохранить настройки персонажа и системы."
+msgstr "В этом дата-центре нельзя сохранить настройки персонажа и системы."
 
 #. ja: このエーテライトを「お気に入り（PlayStation®Plus特典無料枠）」に登録した。
 #. de: Du hast diesen Ätheryten als kostenlosen Favoriten (durch PlayStation®Plus) gespeichert.
@@ -4433,35 +4435,35 @@ msgstr "Открыты элементы портрета из предмета <
 #. fr: Impossible d'obtenir les données de la carte de personnage.
 msgctxt "LogMessage:5855:0:5"
 msgid "Unable to retrieve adventurer plate information."
-msgstr "Не удалось получить данные карточки искателя приключений."
+msgstr "Не удалось получить данные профиля персонажа."
 
 #. ja: 対象プレイヤーのアドベンチャラープレートが未設定のため表示できません。
 #. de: Anzeige des Abenteurerpasses nicht möglich, weil der Spieler die Einstellungen nicht konfiguriert hat.
 #. fr: Affichage impossible. La cible n'a pas configuré sa carte de personnage.
 msgctxt "LogMessage:5856:0:5"
 msgid "Unable to display adventurer plate, as it has not yet been created."
-msgstr "Не удалось показать карточку искателя приключений: она ещё не создана."
+msgstr "Не удалось показать профиль персонажа: он ещё не создан."
 
 #. ja: 対象プレイヤーのアドベンチャラープレートが未設定のため表示できません。
 #. de: Anzeige des Abenteurerpasses nicht möglich, weil der Spieler die Einstellungen nicht konfiguriert hat.
 #. fr: Affichage impossible. La cible n'a pas configuré sa carte de personnage.
 msgctxt "LogMessage:5857:0:5"
 msgid "Unable to display adventurer plate, as it has not yet been created."
-msgstr "Не удалось показать карточку искателя приключений: она ещё не создана."
+msgstr "Не удалось показать профиль персонажа: он ещё не создан."
 
 #. ja: 公開設定にされていないため表示できません。
 #. de: Anzeige aufgrund der Privatsphäreeinstellungen dieses Spielers nicht möglich.
 #. fr: Affichage impossible. La carte de personnage de la cible est privée.
 msgctxt "LogMessage:5858:0:5"
 msgid "Unable to display adventurer plate due to privacy restrictions."
-msgstr "Не удалось показать карточку искателя приключений из-за ограничений доступа."
+msgstr "Не удалось показать профиль персонажа из-за ограничений доступа."
 
 #. ja: 公開設定にされていないため表示できません。
 #. de: Anzeige aufgrund der Privatsphäreeinstellungen dieses Spielers nicht möglich.
 #. fr: Affichage impossible. La carte de personnage de la cible est privée.
 msgctxt "LogMessage:5859:0:5"
 msgid "Unable to display adventurer plate due to privacy restrictions."
-msgstr "Не удалось показать карточку искателя приключений из-за ограничений доступа."
+msgstr "Не удалось показать профиль персонажа из-за ограничений доступа."
 
 #. ja: 対象プレイヤーが異なるデータセンターにいるか、データが取得できなかったため表示できません。
 #. de: Anzeige nicht möglich, weil dieser Spieler zu einem anderen Datenzentrum gehört oder die Daten nicht ermittelt werden konnten.
@@ -4469,7 +4471,7 @@ msgstr "Не удалось показать карточку искателя �
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "LogMessage:5860:0:5"
 msgid "Unable to display adventurer plate.<br>Adventurer is in another data center or data could not be retrieved."
-msgstr "Не удалось показать карточку искателя приключений.<br>Искатель приключений находится в другом центре обработки данных или данные не удалось получить."
+msgstr "Не удалось показать профиль персонажа.<br>Искатель приключений находится в другом дата-центре или данные не удалось получить."
 
 #. ja: ポートレートの範囲内に正しくキャラクターの表情が映っていないため保存できません。
 #. de: Speichern nicht möglich. Der Ge<shy>sichts<shy>aus<shy>druck des Charakters ist nicht korrekt im Bildbereich zu sehen.
@@ -4497,7 +4499,7 @@ msgstr "Портрет удалён."
 #. fr: Le portrait de la carte de personnage a été mis à jour.
 msgctxt "LogMessage:5864:0:5"
 msgid "Portrait applied to adventurer plate."
-msgstr "Портрет добавлен на карточку искателя приключений."
+msgstr "Портрет добавлен в профиль персонажа."
 
 #. ja: 選択したポートレートをコンテンツ用ポートレートに適用しました。
 #. de: Das ausgewählte Portrait wurde als Schnellportrait eingestellt.
@@ -4600,14 +4602,14 @@ msgstr "Не удалось обновить портрет: требовани�
 #. macro: <if ($n1 == 29)><br>Current gear data does not match gear data being applied to the adventurer plate.<br>Please try updating or re-equipping your gear set.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 29 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:5878:0:5"
 msgid "<if ($n1 == 5)>Adventurer plate could not be updated due to invalid data. (<num $n1>)<br>Please try restarting the application after checking your current play environment.<else>Adventurer plate could not be updated due to unfulfilled requirements. (<num $n1>)</if><if ($n1 == 29)><br>Current gear data does not match gear data being applied to the adventurer plate.<br>Please try updating or re-equipping your gear set.</if>"
-msgstr "<if ($n1 == 5)>Не удалось обновить карточку искателя приключений: обнаружены некорректные данные. (<num $n1>)<br>Проверьте игровую среду и попробуйте перезапустить приложение.<else>Не удалось обновить карточку искателя приключений: требования не выполнены. (<num $n1>)</if><if ($n1 == 29)><br>Текущая экипировка не совпадает с экипировкой, выбранной для карточки искателя приключений.<br>Попробуйте обновить комплект экипировки или надеть его заново.</if>"
+msgstr "<if ($n1 == 5)>Не удалось обновить профиль персонажа: обнаружены некорректные данные. (<num $n1>)<br>Проверьте игровую среду и попробуйте перезапустить приложение.<else>Не удалось обновить профиль персонажа: требования не выполнены. (<num $n1>)</if><if ($n1 == 29)><br>Текущая экипировка не совпадает с экипировкой, выбранной для профиля персонажа.<br>Попробуйте обновить комплект экипировки или надеть его заново.</if>"
 
 #. ja: ポートレートキャラクターのクラス・ジョブが変更されたため、モーションを初期化しました。
 #. de: Die Pose des Charakters wurde zurückgesetzt, weil die aktuelle Klasse oder der aktuelle Job nicht mit dem Portrait übereinstimmen.
 #. fr: La pose du personnage a été réinitialisée car la classe ou le job actuel ne correspond pas à celui sur le portrait.
 msgctxt "LogMessage:5879:0:5"
 msgid "Portrait subject's class/job has been updated. Pose reset to default."
-msgstr "Класс или специализация персонажа на портрете изменились. Поза сброшена."
+msgstr "Класс или профессия персонажа на портрете изменились. Поза сброшена."
 
 #. ja: ミラージュプレートが関連付けされたギアセットのポートレートは、都市内かレストエリアでのみ編集できます。
 #. de: Mit Pro<shy>jektions<shy>platten verknüpfte Portraits können nur in Städten und Ruhebereichen bearbeitet werden.
@@ -4635,7 +4637,7 @@ msgstr "Не удалось сохранить портрет: оружие ил
 #. fr: Seule la tenue ac<shy>tu<shy>el<shy>le<shy>ment équipée peut être utilisée sur la carte de personnage.
 msgctxt "LogMessage:5883:0:5"
 msgid "Only a portrait of your currently equipped gear set may be applied to the adventurer plate."
-msgstr "На карточку искателя приключений можно добавить только портрет текущего комплекта экипировки."
+msgstr "В профиль персонажа можно добавить только портрет текущего комплекта экипировки."
 
 #. ja: 選択中のポートレートの注意情報が解消されていないため利用できません。<br>リスト選択中に表示されるツールチップ情報をご確認ください。
 #. de: Kann nicht verwendet werden. Genauere Information liefert die Mouseover-Hilfe des Warnzeichens am entsprechenden Portait.

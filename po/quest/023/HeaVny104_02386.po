@@ -11,9 +11,10 @@ msgstr ""
 #. fr: Midnight Dew a un service à vous demander.
 #. kind: journal
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: job b3e546875adf
 msgctxt "quest/023/HeaVny104_02386:TEXT_HEAVNY104_02386_SEQ_00:1"
 msgid "Midnight Dew reckons you're the right <if $gn4>woman<else>man</if> for the job."
-msgstr "Полночная Роса считает, что вы — именно тот, кто ей нужен."
+msgstr "Полночная Роса считает, что вы — именно <if $gn4>та<else>тот</if>, кто ей нужен."
 
 #. ja: ミッドナイト・デューから、グブラ幻想図書館に行き、「<sheet EventItem 2002010 0>」を取ってきてほしいと依頼された。低地ドラヴァニアのグブラ幻想図書館前にいる「ミッドナイト・デュー」と話そう。
 #. de: Nächtlicher Tau hat einen Auftrag, der wie für dich geschaffen ist. Du sollst in die Große Gubal-Bibliothek eindringen und <noun-de EventItem 1 2002010 1 4 1> aus der Abteilung für seltene Schriften entwenden. Da du schon einmal ein Manuskript aus der Bibliothek entfernen konntest, ist sie sich sicher, dass es dir auch dieses Mal gelingen wird. Triff dich mit Nächtlicher Tau vor der Großen Gubal-Bibliothek, damit sie dir die weiteren Details erklären kann.<br><br>※ „Große Gubal-Bibliothek (schwer)“ kann über die Inhaltssuche begonnen werden.
@@ -30,7 +31,7 @@ msgstr "При вашем появлении глаза Полночной Ро�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/023/HeaVny104_02386:TEXT_HEAVNY104_02386_SEQ_02:1"
 msgid "Heartened by your eagerness to lend your aid, Midnight Dew provides you with directions to the portal that will lead you directly to the forbidden archives. What extradimensional terrors lurk within? What is the nature of this tome that Midnight Dew's undisclosed client seeks? Will the adventure ever be the same without your stalwart, swish-swish-arooing companion Broomsy? The answers to all these questions and more lie within.<br><br>※The Great Gubal Library (Hard) can be accessed via the Duty Finder."
-msgstr "Обрадовавшись вашему согласию помочь, Полночная Роса объясняет, как добраться до портала, ведущего прямо в запретное хранилище. Какие ужасы из иных измерений ждут вас внутри? Что это за книга, которую ищет таинственный заказчик Полночной Росы? Сможет ли Метёлка обойтись без своего верного товарища, который так ловко машет хвостом? Ответы на эти и многие другие вопросы ждут вас впереди.<br><br>※ Войти в Великую библиотеку Губала (хард) можно через Поиск заданий."
+msgstr "Обрадовавшись вашему согласию помочь, Полночная Роса объясняет, как добраться до портала, ведущего прямо в запретное хранилище. Какие ужасы из иных измерений ждут вас внутри? Что это за книга, которую ищет таинственный заказчик Полночной Росы? Сможет ли Метёлка обойтись без своего верного товарища, который так ловко машет хвостом? Ответы на эти и многие другие вопросы ждут вас впереди.<br><br>※ Войти в Великую библиотеку Губала (хард) можно через Поиск активностей."
 
 #. ja: 「稀書回収 グブラ幻想図書館 (Hard)」を攻略し、<sheet EventItem 2002010 0>を入手した。イディルシャイアの「ミッドナイト・デュー」に「<sheet EventItem 2002010 0>」を渡そう。
 #. de: Du hast das Buch in deinen Besitz gebracht und deinen Weg an den seltsamen Wächterkreaturen vorbei aus der Bibliothek gefunden. Überbringe es Nächtlicher Tau in Frohehalde.
@@ -78,9 +79,10 @@ msgstr "Отнести книгу в кожаном переплёте Полн�
 #. speaker: MIDNIGHTDEW
 #. macro: <i> — italic text (formatting: keep it as often as the source has it)
 #. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#, aeria-term-model-exception: job b3e546875adf
 msgctxt "quest/023/HeaVny104_02386:TEXT_HEAVNY104_02386_MIDNIGHTDEW_000_000:1"
 msgid "Now, <i>here's</i> the adventurer I was lookin' for! I've got a job that needs doin', and somethin' tells me you'd be just the one to do it."
-msgstr "А вот и <i>тот</i> искатель приключений, которого я искала! Появилось одно дельце, и что-то мне подсказывает, что ты именно тот, кто мне нужен."
+msgstr "А вот и <i><if $gn4>та самая искательница<else>тот самый искатель</if> приключений</i>, <if $gn4>которую<else>которого</if> я искала! Появилось одно дельце, и что-то мне подсказывает, что ты именно <if $gn4>та<else>тот</if>, кто мне нужен."
 
 #. ja: 風のつてで聞いたんだが、<br>グブラ幻想図書館に忍び込んだことがあるんだって？<br>そんなアンタに、おあつらえ向きの依頼が入ってるのさ。
 #. de: Ich habe gerüchteweise gehört, dass du es geschafft hast, ein Manuskript aus der Großen Gubal-Bibliothek zu entwenden. Wenn das stimmt, dann kannst du mir bestimmt bei meinem nächsten Auftrag helfen.
@@ -214,9 +216,10 @@ msgstr "Вот это да! Полночная Роса сказала, что �
 #. de: Eine freudige natürlich, denn du hast mich noch nie enttäuscht.
 #. fr: Si c'est <split " " 1><string $gs1></split>, <if $gn4>une de nos consœurs<else>un de nos confrères</if>, qui s'en est occupé<if $gn4>e</if>, alors je n'ai aucun souci à me faire.
 #. speaker: YAYAKE
+#, aeria-term-model-exception: job b3e546875adf
 msgctxt "quest/023/HeaVny104_02386:TEXT_HEAVNY104_02386_YAYAKE_000_025:1"
 msgid "Truth be told, a part of me feared the task might prove too daunting. Had I known that one of our own initiates was on the job, it would have done much to put my mind at ease."
-msgstr "Признаться, я опасалась, что это задание окажется слишком трудным. Знай я, что им займётся одна из наших послушниц, была бы куда спокойнее."
+msgstr "Признаться, я опасалась, что это задание окажется слишком трудным. Знай я, что за дело взялась <if $gn4>одна из наших послушниц<else>один из наших послушников</if>, была бы куда спокойнее."
 
 #. ja: ……おや！<br>腕利きの冒険者に頼んだと聞いておりましたが、<br>まさか<split " " 1><string $gs1></split>さまだったとは！
 #. de: <split " " 1><string $gs1></split>! Welch freudige Überraschung. Ich hätte mir denken können, dass du damit gemeinst bist, als Nächtlicher Tau von <if $gn4>einer äußerst fähigen Abenteurerin<else>einem äußerst fähigen Abenteurer</if> sprach.
