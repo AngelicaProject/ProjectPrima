@@ -1551,7 +1551,7 @@ msgstr "Не удалось пригласить игрока: у него ст�
 #. fr: Invitation impossible. Ce joueur s'est enregistré pour participer à une mission.
 msgctxt "LogMessage:7334:0:5"
 msgid "Unable to invite player using the Duty Finder."
-msgstr "Не удалось пригласить игрока: он ищет группу через поиск заданий."
+msgstr "Не удалось пригласить игрока: он ищет группу через «Поиск активностей»."
 
 #. ja: 異なるエリアにいるキャラクターのため、誘えませんでした。
 #. de: Einladung nicht möglich, weil sich der Charakter in einem anderen Areal aufhält.
@@ -1731,7 +1731,7 @@ msgstr "<if ($n1 > 0)><string $s2><else>Нет комментария</if>"
 #. fr: ■ Conditions de l'outil de mission
 msgctxt "LogMessage:7397:0:5"
 msgid "■Duty Finder Settings"
-msgstr "■Настройки поиска контента"
+msgstr "■Настройки «Поиска активностей»"
 
 #. ja: 募集中のコンテンツの開催期間が終了したため、パーティ募集を終了しました。
 #. de: Die Gruppen<shy>suche wurde beendet, weil dieser saisonale Inhalt nicht mehr verfügbar ist.
@@ -2113,7 +2113,7 @@ msgstr "Ошибка сервера набора в группу."
 #. fr: Impossible de rejoindre une équipe en étant enregistré pour participer à une mission.
 msgctxt "LogMessage:7450:0:5"
 msgid "Unable to join party while using the Duty Finder."
-msgstr "Не удалось вступить в группу, пока вы ищете контент."
+msgstr "Не удалось вступить в группу, пока вы зарегистрированы в Поиске активностей."
 
 #. ja: パーティ募集の人数を満たしたため終了します。
 #. de: Es wurden genügend Grup<shy>pen<shy>mit<shy>glieder gefunden und die Suche daher beendet.
@@ -2324,7 +2324,7 @@ msgstr "Прочность одной или нескольких надетых
 #. fr: L'enregistrement ayant été fait en équipe, le groupement automatique se fera sans restriction d'allégeance à une grande compagnie.
 msgctxt "LogMessage:7481:0:5"
 msgid "You registered while in a party. Grand Company allegiance will be ignored during Frontline matchmaking."
-msgstr "Вы зарегистрировались в составе группы. При подборе участников для «Линии фронта» принадлежность к Великой компании не учитывается."
+msgstr "Вы зарегистрировались в составе группы. При подборе участников для режима «Фронтлайн» принадлежность к Великой компании не учитывается."
 
 #. ja: パーティ募集が未開放のため、使用できません。
 #. de: Die Gruppen<shy>suche ist noch nicht freigeschaltet.
@@ -2412,7 +2412,7 @@ msgstr "Здесь нельзя открыть поиск группы."
 #. fr: Impossible de rejoindre la recherche d'équipe. La limite d'un joueur par job est active.
 msgctxt "LogMessage:7492:0:5"
 msgid "Unable to join. Only one player per job permitted."
-msgstr "Не удалось присоединиться. В группе может быть только один игрок за каждую роль."
+msgstr "Не удалось присоединиться. В группе может быть только один игрок на каждую профессию."
 
 #. ja: クロスワールドパーティ結成処理を行えませんでした。
 #. de: Die weltenübergreifende Gruppe konnte nicht erstellt werden.
@@ -2498,6 +2498,7 @@ msgstr "Спасибо!<sound 1 97>"
 #. de: Gut gemacht!<sound 1 97>
 #. fr: Bien joué<nbsp>!<sound 1 97>
 #. macro: <sound 1 97> — plays a sound effect; kind = 1, sound = 97 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: job b3e546875adf
 msgctxt "LogMessage:7504:0:5"
 msgid "Nice job!<sound 1 97>"
 msgstr "Отлично!<sound 1 97>"
@@ -2737,7 +2738,7 @@ msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-co
 #. macro: <switch $n2><case>gobtank identification key<case>main ceruleum tank<case>gobbiejuice<case>gobcrate</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7534:0:5"
 msgid "The <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falcons</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Ravens</ui-edge-color></ui-color></if> take control of the loading station and claim the <switch $n2><case>gobtank identification key<case>main ceruleum tank<case>gobbiejuice<case>gobcrate</switch> within!"
-msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Вороны</ui-edge-color></ui-color></if> захватили погрузочную станцию и получили <switch $n2><case>ключ от гоботанка<case>большой бак с церулеумом<case>гоблинский энергетик<case>гобоящик</switch>."
+msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Вороны</ui-edge-color></ui-color></if> захватили погрузочную станцию и получили <switch $n2><case>ключ идентификации гоботанка<case>большой бак с церулеумом<case>гоблинский энергетик<case>гобоящик</switch>."
 
 #. ja: ゴブリン・マーシナリーが、30秒後に<sheet PlaceName $n1 0>に出現する！
 #. de: Der Goblin-Söldner verlässt in 30 Sekunden <sheet PlaceName $n1 0>!
@@ -4022,7 +4023,7 @@ msgstr "Нельзя выполнить команду во время мини-
 #. fr: Impossible d'exécuter cette commande pendant une bataille de Choc des mascottes.
 msgctxt "LogMessage:7714:0:5"
 msgid "Unable to execute command while playing Lord of Verminion."
-msgstr "Нельзя выполнить команду во время игры на арене «Повелителя миньонов»."
+msgstr "Нельзя выполнить команду во время игры на арене «Лорд Верминьона»."
 
 #. ja: カスタムマッチ中のため、その操作はできません。
 #. de: Aktion kann während eines Schaukampfs nicht ausgeführt werden.
@@ -4267,7 +4268,7 @@ msgstr "Нельзя выполнить команду во время прос�
 #. fr: Impossible d'exécuter cette commande durant la confirmation de par<shy>ti<shy>ci<shy>pa<shy>tion.
 msgctxt "LogMessage:7759:0:5"
 msgid "Unable to execute command while waiting for Duty Finder."
-msgstr "Нельзя выполнить команду, пока вы подтверждаете участие в задании."
+msgstr "Нельзя выполнить команду, пока вы подтверждаете участие через «Поиск активностей»."
 
 #. ja: キャラクターメイキング中のため、その操作はできません。
 #. de: Aktion kann während der Charaktererschaffung nicht ausgeführt werden.
@@ -4624,7 +4625,7 @@ msgstr "Рейтинг уже сброшен."
 #. fr: Impossible de réinitialiser la cote en étant enregistré dans l'outil de mission.
 msgctxt "LogMessage:7907:0:5"
 msgid "Unable to reset rating while using the Duty Finder."
-msgstr "Нельзя сбросить рейтинг, пока вы используете поиск заданий."
+msgstr "Нельзя сбросить рейтинг, пока вы используете «Поиск активностей»."
 
 #. ja: 推奨解像度を満たしていなかった為、ウィンドウサイズを60％に縮小しました。
 #. de: Du verwendest nicht die empfohlene Bildschirmauflösung. Die Benutzeroberfläche wurde daher auf 60 % verkleinert.
@@ -4783,7 +4784,7 @@ msgstr "Команда доступна только для межмировых
 #. fr: Opération impossible. Un enregistrement est en cours dans l'outil de mission.
 msgctxt "LogMessage:7956:0:5"
 msgid "Unable to convert while using the Duty Finder."
-msgstr "Преобразование невозможно во время поиска подземелий."
+msgstr "Преобразование невозможно во время использования «Поиска активностей»."
 
 #. ja: 現在の状態では実行できません。
 #. de: Der Vorgang kann im aktuellen Zustand nicht durchgeführt werden.
@@ -5073,7 +5074,7 @@ msgstr "Нельзя открыть во время прохождения за�
 #. fr: Accès impossible par l'outil de mission.
 msgctxt "LogMessage:7995:0:5"
 msgid "This duty or category cannot be accessed via the Duty Finder."
-msgstr "Это задание или категория недоступны через поиск подземелий."
+msgstr "Это задание или категория недоступны через «Поиск активностей»."
 
 #. ja: 対象コンテンツが未開放のため開けません。
 #. de: Dieser Inhalt wurde noch nicht freigespielt.

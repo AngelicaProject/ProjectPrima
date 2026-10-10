@@ -832,7 +832,7 @@ msgstr "Вы открыли новую область!"
 #. fr: La liste des personnages n'a pas pu être obtenue. Réessayez plus tard ou avec un autre centre de traitement de données.
 msgctxt "LogMessage:89:0:5"
 msgid "Unable to update the character list. Please try another data center, or try again later."
-msgstr "Не удалось обновить список персонажей. Попробуйте выбрать другой центр обработки данных или повторите попытку позже."
+msgstr "Не удалось обновить список персонажей. Попробуйте выбрать другой дата-центр или повторите попытку позже."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>がリンクシェル「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」への正式加入を辞退しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> auf die Mitgliedschaft in dem Kontaktkreis „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“ verzichtet.
@@ -4155,6 +4155,7 @@ msgstr "Не удалось отправить пустое письмо."
 #. ja: レターのメッセージが長すぎます。
 #. de: Der Text ist zu lang.
 #. fr: La lettre est trop longue.
+#, aeria-term-model-exception: Body ecb22393ca68
 msgctxt "LogMessage:373:0:5"
 msgid "Body of mail is too long."
 msgstr "Текст письма слишком длинный."
@@ -7071,7 +7072,7 @@ msgstr "Недостаточный PvP-ранг для экипировки."
 #. fr: Cet objet ne peut être utilisé que dans une zone du Front ou de combat singulier.
 msgctxt "LogMessage:663:0:5"
 msgid "Unable to use outside duels or Frontline."
-msgstr "Можно использовать только в дуэлях и на Передовой."
+msgstr "Можно использовать только в дуэлях и во «Фронтлайне»."
 
 #. ja: PvPアクションの修得状態をリセットした。
 #. de: Die PvP-Kommandos wurden zurückgesetzt.
@@ -7258,7 +7259,7 @@ msgstr "Чтобы надеть <noun-en Item 2 $n3 1 1>, смените кла�
 #. macro: <if ($n2 == 33)>an <sheet ClassJob $n2 0><else>a <sheet ClassJob $n2 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 33 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:686:0:5"
 msgid "Cannot change job to <sheet ClassJob $n2 0>. Please set your class to <sheet ClassJob $n3 0> and equip a weapon that can be used by <if ($n2 == 10)>an <sheet ClassJob $n2 0><else><if ($n2 == 14)>an <sheet ClassJob $n2 0><else><if ($n2 == 5)>an <sheet ClassJob $n2 0><else><if ($n2 == 26)>an <sheet ClassJob $n2 0><else><if ($n2 == 33)>an <sheet ClassJob $n2 0><else>a <sheet ClassJob $n2 0></if></if></if></if></if>."
-msgstr "Нельзя сменить специализацию на <sheet ClassJob $n2 0>. Выберите класс <sheet ClassJob $n3 0> и экипируйте оружие для специализации <sheet ClassJob $n2 0>."
+msgstr "Смена профессии «<sheet ClassJob $n2 0>» невозможна. Сначала выберите класс «<sheet ClassJob $n3 0>» и экипируйте оружие для профессии «<sheet ClassJob $n2 0>»."
 
 #. ja: サポートから、お問い合わせへの返信、または個別のご案内が届いています。<br>サポートデスクの「サポートからの最新の返信／ご案内」から内容を確認してください。
 #. de: Du hast eine Antwort vom Kundendienst erhalten. <br>Lies sie unter „Nachrichten des Kundendiensts“ über „Kundendienst“ im Menü „System“.
@@ -7304,28 +7305,28 @@ msgstr "Получатель занят заданием и не может пр
 #. fr: Changement de job impossible. Vous portez de l'équipement spécifique à une classe.
 msgctxt "LogMessage:692:0:5"
 msgid "Unable to change to a job. Class-specific gear equipped."
-msgstr "Нельзя сменить класс на специализацию: экипирована классовая экипировка."
+msgstr "Нельзя сменить класс на профессию, пока надета классовая экипировка."
 
 #. ja: ジョブ専用武器を装備中です。ジョブチェンジできません。
 #. de: Job kann nicht gewechselt werden, weil du jobspezifische Ausrüstung trägst.
 #. fr: Changement de job impossible. Vous portez de l'équipement spécifique à un job.
 msgctxt "LogMessage:693:0:5"
 msgid "Unable to change jobs. Job-specific gear equipped."
-msgstr "Нельзя сменить специализацию: экипирована экипировка для другой специализации."
+msgstr "Нельзя сменить профессию: экипирована экипировка для другой профессии."
 
 #. ja: ジョブのソウルクリスタルが見つからないため装備できません。
 #. de: Gegenstand kann nicht angelegt werden, weil du den entsprechenden Jobkristall nicht besitzt.
 #. fr: Vous ne possédez pas le cristal d'âme approprié pour vous équiper de cet objet.
 msgctxt "LogMessage:694:0:5"
 msgid "Unable to change jobs. You do not possess the proper soul crystal."
-msgstr "Нельзя сменить специализацию: у вас нет подходящего кристалла души."
+msgstr "Нельзя сменить профессию: у вас нет подходящего кристалла души."
 
 #. ja: コンテンツファインダーサーバーに接続できません。ご迷惑をおかけしますが、しばらく時間をおいてからお試しください。
 #. de: Die Verbindung zur Inhaltssuche konnte nicht hergestellt werden. Bitte versuch es später noch einmal.
 #. fr: Impossible de se connecter au serveur de l'outil de mission. Veuillez réessayer ultérieurement.
 msgctxt "LogMessage:695:0:5"
 msgid "Unable to connect to Duty Finder server. Please try again later."
-msgstr "Не удалось подключиться к серверу поиска заданий. Попробуйте позже."
+msgstr "Не удалось подключиться к серверу Поиска активностей. Попробуйте позже."
 
 #. ja: コンテンツの実行に失敗しました。タイトルに戻ります。（<num $n1>）
 #. de: Der Inhalt konnte nicht gestartet werden. Du kehrst zum Titelbildschirm zurück. （<num $n1>）
@@ -7587,7 +7588,7 @@ msgstr "Нельзя применить «<string $s1>» к этой цели."
 #. fr: Impossible de changer de classe ou de job maintenant.
 msgctxt "LogMessage:730:0:5"
 msgid "You are unable to change classes or jobs at this time."
-msgstr "Сейчас нельзя сменить класс или специализацию."
+msgstr "Сейчас нельзя сменить класс или профессию."
 
 #. ja: 設定の変更ができませんでした。
 #. de: Die Einstellung konnte nicht geändert werden.
@@ -7974,7 +7975,7 @@ msgstr "  Ноги: <sheet Item $n1 9>"
 #. macro: <sheet Item $n1 9> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:778:0:5"
 msgid "  Feet: <sheet Item $n1 9>"
-msgstr "  Ступни: <sheet Item $n1 9>"
+msgstr "  Обувь: <sheet Item $n1 9>"
 
 #. ja:   耳:<sheet Item $n1 0>
 #. de: Ohren: <sheet Item $n1 9>
@@ -8880,7 +8881,7 @@ msgstr "Вы не соответствуете требованиям этого
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "LogMessage:901:0:5"
 msgid "A problem has occurred with the Duty Finder server.<br>Please try again in a few moments."
-msgstr "Возникла проблема с сервером поиска контента.<br>Повторите попытку чуть позже."
+msgstr "Возникла проблема с сервером Поиска активностей.<br>Повторите попытку чуть позже."
 
 #. ja: 辞退者が出たので再マッチングを行います。
 #. de: Jemand hat seine Teilnahme zurückgezogen. Eine neue Suche wird durchgeführt.
@@ -9256,7 +9257,7 @@ msgstr "Нельзя получить награду за достижение �
 #. fr: Impossible de s'enregistrer pour participer à une mission pendant un recrutement d'équipiers.
 msgctxt "LogMessage:954:0:5"
 msgid "The Duty Finder and the Party Finder cannot be used simultaneously."
-msgstr "Нельзя одновременно пользоваться поиском заданий и поиском группы."
+msgstr "Нельзя одновременно пользоваться Поиском активностей и поиском группы."
 
 #. ja: パーティ募集中はクエストバトルを開始できません。
 #. de: Du kannst keine Auftragskämpfe beginnen, während du die Gruppen<shy>suche nutzt.
@@ -9277,7 +9278,7 @@ msgstr "Не удалось обработать комментарий к по�
 #. fr: Impossible d'effectuer un recrutement d'équipiers en étant enregistré pour participer à une mission.
 msgctxt "LogMessage:957:0:5"
 msgid "The Duty Finder and the Party Finder cannot be used simultaneously."
-msgstr "Нельзя одновременно пользоваться поиском заданий и поиском группы."
+msgstr "Нельзя одновременно пользоваться Поиском активностей и поиском группы."
 
 #. ja: パーティメンバーの情報の取得に問題が発生しました。
 #. de: Die Informationen der Grup<shy>pen<shy>mit<shy>glieder konnten nicht abgerufen werden.
