@@ -553,6 +553,7 @@ msgstr "Изменения отменены."
 #. ja: 既にサブ権限者として設定されています。
 #. de: Dieser Charakter besitzt bereits Unterrechte.
 #. fr: Le personnage est déjà enregistré comme autorité secondaire.
+#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:7143:0:5"
 msgid "Character is already registered as a Secondary Rightsholder."
 msgstr "У персонажа уже есть права заместителя."
@@ -627,7 +628,7 @@ msgstr "Нельзя выполнить команду: группа не соо
 #. fr: Action impossible. Vous utilisez un job restreint, ou vous n'êtes pas un<if $gn4>e</if> disciple de la guerre ou de la magie.
 msgctxt "LogMessage:7201:0:5"
 msgid "Unable to execute command. You are not a Disciple of War or Magic (excluding limited jobs)."
-msgstr "Нельзя выполнить команду: вы не ученик войны или магии (ограниченные профессии не учитываются)."
+msgstr "Нельзя выполнить команду: вы не относитесь ни к физическому, ни к магическому классу (ограниченные профессии не учитываются)."
 
 #. ja: 前回中断時とパーティ構成が異なるため、実行できません。
 #. de: Nicht möglich, da sich die Gruppenzusammensetzung<br>seit dem letzten Betreten geändert hat.
@@ -696,7 +697,7 @@ msgstr "Нельзя выполнить команду: у участников 
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7210:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> not a Disciple of War or Magic."
-msgstr "<if-self $n1>Вы не<else><capitalize><player-name $n1></capitalize> не</if-self> ученик войны или магии."
+msgstr "<if-self $n1>Вы не относитесь<else><capitalize><player-name $n1></capitalize> не относится</if-self> ни к физическому, ни к магическому классу."
 
 #. ja: <player-name $n1>は、前回中断時とクラスが異なります。
 #. de: <if-self $n1>Du bist<else><capitalize><player-name $n1></capitalize> ist</if-self> nicht in derselben Klasse/Job wie beim letzten Mal.
@@ -780,7 +781,7 @@ msgstr "Нельзя выполнить команду, пока вы испол
 #. fr: Vous n'êtes pas disciple de la guerre ou de la magie.
 msgctxt "LogMessage:7219:0:5"
 msgid "You are not a Disciple of War or Magic."
-msgstr "Вы не ученик войны или магии."
+msgstr "Вы не относитесь ни к физическому, ни к магическому классу."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、<sheet DeepDungeonItem $n1 9>を手に入れた！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> ein <sheet DeepDungeonItem $n1 9> erhalten!
@@ -1159,6 +1160,7 @@ msgstr "Этот эффект уже действует."
 #. ja: 今は効果がないようだ……
 #. de: Im Moment lässt sich kein Effekt beobachten.
 #. fr: La poterie magique ne semble avoir aucun effet pour le moment...
+#, aeria-term-model-exception: Nothing 98b6b2a6ba3c
 msgctxt "LogMessage:7267:0:5"
 msgid "Nothing happens..."
 msgstr "Ничего не происходит..."
@@ -1898,14 +1900,14 @@ msgstr "Не удалось вызвать на дуэль. Другому иг�
 #. fr: Impossible de faire une demande de combat singulier. Votre job ne peut pas participer au mode JcJ.
 msgctxt "LogMessage:7419:0:5"
 msgid "Unable to challenge to duel. You must be a Disciple of War or Magic (limited jobs excluded)."
-msgstr "Не удалось вызвать на дуэль. Для участия нужен класс или профессия боевого либо магического класса (ограниченные профессии не подходят)."
+msgstr "Не удалось вызвать на дуэль. Для участия нужно состоять в физическом или магическом классе либо профессии (ограниченные профессии не подходят)."
 
 #. ja: 申請先のキャラクターがPvP対戦可能なジョブではないため、デュエル申請できませんでした。
 #. de: Keine Heraus<shy>forde<shy>rung möglich,<br>da der andere Spieler weder einen Krieger noch einen Magier spielt. (Beschränkte Jobs sind ausgeschlossen.)
 #. fr: Impossible de faire une demande de combat singulier. Le job de l'autre joueur ne peut pas participer au mode JcJ.
 msgctxt "LogMessage:7420:0:5"
 msgid "Unable to challenge to duel. Opponent must be a Disciple of War or Magic (limited jobs excluded)."
-msgstr "Не удалось вызвать на дуэль. Противник должен быть боевого либо магического класса (ограниченные профессии не подходят)."
+msgstr "Не удалось вызвать на дуэль. Противник должен состоять в физическом или магическом классе либо профессии (ограниченные профессии не подходят)."
 
 #. ja: デュエル申請の相手と離れるとデュエル申請はキャンセルされます。
 #. de: Die Heraus<shy>forde<shy>rung wird annulliert, wenn du dich zu weit von dem anderen Spieler entfernst.
@@ -2498,7 +2500,7 @@ msgstr "Спасибо!<sound 1 97>"
 #. de: Gut gemacht!<sound 1 97>
 #. fr: Bien joué<nbsp>!<sound 1 97>
 #. macro: <sound 1 97> — plays a sound effect; kind = 1, sound = 97 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: job b3e546875adf
+#, aeria-term-model-exception: job 42a26c762529
 msgctxt "LogMessage:7504:0:5"
 msgid "Nice job!<sound 1 97>"
 msgstr "Отлично!<sound 1 97>"
@@ -3209,7 +3211,7 @@ msgstr "<switch $n1><case>Ранг B<case>Ранг A<case>Ранг S</switch> <s
 #. macro: <ui-edge-color 538> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 538 (formatting: keep it as often as the source has it)
 msgctxt "LogMessage:7593:0:5"
 msgid "The <switch $n2><case>rank B<case>rank A<case>rank S</switch> <sheet PlaceName $n3 2> has been claimed by the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch>!"
-msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n2><case>B<case>A<case>S</switch> теперь под контролем <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Воинов Бессмертного Пламени</ui-edge-color></ui-color></switch>!"
+msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n2><case>B<case>A<case>S</switch> теперь под контролем <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
 
 #. ja: <sheet PlaceName $n1 0>が無効状態となった。
 #. de: <sheet PlaceName $n1 0> wurde in den Ruhezustand zurückversetzt.
@@ -3233,7 +3235,7 @@ msgstr "<sheet PlaceName $n1 0> теперь неактивна."
 #. macro: <ui-edge-color 538> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 538 (formatting: keep it as often as the source has it)
 msgctxt "LogMessage:7595:0:5"
 msgid "Battle High V has overtaken a member of the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch>!"
-msgstr "«Боевой подъём V» охватил участника <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Воинов Бессмертного Пламени</ui-edge-color></ui-color></switch>!"
+msgstr "«Боевой подъём V» охватил участника <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
 
 #. ja: 戦意高揚V状態の<switch $n1><case><icon 51><ui-color 533><ui-edge-color 534>黒渦団所属者</ui-edge-color></ui-color><case><icon 52><ui-color 535><ui-edge-color 536>双蛇党所属者</ui-edge-color></ui-color><case><icon 53><ui-color 537><ui-edge-color 538>不滅隊所属者</ui-edge-color></ui-color></switch>が、戦闘不能状態に陥った……！
 #. de: Ein Mitglied <switch $n1><case><icon 51><ui-color 533><ui-edge-color 534>des Mahlstroms</ui-edge-color></ui-color><case><icon 52><ui-color 535><ui-edge-color 536>der Bruderschaft</ui-edge-color></ui-color><case><icon 53><ui-color 537><ui-edge-color 538>der Legion</ui-edge-color></ui-color></switch> mit dem Status Euphorie V wurde soeben besiegt!
@@ -3249,7 +3251,7 @@ msgstr "«Боевой подъём V» охватил участника <switc
 #. macro: <ui-edge-color 538> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 538 (formatting: keep it as often as the source has it)
 msgctxt "LogMessage:7596:0:5"
 msgid "A member of the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch> overtaken by Battle High V has been KO'd!"
-msgstr "Участник <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Воинов Бессмертного Пламени</ui-edge-color></ui-color></switch> с эффектом «Боевой подъём V» выбыл из строя!"
+msgstr "Участник <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch> с эффектом «Боевой подъём V» выбыл из строя!"
 
 #. ja: 試合開始から5分経過。同時に出現する無垢の土地の数が減少した！
 #. de: Seit Beginn des Matches sind 5 Minuten vergangen. Die Anzahl der Unschuldsflecken wurde verringert!
@@ -5023,7 +5025,7 @@ msgstr "<if ($gs1 == $gs2)>Твоё истинное «я» пробуждает
 #. fr: Impossible d'obtenir la récompense. Vous n'êtes ni combattant ni mage ou vous êtes dans un job restreint.
 msgctxt "LogMessage:7988:0:5"
 msgid "Unable to accept reward. You are not a Disciple of War or Magic (excluding limited jobs)."
-msgstr "Нельзя получить награду: вы не воин и не маг либо используете ограниченную профессию."
+msgstr "Нельзя получить награду: вы не относитесь к физическому или магическому классу либо используете ограниченную профессию."
 
 #. ja: これ以上ギルを受け取れません。譲渡できませんでした。
 #. de: Spende nicht möglich. Du kannst nicht mehr Gil entgegennehmen.

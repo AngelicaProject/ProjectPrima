@@ -202,7 +202,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6025:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> neither a Disciple of War nor Magic (excluding limited jobs)."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> не относится ни к боевым, ни к магическим классам или профессиям. Ограниченные профессии не учитываются."
+msgstr "<if-self $n1>Вы не относитесь<else><capitalize><player-name $n1></capitalize> не относится</if-self> ни к физическому, ни к магическому классу. Ограниченные профессии не учитываются."
 
 #. ja: <player-name $n1>は、突入できるレベルに達していません。
 #. de: <player-name $n1> ist nicht auf der erforderlichen Stufe.
@@ -306,7 +306,7 @@ msgstr "Не удалось выполнить действие. У вас не�
 #. fr: Action impossible. Vous utilisez un job restreint, ou vous n'êtes pas un<if $gn4>e</if> disciple de la guerre ou de la magie de niveau 60 ou plus.
 msgctxt "LogMessage:6037:0:5"
 msgid "Unable to execute command. You are not a level 60 Disciple of War or Magic (excluding limited jobs)."
-msgstr "Не удалось выполнить действие. Вы должны быть бойцом или магом 60-го уровня и выше. Ограниченные профессии не учитываются."
+msgstr "Не удалось выполнить действие. Ваш физический или магический класс должен быть не ниже 60-го уровня. Ограниченные профессии не учитываются."
 
 #. ja: 中毒防止制限中のため、実行できません。
 #. de: Diese Aktion ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -543,7 +543,7 @@ msgstr "Теперь Вольная компания может зарегист
 #. fr: Action impossible. La limite d'aéronefs/sous-marins enregistrés a été atteinte.
 msgctxt "LogMessage:6064:0:5"
 msgid "Unable to execute command. No more airships or submersibles may embark at this time."
-msgstr "Не удалось выполнить действие. Все воздушные корабли и подводные лодки уже отправлены."
+msgstr "Не удалось выполнить действие. Все дирижабли и подводные лодки уже отправлены."
 
 #. ja: フリーカンパニーハウスの交流帳に新着メッセージがあります。
 #. de: Jemand hat einen neuen Eintrag im Diarium der Freien Ge<shy>sell<shy>schaft hinterlassen.
@@ -1073,7 +1073,7 @@ msgstr "Невозможно выполнить команду. Вы не вып
 #. fr: Action impossible. Vous devez être un disciple de la guerre ou de la magie.
 msgctxt "LogMessage:6981:0:5"
 msgid "Unable to execute command. You must be a Disciple of War or Magic."
-msgstr "Невозможно выполнить команду. Вы должны быть представителем боевого или магического класса."
+msgstr "Невозможно выполнить команду. Вы должны быть в физическом или магическом классе."
 
 #. ja: 中毒防止制限中のため、実行できません。
 #. de: Diese Aktion ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -1134,7 +1134,7 @@ msgstr "Невозможно выполнить команду. Все учас�
 #. macro: <if ($gs1 == $gs3)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6989:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> not a Disciple of War or Magic."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не принадлежите<else>не принадлежит</if> к последователям войны или магии."
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не относитесь<else>не относится</if> ни к физическому, ни к магическому классу."
 
 #. ja: 戦闘不能状態のパーティメンバーがいるため、実行できません。
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied ist kampfunfähig.

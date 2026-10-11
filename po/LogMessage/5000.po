@@ -1462,7 +1462,7 @@ msgstr "Прикоснувшись к воспоминаниям Шатотто,
 #. fr: Vous avez surmonté toutes les épreuves et appris un grand secret allagois<nbsp>!
 msgctxt "LogMessage:5358:0:5"
 msgid "You have conquered the Principia's challenges and earned the lost wisdom of Allag!"
-msgstr "Ты прошёл все испытания Принципии и обрёл утраченную мудрость Аллагана!"
+msgstr "Ты <if $gn4>прошла<else>прошёл</if> все испытания Принципии и обрёл утраченную мудрость Аллага."
 
 #. ja: 仲間との共闘が心を燃やす……新たな忍術に開眼した！
 #. de: Im Kampf an der Seite deiner Freunde hast du eine Erleuchtung!<br>Du hat eine neue Ninjutsu-Technik erworben!
@@ -1891,7 +1891,7 @@ msgstr "Вы выполнили все поручения Т'лака Тиа! Т
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5423:0:5"
 msgid "<icon 63>You have lost sight of Krile. Speak with her again to reform your party."
-msgstr "<icon 63>Вы потеряли Крилэ. Поговорите с ней, чтобы снова взять её в отряд."
+msgstr "<icon 63>Вы потеряли Крайль. Поговорите с ней, чтобы снова взять её в отряд."
 
 #. ja: <icon 63>グ・ラハ・ティアとはぐれました。再度同行させてください。
 #. de: <icon 63>Du hast G'raha Tia verloren! Beginne von vorne!
@@ -2129,7 +2129,7 @@ msgstr "<icon 63>Вам не удалось проследить за целью
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5451:0:5"
 msgid "<icon 63>You have lost sight of Meteion. Speak with her again to reform your party."
-msgstr "<icon 63>Вы потеряли Метеион. Поговорите с ней, чтобы снова взять её в отряд."
+msgstr "<icon 63>Вы потеряли Метейон. Поговорите с ней, чтобы снова взять её в отряд."
 
 #. ja: <icon 63>未知なる生物とはぐれました。再度同行させてください。
 #. de: <icon 63>Du hast das unbekannte Lebewesen verloren! Beginne von vorne!
@@ -2274,7 +2274,7 @@ msgstr "<icon 63>Вы потеряли Юлуса. Поговорите с ни�
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5468:0:5"
 msgid "<icon 63>You have lost sight of Emet-Selch. Speak with him again to reform your party."
-msgstr "<icon 63>Вы потеряли Эмет-Селха. Поговорите с ним, чтобы снова взять его в отряд."
+msgstr "<icon 63>Вы потеряли Эмет-Селка. Поговорите с ним, чтобы снова взять его в отряд."
 
 #. ja: 変身の範囲から出ようとしています。これより離れると変身が解除されます。
 #. de: Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Ver<shy>wand<shy>lung.
@@ -2552,7 +2552,7 @@ msgstr "<sheet ENpcResident $n1 0> <switch $n2><case>принимает вашу
 #. macro: <switch $n2><case>Friend of the Hard Place<case>Supporter of the Hard Place<case>Cornerstone of the Hard Place<case>Savior of the Hard Place</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:5503:0:5"
 msgid "<sheet ENpcResident $n1 0> now considers you a “<switch $n2><case>Friend of the Hard Place<case>Supporter of the Hard Place<case>Cornerstone of the Hard Place<case>Savior of the Hard Place</switch>.”"
-msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>подругой<else>другом</if> Трудного положения<case>опорой Трудного положения<case><if $gn4>благодетельницей<else>благодетелем</if> Трудного положения<case><if $gn4>спасительницей<else>спасителем</if> Трудного положения</switch>."
+msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>подругой<else>другом</if> Трудного места<case>опорой Трудного места<case><if $gn4>благодетельницей<else>благодетелем</if> Трудного места<case><if $gn4>спасительницей<else>спасителем</if> Трудного места</switch>."
 
 #. ja: <sheet Item $n1 0>の気配を強く感じる……！
 #. de: Du kannst <noun-de Item 1 $n1 1 4 1> ganz deutlich in deiner Nähe spüren!
@@ -2582,6 +2582,7 @@ msgstr "<capitalize><noun-en Item 3 $n1 2 1></capitalize> заметили ва�
 #. ja: 何もかからなかった……。
 #. de: Du hast nichts gefangen.
 #. fr: Vous n'avez pas réussi à ferrer le poisson...
+#, aeria-term-model-exception: Nothing 98b6b2a6ba3c
 msgctxt "LogMessage:5507:0:5"
 msgid "Nothing bites."
 msgstr "Не клюёт."
@@ -2614,7 +2615,7 @@ msgstr "<sheet ENpcResident $n1 0> <switch $n2><case>принимает вашу
 #. macro: <switch $n2><case>Backer of the Beehive<case>Promoter of the Beehive<case>Pillar of the Beehive<case>Savior of the Beehive</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:5510:0:5"
 msgid "<sheet ENpcResident $n1 0> now considers you a “<switch $n2><case>Backer of the Beehive<case>Promoter of the Beehive<case>Pillar of the Beehive<case>Savior of the Beehive</switch>.”"
-msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>покровительницей<else>покровителем</if> Пчелиного улья<case><if $gn4>популяризаторшей<else>популяризатором</if> Пчелиного улья<case>опорой Пчелиного улья<case><if $gn4>спасительницей<else>спасителем</if> Пчелиного улья</switch>."
+msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>покровительницей<else>покровителем</if> Улья<case><if $gn4>популяризаторшей<else>популяризатором</if> Улья<case>опорой Улья<case><if $gn4>спасительницей<else>спасителем</if> Улья</switch>."
 
 #. ja: <sheet ENpcResident $n1 0>は<string $gs1>の<switch $n2><case>収集品を受け取った！<case>収集品を喜んで受け取った！<case>収集品を感動しつつ受け取った！</switch>
 #. de: <capitalize><sheet ENpcResident $n1 0></capitalize> nimmt deine Lieferung<switch $n2><case><case> dankend<case> begeistert</switch> entgegen.
@@ -2639,7 +2640,7 @@ msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n
 #. fr: Pour récolter cet objet, vous devez avoir accompli la quête “De nouvelles collections” et avoir obtenu les actions de niveau 50 permettant de récolter des objets collectionnables.
 msgctxt "LogMessage:5513:0:5"
 msgid "To gather this item, you must first complete the quest “Inscrutable Tastes,” and obtain collectable gathering actions."
-msgstr "Чтобы собирать этот предмет, сначала выполните задание «Необычные вкусы» и получите действия собирателя для коллекционных предметов."
+msgstr "Чтобы собирать этот предмет, сначала выполните задание «Необычные вкусы» и освойте навыки сбора диковинок."
 
 #. ja: 「慎重純化」の効果により、耐久が減少しなかった！
 #. de: Deine fachkundige Lese ist ein voller Erfolg! Die Belastbarkeit ist nicht gesunken.
@@ -4176,6 +4177,7 @@ msgstr "Не удалось закрепить жетон поручения в 
 #. de: Der Vorgang kann nicht ausgeführt werden, da der Charakter gerade das Datenzentrum <string $s1> bereist.
 #. fr: Impossible d'exécuter cette commande. Le personnage se trouve dans un autre centre de traitement de données (<string $s1>).
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5800:0:5"
 msgid "Unable to execute command. Character is currently visiting the <string $s1> data center."
 msgstr "Не удалось выполнить команду. Персонаж сейчас путешествует по дата-центру <string $s1>."
@@ -4233,6 +4235,7 @@ msgstr "Данные для <string $s1> получены."
 #. ja: キャラクターの情報は取得済みです。
 #. de: Die Charakterdaten sind aktuell.
 #. fr: Les données du personnage ont déjà été obtenues.
+#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5808:0:5"
 msgid "Character data has already been retrieved."
 msgstr "Данные персонажа уже получены."
@@ -4247,6 +4250,7 @@ msgstr "Подождите немного, прежде чем снова зап
 #. ja: キャラクターの情報を取得するコマンドは現在使えません。
 #. de: Das Kommando kann gegenwärtig nicht ausgeführt werden.
 #. fr: Impossible d'obtenir les données de ce personnage pour le moment.
+#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5810:0:5"
 msgid "Character data retrieval is currently unavailable."
 msgstr "Сейчас данные персонажа получить нельзя."
@@ -4381,7 +4385,7 @@ msgstr "Вы использовали <if ($n2 == 1)><noun-en Item 1 $n1 1 1><el
 #. macro: <sheet AkatsukiNote $n1 1> — a value from a game data sheet, such as a name; sheet = AkatsukiNote, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5842:0:5"
 msgid "“<sheet AkatsukiNote $n1 1>” has been updated in the Unending Codex."
-msgstr "Запись «<sheet AkatsukiNote $n1 1>» обновлена в Бесконечной летописи."
+msgstr "Запись «<sheet AkatsukiNote $n1 1>» обновлена в Бесконечном кодексе."
 
 #. ja: ジョブHUD<ui-color 571><ui-edge-color 572>「<sheet Hud $n1 ADDONHUD_NAME>」</ui-edge-color></ui-color>と<ui-color 571><ui-edge-color 572>「<sheet Hud $n2 ADDONHUD_NAME>」</ui-edge-color></ui-color>が更新されました！<br>詳細を確認してみましょう！
 #. de: <ui-color 571><ui-edge-color 572><sheet Hud $n1 ADDONHUD_NAME></ui-edge-color></ui-color> und <ui-color 571><ui-edge-color 572><sheet Hud $n2 ADDONHUD_NAME></ui-edge-color></ui-color> wurden freigeschaltet.
@@ -4404,6 +4408,7 @@ msgstr "Шкалы «<sheet Hud $n1 ADDONHUD_NAME>» и «<sheet Hud $n2 ADDONHU
 #. ja: ポートレートに正しくキャラクターが映っていないため保存できません。
 #. de: Speichern nicht möglich. Der Charakter ist nicht korrekt im Bild zu sehen.
 #. fr: Sauvegarde impossible. Le personnage n'apparaît pas cor<shy>rec<shy>te<shy>ment sur le portrait.
+#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5850:0:5"
 msgid "Unable to save portrait. Character is not in frame."
 msgstr "Не удалось сохранить портрет: персонаж не помещается в кадр."
@@ -4476,6 +4481,7 @@ msgstr "Не удалось показать профиль персонажа.<
 #. ja: ポートレートの範囲内に正しくキャラクターの表情が映っていないため保存できません。
 #. de: Speichern nicht möglich. Der Ge<shy>sichts<shy>aus<shy>druck des Charakters ist nicht korrekt im Bildbereich zu sehen.
 #. fr: Sauvegarde impossible. L'expression du personnage n'est pas visible sur le portrait.
+#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5861:0:5"
 msgid "Unable to save portrait. Character's expression is not in frame."
 msgstr "Не удалось сохранить портрет: выражение лица персонажа не помещается в кадр."
@@ -4772,7 +4778,7 @@ msgstr "Не удалось отозвать запрос на вставку м
 #. fr: Vous ne remplissez pas les conditions pour récolter des objets ici.
 msgctxt "LogMessage:5911:0:5"
 msgid "You do not meet the requirements to gather collectables from this location."
-msgstr "Вы не соответствуете требованиям для сбора коллекционных предметов в этом месте."
+msgstr "Вы не соответствуете требованиям для сбора диковинок в этом месте."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の「<sheet Action $n1 0>」   成功
 #. de: Du setzt „<sheet Action $n1 0>“ ein  Erfolg!
