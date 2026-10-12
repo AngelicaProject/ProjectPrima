@@ -182,6 +182,7 @@ msgstr "Приветствую, искатель приключений. Как 
 #. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if> à vous tous, cœurs gridaniens<nbsp>! Je suis Lisette de Valention, messagère de l'amour<nbsp>!
 #. column 21: Have you the courage to unbosom yourself to your one true love? The task may be daunting, but know this─the massed ranks of House Valentione stand with you, to usher you into the arms of your beloved!
 #. column 22: 0
+#, aeria-term-model-exception: tear 33605bb9244a
 msgctxt "DefaultTalk:592013:0:20"
 msgid "Hearts of Gridania, awake! For too long have you slept in silence, tucked beneath the suffocating blankets of reticence and reserve! I, Lisette de Valentione, am come to tear off your trappings, and let your love burst forth!"
 msgstr "Гридания, очнитесь! Сколько можно молчать, пряча чувства под тяжким покрывалом стеснения и скромности? Я, Лизетта де Валентайна, пришла сорвать с вас это покрывало и дать вашей любви вырваться наружу!"
@@ -284,6 +285,7 @@ msgstr "Доброго <if ($gn11 < 12)><if ($gn11 < 4)>вечера<else>утр
 #. column 21: 0
 #. column 22: 0
 #. macro: <if $gn4>m'lady<else>m'lord</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: regret a5147aa40ba7
 msgctxt "DefaultTalk:592020:0:20"
 msgid "House Valentione and Gridania both stand in your debt today, <if $gn4>m'lady<else>m'lord</if>. Thanks to you, the woods resound with sighs of bliss, and not of sorrow. It is my one regret that Ser Hortefense could not join in the chorus..."
 msgstr "Сегодня и дом Валентайна, и Гридания у вас в долгу, <if $gn4>миледи<else>милорд</if>. Благодаря вам лес наполнился вздохами счастья, а не печали. Жаль лишь, что сэру Ортефансу не удалось присоединиться к хору..."
@@ -613,7 +615,7 @@ msgstr "Ничья, никто не выиграл? Ладно, Мемерун �
 #. column 22: 0
 msgctxt "DefaultTalk:592047:0:20"
 msgid "Lady Luck left your side the moment you arrived at my table, friend! She's dining with me this eve, and we'll toast my victory with the tears of your defeat!"
-msgstr "Удача отвернулась от тебя, как только ты сел за мой стол, дружище! Сегодня вечером она со мной, и мы поднимем тост за мою победу — на слезах твоего поражения!"
+msgstr "Госпожа удача отвернулась от тебя, стоило тебе оказаться за моим столом, дружище! Сегодня вечером она со мной, и мы поднимем тост за мою победу — на слезах твоего поражения!"
 
 #. ja: ×未使用
 #. de: 0
@@ -1375,9 +1377,10 @@ msgstr "Свести старину Мимидоа вничью... А ты не 
 #. column 22: 0
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: regret a5147aa40ba7
 msgctxt "DefaultTalk:592117:0:20"
 msgid "A game o' cards, is it? Well, <split \" \" 1><string $gs1></split>, yer about to regret challengin' the Drownin' Wench's reignin' Triple Triad champion!"
-msgstr "Картишки, значит? Ну что ж, <split \" \" 1><string $gs1></split>, сейчас ты пожалеешь, что бросил вызов чемпиону по тройной триаде из «Утопленницы»!"
+msgstr "Картишки, значит? Ну что ж, <split \" \" 1><string $gs1></split>, сейчас ты пожалеешь, что <if $gn4>бросила<else>бросил</if> вызов чемпиону по тройной триаде из «Утопленницы»!"
 
 #. ja: カードもいいが、お前は冒険者だろう？<br>もうちょい、旅を楽しんでみたらどうだい。<br>俺は、いつでもここにいるからよ！
 #. de: Ich bin nicht abgeneigt, aber im Moment muss ich mich um meine Gäste kümmern. Komm doch später noch mal wieder. Dann kannst du mir von deinen neuesten Abenteuern erzählen.
@@ -1397,7 +1400,7 @@ msgstr "Карты? А я думал, ты искатель приключени
 #, aeria-term-model-exception: rogue 5bf5c43dd218
 msgctxt "DefaultTalk:592119:0:20"
 msgid "An' victory is mine! Ah, but don't take it too 'ard, <if $gn4>lass<else>lad</if>. Lady Luck's got a sweet spot fer old rogues like meself!"
-msgstr "Победа моя! Да не расстраивайся ты так, <if $gn4>девочка<else>парень</if>. Фортуна благоволит старым плутам вроде меня!"
+msgstr "Победа моя! Да не расстраивайся ты так, <if $gn4>девочка<else>парень</if>. Госпожа удача благоволит старым плутам вроде меня!"
 
 #. ja: <split " " 1><string $gs1></split>、やるじゃねえか！<br>お前さんにゃ、苦手なものとかないのかね。<br>俺も負けてられねえな！
 #. de: Da hast du mir echt eine Lehrstunde erteilt. Komm, ich geb dir einen aus.
@@ -2184,6 +2187,7 @@ msgstr "Признаю поражение. Судьба потрепала на�
 #. fr: Cela faisait drrrôlement longtemps que je n'avais pas fait de match nul<nbsp>! Il faut dire que mes camarades du Maelstrom sont tous trop faibles pour moi, maintenant. C'était très amusant<nbsp>!
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: face 7d91d5daccc3
 msgctxt "DefaultTalk:592201:0:20"
 msgid "You have proven a most worthy opponent! 'Tis a refreshing change compared to the lackluster players to be found within my own squad. We must face each other again!"
 msgstr "Ты оказался достойным противником! В моей команде таких игроков давно не встречалось. Надо будет сыграть ещё!"
@@ -2280,7 +2284,7 @@ msgstr "Что может быть хуже, чем чувствовать, бу
 #. column 22: 0
 msgctxt "DefaultTalk:592208:0:21"
 msgid "Limited though it may be, we at Camp Dragonhead would offer you what support we can in this difficult time. As Lord Haurchefant's honored friend, you shall ever have a place at our hearth."
-msgstr "Пусть наша помощь и невелика, но в это трудное время мы в лагере Драконьей Головы сделаем для тебя всё, что сможем. Ты дорогой гость лорда Оршфана, и у нашего очага тебе всегда найдётся место."
+msgstr "Пусть наша помощь и невелика, но в это трудное время мы в лагере Драконьей Головы сделаем для вас всё, что сможем. Вы — <if $gn4>дорогая подруга<else>дорогой друг</if> лорда Оршефана, и у нашего очага вам всегда найдётся место."
 
 #. ja: ああ、<split " " 1><string $gs1></split>……よく顔を見せてくれた。<br>話はオルシュファンから聞いているよ。<br>彼なら、絶対にキミを悪いようにはしないだろう。
 #. de: <split " " 1><string $gs1></split>! Wie schön, dich zu sehen! Haurchefant hat mir alles erzählt. Aber hier hast du nichts zu befürchten. Niemand wird es wagen, Hand an dich zu legen, so lange du hier bist!
@@ -2289,7 +2293,7 @@ msgstr "Пусть наша помощь и невелика, но в это т�
 #. column 22: 0
 msgctxt "DefaultTalk:592209:0:20"
 msgid "My friend, it does my spirit well to see you again. Lord Haurchefant has apprised me of the misfortune that has befallen you and yours. A greater injustice I have never known."
-msgstr "Друг мой, как же я рад тебя видеть. Лорд Оршфан рассказал мне о беде, постигшей тебя и твоих товарищей. Такой несправедливости я ещё не видывал."
+msgstr "Как же я рад снова вас видеть. Лорд Оршефан рассказал мне о беде, постигшей вас и ваших товарищей. Такой несправедливости я ещё не видывал."
 
 #. ja: 口惜しいが、今の僕にはキミを助けるだけの力がない。<br>かつて、僕の身の潔白を証明してくれた恩人に、<br>少しでも何か返したいのだけど……本当にすまないね。
 #. de: Es tut mir so leid, dass ich gar nichts für dich tun kann. Wenn ich mich doch nur für damals revanchieren könnte ... Aber ich werde dir nie vergessen, was du für mich getan hast.
@@ -2427,6 +2431,7 @@ msgstr "Слушай, я тебя не видел, ладно? Если тебе
 #. column 22: 0
 #. macro: <i> — italic text (formatting: keep it as often as the source has it)
 #. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#, aeria-term-model-exception: face 7d91d5daccc3
 msgctxt "DefaultTalk:592218:0:20"
 msgid "Y-You! You have some n-nerve showing your face here, traitor! I ought to h-haul you in for your crimes, and I would...except you'd d-doubtless put up a fight...and I've been, er, <i>ordered</i> not to bring conflict into town."
 msgstr "Т-ты! Ещё смеешь показываться здесь, предатель! Я д-должен арестовать тебя за твои преступления, и я бы... если бы ты не с-сопротивлялся... да и мне, э-э, <i>приказали</i> не устраивать в городе беспорядков."
@@ -2516,6 +2521,7 @@ msgstr "У меня есть и другие товары к празднику 
 #. column 21: If you wish to join in the revelries, pray speak with one of our sylphic sorceresses and have her transfigure you into a spriggan. Not only is the disguise imbued with prophetic significance, but it's ever so fun!
 #. column 22: 0
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
+#, aeria-term-model-exception: witness bec4f25b80c5
 msgctxt "DefaultTalk:592224:0:20"
 msgid "Come one, come all, and witness the miracle of Hatching<hyphen>tide! No doubt you'll have noticed the array of eggs that litter the highways and byways of this fair city. The famous egg hunt is well and truly underway!"
 msgstr "И-яй-яй, яички, яички!♪<br>Давайте вместе собирать!<br>Украшенные яйца искать!"
@@ -3568,7 +3574,7 @@ msgstr "Как прикажете, милорд. Если замечу драк�
 #. column 22: 0
 msgctxt "DefaultTalk:592308:0:20"
 msgid "We'll stay in touch with your Temple Knight friend, don't you worry!"
-msgstr "Не волнуйся, мы будем поддерживать связь с твоей знакомой храмовницей!"
+msgstr "Не волнуйся, мы будем поддерживать связь с твоей подругой, Рыцарем Храма!"
 
 #. ja: 緊急事態に備えて、いつでも飛び立てるようにしておく。<br>何かあったら、すぐに親方に連絡を入れてくれ。
 #. de: Die <i>Enterprise</i> ist jederzeit startklar. Wenn's hart auf hart kommt, fliegen wir dich hier raus.
@@ -4087,6 +4093,7 @@ msgstr "Не знаю, слышали ли вы, но во время того �
 #. column 21: 0
 #. column 22: 0
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: regret a5147aa40ba7
 msgctxt "DefaultTalk:592355:0:20"
 msgid "<string $gs1>! I joined the Crystal Braves in the hopes of following in your footsteps, and I do not regret the decision─not even for a moment!"
 msgstr "<string $gs1>! Я вступила в «Кристальных храбрецов», потому что хотела пойти по твоим стопам, и ни на миг об этом не пожалела!"
@@ -4116,7 +4123,7 @@ msgstr "Если внимательно изучить записи Наслед
 #. column 22: 0
 msgctxt "DefaultTalk:592358:0:20"
 msgid "I sent shinobi to spy upon the Brass Blades, and it would seem that Yda and Papalymo's resistance accounted for a sizable number of the company's soldiers. All we know for certain, however, is that our friends' corpses were not found amongst the bodies they left behind."
-msgstr "Я послал шиноби следить за Медными клинками. Похоже, Ида и Папалимо успели перебить немало солдат. Но точно известно лишь одно: среди павших не нашли тел наших друзей."
+msgstr "Я послал синоби следить за Медными клинками. Похоже, Ида и Папалимо успели перебить немало солдат. Но точно известно лишь одно: среди павших не нашли тел наших друзей."
 
 #. ja: ずいぶんと荒らされてしまいましたね……。<br>さて、どこから手をつけましょう。
 #. de: Große Güte, wie das hier aussieht ... Man weiß gar nicht, wo man mit dem Aufräumen anfangen soll.
@@ -4243,7 +4250,7 @@ msgstr "Я тут с одним новым парнем встречаюсь, д
 #. column 22: 0
 msgctxt "DefaultTalk:592371:0:20"
 msgid "Oh, Aenor, why must you always fall for these tragic types? And it is not as if we need another healer..."
-msgstr "Ох, Аэнор, ну почему тебя всегда тянет к таким несчастным типам? И будто нам ещё одного целителя не хватает..."
+msgstr "Ох, Энор, ну почему тебя всегда тянет к таким несчастным типам? И будто нам ещё одного целителя не хватает..."
 
 #. ja: アリアヌが囚われたと知り、故郷を飛び出しての。<br>急いだものの、レヴナンツトールに辿り着いたのは、<br>すべてが終わった後じゃったわい。
 #. de: Als ich hörte, dass Alianne in Gefangenschaft ist, bin ich sofort aus unserer Heimat hergeeilt. Zum Glück war die Sache bereits ausgestanden, als ich hier eintraf.
@@ -4480,7 +4487,7 @@ msgstr "Прости, <if $gn4>сестрица<else>сынок</if>, но я с
 #. column 22: 0
 msgctxt "DefaultTalk:592395:0:20"
 msgid "Wah hah hah! Wawalago wins! Looks like Lady Luck's sitting on my shoulder and smiling!"
-msgstr "Ха-ха-ха! Вавалаго победил! Видать, удача села мне на плечо и улыбнулась!"
+msgstr "Ха-ха-ха! Вавалаго победил! Видать, Госпожа удача села мне на плечо и улыбнулась!"
 
 #. ja: ううぅ……くやしいぞい！<br>次こそワシが勝つから、また対戦ぢや！
 #. de: Hoppla, da hab ich einen Moment nicht aufgepasst.
@@ -4732,6 +4739,7 @@ msgstr "Хорошая игра, но в конце тебе не хватило
 #. fr: Arrêtez, je ne veux pas me battrrre<nbsp>!<br>... Hein<nbsp>? Un duel aux cartes<nbsp>? Ça, c'est avec plaisir<nbsp>!
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: lookout 86f5df093358
 msgctxt "DefaultTalk:592423:0:20"
 msgid "When I said distraction, I didn't mean I wanted a fight─ Oh, you wanna play Triple Triad? Anything to take my mind offa this mind-numbing lookout."
 msgstr "Когда я сказал «отвлечься», я не имел в виду драку... А, хочешь сыграть в тройную триаду? Что угодно, лишь бы не торчать на этом скучном посту!"
@@ -4741,6 +4749,7 @@ msgstr "Когда я сказал «отвлечься», я не имел в �
 #. fr: J'apprrrécie cette proposition, croyez-moi, mais mes supérieurs pa<shy>trouil<shy>lent près d'ici, et il ne faudrait pas qu'ils me trouvent en train de jouer. Une autre fois, peut-êtrrre.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: lookout 86f5df093358
 msgctxt "DefaultTalk:592424:0:20"
 msgid "I'd do anything to make this lookout duty more exciting, but word is my commanding officer's making the rounds, looking for troops who're neglecting their duties. I'd best not muck about till he's done. "
 msgstr "Я бы и рад развлечься, да вот говорят, командир сейчас обходит посты и ищет тех, кто отлынивает. Лучше не баловаться, пока он не уйдёт."
@@ -5000,6 +5009,7 @@ msgstr "Ой, вы ко мне обращаетесь? Простите, я та
 #. fr: Ce que je fais à regarder le ciel<nbsp>? Je suis fauconnier de métier, et j'attends que les oiseaux rentrent de leur recon<shy>nais<shy>san<shy>ce.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: vantage point 96df29fc6f1b
 msgctxt "DefaultTalk:592452:0:20"
 msgid "Hm? Isn't it obvious? I'm watching for my birds. What better vantage point from which to spy our enemies than the sky?"
 msgstr "А? Разве не ясно? Слежу за птицами. С неба ведь лучше всего высматривать врагов."
@@ -5018,6 +5028,7 @@ msgstr "Уж поверь, работы тут невпроворот! Но ог
 #. fr: Depuis le Fléau, l'environnement de cette région a été com<shy>plè<shy>te<shy>ment chamboulé, et nous devons refaire toutes sortes de mesures et d'analyses ré<shy>gu<shy>liè<shy>re<shy>ment. Je peux toutefois m'admettre chanceux d'avoir du travail.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: havoc e38d0413514b
 msgctxt "DefaultTalk:592454:0:20"
 msgid "Ever since the Calamity wreaked havoc on the climate, there's been no end to the surveying. Though the work runs me ragged, I give thanks that I have work at all."
 msgstr "После Бедствия климат совсем переменился, и работы по замерам невпроворот. Работа выматывает, но я благодарен хотя бы за то, что она у меня есть."
@@ -5027,6 +5038,7 @@ msgstr "После Бедствия климат совсем переменил
 #. fr: Dites, vous ne voulez pas manger un peu de ma soupe<nbsp>? Il y en a qui lui reprochent une soi-disant “saveur du Coerthas occidental”, mais je pense que l'on peut pas vraiment juger sans y goûter soi-même<nbsp>!
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: pudding 3edcd0e016f7
 msgctxt "DefaultTalk:592455:0:20"
 msgid "Don't let the troops' griping deter you! Traditional Coerthan soup really is delicious. Would you like to try some yourself? After all, the proof of the pudding─sorry, soup─is in the eating!"
 msgstr "Не обращайте внимания на ворчание солдат! Традиционный коэртасский суп и правда вкусный. Хотите попробовать? Как говорится, пока сам не попробуешь, не узнаешь... то есть суп."
@@ -5077,6 +5089,7 @@ msgstr "Пока ничего необычного... Но кто знает, ч
 #. fr: Il suffirait de franchir Manteneige pour rejoindre le Coerthas central... Hélas, les formations glaciaires sont trop fragiles et pourraient facilement s'effondrer. Pour cette raison, seuls les membres de mon équipe ont le droit d'y accéder pour y faire des mesures.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: exit 0d952a18ff7f
 msgctxt "DefaultTalk:592459:0:20"
 msgid "One could conceivably pass through Snowcloak and exit somewhere in the central highlands...assuming that the tunnels did not collapse upon one's head. As unstable as the Warrens are, however, entry into the ice wall has been restricted to all but authorized surveyors."
 msgstr "Теоретически можно пройти через Снежный плащ и выйти где-нибудь в центральном нагорье... если только туннели не обрушатся прямо на голову. Из-за их ненадёжности проход в ледяную стену разрешён только уполномоченным исследователям."
@@ -5213,6 +5226,7 @@ msgstr "Не всякая птица хорошо продаётся на рын
 #. fr: Vous pourriez éviter de parler trop fort<nbsp>? Je monte la garde dans l'espoir d'attraper un chocobo sauvage.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: lookout 86f5df093358
 msgctxt "DefaultTalk:592472:0:20"
 msgid "Don't talk so bloody loud! I'm on the lookout for chocobos, and I can't very well concentrate with your yappin', now can I?"
 msgstr "Не ори так громко! Я высматриваю чокобо и не могу сосредоточиться, когда ты тут болтаешь."
@@ -5324,7 +5338,7 @@ msgstr "Чтобы подняться на башню, без крыльев п�
 #. column 22: 0
 msgctxt "DefaultTalk:592484:0:20"
 msgid "Bear, loaghtan, bandersnatch—I will feast on them all when I am a dragon grown."
-msgstr "Медведи, лохтаны, бандерснатчи — когда подрасту, я всех их съем!"
+msgstr "Медведи, лохтаны, бандерснатчи — когда я вырасту большим драконом, всех их съем!"
 
 #. ja: ここから出てる橋を渡ると、モーン大岩窟に行けるよ。<br>でも、洞窟の中では絶対に静かにしてね……！<br>そうしないと、みんなに怒られちゃうよ～。
 #. de: Über die Brücke hier gelangst du nach Mourn. Aber verhalte dich ruhig, wenn du die Höhlen betrittst.
@@ -5377,6 +5391,7 @@ msgstr "Сожги всё...<br>Сожги их... всех... <i>Хр-р-р...<
 #. fr: C'est parce que la rose est le symbole de la maison Haillenarte que nous sommes appelés “chevaliers de la Rose”.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: Rose 54c649f108a7
 msgctxt "DefaultTalk:592490:0:20"
 msgid "While this posting may not afford the Rose Knights much glory, we are nevertheless responsible for the safety and security of Camp Cloudtop."
 msgstr "Пусть служба в лагере Облачная Вершина и не сулит рыцарям Розы особой славы, именно мы отвечаем за его безопасность."
@@ -5516,6 +5531,7 @@ msgstr "Добро пожаловать в Ок' Зундо, житель низ
 #. fr: Hmmm... Tout comme des nuages noirs qui s'accumulent dans le ciel, je ne peux pas m'empêcher de m'inquiéter au sujet mon petit frère. Je n'arrive pas à penser à autre chose...
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: Gales bbce91d46edb
 msgctxt "DefaultTalk:592503:0:20"
 msgid "Gales of laughter, raining down like hail big as stone─ Oh, netherling! When Guna Vanu thinks of Brother's failures, mind turns to dark places."
 msgstr "Ха-ха-ха, смех льётся градом, камень величиной... О, житель низин! Когда Гуна Вану думает о неудачах брата, мысли становятся мрачными."
@@ -5655,7 +5671,7 @@ msgstr "Мы с Могнеллом следим здесь за драконам
 #. column 22: 0
 msgctxt "DefaultTalk:592518:0:20"
 msgid "The dragons look as small as kupo nuts from up here, and even I can crush a kupo nut, kupo! I'd go down and squish them, but I'm a little tired today. Maybe tomorrow..."
-msgstr "Сверху драконы такие маленькие, прямо как орешки купо! Да я и орешек купо раздавить могу! Спустился бы да размял их, только сегодня что-то устал. Может, завтра..."
+msgstr "Сверху драконы такие маленькие, прямо как орехи купо! Да я и орех купо раздавить могу! Спустился бы да размял их, только сегодня что-то устал. Может, завтра..."
 
 #. ja: おっきな建物を建てたり、ピカピカの金属を作ったり、<br>ヒトって、とっても興味深いくぽ！
 #. de: Diese großen Gebäude ... Die vielen Sachen aus Metall ... Kupo, bestimmt waren die Leute früher viel glücklicher!
@@ -5693,7 +5709,7 @@ msgstr "Пшш... Шкох...<br>Это Идиллшир, сердце вели�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "DefaultTalk:592522:0:20"
 msgid "Pshhh... Shkohhh...<br>Clicklox offers warm and hearty welcome to uplander! Join gobbieflock in grand experiment!"
-msgstr "Пшш... Шкох...<br>Кликлок радушно встречает жителей поверхности! Вступай в гоблинскую стаю, участвуй в великом эксперименте!"
+msgstr "Пшш... Шкох...<br>Кликлокс радушно встречает жителей поверхности! Вступай в гоблинскую стаю, участвуй в великом эксперименте!"
 
 #. ja: シュコォ……シュコォ……<br> 「青の手」　来なけりゃ　ノンビリと<br>ご飯が食べれて　幸せよ～
 #. de: Lautjux hat Vollschnauze von Indigohand. Stört oft bei Essen. Und jetzt hörzzu auch auf mit über Schulterschauen, sonst ist gar nicht mütlich.
@@ -5786,7 +5802,7 @@ msgstr "Идиллшир совсем не похож на Уль'ду. Да, т
 #. column 22: 0
 msgctxt "DefaultTalk:592530:0:20"
 msgid "I almost died in the Calamity. But Notched Bone saved me. I'll never leave his side─I owe him my life!"
-msgstr "Я чуть не погиб во время Бедствия. Но Надрубленная кость спас меня. Я никогда его не брошу — я ему жизнью обязан!"
+msgstr "Я чуть не погиб во время Бедствия. Но Зазубренная кость спас меня. Я никогда его не брошу — я ему жизнью обязан!"
 
 #. ja: たとえ両の眼が開いていようと、<br>心の眼を閉じた大馬鹿者どもに、知恵を貸す気はないね！<br>フン、偏屈者と呼びたければ、勝手に呼ぶがいいさ！
 #. de: Man kann seine Augen noch so weit aufsperren: Wer nicht mit dem Herzen sieht, ist ignorant und hat meine Hilfe nicht verdient! Exzentrisch darfst du das gerne finden. Weiterhelfen wird dir das aber nicht.
@@ -5848,6 +5864,7 @@ msgstr "<i>Бип-бип.</i> Приветствуем верных солдат
 #. fr: Bip... Bip... Nettoyage en cours... Attention<nbsp>! Le sol est glissant... bip...
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: Warning d22f548c2885
 msgctxt "DefaultTalk:592536:0:20"
 msgid "Cleaning in progress. \\<beep> Warning. Floor may be slippery when wet."
 msgstr "Идёт очистка. <i>Бип!</i> Внимание. Пол может быть скользким, если он мокрый."
@@ -5966,6 +5983,7 @@ msgstr "Только когда появились виверны, я понял
 #. fr: Cet escalier mène aux Contreforts, le quartier où vivent les nobles d'Ishgard. Vous y trouverez notamment les manoirs des quatre grandes maisons, le tribunal du Saint-Office, la cathédrale Saint-Reymanaud et le collège d'astromancie Saint-Guenriol.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: High 91749b46850d
 msgctxt "DefaultTalk:592547:0:20"
 msgid "These steps will take you to the Pillars, where you will find the manors of the High Houses, Saint Reymanaud's Cathedral, the Athenaeum Astrologicum, the Tribunal, and much more."
 msgstr "Эти ступени ведут в Столпы. Там находятся особняки Высоких домов, собор Святого Реймано, Астрологический атенеум, Трибунал и многое другое."
@@ -6140,7 +6158,7 @@ msgstr "Мы остались в живых. Тяжело думать о пог
 #. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
 msgctxt "DefaultTalk:592564:0:20"
 msgid "I can hardly believe it! House Fortemps granting patronage to a common sellsword? Well, should I chance to meet this ragamuffin, I will say to <if $gn4>her<else>him</if> <i>good day</i>!"
-msgstr "Не верится! Дом Фортоны взял под покровительство простого наёмника? Что ж, если встречу этого оборванца, непременно пожелаю <if $gn4>ей<else>ему</if> <i>доброго дня</i>!"
+msgstr "Не верится! Дом Фортоны взял под покровительство простого наёмного меча? Что ж, если встречу <if $gn4>эту оборванку<else>этого оборванца</if>, непременно пожелаю <if $gn4>ей<else>ему</if> <i>доброго дня</i>!"
 
 #. ja: この先は、イシュガルド教皇庁。<br>申し訳ありませんが、<br>許可のない方をお通しすることはできません。
 #. de: Dies ist die Erzbasilika. Ohne ausdrücklichen Befehl kann ich Euch nicht hereinlassen.
@@ -6200,7 +6218,7 @@ msgstr "Ох! Э-э... не обращайте на меня внимания, <
 #. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
 msgctxt "DefaultTalk:592569:0:21"
 msgid "I am <i>certainly</i> not hoping to catch the eye of Lord Artoirel, oh no. Heavens forfend, if a married woman of my station were to become involved with the young lord, why, think of the scandal!"
-msgstr "Я <i>ни в коем случае</i> не пытаюсь привлечь внимание лорда Артореля, что вы! Боже упаси, если бы замужняя женщина моего положения связалась с юным лордом — какой скандал!"
+msgstr "Я <i>ни в коем случае</i> не пытаюсь привлечь внимание лорда Артуареля, что вы! Боже упаси, если бы замужняя женщина моего положения связалась с юным лордом — какой скандал!"
 
 #. ja: ドラゴン族どもが襲ってくるやもしれぬと考えると、<br>空を眺めていても、なかなか心が休まらないものです……。
 #. de: Seit dem Überfall der Drachen hat der Himmel etwas Bedrohliches bekommen ... Ich finde einfach keine Ruhe mehr.
@@ -6225,6 +6243,7 @@ msgstr "Когда у торговца товар «падает с телеги
 #. fr: Ce sont nos tenues qui vous intéressent<nbsp>? C'était avant un véritable privilège de les porter, mais de nos jours, elles ne nous valent que le mépris du peuple. Je trouve ça vraiment triste...
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: target f1729d036919
 msgctxt "DefaultTalk:592572:0:20"
 msgid "You have taken interest in the scholasticate robes? I remember how I longed for the privilege to wear them. But now that they make me a clear target for people's anger, I feel more guilt than joy."
 msgstr "Вас заинтересовала форма схоластиката? Помню, как мечтал её носить. А теперь в ней я — мишень для народного гнева, и вместо радости чувствую вину."
@@ -6419,7 +6438,7 @@ msgstr "Убирайся! Мне некогда да и неохота разв�
 #. column 22: 0
 msgctxt "DefaultTalk:592587:0:20"
 msgid "None in Tailfeather can come close to beatin' Leonulfe's stew in flavor, that's why I spend most my time here. Try a bowl, an' you might not want to ever leave!"
-msgstr "Рагу Леонульфа в Хвостовом Пере никто не переплюнет, вот я и торчу тут почти всё время. Попробуй миску — ещё не захочешь отсюда уходить!"
+msgstr "Рагу Леонюльфа в Хвостовом Пере никто не переплюнет, вот я и торчу тут почти всё время. Попробуй миску — ещё не захочешь отсюда уходить!"
 
 #. ja: シシシシシ……「繋がりし者たち」は、<br>毎日、毎日、飽きもせず同じ練り物ばかり食べているわ。<br>世界はこんなにもウマソウな物で満ちているというのに……。
 #. de: Die Verbundenen in der Kolonie essen jeden Tag denselben Fraß. \<klick> \<klick> Dabei gibt es so viele leckere Dinge hier draußen!
@@ -6492,6 +6511,7 @@ msgstr "Пшш... Шкох...<br>Это пост дозорных. Важное 
 #. fr: Ici, vous êtes au passe-nuage d'Asah, dans le domaine de Hraesvelgr, kuppopo. Moi, je me charge de regarder les méchants dragons de Nidhogg pour leur faire peur et les empêcher d'approcher, kuppo<nbsp>!
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: lookout 86f5df093358, aeria-term-model-exception: rubble 2815b1d57069
 msgctxt "DefaultTalk:592594:0:20"
 msgid "This is Asah, part of the great wyrm Hraesvelgr's domain. Nidhogg's meddlesome minions would like nothing more than to burn it down to rubble, so I must always remain diligent in my lookout duties, kupo!"
 msgstr "Это Асах, часть владений великого змея Хресвельга. Приспешники Нидхёгга только и мечтают обратить его в руины, так что я не спускаю глаз с дозора, купо!"
@@ -6573,6 +6593,7 @@ msgstr "<i>Бз-з-з-з...</i> ...показывают, что остановл
 #. fr: Biiip... Bzz... Anomalie détectée dans les mécanismes de détention... Cause potentielle<nbsp>: usure des composants... Bzzz... Maintenance nécessaire en urgence...
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: tear 33605bb9244a
 msgctxt "DefaultTalk:592602:0:20"
 msgid "\\<buzzzzzz> ...has detected critical weakness in key restraining systems. Preliminary analyses suggest wear and tear caused by...\\<buzzzzzz>...recommends immediate maintenance or replacement of affected systems."
 msgstr "<i>Бз-з-з-з...</i> ...обнаружен критический износ основных систем удержания. Предварительный анализ указывает, что повреждения вызваны... <i>Бз-з-з-з...</i> ...рекомендуется немедленно провести техобслуживание или заменить повреждённые системы."
@@ -6866,7 +6887,7 @@ msgstr "<i>Бз-з-з-з...</i> ...система не работает. Зап�
 #. column 22: 0
 msgctxt "DefaultTalk:592631:0:20"
 msgid "Intrusion detected in sector...\\<buzzzzzz>...transmitted to safeguard node in... \\<buzzzzzz> Threat assessment in progress..."
-msgstr "Обнаружено вторжение в сектор... <i>Бз-з-з-з...</i> ...передано защитному узлу в... <i>Бз-з-з-з...</i> Оценка угрозы продолжается..."
+msgstr "Обнаружено вторжение в сектор... <i>Бз-з-з-з...</i> ...передано узлу охраны в... <i>Бз-з-з-з...</i> Оценка угрозы продолжается..."
 
 #. ja: ザ……ザザ……当システムへの騎乗は、<br>将官ならびに上級研究員以上の資格コードが必要です。<br>……貴官の戦績では不十分につき……ザザ……。
 #. de: \<biep> Benutzung des Logistiksystems ist nur mit Sicherheitsstufe A-33 und höher gestattet \<biep>
@@ -6938,7 +6959,7 @@ msgstr "0"
 #. column 22: 0
 msgctxt "DefaultTalk:592638:0:20"
 msgid "Pssshkoh... Giant of metal is holding fast to land, and Slowfix is telling Redbrix to keep eyes on big hand!"
-msgstr "Пшшх... Железный великан крепко держится за землю, а Слоуфикс велел Редбрику следить за его огромной рукой!"
+msgstr "Пшшх... Железный великан крепко держится за землю, а Слоуфикс велел Редбриксу следить за его огромной рукой!"
 
 #. ja: チュコォ……チュコォ……<br>キカイのキョジン　立ち上がるの　3年前にも見た！<br>やっぱり　夢じゃなかったゴブ！
 #. de: Riesenmaschine ist vor Dreijahre raussteigen aus Wasser. Glaubzzu funktioniert noch? Rundblox würde gern mal hineinbekommen in Innere.
@@ -7050,7 +7071,7 @@ msgstr "Вот какие истории рассказывают на улиц�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "DefaultTalk:592647:0:21"
 msgid "They say her hair is white as ice. I wonder, what's the color of the ha─<br>Honoroit, my boy! You're still here. Fancy that."
-msgstr "Говорят, волосы у неё белые, как лёд. Интересно, а какого цвета её...<br>О, Гоноруа, дружок! Ты всё ещё здесь? Вот уж не заметил."
+msgstr "Говорят, волосы у неё белые, как лёд. Интересно, а какого цвета её...<br>О, Оноруа, дружок! Ты всё ещё здесь? Вот уж не заметил."
 
 #. ja: 暑苦しい奴だと思ってたよ……。<br>でもよぉ……ちくしょう、何て言えばいいのかわからねぇ！
 #. de: Ich kann nicht glauben, dass mein Bruder fort ist. Wir hatten unsere ... Meinungs<shy>ver<shy>schieden<shy>heiten, aber für mich waren sie nur Teil eines eingeübten Spiels.
@@ -7136,7 +7157,7 @@ msgstr "Не обращайте внимания на милорда Эмман�
 #. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
 msgctxt "DefaultTalk:592654:0:21"
 msgid "He has resumed training in the blade, you see, and has shown admirable dedication...for the most part. I believe he has a mind to take up Lord Haurchefant's mantle─but if he is to succeed in this, he will need all the help he can get, and as few <i>distractions</i> as possible."
-msgstr "Он снова взялся за меч и, надо сказать, занимается весьма усердно... по большей части. Кажется, он хочет занять место лорда Оршфана. Чтобы у него получилось, ему понадобится вся возможная помощь и как можно меньше <i>отвлечений</i>."
+msgstr "Он снова взялся за меч и, надо сказать, занимается весьма усердно... по большей части. Кажется, он хочет занять место лорда Оршефана. Чтобы у него получилось, ему понадобится вся возможная помощь и как можно меньше <i>отвлечений</i>."
 
 #. ja: 何やら秘策があるようだな。<br>その成果に期待はするが、頼りはしない。<br>いざという時に備え、防備を固めておこう。
 #. de: Ich weiß nicht, was du vorhast, <if $gn4>Kriegerin<else>Krieger</if> des Lichts, aber ich bete für ein gutes Gelingen. Sollte dein Plan fehlschlagen, werden wir der Drachenbrut einen bitteren Kampf liefern.
@@ -7326,7 +7347,7 @@ msgstr "К'янтаа и Хадде отлично поладят. Не терп
 #. column 22: 0
 msgctxt "DefaultTalk:592674:0:20"
 msgid "Hudde's right, it ain't the pretty things that keep us fed. It takes most hunters a good long while to get cozy with that fact."
-msgstr "Худ прав. Красивыми словами сыт не будешь. Нам, охотникам, это известно лучше всех. Но смириться с этим удаётся не сразу."
+msgstr "Хадде прав. Красивыми словами сыт не будешь. Нам, охотникам, это известно лучше всех. Но смириться с этим удаётся не сразу."
 
 #. ja: シシシシシ……我らは「分かたれし者」……。<br>意思の囁き聞こえず、声を用いねば会話できん。<br>ゆえに我は、最初の物語る者となったのだ。
 #. de: Wir sind die Unverbundenen ... \<klick> \<klack> Wir können nicht über den Bindenden kommunizieren. Wir brauchen Worte dafür.
@@ -7479,6 +7500,7 @@ msgstr "Похоже, я всё это время ошибался насчёт 
 #. column 22: 0
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: lookout 86f5df093358
 msgctxt "DefaultTalk:592690:0:20"
 msgid "Oh, hello there, <split \" \" 1><string $gs1></split>! I'd love to talk, but I have to keep a lookout for suspicious activity. Perhaps we can have a chat later?"
 msgstr "О, здравствуй, <split \" \" 1><string $gs1></split>! Я бы с радостью поболтал, да мне нужно следить за подозрительными личностями. Может, поговорим позже?"
@@ -7519,7 +7541,7 @@ msgstr "Говорят, страх — лучший стимул. Никому �
 #. column 22: 0
 msgctxt "DefaultTalk:592693:0:20"
 msgid "Hah! I daresay your victory over the white whale gave Lady Laniaitte cause to smile for the first time in days."
-msgstr "Ха! Полагаю, победа над белым китом впервые за несколько дней заставила леди Ланиет улыбнуться."
+msgstr "Ха! Полагаю, победа над белым китом впервые за несколько дней заставила леди Ланиетт улыбнуться."
 
 #. ja: よくぞ、よくぞ、ズンドの村にいらっしゃいました。<br>ヒトの勇者を、鮮やかな虹のように歓迎しましょう。
 #. de: Sonu-ooh heißt Na-Vanu-eeh in Ok' Zundo willkommen wie leuchtenden Regenbogen!
@@ -7717,7 +7739,7 @@ msgstr "Авантюрист! Рад снова тебя видеть. Я тут
 #. column 22: 0
 msgctxt "DefaultTalk:592709:0:20"
 msgid "It's thanks to you that Notched Bone and I could become citizens here. We really, really appreciate what you did for us."
-msgstr "Это благодаря тебе мы с Нотчед Боуном стали гражданами города. Мы правда, правда очень благодарны за всё, что ты для нас сделал."
+msgstr "Это благодаря вам мы с Зазубренной костью стали гражданами города. Мы правда, правда очень благодарны за всё, что вы для нас сделали."
 
 #. ja: ……フン、何も言うんじゃないよ。<br>ワシは世捨て人……イシュガルドがどうなっただの、<br>政治の話なんざ耳に入れたくないのさ。
 #. de: Eine alte Frau wie ich schert sich nicht darum, was in Ishgard geschieht. Die Stadt ist weit weg und ihre Intrigen interessieren mich nicht.
@@ -7816,6 +7838,7 @@ msgstr "Драгунов у нас хронически не хватает, а 
 #. fr: Les hérétiques ont causé d'importants dégâts à L'Assise. En temps de guerre, ce sont inévitablement les plus démunis et les plus faibles qui souffrent le plus...
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: havoc e38d0413514b
 msgctxt "DefaultTalk:592716:0:20"
 msgid "The heretics wreaked the greatest havoc in Foundation. In war, it is inevitably the weak and powerless who are made to suffer most of all..."
 msgstr "Еретики причинили Фундаменту огромный ущерб. На войне больше всех страдают слабые и беззащитные..."
@@ -7835,6 +7858,7 @@ msgstr "Ты не <if $gn4>дочь<else>сын</if> Ишгарда, но про
 #. fr: Gibrillont vient souvent m'aider à distribuer à manger aux plus pauvres. C'est grâce au soutien de gens comme lui que je peux continuer à faire l'aumône ici, à Brouillasse.
 #. column 21: Time was, he would be here almost every day, working side by side with the other volunteers...
 #. column 22: 0
+#, aeria-term-model-exception: supporter 1ddd1ecb4e56
 msgctxt "DefaultTalk:592718:0:20"
 msgid "Gibrillont has ever been a staunch supporter of our efforts, though he has since come to prefer more indirect methods."
 msgstr "Гибрилонт всегда горячо поддерживал нашу работу, хотя теперь предпочитает помогать не напрямую."
@@ -7947,7 +7971,7 @@ msgstr "Мог бы сказать, что решение учиться у ло
 #. column 22: 0
 msgctxt "DefaultTalk:592727:0:20"
 msgid "Word is that Chief Astrologian Forlemort has become significantly less vocal in his objections of Lord Jannequinard's eccentricities."
-msgstr "Говорят, главный астролог Форлемор теперь куда реже возражает против причуд лорда Жаннекинара."
+msgstr "Говорят, главный астролог Форлемор теперь куда реже возражает против причуд лорда Жаннекенара."
 
 #. ja: 0
 #. de: Wenn du mich fragst, gib es dafür nur eine Erklärung: Erpressung.
@@ -8129,6 +8153,7 @@ msgstr "Что ж, люди начинают понимать, что всё н�
 #. fr: J'ai bien l'intention de continuer mes études et de devenir prêtre pour pouvoir changer les choses de l'intérieur du Clergé<nbsp>!
 #. column 20: So, people are beginning to realize everything isn't all black and white. Good.
 #. column 22: 0
+#, aeria-term-model-exception: corruption 19116f84bd56
 msgctxt "DefaultTalk:592739:0:21"
 msgid "No system is completely without corruption, but when I join the clergy, the unfaithful will be driven out. You have my word on that."
 msgstr "Ни одна система не бывает без изъянов, но, когда я вступлю в духовенство, отступников изгонят. Даю слово."
@@ -8899,7 +8924,7 @@ msgstr "Пусть они вновь обрушат на меня всю сво�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "DefaultTalk:592788:0:20"
 msgid "Greetings, <split \" \" 1><string $gs1></split> of the black. I am impressed by the harmony that your destructive magicks and Zhai'a Nelhah's healing attained. A truly remarkable achievement."
-msgstr "Приветствую тебя, <split \" \" 1><string $gs1></split>, чёрный маг. Меня поразило, как гармонично соединились твоя магия разрушения и целительная магия Зайи'а Нелха. Поистине выдающееся достижение."
+msgstr "Приветствую тебя, <split \" \" 1><string $gs1></split>, чёрный маг. Меня поразило, как гармонично соединились твоя магия разрушения и целительная магия Зай'и Нелха. Поистине выдающееся достижение."
 
 #. ja: 我が宿願……種を越えた共存共栄、<br>その大願成就を成さんとすには、汝のような者が不可欠。<br>汝と友になれたこと、誠に毋妄之福……。
 #. de: Diese Koexistenz ist es, was ich mir aus tiefster Seele wünsche. In die Tat umsetzen kann das nur jemand wie du. Ich bin wahrlich stolz darauf, dein Freund zu sein.
@@ -8937,6 +8962,7 @@ msgstr "Ты так изменил<if $gn4>а</if> мою жизнь, <split \" 
 #. fr: Je m'donne corps et âme au travail pour pouvoir à nouveau défier H'naanza dans un duel en trois manches. Toi, tu ferais mieux de poursuivre ta propre voie.
 #. column 20: Ye've changed me life, <split " " 1><string $gs1></split>. I've made some mistakes, aye, but me head's on straight now.
 #. column 22: 0
+#, aeria-term-model-exception: scrap heap dbc8bc007e3f
 msgctxt "DefaultTalk:592790:0:21"
 msgid "Ye just watch─I'll take everythin' I've learned, an' prove to H'naanza that ol' Blanstyr's not ready for the scrap heap just yet. That contest is as good as won!"
 msgstr "Вот увидишь: я применю всё, чему научился, и докажу Х'наанзе, что старина Бланстир ещё не годится в утиль! Наше состязание у меня в кармане!"
@@ -9040,7 +9066,7 @@ msgstr "Помню, как нам впервые поручили отвоева
 #. column 22: ...We shall not look upon his like again.
 msgctxt "DefaultTalk:592796:0:21"
 msgid "Lord Haurchefant chastised us for judging them so harshly. “We are all sons and daughters of Ishgard. Are they not deserving of our loyalty? Of our love?”"
-msgstr "Лорд Оршфан пристыдил нас за то, что мы так сурово их судим. «Мы все — дети Ишгарда. Разве они не заслуживают нашей преданности? Нашей любви?»"
+msgstr "Лорд Оршефан пристыдил нас за то, что мы так сурово их судим. «Мы все — дети Ишгарда. Разве они не заслуживают нашей преданности? Нашей любви?»"
 
 #. ja: 0
 #. de: 0
@@ -9076,7 +9102,7 @@ msgstr "Так говорил мне отец, а ему — его отец. Т
 #. column 22: 0
 msgctxt "DefaultTalk:592798:0:20"
 msgid "He was a good man, Lord Haurchefant. Never failed to treat me with kindness and respect, even though I was not sworn to his service."
-msgstr "Лорд Оршфан был хорошим человеком. Всегда относился ко мне с добротой и уважением, хоть я и не состоял у него на службе."
+msgstr "Лорд Оршефан был хорошим человеком. Всегда относился ко мне с добротой и уважением, хоть я и не состоял у него на службе."
 
 #. ja: 0
 #. de: 0
@@ -9094,7 +9120,7 @@ msgstr "Как бы ни горевали остальные, моему гос�
 #. column 22: 0
 msgctxt "DefaultTalk:592799:0:20"
 msgid "House Haillenarte has known few friends as faithful as Lord Haurchefant. Even when the prudent course of action would have been to cast us aside, he embraced us as allies."
-msgstr "У дома Энтерпорте было мало таких верных друзей, как лорд Оршфан. Даже когда благоразумнее всего было бы отвернуться от нас, он принял нас как союзников."
+msgstr "У дома Энтерпорте было мало таких верных друзей, как лорд Оршефан. Даже когда благоразумнее всего было бы отвернуться от нас, он принял нас как союзников."
 
 #. ja: ならば、今度こそ私たちが力になりたい。<br>まだ悲しみは癒えきらずとも、<br>前に進もうとする彼らを、後押しできたらと思うんだ。
 #. de: Nun ist es an der Zeit, unsere Schuld zu begleichen. Die Überlebenden sind vor Trauer gelähmt und brauchen unsere Hilfe.
@@ -9121,7 +9147,7 @@ msgstr "В последнее время камины едва горят, а с
 #. column 22: 0
 msgctxt "DefaultTalk:592801:0:20"
 msgid "I don't recall a shield being part of Lord Haurchefant's memorial, but when I visited it the other day, there it was."
-msgstr "Не припомню, чтобы у памятника лорду Оршфану был щит, но недавно я пришёл туда — а он уже на месте."
+msgstr "Не припомню, чтобы у памятника лорду Оршефану был щит, но недавно я пришёл туда — а он уже на месте."
 
 #. ja: 彼が愛したすべてを護ることはできないけれど、<br>せめてこのキャンプが良い形で存続するよう、<br>フォルタン家の一員として、私も尽力してみるわ。
 #. de: Wir können nicht alles beschützen, was ihm lieb und teuer war, aber zumindest können wir Camp Drachenkopf in seinem Sinne bewahren. Als Angehörige des Hauses Fortemps werde ich das Meinige dazu beitragen.
@@ -9193,7 +9219,7 @@ msgstr "Исчезновение архиепископа потрясло вс�
 #. column 22: 0
 msgctxt "DefaultTalk:592805:0:21"
 msgid "I have had occasion to meet the lord commander, and he struck me as a man of honor. With his proven leadership, I doubt not that he has matters well in hand, yet I would be lying were I to say that I am unperturbed by these developments."
-msgstr "Мне довелось встретиться с командующим. Он произвёл впечатление честного человека. Не сомневаюсь, что с его опытом он справится, но было бы неправдой сказать, что происходящее меня не тревожит."
+msgstr "Мне довелось встретиться с лордом-командиром. Он произвёл впечатление честного человека. Не сомневаюсь, что с его опытом он справится, но было бы неправдой сказать, что происходящее меня не тревожит."
 
 #. ja: 皇都周辺で騒動が続き、この前哨地で戦う者たちの間にも、<br>少なからず動揺が広がっている。<br>お前たち異邦の民の前では、顔に出さぬ者が多いがな……。
 #. de: Wir versuchen es nicht zu zeigen, aber die Geschehnisse in der Kurie lasten wie ein dunkler Schatten auf unseren Herzen. Man hört auch Gerüchte von einem Waffenstillstand ... aber hier an der Front gehen die Kämpfe unvermittelt weiter.
@@ -9553,6 +9579,7 @@ msgstr "Говорят, ты вырвал генерала Алдина из ц�
 #. fr: J'étais persuadée que ces fausses accusations finiraient par être dissipées. Ne serait-ce que pour la mémoire de ma défunte sœur, je ne peux pas abandonner notre combat<nbsp>!
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: energy f0e2f9738fc2
 msgctxt "DefaultTalk:592826:0:20"
 msgid "I knew ye'd prove them accusations wrong, so I just hunkered down until the storm had passed. No sense in wastin' energy on battles ye've got no need of fightin'."
 msgstr "Я знала, что обвинения окажутся ложными, и просто переждала бурю. Нет смысла тратить силы на битвы, в которые тебя никто не втягивал."
@@ -9562,6 +9589,7 @@ msgstr "Я знала, что обвинения окажутся ложными
 #. fr: Ha ha<nbsp>! Ceux qui ont osé traîner les Héritiers dans la boue ont intérêt à bien se cacher<nbsp>! Notre vengeance sera sans merci<nbsp>! Je n'ai pas raison, <split " " 1><string $gs1></split><nbsp>?
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: gale 2dff00a54c98
 msgctxt "DefaultTalk:592827:0:20"
 msgid "It is time for the Scions to strike back! The winds have changed, Warrior of Light, and we must ride this gale as far as it will carry us!"
 msgstr "Пора Наследникам дать отпор! Ветер переменился, Воин Света, и надо поймать этот попутный ветер!"
@@ -9611,7 +9639,7 @@ msgstr "Может, и они потеряны для нас... Но пока е
 #. column 22: 0
 msgctxt "DefaultTalk:592831:0:20"
 msgid "It looks like your training is going well! You must needs further your mastery of the techniques of eld, for the sake of both Broken Mountain and Curious Gorge."
-msgstr "Ну как, тренировки идут хорошо? Ради Сломанной Горы и Любознательного Ущелья тебе нужно освоить древние боевые приёмы."
+msgstr "Ну как, тренировки идут хорошо? Ради Сломленной Горы и Любознательного Ущелья тебе нужно освоить древние боевые приёмы."
 
 #. ja: 動けなかった兄を、弟が必死で世話して、<br>やっと今のように行動できるようにまで回復したんだ……。<br>俺も、できるかぎりの協力をしてやりたくってね。
 #. de: Wissbegierige Klamm hat seinen großen Bruder so weit aufgepeppelt, dass er wieder laufen kann, aber ohne deine Hilfe werden sie ihren Traum kaum verwirklichen können. Selbstverständlich greife ich ihnen auch unter die Arme, so gut ich eben kann.
@@ -9647,7 +9675,7 @@ msgstr "Похоже, он нашёл своё призвание, и я это�
 #. column 22: 0
 msgctxt "DefaultTalk:592833:0:20"
 msgid "Curious Gorge and Broken Mountain are forging the Maelstrom recruits into fine warriors. It won't be long before you hear about their ferocity on the battlefield."
-msgstr "Кьюриэс Гордж и Сломанная Гора превращают новобранцев Мальстрёма в настоящих воинов. Скоро все заговорят об их ярости в бою."
+msgstr "Любознательное Ущелье и Сломленная Гора превращают новобранцев Мальстрёма в настоящих воинов. Скоро все заговорят об их ярости в бою."
 
 #. ja: ……冒険者よ。<br>元クリスタルブレイブの一員を名乗る者が、<br>ウィルレッドの死を、我らに告げにきた。
 #. de: Wir haben von Wilreds Tod erfahren. Ein Kristallstreiter überbrachte uns die traurige Nachricht.
@@ -9739,7 +9767,7 @@ msgstr "Мы с остальными решили пока оставить мо
 #. column 22: 0
 msgctxt "DefaultTalk:592839:0:21"
 msgid "I dismissed it as a mere jest at first, but I suspect Lord Haurchefant was quite serious when he suggested calling it the “Falling Snows.”"
-msgstr "Сперва я принял это за шутку, но, кажется, лорд Оршфан и правда всерьёз предложил назвать её «Падающий снег»."
+msgstr "Сперва я принял это за шутку, но, кажется, лорд Оршефан и правда всерьёз предложил назвать её «Падающий снег»."
 
 #. ja: お前も、こちらに戻っていたか。<br>できることならば、お前と行動をともにし続けたいものだが、<br>私にも私の務めがあるものでな。
 #. de: Ich will tun, was ich kann, um Ishgard und meinem Haus zu dienen. Schließlich will ich der Nachwelt in ehrenvoller Erinnerung bleiben.
@@ -9827,6 +9855,7 @@ msgstr "Небеса безграничны. И тысячи жизней не �
 #. fr: Bien que Forlemort ait cessé de nous mettre des bâtons dans les roues, il nous reste encore beaucoup d'obstacles à surmonter.
 #. column 21: This is no augury. Merely a knot in my gut that has refused to unravel since learning of Sharlayan's involvement in Lady Leveva's pursuit.
 #. column 22: 0
+#, aeria-term-model-exception: Mine fcad14338a51
 msgctxt "DefaultTalk:592844:0:20"
 msgid "Mine uncle was but one of our problems─a large one, but still one. I fear the worst is yet to come."
 msgstr "Мой дядя был лишь одной из наших проблем. Большой, но всё же одной. Боюсь, худшее ещё впереди."
@@ -9977,7 +10006,7 @@ msgstr "Пройдёте прямо — попадёте к стойке рег�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "DefaultTalk:592853:0:20"
 msgid "Ah, <if $gn4>Lady<else>Master</if> <split \" \" 2><string $gs1></split>! Your minion army is in good trim, I trust? I, for one, would not wish to contend with a seasoned adventurer, no matter the field of battle!"
-msgstr "А, <if $gn4>леди<else>господин</if> <split \" \" 2><string $gs1></split>! Ваша армия миньонов в полной готовности, надеюсь? Я бы не пожелал сражаться с бывалым авантюристом, где бы ни проходила битва!"
+msgstr "А, <if $gn4>леди<else>господин</if> <split \" \" 2><string $gs1></split>! Ваша армия миньонов в полной готовности, надеюсь? Я бы не пожелал сражаться с бывалым искателем приключений, где бы ни проходила битва!"
 
 #. ja: こんにちは、コミュニティチームのムロウチです。<br>説明が面倒なので、コミュニティチームと言っていますが、<br>運営/宣伝チームまわりの幅広い雑用をやっています。
 #. de: Hallo! Ich bin Toshio Murouchi vom Community-Team. <br>Ich sage immer Community-Team, weil mir die Erklärung zu umständlich ist, aber eigentlich mache ich auch alles mögliche andere, das mit dem Betrieb und Marketing zu tun hat.
@@ -10150,6 +10179,7 @@ msgstr "Без вас и других игроков мы бы не смогли
 #. fr: Enchanté, je suis Hiroshi Minagawa, le responsable de la conception de l'interface. D'habitude, je m'occupe de l'aspect et de la praticité de l'interface, mais pendant le développement de l'extension, j'ai eu le plaisir de m'essayer aux ajustements de la luminosité sur les décors. Je dois dire que c'était très intéressant<nbsp>!
 #. column 21: As he did for A Realm Reborn, Yoshitaka Amano created both the logo silhouette and concept art for Heavensward. ...And he also threw in a bonus piece above and beyond what we asked for.
 #. column 22: This bonus art can be seen in the collector's edition─the shiny, silver illustration. It's a cool piece, and I highly recommend you check it out. Thanks for stopping by! I hope you continue to enjoy the game for a long time to come!
+#, aeria-term-model-exception: shadow ea4747ce0e77
 msgctxt "DefaultTalk:592860:0:20"
 msgid "Greetings, I'm Hiroshi Minagawa, the lead UI and web artist. I'm usually in charge of how the interface looks and feels, but this time around I was also fortunate enough to be involved with light and shadow adjustments for background maps."
 msgstr "Здравствуйте, я Хироси Минагава, ведущий художник интерфейса и веб-дизайнер. Обычно я отвечаю за внешний вид и удобство интерфейса, но в этот раз мне посчастливилось поработать и над светом и тенями на игровых картах."
@@ -10260,7 +10290,7 @@ msgstr "В любом случае, спасибо, что играете в FFX
 #. column 22: Somehow, someday, I wanna see this room filled with a crowd of Warriors of Light wearin' Arachne culottes of healin'!
 msgctxt "DefaultTalk:592864:0:20"
 msgid "I'm Masayoshi Soken, sound director for FFXIV."
-msgstr "Я Масайоси Сокэн, звукорежиссёр FFXIV."
+msgstr "Я Масайоши Сокэн, звукорежиссёр FFXIV."
 
 #. ja: みなさんのゲーム体験を盛り上げるべく、<br>日夜、ここで制作業務を行っているわけですけど……<br>そんなことは、どうでもよくて。
 #. de: Ich bin einer von denen, die sich Tag und Nacht für euch abrackern, um euer Spielerlebnis möglichst aufregend zu machen ... Aber ist ja egal.
@@ -10285,6 +10315,7 @@ msgstr "Вот бы однажды эта комната заполнилась 
 #. fr: Nous venons tout juste de terminer Heavensward et voilà que je dois déjà décider de la direction à prendre pour la prochaine extension... Pour tout vous dire, la date limite pour le storyboard de la scène d'in<shy>tro<shy>duc<shy>tion approche à grands pas<nbsp>!
 #. column 21: Where should we base this new adventure? Under the sea? Under the ground? On the moon, mayhap...? Even if we do have a fair amount of time until release, we have to plan out announcements, and coming up with a brand-new scenario is never an easy task.
 #. column 22: And then there'll have to be new jobs, of course. Samurai? Or how about red mage? Hmmm... Oh! You'll keep these idle musings to yourself, won't you!?
+#, aeria-term-model-exception: door 85b2c5539ecf
 msgctxt "DefaultTalk:592865:0:20"
 msgid "We've barely ushered Heavensward out the door, and already we need to decide on a direction for the next expansion. The deadline for that opening movie storyboard is right around the corner..."
 msgstr "Мы только-только выпустили Heavensward, а уже пора решать, куда двигаться дальше. Срок сдачи раскадровки вступительного ролика уже совсем близко..."
@@ -10359,7 +10390,7 @@ msgstr "0"
 #. column 22: 0
 msgctxt "DefaultTalk:592869:0:20"
 msgid "See all those balloons? That's right, the Moonfire Faire's back, and promises to be the most explosive yet! What's the Moonfire Faire, you ask? Well, the first one was held five years ago, to beat back the Bombards that threatened to burn the realm to ashes."
-msgstr "Видишь все эти воздушные шары? Верно, Праздник Огненной Луны снова с нами, и в этот раз обещает быть особенно жарким! Что за праздник? Его впервые провели пять лет назад, чтобы отбиться от бомбардов, грозивших спалить весь мир дотла."
+msgstr "Видишь все эти воздушные шарики? Верно, Праздник Огненной Луны снова с нами, и в этот раз обещает быть особенно жарким! Что за праздник? Его впервые провели пять лет назад, чтобы отбиться от бомбардов, грозивших спалить весь мир дотла."
 
 #. ja: だが、そのボンバードも、ここしばらく現れてない。<br>そこで、冒険者ギルドが紅蓮祭の名を引き継ぎ、<br>ギルドの活動を広く知ってもらう祭りとして開催してるんだ。
 #. de: ... Jetzt lassen sie sich nicht mehr blicken, aber wir haben das Fest zur Sommertradition erhoben, um den Leuten die Arbeit unserer Gilde näherzubringen.
@@ -10438,6 +10469,7 @@ msgstr "Праздник Огненной Луны уже идёт! Гильди
 #. fr: Tu connais les Feux de la Mort<nbsp>? Non<nbsp>? Ben regarde autour de toi, c'est ça<nbsp>! On a justement besoin de l'aide d'aventuriers à Costa del Sol, alors si ça te tente, va demander l'au<shy>to<shy>ri<shy>sa<shy>tion de participer à Limsa Lominsa.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: lookout 86f5df093358
 msgctxt "DefaultTalk:592876:0:20"
 msgid "The Adventurers' Guild is once again hosting the Moonfire Faire. I'd be there myself, but I'm on the lookout for anyone willing to lend a hand. Go to Limsa Lominsa─we need you!"
 msgstr "Гильдия авантюристов снова устраивает Праздник Огненной Луны! Я бы и сам там был, да вот ищу тех, кто поможет. Скорее в Лимсу-Ломинсу, без тебя нам не справиться!"
@@ -10503,7 +10535,7 @@ msgstr "Подумайте, как ярче будут гореть фейерв
 #. column 21: Just think how much more poignant those fireworks would be with something to remember them by. Blue comets are fleeting but a souvenir─a souvenir is forever!
 msgctxt "DefaultTalk:592881:0:22"
 msgid "...You seem rather fixated on my face. Do I have aught stuck betwixt my teeth? Or...have I suddenly gained an ardent admirer?"
-msgstr "...Вы что-то слишком пристально на меня смотрите. У меня что-то на лице? Или... вы мной любуетесь?"
+msgstr "...Вы что-то слишком пристально на меня смотрите. У меня что-то на лице? Или... у меня вдруг появился <if $gn4>пылкий поклонник<else>пылкая поклонница</if>?"
 
 #. ja: ようこそ、「ミニオンスクウェア」へ！<br>こちらではミニオンを使った遊技、<br>「ロード・オブ・ヴァーミニオン（LoVM）」を楽しめます！
 #. de: Willkommen in der Halle der Trabanten! Bist du hier, um deine Begleiter in einen Kampf der Trabanten zu führen?
@@ -10537,6 +10569,7 @@ msgstr "Если войско маловато, торговец миньона�
 #. fr: Le bureau de la directrice du scolasticat Saint-Endalim est à deux pas, mais elle ne reçoit pas sans rendez-vous.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: audience 9e88b0dcc1a3
 msgctxt "DefaultTalk:592883:0:20"
 msgid "The chamber for the headmistress of Saint Endalim's Scholasticate lies beyond. As she is quite busy these days, those without arrangements for an audience will be asked to leave."
 msgstr "За этой дверью кабинет настоятельницы Схоластиката святого Эндалима. Она сейчас очень занята, и без предварительной договорённости на аудиенцию вас попросят уйти."
@@ -10693,6 +10726,7 @@ msgstr "Хорошо, что мы нашли Танкреда. Сейчас на
 #. fr: Je... je suis tellement ému à l'idée de pouvoir admirer le coucher de soleil dans ma belle patrie... que j'en ai les larmes aux yeux...
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: witness bec4f25b80c5
 msgctxt "DefaultTalk:592895:0:20"
 msgid "To think I'll be able to witness that sunset once more... \\<sniffle>"
 msgstr "Подумать только, я снова увижу тот закат... <i>Шмыг...</i>"
@@ -10736,7 +10770,7 @@ msgstr "..."
 #. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
 msgctxt "DefaultTalk:592901:0:20"
 msgid "Excuse me, <if $gn4>miss<else>sir</if>. I came here to secure the services of an experienced adventurer on behalf of the <i>Harbor Herald</i>. Would you happen to know anyone seeking a bit of work?"
-msgstr "Простите, <if $gn4>барышня<else>сударь</if>. Я пришла сюда от имени <i>«Вестника гавани»</i> найти опытного приключенца. Не знаете, кто был бы не прочь подзаработать?"
+msgstr "Простите, <if $gn4>барышня<else>сударь</if>. Я пришла сюда от имени <i>«Вестника гавани»</i> найти опытного искателя приключений. Не знаете, кто был бы не прочь подзаработать?"
 
 #. ja: ラウンドロクスがいないことが、今でも信じられないの。<br>ここにくればあの娘と会えることが、いつのまにか、<br>あたりまえになってしまっていたのね……。
 #. de: Ich kann es noch immer nicht fassen, dass Rundblox nicht mehr da ist. Ihr Lager sieht so trostlos aus ... All ihre verstreuten Habseligkeiten ...
@@ -10942,7 +10976,7 @@ msgstr "Студенты и не подозревают, как много дл�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "DefaultTalk:592916:0:20"
 msgid "<split \" \" 1><string $gs1></split>, words are not enough to express my gratitude. Had it not been for you and Inspector Briardien's unyielding efforts, we might not have discovered what had become of our dear Ulaa until it was too late."
-msgstr "<split \" \" 1><string $gs1></split>, словами не выразить, как я тебе благодарен. Если бы не ты и инспектор Бриарден, мы могли бы так и не узнать, что стало с нашей дорогой Улаа, пока не стало бы слишком поздно."
+msgstr "<split \" \" 1><string $gs1></split>, словами не выразить, как я вам благодарен. Если бы не вы и инспектор Бриардьен, мы могли бы так и не узнать, что стало с нашей дорогой Улаа, пока не стало бы слишком поздно."
 
 #. ja: 一刻も早く、真犯人の逮捕を……と言いたいところですが、<br>まずは彼女が精神的に落ち着くのを待ちたいのです。<br>神殿騎士による事情聴取は、その後となりましょう。
 #. de: 0
@@ -11049,6 +11083,7 @@ msgstr "<split \" \" 1><string $gs1></split>... Не знаю, что сказа
 #. fr: Après vingt longues années d'occupation, et malgré la perte de jeunes comme Wilred qui rêvaient de liberté... enfin, notre patrie est débarrassée de l'envahisseur garlemaldais<nbsp>!
 #. column 20: <split " " 1><string $gs1></split>... I don't know what to say.
 #. column 22: 0
+#, aeria-term-model-exception: witness bec4f25b80c5
 msgctxt "DefaultTalk:592923:0:21"
 msgid "So much time has passed and so many lives have been lost since the Empire took our home from us. Allow me to thank you on Wilred's behalf. He wanted nothing more than to bear witness to an Ala Mhigo free from imperial control."
 msgstr "Столько времени прошло, столько жизней унесло с тех пор, как Империя отняла у нас родину. Позволь поблагодарить тебя от имени Уилреда. Он мечтал увидеть Ала-Миго свободной от имперской власти."
@@ -11087,7 +11122,7 @@ msgstr "Один молодой дракон упёрся, чтобы я при�
 #. column 21: A young dragon was most insistent that I make him an omelette, after I had told him it was a favorite food of mine. Suffice it to say, it did not agree with his palate.
 msgctxt "DefaultTalk:592925:0:22"
 msgid "Hardly surprising, I suppose. I have no interest in the culinary arts. The only reason I thought to oblige him was because the lord commander had taught me the recipe─or tried to."
-msgstr "Неудивительно. Я не особо интересуюсь готовкой. Согласилась приготовить омлет только потому, что верховный командующий научил меня рецепту. Ну, или пытался научить."
+msgstr "Неудивительно. Я не особо интересуюсь готовкой. Согласилась приготовить омлет только потому, что лорд-командир научил меня рецепту. Ну, или пытался научить."
 
 #. ja: ヴィゾーヴニルが少女を救ったことは、<br>皇都の未来にとって、明るい材料となるだろう。<br>しかし、守旧派には目を光らせる必要がありそうだな。
 #. de: Maelies Rettung wird als Wendepunkt in der Geschichte Ishgards gefeiert werden, da bin ich mir sicher. Aber wir müssen wachsam bleiben und ein Auge auf die Loyalisten haben.
@@ -11159,7 +11194,7 @@ msgstr "Весь народ Гунду благодарит нижеземца. 
 #. column 22: 0
 msgctxt "DefaultTalk:592932:0:20"
 msgid "When Eenu Vanu thinks about all of the tasty cloudfish he can catch, his stomach begins to growl like distant thunder. Maybe he should have a snack so he does not scare away fish..."
-msgstr "Ену Вану представляет, сколько вкусной облачной рыбы он поймает, и живот у него уже урчит, словно гром вдали. Может, перекусить, чтобы не распугать рыбу?.."
+msgstr "Ину Вану представляет, сколько вкусной облачной рыбы он поймает, и живот у него уже урчит, словно гром вдали. Может, перекусить, чтобы не распугать рыбу?.."
 
 #. ja: まずは、まずは、種まきからよ。<br>浮島にお花を咲かせましょう。
 #. de: Was für eine wunderschöne neue Heimat! Ranu Vali-ooh freut sich schon darauf, wenn farbenfrohe Frühlingsblumen Ok' Gundo Nakki zieren.
@@ -11250,6 +11285,7 @@ msgstr "В хорошей сделке выигрывают обе сторон�
 #. column 21: 0
 #. column 22: 0
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-rendering: ajattara aaf6e011a8fe аджатару
 msgctxt "DefaultTalk:592941:0:20"
 msgid "Who am I to turn down a challenge from the <if $gn4>woman<else>man</if> that slew the ajattara?"
 msgstr "Как я могу отказаться от вызова <if $gn4>той, кто сразила<else>того, кто сразил</if> аджатару?"
@@ -11528,6 +11564,7 @@ msgstr "Даже вунду рассказывают у костров, как �
 #. fr: Le légendaire continent flottant d'Azys Lla, théâtre des ex<shy>pé<shy>ri<shy>men<shy>ta<shy>tions magiques de l'ancienne civilisation allagoise... Je n'ai jamais été aussi inspiré<nbsp>!
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-exception: witness bec4f25b80c5
 msgctxt "DefaultTalk:592968:0:20"
 msgid "The fabled Azys Lla. Is it not inspiring? Ah, if only my master were here to witness its wonders."
 msgstr "Легендарная Азис-Лла. Разве это место не вдохновляет? Ах, если бы мой учитель мог увидеть все его чудеса."
@@ -11548,6 +11585,7 @@ msgstr "Извини, <split \" \" 1><string $gs1></split>, но если дел
 #. fr: J'aimerais bien revoir madame la dragonne... et voler sur son dos encore une fois, hi hi<nbsp>! Vous pensez que ce sera possible si on fait la paix avec les Dravaniens<nbsp>?
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-rendering: dragon e00916e7e33f драконица
 msgctxt "DefaultTalk:592970:0:20"
 msgid "Do you think that dragon's comin' back? If she does, do you think she'll let me ride her again?"
 msgstr "Как думаешь, та драконица ещё вернётся? Если вернётся, как думаешь, снова позволит мне прокатиться на ней?"
@@ -11584,9 +11622,10 @@ msgstr "Пусть эти ублюдки усвоят урок и больше �
 #. fr: Gibrillont a organisé une collecte pour aider les malheureux qui ont tout perdu lors des incendies de Brouillasse. Avec un peu de chance, ils pourront être relogés plus tôt que prévu.
 #. column 21: 0
 #. column 22: 0
+#, aeria-term-model-rendering: Gibrillont 6874a3b59061 Гибриллон
 msgctxt "DefaultTalk:592973:0:20"
 msgid "Gibrillont's takin' donations from folk for buildin' new homes. Ain't been long and we've already got a respectable sum, would you believe that?"
-msgstr "Жибриллон собирает пожертвования на новые дома. И ведь прошло совсем немного времени, а сумма уже приличная. Представляешь?"
+msgstr "Гибриллон собирает пожертвования на новые дома. И ведь прошло совсем немного времени, а сумма уже приличная. Представляешь?"
 
 #. ja: リオルさんから、嬉しい情報を聞きました。<br>ホーリー兄様の行方がわかったようなのです。
 #. de: Riol hat mir gesagt, dass mein Bruder wohlauf ist. Was für ein Glück!
@@ -11694,7 +11733,7 @@ msgstr "Да и вообще, половина Храбрецов перемет
 #. column 22: 0
 msgctxt "DefaultTalk:592980:0:20"
 msgid "The way the refugees looked away when we showed them the linkpearl fragments... Aye, I think Aergmhus may have the right of it."
-msgstr "Как беженцы отводили глаза, когда мы показали им обломки звеньевых жемчужин... Да, думаю, Аэргмус прав."
+msgstr "Как беженцы отводили глаза, когда мы показали им обломки звеньевых жемчужин... Да, думаю, Эргмус прав."
 
 #. ja: 0
 #. de: 0
@@ -11712,7 +11751,7 @@ msgstr "Он хороший человек, но видно, что предат
 #. column 22: 0
 msgctxt "DefaultTalk:592981:0:20"
 msgid "Aenor, you cannot be serious! He must be three times your size! I mean, how would you even... Surely you haven't..."
-msgstr "Аэнор, ты же не серьёзно?! Он втрое больше тебя! То есть, как вы вообще... Неужели вы уже?.."
+msgstr "Энор, ты же не серьёзно?! Он втрое больше тебя! То есть, как вы вообще... Неужели вы уже?.."
 
 #. ja: 0
 #. de: 0
@@ -11775,7 +11814,7 @@ msgstr "Как же здорово, что Танкред вернулся! Зн
 #. column 22: 0
 msgctxt "DefaultTalk:592986:0:20"
 msgid "The first commander─and you─have been entrusted with a mission of grave import. For Ishgard's sake, it must not fail."
-msgstr "Первому командующему и вам поручена чрезвычайно важная миссия. Ради Ишгарда она должна увенчаться успехом."
+msgstr "Первому командиру и вам поручена чрезвычайно важная миссия. Ради Ишгарда она должна увенчаться успехом."
 
 #. ja: ルキア殿から報告は受けている。<br>こちらの申し出を検討してくれることになったようで、<br>ひとまず、胸をなでおろしているところだよ。
 #. de: Seneschall Lucia hat mir von dem Gespräch mit dem Drachen berichtet. Ich bin gespannt, ob Vidofnir die Einladung nach Ishgard annehmen wird.
@@ -11784,7 +11823,7 @@ msgstr "Первому командующему и вам поручена чр�
 #. column 22: 0
 msgctxt "DefaultTalk:592987:0:20"
 msgid "We received word from the first commander not long ago. Though I would have preferred a swifter resolution, I am relieved to hear that our invitation is receiving due consideration."
-msgstr "Недавно мы получили весть от первого командующего. Хотелось бы решить всё быстрее, но я рад, что наше приглашение обдумывают."
+msgstr "Недавно мы получили весть от первого командира. Хотелось бы решить всё быстрее, но я рад, что наше приглашение обдумывают."
 
 #. ja: 今まさに、皇都は混乱の渦中にある。<br>神殿騎士団の働きが、より重要な局面になったということだ。
 #. de: Große Unruhe herrscht in unserer Stadt. Wir müssen vorsichtig sein.
@@ -11793,7 +11832,7 @@ msgstr "Недавно мы получили весть от первого ко
 #. column 22: 0
 msgctxt "DefaultTalk:592988:0:20"
 msgid "The lord commander of the Temple Knights, assaulted in the streets! What madness has gripped our fair city..."
-msgstr "Командующего Храмовыми рыцарями прямо на улице пытались убить! Что за безумие охватило наш прекрасный город..."
+msgstr "Командира Храмовых рыцарей прямо на улице пытались убить! Что за безумие охватило наш прекрасный город..."
 
 #. ja: 人質を救い出すため、<br>君と「暁」の者たちが成してくれたことを、<br>決して忘れはしない。
 #. de: Deine entschlossene Hilfe bei der Befreiung der Geiseln war heldenhaft. Das werde ich nicht vergessen.
@@ -11804,7 +11843,7 @@ msgstr "Командующего Храмовыми рыцарями прямо 
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "DefaultTalk:592989:0:20"
 msgid "Words cannot well express our gratitude, <split \" \" 1><string $gs1></split>. Thank you for rescuing the hostages...and for keeping the lord commander safe."
-msgstr "Словами не выразить, как мы вам благодарны, <split \" \" 1><string $gs1></split>. Спасибо, что спасли заложников... и уберегли командующего."
+msgstr "Словами не выразить, как мы вам благодарны, <split \" \" 1><string $gs1></split>. Спасибо, что спасли заложников... и уберегли командира."
 
 #. ja: アイメリク様が暴漢に襲われた時、<br>我が主人エドモン様と、ご長男のアルトアレール様も、<br>現場におられたそうです。
 #. de: Wir können uns glücklich schätzen, dass Graf Fortemps und der edle Artoirel zugegen waren, als Großmeister Aymeric so feige niedergestochen wurde.
@@ -11813,7 +11852,7 @@ msgstr "Словами не выразить, как мы вам благода�
 #. column 22: I shudder to think what might have happened had they not been there to help...
 msgctxt "DefaultTalk:592990:0:20"
 msgid "By the grace of the Fury, Count Edmont and Lord Artoirel were with Ser Aymeric when he was attacked."
-msgstr "По милости Фурии граф Эдмонт и лорд Арторель были рядом с сиром Эймериком, когда на него напали."
+msgstr "По милости Фурии граф Эдмонт и лорд Артуарель были рядом с сиром Эймериком, когда на него напали."
 
 #. ja: 主人の応急手当の甲斐もあり、<br>アイメリク様の命にも別状はないとのこと……。<br>アルトアレール様も、暴漢を組み伏せ捕らえたのだとか。
 #. de: Ohne ihre beherzte Hilfe wäre der Großmeister womöglich auf der Straße verblutet und Ishgard stände ohne Anführer da.
@@ -11840,7 +11879,7 @@ msgstr "Страшно подумать, что могло бы случитьс
 #. column 22: 0
 msgctxt "DefaultTalk:592991:0:20"
 msgid "While we are proud that Lord Artoirel acquitted himself with honor in the Vault, I am rather more relieved that he returned to us hale and healthy."
-msgstr "Мы гордимся тем, как лорд Арторель проявил себя в Хранилище, но я ещё больше рад, что он вернулся к нам целым и невредимым."
+msgstr "Мы гордимся тем, как лорд Артуарель проявил себя в Хранилище, но я ещё больше рад, что он вернулся к нам целым и невредимым."
 
 #. ja: 0
 #. de: Und ich möchte Euch persönlich danken, dass Ihr auf Herrn Artoirel Acht gegeben habt. Ich hatte solche Sorge!
@@ -11858,7 +11897,7 @@ msgstr "0"
 #. column 22: 0
 msgctxt "DefaultTalk:592992:0:20"
 msgid "Me? I'm Baenfaeld, the celebrant for this year's Starlight Celebration. I'm a bit bleedin' busy with festival business right now though, so if ye don't mind..."
-msgstr "Я? Я Бенфелд, распорядитель нынешнего Звёздного фестиваля. Сейчас я тут, понимаешь ли, по уши в праздничных делах, так что извини..."
+msgstr "Я? Я Бенфельд, распорядитель нынешнего Праздника звёздного света. Сейчас я тут, понимаешь ли, по уши в праздничных делах, так что извини..."
 
 #. ja: お前さんには、本当に世話になった。<br>俺たちも、大切なことを思い出すことができたよ。<br>まったく、感謝してもしきれない。
 #. de: Dir haben wir zu verdanken, dass das Sternenlichtfest wieder auf Kurs gekommen ist. Die Glocke läutet zwar nicht originalgetreu, aber die Kinder freut's und das ist die Hauptsache.
@@ -11914,7 +11953,7 @@ msgstr "Не знаю, что бы мы без вас делали. Праздн
 #. column 22: 0
 msgctxt "DefaultTalk:592997:0:20"
 msgid "Heard about the watch from the lord commander, did you? Aye, it's true. Feels queer to be operatin' so openly, but I couldn't say no after he batted them eyelashes of his."
-msgstr "Услышал от командующего про стражу, да? Ага, всё так. Странно работать открыто, но я не смог отказать, когда он захлопал своими ресницами."
+msgstr "Командир тебе про стражу рассказал, да? Ага, всё так. Странно работать открыто, но я не смог отказать, когда он захлопал своими ресницами."
 
 #. ja: ヒルダの姐さんに、付いていくだけだぜ！
 #. de: Ich bleibe bei Hilda, so viel ist sicher.

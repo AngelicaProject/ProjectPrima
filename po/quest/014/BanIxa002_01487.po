@@ -26,7 +26,7 @@ msgstr "<ui-color 508><ui-edge-color 509> Синхронизация зада
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_SEQ_01:1"
 msgid "Sezul has marked you for a skilled artisan, and requests that you craft for him an airship hull component─a specialized item which the Ehcatl camp lacks the resources to build. Make your way to Fallgourd Float and obtain the necessary crafting materials from the Qiqirn junkmonger.<br><br>※Please note that the difficulty of this quest has been synced to your current level."
-msgstr "Сезул сразу понял, что вы искусный ремесленник, и просит изготовить деталь внутренней обшивки дирижабля — в лагере Экатля не хватает нужных материалов. Отправляйтесь в Плавучую тыкву осеннего урожая и получите материалы для изготовления у торговца-кикирна.<br><br>※Учтите, что сложность задания синхронизирована с вашим уровнем."
+msgstr "Сезул сразу понял, что вы искусный ремесленник, и просит изготовить деталь внутренней обшивки дирижабля — в лагере Экатлей не хватает нужных материалов. Отправляйтесь в Плавучую тыкву и получите материалы для ремесла у торговца-кикирна.<br><br>※Учтите, что сложность задания синхронизирована с вашим уровнем."
 
 #. ja: キキルン族の商人から<sheet EventItem 2001364 0>を受け取った。これを<sheet Item "　8129" 0>に加工するための製作施設が、フォールゴウドの「浮かぶコルク亭」にあるそうだ。施設を管理する「ヒルデヤード」に「<sheet EventItem 2001364 0>」を渡し、詳しい説明を受けよう。
 #. de: Der Händler gibt dir <noun-de EventItem 1 2001364 1 4 1> und rät dir, die Arbeitsstätte neben dem Schwimmenden Korken zu benutzen. Geh zur Arbeitsstätte und übergib das Material an Hildeyerd.
@@ -123,9 +123,10 @@ msgstr "Поговорите с Сезулом Тотолоком."
 #. speaker: SEZULTOTOLOC
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: face 7d91d5daccc3
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_SEZULTOTOLOC_000_000:1"
 msgid "Hm? A strange face you make, <split \" \" 1><string $gs1></split>. Burning with questions, you are, yes?"
-msgstr "Хм? Чего это ты такой странный, <split \" \" 1><string $gs1></split>? Вопросы так и жгут, да?"
+msgstr "Хм? Вид у тебя странный, <split \" \" 1><string $gs1></split>. Вопросы так и жгут, да?"
 
 #. ja: 何か聞きてぇことがあんのかッァー？
 #. de: Brennen Fragen in dir?
@@ -220,7 +221,7 @@ msgstr "Сезул хочет, чтобы <split \" \" 1><string $gs1></split> �
 #. speaker: SEZULTOTOLOC
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_SEZULTOTOLOC_000_008:1"
 msgid "You know of place called “Fallgourd Float,” yes? Fine crafting facility, they have! Perfect for making airship hull interior components!"
-msgstr "Знаешь место под названием «Плавучая тыква осеннего урожая»? Там отличная мастерская! Как раз для изготовления внутренних деталей корпуса дирижабля!"
+msgstr "Знаешь место под названием «Плавучая тыква»? Там отличная мастерская! Как раз для изготовления внутренних деталей обшивки дирижабля!"
 
 #. ja: その船体部材ってのはなッァ、<br>船体を内側から支える金属フレームだッァ！<br>まさしく船の背骨となる部材ッィ！
 #. de: Brauch ich stabilen Metallrahmen. Unterstützt Rumpf von innen und wird Rückgrat von Luftschiff!
@@ -402,7 +403,7 @@ msgstr "Послушайте, мастер Татараму, вы всё не т
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_TATARAMU_000_040:1"
 msgid "Just “brought them along,” did <if $gn4>she<else>he</if>!? Poppycock! What would a gil-grabbing mercenary need with airship hull component materials!?"
-msgstr "Просто «принесла»!? Да быть того не может! Зачем наёмнику, падкому на гил, материалы для внутренней детали корпуса дирижабля!?"
+msgstr "Просто <if $gn4>принесла<else>принёс</if>!? Да быть того не может! Зачем <if $gn4>наёмнице, падкой<else>наёмнику, падкому</if> на гил, материалы для внутренней детали обшивки дирижабля!?"
 
 #. ja: しかも、使いこなすには高度な技術を要して、<br>熟練の技術屋だって敬遠する、玄人志向の材料です。<br>僕以外に、こいつを必要とする人がいるなんて信じられない！
 #. de: Lediglich ein meisterhafter Techniker mit aus<shy>gezeich<shy>neten Fä<shy>hig<shy>kei<shy>ten wäre in der Lage, das volle Potenzial solcher Gegenstände zu entfalten - und ich glaube kaum, dass jemand außer mir das Zeug dazu hat.
@@ -607,7 +608,7 @@ msgstr "Я считал это пустыми сплетнями, но, похо
 #. speaker: TATARAMU
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_TATARAMU_000_067:1"
 msgid "I will not allow it! Transforming the wonder of air travel into a means for delivering death is blasphemy of the highest order!"
-msgstr "Я этого не допущу! Превратить чудо воздухоплавания в орудие смерти — величайшее святотатство!"
+msgstr "Я этого не допущу! Превратить чудо воздухоплавания в орудие смерти — величайшее богохульство!"
 
 #. ja: ち、ちょっと！　どこいくの！？<br>タタラムさんっ！
 #. de: Aber, Tataramu! Was habt Ihr denn vor?
@@ -736,6 +737,7 @@ msgstr "Эй, эй, постой! Кто это тут строит орудие
 #. de: Versuch nicht, es zu leugnen! Ich habe mitansehen müssen, wie die Ixal unsere Technologie gestohlen haben, um diese fürchterlichen Panzerballons zu bauen! Deine Art hat sich dem Töten und dem Chaos verschrieben!
 #. fr: Inutile, on ne me la fait pas à moi<nbsp>! Tout le monde sait que vous copiez la technologie des humains pour fabriquer vos maudits ballons, et qu'ensuite, vous vous en servez pour nous attaquer sans merci<nbsp>! Vous êtes tout simplement abjects<nbsp>!
 #. speaker: TATARAMU
+#, aeria-term-model-exception: balloons a12f347e129f
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_TATARAMU_000_088:1"
 msgid "Do not try to deny it! I have seen how the Ixal stole our technology to build those horrendous war balloons! Your kind know naught but killing and mayhem!"
 msgstr "Не отрицайте! Я сам видел, как иксалы украли наши технологии и построили эти ужасные боевые аэростаты! Вашему племени ведомы лишь убийства и хаос!"
@@ -796,6 +798,7 @@ msgstr "Да! Небес! Постучим в дверь богов! Тук-ту
 #. de: Ayatlan ... fliegender Kontinent der Legenden! Hoch, hoch über Wolken. Ort, wo unsere Vorfahren einst lebten!
 #. fr: Oui... Un jour, ceux-ci atteindront le domaine sacré d'Ayatlan, cette terre perdue dans les nuages qui était autrefois la demeure des ancêtres de ceux-ci<nbsp>!
 #. speaker: SEZULTOTOLOC
+#, aeria-term-model-exception: High 91749b46850d
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_SEZULTOTOLOC_000_095:1"
 msgid "Ayatlan... Floating continent of legends, it is! High, high above clouds. Place where Sezul's ancestors once lived!"
 msgstr "Айатлан... Легендарный парящий континент! Высоко-высоко над облаками. Там когда-то жили предки Сезула!"
@@ -820,6 +823,7 @@ msgstr "Но теперь этой мечтой живут немногие. И�
 #. de: Ist reine Zeit<shy>verschwen<shy>dung, sag ich dir! Andere Ixal auch helfen sollten bei Bauen von Ballon-Luftschiff-Hybrid und nach Sternen greifen!
 #. fr: Mais comme celui-ci se tue à le dire depuis le début, ceux-ci n'ont pas du tout les mêmes aspirations<nbsp>! Ceux-ci poursuivront leur rêve jusqu'au bout, et grâce au Dezul Qualan issu d'une fusion des ballons ixali et des aéronefs humains, ils le réaliseront<nbsp>!
 #. speaker: SEZULTOTOLOC
+#, aeria-term-model-exception: balloon f3d68b1182e8
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_SEZULTOTOLOC_000_098:1"
 msgid "Waste of life, Sezul says! Help Ehcatl Nine build balloon-airship hybrid and reach for distant sky, other Ixal should!"
 msgstr "Это же пустая трата жизни! Пусть другие иксалы помогут Девятке Экатлей построить гибрид аэростата и дирижабля и устремиться к дальним небесам!"
@@ -868,6 +872,7 @@ msgstr "Страсть важна. Но и знания нужны. Хм... Се
 #. de: Vielen Dank, mein Herr, Ihr werdet es nicht bereuen! Tataramu steht zu Euren Diensten!
 #. fr: Chef, oui, Chef<nbsp>! Comptez sur moi, je ferai de mon mieux<nbsp>!
 #. speaker: TATARAMU
+#, aeria-term-model-exception: regret a5147aa40ba7
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_TATARAMU_000_104:1"
 msgid "Thank you, sir, you won't regret this! Tataramu, at your service!"
 msgstr "Спасибо, сэр, вы не пожалеете! Татараму к вашим услугам!"
@@ -994,6 +999,7 @@ msgstr "Птенцы, вылупившиеся за пределами леса,
 #. de: Für verlorene Schwingen, Vorfahren bauten große Ballons. Sehr einfallsreich! Führen Wolkengleiter von Ehcatl ihr Vermächtnis fort.
 #. fr: Heu<shy>reu<shy>se<shy>ment, les ancêtres de ceux-ci, dans leur immense sagesse, ont eu l'idée lumineuse de remplacer leurs ailes emplumées par des ballons<nbsp>! Il est donc du devoir de ceux-ci de se montrer dignes de leurs prédécesseurs et de continuer leur œuvre<nbsp>!
 #. speaker: SEZULTOTOLOC
+#, aeria-term-model-exception: balloons a12f347e129f
 msgctxt "quest/014/BanIxa002_01487:TEXT_BANIXA002_01487_SEZULTOTOLOC_000_134:1"
 msgid "In place of lost wings, great balloons Sezul's forefathers made. Such ingenuity! Seek to continue their legacy, Ehcatl Nine does!"
 msgstr "Вместо утраченных крыльев предки Сезула построили огромные аэростаты. Вот это изобретательность! Девятка Экатлей продолжает их дело!"

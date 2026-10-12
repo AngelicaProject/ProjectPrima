@@ -14,6 +14,7 @@ msgstr ""
 #. macro: <if ($gn11 < 17)>day<else>eve</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>Mist<case>the Lavender Beds<case>the Goblet<case>Shirogane</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: caretaker bc95fc3c83a0
 msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_HOUSINGOFFICER_000_000:1"
 msgid "I pray this <if ($gn11 < 12)><if ($gn11 < 4)>eve<else>morn</if><else><if ($gn11 < 17)>day<else>eve</if></if> finds you well, <if $gn4>miss<else>sir</if>. As caretaker of <switch $n1><case>Mist<case>the Lavender Beds<case>the Goblet<case>Shirogane</switch>, it would be my pleasure to answer any queries you may have."
 msgstr "Надеюсь, день у вас добрый, <if $gn4>сударыня<else>сударь</if>. Я присматриваю за районом <switch $n1><case>Туман<case>Лавандовые грядки<case>Кубок<case>Сироганэ</switch> и с радостью отвечу на ваши вопросы."
@@ -401,7 +402,7 @@ msgstr "Чтобы купить участок в Сироганэ, сначал
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_031:1"
 msgid "In both cases, to purchase an unowned plot, select the <ui-color 500><ui-edge-color 501>placard</ui-edge-color></ui-color> located at its entrance and select <ui-color 500><ui-edge-color 501>Purchase Land</ui-edge-color></ui-color>."
-msgstr "Чтобы купить свободный участок, выберите <ui-color 500><ui-edge-color 501>табличку</ui-edge-color></ui-color> у входа на участок, а затем — <ui-color 500><ui-edge-color 501>Купить участок</ui-edge-color></ui-color>."
+msgstr "Чтобы купить свободный участок, выберите <ui-color 500><ui-edge-color 501>объявление</ui-edge-color></ui-color> у входа на участок, а затем — <ui-color 500><ui-edge-color 501>Купить участок</ui-edge-color></ui-color>."
 
 #. ja: 土地はギルで購入することができ、<br>販売開始時の金額を最高金額として、6時間に1回ずつ、<br>決められた最低金額まで値下げが行われます。
 #. de: Dieser wird alle 6 Stunden Stück für Stück gesenkt, bis ein bestimmter Mindestverkaufspreis erreicht ist. Wie lange du wartest, bleibt allein dir überlassen.
@@ -573,7 +574,7 @@ msgstr "Редко кто доволен своим жилищем. К счас�
 #. fr: L'extérieur d'une maison se compose de huit parties<nbsp>: le “toit”, la “façade”, les “fenêtres”, la “porte”, les “panneaux”, les “murets”, les “décorations de toit” et les “décorations de façade”.
 msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_061:1"
 msgid "You can customize the roof, roof decorations, exterior walls, exterior wall decorations, windows, door, placard, and fence of your estate."
-msgstr "Вы можете менять крышу, украшения на крыше, наружные стены и их украшения, окна, дверь, табличку и забор."
+msgstr "Вы можете менять крышу, украшения на крыше, наружные стены и их украшения, окна, дверь, объявление и забор."
 
 #. ja: 外装建材を所持品に入れた状態で、所有する土地にて<br>「ハウジング」メニューから「外装の変更」を選ぶと、<br>外装を変更することができます。
 #. de: Unter „Unterkünfte“ (Hauptmenü → Soziales) kannst du diese Elemente anpassen, indem du „Bauelemente ändern“ auswählst. Du musst dich dabei im Außenbereich deines Grundstücks befinden.
@@ -1082,9 +1083,10 @@ msgstr "Что?! Вы хотите взять <i>весь</i> дом и <i>пе�
 #. ja: 「引越」とは、<br>ハウスごと別の土地へ移転する機能です。<br>別のハウジングエリア、異なるサイズの土地へも移転できます。
 #. de: Es ist möglich, mit deiner Unterkunft auf ein anderes Grundstück umzuziehen. Das neue Grundstück kann dabei in einem beliebigen Wohngebiet liegen und auch die Größe spielt keine Rolle.
 #. fr: La fonction de déménagement vous permet de transférer l'intégralité de votre maison d'un terrain vers un autre, et ce, même en changeant de quartier résidentiel ou de taille de terrain.
+#, aeria-term-model-rendering: destination f6ed49f0e090 назначения
 msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_211:1"
 msgid "It is possible to relocate your estate hall to a new plot. The destination plot can be situated in any residential area and be of any size."
-msgstr "Дом можно перенести на другой участок в любом жилом районе, причём размер нового участка тоже может быть любым."
+msgstr "Дом можно перенести на другой участок. Участок назначения может находиться в любом жилом районе и быть любого размера."
 
 #. ja: ハウス（個人）はオーナーが、<br>ハウス（フリーカンパニー）は、「土地の購入・放棄」権限を、<br>有しているメンバーが、引越を実行できます。
 #. de: Den Umzug durchführen kann der Besitzer der Unterkunft. Bei Unterkünften von Freien Ge<shy>sell<shy>schaften können nur Mitglieder mit dem Recht „Grundstück kaufen/aufgeben“ den Umzug durchführen.
@@ -1100,9 +1102,10 @@ msgstr "Личный дом может перенести его владеле�
 #. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#, aeria-term-model-rendering: destination f6ed49f0e090 назначения
 msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_213:1"
 msgid "To begin the process, inspect the <ui-color 500><ui-edge-color 501>placard</ui-edge-color></ui-color> located at the entrance of the destination plot and select <ui-color 500><ui-edge-color 501>Purchase Land</ui-edge-color></ui-color>. A prompt for relocation will appear."
-msgstr "Чтобы начать перенос, осмотрите <ui-color 500><ui-edge-color 501>информационную доску</ui-edge-color></ui-color> у входа на выбранный участок и нажмите <ui-color 500><ui-edge-color 501>Купить участок</ui-edge-color></ui-color>. Появится окно переноса."
+msgstr "Чтобы начать перенос, осмотрите <ui-color 500><ui-edge-color 501>объявление</ui-edge-color></ui-color> у входа на участок назначения и нажмите <ui-color 500><ui-edge-color 501>Купить участок</ui-edge-color></ui-color>. Появится окно переноса."
 
 #. ja: 「引越先の土地代」から、<br>「所有している土地代」の最低額の3割を引いた差額が、<br>実行時に消費されます。
 #. de: Wenn du ein neues Grundstück kaufst, werden 30 % des Mindestwertes des alten Grundstücks auf den neuen Kaufpreis angerechnet.
@@ -1114,9 +1117,10 @@ msgstr "При покупке нового участка из его цены �
 #. ja: 設置中の調度品、庭具は、引越先の倉庫に収納されます。<br>ただし、チョコボ厩舎とプライベート・エーテライトは、<br>例外として引越先の庭に配置されます。
 #. de: Beim Umzug werden platzierte Möbel ins Lagerhaus des neuen Grundstücks verbracht. Davon ausgenommen sind der Chocobo-Stall und der Miniatur-Ätheryt, die automatisch auf dem neuen Grundstück im Garten platziert werden.
 #. fr: Lors d'un déménagement, tous les meubles (intérieur/jardin) sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment rangés dans l'entrepôt, à l'exception de l'écurie à chocobos et de l'éthérite privée, qui sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment placées dans le jardin du nouveau terrain.
+#, aeria-term-model-rendering: destination f6ed49f0e090 назначения
 msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_221:1"
 msgid "Upon relocation, placed furnishings will be put in the storeroom at the destination plot, save for the chocobo stables and the miniature aetheryte, which will be placed in the garden."
-msgstr "При переносе мебель и садовые предметы отправятся на склад нового участка. Исключение — конюшня чокобо и миниатюрный эфирит: они будут размещены в саду."
+msgstr "При переносе мебель и садовые предметы отправятся на склад участка назначения. Исключение — конюшня чокобо и миниатюрный эфирит: они будут размещены в саду."
 
 #. ja: なお、個室・地下工房のあるハウスの場合、<br>それぞれ引越先に、そのままの状態で引き継がれます。
 #. de: Persönliche Zimmer und Ge<shy>sell<shy>schaftswerkstätten werden so wie sie sind in die neue Unterkunft gebracht.
@@ -1193,7 +1197,7 @@ msgstr "Некоторые предметы на складе перестают
 #. fr: Lors d'un déménagement, tous les meubles (intérieur/jardin) sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment rangés dans l'entrepôt. S'il n'y a pas assez de place dedans, le déménagement ne pourra pas se faire.
 msgctxt "custom/001/ComDefHousingOfficer_00136:TEXT_COMDEFHOUSINGOFFICER_00136_SYSTEM_000_245:1"
 msgid "Upon relocation, placed furnishings will be put in the storeroom at the destination plot. If there is insufficient space, however, the relocation cannot proceed."
-msgstr "При переносе дома мебель и садовые предметы отправятся на склад нового участка. Если места там не хватит, перенести дом не получится."
+msgstr "При переносе дома мебель и садовые предметы отправятся на склад участка назначения. Если места там не хватит, перенести дом не получится."
 
 #. ja: なお、ハウスが自動撤去された場合、<br>撤去から35日以内であれば、居住区担当官から、<br>倉庫内のアイテムを回収できます。
 #. de: Falls die Unterkunft geräumt worden sein sollte, können ihre Objekte innerhalb von 35 Tagen (Erdenzeit) beim Unterkunftsbeamten abgeholt werden. Danach gehen sie verloren.

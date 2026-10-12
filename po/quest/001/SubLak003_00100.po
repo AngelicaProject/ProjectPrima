@@ -52,7 +52,7 @@ msgstr "Вы отбились от банды Гагаруа. Теперь по�
 #. kind: journal
 msgctxt "quest/001/SubLak003_00100:TEXT_SUBLAK003_00100_SEQ_05:1"
 msgid "Upon realizing who you are, Gagarua calls his allies to him, and summons something down upon you from the skies. By the time you realize that this was all a trick, the criminals have run away. However, they have left the aged grimoire in their haste. Retrieve this valuable piece of evidence now."
-msgstr "Поняв, кто вы такой, Гагаруа зовёт сообщников и обрушивает на вас нечто с небес. Пока вы понимаете, что это была уловка, преступники успевают сбежать. Зато в спешке они бросили старую магическую книгу. Заберите это важное доказательство."
+msgstr "Поняв, кто вы, Гагаруа зовёт сообщников и обрушивает на вас нечто с небес. Пока вы понимаете, что это была уловка, преступники успевают сбежать. Зато в спешке они бросили старинный гримуар. Заберите это важное доказательство."
 
 #. ja: ロウェナ記念会館から盗まれた<sheet EventItem 2001463 0>を入手した。崩壊したキャンプの東の「ヨウザン」に報告しよう。
 #. de: Ihr habt das gestohlene Grimoire wieder! Sprich mit Yozan.
@@ -116,7 +116,7 @@ msgstr "Поговорить с Гагаруа."
 #. kind: objective
 msgctxt "quest/001/SubLak003_00100:TEXT_SUBLAK003_00100_TODO_04:1"
 msgid "Pick up the aged grimoire."
-msgstr "Подобрать старую магическую книгу."
+msgstr "Подобрать старинный гримуар."
 
 #. ja: ヨウザンと話す
 #. de: Mit Yozan sprechen
@@ -132,7 +132,7 @@ msgstr "Поговорить с Ёдзаном."
 #. kind: objective
 msgctxt "quest/001/SubLak003_00100:TEXT_SUBLAK003_00100_TODO_06:1"
 msgid "Deliver the aged grimoire to Slafborn."
-msgstr "Отнести старую магическую книгу Слафборну."
+msgstr "Отнести старинный гримуар Слафборну."
 
 #. ja: <if $gn4>ねえちゃん<else>にいちゃん</if>！<br>まずは、ララフェル四人組を調査してみようよ。
 #. de: G.O.U.D.A. wird den Fall um das gestohlene Grimoire lösen. Die Hauptverdächtigen sind eine Gruppe Lalafell, mit der ich in der Ver<shy>gangen<shy>heit schon Bekanntschaft gemacht habe.
@@ -558,7 +558,7 @@ msgstr "<i>Одна</i> ты против троих моих? Ха! У тебя
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/001/SubLak003_00100:TEXT_SUBLAK003_00100_YOUZAN_000_120:1"
 msgid "Just do like you did with Mister Boulder, <if $gn4>Miss<else>Mister</if> <split \" \" 1><string $gs1></split>!"
-msgstr "Ну же, <if $gn4>мисс<else>мистер</if> <split \" \" 1><string $gs1></split>, покажи им, как сражаться!"
+msgstr "Ну же, сделай так же, как с мистером валуном, <if $gn4>мисс<else>мистер</if> <split \" \" 1><string $gs1></split>!"
 
 #. ja: ここは、<if $gn4>お姉ちゃん<else>お兄ちゃん</if>に譲ってあげましょう。<br>いつか私も、イダお姉ちゃん仕込みの、必殺拳を見せてあげるね。
 #. de: Das ist der Ent<shy>scheidungs<shy>kampf - viel Glück, <split " " 1><string $gs1></split>!
@@ -649,9 +649,10 @@ msgstr "Кхм... Ну и ну, Потомок! Да, мы прекрасно з
 #. de: (-Gagarua-)Ich rufe dich bei der Kraft der Kristalle! Steige herab und richte deinen tödlichen Strahl auf unsere Feinde! Erscheine, Valfaris!!!
 #. fr: Tu vas faire con<shy>nais<shy>san<shy>ce avec la chimère dévoreuse de Primordiaux<nbsp>!<br>Ô Valefore, écoute mes prières et descends des cieux pour protéger tes fidèles serviteurs<nbsp>!
 #. speaker: GAGARUA
+#, aeria-term-model-exception: tear 33605bb9244a
 msgctxt "quest/001/SubLak003_00100:TEXT_SUBLAK003_00100_GAGARUA_000_146:1"
 msgid "As our forefathers before us, we have a winged beast in our thrall, whose strength is so great as to tear primals in twain and turn brave men to whimpering wretches! O mighty Valefor, we summon you with our prayers─descend from the heavens, and vanquish our foes!"
-msgstr "Как и наши предки, мы подчинили себе крылатого зверя, чьей силы хватит разорвать праймалов на части и заставить храбрецов дрожать от страха! О могучий Вальфор, внемли нашей молитве! Спустись с небес и сокруши врагов!"
+msgstr "Как и наши предки, мы подчинили себе крылатого зверя, чьей силы хватит разорвать праймалов на части и заставить храбрецов дрожать от страха! О могучий валефор, внемли нашей молитве! Спустись с небес и сокруши врагов!"
 
 #. ja: 何か降りてくるのかな？<br>……なかなか現れないね。
 #. de: Noch ist nichts herabgestiegen ...
@@ -749,6 +750,7 @@ msgstr "Весёлые они. Надеюсь, когда-нибудь мне у
 #. macro: <if $gn4>Miss<else>Mister</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: tail d321c4f43bdc
 msgctxt "quest/001/SubLak003_00100:TEXT_SUBLAK003_00100_SHIUN_000_190:1"
 msgid "They turned tail and ran when they learned who you were, <if $gn4>Miss<else>Mister</if> <split \" \" 1><string $gs1></split>."
 msgstr "Они бросились наутёк, когда узнали, кто ты, <if $gn4>мисс<else>мистер</if> <split \" \" 1><string $gs1></split>."
@@ -789,6 +791,7 @@ msgstr "Дети и магическая книга? Значит, мои опа
 #. de: Das ist ja allerhand. Von diesem Gagarua hatte ich noch nicht gehört, aber wir werden auf der Hut sein müssen. Typen wie der geben nicht so schnell auf.
 #. fr: ... Gagarua<nbsp>? Y faudra que j'vérifie si ce nom apparaît dans les registres. Si c'est pas le cas, j'le ferai ajouter à la liste des criminels recherchés<nbsp>!
 #. speaker: SLAFBORN
+#, aeria-term-model-exception: lookout 86f5df093358
 msgctxt "quest/001/SubLak003_00100:TEXT_SUBLAK003_00100_SLAFBORN_000_212:1"
 msgid "Gagarua? No, I cannot say I am familiar with him. But if you say he and his conspirators are to blame, then I will believe it. I will report to the guild, and ensure we all are on lookout for that gang."
 msgstr "Гагаруа? Нет, такого я не знаю. Но если ты говоришь, что виноваты он и его сообщники, я тебе верю. Доложу гильдии и предупрежу всех, чтобы следили за этой шайкой."

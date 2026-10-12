@@ -540,6 +540,7 @@ msgstr "Показывать цену с учётом комиссии"
 #. ja: 移動先のエリア「<sheet PlaceName "<sheet TerritoryType $n1 5>" 0>」は混雑緩和のため、複数のインスタンスにわけられています。<br>移動したいインスタンスを選んでください。（どのインスタンスでも内容に違いはありません。）
 #. de: Um das Zielgebiet „<sheet PlaceName "<sheet TerritoryType $n1 5>" 0>“ zu entlasten, wurde es in mehrere Instanzen gleichen Inhalts aufgeteilt.<br>Wähle eine Instanz aus.
 #. fr: La zone “<sheet PlaceName "<sheet TerritoryType $n1 5>" 0>” est divisée en plusieurs instances pour éviter une surcharge.<br>Veuillez choisir l'instance de destination.<br>(Elles sont toutes identiques en contenu.)
+#, aeria-term-model-exception: destination f6ed49f0e090
 msgctxt "Addon:2090:0:0"
 msgid "To reduce congestion, the area you are about to enter has been divided into multiple identical instances. Select a destination."
 msgstr "Чтобы избежать перегрузки, эта зона разделена на несколько одинаковых инстансов. Выберите нужный."
@@ -5599,7 +5600,7 @@ msgstr "<switch $n1><case><case><case><case><case></switch> <shee
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2891:0:0"
 msgid "Store <noun-en Item 1 $n1 1 1> in the company chest?"
-msgstr "Положить <noun-en Item 1 $n1 1 1> в сундук компании?"
+msgstr "Сундук свободной компании: <noun-en Item 1 $n1 1 1>?"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<br>カンパニーチェストに入れます。よろしいですか？
 #. de: <capitalize><num $n2> <noun-de Item 5 $n1 $n2 4 1></capitalize> in die Truhe legen?
@@ -5608,21 +5609,21 @@ msgstr "Положить <noun-en Item 1 $n1 1 1> в сундук компани
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2892:0:0"
 msgid "Store <num $n2> <noun-en Item 3 $n1 $n2 1> in the company chest?"
-msgstr "Положить <num $n2> <noun-en Item 3 $n1 $n2 1> в сундук компании?"
+msgstr "Сундук свободной компании: <num $n2> <noun-en Item 3 $n1 $n2 1>?"
 
 #. ja: フリーカンパニーに所属していないため<br>この機能は使用できません。
 #. de: Nur Mitglieder haben Zugriff auf die Truhe der Freien Ge<shy>sell<shy>schaft.
 #. fr: Cette fonction n'est disponible que pour les membres d'une compagnie libre.
 msgctxt "Addon:2893:0:0"
 msgid "Only free company members are allowed access to the company chest."
-msgstr "К сундуку компании могут обращаться только участники Вольной компании."
+msgstr "Только участники Вольной компании имеют доступ к сундуку свободной компании."
 
 #. ja: カンパニーチェストは現在使用できません。
 #. de: Die Ge<shy>sell<shy>schaftstruhe ist momentan nicht zugänglich.
 #. fr: Utilisation impossible. Le coffre est indisponible.
 msgctxt "Addon:2894:0:0"
 msgid "The company chest is unavailable at this time."
-msgstr "Сундук компании сейчас недоступен."
+msgstr "Сундук свободной компании сейчас недоступен."
 
 #. ja: <sheet Item $n1 0>を<br>カンパニーチェストから取り出します。よろしいですか？
 #. de: <capitalize><noun-de Item 2 $n1 1 4 1></capitalize> aus der Truhe entnehmen?
@@ -5630,7 +5631,7 @@ msgstr "Сундук компании сейчас недоступен."
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2895:0:0"
 msgid "Remove <noun-en Item 1 $n1 1 1> from the company chest?"
-msgstr "Изъять <noun-en Item 1 $n1 1 1> из сундука компании?"
+msgstr "Сундук свободной компании: <noun-en Item 1 $n1 1 1>?"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<br>カンパニーチェストから取り出します。よろしいですか？
 #. de: <capitalize><num $n2> <noun-de Item 5 $n1 $n2 4 1></capitalize> aus der Truhe entnehmen?
@@ -5639,7 +5640,7 @@ msgstr "Изъять <noun-en Item 1 $n1 1 1> из сундука компани
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2896:0:0"
 msgid "Remove <num $n2> <noun-en Item 3 $n1 $n2 1> from the company chest?"
-msgstr "Изъять <num $n2> <noun-en Item 3 $n1 $n2 1> из сундука компании?"
+msgstr "Сундук свободной компании: <num $n2> <noun-en Item 3 $n1 $n2 1>?"
 
 #. ja: 入れる個数を指定してください。
 #. de: Wähle die Menge:
@@ -5660,7 +5661,7 @@ msgstr "Количество для изъятия"
 #. fr: Vous n'avez pas le droit d'utiliser le coffre de la compagnie.
 msgctxt "Addon:2899:0:0"
 msgid "You are not authorized to use the company chest."
-msgstr "У вас нет права пользоваться сундуком компании."
+msgstr "У вас нет права пользоваться сундуком свободной компании."
 
 #. ja: 署名を集めよう
 #. de: Unterschriften sammeln

@@ -29,6 +29,7 @@ msgstr "Спасибо, что так помогаете, <split \" \" 1><string
 #. fr: Bienvenue, <split " " 1><string $gs1></split>. Je tiens plus de la commerçante que de la guerrière récemment, tu ne trrrouves pas<nbsp>?
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-rendering: merchant e1744fcbbf33 торговкой
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_GREETING_MNAAGO_000_002:1"
 msgid "Bugger me, being a merchant's a lot more tiring than I ever imagined! How you holding up, <split \" \" 1><string $gs1></split>?"
 msgstr "Вот уж не думала, что быть торговкой так утомительно! Как вы там, <split \" \" 1><string $gs1></split>?"
@@ -490,6 +491,7 @@ msgstr "Тогда я была с Конрадом. Он уговаривал э
 #. ja: 正直、私は裏切り者の髑髏連隊を説得してまで、<br>救おうとする必要があったのか……今でも疑問に思っています。
 #. de: Ehrlich gesagt weiß ich bis heute nicht, ob Conrads Entscheidung richtig war. Dass er es versucht hat, diese skrupellosen Handlanger der Garlear mit guten Worten zu überzeugen. Waren die Crania Lupi es wirklich wert, so viel für sie zu riskieren?
 #. fr: Aujourd'hui encore, je doute de l'utilité de son acte. Un traître à sa patrie mérite-t-il qu'on risque sa proprrre vie pour lui offrir une chance de rédemption...<nbsp>?
+#, aeria-term-model-exception: rubble 2815b1d57069
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_LCUT_RANKUP_MNAAGO_002_009:1"
 msgid "Part of me still wonders...after, did we owe it to them to try and save them too? To dig through the rubble and try to help the ones who were trying to kill us only moments before..."
 msgstr "Иногда я всё ещё думаю... должны ли были мы после этого спасать и их? Разбирать завалы, помогать тем, кто ещё недавно пытался нас убить..."
@@ -620,7 +622,7 @@ msgstr "Но, мама, у меня ведь здесь столько дел...
 #. fr: Tu veux parler des dons aux familles victimes de la guerre<nbsp>? Tes efforts sont admirables, mais n'en as-tu pas déjà fait plus qu'assez<nbsp>? Tu n'as pas besoin de te prrriver d'une vie bien remplie pour aider cette cause.
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_LCUT_RANKUP_MHAHTOA_004_006:1"
 msgid "To the families of your comrades, I know. And I think what you're doing is wonderful, but...I worry you place their needs ahead of your own. You deserve to live your own life─to do what you want. What makes you happy."
-msgstr "Ты ведь о пособиях семьям погибших, да? Это замечательное дело, но... может, уже достаточно? Не нужно жертвовать ради него всей своей жизнью. Ты тоже заслуживаешь жить для себя — делать то, что хочешь, и быть счастливой."
+msgstr "Ты ведь о помощи семьям своих товарищей? Это замечательное дело, но... может, уже достаточно? Не нужно жертвовать ради него всей своей жизнью. Ты тоже заслуживаешь жить для себя — делать то, что хочешь, и быть <if $gn4>счастливой<else>счастливым</if>."
 
 #. ja: ごめんなさい、母さん。<br>給付金を渡すことができたのは、まだまだ一握りに過ぎないの。<br>それに、私は人生を犠牲にしているなんて思ってない。
 #. de: Aber ich opfere mich doch nicht auf. Es ist mir eine Freude, anderen zu helfen! Und es gibt noch so viel zu tun. Ich kann jetzt nicht aufhören - ich fange doch gerade erst an, das Geschäft richtig zu beherrschen!
@@ -815,7 +817,7 @@ msgstr "Мы заберём всё, что у тебя есть, и даже б�
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUPINFO_000_000:1"
 msgid "M'naago is pleased with your efforts. She now considers you a <ui-color 500><ui-edge-color 501>Supporter of the Resistance Widows and Orphans Fund</ui-edge-color></ui-color>!"
-msgstr "М'Нааго довольна твоими трудами. Теперь она считает тебя <ui-color 500><ui-edge-color 501>помощницей фонда помощи семьям бойцов Сопротивления</ui-edge-color></ui-color>!"
+msgstr "М'Нааго довольна твоими трудами. Теперь она считает тебя <ui-color 500><ui-edge-color 501><if $gn4>помощницей<else>помощником</if> фонда помощи семьям бойцов Сопротивления</ui-edge-color></ui-color>!"
 
 #. ja: <sheet ENpcResident $n1 0>の信頼ランクが上昇しました！<br>あなたのことを「給付金事業の同志」と感じているようです！
 #. de: Dein Zufrieden<shy>heits<shy>rang bei M'naago ist gestiegen! Sie hält dich für eine Stütze der Hinter<shy>bliebenen.
