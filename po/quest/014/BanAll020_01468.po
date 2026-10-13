@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 双蛇党：統合司令部のガヴィン少牙士は、冒険者に任せたい依頼があるようだ。
@@ -16,7 +16,7 @@ msgstr "Гэвин ищет отважного и умелого искател�
 
 #. ja: ガヴィン少牙士によると、シルフ族に新たな問題が起きている可能性があるらしい。東部森林のシルフの仮宿に向かい、報告者である博物学者「ヴォイス」と再会しよう。
 #. de: Der Naturforscher Voyce hat sich mit einem dringenden Gesuch an die Bruderschaft der Morgenviper gewandt. Schlangenpriester Gavin hat dich gebeten, zur Sylphen-Zuflucht im Ostwald zu eilen und dir von Voyce die Einzelheiten erklären zu lassen.
-#. fr: Gavin vous a expliqué que l'ordre des Deux Vipères a reçu une demande d'assistance émanant de Voyce, sylphologue au Refuge. Allez le voir sur place pour savoir de quoi il retourne cette fois.
+#. fr: Gavin vous a expliqué que l'ordre des Deux Vipères a reçu une demande d'assistance émanant de Voyce, sylphologue au Refuge. Allez le voir sur place pour savoir de quoi il retourne cette fois. 
 #. kind: journal
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_SEQ_01:1"
 msgid "As Lieutenant Gavin tells it, the Order of the Twin Adder received a panicked missive from Voyce, the naturalist who has taken up residence in Little Solace. Travel to the sylph settlement and see what has the hapless scholar in such distress."
@@ -74,11 +74,11 @@ msgstr "Доложить Войсу."
 
 #. ja: それでは、さっそく任務の説明をさせていただこう。<br>先程、統合司令部に火急の報が入ってきたのだ。<br>報告者は、「シルフの仮宿」に滞在中の「ヴォイス」氏。
 #. de: Bist du bereit, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if>? Dann lass mich erklären.
-#. fr: Bien, il est temps pour moi de vous expliquer en quoi consiste cette mission. Nous avons reçu tout récemment un message urgent de Voyce, qui séjourne au Refuge comme vous le savez sans doute.
+#. fr: Bien, il est temps pour moi de vous expliquer en quoi consiste cette mission. Nous avons reçu tout récemment un message urgent de Voyce, qui séjourne au Refuge comme vous le savez sans doute. 
 #. speaker: GAVIN
 #. macro: <if ($gn52 > 0)>friend<else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $g… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -91,7 +91,7 @@ msgstr "Мы очень ценим ваше рвение, <if ($gn52 > 0)>дру
 
 #. ja: そう、貴公もよくご存知だろう。<br>例のヘッポ……失敬、高名な博物学者だよ。
 #. de: Die Bruderschaft hat eine Eilnachricht aus der Sylphen-Zuflucht erhalten. Von Voyce, dem Stümp... äh, ich meine natürlich Voyce, dem ... äh, weltberühmten Naturforscher. Das meinte ich.
-#. fr: Je crois savoir que vous avez vous-même eu affaire à ce bon à r... euh<nbsp>! Je veux dire, ce sylphologue quelque peu excentrique.
+#. fr: Je crois savoir que vous avez vous-même eu affaire à ce bon à r... euh<nbsp>! Je veux dire, ce sylphologue quelque peu excentrique. 
 #. speaker: GAVIN
 #, aeria-term-model-exception: scholar ac529d4d6d16
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_GAVIN_000_001:1"
@@ -100,7 +100,7 @@ msgstr "Из Малого Утешения пришло весьма трево�
 
 #. ja: 報告の文面を見るかぎり、何やらただならぬ事態の様子……。<br>もしや、シルフ族に、新たな問題が起きているやもしれん。
 #. de: Er spricht von besorgniserregenden Vorgängen in der Sylphen-Zuflucht. Irgendetwas scheint da vorgefallen zu sein, ein Verbrechen. Genaueres wollte er nicht sagen, aber in seiner Bitte um Hilfe war er deutlich.
-#. fr: D'après ce qu'il dit, il se pourrait bien qu'il se trame quelque chose d'étrange du côté des hommes-plantes. Nous aimerions que vous vous rendiez sur place pour en savoir plus, vous qui avez une con<shy>nais<shy>san<shy>ce ex<shy>cep<shy>tion<shy>nelle du terrain.
+#. fr: D'après ce qu'il dit, il se pourrait bien qu'il se trame quelque chose d'étrange du côté des hommes-plantes. Nous aimerions que vous vous rendiez sur place pour en savoir plus, vous qui avez une con<shy>nais<shy>san<shy>ce ex<shy>cep<shy>tion<shy>nelle du terrain. 
 #. speaker: GAVIN
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_GAVIN_000_002:1"
 msgid "I could not make much sense of his missive─I daresay I have seen chocobos with better quillmanship─but it would appear that recent events have struck the fear of the gods into the man."
@@ -108,7 +108,7 @@ msgstr "Из письма я толком ничего не понял — ви�
 
 #. ja: この任務、シルフ族の信頼篤き貴公は、まさに適任！<br>ちょうど、貴公を探していたところだったのだ。
 #. de: Auf diese Mission kann ich nur jemanden schicken, der das Vertrauen der Sylphen genießt. Deswegen setze ich große Hoffnungen in dich, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>.
-#. fr: Je dirais même que vous êtes la personne idéale pour ce travail, étant donné votre propension à accepter n'importe quelle corvée sans réellement faire attention aux détails<nbsp>! Et c'est bien pour cela que je vous cherchais.
+#. fr: Je dirais même que vous êtes la personne idéale pour ce travail, étant donné votre propension à accepter n'importe quelle corvée sans réellement faire attention aux détails<nbsp>! Et c'est bien pour cela que je vous cherchais. 
 #. speaker: GAVIN
 #. macro: <if ($gn52 > 0)>contact the Maelstrom and send for you<else><if ($gn53 > 0)>send you<else>contact the Immortal Flames and send for you</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn53 > 0)>send you<else>contact the Immortal Flames and send for you</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -116,7 +116,7 @@ msgstr "Из письма я толком ничего не понял — ви�
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -137,7 +137,7 @@ msgstr "Из того немногого, что удалось разобрат
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -168,8 +168,8 @@ msgstr "Любая угроза нашим друзьям-сильфам мож�
 #. de: N-Nur die Ruhe, Voyce, du hast alles unter Kontrolle, alles unter Kontrolle ... Denk an die Legende vom mutigen Mistalle ... Was würde er in dieser Situation tun?
 #. fr: Oh là là<nbsp>! C'est terrible<nbsp>! Calmons-nous<nbsp>!<br>Voyons voir... Il y a sûrement un précédent proche de celui-ci... Les “Chroniques de Misdalle” devraient pouvoir me donner quelques indices.
 #. kind: other
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_VOYCE_000_000_010:1"
 msgid "Wh-What's this!? My copy of <i>A Brief Historie of the Twelveswood</i> has been replaced by a tome detailing two hundred and forty varieties of beastkin feces!"
 msgstr "Ч-что такое?! Мою книгу <i>«Краткая история Двенадцатилесья»</i> подменили томом о двухстах сорока разновидностях звериных испражнений!"
@@ -188,8 +188,8 @@ msgstr "Что ты здесь делаешь, <split \" \" 1><string $gs1></spl
 #. de: Da fällt mir aber ein Stein vom Herzen. Wenn hier <if $gn4>eine<else>einer</if> helfen kann, dann du. Du wirst nicht ahnen, was passiert ist! Es ist schrecklich! Eine Katastrophe!
 #. fr: Ouf<nbsp>! Quel soulagement<nbsp>!<br><split " " 1><string $gs1></split><nbsp>! Il faut que vous m'aidiez, je vous en supplie<nbsp>! Maintenant que vous êtes là, je sais que tout ira bien<nbsp>!
 #. kind: other
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_VOYCE_000_000_012:1"
 msgid "What is the matter? What is the <i>matter</i>, you say!? A veritable peck of podlings, pilfered from Little Solace while I was taking...ah, a brief respite from my research."
 msgstr "Что случилось? Что, говорите, случилось?! Из Малого Утешения похитили целую кучу детёнышей, пока я... э-э, ненадолго отвлёкся от исследований."
@@ -227,7 +227,7 @@ msgid "This one fears it is exactly as bumbling one says. Little ones that these
 msgstr "Кажется, всё именно так, как говорит этот неуклюжий учёный. Детки, о которых мы так заботились... Скоро они должны были появиться на свет, но их больше нет! Всех до одного!"
 
 #. ja: 「シルフのゆりかご」は、生まれる前のシルフ族の繭。<br>それが盗まれたということは、これは単なる盗難じゃありません！<br>これはもう、シルフ族の「誘拐」ですよ！
-#. de: Genau wie das heilige Kindigliche, an deren Rettung <if $gn4>die<else>der</if> Abenteurige keinen geringen Anteil hatte, werden alle Sylphen-Kinder in einer Wiege geboren. Dass solche Wiegen gestohlen wurden ...
+#. de: Genau wie das heilige Kindigliche, an deren Rettung <if $gn4>die<else>der</if> Abenteurige keinen geringen Anteil hatte, werden alle Sylphen-Kinder in einer Wiege geboren. Dass solche Wiegen gestohlen wurden ... 
 #. fr: Les cosses des Sylphes sont plus que de simples berceaux... Ce sont leurs enveloppes avant qu'ils ne naissent. <br>Voler l'une d'entre elles équivaut à enlever un bébé, en somme<nbsp>! C'est très grave<nbsp>!
 #. kind: other
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_VOYCE_000_000_017:1"
@@ -254,8 +254,8 @@ msgstr "Наверняка это дело рук отступников! Не �
 #. de: <if $gn4>Abenteurerin<else>Abenteurer</if>, ich flehe dich an! Dring ins Sylphenland ein und sieh nach, was dort vor sich geht! Irgendeinen Hinweis muss es dort doch geben, nach so einer Aktion. Bring die Sylphen-Wiegen zurück ... Tu es für das Volk der Sylphen!
 #. fr: Je vous en prie, mon ami<if $gn4>e</if><nbsp>! Partez à la recherche des précieuses cosses dans le territoire des Dénaturés, et ramenez-les coûte que coûte<nbsp>! Il y va de mon honneur<nbsp>!
 #. kind: other
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_VOYCE_000_000_020:1"
@@ -264,7 +264,7 @@ msgstr "И под «мы» я подразумеваю отважного <i><sp
 
 #. ja: きっと犯人は、また悪い子シルフに違いありませんっ！<br>どうか「シルフ領」に赴き、彼らの動向を探ってください！<br>そして、大事な「シルフのゆりかご」を取り戻してくださいっ！
 #. de: Als Täter für den Wiegenraub kommen nur die bösen Sylphen in Frage. Wer sonst hegt einen solchen Groll gegen die Sylphen-Zuflucht? Dring ins Sylphenland ein und sieh nach, was dort vor sich geht. Du musst die Sylphen-Wiegen zurückbringen ... Für das Volk der Sylphen!
-#. fr: Je suis sûr que ce sont les Dénaturés qui ont commis ce vol abject, ils ne reculent devant rien<nbsp>! Je vous en prie, mon ami<if $gn4>e</if>, partez à la recherche des précieuses cosses dans le territoire des Dénaturés, et ramenez-les coûte que coûte<nbsp>!
+#. fr: Je suis sûr que ce sont les Dénaturés qui ont commis ce vol abject, ils ne reculent devant rien<nbsp>! Je vous en prie, mon ami<if $gn4>e</if>, partez à la recherche des précieuses cosses dans le territoire des Dénaturés, et ramenez-les coûte que coûte<nbsp>! 
 #. kind: other
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
@@ -286,8 +286,8 @@ msgstr "Мне больно снова взваливать на отважно�
 #. kind: other
 #. macro: <if $gn4>She<else>He</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_SILVIA_000_000_030:1"
 msgid "(-???-)<if $gn4>She<else>He</if> looks, but does <if $gn4>she<else>he</if> <i>see</i>?"
 msgstr "(-???-)Смотрит... но <if $gn4>видит ли она<else>видит ли он</if>?"
@@ -303,7 +303,7 @@ msgstr "(-Загадочная девушка-)Нет. Иначе <if $gn4>он�
 
 #. ja: (-謎の少女-)これは、そんな単純な事件じゃない……。<br>……これは……序章……。<br>エオルゼア全土を巻きこんだ……大事件の……。
 #. de: (-Mysteriöses Mädchen-)Die Dinge sind ein bisschen komplizierter ... Dies hier ist erst der Anfang ... einer Sache, die ganz Eorzea betrifft. Wir müssen uns gefasst machen ...
-#. fr: (-Jeune fille énigmatique-)Tout ceci... ce n'est pas un simple vol... Ce n'est... que le début... Cette affaire... aura de graves répercussions... pour toutes les régions d'Éorzéa...
+#. fr: (-Jeune fille énigmatique-)Tout ceci... ce n'est pas un simple vol... Ce n'est... que le début... Cette affaire... aura de graves répercussions... pour toutes les régions d'Éorzéa... 
 #. kind: other
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_SILVIA_000_000_032:1"
 msgid "(-Mysterious Girl-)That which you seek will not be found here. For this is not the idle mischief of malevolent sylphs. Oh, no─this is but the prelude to a dark and dastardly plot that threatens to shake Eorzea to its very core."
@@ -311,17 +311,17 @@ msgstr "(-Загадочная девушка-)Здесь ты ничего не
 
 #. ja: 私？　……私の名は……<br>シ、シル……シルビア。
 #. de: (-Mysteriöses Mädchen-)Ich? Wie ich heiße? S-Silvia.
-#. fr: Moi<nbsp>? Je... ça n'a pas d'importance... Je suis Sylvie...
+#. fr: Moi<nbsp>? Je... ça n'a pas d'importance... Je suis Sylvie... 
 #. kind: other
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_SILVIA_000_000_033:1"
 msgid "(-Mysterious Girl-)My name? You <i>could</i> call me Sylvie."
 msgstr "(-Загадочная девушка-)Моё имя? Можете <i>звать</i> меня Сильви."
 
 #. ja: 冒険者さん……アナタに出番はないわ……。<br>「シルフのゆりかご」を奪った犯人は……私が追う……。
 #. de: <if $gn4>Abenteurerin<else>Abenteurer</if>, dies ist nicht dein Kampf. Ich bin es, die den Räubern der Sylphen-Wiegen auf der Spur ist. Und ich werde sie stellen.
-#. fr: Cette fois... Ce n'est pas à vous... d'intervenir... Je vais traquer... le coupable...
+#. fr: Cette fois... Ce n'est pas à vous... d'intervenir... Je vais traquer... le coupable... 
 #. kind: other
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_SILVIA_000_000_034:1"
 msgid "But you will have no occasion to do so. For I shall pursue our kidnapper, and you shall return and see to your own concerns. That is, if you know what's good for you..."
@@ -329,7 +329,7 @@ msgstr "Но тебе тут делать нечего. Я сама выслед
 
 #. ja: 次はラノシア……事件は再び繰り返す……<br>早く行かなくちゃ……<br>悲劇が……繰り返してしまう前に……。
 #. de: Wie gesagt, dies ist erst der Anfang. Die Spur führt nach La Noscea, wo schon das nächste tragische Ereignis droht ... Ich muss los. Sonst komme ich zu spät und das abscheuliche Verbrechen wiederholt sich ...
-#. fr: L'histoire va se répéter... L'histoire se répète toujours... La Noscea... Je dois y aller... avant qu'une tragédie ne se reproduise...
+#. fr: L'histoire va se répéter... L'histoire se répète toujours... La Noscea... Je dois y aller... avant qu'une tragédie ne se reproduise... 
 #. kind: other
 msgctxt "quest/014/BanAll020_01468:TEXT_BANALL020_01468_SILVIA_000_000_035:1"
 msgid "Farewell, friend. Our paths will not cross again. I must...hurry...yes, hurry to La Noscea...before tragedy strikes again..."

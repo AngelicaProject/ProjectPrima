@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト</ui-edge-color></ui-color><br>キャンプ・ブロークングラスの派遣団の不滅隊士は、冒険者を探していたようだ。
 #. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung</ui-edge-color></ui-color><br>Ein Legionär im Camp Splitterglas ist auf der Suche nach dir.
 #. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête</ui-edge-color></ui-color><br>Ce membre de la délégation des Immortels vous cherche.
 #. kind: journal
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/042/AktKzd010_04234:TEXT_AKTKZD010_04234_SEQ_00:1"
 msgid "<ui-color 508><ui-edge-color 509> Quest Sync</ui-edge-color></ui-color><br>A member of the Immortal Flames is looking for a hero brave enough to wield a mighty weapon and fell a colossus."
@@ -60,7 +60,7 @@ msgstr "Доложите Амбагаю."
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -106,7 +106,7 @@ msgstr "Знаю, просьба немалая. Если согласитесь
 
 #. ja: ご足労ありがとうございます！<br>小官が魔導コロッサスをおびき寄せますので、<br>その隙に「魔導プラズマボール」をやつらに投げつけてください！
 #. de: Ich habe mir das folgendermaßen gedacht: Ich fungiere als Lockvogel für die Magitek-Colossi, während Ihr sie mit den Plasmageschossen beschießt.
-#. fr: Je vous remercie d'être <if $gn4>venue<else>venu</if><nbsp>! C'est moi qui me chargerai d'attirer les colosses. Une fois que vous les aurez en ligne de mire, tirez-leur dessus avec le canon<nbsp>!
+#. fr: Je vous remercie d'être <if $gn4>venue<else>venu</if><nbsp>! C'est moi qui me chargerai d'attirer les colosses. Une fois que vous les aurez en ligne de mire, tirez-leur dessus avec le canon<nbsp>! 
 #. speaker: FLAMESOLDIER04234
 #. macro: <if $gn4>ma'am<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/042/AktKzd010_04234:TEXT_AKTKZD010_04234_FLAMESOLDIER04234_000_010:1"
@@ -123,7 +123,7 @@ msgstr "По словам инженеров, прямое попадание п
 
 #. ja: 私が魔導コロッサスをおびき寄せますので、<br>その隙に「魔導プラズマボール」をやつらに投げつけてください！
 #. de: Ich werde die Magitek-Colossi anlocken. Ihr beschießt sie bitte mit den Plasmageschossen.
-#. fr: Je me charge d'attirer les colosses. Une fois que vous les verrez, tirez-leur dessus avec le canon<nbsp>!
+#. fr: Je me charge d'attirer les colosses. Une fois que vous les verrez, tirez-leur dessus avec le canon<nbsp>! 
 #. speaker: FLAMESOLDIER04234
 #, aeria-term-model-exception: regret a5147aa40ba7
 msgctxt "quest/042/AktKzd010_04234:TEXT_AKTKZD010_04234_FLAMESOLDIER04234_000_020:1"
@@ -135,8 +135,8 @@ msgstr "Я заманю этих зловещих машин к себе. Ког
 #. fr: La visée interactive va débuter. Utilisez la caméra pour trouver les colosses magitek et tirez-leur dessus à l'aide du canon magitek avec <if ($gn80 == 0)><else><icon2 15>/<icon2 8></if>.
 #. speaker: SYSTEM
 #. macro: <if ($gn80 == 0)><ui-color 546></ui-color><else><icon2 15> / <icon2 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 80 == 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <ui-color 546> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 546 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 546> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 546 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <icon2 15> — an inline icon that depends on the input device; icon = 15 (game data: keep it; it may move or repeat)
 #. macro: <icon2 8> — an inline icon that depends on the input device; icon = 8 (game data: keep it; it may move or repeat)
 #, aeria-term-model-exception: target f1729d036919

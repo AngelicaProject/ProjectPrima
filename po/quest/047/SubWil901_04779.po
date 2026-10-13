@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: <ui-color 508><ui-edge-color 509>特殊ルール： レベルアジャスト</ui-edge-color></ui-color><br>不滅隊：作戦本部にいるナナンジは、考えごとをしているようだ。
 #. de: <ui-color 508><ui-edge-color 509> Schwierigkeitsanpassung</ui-edge-color></ui-color><br>Nananji scheint tief in Gedanken verloren.
 #. fr: <ui-color 508><ui-edge-color 509>Règle spéciale<nbsp>:  synchronisation de quête</ui-edge-color></ui-color><br>Nananji est plongé dans ses pensées.
 #. kind: journal
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/047/SubWil901_04779:TEXT_SUBWIL901_04779_SEQ_00:1"
 msgid "<ui-color 508><ui-edge-color 509> Quest Sync</ui-edge-color></ui-color><br>Nananji appears to be in deep thought."
@@ -250,8 +250,8 @@ msgstr "Ой, я же даже не спросил, как вас зовут! К
 #. fr: <string $gs1>... ? Vous voulez dire, comme le nom <if $gn4>de l'héroïne<else>du héros</if> qui a sauvé Éorzéa !?
 #. speaker: NANANJI
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/047/SubWil901_04779:TEXT_SUBWIL901_04779_NANANJI_000_015:1"
 msgid "<string $gs1>!? <i>The</i> <string $gs1>, champion of Eorzea!?"
 msgstr "<string $gs1>!? <i>Сам</i> <string $gs1>, герой Эорзеи!?"
@@ -654,7 +654,7 @@ msgstr "Мне сказали, что кто-то хочет узнать о Л�
 #. de: Ah, wer hätte gedacht, dass meine ominöse Verabredung bezüglich Meister Louisoix <if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split> höchstselbst ist! Freut mich. Ich bin Offizier Syro Fulke von der Bruderschaft der Morgenviper.
 #. fr: (-Lieutenant des Deux Vipères-)Tiens, si ce n'est pas <if $gn4>la<else>le</if> <if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if> ! Et vous, vous êtes la personne qui recueille des témoignages sur Louisoix, c'est bien ça ? Enchanté de vous rencontrer, je suis Syro Fulke.
 #. speaker: FULKE
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -806,7 +806,7 @@ msgstr "Тогда же Луизуа пригласили стать страт�
 
 #. ja: 最初のうちは怪しまれていた賢人ルイゾワが、<br>蛮神問題への対応やダラガブ絡みの調査で信頼を得ていった。<br>そして……彼が求めていた、国を超えた協力体制が築かれた、と。
 #. de: Von einem skeptisch beäugten Fremden zu einem essenziellen Verbündeten<nbsp>... Durch seine Worte und Taten baute er Schritt für Schritt Vertrauen auf, um den Weg zu einer beständigen Allianz zu bahnen.
-#. fr: Je vois... Ainsi, alors qu'on se méfiait de lui au départ, il a finalement acquis la confiance des gens grâce à ses actes pendant l'affaire des Primordiaux et les in<shy>ves<shy>ti<shy>ga<shy>tions sur Dalamud, menant à l'entente entre les nations qu'il avait toujours souhaitée.
+#. fr: Je vois... Ainsi, alors qu'on se méfiait de lui au départ, il a finalement acquis la confiance des gens grâce à ses actes pendant l'affaire des Primordiaux et les in<shy>ves<shy>ti<shy>ga<shy>tions sur Dalamud, menant à l'entente entre les nations qu'il avait toujours souhaitée. 
 #. speaker: NANANJI
 msgctxt "quest/047/SubWil901_04779:TEXT_SUBWIL901_04779_NANANJI_000_104:1"
 msgid "So, although he was at first treated with wariness, Louisoix earned our trust through his actions, and paved the way to enduring cooperation between our nations."
@@ -899,7 +899,7 @@ msgstr "<split \" \" 1><string $gs1></split>, как же я рада тебя �
 #. de: Wie schön, dich zu sehen, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>! Und du bist sicherlich Nananji. Gestatten, R'ashaht Rhiki. Ich hörte, dass ihr mehr über den Sturm auf Dalamuds Sendeanlage hören wollt?
 #. fr: Heureuse de vous revoirrr, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 1><string $gs1></split> ! Et je suppose que vous êtes Nananji ? On m'a dit que vous vouliez entendre le témoignage de quelqu'un ayant combattu au front lors de l'opération de destruction de la tourrr de transmission. Eh bien, je suis là !
 #. speaker: RASHAHT
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
