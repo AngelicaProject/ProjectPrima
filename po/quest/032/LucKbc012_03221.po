@@ -33,6 +33,7 @@ msgstr "Перекинувшись парой слов о твоих удиви�
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
 #. macro: <if ($gn68 == 32)>The cryptic letter speaks for itself. Perhaps Lunnie, the woman who delivered it to Sidurgu, might be able to shed light on this mystery─or at… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 32 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: face 7d91d5daccc3
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SEQ_02:1"
 msgid "\"<string $gs1>,<br>You'll forgive me for the sudden correspondence, and the secrecy. You helped me, in a way. Once upon a time. It's past time I said as much, and so...here we are.<br>Feels like a lifetime ago, come to think on it. You've been through quite a lot since then─accomplished incredible things. I'd like to think that, in some way, I was a part of your journey... Far from the best, no doubt. But for me and my own journey, I think it safe to say that you've been...well. There's no suitable words to describe it, really.<br>I've done things. Made decisions. Looking back, I can't help but feel more than a little foolish. But such is life, and we have to seize what few opportunities we have for closure...even if it is through the written word and not face<hyphen>to<hyphen>face.<br>So wherever you are, I hope you're happy. Still fighting, still adventuring─still doing what you love. Be well.“<br><br><if ($gn68 == 32)>The cryptic letter speaks for itself. Perhaps Lunnie, the woman who delivered it to Sidurgu, might be able to shed light on this mystery─or at least help you to go through the motions and put one foot in front of the other. Over and over again. Off you trot.<else>The cryptic letter speaks for itself. Perhaps Lunnie, the woman who delivered it to Sidurgu, might be able to shed light on this mystery...</if>"
 msgstr "«<string $gs1>,<br>Прости, что пишу так внезапно и что не назвал своего имени. Когда-то ты мне помог. Пусть и по-своему. Пора было сказать тебе об этом, и вот я пишу.<br>Если задуматься, целая жизнь прошла с тех пор. С тех пор ты многое пережил, совершил невероятное. Хочется верить, что я хоть как-то стал частью твоего пути... Пусть и не самой лучшей. Но для меня и моего пути ты был... в общем, не подобрать слов.<br>Я кое-что натворил. Принимал решения. Оглядываясь назад, не могу не чувствовать себя глупцом. Но что поделать, жизнь есть жизнь. И порой так хочется поставить точку, пока есть такая возможность... пусть даже не при встрече, а письмом.<br>Где бы ты ни был, надеюсь, ты счастлив. Всё ещё сражаешься, странствуешь, занимаешься любимым делом. Береги себя».<br><br><if ($gn68 == 32)>Письмо говорит само за себя. Может, Лунни, которая передала его Сидургу, поможет разобраться в этой тайне... Или хотя бы поддержит, пока ты будешь шаг за шагом идти дальше. Снова и снова. Ну, ступай.<else>Письмо говорит само за себя. Может, Лунни, которая передала его Сидургу, поможет разобраться в этой тайне...</if>"
@@ -45,7 +46,7 @@ msgstr "«<string $gs1>,<br>Прости, что пишу так внезапн�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SEQ_03:1"
 msgid "Lunnie, it turns out, is none other than the girl you rescued from the clutches of corrupt Temple Knights a lifetime ago. She is not, however, the author of the letter, and explains that she received it from one Ser Patrounade, who stated it was to be delivered to the hero of the Scions. It would seem a visit to the Congregation is in order.<if ($gn68 == 32)><br><br>She didn't know, of course. How could she? She's not even sure how many of you there were that day. Are you? But never you mind that. You have a search to continue.</if>"
-msgstr "Как выяснилось, Лунни — та самая девушка, которую ты давным-давно спас от продажных Рыцарей Храма. Но письмо написала не она. Она рассказала, что получила его от сэра Патронада, который попросил передать письмо герою Потомков. Похоже, пора заглянуть в Конгрегацию.<if ($gn68 == 32)><br><br>Конечно, она ничего не знала. Откуда ей было знать? Она даже не уверена, сколько вас было в тот день. А ты? Да ладно, неважно. Тебе ещё предстоит продолжить поиски.</if>"
+msgstr "Как выяснилось, Лунни — та самая девушка, которую ты давным-давно <if $gn4>спасла<else>спас</if> от продажных Рыцарей Храма. Но письмо написала не она. Она рассказала, что получила его от сэра Патронада, который попросил передать письмо <if $gn4>героине<else>герою</if> Наследников. Похоже, пора заглянуть в Конгрегацию.<if ($gn68 == 32)><br><br>Конечно, она ничего не знала. Откуда ей было знать? Она даже не уверена, сколько вас было в тот день. А ты? Да ладно, неважно. Тебе ещё предстоит продолжить поиски.</if>"
 
 #. ja: パトルーナドに手紙を見せた。ラールガーズリーチの野戦病院にいる「オレラ」に「<sheet EventItem 2002579 0>」を見せよう。
 #. de: Du hast Patrounade den Brief gezeigt. Er hat dich an Orella im Lazarett von Rhalgrs Wacht verwiesen. Lege ihr <noun-de EObj 2 2009976 1 4 1> vor.
@@ -55,7 +56,7 @@ msgstr "Как выяснилось, Лунни — та самая девушк
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SEQ_04:1"
 msgid "Ser Patrounade was no more than another link in the chain, having received the letter from Orella of Rhalgr's Reach. He, like you, had been injured at the Ghimlyt Dark, and so he spent some nights there convalescing in her care. If further answers are to be found, it will be at the Barber.<if ($gn68 == 32)><br><br>Do you remember Ser Patrounade? I do. Not by name, of course─he didn't have one when the tower fell. That's how these things so often go─you do your bit, only later to fill in the gaps, to piece together the picture in distant hindsight. What will your legacy be tomorrow, and the day after, and in the days after that...?</if>"
-msgstr "Сэр Патронад оказался лишь звеном в цепочке: письмо ему передала Орэлла из Предела Ралгра. Как и ты, он был ранен в Гимлитской тьме и провёл там несколько ночей, поправляясь под её присмотром. Если ответы ещё где-то и найдутся, то в Лазарете.<if ($gn68 == 32)><br><br>Помнишь сэра Патронада? Я — да. Не по имени, конечно: у него его не было, когда рухнула башня. Так часто и бывает. Сначала делаешь что можешь, а уже потом заполняешь пробелы и складываешь картину воедино. Что останется после тебя завтра, послезавтра, а потом и ещё позже?..</if>"
+msgstr "Сэр Патронад оказался лишь звеном в цепочке: письмо ему передала Орэлла из Предела Ралгра. Как и ты, он был ранен в Тёмных землях Гимлита и провёл там несколько ночей, поправляясь под её присмотром. Если ответы ещё где-то и найдутся, то в Лазарете.<if ($gn68 == 32)><br><br>Помнишь сэра Патронада? Я — да. Не по имени, конечно: у него его не было, когда рухнула башня. Так часто и бывает. Сначала делаешь что можешь, а уже потом заполняешь пробелы и складываешь картину воедино. Что останется после тебя завтра, послезавтра, а потом и ещё позже?..</if>"
 
 #. ja: オレラに手紙を見せた。南ザナラーンのリトルアラミゴにいる「グンドバルド」に「<sheet EventItem 2002579 0>」を見せよう。
 #. de: Du hast Orella den Brief gezeigt. Überreiche <noun-de EObj 2 2009976 1 4 1> an Gundobald in Klein-Ala Mhigo im südlichen Thanalan.
@@ -87,7 +88,7 @@ msgstr "Гундобальд внимательно смотрит на тебя
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SEQ_07:1"
 msgid "The man at the Red Rooster Stead turns out to be yet another figure from your past, a former merchant who bade you retrieve his stolen wares and berated you for the condition in which you returned them to him. Ever since that fateful day, his life has been a succession of failures...until, while going through his meager possessions, he chanced to find a bloodstained package of flower bulbs from once upon a time. Thereafter he resolved to become a botanist and start anew, and as a humble token of his appreciation, long overdue, he offers a flower. But it is not for you.<if ($gn68 == 32)><br><br>Another nameless face, now named. Then conniving, now humbled─as well he should be, no? I gave him a right talking to─or you did. Your choice. And after a string of bad luck, he's since turned over a new leaf...and found a flower. Suitable for funerals and farewells. I told you before you know how the story goes, didn't I? Come and see, <split \" \" 1><string $gs1></split>. Come and see.</if>"
-msgstr "Человек из Усадьбы Красного петуха оказался ещё одним знакомцем из прошлого: когда-то он был торговцем, просил тебя вернуть украденный товар, а потом отчитал за то, в каком виде ты его принёс. С того рокового дня его преследовали одни неудачи... пока он не наткнулся среди своих скудных пожитков на залитую кровью упаковку с луковицами давнишних цветов. Тогда он решил стать ботаником и начать всё сначала. В знак благодарности, с большим опозданием, он дарит тебе цветок. Но не для тебя.<if ($gn68 == 32)><br><br>Ещё одно безымянное лицо обрело имя. Тогда он был пронырой, теперь смирился с судьбой. Так ему и надо, верно? Я как следует его отчитала — то есть ты. Твой выбор. После череды неудач он всё же перевернул новую страницу... и вырастил цветок. Такой подойдёт для похорон и прощаний. Я ведь говорил, что ты знаешь, чем всё кончается? Приходи, <split \" \" 1><string $gs1></split>. Приходи и сам увидишь.</if>"
+msgstr "Человек из Усадьбы Красного петуха оказался ещё одним знакомцем из прошлого: когда-то он был торговцем, просил тебя вернуть краденый товар, а потом отчитал за то, в каком виде ты его принёс. С того рокового дня его преследовали одни неудачи... пока он не наткнулся среди своих скудных пожитков на залитую кровью упаковку с луковицами давнишних цветов. Тогда он решил стать ботаником и начать всё сначала. В знак благодарности, с большим опозданием, он дарит тебе цветок. Но не для тебя.<if ($gn68 == 32)><br><br>Ещё одно безымянное лицо обрело имя. Тогда он был пронырой, теперь смирился с судьбой. Так ему и надо, верно? Я как следует его отчитала — то есть ты. Твой выбор. После череды неудач он всё же перевернул новую страницу... и вырастил цветок. Такой подойдёт для похорон и прощаний. Я ведь говорил, что ты знаешь, чем всё кончается? Приходи, <split \" \" 1><string $gs1></split>. Приходи и сам увидишь.</if>"
 
 #. ja: 呼びかけをし、あの日の彼に花を手向けた。忘れられた騎士亭の「シドゥルグ」に報告しよう。
 #. de: Du hast Fray gerufen und ihm als Abschieds<shy>geschenk die Blumen überreicht. Berichte Sidurgu in der Schenke „Der Vergessene Ritter“.
@@ -179,7 +180,7 @@ msgstr "В режиме чата <ui-color 500><ui-edge-color 501>Сказать
 #. kind: objective
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_TODO_07:1"
 msgid "Speak with Sidurgu in Foundation."
-msgstr "Поговорить с Сидургу в Основании."
+msgstr "Поговорить с Сидургу в Фундаменте."
 
 #. ja: ああ、ちょうどいいところに来たな。<br>お前に渡したいものがあったんだ。
 #. de: Du erscheinst zum rechten Zeitpunkt. Ich habe hier etwas für dich, das du lesen solltest<nbsp>...
@@ -197,7 +198,7 @@ msgstr "А, <split \" \" 1><string $gs1></split>. Как раз для тебя 
 #. speaker: SIDURGU
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SIDURGU_000_001:1"
 msgid "But before we talk about that, mind telling me what you've been getting yourself into lately? You and your Scions, I mean. I've an inkling, perhaps..."
-msgstr "Но сначала расскажи, чем ты в последнее время занимался. Ты и твои Потомки, я имею в виду. Кажется, я кое о чём догадываюсь..."
+msgstr "Но сначала расскажи, чем ты в последнее время <if $gn4>занималась<else>занимался</if>. Ты и твои Наследники, я имею в виду. Кажется, я кое о чём догадываюсь..."
 
 #. ja: 何と言う？
 #. de: Was antwortest du?
@@ -353,7 +354,7 @@ msgstr "Лучше я об этом Сида спрошу."
 #. speaker: SIDURGU
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SIDURGU_000_020:1"
 msgid "Let's...let's not and say we did, eh? I'm sure that Thancred fellow you mentioned would provide a far more meaningful and interesting response."
-msgstr "Давай... давай не будем, а? Уверен, тот Танкрет, о котором ты рассказывал, ответил бы куда интереснее и по существу."
+msgstr "Давай... давай не будем, а? Уверен, тот Танкред, о котором ты <if $gn4>рассказывала<else>рассказывал</if>, ответил бы куда интереснее и по существу."
 
 #. ja: ガキを唐突に連れ歩くハメになった苦労、<br>とても他人事とは思えん。
 #. de: Mit so einem jungen Mädel durch das Land zu reisen und sie allerlei Gefahren auszusetzen und dann auch noch zu behaupten, sie sei wie eine Tochter für ihn<nbsp>... Der denkt doch nur an sich selbst!
@@ -437,7 +438,7 @@ msgstr "Вот дети, а? Дай ей немного остыть. А пок�
 #. speaker: SIDURGU
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SIDURGU_000_030:1"
 msgid "It's addressed to you, but who penned it I cannot say. It was delivered to me by a young woman of the Brume─Lunnie, I believe her name was."
-msgstr "Мне передали письмо для тебя. Кто его отправил, я не знаю, но принесла сюда женщина из Туманной низины по имени Лунни."
+msgstr "Мне передали письмо для тебя. Кто его отправил, я не знаю, но принесла сюда женщина из Мглы по имени Лунни."
 
 #. ja: 以前、俺たちとお前がともに行動していたのを見かけたらしく、<br>機会があれば渡してほしいと頼まれてな……。
 #. de: Meinte, sie hätte uns schon zusammen auf Reisen gesehen und hat mich gebeten, ihn dir bei Gelegenheit zu überreichen.
@@ -502,6 +503,7 @@ msgstr "И пусть я был далеко не лучшей частью. Н�
 #. fr: La bienséance voudrait que je vous remercie en personne, mais j'aurais trop honte de vous distraire de vos importantes occupations une deuxième fois.
 #. speaker: LETTER03221
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
+#, aeria-term-model-exception: face 7d91d5daccc3
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_LETTER03221_000_044:1"
 msgid "I've done things. Made decisions. Looking back, I can't help but feel more than a little foolish. But such is life, and we have to seize what few opportunities we have for closure...even if it is through the written word and not face<hyphen>to<hyphen>face."
 msgstr "Я кое-что натворил. Принимал решения. Оглядываясь назад, не могу не чувствовать себя глупцом. Но что поделать, жизнь есть жизнь. И порой так хочется поставить точку, пока есть такая возможность... пусть даже не при встрече, а письмом."
@@ -586,7 +588,7 @@ msgstr "Могу сказать точно: написала его не я. М�
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_LUNNIE_000_057:1"
 msgid "He said it was to be delivered to the hero of the Scions─a peerless warrior with a thousand victories to <if $gn4>her<else>his</if> name. After he described your features in detail, it all fell into place, and since I was certain you'd eventually pay a visit to your friends, I offered to take it to them!"
-msgstr "Он сказал, что письмо надо передать герою Потомков — несравненному воину, на счету <if $gn4>которой<else>которого</if> тысяча побед. Когда он подробно описал тебя, я сразу всё поняла. И решила передать письмо твоим друзьям, зная, что ты однажды к ним заглянешь!"
+msgstr "Он сказал, что письмо надо передать <if $gn4>героине<else>герою</if> Наследников — <if $gn4>несравненной воительнице<else>несравненному воину</if>, на счет <if $gn4>которой<else>которого</if> тысяча побед. Когда он подробно описал тебя, я сразу всё поняла. И решила передать письмо твоим друзьям, зная, что ты однажды к ним заглянешь!"
 
 #. ja: だから、詳しいことは本人から聞いてみてください。<br>きっと「神殿騎士団本部」にいるんじゃないかな……？
 #. de: Vielleicht solltest du ihn persönlich fragen, was es mit dem Brief auf sich hat. Du findest ihn bestimmt in der Kongregation der Tempelritter.
@@ -629,7 +631,7 @@ msgstr "Письмо! Какое облегчение — оно дошло в �
 #. speaker: PATROUNADE
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_PATROUNADE_000_072:1"
 msgid "It was entrusted to me by Orella of Rhalgr's Reach. After the battle at the Ghimlyt Dark I spent a few nights there, you see..."
-msgstr "Его мне передала Орэлла из Предела Ралгра. После битвы в Гимлитской тьме я провёл там несколько ночей, понимаете..."
+msgstr "Его мне передала Орэлла из Предела Ралгра. После битвы в Тёмных землях Гимлита я провёл там несколько ночей, понимаете..."
 
 #. ja: 噂によると、前線で倒れた貴方が、<br>イシュガルドの病室に運ばれたらしいということだったので、<br>帰国ついでに渡してほしい……と。
 #. de: Mir war das Gerücht zu Ohren gekommen, dass Ihr an der Front verwundet wurdet und man Euch ins Lazarett gebracht habe<nbsp>...
@@ -682,7 +684,7 @@ msgstr "...Я бы спросил, помните ли вы, как вытащи
 #. speaker: SYSTEM
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SYSTEM_000_085:1"
 msgid "The document appears to be a list of men and women who died fighting for the Ala Mhigan Resistance and whose remains have been interred in Recompense. Among them, you recognize both Conrad Kemp and Meffrid Noward..."
-msgstr "Похоже, это список мужчин и женщин, погибших в рядах аламиганского Сопротивления и похороненных в Воздаянии. Среди них ты узнаёшь Конрада Кемпа и Меффрида Ноуарда..."
+msgstr "Похоже, это список мужчин и женщин, погибших в рядах Ала-мигойского сопротивления и похороненных в Воздаянии. Среди них ты узнаёшь Конрада Кемпа и Меффрида Ноуарда..."
 
 #. ja: 末尾に、「ガリエン」の名を見つけた。<br>彼の遺体は、この地へ帰ることができたようだ。
 #. de: Ganz am Ende, unter den letzten Gefallenen findest du auch Galien. Es scheint, als ob sein Leichnam hierher zurückgebracht wurde.
@@ -715,7 +717,7 @@ msgstr "Это письмо? Да, кажется, оно прибыло вме�
 #. speaker: ORELLA
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_ORELLA_000_092:1"
 msgid "I can only presume the sender was hoping that Commander Hext would see it to you personally, but I'm not surprised it escaped her notice given the chaos at the Ghimlyt Dark and after."
-msgstr "Наверное, отправитель рассчитывал, что командир Хекст лично передаст его тебе. Но в Гимлитской тьме и после неё творился такой хаос, что неудивительно, если письмо затерялось."
+msgstr "Наверное, отправитель рассчитывал, что командир Хекст лично передаст его тебе. Но в Тёмных землях Гимлита и после них творился такой хаос, что неудивительно, если письмо затерялось."
 
 #. ja: 医薬品に紛れて私のところに届いてしまったのを、<br>イシュガルドに帰る騎兵さんに託した……という次第です。
 #. de: Ich fand ihn zwischen meinen Medikamenten und übergab ihn schließlich an einen Ritter, der nach Ishgard zurückversetzt wurde.
@@ -723,7 +725,7 @@ msgstr "Наверное, отправитель рассчитывал, что 
 #. speaker: ORELLA
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_ORELLA_000_093:1"
 msgid "It found its way into my medical supplies, and as you well know, I decided to let that Ishgardian knight take charge of its delivery."
-msgstr "Оно оказалось среди моих медицинских припасов. Как ты знаешь, я поручила доставить его в Ишгард тому рыцарю."
+msgstr "Оно оказалось среди моих медицинских припасов. Как ты знаешь, я поручила доставить его ишгардскому рыцарю."
 
 #. ja: だから、詳しいことは私よりもリトルアラミゴの……<br>顔役の「グンドバルド」さんに聞くといいと思いますよ。
 #. de: Möglicherweise kann dir Gundobald, der Vorsteher in Klein-Ala Mhigo, Genaueres zu dem Brief sagen. Er war für den Versand unserer Hilfsgüter zuständig.
@@ -1084,7 +1086,7 @@ msgstr "С возвращением, <split \" \" 1><string $gs1></split>. Ка�
 #. speaker: SIDURGU
 msgctxt "quest/032/LucKbc012_03221:TEXT_LUCKBC012_03221_SIDURGU_000_191:1"
 msgid "So─what of that mysterious unsigned letter? Did your grand search for answers lead you anywhere interesting?"
-msgstr "Ну и как там та загадочная анонимная записка? Твои поиски ответов привели к чему-нибудь интересному?"
+msgstr "Ну и как там то загадочное письмо без подписи? Твои поиски ответов привели к чему-нибудь интересному?"
 
 #. ja: 何と言う？
 #. de: Was antwortest du?

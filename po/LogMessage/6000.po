@@ -140,7 +140,7 @@ msgstr "Не удалось выполнить действие. У одного
 #. fr: Action impossible. Un autre joueur utilise le panneau de contrôle aérien.
 msgctxt "LogMessage:6019:0:5"
 msgid "Unable to access voyage control panel. Another member is currently using it."
-msgstr "Нельзя открыть панель управления полётами: другой игрок уже ею пользуется."
+msgstr "Нельзя открыть панель управления путешествием: другой игрок уже ею пользуется."
 
 #. ja: <player-name $n1>は、突入条件を満たしていません。
 #. de: <player-name $n1> erfüllt die Voraus<shy>setzungen nicht.
@@ -202,7 +202,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6025:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> neither a Disciple of War nor Magic (excluding limited jobs)."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> не относится ни к боевым, ни к магическим классам или профессиям. Ограниченные профессии не учитываются."
+msgstr "<if-self $n1>Вы не относитесь<else><capitalize><player-name $n1></capitalize> не относится</if-self> ни к физическому, ни к магическому классу. Ограниченные профессии не учитываются."
 
 #. ja: <player-name $n1>は、突入できるレベルに達していません。
 #. de: <player-name $n1> ist nicht auf der erforderlichen Stufe.
@@ -306,7 +306,7 @@ msgstr "Не удалось выполнить действие. У вас не�
 #. fr: Action impossible. Vous utilisez un job restreint, ou vous n'êtes pas un<if $gn4>e</if> disciple de la guerre ou de la magie de niveau 60 ou plus.
 msgctxt "LogMessage:6037:0:5"
 msgid "Unable to execute command. You are not a level 60 Disciple of War or Magic (excluding limited jobs)."
-msgstr "Не удалось выполнить действие. Вы должны быть бойцом или магом 60-го уровня и выше. Ограниченные профессии не учитываются."
+msgstr "Не удалось выполнить действие. Ваш физический или магический класс должен быть не ниже 60-го уровня. Ограниченные профессии не учитываются."
 
 #. ja: 中毒防止制限中のため、実行できません。
 #. de: Diese Aktion ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -337,7 +337,7 @@ msgstr "<if-self $n1>Вы подготовили<else><capitalize><player-name $
 #. fr: Accédez au panneau de contrôle aérien et choisissez l'aéronef avec lequel vous souhaitez vous rendre au Diadème.
 msgctxt "LogMessage:6042:0:5"
 msgid "Access the voyage control panel and select the mission airship."
-msgstr "Подойдите к панели управления полётами и выберите воздушный корабль для задания."
+msgstr "Подойдите к панели управления путешествием и выберите воздушный корабль для задания."
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<kilo $n3 ",">ギルで購入しました。
 #. de: Du hast <noun-de Item 1 $n1 $n2 4 1> für <kilo $n3 "."> Gil erworben.
@@ -356,7 +356,7 @@ msgstr "Вы покупаете <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><ki
 #. fr: Action impossible. Un autre joueur utilise le panneau de contrôle aérien.
 msgctxt "LogMessage:6044:0:5"
 msgid "Unable to access voyage control panel. Another member is currently using it."
-msgstr "Нельзя открыть панель управления полётами: другой участник уже ею пользуется."
+msgstr "Нельзя открыть панель управления путешествием: другой участник уже ею пользуется."
 
 #. ja: 「メインクエスト：蒼天のイシュガルド」のクエスト「蒼天のイシュガルド」をコンプリートしていないため、実行できません。
 #. de: Nicht möglich, weil du erst den Hauptszenario-Auftrag „Himmelwärts“ abschließen musst.
@@ -380,7 +380,7 @@ msgstr "<if-self $n1>Вы ещё не выполнили<else><capitalize><playe
 #. fr: Action impossible. Une demande d'alliance est en cours.
 msgctxt "LogMessage:6047:0:5"
 msgid "Unable to access voyage control panel while waiting for alliance invites to be accepted."
-msgstr "Нельзя открыть панель управления полётами, пока не приняты приглашения в альянс."
+msgstr "Нельзя открыть панель управления путешествием, пока не приняты приглашения в альянс."
 
 #. ja: 他のキャラクターがその潜水艦を操作中のため実行できません。
 #. de: Aktion nicht möglich. Ein anderer Spieler bedient gerade das Tauchboot.
@@ -516,7 +516,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы завершаете<else><if $gn7><
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6061:0:5"
 msgid "A new subaquatic voyage destination─<sheet SubmarineExploration $n1 0>─has been discovered!"
-msgstr "Обнаружено новое место для путешествия под водой: <sheet SubmarineExploration $n1 0>!"
+msgstr "Обнаружено новое место назначения подводного путешествия — <sheet SubmarineExploration $n1 0>!"
 
 #. ja: ランクアップ！潜水艦「<string $s1>」のランクが<num $n2>になりました。
 #. de: Der Rang des Tauchboots <i><string $s1></i> ist auf Rang <num $n2> gestiegen!
@@ -543,7 +543,7 @@ msgstr "Теперь Вольная компания может зарегист
 #. fr: Action impossible. La limite d'aéronefs/sous-marins enregistrés a été atteinte.
 msgctxt "LogMessage:6064:0:5"
 msgid "Unable to execute command. No more airships or submersibles may embark at this time."
-msgstr "Не удалось выполнить действие. Все воздушные корабли и подводные лодки уже отправлены."
+msgstr "Не удалось выполнить действие. Все дирижабли и подводные лодки уже отправлены."
 
 #. ja: フリーカンパニーハウスの交流帳に新着メッセージがあります。
 #. de: Jemand hat einen neuen Eintrag im Diarium der Freien Ge<shy>sell<shy>schaft hinterlassen.
@@ -776,6 +776,7 @@ msgstr "Вы поместили в раму отпечаток <noun-en Item 1 $
 #. ja: 魚拓を取り除いた。
 #. de: Der Fischdruck wurde entfernt.
 #. fr: Vous avez retiré l'ichtyogramme.
+#, aeria-term-model-exception: angler 3e914944df3e
 msgctxt "LogMessage:6095:0:5"
 msgid "You remove an angler's print from the frame."
 msgstr "Вы сняли отпечаток рыбы с рамы."
@@ -783,6 +784,7 @@ msgstr "Вы сняли отпечаток рыбы с рамы."
 #. ja: 魚拓が設定されていないため、この操作はできません。
 #. de: Nicht möglich, da kein Fischdruck angebracht ist.
 #. fr: Action impossible. Aucun ichtyogramme n'a été placé.
+#, aeria-term-model-exception: angler 3e914944df3e
 msgctxt "LogMessage:6096:0:5"
 msgid "Unable to execute. An angler's print has not been set in the frame."
 msgstr "Нельзя выполнить действие. В раме нет отпечатка рыбы."
@@ -1073,7 +1075,7 @@ msgstr "Невозможно выполнить команду. Вы не вып
 #. fr: Action impossible. Vous devez être un disciple de la guerre ou de la magie.
 msgctxt "LogMessage:6981:0:5"
 msgid "Unable to execute command. You must be a Disciple of War or Magic."
-msgstr "Невозможно выполнить команду. Вы должны быть представителем боевого или магического класса."
+msgstr "Невозможно выполнить команду. Вы должны быть в физическом или магическом классе."
 
 #. ja: 中毒防止制限中のため、実行できません。
 #. de: Diese Aktion ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -1134,7 +1136,7 @@ msgstr "Невозможно выполнить команду. Все учас�
 #. macro: <if ($gs1 == $gs3)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6989:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> not a Disciple of War or Magic."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не принадлежите<else>не принадлежит</if> к последователям войны или магии."
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не относитесь<else>не относится</if> ни к физическому, ни к магическому классу."
 
 #. ja: 戦闘不能状態のパーティメンバーがいるため、実行できません。
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied ist kampfunfähig.

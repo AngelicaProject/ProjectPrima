@@ -17,6 +17,7 @@ msgstr "Откройте сундук с помощью <noun-en Item 1 $n1 1 1>
 #. ja: Unknown
 #. de: Unbekannt
 #. fr: Inconnu
+#, aeria-term-model-exception: unknown 8f7ada7edadb
 msgctxt "Addon:102101:0:0"
 msgid "Unknown"
 msgstr "Неизв."
@@ -280,9 +281,10 @@ msgstr "Опыт"
 #. ja: フリーカンパニーポイント
 #. de: Ge<shy>sell<shy>schaftstaler
 #. fr: Points de compagnie libre
+#, aeria-term-model-rendering: Company Credits fc9e9f634b63 Вклад
 msgctxt "Addon:102233:0:0"
 msgid "Free Company Credits"
-msgstr "Очки Вольной компании"
+msgstr "Вклад Вольной компании"
 
 #. ja: フリーカンパニー経験値
 #. de: Routine (Freie Ge<shy>sell<shy>schaft)
@@ -570,7 +572,7 @@ msgstr "Установить точку возвращения"
 #. fr: Enregistrer comme favori
 msgctxt "Addon:102302:0:0"
 msgid "Register Favored Destination."
-msgstr "Добавить в избранное"
+msgstr "В избранное: место назначения"
 
 #. ja: ホームポイントに登録しますか？
 #. de: Diesen Ort als Heimatpunkt speichern?
@@ -598,7 +600,7 @@ msgstr "Нет"
 #. fr: Enregistrer cet endroit comme favori<nbsp>?
 msgctxt "Addon:102306:0:0"
 msgid "Register this location as a favored destination?"
-msgstr "Добавить это место в избранное?"
+msgstr "Добавить это место назначения в избранное?"
 
 #. ja: はい
 #. de: Ja
@@ -619,7 +621,7 @@ msgstr "Нет"
 #. fr: Choisissez l'endroit favori à remplacer.
 msgctxt "Addon:102309:0:0"
 msgid "Select a favored destination to overwrite."
-msgstr "Выберите место в избранном для замены."
+msgstr "Выберите место назначения для замены."
 
 #. ja: やめる
 #. de: Abbrechen
@@ -636,21 +638,21 @@ msgstr "Прервать"
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102311:0:0"
 msgid "Register this location as your Nintendo Switch Online free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
-msgstr "Добавить это место в избранное Nintendo Switch Online? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+msgstr "Сделать это место бесплатным местом назначения Nintendo Switch Online? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
 
 #. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（Nintendo Switch Online特典無料枠）」に登録場所を変更しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter Nintendo Switch Online speichern?
 #. fr: Cette éthérite est déjà un favori gratuit.<br>L'enregistrer comme favori gratuit (Nintendo Switch Online) à la place<nbsp>?
 msgctxt "Addon:102312:0:0"
 msgid "This location is currently registered as a different free destination. Register it as your Nintendo Switch Online free destination instead?"
-msgstr "Сейчас это место выбрано как другое бесплатное направление. Заменить его на бесплатное направление Nintendo Switch Online?"
+msgstr "Это место назначения сейчас выбрано как другое бесплатное. Сделать его бесплатным местом назначения Nintendo Switch Online?"
 
 #. ja: 「お気に入り（Nintendo Switch Online特典無料枠）」に登録した場所へは無料でテレポできます。<br>このエーテライトはお気に入りに設定されていますが、解除して「お気に入り（Nintendo Switch Online特典無料枠）」に変更しますか？
 #. de: Dieser Ätheryt ist momentan als kostenpflichtiger Favorit gespeichert.<br>Stattdessen als kostenlosen Favoriten (durch Nintendo Switch Online) speichern?
 #. fr: Cette éthérite est un favori.<br>L'enregistrer comme favori gratuit (Nintendo Switch Online)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
 msgctxt "Addon:102313:0:0"
 msgid "This location is currently registered as a favored destination. Register it as your Nintendo Switch Online free destination instead?"
-msgstr "Сейчас это место добавлено в избранное. Заменить его бесплатным направлением Nintendo Switch Online?"
+msgstr "Это место назначения сейчас выбрано как обычное избранное. Сделать его бесплатным местом назначения Nintendo Switch Online?"
 
 #. ja: このエーテライトは「お気に入り（<if ($gn75 == 7)>Nintendo Switch Online<else>他プラットフォーム</if>特典無料枠）」に登録されています。<br>「お気に入り（<if ($gn75 == 7)>Nintendo Switch Online<else>他プラットフォーム</if>特典無料枠）」の登録を解除して、お気に入りに登録しますか？
 #. de: Dieser Ätheryt ist als kostenloser Favorit (durch <if ($gn75 == 7)>Nintendo Switch Online<else>die Plattform</if>) registriert.<br>Die Registrierung aufheben und als kostenpflichtigen Favoriten speichern?
@@ -658,7 +660,7 @@ msgstr "Сейчас это место добавлено в избранное.
 #. macro: <if ($gn75 == 7)>Nintendo Switch Online<else>platform-based</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 75 == 7 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:102314:0:0"
 msgid "This location is currently registered as your <if ($gn75 == 7)>Nintendo Switch Online<else>platform-based</if> free destination. Register it as a favored destination instead?"
-msgstr "Сейчас это место выбрано как бесплатное направление <if ($gn75 == 7)>Nintendo Switch Online<else>для этой платформы</if>. Заменить его на направление из избранного?"
+msgstr "Сейчас это бесплатное место назначения <if ($gn75 == 7)>Nintendo Switch Online<else>для этой платформы</if>. Заменить его на место назначения из избранного?"
 
 #. ja: ホームポイントは<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>に登録されています。<br>変更しますか？
 #. de: <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> ist als Heimatpunkt registriert. Ändern?
@@ -688,7 +690,7 @@ msgstr "Нет"
 #. fr: Enregistrer comme favori gratuit (Nintendo Switch Online)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
 msgctxt "Addon:102318:0:0"
 msgid "Register this location as your Nintendo Switch Online free destination?"
-msgstr "Добавить это место в бесплатные направления Nintendo Switch Online?"
+msgstr "Зарегистрировать это место назначения как бесплатное для Nintendo Switch Online?"
 
 #. ja: <sheet PlaceName "<sheet Aetheryte $n1 8>" 0>を外して<sheet PlaceName "<sheet Aetheryte $n2 8>" 0>をエーテライトのお気に入り登録しますか？
 #. de: <sheet PlaceName "<sheet Aetheryte $n2 8>" 0> statt <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> als Favorit registrieren?
@@ -740,35 +742,35 @@ msgstr "<sheet PlaceName $n1 0>."
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102324:0:0"
 msgid "Register this location as your PlayStation®Plus free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
-msgstr "Добавить это место в избранное PlayStation®Plus? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+msgstr "Сделать это место бесплатным местом назначения PlayStation®Plus? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
 
 #. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（PlayStation®Plus特典無料枠）」に登録場所を変更しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter PlayStation®Plus speichern?
 #. fr: Cette éthérite est déjà un favori gratuit.<br>L'enregistrer comme favori gratuit (PlayStation®Plus) à la place<nbsp>?
 msgctxt "Addon:102325:0:0"
 msgid "This location is currently registered as a different free destination. Register it as your PlayStation®Plus free destination instead?"
-msgstr "Сейчас это место выбрано как другое бесплатное направление. Заменить его на бесплатное направление PlayStation®Plus?"
+msgstr "Это место назначения сейчас выбрано как другое бесплатное. Сделать его бесплатным местом назначения PlayStation®Plus?"
 
 #. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（ワンタイムパスワード特典無料枠）」に登録場所を変更しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter Einmalpasswort speichern?
 #. fr: Cette éthérite est déjà un favori gratuit.<br>L'enregistrer comme favori gratuit (identificateur) à la place<nbsp>?
 msgctxt "Addon:102326:0:0"
 msgid "This location is currently registered as a different free destination. Register it as your security token free destination instead?"
-msgstr "Сейчас это место выбрано как другое бесплатное направление. Заменить его на бесплатное направление для токена безопасности?"
+msgstr "Это место назначения сейчас выбрано как другое бесплатное. Сделать его бесплатным местом назначения для токена безопасности?"
 
 #. ja: 「お気に入り（PlayStation®Plus特典無料枠）」に登録した場所へは無料でテレポを利用できます。<br>「お気に入り（PS Plus特典無料枠）」に登録しますか？
 #. de: Als kostenlosen Favoriten speichern (durch PlayStation®Plus)?
 #. fr: Enregistrer comme favori gratuit (PS Plus)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
 msgctxt "Addon:102327:0:0"
 msgid "Register this location as your PlayStation®Plus free destination?"
-msgstr "Добавить это место в бесплатные направления PlayStation®Plus?"
+msgstr "Зарегистрировать это место назначения как бесплатное для PlayStation®Plus?"
 
 #. ja: 「お気に入り（PlayStation®Plus特典無料枠）」に登録した場所へは無料でテレポできます。<br>このエーテライトはお気に入りに設定されていますが、解除して「お気に入り（PS Plus特典無料枠）」に変更しますか？
 #. de: Dieser Ätheryt ist momentan als kostenpflichtiger Favorit gespeichert.<br>Stattdessen als kostenlosen Favoriten (durch PlayStation®Plus) speichern?
 #. fr: Cette éthérite est un favori.<br>L'enregistrer comme favori gratuit (PS Plus)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
 msgctxt "Addon:102328:0:0"
 msgid "This location is currently registered as a favored destination. Register it as your PlayStation®Plus free destination instead?"
-msgstr "Сейчас это место добавлено в избранное. Заменить его бесплатным направлением PlayStation®Plus?"
+msgstr "Это место назначения сейчас выбрано как обычное избранное. Сделать его бесплатным местом назначения PlayStation®Plus?"
 
 #. ja: 行き先を選択してください。<br>現在地：<string $s1>
 #. de: Wähle den Zielort.<br>Jetzt: <string $s1>
@@ -791,14 +793,14 @@ msgstr "Прервать"
 #. fr: Cette éthérite est déjà un favori gratuit (Nintendo Switch Online).<br>L'enregistrer comme favori gratuit (identificateur) à la place<nbsp>?
 msgctxt "Addon:102331:0:0"
 msgid "This location is currently registered as your Nintendo Switch Online free destination. Register it as your security token free destination instead?"
-msgstr "Сейчас это место выбрано как бесплатное направление Nintendo Switch Online. Заменить его на бесплатное направление для токена безопасности?"
+msgstr "Сейчас это бесплатное место назначения Nintendo Switch Online. Заменить его на бесплатное место назначения для токена безопасности?"
 
 #. ja: 「お気に入り（他プラットフォーム特典無料枠）」として登録済みです。<br>「お気に入り（PlayStation®Plus特典無料枠）」にも登録しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert (andere Plattform).<br>Auch unter PlayStation®Plus speichern?
 #. fr: Cette éthérite est déjà un favori gratuit (autre plateforme).<br>L'enregistrer comme favori gratuit (PlayStation®Plus) à la place<nbsp>?
 msgctxt "Addon:102332:0:0"
 msgid "This location is currently registered as a different platform-based free destination. Register it as your PlayStation®Plus free destination as well?"
-msgstr "Сейчас это место выбрано как бесплатное направление для другой платформы. Добавить его также в бесплатные направления PlayStation®Plus?"
+msgstr "Сейчас это место назначения выбрано как бесплатное для другой платформы. Добавить его также в бесплатные места назначения PlayStation®Plus?"
 
 #. ja: このエーテライトは「お気に入り（<if ($gn78 == 99)>PlayStation®Plus<else>他プラットフォーム</if>特典無料枠）」に登録されています。<br>「お気に入り（<if ($gn78 == 99)>PS Plus<else>他プラットフォーム</if>特典無料枠）」の登録を解除して、お気に入りに登録しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert (<if ($gn78 == 99)>PlayStation®Plus<else>andere Plattform</if>).<br>Stattdessen als kostenpflichtiger Favorit speichern?
@@ -806,14 +808,14 @@ msgstr "Сейчас это место выбрано как бесплатно�
 #. macro: <if ($gn78 == 99)>PlayStation®Plus<else>platform-based</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 99 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:102333:0:0"
 msgid "This location is currently registered as your <if ($gn78 == 99)>PlayStation®Plus<else>platform-based</if> free destination. Register it as a favored destination instead?"
-msgstr "Сейчас это место выбрано как бесплатное направление <if ($gn78 == 99)>PlayStation®Plus<else>для этой платформы</if>. Заменить его на направление из избранного?"
+msgstr "Сейчас это бесплатное место назначения <if ($gn78 == 99)>PlayStation®Plus<else>для этой платформы</if>. Заменить его на место назначения из избранного?"
 
 #. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」に登録した場所へは無料でテレポを利用できます。<br>「お気に入り（ワンタイムパスワード特典無料枠）」に登録しますか？
 #. de: Als kostenlosen Favoriten speichern (durch Einmalpasswort)?
 #. fr: Enregistrer comme favori gratuit (Idendificateur)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
 msgctxt "Addon:102334:0:0"
 msgid "Register this location as your security token free destination?"
-msgstr "Назначить это место бесплатным пунктом телепортации по токену безопасности?"
+msgstr "Зарегистрировать это место назначения как бесплатное для токена безопасности?"
 
 #. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」には<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>が登録されています。<br>変更しますか？
 #. de: Diesen Ätheryten als kostenlosen Favoriten speichern (durch Einmalpasswort)?<br><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize> wird dabei entfernt.
@@ -823,28 +825,28 @@ msgstr "Назначить это место бесплатным пунктом
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102335:0:0"
 msgid "Register this location as your security token free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
-msgstr "Назначить это место бесплатным пунктом телепортации по токену безопасности? Будет снята отметка с <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize>."
+msgstr "Зарегистрировать это место назначения как бесплатное для токена безопасности? Будет снята отметка с <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize>."
 
 #. ja: このエーテライトは「お気に入り（ワンタイムパスワード特典無料枠）」に登録されています。<br>「お気に入り（ワンタイムパスワード特典無料枠）」の登録を解除して、お気に入りに登録しますか？
 #. de: Dieser Ätheryt ist als kostenloser Favorit (durch Einmalpasswort) registriert.<br>Die Registrierung aufheben und als kostenpflichtigen Favoriten speichern?
 #. fr: Cette éthérite est un favori gratuit (Identificateur).<br>L'enregistrer comme favori payant<nbsp>?
 msgctxt "Addon:102336:0:0"
 msgid "This location is currently registered as your security token free destination. Register it as a favored destination instead?"
-msgstr "Сейчас это место бесплатно для телепортации по токену безопасности. Назначить его обычным избранным пунктом?"
+msgstr "Сейчас это место назначения бесплатно для телепортации по токену безопасности. Сделать его обычным избранным?"
 
 #. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」に登録した場所へは無料でテレポを利用できます。<br>このエーテライトはお気に入りに設定されていますが、解除して「お気に入り（ワンタイムパスワード特典無料枠）」に変更しますか？
 #. de: Dieser Ätheryt ist momentan als ein kostenpflichtiger Favorit gespeichert.<br>Stattdessen als kostenlosen Favoriten (durch Einmalpasswort) speichern?
 #. fr: Cette éthérite est un favori.<br>L'enregistrer comme favori gratuit  (Identificateur)<nbsp>?<br>Se téléporter vers cette destination ne coûtera plus rien.
 msgctxt "Addon:102337:0:0"
 msgid "This location is currently registered as a favored destination. Register it as your security token free destination instead?"
-msgstr "Сейчас это место отмечено как избранное. Заменить его бесплатным пунктом телепортации по токену безопасности?"
+msgstr "Сейчас это место назначения отмечено как избранное. Сделать его бесплатным местом назначения для токена безопасности?"
 
 #. ja: 「お気に入り（他プラットフォーム特典無料枠）」として登録済みです。<br>「お気に入り（Nintendo Switch Online特典無料枠）」にも登録しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert (andere Plattform).<br>Auch unter Nintendo Switch Online speichern?
 #. fr: Cette éthérite est déjà un favori gratuit (autre plateforme).<br>L'enregistrer comme favori gratuit (Nintendo Switch Online) à la place<nbsp>?
 msgctxt "Addon:102338:0:0"
 msgid "This location is currently registered as a different platform-based free destination. Register it as your Nintendo Switch Online free destination as well?"
-msgstr "Сейчас это место бесплатно для телепортации на другой платформе. Добавить его в бесплатные пункты Nintendo Switch Online?"
+msgstr "Сейчас это место назначения выбрано как бесплатное для другой платформы. Добавить его также в бесплатные места назначения Nintendo Switch Online?"
 
 #. ja: エリア移動を行うと参加申請がキャンセルされます。<br>本当によろしいですか？
 #. de: Wenn du das Areal verlässt, wird deine Anmeldung zum Chocobo-Rennen zurückgezogen. Fortfahren?
@@ -926,16 +928,17 @@ msgstr "Снять эффекты и продолжить?"
 #. ja: チョコボポーター
 #. de: Linien-Chocobo
 #. fr: Relais à chocobos
+#, aeria-term-model-rendering: Chocobo Porter d7851aeba5fc Провод.
 msgctxt "Addon:102381:0:0"
 msgid "Chocobo Porter"
-msgstr "Чокобо-перевозчик"
+msgstr "Провод. на чокобо"
 
 #. ja: 行き先を選択してください
 #. de: Wähle ein Ziel
 #. fr: Choisissez votre destination
 msgctxt "Addon:102382:0:0"
 msgid "Select a destination."
-msgstr "Выберите пункт назначения."
+msgstr "Выберите место назначения."
 
 #. ja: <sheet ChocoboTaxiStand $n1 8> <num $n2>ギル/約<num $n3>分
 #. de: <sheet ChocoboTaxiStand $n1 8> (<num $n3> <if ($n3 == 1)>Minute<else>Minuten</if> für <kilo $n2 "."> Gil)
@@ -1081,6 +1084,7 @@ msgstr "Точно хотите обменять предмет высокого
 #. ja: キャンセル
 #. de: Abbrechen
 #. fr: Annuler
+#, aeria-term-model-exception: Nothing 98b6b2a6ba3c
 msgctxt "Addon:102441:0:0"
 msgid "Nothing"
 msgstr "Нет"
@@ -1132,9 +1136,10 @@ msgstr "Логово волков"
 #. ja: PvP Actions
 #. de: PvP-Kommandos
 #. fr: Actions JcJ
+#, aeria-term-model-rendering: Actions & Traits cda88fe5ed96 тал.
 msgctxt "Addon:102453:0:0"
 msgid "Actions & Traits"
-msgstr "Умения и черты"
+msgstr "Действия и тал."
 
 #. ja: PVP RANK:
 #. de: PvP-Rang:
