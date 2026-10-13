@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: アンジェロに指示を出し、テンパードたちの精神汚染を治療しろ！
@@ -429,7 +429,7 @@ msgstr "Ваше отчаяние повторяется!"
 #. ja: 「<sheet BNpcName $n1 0>」を切断した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist abgetrennt!
 #. fr: <capitalize><noun-fr BNpcName 2 $n1 1 1></capitalize> a été tranchée<nbsp>!
-#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10060:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> has been severed!"
@@ -465,7 +465,7 @@ msgctxt "LogMessage:10064:0:5"
 msgid "The pedestal of passage springs to life."
 msgstr "Пьедестал перемещения ожил."
 
-#. ja: 転移機能は機能していないようだ……
+#. ja: 転移機能は機能していないようだ…… 
 #. de: Das Portal scheint nicht zu funktionieren.
 #. fr: Le piédestal de passage semble inanimé...
 msgctxt "LogMessage:10065:0:5"
@@ -523,7 +523,7 @@ msgstr "Пылающая ярость Ритатина придаёт ему с�
 
 #. ja: 地図に刻まれた証文に反応し、遺構の仕掛けが起動した！
 #. de: Die Schlüsselglyphe der Karte öffnet euch den Weg voran!
-#. fr: Le symbole sur la carte s'est activé, et vous permet d'avancer<nbsp>!
+#. fr: Le symbole sur la carte s'est activé, et vous permet d'avancer<nbsp>! 
 msgctxt "LogMessage:10073:0:5"
 msgid "The map's glyph of passage opens the path forward!"
 msgstr "Глиф перехода на карте открывает путь вперёд!"
@@ -706,8 +706,8 @@ msgstr "Шёлковый помпон окутывает искрящийся п
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は修理に必要なダークマターを持っていません。
 #. de: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> verfügt nicht über die zur Reparatur erforderliche Dunkelmaterie.
 #. fr: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> ne possède pas la matière sombre nécessaire pour cette réparation.
-#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10099:0:5"
 msgid "<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> does not have the dark matter required for repairs."
 msgstr "У <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> нет тёмной материи, необходимой для починки."
@@ -715,10 +715,10 @@ msgstr "У <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> нет тёмной �
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が装備中のアイテムを修理するためのクラスを修得していない、もしくはレベルが足りていません。
 #. de: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> hat nicht die richtige Klasse oder Stufe, um <if ($gs1 == $gs2)>deine Gegenstände<else>die Gegenstände von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if></if> zu reparieren.
 #. fr: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> ne dispose pas de la classe ou du niveau nécessaires pour réparer les objets de <if ($gs1 == $gs2)>votre équipement<else>l'équipement de <if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></if>.
-#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <sheet ObjStr $gn7 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 7, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet ObjStr $gn7 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10100:0:5"
 msgid "<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> lacks either the required class or level to repair <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>'s equipped items."
 msgstr "<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> не обладает нужным классом или уровнем, чтобы чинить экипировку <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>."
@@ -726,10 +726,10 @@ msgstr "<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> не обладает н
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>が修理可能なアイテムを装備していません。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>besitzst<else>besitzt</if> keine Gegenstände, die von <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> repariert werden können.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> n'<if ($gs1 == $gs2)>avez<else>a</if> aucun objet pouvant être réparé par <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> dans <if ($gs1 == $gs2)>votre<else>son</if> équipement.
-#. macro: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <sheet ObjStr $gn7 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 7, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet ObjStr $gn7 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10101:0:5"
 msgid "<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> is not equipped with gear that can be repaired by <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>."
 msgstr "У <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> нет экипировки, которую может починить <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>."
@@ -742,10 +742,10 @@ msgid "Unable to execute command. Repair request already submitted."
 msgstr "Не удалось выполнить команду. Запрос на ремонт уже отправлен."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は他のプレイヤーの装備品を修理中のため、その操作はできません。
-#. de: Aktion nicht möglich. <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> repariert gerade die Ausrüstung eines anderen Charakters.
+#. de: Aktion nicht möglich. <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> repariert gerade die Ausrüstung eines anderen Charakters. 
 #. fr: Action impossible. <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> est en train de réparer l'équipement d'un autre personnage.
-#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8, column = 0 (game data: keep it; it may move or repeat)
+#. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10103:0:5"
 msgid "Unable to execute command. <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> is currently repairing another player's gear."
 msgstr "Невозможно выполнить действие: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> сейчас чинит экипировку другого игрока."
@@ -782,7 +782,7 @@ msgstr "Запрос на ремонт отменён. Игрок слишком
 #. ja: <sheet Item $n1 0>の修理が完了しました。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> wurde repariert.
 #. fr: La réparation <noun-fr Item 9 $n1 1 1> est terminée.
-#. macro: <capitalize><noun-en Item 2 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en Item 2 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10108:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> has been repaired."
@@ -791,7 +791,7 @@ msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> починен."
 #. ja: <num $n1>個のアイテムを修理しました。
 #. de: <num $n1> <if ($n1 == 1)>Gegenstand wurde<else>Gegenstände wurden</if> repariert.
 #. fr: <num $n1> <if ($n1 <= 1)>objet réparé<else>objets réparés</if>.
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -1320,7 +1320,7 @@ msgstr "Сейчас эту команду выполнить нельзя."
 #. ja: シラディハ水道 探索記に「<sheet VVDNotebookContents $n1 2>」が記された！
 #. de: Der Eintrag „<sheet VVDNotebookContents $n1 2>“ wurde dem Erkundungsbericht der Unterstadt von Sil'dih hinzugefügt.
 #. fr: L'article “<sheet VVDNotebookContents $n1 2>” a été ajouté au journal d'exploration des canalisations sildiennes.
-#. macro: <capitalize><sheet VVDNotebookContents $n1 2></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet VVDNotebookContents $n1 2></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet VVDNotebookContents $n1 2> — a value from a game data sheet, such as a name; sheet = VVDNotebookContents, row = number parameter 1, column = 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10186:0:5"
 msgid "“<capitalize><sheet VVDNotebookContents $n1 2></capitalize>” is added to the Sil'dih survey record."
@@ -1646,21 +1646,21 @@ msgid "You are now able to gather new materials from crystal clusters in the isl
 msgstr "Теперь на острове можно собирать новые материалы из кристаллов."
 
 #. ja: 無人島内に棲息する小型の動物を、必ず捕獲できるようになった！
-#. de: Du kannst nun kleine Kreaturen des Inselparadieses mit absoluter Sicherheit einfangen!
+#. de: Du kannst nun kleine Kreaturen des Inselparadieses mit absoluter Sicherheit einfangen! 
 #. fr: Vous pouvez désormais capturer les animaux de petite taille de la Félicité insulaire avec un taux de réussite parfait.
 msgctxt "LogMessage:10233:0:5"
 msgid "You may now capture small animals inhabiting the island with flawless efficiency."
 msgstr "Теперь мелких животных на острове можно ловить без промаха."
 
 #. ja: 無人島内に棲息する中型の動物を、必ず捕獲できるようになった！
-#. de: Du kannst nun mittelgroße Kreaturen des Inselparadieses mit absoluter Sicherheit einfangen!
+#. de: Du kannst nun mittelgroße Kreaturen des Inselparadieses mit absoluter Sicherheit einfangen! 
 #. fr: Vous pouvez désormais capturer les animaux de taille moyenne de la Félicité insulaire avec un taux de réussite parfait.
 msgctxt "LogMessage:10234:0:5"
 msgid "You may now capture average-sized animals inhabiting the island with flawless efficiency."
 msgstr "Теперь животных среднего размера на острове можно ловить без промаха."
 
 #. ja: 無人島内に棲息する大型の動物を、必ず捕獲できるようになった！
-#. de: Du kannst nun große Kreaturen des Inselparadieses mit absoluter Sicherheit einfangen!
+#. de: Du kannst nun große Kreaturen des Inselparadieses mit absoluter Sicherheit einfangen! 
 #. fr: Vous pouvez désormais capturer les animaux de grande taille de la Félicité insulaire avec un taux de réussite parfait.
 msgctxt "LogMessage:10235:0:5"
 msgid "You may now capture large animals inhabiting the island with flawless efficiency."
@@ -1782,7 +1782,7 @@ msgctxt "LogMessage:10253:0:5"
 msgid "The pedestal of passage springs to life."
 msgstr "Пьедестал переноса оживает."
 
-#. ja: 転移機能は機能していないようだ……
+#. ja: 転移機能は機能していないようだ…… 
 #. de: Das Portal scheint nicht zu funktionieren.
 #. fr: Le piédestal de passage semble inanimé...
 msgctxt "LogMessage:10254:0:5"
@@ -1912,7 +1912,7 @@ msgstr "Древнее заклятие ослабило ваших врагов
 #. de: <player-name $n1> hat sich in einen Brummonauten verwandelt!
 #. fr: <if-self $n1>Vous avez<else><capitalize><player-name $n1></capitalize> a</if-self> pris l'apparence d'un cuirassé Dreadnaught<nbsp>!
 #. macro: <if-self $n1>You transform<else><capitalize><player-name $n1></capitalize> transforms</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10272:0:5"
 msgid "<if-self $n1>You transform<else><capitalize><player-name $n1></capitalize> transforms</if-self> into a dreadnaught!"
@@ -2007,11 +2007,11 @@ msgstr "Здесь это не действует..."
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、<sheet DeepDungeonDemiclone $n1 9>を手に入れた！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de DeepDungeonDemiclone 1 $n1 1 4 1> erhalten!
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> obtenu <noun-fr DeepDungeonDemiclone 1 $n1 1 1>.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>obtain<else>obtains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>obtain<else>obtains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <noun-en DeepDungeonDemiclone 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = DeepDungeonDemiclone, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10285:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en DeepDungeonDemiclone 1 $n1 1 1>."
@@ -2037,7 +2037,7 @@ msgstr "Вы возвращаете <noun-en DeepDungeonDemiclone 2 $n1 1 1> в 
 #. de: <player-name $n1> generiert <noun-de DeepDungeonDemiclone 1 $n2 1 4 1>.
 #. fr: <if-self $n1>Vous avez utilisé<else><capitalize><player-name $n1></capitalize> a utilisé</if-self> <noun-fr DeepDungeonDemiclone 1 $n2 1 1><nbsp>!
 #. macro: <if-self $n1>You use<else><capitalize><player-name $n1></capitalize> uses</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <noun-en DeepDungeonDemiclone 1 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = DeepDungeonDemiclone, form = 1, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10288:0:5"
@@ -2502,10 +2502,10 @@ msgstr "<icon 63>Вы отстали от Хаздада. Поговорите �
 #. de: Torgal hat die Führung übernommen!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: Talgor vous guide. Suivez-le<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10405:0:5"
 msgid "Torgal leads the way! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Торгал ведёт вас за собой! Подробнее об этой цели можно узнать по значку <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -2530,10 +2530,10 @@ msgstr "<icon 63>Вы отстали от Кешквы. Поговорите с 
 #. de: Deryk und das Opo-Opo-Jungtier machen sich zügig auf den Weg!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: Deryk vous guide. Suivez-le<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10408:0:5"
 msgid "Deryk and the baby opo-opo set off at a brisk walk! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Дерик и детёныш опо-опо быстро шагают вперёд! Подробнее об этой цели можно узнать по значку <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -2682,10 +2682,10 @@ msgstr "<icon 63>Вы отстали от Филкокса. Поговорите
 #. de: Koana hat die Führung übernommen!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: Koana vous guide. Suivez-le<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10427:0:5"
 msgid "Koana leads the way! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Коана ведёт вас за собой! Подробнее об этой цели можно узнать по значку <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -2694,10 +2694,10 @@ msgstr "Коана ведёт вас за собой! Подробнее об э
 #. de: Der Äthersucher hat die Führung übernommen!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: Le pisteur d'éther vous guide. Suivez-le<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10428:0:5"
 msgid "The aether seeker leads the way! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Следопыт эфира ведёт вас за собой! Подробнее об этой цели можно узнать по значку <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -2730,10 +2730,10 @@ msgstr "<icon 63>Вы отстали от Сфен. Поговорите с не
 #. de: Der blauschuppige Hoobigo-Junge hat die Führung übernommen!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: Le jeune Hoobigo bleu vous guide. Suivez-le<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10432:0:5"
 msgid "The blue-scaled Hoobigo child leads the way! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Синешкурый хубиго ведёт вас за собой! Подробнее об этой цели можно узнать по значку <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -2814,10 +2814,10 @@ msgstr "Нельзя завершить задание «<sheet Quest $n1 0>»: 
 #. de: Die mysteriöse Erscheinung hat die Führung übernommen!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: L'esprit énigmatique vous guide. Suivez-le<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10443:0:5"
 msgid "The mysterious spirit leads the way! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Загадочный дух ведёт вас за собой! Подробнее об этой цели можно узнать по значку <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -2876,10 +2876,10 @@ msgstr "Враг ослаб — используйте <noun-en EventItem 2 $n1 
 #. de: Das Kleinhörnchen hat die Führung übernommen!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: La jeune licorne vous guide. Suivez-la<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10451:0:5"
 msgid "The uma-no-unicolt leads the way! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Единорог умэ-но-юникольт ведёт вас за собой! Подробнее об этой цели можно узнать по значку <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -2947,7 +2947,7 @@ msgid "<icon 63>You have lost sight of the eager chocobo. Speak with it again to
 msgstr "<icon 63>Вы отстали от усердного чокобо. Поговорите с ним, чтобы снова идти вместе."
 
 #. ja: 変身の範囲から出ようとしています。これより離れると変身が解除されます。
-#. de: Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Ver<shy>wand<shy>lung.
+#. de: Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Ver<shy>wand<shy>lung. 
 #. fr: La métamorphose prendra fin si vous sortez de l'aire d'effet.
 msgctxt "LogMessage:10460:0:5"
 msgid "Your transfiguration begins to fade. Stray further from the objective and the enchantment will be broken."
@@ -3023,10 +3023,10 @@ msgstr "<icon 63>Вы потеряли Я'адеб из виду. Поговор
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10469:0:5"
 msgid "Your next quest objective requires <sheet EventTutorial $n1 1>.<if ($n2 > 0)> You will have <num $n2> seconds to complete the objective.</if><br>Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Следующая цель задания: <sheet EventTutorial $n1 1>.<if ($n2 > 0)> На выполнение цели у вас будет <num $n2> сек.</if><br>Подробнее о цели можно узнать, нажав на значок <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -3040,10 +3040,10 @@ msgstr "Следующая цель задания: <sheet EventTutorial $n1 1>.
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10470:0:5"
 msgid "Your next quest objective requires <sheet EventTutorial $n1 1> and <sheet EventTutorial $n3 1>.<if ($n3 > 0)> You will have <num $n3> seconds to complete these objectives.</if><br>Learn more about these quest objectives via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Следующие цели задания: <sheet EventTutorial $n1 1> и <sheet EventTutorial $n3 1>.<if ($n3 > 0)> На их выполнение у вас будет <num $n3> сек.</if><br>Подробнее о целях можно узнать, нажав на значок <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -3052,10 +3052,10 @@ msgstr "Следующие цели задания: <sheet EventTutorial $n1 1> 
 #. de: Raubahn hat die Führung übernommen!<br>Wähle das Symbol <icon 182> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.
 #. fr: Raubahn vous guide. Suivez-le<nbsp>!<br>Retrouvez plus d'in<shy>for<shy>ma<shy>tions sur ce type de mission en sélectionnant l'icone <icon 182> dans la liste des objectifs.
 #. macro: <icon 182> — an inline icon of the game font; icon = 182 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10471:0:5"
 msgid "Raubahn leads the way! Learn more about this quest objective via the <icon 182> icon in the <ui-color 500><ui-edge-color 501>Duty List</ui-edge-color></ui-color>."
 msgstr "Раубан ведёт за собой! Подробнее о цели задания можно узнать, нажав на значок <icon 182> в <ui-color 500><ui-edge-color 501>списке заданий</ui-edge-color></ui-color>."
@@ -3258,7 +3258,7 @@ msgid "Ceetol Ja's words of encouragement empower you!"
 msgstr "Слова Цеэтол Джа придают вам сил!"
 
 #. ja: <sheet Item $n1 0>の染色<num $n2>を、本来の色に戻しました。
-#. de: Du hast die Originalfarbe für Farbe <num $n2> <noun-de Item 3 $n1 1 2 1> wieder<shy>her<shy>gestellt.
+#. de: Du hast die Originalfarbe für Farbe <num $n2> <noun-de Item 3 $n1 1 2 1> wieder<shy>her<shy>gestellt. 
 #. fr: Vous rétablissez la couleur d'origine <noun-fr Item 9 $n1 1 1> pour la teinture <num $n2>.
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
@@ -3310,7 +3310,7 @@ msgid "A custom HUD will be displayed in Blunderville."
 msgstr "Для Блундервиля будет отображаться специальный интерфейс."
 
 #. ja: 敗退したため、観戦モードとなりました。<br>退出ボタンを押すことで、コンテンツから退出できます。
-#. de: Du bist ausgeschieden und befindest dich nun im Zuschauermodus. Wenn du den Inhalt verlassen möchtest, wähle die Option „Verlassen“.
+#. de: Du bist ausgeschieden und befindest dich nun im Zuschauermodus. Wenn du den Inhalt verlassen möchtest, wähle die Option „Verlassen“. 
 #. fr: Vous êtes <if $gn4>éliminée<else>éliminé</if> et participez en mode spectateur.<br>Vous pouvez quitter l'émission en appuyant sur le bouton Quitter.
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "LogMessage:10518:0:5"
@@ -3551,7 +3551,7 @@ msgctxt "LogMessage:10557:0:5"
 msgid "Valigarmanda explodes into a mindless rage!"
 msgstr "Валигарманда впадает в безумную ярость!"
 
-#. ja: エレクトロープにエネルギーが集う……！
+#. ja: エレクトロープにエネルギーが集う……！ 
 #. de: Im Elektrob sammelt sich Energie ...!
 #. fr: De l'énergie se concentre dans l'électrope<nbsp>!
 msgctxt "LogMessage:10558:0:5"
@@ -3624,7 +3624,7 @@ msgstr "Магия Рёкора Тертея сковывает его прис�
 #. ja: <sheet Glasses $n1 4>を装備した。
 #. de: Du legst <noun-de Glasses 2 $n1 1 4 1> an.
 #. fr: Vous vous équipez <noun-fr Glasses 9 $n1 1 1>.
-#. macro: <capitalize><noun-en Glasses 3 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en Glasses 3 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Glasses 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Glasses, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10569:0:5"
 msgid "<capitalize><noun-en Glasses 3 $n1 1 1></capitalize> equipped."
@@ -3633,7 +3633,7 @@ msgstr "<capitalize><noun-en Glasses 3 $n1 1 1></capitalize> надеты."
 #. ja: <sheet Glasses $n1 4>をはずした。
 #. de: Du legst <noun-de Glasses 2 $n1 1 4 1> ab.
 #. fr: Vous enlevez <noun-fr Glasses 2 $n1 1 1>.
-#. macro: <capitalize><noun-en Glasses 3 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en Glasses 3 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Glasses 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Glasses, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10570:0:5"
 msgid "<capitalize><noun-en Glasses 3 $n1 1 1></capitalize> unequipped."
@@ -3662,7 +3662,7 @@ msgstr "Клинки летят сквозь измерения."
 
 #. ja: ゾラージャが複数の剣に力を込めた……
 #. de: Zoraal Jas Macht durchströmt die Schneiden seiner Klingen<nbsp>...
-#. fr: Zoraal Ja imprègne plusieurs épées de son pouvoir...
+#. fr: Zoraal Ja imprègne plusieurs épées de son pouvoir... 
 msgctxt "LogMessage:10574:0:5"
 msgid "Zoraal Ja imbues his blades with power."
 msgstr "Зораал Джа наполняет свои клинки силой."
@@ -4521,10 +4521,10 @@ msgstr "Воспоминания павших обретают плоть..."
 #. ja: このバトルでは、旅のアイルーからもらった、<br>コンテンツアクション「回復薬グレート」を使用できます。<br>使用回数に制限があるため、慎重に利用しましょう。
 #. de: In diesem Kampf kannst du das Spezialkommando „Mega-Trank“ benutzen.<br>Der Trank hat nur eine bestimmte Anzahl an Portionen, also geh sparsam damit um.
 #. fr: Durant cette bataille, vous pouvez vous régénérer avec les méga potions que le Felyne voyageur vous a données.<br>Faites attention car elles sont en nombre limité<nbsp>!
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "LogMessage:10699:0:5"
 msgid "<ui-color 500><ui-edge-color 501>Mega potions</ui-edge-color></ui-color> can be used to restore your HP.<br>Their usage is limited, however, so use them sparingly."
@@ -4554,9 +4554,9 @@ msgstr "Нельзя использовать во время боя."
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>がリアルタイム共有を開始しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>teilst<else>teilt</if> nun in Echtzeit.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> démarré le partage en temps réel.
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10703:0:5"
 msgid "<if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> has started sharing a strategy board in real time."
 msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> начали делиться стратегической доской в реальном времени."
@@ -4593,9 +4593,9 @@ msgstr "Нельзя создать новые папки. Выберите су
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>がストラテジーボード「<string $s1>」を共有しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>teilst<else>teilt</if> das Strategiebrett „<string $s1>“.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> partagé le tableau stratégique “<string $s1>”.
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10711:0:5"
 msgid "<if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> has shared a strategy board."
 msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> поделились стратегической доской."
@@ -4603,9 +4603,9 @@ msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>がストラテジーボードフォルダ「<string $s1>」を共有しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>teilst<else>teilt</if> den Ordner „<string $s1>“.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> partagé le dossier de stratégie “<string $s1>”.
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10712:0:5"
 msgid "<if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> has shared the strategy board “<string $s1>.”"
@@ -4694,14 +4694,14 @@ msgstr "Не удалось сохранить. Нельзя создать бо
 
 #. ja: 保存できるストラテジーボードの上限を超えるため、操作を中断しました。
 #. de: Vorgang abgebrochen. Es können keine weiteren Strategien mehr hinzugefügt werden.
-#. fr: Action impossible. Le maximum de tableaux stratégiques est atteint.
+#. fr: Action impossible. Le maximum de tableaux stratégiques est atteint. 
 msgctxt "LogMessage:10725:0:5"
 msgid "Unable to execute command. You cannot save any more strategy boards."
 msgstr "Не удалось выполнить команду. Нельзя сохранить больше досок тактики."
 
 #. ja: 保存できるフォルダの上限に達しているため、操作を中断しました。
 #. de: Vorgang abgebrochen. Es können keine weiteren Ordner mehr erstellt werden.
-#. fr: Action impossible. Le maximum de dossiers est atteint.
+#. fr: Action impossible. Le maximum de dossiers est atteint. 
 msgctxt "LogMessage:10726:0:5"
 msgid "Unable to execute command. You cannot create any more folders."
 msgstr "Не удалось выполнить команду. Нельзя создать больше папок."
@@ -4736,10 +4736,10 @@ msgstr "Вы больше не можете нести <noun-en Item 3 $n1 2 1>.
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はこれ以上<sheet Item $n1 0>を所持できないため、採集が行えません。
 #. de: Das Sammeln ist nicht möglich, weil <if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if> <noun-de Item 4 $n1 1 4 1> mehr besitzen <if ($gs1 == $gs2)>kannst<else>kann</if>.
 #. fr: Récolte impossible. <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> ne <if ($gs1 == $gs2)>pouvez<else>peut</if> pas transporter davantage <noun-fr Item 8 $n1 2 1>.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10753:0:5"
 msgid "Unable to gather. <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> cannot carry any more <noun-en Item 3 $n1 2 1>."
@@ -4748,10 +4748,10 @@ msgstr "Не удалось собрать: <capitalize><if ($gs1 == $gs2)>у в
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はこれ以上<sheet Item $n1 0>を所持できないため、製作が行えません。
 #. de: Synthese nicht möglich, weil <if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if> <noun-de Item 4 $n1 1 4 1> mehr besitzen <if ($gs1 == $gs2)>kannst<else>kann</if>.
 #. fr: Synthèse impossible. <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> ne <if ($gs1 == $gs2)>pouvez<else>peut</if> pas transporter davantage <noun-fr Item 8 $n1 2 1>.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10754:0:5"
 msgid "Unable to craft. <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> cannot carry any more <noun-en Item 3 $n1 2 1>."
@@ -4828,7 +4828,7 @@ msgctxt "LogMessage:10764:0:5"
 msgid "You can now use the special action <sheet Action $n1 0>!"
 msgstr "Теперь можно использовать особое действие «<sheet Action $n1 0>»!"
 
-#. ja: コスモミッションの目標を達成した！
+#. ja: コスモミッションの目標を達成した！ 
 #. de: Missionsziel erreicht!
 #. fr: Vous avez accompli un objectif de la mission cosmique !
 msgctxt "LogMessage:10765:0:5"
@@ -5099,7 +5099,7 @@ msgstr "Не удалось отобразить. Не удалось получ
 
 #. ja: 最優秀貢献者がいないため、表示できません。
 #. de: Kein Projektbester vorhanden.
-#. fr: Aucun contributeur exemplaire à afficher.
+#. fr: Aucun contributeur exemplaire à afficher. 
 msgctxt "LogMessage:10797:0:5"
 msgid "Unable to display. A Star Contributor has not been selected."
 msgstr "Не удалось отобразить. Звание «Звёздный вклад» ещё никому не присвоено."
@@ -5389,13 +5389,13 @@ msgid "Your inventory is full. Please be advised you may be unable to accept all
 msgstr "В инвентаре нет места. Возможно, вы не сможете получить все награды."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、<sheet Mount $n1 0>に乗り込んだ！
-#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>bist<else>ist</if> in <noun-de Mount 2 $n1 1 4 1> eingestiegen!
+#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>bist<else>ist</if> in <noun-de Mount 2 $n1 1 4 1> eingestiegen!  
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>pilotez<else>pilote</if> <noun-fr Mount 2 $n1 1 1> !
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>board<else>boards</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>board<else>boards</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <noun-en Mount 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Mount, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10840:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>board<else>boards</if> <noun-en Mount 2 $n1 1 1>."
@@ -5404,11 +5404,11 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы садитесь<else><if $gn7><noun
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、メカオペレーション「<sheet WKSMechaEventData $n1 1>」の任務地に到着した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>bist<else>ist</if> am Einsatzort von „<sheet WKSMechaEventData $n1 1>“ angekommen.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>arrivez<else>arrive</if>  sur les lieux de l'in<shy>ter<shy>ven<shy>tion mécanique “<sheet WKSMechaEventData $n1 1>”.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet WKSMechaEventData $n1 1> — a value from a game data sheet, such as a name; sheet = WKSMechaEventData, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10841:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>have<else>has</if> arrived at the mission site for mech op “<sheet WKSMechaEventData $n1 1>.”"
@@ -5573,7 +5573,7 @@ msgid "The field scanner has detected a new target!"
 msgstr "Полевой сканер обнаружил новую цель!"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はフィールドサーチャーに物資を投入した。
-#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> den Feldsucher mit Materialien betankt.
+#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> den Feldsucher mit Materialien betankt. 
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> mis du carburant dans l'analyseur de terrain.
 msgctxt "LogMessage:10864:0:5"
 msgid "You load resources into the field scanner."
@@ -5732,11 +5732,11 @@ msgstr "Работы над проектом завершены."
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0><if ($n2 > 1)>×<num $n2></if>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <if ($n2 > 1)><noun-de Item 1 $n1 $n2 4 1><else><noun-de Item 1 $n1 1 4 1></if> erhalten.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> obtenu <if ($n2 > 1)><num $n2> <noun-fr Item 12 $n1 2 1><else><noun-fr Item 1 $n1 1 1></if>.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>obtain<else>obtains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>obtain<else>obtains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
@@ -5828,10 +5828,10 @@ msgstr "Не удалось подать заявку: у вас нет тало
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、充填済みのエネルギータンクを取り付けた！<br>別の「<sheet EObj $n1 0>」にエネルギーを供給しよう。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> einen geladenen Energievorrat platziert.<br>Finde einen anderen <noun-de EObj 5 $n1 1 4 1> zum Aufladen.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> remis en place un réservoir d'énergie plein !<br>D'autres <noun-fr EObj 12 $n1 2 1> peuvent avoir besoin d'être rechargés en énergie.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <noun-en EObj 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10895:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> completed the task. Seek out another <noun-en EObj 3 $n1 1 1> and ensure it's duly charged."
@@ -5946,7 +5946,7 @@ msgid "Unable to apply change. Storage space insufficient."
 msgstr "Не удалось изменить интерьер: на складе нет места."
 
 #. ja: テラトタウルスに「死の宣告」を付与された……
-#. de: Teratotaurus hat dich mit Verhängnis belegt<nbsp>...
+#. de: Teratotaurus hat dich mit Verhängnis belegt<nbsp>... 
 #. fr: Le teratotaurus vous inflige Glas.
 msgctxt "LogMessage:10913:0:5"
 msgid "You have been afflicted with Doom..."
@@ -5973,7 +5973,7 @@ msgctxt "LogMessage:10916:0:5"
 msgid "The pedestal of passage springs to life."
 msgstr "Пьедестал перемещения ожил."
 
-#. ja: 転移機能は機能していないようだ……
+#. ja: 転移機能は機能していないようだ…… 
 #. de: Das Portal scheint nicht zu funktionieren.
 #. fr: Le piédestal de passage semble inanimé...
 msgctxt "LogMessage:10917:0:5"
@@ -5987,7 +5987,7 @@ msgctxt "LogMessage:10918:0:5"
 msgid "The teleporter springs to life."
 msgstr "Телепортатор ожил."
 
-#. ja: 転移機能は機能していないようだ……
+#. ja: 転移機能は機能していないようだ…… 
 #. de: Die Transportvorrichtung scheint nicht zu funktionieren.
 #. fr: Le téléporteur semble inanimé...
 msgctxt "LogMessage:10919:0:5"
@@ -6153,10 +6153,10 @@ msgstr "Охладите расплавленное стекло патрона�
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、作業を完了させた！<br>冷却剤がなくなった。冷却剤補充装置で補充しよう。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> die Aufgabe abgeschlossen.<br>Das Kühlmittel wurde aufgebraucht. Besorge neues von der Nachfüllstation.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez<else>a</if> terminé <if ($gs1 == $gs2)>votre<else>sa</if> tâche<nbsp>!<br>Les réserves d'agent réfrigérant sont épuisées. Rechargez-les auprès du dispositif d'approvisionnement.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10940:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> completed the task. Procure additional cartridges from refrigeration stations."
 msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> выполнил задание. Пополните запас картриджей на станции охлаждения."
@@ -6171,10 +6171,10 @@ msgstr "Охладите расплавленное стекло патрона�
 #. ja: このミッションでは、アクション「収集品採集」の実行が必要です。
 #. de: Das Kommando „Sammlergespür“ ist für diese Mission notwendig.
 #. fr: L'action Gant de col<shy>lec<shy>tion<shy>neur doit être utilisée pour accomplir cette mission.
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10942:0:5"
 msgid "<ui-color 506><ui-edge-color 507>Collect</ui-edge-color></ui-color> is required for this mission."
 msgstr "<ui-color 506><ui-edge-color 507>Сбор коллекционных предметов</ui-edge-color></ui-color> необходим для этой миссии."
@@ -6189,10 +6189,10 @@ msgstr "Срок доставки припасов для критической
 #. ja: ステータス「プロスペクト」が付与されていないため、コスモミッションの目的となる採掘場・岩場が見えない状態になっています。
 #. de: Du bist nicht mit dem notwendigen Status „Prospektion“ versehen, um die Lagerstätten oder Steinbrüche der Stellarmission zu finden.
 #. fr: Vous ne disposez pas de l'effet Prospecteur. Vous ne verrez pas les filons nécessaires à l'accomplissement de la mission cosmique.
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10944:0:5"
 msgid "Unable to see stellar mission objectives. <ui-color 506><ui-edge-color 507>Prospect</ui-edge-color></ui-color> is not active."
 msgstr "Не видны цели звёздной миссии. Эффект <ui-color 506><ui-edge-color 507>Поиск</ui-edge-color></ui-color> не активен."
@@ -6200,10 +6200,10 @@ msgstr "Не видны цели звёздной миссии. Эффект <ui
 #. ja: ステータス「トライアングレート」が付与されていないため、コスモミッションの目的となる良木・草刈場が見えない状態になっています。
 #. de: Du bist nicht mit dem notwendigen Status „Geodäsie“ versehen, um die Nutzbäume oder Vegetationsstellen der Stellarmission zu finden.
 #. fr: Vous ne disposez pas de l'effet Forestier. Vous ne verrez pas les arbres matures et la végétation nécessaires à l'accomplissement de la mission cosmique.
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:10945:0:5"
 msgid "Unable to see stellar mission objectives. <ui-color 506><ui-edge-color 507>Triangulate</ui-edge-color></ui-color> is not active."
 msgstr "Не видны цели звёздной миссии. Эффект <ui-color 506><ui-edge-color 507>Триангуляция</ui-edge-color></ui-color> не активен."
@@ -6246,11 +6246,11 @@ msgstr "Вы не в скафандре для озеленения космос
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、<kilo $n2 ","><if ($n3 == 0)><else>(+<num $n3>%)</if>ポイントの知見を得た。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <kilo $n2 "."><if ($n3 == 0)><else> =+<num $n3> %)</if> Wissen erhalten.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>gagnez<else>gagne</if> <kilo $n2 "<nbsp>"> <if ($n3 == 0)><else>(+<num $n3>%) </if><if ($n2 <= 1)>point<else>points</if> de savoir.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>gain<else>gains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>gain<else>gains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 #. macro: <if ($n3 == 0)><else>(+<num $n3>%)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
@@ -6262,11 +6262,11 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、「<sheet MKDSupportJob $n1 0>」に<kilo $n2 ","><if ($n3 == 0)><else>(+<num $n3>%)</if>ポイントのサポート経験値を得た。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>erhältst<else>erhält</if> <kilo $n2 "."><if ($n3 == 0)><else> (+<num $n3> %)</if> Phantomroutine als <if ($gn4 == 0)><sheet MKDSupportJob $n1 0><else><sheet MKDSupportJob $n1 2></if>.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>gagnez<else>gagne</if> <kilo $n2 "<nbsp>"> <if ($n3 == 0)><else>(+<num $n3>%) </if><if ($n2 <= 1)>point<else>points</if> d'expérience de soutien en <lower><sheet MKDSupportJob $n1 0></lower>.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>gain<else>gains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>gain<else>gains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 #. macro: <if ($n3 == 0)><else>(+<num $n3>%)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
@@ -6279,11 +6279,11 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、<kilo $n2 ",">ポイントの知見を失った……。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>verlierst<else>verliert</if> <kilo $n2 "."> Wissen.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>perdez<else>perd</if> <kilo $n2 "<nbsp>"> <if ($n2 <= 1)>point<else>points</if> de savoir...
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>lose<else>loses</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>lose<else>loses</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 #. macro: <if (exp == 1)>point<else>points</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = exp == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:10954:0:5"
@@ -6293,11 +6293,11 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы теряете<else><if $gn7><noun-e
 #. ja: ナレッジレベルアップ！  <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、ナレッジレベル<num $n1>になった。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> Wissensstufe <num $n1> erreicht!
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>atteignez<else>atteint</if> le niveau de savoir <num $n1><nbsp>!
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>attain<else>attains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>attain<else>attains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10955:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>attain<else>attains</if> knowledge level <num $n1>!"
@@ -6306,11 +6306,11 @@ msgstr "Повышение уровня знаний! <capitalize><if ($gs1 == $
 #. ja: ナレッジレベルダウン……。 <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はナレッジレベルが<num $n1>になった。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>bist<else>ist</if> auf Wissensstufe <num $n1> zurückgefallen.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>redescendez<else>redescend</if> au niveau de savoir <num $n1>...
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>drop<else>drops</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>drop<else>drops</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10956:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>drop<else>drops</if> to knowledge level <num $n1>."
@@ -6319,11 +6319,11 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы опускаетесь<else><if $gn7
 #. ja: サポートジョブレベルアップ！  <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、「<sheet MKDSupportJob $n1 0>」のレベルが<num $n2>になった。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> als <if ($gs1 == $gs2)><if ($gn4 == 0)><sheet MKDSupportJob $n1 0><else><sheet MKDSupportJob $n1 2></if><else><sheet MKDSupportJob $n1 0></if> Stufe <num $n2> erreicht!
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>atteignez<else>atteint</if> le niveau <num $n2> en <lower><sheet MKDSupportJob $n1 0></lower><nbsp>!
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>attain<else>attains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>attain<else>attains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet MKDSupportJob $n1 0> — a value from a game data sheet, such as a name; sheet = MKDSupportJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10957:0:5"
@@ -6333,11 +6333,11 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы достигаете<else><if $gn7><
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はサポートジョブを 「<sheet MKDSupportJob $n1 0>」にチェンジした。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>wechselst<else>wechselt</if> auf <if ($gs1 == $gs2)><if ($gn4 == 0)><sheet MKDSupportJob $n1 0><else><sheet MKDSupportJob $n1 2></if><else><sheet MKDSupportJob $n1 0></if>.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>êtes<else>est</if> maintenant <lower><sheet MKDSupportJob $n1 0></lower>.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>change<else>changes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>change<else>changes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet MKDSupportJob $n1 0> — a value from a game data sheet, such as a name; sheet = MKDSupportJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10958:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>change<else>changes</if> to <sheet MKDSupportJob $n1 0>."
@@ -6346,11 +6346,11 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы переключаетесь<else><i
 #. ja: 「<sheet MKDSupportJob $n1 0>」を修得した！
 #. de: <if ($gn4 == 0)><sheet MKDSupportJob $n1 0><else><sheet MKDSupportJob $n1 2></if> freigeschaltet!
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>avez appris<else>a appris</if> le job de soutien <lower><sheet MKDSupportJob $n1 0></lower>.
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet MKDSupportJob $n1 0> — a value from a game data sheet, such as a name; sheet = MKDSupportJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10959:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>have<else>has</if> unlocked <sheet MKDSupportJob $n1 0>!"
@@ -6441,11 +6441,11 @@ msgstr "Сейчас нельзя сменить дополнительную р
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、戦意高揚状態になった！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>verfällst<else>verfällt</if> in Euphorie!
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>bénéficiez<else>bénéficie</if> de l'effet Passion du combat<nbsp>!
-#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (may be added or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
-#. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>have<else>has</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:10971:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>have<else>has</if> been overtaken by Battle High."
 msgstr "<capitalize><if ($gs1 == $gs2)>Вы охвачены<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> охвачен</if></capitalize> боевым азартом!"
@@ -6453,10 +6453,10 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы охвачены<else><if $gn7><noun
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>のアクションに反応し、ナレッジクリスタルが輝いた！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> den Wissenskristall mit einem Kommando zum Glühen gebracht!
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>lancez<else>lance</if> une action qui résonne avec le cristal de savoir<nbsp>!
-#. macro: <if ($gs1 == $gs2)>your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10972:0:5"
 msgid "The knowledge crystal resonates with <if ($gs1 == $gs2)>your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if> phantom action!"
 msgstr "Кристалл знаний откликается на <if ($gs1 == $gs2)>ваше фантомное действие<else>фантомное действие <if ($gs1 == $gs2)>вас<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></if>!"
@@ -6592,7 +6592,7 @@ msgstr "Вы чувствуете что-то очень далеко на <swit
 #. ja: <sheet BNpcName $n1 0>がエリクサーを欲しがっている。<br>イベントアイテム「<sheet EventItem $n2 0>」を使用して<br>財宝の気配を探らせよう！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> bettelt um ein Elixier! Gib ihm <noun-de EventItem 1 $n2 1 4 1> und lass dir einen Schatz zeigen!
 #. fr: Le <noun-fr BNpcName 12 $n1 1 1> réclame des élixirs<nbsp>! Donnez-lui <noun-fr Item 1 $n2 2 1> pour qu'il vous guide jusqu'à son trésor<nbsp>!
-#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <noun-en EventItem 1 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 1, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10990:0:5"
@@ -6610,7 +6610,7 @@ msgstr "Вы потеряли из виду <noun-en BNpcName 2 $n1 1 1>..."
 #. ja: <sheet BNpcName $n1 0>は力尽きてしまった……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 3 1></capitalize> ist die Puste ausgegangen.
 #. fr: Le <noun-fr BNpcName 12 $n1 1 1> est à bout de forces...
-#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10992:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is too injured to continue."
@@ -6626,7 +6626,7 @@ msgstr "Сундук таинственным образом исчез."
 #. ja: <sheet BNpcName $n1 0>は、2つめの財宝の在処を教えてくれるようだ！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> verrät dir den Ort eines zweiten Schatzes!
 #. fr: Le <noun-fr BNpcName 12 $n1 1 1> veut vous indiquer l'emplacement d'un second trésor<nbsp>!
-#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:10994:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> seems willing to guide you to another treasure coffer."

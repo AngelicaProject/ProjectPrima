@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 輝きが感じられない……。<br>まだまだ魂は定着していないようだ。
@@ -201,7 +201,7 @@ msgstr "Вы заглядываете в Зодиакальную лупу..."
 #. ja: <sheet ClassJob $n1 30>
 #. de: <if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if>
 #. fr: <capitalize><if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if></capitalize>
-#. macro: <title-case><sheet ClassJob $n1 30></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><sheet ClassJob $n1 30></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob $n1 30> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 30 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3049:0:0"
 msgid "<title-case><sheet ClassJob $n1 30></title-case>"
@@ -245,7 +245,7 @@ msgstr "Записи заданий"
 #. ja: <sheet InstanceContent $n1 3>
 #. de: <sheet InstanceContent $n1 3>
 #. fr: <capitalize><sheet InstanceContent $n1 3></capitalize>
-#. macro: <capitalize><sheet InstanceContent $n1 3></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet InstanceContent $n1 3></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet InstanceContent $n1 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 1, column = 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3056:0:0"
 msgid "<capitalize><sheet InstanceContent $n1 3></capitalize>"
@@ -313,10 +313,10 @@ msgstr "Справка по записи заданий"
 #. ja: <ui-color 508><ui-edge-color 509>宿屋ではないため再生できません。</ui-edge-color></ui-color>
 #. de: <ui-color 508><ui-edge-color 509>Rückblenden können nur in Gästezimmern der Herbergen abgespielt werden.</ui-edge-color></ui-color>
 #. fr: <ui-color 508><ui-edge-color 509>Visionnage impossible hors des chambres d'auberge.</ui-edge-color></ui-color>
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3065:0:0"
 msgid "<ui-color 508><ui-edge-color 509>Play function only available in inns.</ui-edge-color></ui-color>"
 msgstr "<ui-color 508><ui-edge-color 509>Просмотр доступен только в гостинице.</ui-edge-color></ui-color>"
@@ -324,10 +324,10 @@ msgstr "<ui-color 508><ui-edge-color 509>Просмотр доступен то�
 #. ja: <ui-color 508><ui-edge-color 509>データバージョンが古いため再生できません。</ui-edge-color></ui-color>
 #. de: <ui-color 508><ui-edge-color 509>Die Daten sind für eine veraltete Version und können nicht abgespielt werden.</ui-edge-color></ui-color>
 #. fr: <ui-color 508><ui-edge-color 509>Visionnage impossible. Les données sont trop anciennes.</ui-edge-color></ui-color>
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3066:0:0"
 msgid "<ui-color 508><ui-edge-color 509>Older data version detected. Unable to play.</ui-edge-color></ui-color>"
 msgstr "<ui-color 508><ui-edge-color 509>Версия данных устарела. Воспроизведение невозможно.</ui-edge-color></ui-color>"
@@ -335,10 +335,10 @@ msgstr "<ui-color 508><ui-edge-color 509>Версия данных устаре�
 #. ja: <ui-color 508><ui-edge-color 509>データが破損しているため再生できません。</ui-edge-color></ui-color>
 #. de: <ui-color 508><ui-edge-color 509>Die Daten sind defekt und können nicht abgespielt werden.</ui-edge-color></ui-color>
 #. fr: <ui-color 508><ui-edge-color 509>Visionnage impossible. Les données sont endommagées.</ui-edge-color></ui-color>
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3067:0:0"
 msgid "<ui-color 508><ui-edge-color 509>Data is corrupted. Unable to play.</ui-edge-color></ui-color>"
 msgstr "<ui-color 508><ui-edge-color 509>Данные повреждены. Воспроизведение невозможно.</ui-edge-color></ui-color>"
@@ -353,7 +353,7 @@ msgstr "Справка по записям"
 #. ja: ・<sheet ContentFinderCondition 295 43>
 #. de: ・<sheet ContentFinderCondition 295 43>
 #. fr: ・<capitalize><sheet ContentFinderCondition 295 43></capitalize>
-#. macro: <capitalize><sheet ContentFinderCondition 295 43></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ContentFinderCondition 295 43></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ContentFinderCondition 295 43> — a value from a game data sheet, such as a name; sheet = ContentFinderCondition, row = 295, column = 43 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3071:0:0"
 msgid "・<capitalize><sheet ContentFinderCondition 295 43></capitalize>"
@@ -362,8 +362,8 @@ msgstr "・<capitalize><sheet ContentFinderCondition 295 43></capitalize>"
 #. ja: <ui-color 514>コンテンツリプレイ対象コンテンツ</ui-color>
 #. de: <ui-color 514>Verfügbare Inhalte</ui-color>
 #. fr: <ui-color 514>Missions enregistrables</ui-color>
-#. macro: <ui-color 514> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 514 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 514> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 514 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3072:0:0"
 msgid "<ui-color 514>Recordable Duties</ui-color>"
 msgstr "<ui-color 514>Записываемые задания</ui-color>"
@@ -371,7 +371,7 @@ msgstr "<ui-color 514>Записываемые задания</ui-color>"
 #. ja: ・<sheet ContentFinderCondition $n1 43>
 #. de: ・<capitalize><sheet ContentFinderCondition $n1 43></capitalize>
 #. fr: ・<capitalize><sheet ContentFinderCondition $n1 43></capitalize>
-#. macro: <capitalize><sheet ContentFinderCondition $n1 43></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ContentFinderCondition $n1 43></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ContentFinderCondition $n1 43> — a value from a game data sheet, such as a name; sheet = ContentFinderCondition, row = number parameter 1, column = 43 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3073:0:0"
 msgid "・<capitalize><sheet ContentFinderCondition $n1 43></capitalize>"
@@ -414,10 +414,10 @@ msgstr "Выбор главы"
 #. ja: 再生<br>【<if ($gn78 == 3)>space<else>Space</if>】キー／ <icon2 11>ボタン
 #. de: Wiedergabe <br><if ($gn78 == 3)>space<else>Leertaste</if> / <icon2 11>-Taste
 #. fr: Lecture<br>(<if ($gn78 == 3)>espace<else>Espace</if>/<icon2 11>)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($gn78 == 3)>space<else>Spacebar</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <icon2 11> — an inline icon that depends on the input device; icon = 11 (game data: keep it; it may move or repeat)
@@ -428,10 +428,10 @@ msgstr "<ui-color 500><ui-edge-color 501>Воспроизведение</ui-edge
 #. ja: 一時停止<br>【<if ($gn78 == 3)>space<else>Space</if>】キー／ <icon2 11>ボタン
 #. de: Pause<br><if ($gn78 == 3)>space<else>Leertaste</if> / <icon2 11>-Taste
 #. fr: Pause<br>(<if ($gn78 == 3)>espace<else>Espace</if>/<icon2 11>)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($gn78 == 3)>space<else>Spacebar</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <icon2 11> — an inline icon that depends on the input device; icon = 11 (game data: keep it; it may move or repeat)
@@ -519,10 +519,10 @@ msgstr "Справка по записям"
 #. ja: 再生速度：1倍速<br>【<if ($gn78 == 3)>num9<else>Num9</if>】キー／ <icon2 13>ボタン
 #. de: Ge<shy>schwindig<shy>keit: x1 (normal)<br><if ($gn78 == 3)>num9<else>NUM9</if> / <icon2 13>-Taste
 #. fr: Vitesse de lecture x1<br>(<if ($gn78 == 3)>num 9<else>Num 9</if>/<icon2 13>)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($gn78 == 3)>num9<else>Num9</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <icon2 13> — an inline icon that depends on the input device; icon = 13 (game data: keep it; it may move or repeat)
@@ -533,10 +533,10 @@ msgstr "<ui-color 500><ui-edge-color 501>Скорость</ui-edge-color></ui-co
 #. ja: 再生速度：2倍速<br>【<if ($gn78 == 3)>num9<else>Num9</if>】キー／ <icon2 13>ボタン
 #. de: Ge<shy>schwindig<shy>keit: x2 (zweifach)<br><if ($gn78 == 3)>num9<else>NUM9</if> / <icon2 13>-Taste
 #. fr: Vitesse de lecture x2<br>(<if ($gn78 == 3)>num 9<else>Num 9</if>/<icon2 13>)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($gn78 == 3)>num9<else>Num9</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <icon2 13> — an inline icon that depends on the input device; icon = 13 (game data: keep it; it may move or repeat)
@@ -547,10 +547,10 @@ msgstr "<ui-color 500><ui-edge-color 501>Скорость</ui-edge-color></ui-co
 #. ja: 再生速度：4倍速<br>【<if ($gn78 == 3)>num9<else>Num9</if>】キー／ <icon2 13>ボタン
 #. de: Ge<shy>schwindig<shy>keit: x4 (vierfach)<br><if ($gn78 == 3)>num9<else>NUM9</if> / <icon2 13>-Taste
 #. fr: Vitesse de lecture x4<br>(<if ($gn78 == 3)>num 9<else>Num 9</if>/<icon2 13>)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($gn78 == 3)>num9<else>Num9</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <icon2 13> — an inline icon that depends on the input device; icon = 13 (game data: keep it; it may move or repeat)
@@ -561,13 +561,13 @@ msgstr "<ui-color 500><ui-edge-color 501>Скорость</ui-edge-color></ui-co
 #. ja: リプレイレディチェックを開始します。<br>全員が「はい」を押した時点から記録を開始し、設定された時間で戦闘開始カウントが実行されます。<br><ui-color 508><ui-edge-color 509>※2回目以降は記録に対する確認は含まれず、レディチェックと戦闘開始カウントが実行されます。</ui-edge-color></ui-color>
 #. de: Es wird eine Bereitschaftsanfrage für die Aufzeichnung einer Rückblende gestartet.<br>Sobald alle Grup<shy>pen<shy>mit<shy>glieder bereit sind, starten der Inhalts-Timer und die Aufzeichnung.<br><ui-color 508><ui-edge-color 509>※ Beim nächsten Mal kann die normale Bereitschaftsanfrage gestellt werden.</ui-edge-color></ui-color>
 #. fr: <ui-color 506><ui-edge-color 507>Appel d'enregistrement</ui-edge-color></ui-color><br>Dès que tous les équipiers auront répondu “Oui”, l'enregistrement commencera et le compte à rebours du combat sera lancé.<br><ui-color 508><ui-edge-color 509>* À partir de la seconde tentative, il n'y aura aucune confirmation pour l'enregistrement, mais un appel de préparation et un compte à rebours seront effectués.</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3104:0:0"
 msgid "Initiating <ui-color 506><ui-edge-color 507>record ready check</ui-edge-color></ui-color>.<br>Countdown will start and duty will begin recording once all duty members have selected “Yes.”<br><ui-color 508><ui-edge-color 509>※A confirmation prompt will not appear for future recordings.</ui-edge-color></ui-color>"
 msgstr "Запущена <ui-color 506><ui-edge-color 507>проверка готовности к записи</ui-edge-color></ui-color>.<br>Когда все участники задания выберут «Да», начнётся обратный отсчёт и запись задания.<br><ui-color 508><ui-edge-color 509>※ В дальнейшем подтверждение записи появляться не будет.</ui-edge-color></ui-color>"
@@ -575,13 +575,13 @@ msgstr "Запущена <ui-color 506><ui-edge-color 507>проверка го�
 #. ja: リプレイレディチェックを開始します。<br>メンバー全員が「はい」を押した時点から記録を開始し、<br>設定された時間で戦闘開始カウントが実行されます。<br><ui-color 508><ui-edge-color 509>※2回目以降は記録に対する確認は含まれず、<br>　レディチェックと戦闘開始カウントが実行されます。</ui-edge-color></ui-color>
 #. de: Es wird eine Bereitschaftsanfrage für die Aufzeichnung einer Rückblende gestartet.<br>Sobald alle Grup<shy>pen<shy>mit<shy>glieder bereit sind, starten der Inhalts-Timer und die Aufzeichnung.<br><ui-color 508><ui-edge-color 509>※ Beim nächsten Mal kann die normale Bereitschaftsanfrage gestellt werden.</ui-edge-color></ui-color>
 #. fr: <ui-color 506><ui-edge-color 507>Appel d'enregistrement</ui-edge-color></ui-color><br>Dès que tous les équipiers auront répondu “Oui”, l'enregistrement commencera et le compte à rebours du combat sera lancé.<br><ui-color 508><ui-edge-color 509>* À partir de la seconde tentative, il n'y aura aucune confirmation pour l'enregistrement, mais un appel de préparation et un compte à rebours seront effectués.</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3105:0:0"
 msgid "Initiating <ui-color 506><ui-edge-color 507>record ready check</ui-edge-color></ui-color>.<br>Countdown will start and duty will begin recording<br>once all duty members have selected “Yes.”<br><ui-color 508><ui-edge-color 509>※A confirmation prompt will not appear<br>　for future recordings.</ui-edge-color></ui-color>"
 msgstr "Запущена <ui-color 506><ui-edge-color 507>проверка готовности к записи</ui-edge-color></ui-color>.<br>Когда все участники задания выберут «Да», начнётся запись задания и обратный отсчёт.<br><ui-color 508><ui-edge-color 509>※ В дальнейшем подтверждение записи появляться не будет.</ui-edge-color></ui-color>"
@@ -596,12 +596,12 @@ msgstr "Задайте длительность отсчёта (5–30 секу�
 #. ja: <ui-color 500><ui-edge-color 501>リプレイレディチェックの確認可能時間</ui-edge-color></ui-color><br>残り<num $n1>分<num $n2>秒
 #. de: <ui-color 500><ui-edge-color 501>Noch <num $n1> <if ($n1 == 1)>Minute<else>Minuten</if> <num $n2> <if ($n2 == 1)>Sekunde<else>Sekunden</if></ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501>Temps restant (appel d'enregistrement)<nbsp>:</ui-edge-color></ui-color> <num $n1>m<num $n2>s
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3107:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Time remaining for record ready check: <num $n1>m <num $n2>s</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Время на подтверждение записи: <num $n1> мин <num $n2> с</ui-edge-color></ui-color>"
@@ -609,11 +609,11 @@ msgstr "<ui-color 500><ui-edge-color 501>Время на подтвержден�
 #. ja: <ui-color 500><ui-edge-color 501>リプレイ記録：無効</ui-edge-color></ui-color><br>リプレイの記録は行われません。
 #. de: <ui-color 500><ui-edge-color 501>Aufzeichnung: aus<br>Es können keine Rückblendendaten aufgezeichnet werden.</ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501>Enregistrement des missions<nbsp>: désactivé</ui-edge-color></ui-color><br>Aucun enregistrement ne sera effectué.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3108:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Recording Disabled<br>A record of the duty will not be taken.</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Запись отключена<br>Запись этого задания не будет сохранена.</ui-edge-color></ui-color>"
@@ -621,11 +621,11 @@ msgstr "<ui-color 500><ui-edge-color 501>Запись отключена<br>За
 #. ja: <ui-color 500><ui-edge-color 501>リプレイ記録：有効</ui-edge-color></ui-color><br><if ($n1 == 1)>リプレイの記録が可能な状態です。<else>リプレイ情報の記録設定が<ui-color 500><ui-edge-color 501>「無効」</ui-edge-color></ui-color>に設定されているため、<br>このキャラクターでの記録は行われません。</if>
 #. de: <ui-color 500><ui-edge-color 501>Aufzeichnung: ein</ui-edge-color></ui-color><br><if ($n1 == 1)>Es können neue Rückblendendaten aufgezeichnet werden.<else>Es können keine neuen Rückblendendaten aufgezeichnet werden, da die Aufzeichnung auf <ui-color 500><ui-edge-color 501>aus</ui-edge-color></ui-color> gestellt ist.</if>
 #. fr: <ui-color 500><ui-edge-color 501>Enregistrement des missions<nbsp>: activé</ui-edge-color></ui-color><br><if ($n1 == 1)>Un enregistrement peut être effectué.<else>L'enregistrement des missions étant <ui-color 500><ui-edge-color 501>désactivé</ui-edge-color></ui-color>, aucun n'enregistrement ne sera effectué pour ce personnage.</if>
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3109:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Recording Enabled<br>A record of the duty will be taken.</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Запись включена<br>Запись этого задания будет сохранена.</ui-edge-color></ui-color>"
@@ -640,10 +640,10 @@ msgstr "Начать"
 #. ja: <ui-color 500><ui-edge-color 501>リプレイレディチェック実行中です。</ui-edge-color></ui-color>
 #. de: <ui-color 500><ui-edge-color 501>Bereitschaftsanfrage für die Rückblende wurde gestellt.</ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501>Un appel d'enregistrement est en cours.</ui-edge-color></ui-color>
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3111:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Waiting for all duty members to confirm record ready check.</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Ожидание подтверждения записи от всех участников задания.</ui-edge-color></ui-color>"
@@ -665,10 +665,10 @@ msgstr "Нет"
 #. ja: リプレイレディチェックが開始されました。<br>メンバー全員が「はい」を押した時点で記録を開始し、<br>設定された時間で戦闘開始カウントが実行されます。
 #. de: Die <ui-color 506><ui-edge-color 507>Bereitschaftsanfrage für die Rückblende</ui-edge-color></ui-color> wurde gestellt. Der Countdown beginnt, sobald alle Spieler ihre Bereitschaft bestätigt haben.
 #. fr: <ui-color 506><ui-edge-color 507>Appel d'enregistrement</ui-edge-color></ui-color><br>Dès que tous les équipiers auront répondu “Oui”, l'enregistrement commencera et le compte à rebours du combat sera lancé.
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3115:0:0"
 msgid "The <ui-color 506><ui-edge-color 507>record ready check</ui-edge-color></ui-color> has been initiated. Recording will begin once all players have selected “Yes.”"
 msgstr "Запущена <ui-color 506><ui-edge-color 507>проверка готовности к записи</ui-edge-color></ui-color>. Запись начнётся, когда все участники выберут «Да»."
@@ -685,14 +685,14 @@ msgstr "<icon 100>Пригласить вернуться"
 #. de: Lade einen befreundeten Spieler oder eine befreundete Spielerin dazu ein, nach Eorzea zurückzukehren. Das FINAL FANTASY XIV Support-Team wird ihm bzw. ihr dann eine Nachricht im Namen deines Charakters zusenden.<br>- Die Einladung wird nur versandt, wenn alle einschlägigen Bedingungen erfüllt sind.<br>- Es können nicht mehr als 5 Einladungen auf einmal abgeschickt werden. Danach ist die Funktion für eine bestimmte Zeit gesperrt.<br>- Wenn du mehrere Einladungen an den gleichen Charakter schickst, zählt jede einzelne Einladung gegen das Limit.<br>Weitere Informationen findest du hier:<br><ui-color 502><ui-edge-color 503>https://sqex.to/callback</ui-edge-color></ui-color><br><br><ui-color 508><ui-edge-color 509><string $s1></ui-edge-color></ui-color> zur Rückkehr nach Eorzea einladen?
 #. fr: Si vous appuyez sur le bouton Oui, l'équipe de gestion de FINAL FANTASY XIV enverra un e-mail en votre nom au joueur ci-dessous afin de l'inviter à revenir en Éorzéa.<br><br><ui-color 506><ui-edge-color 507>- L'invitation ne sera envoyée que si toutes les conditions requises sont remplies.<br>- Cette fonction ne peut être utilisée que 5 fois pendant un certain laps de temps.<br>- Inviter plusieurs fois le même joueur réduira d'autant le quota mentionné ci-dessus.</ui-edge-color></ui-color><br><br>* Pour plus de détails, veuillez consulter le lien ci-dessous<nbsp>:<br><ui-color 502><ui-edge-color 503>https://sqex.to/callback</ui-edge-color></ui-color><br><br>Inviter <ui-color 508><ui-edge-color 509><string $s1></ui-edge-color></ui-color> à revenir en Éorzéa<nbsp>?<br>
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: keep it as often as the source has it)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3121:0:0"
 msgid "Upon selecting the Yes button below, the FINAL FANTASY XIV Operations Team will send an e-mail from your character to the specified player, inviting them to return to Eorzea.<br><br><ui-color 506><ui-edge-color 507>Invites will not be sent unless all applying conditions are met.<br>No more than 5 invites can be sent at a time.<br>A temporary restriction will be placed on invitations after reaching 5.</ui-edge-color></ui-color><br><br>※Visit the following link for details: <ui-color 502><ui-edge-color 503>https://sqex.to/callback</ui-edge-color></ui-color><br><br>Send <ui-color 508><ui-edge-color 509><string $s1></ui-edge-color></ui-color> an invitation e-mail?"
@@ -940,10 +940,10 @@ msgstr "Планшет образов"
 #. ja: <ui-color 506><ui-edge-color 507>※複数占有装備に含まれる箇所は「装備なし」と表示されます。</ui-edge-color></ui-color>
 #. de: <ui-color 506><ui-edge-color 507>※ Ausrüstung, die mehrere Plätze belegt, wird nur an einem Platz angezeigt.</ui-edge-color></ui-color>
 #. fr: <ui-color 506><ui-edge-color 507>* Les emplacements vides ou couverts par un autre équipement sont marqués “Aucun”.</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3189:0:0"
 msgid "<ui-color 506><ui-edge-color 507>※Gear requiring multiple slots will only display in its main slot.</ui-edge-color></ui-color>"
 msgstr "<ui-color 506><ui-edge-color 507>※Экипировка, занимающая несколько ячеек, отображается только в основной.</ui-edge-color></ui-color>"
@@ -1101,8 +1101,8 @@ msgctxt "Addon:3215:0:0"
 msgid "<icon2 23> Scroll  <icon2 12>+<icon2 23> Zoom  <icon2 13> Teleport"
 msgstr "<icon2 23> Листать  <icon2 12>+<icon2 23> Увеличить  <icon2 13> Телепорт"
 
-#. ja: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ",">)
-#. de: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ".">)
+#. ja: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ",">)  
+#. de: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ".">)  
 #. fr: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize><br>(<kilo $n2 "<nbsp>">)
 #. macro: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
@@ -1531,7 +1531,7 @@ msgstr "Сбросить отображение персонажа"
 #. ja: キャラクター閲覧モードをON/OFFする<br>(<platform 1>専用)
 #. de: Stick bewegt Charaktermodell (nur <platform 1>)
 #. fr: Activer/Désactiver les mouvements de caméra (<platform 1>)
-#. macro: <lower><platform 1></lower> — the content in lower case (may be added or dropped)
+#. macro: <lower><platform 1></lower> — the content in lower case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <platform 1> — text that depends on the platform, such as a controller name; text = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3271:0:0"
 msgid "Toggle character display mode on/off (<lower><platform 1></lower> only)."
@@ -1574,7 +1574,7 @@ msgstr "Навык разборки"
 
 #. ja: 合計
 #. de: Gesamt
-#. fr: Total
+#. fr: Total 
 msgctxt "Addon:3278:0:0"
 msgid "Total"
 msgstr "Всего"
@@ -1740,7 +1740,7 @@ msgid "Edit Hotbar"
 msgstr "Настроить панель"
 
 #. ja: 登録位置を編集したいスロットを、<br>使用時と同じ操作で指定してください。
-#. de: Wähle einen Slot mit der Tastenkombination aus,<br>mit der du das Kommando dort normalerweise benutzt.
+#. de: Wähle einen Slot mit der Tastenkombination aus,<br>mit der du das Kommando dort normalerweise benutzt. 
 #. fr: Sélectionnez le raccourci à modifier en pressant<br>la combinaison de touches correspondante.
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:3321:0:0"
@@ -1748,7 +1748,7 @@ msgid "Select a slot to edit<br>by pressing its button combination."
 msgstr "Выберите ячейку для изменения,<br>нажав назначенное ей сочетание клавиш."
 
 #. ja: 移動先のスロットを指定してください。<br>もう一度同じスロットを指定すると<br>登録項目を削除して空きスロットにします。
-#. de: Wähle nun einen neuen Slot für das Kommando aus.<br>Um das Kommando zu entfernen,<br>wähle denselben Slot nochmals aus.
+#. de: Wähle nun einen neuen Slot für das Kommando aus.<br>Um das Kommando zu entfernen,<br>wähle denselben Slot nochmals aus. 
 #. fr: Sélectionnez un nouvel emplacement pour cette commande.<br>Sélectionnez le même emplacement pour effacer la commande.
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:3322:0:0"
@@ -1962,10 +1962,10 @@ msgstr "Показать справку по сертификатам дости
 #. de: Belohnung entgegennehmen<br>Belohnungen für abgeschlossene Errungenschaften können im Reiter „Gegenstände“ entgegengenommen werden.<br><br><br>Errungen<shy>schafts<shy>zerti<shy>fikate<br>Mit jeder erfüllten Errungenschaft sammelst du Punkte, für die Jonathas in Alt-Gridania bei Erreichen von bestimmten Punktzahlen Errungen<shy>schafts<shy>zerti<shy>fikate ausstellt. Tausche diese Zertifikate bei ihm gegen besondere Gegenstände ein.
 #. fr: Récompenses des hauts faits<br>Certains hauts faits offrent des objets ou encore des titres qu'il est possible de récupérer directement à partir de la liste des hauts faits.<br><br>Jetons de hauts faits<br>Les jetons de hauts faits sont une devise obtenue auprès de Jonathas (Vieille Gridania) en échange des points que vous accumulez au fur et à mesure que vous accomplissez des hauts faits. Ils servent ensuite à acheter divers objets auprès du même PNJ.
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3368:0:0"
 msgid "Select reward items via completed achievements to accept them.<br><br>Furthermore, each time you earn an achievement, you will gain achievement points. These points can be exchanged for <ui-color 506><ui-edge-color 507>achievement certificates</ui-edge-color></ui-color> by speaking with Jonathas in Old Gridania. Certificates can then be used to purchase special rewards including rare items and gear."
 msgstr "Выберите награды за завершённые достижения, чтобы получить их.<br><br>За каждое полученное достижение начисляются очки. Набрав нужное количество, поговорите с Джонатасом в Старой Гридании и обменяйте их на <ui-color 506><ui-edge-color 507>сертификаты достижений</ui-edge-color></ui-color>. Сертификаты можно обменять на особые награды, в том числе редкие предметы и снаряжение."
@@ -2149,7 +2149,7 @@ msgstr "Записей нет."
 #. ja: ※<platform 1>準拠の操作方法で説明します。
 #. de: ※ Texte für Steuerung mit <platform 1>
 #. fr: * Le tutoriel est basé sur le jeu à la <platform 1>.
-#. macro: <lower><platform 1></lower> — the content in lower case (may be added or dropped)
+#. macro: <lower><platform 1></lower> — the content in lower case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <platform 1> — text that depends on the platform, such as a controller name; text = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3395:0:0"
 msgid "※Tutorials are tailored to players using a <lower><platform 1></lower>."
@@ -2253,7 +2253,7 @@ msgid "Show items for current job/class."
 msgstr "Предметы текущего класса/профессии"
 
 #. ja: 必要なカンパニーランクを満たしていません。
-#. de: Dein Rang in der Ge<shy>sell<shy>schaft ist nicht hoch genug.
+#. de: Dein Rang in der Ge<shy>sell<shy>schaft ist nicht hoch genug. 
 #. fr: Le rang de la compagnie est trop bas.
 msgctxt "Addon:3420:0:0"
 msgid "Your company rank is not high enough."
@@ -2589,7 +2589,7 @@ msgstr "Отмена"
 #. ja: 《<if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if>》
 #. de: 《<if $n3><sheet ClassJob $n1 1><else><if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if></if>》
 #. fr: 《<if $n3><sheet ClassJob $n1 1><else><capitalize><if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if></capitalize></if>》
-#. macro: <title-case><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ClassJob $n1 1> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet ClassJob $n1 30> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 30 (game data: keep it; it may move or repeat)
@@ -2600,7 +2600,7 @@ msgstr "《<capitalize><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 3
 #. ja: 《<if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if>》
 #. de: 《<if $n3><sheet ClassJob $n1 1><else><if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if></if>》
 #. fr: 《<if $n3><sheet ClassJob $n1 1><else><capitalize><if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if></capitalize></if>》
-#. macro: <title-case><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ClassJob $n1 1> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet ClassJob $n1 30> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 30 (game data: keep it; it may move or repeat)
@@ -2611,7 +2611,7 @@ msgstr "《<capitalize><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 3
 #. ja:  «<if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if>»
 #. de:  «<if $n3><sheet ClassJob $n1 1><else><if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if></if>»
 #. fr:  «<if $n3><sheet ClassJob $n1 1><else><capitalize><if ($n2 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if></capitalize></if>»
-#. macro: <title-case><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n3><sheet ClassJob $n1 1><else><sheet ClassJob $n1 30></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ClassJob $n1 1> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet ClassJob $n1 30> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 30 (game data: keep it; it may move or repeat)
@@ -2755,7 +2755,7 @@ msgstr "Закрыть"
 #. ja: <string $s1>
 #. de: <capitalize><string $s1></capitalize>
 #. fr: <capitalize><string $s1></capitalize>
-#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3535:0:0"
 msgid "<capitalize><string $s1></capitalize>"
@@ -2773,7 +2773,7 @@ msgstr "Требуемый ур.: <num $n1>"
 #. de: <sheet Item $n1 9>: <noun-de BNpcName 5 $n2 1 1 1>
 #. fr: <sheet Item $n1 9><nbsp>: <title-case><sheet ObjStr $n2 0></title-case>
 #. macro: <sheet Item $n1 9> — a value from a game data sheet, such as a name; sheet = Item, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
-#. macro: <title-case><sheet ObjStr $n2 0></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><sheet ObjStr $n2 0></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ObjStr $n2 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3537:0:0"
 msgid "<sheet Item $n1 9>: <title-case><sheet ObjStr $n2 0></title-case>"
@@ -3842,7 +3842,7 @@ msgstr "У вас нет подходящего катализатора, что
 #. ja: <sheet Item $n1 0>を投影するとBIND属性が付加されます。
 #. de: Wenn du diesen Gegenstand als Projektionsvorlage verwendest, wird er an dich gebunden.
 #. fr: <capitalize><noun-fr Item 2 $n1 1 1></capitalize> vous sera lié<if "<sheet Item $n1 6>">e</if>.
-#. macro: <capitalize><noun-en Item 2 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en Item 2 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3728:0:0"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> will be bound to you."
@@ -4144,10 +4144,10 @@ msgstr "Точка возвращения"
 #. fr: Vous êtes tombé<if $gn4>e</if> inconscient<if $gn4>e</if>. Abandonner la mission<nbsp>?<br><br><ui-color 500><ui-edge-color 501>* Vous serez au<shy>to<shy>ma<shy>ti<shy>que<shy>ment expulsé<if $gn4>e</if> si vous n'êtes pas ressuscité<if $gn4>e</if> dans les 10 prochaines minutes.</ui-edge-color></ui-color>
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3790:0:0"
 msgid "You have been incapacitated while participating in the duty “<string $s1>.”<br><br><ui-color 500><ui-edge-color 501>※You will be forcibly removed from the instance after 10 minutes.</ui-edge-color></ui-color>"
 msgstr "Вы потеряли сознание в подземелье «<string $s1>».<br><br><ui-color 500><ui-edge-color 501>※ Через 10 минут вас принудительно удалят из подземелья.</ui-edge-color></ui-color>"
@@ -4279,14 +4279,14 @@ msgstr "Погода: <switch $n1><case>Да<case>Нет<case>???</switch><br>В
 #. ja: 以下のアイテムを収集品として入手しますか？<br>収集価値 : <ui-color 504><ui-edge-color 505><num $n1></ui-edge-color></ui-color><br><br><ui-color 500><ui-edge-color 501>収集品にするとトレードやマーケットへの出品ができなくなります。</ui-edge-color></ui-color>
 #. de: Diesen Fang als Sammlerstück einholen?<br>Sammlerwert: <ui-color 504><ui-edge-color 505><num $n1></ui-edge-color></ui-color><br><br><ui-color 500><ui-edge-color 501>Sammlerstücke können nicht weitergegeben oder verkauft werden.</ui-edge-color></ui-color>
 #. fr: Obtenir cet objet en tant que “collectionnable”<nbsp>?<br><ui-color 504><ui-edge-color 505>Valeur de collection<nbsp>:</ui-edge-color></ui-color> <num $n1><br><br><ui-color 500><ui-edge-color 501>Un seul objet collectionnable peut être obtenu à la fois. Ce type d'objet ne peut être ni échangé ni mis en vente.</ui-edge-color></ui-color>
-#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3815:0:0"
 msgid "Preserve the following item with a collectability of <ui-color 504><ui-edge-color 505><num $n1></ui-edge-color></ui-color>?<br><br><ui-color 500><ui-edge-color 501>※An item which has been preserved as a collectable cannot be traded or sold.</ui-edge-color></ui-color>"
 msgstr "Сохранить предмет с ценностью коллекционирования <ui-color 504><ui-edge-color 505><num $n1></ui-edge-color></ui-color>?<br><br><ui-color 500><ui-edge-color 501>※ Сохранённый как коллекционный предмет нельзя обменять или продать.</ui-edge-color></ui-color>"
@@ -4560,7 +4560,7 @@ msgstr "Уровень не позволяет выполнить эфироре
 #. ja: <sheet ClassJob $n1 0> Lv<num $n2>
 #. de: <sheet ClassJob $n1 0> St. <num $n2>
 #. fr: <capitalize><sheet ClassJob $n1 0></capitalize> nv <num $n2>
-#. macro: <capitalize><sheet ClassJob $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3862:0:0"
@@ -4621,7 +4621,7 @@ msgstr "Выход"
 #. ja: 【未使用】<sheet Item $n1 0>
 #. de: <string $s1>
 #. fr: <string $s1>
-#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3870:0:0"
 msgid "<capitalize><string $s1></capitalize>"
@@ -4663,7 +4663,7 @@ msgid "The buying price for this item has changed."
 msgstr "Цена продажи этого предмета изменилась."
 
 #. ja: <sheet Item $n1 0>の価格は在庫状態に変化があったため変更されています。このまま購入してよろしいですか？
-#. de: Der für <noun-de Item 2 $n1 1 4 1> verlangte Preis hat sich geändert. Trotzdem kaufen?
+#. de: Der für <noun-de Item 2 $n1 1 4 1> verlangte Preis hat sich geändert. Trotzdem kaufen? 
 #. fr: Le prix d'achat <noun-fr Item 9 $n1 1 1> a changé. Voulez-vous tout de même poursuivre la transaction<nbsp>?
 #. macro: <noun-en Item 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3881:0:0"
@@ -4671,7 +4671,7 @@ msgid "The asking price for <noun-en Item 1 $n1 2 1> has changed. Do you still w
 msgstr "Цена покупки <noun-en Item 1 $n1 2 1> изменилась. Всё равно завершить сделку?"
 
 #. ja: <sheet Item $n1 0>の価格は在庫状態に変化があったため変更されています。このまま売却してよろしいですか？
-#. de: Der für <noun-de Item 2 $n1 1 4 1> gebotene Preis hat sich geändert. Trotzdem verkaufen?
+#. de: Der für <noun-de Item 2 $n1 1 4 1> gebotene Preis hat sich geändert. Trotzdem verkaufen? 
 #. fr: Le prix de vente <noun-fr Item 9 $n1 1 1> a changé. Voulez-vous tout de même poursuivre la transaction<nbsp>?
 #. macro: <noun-en Item 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3882:0:0"
@@ -4687,7 +4687,7 @@ msgstr "Магазин"
 
 #. ja: 選択してください：
 #. de: Wähle eine Option:
-#. fr: Choisissez une option<nbsp>:
+#. fr: Choisissez une option<nbsp>: 
 msgctxt "Addon:3884:0:0"
 msgid "Select an option:"
 msgstr "Выберите вариант:"

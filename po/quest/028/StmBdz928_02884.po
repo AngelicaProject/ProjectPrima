@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: ポルタ・プレトリアのトファーは、屈強な冒険者の助けを必要としているようだ。
@@ -50,7 +50,7 @@ msgstr "Доложите Тоферу."
 #. de: <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> </if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> </if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> </if><split " " 2><string $gs1></split>, nicht wahr? Ich habe einen dringenden Auftrag für dich.
 #. fr: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><capitalize><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if></capitalize> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><capitalize><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></capitalize> <split " " 2><string $gs1></split></if><nbsp>! Vous arrivez à point nommé, j'ai une mission à vous confier.
 #. speaker: TOPHER
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -123,8 +123,8 @@ msgstr "Я... пожалуй, расскажу, что случилось. Ба�
 #. de: Ich<nbsp>... Ich weiß nicht, womit wir es hier zu tun haben<nbsp>... Aber <i>irgendetwas</i> hat uns aus dem Turm vertrieben.
 #. fr: Je dis “quelque chose”, car je ne suis vraiment pas certain que nos assaillants avaient forrrme humaine. Comme vous pouvez le constater, mes camarades ont été blessés, mais nous avons tout de même réussi à nous enfuir tant bien que mal.
 #. speaker: LIBERATOR02884
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/028/StmBdz928_02884:TEXT_STMBDZ928_02884_LIBERATOR02884_000_012:1"
 msgid "Some <i>thing</i> appeared out of thin air and attacked us. Maybe several somethings. I was just flailing my axe behind me, hoping to discourage whatever it was while I pushed the wounded ahead of me back down the stairwell."
 msgstr "Из ниоткуда появилось какое-то <i>нечто</i> и напало на нас. Может, их было несколько. Я размахивал топором, надеясь отогнать тварей, и спускал раненых по лестнице."
@@ -173,7 +173,7 @@ msgstr "Раны оказались не такими серьёзными, ка
 #. de: Die Situation ist also wieder unter Kontrolle. Danke für deine schnelle Hilfe, <if ($gn52 > 0)><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if> </if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> </if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> </if><split " " 2><string $gs1></split>.
 #. fr: ... Je vois. Merci d'avoir sauvé la vie de mes soldats, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if><nbsp>!
 #. speaker: TOPHER
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)

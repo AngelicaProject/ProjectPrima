@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: ヤ・シュトラは冒険者に、タイタン討伐の報告を頼みたいようだ。
@@ -109,7 +109,7 @@ msgstr "Ещё раз поздравляю с отличной работой. �
 #. fr: Merci d'être venu<if $gn4>e</if>, <split " " 1><string $gs1></split>. On m'a fait savoir que tu as réussi à t'infiltrrrer dans O'Ghomoro et que tu as vaincu Titan après un combat remarquable.
 #. speaker: RASHAHT
 #. macro: <if ($gn52 > 0)>It is good to see you, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -139,7 +139,7 @@ msgstr "Сначала Ифрит, теперь Титан... Когда я ду
 #. fr: Je vais mettre au courant l'Amirale de tes exploits. Transmets mes amitiés aux autres Hérrritiers, veux-tu<nbsp>?
 #. speaker: RASHAHT
 #. macro: <if ($gn52 > 0)> Until next time, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -198,8 +198,8 @@ msgstr "Слыхал, какой шум только что поднялся? Ч
 #. de: Was ist da drin nur passiert? Die Schreie klangen fürchterlich, als wären dort Tiere abgeschlachtet worden ...
 #. fr: Qu'est-ce qui a bien pu s'y passer<nbsp>? En fait, je ne sais pas si je veux vraiment savoir... J'ai entendu des cris tellement horribles<nbsp>!
 #. speaker: NPCB
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/005/ManFst313_00517:TEXT_MANFST313_00517_NPCB_000_021:1"
 msgid "...Was that <i>screaming</i> I heard? I'm not sure I want to know..."
 msgstr "...Это я сейчас <i>крики</i> слышала? Не уверена, что хочу знать..."
@@ -498,8 +498,8 @@ msgstr "В церкви в Восточном Таналане... идущей �
 #. de: M-Meinige wollte die Ehrwürdige vor der Bösartigen beschützen ... Vergeblich!
 #. fr: Pardon... dites... Minfi... pardon... n'ai pas pu... protéger...
 #. speaker: NORAXIA
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/005/ManFst313_00517:TEXT_MANFST313_00517_NORAXIA_000_113:1"
 msgid "This one <i>tried</i>...tried to protect walking one Minfilia f-from imperial ones..."
 msgstr "Эта <i>пыталась</i>... пыталась защитить Минфилию от имперцев..."
@@ -557,8 +557,8 @@ msgstr "Прокляни моих врагов, отец! Низвергни б�
 #. de: Sag, Vater, gibt es Schöneres als eine <i>Wildrose</i>?
 #. fr: Dites-moi comment faire fleurir des églantines
 #. speaker: A3
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/005/ManFst313_00517:TEXT_MANFST313_00517_A3_000_053:1"
 msgid "The <i>wild roses</i> are dead, Father, and I know not what to do."
 msgstr "<i>Дикие розы</i> погибли, отец, и я не знаю, что делать."
@@ -592,8 +592,8 @@ msgstr "Преступления, о которых вы говорите, уж�
 #. de: <i>Wildrose</i>?! Du kennst das Codewort? So sprich frei! Du bist hier unter Freunden.
 #. fr: Que dites-vous<nbsp>? Des églantines<nbsp>? Vous pouvez parler sans crainte, je suis moi aussi un ami des Héritiers de la Septième Aube.
 #. speaker: ILIUD
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/005/ManFst313_00517:TEXT_MANFST313_00517_ILIUD_000_062:1"
 msgid "...The <i>wild roses</i>? I see. You may speak freely here. We are all friends of the Scions."
 msgstr "...<i>Дикие розы</i>? Понятно. Здесь вы можете говорить свободно. Мы все друзья Потомков."

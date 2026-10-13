@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: ボルセル大牙佐は、再召喚された蛮神「ガルーダ」の討伐を依頼したいようだ。
@@ -159,7 +159,7 @@ msgstr "Прошу вас встретиться с Гарудой в её об�
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -175,8 +175,8 @@ msgstr "Птицелюди, должно быть, уже успели «усо�
 #. de: <ui-color 547>Die Göttin des Windes ist stärker geworden ... Genau, wie wir es vorhergesehen haben. Aber dass sie sich so schnell geschlagen geben würde, damit hatten wir nicht gerechnet.</ui-color>
 #. fr: <ui-color 547>Notre in<shy>ter<shy>ven<shy>tion a permis de renforcer Garuda comme nous l'avions prévu.<br>Mais qui aurait cru qu'elle serait vaincue aussi facilement<nbsp>?</ui-color>
 #. speaker: ASCIANSWORD
-#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/011/GaiUsd012_01195:TEXT_GAIUSD012_01195_ASCIANSWORD_000_020:1"
 msgid "<ui-color 547>Our efforts to augment Garuda's powers were met with the predicted success. It is mildly unsatisfying, then, that the primal was thus summarily defeated.</ui-color>"
 msgstr "<ui-color 547>Нам удалось усилить Гаруду, как и было задумано. И всё же досадно, что праймала так быстро одолели.</ui-color>"
@@ -185,8 +185,8 @@ msgstr "<ui-color 547>Нам удалось усилить Гаруду, как 
 #. de: <ui-color 547>Es ist <if $gn4>diese Kriegerin<else>dieser Krieger</if> des Lichts. <if $gn4>Ihre Kraft<else>Seine Kraft</if> wird immer noch unterschätzt. Und dann hat <if $gn4>sie<else>er</if> zu allem Überfluss auch noch den Fokus entdeckt.</ui-color>
 #. fr: <ui-color 547>Elle n'a en effet pas été à la hauteur face à ce<if $gn4>tte</if> Protégé<if $gn4>e</if> de la Lumière.<br>Ce<if $gn4>tte</if> derni<if $gn4>ère<else>er</if> a même trouvé im<shy>mé<shy>dia<shy>te<shy>ment le substrat.</ui-color>
 #. speaker: ASCIANSCEPTER
-#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/011/GaiUsd012_01195:TEXT_GAIUSD012_01195_ASCIANSCEPTER_000_021:1"
 msgid "<ui-color 547>Against the Bringer of Light, it appears a heavier hand is required. And now that the focus has been discovered...</ui-color>"
 msgstr "<ui-color 547>Против Вестника Света этого оказалось мало. А теперь ещё и фокус нашли...</ui-color>"
@@ -195,8 +195,8 @@ msgstr "<ui-color 547>Против Вестника Света этого ока
 #. de: <ui-color 547>Sorge dich nicht, Bruder. Das Wissen über unseren neuen Beschwörungsritus nützt unseren Gegnern nichts, solange sie kein Mittel haben, ihn aufzuhalten.</ui-color>
 #. fr: <ui-color 547>Il n'y a rien à craindre à ce sujet.<br>Même s<if $gn4>i elle<else>'il</if> devine en quoi consiste ce nouveau rite d'invocation, rien ne pourra arrêter le retour des Primordiaux.</ui-color>
 #. speaker: ASCIANSWORD
-#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/011/GaiUsd012_01195:TEXT_GAIUSD012_01195_ASCIANSWORD_000_022:1"
 msgid "<ui-color 547>It is of no consequence. Even should they understand the significance of its presence, they have no means to prevent the summonings.</ui-color>"
 msgstr "<ui-color 547>Не о чем беспокоиться. Даже если они поймут, что это значит, остановить призывы им нечем.</ui-color>"
@@ -205,8 +205,8 @@ msgstr "<ui-color 547>Не о чем беспокоиться. Даже если
 #. de: <ui-color 547>Die Wilden Stämme gieren nach immer stärkeren Primae. Wenn wir weiter und weiter ihre Wünsche bedienen, wird das Chaos unüberschaubar werden.</ui-color>
 #. fr: <ui-color 547>Oui, en effet.<br>Et tant que ces tribus barbares continueront de jouer notre jeu, le chaos ne fera qu'étendre son influence.</ui-color>
 #. speaker: ASCIANSCEPTER
-#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/011/GaiUsd012_01195:TEXT_GAIUSD012_01195_ASCIANSCEPTER_000_023:1"
 msgid "<ui-color 547>And the beastmen continue to crave ever more powerful avatars every time their gods fall. With each link forged in this chain of ambition, the shackles of chaos are bound ever tighter.</ui-color>"
 msgstr "<ui-color 547>А зверолюды каждый раз, как их боги погибают, жаждут всё более могучих воплощений. Каждое новое звено этой цепи амбиций всё туже сковывает мир цепями хаоса.</ui-color>"
@@ -215,8 +215,8 @@ msgstr "<ui-color 547>А зверолюды каждый раз, как их б�
 #. de: <ui-color 547>Das zu beurteilen steht uns nicht zu.<br>Kehren wir zurück. Wir haben Bericht zu erstatten.</ui-color>
 #. fr: <ui-color 547>Ça, ce n'est pas à nous d'en juger.<br>Nous ne sommes là que pour rapporter ce qui s'est passé.</ui-color>
 #. speaker: ASCIANSWORD
-#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 547> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 547 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/011/GaiUsd012_01195:TEXT_GAIUSD012_01195_ASCIANSWORD_000_024:1"
 msgid "<ui-color 547>It is not for us to entertain such speculation. We are bid only to convey what we have witnessed. Let us be gone from here.</ui-color>"
 msgstr "<ui-color 547>Не нам рассуждать об этом. Нам велено лишь доложить о случившемся. Уходим.</ui-color>"
@@ -229,7 +229,7 @@ msgstr "<ui-color 547>Не нам рассуждать об этом. Нам в�
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)

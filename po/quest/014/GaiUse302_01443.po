@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: クイックサンドのアルフィノは、調査したいことがあるようだ。
@@ -140,7 +140,7 @@ msgstr "Тебе любопытно? Вот и хорошо. Тогда пойд
 #. speaker: RAUBAHN
 #. macro: <if ($gn54 > 0)><if ($gn54 < 127)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 < 127)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) < 127 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -246,8 +246,8 @@ msgstr "Ближе к делу."
 #. de: Bitte verzeiht meine Un<shy>verfroren<shy>heit. Es ist bloß eine Vermutung, doch für mich riecht es gewaltig nach einer Intrige. Irgendjemand will Eorzea brennen sehen.
 #. fr: Je crains qu'une personne exploite le désespoir des réfugiés pour détourner notre attention de quelque chose de bien plus grave.
 #. speaker: ALPHINAUD
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/GaiUse302_01443:TEXT_GAIUSE302_01443_ALPHINAUD_000_022:1"
 msgid "...Very well. My point, General, is that this powder keg of discontent was not set alight by chance. These events were <i>deliberately</i> set in motion, and─"
 msgstr "...Так вот, генерал, я хочу сказать, что этот пороховой погреб недовольства вспыхнул не случайно. События <i>намеренно</i> подтолкнули к бунту, и..."
@@ -256,8 +256,8 @@ msgstr "...Так вот, генерал, я хочу сказать, что э�
 #. de: Für diese Behauptung gibt es keinerlei Beweise, doch möglich wäre es. Ich werde dafür sorgen, dass die Wahrheit bald ans Licht kommt.
 #. fr: Hmm... C'est ef<shy>fec<shy>ti<shy>ve<shy>ment une possibilité. Merci de m'avoir averti.
 #. speaker: RAUBAHN
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/GaiUse302_01443:TEXT_GAIUSE302_01443_RAUBAHN_000_023:1"
 msgid "<i>And now order must be restored.</i> That is my first duty. Until it is done, any investigation can wait."
 msgstr "<i>А теперь нужно восстановить порядок.</i> Это мой главный долг. Пока он не исполнен, расследование подождёт."
@@ -326,7 +326,7 @@ msgstr "А я тем временем поищу ответы по-своему.
 #. speaker: SWIFT
 #. macro: <if ($gn54 > 0)><if ($gn54 < 127)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 < 127)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) < 127 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -380,8 +380,8 @@ msgstr "И что привело тебя сюда, искатель прикл�
 #. de: Es könnte die Ruhe vor dem Sturm sein, aber noch ist alles friedlich. Vor kurzem hat die Legion der Unsterblichen das gesamte Lager durchsucht, ohne dabei etwas Verdächtiges zu finden.
 #. fr: Si ça peut vous rassurer, des soldats des Immortels sont passés tout à l'heure pour fouiller les réfugiés et ils n'ont rien trouvé de particulier. Tout est on ne peut plus normal ici.
 #. speaker: AMALBERGA
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/GaiUse302_01443:TEXT_GAIUSE302_01443_AMALBERGA_000_061:1"
 msgid "Ah, you mean <i>those</i> refugees! Oh no, you won't find them here. Most of the people of Lost Hope have come to accept their situation, and are content to pass their days in peace and quiet."
 msgstr "А, ты про <i>тех самых</i> беженцев! Нет, здесь их не найдёшь. Большинство жителей Крика отчаяния смирились со своим положением и просто живут себе тихо."
@@ -476,8 +476,8 @@ msgstr "Тысяча извинений, друг! Я принял тебя за
 #. speaker: ZAZAWAKA
 #. macro: <if ($gn54 > 0)><if ($gn54 < 127)>You're of the Flames, but you're not <i>with</i> the Flames?<else>You're not a Flame?</if><else>You're not a Flame?</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 < 127)>You're of the Flames, but you're not <i>with</i> the Flames?<else>You're not a Flame?</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) < 127 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/GaiUse302_01443:TEXT_GAIUSE302_01443_ZAZAWAKA_000_103:1"
 msgid "I beg your pardon? <if ($gn54 > 0)><if ($gn54 < 127)>You're of the Flames, but you're not <i>with</i> the Flames?<else>You're not a Flame?</if><else>You're not a Flame?</if> I see..."
 msgstr "Прошу прощения? <if ($gn54 > 0)><if ($gn54 < 127)>Ты из Пламени, но ты не <i>за</i> Пламя?<else>Ты не из Воинов Пламени?</if><else>Ты не из Воинов Пламени?</if> Понятно..."
@@ -534,10 +534,10 @@ msgstr "Ч-что ты делаешь? Не... не доставай оружи�
 #. de: Ahhh, ich zittere am ganzen Leib. Ich kann mich nicht <i>beruhigen</i>. Nein, nein, nein ... Ahhh ...
 #. fr: J-j-je savais pas qu'il voulait qu'on se batte... (snif)... J'ai été naïf...
 #. speaker: TREMBLEMAN01443
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/GaiUse302_01443:TEXT_GAIUSE302_01443_TREMBLEMAN01443_000_121:1"
 msgid "...Why didn't you run away with me? We could've escaped together. Then you'd be here, with me─be here to <ui-color 500><ui-edge-color 501>soothe</ui-edge-color></ui-color> me. Why...why did you have to stay and leave me alone?"
 msgstr "Не надо... дрожь... не прекращается... Почему ты не сбежал со мной? Мы могли бы уйти вместе. Тогда ты был бы здесь, со мной... мог бы <ui-color 500><ui-edge-color 501>успокоить</ui-edge-color></ui-color> меня. Почему... почему ты остался и бросил меня одного?"
@@ -546,10 +546,10 @@ msgstr "Не надо... дрожь... не прекращается... Поче
 #. de: Nein, nein ... Ich kann keinen klaren Gedanken fassen. Ich muss <i>ruhig</i> werden ... Ahhh ...
 #. fr: Je... J'ai eu si peur... (snif)... en voyant toutes ces armes... Si peur... J'en tremble encore... J-j'ai l'impression que rien ni personne ne pourra <i>apaiser</i> cette souffrance...
 #. speaker: TREMBLEMAN01443
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/GaiUse302_01443:TEXT_GAIUSE302_01443_TREMBLEMAN01443_000_130:1"
 msgid "It's not f-fair. You should be here to <ui-color 500><ui-edge-color 501>soothe</ui-edge-color></ui-color> me. Why didn't you listen to me?"
 msgstr "Несправедливо... Ты должен быть здесь и <ui-color 500><ui-edge-color 501>успокаивать</ui-edge-color></ui-color> меня. Почему ты меня не послушал?"
@@ -558,10 +558,10 @@ msgstr "Несправедливо... Ты должен быть здесь и <
 #. de: Huch?! Nein, nein ... Bitte nicht! Tu mir nichts! So finde ich niemals <i>Ruhe</i>!
 #. fr: ... Qu'est-ce que vous faites<nbsp>? L-laissez-moi tranquille... (snif)
 #. speaker: TREMBLEMAN01443
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/014/GaiUse302_01443:TEXT_GAIUSE302_01443_TREMBLEMAN01443_000_131:1"
 msgid "You didn't have to stay and fight! If you hadn't, you'd be here to <ui-color 500><ui-edge-color 501>soothe</ui-edge-color></ui-color> me, instead of...instead of... \\<sob>"
 msgstr "Не надо было оставаться и драться! Тогда вы могли бы сейчас быть здесь и <ui-color 500><ui-edge-color 501>утешать</ui-edge-color></ui-color> меня, а не... не... <i>Уа-а...</i>"

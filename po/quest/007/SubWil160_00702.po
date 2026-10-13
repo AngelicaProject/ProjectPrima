@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: スウィフト大闘佐は冒険者にマイチョコボの入手方法を教えたい。
@@ -76,7 +76,7 @@ msgstr "Поговорите с Мимигуном."
 #. de: <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>, korrekt? Wenn ich um einen Moment Eurer Zeit bitten dürfte.
 #. fr: Salutations, <capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if></capitalize><nbsp>! Le récit de vos exploits ne cesse de circuler parmi nos rangs, vous êtes devenu<if $gn4>e</if> un modèle pour la plupart de nos recrues.
 #. kind: other
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -218,7 +218,7 @@ msgid "But do forgive him if he doesn't respond when summoned in crowded city ar
 msgstr "Но не сердитесь, если он не явится по зову в людном городе или в логове, кишащем чудовищами. Чокобо храбрые, но и у них есть предел."
 
 #. ja: それからもうひとつ、各都市が発行している<br>「初級騎乗免許」もお渡ししておきましょう。
-#. de: Und zu guter Letzt überreiche ich dir deinen gesetzlich vorgeschriebenen Chocobo-Führerschein.
+#. de: Und zu guter Letzt überreiche ich dir deinen gesetzlich vorgeschriebenen Chocobo-Führerschein. 
 #. fr: Pour finir, voici votre permis de chocobo. Prenez-en grand soin, car vous devez toujours l'avoir sur vous lorsque vous vous déplacez avec votre monture. C'est la loi.
 #. kind: other
 msgctxt "quest/007/SubWil160_00702:TEXT_SUBWIL160_00702_MIMIGUN_043:1"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: ド
@@ -557,7 +557,7 @@ msgstr "Не слышать других исполнителей в режим�
 #. ja: <platform 1>の操作ガイドを表示する
 #. de: Hilfe für <platform 1>-Steuerung anzeigen
 #. fr: Afficher le schéma des raccourcis <platform 1>
-#. macro: <lower><platform 1></lower> — the content in lower case (may be added or dropped)
+#. macro: <lower><platform 1></lower> — the content in lower case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <platform 1> — text that depends on the platform, such as a controller name; text = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:12094:0:0"
 msgid "Display <lower><platform 1></lower> control guide."
@@ -690,8 +690,8 @@ msgstr "<num $n1>/<num $n2>"
 #. ja: <ui-color 506><ui-edge-color 507>正式加入メンバーが2名に満たない状態が24時間続くと、自動解散となります。<br>（<if ($n3 > 0)>自動解散判定時間が来ました。順次処理されます。<else>判定までの残り時間: <if ($n1 > 0)><num $n1>時間</if><if ($n2 == 0)><if ($n1 == 0)>1分以内</if><else><num $n2>分</if></if>）</ui-edge-color></ui-color>
 #. de: Nach 24 Stunden ohne ein zweites Mitglied wird der WKK aufgelöst. (<if ($n3 > 0)>Die Frist ist verstrichen und der Welten-Kontaktkreis wird automatisch aufgelöst.<else>Verbleibende Zeit: <if ($n1 > 0)><num $n1> <if ($n1 == 1)>Stunde<else>Stunden</if></if><if ($n2 == 0)><if ($n1 == 0)>weniger als eine Minute</if><else> <num $n2> <if ($n2 == 1)>Minute<else>Minuten</if></if></if>)
 #. fr: <ui-color 506><ui-edge-color 507>La linkshell sera au<shy>to<shy>ma<shy>ti<shy>que<shy>ment dissoute si elle compte moins de deux membres officiels pendant plus de 24 heures.<br>(<if ($n3 > 0)>Cette linkshell inter-Monde va être dissoute.<else>Temps restant avant dissolution<nbsp>: <if ($n1 > 0)><num $n1> heure<if ($n1 == 1)><else>s</if></if><if ($n2 == 0)><if ($n1 == 0)>moins d'une minute.</if><else><if ($n2 > 0)> <num $n2> minute<if ($n2 == 1)><else>s</if>.</if></if></if>)</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($n3 > 0)>Time is up. Disbanding linkshell shortly.<else>Time Remaining:<if ($n1 > 0)> <num $n1>h</if><if ($n2 == 0)><if ($n1 == 0)> Less than 1m</if><else>… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 > 0)> <num $n1>h</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -699,8 +699,8 @@ msgstr "<num $n1>/<num $n2>"
 #. macro: <if ($n2 == 0)><if ($n1 == 0)> Less than 1m</if><else> <num $n2>m</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 0)> Less than 1m</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12115:0:0"
 msgid "<ui-color 506><ui-edge-color 507>Linkshells with less than 2 members will be automatically disbanded if new members are not added within 24 hours (Earth time).<br>(<if ($n3 > 0)>Time is up. Disbanding linkshell shortly.<else>Time Remaining:<if ($n1 > 0)> <num $n1>h</if><if ($n2 == 0)><if ($n1 == 0)> Less than 1m</if><else> <num $n2>m</if></if>)</ui-edge-color></ui-color>"
 msgstr "<ui-color 506><ui-edge-color 507>Линкшеллы, в которых меньше 2 участников, будут автоматически распущены, если за 24 часа (земного времени) не вступят новые участники.<br>(<if ($n3 > 0)>Время вышло. Линкшелл скоро будет распущен.<else>Осталось:<if ($n1 > 0)> <num $n1> ч</if><if ($n2 == 0)><if ($n1 == 0)> Меньше 1 мин</if><else> <num $n2> мин</if></if>)</ui-edge-color></ui-color>"
@@ -722,10 +722,10 @@ msgstr "Не удалось получить список участников."
 #. ja: <ui-color 504><ui-edge-color 505>クロスワールドリンクシェル（CWLS）とは？</ui-edge-color></ui-color><br>•異なるワールドのプレイヤー同士でも会話可能なチャットグループです。<br>•プレイヤーはCWLSを自由に新規作成、または勧誘を受けて加入ができます。<br>•同一ワールド内プレイヤーとのコミュニケーションにはリンクシェル（LS）がお勧めです。リンクシェルの作成はリムサ・ロミンサ/グリダニア/ウルダハ各都市にいるリンクシェルNPCにて手続きできます。<br><br>•CWLSの順序（チャンネル番号）はリストのサブコマンドから変更できます。順序情報はクライアント上にコンフィグの一部として保存されますので、別環境でプレイする場合はコンフィグのバックアップ機能を使ってデータを共有することをお勧めします。<br><br><ui-color 506><ui-edge-color 507>注意点</ui-edge-color></ui-color><br>•作成ないし加入できるCWLSの数は、同時に8つまでとなります。<br>•正式加入メンバーが2名に満たない状態で24時間経過したCWLSは自動解散されます。CWLSを新規作成したら、速やかにメンバーを勧誘し加入してもらいましょう！<br>•CWLSを一定時間内に続けて作成することはできません。作成できない場合はしばらくお待ちください。
 #. de: Was sind Welten-Kontaktkreise (WKK)?<br><br>- Welten-Kontaktkreise sind weltenübergreifende Chat-Gruppen, in denen Spieler aus unter<shy>schied<shy>lichen Welten Nachrichten austauschen können.<br>- Spieler können selbst Welten-Kontaktkreise erstellen oder anderen Kontaktkreisen beitreten, in die sie eingeladen wurden.<br>- Zum Austausch zwischen Spielern, die sich alle auf einer Welt befinden, empfehlen wir die üblichen Kontaktkreise, die bei den zuständigen NPCs in Limsa Lominsa, Gridania und Ul'dah angelegt werden können.<br>- Die Reihenfolge der Welten-Kontaktkreise kann in der Liste mit einem Unterkommando geändert werden. Diese Information wird lokal gespeichert. Wenn verschiedene Spiel<shy>um<shy>gebungen genutzt werden, ist empfohlen, diese Einstellung mit der Backup-Funktion hochzuladen.<br><ui-color 506><ui-edge-color 507>Achtung:</ui-edge-color></ui-color><br>- Jeder Charakter kann bis zu acht Welten-Kontaktkreisen angehören.<br>- Welten-Kontaktkreise müssen aus mindestens zwei Mitgliedern bestehen, sonst werden sie nach 24 Stunden automatisch aufgelöst. Vergiss also nicht, deine Freunde einzuladen.<br>- Du kannst nicht mehrere Welten-Kontaktkreise direkt nacheinander erstellen. Unter Umständen musst du etwas warten.
 #. fr: Qu'est-ce qu'une <ui-color 504><ui-edge-color 505>linkshell inter-Monde</ui-edge-color></ui-color> (LSIM)<nbsp>?<br>- Il s'agit d'un groupe de discussion composé de joueurs venant de Mondes différents.<br>- Tout le monde peut en créer ou en rejoindre une sur invitation.<br>- L'utilisation des linkshells tra<shy>di<shy>tion<shy>nel<shy>les reste recommandée pour les joueurs actifs dans un même Monde. Il est possible d'en créer auprès des res<shy>pon<shy>sa<shy>bles des linkshells présents à Gridania, Ul'dah et Limsa Lominsa.<br><br>L'ordre des linkshells inter-Monde (et donc leur numéro) peut être modifié à partir du menu Linkshells inter-Monde. Le sous-menu de chaque linkshell permet de lui attribuer une nouvelle position dans la liste. Une partie des données de configuration étant sauvegardée dans le client de jeu, il est recommandé d'utiliser la fonction de sauvegarde des données du client pour les transférer d'une machine à l'autre.<br><br><ui-color 506><ui-edge-color 507>Attention</ui-edge-color></ui-color><br>- Un personnage ne peut pas utiliser plus de huit linkshells inter-Monde différentes.<br>- La linkshell inter-Monde sera au<shy>to<shy>ma<shy>ti<shy>que<shy>ment dissoute si elle compte moins de deux membres officiels pendant plus de 24 heures.<br>- Il est parfois nécessaire d'attendre un instant avant de pouvoir créer à nouveau une linkshell inter-Monde.
-#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 504> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 504 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 505> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 505 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:12118:0:0"
 msgid "<ui-color 504><ui-edge-color 505>Cross-world linkshells</ui-edge-color></ui-color> are special linkshells that allow players on different worlds to form private chat groups and communicate in real time. Any player can create a cross-world linkshell, as well as join one via invite. While communication between players on the same world is possible through cross-world linkshells, it is recommended that intraworld communication is done using normal linkshells available in Limsa Lominsa, Gridania, and Ul'dah.<br><br>Cross-world linkshell channel order can be changed via list subcommands. This information is saved to the client, so if you plan on utilizing multiple play environments, it is highly recommended you save the data using the settings backup feature.<br><br>Please note, players may belong to up to eight cross-world linkshells at a time, and linkshells with less than 2 active members will be automatically disbanded if new members are not added within 24 hours (Earth time). Multiple cross-world linkshells cannot be created in succession."
@@ -1233,10 +1233,10 @@ msgstr "Отметить или снять все"
 #. ja: <ui-color 506><ui-edge-color 507>加入数が上限を超えているため、無効になっているCWLSがあります。</ui-edge-color></ui-color>
 #. de: <ui-color 506><ui-edge-color 507>Limit an aktiven WKK überschritten. Einige WKK wurden deaktiviert.</ui-edge-color></ui-color>
 #. fr: <ui-color 506><ui-edge-color 507>Une ou plusieurs linkshells inter-Monde sont inactives.</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12189:0:0"
 msgid "<ui-color 506><ui-edge-color 507>Active CWLS limit exceeded. Some CWLS are currently deactivated.</ui-edge-color></ui-color>"
 msgstr "<ui-color 506><ui-edge-color 507>Превышен лимит активных МЛС. Некоторые линкшелл отключены.</ui-edge-color></ui-color>"
@@ -1643,10 +1643,10 @@ msgstr "-"
 #. ja: 一部の検索対象は中身を確認するために、プレイヤー自身がアクセスする必要があります。<br><ui-color 508><ui-edge-color 509>？</ui-edge-color></ui-color>の表示になっている箇所は、このクライアントで最後にアクセスした際の古い情報を元に<br>表示されています。ログイン後にアクセスすることで最新の情報で表示されます。
 #. de: Einige Suchergebnisse müssen vom Spieler geprüft werden.<br>Mit <ui-color 508><ui-edge-color 509>?</ui-edge-color></ui-color> markierte Ergebnisse basieren auf der Information des letzten Client-Zugriffs. Mit erneutem Login werden die Informationen aktualisiert.
 #. fr: Certains résultats de recherche doivent être vérifiés par le joueur. Ceux qui affichent un <ui-color 508><ui-edge-color 509>?</ui-edge-color></ui-color> comportent des in<shy>for<shy>ma<shy>tions obsolètes au moment de la dernière connexion du client. Pour obtenir des in<shy>for<shy>ma<shy>tions plus récentes, veuillez accéder à ces emplacements après chaque nouvelle connexion.
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12244:0:0"
 msgid "Some search results need to be verified by the player. Results marked with a <ui-color 508><ui-edge-color 509>?</ui-edge-color></ui-color> are based on information from the last point of access. For the latest results, please access the corresponding menus again."
 msgstr "Некоторые результаты поиска нужно проверить лично. Рядом с результатами, отмеченными <ui-color 508><ui-edge-color 509>?</ui-edge-color></ui-color>, указаны данные с последнего обращения к этим разделам. Чтобы обновить их, снова откройте нужные разделы."
@@ -1758,7 +1758,7 @@ msgctxt "Addon:12261:0:0"
 msgid "This action is not yet learned."
 msgstr "Это действие ещё не изучено."
 
-#. ja: No.<num $n1>
+#. ja: No.<num $n1> 
 #. de: Nr. <num $n1>
 #. fr: N°<num $n1>
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
@@ -1790,7 +1790,7 @@ msgstr "Добавить на панель"
 #. ja: <string $s1>
 #. de: <string $s1>
 #. fr: <capitalize><string $s1></capitalize>
-#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:12268:0:0"
 msgid "<capitalize><string $s1></capitalize>"
@@ -1857,7 +1857,7 @@ msgstr "Нужно для задания синего мага ур. <num $n1> �
 #. ja: <string $s1>
 #. de: <capitalize><string $s1></capitalize>
 #. fr: <capitalize><string $s1></capitalize>
-#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:12277:0:0"
 msgid "<capitalize><string $s1></capitalize>"
@@ -2592,7 +2592,7 @@ msgid "Back"
 msgstr "Назад"
 
 #. ja: 鳴き有効
-#. de: An
+#. de: An 
 #. fr: Appels activés
 msgctxt "Addon:12393:0:0"
 msgid "On"
@@ -2869,10 +2869,10 @@ msgstr "Высокое разрешение (Full HD и выше)"
 #. ja: <ui-color 506><ui-edge-color 507>※高解像度表示に設定すると、プレイ環境によっては、<br>　UIが画面に収まらない場合がありますのでご注意ください。</ui-edge-color></ui-color>
 #. de: <ui-color 506><ui-edge-color 507>※ Abhängig von der Hardware kann es nach Wahl einer hohen Auflösung sein, dass das UI nicht ganz auf den Bildschirm passt.</ui-edge-color></ui-color>
 #. fr: <ui-color 506><ui-edge-color 507>L'affichage haute résolution est recommandé pour les écrans de résolution Full HD ou supérieure. Dans certains cas, il est possible que l'interface dépasse des bords de l'écran.</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12433:0:0"
 msgid "<ui-color 506><ui-edge-color 507>Selecting high resolution layout may, in some cases, result in the UI being larger than the screen.</ui-edge-color></ui-color>"
 msgstr "<ui-color 506><ui-edge-color 507>При высокой чёткости интерфейс может не поместиться на экране.</ui-edge-color></ui-color>"
@@ -2913,7 +2913,7 @@ msgid "As is traditional, the dora indicator is the tile below that which applie
 msgstr "По традиционным правилам индикатором дора служит кость под той, что даёт бонус дора."
 
 #. ja: 段位/レートは半荘戦，東風戦で共通の成績となります。<br>成績のリセットの際にはご注意ください。
-#. de: Bedenke, dass Wertung und Rang für schnelle und komplette Partien zusammen gelten.
+#. de: Bedenke, dass Wertung und Rang für schnelle und komplette Partien zusammen gelten. 
 #. fr: Gardez à l'esprit que cote et rang sont communs aux parties normales et aux parties rapides.
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:12439:0:0"
@@ -2951,10 +2951,10 @@ msgstr "Пройдено"
 #. ja: <ui-color 500><ui-edge-color 501>攻略期限切れ</ui-edge-color></ui-color>
 #. de: <ui-color 500><ui-edge-color 501>Abgelaufen</ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501>Délai expiré</ui-edge-color></ui-color>
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12444:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Challenge Expired</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Вызов завершён</ui-edge-color></ui-color>"
@@ -3001,7 +3001,7 @@ msgctxt "Addon:12450:0:0"
 msgid "The Masked Carnivale"
 msgstr "Небесный цирк"
 
-#. ja: PHASE <num $n1>
+#. ja: PHASE <num $n1> 
 #. de: <num $n1>. Akt
 #. fr: Phase <num $n1>
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
@@ -3018,14 +3018,14 @@ msgstr "Магия"
 
 #. ja: 標準タイム：
 #. de: Zeitlimit (mindest):
-#. fr: Temps standard<nbsp>:
+#. fr: Temps standard<nbsp>: 
 msgctxt "Addon:12454:0:0"
 msgid "Standard Completion Time:"
 msgstr "Нормативное время:"
 
 #. ja: 好記録タイム：
 #. de: Zeitlimit (ideal):
-#. fr: Temps idéal<nbsp>:
+#. fr: Temps idéal<nbsp>: 
 msgctxt "Addon:12455:0:0"
 msgid "Ideal Completion Time:"
 msgstr "Лучшее время:"
@@ -3265,8 +3265,8 @@ msgid "???"
 msgstr "???"
 
 #. ja: ・
-#. de: ,
-#. fr: ,
+#. de: , 
+#. fr: , 
 msgctxt "Addon:12488:0:0"
 msgid ", "
 msgstr ", "
@@ -3444,8 +3444,8 @@ msgstr "Доступные миры"
 #. de: <if ($n1 == 2)><ui-color 514>Reise zwischen Datenzentren</ui-color><br>Die Reise zwischen den Datenzentren erlaubt es dir, Welten außerhalb deines Datenzentrums zu besuchen und dort auf ihnen zu spielen. Zusätzlich zu den Bedingungen der gewöhnlichen Weltenreise gibt es für die Reise auf ein anderes Datenzentrum einige spezifische Ein<shy>schrän<shy>kungen.<br><br><ui-color 514>Wichtige Hinweise</ui-color>:<br>- Andere Charaktere auf deiner Stammwelt können sich weder einloggen noch andere Funktionen nutzen, bis du von der Reise auf ein anderes Datenzentrum zurückgekehrt bist.<br>- Charaktere, die sich auf einem anderen Datenzentrum befinden, können nicht direkt zu einem dritten Datenzentrum reisen. Sie müssen vorher auf ihre Stammwelt zurückkehren.<br>- Wenn du dich auf einer anderen Welt ausloggst und innerhalb von 30 Tagen nicht abermals einloggst, wirst du automatisch auf deine Stammwelt zurückgebracht. Je nach Zeitpunkt deines letzten Logouts kann die Rückkehr allerdings auch erst nach mehr als 30 erfolgen.<br><br></if><if ($n1 < 2)><ui-color 514>Weltenreise</ui-color>:<br>- <if ($n1 == 0)>Von deiner Stammwelt aus<else>Von deiner momentanen Welt aus</if> kannst du fremde Welten auf demselben Datenzentrum besuchen und dort wie gewohnt mit Freunden Gruppen bilden, Gegenstände einkaufen und alle Inhalte spielen.<br><br><ui-color 514>Wichtige Hinweise</ui-color>:<br>- Abhängig von der Auslastung der Zielwelt dauert der Wechsel unter Umständen etwas länger.<br>- Sobald alles für den Wechsel bereit ist, wird der Teleport durchgeführt. Dabei werden alle laufenden Aktionen abgebrochen.<br>- Charaktere, die sich auf einem anderen Datenzentrum befinden, können nicht direkt zu einem dritten Datenzentrum reisen. Sie müssen vorher auf ihre Stammwelt zurückkehren.<br>- Wenn du dich auf einer anderen Welt ausloggst und innerhalb von 30 Tagen nicht abermals einloggst, wirst du automatisch auf deine Stammwelt zurückgebracht. Je nach Zeitpunkt deines letzten Logouts kann die Rückkehr allerdings auch erst nach mehr als 30 erfolgen.<br><br></if><ui-color 514>Ein<shy>schrän<shy>kungen auf <if ($n1 > 0)>fremden Datenzentren<else>fremden Welten</if></ui-color>:<br>- <if ($n1 == 1)>Du befindest dich momentan auf einem anderen Datenzentrum als das deiner Stammwelt. </if>Auf <if ($n1 > 0)>fremden Datenzentren<else>fremden Welten</if> gelten folgende Ein<shy>schrän<shy>kungen.<br><br><if ($n1 > 0)><ui-color 514>Freunde</ui-color>:<br>- Du kannst nicht mit Freunden sprechen, die sich auf einem anderen Datenzentrum befinden.<br>- Du kannst keine Gruppe mit Freunden bilden, die sich auf einem anderen Datenzentrum befinden.<br>- Du kannst den Login-Status von Freunden, die sich auf einem Datenzentrum in einer anderen Region befinden, nicht einsehen.<br><br></if><ui-color 514>Freie Ge<shy>sell<shy>schaften</ui-color>:<br>- Besucher können keine Freien Ge<shy>sell<shy>schaften gründen oder ihnen beitreten.<br>- Die Informationen der eigenen Freien Ge<shy>sell<shy>schaft können nicht abgerufen werden.<br>- Auf fremden Welten können keine Ge<shy>sell<shy>schaftstaler gesammelt werden.<br>- Wenn der Meister der Freien Ge<shy>sell<shy>schaft länger als 35 Tage nicht auf der Stammwelt ist, werden die Rechte des Meisters automatisch auf ein anderes Mitglied übertragen.<br>- Du kannst den Login-Status von Mitgliedern, die sich auf einem Datenzentrum in einer anderen Region befinden, nicht einsehen.<br><br><if ($n1 > 0)><ui-color 514>Welten-Kontaktkreise</ui-color>:<br>- Neue Welten-Kontaktkreise können nicht erstellt werden.<br>- Du kannst nicht zum Meister eines Welten-Kontaktkreises ernannt werden.<br><br></if><ui-color 514>Kontaktkreise</ui-color>:<br>- Kontaktkreise können nicht verwendet werden.<br>- Die Details zu Kontaktkreisen können nicht angezeigt werden.<br>- Besucher können keine Kontaktkreise anlegen oder ihnen beitreten.<br><br><if ($n1 > 0)><ui-color 514>PvP-Teams</ui-color>:<br>- Die Funktionen des PvP-Teams sind eingeschränkt, inklusive des Chats.<br><br><ui-color 514>Zirkel</ui-color>:<br>- Es können keinerlei Funktionen des Zirkels genutzt werden, mit Ausnahme der Zirkelsuche.<br><br></if><ui-color 514>Gehilfen</ui-color>:<br>- Gehilfen können nicht gerufen, angestellt oder entlassen werden.<br>- Gehilfen können keine Gegenstände auf dem Markt anbieten (Gegenstände können auf dem Markt gekauft werden).<br><br><ui-color 514>Unterkünfte</ui-color>:<br>- Grundstücke und Wohnungen können nicht erworben werden.<br>- Wohngemeinschaften können nicht gegründet oder genutzt werden.<br><br><ui-color 514>Ewiger Bund</ui-color>:<br>- Die Zeremonie des Ewigen Bundes kann nur auf der Stammwelt durchgeführt werden.<br>- Die Aufträge zum Ewigen Bund können nur auf der Stammwelt angenommen werden.<br>- Spieler aus fremden Welten können nicht zur Zeremonie eingeladen werden.<br><br><ui-color 514>Inhalte und Funktionen</ui-color>:<br><if ($n1 == 2)>- Um an gewerteten Kämpfen von „Crystalline Conflict“ teilnehmen zu können, müssen folgende Bedingungen erfüllt sein:<br>　- Deine Stammwelt und das logische Datenzentrum, auf dem gewertete Kämpfe abgehalten werden, müssen sich auf dem gleichen physischen Datenzentrum befinden.<br>　- Die Registrierung muss direkt von dem logischen Datenzentrum aus vorgenommen werden, auf dem gewertete Kämpfe abgehalten werden.<br></if>- Besucher können nicht an „Kampf der Trabanten“-Turnieren teilnehmen.<br>- Besucher können nicht an „Triple Triad“-Turnieren teilnehmen.<br>- Besucher können keine Lose für den Jumbo-Glückskaktor kaufen oder einlösen.<br>- Die Mogry-Post kann nicht verwendet werden.<br>- Die Leistungen in Tiefen Gewölben werden nicht in den Ranglisten berücksichtigt.<br>- Teleportation zu einem Freund oder einem Partner des Ewigen Bundes ist nur möglich, wenn sie sich auf derselben Welt befinden.<br>- Minenarbeiter und Gärtner können keine unbekannten oder legendären Orte finden.
 #. fr: <if ($n1 == 2)><ui-color 514>Les voyages entre centres de traitement de données</ui-color><br>Cette fonctionnalité va plus loin que le voyage inter-Monde. Elle permet à vos personnages de visiter des Mondes hébergés sur d'autres centres de traitement de données pour peu que ces derniers appartiennent à la même région. Toutefois, des restrictions sup<shy>plé<shy>men<shy>tai<shy>res s'appliquent.<br><br><ui-color 514>Limitations du voyage entre centres de traitement de données</ui-color><br>- Le transfert peut prendre environ 30 minutes suivant la congestion des serveurs.<br>- La procédure ne peut être annulée une fois lancée. Vous ne pourrez pas vous connecter avec un personnage différent ou faire quoi que ce soit d'autre qu'attendre.<br>- La procédure vous renverra à l'écran-titre, d'où vous devrez ensuite rejoindre le centre de traitement de données où vous souhaitiez vous rendre.<br>- Vous ne pourrez pas jouer sur votre Monde d'origine avec d'autres personnages tant que celui avec lequel vous voyagez ne sera pas rentré.<br>- Un personnage visitant déjà un autre centre de traitement de données ne peut pas directement voyager vers un autre. Il doit d'abord rentrer dans son Monde d'origine.<br><br></if><if ($n1 < 2)><ui-color 514>Les voyages inter-Monde</ui-color><br>Vous pouvez quitter <if ($n1 == 0)>votre Monde d'origine<else>le Monde où vous vous trouvez</if> pour en visiter d'autres appartenant au même centre de traitement de données.<br>Formez une équipe prête pour l'aventure, partez à l'assaut de donjons ou faites des emplettes sur ces marchés exotiques<nbsp>; le choix est vôtre<nbsp>!<br><br><ui-color 514>Avertissement</ui-color><br>Le niveau de fréquentation du Monde choisi au moment de confirmer votre demande peut considérablement augmenter le temps nécessaire à la procédure pour aboutir. Une fois celle-ci achevée, vous serez au<shy>to<shy>ma<shy>ti<shy>que<shy>ment transporté<if $gn4>e</if> vers votre destination, annulant par la même occasion toutes les activités en cours.<br><br></if><ui-color 514>Limitations dans les <if ($n1 > 0)>centres de traitement de données<else>Mondes</if> visités</ui-color><br><if ($n1 == 1)>Votre personnage ne se trouve ac<shy>tu<shy>el<shy>le<shy>ment pas dans son centre de traitement de données d'origine.<br></if>Certaines fonctionnalités sont indisponibles à l'extérieur de votre <if ($n1 > 0)>centre de traitement de données<else>Monde</if> d'origine.<br><br><if ($n1 > 0)><ui-color 514>Liste d'amis</ui-color><br>- Impossible de communiquer avec des amis se trouvant dans un autre centre de traitement de données<br>- Impossible de former une équipe avec des amis se trouvant dans un autre centre de traitement de données<br>- Impossible d'afficher les activités des amis se trouvant dans un autre centre de traitement de données<br><br></if><ui-color 514>Compagnies libres</ui-color><br>- Impossible d'en créer ou d'en rejoindre<br>- Impossible de consulter les in<shy>for<shy>ma<shy>tions de sa compagnie libre<br>- Impossible d'augmenter le nombre des crédits de compagnie grâce aux activités dans les Mondes visités<br>- Statut de chef au<shy>to<shy>ma<shy>ti<shy>que<shy>ment cédé à un autre membre après 35 jours d'absence<br>- Impossible d'afficher les activités des membres se trouvant dans un autre centre de traitement de données<br><br><if ($n1 > 0)><ui-color 514>Linkshells inter-Monde</ui-color><br>- Impossible d'en créer de nouvelles<br>- Impossible d'en devenir le chef<br><br></if><ui-color 514>Linkshells</ui-color><br>- Impossible de les utiliser<br>- Impossible de consulter les in<shy>for<shy>ma<shy>tions de ses linkshells<br>- Impossible d'en créer ou d'en rejoindre<br><br><if ($n1 > 0)><ui-color 514>Équipe JcJ</ui-color><br>- Impossible d'utiliser les fonctionnalités liées aux équipes JcJ, y compris les canaux de discussion<br>- Impossible de consulter les in<shy>for<shy>ma<shy>tions relatives aux équipes JcJ<br>- Impossible de former ou de rejoindre une équipe JcJ<br><br><ui-color 514>Communautés</ui-color><br>- Aucune fonctionnalité disponible, à l'exception de la recherche de communauté<br><br></if><ui-color 514>Servant</ui-color><br>- Impossible d'en engager ou d'en renvoyer définitivement<br>- Impossible de vendre des objets sur les marchés, bien qu'il reste possible d'en acheter<br><br><ui-color 514>Logement</ui-color><br>- Impossible d'acheter des terrains et des appartements<br>- Impossible de partager une maison<br><br><ui-color 514>Lien éternel</ui-color><br>- Impossible d'organiser une cérémonie du lien éternel<br>- Impossible d'accepter la quête du lien éternel<br>- Impossible d'inviter à une cérémonie des joueurs habitant un autre Monde<br><br><ui-color 514>Fonctionnalités et éléments divers</ui-color><br><if ($n1 == 2)>- Afin de participer à une partie classée de Crystalline Conflict, il est nécessaire de respecter les conditions suivantes<nbsp>:<br>　- Le Monde d'origine du personnage doit se trouver dans un centre de données physique accueillant des parties classées<br>　- La par<shy>ti<shy>ci<shy>pa<shy>tion doit être enregistrée depuis le centre de données logique hôte<br></if>- Impossible de participer à un tournoi du Choc des mascottes<br>- Impossible de participer à un tournoi de Triple Triade<br>- Impossible de participer ou de retirer un lot au Méga Cactpot<br>- Impossible d'utiliser le service de courrier Mog<br>- Scores obtenus dans les donjons sans fond non pris en compte dans les tableaux des classements<br>- Impossible de se téléporter vers un ami ou un partenaire de lien éternel si celui-ci ne se trouve pas dans le même Monde<br>- Impossible pour les mineurs et les botanistes de localiser les légendes locales et les points de récolte intacts
 #. macro: <if ($n1 == 2)>　　　　　　　　　　<ui-color 514>Data Center Travel System</ui-color><br>The Data Center Travel system is an extension of the World Visit system, and allo… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <ui-color 514> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 514 (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 514> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 514 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($n1 < 2)>　　　　　　　　　　<ui-color 514>World Visit System</ui-color><br>The World Visit System allows you to travel from <if ($n1 == 0)>your Home World<else>the … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < 2 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 0)>your Home World<else>the World you are currently visiting</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 0 (condition: may be reworded, restructured, added, or dropped)
@@ -3513,14 +3513,14 @@ msgstr "Место: <string $s1>"
 
 #. ja: 転送予約順番：
 #. de: Position:<nbsp>
-#. fr: Place dans la file<nbsp>:
+#. fr: Place dans la file<nbsp>: 
 msgctxt "Addon:12522:0:0"
 msgid "Position in Queue: "
 msgstr "Место в очереди: "
 
 #. ja: 経過時間：<num $n1>:<num2 $n2>/平均待機時間：
 #. de: Verstrichen: <num $n1>:<num2 $n2> Durchschnitt:<nbsp>
-#. fr: Temps écoulé<nbsp>: <num $n1>m<num2 $n2>s/Temps d'attente moyen<nbsp>:
+#. fr: Temps écoulé<nbsp>: <num $n1>m<num2 $n2>s/Temps d'attente moyen<nbsp>: 
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <num2 $n2> — a number with at least two digits, such as 05; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:12523:0:0"
@@ -3720,10 +3720,10 @@ msgstr "Осталось: <if ($n1 > 0)><num $n1> ч </if><if ($n2 > 0)><num $n2
 #. ja: <ui-color 500><ui-edge-color 501>攻略期限切れ</ui-edge-color></ui-color>
 #. de: <ui-color 500><ui-edge-color 501>Abgelaufen</ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501>Délai expiré</ui-edge-color></ui-color>
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12556:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Target Expired</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Срок истёк</ui-edge-color></ui-color>"
@@ -3767,27 +3767,27 @@ msgstr "Признание"
 #. de: <switch $n1><case><sheet ClassJob 9 0> / <sheet ClassJob 10 0> / <sheet ClassJob 11 0><case><sheet ClassJob 8 0> / <sheet ClassJob 12 0> / <sheet ClassJob 13 0><case><sheet ClassJob 14 0> / <sheet ClassJob 15 0><case><sheet ClassJob 16 0> / <sheet ClassJob 17 0><case><sheet ClassJob 18 0></switch>
 #. fr: <switch $n1><case><capitalize><sheet ClassJob 9 0></capitalize> / <capitalize><sheet ClassJob 10 0></capitalize> / <capitalize><sheet ClassJob 11 0></capitalize><case><capitalize><sheet ClassJob 8 0></capitalize> / <capitalize><sheet ClassJob 12 0></capitalize> / <capitalize><sheet ClassJob 13 0></capitalize><case><capitalize><sheet ClassJob 14 0></capitalize> / <capitalize><sheet ClassJob 15 0></capitalize><case><capitalize><sheet ClassJob 16 0></capitalize> / <capitalize><sheet ClassJob 17 0></capitalize><case><capitalize><sheet ClassJob 18 0></capitalize></switch>
 #. macro: <switch $n1><case><capitalize><sheet ClassJob 9 0></capitalize> / <capitalize><sheet ClassJob 10 0></capitalize> / <capitalize><sheet ClassJob 11 0></capitalize… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><sheet ClassJob 9 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 9 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 9 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 9, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 10 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 10 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 10 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 10, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 11 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 11 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 11 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 11, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 8 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 8 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 8 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 8, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 12 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 12 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 12 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 12, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 13 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 13 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 13 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 13, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 14 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 14 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 14 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 14, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 15 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 15 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 15 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 15, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 16 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 16 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 16 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 16, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 17 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 17 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 17 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 17, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><sheet ClassJob 18 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob 18 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob 18 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = 18, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:12562:0:0"
 msgid "<switch $n1><case><capitalize><sheet ClassJob 9 0></capitalize> / <capitalize><sheet ClassJob 10 0></capitalize> / <capitalize><sheet ClassJob 11 0></capitalize><case><capitalize><sheet ClassJob 8 0></capitalize> / <capitalize><sheet ClassJob 12 0></capitalize> / <capitalize><sheet ClassJob 13 0></capitalize><case><capitalize><sheet ClassJob 14 0></capitalize> / <capitalize><sheet ClassJob 15 0></capitalize><case><capitalize><sheet ClassJob 16 0></capitalize> / <capitalize><sheet ClassJob 17 0></capitalize><case><capitalize><sheet ClassJob 18 0></capitalize></switch>"
@@ -4178,10 +4178,10 @@ msgstr "Загруз."
 #. fr: Voulez-vous vraiment visiter “<string $s1>”<nbsp>?<br><ui-color 506><ui-edge-color 507>Vous ne pouvez pas utiliser le voyage inter-Monde en faisant partie d'une équipe standard.<br>Vous pouvez néanmoins faire partie d'une équipe inter-Monde ou être en cours de recherche d'équipe.</ui-edge-color></ui-color>
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12624:0:0"
 msgid "Travel to <string $s1>?<br><ui-color 506><ui-edge-color 507>Please be advised you must be playing solo or in a cross-world party for your transfer to be processed.</ui-edge-color></ui-color>"
 msgstr "Отправиться на «<string $s1>»?<br><ui-color 506><ui-edge-color 507>Для переноса нужно быть без группы или состоять в межмировой группе.</ui-edge-color></ui-color>"
@@ -4211,10 +4211,10 @@ msgstr "Путешественник"
 #. de: Momentan ist es nicht möglich, genauere Informationen über den Absender der Freund<shy>schaftsanfrage abzurufen. Du kannst sie nur ablehnen oder offen lassen.<br>※ Nach einer bestimmten Zeit wird die Anfrage automatisch zurückgezogen und der Absender von deiner Freundesliste entfernt.
 #. fr: Il est ac<shy>tu<shy>el<shy>le<shy>ment impossible d'obtenir les données du joueur ayant envoyé la requête d'ami. Vous pouvez choisir que de réfléchir ou de la refuser.<br>* Les requêtes d'ami non traitées expirent au bout d'un certain temps. En pareil cas, le nom de l'expéditeur disparaîtra de la liste quelle que soit votre réponse.
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12628:0:0"
 msgid "Full details of the player who sent this friend request are unavailable. You can only choose to refuse the request, or leave it pending.<br><ui-color 506><ui-edge-color 507>※Once a certain amount of time elapses, pending friend requests will be rendered void and the sender removed from your friend list.</ui-edge-color></ui-color>"
 msgstr "Сведения об отправителе запроса в друзья недоступны. Запрос можно только отклонить или оставить без ответа.<br><ui-color 506><ui-edge-color 507>Через некоторое время запрос будет отменён, а отправитель удалён из списка друзей.</ui-edge-color></ui-color>"
@@ -4301,7 +4301,7 @@ msgid "Junior Guildship Marks"
 msgstr "Знаки охоты гильдейцев-новичков"
 
 #. ja: ギルドシップ・モブ手配書：中級
-#. de: Klaubergilden-Jagdlizenz ★★
+#. de: Klaubergilden-Jagdlizenz ★★ 
 #. fr: Contrats des glaneurs (intermédiaire)
 msgctxt "Addon:12640:0:0"
 msgid "Associate Guildship Marks"
@@ -4469,7 +4469,7 @@ msgstr "Затуманенное место сбора<br>Условие: умб
 #. ja: 採集条件：<string $s1><num $n2>以上
 #. de: Erfordert min. <num $n2> <string $s1>
 #. fr: <string $s1> ≧ <num $n2> nécessaire
-#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:12682:0:0"
@@ -4480,10 +4480,10 @@ msgstr "Требуется <capitalize><string $s1></capitalize>: <num $n2>"
 #. de: Das Speerfischen beenden?<br><ui-color 508><ui-edge-color 509>※ Achtung, dieser Fischgrund ist dann nicht mehr verfügbar.</ui-edge-color></ui-color>
 #. fr: Mettre fin à la pêche au harpon<nbsp>?<br><ui-color 508><ui-edge-color 509>Ce point de pêche disparaîtra même s'il n'était pas vide.</ui-edge-color></ui-color></ui-edge-color></ui-color>
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12683:0:0"
 msgid "Abandon the teeming waters?<br><ui-color 508><ui-edge-color 509>※Doing so will cause the teeming waters to dissipate.</ui-edge-color></ui-color>"
 msgstr "Покинуть рыбное место?<br><ui-color 508><ui-edge-color 509>Оно исчезнет.</ui-edge-color></ui-color>"
@@ -4499,10 +4499,10 @@ msgstr "Молчание Эха"
 #. de: Wenn diese Einstellung aktiviert ist, wird der Gruppe nicht mehr die Kraft des Transzendierens gewährt.<br><br><ui-color 508><ui-edge-color 509>Nur möglich in vollständigen Gruppen oder Inhalten, in denen keine Beschränkungen vorliegen.<br>※ Es gilt die Einstellung des Gruppenanführers.</ui-edge-color></ui-color>
 #. fr: Permet de désactiver le pouvoir de l'écho.<br><br><ui-color 508><ui-edge-color 509>* Disponible uniquement lorsqu'une équipe compte le nombre de par<shy>ti<shy>ci<shy>pants requis ou que l'option “Sans restriction” est activée.<br>* Seul le chef d'équipe peut activer cette option.</ui-edge-color></ui-color>
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12692:0:0"
 msgid "Enabling this setting will prevent Echo bonuses from being granted.<br><ui-color 506><ui-edge-color 507>※Can only be selected when using a preformed party meeting party size requirements or an unrestricted party.<br>※Only the party leader's settings are applicable.<br></ui-edge-color></ui-color>"
 msgstr "При включении этого параметра бонусы Эха не будут действовать.<br><ui-color 506><ui-edge-color 507>※Доступно только для заранее собранной группы нужного размера или группы без ограничений.<br>※Действуют только настройки лидера группы.<br></ui-edge-color></ui-color>"
@@ -4511,12 +4511,12 @@ msgstr "При включении этого параметра бонусы Э�
 #. de: Stelle die Regeln für die Beuteverteilung in Inhalten ein.<br><br><ui-color 506><ui-edge-color 507>Standard<br></ui-edge-color></ui-color>Verteilung gemäß Bedarf/Gier/Passen.<br><br><ui-color 506><ui-edge-color 507>Nur Gier<br></ui-edge-color></ui-color>Alle Grup<shy>pen<shy>mit<shy>glieder müssen „Gier“ wählen.<br><br><ui-color 506><ui-edge-color 507>Anführer<br></ui-edge-color></ui-color>Der Gruppenanführer legt die Verteilung fest.<br><br><ui-color 508><ui-edge-color 509>※ „Nur Gier“ und „Anführer“ sind nur bei Teilnahme als vollständige Gruppe oder wenn der Inhalt ohne Beschränkungen gespielt wird möglich.<br>※ Die Regeln gelten nicht für alle Inhalte. Bestimmte Inhalte haben feste Regeln wie z. B. „Nur Gier“.<br>※ Es gelten die Regeln, die der Gruppenanführer eingestellt hat.</ui-edge-color></ui-color>
 #. fr: Définit la règle du butin appliquée pendant la mission.<br><br><ui-color 506><ui-edge-color 507>Normale</ui-edge-color></ui-color><br>Les options “besoin”, “cupidité” et “passer” peuvent être choisies.<br><br><ui-color 506><ui-edge-color 507>Juste cupidité</ui-edge-color></ui-color><br>Seules les options “cupidité” et “passer” sont disponibles.<br><br><ui-color 506><ui-edge-color 507>Maître du butin</ui-edge-color></ui-color><br>La dis<shy>tri<shy>bu<shy>tion du butin est opérée par le chef d'équipe.<br><br><ui-color 508><ui-edge-color 509>* “Maître du butin” et “Juste cupidité” sont disponibles uniquement lorsqu'une équipe compte le nombre de par<shy>ti<shy>ci<shy>pants requis ou que l'option “Sans restriction” est activée.<br>* Certaines missions limitent les règles disponibles.<br>* La règle du butin ne peut être changée pour certaines missions.<br>* Seul le chef d'équipe peut changer la règle du butin.</ui-edge-color></ui-color>
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12693:0:0"
 msgid "Set the way in which loot is distributed.<br><br><ui-color 506><ui-edge-color 507>Normal<br></ui-edge-color></ui-color>The Need, Greed, Pass system is employed for loot drops.<br><br><ui-color 506><ui-edge-color 507>Greed Only<br></ui-edge-color></ui-color>All party members must select Greed or Pass.<br><br><ui-color 506><ui-edge-color 507>Lootmaster<br></ui-edge-color></ui-color>The party leader determines individual loot distribution.<br><br><ui-color 508><ui-edge-color 509>※Greed Only and Lootmaster can only be selected when using a preformed party meeting party size requirements or an unrestricted party.<br>※Loot rules may be restricted to Greed Only on certain duties.<br>※Loot rules cannot be changed on certain duties.<br>※Only the party leader can change loot rules.</ui-edge-color></ui-color>"
 msgstr "Выберите, как распределять добычу.<br><br><ui-color 506><ui-edge-color 507>Норма<br></ui-edge-color></ui-color>Предметы распределяются по правилам «Нужда», «Жадность» и «Пропустить».<br><br><ui-color 506><ui-edge-color 507>Только жадность<br></ui-edge-color></ui-color>Участники группы могут выбрать только «Жадность» или «Пропустить».<br><br><ui-color 506><ui-edge-color 507>Распределяет лидер<br></ui-edge-color></ui-color>Лидер группы сам распределяет добычу.<br><br><ui-color 508><ui-edge-color 509>※Режимы «Только жадность» и «Распределяет лидер» доступны только для заранее собранной группы нужного размера или группы без ограничений.<br>※В некоторых заданиях разрешён только режим «Только жадность».<br>※В некоторых заданиях правила добычи изменить нельзя.<br>※Правила добычи может менять только лидер группы.</ui-edge-color></ui-color>"
@@ -4525,12 +4525,12 @@ msgstr "Выберите, как распределять добычу.<br><br><
 #. de: Wähle die gewünschten Sprachoptionen für den Inhalt.<br><br><ui-color 506><ui-edge-color 507>※ Abhängig von den verfügbaren Sprachen im Datenzentrum, kann die Suche länger dauern. Wenn es zu ungewöhnlichen Wartezeiten kommt, wird empfohlen, die Sprachoptionen zu ändern und eine neue Suche zu starten.</ui-edge-color></ui-color><br><br><ui-color 508><ui-edge-color 509>※Die im Launcher eingestellte Sprache ist mit _ markiert.<br>※Die Spracheinstellungen gelten für alle Inhalte mit automatischer Gruppenzusammenstellung. Einige Inhalte im Gold Saucer sind davon ausgenommen.</ui-edge-color></ui-color>
 #. fr: Définit la ou les langues utilisées lors des missions.<br>Le groupement se fera avec des joueurs partageant tous une de ces langues.<br><br><ui-color 506><ui-edge-color 507>Le temps d'attente lors des groupements peut grandement varier en fonction des langues choisies et de celles utilisées dans les Mondes du centre de traitement de données.<br>Il est recommandé d'essayer d'autres langues si les délais d'accès aux missions deviennent anormalement longs après changement.</ui-edge-color></ui-color><br><br><ui-color 508><ui-edge-color 509>* La langue du jeu est soulignée.<br>* Ce choix est valable pour toutes les missions avec groupement, sauf certains jeux du Gold Saucer.</ui-edge-color></ui-color>
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12694:0:0"
 msgid "You will be matched with players who are using the selected languages.<br><br><ui-color 506><ui-edge-color 507>※Depending on the languages chosen, matching times may increase. If you are experiencing overlong wait times, you may want to consider different language settings.<br></ui-edge-color></ui-color><br><ui-color 508><ui-edge-color 509>※The _ indicates your current client language setting.<br>※This setting is shared in all duty matching, though please be aware that it may not apply to certain Gold Saucer activities.</ui-edge-color></ui-color>"
 msgstr "Вас объединят в группу с игроками, выбравшими те же языки.<br><br><ui-color 506><ui-edge-color 507>※Время подбора группы может увеличиться в зависимости от выбранных языков. Если ожидание затянулось, попробуйте изменить языковые настройки.<br></ui-edge-color></ui-color><br><ui-color 508><ui-edge-color 509>※Значок _ отмечает текущий язык клиента.<br>※Настройка действует для всех заданий с автоматическим подбором группы, но может не применяться к некоторым играм в Золотом блюдце.</ui-edge-color></ui-color>"
@@ -4553,12 +4553,12 @@ msgstr "Синхронизация ур."
 #. de: Die Stufen aller Teilnehmer werden an die für den Inhalt erforderliche Mindeststufe angepasst.<br><ui-color 506><ui-edge-color 507>※ Auch wenn die Option „Keine Beschränkungen“ gewählt wurde, wird die Bindung an Gegenstände erhöht.<br>※ Auch wenn die Option „Keine Beschränkungen“ gewählt wurde, erhalten Spieler für den Sieg über Gegner Routine und Gegenstände.</ui-edge-color></ui-color><br><ui-color 508><ui-edge-color 509>※ Kann nur ausgewählt werden, wenn die Option „Keine Beschränkungen“ gewählt wurde.<br>※ Es gelten nur die Einstellungen des Gruppenanführers.</ui-edge-color></ui-color>
 #. fr: Permet de synchroniser le niveau du personnage à celui de la mission.<br><br> - Le taux de symbiose des objets augmente, même avec l'option “Sans restriction”.<br> - Les ennemis octroient des points d'expérience et des objets, même avec l'option “Sans restriction”.<br><br><ui-color 508><ui-edge-color 509>* Disponible uniquement lorsque l'option “Sans restriction” est activée.<br>* Seul le chef d'équipe peut activer cette option.</ui-edge-color></ui-color>
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12697:0:0"
 msgid "Sync all participants to a duty's required level.<br><ui-color 506><ui-edge-color 507>※When using an unrestricted party, gear will still gain spiritbond.<br>※When using an unrestricted party, enemies will still yield EXP and items.</ui-edge-color></ui-color><br><ui-color 508><ui-edge-color 509>※Can only be selected when using an unrestricted party.<br>※Only the party leader's settings are applicable.</ui-edge-color></ui-color>"
 msgstr "Уровень всех участников будет синхронизирован с требуемым для задания.<br><ui-color 506><ui-edge-color 507>※Даже в группе без ограничений экипировка будет получать связь с душой.<br>※Даже в группе без ограничений за победу над врагами будут давать опыт и предметы.</ui-edge-color></ui-color><br><ui-color 508><ui-edge-color 509>※Доступно только для группы без ограничений.<br>※Действуют только настройки лидера группы.</ui-edge-color></ui-color>"
@@ -4766,11 +4766,11 @@ msgstr "Настройки вкладок чата"
 #. ja: <ui-color 506><ui-edge-color 507><br>※相手と同じデータセンターにいる間に申請の回答をしてもらえなかった場合、仮フレンド状態のままとなり、1週間が経過すると申請が自動的に取り下げられます。</ui-edge-color></ui-color>
 #. de: <ui-color 506><ui-edge-color 507><br>※ Wenn du auf deine Freund<shy>schaftsanfrage keine Antwort erhältst, während du dich auf demselben Datenzentrum wie der Empfänger befindest, wird sie nach einer Woche automatisch zurückgezogen.</ui-edge-color></ui-color>
 #. fr: <ui-color 506><ui-edge-color 507><br>* Si la requête d'ami n'est pas acceptée lorsque vous êtes dans le même centre de données, vous serez considérés temporairement amis le temps d'une semaine. Passé ce délai, elle sera au<shy>to<shy>ma<shy>ti<shy>que<shy>ment refusée.</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12740:0:0"
 msgid "<ui-color 506><ui-edge-color 507><br>※If you do not receive a response to a friend request while in the same data center as the player to whom you sent it, your friend status will remain pending for one week, after which time the request will be rendered void.</ui-edge-color></ui-color>"
 msgstr "<ui-color 506><ui-edge-color 507><br>※Если вы не получите ответа на запрос дружбы, пока будете находиться в одном центре обработки данных с игроком, которому его отправили, запрос останется неподтверждённым. Через неделю он будет автоматически отменён.</ui-edge-color></ui-color>"
@@ -4778,11 +4778,11 @@ msgstr "<ui-color 506><ui-edge-color 507><br>※Если вы не получи�
 #. ja: <ui-color 506><ui-edge-color 507><br>※フレンド登録後も、お互いが別々の地域にいる間はログイン状況が取得できません。</ui-edge-color></ui-color>
 #. de: <ui-color 506><ui-edge-color 507><br>※ Du kannst den Login-Status deiner Freunde nicht einsehen, während sie sich in einer anderen Region befinden.
 #. fr: <ui-color 506><ui-edge-color 507><br>* Même après ajout dans votre liste d'amis, vous ne pourrez pas voir les activités des personnages jouant dans d'autres régions que celle où vous vous trouvez.</ui-edge-color></ui-color>
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12741:0:0"
 msgid "<ui-color 506><ui-edge-color 507><br>※You are unable to view the login details of players on your friend list while they are in a different region.</ui-edge-color></ui-color>"
 msgstr "<ui-color 506><ui-edge-color 507><br>※Вы не сможете видеть статус входа в игру друзей, если они находятся в другом регионе.</ui-edge-color></ui-color>"
@@ -5052,7 +5052,7 @@ msgstr "Строителям Твёрди"
 
 #. ja: 寄贈　蒼天街住民有志一同
 #. de: Gestiftet von den dankbaren Bürgern Ishgards
-#. fr: Monument offert par les habitants d'Azurée
+#. fr: Monument offert par les habitants d'Azurée 
 msgctxt "Addon:12786:0:0"
 msgid "With gratitude from all who set foot in the Firmament."
 msgstr "С благодарностью от всех жителей Твёрди."
@@ -5128,11 +5128,11 @@ msgstr "<if ($n1 == 0)>Выберите название сообщества<el
 #. de: Folgende Sonderzeichen sind für den Namen des Zirkels gestattet:<br><br><ui-color 500><ui-edge-color 501>'<nbsp>. , : ; ! ? & - _</ui-edge-color></ui-color><br><br>Zwei oder mehr aufeinanderfolgende Leerzeichen oder Unterstriche sind nicht möglich. Das erste und letzte Zeichen darf kein Leerzeichen sein. Ein Name nur aus Satzzeichen ist nicht möglich.
 #. fr: Les espaces et les symboles suivants sont autorisés<nbsp>:<br><ui-color 500><ui-edge-color 501>'<nbsp>. ,<nbsp>:<nbsp>;<nbsp>!<nbsp>? & - _</ui-edge-color></ui-color><br><br>- Deux espaces ou deux tirets bas ne peuvent pas se suivre.<br>- Le nom ne peut pas commencer ou se terminer par une espace.<br>- Le nom ne peut pas être composé uniquement de signes.
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <nbsp> — a non-breaking space (may be added or dropped)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12806:0:0"
 msgid "The following punctuation marks are allowed:<br><ui-color 508><ui-edge-color 509>'<nbsp>. , : ; ! ? & - _</ui-edge-color></ui-color><br>• Double spaces/underscores are not allowed.<br>• A space cannot be used before or after the name.<br>• Names consisting solely of punctuation marks are prohibited."
 msgstr "Допустимы следующие знаки:<br><ui-color 508><ui-edge-color 509>'<nbsp>. , : ; ! ? & - _</ui-edge-color></ui-color><br>• Нельзя использовать подряд несколько пробелов или подчёркиваний.<br>• Название не может начинаться или заканчиваться пробелом.<br>• Нельзя использовать название, состоящее только из знаков препинания."
@@ -6070,11 +6070,11 @@ msgstr "Цель набора"
 #. de: Rekrutierungsziel (Momentan: <if ($n1 == 1000)><ui-color 508><ui-edge-color 509><kilo $n1 "."></ui-edge-color></ui-color><else><kilo $n1 "."></if>/1.000)
 #. fr: membres. (Nombre de membres actuel<nbsp>: <if ($n1 == 1000)><ui-color 508><ui-edge-color 509><kilo $n1 "<nbsp>"></ui-edge-color></ui-color><else><kilo $n1 "<nbsp>"></if>/1 000)
 #. macro: <if ($n1 == 1000)><ui-color 508><ui-edge-color 509><kilo $n1 ","></ui-edge-color></ui-color><else><kilo $n1 ","></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1000 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:12956:0:0"
 msgid "Members  (Currently: <if ($n1 == 1000)><ui-color 508><ui-edge-color 509><kilo $n1 \",\"></ui-edge-color></ui-color><else><kilo $n1 \",\"></if>/1,000)"
 msgstr "Участники (сейчас: <if ($n1 == 1000)><ui-color 508><ui-edge-color 509><kilo $n1 \",\"></ui-edge-color></ui-color><else><kilo $n1 \",\"></if>/1,000)"

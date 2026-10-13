@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 雲霧街のフレイは、冒険者の訪れを待っているようだ。
@@ -146,8 +146,8 @@ msgstr "С тех пор как мы в последний раз соверша
 #. de: Wir sollten so schnell wie möglich ein weiteres Ritual durchführen. Vielleicht ergibt sich dann ein Hinweis darauf, wem die Stimme gehört.
 #. fr: Tu as conscience que j'essaye de t'aider, j'espère<nbsp>? Tout ce que je fais, c'est pour <i>ton</i> bien.
 #. speaker: FRAY
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_FRAY_000_002:1"
 msgid "You know I'm trying to help you, don't you? All of this is for <i>your</i> benefit."
 msgstr "Ты ведь знаешь, что я пытаюсь тебе помочь? Всё это ради <i>твоего</i> же блага."
@@ -156,8 +156,8 @@ msgstr "Ты ведь знаешь, что я пытаюсь тебе помоч
 #. de: Immerhin dringt die Stimme durch dein Herz. Gibt es denn jemanden, den du beschützen möchtest? Vor allen anderen?
 #. fr: Tu écoutes, mais tu ne <i>comprends</i> pas.
 #. speaker: FRAY
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_FRAY_000_003:1"
 msgid "You listen, but you don't <i>understand</i>─"
 msgstr "Ты слушаешь, но не <i>понимаешь</i>..."
@@ -249,7 +249,7 @@ msgstr "А они велели мне проваливать — предста�
 #. fr: Attendez... C'est vous, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split><nbsp>?
 #. speaker: STYRNLONA
 #. macro: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -295,8 +295,8 @@ msgstr "Двенадцать и правда за меня! Ты ведь как
 #. de: Ein garstiger Qiqirn hat meine gesamten Waren gestohlen! \<jammer> Was soll ich meinen Kunden erzählen? \<schluchz> Ich werde meinen guten Ruf als Händler verlieren! \<schnief>
 #. fr: (sanglote) J'ai été victime d'un crime <i>atroce</i><nbsp>! Des bandits qiqirns m'ont attaqué près des atolls de sel et ils m'ont tout volé<nbsp>!
 #. speaker: MERCHANT02057
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_MERCHANT02057_000_021:1"
 msgid "\\<sniffle> \\<sob> I...I am the victim of a terrible─nay, <i>heinous</i> crime! I was waylaid by Qiqirn bandits near the Salt Strand, who left me with naught more than the clothes on my back!"
 msgstr "<i>Шмыг... У-у...</i> Я... я стал жертвой ужасного — нет, <i>гнусного</i> преступления! На меня напали бандиты кикирн у Солёного берега и оставили мне только одежду на спине!"
@@ -565,11 +565,11 @@ msgid "You're helpless. Weak. All you do is want and need."
 msgstr "Вы беспомощны. Слабы. Только и делаете, что просите и требуете."
 
 #. ja: お前らはッ……お前らは、僕らを置いてどこへ行った！？<br>選ばれた者しか戦えないって言葉を盾に、<br>どれだけ僕らを犠牲にしたッ！？
-#. de: „Wir sind ja nicht auserwählt! Soll doch <if $gn4>die<else>der</if> Auserwählte kämpfen!“ - Pah, hinter solchen Worten versteckt ihr euch! Aber was tut <i>ihr</i> eigentlich für Eorzea?
+#. de: „Wir sind ja nicht auserwählt! Soll doch <if $gn4>die<else>der</if> Auserwählte kämpfen!“ - Pah, hinter solchen Worten versteckt ihr euch! Aber was tut <i>ihr</i> eigentlich für Eorzea? 
 #. fr: Nous aurions dû vous laisser vous noyer dans le raz-de-marée provoqué par Léviathan. Au moins, on n'aurait pas eu à écouter ces inepties...
 #. speaker: FRAY
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_FRAY_000_101:1"
 msgid "I should've left you all to drown in Leviathan's tidal wave. At least then I would've been spared your <i>constant</i> bloody whining."
 msgstr "Надо было оставить вас тонуть в волне Левиафана. Хоть не пришлось бы слушать ваше <i>вечное</i> нытьё."
@@ -596,7 +596,7 @@ msgstr "П-прошу простить мою дерзость, <if $gn4>гос�
 #. fr: <capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if></capitalize> <split " " 2><string $gs1></split>, je peux comprendre que vous soyez en colère, mais...
 #. speaker: STYRNLONA
 #. macro: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -650,11 +650,11 @@ msgid "We can't keep doing this, <split \" \" 1><string $gs1></split>. You must 
 msgstr "Мы не можем так продолжать, <split \" \" 1><string $gs1></split>. Теперь ты понимаешь, что с нами творится... Что они с нами делают..."
 
 #. ja: そうでなくとも、「暗黒騎士」の指導者らしいことは、<br>どんどんできなくなってきてるって、わかっています。<br>疑いますよね、僕のこと……。
-#. de: Also wirklich, so ein undankbares Pack ...
+#. de: Also wirklich, so ein undankbares Pack ... 
 #. fr: Ces... ces <i>gens</i>...
 #. speaker: FRAY
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_FRAY_100_110:1"
 msgid "These...these <i>people</i>..."
 msgstr "Эти... эти <i>люди</i>..."
@@ -713,8 +713,8 @@ msgstr "Ты уже близко, <split \" \" 1><string $gs1></split>. Так �
 #. de: Aber ich kann dir nicht sagen, wer es ist. Du musst es selber herausfinden.
 #. fr: J'aimerais tout t'expliquer. J'aimerais te montrer...
 #. speaker: FRAY
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_FRAY_000_122:1"
 msgid "I wish I could tell you. I wish I could <i>make</i> you see."
 msgstr "Я бы хотел тебе всё рассказать. Хотел бы <i>заставить</i> тебя увидеть."
@@ -749,8 +749,8 @@ msgstr "Осталось лишь прислушаться к голосу — �
 #. de: Du bist noch nicht am Ziel. Es gibt einen Ort in deinem Herzen, dem du dich noch nicht gestellt hast. Aber die Stimme wird dir dabei helfen.
 #. fr: J'aimerais tout t'expliquer. J'aimerais te montrer...
 #. speaker: FRAY
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_FRAY_000_127:1"
 msgid "I wish I could tell you. I wish I could <i>make</i> you see."
 msgstr "Я бы хотел тебе всё рассказать. Хотел бы <i>заставить</i> тебя увидеть."
@@ -867,7 +867,7 @@ msgid "Cast yourself into the abyss, and you shall soar above, free at last."
 msgstr "Бросьтесь в бездну — и воспарите над ней, наконец свободные."
 
 #. ja: 英雄として築いた地位や名声、居場所を捨てても、<br>それを護りたいと思えたならば、<br>僕と一緒に、このエオルゼアを出てください。
-#. de: Deinen Stand, deinen Ruf, dein Vermögen - alles? Erst nachdem wir alles verloren haben, haben wir die Freiheit, alles zu tun. Wenn du dazu bereit bist, dann ... komm mit mir! Verlasse dieses Eorzea!
+#. de: Deinen Stand, deinen Ruf, dein Vermögen - alles? Erst nachdem wir alles verloren haben, haben wir die Freiheit, alles zu tun. Wenn du dazu bereit bist, dann ... komm mit mir! Verlasse dieses Eorzea! 
 #. fr: Il existe d'autres terres, <split " " 1><string $gs1></split>. Des contrées où personne ne te connaît. Si c'est ce que tu désires, nous pouvons quitter cet endroit à tout jamais.
 #. speaker: FRAY
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
@@ -877,7 +877,7 @@ msgid "There are other lands than these, <split \" \" 1><string $gs1></split>─
 msgstr "Есть и другие земли, <split \" \" 1><string $gs1></split>, где нас никто не знает. Попроси — и мы навсегда покинем это место."
 
 #. ja: この地では、君はたったひとりを護る存在にはなれない。<br>離れてこそ……本当の「暗黒騎士」としての物語がはじまるんだ。
-#. de: Hier wirst du nie in der Lage sein, deine Bestimmung zu erfüllen. Wirklich frei zu sein. Hier wirst du dich immer auch um andere kümmern müssen. Wenn du aber Eorzea den Rücken zukehrst - kannst du deinen Weg gehen.
+#. de: Hier wirst du nie in der Lage sein, deine Bestimmung zu erfüllen. Wirklich frei zu sein. Hier wirst du dich immer auch um andere kümmern müssen. Wenn du aber Eorzea den Rücken zukehrst - kannst du deinen Weg gehen. 
 #. fr: Ce n'est qu'en renonçant à ce que tu es que tu seras com<shy>plè<shy>te<shy>ment libéré<if $gn4>e</if>.
 #. speaker: FRAY
 msgctxt "quest/020/JobDrk450_02057:TEXT_JOBDRK450_02057_FRAY_000_149:1"

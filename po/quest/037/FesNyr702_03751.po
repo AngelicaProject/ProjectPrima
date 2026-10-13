@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: ※本クエストは、期間限定のクエストとなります。<br><br>アフトカースルの丑奉行は、餅の振る舞いに協力してほしいようだ。
@@ -32,7 +32,7 @@ msgid "From the head of the Fishermen's Guild to the Admiral of Limsa Lominsa he
 msgstr "По дороге по Лимсе Ломинсе вы встретили самых разных людей — от главы Гильдии рыбаков до самого адмирала. Закончив раздачу, вы возвращаетесь к уси-бугё с хорошими новостями и почти пустой сумкой моти."
 
 #. ja: 丑奉行に報告した。今回の降神祭が成功したのは、冒険者のおかげだと礼を言われた。残りの期間、降神祭を楽しもう！
-#. de: Der Ochsenminister dankt dir im Namen seines Volkes für deine redlichen Bemühungen. Noch ist das Fest nicht vorüber. Feiere mit, solange die Himmelswende noch andauert!
+#. de: Der Ochsenminister dankt dir im Namen seines Volkes für deine redlichen Bemühungen. Noch ist das Fest nicht vorüber. Feiere mit, solange die Himmelswende noch andauert! 
 #. fr: Le maréchal des bœufs vous a <if $gn4>remerciée<else>remercié</if> pour vos efforts au service de la délégation orientale. Grâce à votre con<shy>tri<shy>bu<shy>tion, la fête de la transition est une fois de plus un immense succès, et vous avez bien mérité le droit d'aller en profiter<nbsp>!
 #. kind: journal
 msgctxt "quest/037/FesNyr702_03751:TEXT_FESNYR702_03751_SEQ_03:1"
@@ -123,7 +123,7 @@ msgstr "Му-у!"
 #. de: <if $gn4>Von der Abenteurerin<else>Vom Abenteurer</if> <if $gn4>zur<else>zum</if> ... <if $gn4>Kuhhirtin<else>Kuhhirten</if>? Ach so! Du verteilst die Reiskuchen! Ich nehme dir gerne einen ab.
 #. fr: Salutations, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split><else><if ($gn53 > 0)><if $gn4>aventurière<else>aventurier</if><else><if $gn4>aventurière<else>aventurier</if></if></if>. Toi et ce bovin faites une drrrôle d'équipe, dis donc<nbsp>! Si tu aides la délégation orientale à distribuer leurs petits gâteaux, je veux bien que tu m'en donnes un.
 #. speaker: RASHAHT
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -172,8 +172,8 @@ msgstr "Хе-хе, извини, командир. Не удержался."
 #. de: Sturmkapitänleutnant R'ashaht Rhiki, sollte ich wohl sagen ...
 #. fr: Mais dis-moi plutôt...
 #. speaker: BADERON
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/037/FesNyr702_03751:TEXT_FESNYR702_03751_BADERON_100_014:1"
 msgid "Heh. <i>Commander</i>..."
 msgstr "Хе. <i>Командир</i>..."
@@ -267,7 +267,7 @@ msgid "What's this, now? Spreadin' a bit o' Heavensturn cheer, are ye? Hope that
 msgstr "Что это тут у нас? Праздничные угощения раздаёшь? Надеюсь, моти и мне достанется."
 
 #. ja: おやおや、もちもちお餅、貰いに来たら、<br>リングサスちゃんがいたっちゃ！<br>お久しぶりっちゃ！
-#. de: Mjam, mjam! Neneroon will auch Mochi mampfen!
+#. de: Mjam, mjam! Neneroon will auch Mochi mampfen! 
 #. fr: Neneroon senti odeuuur de miam miam d'Orient et rappliqué dare-dare<nbsp>! Neneroon surpris de retrouuuver grand chef Lyngsath<nbsp>!
 #. speaker: NENEROON
 msgctxt "quest/037/FesNyr702_03751:TEXT_FESNYR702_03751_NENEROON_000_032:1"
@@ -406,8 +406,8 @@ msgstr "В-Вавалаго! Ты чего подкрадываешься к л�
 #. de: Warum so nervös, liebe Rhoswen? Ah, ich sehe, du hast dir zwei Mochi geschnappt. Für wen ist denn das zweite?
 #. fr: Mais dis-moi, comment se fait-il que tu en aies deux<nbsp>? C'est mal de prendre la part des autres. À moins que... tu veuilles en offrir un à quelqu'un<nbsp>?
 #. speaker: WAWALAGO
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/037/FesNyr702_03751:TEXT_FESNYR702_03751_WAWALAGO_000_055:1"
 msgid "Oho, I see you've not one, but <i>two</i> advent cakes. If I didn't know better, I'd say you were securing a snack for a significant someone as well!"
 msgstr "Ого, у тебя целых <i>два</i> праздничных моти. Не знал бы я лучше — решил бы, что одно ты берёшь для кого-то особенного!"

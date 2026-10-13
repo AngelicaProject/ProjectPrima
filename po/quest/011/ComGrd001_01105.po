@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 双蛇党のボルセル大牙佐は冒険者に話があるようだ。
@@ -42,7 +42,7 @@ msgstr "Поговорите с Беркоейей Лоэталсином в Л�
 #. de: Hallo, <if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split>.<br>Die Bruderschaft der Morgenviper setzt große Hoffnungen in dich.
 #. fr: <capitalize><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if></capitalize> <split " " 2><string $gs1></split>, j'ai quelque chose d'important à vous dire. Au vu de vos états de service, l'ordre des Deux Vipères fonde de grands espoirs en vous.
 #. speaker: VORSAILE
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -73,7 +73,7 @@ msgid "...And yet, potential alone will not carry you far. Indeed, the road to g
 msgstr "...Но одного потенциала мало. Дорога к славе усеяна теми, кто так и не добился своего: им не хватило упорства и усердия, чтобы развить природные способности."
 
 #. ja: そこで、君に紹介したい施設がある。<br>エオルゼア都市軍事同盟が共同で設立した、<br>グランドカンパニー将兵の練兵所があるんだよ。
-#. de: Sei unbesorgt. Ich habe bereits darüber nachgedacht, wie dir in dieser Hinsicht weitergeholfen werden kann. Die Eorzäische Allianz betreibt eine Institution, genauer gesagt eine Trainingseinrichtung, in der Offiziere wie auch Rekruten der Staatlichen Ge<shy>sell<shy>schaften ihre Fä<shy>hig<shy>kei<shy>ten verbessern können.
+#. de: Sei unbesorgt. Ich habe bereits darüber nachgedacht, wie dir in dieser Hinsicht weitergeholfen werden kann. Die Eorzäische Allianz betreibt eine Institution, genauer gesagt eine Trainingseinrichtung, in der Offiziere wie auch Rekruten der Staatlichen Ge<shy>sell<shy>schaften ihre Fä<shy>hig<shy>kei<shy>ten verbessern können. 
 #. fr: Pour cette raison, j'aimerais vous envoyer à la base d'en<shy>traî<shy>ne<shy>ment des officiers de grande compagnie, une installation créée con<shy>join<shy>te<shy>ment par les membres de l'Alliance éorzéenne.
 #. speaker: VORSAILE
 msgctxt "quest/011/ComGrd001_01105:TEXT_COMGRD001_01105_VORSAILE_000_003:1"
@@ -108,8 +108,8 @@ msgstr "Прибыв на место, разыщи капитана Шторма
 #. de: Mein Name ist Großsturmbootsmann Berkoeya!<br>Ich bin der Ausbilder hier in der Wolfshöhle, der „Drillmeister“!
 #. fr: Salut<nbsp>! Je suis le capitaine Loetahlsyn, l'officier chargé de superviser les en<shy>traî<shy>ne<shy>ments à l'Antre des loups<nbsp>!
 #. speaker: BERKOEYA
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/011/ComGrd001_01105:TEXT_COMGRD001_01105_BERKOEYA_000_010:1"
 msgid "I don't recall seein' yer ugly mug around here before. Hm? Ye say that <i>Heuloix</i> sent ye!?"
 msgstr "Не припомню, чтобы раньше видел здесь твою противную рожу. А? Говоришь, тебя прислал <i>Эйлуа</i>!?"

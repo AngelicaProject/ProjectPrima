@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 未踏破海域に到達、「<sheet SubmarineExploration $n1 0>」を目指して航行します。
@@ -17,7 +17,7 @@ msgstr "Достигнуты неизведанные глубины. Держи
 #. ja: 「<sheet SubmarineExploration $n1 0>」に初到達、探索を開始します。
 #. de: <sheet SubmarineExploration $n1 0> erreicht. Beginne die Erstuntersuchung.
 #. fr: Destination atteinte<nbsp>: “<sheet SubmarineExploration $n1 0>”. Commençons exploration préliminaire.
-#. macro: <capitalize><sheet SubmarineExploration $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet SubmarineExploration $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "SubmarineExplorationLog:2:0:0"
 msgid "<capitalize><sheet SubmarineExploration $n1 0></capitalize> reached. Commencing initial survey."
@@ -26,18 +26,18 @@ msgstr "<capitalize><sheet SubmarineExploration $n1 0></capitalize> достиг
 #. ja: 「<sheet SubmarineExploration $n1 0>」に到達、探索を開始します。
 #. de: <sheet SubmarineExploration $n1 0> erreicht. Beginne die Unter<shy>such<shy>ung.
 #. fr: Destination atteinte<nbsp>: “<sheet SubmarineExploration $n1 0>”. Commençons exploration.
-#. macro: <capitalize><sheet SubmarineExploration $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet SubmarineExploration $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "SubmarineExplorationLog:3:0:0"
 msgid "<capitalize><sheet SubmarineExploration $n1 0></capitalize> reached. Commencing survey."
 msgstr "<capitalize><sheet SubmarineExploration $n1 0></capitalize> достигнута. Начинаем обследование."
 
 #. ja: 海流安定、絶好の条件……<string $s1>の「<sheet SubmarineSpecCategory $n2 0>」は十分です。
-#. de: Gewässer ruhig, Bedingungen optimal. <sheet SubmarineSpecCategory $n2 0> der <i><string $s1></i> ist ausreichend für die Erkundung des Zielorts.
+#. de: Gewässer ruhig, Bedingungen optimal. <sheet SubmarineSpecCategory $n2 0> der <i><string $s1></i> ist ausreichend für die Erkundung des Zielorts. 
 #. fr: Conditions de navigation idéales... <sheet SubmarineSpecCategory $n2 0> de <i><string $s1></i> suffisante.
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <sheet SubmarineSpecCategory $n2 0> — a value from a game data sheet, such as a name; sheet = SubmarineSpecCategory, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "SubmarineExplorationLog:4:0:0"
 msgid "Seas clear and calm. <i><string $s1></i> <sheet SubmarineSpecCategory $n2 0> sufficient for exploration."
@@ -102,7 +102,7 @@ msgstr "Обнаружены <noun-en Item 3 $n1 1 1> высокого каче�
 #. ja: 「<sheet Item $n1 0>」を検知、回収を開始します。
 #. de: <capitalize><noun-de Item 5 $n1 2 4 1></capitalize> entdeckt. Beginne Extraktion.
 #. fr: <capitalize><noun-fr Item 12 $n1 2 1></capitalize> découvert<if "<sheet Item $n1 6>">e</if>s. Commençons extraction.
-#. macro: <capitalize><noun-en Item 3 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en Item 3 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "SubmarineExplorationLog:12:0:0"
 msgid "<capitalize><noun-en Item 3 $n1 1 1></capitalize> discovered. Commencing retrieval."
@@ -111,7 +111,7 @@ msgstr "<capitalize><noun-en Item 3 $n1 1 1></capitalize> обнаружен. Н
 #. ja: 見事に「<sheet Item $n1 0>」を検知、回収を開始します。
 #. de: Vorzügliche <noun-de Item 5 $n1 2 4 1> entdeckt. Beginne Extraktion.
 #. fr: <capitalize><noun-fr Item 12 $n1 2 1></capitalize> découvert<if "<sheet Item $n1 6>">e</if>s. Commençons extraction.
-#. macro: <capitalize><noun-en Item 3 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en Item 3 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "SubmarineExplorationLog:13:0:0"
 msgid "<capitalize><noun-en Item 3 $n1 1 1></capitalize> discovered. Commencing retrieval."
@@ -144,15 +144,15 @@ msgstr "Из-за низкой <sheet SubmarineSpecCategory $n2 0> улов не
 #. ja: <ui-color 500><ui-edge-color 501>「<sheet Item $n1 0>」を<num $n2>個獲得しました！</ui-edge-color></ui-color>
 #. de: <ui-color 500><ui-edge-color 501><capitalize><noun-de Item 1 $n1 $n2 4 1></capitalize> erhalten!</ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501><if ($n2 == 1)><capitalize><noun-fr Item 1 $n1 1 1></capitalize><else><num $n2> <noun-fr Item 12 $n1 2 1></if> obtenu<if "<sheet Item $n1 6>">e</if><if ($n2 == 1)><else>s</if><nbsp>!</ui-edge-color></ui-color>
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <if ($n2 == 1)><capitalize><noun-en Item 3 $n1 1 1></capitalize><else><num $n2> <noun-en Item 3 $n1 3 1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><noun-en Item 3 $n1 1 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en Item 3 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 #. macro: <noun-en Item 3 $n1 3 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 3, case = 1 (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:17:0:0"
 msgid "<ui-color 500><ui-edge-color 501><if ($n2 == 1)><capitalize><noun-en Item 3 $n1 1 1></capitalize><else><num $n2> <noun-en Item 3 $n1 3 1></if> retrieved!</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501><if ($n2 == 1)><capitalize><noun-en Item 3 $n1 1 1></capitalize><else><num $n2> <noun-en Item 3 $n1 3 1></if> получено!</ui-edge-color></ui-color>"
@@ -182,10 +182,10 @@ msgstr "В этом районе новых аномалий не обнаруж
 #. de: Unter<shy>such<shy>ung von Zielort „<sheet SubmarineExploration $n1 0>“ abgeschlossen. Die Leistung der <i><string $s2></i> wurde als optimal bewertet!
 #. fr: Exploration de la destination “<sheet SubmarineExploration $n1 0>” terminée<nbsp>! Performance ex<shy>cep<shy>tion<shy>nelle de <i><string $s2></i><nbsp>!
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s2> — a text value passed to the string; value = text parameter 2 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:21:0:0"
 msgid "Survey of <sheet SubmarineExploration $n1 0> complete. <i><capitalize><string $s2></capitalize></i> performance rated as outstanding."
 msgstr "Исследование точки <sheet SubmarineExploration $n1 0> завершено. <i><capitalize><string $s2></capitalize></i> показала выдающиеся результаты."
@@ -194,10 +194,10 @@ msgstr "Исследование точки <sheet SubmarineExploration $n1 0> �
 #. de: Unter<shy>such<shy>ung von Zielort „<sheet SubmarineExploration $n1 0>“ abgeschlossen. Die Leistung der <i><string $s2></i> wurde als gut bewertet!
 #. fr: Exploration de la destination “<sheet SubmarineExploration $n1 0>” terminée<nbsp>! Bonne performance de <i><string $s2></i><nbsp>!
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s2> — a text value passed to the string; value = text parameter 2 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:22:0:0"
 msgid "Survey of <sheet SubmarineExploration $n1 0> complete. <i><capitalize><string $s2></capitalize></i> performance rated as decent."
 msgstr "Исследование точки <sheet SubmarineExploration $n1 0> завершено. <i><capitalize><string $s2></capitalize></i> показала хорошие результаты."
@@ -206,10 +206,10 @@ msgstr "Исследование точки <sheet SubmarineExploration $n1 0> �
 #. de: Unter<shy>such<shy>ung von Zielort „<sheet SubmarineExploration $n1 0>“ abgeschlossen. Die Leistung der <i><string $s2></i> wurde als zufriedenstellend bewertet.
 #. fr: Exploration de la destination “<sheet SubmarineExploration $n1 0>” terminée<nbsp>! Performance satisfaisante de <i><string $s2></i><nbsp>!
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s2> — a text value passed to the string; value = text parameter 2 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:23:0:0"
 msgid "Survey of <sheet SubmarineExploration $n1 0> complete. <i><capitalize><string $s2></capitalize></i> performance rated as satisfactory."
 msgstr "Исследование точки <sheet SubmarineExploration $n1 0> завершено. <i><capitalize><string $s2></capitalize></i> показала удовлетворительные результаты."
@@ -218,10 +218,10 @@ msgstr "Исследование точки <sheet SubmarineExploration $n1 0> �
 #. de: Unter<shy>such<shy>ung von Zielort „<sheet SubmarineExploration $n1 0>“ abgeschlossen. Die Leistung der <i><string $s2></i> wurde als nicht ausreichend bewertet. Austausch von Bauteilen empfohlen.
 #. fr: Exploration de la destination “<sheet SubmarineExploration $n1 0>” terminée<nbsp>! Performance à peine satisfaisante de <i><string $s2></i><nbsp>!
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s2> — a text value passed to the string; value = text parameter 2 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:24:0:0"
 msgid "Survey of <sheet SubmarineExploration $n1 0> complete. <i><capitalize><string $s2></capitalize></i> performance rated as substandard."
 msgstr "Исследование точки <sheet SubmarineExploration $n1 0> завершено. <i><capitalize><string $s2></capitalize></i> показала результаты ниже нормы."
@@ -230,10 +230,10 @@ msgstr "Исследование точки <sheet SubmarineExploration $n1 0> �
 #. de: Unter<shy>such<shy>ung von Zielort „<sheet SubmarineExploration $n1 0>“ abgeschlossen. Die Leistung der <i><string $s2></i> wurde als äußerst unzufriedenstellend bewertet.
 #. fr: Exploration de la destination “<sheet SubmarineExploration $n1 0>” terminée<nbsp>! Performance décevante de <i><string $s2></i><nbsp>!
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <capitalize><string $s2></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s2> — a text value passed to the string; value = text parameter 2 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:25:0:0"
 msgid "Survey of <sheet SubmarineExploration $n1 0> complete. <i><capitalize><string $s2></capitalize></i> performance rated as abysmal."
 msgstr "Исследование точки <sheet SubmarineExploration $n1 0> завершено. <i><capitalize><string $s2></capitalize></i> показала ужасные результаты."
@@ -241,17 +241,17 @@ msgstr "Исследование точки <sheet SubmarineExploration $n1 0> �
 #. ja: <ui-color 502><ui-edge-color 503><string $s1>は、<num $n2><if ($n3 == 0)><else>(+<num $n3>%)</if>EXPを獲得しました！</ui-edge-color></ui-color>
 #. de: <ui-color 502><ui-edge-color 503><i><string $s1></i> hat <num $n2><if ($n3 == 0)><else> (+<num $n3>%)</if> Routine erhalten.</ui-edge-color></ui-color>
 #. fr: <ui-color 502><ui-edge-color 503><i><capitalize><string $s1></capitalize></i> gagne <num $n2> <if ($n3 == 0)><else>(+<num $n3>%)</if> points d'expérience.</ui-edge-color></ui-color>
-#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: keep it as often as the source has it)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 #. macro: <if ($n3 == 0)><else>(+<num $n3>%)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:26:0:0"
 msgid "<ui-color 502><ui-edge-color 503><i><capitalize><string $s1></capitalize></i> gains <num $n2><if ($n3 == 0)><else>(+<num $n3>%)</if> experience points.</ui-edge-color></ui-color>"
 msgstr "<ui-color 502><ui-edge-color 503><i><capitalize><string $s1></capitalize></i> получает <num $n2><if ($n3 == 0)><else> (+<num $n3>%)</if> оч. опыта.</ui-edge-color></ui-color>"
@@ -274,12 +274,12 @@ msgstr "Все точки обследованы. Возвращаемся в м
 #. ja: <ui-color 502><ui-edge-color 503>航行中に「<sheet SubmarineExploration $n1 0>」を発見しました！</ui-edge-color></ui-color>
 #. de: <ui-color 502><ui-edge-color 503>Neuen potenziellen Zielort entdeckt: <sheet SubmarineExploration $n1 0>!</ui-edge-color></ui-color>
 #. fr: <ui-color 502><ui-edge-color 503>Nouveau lieu d'exploration découvert<nbsp>: <sheet SubmarineExploration $n1 0>.</ui-edge-color></ui-color>
-#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: keep it as often as the source has it)
-#. macro: <capitalize><sheet SubmarineExploration $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <capitalize><sheet SubmarineExploration $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet SubmarineExploration $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineExploration, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:29:0:0"
 msgid "<ui-color 502><ui-edge-color 503><capitalize><sheet SubmarineExploration $n1 0></capitalize> discovered!</ui-edge-color></ui-color>"
 msgstr "<ui-color 502><ui-edge-color 503><capitalize><sheet SubmarineExploration $n1 0></capitalize> обнаружена!</ui-edge-color></ui-color>"
@@ -287,10 +287,10 @@ msgstr "<ui-color 502><ui-edge-color 503><capitalize><sheet SubmarineExploration
 #. ja: <ui-color 502><ui-edge-color 503>探索の成果が認められ、新たに潜水艦を登録する資格を得ました！</ui-edge-color></ui-color>
 #. de: <ui-color 502><ui-edge-color 503>Erlaubnis zur Registrierung eines weiteren Tauchboots erhalten!</ui-edge-color></ui-color>
 #. fr: <ui-color 502><ui-edge-color 503>Enregistrement d'un sous-marin sup<shy>plé<shy>men<shy>tai<shy>re autorisé<nbsp>!</ui-edge-color></ui-color>
-#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:30:0:0"
 msgid "<ui-color 502><ui-edge-color 503>Permission granted to register an additional submersible!</ui-edge-color></ui-color>"
 msgstr "<ui-color 502><ui-edge-color 503>Получено разрешение зарегистрировать ещё одну субмарину!</ui-edge-color></ui-color>"
@@ -298,11 +298,11 @@ msgstr "<ui-color 502><ui-edge-color 503>Получено разрешение �
 #. ja: <ui-color 502><ui-edge-color 503>航行中に「<sheet SubmarineMap $n1 0>」の航海図を発見しました！</ui-edge-color></ui-color>
 #. de: <ui-color 502><ui-edge-color 503>Neue Seekarte entdeckt: <sheet SubmarineMap $n1 0>!</ui-edge-color></ui-color>
 #. fr: <ui-color 502><ui-edge-color 503>Nouvelle carte nautique découverte<nbsp>: <sheet SubmarineMap $n1 0>.</ui-edge-color></ui-color>
-#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: keep it as often as the source has it)
+#. macro: <ui-color 502> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 502 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 503> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 503 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <sheet SubmarineMap $n1 0> — a value from a game data sheet, such as a name; sheet = SubmarineMap, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "SubmarineExplorationLog:31:0:0"
 msgid "<ui-color 502><ui-edge-color 503><sheet SubmarineMap $n1 0> discovered!</ui-edge-color></ui-color>"
 msgstr "<ui-color 502><ui-edge-color 503>Обнаружена карта <sheet SubmarineMap $n1 0>!</ui-edge-color></ui-color>"

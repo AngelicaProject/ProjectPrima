@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: <string $gs1>さんへの、<br>新しいレターは届いてないクポ。
@@ -40,8 +40,8 @@ msgstr "Я бы с радостью доставил письмо своему �
 #. de: Entschuldige, aber leider habe ich keine neue Post für dich, kupo. Feo Ul hat mir nichts für dich gegeben. Komm doch später noch mal wieder, kupo.
 #. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if>, <split " " 1><string $gs1></split>. Désolé, mais Feo Ul ne m'a pas remis de courrier pour toi. Repasse plus tard, kupo<nbsp>!
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_102_001:1"
 msgid "Why, hello! <string $gs1>, was it? I'm afraid I don't have any letters for you today. If I <i>did</i>, of course, I'd deliver them to you with speed and gusto!"
 msgstr "А, здравствуй! <string $gs1>, верно? Боюсь, сегодня писем для тебя нет. А если бы <i>были</i>, уж я бы доставил их быстро и с ветерком!"
@@ -50,7 +50,7 @@ msgstr "А, здравствуй! <string $gs1>, верно? Боюсь, сег�
 #. de: Sieh mal, <if ($n1 == 1)>ein neuer Brief ist<else><num $n1> neue Briefe sind</if> angekommen! Extra für dich, kupo!
 #. fr: Bonne nouvelle, <split " " 1><string $gs1></split><nbsp>! J'ai <kilo $n1 "<nbsp>"> lettre<if ($n1 == 1)><else>s</if> pour toi, kupo<nbsp>!♪
 #. macro: <if ($n1 == 1)>A new letter has arrived<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>sev… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -63,7 +63,7 @@ msgstr "Ну-ка, что у нас тут! <if ($n1 == 1)>Пришло ново
 #. de: Sieh mal, <if ($n1 == 1)>ein neuer Brief ist<else><num $n1> neue Briefe sind</if> angekommen! Extra für <if $gn4>unsere Lieblingsassistentin<else>unseren Lieblingsassistenten</if>, kupo!
 #. fr: Salut, apprenti<if $gn4>e</if> posti<if $gn4>ère<else>er</if><nbsp>! J'ai <kilo $n1 "<nbsp>"> nouvelle<if ($n1 == 1)><else>s</if> lettre<if ($n1 == 1)><else>s</if> pour toi, kupo<nbsp>!♪
 #. macro: <if ($n1 == 1)>A new letter has arrived<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>sev… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -77,7 +77,7 @@ msgstr "Ну-ка, что у нас тут! <if ($n1 == 1)>Пришло ново
 #. fr: Ah, <if $gn4>ma<else>mon</if> ch<if $gn4>ère<else>er</if> assistant<if $gn4>e</if><nbsp>! Tu vas être content<if $gn4>e</if>, j'ai <kilo $n1 "<nbsp>"> nouvelle<if ($n1 == 1)><else>s</if> lettre<if ($n1 == 1)><else>s</if> pour toi, kupo<nbsp>!♪
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 1)>A new letter has arrived<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>sev… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -219,8 +219,8 @@ msgstr "О, знаю, о чём ты думаешь. «Моглы должны �
 #. ja: エーテライトもリンクシェルも、<br>みんな使えなくなって大混乱だったクポ。
 #. de: Da hast du Recht! Wenn es nach <i>mir</i> ginge, würde ich es mir im Wipfel einer großen Eiche bequem machen und von einer wunderschönen Mogry-Dame mit einem regenbogenfarbenen Puschel träumen, kupo!
 #. fr: À vrai dire, notre service a vu le jour après la catastrophe il y a cinq ans, quand la lune nous est tombée dessus. Les éthérites et les linkshells ne fonctionnaient plus, et les gens ne pouvaient plus communiquer... Ah, c'était un sacré bazar, kupo<nbsp>!
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_12:1"
 msgid "\"Why\" indeed! If I had <i>my</i> way, I'd be curled up under the canopy of a nice oak dreaming about some beautiful mooglette with a rainbow-colored pom-pom, kupo!"
 msgstr "И правда, с какой стати! Будь моя воля, я бы сейчас свернулся калачиком под кроной хорошего дуба и мечтал о прекрасной моглице с радужным помпоном, купо!"
@@ -228,8 +228,8 @@ msgstr "И правда, с какой стати! Будь моя воля, я 
 #. ja: そんなとき、森のお友達に頼まれて、<br>モグがみんなに大切なお手紙を届けたクポ。
 #. de: Aber <i>nein</i>, der Mond musste ja vom Himmel fallen und all diese Aufregung verursachen! Ätheryten wurden zerschmettert und Kontaktperlen nutzlos. Viele Monde lang hatten die armen, flügellosen Leute von Eorzea keine Möglichkeit, miteinander zu kommunizieren ... außer sich die Lunge aus dem Leib zu schreien, was niemandem wirklich gefiel, kupo.
 #. fr: Face à un tel constat, nos petits amis cornus nous ont demandé d'aider les Éorzéens, et c'est comme ça que nous en sommes venus à distribuer leurs précieuses lettres, kupo<nbsp>!
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_13:1"
 msgid "But <i>no</i>, the moon had to go and drop from the sky, causing all of that terrible commotion! Aetherytes were shattered and linkpearls rendered useless. For moons, the poor, wingless people of Eorzea had no way of communicating with each other...beyond screaming at the top of their lungs, which no one really approved of, kupo."
 msgstr "Но <i>нет</i> же! Луне вздумалось рухнуть с неба и устроить весь этот ужасный переполох! Эфириты разбиты, линкшеллы бесполезны. Долгие месяцы бедные бескрылые жители Эорзеи не могли связаться друг с другом... разве что орать во всё горло, чему никто не был рад, купо."
@@ -244,8 +244,8 @@ msgstr "И вот рогатые малыши попросили нас помо
 #. ja: 冒険者さんも、これからはモグを頼りにするといいクポ！<br>それではさっそくお仕事クポ！
 #. de: Von diesem Tag an haben wir auf unsere Puschel geschworen, all eure wichtigen Nachrichten so schnell wie möglich zu überbringen!
 #. fr: Moi-même, je suis com<shy>plè<shy>te<shy>ment tombé amoureux de ce travail, kupopo<nbsp>!<br>Et puisqu'on parle de travail, voyons voir...
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_15:1"
 msgid "And I personally promise to <i>try</i> and not read any along the way, kupo!"
 msgstr "А лично я обещаю <i>постараться</i> не читать письма по дороге, купо!"
