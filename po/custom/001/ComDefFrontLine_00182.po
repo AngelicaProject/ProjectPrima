@@ -3,13 +3,13 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: <if ($gn52 > 0)><split " " 2><string $gs1></split><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 0></if></if><if ($gn53 > 0)><split " " 2><string $gs1></split><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 0></if></if><if ($gn54 > 0)><split " " 2><string $gs1></split><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 0></if></if>に敬礼ッ！
 #. de: Ah, <if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split>!
 #. fr: Salutations, <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if></if> <split " " 2><string $gs1></split></if><if ($gn53 > 0)><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if></if> <split " " 2><string $gs1></split></if><if ($gn54 > 0)><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if> <split " " 2><string $gs1></split></if><nbsp>!
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -158,10 +158,10 @@ msgstr "Разве служить своей великой компании —
 #. ja: 「アウトロー戦区」では、バトルに参加することで、<br>報酬となる「PvP EXP」や「対人戦績」を獲得できます。<br>獲得量は、勝敗によって異なります。
 #. de: Kämpfe an der Carteneauer Front werden mit PvP-Routine und Wolfsmarken belohnt. Sieger erhalten eine größere Vergütung als Verlierer.
 #. fr: Les par<shy>ti<shy>ci<shy>pants reçoivent tous des points JcJ et des marques de loup, dont les quantités varient en fonction du résultat de la bataille.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #, aeria-term-model-exception: Marks 2f1ace0d3b75
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_SYSTEM_000_051:1"
 msgid "Participating in a Frontline campaign will earn you <ui-color 500><ui-edge-color 501>PvP EXP</ui-edge-color></ui-color> and <ui-color 500><ui-edge-color 501>Wolf Marks</ui-edge-color></ui-color>, with a larger amount being awarded to the victors."
@@ -170,10 +170,10 @@ msgstr "За участие в сражении на Фронтлайне вы �
 #. ja: また、試合終了後に「経験値」と「アラガントームストーン」を、<br>参加報酬として獲得できます。
 #. de: Außerdem werden Routine und Allagische Steine als Zusatzvergütung verteilt.
 #. fr: Des points d'expérience et des mémoquartz allagois sont également obtenus en récompense.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_SYSTEM_100_051:1"
 msgid "You will also receive <ui-color 500><ui-edge-color 501>PvE EXP</ui-edge-color></ui-color> and <ui-color 500><ui-edge-color 501>Allagan tomestones</ui-edge-color></ui-color> at the end of each match."
 msgstr "В конце каждого сражения вы также получите <ui-color 500><ui-edge-color 501>опыт PvE</ui-edge-color></ui-color> и <ui-color 500><ui-edge-color 501>аллагские томестоны</ui-edge-color></ui-color>."
@@ -197,10 +197,10 @@ msgstr "Поиск активностей автоматически подби�
 #. ja: 参加者はコンテンツファインダーによりマッチングされ、<br>所属するグランドカンパニーの部隊に参加します。
 #. de: Die Inhaltssuche teilt Spielercharaktere automatisch geeigneten Trupps ihrer Staatlichen Ge<shy>sell<shy>schaft zu.
 #. fr: Chacun d'eux est composé d'au moins une grande équipe de huit joueurs et peut en compter jusqu'à un maximum de trois, formant ainsi des alliances de vingt-quatre joueurs.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_SYSTEM_000_022:1"
 msgid "Each Grand Company can be represented by at least one <ui-color 500><ui-edge-color 501>full party</ui-edge-color></ui-color> of eight players, and at most an <ui-color 500><ui-edge-color 501>alliance</ui-edge-color></ui-color> comprised of three full parties."
 msgstr "От каждой великой компании может выступать как минимум <ui-color 500><ui-edge-color 501>полный отряд</ui-edge-color></ui-color> из восьми игроков, а максимум — <ui-color 500><ui-edge-color 501>альянс</ui-edge-color></ui-color> из трёх полных отрядов."
@@ -269,7 +269,7 @@ msgid "Claims may be contested by rival companies, who need only have members pr
 msgstr "Соперникам достаточно войти в обозначенную зону, чтобы оспорить захват. Если им это удастся, точка снова станет нейтральной."
 
 #. ja: バイルブランド島の沖合、メルトール海峡に、<br>「カルテノー平原」に続き、<br>新たに「古代アラグ文明の遺跡」の眠る孤島が発見されました。
-#. de: In der Merlthor-Straße, die Vylbrand vom Festland trennt, liegt eine kleine Insel namens Robbenholm - bei den Limsern auch als das geheimnisumwitterte „Eiland der wandernden Schwalbe“ bekannt.
+#. de: In der Merlthor-Straße, die Vylbrand vom Festland trennt, liegt eine kleine Insel namens Robbenholm - bei den Limsern auch als das geheimnisumwitterte „Eiland der wandernden Schwalbe“ bekannt. 
 #. fr: Une petite île qui recèle des ruines allagoises a récemment été découverte dans le détroit de Merlthor, au large de l'île de Vylbrand.
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_HIKUUHEI182_300_001:1"
 msgid "Before I go into detail, I must ask: you have heard of Seal Rock, yes? The tiny island in the Strait of Merlthor, shrouded in mystery and so forth?"
@@ -283,7 +283,7 @@ msgid "When it was first discovered, some Lominsans said it was Swallowtail Roam
 msgstr "Когда остров впервые обнаружили, некоторые лимсийцы решили, что это Ласточкин хвост — легендарный дрейфующий остров. Лишь после Бедствия стало ясно, насколько они были близки к правде."
 
 #. ja: アラグ文明が滅びてからの5000年の間に、地表に土が積り、<br>普通の島に見えていたのでしょう。
-#. de: In den fünftausend Jahren, die seither vergangen sind, verfielen die Bauwerke und Robbenholm erschien wie eine natürlich entstandene Insel.
+#. de: In den fünftausend Jahren, die seither vergangen sind, verfielen die Bauwerke und Robbenholm erschien wie eine natürlich entstandene Insel. 
 #. fr: De la terre a dû s'accumuler à sa surface pendant les quelque cinq millénaires qui ont suivi la disparition de l'ancien empire d'Allag, ce qui lui donne une apparence tout à fait ordinaire.
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_HIKUUHEI182_300_003:1"
 msgid "When the island was struck by shards of Dalamud, you see, it exposed ancient relics which had been buried below the surface some five thousand years ago─Allagan tomeliths."
@@ -297,7 +297,7 @@ msgid "Allied survey teams have since concluded that the entire island is an All
 msgstr "Союзные исследователи пришли к выводу, что весь остров — аллагское сооружение. Вот почему он и блуждает по морям."
 
 #. ja: 我々は、この露出した部分を「アラガントームリス」と呼称。<br>カルテノー平原の「外縁遺跡群」同様、<br>掌握の対象とすることを決定しました。
-#. de: Wir fanden große Steine von seltsamer Mineralzusammensetzung, in denen offenbar Informationen gespeichert sind. Daran angelehnt haben wir sie Echolithen genannt. Wir versprechen uns davon tiefere Einsicht in die Forschung der Allager. Robbenholm wird also mit Sicherheit ebenso wichtig werden wie die äußeren Ruinen von Carteneau.
+#. de: Wir fanden große Steine von seltsamer Mineralzusammensetzung, in denen offenbar Informationen gespeichert sind. Daran angelehnt haben wir sie Echolithen genannt. Wir versprechen uns davon tiefere Einsicht in die Forschung der Allager. Robbenholm wird also mit Sicherheit ebenso wichtig werden wie die äußeren Ruinen von Carteneau. 
 #. fr: Ces parties émergées, que nous appelons “mémolithes allagois”, font l'objet d'une lutte entre les trois grandes compagnies éorzéennes pour leur contrôle, tout comme dans la plaine de Carteneau.
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_HIKUUHEI182_300_005:1"
 msgid "Anyway, as you might expect, the island's secrets are coveted by Ul'dah, Limsa Lominsa, and Gridania. Accordingly, the decision has been made to settle the matter in the Carteneau fashion─that is to say, to the victor go the spoils."
@@ -313,10 +313,10 @@ msgstr "Но на другом поле боя и цели другие. На э
 #. ja: 「シールロック」では、島内に点在する、<br>「アラガントームリス」を占拠することで「情報」を得て、<br>「情報値」を獲得することができます。
 #. de: Das Ziel der Kampagne auf Robbenholm ist es, allagische Echolithen zu erobern und Daten aus ihnen zu extrahieren.
 #. fr: Sur le Rocher des tréfonds, prendre le contrôle des mémolithes allagois permet d'augmenter son score de “données obtenues”.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_SYSTEM_300_010:1"
 msgid "During a Frontline seize campaign, players aid their company by retrieving data from <ui-color 500><ui-edge-color 501>tomeliths</ui-edge-color></ui-color>."
 msgstr "В сражениях за захват на Фронтлайне игроки помогают своей компании добывать данные из <ui-color 500><ui-edge-color 501>томелитов</ui-edge-color></ui-color>."
@@ -359,10 +359,10 @@ msgstr "Слышали новости из Коэртаса? Там, на Пол
 #. ja: 「フィールド・オブ・グローリー」は、「シールロック」同様、<br>獲得した「情報値」が定められた値に到達することで、<br>戦いに勝利することができます。
 #. de: Ähnlich wie bei dem Einsatzbefehl „Robbenholm“ geht es auf dem Feld der Ehre darum, eine bestimmte Menge an Daten zu extrahieren.
 #. fr: Tout comme pour le Rocher des tréfonds, la victoire lors des batailles des Champs de la Gloire est attribuée au camp qui atteint le premier un certain score de “données obtenues”.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_SYSTEM_330_010:1"
 msgid "During a Frontline shatter campaign, players aid their company by retrieving data from <ui-color 500><ui-edge-color 501>tomeliths</ui-edge-color></ui-color>."
 msgstr "В режиме „Раздробление“ на Фронтлайне игроки помогают своей компании добывать данные из <ui-color 500><ui-edge-color 501>томелитов</ui-edge-color></ui-color>."
@@ -370,10 +370,10 @@ msgstr "В режиме „Раздробление“ на Фронтлайне
 #. ja: 「フィールド・オブ・グローリー」における「情報値」は、<br>エリア内に点在する「アラガントームリス」の占拠、<br>もしくは「アイスドトームリス」の破壊によって獲得できます。
 #. de: Die Daten sind in allagischen Echolithen und vereisten Echolithen gespeichert.
 #. fr: Cette valeur fluctue en fonction de l'occupation des mémolithes allagois ou de la destruction des mémolithes congelés qui se trouvent sur le terrain.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/001/ComDefFrontLine_00182:TEXT_COMDEFFRONTLINE_00182_SYSTEM_330_011:1"
 msgid "However, unlike tomeliths in a seize campaign, tomeliths in a shatter campaign may be <ui-color 500><ui-edge-color 501>occupied</ui-edge-color></ui-color> or <ui-color 500><ui-edge-color 501>destroyed</ui-edge-color></ui-color>."
 msgstr "В отличие от сражений на Захват, здесь томелиты можно <ui-color 500><ui-edge-color 501>захватывать</ui-edge-color></ui-color> или <ui-color 500><ui-edge-color 501>уничтожать</ui-edge-color></ui-color>."

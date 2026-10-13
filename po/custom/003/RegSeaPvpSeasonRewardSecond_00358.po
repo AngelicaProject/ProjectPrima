@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: おぉ、<if ($n1 >= 1)>クリスタルコンフリクト<else>ザ・フィースト</if>の上位入賞者ではありませんか！<br>早速、好成績を収めた者のみが手にすることができる、<br>ランキング報酬をお受け取りください！！
@@ -18,7 +18,7 @@ msgstr "А, да это же один из самых свирепых бойц�
 #. de: <if ($n1 >= 1)>Derzeit läuft die <num $n1>. Saison von „Crystalline Conflict“!<else>Derzeit läuft die Vorsaison von „Crystalline Conflict“.</if><br><if ($n2 >= 1)>Als Versorgungsoffizier ist es meine Pflicht und zugleich mein Privileg, dafür zu sorgen, dass die erfolgreichen Teilnehmer der vergangenen Saison ihre rechtmäßigen Belohnungen erhalten.<else>Da die vergangene Saison eine Vorsaison war, werden keine Belohnungen dafür ausgegeben.</if><br>Ich kann dir gerne mehr darüber erzählen, wie Belohnungen verteilt werden.
 #. fr: <if ($n1 >= 1)>La saison <num $n1> de Crystalline Conflict est ac<shy>tu<shy>el<shy>le<shy>ment en cours<else>Crystalline Conflict est ac<shy>tu<shy>el<shy>le<shy>ment en pré-saison</if>. <if ($n2 >= 1)>Je suis chargé de remettre leur récompense aux combattants qui se sont parrrticulièrement distingués lors de la dernière saison, mais je peux aussi répondre à tes questions, si tu en as.<else>Il n'y a aucune récompense accorrrdée pour la pré-saison qui s'est terminée récemment. En revanche, je peux répondre à tes questions, si tu en as.</if>
 #. macro: <if ($n1 >= 1)>Season <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 >= 1 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -123,8 +123,8 @@ msgstr "Но я всё равно с радостью вручу тебе наг
 #. ja: おめでとうございます！！<br>頂点に近づいた勇者へ贈られる報酬をお受け取りください。<br>新たなシーズンでは頂きに立てるよう、応援しております！
 #. de: Herzlichen Glückwunsch! Du bist dem kristallenen Zenit schon sehr nahe gekommen und wirst dafür reichlich belohnt werden. Vielleicht wirst du ja in der neuen Saison den Gipfel erklimmen!
 #. fr: <if $gn4>Quelle championne<else>Quel champion</if><nbsp>! Un peu plus et tu te hissais sur la plus haute marche... Quoi qu'il en soit, tu as bien mérité une récompense pour ce noble fait d'arrrmes. En espérant que tu décrocheras la timbale à la prochaine saison<nbsp>!
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_112:1"
 msgid "Congratulations! You must've triumphed in nigh on endless conflicts to rise this high in the rankings. Never fear─I am more than happy to present you your rewards ere you <i>even consider</i> wresting them from my grasp by force."
 msgstr "Поздравляю! Чтобы подняться так высоко в рейтинге, тебе пришлось одержать победу в бесчисленных сражениях. Не волнуйся, я с радостью вручу награды, пока ты <i>даже не задумался</i> о том, чтобы силой вырвать их из моих рук."

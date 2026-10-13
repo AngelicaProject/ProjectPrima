@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: キャンプ・オーバールックのアルフィノは、清々しそうだ。
@@ -119,7 +119,7 @@ msgstr "Судя по... <i>Кхе...</i> Похоже, я всё-таки пе�
 #. fr: Je vais rester ici et garder un œil sur cette tour. N'oubliez pas qu'on vous attend à Ala Mhigo. Bonne route<nbsp>!
 #. speaker: STORMOFFICER
 #. macro: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -188,8 +188,8 @@ msgstr "Ты в порядке, <split \" \" 1><string $gs1></split>? А мы н
 #. de: Verrückte Sache, nicht wahr? Ein gigantischer, gespenstischer Drache, der den ganzen Garten in Brand gesteckt hat. Er scheint Fandaniels Befehlen zu gehorchen, aber<nbsp>...
 #. fr: Cet étrange dragon semblait être sous le contrôle de Fandaniel... Il me rappelle quelque chose...
 #. speaker: ALISAIE
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_ALISAIE_100_011:1"
 msgid "That dragon let us off lightly. Honestly, though─only a <i>madman</i> would choose the name “Lunar Bahamut.” Which just about sums up Fandaniel, I suppose..."
 msgstr "Этот дракон легко с нами отделался. Хотя, если честно, назвать его «Лунным Бахамутом» мог только <i>безумец</i>. Что, впрочем, многое говорит о Фанданиэле..."
@@ -260,7 +260,7 @@ msgstr "Нет, вы никуда не пойдёте. Вам надо отдо�
 
 #. ja: リセの言うとおり、塔の調査は吾輩らで試みよう。<br>成果が出次第、各国と「暁」にも共有する。<br>そのときにまた、お前たちの意見を聞かせてくれ。
 #. de: Das Auskundschaften der Türme über<shy>nehmen wir. Sobald wir etwas herausgefunden haben, werden wir unsere Informationen mit euch und den Anführern der Stadt<shy>staaten teilen. Ihr werdet früh genug wieder in Anspruch genommen, keine Sorge.
-#. fr: Laissez-nous inspecter la tour. Nous vous contacterons dès que nous aurons du concret.
+#. fr: Laissez-nous inspecter la tour. Nous vous contacterons dès que nous aurons du concret. 
 #. speaker: RAUBAHN
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_RAUBAHN_000_023:1"
 msgid "Should we learn anything about the tower, we'll be sure to share it with you. Until then, I want you to rest."
@@ -286,8 +286,8 @@ msgstr "Если асианец снова даст о себе знать, мы
 #. de: Die Heilung der Besessenheit war ein voller Erfolg, wie ich hörte! Umso mehr ist es nun unsere Pflicht, herauszufinden, was genau hinter diesen Türmen steckt<nbsp>...
 #. fr: Vous avez réussi à mettre au point un sort de soin pour la subjugation, c'est génial<nbsp>! C'est à nous de faire de notre mieux maintenant. Je ne vais pas tarder à partir inspecter la tour.
 #. speaker: LYSE
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_LYSE_000_031:1"
 msgid "So you really did it─you found a cure for tempering! Oh, it makes me want to do something heroic, <i>right now</i>! Speaking of which, I'd better get ready and set out for the tower!"
 msgstr "Так вы и правда нашли лекарство от порабощения! Вот бы и мне сейчас совершить что-нибудь героическое! Кстати, пора собираться и отправляться к башне!"
@@ -312,8 +312,8 @@ msgstr "Я'штола вернулась буквально перед нами.
 #. de: Du liebe Zeit, ich bin ehrlich froh, nun endlich ein wenig die Füße hochlegen zu dürfen. Wir waren wirklich viel unterwegs. Auch wenn ich die Müdigkeit bis eben noch gar nicht bemerkt hatte. Mit dir an meiner Seite fühlt sich eben alles nach Vergnügen an.
 #. fr: On a vraiment courrru aux quatre coins du continent ces derniers temps... Heu<shy>reu<shy>se<shy>ment que mon corps est bien plus robuste que dans le premier reflet. Cela dit, je ne suis pas mécontent de pouvoir souffler un peu...
 #. speaker: GRAHATIA
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_GRAHATIA_000_034:1"
 msgid "Though my new...or rather old...by which I mean young... Ahem. Though <i>this</i> body has a good deal more stamina than the one I wore out in the First, I confess I've been looking forward to a moment's respite. We've had a busy few days, have we not?"
 msgstr "Пусть это тело и... вернее, прежнее... то есть молодое... Кхм. Пусть <i>это</i> тело куда выносливее того, что я износил на Первом осколке, признаюсь, я давно мечтал передохнуть. Мы ведь последние дни только и делали, что носились туда-сюда."
@@ -387,7 +387,7 @@ msgstr "А само чудовище и правда напоминало пра
 
 #. ja: 確かに姿形は、あなたと見た蛮神バハムートに、<br>似ていた気もするけれど……。
 #. de: Und er sieht in der Tat aus wie der Primae Bahamut, dem du dich einst gestellt hast. Aber<nbsp>...
-#. fr: Il ressemblait beaucoup au Primordial qu'on a vu <if $gn4>toutes<else>tous</if> les deux à l'intérieur de la Marque du Météore...
+#. fr: Il ressemblait beaucoup au Primordial qu'on a vu <if $gn4>toutes<else>tous</if> les deux à l'intérieur de la Marque du Météore... 
 #. speaker: ALISAIE
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_ALISAIE_000_054:1"
 msgid "And the creature certainly did resemble the elder primal."
@@ -461,8 +461,8 @@ msgstr "Пока неизвестно ни кто это сделал, ни за
 #. de: Laut den Informationen der Allianz sind solche Türme in Gyr Abania, im Finsterwald, in La Noscea, in Thanalan, in Dravania und selbst in Yanxia aufgetaucht<nbsp>...
 #. fr: D'après l'Alliance, des édifices similaires sont apparus dans toutes les régions d'Éorzéa, mais aussi à Yanxia...
 #. speaker: KRILE
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_KRILE_000_063:1"
 msgid "On the subject of the towers, you may be interested to learn that they are <i>not</i> an exclusively Eorzean phenomenon. According to the Alliance, they have been sighted as far afield as Yanxia."
 msgstr "Кстати, эти башни стоят не только в Эорзее. По данным Альянса, их заметили даже в Янься, на Дальнем Востоке."
@@ -495,8 +495,8 @@ msgstr "Эстиниен!"
 #. de: Estinien? Natürlich wäre seine Hilfe mehr als willkommen, aber<nbsp>... können wir überhaupt Kontakt zu ihm herstellen? Das wäre ja etwas ganz Neues<nbsp>...
 #. fr: Quoi<nbsp>!? Son aide nous serait cer<shy>tai<shy>ne<shy>ment très précieuse, mais... comment allez-vous réussir à le contacter<nbsp>?
 #. speaker: ALPHINAUD
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_ALPHINAUD_000_068:1"
 msgid "<i>Estinien</i>? Now just a moment... If he could be persuaded to lend us his lance, I would be the first to welcome it, but the truth is, we will struggle even to find him."
 msgstr "<i>Эстиниен</i>? Постойте-ка... Будь он готов одолжить нам копьё, я бы только обрадовался. Но ведь его ещё найти надо."
@@ -513,8 +513,8 @@ msgstr "Хе-хе! Оставьте это нам с Крайлью. Где бы
 #. de: Versteckt ist bei ihm vielleicht das falsche Wort, aber Tataru hat Recht. Unser Netzwerk ist gewaltig. Lange wird der Drachenreiter sich nicht unseren Blicken entziehen können, egal, wie sehr er sich auch winden mag.
 #. fr: C'est vrai que le Dragon céleste est difficile à saisir, même s'il ne joue pas spé<shy>cia<shy>le<shy>ment les fugitifs... Mais j'ai bon espoir de le retrouver.
 #. speaker: KRILE
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_KRILE_000_070:1"
 msgid "If indeed he <i>is</i> hiding. We have ways of locating him, regardless. So if there are no objections, we shall depart at once."
 msgstr "Если, конечно, он вообще прячется. У нас есть способы его найти. Если никто не против, отправимся немедленно."
@@ -555,8 +555,8 @@ msgstr "Что вы ответите?"
 #. de: Einmal die letzten Tage zu erleben, hat mir mehr als gereicht, vielen Dank.
 #. fr: Une nouvelle apocalypse<nbsp>? Il n'en est pas question<nbsp>!
 #. speaker: A1
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_A1_000_001:1"
 msgid "'Twas ever the way. The world <i>often</i> needs saving."
 msgstr "Так уж заведено. Миру <i>часто</i> нужно спасение."
@@ -605,8 +605,8 @@ msgstr "Да ладно, я такого не говорил. Пусть пут�
 #. de: Dabei fühlt sich das gerade erst wie der Auftakt zu einem hochdramatischen Stück an<nbsp>... Und du weißt ja, wie es sich mit solchen Geschichten verhält. <if $gn4>Die Heldin<else>Der Held</if> feiert am Ende den Sieg, also lass dich von diesen Telophoroi bloß nicht verunsichern!
 #. fr: Pas question d'y mettre déjà un point final alors qu'on vient juste de commencer. Ces Télophores n'ont qu'à bien se tenirrr<nbsp>!
 #. speaker: GRAHATIA
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_GRAHATIA_000_077:1"
 msgid "A <i>long</i> future, mind, whatever the Telophoroi might hope. We'll stop them, won't we. Together."
 msgstr "Будущее будет <i>долгим</i>, что бы ни задумали телофорои. Мы их остановим, правда? Вместе."
@@ -623,8 +623,8 @@ msgstr "Ха-ха... Может, вздремнёшь, пока есть вре�
 #. de: Ich glaube, das gefällt mir. So gerne ich es auch mag, an deiner Seite Abenteuer zu erleben, dein Wohlbefinden steht an erster Stelle. Gönn dir eine ordentliche Mütze Schlaf. Wir wissen beide, dass das nächste Gefecht schon auf dich wartet.
 #. fr: Même si je suis toujours aussi im<shy>pres<shy>sion<shy>né de te voirrr dans le feu de l'action, je me fais parfois du souci pour ta santé. Prends le temps de te reposer, pour ensuite pouvoir reprendre le combat de plus belle<nbsp>!
 #. speaker: GRAHATIA
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/040/LucKmj110_04016:TEXT_LUCKMJ110_04016_GRAHATIA_000_079:1"
 msgid "As much as I enjoy our adventures together, I <i>am</i> conscious of the toll they take. So let us gather our strength while we can, that we might rise to the challenges of the unwritten future."
 msgstr "Мне нравится быть с тобой в приключениях, но я ведь вижу, как они тебя изматывают. Давай передохнём и наберёмся сил, чтобы встретить все испытания ещё не написанного будущего."

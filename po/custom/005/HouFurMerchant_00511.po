@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja:  リテイナーを呼び出すことができませんでした。
@@ -72,7 +72,7 @@ msgstr "История продаж."
 #. ja: クラス・ジョブを選択する [ <sheet ClassJob $n1 0> ]
 #. de: Job oder Klasse festlegen (Momentan: <sheet ClassJob $n1 0>)
 #. fr: Choisir la classe ou le job (<sheet ClassJob $n1 0>)
-#. macro: <title-case><sheet ClassJob $n1 0></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><sheet ClassJob $n1 0></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_A1_000_004:1"
 msgid "Assign mannequin class. (Current setting: <title-case><sheet ClassJob $n1 0></title-case>)"
@@ -154,7 +154,7 @@ msgstr "Прервать."
 #. ja: <sheet ClassJob $n1 0>
 #. de: <sheet ClassJob $n1 0>
 #. fr: <capitalize><sheet ClassJob $n1 0></capitalize>
-#. macro: <title-case><sheet ClassJob $n1 0></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><sheet ClassJob $n1 0></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_A3_000_001:1"
 msgid "<title-case><sheet ClassJob $n1 0></title-case>."
@@ -851,8 +851,8 @@ msgstr "Надеюсь, дело того стоит."
 #. ja: 俺様を呼びつけるか……。<br>余程の用件でなくば、許さんぞ？
 #. de: Oh, ein Auftrag<nbsp>...? Ich hoffe, es is' wichtig.
 #. fr: J'espère que tu ne m'appelles pas pour rien. J'ai d'autres chats à fouetter.
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_ENTER_HROTHGAR_MALE_TYPE3:1"
 msgid "<i>What</i>?"
 msgstr "<i>Что</i>?"
@@ -996,8 +996,8 @@ msgstr "Ты позвал — я пришла."
 #. ja: はぁ～い、待ちくたびれちゃった。<br>ご主人様に呼ばれるの、嬉しいわよ～？
 #. de: Ah, <if $gn4>meine Beste<else>mein Bester</if>! Na, alles gut?
 #. fr: Ouah, je suis trop contente que tu m'aies appelée<nbsp>! J'avais hâte de pouvoir t'aider<nbsp>!
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <if $gn4>milady<else>milord</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_ENTER_HROTHGAR_FEMALE_TYPE4:1"
 msgid "At last─I thought you'd <i>never</i> call. What does <if $gn4>milady<else>milord</if> need of me?"
@@ -1008,8 +1008,8 @@ msgstr "Наконец-то! Я уж думала, ты <i>никогда</i> м
 #. fr: Ouah, si je m'attendais à ce que ce soit toi, <split " " 1><string $gs1></split>, qui m'appelles<nbsp>!
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_ENTER_HROTHGAR_FEMALE_TYPE5:1"
 msgid "Could it be...? The famous <split \" \" 1><string $gs1></split> has called on <i>me</i>? \\<chuckle>"
 msgstr "Неужели... Ко мне заглянула сама знаменитая <split \" \" 1><string $gs1></split>? <i>Хе-хе.</i>"
@@ -1030,7 +1030,7 @@ msgid "If that is all, I will take my leave now, <if $gn4>Mistress<else>Master</
 msgstr "Если это всё, я пойду, <if $gn4>госпожа<else>господин</if>."
 
 #. ja: じゃあな！
-#. de: Ich soll auf mich aufpassen? Wer bist du, meine Mutter?
+#. de: Ich soll auf mich aufpassen? Wer bist du, meine Mutter?	
 #. fr: À la revoyure<nbsp>!
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_LEAVE_HYURAN_MALE_TYPE2:1"
 msgid "Take care o' yerself, hear?"
@@ -1044,7 +1044,7 @@ msgid "Until we next meet."
 msgstr "До новой встречи."
 
 #. ja: んじゃ、さいなら。
-#. de: Nun, wurde ja auch Zeit. Wieder<shy>sehen!
+#. de: Nun, wurde ja auch Zeit. Wieder<shy>sehen!	
 #. fr: Bon, ben, je dois y aller. À plus<nbsp>!
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_LEAVE_HYURAN_MALE_TYPE4:1"
 msgid "Well, it's about time. Good-bye."
@@ -1558,8 +1558,8 @@ msgstr "Хм. Надеюсь, в следующий раз дело будет �
 #. ja: ほかに貴様の望みを満たせる者が、<br>果たしてどれほどいたものか？<br>……また呼ぶがいい。
 #. de: Wenn das alles war, dann ziehe ich mich jetzt zurück.
 #. fr: Peu de gens peuvent rendre ce genre de service, tu sais<nbsp>? Allez, n'hésite pas à faire appel à moi la prochaine fois.
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_LEAVE_HROTHGAR_MALE_TYPE3:1"
 msgid "<i>Good-bye</i>."
 msgstr "<i>Прощай</i>."
@@ -1660,8 +1660,8 @@ msgstr "Пойду-ка пропущу ещё стаканчик. Ты знае�
 #. ja: なんだよ～、もう終わりぃ？<br>それじゃ行くけどぉ……また呼べよな。
 #. de: Wie, das war's schon? Meinetwegen. Wenn du noch einen Auftrag hast, melde dich.
 #. fr: Déjà fini<nbsp>? Bon... ben je m'en vais alors...
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_LEAVE_VIERA_MALE_TYPE5:1"
 msgid "What─is that it? Are you <i>sure</i> you need a retainer?"
 msgstr "Чего — и это всё? Ты <if $gn4>уверена<else>уверен</if>, что тебе <i>точно</i> нужен ретейнер?"
@@ -1706,7 +1706,7 @@ msgstr "Больше ничего не нужно, <if $gn4>миледи<else>м
 
 #. ja: アハハッ……もう用事、済んだ感じ、かな。<br>あ、じゃあ……帰っとく、ね……！
 #. de: Hm? War das wirklich schon alles? Worüber haben wir überhaupt gerade gesprochen?
-#. fr: Hm<nbsp>? C'est tout<nbsp>? Bon ben dans ce cas, à plus tard
+#. fr: Hm<nbsp>? C'est tout<nbsp>? Bon ben dans ce cas, à plus tard 
 #, aeria-term-model-exception: Nothing 98b6b2a6ba3c
 msgctxt "custom/005/HouFurMerchant_00511:TEXT_HOUFURMERCHANT_00511_LEAVE_HROTHGAR_FEMALE_TYPE5:1"
 msgid "Nothing else? Right... I'll be off!"

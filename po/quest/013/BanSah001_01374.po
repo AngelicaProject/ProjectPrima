@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 黒渦団：軍令部のル・アシャ大甲佐は、冒険者に折り入って頼みたいことがあるようだ。
@@ -131,7 +131,7 @@ msgstr "Поговорите с Новвом."
 #. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if>rr <if ($gn52 > 0)><if ($gn52 > 0)><if $gn4><sheet GCRankLimsaFemaleText $gn52 0><else><sheet GCRankLimsaMaleText $gn52 0></if><else><if ($gn53 > 0)><if $gn4><sheet GCRankGridaniaFemaleText $gn53 0><else><sheet GCRankGridaniaMaleText $gn53 0></if><else><if ($gn54 > 0)><if $gn4><sheet GCRankUldahFemaleText $gn54 0><else><sheet GCRankUldahMaleText $gn54 0></if></if></if></if> <split " " 2><string $gs1></split><else><if ($gn53 > 0)><split " " 1><string $gs1></split><else><split " " 1><string $gs1></split></if></if>. Si c'est du travail que tu es venu<if $gn4>e</if> chercher, j'ai ce qu'il te faut.
 #. speaker: RASHAHT
 #. macro: <if ($gn52 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -219,7 +219,7 @@ msgid "As ye can see, there ain't much for me to coordinate. The fishbacks made 
 msgstr "Как видите, координировать тут особо нечего. Рыбоморды натворили с кораблём дел... До берега живыми добралась лишь горстка бедолаг."
 
 #. ja: (-遭難者の女性-)うっ、うっ……ここは……どこなの？<br>私の……私のかわいいロビンは……どこにいったの……？
-#. de: (-Verunglückte Frau-)Wo ... Wo bin ich? Wo ist ... mein kleiner Robyn?
+#. de: (-Verunglückte Frau-)Wo ... Wo bin ich? Wo ist ... mein kleiner Robyn? 
 #. fr: (-Femme déchevelée-)(pleure)<br>Où... suis-je<nbsp>? Où est Robyn<nbsp>? Où est mon fils<nbsp>!?
 #. speaker: WOMAN01374
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_WOMAN01374_000_012:1"
@@ -243,7 +243,7 @@ msgid "The tide's been merciful to a fortunate few like the goodwife here, an' c
 msgstr "Прилив оказался милостив к немногим счастливчикам вроде этой женщины и вынес их прямо на берег."
 
 #. ja: 海岸にいる遭難者を介抱し、救助の手助けをお願いします！<br>怪我人には、この「<sheet EventItem 2001288 0>」を使ってください。<br>私は、ご婦人を介抱していますので……。
-#. de: Kann ich mit deiner Unterstützung rechnen? Hilf den gestrandeten Schiffbrüchigen und versorge die Verletzten mit dieser <noun-de EventItem 5 2001288 1 3 1>. Ich werde mich währenddessen weiter um diese Frau hier kümmern.
+#. de: Kann ich mit deiner Unterstützung rechnen? Hilf den gestrandeten Schiffbrüchigen und versorge die Verletzten mit dieser <noun-de EventItem 5 2001288 1 3 1>. Ich werde mich währenddessen weiter um diese Frau hier kümmern. 
 #. fr: Tiens, prends ces <noun-fr EventItem 12 2001288 2 1> et va aider les survivants qui peuvent encore être sauvés. Je vais m'occuper de cette pauvre femme.
 #. speaker: WILTFALK
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_WILTFALK_000_015:1"
@@ -259,7 +259,7 @@ msgid "Ye didn't spy any little ones amongst the survivors, did ye? A shame, it 
 msgstr "Среди выживших не было детей? Вот беда. Настоящая беда..."
 
 #. ja: (-遭難者の女性-)……私のロビンは……どこ……！？<br>海に落ちたときには、しっかりこの腕に抱いていたのに……！<br>ああ……私のかわいいボウヤ……！！
-#. de: (-Verunglückte Frau-)Wo bist du nur, mein kleiner Robyn?<br>Dabei hatte er sich doch so gut an mir festgehalten, als wir über Bord gerissen wurden ... \<schluchz>
+#. de: (-Verunglückte Frau-)Wo bist du nur, mein kleiner Robyn?<br>Dabei hatte er sich doch so gut an mir festgehalten, als wir über Bord gerissen wurden ... \<schluchz> 
 #. fr: (-Femme déchevelée-)Vous n'avez pas vu mon petit Robyn<nbsp>? Je le tenais fermement dans mes bras quand nous sommes tombés à l'eau. Si fermement...
 #. speaker: WOMAN01374
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_WOMAN01374_000_017:1"
@@ -294,8 +294,8 @@ msgstr "<i>Ха... Хх...</i> Я... едва дышу..."
 #. de: Ich bin gerettet!<br>Wo bin ich hier bloß? Das Paradies hab ich mir anders vorgestellt ...
 #. fr: Merci... Merci... Où suis-je<nbsp>? Les Rives sanglantes<nbsp>?
 #. speaker: VICTIMB01374
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_VICTIMB01374_000_023:1"
 msgid "\\<cough> \\<pant> Thank you...thank you... Which of the seven heavens is this? <i>Bloodshore</i>? Oh..."
 msgstr "<i>Кхе-кхе...</i> <i>Ха-а...</i> Спасибо... спасибо... В каком из семи небес я очутился? На <i>Кровавом берегу</i>? Ох..."
@@ -309,12 +309,12 @@ msgid "Ugh... Wave slammed me into the rocks... They cut me up some, I think. Is
 msgstr "Ух... Волной меня швырнуло на скалы... Кажется, я весь изрезан. Сильно?.."
 
 #. ja: あ、ありがとう……助かった……。<br>突然、轟音とともに船が傾いたと思ったら……襲ってきたんだ。<br>海賊と……サカナのような異形の蛮族どもが……。
-#. de: Vielen Dank! Ich fühle mich schon viel besser! ... Wir sind wie aus dem Nichts angegriffen worden. Erst kam der Donner, dann bekamen wir Schlagseite ... Und auf einmal waren diese Seeräuber da. Und komische Fischwesen, die bestimmt zu den Wilden Stämmen gehören.
+#. de: Vielen Dank! Ich fühle mich schon viel besser! ... Wir sind wie aus dem Nichts angegriffen worden. Erst kam der Donner, dann bekamen wir Schlagseite ... Und auf einmal waren diese Seeräuber da. Und komische Fischwesen, die bestimmt zu den Wilden Stämmen gehören. 
 #. fr: Mille mercis, je me sens mieux. Tout ce dont je me souviens, c'est d'un bruit semblable au tonnerre et le pont qui vole en éclats...
 #. speaker: INJURERA01374
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_INJURERA01374_000_025:1"
 msgid "My thanks. I feel much stronger now.<br>...All I remember is an impact like bloody thunder, and the deck lurching beneath my feet. Then <i>they</i> came aboard."
 msgstr "Спасибо. Мне уже куда лучше.<br>...Помню только грохот, будто гром грянул, и как палуба заходила у меня под ногами. А потом они поднялись на борт."
@@ -377,7 +377,7 @@ msgid "Leviathan's scaly arse!"
 msgstr "Да чтоб Левиафан их пожрал!"
 
 #. ja: こ、こんなところにまで……<br>サハギン族だとっ！？
-#. de: Die Sahagin ... hier?!
+#. de: Die Sahagin ... hier?! 
 #. fr: Des Sahuagins<nbsp>? Ici<nbsp>!?
 #. speaker: WILTFALK
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_WILTFALK_000_035:1"
@@ -461,8 +461,8 @@ msgstr "Я в порядке, только немного промок! Дума
 #. de: Weißt du, diese Fischmänner sind keine bösen Fischmänner. Die Bösen waren die, die auf unserem Schiff waren - aber das waren ja andere!
 #. fr: Ils sont pas du tout comme ceux qui nous ont attaqués<nbsp>! C'est bizarre, hein<nbsp>? Je croyais qu'ils étaient tous méchants<nbsp>!
 #. speaker: ROBYN
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_ROBYN_000_051:1"
 msgid "They were naught like the scary ones that came after our ship! But the stories say that <i>all</i> the fishmen are nasty... Isn't that odd?"
 msgstr "Они совсем не похожи на страшных, что напали на наш корабль! А в сказках говорят, что <i>все</i> рыбочеловеки злые... Разве не странно?"
@@ -516,7 +516,7 @@ msgid "(-Bedraggled Woman-)My precious boy...I thought him lost to the sea. I sh
 msgstr "(-Измученная женщина-)Мой милый мальчик... Я думала, море забрало его навсегда. Буду славить милость Мореплавательницы утром и вечером до конца своих дней."
 
 #. ja: サハギン族が子どもを救ったなんて……ありえない！<br>奴らは我らの宿敵、冷酷非情な蛮族のはず……。<br>……これは何かの策略なのでは！？
-#. de: Das gibt es doch gar nicht! Ein Sahagin rettet einen kleinen Jungen? Die Sahagin sind unsere Feinde - gefühllose Fischköpfe, ein Wilder Stamm eben. Das muss ein Trick sein. Die führen ganz sicher schon wieder einen neuen abscheulichen Plan im Schuppenpanzer!
+#. de: Das gibt es doch gar nicht! Ein Sahagin rettet einen kleinen Jungen? Die Sahagin sind unsere Feinde - gefühllose Fischköpfe, ein Wilder Stamm eben. Das muss ein Trick sein. Die führen ganz sicher schon wieder einen neuen abscheulichen Plan im Schuppenpanzer! 
 #. fr: J'y comprends rien<nbsp>! Pourquoi ces satanés poissons sauveraient un enfant<nbsp>? Ça a pas de sens<nbsp>! Ils préparent quelque chose... mais quoi<nbsp>?
 #. speaker: WILTFALK
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_WILTFALK_000_058:1"
@@ -524,7 +524,7 @@ msgid "Why would the fishbacks save the child of their enemy? It makes not a lic
 msgstr "Почему рыбоморды спасли ребёнка своих врагов? Ничего не понимаю. У этих бессердечных обитателей морского дна явно какой-то замысел. И очень коварный..."
 
 #. ja: フスィーッ……何だお前は！？<br>ヒレナシが俺たちの育成地に何の用だ！？<br>帰れ、ヒレナシ！　ここは俺たちの土地だっ！
-#. de: Sssssh ... Wasss willssst du?!<br>Flossenlose haben in unserer Aufzucht nichtsss verloren, kapiert?! Mach, dass du abhaussst! Das hier ist unser Land!!
+#. de: Sssssh ... Wasss willssst du?!<br>Flossenlose haben in unserer Aufzucht nichtsss verloren, kapiert?! Mach, dass du abhaussst! Das hier ist unser Land!! 
 #. fr: Fsshhh<nbsp>! Que nous veux-tu, sssans-branchies<nbsp>!? Pas un pas de plusss ou je t'embroche<nbsp>!
 #. speaker: SAHUAGINGATEMAN01374
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_SAHUAGINGATEMAN01374_000_060:1"
@@ -556,7 +556,7 @@ msgid "Pshhh... You may pass. Ssseek out Clutchfather Novv and be shhhure to kee
 msgstr "Пшшш... Можешь пройти. Найди Отца выводка Новва и обращайся к нему с уважением — он старейшина нашего клана."
 
 #. ja: フスィーッ……俺たちサハギン族に臆しないとは、<br>なかなか見所のあるヒレナシだ。<br>育成地の中に入り、「ノォヴ」の親父と会うがいい。
-#. de: Ssssh ... Das passsiert nicht oft, dass <if $gn4>eine Flossenlose<else>ein Flossenloser</if> genug Mumm in den Knochen hat, um einfach hier vorbeizukommen. Geh rein und sprich mit Novv, er ist der Bossss.
+#. de: Ssssh ... Das passsiert nicht oft, dass <if $gn4>eine Flossenlose<else>ein Flossenloser</if> genug Mumm in den Knochen hat, um einfach hier vorbeizukommen. Geh rein und sprich mit Novv, er ist der Bossss. 
 #. fr: Fsshhh, tu as cccer<shy>tai<shy>ne<shy>ment du courage, sssans-branchies. Peu des tiens osent sss'approcher de notre campement. Allez, va trouver Novv, le Père du frai, pour lui porter ssson collier.
 #. speaker: SAHUAGINGATEMAN01374
 msgctxt "quest/013/BanSah001_01374:TEXT_BANSAH001_01374_SAHUAGINGATEMAN01374_000_064:1"

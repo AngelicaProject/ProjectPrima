@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: ポルタ・プレトリアのラウバーンは、ついに動こうとしているようだ。
@@ -119,14 +119,14 @@ msgid "'Twould seem our position here is secure..."
 msgstr "Похоже, здесь мы уже в безопасности..."
 
 #. ja: <split " " 2><string $gs1></split>殿、アルフィノ殿、来てくれたか。<br>む……その重そうな包みを、義父上が私に……？
-#. de: Ah, Alphinaud und <split " " 1><string $gs1></split>! ... Ihr habt ein Paket mitgebracht?
+#. de: Ah, Alphinaud und <split " " 1><string $gs1></split>! ... Ihr habt ein Paket mitgebracht? 
 #. fr: <split " " 1><string $gs1></split>, Messire Alphinaud, je suis content de vous voir ici... Mon père vous a confié un paquet pour moi, dites-vous<nbsp>?
 #. speaker: PIPIN
 #. macro: <if ($gn52 > 0)><split " " 1><string $gs1></split><else><if ($gn53 > 0)><split " " 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMa… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><split " " 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridani… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -154,7 +154,7 @@ msgid "The Bull of Ala Mhigo's legendary sword, forged from two cursed blades...
 msgstr "Знаменитый меч Быка Ала Миго, выкованный из двух проклятых клинков..."
 
 #. ja: そうだ、かつて義父上がコロセウムでの戦いで、<br>宿敵より譲り受けた、炎の魔力を宿した呪剣だ。<br>その片方を私に……。
-#. de: Ja ... Das kann nicht sein Ernst sein! Ich ... Er hat das Schwert seinem Erzfeind in einem legendären Kampf im Kolosseum abgenommen. Es birgt gewaltige feuermagische Macht.
+#. de: Ja ... Das kann nicht sein Ernst sein! Ich ... Er hat das Schwert seinem Erzfeind in einem legendären Kampf im Kolosseum abgenommen. Es birgt gewaltige feuermagische Macht. 
 #. fr: On dirait bien, oui. Il l'a obtenue autrefois de son plus grand rival après l'avoir vaincu dans l'arène...
 #. speaker: PIPIN
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_PIPIN_000_043:1"
@@ -230,8 +230,8 @@ msgstr "Маршал Тарупин, постойте!"
 #. de: Die Ferae Domitae sind doch zwangsrekrutierte Soldaten eines Stammes von Wolfswesen, wenn ich mich nicht irre? Aus ihrer Heimat Yanxia verschleppt, während ihre Familien in der Gewalt der Garlear verblieben - so waren sie gezwungen, für ihre Feinde zu kämpfen.
 #. fr: Ces hommes-loups sont en réalité originaires de Doma, où ils sont connus sous le nom de Lupins. De ce que je sais, l'Empire les forcerait à combattre dans son armée en menaçant de tuer des membres de leurs familles pris en otage.
 #. speaker: ALPHINAUD
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_ALPHINAUD_000_057:1"
 msgid "These “wolfmen” of whom you speak hail from Doma. They were <i>coerced</i> into fighting for the Empire─spirited away to a foreign land and told that if they disobeyed, the lives of their kin would be forfeit."
 msgstr "Эти «люди-волки» родом из Домы. Им <i>пришлось</i> сражаться за Империю: их увезли на чужбину и пригрозили убить родных, если они ослушаются."
@@ -253,7 +253,7 @@ msgid "Ere you engage them in battle, I beseech you: grant us a moment to go and
 msgstr "Кровавая клятва — ключевая сила в штурме дворца Ала Миго. Нельзя позволить им здесь понести потери! Я участвовал в освобождении Домы. Прошу, дайте мне шанс их убедить!"
 
 #. ja: ……確かに、ここで主力の損耗は避けたい。<br>アルフィノ殿と<split " " 2><string $gs1></split>殿に、<br>人狼部隊への対応を一任しよう。
-#. de: Verfrühte Verluste sollten wir vermeiden, das stimmt. Wenn ihr euch sicher seid, dass eure Argumente fruchten werden, dann versucht es. Redet mit den Wolfsleuten - aber falls ihr scheitert, schreiten wir ein.
+#. de: Verfrühte Verluste sollten wir vermeiden, das stimmt. Wenn ihr euch sicher seid, dass eure Argumente fruchten werden, dann versucht es. Redet mit den Wolfsleuten - aber falls ihr scheitert, schreiten wir ein. 
 #. fr: Vous avez raison. Vous et <split " " 1><string $gs1></split> avez mon aval pour parlementer avec ces hommes-loups. Restez prudents tout de même.
 #. speaker: PIPIN
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_PIPIN_000_060:1"
@@ -261,7 +261,7 @@ msgid "I am loath to gift our enemy more time to prepare...but if there is a cha
 msgstr "Не хочется давать врагу время подготовиться... но если есть хоть какой-то шанс избежать боя, надо им воспользоваться. Идите, только поторопитесь."
 
 #. ja: ありがとうございます。
-#. de: Vielen Dank, Pipin.
+#. de: Vielen Dank, Pipin. 
 #. fr: Merci, Vice-maréchal.
 #. speaker: ALPHINAUD
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_ALPHINAUD_000_061:1"
@@ -386,7 +386,7 @@ msgid "(-Ferae Domitae Centurion-)But since they must surely be false, we would 
 msgstr "(-Сотник Ферае Домитае-)Но этому не может быть правдой. Если мы примем ваши слова, нас объявят предателями! И нас, и наших близких ждёт смерть!"
 
 #. ja: (-人狼族の百人隊長-)だが、どこまでも誠であると豪語するつもりなら、<br>祖国ドマを救ったという力で、我らを止め、<br>証明してみせよッ！
-#. de: (-Kommandant der Ferae Domitae-)Wenn ihr Doma tatsächlich befreit haben solltet, so müsst ihr über große Kräfte verfügen. Zeigt sie uns! Grrr<nbsp>... Besiegt uns im Kampf!
+#. de: (-Kommandant der Ferae Domitae-)Wenn ihr Doma tatsächlich befreit haben solltet, so müsst ihr über große Kräfte verfügen. Zeigt sie uns! Grrr<nbsp>... Besiegt uns im Kampf! 
 #. fr: (-Centurion lupin-)Si vous êtes aussi forts que vous le prétendez, essayez donc de nous arrêter<nbsp>! Votre habileté au combat aura plus de poids que toutes les paroles du monde<nbsp>!
 #. speaker: HAKURO
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_HAKURO_000_116:1"
@@ -426,7 +426,7 @@ msgid "Warriors brave and true. I pray you tell us of the battle for Doma's libe
 msgstr "Вы храбрые и благородные воины. Расскажите же нам о битве за свободу Домы."
 
 #. ja: お話ししましょう、<br>ドマで何があったのかを……。
-#. de: Euer Erstaunen ist verständlich. Lasst mich erzählen, was sich in Doma zugetragen hat.
+#. de: Euer Erstaunen ist verständlich. Lasst mich erzählen, was sich in Doma zugetragen hat. 
 #. fr: Dans ce cas, laissez-nous vous expliquer ce qui est arrivé à Doma.
 #. speaker: ALPHINAUD
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_ALPHINAUD_000_072:1"
@@ -535,8 +535,8 @@ msgstr "Пойдём, не будем заставлять товарищей ж
 #. de: Dass uns die Domaner im Kampf unterstützen würden! Dank ihnen ist der Weg für die Stürmung der Burg frei. Operation Rhalgrs Komet geht in die Endphase!
 #. fr: Je n'aurais jamais imaginé que les Domiens viendraient jusqu'ici pour nous apporter leur soutien. Grâce à eux, nous allons pouvoir lancer l'assaut à l'intérieur d'Ala Mhigo. Que commence la phase finale de l'opération “Comète de Rhalgr”<nbsp>!
 #. speaker: PIPIN
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_PIPIN_000_090:1"
 msgid "Impeccable timing, those Domans! Come, comrades! The enemy's gate is down! <i>Forward</i>!"
 msgstr "Домане подоспели как нельзя вовремя! Вперёд, товарищи! Ворота врага пали! <i>В атаку</i>!"
@@ -553,8 +553,8 @@ msgstr "Неужели он и правда стал бы ждать до пос
 #. de: Die Samurai aus Doma können es sogar im Luftkampf mit fliegenden Magitek-Kampf<shy>maschinen aufnehmen! Unglaublich!
 #. fr: Les samouraïs domiens nous ont démontré à quel point ils font de vaillants combattants. Ils ont réussi à abattre ces armures volantes magitek dans les airs avec une étonnante facilité.
 #. speaker: AYMERIC
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/025/StmBda705_02552:TEXT_STMBDA705_02552_AYMERIC_000_100:1"
 msgid "By the Fury... Did that man just bring down flying armor with a single stroke <i>in midair</i>?"
 msgstr "Клянусь Яростью... Он что, одним ударом сбил магитека в полёте?"

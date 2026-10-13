@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: <sheet Item $n1 0>を使って宝箱をあけますか？
@@ -301,7 +301,7 @@ msgid "Anima"
 msgstr "Анима"
 
 #. ja: 現在のクラスレベルがクエスト受注条件レベルを下回るため獲得経験値が減少しています。それでも受け取りますか？
-#. de: Die Routine ist reduziert, weil deine momentane Stufe unter der liegt, die für den Auftrag erforderlich war. Trotzdem annehmen?
+#. de: Die Routine ist reduziert, weil deine momentane Stufe unter der liegt, die für den Auftrag erforderlich war. Trotzdem annehmen? 
 #. fr: Le niveau de votre classe actuelle est plus bas que celui recommandé. Vous pouvez l'accepter mais vous recevrez moins d'expérience. Continuer<nbsp>?
 msgctxt "Addon:102236:0:0"
 msgid "Your current class level is lower than the recommended level for this quest. You may still complete the quest, but an experience point penalty will be incurred. Proceed?"
@@ -360,7 +360,7 @@ msgstr "Основная награда"
 #. ja: マウント：<sheet Mount $n1 0>に騎乗できる
 #. de: Benötigtes Reittier: <title-case><sheet Mount $n1 0></title-case>
 #. fr: Monture requise<nbsp>: <capitalize><sheet Mount $n1 0></capitalize>
-#. macro: <title-case><sheet Mount $n1 0></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><sheet Mount $n1 0></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet Mount $n1 0> — a value from a game data sheet, such as a name; sheet = Mount, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102250:0:0"
 msgid "Required Mount: <title-case><sheet Mount $n1 0></title-case>"
@@ -438,7 +438,7 @@ msgstr "Требуется задание: <sheet Quest $n1 0>"
 #. ja: <sheet ClassJobCategory $n1 0>レベル<num $n2>以上
 #. de: <sheet ClassJobCategory $n1 0> auf Mindeststufe <num $n2>
 #. fr: <sheet ClassJobCategory $n1 0> nv <num $n2>
-#. macro: <capitalize><sheet ClassJobCategory $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJobCategory $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJobCategory $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJobCategory, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102258:0:0"
@@ -448,7 +448,7 @@ msgstr "(ур. <num $n2>) <capitalize><sheet ClassJobCategory $n1 0></capitalize
 #. ja: 現在のクラス・ジョブが、<sheet ClassJobCategory $n1 0>である
 #. de: Benötigte Klasse/Job: <sheet ClassJobCategory $n1 0>
 #. fr: Classe/job requis<nbsp>: <sheet ClassJobCategory $n1 0>
-#. macro: <capitalize><sheet ClassJobCategory $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJobCategory $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJobCategory $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJobCategory, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102259:0:0"
 msgid "Required Class/Job: <capitalize><sheet ClassJobCategory $n1 0></capitalize>"
@@ -465,7 +465,7 @@ msgstr "Требуемый уровень: ур. <num $n1>"
 #. ja: <sheet InstanceContent $n1 3>を攻略
 #. de: Dungeon-Voraussetzung: „<capitalize><sheet InstanceContent $n1 3></capitalize>“
 #. fr: Mission requise<nbsp>: <sheet InstanceContent $n1 3>
-#. macro: <capitalize><sheet InstanceContent $n1 3></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet InstanceContent $n1 3></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet InstanceContent $n1 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 1, column = 3 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102261:0:0"
 msgid "Dungeon Requirement: <capitalize><sheet InstanceContent $n1 3></capitalize>"
@@ -511,14 +511,14 @@ msgstr "<sheet ExVersion $n1 0>: установлено"
 #. ja: 現在のクラス・ジョブが、受注時と同じ、<sheet ClassJob $n1 0>である
 #. de: Benötigte Klasse/Job: <sheet ClassJob $n1 0>
 #. fr: Même classe ou job qu'en commençant la quête<nbsp>: <sheet ClassJob $n1 0>
-#. macro: <capitalize><sheet ClassJob $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ClassJob $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102267:0:0"
 msgid "Required Class/Job: <capitalize><sheet ClassJob $n1 0></capitalize>"
 msgstr "Требуемый класс/профессия: <capitalize><sheet ClassJob $n1 0></capitalize>"
 
 #. ja: 現在のクラス・ジョブが、レベル<num $n1>以上
-#. de: Ist in der momentanen Klasse min. Stufe <num $n1>
+#. de: Ist in der momentanen Klasse min. Stufe <num $n1> 
 #. fr: Être niveau <num $n1> ou plus dans la classe ou le job actuel
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102268:0:0"
@@ -633,7 +633,7 @@ msgstr "Прервать"
 #. ja: 「お気に入り（Nintendo Switch Online特典無料枠）」には<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>が登録されています。<br>変更しますか？
 #. de: Diesen Ätheryten als kostenlosen Favoriten speichern (durch Nintendo Switch Online)?<br><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize> wird dabei entfernt.
 #. fr: L'éthérite <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> est ac<shy>tu<shy>el<shy>le<shy>ment votre favori gratuit (Nintendo Switch Online).<br>Changer de favori<nbsp>?
-#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102311:0:0"
@@ -697,7 +697,7 @@ msgstr "Зарегистрировать это место назначения 
 #. fr: Retirer <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> de vos favoris et remplacer par <sheet PlaceName "<sheet Aetheryte $n2 8>" 0><nbsp>?
 #. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n2 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet Aetheryte $n2 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 2, column = 8 (game data: keep it; it may move or repeat)
-#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102319:0:0"
@@ -737,7 +737,7 @@ msgstr "<sheet PlaceName $n1 0>."
 #. ja: 「お気に入り（PlayStation®Plus特典無料枠）」には<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>が登録されています。<br>変更しますか？
 #. de: Diesen Ätheryten als kostenlosen Favoriten speichern (durch PlayStation®Plus)?<br><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize> wird dabei entfernt.
 #. fr: L'éthérite <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> est ac<shy>tu<shy>el<shy>le<shy>ment votre favori gratuit (PlayStation®Plus).<br>Changer de favori<nbsp>?
-#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102324:0:0"
@@ -820,7 +820,7 @@ msgstr "Зарегистрировать это место назначения 
 #. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」には<sheet PlaceName "<sheet Aetheryte $n1 8>" 0>が登録されています。<br>変更しますか？
 #. de: Diesen Ätheryten als kostenlosen Favoriten speichern (durch Einmalpasswort)?<br><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize> wird dabei entfernt.
 #. fr: L'éthérite <sheet PlaceName "<sheet Aetheryte $n1 8>" 0> est ac<shy>tu<shy>el<shy>le<shy>ment votre favori gratuit (Identificateur).<br>Changer de favori<nbsp>?
-#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en PlaceName 2 "<sheet Aetheryte $n1 8>" 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = text with macros, count = 2, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102335:0:0"
@@ -857,28 +857,28 @@ msgstr "При выходе из зоны ваша заявка будет от�
 
 #. ja: 達成数
 #. de: Erfüllt
-#. fr: Terminé
+#. fr: Terminé 
 msgctxt "Addon:102341:0:0"
 msgid "Completed"
 msgstr "Выполнено"
 
 #. ja: 記録数
 #. de: Erfüllt
-#. fr: Terminé
+#. fr: Terminé 
 msgctxt "Addon:102342:0:0"
 msgid "Completed"
 msgstr "Завершено"
 
 #. ja: 設置数
 #. de: Erfüllt
-#. fr: Terminé
+#. fr: Terminé 
 msgctxt "Addon:102343:0:0"
 msgid "Completed"
 msgstr "Готово"
 
 #. ja: 評価値
 #. de: Bewertung
-#. fr: Évaluation
+#. fr: Évaluation 
 msgctxt "Addon:102344:0:0"
 msgid "Evaluation"
 msgstr "Оценка"
@@ -969,7 +969,7 @@ msgstr "Назвать чокобо «<string $s1>»?"
 #. ja: <string $s1>
 #. de: <capitalize>{$s1}</capitalize>
 #. fr: <capitalize>{$s1}</capitalize>
-#. macro: <capitalize>{$s1}</capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize>{$s1}</capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 msgctxt "Addon:102401:0:0"
 msgid "<capitalize>{$s1}</capitalize>"
 msgstr "<capitalize>{$s1}</capitalize>"
@@ -977,7 +977,7 @@ msgstr "<capitalize>{$s1}</capitalize>"
 #. ja: <string $s1>
 #. de: <capitalize>{$s1}</capitalize>
 #. fr: <capitalize>{$s1}</capitalize>
-#. macro: <title-case>{$s1}</title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case>{$s1}</title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 msgctxt "Addon:102402:0:0"
 msgid "<title-case>{$s1}</title-case>"
 msgstr "<title-case>{$s1}</title-case>"
@@ -987,10 +987,10 @@ msgstr "<title-case>{$s1}</title-case>"
 #. fr: Commencer la bataille de la quête “<string $s1>”<nbsp>?<br><br><ui-color 506><ui-edge-color 507>* Cette bataille est sujette à la synchronisation de quête.<br>Si les ca<shy>rac<shy>té<shy>ris<shy>ti<shy>ques de votre personnage dépassent un certain niveau, elles seront ajustées de la façon suivante<nbsp>:<br> Niveau<nbsp>: <sheet QuestBattle $n2 3><if ($n3 > 0)><br> Niveau d'objet moyen<nbsp>: <num $n3></if></ui-edge-color></ui-color>
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <sheet QuestBattle $n2 3> — a value from a game data sheet, such as a name; sheet = QuestBattle, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
 #. macro: <if ($n3 > 0)><br> Item level: <num $n3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
@@ -1018,10 +1018,10 @@ msgstr "Выйти"
 #. fr: Commencer la bataille de la quête “<string $s1>”<nbsp>?<br><br><ui-color 506><ui-edge-color 507>* Cette bataille est sujette à la synchronisation de quête.<br>Si les ca<shy>rac<shy>té<shy>ris<shy>ti<shy>ques de votre personnage dépassent un certain niveau, elles seront ajustées de la façon suivante<nbsp>:<br> Niveau<nbsp>: <num $n2><if ($n3 > 0)><br> Niveau d'objet moyen<nbsp>: <num $n3></if></ui-edge-color></ui-color>
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 #. macro: <if ($n3 > 0)><br> Item level: <num $n3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
@@ -1142,8 +1142,8 @@ msgid "Actions & Traits"
 msgstr "Действия и тал."
 
 #. ja: PVP RANK:
-#. de: PvP-Rang:
-#. fr: Rang JcJ<nbsp>:
+#. de: PvP-Rang: 
+#. fr: Rang JcJ<nbsp>: 
 msgctxt "Addon:102454:0:0"
 msgid "PvP Rank: "
 msgstr "Ранг PvP:"
@@ -1269,7 +1269,7 @@ msgstr "Изучить «<sheet ActStr $n1 0>» за <sheet PvPAction $n2 1> о�
 #. ja: <sheet ActStr $n1 0>
 #. de: <sheet ActStr $n1 0>
 #. fr: <sheet ActStr $n1 0>
-#. macro: <capitalize><sheet ActStr $n1 0></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><sheet ActStr $n1 0></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet ActStr $n1 0> — a value from a game data sheet, such as a name; sheet = ActStr, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102473:0:0"
 msgid "<capitalize><sheet ActStr $n1 0></capitalize>"
@@ -1307,10 +1307,10 @@ msgstr "Умения и свойства PvP можно усилить с пом
 #. de: <if $n3><i><icon 62> Stufe <num $n1></i><else> Stufe <num $n1></if>
 #. fr: <if $n3><i><icon 62>Niveau <num $n1></i><else>Niveau <num $n1></if>
 #. macro: <if $n3><i><icon 62>Level <num $n1></i><else>Level <num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <icon 62> — an inline icon of the game font; icon = 62 (game data: keep it; it may move or repeat)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:102484:0:0"
 msgid "<if $n3><i><icon 62>Level <num $n1></i><else>Level <num $n1></if>"
 msgstr "<if $n3><i><icon 62>Ур. <num $n1></i><else>Ур. <num $n1></if>"
@@ -1395,7 +1395,7 @@ msgstr "Высший рейтинг:"
 
 #. ja: 最高到達階級:
 #. de: Höchste Kampfklasse:
-#. fr: Meilleur échelon atteint<nbsp>:
+#. fr: Meilleur échelon atteint<nbsp>: 
 msgctxt "Addon:102499:0:0"
 msgid "Highest Tier:"
 msgstr "Высший ранг:"
@@ -1506,9 +1506,9 @@ msgid "Societal Relations"
 msgstr "Отношения с народами"
 
 #. ja: <sheet BeastTribe $n1 11>
-#. de: <noun-de BeastTribe 5 $n1 2 1 1>
+#. de: <noun-de BeastTribe 5 $n1 2 1 1> 
 #. fr: <sheet BeastTribe $n1 11>
-#. macro: <title-case><sheet BeastTribe $n1 11></title-case> — the content with every word capitalized (may be added or dropped)
+#. macro: <title-case><sheet BeastTribe $n1 11></title-case> — the content with every word capitalized (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet BeastTribe $n1 11> — a value from a game data sheet, such as a name; sheet = BeastTribe, row = number parameter 1, column = 11 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102517:0:0"
 msgid "<title-case><sheet BeastTribe $n1 11></title-case>"
@@ -1517,12 +1517,12 @@ msgstr "<title-case><sheet BeastTribe $n1 11></title-case>"
 #. ja: <ui-color $n2><num $n1>.<if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>
 #. de: <ui-color $n2><num $n1> <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>
 #. fr: <ui-color $n2><num $n1>.<if ($n3 == 0)> <sheet BeastReputationRank $n1 1><else> <sheet BeastReputationRank $n1 2></if></ui-color>
-#. macro: <ui-color $n2> — text color from the UIColor sheet; </ui-color> restores the previous color; color = number parameter 2 (formatting: keep it as often as the source has it)
+#. macro: <ui-color $n2> — text color from the UIColor sheet; </ui-color> restores the previous color; color = number parameter 2 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet BeastReputationRank $n1 1> — a value from a game data sheet, such as a name; sheet = BeastReputationRank, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet BeastReputationRank $n1 2> — a value from a game data sheet, such as a name; sheet = BeastReputationRank, row = number parameter 1, column = 2 (game data: keep it; it may move or repeat)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:102518:0:0"
 msgid "<ui-color $n2><num $n1>. <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>"
 msgstr "<ui-color $n2><num $n1>. <if ($n3 == 0)><sheet BeastReputationRank $n1 1><else><sheet BeastReputationRank $n1 2></if></ui-color>"
@@ -1546,10 +1546,10 @@ msgstr "Получено похвал"
 #. ja: <ui-color $n2><num $n1>.<sheet BeastReputationRank $n3 1></ui-color>
 #. de: <ui-color $n2><num $n1> <sheet BeastReputationRank $n3 1></ui-color>
 #. fr: <ui-color $n2><num $n1>. <sheet BeastReputationRank $n3 1></ui-color>
-#. macro: <ui-color $n2> — text color from the UIColor sheet; </ui-color> restores the previous color; color = number parameter 2 (formatting: keep it as often as the source has it)
+#. macro: <ui-color $n2> — text color from the UIColor sheet; </ui-color> restores the previous color; color = number parameter 2 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet BeastReputationRank $n3 1> — a value from a game data sheet, such as a name; sheet = BeastReputationRank, row = number parameter 3, column = 1 (game data: keep it; it may move or repeat)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:102521:0:0"
 msgid "<ui-color $n2><num $n1>. <sheet BeastReputationRank $n3 1></ui-color>"
 msgstr "<ui-color $n2><num $n1>. <sheet BeastReputationRank $n3 1></ui-color>"
@@ -1667,7 +1667,7 @@ msgctxt "Addon:102554:0:0"
 msgid "AFK"
 msgstr "Отошёл"
 
-#. ja: オフライン
+#. ja: オフライン 
 #. de: Offline
 #. fr: Déconnexion
 msgctxt "Addon:102555:0:0"
@@ -1681,7 +1681,7 @@ msgctxt "Addon:102556:0:0"
 msgid "Harassment"
 msgstr "Домогат."
 
-#. ja: 不正行為
+#. ja: 不正行為 
 #. de: Unerlaubte Aktivitäten
 #. fr: Comportement
 msgctxt "Addon:102557:0:0"
@@ -1742,10 +1742,10 @@ msgstr "Нет"
 #. ja: <ui-color 508><ui-edge-color 509>正当な理由なく投票除名を行った場合は、<br>あなたが処罰対象になる可能性があります。</ui-edge-color></ui-color>
 #. de: <ui-color 508><ui-edge-color 509>Wer andere mit Ausschluss-Abstimmungen schikaniert, muss mit Strafen rechnen.</ui-edge-color></ui-color>
 #. fr: <ui-color 508><ui-edge-color 509>Attention<nbsp>: l'utilisation du vote d'expulsion à de mauvaises fins sera punie.</ui-edge-color></ui-color>
-#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 508> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 508 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:102566:0:0"
 msgid "<ui-color 508><ui-edge-color 509>Warning: Unjustified usage of vote dismiss is a punishable act.</ui-edge-color></ui-color>"
 msgstr "<ui-color 508><ui-edge-color 509>Предупреждение: необоснованное голосование за исключение карается.</ui-edge-color></ui-color>"
@@ -1847,10 +1847,10 @@ msgstr "Необходимый класс: <string $s1>"
 #. ja: <ui-color 500><ui-edge-color 501>報酬アイテム取得済み</ui-edge-color></ui-color>
 #. de: <ui-color 500><ui-edge-color 501>Gegenstand schon erhalten</ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501>Objet de récompense déjà obtenu</ui-edge-color></ui-color>
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:102582:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Item already received</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Награда уже получена</ui-edge-color></ui-color>"
@@ -1858,7 +1858,7 @@ msgstr "<ui-color 500><ui-edge-color 501>Награда уже получена<
 #. ja: <num $n1>人専用(TANK:<num $n2>/HEALER:<num $n3>/DPS:<num $n4>)
 #. de: Teilnehmer: <num $n1> Spieler<br>※ <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Angreifer
 #. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if> uniquement (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> soigneur<if ($n3 == 1)><else>s</if>, <num $n4> DPS)
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -1896,7 +1896,7 @@ msgstr "До <num $n1> игрок<if ($n1 == 1)><else>ов</if><br>(<num $n2> т
 #. de: Teilnehmer: <num $n7> Gruppe<if ($n7 == 1)><else>n</if> mit <if ($n1 < $n2)>je <num $n1> bis</if> <num $n2> Spielern<br>※ Pro Gruppe <if ($n3 > 0)><num $n4> Verteidiger, <num $n5> Heiler, <num $n6> Angreifer</if>
 #. fr: <num $n7> équipe<if ($n7 == 1)><else>s</if> de <if ($n1 < $n2)><num $n1> à </if><num $n2> joueur<if ($n2 <= 1)><else>s</if> <if ($n3 > 0)>(<num $n4> tank<if ($n4 == 1)><else>s</if>, <num $n5> soigneur<if ($n5 == 1)><else>s</if> et <num $n6> DPS)</if>
 #. macro: <if ($n1 < $n2)><capitalize><num $n1></capitalize> to</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><num $n1></capitalize> — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><num $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
@@ -1929,10 +1929,10 @@ msgstr "Награда: ежедневно"
 #. ja: <ui-color 500><ui-edge-color 501>報酬受領済み</ui-edge-color></ui-color>
 #. de: <ui-color 500><ui-edge-color 501>Vergütung bereits erhalten</ui-edge-color></ui-color>
 #. fr: <ui-color 500><ui-edge-color 501>Récompense déjà obtenue</ui-edge-color></ui-color>
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:102588:0:0"
 msgid "<ui-color 500><ui-edge-color 501>Reward already received</ui-edge-color></ui-color>"
 msgstr "<ui-color 500><ui-edge-color 501>Награда уже получена</ui-edge-color></ui-color>"
@@ -1954,7 +1954,7 @@ msgstr "Снять выбор"
 #. ja: <num $n1>人専用(TANK:<num $n2>/HEALER:<num $n3>/Melee DPS:<num $n4>/Ranged DPS:<num $n5>)
 #. de: Teilnehmer: <num $n1> Spieler<br>※ <num $n2> Verteidiger, <num $n3> Heiler, <num $n4> Nahkampf-, <num $n5> Fernkampfangreifer
 #. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if> uniquement (<num $n2> tank<if ($n2 == 1)><else>s</if>, <num $n3> soigneur<if ($n3 == 1)><else>s</if>, <num $n4> DPS de mêlée, <num $n5> DPS à distance)
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -1994,7 +1994,7 @@ msgstr "До <num $n1> игрок<if ($n1 == 1)><else>ов</if><br>(<num $n2> т
 #. de: Teilnehmer: <if ($n1 == $n2)><num $n1><else><num $n1> bis <num $n2></if> Spieler<if ($n2 > 1)><br>※ <num $n3> Verteidiger, <num $n4> Heiler, <num $n5> Nahkampf-, <num $n6> Fernkampfangreifer</if>
 #. fr: <if ($n1 == $n2)><num $n1> joueur<if ($n1 <= 1)><else>s</if><else><num $n1> à <num $n2> joueur<if ($n2 <= 1)><else>s</if></if><if ($n2 > 1)> (<num $n3> tank<if ($n3 == 1)><else>s</if>, <num $n4> soigneur<if ($n4 == 1)><else>s</if>, <num $n5> DPS de mêlée, <num $n6> DPS à distance)</if>
 #. macro: <if ($n1 == $n2)><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == number parameter 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -2054,7 +2054,7 @@ msgstr "???"
 #. ja: <num $n1>人用
 #. de: Teilnehmer: <num $n1>
 #. fr: <num $n1> joueur<if ($n1 <= 1)><else>s</if>
-#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><els… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1><… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 10 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
@@ -2117,14 +2117,14 @@ msgctxt "Addon:102605:0:0"
 msgid "Average Item Level: <num $n1><br>Item Level Sync: <num $n2><br>※While synced, all item stats are adjusted."
 msgstr " Средний уровень предметов: <num $n1><br> Синхронизация уровня предметов: <num $n2><br>※ При синхронизации характеристики всего снаряжения корректируются."
 
-#. ja: レベルが低い順
+#. ja: レベルが低い順 
 #. de: Stufe aufsteigend
 #. fr: Ordre croissant de niveau
 msgctxt "Addon:102606:0:0"
 msgid "Level (Ascending)"
 msgstr "Уровень (по возрастанию)"
 
-#. ja: レベルが高い順
+#. ja: レベルが高い順 
 #. de: Stufe absteigend
 #. fr: Ordre décroissant de niveau
 msgctxt "Addon:102607:0:0"
@@ -2155,10 +2155,10 @@ msgstr "Подождать"
 #. ja: マッチング後に辞退ボタンの押下、もしくは時間切れに<br>よる辞退を行うと、ペナルティがカウントされます。<br><br><ui-color 506><ui-edge-color 507>1日にペナルティが3回以上カウントされた場合、<br>一定時間コンテンツへの参加申請ができなくなります。<br><br></ui-edge-color></ui-color>よろしいですか？
 #. de: Wird am selben Tag 3 Mal „Zurückziehen“ gewählt oder versäumt, rechtzeitig die Teilnahme an einem Inhalt zu bestätigen, <ui-color 506><ui-edge-color 507>können die Inhaltssuche oder die Raid-Suche vor<shy>über<shy>gehend nicht mehr genutzt werden</ui-edge-color></ui-color>.<br>Trotzdem zurückziehen?
 #. fr: Si vous annulez votre par<shy>ti<shy>ci<shy>pa<shy>tion à une mission au cours d'une journée en cliquant sur “Se retirer” ou en laissant le compte à rebours arriver à son terme, vous recevrez une pénalité.<br><ui-color 506><ui-edge-color 507>Accumulez trois pénalités ou plus, et vous ne pourrez plus utiliser les outils de mission et de raid pendant un certain temps.</ui-edge-color></ui-color><br>Confirmer<nbsp>?
-#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 506> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 506 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:102611:0:0"
 msgid "Withdrawing from a duty three times a day, whether it be via the withdraw button or allowing the timer to run out, will incur a temporary <ui-color 506><ui-edge-color 507>penalty preventing you from registering for duty.</ui-edge-color></ui-color><br>Proceed?"
@@ -2227,10 +2227,10 @@ msgstr "Голосование"
 #. de: Die Abstimmung über den Abbruch beginnt.<br>Wenn die Mehrheit der Grup<shy>pen<shy>mit<shy>glieder zustimmt, wird die Gruppe aufgelöst und der Inhalt beendet.<br>※ Der Abbruch führt nicht zu einer Sperre für die Teilnahme an Inhalten.
 #. fr: Le vote pour l'abandon de la mission va commencer.<br>Si la majorité des équipiers l'accepte, l'équipe sera dissoute et l'instance prendra fin.<br>* Aucune pénalité d'abandon ne sera infligée.
 #. macro: <br> — a line break (may be added or dropped)
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:102621:0:0"
 msgid "Initiate a vote to abandon the current duty.<br>If more than half the party members vote <ui-color 500><ui-edge-color 501>Yes</ui-edge-color></ui-color>, the party will be disbanded and the duty will end.<br>※Please note that penalties will not be incurred for abandoning a duty in this fashion."
 msgstr "Начать голосование за отречение от задания.<br>Если «Да» ответит больше половины группы, она будет распущена, а задание завершится.<br>※ Отказ от задания таким способом не влечёт штрафа."
@@ -2245,10 +2245,10 @@ msgstr "Началось голосование за отречение"
 #. ja: 過半数のメンバーの同意が得られると、インスタンスパーティが解散され、コンテンツが終了します。<br>※ギブアップ投票による退出にはペナルティは適用されません。
 #. de: Wenn die Mehrheit der Grup<shy>pen<shy>mit<shy>glieder zustimmt, wird die Gruppe aufgelöst und der Inhalt beendet.<br>※ Der Abbruch führt nicht zu einer Sperre für die Teilnahme an Inhalten.
 #. fr: Si la majorité des équipiers l'accepte, l'équipe sera dissoute et l'instance prendra fin.<br>* Aucune pénalité d'abandon ne sera infligée.
-#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: keep it as often as the source has it)
-#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: keep it as often as the source has it)
-#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: keep it as often as the source has it)
-#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: keep it as often as the source has it)
+#. macro: <ui-color 500> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 500 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:102623:0:0"
 msgid "If more than half the party members vote <ui-color 500><ui-edge-color 501>Yes</ui-edge-color></ui-color>, the party will be disbanded and the duty will end.<br>※Please note that penalties will not be incurred for abandoning a duty in this fashion."
@@ -2546,9 +2546,9 @@ msgstr "Отклонить заявку"
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の加入申請を承諾します。<br>よろしいですか？
 #. de: Das Beitrittsgesuch von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if> annehmen?
 #. fr: Accepter la candidature <if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 9 $gn7 1 1><else><if (9 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 9 36><string $gs2><else><sheet Attributive 9 28><string $gs2></if></if></if></if><nbsp>?
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102665:0:0"
 msgid "Approve <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s application for membership?"
 msgstr "Принять заявку <if ($gs1 == $gs2)>от вас<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>$gs2</if></if>?"
@@ -2556,9 +2556,9 @@ msgstr "Принять заявку <if ($gs1 == $gs2)>от вас<else><if $gn7
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の加入申請を拒否します。<br>相手側に通知を送りますが、<br>よろしいですか？
 #. de: Das Beitrittsgesuch von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if> ablehnen?
 #. fr: Refuser la candidature <if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 9 $gn7 1 1><else><if (9 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 9 36><string $gs2><else><sheet Attributive 9 28><string $gs2></if></if></if></if><nbsp>? Le postulant rejeté sera prévenu par un message.
-#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
+#. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102666:0:0"
 msgid "Deny <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s application for membership?"
 msgstr "Отклонить заявку <if ($gs1 == $gs2)>от вас<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>$gs2</if></if>?"

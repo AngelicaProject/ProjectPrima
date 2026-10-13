@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.09.15.0000.0000\n"
+"X-Game-Version: 2026.10.06.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: コールドハースのラウバーンは、話したいことがあるようだ。
@@ -128,7 +128,7 @@ msgstr "Поговорите с М'Нааго."
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><split " " 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridani… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (may be added or dropped)
+#. macro: <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUlda… — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankLimsaMaleText $gn52 8> — a value from a game data sheet, such as a name; sheet = GCRankLimsaMaleText, row = global number 52 (the player's rank in the Maelstrom, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
@@ -310,7 +310,7 @@ msgid "Wait, I remember. They're from Radiata! They must have seen us when we we
 msgstr "Точно, вспомнила! Я видела их в Радиате, когда мы искали Старк Воуд!"
 
 #. ja: ということは、コイツらは帝国軍の下で働いてた連中……<br>アタシたちを襲って、帝国に恩を売ろうとしてたってこと？
-#. de: Es sind also Leute aus der Gegend, die für die Garlear arbeiten. Sie wollten wohl Pluspunkte sammeln, indem sie uns ihren Herren ausliefern. Aber so leicht lassen wir uns nicht verkaufen!
+#. de: Es sind also Leute aus der Gegend, die für die Garlear arbeiten. Sie wollten wohl Pluspunkte sammeln, indem sie uns ihren Herren ausliefern. Aber so leicht lassen wir uns nicht verkaufen! 
 #. fr: Ça voudrait donc dire qu'ils travaillaient pour le compte des Impériaux. Ils pensaient sûrement nous attraper pour nous livrer à l'ennemi.
 #. speaker: LYSE
 msgctxt "quest/025/StmBda620_02546:TEXT_STMBDA620_02546_LYSE_000_063:1"
@@ -353,8 +353,8 @@ msgstr "Да, у нас всё в порядке. Близнецы у Старк
 #. de: Das gibt es doch nicht ... Wir sind hier, um sie von den Garlearn zu befreien, und dann überfallen sie uns!
 #. fr: Quand je pense que nous nous sommes battus pour libérer ces gens du joug des Garlemaldais... Comment peuvent-ils nous trahir comme ça<nbsp>?
 #. speaker: MNAAGO
-#. macro: <i> — italic text (formatting: keep it as often as the source has it)
-#. macro: </i> — end of: italic text (formatting: keep it as often as the source has it)
+#. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/025/StmBda620_02546:TEXT_STMBDA620_02546_MNAAGO_000_073:1"
 msgid "I'm sorry, did you say you were ambushed by <i>villagers</i>? Not soldiers? Did they not see what we just did to Castrum Abania? Godsdamned fools!"
 msgstr "Простите, вы сказали, что на вас напали <i>деревенские</i>? Не солдаты? Они что, не видели, что мы сделали с Каструмом Абания? Проклятые дураки!"
@@ -402,7 +402,7 @@ msgid "Bloody fools! After everything they've seen us accomplish! They ought to 
 msgstr "Чтоб их! После всего, что мы сделали! Им бы проситься в Сопротивление, а не нападать на нас!"
 
 #. ja: ……何度も何度も殴られて屈服させられて、<br>餓えの中でエサを与えられれば、犬のように従う者も出てきちまう。<br>圧倒的な暴力の前には、抗う心を抱く隙すらないんだ。
-#. de: Wir wurden so lange unterjocht und misshandelt, dass viele sich auf jeden kleinen Brocken stürzen, den die Garlear uns hinwerfen. Sie meinen, dass sie sich die Gunst der Besatzer erkaufen können, wenn sie ihnen besonders unterwürfig dienen.
+#. de: Wir wurden so lange unterjocht und misshandelt, dass viele sich auf jeden kleinen Brocken stürzen, den die Garlear uns hinwerfen. Sie meinen, dass sie sich die Gunst der Besatzer erkaufen können, wenn sie ihnen besonders unterwürfig dienen. 
 #. fr: À force d'être battus comme des bêtes et d'endurer la faim, il y en a aussi qui finissent par devenir dociles et prêts à tout pour obtenir à manger. Devant une telle violence et une telle misère, ils perdent toute volonté de lutter.
 #. speaker: STARKWOAD
 #, aeria-term-model-exception: shadow ea4747ce0e77
