@@ -18,6 +18,7 @@ msgstr "Мастер-кузнец Брител смотрит на вас, ка�
 #. de: Schmiedemeister Brithael ist hoch erfreut darüber, dich zu sehen, denn ihm zufolge treibt Sekka alle Grobschmiede in den Wahnsinn, indem sie jedermanns Arbeit kritisiert. Er bittet dich, sie auf dem Ankerplatz zu suchen und sie zur Vernunft zu bringen.
 #. fr: Vous avez appris que Sekka menait la vie dure aux employés de la guilde, dont le moral n'est déjà pas au plus haut. Après de nombreuses prises de bec avec l'irritable forgeronne de Kugane, Brithael vous a envoyé<if $gn4>e</if> sur ses traces afin que vous la rameniez à la raison. Courez jusqu'à L'Ancrage et parlez à Sekka.
 #. kind: journal
+#, aeria-term-model-exception: Stern 685b7788f572
 msgctxt "quest/026/ClsBsm630_02616:TEXT_CLSBSM630_02616_SEQ_01:1"
 msgid "Forgemaster Brithael is beyond relieved to see you. According to him, ever since Sekka began her studies at the guild, she has taken to wandering the floors and criticizing everyone's work. Upon giving her a stern talking to about her unpleasant manner of conduct, she became upset and left in a flurry of angry words. It seems, however, this is not the first time she has stormed out over this very same argument, and Brithael asks that you try talking to her in his stead. He then points you in the direction of the Anchor Yard, where she normally goes to cool down. Make your way there and see if you can get through to her. "
 msgstr "Мастер-кузнец Брител вне себя от радости, увидев вас. По его словам, с тех пор как Сэкка пришла учиться в гильдию, она ходит по мастерским и критикует работу каждого. Он строго высказал ей всё, что думает о её скверном поведении, но она разозлилась и ушла, наговорив резкостей. Похоже, это уже не первый раз, когда она уходит из-за того же спора. Брител просит вас поговорить с ней вместо него. Обычно она остывает на Якорном дворе. Отправляйтесь туда и попробуйте до неё достучаться."
@@ -26,6 +27,7 @@ msgstr "Мастер-кузнец Брител вне себя от радост
 #. de: Sekka ist fest davon überzeugt, dass die Grobschmiede der Gilde ihr Talent damit verschwenden, banale Kundenaufträge zu erfüllen. Ihrer Meinung nach sollten sie stattdessen danach streben, ihr Können zu verbessern. Kehre zur Gilde zurück und erzähle Schmiedemeister Brithael, wie gut euer Gespräch verlief.
 #. fr: Sekka vous a expliqué la raison de son mécontentement<nbsp>: elle désapprouve la politique de Brithael, qui accable ses meilleurs éléments de tâches in<shy>si<shy>gni<shy>fiantes et les empêche ainsi de progresser. Malgré votre tentative de calmer le jeu, la jeune femme a quitté les lieux non sans vous faire savoir qu'elle ne comptait pas en rester là. Retournez auprès de Brithael et faites-lui part de votre échec.
 #. kind: journal
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "quest/026/ClsBsm630_02616:TEXT_CLSBSM630_02616_SEQ_02:1"
 msgid "Sekka is of the belief that the Blacksmiths' Guild is wasting all its potential on fulfilling mundane tasks for clients. She tells you this is the root cause for the lack of self-improvement she has observed in all the guild members. She believes things should be run differently and tells you she intends to prove it to you. Return to the Blacksmiths' Guild and inform Forgemaster Brithael of just how well your talk with Sekka went."
 msgstr "Сэкка считает, что Гильдия кузнецов растрачивает весь свой потенциал на заурядные заказы клиентов. По её мнению, именно поэтому кузнецы не стремятся совершенствоваться. Она уверена, что всё должно быть иначе, и собирается доказать это вам. Возвращайтесь в Гильдию кузнецов и расскажите мастеру-кузнецу Брителу, как прошёл ваш разговор с Сэккой."
@@ -97,9 +99,10 @@ msgstr "<if ($n1 < $n2)>Изготовьте лёгкий короткий ме�
 #. speaker: BRITHAEL
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Shop c71892a52a2f
 msgctxt "quest/026/ClsBsm630_02616:TEXT_CLSBSM630_02616_BRITHAEL_000_000:1"
 msgid "<split \" \" 1><string $gs1></split>, it's been absolute hell ever since that thrice-damned shrew ye dragged back from the docks set up shop at our guild."
-msgstr "<split \" \" 1><string $gs1></split>, мы тут уж совсем было отчаялись тебя увидеть. Эта проклятая стерва, которую ты притащил с пристани, обосновалась в нашей гильдии — и с тех пор жизнь превратилась в сущий ад."
+msgstr "<split \" \" 1><string $gs1></split>, мы тут уж совсем было отчаялись тебя увидеть. Эта проклятая стерва, которую ты <if $gn4>притащила<else>притащил</if> с пристани, обосновалась в нашей гильдии — и с тех пор жизнь превратилась в сущий ад."
 
 #. ja: 見習い職人はけなす、ベテラン職人にも難癖つける……。<br>言動に注意するよう言ったんですが「馴れ合いは不要」って、<br>聞いてくれなくて……。
 #. de: Morgens zum ersten Hahnenschrei geht das Gemecker los und es endet nicht, ehe die Sonne untergeht. Sie lungert in der Gilde herum und geht jedem auf den Geist - egal ob Anfänger oder Veteran. Täglich sage ich ihr, dass sie sich nicht über andere stellen und deren Anstrengungen belächeln soll, aber auf dem Ohr ist sie absolut taub.
@@ -182,7 +185,7 @@ msgstr "Но, увидев, как устроена ваша гильдия, я 
 #, aeria-term-model-exception: blacksmith bf76bbb99164
 msgctxt "quest/026/ClsBsm630_02616:TEXT_CLSBSM630_02616_SEKKA_000_026:1"
 msgid "I traveled here from Kugane because everyone is of the opinion that this is one of the best Blacksmiths' Guilds. Truthfully, I am disappointed. Your organization is so stagnant. Surely, you must see it too?"
-msgstr "Я приехала сюда из Куганэ, потому что все считают эту гильдию одной из лучших. Признаться, я разочарована. У вас всё застыло на месте. Неужели вы сами этого не видите?"
+msgstr "Я приехала сюда из Куганэ, потому что все считают эту гильдию одной из лучших гильдий кузнецов. Признаться, я разочарована. У вас всё застыло на месте. Неужели вы сами этого не видите?"
 
 #. ja: 何と答える？
 #. de: Was sagst du dazu?
@@ -241,7 +244,7 @@ msgid "\\<sigh> So that's what all that was about..."
 msgstr "<i>Эх…</i> Так вот в чём дело…"
 
 #. ja: まあ、彼女が態度を改めるきっかけになるかもしれません。<br>すみませんが、勝負の相手を務めてくださいませんか……？<br>さすがに、負ける訳にはいかないので……。
-#. de: Ach, vielleicht sollte ich das Ganze einfach positiver sehen. Das ist eine willkommene Gelegenheit, ihr ihre Grenzen aufzuzeigen. 
+#. de: Ach, vielleicht sollte ich das Ganze einfach positiver sehen. Das ist eine willkommene Gelegenheit, ihr ihre Grenzen aufzuzeigen.
 #. fr: Bah<nbsp>! Peut-être que je suis trop négatif. Ce défi, c'est l'occasion rêvée de lui remettre les idées en place.
 #. speaker: BRITHAEL
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
@@ -414,7 +417,7 @@ msgstr "Как всегда, с нетерпением жду готовую р�
 
 #. ja: 追加の素材が必要なら声をかけてね。<br>それにしても、セッカさんは、私たちの要望を聞かずに、<br>どんな剣を作るつもりなのかしら……。
 #. de: Falls du zusätzliche Materialien benötigst, dann zögere nicht, mich danach zu fragen. Ich muss zugeben, dass ich sehr gespannt darauf bin, was Sekka schmieden wird. Sie hat nicht einmal gefragt, was für eine Waffe Fremondain gerne hätte ...
-#. fr: Si vous avez besoin de plus de matériaux, n'hésitez surtout pas à demander. Je suis à votre entière disposition<nbsp>! En attendant, je suis très curieuse de voir ce que Sekka va nous forger. Elle n'a même pas pris la peine de nous consulter avant de se mettre au travail... 
+#. fr: Si vous avez besoin de plus de matériaux, n'hésitez surtout pas à demander. Je suis à votre entière disposition<nbsp>! En attendant, je suis très curieuse de voir ce que Sekka va nous forger. Elle n'a même pas pris la peine de nous consulter avant de se mettre au travail...
 #. speaker: LAURISSE
 msgctxt "quest/026/ClsBsm630_02616:TEXT_CLSBSM630_02616_LAURISSE_000_085:1"
 msgid "If you find yourself running low on materials, please let me know. That said, I'm quite curious to see what Sekka will make. She didn't even inquire as to what kind of blade we needed..."
@@ -462,9 +465,10 @@ msgstr "Оба меча великолепны, но один всё же зам
 #. fr: M-mais pourquoi<nbsp>!? Cette arme semble si fragile qu'on pourrait la briser rien qu'en la frôlant<nbsp>! Et puis, franchement, elle est moins agréable à l'œil et sa lame n'est pas aussi bien affûtée<nbsp>!
 #. speaker: SEKKA
 #. macro: <if $gn4>Her<else>His</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: Mine 687ef955c508
 msgctxt "quest/026/ClsBsm630_02616:TEXT_CLSBSM630_02616_SEKKA_000_111:1"
 msgid "B-But why? <if $gn4>Her<else>His</if> sword is flimsy and weak compared to mine! Added to that, mine has a superior edge and is much more aesthetically pleasing!"
-msgstr "Н-но почему? Её меч слабый и хлипкий по сравнению с моим! Да и заточка у моего лучше, и выглядит он куда красивее!"
+msgstr "Н-но почему? <if $gn4>Её<else>Его</if> меч слабый и хлипкий по сравнению с моим! Да и заточка у моего лучше, и выглядит он куда красивее!"
 
 #. ja: 軽いからこそ、です。<br>あなたの作った片手剣は、生憎とこの年寄りには重すぎて、<br>少々、手に余る代物でした……。
 #. de: Junge Dame, du kannst doch sehen, dass ich alt und gebrechlich bin. Die Jahre haben ihren Tribut gefordert. Dein Kurzschwert ist wunderschön, doch eine einfache, leichte Waffe ist alles, was ich brauche.
@@ -549,6 +553,7 @@ msgstr "Мастер-кузнец Брител, благодарю вас. Ва�
 #. de: Bist du dir sicher, dass du woanders nicht besser aufgehoben bist? Die anderen Gilden ...
 #. fr: Q-quoi<nbsp>!? T-tu es sûre de ne pas vouloir étudier ailleurs<nbsp>? Il y a plein d'autres forges mieux équipées que la nôtre...
 #. speaker: BRITHAEL
+#, aeria-term-model-exception: Study 21e180b974d2
 msgctxt "quest/026/ClsBsm630_02616:TEXT_CLSBSM630_02616_BRITHAEL_000_123:1"
 msgid "Studies? Here? Surely, ye'd prefer to go elsewhere?"
 msgstr "Учёба? Здесь? Тебе бы лучше поискать другое место, не думаешь?"

@@ -373,7 +373,7 @@ msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>t
 msgstr "До завершения испытания «<string $gs56>» осталось <num $n1> <if ($n1 == 1)>минута<else>минут</if>."
 
 #. ja: 制限時間に達したため、「<string $gs56>」の挑戦を終了した。
-#. de: Die Übung „<string $gs56>“ wurde beendet, da die Zeit abgelaufen ist. 
+#. de: Die Übung „<string $gs56>“ wurde beendet, da die Zeit abgelaufen ist.
 #. fr: Le temps imparti s'est écoulé. L'en<shy>traî<shy>ne<shy>ment “<string $gs56>” prend fin.
 #. macro: <capitalize><string $gs56></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $gs56> — a text value passed to the string; value = global text 56 (game data: keep it; it may move or repeat)
@@ -626,6 +626,7 @@ msgstr "Нельзя выполнить команду: группа не соо
 #. ja: リミテッドジョブを除くファイター、またはソーサラーではないため、実行できません。
 #. de: Nicht möglich, weil ein Grup<shy>pen<shy>mit<shy>glied weder Krieger noch Magier ist. (Beschränkte Jobs sind ausgeschlossen.)
 #. fr: Action impossible. Vous utilisez un job restreint, ou vous n'êtes pas un<if $gn4>e</if> disciple de la guerre ou de la magie.
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:7201:0:5"
 msgid "Unable to execute command. You are not a Disciple of War or Magic (excluding limited jobs)."
 msgstr "Нельзя выполнить команду: вы не относитесь ни к физическому, ни к магическому классу (ограниченные профессии не учитываются)."
@@ -695,6 +696,7 @@ msgstr "Нельзя выполнить команду: у участников 
 #. macro: <if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:7210:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> not a Disciple of War or Magic."
 msgstr "<if-self $n1>Вы не относитесь<else><capitalize><player-name $n1></capitalize> не относится</if-self> ни к физическому, ни к магическому классу."
@@ -779,6 +781,7 @@ msgstr "Нельзя выполнить команду, пока вы испол
 #. ja: ファイターもしくはソーサラーではありません。
 #. de: Du bist kein Krieger oder Magier.
 #. fr: Vous n'êtes pas disciple de la guerre ou de la magie.
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:7219:0:5"
 msgid "You are not a Disciple of War or Magic."
 msgstr "Вы не относитесь ни к физическому, ни к магическому классу."
@@ -820,7 +823,7 @@ msgstr "Вы возвращаете в сундук <lower><sheet DeepDungeonIte
 #. fr: Le coffre au trésor était en réalité <noun-fr BNpcName 1 $n1 1 1><nbsp>!
 msgctxt "LogMessage:7223:0:5"
 msgid "The coffer...bares its fangs!"
-msgstr "Сундук... оскалился!"
+msgstr "Сундук... показал клыки!"
 
 #. ja: 地雷が発動した……
 #. de: Eine Mine ist explodiert!
@@ -1093,6 +1096,7 @@ msgstr "<if-self $n1>Ваше тело<else>Тело <capitalize><player-name $n
 #. macro: <if-self $n1>Your<else><capitalize><player-name $n1></capitalize>'s</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Enemy 59fb03c90ec4
 msgctxt "LogMessage:7258:0:5"
 msgid "<if-self $n1>Your<else><capitalize><player-name $n1></capitalize>'s</if-self> body is steeled to enemy attacks."
 msgstr "<if-self $n1>Ваше тело<else>Тело <capitalize><player-name $n1></capitalize></if-self> становится неуязвимым для вражеских атак."
@@ -1591,7 +1595,7 @@ msgid "Unable to invite. That player is on your blacklist."
 msgstr "Не удалось пригласить: этот игрок у вас в чёрном списке."
 
 #. ja: その名前のキャラクターは存在しないかログアウトしている、もしくは現在異なるエリアにいるため、誘えませんでした。
-#. de: Einladung nicht möglich, weil der Charakter ausgeloggt ist, sich in einem anderen<br>Areal befindet oder kein Charakter mit dem Namen existiert. 
+#. de: Einladung nicht möglich, weil der Charakter ausgeloggt ist, sich in einem anderen<br>Areal befindet oder kein Charakter mit dem Namen existiert.
 #. fr: Invitation impossible. Le personnage n'existe pas, n'est pas en ligne ou se trouve dans une autre zone.
 msgctxt "LogMessage:7340:0:5"
 msgid "Unable to invite. Cannot locate a character with that name online or in the specified area."
@@ -1898,16 +1902,18 @@ msgstr "Не удалось вызвать на дуэль. Другому иг�
 #. ja: PvP対戦可能なジョブではないため、デュエル申請できませんでした。
 #. de: Keine Heraus<shy>forde<shy>rung möglich, da du weder einen Krieger noch einen Magier spielst. (Beschränkte Jobs sind ausgeschlossen.)
 #. fr: Impossible de faire une demande de combat singulier. Votre job ne peut pas participer au mode JcJ.
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физический
 msgctxt "LogMessage:7419:0:5"
 msgid "Unable to challenge to duel. You must be a Disciple of War or Magic (limited jobs excluded)."
-msgstr "Не удалось вызвать на дуэль. Для участия нужно состоять в физическом или магическом классе либо профессии (ограниченные профессии не подходят)."
+msgstr "Не удалось вызвать на дуэль. Для участия нужно иметь физический или магический класс (ограниченные профессии не подходят)."
 
 #. ja: 申請先のキャラクターがPvP対戦可能なジョブではないため、デュエル申請できませんでした。
 #. de: Keine Heraus<shy>forde<shy>rung möglich,<br>da der andere Spieler weder einen Krieger noch einen Magier spielt. (Beschränkte Jobs sind ausgeschlossen.)
 #. fr: Impossible de faire une demande de combat singulier. Le job de l'autre joueur ne peut pas participer au mode JcJ.
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физический
 msgctxt "LogMessage:7420:0:5"
 msgid "Unable to challenge to duel. Opponent must be a Disciple of War or Magic (limited jobs excluded)."
-msgstr "Не удалось вызвать на дуэль. Противник должен состоять в физическом или магическом классе либо профессии (ограниченные профессии не подходят)."
+msgstr "Не удалось вызвать на дуэль. Противник должен иметь физический или магический класс (ограниченные профессии не подходят)."
 
 #. ja: デュエル申請の相手と離れるとデュエル申請はキャンセルされます。
 #. de: Die Heraus<shy>forde<shy>rung wird annulliert, wenn du dich zu weit von dem anderen Spieler entfernst.
@@ -2717,7 +2723,7 @@ msgid "A ceruleum engine has departed from <noun-en PlaceName 2 $n1 2 1>."
 msgstr "Церулеумный локомотив отправился от <noun-en PlaceName 2 $n1 2 1>."
 
 #. ja: <if ($n1 == 0)>チームファルコン<else>チームレイヴン</if>がステーションを占拠した！
-#. de: Die <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falken</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Raben</ui-edge-color></ui-color></if> haben die Verladestation besetzt! 
+#. de: Die <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falken</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Raben</ui-edge-color></ui-color></if> haben die Verladestation besetzt!
 #. fr: Les <if ($n1 == 0)>Faucons<else>Corbeaux</if> ont pris le contrôle de la station<nbsp>!
 #. macro: <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falcons</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Ravens</ui-edge-color></ui-color></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <ui-color 542> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 542 (formatting: may be added, dropped, or moved; close what you open, as the source does)
@@ -2823,6 +2829,7 @@ msgstr "Без ключа дальше не пройти."
 #. de: An der Wand stehen mysteriöse Worte aus einer anderen Welt:<br>„Für jeden gefixten Bug finden wir zwei neue!“
 #. fr: Des mots mystérieux d'un autre monde ap<shy>pa<shy>rais<shy>sent sur le mur<nbsp>:<br>“Ouah<nbsp>! Il me reste plus de 300 bugs à corriger<nbsp>!”
 #. macro: <br> — a line break (may be added or dropped)
+#, aeria-term-model-exception: bug 84c532739dfc
 msgctxt "LogMessage:7543:0:5"
 msgid "A strange message appears on the wall.<br>“There's no end to these bug reports...”"
 msgstr "На стене проступает странная надпись.<br>«Этим баг-репортам конца не видно...»"
@@ -2831,6 +2838,7 @@ msgstr "На стене проступает странная надпись.<br
 #. de: An der Wand stehen mysteriöse Worte aus einer anderen Welt:<br>„Das ist kein Bug, das ist ein Feature.“
 #. fr: Des mots mystérieux d'un autre monde ap<shy>pa<shy>rais<shy>sent sur le mur<nbsp>:<br>“Ce n'est pas un bug, c'est une fonctionnalité.”
 #. macro: <br> — a line break (may be added or dropped)
+#, aeria-term-model-exception: bug 84c532739dfc
 msgctxt "LogMessage:7544:0:5"
 msgid "A strange message appears on the wall.<br>“It's not a bug, it's a feature!”"
 msgstr "На стене проступает странная надпись.<br>«Это не баг, а фича!»"
@@ -2855,6 +2863,7 @@ msgstr "На стене проступает странная надпись.<br
 #. de: An der Wand stehen mysteriöse Worte aus einer anderen Welt:<br>„Ich war das nicht.“
 #. fr: Des mots mystérieux d'un autre monde ap<shy>pa<shy>rais<shy>sent sur le mur<nbsp>:<br>“Ouh là... C'est au moins un bug de rang A, ça<nbsp>!”
 #. macro: <br> — a line break (may be added or dropped)
+#, aeria-term-model-exception: bug 84c532739dfc
 msgctxt "LogMessage:7547:0:5"
 msgid "A strange message appears on the wall.<br>“An S rank bug!? Oh boy, we're in for it now.”"
 msgstr "На стене проступает странная надпись.<br>«Баг ранга S!? Ох, нам теперь влетит...»"
@@ -3214,6 +3223,7 @@ msgstr "<switch $n1><case>Ранг B<case>Ранг A<case>Ранг S</switch> <s
 #. macro: <ui-edge-color 536> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 536 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <ui-color 537> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 537 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <ui-edge-color 538> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 538 (formatting: may be added, dropped, or moved; close what you open, as the source does)
+#, aeria-term-model-exception: Immortal Flame 785c157047f5
 msgctxt "LogMessage:7593:0:5"
 msgid "The <switch $n2><case>rank B<case>rank A<case>rank S</switch> <sheet PlaceName $n3 2> has been claimed by the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch>!"
 msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n2><case>B<case>A<case>S</switch> теперь под контролем <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
@@ -3238,7 +3248,7 @@ msgstr "<sheet PlaceName $n1 0> теперь неактивна."
 #. macro: <ui-edge-color 536> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 536 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <ui-color 537> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 537 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <ui-edge-color 538> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 538 (formatting: may be added, dropped, or moved; close what you open, as the source does)
-#, aeria-term-model-exception: High 91749b46850d
+#, aeria-term-model-exception: High 91749b46850d, aeria-term-model-exception: Immortal Flame 785c157047f5, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:7595:0:5"
 msgid "Battle High V has overtaken a member of the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch>!"
 msgstr "«Боевой подъём V» охватил участника <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
@@ -3255,7 +3265,7 @@ msgstr "«Боевой подъём V» охватил участника <switc
 #. macro: <ui-edge-color 536> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 536 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <ui-color 537> — text color from the UIColor sheet; </ui-color> restores the previous color; color = 537 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <ui-edge-color 538> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 538 (formatting: may be added, dropped, or moved; close what you open, as the source does)
-#, aeria-term-model-exception: High 91749b46850d
+#, aeria-term-model-exception: High 91749b46850d, aeria-term-model-exception: Immortal Flame 785c157047f5, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:7596:0:5"
 msgid "A member of the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch> overtaken by Battle High V has been KO'd!"
 msgstr "Участник <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch> с эффектом «Боевой подъём V» выбыл из строя!"
@@ -3263,6 +3273,7 @@ msgstr "Участник <switch $n1><case><ui-color 533><ui-edge-color 534>Ма
 #. ja: 試合開始から5分経過。同時に出現する無垢の土地の数が減少した！
 #. de: Seit Beginn des Matches sind 5 Minuten vergangen. Die Anzahl der Unschuldsflecken wurde verringert!
 #. fr: La bataille a commencé depuis 5 minutes. Le nombre de terres immaculées actives en même temps a été réduit<nbsp>!
+#, aeria-term-model-rendering: ovoo 27b9c416a3c0 овоо
 msgctxt "LogMessage:7597:0:5"
 msgid "5 minutes have elapsed. The number of simultaneously active ovoos has been reduced."
 msgstr "Прошло 5 минут. Одновременно активными могут быть меньше овоо."
@@ -3270,6 +3281,7 @@ msgstr "Прошло 5 минут. Одновременно активными �
 #. ja: 試合開始から10分経過。同時に出現する無垢の土地の数が減少した！
 #. de: Seit Beginn des Matches sind 10 Minuten vergangen. Die Anzahl der Unschuldsflecken wurde verringert!
 #. fr: La bataille a commencé depuis 10 minutes. Le nombre de terres immaculées actives en même temps a été réduit<nbsp>!
+#, aeria-term-model-rendering: ovoo 27b9c416a3c0 овоо
 msgctxt "LogMessage:7598:0:5"
 msgid "10 minutes have elapsed. The number of simultaneously active ovoos has been reduced."
 msgstr "Прошло 10 минут. Одновременно активными могут быть меньше овоо."
@@ -3277,6 +3289,7 @@ msgstr "Прошло 10 минут. Одновременно активными 
 #. ja: 試合開始から15分経過。同時に出現する無垢の土地の数が減少した！
 #. de: Seit Beginn des Matches sind 15 Minuten vergangen. Die Anzahl der Unschuldsflecken wurde verringert!
 #. fr: La bataille a commencé depuis 15 minutes. Le nombre de terres immaculées actives en même temps a été réduit<nbsp>!
+#, aeria-term-model-rendering: ovoo 27b9c416a3c0 овоо
 msgctxt "LogMessage:7599:0:5"
 msgid "15 minutes have elapsed. The number of simultaneously active ovoos has been reduced."
 msgstr "Прошло 15 минут. Одновременно активными могут быть меньше овоо."
@@ -4015,7 +4028,7 @@ msgstr "Нельзя выполнить команду в этой позе."
 
 #. ja: チョコボレース中のため、その操作はできません。
 #. de: Aktion kann während des Chocobo-Rennens nicht ausgeführt werden.
-#. fr: Impossible d'exécuter cette commande en étant inscrit à une course de chocobos<br>ou pendant le déroulement de celle-ci. 
+#. fr: Impossible d'exécuter cette commande en étant inscrit à une course de chocobos<br>ou pendant le déroulement de celle-ci.
 msgctxt "LogMessage:7712:0:5"
 msgid "Unable to execute command while chocobo racing."
 msgstr "Нельзя выполнить команду во время гонок чокобо."
@@ -4246,7 +4259,7 @@ msgstr "Здесь нельзя выполнить эту команду."
 
 #. ja: コンテンツ参加認証中のため、その操作はできません。
 #. de: Aktion kann während aktiver Inhaltssuche nicht ausgeführt werden.
-#. fr: Impossible d'exécuter cette commande durant l'identification de l'outil de mission. 
+#. fr: Impossible d'exécuter cette commande durant l'identification de l'outil de mission.
 msgctxt "LogMessage:7755:0:5"
 msgid "Unable to execute command while waiting for duty."
 msgstr "Нельзя выполнить команду, пока вы ожидаете начала задания."
@@ -4719,7 +4732,7 @@ msgid "All party members must be blue mages."
 msgstr "Все участники группы должны быть синими магами."
 
 #. ja: アクティブセットの名称を変更しました。
-#. de: Name des Kommando-Sets geändert. 
+#. de: Name des Kommando-Sets geändert.
 #. fr: Le nom du set a été modifié.
 msgctxt "LogMessage:7928:0:5"
 msgid "Active set name changed."
@@ -4854,6 +4867,7 @@ msgstr "Недостаточно MP."
 #. ja: プレイヤーターンのみ実行可能です。
 #. de: Kann nur in deiner Runde ausgeführt werden.
 #. fr: Action impossible durant le tour des ennemis.
+#, aeria-term-model-exception: Enemy 59fb03c90ec4
 msgctxt "LogMessage:7965:0:5"
 msgid "Unable to execute during enemy turn."
 msgstr "Нельзя выполнить во время хода противника."
@@ -4967,7 +4981,7 @@ msgid "Unable to equip recommended gear. Insufficient Armoury Chest space."
 msgstr "Нельзя надеть лучший комплект: в оружейном сундуке недостаточно места."
 
 #. ja: 変更予定のアイテム状況が変わったため、さいきょうウィンドウを閉じました。
-#. de: Das Fenster wurde geschlossen, weil sich die Position der Gegenstände geändert hat. 
+#. de: Das Fenster wurde geschlossen, weil sich die Position der Gegenstände geändert hat.
 #. fr: L'état d'un objet ayant changé, la fenêtre d'équipement recommandé s'est fermée.
 msgctxt "LogMessage:7982:0:5"
 msgid "Item condition has changed. Closing recommendation window."
@@ -5030,6 +5044,7 @@ msgstr "<if ($gs1 == $gs2)>Твоё истинное «я» пробуждает
 #. ja: リミテッドジョブまたは非バトルクラスのため、ご褒美を受け取れません。
 #. de: Beschränkte Jobs und Handwerker bzw. Sammler können keine Belohnungen annehmen.
 #. fr: Impossible d'obtenir la récompense. Vous n'êtes ni combattant ni mage ou vous êtes dans un job restreint.
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:7988:0:5"
 msgid "Unable to accept reward. You are not a Disciple of War or Magic (excluding limited jobs)."
 msgstr "Нельзя получить награду: вы не относитесь к физическому или магическому классу либо используете ограниченную профессию."

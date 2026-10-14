@@ -21,7 +21,7 @@ msgid "Retainers are hardworking lads and lasses who will help you to manage tho
 msgstr "Ретейнеры — работящие люди, которые за плату помогут вам разбирать добычу после охоты на драконов и прочих ваших приключений."
 
 #. ja: 申し訳ありませんが、駆け出しの冒険者の方には、<br>リテイナーの雇用をご案内することができません。
-#. de: Es tut mir wirklich sehr leid, aber so <if $gn4>einem jungen Mädchen<else>einem jungen Spund</if> wie dir kann ich noch keinen Gehilfen vermitteln.  
+#. de: Es tut mir wirklich sehr leid, aber so <if $gn4>einem jungen Mädchen<else>einem jungen Spund</if> wie dir kann ich noch keinen Gehilfen vermitteln.
 #. fr: Pour faire simple, je m'occupe de tout ce qui a trait aux servants. C'est donc ici que vous devrez vous présenter quand vous voudrez en recruter un.
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_DEFAULT_TALK_3:1"
 msgid "Unfortunately, you do not appear you could even slay an eft, let alone a dragon, therefore I must decline any petition you may have to take a retainer into your employ."
@@ -468,7 +468,7 @@ msgstr "Если в городе понадобится техническое �
 
 #. ja: リテイナーの雇用ですね。<br>あなたが雇用できるリテイナーは、最大<num $n1>名です。<br>現在の雇用状況を確認いたしますので、少々お待ちください。
 #. de: Eine gute Entscheidung. Ich muss darauf hinweisen, dass du nicht mehr als <num $n1> einstellen kannst. Lass mich kurz in den Unterlagen nachsehen ...
-#. fr: D'après le registre, vous pouvez employer <num $n1> servant<if ($n1 <= 1)><else>s</if> au maximum. 
+#. fr: D'après le registre, vous pouvez employer <num $n1> servant<if ($n1 <= 1)><else>s</if> au maximum.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_CREATE_TALK_01:1"
 msgid "According to our records, you may hire up to <num $n1> retainers."
@@ -1011,6 +1011,7 @@ msgstr "Отменить регистрацию на рынке и провер�
 #. ja: かしこまりました。<br>まずは、容姿を再確認してみましょう。
 #. de: Gut, dann wollen wir doch mal sehen, was wir tun können. Was genau möchtest du denn geändert haben?
 #. fr: Veuillez commencer par me décrire l'apparence que vous recherchez.
+#, aeria-term-model-exception: First 5b14957ec834
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_RETAINER_REMAKE_TALK:1"
 msgid "Very well. First, let us review your retainer's current appearance. I must ask that you describe in detail which aspects you find unappealing, and what you would prefer."
 msgstr "Хорошо. Для начала проверим внешность ретейнера. Опишите подробно, что вам не нравится и что бы вы хотели изменить."
@@ -1281,6 +1282,7 @@ msgstr "<capitalize><sheet ClassJob $n1 0></capitalize>."
 #. ja: もどる
 #. de: Zurück
 #. fr: Retour
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_RELATION_MENU_CANCEL:1"
 msgid "Return."
 msgstr "Назад."
@@ -1312,6 +1314,7 @@ msgstr "<capitalize><sheet ClassJob $n1 0></capitalize>."
 #. ja: もどる
 #. de: Zurück
 #. fr: Retour
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_CONDITIONS_MENU_CANCEL:1"
 msgid "Return."
 msgstr "Назад."
@@ -1344,6 +1347,7 @@ msgstr "Чтобы назначить ретейнеру профессию <she
 #. macro: <if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 5 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 26 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 33 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическом
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_CONDITIONS_TALK_20:1"
 msgid "To assign your retainer the <sheet ClassJob $n1 0> job, you yourself must first achieve level 50 as <if ($n1 == 10)>an <sheet ClassJob $n1 0><else><if ($n1 == 14)>an <sheet ClassJob $n1 0><else><if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if></if></if></if>. Additionally, your retainer must have achieved level 50 as a Disciple of War or Magic."
 msgstr "Чтобы назначить ретейнеру профессию <sheet ClassJob $n1 0>, вам нужно достичь 50-го уровня в этой профессии. Кроме того, ретейнеру нужно достичь 50-го уровня в физическом или магическом классе."
@@ -1357,6 +1361,7 @@ msgstr "Чтобы назначить ретейнеру профессию <she
 #. macro: <if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 5 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 26 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 33 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическом
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_CONDITIONS_TALK_30:1"
 msgid "To assign your retainer the <sheet ClassJob $n1 0> job, you yourself must first achieve level 60 as <if ($n1 == 10)>an <sheet ClassJob $n1 0><else><if ($n1 == 14)>an <sheet ClassJob $n1 0><else><if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if></if></if></if>. Additionally, your retainer must have achieved level 60 as a Disciple of War or Magic."
 msgstr "Чтобы назначить ретейнеру профессию <sheet ClassJob $n1 0>, вам нужно достичь 60-го уровня в этой профессии. Кроме того, ретейнеру нужно достичь 60-го уровня в физическом или магическом классе."
@@ -1370,6 +1375,7 @@ msgstr "Чтобы назначить ретейнеру профессию <she
 #. macro: <if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 5 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 26 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 33 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическом
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_CONDITIONS_TALK_40:1"
 msgid "To assign your retainer the <sheet ClassJob $n1 0> job, you yourself must first achieve level 70 as <if ($n1 == 10)>an <sheet ClassJob $n1 0><else><if ($n1 == 14)>an <sheet ClassJob $n1 0><else><if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if></if></if></if>. Additionally, your retainer must have achieved level 70 as a Disciple of War or Magic."
 msgstr "Чтобы назначить ретейнеру профессию <sheet ClassJob $n1 0>, вам нужно достичь 70-го уровня в этой профессии. Кроме того, ретейнеру нужно достичь 70-го уровня в физическом или магическом классе."
@@ -1383,6 +1389,7 @@ msgstr "Чтобы назначить ретейнеру профессию <she
 #. macro: <if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 5 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 26 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 33 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическом
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_CONDITIONS_TALK_50:1"
 msgid "To assign your retainer the <sheet ClassJob $n1 0> job, you yourself must first achieve level 80 as <if ($n1 == 10)>an <sheet ClassJob $n1 0><else><if ($n1 == 14)>an <sheet ClassJob $n1 0><else><if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if></if></if></if>. Additionally, your retainer must have achieved level 80 as a Disciple of War or Magic."
 msgstr "Чтобы назначить ретейнеру профессию <sheet ClassJob $n1 0>, вам нужно достичь 80-го уровня в этой профессии. Кроме того, ретейнеру нужно достичь 80-го уровня в физическом или магическом классе."
@@ -1447,7 +1454,7 @@ msgstr "Не удалось купить <noun-en Item 2 $n1 1 1>. Не хват
 #, aeria-term-model-exception: Calamity fc8feeab37bd
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_SCROLL_SHORTAGE_EXCHANGE_GUIDE:1"
 msgid "If you possess a venture promissory note, you may redeem it for ventures through a Calamity salvager."
-msgstr "Если у вас есть долговая расписка на жетоны поручений, обменять её на жетоны можно у распорядителя находок."
+msgstr "Если у вас есть долговая расписка на жетоны поручений, обменять её на жетоны можно у хранителя утраченного."
 
 #. ja: ベンチャースクリップ40枚と引き替えに、<br>「<sheet Item $n1 0>」を入手しました。
 #. de: Du hast <noun-de Item 1 $n1 1 4 1> für 40 Wertmarken erworben.
@@ -1511,7 +1518,7 @@ msgstr "(-Озорной хьюр-) Привет-привет! Звали?"
 #. de: (-Höfliche Hyuran-)Zu Diensten, <if $gn4>meine Dame<else>mein Herr</if>.
 #. fr: (-Hyure polie-)À votre service, M<if $gn4>adame<else>onsieur</if>.
 #. macro: <if $gn4>lady<else>lord</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Hyur 3d9e126cd86b хьюрка
+#, aeria-term-model-rendering: Hyur 543063e10589 хьюрка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HYURAN_FEMALE_TYPE1:1"
 msgid "(-Polite Hyuran Female-)At your service, my <if $gn4>lady<else>lord</if>."
 msgstr "(-Вежливая хьюрка-) К вашим услугам, <if $gn4>госпожа<else>господин</if>."
@@ -1519,7 +1526,7 @@ msgstr "(-Вежливая хьюрка-) К вашим услугам, <if $gn4
 #. ja: (-ワイルドなヒューラン女-)アタシを呼んで、何させようってんだい？
 #. de: (-Ungehobelte Hyuran-)Was gibt es diesmal, <if $gn4>Süße<else>Süßer</if>?
 #. fr: (-Hyure brusque-)Qu'est-ce que ça sera, cette fois<nbsp>?
-#, aeria-term-model-rendering: Hyur 3d9e126cd86b хьюрка
+#, aeria-term-model-rendering: Hyur 543063e10589 хьюрка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HYURAN_FEMALE_TYPE2:1"
 msgid "(-Rough Hyuran Female-)What's it to be this time, love?"
 msgstr "(-Грубоватая хьюрка-) Чего на этот раз, <if $gn4>милая<else>милый</if>?"
@@ -1527,7 +1534,7 @@ msgstr "(-Грубоватая хьюрка-) Чего на этот раз, <if
 #. ja: (-冷徹なヒューラン女-)さっさと始めましょう。
 #. de: (-Ernste Hyuran-)Was ist dein Begehr?
 #. fr: (-Hyure sérieuse-)Que désirez-vous exactement<nbsp>?
-#, aeria-term-model-rendering: Hyur 3d9e126cd86b хьюрка
+#, aeria-term-model-rendering: Hyur 543063e10589 хьюрка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HYURAN_FEMALE_TYPE3:1"
 msgid "(-Serious Hyuran Female-)What would you ask?"
 msgstr "(-Серьёзная хьюрка-) Чего вы желаете?"
@@ -1536,7 +1543,7 @@ msgstr "(-Серьёзная хьюрка-) Чего вы желаете?"
 #. de: (-Sorglose Hyuran-)Hab ich dich warten lassen? 'tschuldigung.
 #. fr: (-Hyure insouciante-)Je suis vraiment désolée de vous faire attendre à chaque fois. Et vous voulez quoi au juste<nbsp>?
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Hyur 3d9e126cd86b хьюрка
+#, aeria-term-model-rendering: Hyur 543063e10589 хьюрка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HYURAN_FEMALE_TYPE4:1"
 msgid "(-Carefree Hyuran Female-)I'm so sorry to keep you waiting, <if $gn4>madam<else>sir</if>. So very, very sorry."
 msgstr "(-Беззаботная хьюрка-) Простите, что заставила ждать, <if $gn4>госпожа<else>господин</if>. Очень-очень простите."
@@ -1544,7 +1551,7 @@ msgstr "(-Беззаботная хьюрка-) Простите, что зас�
 #. ja: (-問題児のヒューラン女-)お手柔らかにね。
 #. de: (-Eigenwillige Hyuran-)Beeilung, ich hab noch andere Dinge zu erledigen.
 #. fr: (-Hyure indépendante-)Bien, ne perdons pas de temps, s'il vous plaît. J'ai d'autres choses à faire.
-#, aeria-term-model-rendering: Hyur 3d9e126cd86b хьюрка
+#, aeria-term-model-rendering: Hyur 543063e10589 хьюрка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HYURAN_FEMALE_TYPE5:1"
 msgid "(-Independent Hyuran Female-)Quickly now, I've places to be."
 msgstr "(-Своенравная хьюрка-) Давайте побыстрее, мне ещё нужно кое-куда сходить."
@@ -1553,7 +1560,7 @@ msgstr "(-Своенравная хьюрка-) Давайте побыстре�
 #. de: (-Lebhafte Hyuran-)Wenn das nicht <if $gn4>meine Lieblingsauftraggeberin<else>mein Lieblingsauftraggeber</if> ist! Ist mir wie immer ein Vergnügen, <if $gn4>meine Dame<else>mein Herr</if>!
 #. fr: (-Hyure enjouée-)Oh<nbsp>! C'est un plaisir de vous voir à chaque fois<nbsp>! Dites-moi donc ce que vous voulez.
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Hyur 3d9e126cd86b хьюрка
+#, aeria-term-model-rendering: Hyur 543063e10589 хьюрка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HYURAN_FEMALE_TYPE6:1"
 msgid "(-Lively Hyuran Female-)Well, if it ain't my favorite client! Always a pleasure, <if $gn4>madam<else>sir</if>!"
 msgstr "(-Озорная хьюрка-) Ну и кто это у нас, <if $gn4>моя любимая клиентка<else>мой любимый клиент</if>! Всегда рада вас видеть, <if $gn4>госпожа<else>господин</if>!"
@@ -1609,7 +1616,7 @@ msgstr "(-Жизнерадостный элезен-) Вы отлично выг
 #. de: (-Höfliche Elezen-)Was möchtet Ihr mir auftragen, <if $gn4>meine Dame<else>mein Herr</if>?
 #. fr: (-Élézenne polie-)Que puis-je faire pour votre bon plaisir, Maître<if $gn4>sse</if><nbsp>?
 #. macro: <if $gn4>milady<else>milord</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ELEZEN_FEMALE_TYPE1:1"
 msgid "(-Polite Elezen Female-)What is it you would have me do, <if $gn4>milady<else>milord</if>?"
 msgstr "(-Учтивая элезенка-) Что вы хотите мне поручить, <if $gn4>госпожа<else>господин</if>?"
@@ -1617,7 +1624,7 @@ msgstr "(-Учтивая элезенка-) Что вы хотите мне по
 #. ja: (-ワイルドなエレゼン女-)はあ～い、呼んだかしら？
 #. de: (-Ungehobelte Elezen-)Normalerweise rufe <i>ich</i> Leute herbei und lasse <i>andere</i> warten.
 #. fr: (-Élézenne brusque-)D'habitude, c'est moi qui appelle les gens et me fais servir. Que voulez-vous au juste<nbsp>?
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ELEZEN_FEMALE_TYPE2:1"
 msgid "(-Rough Elezen Female-)Usually, it's me doin' the summons and others doin' the waitin'."
 msgstr "(-Грубоватая элезенка-) Обычно это я вызываю людей и заставляю их ждать."
@@ -1625,7 +1632,7 @@ msgstr "(-Грубоватая элезенка-) Обычно это я выз�
 #. ja: (-冷徹なエレゼン女-)お呼び立て承った。
 #. de: (-Ernste Elezen-)Gibt es etwas, bei dem ich Euch helfen kann?
 #. fr: (-Élézenne sérieuse-)Y a-t-il quelque chose en quoi je puisse vous aider<nbsp>?
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ELEZEN_FEMALE_TYPE3:1"
 msgid "(-Serious Elezen Female-)Is there something that I can help you with?"
 msgstr "(-Серьёзная элезенка-) Я могу вам чем-нибудь помочь?"
@@ -1633,7 +1640,7 @@ msgstr "(-Серьёзная элезенка-) Я могу вам чем-ниб
 #. ja: (-のんびりなエレゼン女-)なんでしょうかぁ？
 #. de: (-Sorglose Elezen-)Och nö, warum musst du mich zu solch einer Unzeit herbeirufen ...?
 #. fr: (-Élézenne insouciante-)Oh, mais pourquoi vous m'appelez à un tel moment...<nbsp>?
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ELEZEN_FEMALE_TYPE4:1"
 msgid "(-Carefree Elezen Female-)Oh, why must you summon me at a time like this...?"
 msgstr "(-Беззаботная элезенка-) Ох, ну зачем вы вызвали меня в такую рань?.."
@@ -1641,7 +1648,7 @@ msgstr "(-Беззаботная элезенка-) Ох, ну зачем вы �
 #. ja: (-問題児のエレゼン女-)きちゃった～。
 #. de: (-Eigenwillige Elezen-)Ich bin mir sicher, Ihr habt einen guten Grund für Euer Rufen.
 #. fr: (-Élézenne indépendante-)J'imagine que vous avez une bonne raison pour m'appeler ainsi.
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ELEZEN_FEMALE_TYPE5:1"
 msgid "(-Independent Elezen Female-)I'm sure there is a perfectly good explanation for this summons."
 msgstr "(-Независимая элезенка-) Уверена, у вас есть веская причина меня вызвать."
@@ -1649,7 +1656,7 @@ msgstr "(-Независимая элезенка-) Уверена, у вас е
 #. ja: (-お調子もののエレゼン女-)呼び出されるんじゃないかな～って気がしてたんだよね。<br>準備ばんたんだよ！
 #. de: (-Lebhafte Elezen-)He, ich wusste, dass Ihr mich rufen würdet. Seid versichert, dass für mich kein Auftrag zu schwer ist.
 #. fr: (-Élézenne enjouée-)Vous savez quoi, j'étais sûre que vous m'appelleriez bientôt. Pour moi, c'est toujours un plaisir de vous venir en aide.
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ELEZEN_FEMALE_TYPE6:1"
 msgid "(-Lively Elezen Female-)You know, I thought you might be along to summon me. You may rest assured that I am ready and eager to serve."
 msgstr "(-Жизнерадостная элезенка-) Знаешь, мне казалось, что ты скоро меня вызовешь. Не сомневайся, я готова служить тебе и с радостью примусь за дело!"
@@ -1680,6 +1687,7 @@ msgstr "(-Серьёзный ла Но-мужчина-)Я уж думал, ко�
 #. ja: (-のんびりなララフェル男-)よしなに。
 #. de: (-Sorgloser Lalafell-)Können wir das kurz halten? Ich habe da noch etwas zu erledigen.
 #. fr: (-Lalafell insouciant-)Ça vous dérange si nous faisons ça vite<nbsp>? J'ai autre chose à faire de mon côté.
+#, aeria-term-model-exception: Mind 128c027d1d7e
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_LALAFELL_MALE_TYPE4:1"
 msgid "(-Carefree Lalafellin Male-)Mind if we keep this brief? I've got a pretty little thing that's waitin' for me."
 msgstr "(-Беззаботный ла Но-мужчина-)Давайте покороче, а? Меня там одна красотка ждёт."
@@ -1877,7 +1885,7 @@ msgstr "(-Жизнерадостный рогадин-мужчина-)Услыш
 #. de: (-Höfliche Roegadyn-)Ich stehe Euch zu Diensten, <if $gn4>meine Dame<else>mein Herr</if>.
 #. fr: (-Roegadyne polie-)Je suis à votre service, Maître<if $gn4>sse</if>.
 #. macro: <if $gn4>milady<else>milord</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Roegadyn b4a56f082ea6 рогадинка
+#, aeria-term-model-rendering: Roegadyn 2e6830676dae рогадинка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ROEGADYN_FEMALE_TYPE1:1"
 msgid "(-Polite Roegadyn Female-)I am at your disposal, <if $gn4>milady<else>milord</if>."
 msgstr "(-Вежливая рогадинка-)К вашим услугам, <if $gn4>госпожа<else>господин</if>."
@@ -1885,7 +1893,7 @@ msgstr "(-Вежливая рогадинка-)К вашим услугам, <if
 #. ja: (-ワイルドなルガディン女-)何でも言いなっ！
 #. de: (-Ungehobelte Roegadyn-)Hast du was für mich, Käpt'n?
 #. fr: (-Roegadyne brusque-)Z'avez quelque chose à me demander, Capitaine<nbsp>?
-#, aeria-term-model-rendering: Roegadyn b4a56f082ea6 рогадинка
+#, aeria-term-model-rendering: Roegadyn 2e6830676dae рогадинка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ROEGADYN_FEMALE_TYPE2:1"
 msgid "(-Rough Roegadyn Female-)Ye got somethin' fer me, cap'n?"
 msgstr "(-Грубая рогадинка-)Есть для меня дело, капитан?"
@@ -1894,7 +1902,7 @@ msgstr "(-Грубая рогадинка-)Есть для меня дело, к
 #. de: (-Ernste Roegadyn-)Melde mich zum Dienst, <if $gn4>meine Dame<else>mein Herr</if>.
 #. fr: (-Roegadyne sérieuse-)Je vous écoute, M<if $gn4>adame<else>onsieur</if>.
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Roegadyn b4a56f082ea6 рогадинка
+#, aeria-term-model-rendering: Roegadyn 2e6830676dae рогадинка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ROEGADYN_FEMALE_TYPE3:1"
 msgid "(-Serious Roegadyn Female-)Go ahead, <if $gn4>madam<else>sir</if>."
 msgstr "(-Серьёзная рогадинка-)Говорите, <if $gn4>госпожа<else>господин</if>."
@@ -1902,7 +1910,7 @@ msgstr "(-Серьёзная рогадинка-)Говорите, <if $gn4>го
 #. ja: (-のんびりなルガディン女-)お手並み拝見。
 #. de: (-Sorglose Roegadyn-)Lass uns die Sache schnell erledigen, ja?
 #. fr: (-Roegadyne insouciante-)Tâchons de ne pas perdre de temps. Je suis pressée.
-#, aeria-term-model-rendering: Roegadyn b4a56f082ea6 рогадинка
+#, aeria-term-model-rendering: Roegadyn 2e6830676dae рогадинка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ROEGADYN_FEMALE_TYPE4:1"
 msgid "(-Carefree Roegadyn Female-)Let's keep this short and sweet, shall we?"
 msgstr "(-Беззаботная рогадинка-)Давайте побыстрее, ладно?"
@@ -1910,7 +1918,7 @@ msgstr "(-Беззаботная рогадинка-)Давайте побыст
 #. ja: (-問題児のルガディン女-)ワタシの仕事ぶりを手本にするがいい。
 #. de: (-Eigenwillige Roegadyn-)Das wäre nicht nötig, wenn du deine Finanzen <i>mir</i> überlassen würdest.
 #. fr: (-Roegadyne indépendante-)Tout irait mieux si vous me confiiez la gestion de toutes vos finances.
-#, aeria-term-model-rendering: Roegadyn b4a56f082ea6 рогадинка
+#, aeria-term-model-rendering: Roegadyn 2e6830676dae рогадинка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ROEGADYN_FEMALE_TYPE5:1"
 msgid "(-Independent Roegadyn Female-)This wouldn't be necessary if you entrusted your financial affairs to me."
 msgstr "(-Независимая рогадинка-)Не пришлось бы меня звать, доверь вы свои финансы мне."
@@ -1918,7 +1926,7 @@ msgstr "(-Независимая рогадинка-)Не пришлось бы 
 #. ja: (-お調子もののルガディン女-)お任せあれ。
 #. de: (-Lebhafte Roegadyn-)Also ... verkaufen, kaufen, trinken? Was steht heute an?
 #. fr: (-Roegadyne enjouée-)Ah, je suis bien heureuse de vous voir. Que voulez-vous que je fasse pour vous aujourd'hui<nbsp>?
-#, aeria-term-model-rendering: Roegadyn b4a56f082ea6 рогадинка
+#, aeria-term-model-rendering: Roegadyn 2e6830676dae рогадинка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_ROEGADYN_FEMALE_TYPE6:1"
 msgid "(-Lively Roegadyn Female-)So─sellin', buyin', drinkin', whorin'? What's it to be today?"
 msgstr "(-Жизнерадостная рогадинка-)Ну... продавать, покупать, пить, кутить? Чем займёмся?"
@@ -2157,7 +2165,7 @@ msgstr "(-Жизнерадостный виер-) Весь внимание, <if
 #. de: (-Höfliche Hrothgar-)Guten <if ($gn11 < 12)><if ($gn11 < 4)>Abend<else>Morgen</if><else><if ($gn11 < 17)>Tag<else>Abend</if></if>, <if $gn4>meine Dame<else>mein Herr</if>. Wie darf ich heute zu Diensten sein?
 #. fr: (-Hrothgar polie-)<if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if> <if $gn4>ma chère<else>mon cher</if><nbsp>! Que puis-je pour vous aider<nbsp>?
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Hrothgar a57a656c9c5f хротгарка
+#, aeria-term-model-rendering: Hrothgar f7b27f83be5c хротгарка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HROTHGAR_FEMALE_TYPE1:1"
 msgid "(-Polite Hrothgar Female-)You summoned me, <if $gn4>madam<else>sir</if>?"
 msgstr "(-Вежливая хротгарка-)Вы звали меня, <if $gn4>госпожа<else>господин</if>?"
@@ -2165,7 +2173,7 @@ msgstr "(-Вежливая хротгарка-)Вы звали меня, <if $gn
 #. ja: (-ワイルドなロスガル女-)センパイに呼ばれたら、即集合っすよ～！
 #. de: (-Ungehobelte Hrothgar-)Was ist denn jetzt schon wieder? Muss ich dir denn wirklich bei jeder Unternehmung die Hand halten?
 #. fr: (-Hrothgar brusque-)Oh bah moi si tu m'appelles, je débarque tout de suite<nbsp>!
-#, aeria-term-model-rendering: Hrothgar a57a656c9c5f хротгарка
+#, aeria-term-model-rendering: Hrothgar f7b27f83be5c хротгарка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HROTHGAR_FEMALE_TYPE2:1"
 msgid "(-Rough Hrothgar Female-)At your beck an' call, I am!"
 msgstr "(-Грубая хротгарка-)Стоит позвать — я уже тут!"
@@ -2173,7 +2181,7 @@ msgstr "(-Грубая хротгарка-)Стоит позвать — я уж
 #. ja: (-冷徹なロスガル女-)呼ばれた、貴方に。<br>用事、あるなら教えて……。
 #. de: (-Ernste Hrothgar-)Du hast mich gerufen? Worum geht es?
 #. fr: (-Hrothgar sérieuse-)Vous m'avez appelée. Comment souhaitez-vous que je vous aide<nbsp>?
-#, aeria-term-model-rendering: Hrothgar a57a656c9c5f хротгарка
+#, aeria-term-model-rendering: Hrothgar f7b27f83be5c хротгарка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HROTHGAR_FEMALE_TYPE3:1"
 msgid "(-Serious Hrothgar Female-)You called, and I have come."
 msgstr "(-Серьёзная хротгарка-)Ты позвал меня. Что нужно?"
@@ -2184,7 +2192,7 @@ msgstr "(-Серьёзная хротгарка-)Ты позвал меня. Ч�
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <if $gn4>milady<else>milord</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Hrothgar a57a656c9c5f хротгарка
+#, aeria-term-model-rendering: Hrothgar f7b27f83be5c хротгарка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HROTHGAR_FEMALE_TYPE4:1"
 msgid "(-Carefree Hrothgar Female-)At last─I thought you'd <i>never</i> call. What does <if $gn4>milady<else>milord</if> need of me?"
 msgstr "(-Беззаботная хротгарка-)Ну наконец-то! Я уж думала, ты <i>никогда</i> меня не позовёшь. Чего желает <if $gn4>госпожа<else>господин</if>?"
@@ -2203,7 +2211,7 @@ msgstr "(-Независимая хротгар-) Неужели <if $gn4>сам
 #. ja: (-お調子もののロスガル女-)はいはい、は～い！！<br>キミに呼ばれたらすぐ来るって習慣！
 #. de: (-Lebhafte Hrothgar-)Jawohlja, schon zur Stelle! Und, was stellen wir heute Spannendes an?
 #. fr: (-Hrothgar enjouée-)Oui oui, je suis là<nbsp>! Je suis venue le plus vite que j'ai pu<nbsp>!
-#, aeria-term-model-rendering: Hrothgar a57a656c9c5f хротгарка
+#, aeria-term-model-rendering: Hrothgar f7b27f83be5c хротгарка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_ENTER_HROTHGAR_FEMALE_TYPE6:1"
 msgid "(-Lively Hrothgar Female-)Yes, yes, here I am! Ready at a moment's notice!"
 msgstr "(-Жизнерадостная хротгарка-)Да-да, я здесь! Всегда готова примчаться!"
@@ -2342,7 +2350,7 @@ msgstr "(-Жизнерадостный элезен-) Прекрасно! Нем
 #. de: (-Höfliche Elezen-)Ich werde auf Euer nächstes Rufen warten, <if $gn4>meine Dame<else>mein Herr</if>.
 #. fr: (-Élézenne polie-)Une fois de plus, ce fut un honneur et un privilège de vous servir, Maître<if $gn4>sse</if>.
 #. macro: <if $gn4>milady<else>milord</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_LEAVE_ELEZEN_FEMALE_TYPE1:1"
 msgid "(-Polite Elezen Female-)I humbly await your next summons, <if $gn4>milady<else>milord</if>."
 msgstr "(-Учтивая элезенка-) Буду смиренно ждать вашего следующего вызова, <if $gn4>госпожа<else>господин</if>."
@@ -2350,7 +2358,7 @@ msgstr "(-Учтивая элезенка-) Буду смиренно ждать
 #. ja: (-ワイルドなエレゼン女-)いつでも、頼りにしなさいね。
 #. de: (-Ungehobelte Elezen-)Lass mich nicht zu lang allein, hörst du?
 #. fr: (-Élézenne brusque-)Allez, à la prochaine<nbsp>!
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_LEAVE_ELEZEN_FEMALE_TYPE2:1"
 msgid "(-Rough Elezen Female-)Don't leave me alone for too long, hear?"
 msgstr "(-Грубоватая элезенка-) Не оставляй меня надолго одну, слышишь?"
@@ -2358,7 +2366,7 @@ msgstr "(-Грубоватая элезенка-) Не оставляй меня
 #. ja: (-冷徹なエレゼン女-)御免。
 #. de: (-Ernste Elezen-)War mir wie immer ein Vergnügen.
 #. fr: (-Élézenne sérieuse-)Je m'occupe de tout. Ayez confiance.
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_LEAVE_ELEZEN_FEMALE_TYPE3:1"
 msgid "(-Serious Elezen Female-)Always a pleasure."
 msgstr "(-Серьёзная элезенка-) Всегда рада помочь."
@@ -2366,7 +2374,7 @@ msgstr "(-Серьёзная элезенка-) Всегда рада помоч
 #. ja: (-のんびりなエレゼン女-)おつかれさまでしたぁ。
 #. de: (-Sorglose Elezen-)Das wäre alles? Wenn du mich dann entschuldigen würdest ...
 #. fr: (-Élézenne insouciante-)C'est bon<nbsp>? Dans ce cas, je m'en vais...
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_LEAVE_ELEZEN_FEMALE_TYPE4:1"
 msgid "(-Carefree Elezen Female-)That will be all, yes? Then if you would excuse me..."
 msgstr "(-Беззаботная элезенка-) Это всё? Тогда, если позволите..."
@@ -2374,7 +2382,7 @@ msgstr "(-Беззаботная элезенка-) Это всё? Тогда, �
 #. ja: (-問題児のエレゼン女-)ばいばい～。
 #. de: (-Eigenwillige Elezen-)Ich denke, damit ist unser Handel fürs Erste erledigt.
 #. fr: (-Élézenne indépendante-)Bien, je crois que nous en avons fini pour cette fois.
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_LEAVE_ELEZEN_FEMALE_TYPE5:1"
 msgid "(-Independent Elezen Female-)I believe that concludes our dealings for now."
 msgstr "(-Независимая элезенка-) Думаю, на этом пока всё."
@@ -2382,7 +2390,7 @@ msgstr "(-Независимая элезенка-) Думаю, на этом п
 #. ja: (-お調子もののエレゼン女-)ばいびー。
 #. de: (-Lebhafte Elezen-)Seid Ihr sicher, dass Ihr sonst nichts braucht? Wirklich? Gut, mit Verlaub ...
 #. fr: (-Élézenne enjouée-)J'ai passé un bon moment avec vous. J'espère que nous nous reverrons bientôt.
-#, aeria-term-model-rendering: Elezen a882eea7de38 элезенка
+#, aeria-term-model-rendering: Elezen b39bb0cc87ec элезенка
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_LEAVE_ELEZEN_FEMALE_TYPE6:1"
 msgid "(-Lively Elezen Female-)Are you certain you don't desire anything else? Anything at all? Very well, I shall take my leave."
 msgstr "(-Жизнерадостная элезенка-) Вы уверены, что больше ничего не нужно? Совсем ничего? Что ж, тогда я пойду."
@@ -2871,6 +2879,7 @@ msgstr "(-Живой виера-) Больше ничего? Тогда я по�
 #. de: (-Höfliche Hrothgar-)Es ist mir eine Freude, dir zur Hand gehen zu dürfen, also zögere nicht, nach mir zu rufen. Ich werde sofort zur Stelle sein.
 #. fr: (-Hrothgar polie-)Je suis contente d'avoir pu vous être utile<nbsp>! Faites attention à vous, d'accord<nbsp>?
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: Mind 128c027d1d7e
 msgctxt "custom/000/CmnDefRetainerDesk_00009:TEXT_CMNDEFRETAINERDESK_00009_LEAVE_HROTHGAR_FEMALE_TYPE1:1"
 msgid "(-Polite Hrothgar Female-)I'm glad to have been of service. Mind you don't overdo things, <if $gn4>madam<else>sir</if>."
 msgstr "(-Учтивая хротгар-) Рада, что смогла помочь. Смотрите не переутомитесь, <if $gn4>госпожа<else>господин</if>."

@@ -44,7 +44,7 @@ msgstr "Перед собравшимися членами Сэкисэйгум�
 #. fr: Ugetsu et ses fidèles ont été défaits sur l'île de Bekko. Makoto a hésité à porter le coup de grâce à son frère, mais ce dernier l'y a obligée en se jetant sur elle.
 #. kind: journal
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
-#, aeria-term-model-exception: tail d321c4f43bdc
+#, aeria-term-model-exception: tail d321c4f43bdc, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "quest/025/JobSam700_02570:TEXT_JOBSAM700_02570_SEQ_04:1"
 msgid "On the Isle of Bekko, the Sekiseigumi come face<hyphen>to<hyphen>face with the insurgents. Battle erupts, and you clash with Ugetsu in a frenetic duel between Musosai's two pupils. At the end of the confrontation, you are the one left standing, and left leaderless, the remaining insurgents turn tail and run."
 msgstr "На острове Бэкко Сэкисэйгуми встретилась лицом к лицу с мятежниками. Завязалась битва, и ты <if $gn4>сошлась<else>сошёлся</if> с Угэцу в стремительном поединке — ученик против ученика Мусосая. В конце схватки только ты <if $gn4>осталась на ногах<else>остался на ногах</if>. Оставшись без предводителя, мятежники обратились в бегство."
@@ -125,7 +125,7 @@ msgid "Finding out that I am Ugetsu's sister, and you Musosai's pupil, has shatt
 msgstr "Узнав, что я сестра Угэцу, а ты — ученик Мусосая, они утратили веру в наше дело."
 
 #. ja: 決戦を目前にしての兵力減少……。<br>このままでは、ウゲツ一派に勝てません。<br>なんとか、離れていった隊士たちを呼び戻さねば……。
-#. de: Wir haben so viele Leute verloren, dass wir nicht mehr die nötige Stärke haben, um Ugetsu und seine Rebellen besiegen zu können. Wir müssen die Deserteure irgendwie zurückgewinnen. 
+#. de: Wir haben so viele Leute verloren, dass wir nicht mehr die nötige Stärke haben, um Ugetsu und seine Rebellen besiegen zu können. Wir müssen die Deserteure irgendwie zurückgewinnen.
 #. fr: Nos chances de vaincre Ugetsu et ses sympathisants s'amenuisent à chaque défection. Nous devons à tout prix les convaincre de revenir parmi nous avant de nous rendre sur l'île de Bekko.
 #. speaker: MAKOTO
 #, aeria-term-model-exception: face 7d91d5daccc3
@@ -601,20 +601,22 @@ msgstr "Сколько ещё продлится этот ложный мир? �
 #. de: So beginnt sie ... die Schlacht, die das Schicksal Hingashis entscheiden wird.
 #. fr: Nous saurons aussi une bonne fois pour toutes quelle pensée est la bonne<nbsp>: celle de mon ancien maître, ou bien la mienne<nbsp>!
 #. speaker: UGETSU
+#, aeria-term-model-exception: Mine 687ef955c508
 msgctxt "quest/025/JobSam700_02570:TEXT_JOBSAM700_02570_UGETSU_100_061:1"
 msgid "Today, we decide whose path is right: Musosai's...or mine!"
 msgstr "Сегодня мы решим, чей путь верен: Мусосая... или мой!"
 
 #. ja: 同じ師に学んだ、我が<if $gn4>妹弟子<else>弟弟子</if>、<split " " 1><string $gs1></split>よ。<br>私の相手が務まるのは、お主だけだ……<br>さあ、それぞれの大義をぶつけ、斬り合おうではないかッ！！
-#. de: Wie auch immer diese Schlacht enden wird. Es gibt nur <if $gn4>eine<else>einen</if> Samurai, <if $gn4>die<else>der</if> es würdig ist, mit mir die Klingen zu kreuzen - <split " " 1><string $gs1></split>! Zeig mir dein Können! 
+#. de: Wie auch immer diese Schlacht enden wird. Es gibt nur <if $gn4>eine<else>einen</if> Samurai, <if $gn4>die<else>der</if> es würdig ist, mit mir die Klingen zu kreuzen - <split " " 1><string $gs1></split>! Zeig mir dein Können!
 #. fr: <if $gn4>La seule<else>Le seul</if> ici pouvant défendre les valeurs de Musosai est <if $gn4>sa dernière apprentie<else>son dernier apprenti</if>. Mon combat sera donc un duel à mort contre toi, <split " " 1><string $gs1></split>. Maintenant, viens, et battons-nous au nom de nos idéaux<nbsp>!
 #. speaker: UGETSU
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Mine 687ef955c508
 msgctxt "quest/025/JobSam700_02570:TEXT_JOBSAM700_02570_UGETSU_000_061:1"
 msgid "There is but one among you worthy of being my opponent─<if $gn4>she<else>he</if> who trained under mine own master. Come, <split \" \" 1><string $gs1></split>, show me the strength of your conviction!"
-msgstr "Среди вас лишь один достоин стать моим противником — тот, кто обучался у моего мастера. Выходи, <split \" \" 1><string $gs1></split>! Покажи, насколько крепки твои убеждения!"
+msgstr "Среди вас лишь <if $gn4>та, кто училась у моего мастера, достойна стать моей противницей<else>тот, кто учился у моего мастера, достоин стать моим противником</if>. Выходи, <split \" \" 1><string $gs1></split>! Покажи, насколько крепка твоя решимость!"
 
 #. ja: どうした……？<br>早く……斬れ……。
 #. de: Worauf wartest du noch?
