@@ -366,7 +366,7 @@ msgstr "・<capitalize><sheet ContentFinderCondition 295 43></capitalize>"
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:3072:0:0"
 msgid "<ui-color 514>Recordable Duties</ui-color>"
-msgstr "<ui-color 514>Записываемые задания</ui-color>"
+msgstr "<ui-color 514>Записываемые активности</ui-color>"
 
 #. ja: ・<sheet ContentFinderCondition $n1 43>
 #. de: ・<capitalize><sheet ContentFinderCondition $n1 43></capitalize>
@@ -678,6 +678,7 @@ msgstr "Запущена <ui-color 506><ui-edge-color 507>проверка го�
 #. de: <icon 100>Zur Rückkehr einladen
 #. fr: <icon 100>Inviter à revenir en Éorzéa
 #. macro: <icon 100> — an inline icon of the game font; icon = 100 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:3120:0:0"
 msgid "<icon 100>Invite Friend to Return"
 msgstr "<icon 100>Пригласить вернуться"
@@ -738,6 +739,7 @@ msgstr "Выберите способ поиска."
 #. ja: 前方一致検索
 #. de: Suche nach Wortanfang
 #. fr: Commence par...
+#, aeria-term-model-exception: First 5b14957ec834
 msgctxt "Addon:3135:0:0"
 msgid "First Letter Match"
 msgstr "По первым буквам"
@@ -808,7 +810,7 @@ msgstr "Гир-Абания"
 #. ja: 東方地域
 #. de: Othard
 #. fr: Orient
-#, aeria-term-model-rendering: Far East b8b44cdf746c Дал.
+#, aeria-term-model-rendering: Far East bb84ba25ee8d Дал., aeria-term-model-rendering: Far East bb84ba25ee8d Восток
 msgctxt "Addon:3145:0:0"
 msgid "The Far East"
 msgstr "Дал. Восток"
@@ -830,7 +832,7 @@ msgstr "Новранд"
 #. ja: イルサバード大陸
 #. de: Ilsabard
 #. fr: Ilsabard
-#, aeria-term-model-rendering: Ilsabard d41ad2362ad9 Ильсаб.
+#, aeria-term-model-rendering: Ilsabard 156d590f2706 Ильсаб.
 msgctxt "Addon:3148:0:0"
 msgid "Ilsabard"
 msgstr "Ильсаб."
@@ -937,6 +939,7 @@ msgstr "Персонаж (PvP)"
 #. ja: ミラージュプレート
 #. de: Pro<shy>jektions<shy>platte
 #. fr: Planche mirage
+#, aeria-term-model-exception: Glamour Plate 74e2985ac746
 msgctxt "Addon:3185:0:0"
 msgid "Glamour Plate"
 msgstr "Планшет образов"
@@ -1105,8 +1108,8 @@ msgctxt "Addon:3215:0:0"
 msgid "<icon2 23> Scroll  <icon2 12>+<icon2 23> Zoom  <icon2 13> Teleport"
 msgstr "<icon2 23> Листать  <icon2 12>+<icon2 23> Увеличить  <icon2 13> Телепорт"
 
-#. ja: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ",">)  
-#. de: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ".">)  
+#. ja: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ",">)
+#. de: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>(<kilo $n2 ".">)
 #. fr: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><capitalize><sheet PlaceName "<sheet Aetheryte $n1 8>" 0></capitalize><br>(<kilo $n2 "<nbsp>">)
 #. macro: <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 3 (condition: may be reworded, restructured, added, or dropped)
@@ -1143,6 +1146,7 @@ msgstr "<if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case>
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
+#, aeria-term-model-rendering: Teleport 34eef69600a8 Телепортироваться
 msgctxt "Addon:3217:0:0"
 msgid "Teleport to <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1> for <kilo $n2 \",\"> gil?<br>※This fee is waived when using an aetheryte ticket."
 msgstr "Телепортироваться к <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1> за <kilo $n2 \",\"> гил?<br>※Билет на эфирит отменяет плату."
@@ -1230,7 +1234,7 @@ msgstr "Сила"
 #. fr: Vitalité
 msgctxt "Addon:3227:0:0"
 msgid "Vitality"
-msgstr "Живучесть"
+msgstr "Выносливость"
 
 #. ja: DEX
 #. de: Geschick
@@ -1258,7 +1262,7 @@ msgstr "Мудрость"
 #. fr: Piété
 msgctxt "Addon:3231:0:0"
 msgid "Piety"
-msgstr "Вера"
+msgstr "Благочестие"
 
 #. ja: Elemental
 #. de: ELEMENTE
@@ -1390,7 +1394,7 @@ msgstr "Сила атаки"
 #. fr: Vivacité
 msgctxt "Addon:3249:0:0"
 msgid "Skill Speed"
-msgstr "Скор. умений"
+msgstr "Скор. навыков"
 
 #. ja: Melee Resists
 #. de: NAHKAMPF-RESISTENZ
@@ -1432,14 +1436,14 @@ msgstr "Маг. свойства"
 #. fr: Magie offensive
 msgctxt "Addon:3255:0:0"
 msgid "Attack Magic Potency"
-msgstr "Сила атак. магии"
+msgstr "Сила атакующей магии"
 
 #. ja: 回復魔法威力
 #. de: Heilmagie
 #. fr: Magie curative
 msgctxt "Addon:3256:0:0"
 msgid "Healing Magic Potency"
-msgstr "Сила исц. магии"
+msgstr "Сила лечебной магии"
 
 #. ja: スペルスピード
 #. de: Zaubertempo
@@ -1481,11 +1485,12 @@ msgstr "Мастерство"
 #. fr: Contrôle
 msgctxt "Addon:3262:0:0"
 msgid "Control"
-msgstr "Точность"
+msgstr "Контроль"
 
 #. ja: Gathering
 #. de: SAMMELN
 #. fr: Récolte
+#, aeria-term-model-exception: Gathering 7c4a6e95b7ba
 msgctxt "Addon:3263:0:0"
 msgid "Gathering"
 msgstr "Сбор"
@@ -1493,6 +1498,7 @@ msgstr "Сбор"
 #. ja: 獲得力
 #. de: Sammelgeschick
 #. fr: Collecte
+#, aeria-term-model-exception: Gathering 7c4a6e95b7ba
 msgctxt "Addon:3264:0:0"
 msgid "Gathering"
 msgstr "Сила сбора"
@@ -1502,7 +1508,7 @@ msgstr "Сила сбора"
 #. fr: Savoir-faire
 msgctxt "Addon:3265:0:0"
 msgid "Perception"
-msgstr "Восприятие"
+msgstr "Чутьё"
 
 #. ja: 納刀する/抜刀する
 #. de: Waffe ziehen/wegstecken
@@ -1565,6 +1571,7 @@ msgstr "Средний уровень всей надетой экипировк
 #. ja: Desynthesis Skill
 #. de: Verwertungsgeschick
 #. fr: Compétence de recyclage
+#, aeria-term-model-exception: Desynthesis 2e8e3ff13822
 msgctxt "Addon:3275:0:0"
 msgid "Desynthesis Skill"
 msgstr "Навык разборки"
@@ -1572,13 +1579,14 @@ msgstr "Навык разборки"
 #. ja: DESYNTHESIS SKILL
 #. de: VERWERTUNGSGESCHICK
 #. fr: Compétences de recyclage
+#, aeria-term-model-exception: Desynthesis 2e8e3ff13822
 msgctxt "Addon:3276:0:0"
 msgid "Desynthesis Skill"
 msgstr "Навык разборки"
 
 #. ja: 合計
 #. de: Gesamt
-#. fr: Total 
+#. fr: Total
 msgctxt "Addon:3278:0:0"
 msgid "Total"
 msgstr "Всего"
@@ -1662,6 +1670,7 @@ msgstr "Обменять <kilo $n3 \",\"> <if ($n3 == 1)>печать<else>пе�
 #. ja: 戻る
 #. de: Zurück
 #. fr: Retour
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:3291:0:0"
 msgid "Return"
 msgstr "Назад"
@@ -1744,7 +1753,7 @@ msgid "Edit Hotbar"
 msgstr "Настроить панель"
 
 #. ja: 登録位置を編集したいスロットを、<br>使用時と同じ操作で指定してください。
-#. de: Wähle einen Slot mit der Tastenkombination aus,<br>mit der du das Kommando dort normalerweise benutzt. 
+#. de: Wähle einen Slot mit der Tastenkombination aus,<br>mit der du das Kommando dort normalerweise benutzt.
 #. fr: Sélectionnez le raccourci à modifier en pressant<br>la combinaison de touches correspondante.
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:3321:0:0"
@@ -1752,7 +1761,7 @@ msgid "Select a slot to edit<br>by pressing its button combination."
 msgstr "Выберите ячейку для изменения,<br>нажав назначенное ей сочетание клавиш."
 
 #. ja: 移動先のスロットを指定してください。<br>もう一度同じスロットを指定すると<br>登録項目を削除して空きスロットにします。
-#. de: Wähle nun einen neuen Slot für das Kommando aus.<br>Um das Kommando zu entfernen,<br>wähle denselben Slot nochmals aus. 
+#. de: Wähle nun einen neuen Slot für das Kommando aus.<br>Um das Kommando zu entfernen,<br>wähle denselben Slot nochmals aus.
 #. fr: Sélectionnez un nouvel emplacement pour cette commande.<br>Sélectionnez le même emplacement pour effacer la commande.
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "Addon:3322:0:0"
@@ -2257,7 +2266,7 @@ msgid "Show items for current job/class."
 msgstr "Предметы текущего класса/профессии"
 
 #. ja: 必要なカンパニーランクを満たしていません。
-#. de: Dein Rang in der Ge<shy>sell<shy>schaft ist nicht hoch genug. 
+#. de: Dein Rang in der Ge<shy>sell<shy>schaft ist nicht hoch genug.
 #. fr: Le rang de la compagnie est trop bas.
 msgctxt "Addon:3420:0:0"
 msgid "Your company rank is not high enough."
@@ -3419,6 +3428,7 @@ msgstr "Общее"
 #. ja: 戦闘
 #. de: Kampf
 #. fr: Combats
+#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "Addon:3663:0:0"
 msgid "Battle"
 msgstr "Бой"
@@ -3793,6 +3803,7 @@ msgstr "Наложить"
 #. ja: 戻る
 #. de: Zurück
 #. fr: Retour
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:3719:0:0"
 msgid "Return"
 msgstr "Назад"
@@ -3835,6 +3846,7 @@ msgstr "Снять"
 #. ja: 戻る
 #. de: Zurück
 #. fr: Retour
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:3726:0:0"
 msgid "Return"
 msgstr "Назад"
@@ -4671,7 +4683,7 @@ msgid "The buying price for this item has changed."
 msgstr "Цена продажи этого предмета изменилась."
 
 #. ja: <sheet Item $n1 0>の価格は在庫状態に変化があったため変更されています。このまま購入してよろしいですか？
-#. de: Der für <noun-de Item 2 $n1 1 4 1> verlangte Preis hat sich geändert. Trotzdem kaufen? 
+#. de: Der für <noun-de Item 2 $n1 1 4 1> verlangte Preis hat sich geändert. Trotzdem kaufen?
 #. fr: Le prix d'achat <noun-fr Item 9 $n1 1 1> a changé. Voulez-vous tout de même poursuivre la transaction<nbsp>?
 #. macro: <noun-en Item 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3881:0:0"
@@ -4679,7 +4691,7 @@ msgid "The asking price for <noun-en Item 1 $n1 2 1> has changed. Do you still w
 msgstr "Цена покупки <noun-en Item 1 $n1 2 1> изменилась. Всё равно завершить сделку?"
 
 #. ja: <sheet Item $n1 0>の価格は在庫状態に変化があったため変更されています。このまま売却してよろしいですか？
-#. de: Der für <noun-de Item 2 $n1 1 4 1> gebotene Preis hat sich geändert. Trotzdem verkaufen? 
+#. de: Der für <noun-de Item 2 $n1 1 4 1> gebotene Preis hat sich geändert. Trotzdem verkaufen?
 #. fr: Le prix de vente <noun-fr Item 9 $n1 1 1> a changé. Voulez-vous tout de même poursuivre la transaction<nbsp>?
 #. macro: <noun-en Item 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3882:0:0"
@@ -4689,13 +4701,14 @@ msgstr "Цена продажи <noun-en Item 1 $n1 2 1> изменилась. �
 #. ja: ショップメニュー
 #. de: Etwas kaufen/verkaufen
 #. fr: Échoppe
+#, aeria-term-model-exception: Shop c71892a52a2f
 msgctxt "Addon:3883:0:0"
 msgid "Shop Menu"
 msgstr "Магазин"
 
 #. ja: 選択してください：
 #. de: Wähle eine Option:
-#. fr: Choisissez une option<nbsp>: 
+#. fr: Choisissez une option<nbsp>:
 msgctxt "Addon:3884:0:0"
 msgid "Select an option:"
 msgstr "Выберите вариант:"

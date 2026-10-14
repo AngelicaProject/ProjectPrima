@@ -18,6 +18,7 @@ msgstr "Маршалу Двух Змей Брукстоуну нужен сол�
 #. de: Die Eorzäische Allianz braucht deine Hilfe. Melde dich in Castrum Oriens im Abanischen Grenzland bei Tahla Molkoh zum Einsatz.
 #. fr: Vous avez discuté avec Swethryk Brookstone, un grand maréchal dépêché à Castrum Oriens par l'ordre des Deux Vipères afin de s'assurer que tout s'y passe bien. Il a une tâche à vous confier et souhaiterait que vous vous adressiez à une de ses collègues. Allez trouver Tahla Molkoh.
 #. kind: journal
+#, aeria-term-model-exception: hold f77e37217d83
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_SEQ_01:1"
 msgid "The Alliance has recently taken hold of Castrum Oriens, and Serpent Marshal Brookstone is preparing for a reconnaissance of the area. He asks for your assistance, bidding you speak with Lieutenant Molkoh for further details."
 msgstr "Эорзейский альянс недавно занял Каструм Ориенс, и маршал Двух Змей Брукстоун готовит разведку окрестностей. Он просит вас помочь и отправляет за подробностями к лейтенанту Молкох."
@@ -26,7 +27,7 @@ msgstr "Эорзейский альянс недавно занял Кастру
 #. de: Die Militärhistorikerin Tahla Molkoh erforscht die in Castrum Oriens erbeuteten Dokumente der Garlear. Dabei ist sie auf eine Liste von Kriegsgefangenen gestoßen, die vor zwanzig Jahren bei der Eroberung von Ala Mhigo in Gefangenschaft gerieten. Bei einigen ist ungewiss, was aus ihnen geworden ist. Vielleicht weiß die Ananta-Kriegerin in Castrum Oriens etwas darüber.
 #. fr: Tahla Molkoh a été envoyée par l'ordre des Deux Vipères afin de retrouver la piste de ces prisonniers de guerre qui sont aujourd'hui encore portés disparus. Il est très difficile de trouver des indices vingt ans après la disparition de ces personnes, mais la Miqo'te est chanceuse puisqu'une guerrière ananta est de passage à Castrum Oriens. Allez parler à cette visiteuse.
 #. kind: journal
-#, aeria-term-model-rendering: Garlean b36a8cd02906 гарлеанской
+#, aeria-term-model-exception: unknown 44a404818de7, aeria-term-model-rendering: Garlean b36a8cd02906 гарлеанской
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_SEQ_02:1"
 msgid "Lieutenant Molkoh seems more than excited to be in your presence. After regaining her composure, she explains to you the purpose of the mission. They have discovered records of Ala Mhigan prisoners dating back to the beginning of the Garlean occupation twenty years prior. However, a number of entries in the documents are listed only as “Whereabouts Unknown.” To begin your investigation into these missing prisoners, Lieutenant Molkoh suggests speaking with the Ananta, whose residency in the Fringes predates even the Ala Mhigans."
 msgstr "Лейтенант Молкох, похоже, очень рада вас видеть. Взяв себя в руки, она объясняет цель задания. В документах обнаружились записи об ала-мигойских пленных, датированные началом гарлеанской оккупации двадцать лет назад. Однако о многих из них сказано лишь: «Местонахождение неизвестно». Чтобы начать поиски, лейтенант Молкох предлагает поговорить с ананта — они живут в Окраинах ещё дольше, чем аламиганцы."
@@ -120,6 +121,7 @@ msgstr "Помогите лейтенанту Молкох."
 #. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Immortal Flame 785c157047f5
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_SWETHRYKBROOKSTONE_000_001:1"
 msgid "<if ($gn52 > 0)>Ah, <string $gs1> of the Maelstrom?<else><if ($gn53 > 0)>Ah, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>.<else>Ah, <string $gs1> of the Immortal Flames?</if></if> A moment if you would."
 msgstr "<if ($gn52 > 0)>А, <string $gs1> из Мальстрёма?<else><if ($gn53 > 0)>А, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>.<else>А, <string $gs1> из Бессмертного пламени?</if></if> Не уделите минутку?"
@@ -138,6 +140,7 @@ msgstr "Альянс решил временно поручить Ордену �
 #. speaker: SWETHRYKBROOKSTONE
 #. macro: <if ($gn52 > 0)>the Maelstrom<else><if ($gn53 > 0)>the Twin Adder<else>the Immortal Flames</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn53 > 0)>the Twin Adder<else>the Immortal Flames</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: Immortal Flame 785c157047f5
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_SWETHRYKBROOKSTONE_000_003:1"
 msgid "As an adventurer I realize it is your wont to attend to matters both great and small in all corners of the realm. Though it should go without saying that you must also uphold your obligations to <if ($gn52 > 0)>the Maelstrom<else><if ($gn53 > 0)>the Twin Adder<else>the Immortal Flames</if></if>, and the Eorzean Alliance."
 msgstr "Как приключенцу, вам наверняка доводилось браться за дела и великие, и малые во всех уголках мира. Но не забывайте и о своих обязанностях перед <if ($gn52 > 0)>Мальстрёмом<else><if ($gn53 > 0)>Орденом Двух Змей<else>Бессмертным пламенем</if></if> и Эорзейским альянсом."
@@ -212,6 +215,7 @@ msgstr "Как вы, наверное, догадались, многих пле
 #. de: Bei manchen Namen findet sich der Hinweis „Tod nicht bestätigt“. Was soll das bedeuten? Sind sie nun tot oder lebendig? Wohin wurden sie gebracht?
 #. fr: Heu<shy>reu<shy>se<shy>ment, nous sommes parrrvenus à en libérer quelques-uns, mais cette liste nous a permis de connaître les noms de ceux qui étaient morts ou aujourd'hui encore portés disparus... Et mon travail consiste à retrouver leur trace<nbsp>!
 #. speaker: TAHLAMOLKOH
+#, aeria-term-model-exception: unknown 44a404818de7
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_TAHLAMOLKOH_000_017:1"
 msgid "What we weren't expecting, however, was a number of prisoners listed simply as “Whereabouts Unknown.” We thought perhaps they met some ill fortune during their imprisonment, or even escaped, but we could find no other documents to suggest what became of them."
 msgstr "Но мы не ожидали увидеть среди записей столько людей с пометкой «Местонахождение неизвестно». Мы решили, что они могли погибнуть в плену или сбежать, но других документов, которые объяснили бы их судьбу, не нашли."
@@ -236,6 +240,7 @@ msgstr "Вот только прошло уже двадцать лет. Выя�
 #. de: Eine Ananta-Kriegerin, die der mhigischen Be<shy>freiungs<shy>armee angehört, soll sich gerade hier im Castrum aufhalten. Lass uns mit ihr reden!
 #. fr: Et j'ai une chance insolente, parce qu'il paraît qu'une guerrière ananta embrigadée dans l'armée de libération d'Ala Mhigo est justement de passage<nbsp>! Ça vous dérangerrrait qu'on aille lui parler ensemble<nbsp>?
 #. speaker: TAHLAMOLKOH
+#, aeria-term-model-exception: Ala Mhigan 24e5c0588b0b
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_TAHLAMOLKOH_000_020:1"
 msgid "The Ananta have called these lands home long before even the Ala Mhigans came to settle here. And as luck would have it, the Resistance has established cordial relations with their people. Perhaps they remember something of what happened all those years ago."
 msgstr "Ананта обитают здесь с незапамятных времён, ещё до появления аламиганцев. К тому же Сопротивление поддерживает с ними хорошие отношения. Может, они помнят, что случилось все эти годы назад."
@@ -403,6 +408,7 @@ msgstr "удалено"
 #. de: Wo kommen sie auf einmal her ...?
 #. fr: Uhhh... D'où ils sorrrtent, eux...<nbsp>?
 #. speaker: TAHLAMOLKOH
+#, aeria-term-model-exception: Stay ba651ec96fab
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_TAHLAMOLKOH_000_048:1"
 msgid "Only one remains now. Stay on your guard."
 msgstr "Остался только один. Будьте начеку."
@@ -433,7 +439,7 @@ msgid "Still, I find this quite curious. The Garleans were said to have retreate
 msgstr "И всё же странно. Говорят, гарлеанцы отступили из этих мест. Что они здесь делали?"
 
 #. ja: それにしても、解放軍との諍いが絶えないこの状況で、<br>彼らはいったいここで何をしていたのでしょう？
-#. de: Ich dachte, die Garlear hätten alle Kräfte zusammengezogen, um die Be<shy>freiungs<shy>armee zu bekämpfen. Was haben die Soldaten hier gemacht? 
+#. de: Ich dachte, die Garlear hätten alle Kräfte zusammengezogen, um die Be<shy>freiungs<shy>armee zu bekämpfen. Was haben die Soldaten hier gemacht?
 #. fr: Ce que je ne comprends pas, c'est que les Impérrriaux devraient craindre d'être attaqués par les membres de l'armée de libération d'Ala Mhigo en s'aventurant si près de Castrum Oriens... Qu'est-ce que ces soldats faisaient ici<nbsp>?
 #. speaker: TAHLAMOLKOH
 msgctxt "quest/026/StmBdz111_02661:TEXT_STMBDZ111_02661_TAHLAMOLKOH_000_053:1"

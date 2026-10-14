@@ -606,6 +606,7 @@ msgstr "Тренировка"
 #. ja: 前半フェーズ
 #. de: Anfangsphase
 #. fr: Initiale
+#, aeria-term-model-exception: First 5b14957ec834
 msgctxt "Addon:10085:0:0"
 msgid "First Phase"
 msgstr "Первая фаза"
@@ -850,9 +851,10 @@ msgstr "Разрешить <capitalize><string $s3></capitalize> взять <if 
 #. ja: 宝箱
 #. de: Schatztruhe
 #. fr: Coffre au trésor
+#, aeria-term-model-exception: Treasure c987231fd5de, aeria-term-model-rendering: treasure coffer a0d06a5bd1e3 сокр.
 msgctxt "Addon:10113:0:0"
 msgid "Treasure Coffer"
-msgstr "Сундук с кладом"
+msgstr "Сокр. сундук"
 
 #. ja: <icon2 10>サブコマンド
 #. de: <icon2 10> Untermenü
@@ -1011,14 +1013,14 @@ msgid "Begin"
 msgstr "Начать"
 
 #. ja: 現在のジョブ・クラス：
-#. de: Momentane Klasse/Job: 
+#. de: Momentane Klasse/Job:
 #. fr: Classe/job actuel<nbsp>:
 msgctxt "Addon:10134:0:0"
 msgid "Current Class/Job:"
 msgstr "Класс/профессия:"
 
 #. ja: ロール：
-#. de: Rolle: 
+#. de: Rolle:
 #. fr: Rôle<nbsp>:
 msgctxt "Addon:10135:0:0"
 msgid "Role: "
@@ -1086,7 +1088,7 @@ msgid "<string $s1>"
 msgstr "<string $s1>"
 
 #. ja: ※クラスクエストはウルダハ：ザル回廊「剣術士ギルド」の「ミラ」から受注できます
-#. de: Den Auftrag kannst du in der Gladia<shy>toren<shy>gilde im Thal-Kreuzgang in Ul'dah von Mylla erhalten. 
+#. de: Den Auftrag kannst du in der Gladia<shy>toren<shy>gilde im Thal-Kreuzgang in Ul'dah von Mylla erhalten.
 #. fr: * Cette ou ces quêtes sont disponibles au faubourg de Thal, à Ul'dah. Adressez-vous à Mylla, à la guilde des gladiateurs.
 #, aeria-term-model-exception: Steps of Thal 3bbd9f29f105
 msgctxt "Addon:10144:0:0"
@@ -1094,7 +1096,7 @@ msgid "※Available from Mylla in the Gladiators' Guild located on the Steps of 
 msgstr "※ Задание можно получить у Милы в Гильдии гладиаторов в квартале Тала, Уль'де."
 
 #. ja: ※クラスクエストは　リムサ・ロミンサ：上甲板層　「斧術士ギルド」の「ヴィルンズーン」から受注できます。
-#. de: Den Auftrag kannst du in der Marodeurgilde in den Oberen Decks von Limsa Lominsa von Wyrnzoen erhalten. 
+#. de: Den Auftrag kannst du in der Marodeurgilde in den Oberen Decks von Limsa Lominsa von Wyrnzoen erhalten.
 #. fr: * Cette ou ces quêtes sont disponibles au Tillac, à Limsa Lominsa. Adressez-vous à Wyrnzoen, à la guilde des maraudeurs.
 msgctxt "Addon:10145:0:0"
 msgid "※Available from Wyrnzoen in the Marauders' Guild located on the upper decks of Limsa Lominsa."
@@ -1208,7 +1210,7 @@ msgstr "Справка: поиск рейдов"
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:10160:0:0"
 msgid "<ui-color 514>Progress Record</ui-color><br>Progress within the latest Savage raids is<br>periodically saved, allowing for continuation<br>of the duty from that point.<br><br>Progress is reset every week on<br><reset-time 17 2><switch $weekday><case>Sunday<case>Monday<case>Tuesday<case>Wednesday<case>Thursday<case>Friday<case>Saturday</switch> at <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>p.m.<else>a.m.</if> (Earth time).<br><br><ui-color 514>Party Progress</ui-color><br>A party's starting point in the raid is<br>determined by the leader's past progress.<br>As long as all other conditions are met, <br>players who have not progressed as far as<br>the leader may still participate in the duty.<br><br>If a party member's progress was less<br>than that of the leader, then progress<br>will be updated to match.<br><br>If a party member's progress is beyond<br>that of the leader, that member's progress<br>will remain unaffected.<br><br><ui-color 514>Reward Restrictions</ui-color><br>Players will not earn rewards for completing<br>phases they have already completed.<br>Coffer quantity will vary based on the total<br>number of party members who have already<br>completed the duty.<br><br>When participating in the latest Savage raid<br>with a matched party, duty rewards may<br>change based on the progress level of<br>matched members.<br><br><ui-color 514>Job Distribution</ui-color><br>Parties formed with the Raid Finder do not<br>allow for two members with the same job<br>unless certain conditions are met.<br><br>DPS jobs are divided into the following roles:<br>Melee DPS, Physical Ranged DPS,<br>Magical Ranged DPS, and Not Specified.<br><br>When the raid purpose is set as “Duty Completion,”<br>the jobs that fall into Not Specified must be<br>different from the ones which fill the other three<br>DPS roles. When the raid purpose is set to “Practice,”<br>overlapping between specified and unspecified DPS<br>jobs is allowed.<br><br><ui-color 514>Loot Rules & Languages</ui-color><br>Loot rules and Language settings are imported<br>from current Duty Finder settings.<br><br><ui-color 514>Penalties</ui-color><br>Penalties for withdrawing from duties are<br>shared between all matched content."
-msgstr "<ui-color 514>Запись прогресса</ui-color><br>Прогресс в последних рейдах уровня «Эпохальный» периодически сохраняется, чтобы вы могли продолжить прохождение активности с того же места.<br><br>Прогресс сбрасывается каждую неделю в <reset-time 17 2><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среду<case>четверг<case>пятницу<case>субботу</switch> в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>вечера<else>утра</if> по земному времени.<br><br><ui-color 514>Прогресс группы</ui-color><br>Точка начала рейда зависит от прогресса лидера группы. Если остальные условия выполнены, к прохождению могут присоединиться игроки с меньшим прогрессом.<br><br>Прогресс участника, отстающего от лидера, обновится до уровня лидера.<br><br>Прогресс участника, опередившего лидера, не изменится.<br><br><ui-color 514>Ограничения на награды</ui-color><br>Награды за этапы, которые вы уже прошли, не выдаются. Количество сундуков зависит от числа участников, уже завершивших активность.<br><br>В рейде «Эпохальный», найденном через поиск, награды могут меняться в зависимости от прогресса подобранных игроков.<br><br><ui-color 514>Распределение профессий</ui-color><br>В группах, собранных через поиск рейдов, два участника не могут играть за одну профессию, если не выполнены определённые условия.<br><br>Атакующие делятся на четыре роли: ближнего боя, физического и магического дальнего боя, а также без ограничений.<br><br>При цели «Завершение активности» профессии атакующих без ограничений должны отличаться от профессий в остальных трёх ролях. При цели «Тренировка» совпадения разрешены.<br><br><ui-color 514>Правила добычи и языки</ui-color><br>Применяются настройки правил добычи и языка из поиска заданий.<br><br><ui-color 514>Штрафы</ui-color><br>Штрафы за выход из активности распространяются на весь контент с подбором группы."
+msgstr "<ui-color 514>Запись прогресса</ui-color><br>Прогресс в последних рейдах уровня «Эпохальный» периодически сохраняется, чтобы вы могли продолжить прохождение активности с того же места.<br><br>Прогресс сбрасывается каждую неделю в <reset-time 17 2><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среду<case>четверг<case>пятницу<case>субботу</switch> в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>вечера<else>утра</if> по земному времени.<br><br><ui-color 514>Прогресс группы</ui-color><br>Точка начала рейда зависит от прогресса лидера группы. Если остальные условия выполнены, к прохождению могут присоединиться игроки с меньшим прогрессом.<br><br>Прогресс участника, отстающего от лидера, обновится до уровня лидера.<br><br>Прогресс участника, опередившего лидера, не изменится.<br><br><ui-color 514>Ограничения на награды</ui-color><br>Награды за этапы, которые вы уже прошли, не выдаются. Количество сундуков зависит от числа участников, уже завершивших активность.<br><br>В рейде «Эпохальный», найденном через поиск, награды могут меняться в зависимости от прогресса подобранных игроков.<br><br><ui-color 514>Распределение профессий</ui-color><br>В группах, собранных через поиск рейдов, два участника не могут играть за одну профессию, если не выполнены определённые условия.<br><br>Атакующие делятся на четыре роли: ближнего боя, физического и магического дальнего боя, а также без ограничений.<br><br>При цели «Завершение активности» профессии атакующих без ограничений должны отличаться от профессий в остальных трёх ролях. При цели «Тренировка» совпадения разрешены.<br><br><ui-color 514>Правила добычи и языки</ui-color><br>Применяются настройки правил добычи и языка из Поиска активностей.<br><br><ui-color 514>Штрафы</ui-color><br>Штрафы за выход из активности распространяются на весь контент с подбором группы."
 
 #. ja: 閉じる
 #. de: Schließen
@@ -1428,7 +1430,7 @@ msgid "Search for a new adventurer or returner."
 msgstr "Найти новичков или вернувшихся игроков."
 
 #. ja: ベテラン冒険者である「<icon 78><string $s1>」から、<br>ビギナーチャンネルへ招待されました！<br><br>ビギナーチャンネルは、冒険を始めたばかりの初心者である<icon 77>ビギナーをサポートするチャットチャンネルです。<br><br>ビギナーチャンネルにはたくさんのビギナーや、ベテラン冒険者であるメンターがおり、<br>気軽に質問をしたり、ビギナー同士の交流や冒険の仲間探しにとても便利です。<br>ぜひ参加して、ファイナルファンタジーXIVをより楽しくプレイしましょう！！
-#. de: Du wurdest von dem Mentor <icon 78><string $s1> in den Neulings-Chat eingeladen!<br><br>Der Neulings-Chat ist ein spezieller Chat-Kanal, in dem <icon 77>Neulinge erfahrenen Spielern, den Mentoren, Fragen stellen oder sich mit anderen neuen Spielern austauschen können. Nutz die Gelegenheit zum freund<shy>schaft<shy>lichen Austausch! 
+#. de: Du wurdest von dem Mentor <icon 78><string $s1> in den Neulings-Chat eingeladen!<br><br>Der Neulings-Chat ist ein spezieller Chat-Kanal, in dem <icon 77>Neulinge erfahrenen Spielern, den Mentoren, Fragen stellen oder sich mit anderen neuen Spielern austauschen können. Nutz die Gelegenheit zum freund<shy>schaft<shy>lichen Austausch!
 #. fr: Vous avez reçu une invitation du mentor <icon 78><string $s1> à rejoindre le <ui-color 506><ui-edge-color 507>réseau des novices</ui-edge-color></ui-color><nbsp>!<br>Il s'agit d'un mode de discussion consacré à l'entraide, où les nouveaux joueurs peuvent échanger des in<shy>for<shy>ma<shy>tions et poser des questions aux vétérans appelés.<br>Participez-y activement de manière à enrichir votre expérience de FINAL FANTASY XIV ainsi que celle des autres<nbsp>!
 #. macro: <icon 78> — an inline icon of the game font; icon = 78 (game data: keep it; it may move or repeat)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
@@ -1718,7 +1720,7 @@ msgstr "Только панель 1"
 #. fr: Cacher la liste des objectifs lors des missions instanciées
 msgctxt "Addon:10225:0:0"
 msgid "Hide duty list during instanced duty."
-msgstr "Скрывать список целей в инстансах"
+msgstr "Скрывать список заданий в инстансах"
 
 #. ja: ロール内並び順設定
 #. de: Klassen-/Job-Reihenfolge
@@ -1746,7 +1748,7 @@ msgstr "Регулировать забрало вручную (для подх�
 #. fr: Cacher la liste des objectifs lors des missions non instanciées
 msgctxt "Addon:10229:0:0"
 msgid "Hide duty list during non-instanced duty."
-msgstr "Скрывать список целей вне инстансов"
+msgstr "Скрывать список заданий вне инстансов"
 
 #. ja: PvE　通常コンテンツ用設定
 #. de: PvE-Einstellungen
@@ -1850,6 +1852,7 @@ msgstr "Настройки отображения двойной панели"
 #. ja: WXHBの入力を行うと自動的にXHBへ復帰する
 #. de: Nach Eingabe zum einfachen Kreuz-Kommandomenü wechseln
 #. fr: Retour automatique à la croix de raccourcis après saisie
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:10243:0:0"
 msgid "Return to XHB after WXHB input."
 msgstr "После ввода переключаться на обычную панель"
@@ -2026,6 +2029,7 @@ msgstr "Показывать полоску выполнения"
 #. ja: サブコマンドからのドラッグ操作を有効にする
 #. de: Ziehen aus Untermenü aktivieren
 #. fr: Activer le glisser à partir du sous-menu
+#, aeria-term-model-exception: shortcut 75e5ad6d1674
 msgctxt "Addon:10274:0:0"
 msgid "Enable draggable shortcuts."
 msgstr "Перетаскивать быстрые команды"
@@ -2063,7 +2067,7 @@ msgstr "Скрывать после выполнения всех заданий
 #. fr: Activer la saisie pour l'action de mission
 msgctxt "Addon:10279:0:0"
 msgid "Enable duty action input."
-msgstr "Включить ввод для действий в задании"
+msgstr "Включить ввод действия задания"
 
 #. ja: バフ・デバフの表示数設定
 #. de: Anzahl angezeigter Status
@@ -2594,7 +2598,7 @@ msgstr "×<num $n1>"
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:10365:0:0"
 msgid "At least 2 mounts must be favorited before using the Mount Roulette.<br><ui-color 506><ui-edge-color 507>※Stabled chocobos cannot be summoned via this method.</ui-edge-color></ui-color>"
-msgstr "Добавьте в избранное хотя бы два маунта, чтобы пользоваться рулеткой маунтов.<br><ui-color 506><ui-edge-color 507>※ Чокобо в стойле нельзя призвать этим способом.</ui-edge-color></ui-color>"
+msgstr "Добавьте в избранное хотя бы два маунта, чтобы пользоваться <ui-color 506><ui-edge-color 507>Случайным маунтом</ui-edge-color></ui-color>.<br><ui-color 506><ui-edge-color 507>※ Чокобо в стойле нельзя призвать этим способом.</ui-edge-color></ui-color>"
 
 #. ja: CRYSTAL SAND
 #. de: GEGENSTÄNDE GEGEN KRISTALLSAND EINTAUSCHEN
@@ -2797,9 +2801,10 @@ msgstr "Некоторые межсерверные линкшеллы откл�
 #. ja: DEEP DUNGEON
 #. de: TIEFES GEWÖLBE
 #. fr: Donjon sans fond
+#, aeria-term-model-exception: Dungeon a4d38ad6d71d
 msgctxt "Addon:10400:0:0"
 msgid "Deep Dungeon"
-msgstr "Глубины"
+msgstr "Глубины подзем."
 
 #. ja: Equipments
 #. de: Ausrüstung
@@ -2973,6 +2978,7 @@ msgstr "Бронзовый ларец"
 #. ja: マップをロックする
 #. de: Karte fixieren
 #. fr: Verrouiller la carte
+#, aeria-term-model-exception: Lock 677dba0eb94c
 msgctxt "Addon:10423:0:0"
 msgid "Lock Map"
 msgstr "Закрепить карту"
@@ -3038,6 +3044,7 @@ msgstr "Показывать прогресс персонажа и предме
 #. de: Schaltet die Feststellfunktion für die Charakter-Info ein und aus, sodass sich das Fenster nicht schließt, wenn die Esc-Taste oder <icon2 9> gedrückt werden oder das Hauptmenü geöffnet wird.
 #. fr: Activer/désactiver le verrouillage de la fenêtre d'in<shy>for<shy>ma<shy>tions du donjon, empêchant sa fermeture avec la touche Échap, <icon2 9> ou l'affichage du menu principal.
 #. macro: <icon2 9> — an inline icon that depends on the input device; icon = 9 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Lock 677dba0eb94c, aeria-term-model-exception: Character d016b0422e08
 msgctxt "Addon:10433:0:0"
 msgid "Lock/Unlock the Character Info window so that it does/does not close upon pressing <icon2 9> or the Esc key, or accessing the main menu."
 msgstr "Закрепить или открепить окно информации о персонаже, чтобы оно закрывалось или не закрывалось при нажатии <icon2 9> или Esc, а также при открытии главного меню."
@@ -3061,6 +3068,7 @@ msgstr "Показывать прогресс, необходимый для а�
 #. fr: Activer/désactiver le verrouillage de la carte, empêchant sa fermeture avec la touche Échap, <icon2 9>, <icon 10> ou l'affichage du menu principal.
 #. macro: <icon2 9> — an inline icon that depends on the input device; icon = 9 (game data: keep it; it may move or repeat)
 #. macro: <icon 10> — an inline icon of the game font; icon = 10 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Lock 677dba0eb94c
 msgctxt "Addon:10436:0:0"
 msgid "Lock/Unlock the map so that it does/does not close upon pressing the Esc key, <icon2 9>, or <icon 10>."
 msgstr "Закрепить или открепить карту, чтобы она закрывалась или не закрывалась при нажатии Esc, <icon2 9> или <icon 10>."
@@ -3775,6 +3783,7 @@ msgstr "Новобранцы"
 #. de: <if ($n1 == 0)>Keine<else>In der Wachstube zur Prüfung bereit</if>
 #. fr: <if ($n1 == 0)>Aucune<else>En attente de revue à la caserne</if>
 #. macro: <if ($n1 == 0)>No<else>Yes (Return to barracks to review enlistment papers)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 0 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:10538:0:0"
 msgid "<if ($n1 == 0)>No<else>Yes (Return to barracks to review enlistment papers)</if>"
 msgstr "<if ($n1 == 0)>Нет<else>Да (вернитесь в казарму и проверьте заявления о вступлении)</if>"
@@ -3783,6 +3792,7 @@ msgstr "<if ($n1 == 0)>Нет<else>Да (вернитесь в казарму и
 #. de: <if ($n1 == 0)>Einsatz beendet<else>Ausbildung beendet</if>
 #. fr: <if ($n1 == 0)>Expédition terminée<else>Entraînement terminé</if> (Rapport disponible à la caserne)
 #. macro: <if ($n1 == 0)>Mission<else>Training</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 0 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:10539:0:0"
 msgid "<if ($n1 == 0)>Mission<else>Training</if> Complete (Return to barracks for debriefing)"
 msgstr "<if ($n1 == 0)>Задание<else>Тренировка</if> завершено (отчёт в казарме)"
@@ -3924,6 +3934,7 @@ msgstr "Разбор задания"
 #. fr: Stratégie “<lower-first><string $s1></lower-first>” apprise<nbsp>!
 #. macro: <capitalize><string $s1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "Addon:10562:0:0"
 msgid "New Battle Tactic Acquired: <capitalize><string $s1></capitalize>"
 msgstr "Новая тактика: <capitalize><string $s1></capitalize>"
@@ -4586,6 +4597,7 @@ msgstr "Уволить"
 #. ja: 戻る
 #. de: Zurück
 #. fr: Retour
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:10679:0:0"
 msgid "Return"
 msgstr "Назад"
@@ -4897,7 +4909,7 @@ msgctxt "Addon:10726:0:0"
 msgid "Join"
 msgstr "Вступить"
 
-#. ja: SPECTATOR LIST 
+#. ja: SPECTATOR LIST
 #. de: ZUSCHAUER
 #. fr: Liste des spectateurs
 msgctxt "Addon:10727:0:0"
@@ -5335,6 +5347,7 @@ msgstr "Призвать"
 #. ja: 戻る
 #. de: Zurück
 #. fr: Retour
+#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "Addon:10839:0:0"
 msgid "Return"
 msgstr "Назад"
@@ -5364,6 +5377,7 @@ msgstr "Ур. предмета <num $n1>"
 #. ja: 最新の認定条件で認定を受けたバトルメンター
 #. de: Mentoren (Magier/Krieger) mit aktuellem Mentoren-Status
 #. fr: Avoir obtenu la nouvelle accréditation de mentor de combat
+#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "Addon:10848:0:0"
 msgid "Battle mentor with current certification"
 msgstr "Боевой наставник с действующим сертификатом"
@@ -5466,6 +5480,7 @@ msgstr "Вы проиграли дуэль."
 #. ja: OK
 #. de: Wiederbeleben
 #. fr: OK
+#, aeria-term-model-exception: Rise 24a78f8652c3
 msgctxt "Addon:10863:0:0"
 msgid "Rise"
 msgstr "Встать"
@@ -5884,7 +5899,7 @@ msgctxt "Addon:10939:0:0"
 msgid "Selecting “Duty Complete” signifies that only players who have completed a certain duty may join the party. Selecting “Duty Incomplete” signifies the opposite."
 msgstr "Если выбрать «Активность пройдена», в группу смогут вступить только игроки, уже завершившие определённую активность. Если выбрать «Активность не пройдена» — только те, кто её ещё не проходил."
 
-#. ja: CONTACT LIST 
+#. ja: CONTACT LIST
 #. de: GRUPPENVERLAUF
 #. fr: Liste de contacts
 msgctxt "Addon:10940:0:0"
@@ -5991,6 +6006,7 @@ msgstr "<ui-color 506><ui-edge-color 507><br>※ Имена персонажей
 #. ja: オンライン状況不明
 #. de: Online-Status unbekannt
 #. fr: État en ligne inconnu
+#, aeria-term-model-exception: unknown 44a404818de7
 msgctxt "Addon:10956:0:0"
 msgid "Online Status Unknown"
 msgstr "Статус неизвестен"
@@ -6129,6 +6145,7 @@ msgstr "Проверено"
 #. de: <icon 79> Mentor (K/M)
 #. fr: <icon 79>Combat
 #. macro: <icon 79> — an inline icon of the game font; icon = 79 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "Addon:10974:0:0"
 msgid "<icon 79> Battle Mentor"
 msgstr "<icon 79> Наставник боя"

@@ -50,7 +50,7 @@ msgstr "Отнесите полный мешок гному-гурману из 
 #. macro: <switch $gn71><case>traveler<case>traveler<case>foreign dwarf<case>traveler<case>traveler<case>traveler<case>traveler<case>traveler</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = global number 71 (the player character's race, a Race row) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/035/LucKzi011_03547:TEXT_LUCKZI011_03547_GOURMET03547_000_000:1"
 msgid "...Eh? What? Who? Oh! You're that <switch $gn71><case>traveler<case>traveler<case>foreign dwarf<case>traveler<case>traveler<case>traveler<case>traveler<case>traveler</switch> I keep hearing about!"
-msgstr "...А? Что? Кто? А! Ты тот самый <switch $gn71><case>путешественник<case>путешественник<case>чужеземный гном<case>путешественник<case>путешественник<case>путешественник<case>путешественник<case>путешественник</switch>, о котором все говорят!"
+msgstr "...А? Что? Кто? А! <if $gn4>Вы та самая<else>Вы тот самый</if> <switch $gn71><case><if $gn4>путешественница<else>путешественник</if><case><if $gn4>путешественница<else>путешественник</if><case><if $gn4>чужеземная дварфка<else>чужеземный дварф</if><case><if $gn4>путешественница<else>путешественник</if><case><if $gn4>путешественница<else>путешественник</if><case><if $gn4>путешественница<else>путешественник</if><case><if $gn4>путешественница<else>путешественник</if><case><if $gn4>путешественница<else>путешественник</if></switch>, про кого все говорят!"
 
 #. ja: 悪い悪い、見慣れないヤツだから驚いたが……ラリホー！<br>お詫びと言っちゃあなんだが、一緒にステーキを食わないか？<br>噂に名高い、クリフモールのステーキだよ！
 #. de: Entschuldige, ich bin etwas schreckhaft<nbsp>... und erschrocken war ich wohl! Holladriooo! Weißt du was? Zur Versöhnung werde ich dir eine Delikatesse zubereiten. Einen göttlichen Gaumenschmaus. Eine exquisite Reise ins Feinschmeckerparadies! Sag, hast du schon mal von „Klippenmull-Steaks“ gehört?
@@ -77,6 +77,7 @@ msgstr "Да уж, звучит не слишком аппетитно. Мясо
 #. de: Aber erst die Arbeit und dann der Genuss! Du musst mir das Fleisch eines kleingewachsenen Klippenmulls besorgen. Keins der großen Exemplare. Deren Fleisch ist zäh wie Leder und trocken wie Wüstenstaub!
 #. fr: Oui, la viande de taupe est raide et filandreuse, mais c'est seulement le cas pour les adultes<nbsp>! Figurez-vous que c'est tout le contraire pour les jeunes spécimens, dont la viande est tendre et juteuse. Ça vous dirait de goûter<nbsp>?
 #. speaker: GOURMET03547
+#, aeria-term-model-exception: Mine 687ef955c508
 msgctxt "quest/035/LucKzi011_03547:TEXT_LUCKZI011_03547_GOURMET03547_000_003:1"
 msgid "A friend of mine, though, he reckons the younger moles are tender and juicy as they come! What say you? Shall we put that claim to the test?"
 msgstr "Но мне друг говорил, что мясо молодых кротов нежное да сочное! Ну что, проверим?"
@@ -87,7 +88,7 @@ msgstr "Но мне друг говорил, что мясо молодых кр
 #. speaker: GOURMET03547
 msgctxt "quest/035/LucKzi011_03547:TEXT_LUCKZI011_03547_GOURMET03547_000_004:1"
 msgid "Then we'll need to catch one first. The juveniles are said to stay near humid areas, like caves and streams. I'm more of a “cave” kind of dwarf, so you can search the waterways."
-msgstr "Говорят, молодые утёсные кроты любят сырость — водятся в пещерах и у ручьёв. Я, как гном, больше по пещерам, так что ты ищи у воды."
+msgstr "Говорят, молодые утёсные кроты любят сырость — водятся в пещерах и у ручьёв. Я, как дварф, больше по пещерам, так что вы ищите у воды."
 
 #. ja: おっとそうだ、幼体は臆病だから、そう簡単に近付けない。<br>だから、見つけたらこの「<sheet EventItem 2002704 0>」をあげて、<br>安心させてから、袋にいれるといいそうだぜ！
 #. de: Ach, beinahe hätte ich es vergessen: Klippenmulle lassen sich nicht ohne Weiteres fangen. Du musst sie mit <noun-de EventItem 1 2002704 1 3 1> anlocken und dann mit einem Beutel einfangen.

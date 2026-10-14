@@ -135,7 +135,7 @@ msgctxt "LogMessage:6018:0:5"
 msgid "Unable to execute command. One or more alliance members has not met all the conditions required for this duty."
 msgstr "Не удалось выполнить действие. У одного или нескольких участников альянса не выполнены условия для входа в это подземелье."
 
-#. ja: 他のプレイヤーが管制卓を利用中のため、アライアンスとしてアクセスできません。 
+#. ja: 他のプレイヤーが管制卓を利用中のため、アライアンスとしてアクセスできません。
 #. de: Der Zutritt als Allianz ist nicht möglich,<br>weil ein anderer Spieler gerade das Planungspult benutzt.
 #. fr: Action impossible. Un autre joueur utilise le panneau de contrôle aérien.
 msgctxt "LogMessage:6019:0:5"
@@ -200,6 +200,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:6025:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> neither a Disciple of War nor Magic (excluding limited jobs)."
 msgstr "<if-self $n1>Вы не относитесь<else><capitalize><player-name $n1></capitalize> не относится</if-self> ни к физическому, ни к магическому классу. Ограниченные профессии не учитываются."
@@ -304,6 +305,7 @@ msgstr "Не удалось выполнить действие. У вас не�
 #. ja: リミテッドジョブを除くファイター、もしくはソーサラーがレベル60以上ではないため、実行できません。
 #. de: Nicht möglich, weil du kein Krieger oder Magier der Stufe 60 oder höher bist. (Beschränkte Jobs sind ausgeschlossen.)
 #. fr: Action impossible. Vous utilisez un job restreint, ou vous n'êtes pas un<if $gn4>e</if> disciple de la guerre ou de la magie de niveau 60 ou plus.
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физический
 msgctxt "LogMessage:6037:0:5"
 msgid "Unable to execute command. You are not a level 60 Disciple of War or Magic (excluding limited jobs)."
 msgstr "Не удалось выполнить действие. Ваш физический или магический класс должен быть не ниже 60-го уровня. Ограниченные профессии не учитываются."
@@ -330,14 +332,14 @@ msgstr "Не удалось выполнить действие. Недоста�
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6041:0:5"
 msgid "<if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> readied the airship."
-msgstr "<if-self $n1>Вы подготовили<else><capitalize><player-name $n1></capitalize> подготовил</if-self> воздушный корабль."
+msgstr "<if-self $n1>Вы подготовили<else><capitalize><player-name $n1></capitalize> подготовил</if-self> дирижабль."
 
 #. ja: 管制卓にアクセスしてパーティが乗船する飛空艇を選択してください。
 #. de: Geh zum Planungspult und wähle das Luftschiff, mit dem deine Gruppe zum Diadem fliegen soll.
 #. fr: Accédez au panneau de contrôle aérien et choisissez l'aéronef avec lequel vous souhaitez vous rendre au Diadème.
 msgctxt "LogMessage:6042:0:5"
 msgid "Access the voyage control panel and select the mission airship."
-msgstr "Подойдите к панели управления путешествием и выберите воздушный корабль для задания."
+msgstr "Подойдите к панели управления путешествием и выберите дирижабль для задания."
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<kilo $n3 ",">ギルで購入しました。
 #. de: Du hast <noun-de Item 1 $n1 $n2 4 1> für <kilo $n3 "."> Gil erworben.
@@ -351,7 +353,7 @@ msgctxt "LogMessage:6043:0:5"
 msgid "You purchase <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> for <kilo $n3 \",\"> gil."
 msgstr "Вы покупаете <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> за <kilo $n3 \",\"> гил."
 
-#. ja: 他のキャラクターが管制卓を利用中のため、アクセスできません。 
+#. ja: 他のキャラクターが管制卓を利用中のため、アクセスできません。
 #. de: Der Zugriff ist nicht möglich, weil ein anderer Spieler gerade das Planungspult benutzt.
 #. fr: Action impossible. Un autre joueur utilise le panneau de contrôle aérien.
 msgctxt "LogMessage:6044:0:5"
@@ -758,7 +760,7 @@ msgctxt "LogMessage:6092:0:5"
 msgid "<i><string $s1></i>'s <sheet SubmarineSpecCategory $n2 0> increased by <num $n3>."
 msgstr "Параметр «<sheet SubmarineSpecCategory $n2 0>» подводной лодки «<i><string $s1></i>» повышен на <num $n3>."
 
-#. ja: 巡航速度が足りていないため、出港できません。 
+#. ja: 巡航速度が足りていないため、出港できません。
 #. de: Die Ge<shy>schwindig<shy>keit reicht nicht aus, um ablegen zu können.
 #. fr: Impossible d'appareiller. Vitesse insuffisante.
 msgctxt "LogMessage:6093:0:5"
@@ -868,7 +870,7 @@ msgstr "Не удалось добавить <if $gn8><sheet ObjStr $gn8 0><else
 #. fr: Vous avez été reconduit à l'entrée des quartiers résidentiels, car vous avez pénétré dans un logement dont l'accès est restreint.
 msgctxt "LogMessage:6107:0:5"
 msgid "Teleported to residential area entrance. You entered a restricted property."
-msgstr "Вы вошли на участок с ограниченным доступом и перемещены ко входу в жилой район."
+msgstr "Вы вошли на участок с ограниченным доступом и перемещены ко входу в Жилой квартал."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>を立ち退き対象者リストに登録しました。
 #. de: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> wurde Hausverbot erteilt.
@@ -1073,6 +1075,7 @@ msgstr "Невозможно выполнить команду. Вы не вып
 #. ja: ファイター＆ソーサラークラスではないため、実行できません。
 #. de: Du musst in einer Krieger- oder Magierklasse sein.
 #. fr: Action impossible. Vous devez être un disciple de la guerre ou de la magie.
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическом
 msgctxt "LogMessage:6981:0:5"
 msgid "Unable to execute command. You must be a Disciple of War or Magic."
 msgstr "Невозможно выполнить команду. Вы должны быть в физическом или магическом классе."
@@ -1134,6 +1137,7 @@ msgstr "Невозможно выполнить команду. Все учас�
 #. macro: <noun-en ObjStr 2 $gn8 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gs1 == $gs3)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:6989:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> not a Disciple of War or Magic."
 msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не относитесь<else>не относится</if> ни к физическому, ни к магическому классу."

@@ -609,7 +609,7 @@ msgstr "<capitalize><noun-en Item 2 $n2 1 1></capitalize> снят с гнезд
 
 #. ja: カンパニーアクション「<sheet CompanyAction $n1 0>」をリザーブしました。
 #. de: Das Ge<shy>sell<shy>schaftskommando <sheet CompanyAction $n1 0> ist einsatzbereit.
-#. fr: Le bienfait “<sheet CompanyAction $n1 0>” est prêt à être activé. 
+#. fr: Le bienfait “<sheet CompanyAction $n1 0>” est prêt à être activé.
 #. macro: <sheet CompanyAction $n1 0> — a value from a game data sheet, such as a name; sheet = CompanyAction, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4077:0:5"
 msgid "Company action “<sheet CompanyAction $n1 0>” is ready for activation."
@@ -779,7 +779,7 @@ msgstr "Чтобы убрать мастерскую, сначала верни�
 #. fr: Action impossible.<br>Un projet de con<shy>struc<shy>tion est en cours ou un aéronef/sous-marin est à quai dans l'atelier.
 msgctxt "LogMessage:4099:0:5"
 msgid "Unable to remove the company workshop while a company project is in progress or an airship/submersible is docked."
-msgstr "Нельзя убрать мастерскую, пока идёт проект свободной компании или в доке стоит воздушный корабль либо подлодка."
+msgstr "Нельзя убрать мастерскую, пока идёт проект свободной компании или в доке стоит дирижабль либо подлодка."
 
 #. ja: 地下工房内にキャラクターがいるため実行できません。
 #. de: Werkstatt kann nicht entfernt werden. Ein Charakter befindet sich darin.
@@ -1126,7 +1126,7 @@ msgstr "Дирижабль компании № <num $n2> — <i><string $s1></i
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4146:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>register<else>registers</if> company airship No. <num $n1> - </i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы регистрируете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> регистрирует</if></capitalize> воздушный корабль №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы регистрируете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> регистрирует</if></capitalize> дирижабль №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»."
 
 #. ja: 素材を納品しました。
 #. de: Die Materialien wurden bereitgestellt.
@@ -1178,7 +1178,7 @@ msgstr "Дирижабль компании № <num $n2> — <i><string $s1></i
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4151:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>dismantle<else>dismantles</if> company airship No. <num $n1> - </i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы разбираете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> разбирает</if></capitalize> воздушный корабль №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы разбираете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> разбирает</if></capitalize> дирижабль №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»."
 
 #. ja: 中毒防止制限中のため出港を実行できません。
 #. de: Diese Aktion ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -1247,7 +1247,7 @@ msgid "<i><capitalize><string $s1></capitalize></i> has been recalled from an ex
 msgstr "Дирижабль <i><capitalize><string $s1></capitalize></i> отозван из экспедиции."
 
 #. ja: 所持品もしくはクリスタル枠に空きがないため、アイテムを入手できません。
-#. de: Du kannst die Vergütung nicht aufnehmen. Nicht genug Platz im Inventar oder Höchstgrenze für Kristalle erreicht. 
+#. de: Du kannst die Vergütung nicht aufnehmen. Nicht genug Platz im Inventar oder Höchstgrenze für Kristalle erreicht.
 #. fr: Impossible d'obtenir les objets. Votre inventaire est plein ou la limite du nombre de cristaux est atteinte.
 msgctxt "LogMessage:4160:0:5"
 msgid "Unable to retrieve extracted items. Insufficient inventory/crystal inventory space."
@@ -1351,10 +1351,10 @@ msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> сейчас не ну
 
 #. ja: 地下工房があるため、ハウスを撤去できません。
 #. de: Das Gebäude kann nicht entfernt werden, da sich im Keller noch eine Ge<shy>sell<shy>schaftswerkstätte befindet.
-#. fr: Démolition impossible. Un atelier a été aménagé dans la maison. 
+#. fr: Démolition impossible. Un atelier a été aménagé dans la maison.
 msgctxt "LogMessage:4171:0:5"
 msgid "Unable to remove main hall before removing the company workshop."
-msgstr "Нельзя убрать главное здание, пока не убрана мастерская компании."
+msgstr "Нельзя убрать главный зал, пока не убрана мастерская компании."
 
 #. ja: 部屋の明るさを「<num $n1>」に設定しました。
 #. de: Die Zimmerbeleuchtung wurde auf Helligkeitsstufe <num $n1> festgelegt.
@@ -1372,7 +1372,7 @@ msgid "Unable to deploy airship/submersible. Critical parts are damaged."
 msgstr "Не удалось отправить дирижабль или подводную лодку в плавание: повреждены важные детали."
 
 #. ja: カンパニー製作手帳に、<sheet Item $n1 0>の製作レシピが登録されました！
-#. de: Deinem Notizbuch für Ge<shy>sell<shy>schaftsprojekte wurde das Rezept für <noun-de Item 1 $n1 1 4 1> hinzugefügt! 
+#. de: Deinem Notizbuch für Ge<shy>sell<shy>schaftsprojekte wurde das Rezept für <noun-de Item 1 $n1 1 4 1> hinzugefügt!
 #. fr: <capitalize><noun-fr Item 2 $n1 1 1></capitalize> a été ajouté<if "<sheet Item $n1 6>">e</if> au carnet d'artisanat de compagnie.
 msgctxt "LogMessage:4174:0:5"
 msgid "A new recipe has been added to the company crafting log."
@@ -1573,7 +1573,7 @@ msgstr "Не удалось выполнить команду. Эта комна
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4197:0:5"
 msgid "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> is resting in the apartment's chocobo stables."
-msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> находится в стойле для чокобо в многоквартирном доме."
+msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> находится в Конюшнях чокобо многоквартирного дома."
 
 #. ja: 厩舎にチョコボが預けられているため撤去できません。
 #. de: Die Auflösung ist nicht möglich, weil sich dein Chocobo noch im Chocobo-Stall befindet.
@@ -1710,7 +1710,7 @@ msgid "Governmental interference."
 msgstr "Ограничение по времени игры."
 
 #. ja: このコンテンツは、現在キャラクターを強化する<br>バフステータスが付与される状態になっています。
-#. de: Für diesen Inhalt wird generell ein stärkender Status auf deinen Charakter angewendet. 
+#. de: Für diesen Inhalt wird generell ein stärkender Status auf deinen Charakter angewendet.
 #. fr: Cette mission confère un bonus bénéfique au personnage.
 msgctxt "LogMessage:4217:0:5"
 msgid "To facilitate the successful completion of this duty, you have been granted the power of the Echo."
@@ -1719,11 +1719,12 @@ msgstr "Чтобы помочь вам успешно пройти это исп
 #. ja: このコンテンツは、全滅する度に徐々にキャラクターを強化する<br>バフステータスが付与される状態になっています。
 #. de: Für diesen Inhalt wird jedes Mal, wenn die ganze Gruppe kampfunfähig wurde,<br>ein stärkender Status auf deinen Charakter angewendet.
 #. fr: Cette mission confère un bonus de plus en plus puissant après chaque défaite de l'équipe.
+#, aeria-term-model-exception: Enemy 59fb03c90ec4
 msgctxt "LogMessage:4218:0:5"
 msgid "Each time your party is defeated after having battled enemies for a given duration, the Echo will grant you enhanced strength."
 msgstr "После каждого поражения группы, случившегося спустя некоторое время боя, Эхо будет усиливать вас."
 
-#. ja: バフステータスによって、与ダメージ、ＨＰ回復効果、<br>および最大ＨＰが<num $n1>％上昇しています。 
+#. ja: バフステータスによって、与ダメージ、ＨＰ回復効果、<br>および最大ＨＰが<num $n1>％上昇しています。
 #. de: Durch die Kraft des Transzendierens werden der ausgeteilte Schaden, die LP-Regeneration und die Maximal-LP um <num $n1><nbsp>% erhöht.
 #. fr: Un bonus spécial augmente le montant de dégâts infligés, PV récupérés et PV maximums de <num $n1>%.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
@@ -1847,7 +1848,7 @@ msgstr "Идёт голосование за выдачу наград."
 
 #. ja: 規定人数がそろったため、宝箱が出現します。
 #. de: Alle erforderlichen Grup<shy>pen<shy>mit<shy>glieder sind anwesend.<br>Es werden alle Schatztruhen ausgegeben.
-#. fr: Le coffre va apparaître car tous les membres de l'équipe sont revenus. 
+#. fr: Le coffre va apparaître car tous les membres de l'équipe sont revenus.
 msgctxt "LogMessage:4236:0:5"
 msgid "All party members are now present. The maximum number of coffers will pop."
 msgstr "Все участники группы на месте. Появится максимальное количество сундуков."
@@ -1937,7 +1938,7 @@ msgctxt "LogMessage:4247:0:5"
 msgid "The party leader has silenced the Echo."
 msgstr "Лидер группы отключил Эхо."
 
-#. ja: 「制限解除」による突入によってバフステータスが付与されました。<br>与ダメージ、ＨＰ回復効果、および最大ＨＰが<num $n1>％上昇しています。 
+#. ja: 「制限解除」による突入によってバフステータスが付与されました。<br>与ダメージ、ＨＰ回復効果、および最大ＨＰが<num $n1>％上昇しています。
 #. de: Du nimmst an einem Inhalt ohne Beschränkungen teil und erhältst daher einen positiven Status.<br>Ausgeteilter Schaden, LP-Regenerationseffekte und Maximal-LP sind um <num $n1> % erhöht.
 #. fr: Participer à cette mission avec l'option “Sans restriction” vous octroie un effet bénéfique.<br>Vos dégâts infligés, vos soins prodigués et vos PV maximums sont augmentés de <num $n1>%.
 #. macro: <br> — a line break (may be added or dropped)
@@ -2051,7 +2052,7 @@ msgstr "Вложение материи отменено."
 
 #. ja: <sheet Item $n1 0>への転写に失敗し<sheet Item $n2 0>を失った。
 #. de: Die Absorption mit <noun-de Item 2 $n1 1 3 1> ist fehlgeschlagen. <capitalize><noun-de Item 2 $n2 1 1 1></capitalize> wurde zerstört.
-#. fr: Le transfert a échoué... Vous perdez <noun-fr Item 2 $n2 1 1>. 
+#. fr: Le transfert a échoué... Vous perdez <noun-fr Item 2 $n2 1 1>.
 #. macro: <noun-en Item 2 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4263:0:5"
 msgid "The infusion fails. You lose <noun-en Item 2 $n2 1 1>."
@@ -2201,7 +2202,7 @@ msgstr "Нельзя сдать материалы. Требуемый клас�
 #. fr: Il est nécessaire d'être dans la maison pour détruire l'atelier de compagnie.
 msgctxt "LogMessage:4283:0:5"
 msgid "Unable to remove company workshop while outside the main hall."
-msgstr "Нельзя снести мастерскую компании, находясь за пределами дома."
+msgstr "Нельзя снести мастерскую компании, находясь за пределами Главного зала."
 
 #. ja: このコマンドは、現在使用できません。
 #. de: Aktion kann momentan nicht ausgeführt werden.
@@ -2379,7 +2380,7 @@ msgid "Unable to cast glamour due to class restriction."
 msgstr "Нельзя наложить иллюзию: предметы не подходят по классу."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>に<sheet Item $n2 0>の外見を武具投影した。
-#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>projizierst<else>projiziert</if> <noun-de Item 1 $n2 1 4 1> auf <noun-de Item 2 $n1 1 4 1>.  
+#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>projizierst<else>projiziert</if> <noun-de Item 1 $n2 1 4 1> auf <noun-de Item 2 $n1 1 4 1>.
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>projetez<else>projette</if> un mirage. <capitalize><noun-fr Item 2 $n1 1 1></capitalize> prend l'apparence <noun-fr Item 9 $n2 1 1>.
 #. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
@@ -2523,7 +2524,7 @@ msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1
 msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はアイテム分解に失敗した……<br>  <sheet Item $n1 0>を失った。
-#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> die Materialverwertung verpatzt.<br>  <capitalize><noun-de Item 1 $n1 1 4 1></capitalize> verloren. 
+#. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> die Materialverwertung verpatzt.<br>  <capitalize><noun-de Item 1 $n1 1 4 1></capitalize> verloren.
 #. fr: Le recyclage a échoué...<br><capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>perdez<else>perd</if> <noun-fr Item 2 $n1 1 1>.
 #. macro: <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
@@ -2871,7 +2872,8 @@ msgstr "Обратитесь к гостям в чате командами /say
 
 #. ja: しばらくの間、自由に操作可能です。
 #. de: Du kannst dich eine Weile nach Herzenslust hier umsehen.
-#. fr: Vous pouvez agir comme il vous plaît pendant quelques instants. 
+#. fr: Vous pouvez agir comme il vous plaît pendant quelques instants.
+#, aeria-term-model-exception: Control fc90b79c079b
 msgctxt "LogMessage:4362:0:5"
 msgid "Control restrictions have been removed."
 msgstr "Ограничение на управление снято."
@@ -3117,7 +3119,7 @@ msgstr "Можно просмотреть только как <string $s1>."
 #. fr: Le recyclage a été interrompu. Veuillez réessayer.
 msgctxt "LogMessage:4393:0:5"
 msgid "Desynthesis was interrupted. Please try again."
-msgstr "Разбор предмета прерван. Попробуйте ещё раз."
+msgstr "Демонтирование прервано. Попробуйте ещё раз."
 
 #. ja: コンテンツに申請可能な回数の上限に達しました。
 #. de: Registrierung nicht möglich. Maximale Anzahl an registrierbaren Inhalten erreicht.
@@ -3311,6 +3313,7 @@ msgstr "Вы уничтожаете <noun-en EventItem 2 $n1 1 1> и отказ�
 #. de: Du kannst keine weiteren <noun-de Item 5 $n1 2 4 1> erhalten.
 #. fr: Vous ne pouvez pas obtenir davantage <noun-fr Item 8 $n1 2 1>.
 #. macro: <noun-en Item 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: hold f77e37217d83
 msgctxt "LogMessage:4417:0:5"
 msgid "You cannot hold any more <noun-en Item 1 $n1 2 1>. Your reward has been forfeited."
 msgstr "Больше нельзя получить <noun-en Item 1 $n1 2 1>. Награда потеряна."
@@ -4267,6 +4270,7 @@ msgstr "Не удалось открыть: для этой вкладки уж�
 #. ja: キャラクターコンフィグが開かれたためチャンネルログ設定を中止します。
 #. de: Die Einstellungen werden geschlossen, da die Charakter<shy>konfiguration geöffnet wurde.
 #. fr: Réglage de la fenêtre de log interrompu, car la fenêtre Configuration personnage a été ouverte.
+#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:4531:0:5"
 msgid "Channel Log Settings closed due to Character Configuration menu being opened."
 msgstr "Настройки канала чата закрыты из-за открытия меню «Конфигурация персонажа»."
@@ -4935,7 +4939,7 @@ msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize>
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4645:0:5"
 msgid "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> is resting in your free company's private chocobo stables."
-msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> находится в стойле для чокобо в доме вашей Вольной компании."
+msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> находится в Конюшнях чокобо в доме вашей Вольной компании."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は、個人のハウスのチョコボ厩舎に預けられています。
 #. de: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> ist im Stall deiner persönlichen Unterkunft untergebracht.
@@ -4945,7 +4949,7 @@ msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize>
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4646:0:5"
 msgid "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> is resting in your private chocobo stables."
-msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> находится в стойле для чокобо в личном доме."
+msgstr "<capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize> находится в Конюшнях чокобо личного дома."
 
 #. ja: 換羽期を過ぎているため、おやつを与えることはできません。
 #. de: Der Chocobo hat im Augenblick keinen Appetit auf dieses Futter.
@@ -5017,7 +5021,7 @@ msgctxt "LogMessage:4654:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> shines with the light of a newborn star!"
 msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> сияет светом новорождённой звезды!"
 
-#. ja: <sheet Item $n1 0>に込められた魂が、完全に定着した！ 
+#. ja: <sheet Item $n1 0>に込められた魂が、完全に定着した！
 #. de: Die Harmonisierung von <noun-de Item 1 $n1 1 3 1> ist abgeschlossen!
 #. fr: Les âmes contenues dans <noun-fr Item 2 $n1 1 1> ont été harmonisées<nbsp>!
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
@@ -5212,7 +5216,7 @@ msgid "<capitalize><string $gs56></capitalize> completion time: <num $n1>:<num2 
 msgstr "Время прохождения «<string $gs56>»: <num $n1>:<num2 $n2>."
 
 #. ja: 「下限アイテムレベルでの参加」有効
-#. de: Anpassung an Mindest-Gegen<shy>stands<shy>stufe möglich 
+#. de: Anpassung an Mindest-Gegen<shy>stands<shy>stufe möglich
 #. fr: Niveau d'objet minimum appliqué
 msgctxt "LogMessage:4680:0:5"
 msgid "Minimum IL active."
@@ -5258,14 +5262,14 @@ msgctxt "LogMessage:4685:0:5"
 msgid "Unable to register. Soul Crystal not equipped."
 msgstr "Нельзя подать заявку: не экипирован кристалл души."
 
-#. ja: 進行度がリセットされました。再度ウィンドウを開いてください。 
+#. ja: 進行度がリセットされました。再度ウィンドウを開いてください。
 #. de: Der Fortschritt wurde zurückgesetzt. Bitte öffne das Fenster erneut.
 #. fr: Votre progression a été réinitialisée. Veuillez rouvrir l'outil de raid.
 msgctxt "LogMessage:4686:0:5"
 msgid "Duty progress reset. Reopen the window to reflect changes."
 msgstr "Прогресс активности сброшен. Откройте окно ещё раз, чтобы обновить данные."
 
-#. ja: 進行度がリセットされたため、参加申請がキャンセルされました。再度参加申請を行ってください。 
+#. ja: 進行度がリセットされたため、参加申請がキャンセルされました。再度参加申請を行ってください。
 #. de: Du konntest dich nicht für die Teilnahme registrieren, weil der Fortschritt zurückgesetzt wurde. Bitte registriere dich erneut.
 #. fr: L'enregistrement a été annulé, car votre progression a été réinitialisée. Veuillez recommencer.
 msgctxt "LogMessage:4687:0:5"
@@ -5461,6 +5465,7 @@ msgstr "Нельзя сыграть в тройную триаду с непол
 #. ja: 選択したデッキは使用できないため、おまかせデッキで対戦を開始します。
 #. de: Das gewählte Deck kann nicht verwendet werden. Ein zufälliges Deck wird verwendet.
 #. fr: Le jeu choisi est in<shy>uti<shy>li<shy>sa<shy>ble. Un autre a été sélectionné au<shy>to<shy>ma<shy>ti<shy>que<shy>ment.
+#, aeria-term-model-exception: Random 1b9997010e7f
 msgctxt "LogMessage:4724:0:5"
 msgid "The deck selected cannot be used. A random deck will be used."
 msgstr "Выбранную колоду использовать нельзя. Будет использована случайная колода."
@@ -5468,6 +5473,7 @@ msgstr "Выбранную колоду использовать нельзя. �
 #. ja: タイムアウトしたため、おまかせデッキで対戦を開始します。
 #. de: Es wurde nicht rechtzeitig ein Deck ausgewählt. Ein zufälliges Deck wird verwendet.
 #. fr: Le temps imparti s'est écoulé. Un jeu a été choisi au<shy>to<shy>ma<shy>ti<shy>que<shy>ment.
+#, aeria-term-model-exception: Random 1b9997010e7f
 msgctxt "LogMessage:4725:0:5"
 msgid "A deck was not chosen in time. A random deck will be used."
 msgstr "Вы не выбрали колоду вовремя. Будет использована случайная колода."
@@ -5492,6 +5498,7 @@ msgstr "Найдите монеты и получите вдвое больше 
 #. fr: Vous avez gagné <num $n2> PGS en <switch $n1><case>ramassant des pièces d'or<case>trouvant les pièces d'or<case>atteignant l'étape suivante<case>terminant le JACTA</switch><nbsp>!
 #. macro: <switch $n1><case>Gathering coins<case>Finding the coins<case>Reaching the next round<case>Completing the Slice Is Right</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Gathering 7c4a6e95b7ba
 msgctxt "LogMessage:4728:0:5"
 msgid "<switch $n1><case>Gathering coins<case>Finding the coins<case>Reaching the next round<case>Completing the Slice Is Right</switch> has earned you <kilo $n2 \",\"> MGP!"
 msgstr "<switch $n1><case>Собрав монеты,<case>найдя монеты,<case>добравшись до следующего раунда,<case>дойдя до конца испытания,</switch> вы получите ещё <kilo $n2 \",\"> МГП!"
@@ -5667,6 +5674,7 @@ msgstr "Соперник покинул матч."
 #. ja: カード対戦を行えないエリアにいます。
 #. de: In diesem Areal kann Triple Triad nicht gespielt werden.
 #. fr: Impossible de jouer à Triple Triade dans cette zone.
+#, aeria-term-model-exception: hold f77e37217d83
 msgctxt "LogMessage:4752:0:5"
 msgid "Unable to hold Triple Triad match in current area."
 msgstr "В этой области нельзя сыграть в тройную триаду."
@@ -5792,6 +5800,7 @@ msgstr "Сейчас матчи недоступны."
 #. ja: MGPの所持数が上限に達したため、すべてのMGPは受け取れませんでした。
 #. de: Du hast die Besitzobergrenze an MGP erreicht. Ein Teil deiner Belohnung geht verloren.
 #. fr: Impossible de recevoir l'ensemble des PGS. La limite est atteinte.
+#, aeria-term-model-exception: hold f77e37217d83
 msgctxt "LogMessage:4767:0:5"
 msgid "You cannot hold any more MGP. A portion of your reward was forfeited."
 msgstr "У вас не может быть больше МГП. Часть награды не получена."
@@ -6036,6 +6045,7 @@ msgstr "Доступен новый этап «Вызова Повелителя
 #. ja: 新しいコンテンツがコンテンツファインダーの「ゴールドソーサー」に登録されました。<br>ロード・オブ・ヴァーミニオンの対戦が参加申請できるようになりました。
 #. de: Du kannst nun in der Gruppen<shy>suche unter „Gold Saucer“ nach Partien gegen andere Spieler suchen!
 #. fr: Vous pouvez désormais vous inscrire aux courses de chocobos et aux Choc des mascottes par l'intermédiaire de l'outil de mission.
+#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:4828:0:5"
 msgid "Battles and tournaments are now available via the Duty Finder under the Gold Saucer!"
 msgstr "Теперь бои и турниры доступны через «Поиск активностей» в разделе «Золотое блюдце»!"

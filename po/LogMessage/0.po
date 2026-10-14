@@ -218,7 +218,7 @@ msgid "Master privileges for “<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>�
 msgstr "Права главы линкшелла «<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>» переданы <if ($gs1 == $gs2)>вам<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>."
 
 #. ja: リンクシェル「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」のリーダーに設定されました。
-#. de: Du bist nun ein Anführer des Kontaktkreises „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“. 
+#. de: Du bist nun ein Anführer des Kontaktkreises „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“.
 #. fr: Vous êtes maintenant officier de la linkshell “<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>”.
 #. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
@@ -227,7 +227,7 @@ msgid "You are now a leader of “<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if
 msgstr "Вы теперь глава линкшелла «<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>»."
 
 #. ja: リンクシェル「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」のリーダー設定が解除されました。
-#. de: Du bist nicht länger ein Anführer des Kontaktkreises „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“. 
+#. de: Du bist nicht länger ein Anführer des Kontaktkreises „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“.
 #. fr: Vous n'êtes plus officier de la linkshell “<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>”.
 #. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
@@ -819,7 +819,7 @@ msgstr "Невозможно принять запрос на установку
 #. fr: Vous ne pouvez pas faire de demande de sertissage à un joueur qui n'est pas disciple de la main.
 msgctxt "LogMessage:87:0:5"
 msgid "Unable to accept materia meld request. You are not a Disciple of the Land."
-msgstr "Невозможно принять запрос на установку материи. Вы не ученик земли."
+msgstr "Невозможно принять запрос на установку материи. Вы не собиратель."
 
 #. ja: 未知の土地に足を踏み入れた！
 #. de: Du hast einen bisher unbekannten Ort betreten!
@@ -922,7 +922,7 @@ msgstr "Статус обновлён. Вы больше не «Отошли»."
 
 #. ja: ブラックリスト登録した募集者です。パーティに参加できません。
 #. de: Du kannst nicht beitreten, weil der Rekrutierende auf deiner Schwarzen Liste steht.
-#. fr: Impossible de rejoindre l'équipe. Ce recruteur est dans votre liste noire. 
+#. fr: Impossible de rejoindre l'équipe. Ce recruteur est dans votre liste noire.
 msgctxt "LogMessage:99:0:5"
 msgid "Unable to join party. The player seeking recruits is on your blacklist."
 msgstr "Не удалось вступить в группу. Игрок, набирающий команду, у вас в чёрном списке."
@@ -3916,7 +3916,7 @@ msgstr "В названии линкшелла должны быть буквы 
 
 #. ja: リンクシェルに勧誘できませんでした。
 #. de: Die Einladung in den Kontaktkreis ist fehlgeschlagen.
-#. fr: Invitation dans la linkshell impossible. 
+#. fr: Invitation dans la linkshell impossible.
 msgctxt "LogMessage:339:0:5"
 msgid "Unable to invite to linkshell."
 msgstr "Не удалось пригласить в линкшелл."
@@ -4243,7 +4243,7 @@ msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1
 msgstr "<capitalize><if ($gs1 == $gs2)>Вы больше не<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> больше не</if></capitalize> руководитель звена «<string $s1>»."
 
 #. ja: <sheet Town $n1 0>マーケットへ出品したアイテムが完売しました。
-#. de: All deine Waren auf dem Markt von <sheet Town $n1 0> wurden verkauft. 
+#. de: All deine Waren auf dem Markt von <sheet Town $n1 0> wurden verkauft.
 #. fr: Tous les objets en vente à <sheet Town $n1 0> ont été vendus.
 #. macro: <sheet Town $n1 0> — a value from a game data sheet, such as a name; sheet = Town, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:384:0:5"
@@ -4259,7 +4259,7 @@ msgstr "Не удалось выполнить поиск на рынке."
 
 #. ja: マーケットからの購入ができませんでした。
 #. de: Der Kauf auf dem Markt war nicht möglich.
-#. fr: L'achat aux marchés n'a pas pu se faire. 
+#. fr: L'achat aux marchés n'a pas pu se faire.
 msgctxt "LogMessage:386:0:5"
 msgid "Unable to make market purchase."
 msgstr "Не удалось совершить покупку на рынке."
@@ -4381,7 +4381,7 @@ msgstr "Эта функция недоступна для персонажей �
 
 #. ja: フリートライアル中に所持できるギルの上限に達しています。<br>上限を超える所持しきれないギルは捨てられます。
 #. de: Die Gil-Besitzobergrenze während der kostenlosen Testspielzeit ist erreicht. Alle darüber hinaus erworbenen Gil werden weggeworfen.
-#. fr: Vous avez atteint le maximum de gils accumulables dans la version d'essai.<br>Tout excédent sera perdu. 
+#. fr: Vous avez atteint le maximum de gils accumulables dans la version d'essai.<br>Tout excédent sera perdu.
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "LogMessage:402:0:5"
 msgid "You cannot earn any more gil while on the free trial.<br>Excess gil will be discarded."
@@ -4472,6 +4472,7 @@ msgstr "Не удалось отправить жалобу. Попробуйт�
 #. de: <sound 0 45>Du bist in einen Kampf verwickelt! Pass auf deine LP auf!
 #. fr: <sound 0 45>Combat engagé<nbsp>! Attention à vos PV restants<nbsp>!
 #. macro: <sound 0 45> — plays a sound effect; kind = 0, sound = 45 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Mind 128c027d1d7e
 msgctxt "LogMessage:415:0:5"
 msgid "<sound 0 45>You are currently engaged in battle! Mind your HP!"
 msgstr "<sound 0 45>Вы вступили в бой! Следите за HP!"
@@ -4657,28 +4658,28 @@ msgstr "<if ($gs1 == $gs2)>Вы уничтожены<else>Уничтожена �
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:440:0:5"
 msgid "You have been offered a Teleport to <noun-en PlaceName 2 \"<sheet Aetheryte $n2 8>\" 2 1> from <string $s1>."
-msgstr "От <string $s1> поступило предложение о телепортации в <noun-en PlaceName 2 \"<sheet Aetheryte $n2 8>\" 2 1>."
+msgstr "От <string $s1> поступило предложение воспользоваться Телепортом в <noun-en PlaceName 2 \"<sheet Aetheryte $n2 8>\" 2 1>."
 
 #. ja: 条件を満たしていないため、テレポの勧誘を受けることができませんでした。
 #. de: Teleport nicht möglich. Die Voraus<shy>setzungen sind nicht erfüllt.
 #. fr: Téléportation impossible. Vous ne remplissez pas les conditions.
 msgctxt "LogMessage:441:0:5"
 msgid "Unable to accept Teleport. You have not met certain requirements."
-msgstr "Не удалось принять предложение о телепортации: выполнены не все условия."
+msgstr "Не удалось принять предложение о Телепорте. Вы не выполнили некоторые условия."
 
 #. ja: テレポの勧誘を受けられませんでした。<br>テレポを受けられる状態になってから「テレポ勧誘」を選択してください。
 #. de: Sobald du bereit zum Teleport bist, wähle „Teleportangebot“ aus.
 #. fr: Impossible d'accepter la téléportation pour le moment. Quand vous serez en mesure de l'accepter, sélectionnez “Offre de téléportation”.
 msgctxt "LogMessage:442:0:5"
 msgid "Unable to accept Teleport. Once you have met all requirements, select Teleport Offer."
-msgstr "Не удалось принять предложение о телепортации. Когда выполните все условия, выберите «Предложение о телепортации»."
+msgstr "Не удалось принять предложение о Телепорте. Когда выполните все условия, выберите «Предложение о Телепорте»."
 
 #. ja: テレポの勧誘を保留しました。<br>テレポを受ける時には「テレポ勧誘」を選択してください。
-#. de: Der Teleport wurde vorerst angehalten. Sobald du bereit bist, wähle „Teleportangebot“ aus. 
+#. de: Der Teleport wurde vorerst angehalten. Sobald du bereit bist, wähle „Teleportangebot“ aus.
 #. fr: Vous avez choisi de réfléchir avant de vous téléporter. Quand vous serez en mesure d'accepter, sélectionnez “Offre de téléportation”.
 msgctxt "LogMessage:443:0:5"
 msgid "Select Teleport Offer when ready to accept Teleport."
-msgstr "Когда будете готовы принять предложение о телепортации, выберите «Предложение о телепортации»."
+msgstr "Когда будете готовы принять предложение о Телепорте, выберите «Предложение о Телепорте»."
 
 #. ja: リキャスト中のため入れ替えることはできません。
 #. de: Rollenkommando kann nicht gewechselt werden, während der Reaktivierungs-Timer läuft.
@@ -4961,7 +4962,7 @@ msgid "You cannot purchase an item sold by your own retainer."
 msgstr "Нельзя купить предмет, выставленный на продажу вашим ретейнером."
 
 #. ja: 表示中の<num $n1>件のアイテムを指定順に並び替えました。
-#. de: Die Gegenstände wurden sortiert. 
+#. de: Die Gegenstände wurden sortiert.
 #. fr: Les objets ont été triés.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <if ($n1 == 1)>item<else>items</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
@@ -6073,6 +6074,7 @@ msgstr "Вы получаете <num $n2> <if ($n2 == 1)>очко характе
 #. macro: <switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 #. macro: <if ($n2 == 1)>enemy joins<else>enemies join</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: Enemy 59fb03c90ec4
 msgctxt "LogMessage:555:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>call<else>calls</if> for help!<br>   <capitalize><if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if></capitalize> more <if ($n2 == 1)>enemy joins<else>enemies join</if> the battle."
 msgstr "<capitalize><if ($gs1 == $gs2)>Вы зовёте<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> зовёт</if></capitalize> на помощь!<br>   В бой вступает подкрепление: <num $n2> противников."
@@ -6599,7 +6601,7 @@ msgid " <capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><e
 msgstr " <capitalize><if ($gs1 == $gs3)>Вы снимаете<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> снимает</if></capitalize> эффект: <sheet Status $n2 0>."
 
 #. ja: このミニオンはすでに修得済みです。
-#. de: Mit diesem Begleiter hast du dich bereits vertraut gemacht. 
+#. de: Mit diesem Begleiter hast du dich bereits vertraut gemacht.
 #. fr: Vous possédez déjà cette mascotte.
 msgctxt "LogMessage:608:0:5"
 msgid "You have already acquired that minion."
@@ -6744,7 +6746,7 @@ msgid "Unable to withdraw item. You may not possess more than one of any unique 
 msgstr "Нельзя забрать предмет. У вас уже есть такой уникальный предмет, а иметь их можно только по одному."
 
 #. ja: <sheet Item $n1 0>を愛蔵品キャビネットの「<sheet Addon $n2 0>」へ収納した。
-#. de: Du hast <noun-de Item 2 $n1 1 4 1> im Kostbarkeitenkabinett abgelegt (<sheet Addon $n2 0>). 
+#. de: Du hast <noun-de Item 2 $n1 1 4 1> im Kostbarkeitenkabinett abgelegt (<sheet Addon $n2 0>).
 #. fr: Vous remisez <noun-fr Item 2 $n1 1 1> dans votre bahut personnel (<sheet Addon $n2 0>).
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet Addon $n2 0> — a value from a game data sheet, such as a name; sheet = Addon, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
@@ -6753,15 +6755,15 @@ msgid "You store <noun-en Item 2 $n1 1 1> in the armoire (<sheet Addon $n2 0>)."
 msgstr "В шкафчик для ценностей помещено: <noun-en Item 2 $n1 1 1> («<sheet Addon $n2 0>»)."
 
 #. ja: <sheet Item $n1 0>を取り出した。
-#. de: Du hast <noun-de Item 2 $n1 1 4 1> entnommen. 
-#. fr: Vous sortez <noun-fr Item 2 $n1 1 1>. 
+#. de: Du hast <noun-de Item 2 $n1 1 4 1> entnommen.
+#. fr: Vous sortez <noun-fr Item 2 $n1 1 1>.
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:625:0:5"
 msgid "You withdraw <noun-en Item 2 $n1 1 1> from the armoire."
 msgstr "Вы забираете <noun-en Item 2 $n1 1 1> из шкафчика для ценностей."
 
 #. ja: 紛失した<sheet Item $n1 0><if ($n2 > 0)>×<num $n2></if>を受け取った。
-#. de: Du hast <num $n2> <noun-de Item 5 $n1 2 4 1> erhalten. 
+#. de: Du hast <num $n2> <noun-de Item 5 $n1 2 4 1> erhalten.
 #. fr: Vous obtenez <if ($n2 == 1)><noun-fr Item 1 $n1 1 1><else><num $n2> <noun-fr Item 12 $n1 $n2 1></if>.
 #. macro: <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
@@ -6912,7 +6914,7 @@ msgid "You have already claimed that mount."
 msgstr "Этот маунт уже получен."
 
 #. ja: キャラメイクをもう一度行う権利をすでに持っているため、<sheet Item $n1 0>は使用できません。
-#. de: Du kannst <noun-de Item 2 $n1 1 4 1> nicht benutzen, weil du das Recht zur Charakter-Neuerschaffung bereits hast. 
+#. de: Du kannst <noun-de Item 2 $n1 1 4 1> nicht benutzen, weil du das Recht zur Charakter-Neuerschaffung bereits hast.
 #. fr: Impossible d'utiliser un philtre d'illusion maintenant.<br>Vous pouvez déjà modifier l'apparence de votre personnage.
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:644:0:5"
@@ -7279,7 +7281,7 @@ msgid "Your Support Desk query has been answered. To view the reply, access <ui-
 msgstr "Вам ответили на запрос в службу поддержки. Ответ можно прочитать во вкладке <ui-color 500><ui-edge-color 501>Последние ответы и уведомления</ui-edge-color></ui-color> раздела <ui-color 500><ui-edge-color 501>Справочная</ui-edge-color></ui-color> службы поддержки."
 
 #. ja: PvPエリアでPvPアクションの初期化はできません。
-#. de: PvP-Kommandos können nicht innerhalb des PvP-Areals zurückgesetzt werden. 
+#. de: PvP-Kommandos können nicht innerhalb des PvP-Areals zurückgesetzt werden.
 #. fr: Impossible de réinitialiser les actions JcJ à l'intérieur d'une zone JcJ.
 msgctxt "LogMessage:688:0:5"
 msgid "Unable to restore PvP action defaults within a PvP area."
@@ -7672,7 +7674,7 @@ msgid "Asking price updated."
 msgstr "Цена продажи изменена."
 
 #. ja: マーケット出品リストがいっぱいです。
-#. de: Die Liste ist voll. 
+#. de: Die Liste ist voll.
 #. fr: Vous ne pouvez pas mettre d'objets sup<shy>plé<shy>men<shy>tai<shy>res en vente.
 msgctxt "LogMessage:741:0:5"
 msgid "You cannot put any more items up for sale at this time."
@@ -7743,7 +7745,7 @@ msgid "<capitalize><noun-en Item 2 $n2 1 1></capitalize> you put up for sale in 
 msgstr "<capitalize><noun-en Item 2 $n2 1 1></capitalize> продан на рынке <sheet Town $n1 0> за <kilo $n5 \",\"> гил (за вычетом сборов)."
 
 #. ja: 送信できませんでした。Tell/Say/Yell/Shoutは連続して実行できません。
-#. de: Nachricht wurde nicht gesendet. Rufen, Schreien, Sagen und Flüstern ist nicht mehrmals hintereinander möglich. 
+#. de: Nachricht wurde nicht gesendet. Rufen, Schreien, Sagen und Flüstern ist nicht mehrmals hintereinander möglich.
 #. fr: Impossible de murmurer/dire/crier/hurler plusieurs fois de suite.
 msgctxt "LogMessage:749:0:5"
 msgid "Your message was not heard. You must wait before using /tell, /say, /yell, or /shout again."
@@ -8193,7 +8195,7 @@ msgstr "Не удалось найти указанную папку."
 
 #. ja: 指定されたフォルダが読み込み専用のため、設定できません。
 #. de: Der Ordner ist schreibgeschützt und daher nicht verwendbar.
-#. fr: Paramétrage impossible. Ce dossier est en lecture seule. 
+#. fr: Paramétrage impossible. Ce dossier est en lecture seule.
 msgctxt "LogMessage:805:0:5"
 msgid "Specified folder is read-only. Could not change."
 msgstr "Указанная папка доступна только для чтения. Не удалось изменить настройки."
@@ -8529,7 +8531,7 @@ msgstr "Начинаем снижение."
 #, aeria-term-model-rendering: aether 30921c5ebfe0 эфирных
 msgctxt "LogMessage:849:0:5"
 msgid "There are no aether currents beyond this point. You cannot fly any further. "
-msgstr "Дальше нет эфирных потоков. Лететь дальше нельзя."
+msgstr "Дальше нет потоков эфира. Лететь дальше нельзя."
 
 #. ja: 飛行時は「停止中」および「地上から一定高度以内」でのみ降下できます。
 #. de: Um abzusteigen, musst du in Bodennähe sein und darfst dich nicht bewegen.
@@ -8683,7 +8685,7 @@ msgid "<sound 0 47>Ensemble mode party limit reached for this area.<br>Please tr
 msgstr "<sound 0 47>В этой области достигнут предел групп, использующих ансамблевый режим.<br>Повторите попытку позже."
 
 #. ja: 『<string $s1>』をコンプリートしていないため、参加申請できません。
-#. de: Bevor du teilnehmen kannst, musst du „<string $s1>“ abgeschlossen haben. 
+#. de: Bevor du teilnehmen kannst, musst du „<string $s1>“ abgeschlossen haben.
 #. fr: Vous devez finir “<string $s1>” pour pouvoir participer à cette mission.
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:870:0:5"
@@ -9567,7 +9569,7 @@ msgid "You do not fulfill the average item level requirement."
 msgstr "Средний уровень предметов вашей экипировки ниже требуемого."
 
 #. ja: 現在のクラスは目的のコンテンツに参加するためのレベルを満たしていません。
-#. de: Die Stufe in deiner momentanen Klasse ist für das geplante Ziel der Gruppe zu niedrig. 
+#. de: Die Stufe in deiner momentanen Klasse ist für das geplante Ziel der Gruppe zu niedrig.
 #. fr: Votre classe actuelle est à un niveau inférieur à celui requis pour entrer dans cette équipe.
 msgctxt "LogMessage:998:0:5"
 msgid "You do not fulfill the level requirements for the specified duty."
@@ -9575,7 +9577,7 @@ msgstr "Ваш текущий класс или профессия не соот
 
 #. ja: 除名対象のキャラクターがコンテンツ内に存在しないため、投票除名が却下されました。
 #. de: Der Spieler ist nicht mehr in der Instanz. Die Abstimmung über seinen Ausschluss wurde abgebrochen.
-#. fr: Ce personnage n'est pas ac<shy>tu<shy>el<shy>le<shy>ment dans la mission. Le vote d'exclusion a été annulé. 
+#. fr: Ce personnage n'est pas ac<shy>tu<shy>el<shy>le<shy>ment dans la mission. Le vote d'exclusion a été annulé.
 msgctxt "LogMessage:999:0:5"
 msgid "The player to be dismissed is no longer in the instance. Motion rejected."
 msgstr "Игрок, которого собирались исключить, уже покинул подземелье. Голосование отменено."
