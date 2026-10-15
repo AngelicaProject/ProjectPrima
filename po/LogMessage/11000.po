@@ -10,9 +10,10 @@ msgstr ""
 #. de: Wenn du weiter nach Schätzen suchen willst, öffne den ersten Schatz und benutze danach <noun-de Item 1 $n1 1 4 1>.
 #. fr: Pour continuer la chasse au trésor, veuillez ouvrir le coffre avant d'utiliser <noun-fr EventItem 1 $n1 1 1>.
 #. macro: <noun-en EventItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: First fb156eba0883
 msgctxt "LogMessage:11000:0:5"
 msgid "Should you wish to hunt for additional treasure, first open the treasure coffer, then use <noun-en EventItem 1 $n1 1 1>."
-msgstr "Чтобы продолжить поиски сокровищ, сначала откройте сокровищный сундук, а затем используйте <noun-en EventItem 1 $n1 1 1>"
+msgstr "Чтобы продолжить поиски сокровищ, сначала откройте сундук сокровищ, а затем используйте <noun-en EventItem 1 $n1 1 1>"
 
 #. ja: クレセントアイル解説に「<sheet DescriptionString 1224 0 23>」などのページが追加されました。
 #. de: Der Eintrag „<sheet DescriptionString 1224 0 23>“ wurde den Erklärungen zu Kreszentia hinzugefügt.
@@ -1251,7 +1252,7 @@ msgstr "Древнее заклинание погасило курильниц�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "LogMessage:11254:0:5"
 msgid "Only the player who selected the sacramental offerings required to enter this duty may open the treasure coffer that appears upon completion.<br>Sacramental offerings will be expended upon opening this coffer."
-msgstr "Открыть сокровищный сундук после завершения задания может только тот, кто выбрал необходимые для входа священные подношения<br>Подношения будут израсходованы при открытии этого сокровищного сундука"
+msgstr "Открыть сундук сокровищ после завершения задания может только тот, кто выбрал необходимые для входа священные подношения<br>Подношения будут израсходованы при открытии этого сундука сокровищ"
 
 #. ja: 報酬獲得のため、<sheet Item $n1 0>を<num $n2>個消費しました。
 #. de: Es <if ($n2 == 1)>wurde<else>wurden</if> <num $n2> <if ($n2 == 1)><noun-de Item 5 $n1 1 4 1><else><noun-de Item 5 $n1 2 4 1></if> verbraucht.
@@ -1283,7 +1284,7 @@ msgstr "Сундук заперт. У вас нет необходимых пр�
 #. fr: Impossible d'ouvrir le coffre au trésor. Votre inventaire est plein.
 msgctxt "LogMessage:11258:0:5"
 msgid "Unable to open treasure coffer. Your inventory is full."
-msgstr "Не удалось открыть сокровищный сундук: инвентарь заполнен"
+msgstr "Не удалось открыть сундук сокровищ: инвентарь заполнен"
 
 #. ja: 「光耀の燭台」に光が灯り、次の<switch $gn109><case>階層<case>階層<case>階層<case>巡礼路</switch>で<sheet DeepDungeon4GimmickEffectTransient $n1 0>が発動する……！
 #. de: Der Leuchter erstrahlt und löst auf der nächsten Ebene <sheet DeepDungeon4GimmickEffectTransient $n1 0> aus!
@@ -1419,7 +1420,7 @@ msgstr "Получено сияющих мешков: <num $n1>!"
 #. macro: <switch $n2><case>gold treasure coffer<case>silver treasure coffer<case>bronze treasure coffer</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11274:0:5"
 msgid "You collected <if ($n1 == 1)><num $n1> shining sack<else><num $n1> shining sacks</if> and receive a <switch $n2><case>gold treasure coffer<case>silver treasure coffer<case>bronze treasure coffer</switch> as your reward!"
-msgstr "Вы собрали <num $n1> сияющих мешков и получили в награду <switch $n2><case>золотой сокровищный сундук<case>серебряный сокровищный сундук<case>бронзовый сокровищный сундук</switch>!"
+msgstr "Вы собрали <num $n1> сияющих мешков и получили в награду <switch $n2><case>золотой сундук сокровищ<case>серебряный сундук сокровищ<case>бронзовый сундук сокровищ</switch>!"
 
 #. ja: 騒ぎに乗じ、風精が現れた……
 #. de: Eine Windfee ist erschienen!
@@ -1585,7 +1586,7 @@ msgstr "Точка <sheet PlaceName $n2 2> ранга <switch $n1><case>B<case>A
 #, aeria-term-model-exception: Immortal Flame 785c157047f5
 msgctxt "LogMessage:11303:0:5"
 msgid "The <switch $n2><case>rank B<case>rank A<case>rank S</switch> <sheet PlaceName $n3 2> has been claimed by the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch>!"
-msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n2><case>B<case>A<case>S</switch> теперь под контролем <switch $n1><case><ui-color 533><ui-edge-color 534>Мальстрёма</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
+msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n2><case>B<case>A<case>S</switch> теперь под контролем <switch $n1><case><ui-color 533><ui-edge-color 534>Водоворота</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
 
 #. ja: <sheet PlaceName $n1 0>が無効状態となった。
 #. de: <sheet PlaceName $n1 0> ist jetzt inaktiv.
@@ -1677,7 +1678,7 @@ msgstr "Дух уборки крепнет! Сприганатор зовёт! <
 #. ja: アルコンエッグを見つけやすくなった！
 #. de: Deine Augen erblicken das Funkeln von Saliah-Eiern!
 #. fr: Les chances de trouver des Prœufs sont augmentées<nbsp>!
-#, aeria-term-model-rendering: Archon egg a1865ecdeb29 яиц, aeria-term-model-rendering: Archon egg a1865ecdeb29 архонта
+#, aeria-term-model-exception: Eyes deb5b557e030, aeria-term-model-rendering: Archon egg a1865ecdeb29 яиц, aeria-term-model-rendering: Archon egg a1865ecdeb29 архонта
 msgctxt "LogMessage:11317:0:5"
 msgid "Your eyes are drawn to the glimmer of Archon eggs!"
 msgstr "Ваш взгляд притягивает блеск яиц архонта!"
@@ -1685,7 +1686,7 @@ msgstr "Ваш взгляд притягивает блеск яиц архон�
 #. ja: アルコンエッグ【金】を見つけやすくなった！
 #. de: Deine Augen erblicken das Funkeln goldener Saliah-Eier!
 #. fr: Les chances de trouver des Prœufs d'or sont augmentées<nbsp>!
-#, aeria-term-model-rendering: Archon egg a1865ecdeb29 яиц, aeria-term-model-rendering: Archon egg a1865ecdeb29 архонта
+#, aeria-term-model-exception: Eyes deb5b557e030, aeria-term-model-rendering: Archon egg a1865ecdeb29 яиц, aeria-term-model-rendering: Archon egg a1865ecdeb29 архонта
 msgctxt "LogMessage:11318:0:5"
 msgid "Your eyes are drawn to the glimmer of gold Archon eggs!"
 msgstr "Ваш взгляд притягивает блеск золотых яиц архонта!"
@@ -2677,6 +2678,7 @@ msgstr "Чтобы выполнить эту команду, нужно быть
 #. ja: パーティを組んでいる状態では、闘獣練に参加できません。
 #. de: Als Teil einer Gruppe kannst du keine Partie auf dem Brett der Bestie antreten.
 #. fr: Impossible d'entrer dans le Dédale bestial en faisant partie d'une équipe.
+#, aeria-term-model-exception: First fb156eba0883
 msgctxt "LogMessage:11442:0:5"
 msgid "Unable to challenge the Crucible of the Unbroken. You must leave your party first."
 msgstr "Нельзя войти в Горнило Несломленных, пока вы состоите в отряде. Сначала покиньте его"
@@ -3260,6 +3262,7 @@ msgstr "Мистическое присутствие покинуло Севе�
 #. ja: 三日月島北部の希少な魔物が消え去り、個人戦利品が出現した！
 #. de: Eine mystische Präsenz hat sich aus dem nördlichen Kreszentia zurückgezogen und persönliche Beute ist erschienen!
 #. fr: Un monstre rare de l'île de Lunule septentrionale a disparu, et des butins personnels sont apparus<nbsp>!
+#, aeria-term-model-exception: treasure coffer 802a07d76a6c
 msgctxt "LogMessage:11530:0:5"
 msgid "A mystical presence has withdrawn from the North Horn, leaving behind a treasure coffer!"
 msgstr "Мистическое присутствие покинуло Северный Рог, оставив сокровищный сундук!"
