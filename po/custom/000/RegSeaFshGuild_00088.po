@@ -138,9 +138,10 @@ msgstr "Я решила брать с вас пример, <split \" \" 1><strin
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+#, aeria-term-model-exception: First fb156eba0883
 msgctxt "custom/000/RegSeaFshGuild_00088:TEXT_REGSEAFSHGUILD_00088_SISIPU_000_060:1"
 msgid "So, the prodigal <if $gn4>daughter<else>son</if> returns! You know, <split \" \" 1><string $gs1></split>, when you first flopped through that archway and asked me what a rod was, I never imagined you'd become the absolute apex of─ ...I mean, a very, very good fisher<if $gn4>woman<else>man</if>."
-msgstr "Ну надо же, блудное дитя вернулось! Знаете, <split \" \" 1><string $gs1></split>, когда вы впервые ввалились сюда и спросили, что такое удочка, я и представить не могла, что вы станете величайшим... То есть очень-очень хорошим рыбаком!"
+msgstr "Ну надо же, блудное дитя вернулось! Знаете, <split \" \" 1><string $gs1></split>, когда вы впервые ввалились сюда и спросили, что такое удочка, я и представить не могла, что вы станете <if $gn4>величайшей рыбачкой<else>величайшим рыбаком</if>... То есть <if $gn4>очень-очень хорошей рыбачкой<else>очень-очень хорошим рыбаком</if>!"
 
 #. ja: 親分、私には黙っていた悩みを、あなたには教えたのよね。<br>それだけ、あなたのことを信頼しているんだと思うわ。<br>どうか、親分に手を貸してあげて。
 #. de: Der Gildenmeister muss dir blindlings Vertrauen, sonst hätte er dir seine Sorgen nicht anvertraut. In was auch immer er sich da wieder verstrickt hat, steh ihm bitte bei.
@@ -321,7 +322,7 @@ msgstr "Хотя, надо признать, остальных в Гильди�
 #. fr: Bon, je suis sûr que vous savez déjà tout ça, mais si vous insistez...
 #. macro: <if ($gn68 == 18)>Let me get this straight: you want me to tell you, a master <if $gn4>fisherwoman<else>fisherman</if>, what it is you do. Is that right?<else>N… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 68 (the player's current class or job, a ClassJob row) == 18 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if $gn4>fisherwoman<else>fisherman</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: First 5b14957ec834
+#, aeria-term-model-exception: First fb156eba0883
 msgctxt "custom/000/RegSeaFshGuild_00088:TEXT_REGSEAFSHGUILD_00088_SISIPU_000_103:1"
 msgid "<if ($gn68 == 18)>Let me get this straight: you want me to tell you, a master <if $gn4>fisherwoman<else>fisherman</if>, what it is you do. Is that right?<else>Not the sharpest knife in the block, are you? First, you forget your rod, and now this.</if>"
 msgstr "<if ($gn68 == 18)>Дайте-ка уточню: вы хотите, чтобы я объяснила вам, <if $gn4>опытной рыбачке<else>опытному рыбаку</if>, чем вы занимаетесь. Всё верно?<else>Да вы не самый острый нож в ящике, да? Сначала удочку забыли, теперь вот это.</if>"
