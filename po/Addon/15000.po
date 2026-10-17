@@ -5502,7 +5502,7 @@ msgstr "Завершите задание «<sheet Quest $n1 0>», «<sheet Ques
 #. macro: <sheet TerritoryType $n6 5> — a value from a game data sheet, such as a name; sheet = TerritoryType, row = number parameter 6, column = 5 (game data: keep it; it may move or repeat)
 msgctxt "Addon:15927:0:0"
 msgid "<if ($n4 == 2)>Complete <num $n8> <sheet ContentType $n2 0> in <noun-en PlaceName 2 \"<sheet TerritoryType $n5 5>\" 2 1> or <noun-en PlaceName 2 \"<sheet TerritoryType $n6 5>\" 2 1>.<else>Complete <num $n8> <sheet ContentType $n2 0> in <noun-en PlaceName 2 \"<sheet TerritoryType $n5 5>\" 2 1>.</if>"
-msgstr "<if ($n4 == 2)>Завершите <num $n8> <sheet ContentType $n2 0> в <noun-en PlaceName 2 \"<sheet TerritoryType $n5 5>\" 2 1> или <noun-en PlaceName 2 \"<sheet TerritoryType $n6 5>\" 2 1>.<else>Завершите <num $n8> <sheet ContentType $n2 0> в <noun-en PlaceName 2 \"<sheet TerritoryType $n5 5>\" 2 1>.</if>"
+msgstr "<if ($n4 == 2)>Завершите <num $n8> <sheet ContentType $n2 0> в <sheet PlaceName \"<sheet TerritoryType $n5 5>\" 0> или <sheet PlaceName \"<sheet TerritoryType $n6 5>\" 0>.<else>Завершите <num $n8> <sheet ContentType $n2 0> в <sheet PlaceName \"<sheet TerritoryType $n5 5>\" 0>.</if>"
 
 #. ja: <sheet ContentType $n2 0>で<sheet PlaceName "<sheet TerritoryType "<sheet Level $n10 9>" 5>" 0>の<sheet ENpcResident $n5 0>に勝利する。
 #. de: Eine Partie <sheet ContentType $n2 0> gegen <noun-de ENpcResident 2 $n5 1 4 1> <sheet PlaceName "<sheet TerritoryType "<sheet Level $n10 9>" 5>" 8 2> gewinnen.
@@ -5514,7 +5514,7 @@ msgstr "<if ($n4 == 2)>Завершите <num $n8> <sheet ContentType $n2 0> в
 #. macro: <sheet Level $n10 9> — a value from a game data sheet, such as a name; sheet = Level, row = number parameter 10, column = 9 (game data: keep it; it may move or repeat)
 msgctxt "Addon:15928:0:0"
 msgid "Win a game of <sheet ContentType $n2 0> against <noun-en ENpcResident 2 $n5 1 1> in <noun-en PlaceName 2 \"<sheet TerritoryType \"<sheet Level $n10 9>\" 5>\" 2 1>."
-msgstr "Выиграйте матч «<sheet ContentType $n2 0>» против <noun-en ENpcResident 2 $n5 1 1> в <noun-en PlaceName 2 \"<sheet TerritoryType \"<sheet Level $n10 9>\" 5>\" 2 1>."
+msgstr "Выиграйте матч «<sheet ContentType $n2 0>» против <noun-en ENpcResident 2 $n5 1 1> в <sheet PlaceName \"<sheet TerritoryType \"<sheet Level $n10 9>\" 5>\" 0>."
 
 #. ja: <sheet EventItem "<sheet MobHuntOrderType $n5 2>" 0>をコンプリートする。
 #. de: Eine <sheet EventItem "<sheet MobHuntOrderType $n5 2>" 0> abschließen.
@@ -5544,7 +5544,7 @@ msgstr "Поймайте <noun-en Item 1 \"<sheet FishParameter $n5 4>\" 1 1>."
 #. macro: <sheet InstanceContent $n5 8> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 5, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:15931:0:0"
 msgid "Complete floor <num $n12> of <noun-en PlaceName 2 \"<sheet TerritoryType \"<sheet ContentFinderCondition \"<sheet InstanceContent $n5 8>\" 1>\" 5>\" 2 1>."
-msgstr "Завершите <num $n12>-й этаж подземелья <noun-en PlaceName 2 \"<sheet TerritoryType \"<sheet ContentFinderCondition \"<sheet InstanceContent $n5 8>\" 1>\" 5>\" 2 1>."
+msgstr "Завершите <num $n12>-й этаж подземелья <sheet PlaceName \"<sheet TerritoryType \"<sheet ContentFinderCondition \"<sheet InstanceContent $n5 8>\" 1>\" 5>\" 0>."
 
 #. ja: クエスト『<sheet Quest $n1 0>』のコンプリートで開放。
 #. de: Durch den Auftrag „<sheet Quest $n1 0>“ freigeschaltet.
@@ -5563,7 +5563,7 @@ msgstr "Завершите задание «<sheet Quest $n1 0>», чтобы о
 #. macro: <if ($n3 > 0)><noun-en PlaceName 2 $n5 2 1><else>???</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:15933:0:0"
 msgid "<if ($n4 == 2)>Arrive at <noun-en PlaceName 2 $n5 2 1> or <noun-en PlaceName 2 $n6 2 1> to unlock.<else> Arrive at <if ($n3 > 0)><noun-en PlaceName 2 $n5 2 1><else>???</if> to unlock.</if>"
-msgstr "<if ($n4 == 2)>Доберитесь до <noun-en PlaceName 2 $n5 2 1> или <noun-en PlaceName 2 $n6 2 1>, чтобы открыть доступ.<else> Доберитесь до <if ($n3 > 0)><noun-en PlaceName 2 $n5 2 1><else>???</if>, чтобы открыть доступ.</if>"
+msgstr "<if ($n4 == 2)>Доберитесь до <sheet PlaceName $n5 0> или <sheet PlaceName $n6 0>, чтобы открыть доступ.<else> Доберитесь до <if ($n3 > 0)><sheet PlaceName $n5 0><else>???</if>, чтобы открыть доступ.</if>"
 
 #. ja: 勝敗により、報酬の量が変わります。
 #. de: Die Belohnung variiert mit Sieg oder Niederlage.
@@ -5766,7 +5766,7 @@ msgstr "※Для прохождения этажей с 31-го требует�
 #. macro: <noun-en PlaceName 2 $n18 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 18, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:15958:0:0"
 msgid "<sheet Addon 15955 0 \"<noun-en PlaceName 2 $n18 2 1>\" $n14 $n12 $n16 $n8>"
-msgstr "<sheet Addon 15955 0 \"<noun-en PlaceName 2 $n18 2 1>\" $n14 $n12 $n16 $n8>"
+msgstr "<sheet Addon 15955 0 \"<sheet PlaceName $n18 0>\" $n14 $n12 $n16 $n8>"
 
 #. ja: 合計釣果により、報酬の量が異なります。
 #. de: Die Belohnung richtet sich nach den erreichten Punkten.

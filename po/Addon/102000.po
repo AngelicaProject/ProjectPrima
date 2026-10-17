@@ -114,7 +114,7 @@ msgstr "Чутьё ≥ <num $n1>"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102201:0:0"
 msgid "Report to <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Доложить в <noun-en PlaceName 2 $n1 2 1>."
+msgstr "Доложить в <sheet PlaceName $n1 0>."
 
 #. ja: 任務を遂行する
 #. de: Freibrief ausführen
@@ -133,7 +133,7 @@ msgstr "Выполнить цели поручения."
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102203:0:0"
 msgid "Report back to <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1>."
-msgstr "Доложить <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>в </if><noun-en PlaceName 2 $n1 2 1>."
+msgstr "Доложить <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>в </if><sheet PlaceName $n1 0>."
 
 #. ja: <sheet PlaceName $n1 0>の<sheet ENpcResident $n2 0>に納品
 #. de: Bestellung bei <sheet ENpcResident $n2 0> <sheet PlaceName $n1 8 2> abliefern
@@ -145,7 +145,7 @@ msgstr "Доложить <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102204:0:0"
 msgid "Deliver order to <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1>."
-msgstr "Доставить заказ <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>в </if><noun-en PlaceName 2 $n1 2 1>."
+msgstr "Доставить заказ <sheet ENpcResident $n2 0> <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>в </if><sheet PlaceName $n1 0>."
 
 #. ja: 任務に再挑戦する
 #. de: Freibrief erneut versuchen
@@ -638,7 +638,7 @@ msgstr "Прервать"
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102311:0:0"
 msgid "Register this location as your Nintendo Switch Online free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
-msgstr "Сделать это место бесплатным местом назначения Nintendo Switch Online? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+msgstr "Сделать это место бесплатным местом назначения Nintendo Switch Online? <capitalize><sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0></capitalize> будет удалено."
 
 #. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（Nintendo Switch Online特典無料枠）」に登録場所を変更しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter Nintendo Switch Online speichern?
@@ -669,7 +669,7 @@ msgstr "Сейчас это бесплатное место назначения
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102315:0:0"
 msgid "Change your home point from <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1>?"
-msgstr "Сменить точку возвращения с <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1>?"
+msgstr "Сменить точку возвращения с <sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0>?"
 
 #. ja: はい
 #. de: Ja
@@ -702,7 +702,7 @@ msgstr "Зарегистрировать это место назначения 
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102319:0:0"
 msgid "Add <noun-en PlaceName 2 \"<sheet Aetheryte $n2 8>\" 2 1> to your favored destinations? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
-msgstr "Добавить <noun-en PlaceName 2 \"<sheet Aetheryte $n2 8>\" 2 1> в список избранных мест назначения? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+msgstr "Добавить <sheet PlaceName \"<sheet Aetheryte $n2 8>\" 0> в список избранных мест назначения? <capitalize><sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0></capitalize> будет удалено."
 
 #. ja: はい
 #. de: Ja
@@ -742,7 +742,7 @@ msgstr "<sheet PlaceName $n1 0>."
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102324:0:0"
 msgid "Register this location as your PlayStation®Plus free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
-msgstr "Сделать это место бесплатным местом назначения PlayStation®Plus? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> будет удалено."
+msgstr "Сделать это место бесплатным местом назначения PlayStation®Plus? <capitalize><sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0></capitalize> будет удалено."
 
 #. ja: 別の無料枠として登録済みです。<br>登録を解除して「お気に入り（PlayStation®Plus特典無料枠）」に登録場所を変更しますか？
 #. de: Dieser Ätheryt ist momentan als ein anderer kostenloser Favorit gespeichert.<br>Stattdessen unter PlayStation®Plus speichern?
@@ -825,7 +825,7 @@ msgstr "Зарегистрировать это место назначения 
 #. macro: <sheet Aetheryte $n1 8> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
 msgctxt "Addon:102335:0:0"
 msgid "Register this location as your security token free destination? <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize> will be removed."
-msgstr "Зарегистрировать это место назначения как бесплатное для токена безопасности? Будет снята отметка с <capitalize><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1></capitalize>."
+msgstr "Зарегистрировать это место назначения как бесплатное для токена безопасности? Будет снята отметка с <capitalize><sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0></capitalize>."
 
 #. ja: このエーテライトは「お気に入り（ワンタイムパスワード特典無料枠）」に登録されています。<br>「お気に入り（ワンタイムパスワード特典無料枠）」の登録を解除して、お気に入りに登録しますか？
 #. de: Dieser Ätheryt ist als kostenloser Favorit (durch Einmalpasswort) registriert.<br>Die Registrierung aufheben und als kostenpflichtigen Favoriten speichern?
@@ -899,7 +899,7 @@ msgstr "Назад"
 #. macro: <if ($n2 == 1)>mining<else>logging</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:102350:0:0"
 msgid "Travel to <noun-en PlaceName 2 $n1 2 1>, equip a <if ($n2 == 1)>miner's<else>botanist's</if> primary tool, and commence <if ($n2 == 1)>mining<else>logging</if>."
-msgstr "Отправляйтесь в <noun-en PlaceName 2 $n1 2 1>, возьмите <if ($n2 == 1)>основной инструмент шахтёра<else>основной инструмент ботаника</if> и приступайте к <if ($n2 == 1)>добыче руды<else>рубке деревьев</if>."
+msgstr "Отправляйтесь в <sheet PlaceName $n1 0>, возьмите <if ($n2 == 1)>основной инструмент шахтёра<else>основной инструмент ботаника</if> и приступайте к <if ($n2 == 1)>добыче руды<else>рубке деревьев</if>."
 
 #. ja: <sheet PlaceName $n1 0>にて<if ($n2 == 1)>採掘<else>園芸</if>道具（副道具）を装備し、任務を開始
 #. de: <capitalize><sheet PlaceName $n1 8 2></capitalize> dein Nebenwerkzeug für <if ($n2 == 1)>Minenarbeiter<else>Gärtner</if> anlegen und mit der Arbeit beginnen
@@ -909,7 +909,7 @@ msgstr "Отправляйтесь в <noun-en PlaceName 2 $n1 2 1>, возьм�
 #. macro: <if ($n2 == 1)>quarrying<else>harvesting</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:102351:0:0"
 msgid "Travel to <noun-en PlaceName 2 $n1 2 1>, equip a <if ($n2 == 1)>miner's<else>botanist's</if> secondary tool, and commence <if ($n2 == 1)>quarrying<else>harvesting</if>."
-msgstr "Отправляйтесь в <noun-en PlaceName 2 $n1 2 1>, возьмите <if ($n2 == 1)>дополнительный инструмент шахтёра<else>дополнительный инструмент ботаника</if> и приступайте к <if ($n2 == 1)>разработке карьера<else>сбору растений</if>."
+msgstr "Отправляйтесь в <sheet PlaceName $n1 0>, возьмите <if ($n2 == 1)>дополнительный инструмент шахтёра<else>дополнительный инструмент ботаника</if> и приступайте к <if ($n2 == 1)>разработке карьера<else>сбору растений</if>."
 
 #. ja: このクエストを進行させるためには、<br>クエスト「<sheet Quest $n1 QUEST_NAME>」で実行中の、<br>特殊な状態を解除する必要があります。
 #. de: Um diesen Auftrag fortzuführen, muss erst der gegenwärtigen Missionsstatus des Auftrages „<sheet Quest $n1 QUEST_NAME>“ zurückgesetzt werden.

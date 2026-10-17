@@ -392,7 +392,7 @@ msgstr "Название компании изменено на «<if $gn8><shee
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:35:0:0"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> changed the name of the estate hall at plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1> to <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> переименовал<if ($gs1 == $gs2)><if $gn4>а</if><else></if> особняк на участке <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1> в «<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>»."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> переименовал<if ($gs1 == $gs2)><if $gn4>а</if><else></if> особняк на участке <num $n3>, район <num $n2>, <sheet PlaceName $n1 0> в «<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>»."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」のグリーティングメッセージを変更しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> das Grußwort von „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“ geändert.
@@ -419,7 +419,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:37:0:0"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> purchased the deed to plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1> for the company."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> приобрел<if ($gs1 == $gs2)><if $gn4>а</if><else></if> для компании участок <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> приобрел<if ($gs1 == $gs2)><if $gn4>а</if><else></if> для компании участок <num $n3>, район <num $n2>, <sheet PlaceName $n1 0>."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が<sheet PlaceName $n1 0>第<num $n2>区<num $n3>番地の土地を破棄しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> das Grundstück <sheet PlaceName $n1 8 2>, <num $n2>. Bezirk - <num $n3> aufgegeben.
@@ -433,7 +433,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:38:0:0"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> relinquished the deed to plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1> for the company."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> отказал<if ($gs1 == $gs2)><if $gn4>а</if><else></if>ся от участка <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> отказал<if ($gs1 == $gs2)><if $gn4>а</if><else></if>ся от участка <num $n3>, район <num $n2>, <sheet PlaceName $n1 0>."
 
 #. ja: <sheet PlaceName $n1 0> 第<num $n2>区<num $n3>番地の土地が自動破棄されました。
 #. de: Das Grundstück <sheet PlaceName $n1 8 2>, <num $n2>. Bezirk - <num $n3> wurde automatisch zurückgegeben.
@@ -443,7 +443,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:39:0:0"
 msgid "Your company's deed to plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1> was revoked."
-msgstr "Право вашей компании на участок <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1> отозвано."
+msgstr "Право вашей компании на участок <num $n3>, район <num $n2>, <sheet PlaceName $n1 0> отозвано."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が<sheet PlaceName $n1 0>第<num $n2>区<num $n3>番地に「<sheet HousingPreset $n4 0>」を建築しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> auf dem Grundstück <sheet PlaceName $n1 8 2>, <num $n2>. Bezirk - <num $n3> ein Gebäude vom Typ „<sheet HousingPreset $n4 0>“ errichtet.
@@ -467,7 +467,7 @@ msgstr "Право вашей компании на участок <num $n3>, р
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:40:0:0"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> built <if ($n4 == 262163)>an <else><if ($n4 == 262164)>an <else><if ($n4 == 262165)>an <else><if ($n4 == 262166)>an <else><if ($n4 == 262167)>an <else><if ($n4 == 262168)>an <else><if ($n4 == 262169)>an <else><if ($n4 == 262170)>an <else><if ($n4 == 262171)>an <else>a </if></if></if></if></if></if></if></if></if><sheet HousingPreset $n4 0> at plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> построил<if ($gs1 == $gs2)><if $gn4>а</if><else></if> <if ($n4 == 262163)><else></if><sheet HousingPreset $n4 0> на участке <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> построил<if ($gs1 == $gs2)><if $gn4>а</if><else></if> <if ($n4 == 262163)><else></if><sheet HousingPreset $n4 0> на участке <num $n3>, район <num $n2>, <sheet PlaceName $n1 0>."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」を撤去しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“ entfernt.
@@ -1078,7 +1078,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:87:0:0"
 msgid "The company estate was deemed abandoned and the deed to plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1> was revoked. Several salvageable possessions were placed in the care of the area's resident caretaker."
-msgstr "Участок <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1> признан заброшенным, и право компании на него отозвано. Часть вещей передана на хранение смотрителю жилого района."
+msgstr "Участок <num $n3>, район <num $n2>, <sheet PlaceName $n1 0> признан заброшенным, и право компании на него отозвано. Часть вещей передана на хранение смотрителю жилого района."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>がハウスに入室したことにより、自動撤去準備が解除されました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> die Unterkunft betreten und damit die automatische Rückgabe des Grundstücks verhindert.
@@ -1099,7 +1099,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:89:0:0"
 msgid "Possessions placed into the care of the resident caretaker after the demolition of the estate on plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1> were not collected within the allotted time and have been discarded."
-msgstr "Вещи, оставленные смотрителю жилого района на хранение после сноса особняка на участке <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1>, не были забраны вовремя и утилизированы."
+msgstr "Вещи, оставленные смотрителю жилого района на хранение после сноса особняка на участке <num $n3>, район <num $n2>, <sheet PlaceName $n1 0>, не были забраны вовремя и утилизированы."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が植木鉢に<sheet Item $n1 0>をまきました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> in einem Blumentopf <sheet Item $n1 9> ausgesät.
@@ -1162,7 +1162,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "FCActivity:94:0:0"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> relocated the estate to plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> перенес<if ($gs1 == $gs2)><if $gn4>ла</if><else></if> особняк на участок <num $n3>, район <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> перенес<if ($gs1 == $gs2)><if $gn4>ла</if><else></if> особняк на участок <num $n3>, район <num $n2>, <sheet PlaceName $n1 0>."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が<num $n1>機目の潜水艦「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」を登録しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> Tauchboot Nr. <num $n1> mit dem Namen <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i> registriert.

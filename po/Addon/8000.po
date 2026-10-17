@@ -2179,7 +2179,7 @@ msgstr "Завершить поручение «<sheet Leve $n1 0>»."
 #. macro: <noun-en PlaceName 2 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:8342:0:0"
 msgid "<title-case><noun-en PlaceName 2 $n1 2 1><if $n2> - <title-case><noun-en PlaceName 2 $n2 2 1></title-case></if></title-case>"
-msgstr "<title-case><noun-en PlaceName 2 $n1 2 1><if $n2> — <title-case><noun-en PlaceName 2 $n2 2 1></title-case></if></title-case>"
+msgstr "<capitalize><sheet PlaceName $n1 0><if $n2> — <capitalize><sheet PlaceName $n2 0></capitalize></if></capitalize>"
 
 #. ja: ATMA ACQUISITION
 #. de: ATMAS
@@ -2195,7 +2195,7 @@ msgstr "Получена атма"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:8345:0:0"
 msgid "<title-case><noun-en PlaceName 2 $n1 2 1></title-case>"
-msgstr "<title-case><noun-en PlaceName 2 $n1 2 1></title-case>"
+msgstr "<capitalize><sheet PlaceName $n1 0></capitalize>"
 
 #. ja: イベントアイテムを捨てる。
 #. de: Schlüsselgegenstand wegwerfen
@@ -3238,7 +3238,7 @@ msgstr "Убрать место назначения"
 #. macro: <if ($gn75 == 7)>Nintendo Switch Online free<else>platform-based free</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 75 == 7 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:8494:0:0"
 msgid "Remove <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1> as your <switch $n2><case>security token free<case><if ($gn78 == 99)>PlayStation®Plus free<else>platform-based free</if><case><if ($gn75 == 7)>Nintendo Switch Online free<else>platform-based free</if><case>favored</switch> destination?"
-msgstr "Убрать <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1> из списка избранных мест назначения?"
+msgstr "Убрать <sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0> из списка избранных мест назначения?"
 
 #. ja: 冒険者居住区
 #. de: Wohngebiet
@@ -4024,7 +4024,7 @@ msgstr "Не удалось получить данные."
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:8625:0:0"
 msgid "Remove <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1> as a registered destination?<br><ui-color 506><ui-edge-color 507>※Your <if ($gn78 == 99)>PlayStation®Plus and platform-based <else><if ($gn75 == 7)>Nintendo Switch Online and platform-based<else>two platform-based</if></if> free destinations are currently in use.</ui-edge-color></ui-color>"
-msgstr "Удалить <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1> из избранного как место назначения?<br><ui-color 506><ui-edge-color 507>※Бесплатные места назначения <if ($gn78 == 99)>от PlayStation®Plus и платформы<else><if ($gn75 == 7)>от Nintendo Switch Online и платформы<else>от двух платформ</if></if> сейчас используются.</ui-edge-color></ui-color>"
+msgstr "Удалить <sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0> из избранного как место назначения?<br><ui-color 506><ui-edge-color 507>※Бесплатные места назначения <if ($gn78 == 99)>от PlayStation®Plus и платформы<else><if ($gn75 == 7)>от Nintendo Switch Online и платформы<else>от двух платформ</if></if> сейчас используются.</ui-edge-color></ui-color>"
 
 #. ja: WHEEL STAND
 #. de: ÄTHERRAD-STÄNDER
