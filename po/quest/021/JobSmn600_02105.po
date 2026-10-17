@@ -114,7 +114,7 @@ msgstr "Согласно исследованиям Наследников, па
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/021/JobSmn600_02105:TEXT_JOBSMN600_02105_YMHITRA_000_004:1"
 msgid "But once <split \" \" 1><string $gs1></split> had acquired the Dreadwyrm Trance, the haste with which the Ascian withdrew did not seem to me the action of a being who harbors no fear of death."
-msgstr "Но когда <split \" \" 1><string $gs1></split> овладело Трансом Древнего дракона, бегство асианца выглядело слишком поспешным для существа, которое не боится смерти."
+msgstr "Но когда <split \" \" 1><string $gs1></split> <if $gn4>овладела<else>овладел</if> Трансом ярости Бахамута, бегство асианца выглядело слишком поспешным для существа, которое не боится смерти."
 
 #. ja: もしかしたら、十二杯のような「黒仮面」のアシエンは、<br>憑依こそできても、不死ではないのかもしれない……！
 #. de: Meine Vermutung: Der Ascian mit der schwarzen Maske ist nicht dazu in der Lage, in den Spalt zwischen den Dimensionen zu fliehen.
@@ -349,9 +349,10 @@ msgstr "На этот раз тебе не уйти, асианец!"
 #. speaker: YMHITRA
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+#, aeria-term-model-exception: Unleash 703980efc882
 msgctxt "quest/021/JobSmn600_02105:TEXT_JOBSMN600_02105_YMHITRA_000_130:1"
 msgid "Now, <split \" \" 1><string $gs1></split>! Unleash your power!"
-msgstr "Сейчас, <split \" \" 1><string $gs1></split>! Высвободи свою силу!"
+msgstr "Сейчас, <split \" \" 1><string $gs1></split>! Выпусти свою силу!"
 
 #. ja: やった……やったわ！
 #. de: Du hast es geschafft!
@@ -423,7 +424,7 @@ msgstr "Мы справились, <split \" \" 1><string $gs1></split>! Аси�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/021/JobSmn600_02105:TEXT_JOBSMN600_02105_YMHITRA_000_145:1"
 msgid "...My plan had you been unable to cast the Deathflare? My dear <split \" \" 1><string $gs1></split>, I never entertained a single doubt."
-msgstr "...Что бы я стала делать, если бы тебе не удалось сотворить Смертельное пламя? Дорогая <split \" \" 1><string $gs1></split>, я ни на миг не сомневалась в тебе."
+msgstr "...Что бы я стала делать, если бы тебе не удалось сотворить Вспышку смерти? Дорогая <if $gn4><split \" \" 1><string $gs1></split><else><split \" \" 1><string $gs1></split></if>, я ни на миг не сомневалась в тебе."
 
 #. ja: お前たちのおかげで、アシエンを倒すことができた。<br>協力には、心の底から感謝する……。
 #. de: Die Ascians sind Geschichte. Die Legion steht tief in deiner Schuld.
