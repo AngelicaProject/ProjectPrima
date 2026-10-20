@@ -10,6 +10,7 @@ msgstr ""
 #. de: Rurusha möchte dich um einen Gefallen bitten.
 #. fr: Rurusha semble avoir quelque chose d'important à vous demander.
 #. kind: journal
+# aeria-terms: {"Rurusha":"f5f7755f32ef"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_SEQ_00:1"
 msgid "Rurusha has something to ask of you."
 msgstr "Руруша хочет вас кое о чём попросить."
@@ -18,7 +19,7 @@ msgstr "Руруша хочет вас кое о чём попросить."
 #. de: Mit der Warenhändlerin an Thaliaks Pforte sprechen
 #. fr: Parler à la responsable de l'approvisionnement
 #. kind: objective
-#, aeria-term-model-rendering: merchant e1744fcbbf33 торговкой
+# aeria-terms: {"merchant":"c21a70778174"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_TODO_00:1"
 msgid "Speak with the merchant."
 msgstr "Поговорите с торговкой."
@@ -27,6 +28,7 @@ msgstr "Поговорите с торговкой."
 #. de: Mit Rurusha sprechen
 #. fr: Retourner parler à Rurusha
 #. kind: objective
+# aeria-terms: {"Rurusha":"f5f7755f32ef"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_TODO_01:1"
 msgid "Speak with Rurusha."
 msgstr "Поговорите с Рурушей."
@@ -37,6 +39,7 @@ msgstr "Поговорите с Рурушей."
 #. kind: objective
 #. macro: <if ($n1 < $n2)>Synthesize a gold core <sheet Addon 9 0><else>Deliver the gold core <sheet Addon 9 0> to Rurusha</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 < number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet Addon 9 0> — a value from a game data sheet, such as a name; sheet = Addon, row = 9, column = 0 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Rurusha":"f5f7755f32ef"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_TODO_02:1"
 msgid "<if ($n1 < $n2)>Synthesize a gold core <sheet Addon 9 0><else>Deliver the gold core <sheet Addon 9 0> to Rurusha</if>."
 msgstr "<if ($n1 < $n2)>Изготовьте золотое ядро <sheet Addon 9 0><else>Отнесите Руруше золотое ядро <sheet Addon 9 0></if>."
@@ -63,6 +66,7 @@ msgstr "Нам сообщили, что груз с материалами дл�
 #. de: Boric wird es abholen, aber sei doch bitte so gut und begleite ihn. Vergewissere dich, dass das Material keine Mängel aufweist. Das kannst du von uns allen am besten einschätzen.
 #. fr: Je comptais d'ailleurs envoyer Boric le récupérer, pourrais-tu l'accompagner<nbsp>? Ton œil d'artisan<if $gn4>e</if> saura sûrement jauger de la qualité de sa livraison<nbsp>!
 #. speaker: RURUSHA
+# aeria-terms: {"Boric":"59d29ab6b1a0"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_003:1"
 msgid "Boric was just leaving to go and fetch them, but now that you're here, might I ask you to accompany him? I would be certain of the quality of these goods, and I trust your discerning artisan's eye."
 msgstr "Борик как раз собирался забрать его. Не могли бы вы пойти с ним? Хочу, чтобы вы проверили качество материалов. Вашему опытному глазу мастера я доверяю."
@@ -79,7 +83,7 @@ msgstr "Чудесно! Ну, не задерживайтесь, вы двое."
 #. de: Also dann, lass uns gleich zum Hafen gehen. Das Material wurde zu der Warenhändlerin an Thaliaks Pforte geliefert.
 #. fr: Bien, allons trouver la marchande responsable de l'approvisionnement au port de l'Érudit.
 #. speaker: BORIC
-#, aeria-term-model-rendering: merchant e1744fcbbf33 Торговка
+# aeria-terms: {"Scholar's Harbor":"2512305f9ec4","merchant":"c21a70778174"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_005:1"
 msgid "Let's be on our way, then. The merchant said she would be waiting for us in Scholar's Harbor."
 msgstr "Тогда пойдёмте. Торговка сказала, что будет ждать нас в Гавани учёных."
@@ -98,7 +102,7 @@ msgstr "Простите, что сразу отправляю вас по де�
 #. speaker: BORIC
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
-#, aeria-term-model-rendering: merchant e1744fcbbf33 торговка
+# aeria-terms: {"merchant":"c21a70778174"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_011:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>! This is the merchant I was telling you about."
 msgstr "А, <split \" \" 1><string $gs1></split>! Это та самая торговка, о которой я говорил."
@@ -107,6 +111,7 @@ msgstr "А, <split \" \" 1><string $gs1></split>! Это та самая тор�
 #. de: Seid gegrüßt! Ihr kommt bestimmt von der Magieakademie, nicht wahr?
 #. fr: Bien le <if ($gn11 < 12)><if ($gn11 < 4)>bonsoir<else>bonjour</if><else><if ($gn11 < 17)>bonjour<else>bonsoir</if></if><nbsp>! Vous êtes envoyé<if $gn4>e</if> par l'académie de magie de Sharlayan<nbsp>?
 #. speaker: MERCHANT04136
+# aeria-terms: {"Studium":"bd631673acd4"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_MERCHANT04136_000_015:1"
 msgid "'Ello, 'ello! 'Ow are you on this fine day? You're both from the Studium, yes?"
 msgstr "Здрасьте-здрасьте! Как поживаете? Вы ведь оба из Студиума, верно?"
@@ -115,6 +120,7 @@ msgstr "Здрасьте-здрасьте! Как поживаете? Вы ве�
 #. de: Ja, genau, Professorin Rurusha schickt uns, um<nbsp>...
 #. fr: Euh, je suis ici pour la commande du professeur Rurusha...
 #. speaker: BORIC
+# aeria-terms: {"Rurusha":"f5f7755f32ef"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_100_015:1"
 msgid "Why yes, we are actually. We've been sent by Professor Rurusha for─"
 msgstr "Да, мы оттуда. Нас послала профессор Руруша за..."
@@ -157,6 +163,7 @@ msgstr "Приятно иметь с вами дело!"
 #. de: Ich bin Namono Tayamono von der Magieakademie. Ich möchte das bestellte Buch abholen.
 #. fr: Je suis Namono Tayamono, de l'académie de magie de Sharlayan. Avez-vous reçu l'ouvrage que je vous avais commandé<nbsp>?
 #. speaker: NAMONOTAYAMONO
+# aeria-terms: {"Namono Tayamono":"88b276899727","Studium":"bd631673acd4"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_NAMONOTAYAMONO_000_021:1"
 msgid "Do you have the tome I recently ordered for the Studium? The order was placed under Namono Tayamono."
 msgstr "У вас есть книга, которую я недавно заказал для Студиума? Заказ был оформлен на имя Намоно Таямоно."
@@ -197,7 +204,7 @@ msgstr "Вот как? Может, тогда вернёте её?"
 #. de: Nein, du hast keinen Fehler begangen und sollst für deine Mühen entlohnt werden.
 #. fr: Non, ce ne sera pas nécessaire. C'est bien le livre que j'avais commandé, je vais vous payer ce que je vous dois.
 #. speaker: NAMONOTAYAMONO
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_NAMONOTAYAMONO_000_024:1"
 msgid "No, no. You did your job and deserve to be compensated accordingly."
 msgstr "Нет, не нужно. Вы выполнили свою работу, я заплачу вам как положено."
@@ -246,6 +253,7 @@ msgstr "Археология всегда была мне по душе. Но в
 #. de: Aber Professorin Rurusha hat mich trotzdem als ihren Assistenten akzeptiert und gibt mir das Gefühl, nützlich zu sein. Ich stehe tief in ihrer Schuld.
 #. fr: Mais madame Rurusha a quand même accepté de me prendre sous son aile. Elle m'explique toujours tout patiemment, je lui dois beaucoup.
 #. speaker: BORIC
+# aeria-terms: {"Rurusha":"f5f7755f32ef"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_028:1"
 msgid "But that mattered little to Professor Rurusha. She took me under her wing in spite of my shortcomings, and my performance greatly improved thanks to her tutelage."
 msgstr "Но профессор Руруша не отвернулась от меня, хоть я и был безнадёжен. Она терпеливо меня учила, и благодаря ей я стал работать куда лучше."
@@ -254,6 +262,7 @@ msgstr "Но профессор Руруша не отвернулась от м
 #. de: Auf ihre Empfehlung hin wurde ich sogar von der Sankt Coinach-Stiftung eingeladen, aber ich wollte lieber bei Professorin Rurusha bleiben und sie weiter als Assistent unterstützen.
 #. fr: C'est pour lui témoigner ma recon<shy>nais<shy>san<shy>ce que j'ai refusé de joindre la Fondation de Saint-Coinach et que je suis resté à l'académie de magie de Sharlayan.
 #. speaker: BORIC
+# aeria-terms: {"Saint Coinach's Find":"58198917d671"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_029:1"
 msgid "So much so, I was offered a position working at Saint Coinach's Find after graduation. But I couldn't accept it─I owe a great debt to the professor for all she has done for me. So long as she has need, I will remain at her side."
 msgstr "После выпуска меня благодаря профессору пригласили в Находку Святого Койнаха. Но я отказался. Я ей так многим обязан, что останусь рядом и буду помогать, пока я ей нужен."
@@ -262,7 +271,7 @@ msgstr "После выпуска меня благодаря профессор
 #. de: Momentan beschleicht mich aber das Gefühl, völlig nutzlos zu sein. Sollte ich doch lieber bei Professor Namono anspruchslose Aufgaben über<shy>nehmen? Vielleicht könnte ich so wenigstens einen kleinen Beitrag für die Archäologie leisten.
 #. fr: Malgré ça, je ne lui suis d'aucune aide... Je contribuerais cer<shy>tai<shy>ne<shy>ment plus au développement de l'archéologie en faisant des petits boulots pour le professeur Namono...
 #. speaker: BORIC
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_030:1"
 msgid "Alas, I don't feel I've been much help to her of late. Perhaps it would be for the best if I took on a few odd jobs for Professor Namono. At least then I would be contributing to the field in some way, however insignificant it may be..."
 msgstr "Только в последнее время от меня никакого толку. Может, я больше помог бы археологии, если бы пошёл к профессору Намоно и занялся хоть какой-нибудь работой..."
@@ -279,6 +288,7 @@ msgstr "Что вы скажете?"
 #. de: Rurusha würde dich sicher vermissen.
 #. fr: Tu laisserais Rurusha toute seule<nbsp>?
 #. speaker: A1
+# aeria-terms: {"Rurusha":"f5f7755f32ef"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_A1_000_001:1"
 msgid "Then Professor Rurusha would be all on her own."
 msgstr "Тогда профессор Руруша останется совсем одна."
@@ -311,7 +321,7 @@ msgstr "Ох... Да, вы правы. Такое решение нельзя п
 #. de: Tut mir leid, dass ich dich mit meinen Sorgen behelligt habe. Danke für dein Verständnis!
 #. fr: Ah, désolé, je ne voulais pas vous importuner avec mes plaintes<nbsp>! Merci de m'avoir écouté, en tout cas<nbsp>!
 #. speaker: BORIC
-#, aeria-term-model-exception: Apologies e8f7b5ec3c43
+# aeria-terms: {"Apologies":"e4969371b8d8"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_032:1"
 msgid "Apologies for my jabbering. You did not come all this way to hear my lamentations."
 msgstr "Простите, что разболтался. Вы ведь не затем сюда пришли, чтобы слушать мои жалобы."
@@ -352,6 +362,7 @@ msgstr "Вот и славно! Спасибо, что проверили кач
 #. de: Sag mal, Boric, was hast du denn da für ein Buch mitgebracht?
 #. fr: Tiens<nbsp>? Où as-tu trouvé ce livre, Boric<nbsp>?
 #. speaker: RURUSHA
+# aeria-terms: {"Boric":"59d29ab6b1a0"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_042:1"
 msgid "I say, Boric, what is that tome you have there?"
 msgstr "Борик, а что это у тебя за книга?"
@@ -360,7 +371,7 @@ msgstr "Борик, а что это у тебя за книга?"
 #. de: Ach das?! Äh<nbsp>... Also, bei der Warenhändlerin sind wir Professor Namono begegnet.
 #. fr: Hein<nbsp>!? Ah, euh... C'est que nous sommes tombés sur le professeur Namono au port de l'Érudit.
 #. speaker: BORIC
-#, aeria-term-model-rendering: merchant e1744fcbbf33 торговки
+# aeria-terms: {"merchant":"c21a70778174"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_043:1"
 msgid "Oh, this? Er, well, we happened to run into Professor Namono when we met the merchant, and..."
 msgstr "А, это? Ну... мы встретили профессора Намоно у торговки, и..."
@@ -377,6 +388,7 @@ msgstr "...Он сказал, что книга, которую заказал, 
 #. de: Sieh an, eine persönliche Einladung von Professor Namono. Herzlichen Glückwunsch!
 #. fr: Vraiment<nbsp>? C'est bien la preuve que tu as du potentiel<nbsp>! Le professeur Namono a du flair<nbsp>!
 #. speaker: RURUSHA
+# aeria-terms: {"Boric":"59d29ab6b1a0"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_045:1"
 msgid "Look at you! Getting scouted by other professors. You're coming up in the world, Boric."
 msgstr "Вот это да! Тебя переманивают другие профессора. Смотри-ка, Борик, карьера в гору пошла!"
@@ -385,7 +397,7 @@ msgstr "Вот это да! Тебя переманивают другие пр�
 #. de: Nun ja, ich glaube, er will Hilfe bei einfachen Tätigkeiten. Ihm dürfte klar sein, dass ich keine alten Schriften entziffern kann.
 #. fr: Oh non, il avait simplement besoin d'un larbin... Et puis, vous savez bien que je ne suis pas assez intelligent pour aider dans des recherches sur les langues inconnues<nbsp>!
 #. speaker: BORIC
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_046:1"
 msgid "Alas, he only wanted me to help out with odd jobs. I could never hope to aid anyone in deciphering ancient languages, as you well know..."
 msgstr "Да нет, ему просто нужны помощники для всякой мелкой работы. Да и вы знаете, мне не разгадать древние языки..."
@@ -402,6 +414,7 @@ msgstr "Жаль, что он так себя недооценивает. Он �
 #. de: Falls du noch mehr Material brauchst, wird dir Boric behilflich sein.
 #. fr: N'hésite pas à demander à Boric si tu manques de matériaux<nbsp>!
 #. speaker: RURUSHA
+# aeria-terms: {"Boric":"59d29ab6b1a0"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_047:1"
 msgid "If you should have need of additional materials, Boric will provide."
 msgstr "Если понадобятся дополнительные материалы, Борик поможет."
@@ -442,6 +455,7 @@ msgstr "Заменять ядро было волнительно, но всё �
 #. de: Der Goldene Dhyata ist kurz abgehoben, doch dann leider wieder zu Boden gestürzt. Dabei war ein knackendes Geräusch zu hören.
 #. fr: La Dhyata dorée s'est sou<shy>dai<shy>ne<shy>ment élevée dans les airs<nbsp>! Cependant, elle est im<shy>mé<shy>dia<shy>te<shy>ment retombée et émet maintenant d'étranges cliquetis.
 #. speaker: SYSTEM
+# aeria-terms: {"Golden Dhyata":"d6812e2e77b6"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_SYSTEM_000_056:1"
 msgid "For the briefest of moments, the Golden Dhyata took flight! Unfortunately, it immediately falls to the table. A rattling sound can now be heard coming from within."
 msgstr "Золотая Дхъята на миг взмыла в воздух! Но тут же упала обратно на стол. Изнутри доносится дребезжание."
@@ -452,7 +466,7 @@ msgstr "Золотая Дхъята на миг взмыла в воздух! Н
 #. speaker: RURUSHA
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-#, aeria-term-model-exception: airship c60809c0ae5f
+# aeria-terms: {"airship":"be11f59ff59f"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_057:1"
 msgid "Well, what do you know? It really <i>can</i> fly like an airship!"
 msgstr "Надо же! Она и правда <i>может</i> летать, прямо как воздушный корабль!"
@@ -461,6 +475,7 @@ msgstr "Надо же! Она и правда <i>может</i> летать, п
 #. de: Es kann fliegen?! Bei einem allagischen Artefakt hätte ich es noch erwartet, aber es stammt aus einer anderen Zeit! Professorin Rurusha hat sich nicht getäuscht<nbsp>...
 #. fr: Elle... elle a vraiment volé<nbsp>! Le professeur avait raison, cette relique est incroyable...
 #. speaker: BORIC
+# aeria-terms: {"Allagan":"fa27af889040"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_BORIC_000_058:1"
 msgid "I can hardly believe my eyes! Are you certain it is not Allagan in origin? I can think of no other ancient civilization capable of fashioning such a mammet."
 msgstr "Не верю своим глазам! Вы уверены, что она не аллагского происхождения? Не знаю ни одной другой древней цивилизации, способной создать такого маммета."
@@ -517,7 +532,7 @@ msgstr "Ну..."
 #. de: Mein Forschergeist verlangt nach einer Antwort darauf, ob es sich bei dem Goldenen Dhyata um eine magische Marionette oder um ein Spielzeug handelt.
 #. fr: La Dhyata dorée est-elle un pantin enchanté ou un simple jouet<nbsp>? La seule façon de s'en assurer est de continuer nos recherches... N'es-tu pas curieux<nbsp>?
 #. speaker: RURUSHA
-#, aeria-term-model-exception: First fb156eba0883
+# aeria-terms: {"Golden Dhyata":"d6812e2e77b6"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_RURUSHA_000_065:1"
 msgid "Only time will tell if the Golden Dhyata is truly a mammet, or simply someone's old plaything. But I could never forgive myself were I to move on to another project without first uncovering all our friend's secrets."
 msgstr "Только время покажет, и правда ли Золотая Дхъята — маммет или просто чья-то старая игрушка. Но я не смогла бы бросить это дело, не раскрыв всех секретов нашей новой знакомой."
@@ -550,6 +565,7 @@ msgstr "А пока отдохните. Я сама посмотрю, нельз
 #. de: Sobald du als <if $gn4>Grobschmiedin<else>Grobschmied</if>, <if $gn4>Plattnerin<else>Plattner</if> oder <if $gn4>Goldschmiedin<else>Goldschmied</if> Stufe 88 erreicht hast, kannst du von Rurusha einen neuen Auftrag erhalten.
 #. fr: Rurusha propose la prochaine quête aux forgerons, armuriers ou orfèvres de niveau 88.
 #. speaker: SYSTEM
+# aeria-terms: {"Rurusha":"f5f7755f32ef","armorer":"024e3bb204bd","blacksmith":"52cb2577923b","goldsmith":"1b735164df1c"}
 msgctxt "quest/041/AktKla105_04136:TEXT_AKTKLA105_04136_SYSTEM_000_069:1"
 msgid "The next quest will be available from Rurusha upon reaching level 88 as a blacksmith, armorer, or goldsmith."
 msgstr "Следующее задание можно будет получить у Руруши, когда вы достигнете 88-го уровня за кузнеца, бронника или ювелира."
