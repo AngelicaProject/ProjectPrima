@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.10.06.0000.0000\n"
+"X-Game-Version: 2026.10.16.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 討伐手帳『<sheet MonsterNote $n1 9>』<sheet BNpcName $n2 0>の討伐 <num $n3>/<num $n4>
@@ -798,7 +798,7 @@ msgstr "Сейчас нельзя рыбачить"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1110:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>cast your<else>casts <if $gn7><if \"<sheet BNpcName $gn7 6>\">her<else>his</if><else><if $gn5>her<else>his</if></if></if> line <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> забрасывает <if $gn7><if \"<sheet BNpcName $gn7 6>\">свою<else>свою</if><else><if $gn5>свою<else>свою</if></if> удочку <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>у </if><noun-en PlaceName 2 $n1 2 1>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> забрасывает <if $gn7><if \"<sheet BNpcName $gn7 6>\">свою<else>свою</if><else><if $gn5>свою<else>свою</if></if> удочку <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>у </if><sheet PlaceName $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は釣りを終えた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> das Fischen beendet.
@@ -844,7 +844,7 @@ msgstr "В справочник рыб добавлена запись о <noun-
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1115:0:5"
 msgid "Data on <noun-en PlaceName 2 $n1 2 1> is added to your fishing log."
-msgstr "В журнал рыбака добавлено новое место: <noun-en PlaceName 2 $n1 2 1>"
+msgstr "В журнал рыбака добавлено новое место: <sheet PlaceName $n1 0>"
 
 #. ja: 魚をフッキングした！
 #. de: Etwas hat angebissen!
@@ -965,7 +965,7 @@ msgstr "Поклёвок нет"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1130:0:5"
 msgid "You have discovered the fishing location, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Вы обнаружили место для рыбалки: <noun-en PlaceName 2 $n1 2 1>"
+msgstr "Вы обнаружили место для рыбалки: <sheet PlaceName $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はステータス異常のため、製作を行えません。
 #. de: Unter dem derzeitigen Status kannst du keine Synthese durchführen.
@@ -2420,7 +2420,7 @@ msgstr "Вы уже получили <noun-en Item 1 $n1 1 1> и не сможе
 #. macro: <if ($n2 == 0)>has increased<else>has increased further</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1306:0:5"
 msgid "Mount speed <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1> <if ($n2 == 0)>has increased<else>has increased further</if>."
-msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>в </switch><else>в </if><noun-en PlaceName 2 $n1 2 1> <if ($n2 == 0)>увеличилась<else>увеличилась ещё больше</if>"
+msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>в </switch><else>в </if><sheet PlaceName $n1 0> <if ($n2 == 0)>увеличилась<else>увеличилась ещё больше</if>"
 
 #. ja: 「<sheet PlaceName $n1 0>」における、地上でのマウント移動速度がさらに上昇しました。
 #. de: Die Reit<shy>tier<shy>geschwindig<shy>keit in der Region „<sheet PlaceName $n1 0>“ wurde weiter erhöht.
@@ -2431,7 +2431,7 @@ msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1307:0:5"
 msgid "Mount speed <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1> has increased further."
-msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>в </switch><else>в </if><noun-en PlaceName 2 $n1 2 1> увеличилась ещё больше"
+msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>в </switch><else>в </if><sheet PlaceName $n1 0> увеличилась ещё больше"
 
 #. ja: 現在の位置からは実行できません。
 #. de: Hier kannst du diese Aktion nicht ausführen.
@@ -2737,7 +2737,7 @@ msgstr "Эфирит добавлен в избранное"
 #. macro: <sheet Aetheryte $n1 9> — a value from a game data sheet, such as a name; sheet = Aetheryte, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1346:0:5"
 msgid "You now have Aethernet access to <noun-en PlaceName 2 \"<sheet Aetheryte $n1 9>\" 2 1>."
-msgstr "Сеть перемещения теперь доступна: <noun-en PlaceName 2 \"<sheet Aetheryte $n1 9>\" 2 1>"
+msgstr "Сеть перемещения теперь доступна: <sheet PlaceName \"<sheet Aetheryte $n1 9>\" 0>"
 
 #. ja: 「お気に入り（ワンタイムパスワード特典無料枠）」に登録済みです。
 #. de: Bereits als kostenloser Ätheryt registriert.
@@ -3018,7 +3018,7 @@ msgstr "Из-за ограничений на игровое время нель
 #. macro: <noun-en PlaceName 2 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1380:0:5"
 msgid "“<sheet Leve $n1 0>” can only be initiated <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n2 2 1>."
-msgstr "«<sheet Leve $n1 0>» можно начать только <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>в <case>на </switch><else>в </if><noun-en PlaceName 2 $n2 2 1>"
+msgstr "«<sheet Leve $n1 0>» можно начать только <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>в <case>на </switch><else>в </if><sheet PlaceName $n2 0>"
 
 #. ja: パーティメンバーがリーヴ『<sheet Leve $n1 0>』の任地にいないため、開始できません。
 #. de: „<sheet Leve $n1 0>“ kann nicht begonnen werden. Jemand in deiner Gruppe ist zu weit entfernt.
@@ -3276,7 +3276,7 @@ msgstr "Нельзя призвать маунта: вы больше не со�
 #. ja: リーヴの任務中は、ポーターを利用できません。
 #. de: Während eines Freibriefs kannst du keine Linien-Reittiere nutzen.
 #. fr: Impossible d'utiliser le service de relais à montures pendant un mandat.
-#, aeria-term-model-exception: porter dd9fc7c2b346
+#, aeria-term-model-exception: porter 054bd2642dac
 msgctxt "LogMessage:1413:0:5"
 msgid "Unable to hire porter while on a levequest."
 msgstr "Нельзя воспользоваться услугами чокобо-перевозчика во время поручения"
@@ -3284,7 +3284,7 @@ msgstr "Нельзя воспользоваться услугами чокоб�
 #. ja: パーティメンバーがポーター利用中のため、リーヴの任務を開始できません。
 #. de: Der Freibrief kann nicht begonnen werden, weil ein Grup<shy>pen<shy>mit<shy>glied gerade auf einem Linien-Reittier reitet.
 #. fr: Impossible de commencer le mandat. Un équipier utilise le service de relais à montures.
-#, aeria-term-model-exception: porter dd9fc7c2b346
+#, aeria-term-model-exception: porter 054bd2642dac
 msgctxt "LogMessage:1414:0:5"
 msgid "Unable to initiate levequest. One or more party members are using a porter."
 msgstr "Нельзя начать поручение: один или несколько участников группы едут на чокобо-перевозчике"
@@ -4307,7 +4307,7 @@ msgstr "Магический барьер разрушен!"
 #. fr: Vous avez détruit l'orbe de culte. Le flux d'éther est interrompu<nbsp>!
 msgctxt "LogMessage:1537:0:5"
 msgid "The light of the cultist orb fades..."
-msgstr "Свет в сфере культистов гаснет.."
+msgstr "Свет в сфере культиста гаснет.."
 
 #. ja: 脱出地点が出現した。
 #. de: Ein Ausgang ist erschienen.

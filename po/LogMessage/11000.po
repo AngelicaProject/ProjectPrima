@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.10.06.0000.0000\n"
+"X-Game-Version: 2026.10.16.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 財宝探索を続ける場合は、最初の財宝を開けてから<sheet EventItem $n1 0>を使用してください。
@@ -1270,7 +1270,7 @@ msgstr "Вы получаете награду, потратив <if ($n2 == 1)>
 #. fr: Vous avez atteint la zone 99 du Sanctuaire des pèlerins et débloqué la mission d'en<shy>traî<shy>ne<shy>ment proposant d'affronter le Pontife du Chagrin dans sa version d'origine<nbsp>!<br>Adressez-vous à Vanthau pour plus de détails.
 msgctxt "LogMessage:11256:0:5"
 msgid "By passing traverse stone 99, you have unlocked the Final Verse. Speak with Vanthau in Il Mheg for more information and to access this practice duty."
-msgstr "Достигнув 99-го яруса, вы открыли «Последний стих». Поговорите с Ванто в Иль-Меге, чтобы узнать подробности и попасть на тренировочное задание"
+msgstr "Достигнув 99-го яруса, вы открыли «Последний стих». Поговорите с Ванто в Иль Меге, чтобы узнать подробности и попасть на тренировочное задание"
 
 #. ja: 宝箱は固く閉ざされている……。<br>宝箱を開くためのアイテムを持っていないか、宝箱を開く権利がありません。
 #. de: Du kannst die Schatztruhe nicht öffnen, da dir der erforderliche Gegenstand fehlt und du dazu nicht berechtigt bist.
@@ -1518,7 +1518,7 @@ msgstr "Со стороны скал доносится глухой грохо�
 #. fr: Vous ne pouvez pas encore manger de fruit de morbol.
 msgctxt "LogMessage:11288:0:5"
 msgid "You cannot eat the morbol fruit..."
-msgstr "Вы пока не можете съесть плод морболов.."
+msgstr "Вы пока не можете съесть плод морбола.."
 
 #. ja: 選択された対象はアイコンに設定できません。
 #. de: Kann nicht als Icon registriert werden.
@@ -1558,7 +1558,7 @@ msgstr "Обвалившиеся камни рассыпаются.."
 #. macro: <if ($n2 == 1)>second<else>seconds</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11301:0:5"
 msgid "The <switch $n1><case>rank B<case>rank A<case>rank S</switch> <sheet PlaceName $n3 2> will become unclaimed in <num $n2> <if ($n2 == 1)>second<else>seconds</if>!"
-msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n1><case>B<case>A<case>S</switch> станет ничейной через <num $n2> сек.!"
+msgstr "Точка <sheet PlaceName $n3 0> ранга <switch $n1><case>B<case>A<case>S</switch> станет ничейной через <num $n2> сек.!"
 
 #. ja: <switch $n1><case>ランクB<case>ランクA<case>ランクS</switch>の<sheet PlaceName $n2 0>が制圧可能状態になった！
 #. de: <sheet PlaceName $n2 0> (<switch $n1><case>Rang B<case>Rang A<case>Rang S</switch>) ist jetzt besetzbar!
@@ -1567,7 +1567,7 @@ msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n1><case>B<case>A
 #. macro: <sheet PlaceName $n2 2> — a value from a game data sheet, such as a name; sheet = PlaceName, row = number parameter 2, column = 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11302:0:5"
 msgid "The <switch $n1><case>rank B<case>rank A<case>rank S</switch> <sheet PlaceName $n2 2> is now unclaimed!"
-msgstr "Точка <sheet PlaceName $n2 2> ранга <switch $n1><case>B<case>A<case>S</switch> теперь ничейная!"
+msgstr "Точка <sheet PlaceName $n2 0> ранга <switch $n1><case>B<case>A<case>S</switch> теперь ничейная!"
 
 #. ja: <switch $n1><case><icon 51><ui-color 533><ui-edge-color 534>黒渦団</ui-edge-color></ui-color><case><icon 52><ui-color 535><ui-edge-color 536>双蛇党</ui-edge-color></ui-color><case><icon 53><ui-color 537><ui-edge-color 538>不滅隊</ui-edge-color></ui-color></switch>が<switch $n2><case>ランクB<case>ランクA<case>ランクS</switch>の<sheet PlaceName $n3 0>を制圧した！
 #. de: <sheet PlaceName $n3 0> (<switch $n2><case>Rang B<case>Rang A<case>Rang S</switch>) wurde von <switch $n1><case><icon 51><ui-color 533><ui-edge-color 534>dem Mahlstrom</ui-edge-color></ui-color><case><icon 52><ui-color 535><ui-edge-color 536>der Bruderschaft der Morgenviper</ui-edge-color></ui-color><case><icon 53><ui-color 537><ui-edge-color 538>der Legion der Unsterblichen</ui-edge-color></ui-color></switch> besetzt!
@@ -1586,7 +1586,7 @@ msgstr "Точка <sheet PlaceName $n2 2> ранга <switch $n1><case>B<case>A
 #, aeria-term-model-exception: Immortal Flame 785c157047f5
 msgctxt "LogMessage:11303:0:5"
 msgid "The <switch $n2><case>rank B<case>rank A<case>rank S</switch> <sheet PlaceName $n3 2> has been claimed by the <switch $n1><case><ui-color 533><ui-edge-color 534>Maelstrom</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Order of the Twin Adder</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Immortal Flames</ui-edge-color></ui-color></switch>!"
-msgstr "Точка <sheet PlaceName $n3 2> ранга <switch $n2><case>B<case>A<case>S</switch> теперь под контролем <switch $n1><case><ui-color 533><ui-edge-color 534>Водоворота</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
+msgstr "Точка <sheet PlaceName $n3 0> ранга <switch $n2><case>B<case>A<case>S</switch> теперь под контролем <switch $n1><case><ui-color 533><ui-edge-color 534>Водоворота</ui-edge-color></ui-color><case><ui-color 535><ui-edge-color 536>Ордена Двух Змей</ui-edge-color></ui-color><case><ui-color 537><ui-edge-color 538>Бессмертного пламени</ui-edge-color></ui-color></switch>!"
 
 #. ja: <sheet PlaceName $n1 0>が無効状態となった。
 #. de: <sheet PlaceName $n1 0> ist jetzt inaktiv.
@@ -2082,7 +2082,7 @@ msgstr "<i>Из множества дорог торговец направил�
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11363:0:5"
 msgid "You now have access to the Aethernet shard for <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Теперь вам доступен осколок эфирнета: <noun-en PlaceName 2 $n1 2 1>"
+msgstr "Теперь вам доступен осколок эфирнета: <sheet PlaceName $n1 0>"
 
 #. ja: 他の星内エーテライトと交感していないため、利用できません。
 #. de: Harmonisiere dich mit einem weiteren Ätheryten, um das Netz zu nutzen.

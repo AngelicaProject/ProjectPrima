@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.10.06.0000.0000\n"
+"X-Game-Version: 2026.10.16.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: エリア移動ができませんでした。
@@ -487,7 +487,7 @@ msgstr "Вам не разрешено посещать эту комнату"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4064:0:5"
 msgid "You purchase the deed to plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Вы приобрели участок <num $n3> в районе <num $n2>, <noun-en PlaceName 2 $n1 2 1>"
+msgstr "Вы приобрели участок <num $n3> в районе <num $n2>, <sheet PlaceName $n1 0>"
 
 #. ja: <sheet PlaceName $n1 0>第<num $n2>区<num $n3>番地に「<sheet HousingPreset $n4 0>」を建築しました。
 #. de: Du hast auf dem Grundstück <sheet PlaceName $n1 8 2>, <num $n2>. Bezirk - <num $n3> <if ($n4 == 262148)>ein <else><if ($n4 == 262149)>ein <else><if ($n4 == 262150)>ein <else><if ($n4 == 262157)>ein <else><if ($n4 == 262158)>ein <else><if ($n4 == 262159)>ein <else><if ($n4 == 262166)>ein <else><if ($n4 == 262167)>ein <else><if ($n4 == 262168)>ein <else>eine </if></if></if></if></if></if></if></if><sheet HousingPreset $n4 0></if> errichtet.
@@ -507,7 +507,7 @@ msgstr "Вы приобрели участок <num $n3> в районе <num $n
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4065:0:5"
 msgid "You build <if ($n4 == 262163)>an <else><if ($n4 == 262164)>an <else><if ($n4 == 262165)>an <else><if ($n4 == 262166)>an <else><if ($n4 == 262167)>an <else><if ($n4 == 262168)>an <else><if ($n4 == 262169)>an <else><if ($n4 == 262170)>an <else><if ($n4 == 262171)>an <else>a </if></if></if></if></if></if></if></if></if><sheet HousingPreset $n4 0> on plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Вы построили <sheet HousingPreset $n4 0> на участке <num $n3> в районе <num $n2>, <noun-en PlaceName 2 $n1 2 1>"
+msgstr "Вы построили <sheet HousingPreset $n4 0> на участке <num $n3> в районе <num $n2>, <sheet PlaceName $n1 0>"
 
 #. ja: 「<string $s1>」を撤去しました。
 #. de: Du hast „<string $s1>“ entfernt.
@@ -525,7 +525,7 @@ msgstr "«<string $s1>» снесён"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4067:0:5"
 msgid "You relinquish the deed to plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Вы отказались от участка <num $n3> в районе <num $n2>, <noun-en PlaceName 2 $n1 2 1>"
+msgstr "Вы отказались от участка <num $n3> в районе <num $n2>, <sheet PlaceName $n1 0>"
 
 #. ja: 「<sheet Item $n1 0>」は、もう残されていないようだ……。
 #. de: Von <noun-de Item 2 $n1 1 3 1> ist nichts mehr übrig.
@@ -3346,7 +3346,7 @@ msgstr "Снаряжение вашего ретейнера позволило 
 #. macro: <sheet GrandCompany $n1 0> — a value from a game data sheet, such as a name; sheet = GrandCompany, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4420:0:5"
 msgid "<capitalize><noun-en PlaceName 2 $n2 2 1></capitalize> <if ($n2 == 1370)>have<else><if ($n2 == 1372)>have<else>has</if></if> been occupied by the <sheet GrandCompany $n1 0>!"
-msgstr "<capitalize><noun-en PlaceName 2 $n2 2 1></capitalize> захвачено Великой компанией <sheet GrandCompany $n1 0>!"
+msgstr "<capitalize><sheet PlaceName $n2 0></capitalize> захвачено Великой компанией <sheet GrandCompany $n1 0>!"
 
 #. ja: <sheet PlaceName $n1 0>が中立状態になった！
 #. de: <capitalize><sheet PlaceName $n1 8 3></capitalize> ist wieder neutral.
@@ -3357,7 +3357,7 @@ msgstr "<capitalize><noun-en PlaceName 2 $n2 2 1></capitalize> захвачен�
 #. macro: <if ($n1 == 1372)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1372 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:4421:0:5"
 msgid "<capitalize><noun-en PlaceName 2 $n1 2 1></capitalize> <if ($n1 == 1370)>are<else><if ($n1 == 1372)>are<else>is</if></if> no longer occupied."
-msgstr "<capitalize><noun-en PlaceName 2 $n1 2 1></capitalize> больше не занято"
+msgstr "<capitalize><sheet PlaceName $n1 0></capitalize> больше не занято"
 
 #. ja: ヘリオドロム防衛塔の兵器転移装置が起動した！
 #. de: Die Waffentransportvorrichtung des Heliodroms wurde aktiviert.
@@ -3418,7 +3418,7 @@ msgstr "Член Великой компании <sheet GrandCompany $n1 0> вы
 #. macro: <noun-en PlaceName 2 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4427:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> has appeared <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n2 2 1>!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> появился <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>в <case>на </switch><else>у </if><noun-en PlaceName 2 $n2 2 1>!"
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> появился <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>в <case>на </switch><else>у </if><sheet PlaceName $n2 0>!"
 
 #. ja: 参加人数が、<num $n1>パーティ×3部隊のため、モンスターの出現パターンが変更されます。
 #. de: Da jede Staatliche Ge<shy>sell<shy>schaft nur <num $n1> Gruppe<if ($n1 == 1)><else>n</if> entsandt hat, wird das Verhalten neutraler Feinde geändert.
@@ -4458,28 +4458,28 @@ msgstr "Ваши усилия ещё больше улучшили обстан�
 #. fr: Vos efforts ont ramené un peu de quiétude en Amh Araeng<nbsp>!
 msgctxt "LogMessage:4562:0:5"
 msgid "Your efforts have restored some small measure of stability to Amh Araeng."
-msgstr "Ваши усилия немного улучшили обстановку в Ам-Аранге"
+msgstr "Ваши усилия немного улучшили обстановку в Ам Аранге"
 
 #. ja: 脅威を排除したことで、アム・アレーンの治安がさらに改善した！
 #. de: Dank deiner Bemühungen ist Amh Araeng sehr viel sicherer geworden.
 #. fr: Vos efforts ont ramené une douce harmonie en Amh Araeng<nbsp>!
 msgctxt "LogMessage:4563:0:5"
 msgid "Your efforts have brought greater stability to Amh Araeng."
-msgstr "Ваши усилия ещё больше улучшили обстановку в Ам-Аранге"
+msgstr "Ваши усилия ещё больше улучшили обстановку в Ам Аранге"
 
 #. ja: 脅威を排除したことで、イル・メグの治安が僅かに改善した！
 #. de: Dank deiner Bemühungen hat Il Mheg ein wenig an Frieden zurückgewonnen.
 #. fr: Vos efforts ont ramené un peu de quiétude en Il Mheg<nbsp>!
 msgctxt "LogMessage:4564:0:5"
 msgid "Your efforts have restored some small measure of stability to Il Mheg."
-msgstr "Ваши усилия немного улучшили обстановку в Иль-Меге"
+msgstr "Ваши усилия немного улучшили обстановку в Иль Меге"
 
 #. ja: 脅威を排除したことで、イル・メグの治安がさらに改善した！
 #. de: Dank deiner Bemühungen ist Il Mheg sehr viel sicherer geworden.
 #. fr: Vos efforts ont ramené une douce harmonie en Il Mheg<nbsp>!
 msgctxt "LogMessage:4565:0:5"
 msgid "Your efforts have brought greater stability to Il Mheg."
-msgstr "Ваши усилия ещё больше улучшили обстановку в Иль-Меге"
+msgstr "Ваши усилия ещё больше улучшили обстановку в Иль Меге"
 
 #. ja: 脅威を排除したことで、ラケティカ大森林の治安が僅かに改善した！
 #. de: Dank deiner Bemühungen hat Rak'tika ein wenig an Frieden zurückgewonnen.
@@ -4578,7 +4578,7 @@ msgstr "Гил от продаж на рынке передан ретейнер
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4579:0:5"
 msgid "An item exchange with <sheet ENpcResident $n2 0> is now available at <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Обмен предметами с <sheet ENpcResident $n2 0> теперь доступен в регионе <noun-en PlaceName 2 $n1 2 1>"
+msgstr "Обмен предметами с <sheet ENpcResident $n2 0> теперь доступен в регионе <sheet PlaceName $n1 0>"
 
 #. ja: 脅威を排除したことで、<sheet PlaceName $n1 0>の治安が<switch $n2><case>僅かに<case>さらに<case>大きく</switch>改善した！
 #. de: Dank deiner Taten hält <switch $n2><case>etwas mehr<case>ein ordentliches Maß an<case>vollständige</switch> Sicherheit in <sheet PlaceName $n1 0> Einzug!
@@ -4587,7 +4587,7 @@ msgstr "Обмен предметами с <sheet ENpcResident $n2 0> тепер
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:4580:0:5"
 msgid "Your efforts have <switch $n2><case>restored some small measure of<case>brought greater<case>brought remarkable</switch> stability to <noun-en PlaceName 2 $n1 2 1>."
-msgstr "Ваши усилия <switch $n2><case>немного улучшили<case>заметно улучшили<case>значительно улучшили</switch> стабильность в регионе <noun-en PlaceName 2 $n1 2 1>"
+msgstr "Ваши усилия <switch $n2><case>немного улучшили<case>заметно улучшили<case>значительно улучшили</switch> стабильность в регионе <sheet PlaceName $n1 0>"
 
 #. ja: マーケット出品リストの中に、マーケット取引不可になったアイテムがあります。
 #. de: Auf der Liste befinden sich Gegenstände, die nicht mehr auf den Markt angeboten werden können.
