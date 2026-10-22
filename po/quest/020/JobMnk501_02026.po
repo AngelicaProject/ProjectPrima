@@ -31,7 +31,7 @@ msgstr "Профессор Эрик рассказал вам, что ваш д�
 # aeria-terms: {"D'zentsa":"00973d5c1b0e","O'tchakha":"e603d6121958","Revenant's Toll":"7cb65cf683e9","Widargelt":"8ae19ac6fafb"}
 msgctxt "quest/020/JobMnk501_02026:TEXT_JOBMNK501_02026_SEQ_02:1"
 msgid "Widargelt introduces you to two of his most promising pupils, D'zentsa and O'tchakha, orphans who one day appeared before him. As their senior and his foremost pupil, Widargelt now asks you to assist in their training. Join Widargelt to the southeast of Revenant's Toll."
-msgstr "Видаргельт знакомит вас с двумя своими лучшими ученицами — Д'зентсой и О'чахой. Когда-то они обе были сиротами и однажды пришли к нему. Теперь Видаргельт просит вас, своего старшего ученика, помочь им с тренировками. Встретьтесь с ним к юго-востоку от Звона ревенантов."
+msgstr "Видаргельт знакомит вас с двумя своими лучшими ученицами — Д'зентсой и О'чахой. Когда-то они обе были сиротами и однажды пришли к нему. Теперь Видаргельт просит вас, свою <if $gn4>старшую ученицу<else>старшего ученика</if>, помочь им с тренировками. Встретьтесь с ним к юго-востоку от Звона ревенантов."
 
 #. ja: ウィダルゲルトと話した。まずはデ・ゼンツァに冒険者の実力を見せることになった。銀泪湖北岸の「デ・ゼンツァ」と話し、現れた「<sheet BNpcName 4094 0>」を討伐しよう。
 #. de: Deine erste Schülerin ist D'zentsa. Zeig ihr die gnadenlose Stärke deiner stahlharten Fäuste!
@@ -321,7 +321,7 @@ msgstr "Что такое, учитель Видаргельт? К нам кто
 #. macro: <if $gn4>She<else>He</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/020/JobMnk501_02026:TEXT_JOBMNK501_02026_WIDARGELT_000_056:1"
 msgid "No, not a new pupil. An old one. My first and foremost. <if $gn4>She<else>He</if> has long surpassed me."
-msgstr "Нет, не новый ученик. Старый. Мой первый и лучший. <if $gn4>Она<else>Он</if> давно меня превзошёл."
+msgstr "Нет, не <if $gn4>новая ученица<else>новый ученик</if>. <if $gn4>Старая<else>Старый</if>. <if $gn4>Моя первая и лучшая<else>Мой первый и лучший</if>. <if $gn4>Она<else>Он</if> давно меня <if $gn4>превзошла<else>превзошёл</if>."
 
 #. ja: ゼンツァ、チャクハ、いい機会です。<br>今日の修行は、<split " " 1><string $gs1></split>に手伝ってもらいましょう。<br>いつもの場所に集合してください。
 #. de: Auch ihr könntet etwas von <if $gn4>ihr<else>ihm</if> lernen. <split " " 1><string $gs1></split>, würdest du mir die Ehre erweisen und heute die Unterweisung von Zentsa und Tchakha über<shy>nehmen?
@@ -332,7 +332,7 @@ msgstr "Нет, не новый ученик. Старый. Мой первый 
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/020/JobMnk501_02026:TEXT_JOBMNK501_02026_WIDARGELT_000_057:1"
 msgid "<split \" \" 1><string $gs1></split> is <if $gn4>her<else>his</if> name. Today you will train under <if $gn4>her<else>his</if> supervision. An excellent opportunity. Go to the usual place and make ready."
-msgstr "<split \" \" 1><string $gs1></split> — вот её имя. Сегодня вы будете тренироваться под её присмотром. Отличная возможность. Идите на привычное место и приготовьтесь."
+msgstr "<split \" \" 1><string $gs1></split> — вот <if $gn4>её<else>его</if> имя. Сегодня вы будете тренироваться под <if $gn4>её<else>его</if> присмотром. Отличная возможность. Идите на привычное место и приготовьтесь."
 
 #. ja: へえ、面白いね！<br>そんじゃ<split " " 1><string $gs1></split>、逃げんなよ！？
 #. de: Ich will die Erste sein! Fang mich, wenn du kannst!
@@ -489,7 +489,7 @@ msgstr "Ой-ой... Всё правда, как говорила Д'зентс�
 #. speaker: DZENTSA
 msgctxt "quest/020/JobMnk501_02026:TEXT_JOBMNK501_02026_DZENTSA_000_201:1"
 msgid "See? You impressed the britches off her, just like I said you would!"
-msgstr "Ну что, впечатлил её до глубины души, как я и обещала!"
+msgstr "Ну что, <if $gn4>впечатлила<else>впечатлил</if> её до глубины души, как я и обещала!"
 
 #. ja: ええ、ええ、大喜びよ！<br><split " " 1><string $gs1></split>さんには、いろいろ教わりたいわ！<br>そしたら、私たちもっと強くなれるかもしれない！
 #. de: Ganz deiner Meinung. Es gibt so viel, was wir von <if $gn4>ihr<else>ihm</if> lernen könnten. Hoffentlich bleibt <if $gn4>sie<else>er</if> noch ein bisschen!
@@ -502,7 +502,7 @@ msgstr "Ну что, впечатлил её до глубины души, ка�
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/020/JobMnk501_02026:TEXT_JOBMNK501_02026_OTCHAKHA_000_202:1"
 msgid "Oh, Zentsa! I have never been so excited! I wish to learn everything <if $gn4>Mistress<else>Master</if> <split \" \" 1><string $gs1></split> knows! <i>Everything</i>!"
-msgstr "Ох, Д'зентса! Я ещё никогда так не волновалась! Хочу узнать всё, что знает <if $gn4>мастер<else>мастер</if> <split \" \" 1><string $gs1></split>! <i>Всё</i>!"
+msgstr "Ох, Д'зентса! Я ещё никогда так не волновалась! Хочу узнать всё, что знает мастер <split \" \" 1><string $gs1></split>! <i>Всё</i>!"
 
 #. ja: (-デ・ゼンツァ-)うん、アタシもそう思う！<br>アタシたちは強くなるために、師匠の門下に入ったんだもんな！
 #. de: (-D'zentsa-)Ja! <if $gn4>Sie<else>Er</if> soll auch in den Orden eintreten! Und uns zu den stärksten Mönchen machen, die Eorzea je gesehen hat.
@@ -604,7 +604,7 @@ msgstr "Теми же приёмами? Вы хотите сказать, они
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/020/JobMnk501_02026:TEXT_JOBMNK501_02026_WIDARGELT_000_304:1"
 msgid "I alone survived the massacre at the temple. There should be no─<br>Ugh... This sensation..."
-msgstr "Я один пережил резню в храме. Других быть не должно...<br>Ух... Что это за чувство?.."
+msgstr "<if $gn4>Я одна<else>Я один</if> пережил резню в храме. Других быть не должно...<br>Ух... Что это за чувство?.."
 
 #. ja: 力が、みなぎる……。<br>……どうやら、僕のチャクラが開いたようです……。<br>しかし、いつもの感覚とは違う……これはいったい……？
 #. de: Ein neues Chakra öffnet sich ... Aber es fühlt sich anders an als sonst ... Was hat das zu bedeuten?

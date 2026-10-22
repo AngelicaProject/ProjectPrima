@@ -15,20 +15,20 @@ msgstr ""
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <br> — a line break (may be added or dropped)
-# aeria-terms: {"Murfurlur":"b989919aebd8"}
+# aeria-terms: {"Murfurlur":"b989919aebd8","adventurer":"48df264ad5ec"}
 msgctxt "quest/050/KinGzb302_05056:TEXT_KINGZB302_05056_SEQ_00:1"
 msgid "<ui-color 508><ui-edge-color 509> Quest Sync</ui-edge-color></ui-color><br>Murfurlur is interested to learn more about the adventurer's trade."
-msgstr "<ui-color 508><ui-edge-color 509> Синхронизация заданий</ui-edge-color></ui-color><br>Мурфурлуру хочет побольше узнать о ремесле искателя приключений."
+msgstr "<ui-color 508><ui-edge-color 509> Синхронизация заданий</ui-edge-color></ui-color><br>Мурфурлуру хочет побольше узнать о ремесле <if $gn4>искательницы приключений<else>искателя приключений</if>."
 
 #. ja: ※本クエストには「<ui-color 508><ui-edge-color 509></ui-edge-color></ui-color> レベルアジャスト」が、<br>　設定されています。<br><br>ムーフールーと話し、集落の困っている人を手助けすることになった。ウォーラーの残響の南東にいる「実直な装飾職人」と話そう。
 #. de: <ui-color 508><ui-edge-color 509></ui-edge-color></ui-color> Die Schwierigkeit des Auftrags wird an die aktuelle Stufe angepasst.<br><br>Als Murfurlur deine Beschreibung der Aufgaben eines Abenteurers hört, fällt ihm jemand ein, der Hilfe benötigen könnte: ein ehrlicher Dekorateur, der im Südosten von Worlars Echo zu finden ist.
 #. fr: * <i>Cette quête est <ui-color 508><ui-edge-color 509> synchronisée</ui-edge-color></ui-color> avec votre niveau.</i><br><br>Après vous avoir brièvement <if $gn4>interrogée<else>interrogé</if> au sujet de votre métier d'<if $gn4>aventurière<else>aventurier</if>, Murfurlur vous a proposé un petit travail consistant à aller extraire du minerai dans une zone dangereuse, et à le rapporter à son ami bijoutier<nbsp>; l'occasion également pour le Yok Huy de découvrir votre quotidien. Commencez par aller rendre visite au bijoutier honnête, au sud-est de L'Écho de Worlar.
 #. kind: journal
 #. macro: <br> — a line break (may be added or dropped)
-# aeria-terms: {"Murfurlur":"b989919aebd8","Yok Huy":"fdc4092bcbae","temple guardian":"2d6068868c92"}
+# aeria-terms: {"Murfurlur":"b989919aebd8","Yok Huy":"fdc4092bcbae","adventurer":"48df264ad5ec","temple guardian":"2d6068868c92"}
 msgctxt "quest/050/KinGzb302_05056:TEXT_KINGZB302_05056_SEQ_01:1"
 msgid "Murfurlur remains curious about life as an adventurer and wonders if it may suit his skills as a former temple guardian. Upon hearing your description of an adventurer's duties, the Yok Huy recalls a craftsman who might be in need of such services. Yet rather than attempt to approach him on his own, Murfurlur asks that you once again show him how a professional would go about securing a new commission.<br><br>※Please note that the difficulty of this quest has been synced to your current level."
-msgstr "Мурфурлуру всё ещё интересуется жизнью искателя приключений и думает, не пригодится ли ему такой род занятий — ведь когда-то он служил храмовым стражем. Вы рассказали ему об обязанностях искателей приключений, и воин-йокхуи вспомнил мастера, которому может понадобиться помощь. Но вместо того чтобы самому предложить ему свои услуги, Мурфурлуру просит вас ещё раз показать, как настоящий профессионал берётся за новое поручение.<br><br>※ Уровень сложности задания синхронизирован с вашим текущим уровнем."
+msgstr "Мурфурлуру всё ещё интересуется жизнью <if $gn4>искательницы приключений<else>искателя приключений</if> и думает, не пригодится ли ему такой род занятий — ведь когда-то он служил храмовым стражем. Вы рассказали ему об обязанностях искателей приключений, и воин-йокхуи вспомнил мастера, которому может понадобиться помощь. Но вместо того чтобы самому предложить ему свои услуги, Мурфурлуру просит вас ещё раз показать, как настоящий профессионал берётся за новое поручение.<br><br>※ Уровень сложности задания синхронизирован с вашим текущим уровнем."
 
 #. ja: 実直な装飾職人と話した。オルコ・パチャのナーヨー・ゴーナで「<sheet EObj 2014273 0>」を3つ集めよう。
 #. de: Zum Glück ist der Dekorateur sehr daran interessiert, ein oder zwei Abenteurer anzuheuern. Er benötigt Obsidian von der Art, wie er nur am Naryor Gorna zu finden ist. Sammle drei Stück, um Murfurlur zu zeigen, was er zu tun hat.
@@ -126,9 +126,10 @@ msgstr "Поговорите с Мурфурлуру."
 #. speaker: MURFURLUR
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/050/KinGzb302_05056:TEXT_KINGZB302_05056_MURFURLUR_000_000:1"
 msgid "Well met, <split \" \" 1><string $gs1></split>. I am honored that you would return to speak with me again. Would you tell me more of your life as an adventurer?"
-msgstr "Рад встрече, <split \" \" 1><string $gs1></split>. Для меня большая честь, что вы снова пришли поговорить со мной. Расскажете побольше о своей жизни искателя приключений?"
+msgstr "Рад встрече, <split \" \" 1><string $gs1></split>. Для меня большая честь, что вы снова пришли поговорить со мной. Расскажете побольше о своей жизни <if $gn4>искательницы приключений<else>искателя приключений</if>?"
 
 #. ja: 何と言う？
 #. de: Was sagst du?
@@ -192,9 +193,10 @@ msgstr "Там, где его можно добыть, полно огненны
 #. speaker: MURFURLUR
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/050/KinGzb302_05056:TEXT_KINGZB302_05056_MURFURLUR_000_004:1"
 msgid "But how would a <i>true</i> adventurer present themselves to a potential client? Again I must request a demonstration─provided you are willing and able?"
-msgstr "Но как настоящий <i>искатель приключений</i> предложил бы свои услуги тому, кто ищет помощника? Прошу вас ещё раз показать мне пример — если, конечно, вы не против и у вас найдётся время."
+msgstr "Но как <if $gn4>настоящая искательница приключений предложила бы<else>настоящий искатель приключений предложил бы</if> свои услуги тому, кто ищет помощника? Прошу вас ещё раз показать мне пример — если, конечно, вы не против и у вас найдётся время."
 
 #. ja: ありがたい。<br>知人の「実直な装飾職人」はいつも集落の南東で作業している。<br>まずは依頼が成立し得るか否か、尋ねに行こう。
 #. de: Ich danke. Dieser Dekorateur ist im südöstlichen Teil des Dorfes zu finden. Lass uns herausfinden, ob er sich darauf einlässt, mich mit einem Auftrag zu segnen.

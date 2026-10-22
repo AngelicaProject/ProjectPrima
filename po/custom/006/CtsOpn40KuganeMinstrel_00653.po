@@ -20,7 +20,7 @@ msgstr "Какую историю вы хотите рассказать?"
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/006/CtsOpn40KuganeMinstrel_00653:TEXT_CTSOPN40KUGANEMINSTREL_00653_MINSTREL_GREETING_000:1"
 msgid "Ah, something heroic this way comes! How fare you, <split \" \" 1><string $gs1></split>? As ever, I am seeking inspiration to draw upon for my work. If you have any new experiences to share, I should very much like to hear them."
-msgstr "О, да это же сам герой! Как поживаете, <split \" \" 1><string $gs1></split>? Я всегда ищу вдохновение для своих произведений. Если у вас найдутся новые приключения, которыми можно поделиться, я буду рад их услышать."
+msgstr "О, да это же <if $gn4>сама героиня<else>сам герой</if>! Как поживаете, <split \" \" 1><string $gs1></split>? Я всегда ищу вдохновение для своих произведений. Если у вас найдутся новые приключения, которыми можно поделиться, я буду рад их услышать."
 
 #. ja: やめる
 #. de: Nichts.
@@ -135,7 +135,7 @@ msgstr "Битва с легендарным ками... Слова сами л�
 # aeria-terms: {"Lord of the Revel":"89d188d0ba1f","Susano":"2410b18c61cf"}
 msgctxt "custom/006/CtsOpn40KuganeMinstrel_00653:TEXT_CTSOPN40KUGANEMINSTREL_00653_WANDERINGMINSTREL_000_022:1"
 msgid "As this song is about you, however, 'tis only meet that you are the first to hear it. Lend your ears, then, to the tale of your furious encounter with Susano, the Lord of the Revel!"
-msgstr "Но ведь эта песня о вас, так что первым её должен услышать именно её герой. Внимайте же сказанию о вашей яростной битве с Сусано, Повелителем веселья!"
+msgstr "Но ведь эта песня о вас, так что <if $gn4>первой её должна услышать именно её героиня<else>первым её должен услышать именно её герой</if>. Внимайте же сказанию о вашей яростной битве с Сусано, Повелителем веселья!"
 
 #. ja: 『東の海に　伝わる神器　三種そろいて　神とならん<br>　豪の神は　神剣掲げ　心躍らせ　海をも割らん』
 #. de: <i>♪ Wenn dreifacher Schatz sich vereinet ♪</i><br><i>♪ Und unbändiger Gott erscheinet ♪</i><br><i>♪ Wird das Meer des Ostens gespalten ♪</i><br><i>♪ Von der Klinge des Gottes Gewalt. ♪</i>
@@ -152,7 +152,7 @@ msgstr "На восточных морях три сокровища родил�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "custom/006/CtsOpn40KuganeMinstrel_00653:TEXT_CTSOPN40KUGANEMINSTREL_00653_WANDERINGMINSTREL_000_024:1"
 msgid "From western lands, a challenger comes─a hero from afar,♪<br>Whose radiant blade sets souls ablaze and outshines the very stars.♪"
-msgstr "Из западных земель пришёл герой, бросивший ему вызов,♪<br>Его сияющий клинок зажёг сердца ярче звёзд.♪"
+msgstr "Из западных земель <if $gn4>пришла героиня, бросившая ему вызов<else>пришёл герой, бросивший ему вызов</if>,♪<br><if $gn4>Её<else>Его</if> сияющий клинок зажёг сердца ярче звёзд.♪"
 
 #. ja: さて、スサノオの豪胆さ、荒々しさは表現できていたかな？<br>僕なりの想像を以って、脚色を加えてみたのだが……。<br>よければ、君も、当時の激戦を振り返ってみてくれたまえ。
 #. de: Habe ich die Wildheit des Kojin-Gottes glaubhaft wiedergegeben? Versetz dich noch einmal zurück in deinen Kampf gegen ihn<nbsp>... Nun?
@@ -262,7 +262,7 @@ msgstr "Но постой... Потом праймал бесследно исч
 # aeria-terms: {"the Calamity":"c505842c3a33"}
 msgctxt "custom/006/CtsOpn40KuganeMinstrel_00653:TEXT_CTSOPN40KUGANEMINSTREL_00653_WANDERINGMINSTREL_000_042:1"
 msgid "Stop. Say not a word. Whatever it is you know, I sense that the secret of the Calamity is best kept as such─a secret."
-msgstr "Остановись. Ни слова. Что бы ты ни знал, чую: тайна Бедствия должна остаться тайной."
+msgstr "Остановись. Ни слова. Что бы ты ни <if $gn4>знала<else>знал</if>, чую: тайна Бедствия должна остаться тайной."
 
 #. ja: ふふ……意外な反応に思えたかい？<br>時には真相に触れぬまま、自由に夢想をめぐらす方が、<br>詩想が膨らんでゆくこともあるものなのさ。
 #. de: Aber da du mir nun schon das Stichwort geliefert hast, werde ich dennoch über Bahamut singen. Keine Sorge - ich habe schon so viele Epen gedichtet, dass ich ohne Weiteres auch eines aus der Luft greifen kann.
@@ -426,7 +426,7 @@ msgstr "А, оружие «Ультима». Сколько же лун мино
 # aeria-terms: {"Eorzea":"4e5e8c295294"}
 msgctxt "custom/006/CtsOpn40KuganeMinstrel_00653:TEXT_CTSOPN40KUGANEMINSTREL_00653_WANDERINGMINSTREL_000_071:1"
 msgid "One might say that your victory set in motion events that reshaped the world in countless ways great and small. Given this, I would fain hear the firsthand account of the savior of Eorzea, and see what details are become more vivid in retrospect."
-msgstr "Можно сказать, ваша победа запустила события, изменившие мир до неузнаваемости. Потому я хотел бы услышать всё из первых уст — от спасителя Эорзеи. Интересно, что теперь кажется вам особенно ярким."
+msgstr "Можно сказать, ваша победа запустила события, изменившие мир до неузнаваемости. Потому я хотел бы услышать всё из первых уст — от <if $gn4>спасительницы Эорзеи<else>спасителя Эорзеи</if>. Интересно, что теперь кажется вам особенно ярким."
 
 #. ja: ……やはり『究極幻想』と謳われた兵器との激戦は、<br>聞くだけで心が震えるね。<br>貴重な話を、聞かせてくれてありがとう。
 #. de: Wahrlich ein Kampf, der das Prädikat <i>ultimativ</i> verdient! Ich zittere noch jetzt vor Aufregung!
@@ -835,7 +835,7 @@ msgstr "...Да, именно. Александр, с которым вы сра
 #. fr: Une pas<shy>sion<shy>nan<shy>te histoire d'amour mêlée à la rencontre entre une divinité et la personne tant espérée... Une ancienne cité oubliée du lointain occident, théâtre d'une bataille aux confins du temps...
 msgctxt "custom/006/CtsOpn40KuganeMinstrel_00653:TEXT_CTSOPN40KUGANEMINSTREL_00653_WANDERINGMINSTREL_000_138:1"
 msgid "It is a tale that begins with two Auri lovers. A tale that will whisk the listener beyond the boundaries of time itself, to where the clockwork deity awaits its final confrontation with the mortal soul in whom it would entrust the future of the world."
-msgstr "Это история о двух влюблённых аура. Она унесёт слушателей за пределы самого времени, туда, где заводное божество ждёт последней схватки со смертным, которому хочет доверить будущее мира."
+msgstr "Это история о двух влюблённых аура. Она унесёт слушателей за пределы самого времени, туда, где заводное божество ждёт последней схватки со <if $gn4>смертной<else>смертным</if>, <if $gn4>которой<else>которому</if> хочет доверить будущее мира."
 
 #. ja: 西の果ての失われし都で繰り広げられた、時空を超えた決戦……<br>終幕で語られるのは、審判者の電脳に生じた、刹那の喜びなのさ。<br>無地鼓座の観客も、手に汗握って結末を見守るに違いないよ！
 #. de: Und der Ent<shy>scheidungs<shy>kampf überschreitet die Grenzen von Raum und Zeit. Ein Epos, das in einem ewig währenden Jubelmoment für den künstlichen Geist kulminiert. Das Publikum des Mujikoza wird sich vor Spannung kaum auf den Sitzkissen halten können!

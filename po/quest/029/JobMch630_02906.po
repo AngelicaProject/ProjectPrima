@@ -200,7 +200,7 @@ msgstr "Люсия прямо сказала: если мы провалим э�
 #. speaker: HILDA
 msgctxt "quest/029/JobMch630_02906:TEXT_JOBMCH630_02906_HILDA_000_006:1"
 msgid "...But gettin' back to that favor. There's to be a meeting to discuss security concerns for the event, and I want you sittin' in on it."
-msgstr "...Но вернёмся к моей просьбе. Скоро будет совещание по охране церемонии. Хочу, чтобы ты тоже там присутствовал."
+msgstr "...Но вернёмся к моей просьбе. Скоро будет совещание по охране церемонии. Хочу, чтобы ты тоже там <if $gn4>присутствовала<else>присутствовал</if>."
 
 #. ja: 神殿騎士団側の担当者が、ムカつく野郎でね。<br>何度、あの頭を撃ち抜いてやろうかと……！<br>アタシがブチ切れないよう、その場にいてもらえないか？
 #. de: Der Vertreter der Tempelritter ist ein Kerl, bei dem es mich immer juckt, ihm eine Kugel zu verpassen. Ein aufgeblasener Bastard namens Muscadain. Wenn du mich begleitest, kann ich mich vielleicht gerade noch beherrschen.
@@ -274,7 +274,7 @@ msgstr "Вы?.. Мне никто не сообщал—"
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/029/JobMch630_02906:TEXT_JOBMCH630_02906_HILDA_000_021:1"
 msgid "<split \" \" 1><string $gs1></split>'s here as my advisor. I trust <if $gn4>her<else>his</if> advice a damn sight more than that of a certain empty-helmed, stiff-backed blue blood."
-msgstr "<split \" \" 1><string $gs1></split> будет моим советником. Её советам я доверяю куда больше, чем мнению одного надутого, чванливого аристократа."
+msgstr "<if $gn4><split \" \" 1><string $gs1></split> будет моей советницей. Её советам я доверяю куда больше, чем мнению одного надутого, чванливого аристократа.<else><split \" \" 1><string $gs1></split> будет моим советником. Его советам я доверяю куда больше, чем мнению одного надутого, чванливого аристократа.</if>"
 
 #. ja: ふん……英雄殿とあれば、否やはない。<br>むしろ、助言役を置かなければ任務を遂行できない、<br>どこぞの平民殿の方を、拒否したいところだ。
 #. de: Hmpf. Ich habe nichts gegen <if $gn4>ihre<else>seine</if> Teilnahme an diesem Treffen einzuwenden. Genau genommen würde ich mich wesentlich schwerer damit tun, diesen Auftrag an ein gewisses großmäuliges und respektloses Gossenmädchen zu vergeben, wenn dieses nicht von solch <if $gn4>einer Beraterin<else>einem Berater</if> begleitet würde.
@@ -285,7 +285,7 @@ msgstr "<split \" \" 1><string $gs1></split> будет моим советни�
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/029/JobMch630_02906:TEXT_JOBMCH630_02906_MUSCADAIN_000_022:1"
 msgid "Hmph. I will not dispute <if $gn4>her<else>his</if> place at this meeting. In fact, I would be far less inclined to entrust this duty to a certain foul-mouthed, disrespectful commoner were she <i>not</i> accompanied by such an advisor."
-msgstr "Хм. Против присутствия <if $gn4>героини<else>героя</if> на совещании я возражать не стану. И уж куда охотнее доверю это дело простолюдину с грязным ртом и дурными манерами, если его сопровождает такой советник."
+msgstr "Хм. Против присутствия <if $gn4>героини<else>героя</if> на совещании я возражать не стану. <if $gn4>И уж куда охотнее доверю это дело простолюдинке с грязным ртом и дурными манерами, если её сопровождает такая советница.<else>И уж куда охотнее доверю это дело простолюдину с грязным ртом и дурными манерами, если его сопровождает такой советник.</if>"
 
 #. ja: お、お話し中のところ失礼します！<br>ミュースカダン卿、至急ご報告したいことが……。
 #. de: Bitte verzeiht die Störung, Herr Muscadain! Ich überbringe wichtige Neuigkeiten<nbsp>...
@@ -471,7 +471,7 @@ msgstr "Я объяснила всё Ростнсталю. Он считает, 
 # aeria-terms: {"Hilda":"ffa0120e8bfb","Muscadain":"eecaac508b34"}
 msgctxt "quest/029/JobMch630_02906:TEXT_JOBMCH630_02906_TEMPLEKIGHTGUARD02906_000_060:1"
 msgid "<if $gn4>Mistress<else>Master</if> <split \" \" 1><string $gs1></split> and Mistress Hilda. Ser Muscadain told me to expect you."
-msgstr "Госпожа <split \" \" 1><string $gs1></split> и госпожа Хильда. Сэр Мускаден сказал, что вы придёте."
+msgstr "<if $gn4>Госпожа<else>Господин</if> <split \" \" 1><string $gs1></split> и госпожа Хильда. Сэр Мускаден сказал, что вы придёте."
 
 #. ja: あのクソ貴族め、手回しがいいことだ。<br>……悪いが、協力してもらえないか？
 #. de: Ach, dabei dachte ich, er hätte gar keine Zeit für so etwas. Heißt das, du wirst uns helfen oder unsere Arbeit behindern?
@@ -664,7 +664,7 @@ msgstr "Возможно, её сделали прямо здесь, в ману
 # aeria-terms: {"Hemlock":"e50560566f20","Stephanivien":"2bc44414cdc6"}
 msgctxt "quest/029/JobMch630_02906:TEXT_JOBMCH630_02906_HILDA_000_083:1"
 msgid "Done with that bullet already, are you? Let's finish up scoutin' Hemlock first, then I'll hear what Stephanivien had to say."
-msgstr "Уже закончил с пулей? Давай сперва осмотрим окрестности Болиголова, а потом расскажешь, что сказал Стефанивьен."
+msgstr "Уже <if $gn4>закончила<else>закончил</if> с пулей? Давай сперва осмотрим окрестности Болиголова, а потом расскажешь, что сказал Стефанивьен."
 
 #. ja: この銃弾から、何かを断定するのは難しいね。<br>だけど……うーん、俺の計測器に引っかかる……。
 #. de: Wie schon gesagt, der Zustand der Kugel macht es unmöglich, ihre Herkunft zu bestimmen, aber mein Detektor schlägt ganz leicht aus<nbsp>...
@@ -681,7 +681,7 @@ msgstr "Как я и говорил, состояние пули не позво
 #. speaker: HILDA
 msgctxt "quest/029/JobMch630_02906:TEXT_JOBMCH630_02906_HILDA_000_090:1"
 msgid "My thanks. Was payin' too much attention to the ground when them beasts came at me. I managed to put down one or two, but─ What's that you've got there?"
-msgstr "Спасибо, что помог. Я слишком увлеклась осмотром земли и не заметила, как звери подкрались. Одного-двух я успела уложить, но... Что это у тебя?"
+msgstr "Спасибо, что <if $gn4>помогла<else>помог</if>. Я слишком увлеклась осмотром земли и не заметила, как звери подкрались. Одного-двух я успела уложить, но... Что это у тебя?"
 
 #. ja: ……ありふれた革製の首輪だね。<br>こいつら、野犬の類いじゃなくて、人に飼われた番犬ってことか。
 #. de: ... Ein Lederhalsband. Hmpf. Diese Viecher sollten den Ort wohl bewachen. Dabei schienen sie mir viel zu wild zu sein<nbsp>...

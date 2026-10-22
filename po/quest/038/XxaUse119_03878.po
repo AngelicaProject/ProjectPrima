@@ -253,7 +253,7 @@ msgstr "А, вот ты где. Друзья ждут тебя внутри."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/038/XxaUse119_03878:TEXT_XXAUSE119_03878_TATARU_000_100:1"
 msgid "Oh, <split \" \" 1><string $gs1></split>! You're here! Good, good. We were all wondering when you'd show up!"
-msgstr "О, <split \" \" 1><string $gs1></split>! Ты пришёл! Вот и хорошо. Мы уже гадали, когда ты появишься!"
+msgstr "О, <split \" \" 1><string $gs1></split>! Ты <if $gn4>пришла<else>пришёл</if>! Вот и хорошо. Мы уже гадали, когда ты появишься!"
 
 #. ja: 受け入れ先の準備は、もうすっかり整っているぞ。<br>ちょうど今、建物の譲渡が完了したことを示す書類に、<br>盟主殿のサインを入れてきてもらったのだ。
 #. de: Die Vor<shy>bereitungen für euren Einzug sind auch so gut wie abgeschlossen. Und gerade habe ich auch das unterzeichnete Dokument zurückerhalten, mit dem die Übertragung des Sonnensteins an den Bund vollends besiegelt ist.
@@ -306,7 +306,7 @@ msgstr "А, этот. Сам я с ним не говорил, но, по слу
 # aeria-terms: {"crystal":"b6e3734412aa"}
 msgctxt "quest/038/XxaUse119_03878:TEXT_XXAUSE119_03878_SLAFBORN_000_112:1"
 msgid "You've seen the structure I speak of, no? It'd be hard to miss it. That massive pillar of shining crystal that looms high over the land just to the southeast of here."
-msgstr "Ты ведь видел её? Не заметить трудно. Огромная сверкающая кристальная колонна возвышается над землёй к юго-востоку отсюда."
+msgstr "Ты ведь <if $gn4>видела<else>видел</if> её? Не заметить трудно. Огромная сверкающая кристальная колонна возвышается над землёй к юго-востоку отсюда."
 
 #. ja: 目ざとい冒険者や研究者は、その調査に潜り込みたがってる。<br>あいつも、クリスタルタワーについて聞き込みをしていたから、<br>そういったクチなのだろう。
 #. de: Das zieht natürlich allerhand Abenteurer, Entdecker und Forscher an. Der da drüben scheint einer davon zu sein, so oft, wie er sich nach dem Turm erkundigt und mit anderen darüber spricht.
@@ -337,10 +337,10 @@ msgstr "Неважно, где мы обосновались: приключен
 #. de: Nun, dies ist eben eine Abenteurerstadt. Hier stößt man auf allerlei Gesellen ver<shy>schie<shy>den<shy>ster Gesinnung, die alle kommen und gehen, wie sie wollen.
 #. fr: Que voulez-vous, ma bonne dame, c'est un carrefour d'aventuriers ici. Tout le monde est libre de venir faire son trou, les bonnes comme les mauvaises gens...
 #. speaker: SLAFBORN
-# aeria-terms: {"Revenant's Toll":"7cb65cf683e9"}
+# aeria-terms: {"Revenant's Toll":"7cb65cf683e9","adventurer":"48df264ad5ec"}
 msgctxt "quest/038/XxaUse119_03878:TEXT_XXAUSE119_03878_SLAFBORN_000_120:1"
 msgid "Revenant's Toll is populated mostly by adventurers, which means─as you might expect─that there's quite a bit of coming and going."
-msgstr "В Звоне ревенантов живут в основном искатели приключений, так что, как ты и сам понимаешь, народ тут постоянно прибывает и уезжает."
+msgstr "В Звоне ревенантов живут в основном искатели приключений, так что, как ты и <if $gn4>сама<else>сам</if> понимаешь, народ тут постоянно прибывает и уезжает."
 
 #. ja: 最近はとくに、<br>「クリスタルタワー」の調査が進められているのを聞きつけて、<br>潜り込もうとしに来る冒険者や研究者も多い。
 #. de: In letzter Zeit kam Leben in die Erforschung des Kris<shy>tall<shy>turms und das hat sich wohl herum<shy>ge<shy>sprochen. Viele der Neuankömmlinge sind Abenteurer und Forscher, die genau dafür angereist sind.
@@ -367,7 +367,7 @@ msgstr "Тебя башня тоже заинтересовала?"
 #. speaker: SLAFBORN
 msgctxt "quest/038/XxaUse119_03878:TEXT_XXAUSE119_03878_SLAFBORN_000_123:1"
 msgid "You've already offered your aid to the effort, you say? You certainly move quickly, my friend."
-msgstr "Что, уже предложил свою помощь? Ну ты и шустрый, друг!"
+msgstr "Что, уже <if $gn4>предложила<else>предложил</if> свою помощь? Ну ты и <if $gn4>шустрая<else>шустрый</if>, друг!"
 
 #. ja: 俺としても、クリスタルタワーの正体は気になるところだ。<br>お前たちの調査の成功と、<br>そこに胸躍る冒険が待っていることを祈っているぞ。
 #. de: Ich muss zugeben, dass mich der Kristallturm auch durchaus interessiert. Dementsprechend gespannt bin ich, wie sich die Forschung um das mysteriöse Relikt entwickelt. Halt mich auf dem Laufenden, ja?
@@ -395,7 +395,7 @@ msgstr "Большинство тех, кого ты видишь вокруг �
 #. macro: <if $gn4>herself<else>himself</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/038/XxaUse119_03878:TEXT_XXAUSE119_03878_SLAFBORN_000_131:1"
 msgid "And it shouldn't hurt that <split \" \" 1><string $gs1></split> here has already made something of a name for <if $gn4>herself<else>himself</if> here. Isn't that so, <split \" \" 1><string $gs1></split>?"
-msgstr "Да и <split \" \" 1><string $gs1></split> уже успел<if $gn4>а</if> здесь прославиться. Верно, <split \" \" 1><string $gs1></split>?"
+msgstr "Да и <split \" \" 1><string $gs1></split> уже <if $gn4>успела здесь прославиться<else>успел здесь прославиться</if>. Верно, <split \" \" 1><string $gs1></split>?"
 
 #. ja: ではでは、私も、この街で「暁」が問題なく活動できるよう、<br>受付嬢として奮闘したいと思いまっす！
 #. de: Ich bin zwar nur bedingt beruhigt, aber Geisterzoll klingt tatsächlich wie eine Stadt, zu der der Bund der Morgenröte ausgezeichnet passt. Ich, die treue Empfangsdame Tataru, werde persönlich dafür Sorge tragen, dass sich alle wohl fühlen!

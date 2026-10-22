@@ -173,7 +173,7 @@ msgstr "К счастью, отряд чародеев отправили в Ю�
 # aeria-terms: {"Sylphie":"a5bcd54e81a6","conjurer":"ad8b3d4ffa53"}
 msgctxt "quest/004/ClsCnj005_00440:TEXT_CLSCNJ005_00440_ESUMIYAN_000_6:1"
 msgid "Considering the importance of their mission, I would not seek to distract the conjurers from their task. Thus, I turn to you to escort Sylphie back here to the guild. You are, I believe, one of the few people to whom she will listen."
-msgstr "Их задание очень важное, и я не стану отвлекать чародеев. Поэтому прошу вас сопроводить Сильфи обратно в гильдию. Думаю, она прислушается лишь к немногим — и вы один из них."
+msgstr "Их задание очень важное, и я не стану отвлекать чародеев. Поэтому прошу вас сопроводить Сильфи обратно в гильдию. Думаю, она прислушается лишь к немногим — и вы <if $gn4>одна<else>один</if> из них."
 
 #. ja: シルフィーを目撃したのは、「ウルフュー」です。<br>南部森林の酒房「バスカロンドラザーズ」にて<br>待機していますので、彼女から話を聞いてください。
 #. de: Reise zunächst zu Buscarrons Horst und sprich dort mit Wulfiue. Sie war die Erste, die mit Sylphie zu tun hatte, und wird dir sicherlich erzählen können, wie es der jungen Dame geht.
@@ -378,7 +378,7 @@ msgstr "А ведь совсем не страшно."
 # aeria-terms: {"conjurer":"ad8b3d4ffa53"}
 msgctxt "quest/004/ClsCnj005_00440:TEXT_CLSCNJ005_00440_SYLPHIE_000_62:1"
 msgid "I might still wonder if it really was safe for conjurers to borrow that power if I hadn't seen the way you wield it. Nothing could seem more...natural. I think it's time I went back to the guild."
-msgstr "Я бы и дальше сомневалась, безопасно ли чародеям пользоваться этой силой, если бы не видела, как ты ею владеешь. Естественнее и не придумаешь... Думаю, пора возвращаться в гильдию."
+msgstr "Я бы и дальше <if $gn4>сомневалась<else>сомневался</if>, безопасно ли чародеям пользоваться этой силой, если бы не <if $gn4>видела<else>видел</if>, как ты ею владеешь. Естественнее и не придумаешь... Думаю, пора возвращаться в гильдию."
 
 #. ja: 私は、荷物をまとめてから帰るから、<br><split " " 1><string $gs1></split>は<br>先にギルドへ戻ってて。
 #. de: Es gibt jedoch ein paar Dinge, die ich zunächst einsammeln muss, also geh ruhig schon mal vor.
@@ -425,7 +425,7 @@ msgstr "Всё хорошо, дитя. Ты нашла ответы на сво�
 #. macro: <if $gn4>She<else>He</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/004/ClsCnj005_00440:TEXT_CLSCNJ005_00440_SYLPHIE_000_84:1"
 msgid "Yes─thanks to <split \" \" 1><string $gs1></split>. <if $gn4>She<else>He</if> showed me that nature was nothing to be afraid of."
-msgstr "Да, благодаря <split \" \" 1><string $gs1></split>. <if $gn4>Она<else>Он</if> показал<if $gn4>а</if> мне, что природу нечего бояться."
+msgstr "Да, благодаря <split \" \" 1><string $gs1></split>. <if $gn4>Она показала<else>Он показал</if> мне, что природу нечего бояться."
 
 #. ja: もしかすると、お母さんが自然の力を借りなかったのは<br>苦しむ自然を守りたかったのかもしれません。
 #. de: ... Ich glaube, ich verstehe, warum meine Mutter es ablehnte, sich der Kräfte der Natur zu bedienen. Sie dachte, dass dies der Natur selbst Leid zufügt.
@@ -493,7 +493,7 @@ msgstr "Да, брат Э-Суми?"
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/004/ClsCnj005_00440:TEXT_CLSCNJ005_00440_ESUMIYAN_000_92:1"
 msgid "When you first witnessed <split \" \" 1><string $gs1></split> cleanse a corrupted element, you mentioned hearing voices. How exactly did they sound?"
-msgstr "Помнишь, как <split \" \" 1><string $gs1></split> впервые очистил<if $gn4>а</if> скверну? Ты тогда сказала, что слышала голоса. Как именно они звучали?"
+msgstr "Помнишь, как <split \" \" 1><string $gs1></split> впервые <if $gn4>очистила<else>очистил</if> скверну? Ты тогда <if $gn4>сказала<else>сказал</if>, что <if $gn4>слышала<else>слышал</if> голоса. Как именно они звучали?"
 
 #. ja: ええと……<br>ほ、本当に、聞こえたんです。<br>嬉しい！　って叫ぶみたいな、歓声が……
 #. de: Die Stimmen? Sie waren voller Freude, wie das vielstimmige Raunen bei einer fröhlichen Versammlung. Ich habe sie wirklich gehört, ich schwöre!
@@ -527,7 +527,7 @@ msgstr "Чародеи чувствуют силу природы и черпа�
 #. speaker: ESUMIYAN
 msgctxt "quest/004/ClsCnj005_00440:TEXT_CLSCNJ005_00440_ESUMIYAN_000_96:1"
 msgid "What you describe are the voices of the elementals. You may very well possess the talent to become a Hearer."
-msgstr "Это голоса элементалей. Возможно, у тебя есть дар стать Слышащей."
+msgstr "Это голоса элементалей. Возможно, у тебя есть дар стать <if $gn4>Слышащей<else>Слышащим</if>."
 
 #. ja: ……！
 #. de: Eine Seherin!?

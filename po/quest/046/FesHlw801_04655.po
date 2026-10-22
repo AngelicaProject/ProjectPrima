@@ -190,9 +190,10 @@ msgstr "Доложить сыщику Гильдии авантюристов."
 #. macro: <if ($gn11 < 12)><if ($gn11 < 4)>eve<else>morn</if><else><if ($gn11 < 17)>day<else>eve</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 4)>eve<else>morn</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 17)>day<else>eve</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_PIERROTFATHER_000_000:1"
 msgid "My, what a wondrous surprise it is to see you here this fine autumn <if ($gn11 < 12)><if ($gn11 < 4)>eve<else>morn</if><else><if ($gn11 < 17)>day<else>eve</if></if>, my adventurer friend! Your assistance proved most essential to my past investigations, which is why I would again seek your aid."
-msgstr "Вот так сюрприз — встретить вас в этот чудесный осенний <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>утро</if><else><if ($gn11 < 17)>день<else>вечер</if></if>, мой друг-искатель приключений! Вы так помогли мне в прежних расследованиях, что я снова хотел бы попросить вас об услуге."
+msgstr "Вот так сюрприз — встретить вас в этот чудесный осенний <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>утро</if><else><if ($gn11 < 17)>день<else>вечер</if></if>, <if $gn4>моя подруга-искательница приключений<else>мой друг-искатель приключений</if>! Вы так помогли мне в прежних расследованиях, что я снова хотел бы попросить вас об услуге."
 
 #. ja: もしかして、あなたは冒険者さんでは！？<br>実は、力を貸してほしいことがありまして……<br>よかったら、話を聞いてくれませんか？
 #. de: He, du da! Du bist doch <if $gn4>eine Abenteurerin<else>ein Abenteurer</if>, hab ich Recht? Allzeit bereit, Mitbürgern in Nöten zu helfen. Hättest du vielleicht Lust, mir für eine kurze Zeit zur Hand zu gehen? Es gibt da etwas, wobei ich deine Hilfe gebrauchen könnte.
@@ -200,9 +201,10 @@ msgstr "Вот так сюрприз — встретить вас в этот �
 #. speaker: PIERROTFATHER
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_PIERROTFATHER_000_001:1"
 msgid "Why, hello there! You strike me as the goodly sort of adventurer eager to help strangers at a moment's notice, and you couldn't have come at a better time! ...You <i>are</i> eager to help, aren't you?"
-msgstr "Ну здравствуйте! Вы похожи на искателя приключений, который готов в любой миг прийти на помощь незнакомцу. И как раз вовремя! ...Вы ведь готовы помочь?"
+msgstr "Ну здравствуйте! Вы похожи на <if $gn4>искательницу приключений, которая готова<else>искателя приключений, который готов</if> в любой миг прийти на помощь незнакомцу. И как раз вовремя! ...Вы ведь готовы помочь?"
 
 #. ja: ありがとうございます！<br>冒険者さんは「コンチネンタル・サーカス」という、<br>旅芸人の一座をご存じですか？
 #. de: Hervorragend! Die Gauklertruppe vom fahrenden Circus Continental ist dir ein Begriff, nehme ich an?
@@ -381,7 +383,7 @@ msgstr "А-а-а! Да сделай же что-нибудь, дорогой!"
 # aeria-terms: {"tear":"81f713dad970"}
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_CITIZENA204655_000_026:1"
 msgid "Wait, so... You're not a ghost...? Shame on you, I was nearly frightened to tears!"
-msgstr "П-постой... Ты не настоящий призрак?! Ну и напугал же ты меня! Чуть сердце не остановилось!"
+msgstr "П-постой... Ты не <if $gn4>настоящий призрак?! Ну и напугала же ты меня! Чуть сердце не остановилось!<else>настоящая призрачница?! Ну и напугал же ты меня! Чуть сердце не остановилось!</if>"
 
 #. ja: 錬金薬で変身していたって？<br>あんな風に、本物の幽霊になれるなら面白いかも……<br>今度は、私が誰かにやり返しちゃおうかな！
 #. de: Du hast also ein Elixier getrunken, um dich in diese Schreckgestalt zu verwandeln? Klingt eigentlich ganz spannend. Ich kenne da jemanden, den ich auch ganz gerne einen gehörigen Schrecken einjagen würde. Also gut, ich bin dabei!
@@ -389,7 +391,7 @@ msgstr "П-постой... Ты не настоящий призрак?! Ну и
 #. speaker: CITIZENA204655
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_CITIZENA204655_000_027:1"
 msgid "You were able to transform into that abomination by merely drinking a potion? Well, where might I procure a vial? I'd very much like to pay forward this little prank of yours! "
-msgstr "Так ты всего лишь выпил зелье, чтобы стать этим чудищем? Где достать такое? Я бы с удовольствием отплатил кому-нибудь той же шуткой!"
+msgstr "Так ты всего лишь <if $gn4>выпила<else>выпил</if> зелье, чтобы стать этим чудищем? Где достать такое? Я бы с удовольствием отплатил кому-нибудь той же шуткой!"
 
 #. ja: あら、かわいい～！<br>どうして、こんなところにいるのかな？<br>ひょっとして、はぐれちゃったのぉ～？
 #. de: Oh, schau mal, wie süß! Was machst du denn hier, du kleines Ding? Haben wir uns etwa verflogen?
@@ -397,7 +399,7 @@ msgstr "Так ты всего лишь выпил зелье, чтобы ста
 #. speaker: CITIZENA304655
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_CITIZENA304655_000_030:1"
 msgid "Why, if you aren't the most adorable little thing I've ever seen! But where did you come from? Did you get separated from the rest of your litter?"
-msgstr "Ой, какой лапочка! Ты откуда тут взялся? Потерялся, малыш?"
+msgstr "Ой, какой лапочка! Ты откуда тут <if $gn4>взялась<else>взялся</if>? <if $gn4>Потерялась<else>Потерялся</if>, малыш?"
 
 #. ja: えっ……人だったの！？<br>騙されて、猫なで声で話しかけちゃったじゃない……！
 #. de: Ha?! <if $gn4>Eine<else>Ein</if> <switch $gn71><case>Hyuran<case>Elezen<case>Lalafell<case>Miqo'te<case>Roegadyn<case>Au Ra<case>Hrothgar<case>Viera</switch>? Da hast du mich aber schwer auf den Arm genommen. Wie peinlich ...
@@ -809,7 +811,7 @@ msgstr "Ах, милый, ты ещё никогда не был таким кр
 # aeria-terms: {"honeycomb":"76eb618005cf"}
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_PIERROTMOTHER_000_097:1"
 msgid "Seeing as you have matters here well in hand, I'll return home to our little honeycomb, and ready a feast for my hardworking husband!"
-msgstr "Ты тут и сам прекрасно справишься, а я вернусь домой и приготовлю пир для моего трудяги-мужа!"
+msgstr "<if $gn4>Ты тут и сама прекрасно справишься, а я вернусь домой и приготовлю пир для моего трудяги-мужа!<else>Ты тут и сам прекрасно справишься, а я вернусь домой и приготовлю пир для моего трудяги-мужа!</if>"
 
 #. ja: さてと、ワタシは「魔人の夜」の準備をしなければ……！<br>それでは、ごきげんよう……ハハッ！
 #. de: Man sieht sich. Ich habe noch viel zu tun. Das wird eine Nacht, die man so bald nicht vergessen wird, hehehe ...
@@ -1076,7 +1078,7 @@ msgstr "Ох, родной сын? Идея отличная, но ты точн
 #. speaker: PUMPKIN
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_PUMPKIN_000_122:1"
 msgid "Ah, you but recently laid eyes on his mistress, did you? Excellent. Then he will never see you coming...heh heh heh."
-msgstr "А, значит, ты недавно видела его жену? Чудесно. Он и не заметит, как ты подкрадёшься... Хе-хе-хе."
+msgstr "А, значит, ты недавно видел его жену? Чудесно. Он и не заметит, как ты подкрадёшься... Хе-хе-хе."
 
 #. ja: そうして、彼に近づけたら「特製クッキー」を食べさせてあげて。<br>特効薬の成分が入っているから、<br>どんな姿に化けていようとも、魔物の姿に戻せるわ……。
 #. de: Sobald du ihn findest, biete ihm einen meiner Spezialkekse an. Ich habe sie mit einer speziellen Zutat versehen, die ihn zurück in seine dämonische Form zwingt.
@@ -1286,7 +1288,7 @@ msgstr "(-Сыщик, похожий на папашу Грюффа-)Э-э... Т
 # aeria-terms: {"Papa Gruff":"efad6927a21e","succubus":"e3251a0da331"}
 msgctxt "quest/046/FesHlw801_04655:TEXT_FESHLW801_04655_PIERROTFATHER_100_143:1"
 msgid "(-Papa Gruff-esque Investigator-)You came all this way because you were worried about me? \\<sniff> Oh, I am not worthy of such a caring succubus!"
-msgstr "(-Сыщик, похожий на папашу Грюффа-)Ты проделала весь этот путь, потому что волновалась обо мне? <i>Шмыг...</i> Ах, я недостоин такой заботливой суккубы!"
+msgstr "(-Сыщик, похожий на папашу Грюффа-)Ты проделал весь этот путь, потому что волновался обо мне? <i>Шмыг...</i> Ах, я недостоин такой заботливой суккубы!"
 
 #. ja: (-パパ・ブルーセらしき調査員-)ま、ママッ！　いきなり何を言い出すんだい！？<br>いまは「魔人の夜」を再現するために、準備をしているんだ！<br>冗談を言っている場合じゃないんだよ……！
 #. de: (-Falscher Gesandter-)W-Wovon redest du da, meine Liebe?! Ich stecke inmitten der Vor<shy>bereitungen für unsere glorreiche Monsternacht. Das ist kein Moment für schlechte Scherze. Wir können auch später noch unseren Spaß haben ...

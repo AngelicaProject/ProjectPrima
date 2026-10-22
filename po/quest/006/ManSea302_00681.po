@@ -85,7 +85,7 @@ msgstr "Поговорите с кадровым офицером в Штабе 
 # aeria-terms: {"Maelstrom":"70ae9d937d2f"}
 msgctxt "quest/006/ManSea302_00681:TEXT_MANSEA302_00681_STORMOFFICER_000_1:1"
 msgid "How was the Admiral's speech? Ah, but you need not explain─that you stand before me now is answer enough. You have resolved to join the Maelstrom, have you not?"
-msgstr "Ну как тебе речь адмирала? Хотя можешь не отвечать: раз ты сейчас передо мной, значит, уже решил вступить в Водоворот, верно?"
+msgstr "Ну как тебе речь адмирала? Хотя можешь не отвечать: раз ты сейчас передо мной, значит, уже <if $gn4>решила<else>решил</if> вступить в Водоворот, верно?"
 
 #. ja: リムサ・ロミンサの「黒渦団」に加入する？
 #. de: Willst du der Staatlichen Ge<shy>sell<shy>schaft von Limsa Lominsa beitreten?
@@ -119,7 +119,7 @@ msgstr "Нет"
 #. macro: <if $gn4>lass<else>lad</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/006/ManSea302_00681:TEXT_MANSEA302_00681_STORMOFFICER_000_2:1"
 msgid "That's the spirit, <if $gn4>lass<else>lad</if>! With allies like you, how much stronger is our crew! Let us brave the seas together, friend!"
-msgstr "Вот это настрой, <if $gn4>красавица<else>дружище</if>! С такими союзниками наша команда станет куда сильнее. Вместе будем покорять моря, друг!"
+msgstr "Вот это настрой, <if $gn4>красавица<else>дружище</if>! С такими союзниками наша команда станет куда сильнее. Вместе будем покорять моря, <if $gn4>подруга<else>друг</if>!"
 
 #. ja: そうと決まれば、さっそく正式な手続きをしたい。<br>旅の準備を終えたら、リムサ・ロミンサへ向かい、<br>黒渦団の「軍令部」に行ってくれ。
 #. de: Jetzt musst du nur noch die Aufnahmeformalitäten beim Mahlstrom-Flotten<shy>kommando in Limsa Lominsa erledigen.
@@ -222,7 +222,7 @@ msgstr "Меня зовут <string $gs1>. Вы, кажется, меня ждё
 #. speaker: A2
 msgctxt "quest/006/ManSea302_00681:TEXT_MANSEA302_00681_A2_000_2:1"
 msgid "I am here to enlist, if you will have me."
-msgstr "Я пришёл вступить в ряды Водоворота, если вы не против."
+msgstr "Я <if $gn4>пришла<else>пришёл</if> вступить в ряды Водоворота, если вы не против."
 
 #. ja: お前が、<split " " 2><string $gs1></split>か！<br>既に連絡は受けている。<br>我らが「黒渦団」は、お主を心より歓迎するぞ。
 #. de: Ah, <string $gs1>! Ich hab schon auf dich gewartet. Du willst bei uns anheuern, oder?
@@ -370,7 +370,7 @@ msgstr "(-Член экипажа дирижабля-)Искатель прик�
 # aeria-terms: {"Maelstrom Command":"db6f8ae3d156","airship":"be11f59ff59f"}
 msgctxt "quest/006/ManSea302_00681:TEXT_MANSEA302_00681_BIGGS_000_41:1"
 msgid "(-Airship Crewman-)Maelstrom Command sent you? How do I know you're not an imperial spy? You don't even have a uniform!"
-msgstr "(-Член экипажа дирижабля-)Тебя прислал Штаб Водоворота? Откуда мне знать, что ты не имперский шпион? На тебе даже формы нет!"
+msgstr "(-Член экипажа дирижабля-)Тебя прислал Штаб Водоворота? Откуда мне знать, что ты не <if $gn4>имперская шпионка<else>имперский шпион</if>? На тебе даже формы нет!"
 
 #. ja: 我々は、グランドカンパニー「黒渦団」の者だ。<br>「ガーロンド・アイアンワークス」の技術者だな？<br>墜落の報告を受け、貴殿を救出にきた。
 #. de: Du bist ein Techniker der Gar<shy>lond-Me<shy>tall<shy>wer<shy>ke, oder? Wir gehören zum Mahlstrom. Als wir von der Notlandung eures Luftschiffs hörten, sind wir sofort aufgebrochen, um euch zu retten.
@@ -483,7 +483,7 @@ msgstr "Так, слушайте сюда: быстро и жёстко напа
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/006/ManSea302_00681:TEXT_MANSEA302_00681_STORMLIEUTENANT_000_53:1"
 msgid "What say you, <split \" \" 2><string $gs1></split>? Ready to give those curs a hiding?"
-msgstr "Что скажешь, <split \" \" 2><string $gs1></split>? Готова <if $gn4>дать этим гадам как следует<else>проучить этих гадов</if>?"
+msgstr "Что скажешь, <split \" \" 2><string $gs1></split>? <if $gn4>Готова<else>Готов</if> <if $gn4>дать этим гадам как следует<else>проучить этих гадов</if>?"
 
 #. ja: よし、総員突撃！<br>我ら荒波となりて、敵を呑み込まん！
 #. de: Gut, dann auf sie mit Gebrüll! Im Tosen des Mahlstroms werden sie untergehen!
@@ -589,7 +589,7 @@ msgstr "Обычно я бы попросил вас остаться, но вс
 # aeria-terms: {"Maelstrom":"70ae9d937d2f"}
 msgctxt "quest/006/ManSea302_00681:TEXT_MANSEA302_00681_BIGGS_000_69:1"
 msgid "I, um...just wanted to say sorry...you know, for calling you an imperial spy and all that... Got <i>that</i> one wrong, didn't I!? Ha ha! Seriously, though─if it hadn't been for you and the Maelstrom lads there, we'd be chained up in a dungeon by now. I'm in your debt, friend─we both are."
-msgstr "Я... э-э... хотел просто извиниться. Ну, за то, что назвал тебя имперским шпионом и всё такое... Я ведь <i>ошибся</i>, да!? Ха-ха! А если серьёзно, не приди ты с бойцами Водоворота, нас бы уже заковали в кандалы и бросили в темницу. Мы перед тобой в долгу, друг. Оба."
+msgstr "Я... э-э... хотел просто извиниться. Ну, за то, что назвал тебя имперским шпионом и всё такое... Я ведь <i>ошибся</i>, да!? Ха-ха! А если серьёзно, не приди ты с бойцами Водоворота, нас бы уже заковали в кандалы и бросили в темницу. Мы перед тобой в долгу, <if $gn4>подруга<else>друг</if>. Оба."
 
 #. ja: 礼は！？
 #. de: He, du Holzkopf, willst du dich nicht auch bedanken?
@@ -643,7 +643,7 @@ msgstr "...Должен признать, поначалу я сомневалс
 # aeria-terms: {"Maelstrom":"70ae9d937d2f"}
 msgctxt "quest/006/ManSea302_00681:TEXT_MANSEA302_00681_STORMPERSONNEL_000_83:1"
 msgid "I look forward to seeing what else you're capable of...<i>after</i> you're properly inducted into the Maelstrom, of course!"
-msgstr "Уверен, ты ещё покажешь, на что способен... <i>когда</i> вступишь в Водоворот по всем правилам, разумеется!"
+msgstr "Уверен, ты ещё покажешь, на что <if $gn4>способна<else>способен</if>... <i>когда</i> вступишь в Водоворот по всем правилам, разумеется!"
 
 #. ja: ……待たせたな。<br>入団式を行うとしよう！
 #. de: Also, dann können wir endlich deine Aufnahme formell besiegeln.

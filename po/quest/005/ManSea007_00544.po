@@ -60,7 +60,7 @@ msgstr "По словам Я'Штолы, сахагинами и их союзн
 # aeria-terms: {"Limsa Lominsa":"d423c1a01f1a","Merlwyb":"52dde8423871","Reyner":"8a27b9f3f007"}
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_SEQ_05:1"
 msgid "Your meeting with Commodore Reyner is interrupted by the appearance of Admiral Merlwyb, who commends you for your brave deeds. In recognition of your services to Limsa Lominsa, she insists that you attend a forthcoming banquet as her honored guest. Proud and daunted in equal measure, you look forward to what promises to be a memorable occasion."
-msgstr "Вашу встречу с коммодором Рейнером прерывает появление адмирала Мервиб. Она хвалит вас за храбрость и в благодарность за службу Лимсе Ломинсе настойчиво приглашает на предстоящий пир в качестве почётного гостя. Вас переполняют гордость и волнение: пир обещает стать незабываемым."
+msgstr "Вашу встречу с коммодором Рейнером прерывает появление адмирала Мервиб. Она хвалит вас за храбрость и в благодарность за службу Лимсе Ломинсе настойчиво приглашает на предстоящий пир в качестве <if $gn4>почётной гостьи<else>почётного гостя</if>. Вас переполняют гордость и волнение: пир обещает стать незабываемым."
 
 #. ja: レイナーにバデロンの走り書きを渡す
 #. de: Baderons Transkript zu Reyner bringen
@@ -105,7 +105,7 @@ msgstr "Доложите Рейнеру в Коралловой башне."
 #. macro: <if $gn4>lass<else>lad</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_BADERON_050_1:1"
 msgid "Good to 'ave ye aboard, <if $gn4>lass<else>lad</if>. Now then...where to start?"
-msgstr "Рад, что ты согласилась, <if $gn4>девочка<else>парень</if>. Ну что ж... с чего начать?"
+msgstr "Рад, что ты <if $gn4>согласилась<else>согласился</if>, <if $gn4>девочка<else>парень</if>. Ну что ж... с чего начать?"
 
 #. ja: 俺は昔、流しの傭兵をやってたことがあってな……。<br>敵の動きを知るために、奪った書類を解読して、<br>情報を得ていたもんさ。
 #. de: Weißt du, früher, als ich noch jung und schneidig war, da hab ich mir meine Gil als Söldner verdient. Wenn du rauskriegen willst, was die anderen vorhaben, dann musst du ihre Depeschen abfangen und die Order entschlüsseln.
@@ -164,7 +164,7 @@ msgstr "Суть в том, что нападение на «<i>Виктори</
 # aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_BADERON_000_6:1"
 msgid "But if I'm readin' this aright, the attack itself came much too early. I'll wager they panicked when they saw ye was on to 'em, rushed in to do the job, an' buggered it up."
-msgstr "Но, если я правильно читаю, напали они куда раньше срока. Поспешили, небось, когда поняли, что ты напала на их след, — вот всё и запороли."
+msgstr "Но, если я правильно читаю, напали они куда раньше срока. Поспешили, небось, когда поняли, что ты <if $gn4>напала<else>напал</if> на их след, — вот всё и запороли."
 
 #. ja: アートビルムの父親に資金を提供していたという、<br>蒼き刺青の男たち……。<br>……もしや「海蛇の舌」の奴らか。
 #. de: Ich hab läuten hören, dass Ahtbyrms Vater schon länger mit den tätowierten Burschen von den Plündernden Schlangen zu tun hatte - die haben ihm Kapital gegeben und alles. Aber von denen war ja keiner am Tatort ...
@@ -237,7 +237,7 @@ msgstr "И помоги ему, ладно? Уж поверь, помощь ем
 # aeria-terms: {"Reyner":"8a27b9f3f007"}
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_REYNER_000_20:1"
 msgid "Yes, I am Reyner. Ah, you must be the adventurer whose name seems to be on everyone's lips."
-msgstr "Да, я Рейнер. А вы, должно быть, тот самый искатель приключений, о котором все говорят."
+msgstr "Да, я Рейнер. А вы, должно быть, <if $gn4>та самая искательница приключений<else>тот самый искатель приключений</if>, о котором все говорят."
 
 #. ja: ヴィクトリー号爆破未遂事件は聞いている。<br>よくやってくれたな！<br>……して、今日は何の用かな？
 #. de: Du hast wirklich ganze Arbeit geleistet, als du die Zerstörung der <i>Victory</i> verhindert hast.<br>Wolltest du mir darüber Genaueres berichten?
@@ -376,7 +376,7 @@ msgstr "<split \" \" 2><string $gs1></split>, в такие минуты мне 
 # aeria-terms: {"Reyner":"8a27b9f3f007"}
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_RYSSFLOH_000_45:1"
 msgid "Commodore Reyner sent word we'd be getting reinforcements, but I didn't expect him to send you! You certainly look like you've seen your share of action, though─you bear little resemblance to the wide-eyed whelp I met fresh off the ferry."
-msgstr "Коммодор Рейнер предупредил, что пришлёт подкрепление, но я и подумать не мог, что это будешь ты! А ведь ты уже повидал немало передряг — совсем не похож на того наивного новичка, которого я встретил, когда ты только сошёл с парома."
+msgstr "Коммодор Рейнер предупредил, что пришлёт подкрепление, но я и подумать не мог, что это будешь ты! А ведь ты <if $gn4>уже повидала<else>уже повидал</if> немало передряг — <if $gn4>совсем не похожа<else>совсем не похож</if> на того наивного новичка, которого я встретил, когда ты только <if $gn4>сошла<else>сошёл</if> с парома."
 
 #. ja: この場所……スウィフトパーチは、<br>リムサ・ロミンサの民が第七霊災による被害や<br>度重なる困難にもめげずに、復興させた集落なんだ。
 #. de: Aber dir ist klar, dass das hier kein Zucker<shy>schlecken wird. Wir haben die Siedlung am Tölpelturm nach der Katastrophe mit unserem Blut und Schweiß wieder aufgebaut, nachdem wir alles verloren hatten.
@@ -393,7 +393,7 @@ msgstr "Ты хоть знаешь, за что здесь сражаешься?
 #. speaker: RYSSFLOH
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_RYSSFLOH_000_47:1"
 msgid "And we're not about to let some fish-fancying scum claim the honor of being the ones who finally broke their spirits. Don't give those pirate bastards one bloody ilm, you hear me?"
-msgstr "И мы не позволим каким-то рыбопоклонникам похвастаться, что именно они сломили их дух. Ни пяди этим пиратским ублюдкам, понял?"
+msgstr "И мы не позволим каким-то рыбопоклонникам похвастаться, что именно они сломили их дух. Ни пяди этим пиратским ублюдкам, <if $gn4>поняла<else>понял</if>?"
 
 #. ja: クエスト「スウィフトパーチで蠢く闇」のバトルを開始しますか？
 #. de: Willst du den Kampf für „Ablenkende Manöver“ beginnen?
@@ -552,7 +552,7 @@ msgstr "Вот откуда <if $gn4>она<else>он</if> черпает сил
 # aeria-terms: {"golem":"686cb15588c4"}
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_MASKEDMAGUS_000_73:1"
 msgid "You may have bested the golem, but you will not fare so well this day."
-msgstr "С големом ты справилась, но сегодня тебе так не повезёт."
+msgstr "С големом ты <if $gn4>справилась<else>справился</if>, но сегодня <if $gn4>тебе<else>тебе</if> так не повезёт."
 
 #. ja: <ui-color 547>示せ、創世の理の嘆き声よ。<br>空虚に有りし夾雑の御霊を呼び出さん……。<br>出よ、深淵の悍魂よ！</ui-color>
 #. de: <ui-color 547>Zürnende Stimme der Schöpfung! Sende mir empor eine Kreatur aus deiner unfassbaren, unergründlichen Tiefe!</ui-color>
@@ -668,7 +668,7 @@ msgstr "Я пришла, едва почувствовала его присут
 #. speaker: RYSSFLOH
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_RYSSFLOH_000_90:1"
 msgid "Aye, “heroic” is the word. I don't want to think about what would've happened if you hadn't been here, friend."
-msgstr "Верно, «подвиги» — самое точное слово. Не хочу и думать, что было бы, не окажись ты здесь, друг."
+msgstr "Верно, «подвиги» — самое точное слово. Не хочу и думать, что было бы, не окажись ты здесь, <if $gn4>подруга<else>друг</if>."
 
 #. ja: ご協力、感謝いたします、ヤ・シュトラ殿。<br>「暁」の皆さまにも、よろしくお伝えください。
 #. de: Und auch dir vielen Dank für deine Hilfe, Y'shtola. Du und der Bund der Morgenröte seid ein Segen für Limsa Lominsa.
@@ -836,7 +836,7 @@ msgstr "Позвольте представить вам адмирала Блу
 #. speaker: MERLWYB
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_400010_MERLWYB:1"
 msgid "So this is the adventurer I've been reading about in the field reports."
-msgstr "Так вот вы какой искатель приключений, о котором мне столько докладывали."
+msgstr "Так вот вы <if $gn4>какая искательница приключений<else>какой искатель приключений</if>, о котором мне столько докладывали."
 
 #. ja: 君は……？<br>なんだ、この頭の中がうずく感じは……。
 #. de: Du kommst mir bekannt vor. Habe ich dir mal einen Orden verliehen?
@@ -913,7 +913,7 @@ msgstr "Скажу прямо: они произвели впечатление.
 # aeria-terms: {"Sahagin":"a8774ccf21d4"}
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_400100_MERLWYB:1"
 msgid "A seat of honor at the celebratory feast is the least I can offer the <if $gn4>woman<else>man</if> who foiled the Sahagin."
-msgstr "Почётное место на праздничном пиру — самое малое, что я могу предложить <if $gn4>женщине<else>мужчине</if>, которая остановила сахагинов."
+msgstr "Почётное место на праздничном пиру — самое малое, что я могу предложить <if $gn4>женщине, которая остановила<else>мужчине, который остановил</if> сахагинов."
 
 #. ja: なんと！
 #. de: Oho!
@@ -972,7 +972,7 @@ msgstr "Не оставьте в живых ни одного пиратског
 #. kind: other
 msgctxt "quest/005/ManSea007_00544:TEXT_MANSEA007_00544_QIB_GLAZRAEL_01:1"
 msgid "Bwahaha! Time to split some heads, adventurer! Let's start with the frontline fodder!"
-msgstr "Бу-ха-ха! Пора крушить черепа, искатель приключений! Начнём с пушечного мяса на передовой!"
+msgstr "Бу-ха-ха! Пора крушить черепа, <if $gn4>искательница приключений<else>искатель приключений</if>! Начнём с пушечного мяса на передовой!"
 
 #. ja: 依代も無しに妖異を召喚しただと！？<br>持ちこたえろ！
 #. de: Aus welcher Hölle kommt denn dieses Ungetüm? Seid auf der Hut, Kameraden!

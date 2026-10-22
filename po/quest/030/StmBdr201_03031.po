@@ -88,7 +88,7 @@ msgstr "Поговорить с Сидом."
 # aeria-terms: {"Yawn":"964744d950ac","energy":"95b2ab08778c"}
 msgctxt "quest/030/StmBdr201_03031:TEXT_STMBDR201_03031_JESSIE_000_000:1"
 msgid "<split \" \" 1><string $gs1></split>, I'm glad you're here. In case you haven't heard, we've observed a huge surge of anomalous energy coming from the Yawn..."
-msgstr "<split \" \" 1><string $gs1></split>, хорошо, что ты пришёл. Если ещё не слышал, у Зева обнаружен огромный всплеск аномальной энергии..."
+msgstr "<split \" \" 1><string $gs1></split>, хорошо, что ты <if $gn4>пришла<else>пришёл</if>. Если ещё не <if $gn4>слышала<else>слышал</if>, у Зева обнаружен огромный всплеск аномальной энергии..."
 
 #. ja: 次の検証とやらの準備が、整ったのかもしれない……。<br>すぐに会長たちが来るから、あなたも一緒に話を聞いていって。
 #. de: Vielleicht ist das wieder eine „Einladung“ von Omega ...<br>Warte kurz, Cid kommt gleich, dann erfahren wir mehr.
@@ -189,7 +189,7 @@ msgstr "Не говоря уже о том, что от приглашения �
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/030/StmBdr201_03031:TEXT_STMBDR201_03031_CID_000_011:1"
 msgid "Well, <split \" \" 1><string $gs1></split>? Are you ready to answer the call?"
-msgstr "Ну что, <split \" \" 1><string $gs1></split>? Готов ответить на зов?"
+msgstr "Ну что, <split \" \" 1><string $gs1></split>? <if $gn4>Готова<else>Готов</if> ответить на зов?"
 
 #. ja: ……でも、オメガにやられたビッグスとウェッジは、<br>まだ動けるような状態じゃないわ。
 #. de: Biggs und Wedge sind leider noch immer nicht auf den Beinen, und außer ihnen kennt sich niemand gut genug mit dem Zeitmanipulationssystem aus. Von außen können wir euch nicht helfen. Ihr seid da unten also ganz auf euch allein gestellt.
@@ -338,7 +338,7 @@ msgstr "Не уверена, что такая форма выдержит тв�
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/030/StmBdr201_03031:TEXT_STMBDR201_03031_JESSIE_000_028:1"
 msgid "<i>You</i> are a famous hero who can afford <if $gn4>her<else>his</if> own gear. I'll bet you could buy a house for the cost of what you're wearing!"
-msgstr "<i>Ты</i> же знаменитый герой и сам можешь купить себе снаряжение. Да ты, небось, за стоимость своей экипировки целый дом купишь!"
+msgstr "<if $gn4><i>Ты</i> же знаменитая героиня и сама можешь купить себе снаряжение.<else><i>Ты</i> же знаменитый герой и сам можешь купить себе снаряжение.</if> Да ты, небось, за стоимость своей экипировки целый дом купишь!"
 
 #. ja: ……っていうのは冗談としても、<br>あなたほど激闘をする人の装備は、この制服じゃダメよ。<br>特殊素材や専用仕様で作らないとね。
 #. de: Versteh mich nicht falsch, du kannst gerne eine haben. Aber für die harten Prüfungen, die auf dich warten, wäre das Material unserer Uniformen bestimmt viel zu schwach.
@@ -421,7 +421,7 @@ msgstr "Хм. Ну и приглашение."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/030/StmBdr201_03031:TEXT_STMBDR201_03031_CID_000_061:1"
 msgid "I'm ready when you are, <split \" \" 1><string $gs1></split>. Say the word, and we'll take the plunge."
-msgstr "Я готов, как только будешь готов ты, <split \" \" 1><string $gs1></split>. Скажи слово — и прыгнем."
+msgstr "Я готов, как только будешь <if $gn4>готова<else>готов</if> ты, <split \" \" 1><string $gs1></split>. Скажи слово — и прыгнем."
 
 #. ja: それでは、これより「次元の狭間」に向かう。<br>大穴に飛び込むぞ！
 #. de: Also dann, auf ins Vergnügen.
@@ -1003,7 +1003,7 @@ msgstr "Нельзя же винить новичка за тягу к прик�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/030/StmBdr201_03031:TEXT_STMBDR201_03031_MIDGARDSORMR_BATTLETALK_000_014:1"
 msgid "No sign of thy companions.<br>Fight on, mortal."
-msgstr "Твоих товарищей пока не видно.<br>Сражайся дальше, смертный."
+msgstr "Твоих товарищей пока не видно.<br>Сражайся дальше, <if $gn4>смертная<else>смертный</if>."
 
 #. ja: クエクエッ！
 #. de: Kweh, kweh!

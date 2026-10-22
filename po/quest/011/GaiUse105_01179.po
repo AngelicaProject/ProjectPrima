@@ -285,7 +285,7 @@ msgstr "Хорошо."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/011/GaiUse105_01179:TEXT_GAIUSE105_01179_ADVEMISSARY_000_012:1"
 msgid "<if $gn4>Madam<else>Sir</if>, unless I am much mistaken, you are the one known as <split \" \" 1><string $gs1></split>, are you not? May I say what a pleasure it is to make your acquaintance."
-msgstr "Если не ошибаюсь, вы — <split \" \" 1><string $gs1></split>, о котором столько говорят? Рад наконец познакомиться."
+msgstr "Если не ошибаюсь, вы — <split \" \" 1><string $gs1></split>, <if $gn4>о которой<else>о котором</if> столько говорят? Рад наконец познакомиться."
 
 #. ja: レヴナンツトールで冒険者ギルドの顔役をしている<br>スラフボーンから、君の噂は聞いているよ。
 #. de: Der Leiter unserer Nieder<shy>lassung, Slafborn, hat uns schon viel von deinen Taten erzählt. Einen Schnitter zu stehlen und damit die Garlear zu infiltrieren - das hätten nicht viele zuwege gebracht.
@@ -294,7 +294,7 @@ msgstr "Если не ошибаюсь, вы — <split \" \" 1><string $gs1></s
 # aeria-terms: {"Garlean":"10a4f7e7e06a","Slafborn":"39e4b3ab356b","imperial reaper":"84c241057494"}
 msgctxt "quest/011/GaiUse105_01179:TEXT_GAIUSE105_01179_ADVEMISSARY_000_013:1"
 msgid "Slafborn spoke of you in the most glowing terms. To steal an imperial reaper and then use it to infiltrate a Garlean castrum is an undertaking few would contemplate─and fewer still survive."
-msgstr "Слафборн отзывался о вас в самых восторженных выражениях. Угнать имперский жнец, а потом пробраться на нём в гарлеанскую крепость — на такое решится мало кто. А вы ещё и выбрались оттуда живым."
+msgstr "Слафборн отзывался о вас в самых восторженных выражениях. Угнать имперский жнец, а потом пробраться на нём в гарлеанскую крепость — на такое решится мало кто. А вы ещё и выбрались оттуда <if $gn4>живой<else>живым</if>."
 
 #. ja: これから、レヴナンツトールを発展させていこう。<br>よろしくな！
 #. de: Es wäre uns eine Ehre, auch dich in Geisterzoll begrüßen zu können. Ich nehme doch an, du wirst mit dem Bund kommen?
@@ -449,7 +449,7 @@ msgstr "Ох! Ох, боги... Ахаха! А я-то думал, что выш
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/011/GaiUse105_01179:TEXT_GAIUSE105_01179_MEMEDESU_000_054:1"
 msgid "I require no payment, <if $gn4>madam<else>sir</if>. To be entrusted with this duty is reward enough!"
-msgstr "Плата мне не нужна, сударыня. Уже то, что мне доверили эту работу, — награда!"
+msgstr "Плата мне не нужна, <if $gn4>сударыня<else>сударь</if>. Уже то, что мне доверили эту работу, — награда!"
 
 #. ja: 採掘施設で掘りだされる遺物に混じってる鉱石を、<br>格安で譲ってもらう約束をしてるんだが……<br>今はそれどころじゃねぇ、こいつの修理に集中したいんだ！
 #. de: Es geht um eine Erzlieferung, die in Byregots Schlag abzuholen ist. Eine ganze Fuhre ziemlich minderwertiges Erzgestein, das sie dort zutage fördern. Aber ich hab es ganz billig gekriegt, also will ich mich nicht beschweren.
@@ -485,7 +485,7 @@ msgstr "Дыши. <i>Сосредоточься</i>! Вспомни, чему т
 # aeria-terms: {"Memedesu":"26d55471165a"}
 msgctxt "quest/011/GaiUse105_01179:TEXT_GAIUSE105_01179_ODINEL_000_060:1"
 msgid "...You came all this way on Memedesu's account? Well, bloody hells! Can't deny as I'm a bit surprised by that."
-msgstr "...Ты проделал весь этот путь по просьбе Мемедесу? Ну и дела! Не скрою, я удивлён."
+msgstr "...Ты <if $gn4>проделала<else>проделал</if> весь этот путь по просьбе Мемедесу? Ну и дела! Не скрою, я удивлён."
 
 #. ja: それにしても、メメデスさんが鉱石を見にこないなんて、<br>珍しいこともあるもんだ。<br>あの人は、仕事に使う鉱石にはうるさいんだがねえ。
 #. de: Wundert mich allerdings, dass der alte Pedant nicht selbst kommt und jedes Körnchen genau inspiziert.
@@ -545,7 +545,7 @@ msgstr "Нет-нет, платы не нужно. Да я бы сам с рад
 #. speaker: FLHAMINN
 msgctxt "quest/011/GaiUse105_01179:TEXT_GAIUSE105_01179_FLHAMINN_000_080:1"
 msgid "Well? Did you do as I bid you? Pray tell me your trip was not for naught."
-msgstr "Ну что, всё сделала, как я просила? Надеюсь, поездка была не зря."
+msgstr "Ну что, всё <if $gn4>сделала<else>сделал</if>, как я просила? Надеюсь, поездка была не зря."
 
 #. ja: まぁ、ありがとう……。<br>こんなに綺麗に修復してもらえるだなんて。
 #. de: Hast du mich erschreckt.<br>Das ist er ja! Ich danke dir. Er schimmert genau wie an dem Tag, als Nielle ihn mir schenkte.
@@ -588,7 +588,7 @@ msgstr "Любить — значит терять, дитя. Можно лиш�
 #. speaker: FLHAMINN
 msgctxt "quest/011/GaiUse105_01179:TEXT_GAIUSE105_01179_FLHAMINN_000_085:1"
 msgid "And so I shall. My daughter will not lose me again─not for a long while yet, gods willing."
-msgstr "Я слышала, что ты незаменима и для «Потомков», и для Асиилии. Заботься о ней и о ваших товарищах."
+msgstr "Я слышала, что ты <if $gn4>незаменима<else>незаменим</if> и для «Потомков», и для Асиилии. Заботься о ней и о ваших товарищах."
 
 #. ja: アシリアにも、礼を言っておかなきゃね！<br>あなたも、報告に行くといいわ。<br>心配しているでしょうから。
 #. de: Du kannst Ascilia sagen, dass es mir gut geht. Sie soll nicht denken, dass ich mich wegen ihr gräme - schließlich ist die Last auf ihren Schultern schon groß genug.
@@ -617,7 +617,7 @@ msgstr "Ну что, удалось немного отдохнуть, <split \"
 #. speaker: ALPHINAUD
 msgctxt "quest/011/GaiUse105_01179:TEXT_GAIUSE105_01179_ALPHINAUD_000_091:1"
 msgid "You're here. Good. I come bearing news."
-msgstr "Ты пришёл. Хорошо. У меня есть новости."
+msgstr "Ты <if $gn4>пришла<else>пришёл</if>. Хорошо. У меня есть новости."
 
 #. ja: ミンフィリア、冒険者ギルドとの話し合いが付いたぞ。
 #. de: Die Ver<shy>hand<shy>lungen mit der Aben<shy>teurer<shy>gilde sind abgeschlossen. Es ist alles geregelt.

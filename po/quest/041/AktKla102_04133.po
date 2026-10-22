@@ -51,7 +51,7 @@ msgstr "Передать Руруше комплекты позолоченны�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/041/AktKla102_04133:TEXT_AKTKLA102_04133_RURUSHA_000_001:1"
 msgid "Ah, hello again, <split \" \" 1><string $gs1></split>. Are you ready to begin?"
-msgstr "А, здравствуй, <split \" \" 1><string $gs1></split>. Ну что, готов<if $gn4>а</if> приступать?"
+msgstr "А, здравствуй, <split \" \" 1><string $gs1></split>. Ну что, <if $gn4>готова<else>готов</if> приступать?"
 
 #. ja: よかった、あなたも準備万端みたいね。<br>それじゃあ「<sheet ItemMP 35588 0>」の製作を頼める？<br>交換作業は私がやるから、部品が完成したら納品をお願いねぇ。
 #. de: Wunderbar, ich bin schon sehr gespannt! Zunächst benötigen wir <noun-de ItemMP 5 35588 2 4 1>. Wenn du die Ersatzteile herstellen kannst, tausche ich sie aus.
@@ -111,7 +111,7 @@ msgstr "Отличная работа! Не терпится привести н
 #. macro: <if $gn4>craftswoman<else>craftsman</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/041/AktKla102_04133:TEXT_AKTKLA102_04133_RURUSHA_000_012:1"
 msgid "Great work! I can see you're a fine <if $gn4>craftswoman<else>craftsman</if> indeed. Thank the gods for sending you our way."
-msgstr "Отлично поработал<if $gn4>а</if>! Сразу видно, что ты настоящий мастер своего дела. Слава богам, что послали тебя к нам."
+msgstr "<if $gn4>Отлично поработала<else>Отлично поработал</if>! Сразу видно, что ты <if $gn4>настоящая мастерица<else>настоящий мастер</if> своего дела. Слава богам, что послали тебя к нам."
 
 #. ja: 依頼品を納品したことで、<br>ルルシャはあなたの貢献を実感し始めました。
 #. de: Rurusha registriert mit Freude deinen Beitrag zum Erfolg der archäologischen Studien.
@@ -215,7 +215,7 @@ msgstr "Хватит о скучных денежных делах. Пора з�
 #. speaker: RURUSHA
 msgctxt "quest/041/AktKla102_04133:TEXT_AKTKLA102_04133_RURUSHA_000_029:1"
 msgid "However, know that this will be an altogether more difficult process than reinforcing its exterior. Let me know when you feel up to the task."
-msgstr "Но это будет куда сложнее, чем укрепить внешнюю оболочку. Скажи, когда будешь готов<if $gn4>а</if> взяться за дело."
+msgstr "Но это будет куда сложнее, чем укрепить внешнюю оболочку. Скажи, когда <if $gn4>будешь готова<else>будешь готов</if> взяться за дело."
 
 #. ja: 考古学部の貢献ランクが上昇しました！<br>ルルシャはあなたのことを、<br>「遺物修復のお手伝いさん」と感じているようです！
 #. de: Dein Beitragsrang im Archäologischen Institut ist gestiegen! Rurusha hält dich jetzt für <if $gn4>ihre Restaurierungsassistentin<else>ihren Restaurierungsassistenten</if>.

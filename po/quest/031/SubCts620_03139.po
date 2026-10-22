@@ -30,9 +30,10 @@ msgstr "Поговорите с фрейлиной в Тамамидзу."
 #. speaker: KOUJIN03139
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/031/SubCts620_03139:TEXT_SUBCTS620_03139_KOUJIN03139_000_000:1"
 msgid "Begging your pardons, <if $gn4>madam<else>sir</if>, but you are an adventurer, are you not? I approach you on the off chance that you are acquainted with one of your distinguished fellows, a great hero by the name of <string $gs1>."
-msgstr "Простите, <if $gn4>сударыня<else>сударь</if>, вы ведь искатель приключений? Решил попытать удачу: вдруг вы знакомы с одним выдающимся искателем приключений, великим героем по имени <string $gs1>."
+msgstr "Простите, <if $gn4>сударыня<else>сударь</if>, вы ведь <if $gn4>искательница приключений<else>искатель приключений</if>? Решил попытать удачу: вдруг вы знакомы с одним выдающимся искателем приключений, великим героем по имени <string $gs1>."
 
 #. ja: おお～、君がそうかぁ～！　こいつは運が良かったよぉ～。<br>紫水宮の……えっと「女官」とかいう人に頼まれてぇ～、<br>君を探してたんだぁ～！
 #. de: Wie bitte? <i>Ihr</i> seid <if $gn4>diese<else>dieser</if> legendäre <string $gs1>, <if $gn4>die Befreierin<else>der Befreier</if> von Nationen und die Geißel<nbsp>...... des Kaiserreiches? Wie gütig von den Kami, Euch zu mir zu führen!
@@ -43,7 +44,7 @@ msgstr "Простите, <if $gn4>сударыня<else>сударь</if>, вы
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/031/SubCts620_03139:TEXT_SUBCTS620_03139_KOUJIN03139_000_001:1"
 msgid "...What? <i>You</i> are none other than the legendary <string $gs1>, liberator of nations and scourge of the Empire? How kind the kami are to guide your steps this way!"
-msgstr "...Что? Так это вы и есть легендарный <string $gs1>, освободитель народов и бич Империи? Как же милостивы ками, что привели вас сюда!"
+msgstr "...Что? Так это вы и есть легендарный <string $gs1>, <if $gn4>освободительница<else>освободитель</if> народов и бич Империи? Как же милостивы ками, что привели вас сюда!"
 
 #. ja: 僕ら碧甲羅のコウジン族は、アウラ・スイの依頼を受けてぇ～、<br>今、彼らに協力しているんだけどさぁ～。<br>ちょっと困っちゃってるんだよねぇ～。
 #. de: Ich wurde von einer Hofdame aus Sui no Sato damit beauftragt, Euch zu finden. Die Blaupanzer und ich unterstützen die freundlichen Leute dort bei einem gewissen Vorhaben, doch sie haben wohl ein paar<nbsp>...... Probleme.
@@ -254,10 +255,10 @@ msgstr "После кораблекрушения у меня не остало�
 #. de: An diesem Punkt kamst du mir in den Sinn, <if $gn4>meine Liebe<else>mein Freund</if>. Ich denke, dass wir von deinen Erfahrungen als weit <if $gn4>gereiste Abenteurerin<else>gereister Abenteurer</if> profitieren könnten. Und zu meiner Überraschung und Freude war Sanana nicht nur mit deinem Namen vertraut, sondern erzählte mir auch, dass du über Fä<shy>hig<shy>kei<shy>ten verfügst, die unserer Sache hilfreich sein könnten!
 #. fr: C'est ainsi que j'ai pensé à vous<nbsp>! Vous connaissez le monde comme votre poche. Qui d'autre pourrait me permettre d'arriver à mes fins<nbsp>? Avec Sanana et vous à mes côtés, je sais que je ne peux que réussir.
 #. speaker: KURENAI
-# aeria-terms: {"Sanana":"ac2a233a8b3c"}
+# aeria-terms: {"Sanana":"ac2a233a8b3c","adventurer":"48df264ad5ec"}
 msgctxt "quest/031/SubCts620_03139:TEXT_SUBCTS620_03139_KURENAI_000_091:1"
 msgid "That was when my thoughts turned to you, my friend. As a well-traveled adventurer, I believed that we would benefit from your aid. And to my surprise and delight, not only was Sanana familiar with your name, she told me that you are possessed of skills that would indeed serve our cause!"
-msgstr "Тогда я и подумала о вас, мой друг. Опытному искателю приключений, который столько повидал, наверняка по силам нам помочь. И к моему удивлению и радости, Санана не только знала ваше имя, но и рассказала, что ваши умения очень пригодятся нашему делу!"
+msgstr "Тогда я и подумала о вас, мой друг. <if $gn4>Опытной искательнице приключений, которая столько повидала<else>Опытному искателю приключений, который столько повидал</if>, наверняка по силам нам помочь. И к моему удивлению и радости, Санана не только знала ваше имя, но и рассказала, что ваши умения очень пригодятся нашему делу!"
 
 #. ja: <split " " 1><string $gs1></split>の名は、ロウェナ商会じゃお馴染みさ。<br>冒険者としてはもちろん、職人としても凄腕なのはよく知ってる。
 #. de: Ja, jeder, der irgendwas mit dem Haus der Wunder zu tun hat, kennt <split " " 1><string $gs1></split>. <if $gn4>Sie<else>Er</if> ist <if $gn4>eine<else>einer</if> unserer besten <if $gn4>Handelspartnerinnen<else>Handelspartner</if>.
@@ -268,7 +269,7 @@ msgstr "Тогда я и подумала о вас, мой друг. Опытн
 #. macro: <if $gn4>She<else>He</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/031/SubCts620_03139:TEXT_SUBCTS620_03139_SANANA_000_092:1"
 msgid "Aye, anyone that's got anything to do with the House knows <split \" \" 1><string $gs1></split>. <if $gn4>She<else>He</if>'s one of the best contributors on our roster."
-msgstr "Да, в Доме редкостей все знают <split \" \" 1><string $gs1></split>. <if $gn4>Она<else>Он</if> одна из наших лучших помощниц."
+msgstr "Да, в Доме редкостей все знают <split \" \" 1><string $gs1></split>. <if $gn4>Она одна из наших лучших помощниц<else>Он один из наших лучших помощников</if>."
 
 #. ja: 難破船から、多少の物資は持ち出せた。<br>報酬がほしけりゃ、アタシがスクリップで支払ってやるから、<br>どうか、クレナイの計画に協力してくれないかい？
 #. de: Nun, wir haben zwar keine fertigen Waren, doch wir konnten einige Materialien auftreiben, die dir helfen könnten. Natürlich sollst auch du dabei nicht leer ausgehen. Nach alter Tradition des Hauses winken dir für deine Mühen ein paar Scheine. Also<nbsp>... du hilfst uns doch, oder?

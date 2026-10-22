@@ -86,15 +86,16 @@ msgstr "Отнесите тупой нож моряка Стельвирну н�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_1:1"
 msgid "Ah, <split \" \" 2><string $gs1></split>. That aura of confidence tells me you've not been idle since last we met."
-msgstr "А, <split \" \" 2><string $gs1></split>. По тебе видно, что с нашей последней встречи ты не сидел сложа руки."
+msgstr "А, <split \" \" 2><string $gs1></split>. По тебе видно, что с нашей последней встречи ты <if $gn4>не сидела<else>не сидел</if> сложа руки."
 
 #. ja: お前を見込んで、頼みたいことがあるんだ。<br>話を聞いてもらえないか？
 #. de: Ich brauche <if $gn4>eine zuverlässige Abenteurerin<else>einen zuverlässigen Abenteurer</if> für eine Aufgabe. Wirst du <if $gn4>diese Abenteurerin<else>dieser Abenteurer</if> sein?
 #. fr: Il vient juste de se passer quelque chose d'assez ennuyeux, et tes services seraient les bienvenus. Tu veux bien m'accorder une minute<nbsp>?
 #. speaker: STAELWYRN
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_2:1"
 msgid "I hope I've read you aright, for I've a task that requires the attention of a capable adventurer. Might that adventurer be you?"
-msgstr "Надеюсь, я в тебе не ошибся. Есть дело, за которое возьмётся только умелый искатель приключений. Не поможешь?"
+msgstr "Надеюсь, я в тебе не ошибся. Есть дело, за которое возьмётся только <if $gn4>умелая искательница приключений<else>умелый искатель приключений</if>. Не поможешь?"
 
 #. ja: ありがたい。<br>さっそく、話を聞いてくれ。
 #. de: Ich werd es dir gleich erklären. Hm, wo soll ich beginnen ...
@@ -111,7 +112,7 @@ msgstr "Вот и славно. Тогда слушай, какая беда п�
 # aeria-terms: {"Hydaelyn":"e793d5e761d0","Limsa Lominsa":"d423c1a01f1a","face":"9a4aea3bb0ee"}
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_11:1"
 msgid "You will have heard rumors of the abductions. Aye, citizens have been disappearin' from every corner of Limsa Lominsa, as if plucked from the face of Hydaelyn, boots and all, by an unseen hand."
-msgstr "Наверняка ты слышал о похищениях. Люди пропадают по всей Лимсе Ломинсе, словно невидимая рука срывает их с лица Хайделин вместе с сапогами."
+msgstr "Наверняка ты <if $gn4>слышала<else>слышал</if> о похищениях. Люди пропадают по всей Лимсе Ломинсе, словно невидимая рука срывает их с лица Хайделин вместе с сапогами."
 
 #. ja: ……実はな。<br>ここ最近、顔に蒼い刺青があるガラの悪い男たちが、<br>ウチの農夫たちを、遠巻きに監視しているみたいでな。
 #. de: Was das mit den Sommerfurt-Höfen zu tun hat? Nun, in der Nähe schleichen zwielichtige Typen mit blauen Tätowierungen im Gesicht herum und lassen meine Arbeiter nicht aus den Augen.
@@ -146,7 +147,7 @@ msgstr "Им и без того нелегко привыкнуть к ново�
 #. speaker: STAELWYRN
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_15:1"
 msgid "That is, as they say, where you come in. Would you be willin' to investigate these tattooed thugs for me?"
-msgstr "Вот тут-то ты и нужен. Не мог бы ты разузнать, что за татуированные головорезы?"
+msgstr "Вот тут-то ты и <if $gn4>нужна<else>нужен</if>. Не мог бы ты разузнать, что за татуированные головорезы?"
 
 #. ja: そうか、助かるぜ！<br>これ以上、作業に遅れが出てはたまらんからな。
 #. de: So gefällst du mir, <split " " 1><string $gs1></split>. Mehr Unterbrechungen brauche ich auf den Höfen wirklich nicht.
@@ -322,7 +323,7 @@ msgstr "(-Учёный чародей-) Что привело тебя в это
 # aeria-terms: {"Summerford Farms":"163dc8f3e034","conjurer":"ad8b3d4ffa53"}
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_000110_YSHTOLA:1"
 msgid "(-Cultured Conjurer-)Ah, you are the adventurer I've seen around Summerford Farms."
-msgstr "(-Учёный чародей-) А, так ты тот искатель приключений, которого я видела на Фермах Саммерфорда."
+msgstr "(-Учёный чародей-) А, так ты <if $gn4>та искательница приключений, которую<else>тот искатель приключений, которого</if> я видела на Фермах Саммерфорда."
 
 #. ja: (-神秘的な幻術士-)噂の「人拐い」を追ってたんだけど、<br>……ハズレだったかしら。
 #. de: (-Mysteriöse Druidin-)Ich war auf der Suche nach einem Entführer ... aber offenbar auf der falschen Fährte.
@@ -461,7 +462,7 @@ msgstr "Слушай... Чувствуй... Думай..."
 # aeria-terms: {"conjurer":"ad8b3d4ffa53"}
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_300200_YSHTOLA:1"
 msgid "(-Cultured Conjurer-)Awake again, are we?"
-msgstr "(-Учёный чародей-) Очнулся?"
+msgstr "(-Учёный чародей-) <if $gn4>Очнулась<else>Очнулся</if>?"
 
 #. ja: (-神秘的な幻術士-)……やはり。<br>この子、無理矢理にけしかけられたようね。
 #. de: (-Mysteriöse Druidin-)Wie ich es mir dachte. Sie war von einem fremden Willen gelenkt.
@@ -506,7 +507,7 @@ msgstr "(-Учёный чародей-) Похоже, за этим стоят �
 # aeria-terms: {"conjurer":"ad8b3d4ffa53"}
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_300250_YSHTOLA:1"
 msgid "(-Cultured Conjurer-)In any event, you seem much recovered from your sudden...affliction."
-msgstr "(-Учёный чародей-) В любом случае, ты уже оправился от внезапного... недомогания."
+msgstr "(-Учёный чародей-) В любом случае, ты уже <if $gn4>оправилась<else>оправился</if> от внезапного... недомогания."
 
 #. ja: (-神秘的な幻術士-)エーテルにでも酔ったのかしら。<br>戦闘のあと、急に倒れたから驚いたわ。
 #. de: (-Mysteriöse Druidin-)Du hast wohl einen Ätherschock bekommen. Nach all der Bewegung im Kampf bist du einfach umgekippt.
@@ -581,7 +582,7 @@ msgstr "(-Учёный чародей-) Пусть свет Кристалла �
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_30:1"
 msgid "<split \" \" 2><string $gs1></split>! Right glad am I to see you safely returned!"
-msgstr "<split \" \" 2><string $gs1></split>! Рад видеть, что ты вернулся целым и невредимым!"
+msgstr "<split \" \" 2><string $gs1></split>! Рад видеть, что ты <if $gn4>вернулась целой и невредимой<else>вернулся целым и невредимым</if>!"
 
 #. ja: ウチの連中が、石窟あたりが<br>騒がしいなどと言っていたから、心配してたんだぜ。
 #. de: Meine Arbeiter haben berichtet, dass sie bei der Klagegrotte Kampfgeschrei und Gebrüll gehört haben. Ich hatte schon gefürchtet, ich hätte dich in den Tod geschickt!
@@ -597,7 +598,7 @@ msgstr "Работники болтали, что возле грота будт
 #. speaker: STAELWYRN
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_32:1"
 msgid "If you were in the middle of that commotion, I hope it yielded somethin' of interest. I'd hate to think you'd risked your life for naught."
-msgstr "Если ты попал в самую гущу этого переполоха, надеюсь, хоть что-то выяснил. Не хотелось бы думать, что ты рисковал жизнью зря."
+msgstr "Если ты <if $gn4>попала<else>попал</if> в самую гущу этого переполоха, надеюсь, хоть что-то <if $gn4>выяснила<else>выяснил</if>. Не хотелось бы думать, что ты <if $gn4>рисковала<else>рисковал</if> жизнью зря."
 
 #. ja: ふむ……。<br>何者かにけしかけられた魔物に、残されたナイフか……。
 #. de: Hmmm ... Das Seilermesser steckte im Rücken der Goobbue?
@@ -605,7 +606,7 @@ msgstr "Если ты попал в самую гущу этого перепо�
 #. speaker: STAELWYRN
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_40:1"
 msgid "Hmmm... A blade pulled from the back of a creature you slew at the cave, eh?"
-msgstr "Хм... Клинок, который ты вытащил из спины убитого в пещере чудовища, говоришь?"
+msgstr "Хм... Клинок, который ты <if $gn4>вытащила<else>вытащил</if> из спины убитого в пещере чудовища, говоришь?"
 
 #. ja: お前が持ち帰ったナイフ。<br>これは確かに、ロープを切るのに使う<br>船乗り用のナイフだ。
 #. de: So ein Messer gehört ganz klar zur Grundausstattung eines jeden Seefahrers.
@@ -641,7 +642,7 @@ msgstr "Верно, пираты в последнее время всё при�
 # aeria-terms: {"Y'shtola":"edf33c6f5c7b"}
 msgctxt "quest/005/ManSea005_00543:TEXT_MANSEA005_00543_STAELWYRN_000_44:1"
 msgid "...Hm? You met someone else at the grotto? A woman with a strange contraption...? Ah...Y'shtola!"
-msgstr "...А? Ты встретил в гроте ещё кого-то? Женщину с какой-то странной штуковиной?.. А-а... Я'Штола!"
+msgstr "...А? Ты <if $gn4>встретила<else>встретил</if> в гроте ещё кого-то? Женщину с какой-то странной штуковиной?.. А-а... Я'Штола!"
 
 #. ja: 以前からリムサ・ロミンサに滞在していてな。<br>この辺りにもエーテルがどうのこうのと、<br>何度か調査に来たことがあるのさ。
 #. de: Sie ist seit einer guten Weile in Limsa und erforscht hier die Ätherströmungen. Ab und zu kommt sie auch nach Sommerfurt. Sie hat wohl in der Grotte irgendwas gemessen.

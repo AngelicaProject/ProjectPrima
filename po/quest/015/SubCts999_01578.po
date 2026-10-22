@@ -962,7 +962,7 @@ msgstr "Говорят, секреты этой гравировки храня�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/015/SubCts999_01578:TEXT_SUBCTS999_01578_JEMIME_000_110:1"
 msgid "<if $gn4>Mistress<else>Master</if> <split \" \" 2><string $gs1></split>! We have been expecting you."
-msgstr "Госпожа <split \" \" 2><string $gs1></split>! Мы вас ждали."
+msgstr "<if $gn4>Госпожа<else>Господин</if> <split \" \" 2><string $gs1></split>! Мы вас ждали."
 
 #. ja: パートナーの方に贈る「<sheet Item 8697 0>」は、ご用意できましたか？<br>ここでは、指輪に、十二の神々の名を記した「刻印」を入れる、<br>仕上げを施しております。
 #. de: Ich träume von der Zeremonie, seit ich ein kleines Mädchen war ... Nur habe ich leider noch nicht den oder die Richtige gefunden. Es ist ja auch kein leichter Schritt ... Man braucht großen Mut und eine gehörige Portion Vertrauen, um sich dazu zu entscheiden. Und ein bisschen verrückt muss man auch sein, finde ich.
@@ -1028,7 +1028,7 @@ msgstr "Как вы раздобыли кольцо?"
 #. speaker: A2
 msgctxt "quest/015/SubCts999_01578:TEXT_SUBCTS999_01578_A2_000_143:1"
 msgid "I made it myself."
-msgstr "Я сделала его сама."
+msgstr "Я <if $gn4>сделала<else>сделал</if> его <if $gn4>сама<else>сам</if>."
 
 #. ja: 知人に依頼して作ってもらった
 #. de: Ein Bekannter hat ihn für mich hergestellt.
@@ -1044,7 +1044,7 @@ msgstr "Его сделал для меня знакомый."
 #. speaker: A2
 msgctxt "quest/015/SubCts999_01578:TEXT_SUBCTS999_01578_A2_000_145:1"
 msgid "I paid for it with good coin."
-msgstr "Я купила его на свои сбережения."
+msgstr "Я <if $gn4>купила<else>купил</if> его на свои сбережения."
 
 #. ja: 秘密にしたい
 #. de: Das bleibt mein Geheimnis.
@@ -2315,7 +2315,7 @@ msgstr "Перенести церемонию нельзя с <reset-time 18 5><
 #. macro: <reset-time 19 5> — sets the time placeholders to the next daily or weekly reset; hour = 19, weekday = 5 (game data: keep it; it may move or repeat)
 msgctxt "quest/015/SubCts999_01578:TEXT_SUBCTS999_01578_SYSTEM_100_823:1"
 msgid "Those on the <switch $n1><case>NULL<case>standard<case>gold<case>NULL</switch> plan cannot make a reservation between <reset-time 18 5><switch $weekday><case>Sunday<case>Monday<case>Tuesday<case>Wednesday<case>Thursday<case>Friday<case>Saturday</switch>, <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>p.m.<else>a.m.</if> and <switch $n1><case>NULL<case><reset-time 20 5><switch $weekday><case>Sunday<case>Monday<case>Tuesday<case>Wednesday<case>Thursday<case>Friday<case>Saturday</switch><case> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>p.m.<else>a.m.</if><case><reset-time 19 5><switch $weekday><case>Sunday<case>Monday<case>Tuesday<case>Wednesday<case>Thursday<case>Friday<case>Saturday</switch><case> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>p.m.<else>a.m.</if><case>NULL</switch>."
-msgstr "Обладатели <switch $n1><case>NULL<case>стандартного<case>золотого<case>NULL</switch> плана не могут бронировать с <reset-time 18 5><switch $weekday><case>воскресенья<case>понедельника<case>вторника<case>среды<case>четверга<case>пятницы<case>субботы</switch> в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>после полудня<else>до полудня</if> до <switch $n1><case>NULL<case><reset-time 20 5><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среда<case>четверг<case>пятница<case>суббота</switch><case> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>после полудня<else>до полудня</if><case><reset-time 19 5><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среда<case>четверг<case>пятница<case>суббота</switch><case> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>после полудня<else>до полудня</if><case>NULL</switch>."
+msgstr "Обладатели <switch $n1><case>NULL<case>стандартного<case>золотого<case>NULL</switch> плана не могут бронировать с <reset-time 18 5><switch $weekday><case>воскресенья<case>понедельника<case>вторника<case>среды<case>четверга<case>пятницы<case>субботы</switch> в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>после полудня<else>до полудня</if> до <switch $n1><case>NULL<case><reset-time 20 5><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среда<case>четверг<case>пятница<case>суббота</switch><case> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>после полудня<else>до полудня</if><case><reset-time 19 5><switch $weekday><case>воскресенье<case>понедельник<case>вторник<case>среду<case>четверг<case>пятницу<case>субботу</switch><case> <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour >= 12)>после полудня<else>до полудня</if><case>NULL</switch>."
 
 #. ja: 同じ時間にほかの方の予約が入ったため、<br>予約受付ができませんでした。
 #. de: Die Reservierung kann nicht vorgenommen werden, da zu dem gewünschten Zeitpunkt bereits eine andere Reservierung vorliegt.

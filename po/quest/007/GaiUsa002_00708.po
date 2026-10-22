@@ -159,7 +159,7 @@ msgstr "<ui-color 533><ui-edge-color 534><icon 63> Задание изменен
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/007/GaiUsa002_00708:TEXT_GAIUSA002_00708_VORSAILE_000_000:1"
 msgid "Well! If it isn't <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, reporting for duty. That's the zeal I like to see from an enterprising young Serpent."
-msgstr "Ну и ну! Если это не <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, явившийся на службу. Вот это рвение я и жду от перспективного молодого бойца Двух Змей."
+msgstr "Ну и ну! Если это не <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, <if $gn4>явившаяся<else>явившийся</if> на службу. Вот это рвение я и жду от перспективного молодого бойца Двух Змей."
 
 #. ja: ここは、グランドカンパニー「双蛇党」の統合司令部だがね。<br>入党志願かな？　冒険者くん。
 #. de: Sei gegrüßt, Abenteurer<if $gn4>in</if>. Bist du gewillt, dein Schicksal mit dem der Bruderschaft zu verflechten?
@@ -168,7 +168,7 @@ msgstr "Ну и ну! Если это не <capitalize><if ($gn52 > 0)><sheet GC
 # aeria-terms: {"Adders' Nest":"fd8be7fb5386"}
 msgctxt "quest/007/GaiUsa002_00708:TEXT_GAIUSA002_00708_VORSAILE_000_001:1"
 msgid "Hail, adventurer. I bid you welcome to the Adders' Nest. Do you seek to entwine your destiny with the Twin Adder?"
-msgstr "Приветствую, искатель приключений. Добро пожаловать в Змеиное гнездо. Хочешь связать свою судьбу с Двумя Змеями?"
+msgstr "Приветствую, <if $gn4>искательница приключений<else>искатель приключений</if>. Добро пожаловать в Змеиное гнездо. Хочешь связать свою судьбу с Двумя Змеями?"
 
 #. ja: やっほー！<br>ざんねんだけど、今日は別件だよ。
 #. de: Guten <if ($gn11 < 12)><if ($gn11 < 4)>Abend<else>Morgen</if><else><if ($gn11 < 17)>Tag<else>Abend</if></if>, Kommandant. Wir würden Euch <split " " 1><string $gs1></split> ja gerne für die Aufgaben der Bruderschaft überlassen, aber leider führt uns heute eine andere Angelegenheit her.
@@ -369,7 +369,7 @@ msgstr "Хоторны оказали нам немало добрых услу�
 # aeria-terms: {"the Twelve":"e0fcf4649d77"}
 msgctxt "quest/007/GaiUsa002_00708:TEXT_GAIUSA002_00708_ROSA_000_020:1"
 msgid "An adventurer! Thank the Twelve! You couldn't have come at a more opportune time. Please, you must help us!"
-msgstr "Искатель приключений! Слава Двенадцати! Как хорошо, что вы пришли именно сейчас. Пожалуйста, помогите нам!"
+msgstr "<if $gn4>Искательница приключений<else>Искатель приключений</if>! Слава Двенадцати! Как хорошо, что вы пришли именно сейчас. Пожалуйста, помогите нам!"
 
 #. ja: この養蜂場では、蜂蜜や蜜蝋を採っているの。<br>でも最近、蜜蜂のサナギを食料にするために、<br>ホーネットが巣箱を襲って困っているのよ。
 #. de: Es geht um unsere Bienen! Diese armen kleinen Kreaturen werden von aggressiven Schwärmen von Hornissen angegriffen!
@@ -441,7 +441,7 @@ msgstr "Верно, я Амелайн из Двух Змей. Вас раньш�
 #. speaker: AMELAIN
 msgctxt "quest/007/GaiUsa002_00708:TEXT_GAIUSA002_00708_AMELAIN_000_041:1"
 msgid "A jar of Rosa's honey, and freshly harvested to boot! You certainly know how to make a first impression, friend!"
-msgstr "Горшочек мёда от Розы, да ещё и свежайший! Вот это первое впечатление, друг!"
+msgstr "Горшочек мёда от Розы, да ещё и свежайший! Вот это первое впечатление, <if $gn4>подруга<else>друг</if>!"
 
 #. ja: いくつになっても、手土産とはうれしいものだ。<br>ありがとう、大切に味わわせていただくよ。<br>……さて、シルフ族について知りたいのだったな。
 #. de: Ah, dann bist <i>du</i> also <if $gn4>diejenige<else>derjenige</if> vom Bund der Morgenröte, von <if $gn4>der<else>dem</if> der Kommandant gesprochen hat! Vergib mir, wenn ich etwas forsch war - mein Magen hat schon ordentlich gegrummelt. Oh Mann, dieser Honig ist der Nektar der Zwölf!
@@ -449,10 +449,10 @@ msgstr "Горшочек мёда от Розы, да ещё и свежайши
 #. speaker: AMELAIN
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"commander":"0365fb5402fb"}
+# aeria-terms: {"adventurer":"48df264ad5ec","commander":"0365fb5402fb"}
 msgctxt "quest/007/GaiUsa002_00708:TEXT_GAIUSA002_00708_AMELAIN_000_042:1"
 msgid "Ah, so <i>you</i> are the adventurer of whom the commander spoke! Do forgive me for being curt; my stomach was rumbling something fierce. My word, this honey...like liquid gold... Mmmmmm..."
-msgstr "А, так это вы тот самый искатель приключений, о котором говорил командир! Простите, что был неприветлив: у меня живот урчал вовсю. Вот это мёд... словно жидкое золото... Мммм..."
+msgstr "А, так это <i>вы</i> <if $gn4>та самая искательница приключений<else>тот самый искатель приключений</if>, о котором говорил командир! Простите, что был неприветлив: у меня живот урчал вовсю. Вот это мёд... словно жидкое золото... Мммм..."
 
 #. ja: シルフ族は警戒心が強いのだ。<br>特に黒衣森に「ガレマール帝国」が侵入してからは、<br>急速に態度を硬化させている。
 #. de: Aber natürlich. Verzeihung. Du bist nicht wegen des Honigs, sondern wegen der Sylphen hier. Sie wirken zwar launisch, aber sind auch äußerst umsichtig. Besonders seit sich die Garlear im Finsterwald herumtreiben ...

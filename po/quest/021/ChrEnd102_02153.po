@@ -279,7 +279,7 @@ msgstr "Если преступник затаил обиду на этого с
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/021/ChrEnd102_02153:TEXT_CHREND102_02153_BRIARDIEN_000_017:1"
 msgid "<split \" \" 1><string $gs1></split>!? What brings you here of all places? Ah, don't tell me. <i>You</i> were the “hero” that the students have been murmuring about. I cannot say I am surprised."
-msgstr "<split \" \" 1><string $gs1></split>!? Что вы здесь делаете? А, не говорите. Так это вы тот самый «герой», о котором судачат студенты. Не могу сказать, что удивлён."
+msgstr "<split \" \" 1><string $gs1></split>!? Что вы здесь делаете? А, не говорите. Так это вы <if $gn4>та самая героиня, о которой<else>тот самый герой, о котором</if> судачат студенты. Не могу сказать, что удивлён."
 
 #. ja: おや……<br>我が甥、ブリアルディアンと知り合いであったのですか？
 #. de: Kennst du meinen Neffen etwa?
@@ -310,9 +310,10 @@ msgstr "Да, дядюшка. Наши пути пересекались. И н�
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/021/ChrEnd102_02153:TEXT_CHREND102_02153_BRIARDIEN_000_020:1"
 msgid "An idea occurs to me. <split \" \" 1><string $gs1></split> is an adventurer of exceptional skill, in combat and deduction both. Pray, allow me to appoint <if $gn4>her<else>him</if> as my assistant─no, <i>associate</i>, in my work here at the scholasticate."
-msgstr "Вот оно! <split \" \" 1><string $gs1></split> — первоклассный приключенец, отлично владеющий и оружием, и дедукцией. Прошу, позвольте мне взять <if $gn4>её<else>его</if> в помощники... то есть в <i>напарники</i> по работе в сколастикате."
+msgstr "Вот оно! <split \" \" 1><string $gs1></split> — <if $gn4>первоклассная искательница приключений<else>первоклассный приключенец</if>, отлично владеет и оружием, и дедукцией. Прошу, позвольте мне взять <if $gn4>её<else>его</if> в помощники... то есть в <i>напарники</i> по работе в сколастикате."
 
 #. ja: ……むぅ、神学院の危機を打破するために、<br>すでに、無理を押してお前を招聘している。<br>さらなる部外者を神学院に関わらせるわけには……。
 #. de: Hmpf. Glaubst du, dass es einfach war, dich als Ermittler für diese Sache durchzusetzen?<br>Wenn ich jetzt mit <i>noch</i> <if $gn4>einer<else>einem</if> Außenstehenden daherkomme ... Noch dazu ist <if $gn4>sie keine Unbekannte<else>er kein Unbekannter</if>.
@@ -332,7 +333,7 @@ msgstr "Долгое сотрудничество наверняка вызов�
 # aeria-terms: {"Briardien":"3ae8d02bf938"}
 msgctxt "quest/021/ChrEnd102_02153:TEXT_CHREND102_02153_GAETELLE_000_022:1"
 msgid "While I understand your concern, I am willing to trust Briardien's judgment. <if $gn4>Madam<else>Master</if> <split \" \" 2><string $gs1></split> has shown nothing but compassion towards our students."
-msgstr "Я понимаю ваши опасения, но готов довериться суждению Бриардьена. <if $gn4>Госпожа<else>господин</if> <split \" \" 2><string $gs1></split> проявил<if $gn4>а<else></if> к нашим студентам лишь доброту и сострадание."
+msgstr "Я понимаю ваши опасения, но готов довериться суждению Бриардьена. <if $gn4>Госпожа<else>господин</if> <split \" \" 2><string $gs1></split> <if $gn4>проявила<else>проявил</if> к нашим студентам лишь доброту и сострадание."
 
 #. ja: ……正式な顧問として招くかどうかはともかく、<br>石像盗難事件の解決に、力を借りるのは問題ないでしょう？<br>その後については、実績をもって判断すればいい。
 #. de: Eben! Und wer sagt, dass wir erst offiziell um Erlaubnis fragen müssen? <split " " 1><string $gs1></split> und ich beschaffen den Kopf der Statue wieder, dann wird sich niemand beschweren!
@@ -607,7 +608,7 @@ msgstr "Свой путь? То есть... самому толковать св
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/021/ChrEnd102_02153:TEXT_CHREND102_02153_THEOMOCENT_000_053:1"
 msgid "I suppose there is no simple answer. Yet when I look at you, I see one who has walked <if $gn4>her<else>his</if> own path, no matter how perilous. I envy that courage..."
-msgstr "Наверное, простого ответа нет. Но, глядя на вас, я вижу того, кто идёт <if $gn4>своим<else>своим</if> путём, каким бы опасным он ни был. Завидую вашей смелости..."
+msgstr "Наверное, простого ответа нет. Но, глядя на вас, я вижу <if $gn4>ту, которая<else>того, кто</if> идёт своим путём, каким бы опасным он ни был. Завидую вашей смелости..."
 
 #. ja: ありがとうございます、おかげで確信できました。<br>きっと僕を導くために、神が貴方をお遣わしになったんですね。
 #. de: Halone muss dich gesandt haben, um mir diesen Wink zu geben.
@@ -737,7 +738,7 @@ msgstr "(-Спокойный голос-) Как же вы старались в
 #. macro: <if $gn4>She<else>He</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/021/ChrEnd102_02153:TEXT_CHREND102_02153_LEIGH_000_066:1"
 msgid "Piss off, you priggish whoreson! <split \" \" 1><string $gs1></split> was there! <if $gn4>She<else>He</if>'ll tell you you're wrong!"
-msgstr "Проваливайте, заносчивые ублюдки! <split \" \" 1><string $gs1></split> всё видел! <if $gn4>Она<else>Он</if> подтвердит, что вы врёте!"
+msgstr "Проваливайте, заносчивые ублюдки! <split \" \" 1><string $gs1></split> всё <if $gn4>видела<else>видел</if>! <if $gn4>Она<else>Он</if> подтвердит, что вы врёте!"
 
 #. ja: そこまでです！<br>神学院内での根拠なき暴言も、暴力も許しません！<br>今は神学院が一丸にならねばならぬ時だというのに……！
 #. de: Schluss jetzt! Haltlose An<shy>schuldi<shy>gungen will ich in diesen Hallen genauso wenig hören wie grobe Flüche. Ihr solltet wirklich versuchen, euch besser zu vertragen, gerade in Zeiten wie diesen.

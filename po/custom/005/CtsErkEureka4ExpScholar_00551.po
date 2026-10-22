@@ -176,6 +176,7 @@ msgstr "А, <if $gn4>госпожа<else>господин</if> <split \" \" 1><s
 #. macro: <if $gn4>Mistress<else>Master</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "custom/005/CtsErkEureka4ExpScholar_00551:TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_190:1"
 msgid "<if $gn4>Mistress<else>Master</if> <split \" \" 1><string $gs1></split>, precisely the adventurer I wished to see. There's a matter I would discuss with you."
 msgstr "<if $gn4>Госпожа<else>Господин</if> <split \" \" 1><string $gs1></split>, именно вас я и хотела увидеть. Мне нужно с вами кое-что обсудить."
@@ -226,7 +227,7 @@ msgstr "Мы хотим, чтобы вы отправились в Арсена�
 # aeria-terms: {"Arsenal":"4e28b9103ebe","Baldesion":"db2d1c9be5dd","Warning":"8dc8f22cc7de"}
 msgctxt "custom/005/CtsErkEureka4ExpScholar_00551:TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNOCHECK_000_000:1"
 msgid "Warning: The Baldesion Arsenal is an unimaginably punishing duty. Even the entry conditions alone will not be easily fulfilled, and emerging triumphant will require teamwork, tenacity, time, knowledge, courage, strength, and, not the least of all, luck."
-msgstr "Предупреждение: Арсенал Бальдезиона — невероятно сложное испытание. Даже выполнить условия для входа будет непросто, а чтобы выбраться оттуда победителем, вам понадобятся сплочённая команда, упорство, время, знания, отвага, сила и, конечно же, удача."
+msgstr "Предупреждение: Арсенал Бальдезиона — невероятно сложное испытание. Даже выполнить условия для входа будет непросто, а чтобы выбраться оттуда <if $gn4>победительницей<else>победителем</if>, вам понадобятся сплочённая команда, упорство, время, знания, отвага, сила и, конечно же, удача."
 
 #. ja: 注意事項を確認しましたか？
 #. de: Ich habe die Warnung verstanden.
@@ -277,6 +278,7 @@ msgstr "Я... слышала, что произошло. И не знаю, чт�
 #. macro: <if $gn4>Mistress<else>Master</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "custom/005/CtsErkEureka4ExpScholar_00551:TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_210:1"
 msgid "<if $gn4>Mistress<else>Master</if> <split \" \" 1><string $gs1></split>, precisely the adventurer I wished to see. There's a matter I would discuss with you."
 msgstr "<if $gn4>Госпожа<else>Господин</if> <split \" \" 1><string $gs1></split>, именно вас я и хотела увидеть. Мне нужно с вами кое-что обсудить."
@@ -327,7 +329,7 @@ msgstr "Мы хотим, чтобы вы отправились в Арсена�
 # aeria-terms: {"Arsenal":"4e28b9103ebe","Baldesion":"db2d1c9be5dd","Warning":"8dc8f22cc7de"}
 msgctxt "custom/005/CtsErkEureka4ExpScholar_00551:TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNOCHECK_000_001:1"
 msgid "Warning: The Baldesion Arsenal is an unimaginably punishing duty. Even the entry conditions alone will not be easily fulfilled, and emerging triumphant will require teamwork, tenacity, time, knowledge, courage, strength, and, not the least of all, luck."
-msgstr "Предупреждение: Арсенал Бальдезиона — невероятно сложное испытание. Даже выполнить условия для входа будет непросто, а чтобы выбраться оттуда победителем, вам понадобятся сплочённая команда, упорство, время, знания, отвага, сила и, конечно же, удача."
+msgstr "Предупреждение: Арсенал Бальдезиона — невероятно сложное испытание. Даже выполнить условия для входа будет непросто, а чтобы выбраться оттуда <if $gn4>победительницей<else>победителем</if>, вам понадобятся сплочённая команда, упорство, время, знания, отвага, сила и, конечно же, удача."
 
 #. ja: 注意事項を確認しましたか？
 #. de: Ich habe die Warnung verstanden.
@@ -549,7 +551,7 @@ msgstr "Каждый эфирный узел можно использовать
 #. ja: 「エーテリアルノード」の出現には、乱霊流天候が関係しています。<br>プレイヤー同士で情報交換をして、条件を探してみましょう！
 #. de: Das Auftauchen der ätherischen Knotenpunkte ist eng verknüpft mit den Wetterlagen des Ätherflusswetters. Es empfiehlt sich, Informationen mit anderen Spielern auszutauschen.
 #. fr: Les turbulences ombrales jouent un rôle important dans l'apparition de nœuds éthérés. Échangez des in<shy>for<shy>ma<shy>tions avec les autres joueurs pour percer le secret de cette corrélation<nbsp>!
-# aeria-terms: {"turbulence":"27bf97ba6fd3"}
+# aeria-terms: {"adventurer":"48df264ad5ec","turbulence":"27bf97ba6fd3"}
 msgctxt "custom/005/CtsErkEureka4ExpScholar_00551:TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_245:1"
 msgid "The appearance of aetherial nodes is connected to the umbral turbulence weather condition. Trade information with your fellow adventurers to unravel the mystery of their manifestation."
 msgstr "Появление эфирных узлов связано с погодным явлением «умбральная турбулентность». Обменивайтесь сведениями с другими искателями приключений, чтобы выяснить, как именно они появляются."

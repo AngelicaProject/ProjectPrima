@@ -13,7 +13,7 @@ msgstr ""
 # aeria-terms: {"Scion":"c86bbbc0c0a1"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_000010_ILBERD:1"
 msgid "Hail to you, Scion. How might we serve you?"
-msgstr "Приветствую, наследник. Чем можем быть полезны?"
+msgstr "Приветствую, <if $gn4>наследница<else>наследник</if>. Чем можем быть полезны?"
 
 #. ja: ……なるほど、アルフィノ総帥から話を。
 #. de: Ja, Kristallkommandant Leveilleur tat gut daran, dich einzuweihen.
@@ -158,7 +158,7 @@ msgstr "Нужно быть готовыми ко всему, но при это
 #. speaker: RAUBAHN
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100010_RAUBAHN:1"
 msgid "Well, well. What brings you here, my friend?"
-msgstr "Надо же. Что привело тебя сюда, друг мой?"
+msgstr "Надо же. Что привело тебя сюда, <if $gn4>подруга моя<else>друг мой</if>?"
 
 #. ja: 俺の付き合いできてもらった。<br>……久しぶりだな、ラウバーン。
 #. de: <if $gn4>Sie<else>Er</if> war so freundlich, mich zu begleiten. Schön, dass du Zeit für uns hast, Raubahn!
@@ -168,7 +168,7 @@ msgstr "Надо же. Что привело тебя сюда, друг мой?
 # aeria-terms: {"Raubahn":"6821016ab617"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100011_ILBERD:1"
 msgid "<if $gn4>She<else>He</if> is here at my behest. Greetings, Raubahn. It has been a while."
-msgstr "Он пришёл со мной. Рад тебя видеть, Раубан. Давно не виделись."
+msgstr "<if $gn4>Она пришла<else>Он пришёл</if> со мной. Рад тебя видеть, Раубан. Давно не виделись."
 
 #. ja: おお、イルベルド……！<br>こうやって顔を合わすのは何年振りか！<br>こちらに顔を出すと聞いて、心待ちにしていたぞ！
 #. de: Oh, Ilberd, alter Haudegen! Tut gut, dich nach all den Jahren wiederzusehen!
@@ -237,7 +237,7 @@ msgstr "Да уж, мне выпало заниматься делами скр�
 # aeria-terms: {"Thanalan":"90760cfb71bd","the Brass Blades":"a20c613d47c7"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100090_ILBERD:1"
 msgid "As I hear it, no sooner did you reach Thanalan than the Brass Blades clapped you in irons and dragged you off to die on the bloodsands. But being a stubborn sort, you won a thousand matches, and earned yourself a place in the people's hearts while you were about it."
-msgstr "Говорят, едва ты добрался до Таналана, Медные клинки заковали тебя в цепи и отправили умирать на кровавый песок. Но ты упрямый малый: одержал тысячу побед и заслужил любовь простых людей."
+msgstr "Говорят, едва ты <if $gn4>добралась<else>добрался</if> до Таналана, Медные клинки заковали тебя в цепи и отправили умирать на кровавый песок. Но ты <if $gn4>упрямая малая<else>упрямый малый</if>: <if $gn4>одержала<else>одержал</if> тысячу побед и <if $gn4>заслужила<else>заслужил</if> любовь простых людей."
 
 #. ja: そして、その莫大な賞金をウルダハ王宮に寄付することで、<br>見事、砂蠍衆の座を射止めた！<br>コロセウムの勇者、アラミゴの英雄ラウバーン様……！
 #. de: Von deinen Siegesprämien hast du kurzerhand das ganze Kolosseum gekauft, womit ein Sitz im Scorpio-Kreis einherging. So wurde aus dem mhigischen Flüchtling Raubahn erst der Held des Kolosseums und schließlich der Beschützer der Sultana!
@@ -246,7 +246,7 @@ msgstr "Говорят, едва ты добрался до Таналана, М
 # aeria-terms: {"Coliseum":"37aacfdad83d","Thal":"be12f06c2386","the Syndicate":"35685f792587"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100100_ILBERD:1"
 msgid "Then, with your mountain of prize money, you bought the Coliseum, and secured a seat on the Syndicate. Thal's balls, brother─rags-to-riches does not do it justice! You're a hero to the common man!"
-msgstr "А потом на выигранные деньги купил Колизей и получил место в Синдикате. Таловы яйца, брат! Из грязи в князи — это ещё мягко сказано. Ты настоящий герой для простого народа!"
+msgstr "А потом на выигранные деньги <if $gn4>купила<else>купил</if> Колизей и <if $gn4>получила<else>получил</if> место в Синдикате. Таловы яйца, брат! Из грязи в князи — это ещё мягко сказано. Ты <if $gn4>настоящая героиня<else>настоящий герой</if> для простого народа!"
 
 #. ja: よせ……。<br>英雄とは、この冒険者のような存在を言うもの。<br>屍の上に立つ吾輩には、不用な肩書きだ。
 #. de: Lass gut sein, alter Freund! Mittlerweile hat Eorzea neue Helden zu feiern. <if $gn4>Unsere junge Freundin<else>Unseren jungen Freund</if> hier zum Beispiel.
@@ -255,13 +255,13 @@ msgstr "А потом на выигранные деньги купил Коли
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100110_RAUBAHN:1"
 msgid "Bah, spare me. I am no hero. If anyone is worthy of that title, it's our friend here. Next to <if $gn4>her<else>him</if>, I'm little more than a glorified butcher."
-msgstr "Да брось. Я не герой. Если кто и заслуживает этого звания, так это наш друг. По сравнению с <if $gn4>ней<else>ним</if> я всего лишь мясник, которому посчастливилось прославиться."
+msgstr "Да брось. Я не герой. Если кто и заслуживает этого звания, так это <if $gn4>наша подруга<else>наш друг</if>. По сравнению с <if $gn4>ней<else>ним</if> я всего лишь мясник, которому посчастливилось прославиться."
 
 #. ja: 貴様こそ、冒険者として、<br>ずいぶんと名を馳せていたようだな。<br>冒険者ギルドとの会合でも、よくその名を聞いた。
 #. de: Du, Ilberd, hast dir auch einen großen Namen gemacht. Die Aben<shy>teurer<shy>gilde lobt dich in den höchsten Tönen.
 #. fr: Toi, en revanche, tu es trop modeste. Ton nom revenait souvent aux réunions de la guilde des aventuriers.
 #. speaker: RAUBAHN
-# aeria-terms: {"Ilberd":"d09ac32f204d"}
+# aeria-terms: {"Ilberd":"d09ac32f204d","adventurer":"48df264ad5ec"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100120_RAUBAHN:1"
 msgid "But you, Ilberd─you sell yourself short. By all accounts, you were an adventurer of some standing."
 msgstr "А вот ты, Ильберд, себя недооцениваешь. Слыхал, ты стал известным искателем приключений."
@@ -272,9 +272,10 @@ msgstr "А вот ты, Ильберд, себя недооцениваешь. �
 #. speaker: ILBERD
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100130_ILBERD:1"
 msgid "I like to think that I did my part for the greater good. But if you are no hero, then I am no adventurer─not in <i>this</i> company. Anyway..."
-msgstr "Хочу верить, что и я послужил общему благу. Но если ты не герой, то я не искатель приключений — не рядом с <i>такой</i> компанией. Ладно..."
+msgstr "Хочу верить, что и я послужил общему благу. Но если ты не <if $gn4>героиня<else>герой</if>, то я не искатель приключений — не рядом с <i>такой</i> компанией. Ладно..."
 
 #. ja: ……例の件で報告がある。
 #. de: Aber genug der Schmeicheleien. Lass uns zum eigentlichen Anlass unseres Besuchs kommen.
@@ -372,7 +373,7 @@ msgstr "Генерал Пламени... Тебе к лицу это звани�
 # aeria-terms: {"Raubahn":"6821016ab617","Scion":"c86bbbc0c0a1"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_100250_ILBERD:1"
 msgid "Well, it would seem your services were not required after all. I daresay we have Raubahn's prudence to thank for that. Still, I was glad of your presence. My thanks, Scion."
-msgstr "Похоже, мои услуги не понадобились. Надо полагать, мы обязаны этим предусмотрительности Раубана. И всё же я рад, что вы были рядом. Спасибо, наследник."
+msgstr "Похоже, мои услуги не понадобились. Надо полагать, мы обязаны этим предусмотрительности Раубана. И всё же я рад, что вы были рядом. Спасибо, <if $gn4>наследница<else>наследник</if>."
 
 #. ja: まもなく、お越しになられる。<br>……イイ会談になるよう祈っているぞ。
 #. de: Der päpstliche Gesandte dürfte jeden Moment eintreffen. Atmet noch einmal tief durch und entspannt euch! Der Rest läuft dann wie von selbst.
@@ -771,7 +772,7 @@ msgstr "Что?! Клянусь Фурией! Все наши предостор
 # aeria-terms: {"Warrior of Light":"dcab387ef6b3"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_600010_ICEHEART:1"
 msgid "(-???-)The tales do not do you justice, Warrior of Light."
-msgstr "(-???-)Легенды не передают и половины ваших заслуг, Воин света."
+msgstr "(-???-)Легенды не передают и половины ваших заслуг, <if $gn4>Воительница света<else>Воин света</if>."
 
 #. ja: (-？？？？-)光の戦士よ……<br>ここで、あなたが来るのを待っていた。
 #. de: (-???-)Ja, ich kenne dich und habe dich hier erwartet.
@@ -797,7 +798,7 @@ msgstr "(-Изейль-)Меня нарекли Изейль, но имя Лед
 # aeria-terms: {"Warrior of Light":"dcab387ef6b3"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_600040_ICEHEART:1"
 msgid "(-Iceheart-)This endless cycle of hatred, of bloodshed, of sorrow─ You would see it continue, O noble Warrior of Light?"
-msgstr "(-Изейль-)Этот бесконечный круг ненависти, кровопролития и горя... Неужели ты, благородный Воин света, хочешь, чтобы он продолжался?"
+msgstr "(-Изейль-)Этот бесконечный круг ненависти, кровопролития и горя... Неужели ты, <if $gn4>благородная Воительница света<else>благородный Воин света</if>, хочешь, чтобы он продолжался?"
 
 #. ja: (-イゼル-)イシュガルドの民とドラゴン族との果て無き戦い……<br>私は、この戦いを止めなければならない。<br>……それが「巫女」となる道を選んだ、私の宿願。
 #. de: (-Eisherz-)Ich habe schon zu viel Leid erlebt. Ich werde dem sinnlosen Krieg zwischen Drachen und Rittern ein Ende setzen.
@@ -1457,7 +1458,7 @@ msgstr "Вот это настрой! Рискнём!"
 # aeria-terms: {"Warrior of Light":"dcab387ef6b3"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_D00010_ICEHEART:1"
 msgid "You should never have come here, Warrior of Light. I labor only to forge a lasting peace."
-msgstr "Тебе не следовало сюда приходить, Воин света. Я лишь стремлюсь к прочному миру."
+msgstr "Тебе не следовало сюда приходить, <if $gn4>Воительница света<else>Воин света</if>. Я лишь стремлюсь к прочному миру."
 
 #. ja: やはり因果を断ち切るには 力が必要か……
 #. de: Einen Krieg, genährt von Dogmen und blindem Hass ...
@@ -1465,7 +1466,7 @@ msgstr "Тебе не следовало сюда приходить, Воин �
 #. kind: other
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_D00020_ICEHEART:1"
 msgid "A peace you would deny us out of ignorance and blind faith."
-msgstr "Ты отнял бы у нас мир — по неведению и слепой вере."
+msgstr "Ты <if $gn4>отняла<else>отнял</if> бы у нас мир — по неведению и слепой вере."
 
 #. ja: ならば私が 立ちはだかる者を倒そう<br>それが 人々の希望であっても……
 #. de: Ich werde vernichten, wer sich dem Frieden entgegenstellt, dies ist meine Bestimmung. Und die deine ist es, dich zu fügen!
@@ -1518,7 +1519,7 @@ msgstr "Хм..."
 #. kind: other
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_E00010_ICEHEART:1"
 msgid "(-Iceheart-)Fool... Blind, bloody fool."
-msgstr "(-Ледяное Сердце-)Глупец... Слепой, чёртов глупец."
+msgstr "(-Ледяное Сердце-)<if $gn4>Глупая... Слепая, чёртова дура.<else>Глупец... Слепой, чёртов глупец.</if>"
 
 #. ja: (-イゼル-)光の戦士よ……聞いてほしい……。
 #. de: Gerade du solltest doch wissen, welchen Schmerz schon ein kleiner Zwist über die Streitenden zu bringen vermag.
@@ -1526,7 +1527,7 @@ msgstr "(-Ледяное Сердце-)Глупец... Слепой, чёрто�
 #. kind: other
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_E00020_ICEHEART:1"
 msgid "(-Iceheart-)You of all people should understand the suffering war begets─that no sacrifice is too great if it brings an end to the violence."
-msgstr "(-Ледяное Сердце-)Ты, как никто другой, должен понимать, какие страдания несёт война. Ради прекращения насилия никакая жертва не будет слишком велика."
+msgstr "(-Ледяное Сердце-)Ты, как никто другой, <if $gn4>должна<else>должен</if> понимать, какие страдания несёт война. Ради прекращения насилия никакая жертва не будет слишком велика."
 
 #. ja: (-イゼル-)イシュガルドの民とドラゴン族との果て無き戦い……<br>これは、人が犯した罪の因果によるもの。<br>……それを今こそ、断ち切らねばならない。
 #. de: Dies ist ein Krieg über Jahrhunderte - kein Opfer ist zu groß, wenn es ein Entrinnen aus diesem ewigen Kreislauf von Gewalt und Zerstörung verspricht.
@@ -2084,7 +2085,7 @@ msgstr "Разве я не говорил тебе, друг мой, что на
 #. kind: other
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_G00010_MINFILIA:1"
 msgid "Words cannot well express how glad I am to see you returned to us hale and whole."
-msgstr "И слов не хватит, чтобы сказать, как я рада видеть тебя целым и невредимым."
+msgstr "И слов не хватит, чтобы сказать, как я рада видеть тебя <if $gn4>целой и невредимой<else>целым и невредимым</if>."
 
 #. ja: ちょうどこれから、情報を整理しようとしていたところなの。<br>あなたからも、状況を伝えてくれるとうれしいわ。
 #. de: Ich bin aufs Äußerste gespannt, zu hören, was du in Coerthas erlebt hast. Bist du bereit, vor den anderen davon zu berichten?
@@ -2514,7 +2515,7 @@ msgstr "Тогда Хайделин велела тебе создать то, �
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_I00170_MINFILIA:1"
 msgid "Based on your description, we believe the “blade” with which you vanquished your foe was composed of aether."
-msgstr "Судя по твоему описанию, «клинок», которым ты одолел врага, состоял из эфира."
+msgstr "Судя по твоему описанию, «клинок», которым ты <if $gn4>одолела<else>одолел</if> врага, состоял из эфира."
 
 #. ja: 結局、アシエン・ラハブレアは、<br>闇のクリスタルを介して「狭間」に逃げたわけだけれど……。
 #. de: Wäre Lahabrea mithilfe seines dunklen Kristalls nicht geflohen, so hätten wir ihn vielleicht damals vernichten können.
@@ -2639,7 +2640,7 @@ msgstr "Леди Минфилия поручила мне заботиться �
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "cut_scene/024/VoiceMan_02400:TEXT_VOICEMAN_02400_I00310_MOENBRYDA:1"
 msgid "\"Sole charge,“ you say? So...you're basically <i>alone</i> there, then? Well, that settles it! I'll just have to come to you!"
-msgstr "«Поручила заботиться», говоришь? То есть ты там <i>совсем</i> один? Ну уж нет! Тогда я сама к тебе наведаюсь!"
+msgstr "«Поручила заботиться», говоришь? То есть ты там <if $gn4>совсем одна<else>совсем один</if>? Ну уж нет! Тогда я сама к тебе наведаюсь!"
 
 #. ja: あなたが出ている間に、バルデシオン委員会の件で、<br>シャーレアン本国から連絡があったの。
 #. de: Als du weg warst, ist eine Nachricht aus Sharlayan gekommen - über Baldesions Gelehrte.

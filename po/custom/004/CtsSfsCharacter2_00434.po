@@ -13,7 +13,7 @@ msgstr ""
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_GREETING_MNAAGO_000_000:1"
 msgid "Let's each do our best, eh, <split \" \" 1><string $gs1></split>?"
-msgstr "Давай каждый постарается на славу, а, <split \" \" 1><string $gs1></split>?"
+msgstr "Давай <if $gn4>каждая постарается<else>каждый постарается</if> на славу, а, <split \" \" 1><string $gs1></split>?"
 
 #. ja: おつかれさまです、<split " " 1><string $gs1></split>さん。<br>給付金を贈った遺族の方々から、続々と感謝の声が届いてますよ！
 #. de: Hallo <split " " 1><string $gs1></split>! Ich glaube, unsere Mühe hat sich schon gelohnt! Immer wieder kommen Leute vorbei, denen wir geholfen haben, und danken mir herzlich für die Spenden!
@@ -195,6 +195,7 @@ msgstr "Знатоки говорят, что в этих узорах заме�
 #. ja: 「<sheet Item $n1 0>」は、<br>メ族の伝統的な染め物に使われる顔料です。<br>衣装作りに欠かせない品ですから、喜ばれますよ！
 #. de: Ah, dieser wunderschöne Farbton! Wir M benutzen diese Pigmente zum Färben der traditionellen Tracht. Bei feierlichen Anlässen nicht wegzudenken!
 #. fr: Ah, ça, je sais ce que c'est. Des pigments gyrabaniens<nbsp>! Nous nous en servons pour teindrrre les vêtements traditionnels de ma tribu. Les M n'en auront jamais de trop<nbsp>!
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_KNOWLEDGE_MNAAGO_002_003:1"
 msgid "Can never have too much pigment, many of our tribe's elders would say. Not that I need to tell an adventurer that! Aye, I've heard stories of how some of you lot go through enough dye to put a sultana to shame!"
 msgstr "Старейшины нашего племени всегда говорили, что пигмента много не бывает. Но вам, искателям приключений, это и так известно! Слышала, некоторые из вас тратят столько краски, что и султанше не снилось!"
@@ -225,7 +226,7 @@ msgstr "И правда, будто кусочек коралла! Понима�
 #. fr: Cette varrriété de marimo peut même se développer dans les climats tropicaux. Ils sont très robustes, mais ce n'est pas facile d'en trouver qui soient par<shy>fai<shy>te<shy>ments sphériques comme le tien. Tu as beaucoup de chance d'être tombé<if $gn4>e</if> sur lui<nbsp>!
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_KNOWLEDGE_MNAAGO_003_002:1"
 msgid "Little buggers may be hardy, but they need just the right conditions to form the shapes people prefer. At a glance, it seems you've brought a promising specimen..."
-msgstr "Они, конечно, живучие, но, чтобы обрести нужную форму, им нужны подходящие условия. Судя по всему, вам попался отличный экземпляр..."
+msgstr "Они, конечно, живучие, но, чтобы обрести нужную форму, им нужны подходящие условия. Судя по всему, вам <if $gn4>попалась<else>попался</if> отличный экземпляр..."
 
 #. ja: なんて立派な「<sheet Item $n1 0>」……！<br>これのムニエルは絶品で、みんなの大好物ですよ！<br>まあ‥…私が作ると真っ黒焦げになっちゃうんですけど……。
 #. de: Das ist ja ein prächtiger Velodyna-Lachs! In Mehl gewendet und in Butter gebraten schmecken sie unvergleichlich!<br>... wenn man sie nicht ankokeln lässt wie ich letztes Mal.
@@ -804,7 +805,7 @@ msgstr "Сейчас объясню. В Золотом блюдце есть о�
 # aeria-terms: {"MGP":"cb19ca506076"}
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_LCUT_RANKUP_MNAAGO_002_104:1"
 msgid "I'll wager you didn't think a soldier like me had any truck with places like the Saucer, eh? Bet you're wondering if I might run off with our profits and spend it all on MGP and silly hats?"
-msgstr "Не думала, что солдат вроде меня может иметь дело с такими местами, как Золотое блюдце? Наверняка гадаешь, не сбегу ли я с нашей выручкой, чтобы спустить всё на МГП и дурацкие шляпы?"
+msgstr "Не <if $gn4>думала<else>думал</if>, что солдат вроде меня может иметь дело с такими местами, как Золотое блюдце? Наверняка гадаешь, не сбегу ли я с нашей выручкой, чтобы спустить всё на МГП и дурацкие шляпы?"
 
 #. ja: なんて冗談ですよ？
 #. de: Ich mach doch nur Spaß!
@@ -872,7 +873,7 @@ msgstr "М'Нааго довольна твоими трудами. Теперь
 # aeria-terms: {"M'naago":"f05eecbea6fd","the Resistance":"1ff5b6ee910f"}
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUPINFO_000_001:1"
 msgid "M'naago is delighted with your efforts. She now considers you a <ui-color 500><ui-edge-color 501>Benefactor of the Resistance Widows and Orphans Fund</ui-edge-color></ui-color>!"
-msgstr "М'Нааго в восторге от твоих трудов. Теперь она считает тебя <ui-color 500><ui-edge-color 501>благодетельницей фонда помощи семьям бойцов Сопротивления</ui-edge-color></ui-color>!"
+msgstr "М'Нааго в восторге от твоих трудов. Теперь она считает тебя <ui-color 500><ui-edge-color 501><if $gn4>благодетельницей<else>благодетелем</if> фонда помощи семьям бойцов Сопротивления</ui-edge-color></ui-color>!"
 
 #. ja: <sheet ENpcResident $n1 0>の信頼ランクが上昇しました！<br>あなたのことを「給付金事業の救い主」と感じているようです！
 #. de: Dein Zufrieden<shy>heits<shy>rang bei M'naago ist gestiegen! Sie hält dich für <if $gn4>eine Wohltäterin<else>einen Wohltäter</if> der Hinter<shy>bliebenen.
@@ -884,7 +885,7 @@ msgstr "М'Нааго в восторге от твоих трудов. Тепе
 # aeria-terms: {"M'naago":"f05eecbea6fd","the Resistance":"1ff5b6ee910f"}
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUPINFO_000_002:1"
 msgid "M'naago is overjoyed with your efforts. She now considers you a <ui-color 500><ui-edge-color 501>Savior of the Resistance Widows and Orphans Fund</ui-edge-color></ui-color>!"
-msgstr "М'Нааго счастлива твоим трудам. Теперь она считает тебя <ui-color 500><ui-edge-color 501>спасительницей фонда помощи семьям бойцов Сопротивления</ui-edge-color></ui-color>!"
+msgstr "М'Нааго счастлива твоим трудам. Теперь она считает тебя <ui-color 500><ui-edge-color 501><if $gn4>спасительницей<else>спасителем</if> фонда помощи семьям бойцов Сопротивления</ui-edge-color></ui-color>!"
 
 #. ja: <sheet ENpcResident $n1 0>の信頼ランクが上昇しました！<br>あなたのことを「かけがえのない同志」と感じているようです！
 #. de: Dein Zufrieden<shy>heits<shy>rang bei M'naago ist gestiegen! Sie hält dich für <if $gn4>die Retterin<else>den Retter</if> der Hinter<shy>bliebenen.
@@ -896,7 +897,7 @@ msgstr "М'Нааго счастлива твоим трудам. Теперь �
 # aeria-terms: {"M'naago":"f05eecbea6fd"}
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUPINFO_000_003:1"
 msgid "M'naago could not be happier with your efforts. She now considers you a <ui-color 500><ui-edge-color 501>Champion of Widows and Orphans</ui-edge-color></ui-color>!"
-msgstr "М'Нааго и представить не могла, насколько будет благодарна тебе. Теперь она считает тебя <ui-color 500><ui-edge-color 501>незаменимой защитницей семей бойцов Сопротивления</ui-edge-color></ui-color>!"
+msgstr "М'Нааго и представить не могла, насколько будет благодарна тебе. Теперь она считает тебя <ui-color 500><ui-edge-color 501><if $gn4>незаменимой защитницей<else>незаменимым защитником</if> семей бойцов Сопротивления</ui-edge-color></ui-color>!"
 
 #. ja: 戦没者遺族への給付金事業を推進する<sheet ENpcResident $n1 0>は、<br>あなたに新たな依頼をお願いしたいようです。
 #. de: M'naago möchte erneut deine Hilfe in Anspruch nehmen.
@@ -968,7 +969,7 @@ msgstr "За военное снаряжение Сопротивления, ж�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUP_MNAAGO_001_000:1"
 msgid "Got to say, <split \" \" 1><string $gs1></split>, you've done more than your fair share for the fund."
-msgstr "Скажу прямо, <split \" \" 1><string $gs1></split>, ты сделал для фонда больше, чем мог бы."
+msgstr "Скажу прямо, <split \" \" 1><string $gs1></split>, ты <if $gn4>сделала для фонда больше, чем могла бы<else>сделал для фонда больше, чем мог бы</if>."
 
 #. ja: さすがは腕利き職人ですね。<br>今後ともなにとぞ、よろしくお願いします！
 #. de: Man merkt, wie wichtig es dir ist, den Hinter<shy>bliebenen zu helfen. Ich hoffe, dass ich auch in Zukunft auf deine Hilfe und deinen Elan zählen kann!
@@ -999,7 +1000,7 @@ msgstr "Не могу же я удерживать тебя возле себя.
 #. fr: Ah ah, c'est vraiment gentil, <split " " 1><string $gs1></split>. On va s'arrêter là pour les livraisons, par contre. Parce que si tu continues comme ça, il faudra ajouter une nouvelle montagne sur les carrrtes de Gyr Abania<nbsp>!
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUP_MNAAGO_003_000:1"
 msgid "You're a godssend, you know that? All you've done for us, all you continue to do. There's no better word for it."
-msgstr "Ты просто спасение для нас, знаешь? Столько уже сделал и продолжаешь делать. И слова лучше не подберёшь."
+msgstr "Ты просто спасение для нас, знаешь? Столько уже <if $gn4>сделала<else>сделал</if> и продолжаешь делать. И слова лучше не подберёшь."
 
 #. ja: さすがに、お互い疲れてきましたね。<br>やはり、収集品取引も楽じゃないようです。
 #. de: Ich glaube, wir können stolz auf uns sein. Es war eine Menge Arbeit, aber wir haben vielen Leuten geholfen!
@@ -1016,7 +1017,7 @@ msgstr "Но, думаю, ты занимаешься этим не только
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUP_MNAAGO_003_002:1"
 msgid "But we both ought to know by now that it's important not to overdo it. Take a rest, <split \" \" 1><string $gs1></split>─you've earned it."
-msgstr "Но нам обоим уже должно быть понятно: важно не переутомляться. Отдохни, <split \" \" 1><string $gs1></split> — ты это заслужил."
+msgstr "Но нам обоим уже должно быть понятно: важно не переутомляться. Отдохни, <split \" \" 1><string $gs1></split> — ты это <if $gn4>заслужила<else>заслужил</if>."
 
 #. ja: 今日も納品、ありがとうございます！
 #. de: Vielen Dank für deine erstklassige Lieferung.
@@ -1047,7 +1048,7 @@ msgstr "Ну что ж, давай и дальше вместе трудитьс
 #. fr: À ce trrrain-là, je vais avoir besoin de louer une seconde réserve pour tout entreposer<nbsp>!
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUP_MNAAGO_005_000:1"
 msgid "Ye gods, you're relentless! Like a machine at times, even!"
-msgstr "Да боги, ты просто неутомим! Иногда прямо как машина!"
+msgstr "Да боги, ты просто <if $gn4>неутомима<else>неутомим</if>! Иногда прямо как машина!"
 
 #. ja: ところで、私も少しは商人らしくなってきたと思いませんか？<br>それもこれも、<split " " 1><string $gs1></split>さんが、<br>私を「お得意様」にしてくれたおかげです。
 #. de: Ich glaube, ich gewöhne mich langsam an den Umgang mit den Kunden ... Na ja, dass ich überhaupt Kunden habe, hab ich nur dir zu verdanken!
@@ -1071,7 +1072,7 @@ msgstr "Пожалуй, приму это за комплимент. Долго�
 # aeria-terms: {"Rhalgr":"e1ec7d04d343"}
 msgctxt "custom/004/CtsSfsCharacter2_00434:TEXT_CTSSFSCHARACTER2_00434_RANKUP_MNAAGO_006_000:1"
 msgid "By Rhalgr, <split \" \" 1><string $gs1></split>? Do you ever sleep, or do you just prefer to stay awake indefinitely putting us all to shame?"
-msgstr "Ралгр, <split \" \" 1><string $gs1></split>! Ты вообще спишь или решил не смыкать глаз, чтобы всем нам было стыдно?"
+msgstr "Ралгр, <split \" \" 1><string $gs1></split>! Ты вообще спишь или <if $gn4>решила<else>решил</if> не смыкать глаз, чтобы всем нам было стыдно?"
 
 #. ja: <split " " 1><string $gs1></split>さんに協力していただくようになって、<br>もう随分と経ちましたね。
 #. de: Inzwischen arbeiten wir schon ziemlich gut zusammen, nicht wahr?

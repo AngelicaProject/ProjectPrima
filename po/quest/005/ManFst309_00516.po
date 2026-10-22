@@ -241,7 +241,7 @@ msgstr "Боюсь, на этот раз Эхо вам не поможет. Чт
 #. speaker: YSHTOLA
 msgctxt "quest/005/ManFst309_00516:TEXT_MANFST309_00516_000210_YSHTOLA:1"
 msgid "No one would think you a coward were you to decline."
-msgstr "Никто не сочтёт вас трусом, если вы откажетесь."
+msgstr "Никто не сочтёт вас <if $gn4>трусихой<else>трусом</if>, если вы откажетесь."
 
 #. ja: 協力してくれるの……？
 #. de: Du hilfst uns also?
@@ -267,7 +267,7 @@ msgstr "Спасибо."
 # aeria-terms: {"Limsa Lominsa":"d423c1a01f1a","Minfilia":"51906cd61827","Y'shtola":"edf33c6f5c7b"}
 msgctxt "quest/005/ManFst309_00516:TEXT_MANFST309_00516_000240_THANCRED:1"
 msgid "We can't very well send <if $gn4>her<else>him</if> to Limsa Lominsa without Y'shtola, can we, Minfilia?"
-msgstr "Мы ведь не можем отправить её в Лимсу Ломинсу без Я'Штолы, можем, Минфилия?"
+msgstr "Мы ведь не можем отправить <if $gn4>её<else>его</if> в Лимсу Ломинсу без Я'Штолы, можем, Минфилия?"
 
 #. ja: ヤ・シュトラ、お願いできる？
 #. de: Y'shtola, kannst du mitgehen?
@@ -406,7 +406,7 @@ msgstr "Привет, искатель приключений! Добро пож
 #. macro: <if $gn4>madam<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/005/ManFst309_00516:TEXT_MANFST309_00516_RASHAHT_000_006:1"
 msgid "Unless...you are the guest we were told to expect? Ah...ha. Ahem. Forgive me, <if $gn4>madam<else>sir</if>."
-msgstr "Погодите... Вы, должно быть, тот самый гость, о котором нас предупредили? А... кхм. Прошу простить, сударыня."
+msgstr "Погодите... Вы, должно быть, <if $gn4>та самая гостья, о которой<else>тот самый гость, о котором</if> нас предупредили? А... кхм. Прошу простить, <if $gn4>сударыня<else>сударь</if>."
 
 #. ja: 「暁」への依頼で聞いてるかもしれないけど、<br>この地に棲む蛮族……コボルド族が、<br>蛮神「タイタン」を召喚したんだ。
 #. de: Der Primae der Kobolde ist plötzlich wieder aufgetaucht. Als ob wir sonst keine Probleme hätten!
@@ -465,7 +465,7 @@ msgstr "Кристаллы. Приманка для их гнусного пра
 # aeria-terms: {"High":"b74304021aac","Limsa Lominsa":"d423c1a01f1a","Maelstrom":"70ae9d937d2f","commander":"0365fb5402fb"}
 msgctxt "quest/005/ManFst309_00516:TEXT_MANFST309_00516_MERLWYB_000_014:1"
 msgid "Thank you, High Commander. You may leave the rest to me.<br><if ($gn52 > 0)>Your deeds bring glory to the Maelstrom, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else><if ($gn53 > 0)>Word has spread of your accomplishments, <split \" \" 1><string $gs1></split><else>Word has spread of your accomplishments, <split \" \" 1><string $gs1></split></if></if>. <if ($gn52 > 0)>Right proud am I to call you one of our own<else><if ($gn53 > 0)>On behalf of Limsa Lominsa, I thank you for heeding our call<else>On behalf of Limsa Lominsa, I thank you for heeding our call</if></if>."
-msgstr "Благодарю, главный командир. Дальше я сама. <br><if ($gn52 > 0)>Ваши подвиги прославляют Водоворот, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>. Вызываюсь с гордостью называть вас одним из наших<else><if ($gn53 > 0)>О ваших подвигах уже наслышаны, <split \" \" 1><string $gs1></split><else>О ваших подвигах уже наслышаны, <split \" \" 1><string $gs1></split></if>. От имени Лимсы Ломинсы благодарю вас, что откликнулись на наш зов</if>."
+msgstr "Благодарю, главный командир. Дальше я сама. <br><if ($gn52 > 0)>Ваши подвиги прославляют Водоворот, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>. Вызываюсь с гордостью называть вас <if $gn4>одной из наших<else>одним из наших</if><else><if ($gn53 > 0)>О ваших подвигах уже наслышаны, <split \" \" 1><string $gs1></split><else>О ваших подвигах уже наслышаны, <split \" \" 1><string $gs1></split></if>. От имени Лимсы Ломинсы благодарю вас, что откликнулись на наш зов</if>."
 
 #. ja: 蛮神討伐の依頼なんて、一大事だもの。<br>メルウィブ提督に、直接、<br>お話を伺ったほうがいいと思ったの。
 #. de: Die Beseitigung der Primae hat sich zu einer Staatsangelegenheit entwickelt. Deswegen wünscht der Admiral persönlich mit dir zu sprechen.
@@ -668,7 +668,7 @@ msgstr "Сложи заботы, сынок,<br>Приходи со мной п�
 # aeria-terms: {"Company of Heroes":"8efaddd27967"}
 msgctxt "quest/005/ManFst309_00516:TEXT_MANFST309_00516_TRACHTOUM_000_051:1"
 msgid "Ye gonna say somethin', 'venturer, or just keep starin'?<br>Eh? Ye want to know about the Company of Heroes?"
-msgstr "Ну чего уставился, приключенец? Сказать что-то хочешь?<br>А? Про Компанию героев разузнать?"
+msgstr "Ну чего <if $gn4>уставилась<else>уставился</if>, приключенец? Сказать что-то хочешь?<br>А? Про Компанию героев разузнать?"
 
 #. ja: やれやれ、こんなところまで追っかけかい？<br>まったく有名人ってのは、つれーなぁ！！
 #. de: Hm? Das Heer der Helden suchst du? Gratuliere, du hast es quasi gefunden! Dass du den ganzen Weg hierher gelaufen bist, um mich zu treffen ...
@@ -686,4 +686,4 @@ msgstr "Ах, проклятье... Вот она, цена славы! Разв
 # aeria-terms: {"Trachtoum":"6c027662f63e"}
 msgctxt "quest/005/ManFst309_00516:TEXT_MANFST309_00516_TRACHTOUM_000_053:1"
 msgid "Still, seein' as ye've come all this way, I s'pose it wouldn't hurt to oblige ye. Consider yerself lucky, <if $gn4>lass<else>mate</if>─ol' Trachtoum was the Company's best axeman. Now, what was it ye wanted to know?"
-msgstr "Раз уж ты проделал такой путь, не стану отказывать. Считай, тебе повезло, <if $gn4>девушка<else>приятель</if>: старина Трахтум был лучшим топорщиком в Компании. Ну, что ты хотел узнать?"
+msgstr "Раз уж ты <if $gn4>проделала<else>проделал</if> такой путь, не стану отказывать. Считай, тебе повезло, <if $gn4>девушка<else>приятель</if>: старина Трахтум был лучшим топорщиком в Компании. Ну, что ты <if $gn4>хотела<else>хотел</if> узнать?"

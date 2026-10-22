@@ -179,7 +179,7 @@ msgstr "Поговорить с Мусосаєм в Ишгарде."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/025/JobSam560_02563:TEXT_JOBSAM560_02563_MUSOSAI_000_000:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>. By the strength of your aura, you have clearly kept at your training."
-msgstr "А, <split \" \" 1><string $gs1></split>. По твоей ауре вижу, ты усердно тренировался."
+msgstr "А, <split \" \" 1><string $gs1></split>. По твоей ауре вижу, ты усердно <if $gn4>тренировалась<else>тренировался</if>."
 
 #. ja: 「うるだは」「りむさ・ろみんさ」と、<br>悪を討ってきたお主は、確実に侍の本分に近づいておる。<br>この「ぐりだにあ」で、さらなる高みに辿り着ければよいが……。
 #. de: In Ul'dah und in Limsa Lominsa hast du den Weg des Samurai beschritten und mitgeholfen, das Böse zu bekämpfen. Wir werden sehen, wie steil der Weg wird, den wir hier in Gridania zu erklimmen haben.
@@ -188,7 +188,7 @@ msgstr "А, <split \" \" 1><string $gs1></split>. По твоей ауре ви�
 # aeria-terms: {"samurai":"96f1ec5ac383"}
 msgctxt "quest/025/JobSam560_02563:TEXT_JOBSAM560_02563_MUSOSAI_100_000:1"
 msgid "And in discharging the duty of a samurai in two cities now, you are slowly but surely becoming one in sooth. I hope that our time here will afford you further opportunity to grow."
-msgstr "Ты исполнял долг самурая уже в двух городах и понемногу становишься настоящим самураем. Надеюсь, здесь, в Гридании, ты тоже сможешь стать ещё сильнее."
+msgstr "Ты <if $gn4>исполняла<else>исполнял</if> долг самурая уже в двух городах и понемногу становишься настоящим самураем. Надеюсь, здесь, в Гридании, ты тоже сможешь стать ещё сильнее."
 
 #. ja: ところで、お主、モモジゴを見なかったか？<br>悪を探すと言って行ったきり戻ってこんのだ。
 #. de: Übrigens, hast du Momozigo irgendwo gesehen? Er ist nicht zurückgekehrt, seit er sich so abrupt verabschiedet hat.
@@ -421,7 +421,7 @@ msgstr "Вот и всё. Зло в тебе вырезано."
 #. speaker: MUSOSAI
 msgctxt "quest/025/JobSam560_02563:TEXT_JOBSAM560_02563_MUSOSAI_100_043:1"
 msgid "You have committed a crime, 'tis true, but so too have you dedicated yourself to fighting it. From this moment forth, do you swear to be a changed man and fight always for justice?"
-msgstr "Ты и правда совершил преступление. Но и на борьбу с ним сил не жалел. Поклянись, что отныне исправишься и всегда будешь стоять за правое дело."
+msgstr "Ты и правда <if $gn4>совершила<else>совершил</if> преступление. <if $gn4>Но и на борьбу с ним сил не жалела.<else>Но и на борьбу с ним сил не жалел.</if> Поклянись, что отныне исправишься и всегда будешь стоять за правое дело."
 
 #. ja: 誓う、誓うよ。<br>俺はもう二度と悪さはしない！<br>刀は持てないけど、侍の大義にかけて誓うよ！
 #. de: I-Ich schwöre. Ich schwöre bei allem, was mir heilig ist! Ich werde nie wieder etwas Verwerfliches tun und auch wenn ich kein Katana trage, werde ich alles tun, um die Pflicht eines Samurai zu erfüllen!
@@ -437,7 +437,7 @@ msgstr "Клянусь, клянусь! Больше никогда не буд�
 #. speaker: MUSOSAI
 msgctxt "quest/025/JobSam560_02563:TEXT_JOBSAM560_02563_MUSOSAI_000_044:1"
 msgid "You've not spent all of your recent earnings, I trust? You would do well to return the money you took and beg forgiveness."
-msgstr "Надеюсь, ты ещё не потратил всё, что заработал в последнее время? Верни украденное и попроси прощения."
+msgstr "<if $gn4>Надеюсь, ты ещё не потратила всё, что заработала в последнее время?<else>Надеюсь, ты ещё не потратил всё, что заработал в последнее время?</if> Верни украденное и попроси прощения."
 
 #. ja: お主の誠意が伝われば、きっと被害届も取り下げてくれよう。<br>罪を償い、清き心になったら、またワシらと旅を続けようぞ。<br>モモジゴがおらんと、困るからのう。
 #. de: Wenn du Reue zeigst, werden sie dir vergeben. Sobald du deine Tat wiedergutgemacht hast und dein Herz rein ist, können wir unsere gemeinsame Reise fortsetzen. Schließlich wären wir ohne dich niemals so weit gekommen, Momozigo.
@@ -490,7 +490,7 @@ msgstr "<i>Уф...</i> Даже короткая прогулка по лесу 
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/025/JobSam560_02563:TEXT_JOBSAM560_02563_MUSOSAI_000_049:1"
 msgid "Yet here I am, come to the other side of the world in the twilight of my years. I journeyed here to find a worthy new pupil, and find <if $gn4>her<else>him</if> I did. But if truth be told, I have one more objective."
-msgstr "Я проделал такой долгий путь на другой конец света, на закате лет, чтобы найти достойного ученика. И нашёл тебя. Но, по правде говоря, была у меня и другая цель."
+msgstr "Я проделал такой долгий путь на другой конец света, на закате лет, чтобы найти <if $gn4>достойную ученицу<else>достойного ученика</if>. И <if $gn4>нашла<else>нашёл</if> тебя. Но, по правде говоря, была у меня и другая цель."
 
 #. ja: それは、ひんがしの国から、この「えおるぜあ」に渡った、<br>「コガラシ」という侍を成敗すること。
 #. de: Ich will einen Samurai namens Kogarashi richten, der aus meiner Heimat verbannt wurde. Kogarashi ist irgendwo in Eorzea untergetaucht, doch ich habe noch keine Spur entdeckt.

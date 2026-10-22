@@ -12,7 +12,7 @@ msgstr ""
 #. macro: <if ($n1 >= 1)>Crystalline Conflict's<else>the Feast's</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 >= 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_000:1"
 msgid "Ah, I see one of <if ($n1 >= 1)>Crystalline Conflict's<else>the Feast's</if> more vicious wolves has returned to the den, belly full and eyes gleaming. Come to claim your prize, have you?"
-msgstr "А, да это же один из самых свирепых бойцов <if ($n1 >= 1)>«Кристального конфликта»<else>«Пира»</if> вернулся в логово — брюхо набито, глаза горят! За наградой пришёл, да?"
+msgstr "А, да это же <if $gn4>одна из самых свирепых бойцов<else>один из самых свирепых бойцов</if> <if ($n1 >= 1)>«Кристального конфликта»<else>«Пира»</if> <if $gn4>вернулась<else>вернулся</if> в логово — брюхо набито, глаза горят! За наградой <if $gn4>пришла<else>пришёл</if>, да?"
 
 #. ja: <if ($n1 >= 1)>現在、クリスタルコンフリクトではシーズン<num $n1>を開催中です。<else>現在、クリスタルコンフリクトはプレシーズン期間中です。</if><br><if ($n2 >= 1)>こちらでは、前シーズンのシーズン報酬をお渡ししています。<else>前シーズンは、プレシーズンのため、報酬は配布しておりません。</if><br>そのほか、報酬に関する不明点などにも、お答えいたします。
 #. de: <if ($n1 >= 1)>Derzeit läuft die <num $n1>. Saison von „Crystalline Conflict“!<else>Derzeit läuft die Vorsaison von „Crystalline Conflict“.</if><br><if ($n2 >= 1)>Als Versorgungsoffizier ist es meine Pflicht und zugleich mein Privileg, dafür zu sorgen, dass die erfolgreichen Teilnehmer der vergangenen Saison ihre rechtmäßigen Belohnungen erhalten.<else>Da die vergangene Saison eine Vorsaison war, werden keine Belohnungen dafür ausgegeben.</if><br>Ich kann dir gerne mehr darüber erzählen, wie Belohnungen verteilt werden.
@@ -127,7 +127,7 @@ msgstr "Но я всё равно с радостью вручу тебе наг
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_112:1"
 msgid "Congratulations! You must've triumphed in nigh on endless conflicts to rise this high in the rankings. Never fear─I am more than happy to present you your rewards ere you <i>even consider</i> wresting them from my grasp by force."
-msgstr "Поздравляю! Чтобы подняться так высоко в рейтинге, тебе пришлось одержать победу в бесчисленных сражениях. Не волнуйся, я с радостью вручу награды, пока ты <i>даже не задумался</i> о том, чтобы силой вырвать их из моих рук."
+msgstr "Поздравляю! Чтобы подняться так высоко в рейтинге, тебе пришлось одержать победу в бесчисленных сражениях. Не волнуйся, я с радостью вручу награды, пока ты <i><if $gn4>даже не задумалась<else>даже не задумался</if></i> о том, чтобы силой вырвать их из моих рук."
 
 #. ja: おめでとうございます！！<br>大いに活躍した者へ送られる報酬をお受け取りください。<br>新たなシーズンではさらに上位に入れるよう、応援しております！
 #. de: Herzlichen Glückwunsch! Deine wilden Instinkte haben dir einen Platz in der Nähe des Gipfels eingebracht, sodass der kühle Glanz des Ruhmes auch auf dich fällt. Doch schon in der neuen Saison kannst du dich weiter nach oben kämpfen! Lass das Rudel hinter dir und sichere dir einen der vordersten Plätze!
@@ -141,7 +141,7 @@ msgstr "Поздравляю! Вот тебе награда за отличны
 #. fr: C'est tout bonnement fantastique<nbsp>! Tu as atteint le sommet de la hiérarchie du Festin, un exploit qui restera gravé à tout jamais dans les annales. Voici pour toi, la plus prrrestigieuse de toutes les récompenses<nbsp>!
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_010:1"
 msgid "Congratulations! You have seized the throne at the head of the table, and the finest spoils of the Feast are yours!"
-msgstr "Поздравляю! Ты занял трон во главе стола — и теперь лучшие трофеи «Пира» твои!"
+msgstr "Поздравляю! Ты <if $gn4>заняла<else>занял</if> трон во главе стола — и теперь лучшие трофеи «Пира» твои!"
 
 #. ja: （★未使用／削除予定★）
 #. de: （★未使用／削除予定★）
@@ -161,7 +161,7 @@ msgstr "Поздравляю! До главного места за столом
 #. fr: Toutes mes félicitations, tu as réalisé une grande performance<nbsp>! Tiens, voici la récompense réserrrvée aux loups qui ont réussi à se distinguer du reste de la meute.
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_013:1"
 msgid "Congratulations! Your savagery has gained you a place near the table, and a small share of the Feast's bounty."
-msgstr "Поздравляю! Благодаря своей свирепости ты оказался за столом, и тебе досталась малая доля пира."
+msgstr "Поздравляю! Благодаря своей свирепости ты <if $gn4>оказалась<else>оказался</if> за столом, и тебе досталась малая доля пира."
 
 #. ja: ブロンズ階級への到達、おめでとうございます！<br>新たなシーズンでは、さらに輝かしい階級に到達できるよう、<br>ご活躍を期待しております！
 #. de: Ich gratuliere zum Erreichen der Kampfklasse Bronze! Kämpfe in der neuen Saison noch härter, und vielleicht winkt dir dann ein noch wertvolleres Metall!

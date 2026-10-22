@@ -140,7 +140,7 @@ msgstr "Доложите Миле."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/002/ClsGla101_00288:TEXT_CLSGLA101_00288_MYLLA_000_1:1"
 msgid "You look well, <split \" \" 1><string $gs1></split>. I hope you are ready for your next task, because I require your immediate assistance."
-msgstr "Хорошо выглядишь, <split \" \" 1><string $gs1></split>. Надеюсь, ты готов к следующему заданию. Мне срочно нужна твоя помощь."
+msgstr "Хорошо выглядишь, <split \" \" 1><string $gs1></split>. Надеюсь, ты <if $gn4>готова<else>готов</if> к следующему заданию. Мне срочно нужна твоя помощь."
 
 #. ja: 今、巷では剣を持つ者を狙った殺傷事件が起きている。<br>何故、剣術士だけを狙って攻撃してくるのか？<br>その動機や目的は一切、謎だ。
 #. de: Es gibt schreckliche Neuigkeiten. In letzter Zeit wurden mehrere Schwertträger ermordet aufgefunden. Ich fürchte, dass sich jemand gezielt an den Gladiatoren rächen möchte. Bislang sind keine Gildenmitglieder betroffen, aber wahrscheinlich ist das nur eine Frage der Zeit. Wir müssen sofort handeln.
@@ -267,7 +267,7 @@ msgstr "Копейщики, Первый меч! Целая банда засе�
 # aeria-terms: {"Central Thanalan":"e4fd359a8b17"}
 msgctxt "quest/002/ClsGla101_00288:TEXT_CLSGLA101_00288_MYLLA_000_69:1"
 msgid "Hmph, it seems we're not rid of them yet. <split \" \" 1><string $gs1></split>, you might as well finish what you started. Go to central Thanalan and dispatch the last of these freelancers."
-msgstr "Хм, похоже, мы от них ещё не избавились. <split \" \" 1><string $gs1></split>, раз уж взялся за дело, доведи его до конца. Отправляйся в Центральный Таналан и покончи с остатками наёмников."
+msgstr "Хм, похоже, мы от них ещё не избавились. <split \" \" 1><string $gs1></split>, раз уж <if $gn4>взялась<else>взялся</if> за дело, доведи его до конца. Отправляйся в Центральный Таналан и покончи с остатками наёмников."
 
 #. ja: おい、ブルース。<br>今度の戦いは<split " " 1><string $gs1></split>だけでは心もとない。<br>先輩であるお前が共に行き、討伐の手助けをしろ。
 #. de: Bruce, du begleitest <split " " 1><string $gs1></split>. Wir dürfen die Mörderbande nicht entwischen lassen!
@@ -279,7 +279,7 @@ msgstr "Хм, похоже, мы от них ещё не избавились. <
 # aeria-terms: {"Bruce":"a54011bdb67b"}
 msgctxt "quest/002/ClsGla101_00288:TEXT_CLSGLA101_00288_MYLLA_000_72:1"
 msgid "Bruce, accompany <split \" \" 1><string $gs1></split>. See that <if $gn4>she<else>he</if> doesn't die."
-msgstr "Брюс, иди с <split \" \" 1><string $gs1></split>. Смотри, чтобы <if $gn4>она<else>он</if> не погиб<if $gn4>ла<else></if>."
+msgstr "Брюс, иди с <split \" \" 1><string $gs1></split>. Смотри, чтобы <if $gn4>она не погибла<else>он не погиб</if>."
 
 #. ja: 新米のお守りってやつですか？<br>いいでしょう。かわいがってやりますよ。
 #. de: Ich weiß nicht ... Meint Ihr nicht, dass die Sache für <if $gn4>die Neue<else>den Neuen</if> zu gefährlich ist? Wenn <if $gn4>sie<else>er</if> mir im Weg steht, schlage ich <if $gn4>ihr<else>ihm</if> noch den Kopf ab!
@@ -346,7 +346,7 @@ msgstr "Похоже, здесь всё. Пойдём домой, <split \" \" 1
 # aeria-terms: {"Bruce":"a54011bdb67b","job":"a9421a81ecaa"}
 msgctxt "quest/002/ClsGla101_00288:TEXT_CLSGLA101_00288_MYLLA_000_120:1"
 msgid "Congratulations on a job well done, <split \" \" 1><string $gs1></split>. Bruce says you acquitted yourself well. I must say, you have shown tremendous growth since you joined us..."
-msgstr "Поздравляю с отличной работой, <split \" \" 1><string $gs1></split>. Брюс говорит, ты показал себя как надо. Должен сказать, ты здорово вырос с тех пор, как к нам пришёл..."
+msgstr "Поздравляю с отличной работой, <split \" \" 1><string $gs1></split>. Брюс говорит, ты <if $gn4>показала себя<else>показал себя</if> как надо. Должен сказать, ты здорово <if $gn4>выросла<else>вырос</if> с тех пор, как к нам <if $gn4>пришла<else>пришёл</if>..."
 
 #. ja: しかし……奴らは、賞金を目当てに<br>剣術士を狙っていたんだな？<br>賞金首の剣術士……誰なんだ……？
 #. de: Eurem Bericht zufolge hatten diese feigen Söldner es also auf das Kopfgeld abgesehen, das für einen Gladiator ausgesetzt wurde. Um wen handelt es sich dabei?
@@ -393,7 +393,7 @@ msgstr "Их мотивы умерли вместе с ними."
 # aeria-terms: {"Aldis":"aa6969d803cd"}
 msgctxt "quest/002/ClsGla101_00288:TEXT_CLSGLA101_00288_MYLLA_000_165:1"
 msgid "<i>Aldis</i>!? Are you certain that is the name you heard!?"
-msgstr "<i>Алдис</i>!? Ты точно расслышал имя?!"
+msgstr "<i>Алдис</i>!? Ты точно <if $gn4>расслышала<else>расслышал</if> имя?!"
 
 #. ja: ……まさか。<br>まさか……帰ってきたのか……<br>ウルダハへ……。
 #. de: Ist es möglich? Kann es sein, dass er zurückgekehrt ist? Nach Ul'dah?

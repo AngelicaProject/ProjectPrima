@@ -122,7 +122,7 @@ msgstr "Принести Вавалаго лимсанского анчоуса.
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_LETTERMOOGLE_000_000:1"
 msgid "Well met once again, <split \" \" 1><string $gs1></split>! Since you've been such an obeisant assistant, I've got a reward for you, kupo! No drunkards and ruffians to contend with this time, just rest and relaxation."
-msgstr "Рад снова тебя видеть, <split \" \" 1><string $gs1></split>! Ты такой покладистый помощник, что я приготовил тебе награду, купо! На этот раз никаких пьяниц и головорезов — только отдых и покой."
+msgstr "<if $gn4>Рада<else>Рад</if> снова тебя видеть, <split \" \" 1><string $gs1></split>! Ты <if $gn4>такая покладистая помощница<else>такой покладистый помощник</if>, что я приготовил тебе награду, купо! На этот раз никаких пьяниц и головорезов — только отдых и покой."
 
 #. ja: リムサ・ロミンサの名物といえば、お魚クポ！<br>そんなお魚のことを知り尽くしたおじちゃん……<br>漁師ギルドのマスター「ワワラゴ」さんへの配達クポ！
 #. de: Sag mir doch mal, <split " " 1><string $gs1></split>, was kommt dir als Erstes in den Sinn, wenn du an Limsa Lominsa denkst? So ganz spontan! Also ich denke sofort an Fische, kupo! Und wer kennt sich hier besser mit Fischen aus als irgendjemand sonst? Richtig! Wawalago, der Gildenmeister der Fischergilde. Und genau für den habe ich hier einen Brief.
@@ -175,7 +175,7 @@ msgstr "Вот бы жить рыбкой! Плывёшь себе среди в
 #. macro: <if $gn4>lofty lady who landed<else>man who more than matched</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_WAWALAGO_000_010:1"
 msgid "Well, if it isn't my firm friend <split \" \" 1><string $gs1></split>, the <if $gn4>lofty lady who landed<else>man who more than matched</if> that monstrous marlin! Come to cast away your cares with a little leisurely angling? ...What's that? A message marked for me, you say?"
-msgstr "Ну надо же, мой добрый друг <split \" \" 1><string $gs1></split> — <if $gn4>величавая дама, что вытащила<else>мужчина, что одолел</if> того чудовищного марлина! Пришёл отдохнуть от забот и порыбачить в своё удовольствие? ...Что такое? Мне письмо?"
+msgstr "Ну надо же, мой <if $gn4>добрый друг<else>добрый друг</if> <split \" \" 1><string $gs1></split> — <if $gn4>величавая дама, что вытащила<else>мужчина, что одолел</if> того чудовищного марлина! <if $gn4>Пришла<else>Пришёл</if> отдохнуть от забот и порыбачить в своё удовольствие? ...Что такое? Мне письмо?"
 
 #. ja: おうチミか、ワシに何用ぢや？<br>お魚さんと恋のお相手の釣り方を、尋ねにきたかの？<br>……むむ、ワシへの手紙とな？
 #. de: Oha, du bist's, <split " " 1><string $gs1></split>.<br>Kann ich etwas für dich tun? Du möchtest doch bestimmt von mir wissen, wie man einen hübschen Fisch an die Angel kriegt. Ich habe Tipps sowohl für richtige Fische als auch für <if $gn4>einen neuen Liebsten<else>eine neue Liebste</if> ... Nein? Deswegen bist du nicht hier? Du hast einen Brief für mich, sagst du?
@@ -188,7 +188,7 @@ msgstr "Ну надо же, мой добрый друг <split \" \" 1><string 
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_WAWALAGO_000_011:1"
 msgid "Fine <if ($gn11 < 12)><if ($gn11 < 4)>night<else>day</if><else><if ($gn11 < 17)>day<else>night</if></if> for fishing, isn't it, <split \" \" 1><string $gs1></split>? Prop up your pole in the perfect position, and then─ ...Oh, you've a message marked for me?"
-msgstr "Для рыбалки денёк что надо, <split \" \" 1><string $gs1></split>! Устрой удочку как следует, а потом... О, ты принёс мне письмо?"
+msgstr "Для рыбалки денёк что надо, <split \" \" 1><string $gs1></split>! Устрой удочку как следует, а потом... О, ты <if $gn4>принесла<else>принёс</if> мне письмо?"
 
 #. ja: いかにも、ワシが漁師ギルドのワワラゴぢやが……<br>恋のお相手を釣りあげる、手ほどきをご希望かの？<br>……なに、ワシに手紙とな？
 #. de: Du suchst nach dem Meister der Fischergilde? Da bist du bei mir genau richtig. Ich bin Wawalago. Was kann ich für dich tun? Wenn du willst, bringe ich dir gerne bei, wie man einen hübschen Fisch an die Angel kriegt. Ganz egal, ob es sich dabei um einen richtigen Fisch oder <if $gn4>einen neuen Liebsten<else>eine neue Liebste</if> handeln soll. Hm? Ach so, du hast einen Brief für mich? Auch recht ...
@@ -197,7 +197,7 @@ msgstr "Для рыбалки денёк что надо, <split \" \" 1><string
 # aeria-terms: {"Fishermen's Guild":"5d0a6e13926e","Wawalago":"62c90804ac21"}
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_WAWALAGO_000_012:1"
 msgid "Come to meet the master of the Fishermen's Guild? Then I'm the one you want─Wawalago, at your service. ...You say you're a practicing postperson, with a message marked for me? Let's have a look at this letter, then..."
-msgstr "Ищешь мастера Гильдии рыбаков? Тогда ты по адресу. Я Вавалаго, к твоим услугам. ...Ты почтальон и принёс мне письмо? Ну-ка, посмотрим..."
+msgstr "Ищешь мастера Гильдии рыбаков? Тогда ты по адресу. Я Вавалаго, к твоим услугам. ...Ты почтальон и <if $gn4>принесла<else>принёс</if> мне письмо? Ну-ка, посмотрим..."
 
 #. ja: ……おお、ロロジャルからの手紙ぢやな！<br>こやつは養殖に必要な「隠し玉」を商う、ウルダハの商人での。<br>網倉自慢の生け簀も、そのおかげで成功したんぢや。
 #. de: Na, so was! Der Brief ist von meinem alten Freund Rorojaru! Er ist ein Händler aus Ul'dah. Haha, ich erinnere mich, er hatte damals etwas im Angebot, wonach sich jeder Fischzüchter förmlich die Finger geleckt hat. Uns hat er ebenfalls damit ausgestattet, weshalb die Fische in Fischers Bodden auch so prächtig gedeihen!
@@ -251,7 +251,7 @@ msgstr "Ророджару всегда был сухопутной крысой
 # aeria-terms: {"Fishermen's Guild":"5d0a6e13926e","Thal":"be12f06c2386"}
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_ROROJARU_000_020:1"
 msgid "Good gods! Must the sea be so damned wavy? My stomach's churning, my legs are like jelly, and don't get me started on my poor old back. Thal knows how I'm going to haul this blasted crate all the way to the Fishermen's Guild. ...Oh? You've got a letter for me?"
-msgstr "Святые боги! Почему море такое неспокойное? Желудок скручивает, ноги подкашиваются, а про больную спину я вообще молчу. Один Тал знает, как я дотащу этот проклятый ящик до Гильдии рыбаков... О? Ты принёс мне письмо?"
+msgstr "Святые боги! Почему море такое неспокойное? Желудок скручивает, ноги подкашиваются, а про больную спину я вообще молчу. Один Тал знает, как я дотащу этот проклятый ящик до Гильдии рыбаков... О? Ты <if $gn4>принесла<else>принёс</if> мне письмо?"
 
 #. ja: おお、ワワラゴさんからの手紙じゃないか！<br>彼と取引できれば、この難局も、大逆転間違いなし！<br>ひっひっひっ、ようやく僕にもツキが戻ってきたな。
 #. de: Ah! Eine Nachricht von Wawalago ... und er hat dem Handel zugestimmt! Wusste ich doch, er würde mich nicht im Stich lassen! Das wird die Wende bringen, die große Wende! Endlich ist das Glück mir wieder hold!
@@ -336,7 +336,7 @@ msgstr "Помог Ророджару дотащить вещи по больш�
 # aeria-terms: {"Thal":"be12f06c2386"}
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_ROROJARU_000_040:1"
 msgid "...Thank Thal you're finally here! And you've brought the chest? Thanks a million, <if $gn4>missy<else>sonny</if>─you're a lifesaver. Now that we've got the goods, I can finally be free of this backbreaking labor!"
-msgstr "...Слава Талу, ты наконец-то пришёл! И сундук принёс? Ты меня спас, <if $gn4>милая<else>милый</if>! Теперь, когда товар на месте, я наконец-то избавлюсь от этой непосильной ноши!"
+msgstr "...Слава Талу, ты наконец-то <if $gn4>пришла<else>пришёл</if>! И сундук принёс? Ты меня <if $gn4>спасла<else>спас</if>, <if $gn4>милая<else>милый</if>! Теперь, когда товар на месте, я наконец-то избавлюсь от этой непосильной ноши!"
 
 #. ja: 荷箱を待ってたんだ～！　ありがとよ！<br>魚と交換する品が手元にないなら、自力で調達しろって、<br>ワワラゴさんに、無理矢理、釣りをさせられてたんだ……。
 #. de: Tausend Dank, dass du die Truhe für mich hierhergeschleppt hast! Ich wüsste gar nicht, was ich ohne dich getan hätte. Wobei ... Eigentlich weiß ich das schon ... Wawalago hat mich nämlich dazu verdonnert, mir eine Angel zu schnappen und selbst nach dem Fisch zu angeln. Ohne die Truhe hatte ich ja nichts, was ich ihm als Entlohnung für seine Dienste anbieten konnte.
@@ -346,7 +346,7 @@ msgstr "...Слава Талу, ты наконец-то пришёл! И сун
 # aeria-terms: {"Wawalago":"62c90804ac21","snare":"30619fec863a"}
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_ROROJARU_000_041:1"
 msgid "Thanks awfully for carrying the chest for me, <if $gn4>missy<else>sonny</if>. Don't know what I'd have done without you... Actually, I do─when I turned up empty-handed, Wawalago forced me to start fishing myself. “If you're short of something to swap, you'll snare the scaly specimen solo,” he said."
-msgstr "Спасибо, что донёс сундук, <if $gn4>милая<else>милый</if>. Не знаю, что бы я без тебя делал... Хотя знаю: когда я явился с пустыми руками, Вавалаго заставил меня самому взяться за удочку. «Нет того, что можно обменять? Лови чешуйчатую рыбину сам», — сказал он."
+msgstr "Спасибо, что <if $gn4>донесла<else>донёс</if> сундук, <if $gn4>милая<else>милый</if>. Не знаю, что бы я без тебя делал... Хотя знаю: когда я явился с пустыми руками, Вавалаго заставил меня самому взяться за удочку. «Нет того, что можно обменять? Лови чешуйчатую рыбину сам», — сказал он."
 
 #. ja: はぁ～輝かしい、相変わらずまぶしいのう。<br>お魚さんのウロコのようにキラキラぢや！<br>生け簀のお魚さんも、元気になるほどキラキラぢや！！
 #. de: Dann wollen wir doch mal sehen, was du da Hübsches für mich hast ...<br>Hui! Was für ein wunderschönes Stück! Strahlt und schimmert wie die Schuppen eines Fisches! Da werden sich die Fische in unserem Zuchtbecken aber freuen!
@@ -355,7 +355,7 @@ msgstr "Спасибо, что донёс сундук, <if $gn4>милая<else
 # aeria-terms: {"sea serpent":"9f6c6364bf52"}
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_WAWALAGO_000_042:1"
 msgid "Let's have a look at this gift you've got me... Blinking barnacles, it's beautiful! See it shine and shimmer, like the silvery scales of a sea serpent! The fish'll flock to bask in the brilliance of a natty knickknack like this!"
-msgstr "Ну-ка посмотрим, что за подарок ты мне принёс... Морские ракушки! Красота-то какая! Блестит, словно серебристая чешуя морского змея. Рыба слетится погреться в сиянии такой модной безделушки!"
+msgstr "Ну-ка посмотрим, что за подарок ты мне <if $gn4>принесла<else>принёс</if>... Морские ракушки! Красота-то какая! Блестит, словно серебристая чешуя морского змея. Рыба слетится погреться в сиянии такой модной безделушки!"
 
 #. ja: ひっひっひっ、そうでしょう、そうでしょう。<br>この「隠し玉」の価値は、ワワラゴさんにとって無限大！<br>これがあれば、もう僕が魚を釣る必要はないでしょう！？
 #. de: Hehehe! Wusste ich es doch! Die Pfandleiher wollten ihn nicht haben, aber für jemanden wie dich ist das natürlich ein Schatz von unschätzbarem Wert! Wie dem auch sei ... Der Handel steht, oder? Damit kann ich die Angel jetzt niederlegen?
@@ -428,7 +428,7 @@ msgstr "Опять ты волнуешься о деньгах! Если хоч�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_WAWALAGO_000_050:1"
 msgid "<split \" \" 1><string $gs1></split>, if you'd be so obliging, I'd like you to acquire me an anchovy. A local Lominsan one will fill the bill. They're common on this coast, so it shouldn't be a struggle to secure. Snatch one straight from the sea, or procure it from a purveyor─it's up to you."
-msgstr "<split \" \" 1><string $gs1></split>, будь добра, раздобудь мне анчоуса. Подойдёт лимсанский — его у наших берегов полно, так что добыть его будет нетрудно. Можешь выловить сама или купить у торговца — как тебе удобнее."
+msgstr "<split \" \" 1><string $gs1></split>, будь <if $gn4>добра<else>добр</if>, раздобудь мне анчоуса. Подойдёт лимсанский — его у наших берегов полно, так что добыть его будет нетрудно. Можешь выловить <if $gn4>сама<else>сам</if> или купить у торговца — как тебе удобнее."
 
 #. ja: 「<sheet Item "　4870" 0>」を調達したら、<br>「キャンドルキープ埠頭」に届けてほしいんぢや。<br>自分で釣るもよし、お店で買ってもよしぢや、よろしくの！
 #. de: Wenn du eine limsische Sardelle aufgetrieben hast, dann bring sie mir doch bitte an den Kerzenwacht-Kai. Ob sie gekauft oder selbst geangelt ist, ist mir dabei egal.
@@ -452,7 +452,7 @@ msgstr "Ленивые, мерцающие рыбки плывут в ленив
 #. speaker: WAWALAGO
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_WAWALAGO_000_061:1"
 msgid "When you've acquired your anchovy, bring it back here to me. It's up to you how to harvest it: whisk one from the waves with your willowy wand, or meet with a monger and pick one up for peanuts. Whatever buoys your boat."
-msgstr "Ну что, принёс анчоуса?"
+msgstr "Ну что, <if $gn4>принесла<else>принёс</if> анчоуса?"
 
 #. ja: ……ロロジャルよ、配達士クンのお魚が届いたぞい！<br>とうとう、お魚さんを釣り上げられずぢまいぢやったな。<br>残念ぢやが、取引はなしぢや！！
 #. de: Damit ist die Zeit um, Rorojaru. <if $gn4>Unsere fleißige Postbotin<else>Unser fleißiger Postbote</if> hat <if $gn4>ihre<else>seine</if> Aufgabe erledigt. Und wie ich sehe, hast du immer noch kein Fischlein an die Leine gekriegt. Tut mir wirklich leid, aber damit war's das mit unserem Handel.
@@ -463,7 +463,7 @@ msgstr "Ну что, принёс анчоуса?"
 # aeria-terms: {"Rorojaru":"110b32f2f0a3"}
 msgctxt "quest/015/SubPst012_01572:TEXT_SUBPST012_01572_WAWALAGO_000_062:1"
 msgid "...Time's up, Rorojaru. Our dutiful delivery <if $gn4>girl<else>boy</if> has completed <if $gn4>her<else>his</if> commission, and you still haven't snagged a single sprat. I'm sorry, but the deal's dead."
-msgstr "...Время вышло, Ророджару. Наш старательный почтальон выполнил <if $gn4>своё<else>своё</if> поручение, а ты так и не поймал ни одной рыбёшки. Прости, но сделке конец."
+msgstr "...Время вышло, Ророджару. Наш старательный почтальон выполнил своё поручение, а ты так и не поймал ни одной рыбёшки. Прости, но сделке конец."
 
 #. ja: うああ、なにもかも……終わりだ……。<br>すべてを失って……のたれ死にだ……ひっ……ひっひ……。
 #. de: Dann ... dann war es das für mich ... Ich bin erledigt. Ich bin Geschichte ... Es ist aus. Aus und vorbei ... \<schluchz>

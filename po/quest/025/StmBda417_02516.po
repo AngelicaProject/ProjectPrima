@@ -73,7 +73,7 @@ msgstr "Похоже, остальные тоже уже вернулись."
 #. speaker: CIRINA
 msgctxt "quest/025/StmBda417_02516:TEXT_STMBDA417_02516_CIRINA_000_010:1"
 msgid "We won...we actually won! I mean, you did. If it were not for you..."
-msgstr "Мы победили... правда победили! То есть ты победил. Если бы не ты..."
+msgstr "Мы победили... правда победили! То есть ты <if $gn4>победила<else>победил</if>. Если бы не ты..."
 
 #. ja: っつ……傷を負ったが、なに、問題ない……。<br>子どもたちが、薬草をとってきてくれるそうだ。
 #. de: \<stöhn> Es ist nur eine leichte Verletzung. Das wird schon wieder ... Die Kinder werden mir die notwendigen Heilkräuter besorgen.
@@ -100,7 +100,7 @@ msgstr "Если бы Наадам продлился ещё немного, я 
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/025/StmBda417_02516:TEXT_STMBDA417_02516_MOLA02514_000_040:1"
 msgid "I saw you fight, <split \" \" 1><string $gs1></split>! You were incredible!"
-msgstr "Я видел, как ты сражался, <split \" \" 1><string $gs1></split>! Это было невероятно!"
+msgstr "Я видел, как ты <if $gn4>сражалась<else>сражался</if>, <split \" \" 1><string $gs1></split>! Это было невероятно!"
 
 #. ja: はー……。<br>もう、一歩も動ける気がしないよ！
 #. de: \<keuch> Ich bin am Ende meiner Kräfte.
@@ -116,7 +116,7 @@ msgstr "Руки, ноги — всё ноет и болит. Кажется, я
 #. speaker: MOLC02514
 msgctxt "quest/025/StmBda417_02516:TEXT_STMBDA417_02516_MOLC02514_000_050:1"
 msgid "Where did you learn such feats? Is everyone in the West as strong as you? Can you teach me!?"
-msgstr "Где ты такому научил<if $gn4>ась<else>ся</if>? Все на западе такие сильные? Научи меня!"
+msgstr "Где ты такому <if $gn4>научилась<else>научился</if>? Все на западе такие сильные? Научи меня!"
 
 #. ja: 無理はするなよ。<br>あーあー、派手に折ったもんだ！
 #. de: Das sieht übel aus. Du solltest dein Bein lieber nicht bewegen. Vermutlich ist es gebrochen.
@@ -276,7 +276,7 @@ msgstr "Часть меня всё ещё не верит, но мы побед�
 # aeria-terms: {"Cirina":"3f31a5d39232"}
 msgctxt "quest/025/StmBda417_02516:TEXT_STMBDA417_02516_MOLA02514_000_141:1"
 msgid "When they appeared before us I was filled with such fear as I had never known. But then I saw you charge with Cirina and the others, and before I knew it, I was running and shouting..."
-msgstr "Когда враги появились перед нами, мне стало так страшно, как никогда прежде. Но я увидел<if $gn4>а<else></if>, как ты бросил<if $gn4>ась<else>ся</if> в бой вместе с Цириной и остальными, и сам<if $gn4>а<else></if> не заметил<if $gn4>а<else></if>, как побежал<if $gn4>а<else></if> и закричал<if $gn4>а<else></if>..."
+msgstr "Когда враги появились перед нами, мне стало так страшно, как никогда прежде. Но я <if $gn4>увидела<else>увидел</if>, как ты <if $gn4>бросилась<else>бросился</if> в бой вместе с Цириной и остальными, и сама не заметила, как побежала и закричала..."
 
 #. ja: ああ、嬉しくてたまらない！<br>きっとこの瞬間のために、神託がおりたんだ！
 #. de: Ah, was für ein herrliches Gefühl! Bestimmt haben uns die Götter nur deshalb in den Kampf geschickt, um uns diesen Moment der Freude kosten zu lassen!
@@ -285,7 +285,7 @@ msgstr "Когда враги появились перед нами, мне с�
 # aeria-terms: {"ovoo":"781f173a7ac0"}
 msgctxt "quest/025/StmBda417_02516:TEXT_STMBDA417_02516_MOLA02514_000_142:1"
 msgid "I will carry the memory of that moment with me always. As well as the moment when you became one with the ovoo and were declared khagan!"
-msgstr "Я навсегда сохраню в памяти тот миг. И тот, когда ты слился с ово и стал каганом!"
+msgstr "Я навсегда сохраню в памяти тот миг. И тот, когда ты <if $gn4>слилась<else>слился</if> с ово и <if $gn4>стала<else>стал</if> каганом!"
 
 #. ja: さあ、<split " " 1><string $gs1></split>さん。<br>みんなの前で、勝者の勇姿を！<br>おもいっきり「勝利を喜んで」ください！
 #. de: Verleih deiner Freude ruhig Ausdruck, <split " " 1><string $gs1></split>. Dies ist ein Moment des Triumphs!
@@ -318,7 +318,7 @@ msgstr "Знаю, просьба глупая, но всё же! Покажеш�
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/025/StmBda417_02516:TEXT_STMBDA417_02516_MOLC02514_000_160:1"
 msgid "Aye, that's the stuff of legends! That's the khagan in all <if $gn4>her<else>his</if> splendor!"
-msgstr "Вот это да! Настоящая слава легенд! Вот он какой, наш каган во всём <if $gn4>великолепии<else>великолепии</if>!"
+msgstr "Вот это да! Настоящая слава легенд! Вот <if $gn4>она какая<else>он какой</if>, наш каган во всём великолепии!"
 
 #. ja: 勇敢な旅人、頼もしき家族に、<br>これから百の季節が巡らんことを！
 #. de: <if $gn4>Tapfere Kriegerin<else>Tapferer Krieger</if>! Möge deine Familie mit hundert ertragreichen Sommern gesegnet werden!
@@ -415,7 +415,7 @@ msgstr "Да-да, знаю... даже после победы надо дум�
 # aeria-terms: {"warrior":"0afc8a69aa3c"}
 msgctxt "quest/025/StmBda417_02516:TEXT_STMBDA417_02516_CIRINA_000_210:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>! I am told you gave the young warriors a fine show!"
-msgstr "Ах, <split \" \" 1><string $gs1></split>! Слышала, ты устроил<if $gn4>а<else></if> юным воинам настоящее представление!"
+msgstr "Ах, <split \" \" 1><string $gs1></split>! Слышала, ты <if $gn4>устроила<else>устроил</if> юным воинам настоящее представление!"
 
 #. ja: それで……この感謝をどう伝えようかと考えたのですが、<br>うまく言葉にならなくて……。<br>だから、一族の伝統にのっとって、これをお渡しします。
 #. de: Ich habe mir den Kopf zerbrochen, wie ich mich bei dir bedanken könnte, doch mir sind die passenden Worte einfach nicht eingefallen. Vielleicht, weil es sie nicht gibt. Also habe ich mich entschieden, dir auf die traditionelle Weise der Mol zu danken.

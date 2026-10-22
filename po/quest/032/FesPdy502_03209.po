@@ -200,10 +200,10 @@ msgstr "Ох, <split \" \" 1><string $gs1></split>, как я рада тебя 
 #. de: Ah, <if $gn4>eine Abenteurerin<else>ein Abenteurer</if>. Wie es scheint, ist es wieder jene Zeit des Jahres, in der einfache Mädchen zu Prinzessinnen erhoben werden. Für mich ist das natürlich nichts<nbsp>..., äh, will sagen, etwas ganz Neues. Mein Name ist Lilira, Kaufmannstochter. \<räusper>
 #. fr: Tiens<nbsp>! Je ne savais pas que les aventuriers participaient à l'or<shy>ga<shy>ni<shy>sa<shy>tion de la fête des demoiselles. Nous sommes... euh, je suis Lilira, enchantée<nbsp>!
 #. speaker: NANAMOULNAMO
-# aeria-terms: {"Lilira":"33e07fd2e4d6","merchant":"c21a70778174"}
+# aeria-terms: {"Lilira":"33e07fd2e4d6","adventurer":"48df264ad5ec","merchant":"c21a70778174"}
 msgctxt "quest/032/FesPdy502_03209:TEXT_FESPDY502_03209_NANAMOULNAMO_000_021:1"
 msgid "Well met, adventurer. I am Lilira─no one of note, I fear. Merely another merchant's daughter."
-msgstr "Приятно познакомиться, искатель приключений. Я Лилира, дочь обычного торговца. Боюсь, ничем особенным не примечательна."
+msgstr "Приятно познакомиться, <if $gn4>искательница приключений<else>искатель приключений</if>. Я Лилира, дочь обычного торговца. Боюсь, ничем особенным не примечательна."
 
 #. ja: おおっ、そなたが持っているのは、ガーベラの花冠か？<br>どれ、私にもひとつくれぬか？
 #. de: Oh, sind das etwa Blumenkränze? Aus frischen Gerbera-Blüten? Wie wunderschön! Bitte gib mir doch einen.
@@ -455,7 +455,7 @@ msgstr "Очаровательно... Да, мне такая безделушк
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/032/FesPdy502_03209:TEXT_FESPDY502_03209_COCOBUKI_100_058:1"
 msgid "One crown, my good <if $gn4>woman<else>man</if>!"
-msgstr "Один венок, любезный мой человек!"
+msgstr "Один венок, <if $gn4>любезная моя<else>любезный мой человек</if>!"
 
 #. ja: ココブシちゃぁ～ん！！<br>お兄ちゃんが何でも言うこと聞くから、待っててね～～！
 #. de: Eigentlich ganz geschmackvoll. Hier kommt deine Prinzenkrone, Busi! Heute erfülle ich dir jeden Wunsch!
@@ -488,10 +488,10 @@ msgstr "<split \" \" 1><string $gs1></split>! Вы в этом году помо
 #. de: Hallo, Abenteurer<if $gn4>in</if>. Hilfst du beim Prinzessinnenfest mit? Ich freue mich jedes Mal riesig auf die Festlichkeiten.
 #. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if><nbsp>! Vous donnez un coup de main pour la fête des demoiselles<nbsp>? J'espère en tout cas que vous vous amusez autant que moi<nbsp>!
 #. speaker: SERENDIPITY
-# aeria-terms: {"Little Lady":"fce5cf59ea60","royal seneschal":"0b21a2bf2237"}
+# aeria-terms: {"Little Lady":"fce5cf59ea60","adventurer":"48df264ad5ec","royal seneschal":"0b21a2bf2237"}
 msgctxt "quest/032/FesPdy502_03209:TEXT_FESPDY502_03209_SERENDIPITY_000_071:1"
 msgid "Hello there, adventurer! Thank you for helping the royal seneschal─volunteers like you make Little Ladies' Day an event I look forward to year after year!"
-msgstr "Здравствуйте, искатель приключений! Спасибо, что помогаете королевскому сенешалю. Благодаря таким добровольцам, как вы, я каждый год с нетерпением жду Дня Маленьких леди!"
+msgstr "Здравствуйте, <if $gn4>искательница приключений<else>искатель приключений</if>! Спасибо, что помогаете королевскому сенешалю. Благодаря таким добровольцам, как вы, я каждый год с нетерпением жду Дня Маленьких леди!"
 
 #. ja: ヒョッヒョッヒョ！<br>そこに居るのは、<split " " 1><string $gs1></split>と……<br>ピチピチギャルのセレンちゃんじゃなあ！
 #. de: Hohoho! Wenn das nicht <split " " 1><string $gs1></split> und die wunderhübsche Seren-dideldi-dipity sind!
@@ -588,9 +588,10 @@ msgstr "А? Да это же ты, <split \" \" 1><string $gs1></split>! Что 
 #. de: Hm? Was macht <if $gn4>eine abgebrühte Abenteurerin<else>ein abgebrühter Abenteurer</if> denn mit all den Blumen?
 #. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if>, aventuri<if $gn4>ère<else>er</if>. Quel bon vent vous amène à Ul'dah<nbsp>?
 #. speaker: POPOKKULI
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/032/FesPdy502_03209:TEXT_FESPDY502_03209_POPOKKULI_000_091:1"
 msgid "Hm, you have the look of an adventurer. If you're looking for beasts to slay, you're in the wrong place, I'm afraid."
-msgstr "Хм, на вид вы искатель приключений. Если ищете, кого бы прикончить, боюсь, вы не туда попали."
+msgstr "Хм, на вид вы <if $gn4>искательница приключений<else>искатель приключений</if>. Если ищете, кого бы прикончить, боюсь, вы не туда попали."
 
 #. ja: なるほど、「プリンセスデー」の催しか！<br>兄さん、この花冠、妹……ネネッコにプレゼントしたらどうかな？
 #. de: Ach so, das Prinzessinnenfest! Das erklärt natürlich alles! Popokkuli, sollen wir unserer kleinen Schwester vielleicht so einen Kranz mitbringen?
@@ -683,10 +684,10 @@ msgstr "Вот уж правда счастливая случайность. И
 #. de: Hallihallo! Wartest du auf uns? Möchtest du ein Autogramm von den Drei Singdrosseln? Ich bin Ulala, die neue Nachtigall von Ul'dah - zumindest werde ich das bald sein. Zu meinem Namen bin ich übrigens gekommen, weil alle „Oh là là“ ausrufen, wenn ich zu trällern anfange. Tralalalala ♪
 #. fr: Enchantée<nbsp>! Moi, c'est Ulala, et nous sommes les Églantines d'Ul'dah<nbsp>! Je ne suis peut-être pas très grande, mais j'ai de l'énergie à revendre, et je vais tous vous rendre raides dingues de moi<nbsp>!
 #. speaker: ULALA
-# aeria-terms: {"Eorzea":"4e5e8c295294","Ulala":"2cc46bd338fc","the Songbirds":"52acfcf57248"}
+# aeria-terms: {"Eorzea":"4e5e8c295294","Ulala":"2cc46bd338fc","adventurer":"48df264ad5ec","the Songbirds":"52acfcf57248"}
 msgctxt "quest/032/FesPdy502_03209:TEXT_FESPDY502_03209_ULALA_000_103:1"
 msgid "Hello there, adventurer─I don't believe we've met. I'm Ulala, beloved star of the Songbirds and soon-to-be number one songstress in all of Eorzea!"
-msgstr "Здравствуйте, искатель приключений! Кажется, мы ещё не знакомы. Я Улала, звезда «Певчих птиц» и будущая лучшая певица всей Эорзеи!"
+msgstr "Здравствуйте, <if $gn4>искательница приключений<else>искатель приключений</if>! Кажется, мы ещё не знакомы. Я Улала, звезда «Певчих птиц» и будущая лучшая певица всей Эорзеи!"
 
 #. ja: はじめまして、私はナルミといいます。<br>不器用ですが、歌や踊りを精いっぱい頑張っています……！<br>歌姫として、胸を張って人前に立っていられるように……。
 #. de: Hallo, ich heiße Narumi. Ich bin furchtbar ungeschickt und noch weit davon entfernt, eine gute Sängerin zu sein. Aber ich gebe mein Bestes, sodass ich dich hoffentlich bald zu unseren Fans zählen darf.

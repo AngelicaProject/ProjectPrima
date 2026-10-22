@@ -111,17 +111,19 @@ msgstr "Чтобы принять это задание, вам нужно от�
 #. speaker: PAPALYMO
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/038/XxaUsa104_03858:TEXT_XXAUSA104_03858_PAPALYMO_000_000:1"
 msgid "<split \" \" 1><string $gs1></split>. As an adventurer, you're no stranger to helping distressed folk, I'd wager."
-msgstr "<split \" \" 1><string $gs1></split>. Вы искатель приключений, вам не привыкать помогать тем, кто попал в беду."
+msgstr "<split \" \" 1><string $gs1></split>. Вы <if $gn4>искательница приключений<else>искатель приключений</if>, вам не привыкать помогать тем, кто попал в беду."
 
 #. ja: シルフ族も僕たちに言えないだけで、<br>同じように困っていることがあると思うんだよ。
 #. de: Geschichten über gute Taten verbreiten sich schnell. <if $gn4>Eine Abenteurerin<else>Ein Abenteurer</if>, <if $gn4>die<else>der</if> der örtlichen Bevölkerung zur Hand geht, kann über Nacht von <if $gn4>einer Fremden<else>einem Fremden</if> zu <if $gn4>einer Heldin<else>einem Helden</if> werden.
 #. fr: Je pense que les Sylphes, comme nous autres, ont parfois besoin que quelqu'un leur tende la main lorsqu'ils ont des petits soucis au quotidien.
 #. speaker: PAPALYMO
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/038/XxaUsa104_03858:TEXT_XXAUSA104_03858_PAPALYMO_000_001:1"
 msgid "Tales of good deeds are quick to spread. The adventurer who comes to the aid of the local populace can go from stranger to hero o'ernight."
-msgstr "Добрые вести разлетаются быстро. Поможешь местным — и вмиг из чужака превратишься в героя."
+msgstr "Добрые вести разлетаются быстро. Поможешь местным — и вмиг <if $gn4>из чужачки превратишься в героиню<else>из чужака превратишься в героя</if>."
 
 #. ja: 特に、ここのシルフ族は、北東の「シルフ領」を追われ、<br>この地を仮の宿としていて、<br>さまざまな不便を強いられているらしい。
 #. de: Du weißt sicherlich, worauf ich hinauswill. Die Sylphen in der Zuflucht sind aus ihrer Heimat vertrieben worden. Sicherlich haben sie eine Menge Sorgen und Probleme.
@@ -154,10 +156,10 @@ msgstr "Впрочем, сильфы не из тех, кто делится з�
 #. de: Oh, <if $gn4>eine Abenteurerin<else>ein Abenteurer</if>! Was kann ich für dich tun?
 #. fr: Oh, <if ($gn11 < 12)><if ($gn11 < 4)>bonsoir<else>bonjour</if><else><if ($gn11 < 17)>bonjour<else>bonsoir</if></if>, aventuri<if $gn4>ère<else>er</if>. Que puis-je pour vous<nbsp>?
 #. speaker: IMEDIA
-# aeria-terms: {"Little Solace":"da40f1f66232","sylphs":"b77c2b551d58"}
+# aeria-terms: {"Little Solace":"da40f1f66232","adventurer":"48df264ad5ec","sylphs":"b77c2b551d58"}
 msgctxt "quest/038/XxaUsa104_03858:TEXT_XXAUSA104_03858_IMEDIA_000_010:1"
 msgid "Praise be to the elementals─I cannot express how happy I am to see an adventurer with a truly gentle heart. The sylphs of Little Solace are sorely in need of aid. Pray hear me out."
-msgstr "Хвала элементалям! Не передать, как я рада видеть искателя приключений с таким добрым сердцем. Сильфам из Малого Утешения очень нужна помощь. Прошу, выслушайте меня."
+msgstr "Хвала элементалям! Не передать, как я рада видеть <if $gn4>искательницу приключений<else>искателя приключений</if> с таким добрым сердцем. Сильфам из Малого Утешения очень нужна помощь. Прошу, выслушайте меня."
 
 #. ja: ……まぁ、シルフ族が困っていることを<br>解決してきてくださるの？<br>それはうれしいお言葉です。
 #. de: Den Gebietern sei Dank! Die Sylphen in der Sylphen-Zuflucht haben ein wenig Hilfe bitter nötig. Die Sylphen-Zuflucht ist eine provisorische Siedlung und bietet daher wenig Komfort, vor allem aber keine besonderen Schutz<shy>maß<shy>nahmen. Daher verirren sich häufig wilde Kreaturen in die Siedlung und terrorisieren die unglückseligen Bewohner.
@@ -204,7 +206,7 @@ msgstr "Когда закончите, найдите Комушио. Ему н�
 #. macro: <if ($gn11 < 17)>day<else>night</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/038/XxaUsa104_03858:TEXT_XXAUSA104_03858_KOMUXIO_000_030:1"
 msgid "Dancing one is still here? Dancing one can dance all <if ($gn11 < 12)><if ($gn11 < 4)>night<else>day</if><else><if ($gn11 < 17)>day<else>night</if></if>─this one's trust is not so easily earned."
-msgstr "Танцующая всё ещё здесь? Хоть весь <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>день</if><else><if ($gn11 < 17)>день<else>вечер</if></if> танцуй — этой так просто не довериться."
+msgstr "<if $gn4>Танцующая всё ещё здесь? Хоть весь<else>Танцующий всё ещё здесь? Хоть весь</if> <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>день</if><else><if ($gn11 < 17)>день<else>вечер</if></if> танцуй — этой так просто не довериться."
 
 #. ja: これはこれは、ご丁寧にでふっち。<br>……「<sheet EventItem 2003005 0>」でふっち！？<br>これで染め物が楽しめるのでふっち！
 #. de: Hm? <if $gn4>Die Tanzende<else>Der Tanzende</if> bringt der Meinigen <noun-de EventItem 5 2003005 2 4 1>? Die Meinige kann wieder Fäden färben! Die Meinige ist erfreut!
@@ -221,7 +223,7 @@ msgstr "Хм? <if $gn4>Танцующая принесла<else>Танцующи
 #. speaker: KOMUXIO
 msgctxt "quest/038/XxaUsa104_03858:TEXT_XXAUSA104_03858_KOMUXIO_000_032:1"
 msgid "Dancing one kills bitey, buzzy one? This one hates, hates, hates bitey, buzzy ones! Dancing one is kind... Too kind."
-msgstr "Танцующая убила кусачих жужжалок? Эта ненавидит кусачих жужжалок! Танцующая добрая... очень добрая."
+msgstr "<if $gn4>Танцующая убила кусачих жужжалок? Эта ненавидит кусачих жужжалок! Танцующая добрая... очень добрая.<else>Танцующий убил кусачих жужжалок? Эта ненавидит кусачих жужжалок! Танцующий добрый... очень добрый.</if>"
 
 #. ja: ……アナタたぴのことが、<br>ようやく、わかってきた気がするでふっち。
 #. de: Viele Laufende kommen zu den Unsrigen, aber wenige sind so freundlich wie <if $gn4>die Tanzende<else>der Tanzende</if>. Vielleicht war es falsch von der Meinigen, <if $gn4>der Tanzenden<else>dem Tanzenden</if> nicht zu trauen.
@@ -229,4 +231,4 @@ msgstr "Танцующая убила кусачих жужжалок? Эта н
 #. speaker: KOMUXIO
 msgctxt "quest/038/XxaUsa104_03858:TEXT_XXAUSA104_03858_KOMUXIO_000_033:1"
 msgid "Many walking ones come to these ones' abode, but few are friendly like dancing one. Perhaps this one was wrong not to trust dancing one, after all."
-msgstr "Многие идущие приходят к этим, но мало кто так добр, как танцующая. Пожалуй, эта зря ей не доверяла."
+msgstr "Многие идущие приходят к этим, но мало кто так добр, как <if $gn4>танцующая<else>танцующий</if>. Пожалуй, эта зря <if $gn4>ей<else>ему</if> не доверяла."

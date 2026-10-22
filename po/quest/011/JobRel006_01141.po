@@ -23,7 +23,7 @@ msgstr "Брангвайн готова обменять одну из свои�
 # aeria-terms: {"Brangwine":"c57cae60f6eb","Dungeon":"cb5eed075de1","Dungeons":"2374167bd231","Duty Roulette":"a9a1eb5a15e5","High":"b74304021aac","personal effects":"0fac9562bbf0"}
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_SEQ_01:1"
 msgid "Brangwine is willing to give you a mysterious map in exchange for essentially robbing the dead. Though you cannot help but be suspicious as to her motivation, you must do as bid if you would be king of your kitchen. The personal effects of your slain peers are likely to be found where the deadliest creatures in the land prowl.<br><br>※The key item can be obtained by clearing a dungeon via Duty Roulette: High-level Dungeons."
-msgstr "Брангвайн готова отдать вам загадочную карту в обмен на вещи, по сути, украденные у мёртвых. Её мотивы вызывают подозрения, но, если хотите стать королём чистоты на кухне, придётся исполнить просьбу. Личные вещи погибших товарищей, скорее всего, найдутся там, где бродят самые опасные твари.<br><br>※Ключевой предмет можно получить, пройдя подземелье через «Рулетку активностей: подземелья высокого уровня»."
+msgstr "Брангвайн готова отдать вам загадочную карту в обмен на вещи, по сути, украденные у мёртвых. Её мотивы вызывают подозрения, но, если хотите стать <if $gn4>королевой<else>королём</if> чистоты на кухне, придётся исполнить просьбу. Личные вещи погибших товарищей, скорее всего, найдутся там, где бродят самые опасные твари.<br><br>※Ключевой предмет можно получить, пройдя подземелье через «Рулетку активностей: подземелья высокого уровня»."
 
 #. ja: 冒険者の遺留品を入手することができた。レヴナンツトールの「ブラングワイン」に渡そう。
 #. de: Du hast die Hinterlassenschaft eines Abenteurers gefunden. Bring sie zu Brangwine in Geisterzoll.
@@ -46,7 +46,7 @@ msgstr "Вы нашли мешок с личными вещами какого-�
 # aeria-terms: {"Brangwine":"c57cae60f6eb"}
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_SEQ_03:1"
 msgid "You hand over the sack of adventurer's effects to Brangwine, and for your troubles receive a mysterious map. Now you, too, can be king of your kitchen...if indeed that is your heart's desire.<br><br>※This repeatable quest can be undertaken once daily. Upon completing the quest, it will become available again the following day at <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>p.m.<else>a.m.</if> (Earth time)."
-msgstr "Вы отдаёте Брангвайн мешок с вещами приключенца и получаете взамен загадочную карту. Теперь и вы можете стать королём чистоты на кухне... если, конечно, именно этого желает ваше сердце.<br><br>※Это повторяющееся задание можно выполнять раз в день. После выполнения оно снова станет доступно на следующий день в <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>после полудня<else>до полудня</if> по земному времени."
+msgstr "Вы отдаёте Брангвайн мешок с вещами приключенца и получаете взамен загадочную карту. Теперь и вы можете стать <if $gn4>королевой<else>королём</if> чистоты на кухне... если, конечно, именно этого желает ваше сердце.<br><br>※Это повторяющееся задание можно выполнять раз в день. После выполнения оно снова станет доступно на следующий день в <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>после полудня<else>до полудня</if> по земному времени."
 
 #. ja: コンテンツルーレット：ハイレベリングを攻略して<br>冒険者の遺留品を入手
 #. de: An einem „Zufallsinhalt: Hohe Stufen“ teilnehmen
@@ -98,7 +98,7 @@ msgstr "Личные вещи погибших приключенцев обыч
 #. speaker: BRANGWINE
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_BRANGWINE_000_050:1"
 msgid "Ah, you've returned, young one. And with good tidings, I hope?"
-msgstr "А, вернулась, дитя. Надеюсь, с хорошими новостями?"
+msgstr "А, <if $gn4>вернулась<else>вернулся</if>, дитя. Надеюсь, с хорошими новостями?"
 
 #. ja: あらま～、これは確かに「冒険者の遺留品」だねぇ！<br>財布のひとつでも入ってれば、<br>今晩のおかずが一品増やせるよ。
 #. de: Ah, ein prachtvolles Exemplar aus der Kategorie „Warum man besser eine ordentliche Ausbildung machen sollte, statt als Abenteurer sein Unglück zu versuchen“! Der Umhang ist zwar schon stark von den Maden zerfressen worden, aber für ein paar Sofakissenbezüge reichen die Stücke allemal. Und den Verwesungsgeruch bekommt man mit ein paar Spritzern Sonnenzitrone ebenfalls im Nu weg.
@@ -123,4 +123,4 @@ msgstr "Ой, чуть не проговорилась! Скажем так: я 
 #. macro: <if $gn4>daughter<else>son</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_BRANGWINE_000_057:1"
 msgid "My thanks, young one. You truly are dependable. Would that I had a <if $gn4>daughter<else>son</if> like you in place of my own hopeless specimen. If you have need of any more mysterious maps, you know what to bring me."
-msgstr "Спасибо, дитя. На тебя и правда можно положиться. Вот бы у меня была такая <if $gn4>дочь<else>сын</if>, а не это безнадёжное недоразумение. Если понадобятся ещё загадочные карты, ты знаешь, что мне принести."
+msgstr "Спасибо, дитя. На тебя и правда можно положиться. Вот бы у меня <if $gn4>была такая дочь<else>был такой сын</if>, а не это безнадёжное недоразумение. Если понадобятся ещё загадочные карты, ты знаешь, что мне принести."

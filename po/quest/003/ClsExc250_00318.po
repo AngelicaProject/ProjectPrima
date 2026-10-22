@@ -201,7 +201,7 @@ msgstr "Кажется, с ними покончено. Но по сравнен
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/003/ClsExc250_00318:TEXT_CLSEXC250_00318_WYRNZOEN_000_21:1"
 msgid "(-???-)So, this is the indomitable <string $gs1>."
-msgstr "(-???-) Так вот ты какой, не знающий поражений <string $gs1>."
+msgstr "(-???-) Так вот ты какой, <if $gn4>не знающая поражений<else>не знающий поражений</if> <string $gs1>."
 
 #. ja: 誰だいっ！？
 #. de: Wer zum ...?
@@ -235,7 +235,7 @@ msgstr "Ох, братец..."
 # aeria-terms: {"mine":"41391a1f82c3"}
 msgctxt "quest/003/ClsExc250_00318:TEXT_CLSEXC250_00318_WYRNZOEN_000_70:1"
 msgid "It seems my underlings have provided you with poor sport. Very well. I shall take your measure with mine own blade."
-msgstr "Похоже, мои подручные оказались тебе не по зубам. Что ж, сам проверю, на что ты способен."
+msgstr "Похоже, мои подручные оказались тебе не по зубам. Что ж, сам проверю, на что ты <if $gn4>способна<else>способен</if>."
 
 #. ja: お前の強さを示してみせよ、<string $gs1>！！<br>さもなくば我が斧の一撃にて、貴様の命を圧し斬るぞッ！！
 #. de: Du zeigst besser alles, was du hast, <string $gs1>!<br>Oder meine Axt macht Kleinholz aus dir!
@@ -271,7 +271,7 @@ msgstr "На сегодня всё, товарищи! Унесите тех, к�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/003/ClsExc250_00318:TEXT_CLSEXC250_00318_WYRNZOEN_000_33:1"
 msgid "Your display of prowess was truly impressive, <split \" \" 1><string $gs1></split>. Worthy, indeed..."
-msgstr "Ты и правда показал себя, <split \" \" 1><string $gs1></split>. Вот это сила..."
+msgstr "Ты и правда <if $gn4>показала<else>показал</if> себя, <split \" \" 1><string $gs1></split>. Вот это сила..."
 
 #. ja: ふぅ、やれやれ……アニキの奴、<br>まさかアレで正体バレてないつもりなのかね？<br>不器用というか、なんというか……ねぇ。
 #. de: Ha, ich bin auch beeindruckt, <split " " 1><string $gs1></split>!<br>Dem alten Sack haben wir's gezeigt. Und er denkt bestimmt immer noch, dass du nicht gemerkt hast, wer er ist.
@@ -308,7 +308,7 @@ msgstr "Ну что, возвращайся в гильдию. И окажи м�
 # aeria-terms: {"Salt Strand":"2078dcc938e8"}
 msgctxt "quest/003/ClsExc250_00318:TEXT_CLSEXC250_00318_WYRNZOEN_000_50:1"
 msgid "<split \" \" 1><string $gs1></split>, I have heard of your skirmish on the Salt Strand. You did well to topple opponents of such formidable skill."
-msgstr "<split \" \" 1><string $gs1></split>, я слышал о вашей стычке на Солёном берегу. Ты одолел достойных противников."
+msgstr "<split \" \" 1><string $gs1></split>, я слышал о вашей стычке на Солёном берегу. Ты <if $gn4>одолела<else>одолел</if> достойных противников."
 
 #. ja: ……仮面の男たちが何者であるかは、今は問うまい。<br>確かなのは、お前が難関を見事に乗り越えたこと。<br>その揺るぎない事実だけが大切なのだ。
 #. de: Wir werden wohl nie herausfinden, wer diese maskierten Typen waren. Ihr Anführer muss ganz schön stark gewesen sein, oder? Na ja, Hauptsache ist, dass du alle Hürden problemlos überwunden hast, nicht wahr?
@@ -317,7 +317,7 @@ msgstr "<split \" \" 1><string $gs1></split>, я слышал о вашей ст
 # aeria-terms: {"face":"9a4aea3bb0ee"}
 msgctxt "quest/003/ClsExc250_00318:TEXT_CLSEXC250_00318_WYRNZOEN_000_51:1"
 msgid "But let us not dwell on the nature of those masked men. What is important is your triumph in the face of overwhelming odds."
-msgstr "Но не будем зацикливаться на том, кто были эти люди в масках. Главное — ты одержал верх, несмотря на численное превосходство врага."
+msgstr "Но не будем зацикливаться на том, кто были эти люди в масках. Главное — ты <if $gn4>одержала<else>одержал</if> верх, несмотря на численное превосходство врага."
 
 #. ja: 斧術士ギルド全ての者が、お前の背中を後押ししよう。<br>お前こそがギルドの代表であると、胸を張って語ろう。
 #. de: Alle Gildenmitglieder der Marodeure stehen hinter dir, <split " " 1><string $gs1></split>. Darauf kannst du dir was einbilden!
@@ -335,7 +335,7 @@ msgstr "Твои собратья-мародёры гордятся, что ты
 # aeria-terms: {"Kujata":"d2426e770b2b"}
 msgctxt "quest/003/ClsExc250_00318:TEXT_CLSEXC250_00318_WYRNZOEN_000_54:1"
 msgid "Aye, the time has come for you to bring Kujata's bloody rampage to an end. When next he rears his horrible horned head, you shall be ready to bury your blade in his skull."
-msgstr "Да, пора положить конец кровавой бойне, которую учинил Куджата. Когда он снова явится со своей ужасной рогатой башкой, ты будешь готов<if $gn4>а</if> вонзить клинок ему в череп."
+msgstr "Да, пора положить конец кровавой бойне, которую учинил Куджата. Когда он снова явится со своей ужасной рогатой башкой, ты будешь <if $gn4>готова<else>готов</if> вонзить клинок ему в череп."
 
 #. ja: モラビー・ヘッジモールたちを倒せ
 #. de: Besiege alles, was nach Moraby-Stachelmull aussieht!
@@ -422,7 +422,7 @@ msgstr "Соберись!<br>Похоже, им не до шуток!"
 #. kind: other
 msgctxt "quest/003/ClsExc250_00318:TEXT_CLSEXC250_00318_WYRNZOEN_BATTLETALK_42:1"
 msgid "Prepare to be tested!"
-msgstr "Покажи, на что способен!"
+msgstr "Покажи, на что <if $gn4>способна<else>способен</if>!"
 
 #. ja: 貴様の力はこの程度か？<br>これでは本気を出すまでもない……！
 #. de: Das ist alles?<br>Da kommt man nicht mal ins Schwitzen ...

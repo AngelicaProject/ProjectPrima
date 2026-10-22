@@ -473,7 +473,7 @@ msgstr "Ты? Да когда ты в последний раз вообще в�
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/041/AktKla505_04164:TEXT_AKTKLA505_04164_TLAQATIA_000_048:1"
 msgid "Th-That's not important! <split \" \" 1><string $gs1></split> has risked life and limb to help me with my research! I can't just keep leaving all the hard work to <if $gn4>her<else>him</if>."
-msgstr "Н-неважно! <split \" \" 1><string $gs1></split> не раз рисковал жизнью ради моих исследований. Нельзя и дальше оставлять всю тяжёлую работу <if $gn4>ей<else>ему</if>."
+msgstr "Н-неважно! <split \" \" 1><string $gs1></split> <if $gn4>не раз рисковала жизнью<else>не раз рисковал жизнью</if> ради моих исследований. Нельзя и дальше оставлять всю тяжёлую работу <if $gn4>ей<else>ему</if>."
 
 #. ja: チャ・ラカさん、サベネア島なんて行ったことないでしょう……！？<br>行くとなれば、新型エーテライトでってなるんでしょうけど、<br>エーテル酔いが酷いんだから、絶対やめておいたほうが……。
 #. de: Ich halte das für keine gute Idee. Ihr wart doch noch nie in Thavnair, habe ich Recht? Der neue Ätheryt kann Euch gewiss nicht vor einer üblen Ätherüberreizung bewahren<nbsp>...
@@ -625,7 +625,7 @@ msgstr "Ты прав, друг мой. Прости, что заставил т
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/041/AktKla505_04164:TEXT_AKTKLA505_04164_TLAQATIA_000_062:1"
 msgid "I'm truly sorry about this, <split \" \" 1><string $gs1></split>. Might you be so kind as to ask around while I rest here a bit more?"
-msgstr "Мне правда жаль, <split \" \" 1><string $gs1></split>. Не мог бы ты пока порасспрашивать местных, а я ещё немного отдохну?"
+msgstr "Мне правда жаль, <split \" \" 1><string $gs1></split>. <if $gn4>Не могла бы ты<else>Не мог бы ты</if> пока порасспрашивать местных, а я ещё немного отдохну?"
 
 #. ja: ……今は、ちょっと…………<br>聞き込み、頼む……。
 #. de: Gib mir<nbsp>... noch einen Moment. Bestimmt weiß hier jemand über die Fische Bescheid<nbsp>...
@@ -792,7 +792,7 @@ msgstr "Прости, что снова тебя нагружаю, но не м�
 # aeria-terms: {"Garlemald":"e69779d7cdfd","fisherman":"5cce9e2f3521"}
 msgctxt "quest/041/AktKla505_04164:TEXT_AKTKLA505_04164_TLAQATIA_100_085:1"
 msgid "From the fisherman's description─swimming upstream, you said?─I suspect we are looking for Alnairan salmon. If so, those leeches you used on the clams in Garlemald should serve you well again here."
-msgstr "Рыбак сказал, что рыбы плыли вверх по течению? Тогда, думаю, речь об алнайрском лососе. Пиявки, на которые ты ловил моллюсков в Гарлемальде, и здесь отлично подойдут."
+msgstr "Рыбак сказал, что рыбы плыли вверх по течению? Тогда, думаю, речь об алнайрском лососе. Пиявки, на которые ты <if $gn4>ловила<else>ловил</if> моллюсков в Гарлемальде, и здесь отлично подойдут."
 
 #. ja: クシールローダ川に向かい、釣り餌に「ウマビル」を使って、<br>「<sheet Item 35849 0>」を釣ってきてくれ！<br>今回の事件を解き明かす、糸口になるんじゃないかと思うんだ。
 #. de: Bitte bring mir zunächst einen <noun-de Item 5 35849 1 4 1> aus dem Ksiroda. Ich bin mir sicher, dass wir der Aufklärung damit ein großes Stück näherkommen.
@@ -835,7 +835,7 @@ msgstr "Пока я был здесь, от меня было мало толк�
 #. speaker: TLAQATIA
 msgctxt "quest/041/AktKla505_04164:TEXT_AKTKLA505_04164_TLAQATIA_000_094:1"
 msgid "Now, it's time we returned so I can make use of this new knowledge and analyze the sample you so kindly reeled in for me."
-msgstr "А теперь пора возвращаться, чтобы применить новые знания и изучить образец, который ты так любезно для меня поймал."
+msgstr "А теперь пора возвращаться, чтобы применить новые знания и изучить образец, который ты так любезно для меня <if $gn4>поймала<else>поймал</if>."
 
 #. ja: うぅぅ、帰りは新型を使わなくていいにせよ、<br>またエーテライトかぁ……！！
 #. de: Oh<nbsp>... Ich vergaß, dass ich dafür wieder durchs Ätheryten<shy>netz muss<nbsp>...
@@ -862,7 +862,7 @@ msgstr "Рад, что ты вернулся! Мне дорога далась �
 # aeria-terms: {"Thavnair":"03bd3f9c86da","aether":"121cf0f81f85"}
 msgctxt "quest/041/AktKla505_04164:TEXT_AKTKLA505_04164_TLAQATIA_000_101:1"
 msgid "I've just about finished analyzing the fish you caught in Thavnair. As expected, its aether levels are almost identical to those of the wayward whale."
-msgstr "Я почти закончил исследовать рыбу, которую ты поймал на Тавнаире. Как и ожидалось, уровень эфира в ней почти не отличается от того, что был у заблудившегося кита."
+msgstr "Я почти закончил исследовать рыбу, которую ты <if $gn4>поймала<else>поймал</if> на Тавнаире. Как и ожидалось, уровень эфира в ней почти не отличается от того, что был у заблудившегося кита."
 
 #. ja: 北洋のクジラと、豊穣海の魚、<br>いずれも水脈のエーテル濃度の急変動によって、<br>近づかないはずの陸地に接近してしまった、と……。
 #. de: Demnach haben akute Ätherschwankungen in weit auseinanderliegenden Gebieten zur gleichen Zeit das natürliche Verhalten zweier völlig verschiedenen Spezies gestört<nbsp>...

@@ -94,7 +94,7 @@ msgstr "Чтобы принять это задание, нужно отказа
 # aeria-terms: {"Thanalan":"90760cfb71bd","sylphs":"b77c2b551d58"}
 msgctxt "quest/038/XxaUsa711_03863:TEXT_XXAUSA711_03863_MINFILIA_000_000:1"
 msgid "While you were tending to business in Thanalan, some new information arrived courtesy of our friends the sylphs."
-msgstr "Пока ты занимался делами в Таналане, от наших друзей-сильфов поступили новые сведения."
+msgstr "Пока ты <if $gn4>занималась<else>занимался</if> делами в Таналане, от наших друзей-сильфов поступили новые сведения."
 
 #. ja: シルフ族の情報網によると、黒衣森の北部で、<br>アシエンと思しき「仮面の男」が目撃されたそうよ。
 #. de: Die Informanten der Sylphen haben uns berichtet, dass der Ascian Lahabrea womöglich im Nordwald aktiv geworden ist. Zumindest soll dort ein maskierter Mann gesichtet worden sein, auf den unsere Beschreibung zuzutreffen scheint.
@@ -112,7 +112,7 @@ msgstr "В Северной чаще видели человека, похоже
 # aeria-terms: {"Lahabrea":"b2f006ca87ed"}
 msgctxt "quest/038/XxaUsa711_03863:TEXT_XXAUSA711_03863_MINFILIA_000_002:1"
 msgid "I would have you continue your investigation where you left off. Twelve willing, we will pick up Lahabrea's trail once more."
-msgstr "Я хочу, чтобы ты продолжил расследование. Если Двенадцать будут к нам благосклонны, мы снова выйдем на след Лахабреи."
+msgstr "Я хочу, чтобы ты <if $gn4>продолжила<else>продолжил</if> расследование. Если Двенадцать будут к нам благосклонны, мы снова выйдем на след Лахабреи."
 
 #. ja: ノラクシアから詳しい話を聞いたら、<br>さっそく現地へ向かってちょうだい。<br>今度こそ、奴らの尻尾を掴みましょう！
 #. de: Lasse dir von Noraxia die Details erklären und begib dich dann umgehend ins Einsatzgebiet. Dieser Halunke darf uns nicht noch einmal durch die Lappen gehen!
@@ -123,7 +123,7 @@ msgstr "Я хочу, чтобы ты продолжил расследовани
 # aeria-terms: {"Noraxia":"974afff56964"}
 msgctxt "quest/038/XxaUsa711_03863:TEXT_XXAUSA711_03863_MINFILIA_000_003:1"
 msgid "Noraxia can furnish you with the details. Pray speak with her, and take it from there. As always, be careful out there, <split \" \" 1><string $gs1></split>."
-msgstr "Нораксия расскажет подробности. Поговори с ней и отправляйся туда. И, как всегда, будь осторожен, <split \" \" 1><string $gs1></split>."
+msgstr "Нораксия расскажет подробности. Поговори с ней и отправляйся туда. И, как всегда, будь <if $gn4>осторожна<else>осторожен</if>, <split \" \" 1><string $gs1></split>."
 
 #. ja: やっと出番なのでふっち？<br>わたぴが頑張って調べた「ジョウホウ」を、<br>ありがたく聞くのでふっち。
 #. de: Da ist <if $gn4>die Laufende<else>der Laufende</if> ja endlich! Die Meinige hat sich ganz doll angestrengt und vielige Informationen zu<shy>sammen<shy>getragen, die <if $gn4>die Deinige<else>der Deinige</if> sich anhören muss!
@@ -208,7 +208,7 @@ msgstr "Медрод явно потрясён. Может, если вы его
 #. speaker: MEDROD
 msgctxt "quest/038/XxaUsa711_03863:TEXT_XXAUSA711_03863_MEDROD_000_060:1"
 msgid "...Y-You're right. It's not as bad as it seems. I saw something terrible, that's true, but that hardly means I'm going to suffer the same fate. Thanks to you, I can think straight again. I believe I can even recount what I saw without losing it."
-msgstr "...Д-да, ты прав. Всё не так страшно, как казалось. Я и правда видел ужасное, но это ещё не значит, что меня ждёт та же участь. Благодаря тебе я снова могу ясно мыслить. Кажется, я даже смогу рассказать, что видел, и не сорваться."
+msgstr "...Д-да, ты <if $gn4>права<else>прав</if>. Всё не так страшно, как казалось. Я и правда видел ужасное, но это ещё не значит, что меня ждёт та же участь. Благодаря тебе я снова могу ясно мыслить. Кажется, я даже смогу рассказать, что видел, и не сорваться."
 
 #. ja: 忘れもしねぇ、アレは採掘終了の鐘が鳴ったときのことだ。<br>目玉の化け物を従えた「仮面の男」を見かけたんだ。<br>不気味に思って、そいつの来た方を見ると……
 #. de: Ich erinnere mich noch genau. Es war, als die Glocke zum Ende der Schicht läutete. Ich war auf dem Weg zum Schwimmenden Korken, als ich diese gruselige Gestalt im Wald sah. Ganz in schwarz und das Gesicht unter einer großen Kapuze verborgen. Im Schlepptau hatte sie ein widerliches Monster, das aus nichts als Augen und Zähnen zu bestehen schien. Abgestoßen und neugierig zugleich, schlich ich mich so nah ran, wie mich meine zitternden Beine trugen.
@@ -270,6 +270,7 @@ msgstr "Да уж, лишь бы больше не приходилось тер
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/038/XxaUsa711_03863:TEXT_XXAUSA711_03863_MEDROD_000_066:1"
 msgid "All right, teamwork! That's what I wanted to─wait, I haven't been <i>that</i> bad, have I...? At any rate, I'm all for helping this adventurer. It's the least I can do to repay <if $gn4>her<else>him</if> for comforting me!"
-msgstr "Вот, командная работа! Именно это я и хотел... Погодите, я правда так уж сильно вас достал?.. Ладно, я за то, чтобы помочь этому искателю приключений. Меньшее, чем я могу отплатить <if $gn4>ей<else>ему</if> за утешение!"
+msgstr "Вот, командная работа! Именно это я и хотел... Погодите, я правда так уж сильно вас достал?.. Ладно, я за то, чтобы помочь этому искателю приключений. <if $gn4>Меньшее, чем я могу отплатить ей за утешение!<else>Меньшее, чем я могу отплатить ему за утешение!</if>"

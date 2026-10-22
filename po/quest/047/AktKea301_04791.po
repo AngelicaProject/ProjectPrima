@@ -178,7 +178,7 @@ msgstr "Поговорите с Крайлью в Объятии Двенадц�
 # aeria-terms: {"G'raha Tia":"1adacd59efa5","Krile":"1697c88bbb71"}
 msgctxt "quest/047/AktKea301_04791:TEXT_AKTKEA301_04791_DERYK_000_000:1"
 msgid "Oh, <split \" \" 1><string $gs1></split>. 'Tis good of you to come, but I'm afraid there is still no word from Krile and G'raha Tia."
-msgstr "О, это ты, <split \" \" 1><string $gs1></split>. Рад, что заглянул, но боюсь, вестей от Крайль и Г'рахи Тиа всё ещё нет."
+msgstr "О, это ты, <split \" \" 1><string $gs1></split>. Рад, что <if $gn4>заглянула<else>заглянул</if>, но боюсь, вестей от Крайль и Г'рахи Тиа всё ещё нет."
 
 #. ja: ふたりとも、オールド・シャーレアンで、<br>神域の調査結果をまとめる作業を続けているんだろう。
 #. de: Sie arbeiten jedoch gewiss so schnell wie möglich daran, die Erkenntnisse unserer Unter<shy>such<shy>ung zusammenzutragen.
@@ -211,7 +211,7 @@ msgstr "Пока ждём новостей, я хотел навестить С�
 #. speaker: DERYK
 msgctxt "quest/047/AktKea301_04791:TEXT_AKTKEA301_04791_DERYK_000_004:1"
 msgid "If you aren't otherwise occupied, you should come too."
-msgstr "Если ты не занят, приходи тоже."
+msgstr "Если ты не <if $gn4>занята<else>занят</if>, приходи тоже."
 
 #. ja: スノーゲイムは驚くほど熱心に、ここへ通い詰めているな。<br>忙しいときは食事もおろそかになっているようだし、<br>身体を壊さないといいんだが……。
 #. de: Snoegeim gehört hier praktisch zum Inventar. Sie ist allerdings so sehr auf ihre Arbeit konzentriert, dass ihre Ernährung oft zu kurz kommt. Ich bete nur, dass ihre Gesundheit nicht darunter leidet<nbsp>...
@@ -424,9 +424,10 @@ msgstr "А, я давно хотел кое о чём тебя спросить.
 #. de: Du bist sicherlich weiter gereist als die meisten anderen. Wo hat es dir am besten gefallen?
 #. fr: Tu as voyagé aux quatre coins du monde, et même dans d'autres dimensions, n'est-ce pas<nbsp>? De tous les endroits que tu as visités, lesquels préfères-tu<nbsp>?
 #. speaker: DERYK
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/047/AktKea301_04791:TEXT_AKTKEA301_04791_DERYK_000_053:1"
 msgid "As an adventurer, you are better traveled than most. Of the places you have seen, what kind do you like best?"
-msgstr "Ты, наверное, повидал больше мест, чем большинство. Какие из тех, где ты побывал, тебе нравятся больше всего?"
+msgstr "Ты, наверное, повидал больше мест, чем большинство. Какие из тех, где ты <if $gn4>побывала<else>побывал</if>, тебе нравятся больше всего?"
 
 #. ja: 何と言う？
 #. de: Was möchtest du sagen?
@@ -601,7 +602,7 @@ msgstr "В битве с нами боги расходуют огромное �
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/047/AktKea301_04791:TEXT_AKTKEA301_04791_KRILE_000_068:1"
 msgid "Lest you worry, you've done no wrong, <split \" \" 1><string $gs1></split>. The gods themselves wished to fight, after all."
-msgstr "Не волнуйся, <split \" \" 1><string $gs1></split>, ты не виноват. Сами боги хотели сражаться, в конце концов."
+msgstr "Не волнуйся, <split \" \" 1><string $gs1></split>, ты <if $gn4>не виновата<else>не виноват</if>. Сами боги хотели сражаться, в конце концов."
 
 #. ja: とはいえ、人との戦いの先にある十二神の「願い」について、<br>ある程度の確証が得られるまでは……<br>残る神々と戦うのは避けたい。
 #. de: Dennoch sollten wir einen weiteren Kampf vermeiden, bis wir mehr über ihre wahren Ziele erfahren.
@@ -680,7 +681,7 @@ msgstr "Если ещё хочешь поговорить с богами, лу�
 # aeria-terms: {"Hydaelyn":"e793d5e761d0"}
 msgctxt "quest/047/AktKea301_04791:TEXT_AKTKEA301_04791_WATCHEROFMOON_000_101:1"
 msgid "<ui-color 547>Greetings, Hydaelyn's champion. You are ever welcome here, as are your companions.</ui-color>"
-msgstr "<ui-color 547>Приветствую, избранник Хайделин. Вам здесь всегда рады, как и вашим спутникам.</ui-color>"
+msgstr "<ui-color 547>Приветствую, <if $gn4>избранница<else>избранник</if> Хайделин. Вам здесь всегда рады, как и вашим спутникам.</ui-color>"
 
 #. ja: 月の監視者さん。<br>ハイデリンをよく知るあなたに、お聞きしたいことがあります。
 #. de: Es ist uns eine Freude, Euch zu treffen, Mondwächter. Wir sind in der Hoffnung gekommen, dass Ihr uns ein paar Fragen beantworten könntet<nbsp>- Fragen über Hydaelyn.
@@ -1415,7 +1416,7 @@ msgstr "Пока неизвестно, что будет дальше, я ост
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/047/AktKea301_04791:TEXT_AKTKEA301_04791_GRAHATIA_000_274:1"
 msgid "Twice now you have triumphed, and I have faith that you will do so yet again. Go well, <split \" \" 1><string $gs1></split>!"
-msgstr "Ты уже дважды одержал победу, и я верю, что в третий раз тоже справишься. Удачи, <split \" \" 1><string $gs1></split>!"
+msgstr "<if $gn4>Ты уже дважды одержала победу, и я верю, что в третий раз тоже справишься. Удачи, <split \" \" 1><string $gs1></split>!<else>Ты уже дважды одержал победу, и я верю, что в третий раз тоже справишься. Удачи, <split \" \" 1><string $gs1></split>!</if>"
 
 #. ja: 十二神全員と戦った後になにが起こるか、まだわからないんだ。<br>あんたの方も、十分に気をつけてくれよな。
 #. de: Wir wissen nicht, was nach dem Kampf mit den Göttern geschehen wird. Deshalb bleibe ich hier<nbsp>- in dem Glauben, dass du siegen wirst.

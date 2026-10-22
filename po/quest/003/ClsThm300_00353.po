@@ -37,7 +37,7 @@ msgstr "Вы выяснили, что Кокобуси сопровождают 
 #. de: Cocobuki hat dir aufgetragen, nördlich der Bucht des Abendsterns nach dem Marodeur und der Thaumaturgin zu suchen.
 #. fr: Cocobuki vous a demandé d'aller au nord de la baie des Vêpres pour retrouver la trace du maraudeur et de l'occultiste qui ont été aperçus avec Cocobusi.
 #. kind: journal
-# aeria-terms: {"Cocobuki":"948c8612bddc","Mormo":"83772524d91b","Vesper Bay":"fbe33296282c"}
+# aeria-terms: {"Cocobuki":"948c8612bddc","Mormo":"83772524d91b","Vesper Bay":"fbe33296282c","adventurer":"48df264ad5ec"}
 msgctxt "quest/003/ClsThm300_00353:TEXT_CLSTHM300_00353_SEQ_03:1"
 msgid "After explaining Mormo's grim purpose for the women she has seduced, Cocobuki bids you seek out the Lominsan adventurers said to be accompanying the treacherous voidsent. Begin your search to the north of Vesper Bay."
 msgstr "Узнав, что Мормо задумала сделать с соблазнёнными ею женщинами, Кокобуки велит вам найти лимсийских искателей приключений, которые, по слухам, идут вместе с коварным исчадием. Начните поиски к северу от Залива Веспер."
@@ -46,7 +46,7 @@ msgstr "Узнав, что Мормо задумала сделать с соб�
 #. de: In einem Tunnel bist du auf den schwer verletzten Marodeur gestoßen und hast ihn vor einem angriffslustigen Imp gerettet. Sprich mit dem Verwundeten und stelle sicher, dass er unbeschadet zur Bucht des Abendsterns zurückkehren kann.
 #. fr: Vous avez retrouvé le maraudeur gravement blessé et vaincu le missionnaire de Mormo qui le poursuivait. Essayez d'apprendre ce qui s'est passé auprès de cet aventurier.
 #. kind: journal
-# aeria-terms: {"Cocobusi":"fed09289f7d1","marauder":"7e1a124b6ce0"}
+# aeria-terms: {"Cocobusi":"fed09289f7d1","adventurer":"48df264ad5ec","marauder":"7e1a124b6ce0"}
 msgctxt "quest/003/ClsThm300_00353:TEXT_CLSTHM300_00353_SEQ_04:1"
 msgid "You have stumbled across one of the missing adventurers, and defeated an imp's attempted ambush. Speak with the wounded marauder to find out where Cocobusi may be heading."
 msgstr "Вы нашли одного из пропавших искателей приключений и отбили нападение беса. Поговорите с раненым мародёром и узнайте, куда направилась Кокобуси."
@@ -100,6 +100,7 @@ msgstr "Поговорить с Кокобуки."
 #. de: Zusammen mit Cocobuki die verschwundenen Abenteurer suchen
 #. fr: Retrouver les aventuriers qui ont disparu avec Cocobusi
 #. kind: objective
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/003/ClsThm300_00353:TEXT_CLSTHM300_00353_TODO_02:1"
 msgid "Track down the missing adventurers."
 msgstr "Отыскать пропавших искателей приключений."
@@ -157,7 +158,7 @@ msgstr "Нельзя упускать такой шанс! Отправляйт�
 #. speaker: MOBA
 msgctxt "quest/003/ClsThm300_00353:TEXT_CLSTHM300_00353_MOBA_000_30:1"
 msgid "Hm? Somethin' I can do for you, stranger?"
-msgstr "А? Чего надо, незнакомец?"
+msgstr "А? Чего надо, <if $gn4>незнакомка<else>незнакомец</if>?"
 
 #. ja: うーん、そういえばこれに似たララフェルが、<br>何かを探すように、到着した定期船を見ていたよ。<br>雇えそうな冒険者でも探していたのかなぁ。
 #. de: Hm? Du warst das doch nicht mit dem Druiden. 'tschuldige, da muss ich dich wohl verwechselt haben. Na ja, das Kerlchen von der Zeichnung kommt mir jedenfalls bekannt vor, ich meine, diesmal bin ich mir sogar hundert<shy>prozen<shy>tig sicher, ehrlich! Der Lalafell hat die ganze Zeit zu den Anlegeplätzen rübergeschaut, als würde er etwas Bestimmtes suchen. Vielleicht hat er Besuch aus Limsa erwartet?
@@ -165,10 +166,10 @@ msgstr "А? Чего надо, незнакомец?"
 #. speaker: MOBA
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Lalafell":"401fa54566e1"}
+# aeria-terms: {"Lalafell":"401fa54566e1","adventurer":"48df264ad5ec"}
 msgctxt "quest/003/ClsThm300_00353:TEXT_CLSTHM300_00353_MOBA_000_31:1"
 msgid "Now that you mention it, I <i>did</i> see a Lalafell who matches this description. He was watchin' the ferries come in with more than a passin' interest. Lookin' to hire some adventurers or some such, I reckon."
-msgstr "Раз уж ты заговорил, я <i>и правда</i> видел Лалафелла, похожего на этого. Он не спускал глаз с прибывающих паромов. Ищет, небось, кого-нибудь из искателей приключений, нанять хочет."
+msgstr "Раз уж ты <if $gn4>заговорила<else>заговорил</if>, я <i>и правда</i> видел Лалафелла, похожего на этого. Он не спускал глаз с прибывающих паромов. Ищет, небось, кого-нибудь из искателей приключений, нанять хочет."
 
 #. ja: あらいらっしゃい。<br>お客さん……って顔つきじゃないみたいね。
 #. de: Willkommen! Schales Bier gibt's heute zum doppelten Preis! Wollt Ihr Euch nicht gleich hier setz... Wie, Ihr wollt nicht?
@@ -200,7 +201,7 @@ msgstr "Чего тебе, <if $gn4>красавица<else>красавчик</
 #. de: Ja, das Kerlchen hab ich gesehen. Ist hier mit so 'nem Hünen von Marodeur und 'ner scharfen Thaumaturgin grinsend bis über beide Ohren herumschlawendelt wie mein Kleiner mit seinem Zwergbehemoth, den wir ihm zum letzten Sternenlichtfest geschenkt hatten. Weißt du, was die wollten?
 #. fr: Je crois bien avoir vu ce Lalafell avec deux aventuriers qui venaient de Limsa Lominsa. L'une était occultiste, et l'autre maraudeur, si je me souviens bien.
 #. speaker: MOBC
-# aeria-terms: {"Lalafell":"401fa54566e1","Limsa Lominsa":"d423c1a01f1a","marauder":"7e1a124b6ce0","thaumaturge":"854961af5ed5"}
+# aeria-terms: {"Lalafell":"401fa54566e1","Limsa Lominsa":"d423c1a01f1a","adventurer":"48df264ad5ec","marauder":"7e1a124b6ce0","thaumaturge":"854961af5ed5"}
 msgctxt "quest/003/ClsThm300_00353:TEXT_CLSTHM300_00353_MOBC_000_41:1"
 msgid "Hmmm. I believe I saw your Lalafell in the company of a couple adventurers hailing from Limsa Lominsa─a marauder and a thaumaturge, were I to hazard a guess. I think they were talking about seeing the area north of here..."
 msgstr "Хм-м. Кажется, я видел твоего Лалафелла с парочкой искателей приключений из Лимсы Ломинсы — мародёром и тауматургом, если не ошибаюсь. Кажется, они собирались осмотреть местность к северу отсюда..."
@@ -230,7 +231,7 @@ msgstr "Хм-хм-хм... Значит, Мормо и правда облюбо�
 #. de: Hm, die Thaumaturgin dient ihm vermutlich als Ätherauffrischer. Würde mich gar nicht wundern, wenn er hier nicht schon vorher andere Opfer aufgegriffen hätte. Schließlich herrscht in dieser Hafenstadt reger Durchgangs<shy>verkehr, da fällt es kaum auf, wenn mal ein paar der neuen Gesichter fehlen. Was den Marodeur betrifft ... Vielleicht war der nur eine Art Alibi.
 #. fr: Les jolies filles qui ont disparu vont sûrement servir à Mormo pour se constituer un corps lorsqu'elle aura retrouvé tout son pouvoir. Quant aux aventuriers, je crains qu'elle en ait après la mana de l'occultiste.
 #. speaker: COCOBUKI
-# aeria-terms: {"Mormo":"83772524d91b","hold":"4662ae098b11","succubus":"e3251a0da331","thaumaturge":"854961af5ed5"}
+# aeria-terms: {"Mormo":"83772524d91b","adventurer":"48df264ad5ec","hold":"4662ae098b11","succubus":"e3251a0da331","thaumaturge":"854961af5ed5"}
 msgctxt "quest/003/ClsThm300_00353:TEXT_CLSTHM300_00353_COCOBUKI_000_51:1"
 msgid "The maidens seduced by the succubus will be prepared as vessels to hold her fully restored power; I fear they will have already been slain. As for the adventurers, well, I think you can imagine what Mormo intends for the thaumaturge."
 msgstr "Соблазнённые суккубом девушки станут вместилищами для её восстановленной силы. Боюсь, их уже могли убить. А что до искателей приключений... Думаю, вы и сами понимаете, что Мормо задумала сделать с тауматургом."

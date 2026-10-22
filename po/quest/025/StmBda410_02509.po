@@ -74,7 +74,7 @@ msgstr "Ну вот, теперь я понимаю... Надо было ост�
 # aeria-terms: {"warrior":"0afc8a69aa3c"}
 msgctxt "quest/025/StmBda410_02509:TEXT_STMBDA410_02509_HIEN_000_005:1"
 msgid "Pretentious and preening he may be, but doubt not that he is a warrior. You saw the axe by his throne...and the rage in his eyes."
-msgstr "Пусть Магнай и чванлив, но воин он настоящий. Ты видел топор у его трона... и ярость в глазах."
+msgstr "Пусть Магнай и чванлив, но воин он настоящий. Ты <if $gn4>видела<else>видел</if> топор у его трона... и ярость в глазах."
 
 #. ja: 男が人前で、愛だなんだと、軽々しく口にしようとは……<br>オロニル族では認められていようが、拙者には解せぬ。
 #. de: Azims Güte, pah! Ein Samurai würde das Wort „Güte“ niemals so leichtsinnig in den Mund nehmen!
@@ -206,7 +206,7 @@ msgstr "...О твоём задании поговорим снаружи. За 
 #. speaker: BAATU
 msgctxt "quest/025/StmBda410_02509:TEXT_STMBDA410_02509_BAATU_000_040:1"
 msgid "Your name, foreigner?"
-msgstr "Как тебя зовут, чужеземец?"
+msgstr "Как тебя зовут, <if $gn4>чужеземка<else>чужеземец</if>?"
 
 #. ja: ……では、<split " " 1><string $gs1></split>。<br>お前には、この「明けの玉座」の真下にある湖に向かい、<br>湖底から「<sheet EventItem 2002207 0>」を集めてきてもらう。
 #. de: Also gut, <split " " 1><string $gs1></split>. Du besorgst mir jetzt einige <noun-de EventItem 5 2002207 2 4 1>, die auf dem Grund des Sees unterhalb vom Morgenthron wachsen.
@@ -214,7 +214,7 @@ msgstr "Как тебя зовут, чужеземец?"
 #. speaker: BAATU
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
-# aeria-terms: {"Azim Khaat":"56234345d121","the Dawn Throne":"c0c9454c15e2"}
+# aeria-terms: {"Azim Khaat":"56234345d121","Dawn Throne":"05f399202acc"}
 msgctxt "quest/025/StmBda410_02509:TEXT_STMBDA410_02509_BAATU_000_041:1"
 msgid "...<split \" \" 1><string $gs1></split>, then. You are to dive into Azim Khaat, below the Dawn Throne, and gather swordgrass from the lakebed."
 msgstr "...Ну что ж, <split \" \" 1><string $gs1></split>. Тебе нужно нырнуть в Азим-Хаат, под Трон Рассвета, и собрать траву-меч со дна озера."
@@ -264,7 +264,7 @@ msgstr "Да-да, я знаю, кто ты. Хочешь спуститься �
 #. de: Den Morgenthron verlassen?
 #. fr: Descendre à la base du Trône de l'Aube<nbsp>?
 #. speaker: SYSTEM
-# aeria-terms: {"the Dawn Throne":"c0c9454c15e2"}
+# aeria-terms: {"Dawn Throne":"05f399202acc"}
 msgctxt "quest/025/StmBda410_02509:TEXT_STMBDA410_02509_SYSTEM_000_051:1"
 msgid "Leave the Dawn Throne?"
 msgstr "Покинуть Трон Рассвета?"
@@ -276,7 +276,7 @@ msgstr "Покинуть Трон Рассвета?"
 #. macro: <if $gn4>She<else>He</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/025/StmBda410_02509:TEXT_STMBDA410_02509_BAATU_000_060:1"
 msgid "<if $gn4>She<else>He</if> returns, and with swordgrass in hand?"
-msgstr "<if $gn4>Она<else>Он</if> вернулась<if $gn4><else>ся</if>, да ещё и с травой-мечом?"
+msgstr "<if $gn4>Она вернулась<else>Он вернулся</if>, да ещё и с травой-мечом?"
 
 #. ja: あ、ああ、確かにこれで間違いない……。<br>なんて恐れ知らずな戦士なんだ……。
 #. de: Hm, ich gebe zu, ich habe dich unterschätzt.
@@ -284,7 +284,7 @@ msgstr "<if $gn4>Она<else>Он</if> вернулась<if $gn4><else>ся</if
 #. speaker: BAATU
 msgctxt "quest/025/StmBda410_02509:TEXT_STMBDA410_02509_BAATU_000_061:1"
 msgid "...That you would immerse yourself in the depths is a testament to your bravery. Well done."
-msgstr "...Ты и правда нырнул в глубины. Это доказывает твою отвагу. Молодец."
+msgstr "...Ты и правда <if $gn4>нырнула<else>нырнул</if> в глубины. Это доказывает твою отвагу. Молодец."
 
 #. ja: おかげで、麻痺薬を作ることができる。<br>合戦では、それを使って、ほかの部族の足止めをするのだ。
 #. de: Aus diesem Gras lässt sich ein Betäubungsmittel herstellen, das wir während des Naadams einsetzen, um die Krieger der anderen Stämme außer Gefecht zu setzen.
@@ -367,7 +367,7 @@ msgstr "Приказали переносить всякую всячину из
 #. speaker: MAGNAI
 msgctxt "quest/025/StmBda410_02509:TEXT_STMBDA410_02509_MAGNAI_000_083:1"
 msgid "You dove deep into the waters to harvest swordgrass? I see. That is well."
-msgstr "Ты нырнул на дно озера за травой-мечом? Понятно. Хорошая работа."
+msgstr "Ты <if $gn4>нырнула<else>нырнул</if> на дно озера за травой-мечом? Понятно. Хорошая работа."
 
 #. ja: 族長殿、そなたは働けば応えると言っておったが、<br>わしらが仕事を果たし、報酬として帰ることを望んだ場合……<br>それは聞き入れられるのだろうか？
 #. de: Ehrwürdiger Magnai Khan. Du hast uns versprochen, uns einen Wunsch zu erfüllen, wenn wir gute Arbeit leisten. Was, wenn wir uns wünschen, nach Hause zurückkehren zu dürfen?

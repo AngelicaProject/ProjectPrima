@@ -214,7 +214,7 @@ msgstr "Как всегда, товарищи по гильдии тебе по�
 # aeria-terms: {"Ul'dah":"68f80cffa0d5"}
 msgctxt "quest/002/ClsCul501_00270:TEXT_CLSCUL501_00270_DIVINGDOVE_000_010:1"
 msgid "In Ul'dah, commoners like myself seldom get the chance to see the sultana in the flesh. 'Tis a great honor, being called upon to prepare Her Grace's meal...but I warn you to proceed with caution."
-msgstr "В Уль'де простолюдинам вроде меня редко удаётся увидеть султану воочию. Готовить для её высочества — великая честь... но будь осторожен."
+msgstr "В Уль'де простолюдинам вроде меня редко удаётся увидеть султану воочию. Готовить для её высочества — великая честь... но будь <if $gn4>осторожна<else>осторожен</if>."
 
 #. ja: あんたが前にやり込めたロロリトを覚えているかい？<br>あいつは砂蠍衆……女王にすら意見できる立場でね。<br>実は今回の訪問も、あいつが仕切ってるって噂なんだ。
 #. de: Du erinnerst dich doch sicher an Lolorito, oder? Er scheint nach letztem Mal sehr angefressen gewesen zu sein, weil dein Essen einfach <i>zu</i> gut war. Er liebt es, schlechte Kritiken zu geben, und dein Meisterwerk hat ihm den ganzen Tag versaut. Als Mitglied im Scorpio-Kreis macht sein Einfluss auch vor der Sultana nicht halt und die Gerüchte besagen, dass <i>er</i> der Drahtzieher hinter der ganzen Sache ist.
@@ -450,7 +450,7 @@ msgstr "Вот и настал решающий миг, <split \" \" 1><string $
 # aeria-terms: {"culinarian":"93ef02814df4","eft":"eff4ec09066a"}
 msgctxt "quest/002/ClsCul501_00270:TEXT_CLSCUL501_00270_ZANTHAEL_000_080:1"
 msgid "You are the culinarian <string $gs1>? I am informed that you will be serving an eft steak, a bowl of beef stew, a serving of trapper's quiche, and a crowned pie for the Admiral's banquet."
-msgstr "Вы и есть <if $gn4>кулинарка<else>кулинар</if> <string $gs1>? Мне доложили, что на пир адмирала вы приготовили стейк из эфта, миску говяжьего рагу, порцию киша охотника и королевский пирог."
+msgstr "Вы и есть кулинар <string $gs1>? Мне доложили, что на пир адмирала вы приготовили стейк из эфта, миску говяжьего рагу, порцию киша охотника и королевский пирог."
 
 #. ja: 「<sheet ItemHQ "　4647" 0>」「<sheet ItemHQ "　4678" 0>」、<br>「<sheet ItemHQ "　4715" 0>」「<sheet ItemHQ "　4713" 0>」……<br>以上の4皿を用意すると聞いている、急げよ。
 #. de: Mir wurde gesagt, dass du <noun-de ItemHQ 5 "　4647" 1 4 1>, <noun-de ItemHQ 1 "　4678" 1 4 1>, <noun-de ItemHQ 5 "　4715" 1 4 1> und <noun-de ItemHQ 1 "　4713" 1 4 1> mitbringen würdest. Zeig her ...
@@ -523,7 +523,7 @@ msgstr "<switch $gn70><case>Это вы и есть кулинар, верно?<
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/002/ClsCul501_00270:TEXT_CLSCUL501_00270_LOLORITO_000_105:1"
 msgid "(Grrr... How could <if $gn4>she<else>he</if> possibly have known every one of the sultana's favorite dishes?)"
-msgstr "(Гр-р... Как <if $gn4>она<else>он</if> могла узнать все любимые блюда султаны?)"
+msgstr "(Гр-р... Как <if $gn4>она могла<else>он мог</if> узнать все любимые блюда султаны?)"
 
 #. ja: 女王の前で、恥をかかせてやるはずが……<br>ええい、いまいましい！<br>これでは女王を喜ばせただけではないか！
 #. de: <if $gn4>Sie<else>Er</if> sollte doch versagen und sich vor ihr in Grund und Boden schämen! Wie konnte das bloß misslingen! Jetzt liebt die Sultana <if $gn4>sie<else>ihn</if> auch noch!
@@ -532,7 +532,7 @@ msgstr "(Гр-р... Как <if $gn4>она<else>он</if> могла узнат�
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/002/ClsCul501_00270:TEXT_CLSCUL501_00270_LOLORITO_000_106:1"
 msgid "(Instead of being humiliated, <if $gn4>she<else>he</if> ends up winning Her Grace's adulation! Bah!)"
-msgstr "(Вместо того чтобы опозориться, <if $gn4>она<else>он</if> ещё и заслужила благосклонность её высочества! Проклятье!)"
+msgstr "(Вместо того чтобы опозориться, <if $gn4>она ещё и заслужила<else>он ещё и заслужил</if> благосклонность её высочества! Проклятье!)"
 
 #. ja: なにか言うたか、ロロリトよ？
 #. de: Was sagst du, Lolorito?
@@ -588,7 +588,7 @@ msgstr "Хм? Вы решили, что <i>я</i> лично попросила 
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/002/ClsCul501_00270:TEXT_CLSCUL501_00270_LYNGSATH_000_090:1"
 msgid "I've 'eard all about it, <split \" \" 1><string $gs1></split>! Ye did it again, gods bless ye!"
-msgstr "Я обо всём слышал, <split \" \" 1><string $gs1></split>! Боги тебя благослови, ты опять всех удивил!"
+msgstr "Я обо всём слышал, <split \" \" 1><string $gs1></split>! Боги тебя благослови, ты опять всех <if $gn4>удивила<else>удивил</if>!"
 
 #. ja: もっとも、俺も提督から感謝の言葉をもらったぜ。<br>いい調理師を育ててくれたってな。<br>俺なんて心構えを教えたぐらいなのに。
 #. de: Na ja, der Admiral hat mir gedankt. Das ist auch nicht schlecht, oder? Er hat sich dafür bedankt, dass ich so einen feinen Gourmet wie dich herangezogen habe, haha!
@@ -617,7 +617,7 @@ msgstr "Адмирал хвалит меня за то, что я вырасти
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/002/ClsCul501_00270:TEXT_CLSCUL501_00270_LYNGSATH_000_093:1"
 msgid "Ye've surpassed even meself fer fame, <split \" \" 1><string $gs1></split>. There ain't nothin' left I can tell ye what ye don't already ken. I'm prouder than I've got any right to be."
-msgstr "Ты превзошёл меня славой, <split \" \" 1><string $gs1></split>. Мне уже нечему тебя учить. И всё же я горжусь тобой больше, чем вправе."
+msgstr "Ты <if $gn4>превзошла<else>превзошёл</if> меня славой, <split \" \" 1><string $gs1></split>. Мне уже нечему тебя учить. И всё же я горжусь тобой больше, чем вправе."
 
 #. ja: この情熱の炎で、お前だけの料理を追求して、<br>たくさんの人を幸せにしてやってくれ。
 #. de: Ich hoffe, dass auch du diese Flamme der Leidenschaft in dir trägst. Lass sie niemals verlöschen und kreiere mit ihrer Hilfe Gerichte, die nur du kreieren kannst! Deine Gäste werden dir für immer dankbar sein.
@@ -627,7 +627,7 @@ msgstr "Ты превзошёл меня славой, <split \" \" 1><string $g
 # aeria-terms: {"culinarian":"93ef02814df4"}
 msgctxt "quest/002/ClsCul501_00270:TEXT_CLSCUL501_00270_LYNGSATH_000_094:1"
 msgid "Nay, nay, 'tain't no modest accomplishment, <if $gn4>lass<else>lad</if>! An' from 'ere, ye'll go on to reach even greater 'eights in our craft. But wherever ye end up, always remember me words: it's passion what makes a culinarian."
-msgstr "Да нет же, это большое достижение, <if $gn4>красавица<else>красавец</if>! А дальше ты в нашем ремесле поднимешься ещё выше. Но где бы ни оказался, запомни мои слова: кулинару нужна страсть."
+msgstr "Да нет же, это большое достижение, <if $gn4>красавица<else>красавец</if>! А дальше ты в нашем ремесле поднимешься ещё выше. Но где бы ни <if $gn4>оказалась<else>оказался</if>, запомни мои слова: кулинару нужна страсть."
 
 #. ja: かといって、これから先も増長すんなよ。<br>腕を落としたら、いつでも鍛え直してやるからな！
 #. de: Mein letzter Rat an dich ist gleichzeitig auch eine Warnung: Besinne dich immer deiner Wurzeln, denn Hochmut kommt vor dem Fall.<br>Und wenn deine Fä<shy>hig<shy>kei<shy>ten irgendwann einrosten sollten, kannst du gerne wieder bei mir in die Lehre gehen!

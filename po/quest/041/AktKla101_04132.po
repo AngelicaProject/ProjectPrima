@@ -183,7 +183,7 @@ msgstr "Ну и глупость!"
 #. speaker: RURUSHA
 msgctxt "quest/041/AktKla101_04132:TEXT_AKTKLA101_04132_RURUSHA_000_014:1"
 msgid "Why, hello there. Terribly sorry, but I'm rather busy at the moment. Can it wait until later?"
-msgstr "Здравствуй. Ты что-то хотела? Извини, я сейчас занята. Может, позже?"
+msgstr "Здравствуй. Ты что-то <if $gn4>хотела<else>хотел</if>? Извини, я сейчас занята. Может, позже?"
 
 #. ja: ええい……私の要求は極めてシンプルだ。<br>ガラクタの修復など、即刻中止していただきたい！
 #. de: Ich dachte, ich hätte mich klar ausgedrückt, aber ich muss wohl noch deutlicher werden. Lass die Finger von diesem Plunder!
@@ -251,7 +251,7 @@ msgstr "Погоди-ка. Ты ведь мастер?"
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/041/AktKla101_04132:TEXT_AKTKLA101_04132_BORIC_000_022:1"
 msgid "<if $gn4>She<else>He</if> is indeed, Professor! What's more, <if $gn4>she<else>he</if>'s kindly agreed to hear more about our work. Which is why I brought, er..."
-msgstr "Именно так, профессор! Более того, <if $gn4>она<else>он</if> согласилась выслушать, чем мы занимаемся. Вот я и привёл её, чтобы вы всё объяснили. Позвольте представить..."
+msgstr "Именно так, профессор! Более того, <if $gn4>она согласилась выслушать, чем мы занимаемся. Вот я и привёл её, чтобы вы всё объяснили. Позвольте представить...<else>он согласился выслушать, чем мы занимаемся. Вот я и привёл его, чтобы вы всё объяснили. Позвольте представить...</if>"
 
 #. ja: ……そういえばまだ、<br>職人さんのお名前を聞いてなかったような……？
 #. de: Dabei fällt mir auf, dass ich dich noch gar nicht nach deinem Namen gefragt habe. Wie heißt du?
@@ -269,7 +269,7 @@ msgstr "Постойте, а ведь я даже не спросил, как в
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/041/AktKla101_04132:TEXT_AKTKLA101_04132_RURUSHA_000_024:1"
 msgid "Well, <split \" \" 1><string $gs1></split>, thank you for coming all this way to talk to an excitable old lady."
-msgstr "Значит, <split \" \" 1><string $gs1></split>. Очень рада, что ты пришла, милая."
+msgstr "Значит, <split \" \" 1><string $gs1></split>. Очень рада, что ты <if $gn4>пришла, милая<else>пришёл, милый</if>."
 
 #. ja: 私は考古学部で教授を務めている、ルルシャよ。<br>ボリックからもう聞いているでしょうけれど、<br>遺物の修復に協力してもらいたいのよ。
 #. de: Mein Name ist Rurusha. Ich bin Professorin am Institut für Archäologie. Ich benötige Hilfe bei der Restaurierung eines alten Artefakts.

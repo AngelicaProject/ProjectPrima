@@ -141,7 +141,7 @@ msgstr "Сегодня Кокобези научит вас по главе «У
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/003/ClsThm150_00350:TEXT_CLSTHM150_00350_COCOBEZI_000_10:1"
 msgid "You are come for your lesson, <split \" \" 1><string $gs1></split>? Then heed well my words..."
-msgstr "Ты пришёл на урок, <split \" \" 1><string $gs1></split>? Тогда слушай внимательно..."
+msgstr "Ты <if $gn4>пришла<else>пришёл</if> на урок, <split \" \" 1><string $gs1></split>? Тогда слушай внимательно..."
 
 #. ja: 「呪術の深淵：猛り狂う危機」<br>嗚呼、我が放出せし魔力よ、素晴らしきかな。<br>豪炎熱風まとい、氷刃冷気まとい、雷撃閃光放ち奔らん。
 #. de: <i>Die Gefahr der Übermacht</i><br>„Oh, wie herrlich die einschüchternde Macht, die wir befehligen, doch ist. Flammen versengen die Luft, Eis gefriert den Boden und Blitze blenden mit ihrem gleißenden Licht.
@@ -169,7 +169,7 @@ msgstr "«Но как страшно, когда враг застаёт вра�
 # aeria-terms: {"Passage":"24ca1d5e42c3","thaumaturge":"854961af5ed5"}
 msgctxt "quest/003/ClsThm150_00350:TEXT_CLSTHM150_00350_COCOBEZI_000_13:1"
 msgid "Once you cut away all the overblown imagery, the passage draws attention to an important tactic: a wise thaumaturge does not engage in battle against opponents <if $gn4>she<else>he</if> cannot defeat."
-msgstr "Если отбросить весь этот пафос, смысл главы прост: мудрый тауматург не станет сражаться с противниками, которых ему не одолеть."
+msgstr "Если отбросить весь этот пафос, смысл главы прост: <if $gn4>мудрая тауматург не станет<else>мудрый тауматург не станет</if> сражаться с противниками, которых <if $gn4>ей<else>ему</if> не одолеть."
 
 #. ja: 実例……<br>今現在ウルダハ都市内にて猛り狂う商人、数多。<br>強欲の大罪に染まりし虚ろなる存在……。
 #. de: Ein gutes Beispiel wäre die Vermeidung von Konflikten mit der Unmenge wütender Händler in Ul'dah. Diese seelenlosen, gefräßigen Kreaturen sind von einer unersättlichen Habgier befallen.
@@ -218,7 +218,7 @@ msgstr "Бессовестно рыдать."
 # aeria-terms: {"Trader":"2306d1dfa185","tear":"81f713dad970"}
 msgctxt "quest/003/ClsThm150_00350:TEXT_CLSTHM150_00350_COCOBEZI_000_20:1"
 msgid "I'm not speaking of a few tears here─I want you to stride right up to these tyrannical traders and <ui-color 500><ui-edge-color 501>cry</ui-edge-color></ui-color> your eyes out."
-msgstr "Не о паре слезинок речь! Хочу, чтобы ты подошёл к этим тиранам-торговцам и <ui-color 500><ui-edge-color 501>заревел</ui-edge-color></ui-color> во весь голос."
+msgstr "Не о паре слезинок речь! Хочу, чтобы ты <if $gn4>подошла<else>подошёл</if> к этим тиранам-торговцам и <ui-color 500><ui-edge-color 501><if $gn4>заревела<else>заревел</if></ui-edge-color></ui-color> во весь голос."
 
 #. ja: おいこら！　エーテル泥棒さんよぉ！<br>いつになったらエーテル返すんじゃい！
 #. de: He! Du <if $gn4>äthersaufende Schurkin<else>äthersaufender Schurke</if>! Wo sind die Gil, die du mir schuldest!?
@@ -236,7 +236,7 @@ msgstr "Эй! Ты, эфирный ворюга! Когда вернёшь мн�
 # aeria-terms: {"Amalj'aa":"f8388dceb67c"}
 msgctxt "quest/003/ClsThm150_00350:TEXT_CLSTHM150_00350_SHOUNINA_000_31:1"
 msgid "I... Alright, alright, <if $gn4>miss<else>son</if>! I know you're the one who chased down those Amalj'aa brutes for us. I'll let it go this one time. For your sake."
-msgstr "Я... Ладно, ладно, <if $gn4>девушка<else>юноша</if>! Знаю, это ты расправился с теми амальджа. Один раз прощу. Ради тебя."
+msgstr "Я... Ладно, ладно, <if $gn4>девушка<else>юноша</if>! Знаю, это ты <if $gn4>расправилась<else>расправился</if> с теми амальджа. Один раз прощу. Ради тебя."
 
 #. ja: ちょっとぉ！<br>火事場泥棒じゃないんだから、<br>売り物のエーテル、返しなさいよ！
 #. de: Thaumaturg<if $gn4>in<else>e</if>! Was für eine Gilde betreibt ihr da eigentlich?! Plündert ihr immer einfach die Waren anständiger Bürger, wenn euch der Sinn danach steht?!
@@ -480,7 +480,7 @@ msgstr "Вот и всё! Сейчас будет так ВЕСЕЛО... Кхм,
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/003/ClsThm150_00350:TEXT_CLSTHM150_00350_COCOBEZI_000_130:1"
 msgid "Welcome back, <split \" \" 1><string $gs1></split>. I am glad to see you making a habit out of not dying."
-msgstr "С возвращением, <split \" \" 1><string $gs1></split>. Рад видеть, что ты взял за привычку не умирать."
+msgstr "С возвращением, <split \" \" 1><string $gs1></split>. Рад видеть, что ты <if $gn4>взяла<else>взял</if> за привычку не умирать."
 
 #. ja: 時に<split " " 1><string $gs1></split>よ、<br>先ほどココブシを見かけたのだが……<br>何やらおかしな様子、汝、その理由を知らんや？
 #. de: Bevor wir über deine Prüfung sprechen, möchte ich dich jedoch etwas über Cocobusi fragen. Als ich ihn eben gesehen haben, erschien er mir irgendwie ... seltsam. Nun, seltsamer als sonst. Weißt du vielleicht etwas darüber?

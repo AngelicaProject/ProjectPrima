@@ -10,10 +10,10 @@ msgstr ""
 #. de: Chechezan möchte einem Kameraden in Not helfen.
 #. fr: Chechezan a un travail à vous proposer pour aider les lames de cuivre.
 #. kind: journal
-# aeria-terms: {"Brass Blade":"f14bb603ac20","Chechezan":"497c1f2b91b0","Horizon":"0a5af05d2a67"}
+# aeria-terms: {"Brass Blade":"f14bb603ac20","Chechezan":"497c1f2b91b0","Horizon":"0a5af05d2a67","adventurer":"48df264ad5ec"}
 msgctxt "quest/003/SubWil092_00341:TEXT_SUBWIL092_00341_SEQ_00:1"
 msgid "Chechezan, a Brass Blade in Horizon, has a task for an unoccupied adventurer."
-msgstr "У Медного клинка Чечезана в Горизонте есть дело для безработного искателя приключений."
+msgstr "У Медного клинка Чечезана в Горизонте есть дело для <if $gn4>безработной искательницы приключений<else>безработного искателя приключений</if>."
 
 #. ja: チェチェザンから「モングレルの血」の調達を依頼された。「モングレル」を倒し、「モングレルの血」を4個入手しよう。
 #. de: Chechezan hat dich gebeten, etwas Mischlingsblut zu besorgen. Begib dich auf Mischlings-Jagd und besorge vier Flaschen.
@@ -66,9 +66,10 @@ msgstr "Отнесите кровь дворняги Нононзо."
 #. macro: <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morning</if><else><if ($gn11 < 17)>day<else>evening</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 4)>evening<else>morning</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 17)>day<else>evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/003/SubWil092_00341:TEXT_SUBWIL092_00341_CHECHEZAN_000:1"
 msgid "Looking for a task to fill your <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morning</if><else><if ($gn11 < 17)>day<else>evening</if></if>, adventurer? I may have just the thing if you're not feeling squeamish."
-msgstr "Ищете, чем занять свой <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>утро</if><else><if ($gn11 < 17)>день<else>вечер</if></if>, искатель приключений? У меня как раз найдётся работёнка, если вас не смущает кое-что неприятное."
+msgstr "Ищете, чем занять свой <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>утро</if><else><if ($gn11 < 17)>день<else>вечер</if></if>, <if $gn4>искательница приключений<else>искатель приключений</if>? У меня как раз найдётся работёнка, если вас не смущает кое-что неприятное."
 
 #. ja: 集落の南に棲みついている「モングレル」から<br>「モングレルの血」を4体ぶんとってきてくれないか。
 #. de: Ich könnte nämlich rein zufällig jemanden gebrauchen, der etwas Mischlingsblut besorgt. Vier Flaschen würden schon genügen. Du brauchst auch gar nicht lange zu suchen. Die Viecher treiben sich südlich unseres Lagers netterweise gleich rudelweise rum.
@@ -130,7 +131,7 @@ msgstr "Монгрели — естественные враги большин�
 # aeria-terms: {"Brass Blade":"f14bb603ac20"}
 msgctxt "quest/003/SubWil092_00341:TEXT_SUBWIL092_00341_CHECHEZAN_013:1"
 msgid "Makes light work of our patrols...as long as we have a steady supply of the nasty stuff. And I'll wager you can guess which Brass Blade picked the short straw to kill mongrels this time around."
-msgstr "С нашими патрулями это здорово помогает... если есть запас этой мерзости. И, держу пари, ты уже догадался, кому из Медных клинков в этот раз досталась неблагодарная работа — убивать монгрелей."
+msgstr "С нашими патрулями это здорово помогает... если есть запас этой мерзости. И, держу пари, ты уже <if $gn4>догадалась<else>догадался</if>, кому из Медных клинков в этот раз досталась неблагодарная работа — убивать монгрелей."
 
 #. ja: まぁそれはともかく……<br>君の協力で必要な分は集まった、感謝するよ！
 #. de: Mir sind nur diesmal leider meine Blutvorräte etwas zu früh ausgegangen, weil ich vor<shy>sichts<shy>halber jeden Tag die doppelte Menge verbrannt hab. Die Mischlinge haben mich nämlich immer so misstrauisch beäugt. Zum Glück ist auf Chechezan Verlass!

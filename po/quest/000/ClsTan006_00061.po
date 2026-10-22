@@ -126,7 +126,7 @@ msgstr "Доложите Геве."
 # aeria-terms: {"leatherworker":"cc953642f54a"}
 msgctxt "quest/000/ClsTan006_00061:TEXT_CLSTAN006_00061_GEVA_000_1:1"
 msgid "There you are, <split \" \" 1><string $gs1></split>! Just the leatherworker I was looking for!"
-msgstr "Вот ты где, <split \" \" 1><string $gs1></split>! Как раз такого кожевника я и искала!"
+msgstr "Вот ты где, <split \" \" 1><string $gs1></split>! Как раз <if $gn4>такую кожевницу<else>такого кожевника</if> я и искала!"
 
 #. ja: ……ええ、タイミングがね！
 #. de: Ich muss nur an dich denken, und schon bist du zur Stelle!
@@ -156,9 +156,10 @@ msgstr "Только что к нам заглянул пожилой мужчи
 #. de: Andererseits tut es mir leid, einen Kunden abzuweisen. Willst du vielleicht noch einmal mit ihm sprechen? Vielleicht kannst du ihm helfen. Der Auftraggeber heißt Camillain und hält sich am Zentaurenauge auf.
 #. fr: Ça m'ennuie quand même un peu, le pauvre homme avait l'air désespéré. Pourrais-tu aller lui parler<nbsp>? Son nom est Camillain, et je l'ai vu se diriger vers L'Œil du Centaure.
 #. speaker: GEVA
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/000/ClsTan006_00061:TEXT_CLSTAN006_00061_GEVA_000_5:1"
 msgid "Could you, perhaps, speak with this client on my behalf? I am told he was last seen heading east, in the direction of the market stalls. Of course, he may have gone further than that, but being an energetic adventurer, I'm sure you'll find him eventually."
-msgstr "Не могла бы ты поговорить с ним вместо меня? Мне сказали, что он направился на восток, к торговым рядам. Может, ушёл и дальше, но ты ведь авантюристка — рано или поздно отыщешь его."
+msgstr "Не могла бы ты поговорить с ним вместо меня? Мне сказали, что он направился на восток, к торговым рядам. Может, ушёл и дальше, но ты ведь <if $gn4>искательница приключений<else>авантюристка</if> — рано или поздно отыщешь его."
 
 #. ja: 君は……革細工師ギルドの職人か？<br>ああ、わざわざ話を聞きに来てくれたのか。すまないな。
 #. de: Du gehörst zur Gerbergilde? Vielen Dank, dass du extra zu mir gekommen bist.
@@ -167,7 +168,7 @@ msgstr "Не могла бы ты поговорить с ним вместо м
 # aeria-terms: {"leatherworker":"cc953642f54a"}
 msgctxt "quest/000/ClsTan006_00061:TEXT_CLSTAN006_00061_CAMILLAIN_000_10:1"
 msgid "You...you are a leatherworker? Thank you for coming to see me... I know that my behavior at the guild was inexcusable."
-msgstr "Т-ты из Гильдии кожевников? Спасибо, что пришёл поговорить со мной... Мне очень стыдно за то, как я вёл себя в гильдии."
+msgstr "Т-ты из Гильдии кожевников? Спасибо, что <if $gn4>пришла<else>пришёл</if> поговорить со мной... Мне очень стыдно за то, как я вёл себя в гильдии."
 
 #. ja: 実は、「アンクル・ボサ」という新興の革細工ブランドに<br>革鎧を注文したところ、ひどい出来の鎧が届いたんだ。
 #. de: Es geht darum, dass ich bei der neuen Ledermarke Angrbotha eine Rüstung gekauft habe, die sich leider als unbrauchbar herausgestellt hat.
@@ -257,7 +258,7 @@ msgstr "Куртка из кожи жабы, говоришь? Ну, после 
 #. speaker: GEVA
 msgctxt "quest/000/ClsTan006_00061:TEXT_CLSTAN006_00061_GEVA_000_23:1"
 msgid "You heard his words, so you know what's at stake better than anyone. I bid you make a toadskin jacket of the highest possible quality and present it to me for inspection."
-msgstr "Ты сама услышала его историю и лучше всех понимаешь, как это важно. Сшей куртку из кожи жабы наивысшего качества и принеси мне на проверку."
+msgstr "<if $gn4>Ты сама услышала<else>Ты сам услышал</if> его историю и лучше всех понимаешь, как это важно. <if $gn4>Сшей<else>Сшей</if> куртку из кожи жабы наивысшего качества и принеси мне на проверку."
 
 #. ja: 最高級の「<sheet ItemHQ 3100 0>」を1着、作ってらっしゃい。<br>一生の記念品よ、責任と誇りをもって仕立てなさいね。
 #. de: Ich bin schon gespannt auf deine Krötenrüstung! Wird sie die hohen Qualitätsanforderungen erfüllen?
@@ -371,7 +372,7 @@ msgstr "За все мои годы я не видел кожаной брони
 #. macro: <if $gn4>miss<else>sir</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/000/ClsTan006_00061:TEXT_CLSTAN006_00061_CAMILLAIN_000_46:1"
 msgid "A craftsman that had never known battle could not possibly have made a jacket like this. Tell me, <if $gn4>miss<else>sir</if>, are you...?"
-msgstr "Такую куртку мог сшить только тот, кто знает, что такое бой. Скажите, сударыня, это вы?.."
+msgstr "Такую куртку мог сшить только тот, кто знает, что такое бой. Скажите, <if $gn4>сударыня<else>сударь</if>, это вы?.."
 
 #. ja: なるほど、親方ゲヴァは、<br>君のような冒険者にも技術を伝授しているんだな。
 #. de: Bedeutet das, dass Geva ihre Techniken an euch Abenteurer weitergibt?
@@ -395,9 +396,10 @@ msgstr "Надеюсь, вы и дальше будете делиться св�
 #. de: Auf jeden Fall danke ich dir von ganzem Herzen! Deine Krötenlederrüstung werde ich voller Stolz meinem Sohn schenken.
 #. fr: Je suis vraiment comblé d'offrir à mon fils une armure d'une telle qualité. Merci, aventuri<if $gn4>ère<else>er</if>.
 #. speaker: CAMILLAIN
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/000/ClsTan006_00061:TEXT_CLSTAN006_00061_CAMILLAIN_000_50:1"
 msgid "I have truly never seen such a fine toadskin jacket. I know my son will be thrilled to receive it. Thank you, adventurer."
-msgstr "Такая куртка из кожи жабы — просто загляденье. Сын будет счастлив получить её. Спасибо, авантюрист."
+msgstr "Такая куртка из кожи жабы — просто загляденье. Сын будет счастлив получить её. Спасибо, <if $gn4>искательница приключений<else>авантюрист</if>."
 
 #. ja: おかえり、喜んでもらえたようだね。
 #. de: Gut gemacht! Der Kunde war offensichtlich begeistert.

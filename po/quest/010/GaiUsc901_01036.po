@@ -669,7 +669,7 @@ msgstr "No text"
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/010/GaiUsc901_01036:TEXT_GAIUSC901_01036_ADALBERT_000_300:1"
 msgid "So you're <string $gs1>, the fearless leader of the elite adventurer unit. We've been expecting you."
-msgstr "Так это вы, <string $gs1>, бесстрашный предводитель элитного отряда авантюристов. Мы вас заждались."
+msgstr "Так это вы, <string $gs1>, <if $gn4>бесстрашная предводительница<else>бесстрашный предводитель</if> элитного отряда авантюристов. Мы вас заждались."
 
 #. ja: 黒渦団からの通信によれば、目標のリットアティンは、<br>先刻、「カストルム・オクシデンス」を出立したとのこと。
 #. de: Rhitahtyn ist von Castrum Occidens aufgebrochen, wie uns die Späher des Mahlstroms vor kurzer Zeit gemeldet haben.
@@ -856,7 +856,7 @@ msgstr "Где же я тебя видел? А, конечно — это <if $g
 #. speaker: IMPERIALCENTURION
 msgctxt "quest/010/GaiUsc901_01036:TEXT_GAIUSC901_01036_IMPERIALCENTURION_000_502:1"
 msgid "This is the eikon-slayer!?"
-msgstr "Так это тот самый убийца эйконов?!"
+msgstr "Так это <if $gn4>та самая убийца эйконов<else>тот самый убийца эйконов</if>?!"
 
 #. ja: なるほど。<br>周辺で起きている小競り合いは陽動……。
 #. de: Hm. Dacht ich's mir doch, dass das Geplänkel da draußen nur zur Ablenkung dienen sollte.
@@ -915,7 +915,7 @@ msgstr "Слушаюсь, мой господин!"
 # aeria-terms: {"Baelsar":"6f8e0dac9faf","Eorzea":"4e5e8c295294"}
 msgctxt "quest/010/GaiUsc901_01036:TEXT_GAIUSC901_01036_RHITAHTYN_000_509:1"
 msgid "Fifteen years have come and gone since Lord van Baelsar first set foot in Eorzea, yet his ambition for the realm burns as strong as ever it did. Know you what fuels it, adventurer? The desire to deliver the people from their suffering."
-msgstr "Пятнадцать лет прошло с тех пор, как лорд ван Бельсар впервые ступил на землю Эорзеи, но его стремление покорить эти земли ничуть не ослабло. Знаешь, что движет им, <if $gn4>авантюристка<else>авантюрист</if>? Он хочет избавить людей от их страданий."
+msgstr "Пятнадцать лет прошло с тех пор, как лорд ван Бельсар впервые ступил на землю Эорзеи, но его стремление покорить эти земли ничуть не ослабло. Знаешь, что движет им, авантюрист? Он хочет избавить людей от их страданий."
 
 #. ja: 飢餓や紛争、そして、さまざまな障壁。<br>閣下がこれまで属州としてきた地は、<br>多様な問題を抱えていた。
 #. de: <i>Retten</i> will er euch Eorzäer aus eurem Elend!<br>Hungersnöte und Fehden und alle möglichen Unfreiheiten ... vor der Eingliederung in das Garleische Reich hatten alle Provinzen mit unzähligen Plagen zu kämpfen - auch meine war keine Ausnahme.
@@ -1119,7 +1119,7 @@ msgstr "Знаю, знаю... таким одарённым, как вы, не �
 # aeria-terms: {"Hydaelyn":"e793d5e761d0"}
 msgctxt "quest/010/GaiUsc901_01036:TEXT_GAIUSC901_01036_LAHABREAANCIENT_000_560:1"
 msgid "<ui-color 547>Look, Hydaelyn─Your minion comes...<i>bringing the Light</i>.</ui-color>"
-msgstr "<ui-color 547>Смотри, Хайделин... Твой слуга идёт... <i>несёт с собой Свет</i>.</ui-color>"
+msgstr "<ui-color 547>Смотри, Хайделин... <if $gn4>Твоя<else>Твой</if> слуга идёт... <i>несёт с собой Свет</i>.</ui-color>"
 
 #. ja: <ui-color 547>ハイデリンよ、すでに「次元の狭間」は開かれた。<br>……光には闇を。<br>貴様は遠からず、真なる神の前に平伏すことになろう。</ui-color>
 #. de: <ui-color 547>Aber dein fahles Licht wird verlöschen, Hydaelyn, im vollendeten Dunkel ... schon bald.</ui-color>
@@ -1156,7 +1156,7 @@ msgstr "Префект... убит?"
 #. speaker: IMPERIALMILITUM
 msgctxt "quest/010/GaiUsc901_01036:TEXT_GAIUSC901_01036_IMPERIALMILITUM_000_701:1"
 msgid "Regrettably so, my lord. And at the hand of the eikon-slayer, if the centurion who survived the attack is to be believed."
-msgstr "К несчастью, да, милорд. По словам центуриона, пережившего нападение, его убил истребитель эйконов."
+msgstr "К несчастью, да, милорд. По словам центуриона, пережившего нападение, его убил <if $gn4>истребительница эйконов<else>истребитель эйконов</if>."
 
 #. ja: リットアティンが……。
 #. de: Rhitahtyn ...
@@ -1242,7 +1242,7 @@ msgstr "(-Ливия и Неро-)Будет исполнено, милорд!"
 # aeria-terms: {"Scion":"c86bbbc0c0a1"}
 msgctxt "quest/010/GaiUsc901_01036:TEXT_GAIUSC901_01036_KANRIKAN_000_250:1"
 msgid "Scion <split \" \" 2><string $gs1></split>! Your deeds this day are an inspiration to us all!"
-msgstr "Наследник <split \" \" 2><string $gs1></split>! Ваши подвиги сегодня вдохновляют нас всех!"
+msgstr "<if $gn4>Наследница<else>Наследник</if> <split \" \" 2><string $gs1></split>! Ваши подвиги сегодня вдохновляют нас всех!"
 
 #. ja: 君が成した「マーチ・オブ・アルコンズ」の<br>第1段階成功の報を受け、各地でも進軍が開始された！
 #. de: Da du die erste Phase der Operation erfolgreich erfüllt hast, haben wir die Truppen an all unseren Positionen in Bewegung gesetzt.

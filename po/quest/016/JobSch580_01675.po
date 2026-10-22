@@ -138,7 +138,7 @@ msgstr "Как продвигаются тренировки, друзья?"
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/016/JobSch580_01675:TEXT_JOBSCH580_01675_ALKAZOLKA_000_001:1"
 msgid "As <split \" \" 1><string $gs1></split>'s comrade-in-arms, it is clear that <if $gn4>her<else>his</if> prowess with the scholarly arts has increased immeasurably thanks to Sergeant Tolga's advice."
-msgstr "Как товарищ по оружию, я вижу, насколько <split \" \" 1><string $gs1></split> преуспел<if $gn4>а</if> в науках благодаря советам сержанта Толги."
+msgstr "Как товарищ по оружию, я вижу, насколько <split \" \" 1><string $gs1></split> <if $gn4>преуспела<else>преуспел</if> в науках благодаря советам сержанта Толги."
 
 #. ja: ……でも、僕はまだまだです。<br>これまで石板を頼りに、独学で修行してきましたが、<br>ハルガ・トルガ軍曹の教えは、やはり別格でした……。
 #. de: Bei mir, äh ... geht es etwas schleppender voran. Ich war bisher ja hauptsächlich ein Autodidakt und habe mich dabei ganz auf das Wissen der Steintafeln verlassen, die wir entdeckt haben. Da ist das Training, das Halga Tolga uns nun angedeihen lässt, schon von einem ganz anderen Kaliber ...
@@ -290,7 +290,7 @@ msgstr "Когда я с вами закончу, вы, <i>может быть</
 # aeria-terms: {"Thaumaturges' Guild":"9223179d30a0"}
 msgctxt "quest/016/JobSch580_01675:TEXT_JOBSCH580_01675_YAYAKE_000_020:1"
 msgid "Welcome to the Thaumaturges' Guild. It is fate that has guided your steps here, friend."
-msgstr "Добро пожаловать в Гильдию тауматургов. Сама судьба привела вас сюда, друг мой."
+msgstr "Добро пожаловать в Гильдию тауматургов. Сама судьба привела вас сюда, <if $gn4>подруга моя<else>друг мой</if>."
 
 #. ja: おや、我が「呪術士ギルド」の朋、<br><split " " 1><string $gs1></split>ではありませんか。<br>今日は、私に何か用があるので？
 #. de: Oh, ein bekanntes Gesicht. Wenn das mal nicht <split " " 1><string $gs1></split> ist! Was kann ich denn heute für dich tun?
@@ -370,9 +370,10 @@ msgstr "Если вы так хотите вернуть книгу, отпра�
 #. de: Oh, wenn das nicht <if $gn4>die<else>der</if> werte <split " " 1><string $gs1></split> ist. Wie kann ich dir denn heute behilflich sein?
 #. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if><nbsp>! Quel bon vent vous amène au Nid du faucon<nbsp>?
 #. speaker: REDWALD
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/016/JobSch580_01675:TEXT_JOBSCH580_01675_REDWALD_000_040:1"
 msgid "How now, adventurer?"
-msgstr "Чем могу помочь, искатель приключений?"
+msgstr "Чем могу помочь, <if $gn4>искательница приключений<else>искатель приключений</if>?"
 
 #. ja: ……ふむ、5年前に「ファルコンネスト」を訪れた、<br>妖異研究者の行方を追っていると……。
 #. de: Hmm ... Du bist auf der Suche nach einem Nichts<shy>gesand<shy>ten-Forscher, der vor <i>fünf</i> Jahren auf dem Weg nach Falkenhorst war? Das könnte schwierig werden ...
@@ -498,7 +499,7 @@ msgstr "Это займёт время и терпение, но я надеюс
 # aeria-terms: {"mine":"41391a1f82c3"}
 msgctxt "quest/016/JobSch580_01675:TEXT_JOBSCH580_01675_ALKAZOLKA_000_063:1"
 msgid "Do mine ears deceive me, or did you track down a book? Splendid, <split \" \" 1><string $gs1></split>!"
-msgstr "Неужто уши меня обманывают — ты и правда нашёл книгу? Прекрасно, <split \" \" 1><string $gs1></split>!"
+msgstr "Неужто уши меня обманывают — ты и правда <if $gn4>нашла<else>нашёл</if> книгу? Прекрасно, <split \" \" 1><string $gs1></split>!"
 
 #. ja: こっちも進展があったぞ！<br>ハルガ・トルガ軍曹の特訓のお陰で、新技を修得したんだ！<br>それに、仲間のふたりも「海兵」の戦技を覚えたしね！
 #. de: Ich kann übrigens auch Fortschritte vermelden! Dank Halga Tolgas Training beherrsche ich jetzt eine neue Technik! Und unsere zwei Rekruten hier haben sich auch ein paar Kampftechniken der Seesoldaten angeeignet!

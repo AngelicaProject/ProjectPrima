@@ -257,7 +257,7 @@ msgstr "Несмотря на дурные вести, рад видеть, чт
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_COCOBOHA_000_010:1"
 msgid "Bwahaha! Greetings, <split \" \" 1><string $gs1></split>! Are you once more prepared to peruse the pages of power and peril? Then let us begin."
-msgstr "Бвахаха! Привет, <split \" \" 1><string $gs1></split>! Готов снова погрузиться в страницы, полные силы и опасностей? Тогда начнём."
+msgstr "Бвахаха! Привет, <split \" \" 1><string $gs1></split>! <if $gn4>Готова<else>Готов</if> снова погрузиться в страницы, полные силы и опасностей? Тогда начнём."
 
 #. ja: 「呪術の深淵：取り囲まれる危機」<br>嗚呼、我が華々しき魔力よ、素晴らしきかな。<br>豪炎広がり、氷刃連なり、雷撃舞い散り敵を滅さん。
 #. de: <i>Die Gefahr der Umzinglung</i><br>„Gepriesen sei die Macht der Thaumaturgie, der schönsten aller Künste! Wie Peitschen züngeln ihre Flammen, wie Dolche bohrt sich ihr Eis durch die Herzen des Feindes, und wie Tänzer zucken ihre Blitze vom Himmel!
@@ -328,7 +328,7 @@ msgstr "В городе только и говорят, что убитых та
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_COCOBOHA_000_020:1"
 msgid "<split \" \" 1><string $gs1></split> may have tolerated your interruption of <if $gn4>her<else>his</if> trial the last time, Busi, but you are hardly the hardy henchman <if $gn4>she<else>he</if> needs to clear such a hazardous hurdle."
-msgstr "<split \" \" 1><string $gs1></split> в прошлый раз потерпел твоё вмешательство в испытание, Кокобуси, но ты вряд ли сгодишься ему в напарники для такого опасного дела."
+msgstr "<split \" \" 1><string $gs1></split> в прошлый раз <if $gn4>потерпела<else>потерпел</if> твоё вмешательство в испытание, Кокобуси, но ты вряд ли сгодишься <if $gn4>ей<else>ему</if> в напарники для такого опасного дела."
 
 #. ja: 大丈夫、僕、腕利きの剣術士と仲良くなったんですよ。<br>彼を<split " " 1><string $gs1></split>に紹介すればいいんでしょ？
 #. de: Keine Sorge! Ich habe einen ziemlich schlagkräftigen Gladiator kennengelernt. Der würde <split " " 1><string $gs1></split> und mir Rückendeckung geben!
@@ -348,7 +348,7 @@ msgstr "Понимаю твои опасения, брат. Если это ра
 # aeria-terms: {"stalwart swordsman":"17d16c2f9c8f"}
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_COCOBOHA_000_022:1"
 msgid "You have secured the services of a stalwart swordsman? Then, that would, indeed, be in line with learning the lesson of the day. Perhaps─"
-msgstr "Ты нашёл стойкого мечника? Тогда это и правда поможет усвоить сегодняшний урок. Может..."
+msgstr "Ты <if $gn4>нашла<else>нашёл</if> стойкого мечника? Тогда это и правда поможет усвоить сегодняшний урок. Может..."
 
 #. ja: さあさあさあ、<split " " 1><string $gs1></split>さん、<br>兄の気が変わらないうちに、さっさと行きましょう。<br>ノフィカの井戸で待ってますねぇ♪
 #. de: Hast du gehört, <split " " 1><string $gs1></split>? Ich warte an der Hütte in der Nähe von Nophicas Brunnen auf dich. Und beeil dich, bevor es sich mein Bruder wieder anders überlegt, hehe! ♪
@@ -441,7 +441,7 @@ msgstr "Убийца ещё может быть поблизости! Верни
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_COCOBUSI_000_215:1"
 msgid "Back to the stream, <split \" \" 1><string $gs1></split>! Wait by the place where you found the bodies. Your ALLURING aura may serve to draw out this insatiable Mageslayer."
-msgstr "Назад к ручью, <split \" \" 1><string $gs1></split>! Жди там, где нашёл тела. Твоя СОБЛАЗНИТЕЛЬНАЯ аура может выманить этого ненасытного Похитителя магии."
+msgstr "Назад к ручью, <split \" \" 1><string $gs1></split>! Жди там, где <if $gn4>нашла<else>нашёл</if> тела. Твоя СОБЛАЗНИТЕЛЬНАЯ аура может выманить этого ненасытного Похитителя магии."
 
 #. ja: さすが、剣術士さんと息ぴったりでしたねぇ！<br>ただ、<split " " 1><string $gs1></split>さん気づかなかったと思いますけど、<br>インプが一匹だけ逃げてたみたいなんです……。
 #. de: Wie du mit dem Gladiator Hand in Hand gearbeitet hast! Die Imps hatten nicht den Hauch einer Chance, euch in die Zange zu nehmen. Mein Bruder wird stolz auf dich sein ... Es gibt nur einen Wermutstropfen: Einer der Imps ist euch entwischt!
@@ -449,7 +449,7 @@ msgstr "Назад к ручью, <split \" \" 1><string $gs1></split>! Жди �
 #. speaker: COCOBUSI
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_COCOBUSI_000_050:1"
 msgid "It seems your partnership with our hired blade went splendidly! It is unfortunate, though, that one of the imps was able to FLUTTER away... Oh? Did you not notice?"
-msgstr "Вы с мечником сработались просто отлично! Жаль, один бес всё-таки УЛЕТЕЛ... А, ты не заметил?"
+msgstr "Вы с мечником сработались просто отлично! Жаль, один бес всё-таки УЛЕТЕЛ... А, ты не <if $gn4>заметила<else>заметил</if>?"
 
 #. ja: これじゃぁ試練を完遂したって、<br>ココボハ兄さんに報告できないですよね……。<br>でも、剣術士さんはさっさと帰っちゃったし……。
 #. de: Wir dürfen ihn auf keinen Fall entkommen lassen. Cocoboha würde uns das bis in alle Ewigkeit nachtragen. Und ich habe schon genug unter dem Spott meiner Brüder zu leiden.
@@ -496,7 +496,7 @@ msgstr "Это <i>не</i> Кокобуси. Хотя... это Кокобуси
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_SUCCUBUS_000_102:1"
 msgid "Hee hee hee! And you, my dear, mana-rich <split \" \" 1><string $gs1></split>, were to be NEXT! I have wanted to absorb YOUR delicious power since the moment we met."
-msgstr "Хи-хи-хи! А следующей жертвой должен был стать ты, мой богатый эфиром <split \" \" 1><string $gs1></split>! С первой встречи мне хотелось поглотить твою чудесную силу."
+msgstr "Хи-хи-хи! А следующей жертвой должен был стать ты, <if $gn4>моя богатая эфиром<else>мой богатый эфиром</if> <split \" \" 1><string $gs1></split>! С первой встречи мне хотелось поглотить твою чудесную силу."
 
 #. ja: もうちょっと騙せると思ったのに、残念ねぇ……。<br>アンタには気づかれちまってたってわけぇ？
 #. de: Dein Bruder hingegen ist als Ätherwirt vollkommen unbrauchbar ... Ganz im Gegensatz zu <if $gn4>jener aufstrebenden Thaumaturgin<else>jenem aufstrebenden Thaumaturgen</if> hier, nach <if $gn4>deren<else>dessen</if> arkanen Kräften ich mich seit unserem ersten Treffen verzehrt habe.
@@ -504,7 +504,7 @@ msgstr "Хи-хи-хи! А следующей жертвой должен был
 #. speaker: SUCCUBUS
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_SUCCUBUS_000_103:1"
 msgid "A pity. This has been such an AMUSING charade. How ever did you see through it?"
-msgstr "Жаль. Весь этот спектакль был таким забавным. Как ты раскусил меня?"
+msgstr "Жаль. Весь этот спектакль был таким забавным. Как ты <if $gn4>раскусила<else>раскусил</if> меня?"
 
 #. ja: ククク……私はココブシの兄ですからねぇ、当然ですよ。<br>……今のうちにお前を殺し、被害の拡大を食い止めます。<br>身内の問題です、長男として責任は持たないと。
 #. de: Und verzehren darfst du dich weiterhin, denn dein Spiel ist hier aus! Ich lasse nicht zu, dass du weiterhin mordest und Schande über meine Familie bringst!
@@ -576,7 +576,7 @@ msgstr "Возвращайся в Костницу и доложи о завер
 # aeria-terms: {"Cocobuki":"948c8612bddc"}
 msgctxt "quest/003/ClsThm200_00351:TEXT_CLSTHM200_00351_COCOBOHA_000_120:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>! Cocobuki has advised me of your adventures. It seems the Mageslayer slithered away, but your stint with the swordsman was nonetheless successful!"
-msgstr "<split \" \" 1><string $gs1></split>! Кокобуки рассказал мне о твоих приключениях. Похититель магии улизнул, но ты всё равно отлично поработал с мечником!"
+msgstr "<split \" \" 1><string $gs1></split>! Кокобуки рассказал мне о твоих приключениях. Похититель магии улизнул, но ты всё равно отлично <if $gn4>поработала<else>поработал</if> с мечником!"
 
 #. ja: 兄ちゃんが言うなら問題ないからね、<br>これで「呪術の深淵」は修了！　一人前ってことさ！
 #. de: Die Prüfung <i>Gefahr der Umzinglung</i> hättest du also bestanden und damit den Boden des <i>Gähnenden Abgrunds</i> erreicht. Herzlichen Glückwunsch und willkommen im Kreis der fort<shy>ge<shy>schrit<shy>te<shy>nen Thaumaturgen!

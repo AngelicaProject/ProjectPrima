@@ -246,7 +246,7 @@ msgstr "Тогда пошли!"
 # aeria-terms: {"Bayside Bevy":"c297e4ac48f4","Wachumeqimeqi":"b82eba2b868b"}
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_WUKLAMAT_000_040:1"
 msgid "Ready? The markets of Wachumeqimeqi are to the east, on the other side of Bayside Bevy."
-msgstr "Готова? Вачумекимеки — к востоку, за Прибрежной стайкой."
+msgstr "<if $gn4>Готова<else>Готов</if>? Вачумекимеки — к востоку, за Прибрежной стайкой."
 
 #. ja: （★未使用／削除予定★）
 #. de: Wuk Lamat begleitet dich jetzt. Um den Auftrag durchzuführen, musst du die Auftragsziele erfüllen, während sich deine Begleitung in der Nähe befindet.
@@ -377,7 +377,7 @@ msgstr "Вы точно хотите прекратить сопровожден
 # aeria-terms: {"Xbalyav Ty'e":"4c9492269b64"}
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_WUKLAMAT_000_057:1"
 msgid "Something you eat not agree with you? Well, I'll be waiting by Xbalyav Ty'e whenever you're ready!"
-msgstr "Что, живот прихватило? Ладно, буду ждать тебя возле Шбальяв-Тье. Как будешь готова — приходи!"
+msgstr "Что, живот прихватило? Ладно, буду ждать тебя возле Шбальяв-Тье. Как будешь <if $gn4>готова<else>готов</if> — приходи!"
 
 #. ja: もういいのか？<br>だったらローペリのところへ行こうぜ！
 #. de: Wieder alles in Ordnung? Dann lass uns weiter!
@@ -481,9 +481,10 @@ msgstr "А кто ваш спутник, если не секрет?"
 #. speaker: WUKLAMAT
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_WUKLAMAT_000_068:1"
 msgid "This is <split \" \" 1><string $gs1></split>, a great adventurer I recruited from across the salt!"
-msgstr "Это <split \" \" 1><string $gs1></split>, замечательный <if $gn4>искательница приключений<else>искатель приключений</if>, которого я привезла из-за моря!"
+msgstr "Это <split \" \" 1><string $gs1></split>, <if $gn4>замечательная искательница приключений<else>замечательный искатель приключений</if>, которого я привезла из-за моря!"
 
 #. ja: 今後、万貨街を訪ねることもあるかもしれねぇから、<br>紹介しておきたくてな！
 #. de: Und wenn man in Tuliyollal ist, kommt man um den Markt nicht drum herum! Also dachte ich mir, ich stelle <if $gn4>sie<else>ihn</if> dir mal vor!
@@ -522,7 +523,7 @@ msgstr "Эй, ты! Хватит прятаться в тени, выходи и
 #. speaker: WUKLAMAT
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_WUKLAMAT_000_072:1"
 msgid "Hrm, I've seen that man somewhere before..."
-msgstr "Хм, где-то я этого мужчину уже видел..."
+msgstr "Хм, где-то я этого мужчину уже <if $gn4>видела<else>видел</if>..."
 
 #. ja: トライヨラに来る途中の船で出会った彫金師……？
 #. de: Er ist Goldschmied und war auf demselben Schiff nach Tuliyollal wie wir<nbsp>...?
@@ -530,7 +531,7 @@ msgstr "Хм, где-то я этого мужчину уже видел..."
 #. speaker: WUKLAMAT
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_WUKLAMAT_000_073:1"
 msgid "A jewelry maker you met on the voyage over?"
-msgstr "Ювелир, с которым ты познакомилась во время плавания?"
+msgstr "Ювелир, с которым ты <if $gn4>познакомилась<else>познакомился</if> во время плавания?"
 
 #. ja: ああ、アタシも話した気がするぞ！<br>たしかフォンジャンテーンとかいう……。
 #. de: Ah, jetzt erinnere ich mich, ich hatte auch mit ihm geredet! Wie hieß er noch<nbsp>... Fonjeantaine, oder?
@@ -595,7 +596,7 @@ msgstr "Вы разговаривали с господином Ропли... П
 #. speaker: WUKLAMAT
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_WUKLAMAT_000_086:1"
 msgid "You've found him? Good, I'll be right there!"
-msgstr "Нашла его? Отлично, я сейчас подойду!"
+msgstr "<if $gn4>Нашла<else>Нашёл</if> его? Отлично, я сейчас подойду!"
 
 #. ja: 探したぜ。<br>こんなところで何してんだ。<br>ローペリに何か話があったんじゃねぇのか？
 #. de: Wir haben nach dir gesucht. Du wolltest doch etwas mit Ropli besprechen, oder nicht?
@@ -697,7 +698,7 @@ msgstr "Тебе ведь <i>очень</i> хотелось, чтобы кто-
 #. speaker: FONJEANTAINE
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_FONJEANTAINE_000_098:1"
 msgid "Then...you have experience with my predicament? Of feeling terribly inadequate compared to your undeniably superior peers?"
-msgstr "Значит... ты знаешь, каково это? Когда рядом с такими талантливыми коллегами чувствуешь себя никчёмным?"
+msgstr "Значит... ты знаешь, каково это? Когда рядом с такими талантливыми коллегами чувствуешь себя <if $gn4>никчёмной<else>никчёмным</if>?"
 
 #. ja: 自分と優秀な誰かを……
 #. de: Nachdem ich mich mit anderen verglichen habe<nbsp>...?
@@ -780,7 +781,7 @@ msgstr "Как же мне не сравнивать? Если моя работ
 # aeria-terms: {"goldsmith":"1b735164df1c"}
 msgctxt "quest/048/KinGma119_04878:TEXT_KINGMA119_04878_FONJEANTAINE_100_106:1"
 msgid "If even an ally handpicked by the Third Promise can feel such doubt, then what hope is there for me? I must question why I bothered to become a goldsmith in the first place..."
-msgstr "Если даже спутник, которого выбрала сама Третья, может усомниться в себе, то какая надежда остаётся мне? И зачем я вообще стал ювелиром?.."
+msgstr "Если даже <if $gn4>спутница<else>спутник</if>, которого выбрала сама Третья, может усомниться в себе, то какая надежда остаётся мне? И зачем я вообще стал ювелиром?.."
 
 #. ja: そういえば僕は、父の影響で彫金師を目指したのでした。<br>いつも美しい作品を作って、お客さんを笑顔にする父のことを、<br>心から尊敬していたのです。
 #. de: Das erinnert mich<nbsp>... Es war mein Vater, der mich inspirierte, Goldschmied zu werden. Ich bewunderte ihn, wie er die wunderschönsten Schmuckstücke herstellte und damit seinen Kunden ein Lächeln auf die Lippen zauberte.

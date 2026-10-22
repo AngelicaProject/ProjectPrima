@@ -233,7 +233,7 @@ msgstr "Джили, а очки-то откуда?"
 #. speaker: A1
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_A1_000_003:1"
 msgid "A pleasure to meet you, er...?"
-msgstr "Рад познакомиться... э-э..."
+msgstr "<if $gn4>Рада<else>Рад</if> познакомиться... э-э..."
 
 #. ja: (-ジリ・アリアポー-)<split " " 1><string $gs1></split>、<br>また祝祭で会えて、とっても嬉しいわ！<br>私よ、ジリ・アリアポーよ！
 #. de: (-Jihli Aliapoh-)<split " " 1><string $gs1></split>! Welch eine Freude, dich wiederzusehen. Du erinnerst dich doch an mich, oder? Ich bin's, Jihli Aliapoh!
@@ -294,7 +294,7 @@ msgstr "(-Джили Алиапо-)Меня зовут Джили Алиапо. 
 # aeria-terms: {"Jihli Aliapoh":"0ec182c005cb"}
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_JIHLIALIAPOH_000_006:1"
 msgid "(-Jihli Aliapoh-)Jihli! Jihli Aliapoh! ...Oh, is this the first you've seen me without my cap? For a moment, I feared you had forgotten me!"
-msgstr "(-Джили Алиапо-)Джили! Джили Алиапо! ...Ой, ты впервые видишь меня без шапочки? А я на миг испугалась, что ты меня забыл!"
+msgstr "(-Джили Алиапо-)Джили! Джили Алиапо! ...Ой, ты впервые видишь меня без шапочки? А я на миг испугалась, что ты меня <if $gn4>забыла<else>забыл</if>!"
 
 #. ja: (-ジリ・アリアポー-)あなたは冒険者さんでしょう？<br>よかったら、お名前を聞かせてくれる？
 #. de: (-Jihli Aliapoh-)Ich bin mit der Beaufsichtigung der Feierlichkeiten hier betraut. Dürfte ich dich nach deinem Namen fragen, <if $gn4>Abenteurerin<else>Abenteurer</if>?
@@ -552,7 +552,7 @@ msgstr "В это время года буйно растут не только 
 #. macro: <if $gn4>beautiful<else>handsome</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_ADVENTURER05425_000_064:1"
 msgid "Hey there, <if $gn4>beautiful<else>handsome</if>. You looking to hire? I'm good with a lance."
-msgstr "Привет, красавица. Ищешь, кого нанять? Я неплохо обращаюсь с копьём."
+msgstr "Привет, <if $gn4>красавица<else>красавец</if>. Ищешь, кого нанять? Я неплохо обращаюсь с копьём."
 
 #. ja: この葉は……ああ、つい最近見たよ！<br>あまり見かけない魔物が群生してたから討伐しようとしたけど、<br>切っても刺しても、茎からまた花や葉が生えてきたんだ。
 #. de: Oh, das kommt mir bekannt vor. Da war neulich ein ganzer Schwarm von diesen Pflanzenwesen in einer kleinen Ecke im Finsterwald. So etwas hatte ich vorher noch nie gesehen, also habe ich mal reingepiekt.
@@ -647,7 +647,7 @@ msgstr "Алхимик, который искал диковинных раст�
 #. speaker: NONOTTA
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_NONOTTA_000_090:1"
 msgid "You're back! Perfect timing."
-msgstr "Вернулся! Самое время."
+msgstr "<if $gn4>Вернулась<else>Вернулся</if>! Самое время."
 
 #. ja: 園芸師の方いわく、この葉は切れ端なのにまだ生きていて、<br>とっても強靭で生命力が強いらしいのですぅ～……。<br>冒険者さんは、なにかいい情報はありましたか？
 #. de: Die Leute von der Gärtnergilde haben mir erzählt, dass das Blatt zu einer äußerst widerstandsfähigen Pflanzenart gehört<nbsp>... So widerstandsfähig, dass die Blätter in unserem Besitz anscheinend noch immer am Leben sind. \<hust> Äh, was konntest du denn in Erfahrung bringen?
@@ -855,9 +855,10 @@ msgstr "Вдыхать дыхание леса. Принимать в сердц
 #. de: Ganz zu schweigen von all den kostenlosen Pflanzenproben, die wir dabei einheimsen! Wenn ich nicht jeden Moment umfallen würde, wäre es mir ein Vergnügen, mich an deiner Seite durch die Sträucher zu schlagen. Allerdings habe ich vollstes Vertrauen, dass <if $gn4>eine mutige Abenteurerin<else>ein mutiger Abenteurer</if> wie du sich dabei durchsetzen wird, woran ich gescheitert bin.
 #. fr: Haa... Quelle sensation grisante<nbsp>! J'ai autrefois été victime de ma maladresse, mais je suis certain que ce genre de déboires n'arriveront pas à <if $gn4>une aventurière chevronnée<else>un aventurier chevronné</if> comme notre ami<if $gn4>e</if> <split " " 1><string $gs1></split><nbsp>!
 #. speaker: HERBERIN
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_HERBERIN_000_138:1"
 msgid "Not to mention all the free samples of plant life to be gained along the way! Were I not liable to keel over at any moment, I would like nothing better than to slice the shrubbery by your side. However, I have every confidence that a brave adventurer such as yourself will succeed where I have failed."
-msgstr "А ещё можно набрать целую охапку бесплатных образцов растений! Если бы я не мог свалиться в любую минуту, то с радостью пошёл бы косить заросли рядом с тобой. Но я уверен: такой смелый приключенец, как ты, справится там, где я потерпел неудачу."
+msgstr "А ещё можно набрать целую охапку бесплатных образцов растений! Если бы я не мог свалиться в любую минуту, то с радостью пошёл бы косить заросли рядом с тобой. Но я уверен: <if $gn4>такая смелая искательница приключений, как ты<else>такой смелый приключенец, как ты</if>, справится там, где я потерпел неудачу."
 
 #. ja: さァ～て、さっそく草刈り鎌をこしらえるよォオンッ！<br>そのエレガントな葉っぱちゃんを、ボクにください……ッ！
 #. de: Also lasst uns nun mit der Hochzeit alchemistischer Wunder beginnen! Macht mich zum glücklichsten Mann weit und breit und überreicht mir eure Blätter!
@@ -1069,7 +1070,7 @@ msgstr "Великолепная работа! Благодаря вам уча�
 #. speaker: HERBERIN
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_HERBERIN_000_201:1"
 msgid "Indeed, my alchemical solution exceeded even my own expectations. You have delivered me a vision, a dream!"
-msgstr "И правда, моё алхимическое средство превзошло все ожидания. Ты подарил мне настоящее видение, мечту!"
+msgstr "И правда, моё алхимическое средство превзошло все ожидания. Ты <if $gn4>подарила<else>подарил</if> мне настоящее видение, мечту!"
 
 #. ja: 刈り取ったツヨツヨ・トラップの葉っぱも、<br>キミに持ち帰ってもらったことだし……。<br>ボクはこの子たちをじっくり観察してくるとするよ♪
 #. de: Und dazu noch unzählige Äste ungewöhnlicher Pflanzenwesen! Ach, wie ich sie anstarren und damit experimentieren werde<nbsp>- ohne den Rest meiner Sehkraft zu gefährden! Hoho!
@@ -1113,7 +1114,7 @@ msgstr "Наша площадка кишела растительными мон
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_NONOTTA_000_221:1"
 msgid "Not only did <split \" \" 1><string $gs1></split> clean up those sprigs and sprouts, <if $gn4>she<else>he</if> also managed to retrieve what eggs were lost to the foliage. We should be ready to hide the eggs anew and begin the festivities! "
-msgstr "<split \" \" 1><string $gs1></split> не только очистил площадку от ростков, но и сумел найти яйца, затерявшиеся в зарослях. Теперь можно спрятать их заново и начинать праздник!"
+msgstr "<split \" \" 1><string $gs1></split> не только <if $gn4>очистила<else>очистил</if> площадку от ростков, но и <if $gn4>сумела<else>сумел</if> найти яйца, затерявшиеся в зарослях. Теперь можно спрятать их заново и начинать праздник!"
 
 #. ja: 協力してくれたエルブリンさんにも、お礼をしなきゃね。<br>まだグリダニアにいるかしら？
 #. de: Ich würde gerne dem Alchemisten danken, der so eine wichtige Rolle dabei gespielt hat. Glaubt ihr, Herberin ist noch immer in Gridania?
@@ -1217,7 +1218,7 @@ msgstr "Но больше не будет! Отныне я внемлю мудр
 #. macro: <hyphen> — a hyphen that does not break the line (may be added or dropped)
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_NONOTTA_000_233:1"
 msgid "You seem to possess a great appreciation for the spirit of Hatching<hyphen>tide! And also a pair of our promotional glasses..."
-msgstr "Похоже, ты проникся духом «Яичной охоты»! И даже обзавёлся парой наших праздничных очков..."
+msgstr "Похоже, ты <if $gn4>прониклась<else>проникся</if> духом «Яичной охоты»! И даже <if $gn4>обзавелась<else>обзавёлся</if> парой наших праздничных очков..."
 
 #. ja: そうッ、このサングラスは実に素敵だよォン！！<br>今の目には不要でも、このドキドキは不変ゆえ……<br>ボクの運命の歩みの記念に、ず～っとかけていようかなッ！
 #. de: Oh, die? Die trage ich nicht zum Schutz vor den Elementen, sondern als Erinnerung daran, was mein Schicksal für immer verändert hat!
@@ -1244,7 +1245,7 @@ msgstr "Рада видеть, как «Яичная охота» приноси
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/054/FesEsx101_05425:TEXT_FESESX101_05425_JIHLIALIAPOH_000_236:1"
 msgid "<split \" \" 1><string $gs1></split>, please accept these glasses as a token of our appreciation. You have more than earned them."
-msgstr "<split \" \" 1><string $gs1></split>, пожалуйста, прими эти очки в знак нашей благодарности. Ты их заслужил!"
+msgstr "<split \" \" 1><string $gs1></split>, пожалуйста, прими эти очки в знак нашей благодарности. Ты их <if $gn4>заслужила<else>заслужил</if>!"
 
 #. ja: ほかの会場も含め、実行委員でも見回りに向かうから、<br>もし時間があったらまた協力してもらえると嬉しいわ！<br>素敵なお礼の品をたくさん用意しているから！
 #. de: Wenn diese Pflanzenwesen auch nur halb so widerstandsfähig sind, wie du behauptest, werden in anderen Bereichen unseres Areals womöglich bald wieder Gartenarbeiten fällig<nbsp>... Wenn du ein wenig Zeit erübrigen kannst, haben wir noch weitere Preise für die Wundereiersuche zu bieten!

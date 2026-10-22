@@ -20,7 +20,7 @@ msgstr "Сегодня писем для тебя нет, купо!"
 # aeria-terms: {"Au Ra":"2589c4df119e","Elezen":"252b4637d5ff","Hrothgar":"3032edbca1e6","Hyur":"1aab1edcb23f","Lalafell":"401fa54566e1","Miqo'te":"51fa50ee59c4","Roegadyn":"b3fab9623cde","Viera":"fdbf684feedf"}
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_001:1"
 msgid "Well, if it isn't our favorite delivery <switch $gn71><case>Hyur<case>Elezen<case>Lalafell<case>Miqo'te<case>Roegadyn<case>Au Ra<case>Hrothgar<case>Viera</switch>! No new letters for you today, kupo!"
-msgstr "Ну и кто тут у нас? <if $gn4>Любимая курьерка<else>Любимый курьер</if> <switch $gn71><case>хьюр<case>элезен<case>лалафелл<case>мико'те<case>рогадин<case>ау ра<case>хротгар<case>виера</switch>! А писем для тебя сегодня нет, купо!"
+msgstr "Ну и кто тут у нас? Любимый курьер <switch $gn71><case>хьюр<case>элезен<case>лалафелл<case>мико'те<case>рогадин<case>ау ра<case>хротгар<case>виера</switch>! А писем для тебя сегодня нет, купо!"
 
 #. ja: 半人前君への、<br>新しいレターは届いてないクポ。
 #. de: Nun sieh sich einer dieses Lächeln an! Dir kann man aber auch nichts ausschlagen. Aber ich muss dich leider enttäuschen - ich habe keine neuen Briefe für dich, kupo.
@@ -72,7 +72,7 @@ msgstr "Ну-ка, что у нас тут! <if ($n1 == 1)>Пришло ново
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_002:1"
 msgid "Look what we have here! <if ($n1 == 1)>A new letter has arrived<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> new letters have arrived</if> for our favorite assistant."
-msgstr "Ну-ка, что у нас тут! <if ($n1 == 1)>Пришло новое письмо<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>одно<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> новых писем</if> для нашего любимого помощника!"
+msgstr "Ну-ка, что у нас тут! <if ($n1 == 1)>Пришло новое письмо<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>одно<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> новых писем</if> для <if $gn4>нашей любимой помощницы<else>нашего любимого помощника</if>!"
 
 #. ja: 半人前君への、<br>新しいレターを<num $n1>通預かっているクポ～♪
 #. de: <if ($n1 == 1)>Ein neuer Brief ist<else><num $n1> neue Briefe sind</if> angekommen! Genau das Richtige für <if $gn4>unsere Postbotenveteranin<else>unseren Postbotenveteranen</if>, kupo!
@@ -86,7 +86,7 @@ msgstr "Ну-ка, что у нас тут! <if ($n1 == 1)>Пришло ново
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_100_002:1"
 msgid "Our loyal assistant is rewarded for <if $gn4>her<else>his</if> persistence! <if ($n1 == 1)>A new letter has arrived<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> new letters have arrived</if> for you, kupo."
-msgstr "Верная помощница <if $gn4>не зря старалась<else>не зря старался</if>! Для тебя пришло <if ($n1 == 1)>новое письмо<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>одно<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> новых писем</if>, купо."
+msgstr "<if $gn4>Верная помощница не зря старалась<else>Верный помощник не зря старался</if>! Для тебя пришло <if ($n1 == 1)>новое письмо<else><capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>одно<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> новых писем</if>, купо."
 
 #. ja: <split " " 2><string $gs1></split>君宛ての、<br>新しいレターを<num $n1>通預かっているクポ～♪<br>早速、確認してみてクポ！
 #. de: Kupo! Ich freue mich, dir mitteilen zu können, dass ich <if ($n1 == 1)>einen neuen Brief<else><num $n1> neue Briefe</if> für dich habe, mein überaus begabter Lehrling!
@@ -98,7 +98,7 @@ msgstr "Верная помощница <if $gn4>не зря старалась<
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_101_002:1"
 msgid "Kupo-ho-ho! I'm pleased to say that I have <if ($n1 == 1)>a new letter<else><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> new letters</if> for you, my most proficient pupil!"
-msgstr "Купо-хо-хо! Рад сообщить: для тебя есть <if ($n1 == 1)>новое письмо<else><if $n1><if ($n1 <= 10)><switch $n1><case>одно<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if> новых писем</if>, мой самый способный ученик!"
+msgstr "Купо-хо-хо! Рад сообщить: для тебя есть <if ($n1 == 1)>новое письмо<else><if $n1><if ($n1 <= 10)><switch $n1><case>одно<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if> новых писем</if>, <if $gn4>моя самая способная ученица<else>мой самый способный ученик</if>!"
 
 #. ja: <string $gs1>さん、<br>フェオ＝ウルからレターを預かったクポ～♪<br>全部で<num $n1>通あるクポ♪
 #. de: <split " " 1><string $gs1></split>! Ich freue mich, dir mitteilen zu können, dass Feo Ul mir <if ($n1 == 1)>einen neuen Brief<else><num $n1> neue Briefe</if> für dich gegeben hat, kupo.
@@ -125,7 +125,7 @@ msgstr "Почтовый ящик быстро заполняется! Разб�
 #. fr: Au fait, je ne sais pas si tu as remarqué, mais ta boîte est presque pleine. Si tu ne fais pas un peu de tri, je ne pourrai plus prendre de lettres pour toi. Savoir ordonner le courrier fait partie des devoirs du postier, kupo<nbsp>!
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_003:1"
 msgid "Your mailbox is filling up fast! You should do something about it quick, or I won't be able to fit in any more letters! I would have expected our favorite assistant to be more organized, kupo!"
-msgstr "Почтовый ящик быстро заполняется! Разберись с ним поскорее, а то больше я не смогу положить туда письма! От нашего любимого помощника я ждал большей организованности, купо!"
+msgstr "Почтовый ящик быстро заполняется! Разберись с ним поскорее, а то больше я не смогу положить туда письма! От <if $gn4>нашей любимой помощницы я ждала<else>нашего любимого помощника я ждал</if> большей организованности, купо!"
 
 #. ja: ……それから、そろそろレターを整理しないと、<br>新しいレターが受け取れなくなるクポ。<br>こういう気遣いが、配達士の成長につながるクポ。
 #. de: Dein Briefkasten ist ja schon kupo voll, <split " " 1><string $gs1></split>! Da solltest du was unternehmen, sonst platzt er bald aus allen Nähten. Für <if $gn4>eine Postbotenveteranin<else>einen Postbotenveteranen</if> wie dich ist das doch kein Problem, kupo!
@@ -140,7 +140,7 @@ msgstr "Почтовый ящик быстро заполняется! Разб�
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_101_003:1"
 msgid "A consummate carrier like yourself letting <if $gn4>her<else>his</if> mailbox go unattended? This simply won't do, kupo! Do some cleaning, and with haste, lest there be no room for new deliveries!"
-msgstr "Такой опытный курьер, как ты, и забросил свой почтовый ящик? Так не пойдёт, купо! Наведи там порядок, да поскорее, а то для новых писем места не останется!"
+msgstr "Такой опытный курьер, как ты, и <if $gn4>забросила<else>забросил</if> свой почтовый ящик? Так не пойдёт, купо! Наведи там порядок, да поскорее, а то для новых писем места не останется!"
 
 #. ja: ……それから、そろそろレターを整理しないと、<br>新しいレターが受け取れなくなるクポ。
 #. de: Dein Briefkasten ist ja schon kupo voll, <split " " 1><string $gs1></split>! Da solltest du was unternehmen, sonst platzt er bald aus allen Nähten.
@@ -306,7 +306,7 @@ msgstr "Твоё упорство в доставке писем принесл�
 # aeria-terms: {"Bulwark Hall":"aa968c9e07ae","Limsa Lominsa":"d423c1a01f1a","deputy postmoogle":"0a9214684979","job":"a9421a81ecaa"}
 msgctxt "custom/000/CmnDefMogLetter_00002:TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_100_020:1"
 msgid "Your postal prowess has earned you carrier level <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if>, kupo! A letter carrier's heart is a restless one, always thinking of the next job. If the deputy postmoogle has another letter for you, he'll be outside Limsa Lominsa's Bulwark Hall. Run to him, kupo. Run, don't walk!"
-msgstr "За мастерство в доставке почты ты достиг <if $n1><if ($n1 <= 10)><switch $n1><case>первого<case>второго<case>третьего<case>четвёртого<case>пятого<case>шестого<case>седьмого<case>восьмого<case>девятого<case>десятого</switch><else><num $n1></if><else><num $n1></if> уровня курьера, купо! А почтальон всегда думает о следующем задании. Если помощник почтового мугла ждёт тебя, он будет возле Зала Последнего Рубежа в Лимсе Ломинсе. Беги к нему, купо! Беги, не иди!"
+msgstr "За мастерство в доставке почты ты <if $gn4>достигла<else>достиг</if> <if $n1><if ($n1 <= 10)><switch $n1><case>первого<case>второго<case>третьего<case>четвёртого<case>пятого<case>шестого<case>седьмого<case>восьмого<case>девятого<case>десятого</switch><else><num $n1></if><else><num $n1></if> уровня курьера, купо! А почтальон всегда думает о следующем задании. Если помощник почтового мугла ждёт тебя, он будет возле Зала Последнего Рубежа в Лимсе Ломинсе. Беги к нему, купо! Беги, не иди!"
 
 #. ja: 後輩君たちは、配達をがんばってくれてるクポ！<br>みんな、<split " " 2><string $gs1></split>君が目標だって言ってるクポ！<br>だから安心して冒険に励んでクポ！
 #. de: Ich muss dir abermals gratulieren! Du hast dich in Windeseile von <if $gn4>einer blutigen Anfängerin<else>einem blutigen Anfänger</if> zu <if $gn4>einer formidablen Meisterin<else>einem formidablen Meister</if> der Briefzustellung entwickelt. Eines Tages werden wir wieder auf deine Hilfe zählen. Pass in der Zwischenzeit gut auf dich auf, kupo!

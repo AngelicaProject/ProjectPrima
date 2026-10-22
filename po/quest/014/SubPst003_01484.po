@@ -138,7 +138,7 @@ msgstr "Анонимное письмо, которое я вам доверил
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <switch $gn70><case>checks in with the guild from time to time<case>checks in with the guild from time to time<case>remembers where <if $gn4>she<else>he</if> ca… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = global number 70 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-# aeria-terms: {"Quicksand":"fdc6532195c2"}
+# aeria-terms: {"Quicksand":"fdc6532195c2","adventurer":"48df264ad5ec"}
 msgctxt "quest/014/SubPst003_01484:TEXT_SUBPST003_01484_MOMODI_000_010:1"
 msgid "Well, if it ain't <split \" \" 1><string $gs1></split>! Good to see an adventurer who <switch $gn70><case>checks in with the guild from time to time<case>checks in with the guild from time to time<case>remembers where <if $gn4>she<else>he</if> came from</switch>, even after becomin' all famous and the like. What brings you to the Quicksand today?"
 msgstr "Ба, да это же <split \" \" 1><string $gs1></split>! Рад видеть <if $gn4>искательницу приключений, которая<else>искателя приключений, который</if> <switch $gn70><case>время от времени наведывается в гильдию<case>время от времени наведывается в гильдию<case>помнит, откуда <if $gn4>пришла<else>пришёл</if></switch>, даже после всей этой славы. Что привело вас сегодня в таверну «Быстрые пески»?"
@@ -248,7 +248,7 @@ msgstr "Наш гость, похоже, не знает, что полагае�
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/014/SubPst003_01484:TEXT_SUBPST003_01484_MOMODI_000_021:1"
 msgid "Forgive me if I've forgotten some of the details─I've only heard the story some twenty-odd times now. This is <split \" \" 1><string $gs1></split>, the <if $gn4>woman<else>man</if> who wasted <if $gn4>her<else>his</if> precious time haulin' your rubbish halfway across the realm."
-msgstr "Простите, если я что-то напутала, просто я слышала эту историю уже раз двадцать. Это <split \" \" 1><string $gs1></split> — <if $gn4>женщина<else>мужчина</if>, которая потратила <if $gn4>своё<else>своё</if> драгоценное время, перетаскивая ваше барахло через полмира."
+msgstr "Простите, если я что-то напутала, просто я слышала эту историю уже раз двадцать. Это <split \" \" 1><string $gs1></split> — <if $gn4>женщина, которая потратила<else>мужчина, который потратил</if> <if $gn4>своё<else>своё</if> драгоценное время, перетаскивая ваше барахло через полмира."
 
 #. ja: おぉ！　そうでしたか……！<br>こんなに良いタイミングで届けてくれるとは、<br>君はとても良い仕事をしてくれました！！
 #. de: Ist das wahr? Ausgezeichnete Arbeit, <if $gn4>Mädel<else>Junge</if>! Verrate mir deinen Namen später noch mal, dann setze ich dich auf die Gästeliste für Momodis und meine Hochzeit.
@@ -438,9 +438,10 @@ msgstr "Гильдия потеряла талантливого ювелира,
 #. de: Nicht einer hat angebissen ... Na schön, morgen ist auch noch ein ... hm? Was treibt <if $gn4>eine mächtige Abenteurerin<else>einen mächtigen Abenteurer</if> zu dieser einsamen Angelstelle?
 #. fr: Tiens<nbsp>? Qu'est-ce que vous venez faire dans ce village désolé, <if $gn4>ma fille<else>mon gars</if><nbsp>?
 #. speaker: MOMOROTO
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/014/SubPst003_01484:TEXT_SUBPST003_01484_MOMOROTO_000_050:1"
 msgid "Not a bite... Ah well, tomorrow's another─hm? What brings a mighty adventurer to this lonely fishing hole?"
-msgstr "Ни поклёвки... Ну да ладно, завтра будет новый день... А? Что такой могучий искатель приключений забыл в этой глуши?"
+msgstr "Ни поклёвки... Ну да ладно, завтра будет новый день... А? Что <if $gn4>такая могучая искательница приключений забыла<else>такой могучий искатель приключений забыл</if> в этой глуши?"
 
 #. ja: この人がモモロトさんですね。<br>モモディさんの期待と愛を受けながら、<br>それを投げ捨て逃げだした方ですか……。
 #. de: <i>Das</i> ist Momoroto? Ein ziemlich verwahrloster Geselle, in der Tat ... Aber was soll man auch von einem Feigling erwarten, der seine Chance auf Ruhm, Liebe und Ehre wegwirft, weil er dem Druck nicht standhalten kann?
@@ -701,7 +702,7 @@ msgstr "До сих пор я знал лишь вашу внешнюю крас
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/014/SubPst003_01484:TEXT_SUBPST003_01484_MOMODI_000_084:1"
 msgid "Have you not been listenin' to a single word I said!? I've devoted my life to supportin' <i>adventurers'</i> dreams─<if $gn4>women<else>men</if> like <split \" \" 1><string $gs1></split> here who are too busy fightin' for our realm to waste my bloody time!"
-msgstr "Ты хоть слово из того, что я сказала, услышал!? Я посвятила жизнь тому, чтобы помогать искателям приключений идти к своей мечте. <i>Искателям приключений</i>, вроде <split \" \" 1><string $gs1></split>, которые слишком заняты борьбой за наш край, чтобы тратить моё время!"
+msgstr "Ты хоть слово из того, что я сказала, <if $gn4>услышала<else>услышал</if>!? Я посвятила жизнь тому, чтобы помогать искателям приключений идти к своей мечте. <i>Искателям приключений</i>, вроде <split \" \" 1><string $gs1></split>, которые слишком заняты борьбой за наш край, чтобы тратить моё время!"
 
 #. ja: そ、そんなぁ～！
 #. de: A-Aber, meine Liebste! Auch unsere Liebe vermag Eorzea womöglich vor den dunklen Schatten zu retten!
@@ -738,7 +739,7 @@ msgstr "Значит... у меня есть шанс!? О, как же мило
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/014/SubPst003_01484:TEXT_SUBPST003_01484_THOMAS_000_088:1"
 msgid "And you, my good <if $gn4>woman<else>man</if>! You have opened my eyes today, and for this you shall be well rewarded. You have my word─you will be in the front row for the festivities when my goddess and I are wed."
-msgstr "А вы, мой добрый <if $gn4>госпожа<else>господин</if>! Сегодня вы открыли мне глаза, и я щедро вас за это вознагражу. Даю слово: вы займёте первые места на свадьбе моей богини и меня."
+msgstr "А вы, <if $gn4>моя добрая госпожа<else>мой добрый господин</if>! Сегодня вы открыли мне глаза, и я щедро вас за это вознагражу. Даю слово: вы займёте первые места на свадьбе моей богини и меня."
 
 #. ja: なんだか、まだ勘違いしている気がするけれど……。<br>フフフ、あなたたちのおかげで、なんだかスッキリしたわ。<br>ありがとう、<split " " 1><string $gs1></split>。
 #. de: Endlich Ruhe! Ich denke, so bald werde ich ihn hier nicht wiedersehen, aber wer weiß? Er wäre nicht der erste Mann, der sich ändert. Wie auch immer, vielen Dank, <split " " 1><string $gs1></split>. Egal, wohin es uns auch treibt, die Ver<shy>gangen<shy>heit können wir nicht vergessen - und dank dir konnte ich mal wieder ein bisschen darüber reflektieren.

@@ -438,7 +438,7 @@ msgstr "(-???-)Слушай, чувствуй, думай..."
 # aeria-terms: {"Warrior of Light":"dcab387ef6b3","crystal":"b6e3734412aa","face":"9a4aea3bb0ee"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_000480_HYDAELYN:1"
 msgid "And thus do we meet face-to-face at last. My Warrior of Light, guided by the Crystal."
-msgstr "Наконец-то мы встретились лицом к лицу, Воин света, ведомый кристаллом."
+msgstr "Наконец-то мы встретились лицом к лицу, <if $gn4>Воительница света, ведомая кристаллом<else>Воин света, ведомый кристаллом</if>."
 
 #. ja: 何と言う？
 #. de: Was sagst du?
@@ -469,7 +469,7 @@ msgstr "Я больше не могу верить твоим словам."
 #. de: Hast du die Antwort auf diese Frage nicht bereits auf deiner Reise in den ersten Splitter gefunden?
 #. fr: Tu le sais peut-être déjà, maintenant que tu es revenu<if $gn4>e</if> de ton voyage dans le premier reflet...
 #. speaker: HYDAELYN
-# aeria-terms: {"the First":"09215a34671c"}
+# aeria-terms: {"First":"d13bb98c2410"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_000490_HYDAELYN:1"
 msgid "After your sojourn in the First, I believe you have your answer..."
 msgstr "После путешествия по Первому ты, думаю, уже знаешь ответ..."
@@ -478,10 +478,10 @@ msgstr "После путешествия по Первому ты, думаю, 
 #. de: Ja, deine Reise in den ersten Splitter hat verständlicherweise Misstrauen in dir geweckt<nbsp>...
 #. fr: Je m'attendais à cette réflexion de ta part, maintenant que tu es revenu<if $gn4>e</if> de ton voyage dans le premier reflet...
 #. speaker: HYDAELYN
-# aeria-terms: {"the First":"09215a34671c"}
+# aeria-terms: {"First":"d13bb98c2410"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_000500_HYDAELYN:1"
 msgid "You have visited the First. You...have every right to say that."
-msgstr "Ты побывал на Первом. У тебя... есть полное право так говорить."
+msgstr "Ты <if $gn4>побывала<else>побывал</if> на Первом. У тебя... есть полное право так говорить."
 
 #. ja: あなたが見て、聞いて、触れてきたとおり、<br>私は……ハイデリンは旧き蛮神です。
 #. de: Alles, was du dort gesehen und gehört hast<nbsp>... alles, was dir offenbart wurde, hat dir verraten, was ich wirklich bin: Ich, Hydaelyn<nbsp>... bin ein Primae.
@@ -605,7 +605,7 @@ msgstr "Какое прекрасное утро! Ох, только тело е
 #. speaker: ALPHINAUD
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_000650_ALPHINAUD:1"
 msgid "And a good morning to you, too. Taken a look at the island already?"
-msgstr "И тебе доброе утро. Уже видел остров?"
+msgstr "И тебе доброе утро. Уже <if $gn4>видела<else>видел</if> остров?"
 
 #. ja: じゃ、一緒に見に行きましょ！<br>船首の方、空いてるかしら？
 #. de: Na, dann lass uns doch gemeinsam zum Bug gehen. Dort sollte die Aussicht am besten sein.
@@ -996,9 +996,10 @@ msgstr "Что ответить?"
 #. fr: <string $gs1>, aventuri<if $gn4>ère<else>er</if>.
 #. speaker: A3
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_A3_000_001_NONE_VOICE:1"
 msgid "<string $gs1>. Adventurer by trade."
-msgstr "<string $gs1>. Авантюрист."
+msgstr "<string $gs1>. <if $gn4>Искательница приключений<else>Авантюрист</if>."
 
 #. ja: <string $gs1>、職人だ
 #. de: <string $gs1>, <if $gn4>Anbieterin<else>Anbieter</if> hochqualitativer Bedarfsgüter.
@@ -1007,7 +1008,7 @@ msgstr "<string $gs1>. Авантюрист."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_A3_000_002_NONE_VOICE:1"
 msgid "<string $gs1>. Artisan."
-msgstr "<string $gs1>. Ремесленник."
+msgstr "<string $gs1>. <if $gn4>Ремесленница<else>Ремесленник</if>."
 
 #. ja: <string $gs1>、英雄だ
 #. de: <string $gs1>, <if $gn4>Heldin<else>Held</if>.
@@ -1017,21 +1018,22 @@ msgstr "<string $gs1>. Ремесленник."
 # aeria-terms: {"Eorzea":"4e5e8c295294"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_A3_000_003_NONE_VOICE:1"
 msgid "<string $gs1>. Champion of Eorzea."
-msgstr "<string $gs1>. Герой Эорзеи."
+msgstr "<string $gs1>. <if $gn4>Героиня<else>Герой</if> Эорзеи."
 
 #. ja: 冒険者……冒険者ねぇ……。<br>まあ、エオルゼアでは正式な職業になっているようですし、<br>申請とも相違はないのでいいでしょう。
 #. de: <if $gn4>Eine Abenteurerin<else>Ein Abenteurer</if>, also. Ich schätze, das geht in Eorzea dieser Tage als Beruf durch. Zumal es sich mit den Angaben im Formular deckt. Nun gut, Eurem Einreiseantrag sei stattgegeben.
 #. fr: Aventuri<if $gn4>ère<else>er</if>, aventuri<if $gn4>ère<else>er</if>... Il semblerait en effet que ce soit une occupation officielle en Éorzéa. Quoi qu'il en soit, je ne constate aucune contradiction avec les données enregistrées vous concernant, et c'est tout ce qui m'importe.
 #. speaker: IMMIGRATIONCONTROLSTAFF
-# aeria-terms: {"Eorzea":"4e5e8c295294"}
+# aeria-terms: {"Eorzea":"4e5e8c295294","adventurer":"48df264ad5ec"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_001110_IMMIGRATIONCONTROLSTAFF:1"
 msgid "An “adventurer...” Well, I suppose that is considered a valid calling in your native Eorzea, and it does indeed match the profile provided. You may enter."
-msgstr "«Авантюрист»... Что ж, в родной Эорзее это, видимо, считается профессией. К тому же сведения совпадают с теми, что указаны в заявлении. Можете въехать."
+msgstr "«<if $gn4>Искательница приключений<else>Авантюрист</if>»... Что ж, в родной Эорзее это, видимо, считается профессией. К тому же сведения совпадают с теми, что указаны в заявлении. Можете въехать."
 
 #. ja: 確かに、申請にもそう名乗るだろうと書かれていました。<br>製作や採集にかぎらず仕事を請け負う冒険者だとも。<br>……まあ、相違はないのでよしとしましょう。
 #. de: Recht so. Im Antragsformular ist Euer Name ebenfalls aufgeführt. Hier steht außerdem, Ihr seid - ich zitiere - „<if $gn4>eine professionelle Abenteurerin<else>ein pro<shy>fessio<shy>neller Abenteurer</if>“, <if $gn4>die<else>der</if> auch über Qualifikationen in Sachen Materialbeschaffung und Güterproduktion verfügt. Nun gut, ich gehe davon aus, dass diese Angaben stimmen. Eurem Einreiseantrag sei stattgegeben.
 #. fr: Ah oui, vous faites partie de ces “aventuriers”, comme on vous appelle en Éorzéa, qui préfèrent l'artisanat et la récolte au combat. Quoi qu'il en soit, je ne constate aucune contradiction avec les données enregistrées vous concernant, et c'est tout ce qui m'importe.
 #. speaker: IMMIGRATIONCONTROLSTAFF
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_001120_IMMIGRATIONCONTROLSTAFF:1"
 msgid "Indeed... Your profile describes you as an “adventurer,” but one also trained in the rather more constructive pursuits of procurement and production. You may enter."
 msgstr "Вот как... В ваших документах вы названы авантюристом, но также указано, что вы занимаетесь куда более мирными делами: сбором и изготовлением товаров. Можете въехать."
@@ -1048,6 +1050,7 @@ msgstr "И это звание заслуженное, ручаюсь!"
 #. de: Euer Antragsformular erwähnt, dass Ihr ein Abenteurer seid. Ich gehe davon aus, dass der Teil mit <if $gn4>Heldin<else>Held</if> hier eine Art selbst<shy>ge<shy>fäl<shy>li<shy>ge Ehrbezeichnung darstellt? Solange Baldesions Gelehrte für Euch bürgen, soll es mir recht sein. Eurem Einreiseantrag sei stattgegeben.
 #. fr: Je ne demande qu'à vous croire, mais il est écrit “aventuri<if $gn4>ère<else>er</if>” sur mon registre, pas “héro<if $gn4>ïne<else>s</if>”... Enfin, si vous vous portez garant, je veux bien admettre que ces deux termes sont synonymes dans le cas de cette personne.
 #. speaker: IMMIGRATIONCONTROLSTAFF
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_001140_IMMIGRATIONCONTROLSTAFF:1"
 msgid "An “adventurer” by trade is what your documentation indicates. No mention of this particular title─self-appointed, I take it? Either way, your employer seems willing to vouch for your character, so I shall─albeit reluctantly─grant you entry. “Champion.”"
 msgstr "В документах вы указаны как авантюрист. Ни слова об этом звании. Сами себя так назвали, полагаю? Впрочем, ваш наниматель готов за вас поручиться, так что, хоть и неохотно, я разрешу вам въезд. «Герой»."
@@ -1626,7 +1629,7 @@ msgstr "...Хотя груз и правда был необычно больш�
 # aeria-terms: {"Last Stand":"80056c43e712"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_001820_ALISAIE:1"
 msgid "Wait. Didn't you hear something in the Last Stand about the gleaners coming and going more than usual?"
-msgstr "Погоди. Ты ведь слышал в «Последнем рубеже», что гринеры стали появляться чаще обычного?"
+msgstr "Погоди. Ты ведь <if $gn4>слышала<else>слышал</if> в «Последнем рубеже», что гринеры стали появляться чаще обычного?"
 
 #. ja: さっきの舟に乗ってたのも、多分、グリーナーだわ。<br>それも、ラヴィリンソスに搬入を行える、<br>議会公認のグリーナー……。
 #. de: Und die Klauber, die das Labyrinthos beliefern, arbeiten für gewöhnlich nur mit Genehmigung des Rates<nbsp>...
@@ -1815,7 +1818,7 @@ msgstr "Вот вы где. Узнали что-нибудь интересно�
 #. speaker: ALISAIE
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_002050_ALISAIE:1"
 msgid "So you met with that gleaner again, this time to...capture a hornbill?"
-msgstr "Так ты снова встретился с тем сборщиком, на этот раз чтобы... поймать птицу-носорога?"
+msgstr "Так ты снова <if $gn4>встретилась<else>встретился</if> с тем сборщиком, на этот раз чтобы... поймать птицу-носорога?"
 
 #. ja: 外で捕まえた生き物を運んでくるのはわかるけど、<br>ラヴィリンソスの中で捕まえて、どうするのかしら？
 #. de: Ich verstehe ja, dass Lebewesen aus der Außenwelt ins Labyrinthos geschafft werden. Aber wo liegt der Sinn darin, Tiere zu fangen, die ohnehin schon hier leben?
@@ -2229,7 +2232,7 @@ msgstr "Вон там... Кажется, это Эренвиль."
 #. speaker: ALPHINAUD
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_002550_ALPHINAUD:1"
 msgid "A little difficult to tell from here, but...but I think you're right. He did say he was coming down to make his report."
-msgstr "Отсюда трудно разглядеть, но... похоже, ты прав. Он говорил, что спустится доложить о доставке."
+msgstr "Отсюда трудно разглядеть, но... похоже, ты <if $gn4>права<else>прав</if>. Он говорил, что спустится доложить о доставке."
 
 #. ja: 彼の依頼主は哲学者議会。<br>だとしたら、報告の相手も、議員やそれに近しい者ではなくて？
 #. de: Hat er nicht auch erwähnt, dass er auf Anweisung des Rats arbeitet? Folglich müsste er seine Berichte doch bei einem Ratsmitglied abliefern. Oder jedenfalls jemandem, der mit einer solchen Person in Verbindung steht.
@@ -2288,7 +2291,7 @@ msgstr "Если что, потом извинимся. А сейчас надо
 #. speaker: YSHTOLA
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_002620_YSHTOLA:1"
 msgid "It might be best if you came along as well. In fact, we should all..."
-msgstr "Лучше бы и ты пошёл с нами. Да и вообще, нам всем..."
+msgstr "Лучше бы и ты <if $gn4>пошла<else>пошёл</if> с нами. Да и вообще, нам всем..."
 
 #. ja: ……クルル？
 #. de: ... Krile?
@@ -2528,7 +2531,7 @@ msgstr "(-Хайделин-) Не волнуйся. Она одолжила мн
 #. de: So, wie ich die erste Splitter<shy>welt nicht allein vor der Lichtflut erretten konnte, so fällt es mir nun gleichermaßen schwer, meinen Willen ohne Beihilfe in der physischen Welt zu manifestieren.
 #. fr: Il me reste bien trop peu d'énergie pour me matérialiser sur le plan physique... Je n'en avais déjà plus assez pour sauver le premier reflet lorsque le déluge de Lumière s'y est abattu...
 #. speaker: HYDAELYN
-# aeria-terms: {"Flood of Light":"4c11e4d06de3","Hydaelyn":"e793d5e761d0","the First":"09215a34671c"}
+# aeria-terms: {"First":"d13bb98c2410","Flood of Light":"4c11e4d06de3","Hydaelyn":"e793d5e761d0"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_002920_HYDAELYN:1"
 msgid "(-Hydaelyn-)Just as I could not save the First from the Flood of Light, it has become arduous for me to interact with the physical world without assistance."
 msgstr "(-Хайделин-) Как я не смогла спасти Первый от Потопа света, так и теперь мне трудно влиять на материальный мир без посторонней помощи."
@@ -2555,7 +2558,7 @@ msgstr "(-Хайделин-) Сильнее всего моё влияние в 
 #. de: Auch die Seele Minfilias, die ihr Leben für den ersten Splitter gab, ist nun in den Sternengrund zurückgekehrt. Dem Ort des Ursprungs. Ich wollte, dass dieses liebliche Kind in Frieden ruhen kann.
 #. fr: Après l'avoir confié à Minfilia afin qu'elle remplisse sa mission dans le premier reflet, j'ai ensuite déposé l'âme de cette douce enfant en ce lieu, pour qu'elle puisse s'y reposer pour l'éternité...
 #. speaker: HYDAELYN
-# aeria-terms: {"Hydaelyn":"e793d5e761d0","Minfilia":"51906cd61827","the First":"09215a34671c","the Source":"9cb8dc538a9b"}
+# aeria-terms: {"First":"d13bb98c2410","Hydaelyn":"e793d5e761d0","Minfilia":"51906cd61827","the Source":"9cb8dc538a9b"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_002950_HYDAELYN:1"
 msgid "(-Hydaelyn-)After Minfilia's sacrifice on the First, it was to the sea, here in the Source, where I ferried her soul. I wished that gentle spirit to find rest in the world she loved so well."
 msgstr "(-Хайделин-) После жертвы Минфилии на Первом я перенесла её душу сюда, в Эфирное море Истока. Мне хотелось, чтобы этот добрый дух обрёл покой в мире, который так любил."
@@ -3353,7 +3356,7 @@ msgstr "С возвращением, барышня."
 #. speaker: ALISAIE
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_003890_ALISAIE:1"
 msgid "What? What are you gawping at?"
-msgstr "Что? Чего так уставилась?"
+msgstr "Что? Чего так <if $gn4>уставилась<else>уставился</if>?"
 
 #. ja: 何と言う？
 #. de: Was sagst du?
@@ -4130,7 +4133,7 @@ msgstr "(-Алхимик Аркасодара-)Я... я что-то не то с
 # aeria-terms: {"Arkasodara":"9cbf0d3889f0","Krile":"1697c88bbb71","Warrior of Light":"dcab387ef6b3","alchemist":"f4325a973ec0"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_004750_NIDHANA:1"
 msgid "(-Arkasodara Alchemist-)Of course! You're the one Krile sent─the “Warrior of Light” we've been waiting for!"
-msgstr "(-Алхимик-аркасодара-)Точно! Это же вы, тот самый Воин света, которого прислала Крайль! Мы вас заждались!"
+msgstr "(-Алхимик-аркасодара-)Точно! Это же вы, <if $gn4>та самая Воительница света, которую<else>тот самый Воин света, которого</if> прислала Крайль! Мы вас заждались!"
 
 #. ja: おお、なんて日だ！<br>マグ神に感謝を！
 #. de: Welch Freudentag! Gepriesen sei Mug!
@@ -5216,7 +5219,7 @@ msgstr "И как нельзя кстати, место Фанданиэля —
 # aeria-terms: {"Crystal Tower":"4c8f8987bff0"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_005950_EMETSELCH:1"
 msgid "Send one of your clones to the Crystal Tower that you might see for yourself."
-msgstr "Пошли одного из своих клонов в Кристальную башню — сам всё увидишь."
+msgstr "Пошли одного из своих клонов в Кристальную башню — <if $gn4>сама всё увидишь<else>сам всё увидишь</if>."
 
 #. ja: この先に、何が待つのかを……。
 #. de: Von dem, was dich erwartet<nbsp>...
@@ -6060,7 +6063,7 @@ msgstr "Что вы скажете?"
 # aeria-terms: {"Alphinaud":"e3a8e892ef6a"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_A9_000_001_NONE_VOICE:1"
 msgid "Are you sure Alphinaud is in the right group?"
-msgstr "Ты уверен, что Альфино должен быть в той группе?"
+msgstr "Ты <if $gn4>уверена<else>уверен</if>, что Альфино должен быть в той группе?"
 
 #. ja: アリゼーも治癒魔法を使えるのでは？
 #. de: Alisaie kann doch aber auch heilen?
@@ -6130,7 +6133,7 @@ msgstr "Боги, вы никогда не забудете эту истори�
 # aeria-terms: {"primal":"d5e111a483d6"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_006940_GRAHATIA:1"
 msgid "Of course not! As our most talented healer, we need you leading the van, fighting primals on the front lines."
-msgstr "Конечно, нет! Ты же у нас лучший целитель, вот и должен вести отряд в бой с праймалами на передовой."
+msgstr "Конечно, нет! Ты же у нас <if $gn4>лучшая целительница<else>лучший целитель</if>, вот и <if $gn4>должна<else>должен</if> вести отряд в бой с праймалами на передовой."
 
 #. ja: それじゃあ、あとは決行あるのみね。<br>ラザハンには先行して連絡を入れておくから、<br>戦いの準備をして現地に集合しましょう。
 #. de: Damit wäre alles geklärt. Ich werde mit Radz-at-Han in Kontakt treten und sie über unser Vorhaben informieren. Treffen wir uns vor Ort, sobald alle Vor<shy>bereitungen abgeschlossen sind.
@@ -6770,7 +6773,7 @@ msgstr "Прошу, задержись на минуту."
 # aeria-terms: {"Eorzea":"4e5e8c295294"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_007700_VRITRA:1"
 msgid "There is one whom my sire hath judged worthy of honor and respect─the one known to men as Eorzea's champion. This hero of renown and rumor...'tis thee."
-msgstr "Есть тот, кого мой отец счёл достойным почёта и уважения, — тот, кого люди называют героем Эорзеи. Герой, о котором ходят легенды... Это ты."
+msgstr "Есть тот, кого мой отец счёл достойным почёта и уважения, — тот, кого люди называют <if $gn4>героиней<else>героем</if> Эорзеи. <if $gn4>Героиня<else>Герой</if>, о котором ходят легенды... Это ты."
 
 #. ja: 何と言う？
 #. de: Was sagst du?
@@ -6914,7 +6917,7 @@ msgstr "Ах, простите. Мы не хотели вам мешать."
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_007830_ALISAIE:1"
 msgid "It's just that we <i>do</i> have a history of suddenly collapsing, and when you didn't follow us out..."
-msgstr "Просто мы <i>и правда</i> то и дело вдруг падаем без сил, а ты за нами не вышел..."
+msgstr "Просто мы <i>и правда</i> то и дело вдруг падаем без сил, а ты за нами не <if $gn4>вышла<else>вышел</if>..."
 
 #. ja: こちらこそ申し訳がない。<br>ただの雑談だ、君たちの英雄はすぐに解放しよう。
 #. de: Bitte verzeiht meine Redseligkeit. Ich lasse <if $gn4>Eure Heldin<else>Euren Helden</if> alsbald ziehen.
@@ -6922,7 +6925,7 @@ msgstr "Просто мы <i>и правда</i> то и дело вдруг п�
 #. speaker: VRITRA
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_007840_VRITRA:1"
 msgid "'Tis I who must apologize. I have detained your champion overlong with idle chatter."
-msgstr "Это мне следует просить прощения. Я слишком долго задержал вашего героя пустой болтовнёй."
+msgstr "Это мне следует просить прощения. Я слишком долго задержал <if $gn4>вашу героиню<else>вашего героя</if> пустой болтовнёй."
 
 #. ja: 戦いの先に、君と、<br>君が護った者の笑顔があることを願っているよ。
 #. de: Ich wünsche dir aus tiefstem Herzen, dass dich nach der Schlacht das Lächeln derer erwartet, die du mit Leib und Seele zu schützen strebst.
@@ -7067,7 +7070,7 @@ msgstr "После лечения я всё это время спала... Но
 # aeria-terms: {"Nidhana":"624547fed792"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008010_ALISAIE:1"
 msgid "As you said, Nidhana was captured only recently."
-msgstr "Ты говорила, Нидхану захватили совсем недавно."
+msgstr "Ты <if $gn4>говорила<else>говорил</if>, Нидхану захватили совсем недавно."
 
 #. ja: それなら治しきれるんじゃないかと思って、<br>メーガドゥータ宮に集合する前に、ね。
 #. de: Das kann ich im Hand<shy>umdrehen heilen, hab ich mir gedacht. Noch ehe wir beim Meghaduta-Tempel sind.
@@ -7258,7 +7261,7 @@ msgstr "Судя по всему, на неё влияет лишь избыто
 #. speaker: NIDHANA
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008240_NIDHANA:1"
 msgid "As a veteran of the battlefield, surely you've experienced moments of desperation or exaltation when you've transcended the usual limits of your capabilities?"
-msgstr "Ты столько раз бывал в бою. Наверняка случалось, что в отчаянии или в порыве воодушевления ты выходил за пределы своих возможностей?"
+msgstr "Ты столько раз <if $gn4>бывала<else>бывал</if> в бою. Наверняка случалось, что в отчаянии или в порыве воодушевления ты <if $gn4>выходила<else>выходил</if> за пределы своих возможностей?"
 
 #. ja: あれこそ、強い意志によって、<br>キミの底力にアーカーシャが乗っかった状態ってこと！
 #. de: Du besitzt einen starken Willen und das Akasha reagiert auf diese Stärke!
@@ -7339,7 +7342,7 @@ msgstr "Наберись сил и оберегай их."
 #. speaker: ALISAIE
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008340_ALISAIE:1"
 msgid "Good, you're here! You haven't eaten yet, have you?"
-msgstr "Отлично, ты здесь! Ты ведь ещё не ел?"
+msgstr "Отлично, ты здесь! Ты ведь ещё не <if $gn4>ела<else>ел</if>?"
 
 #. ja: いろいろ買ってきたから、一緒に食べない？<br>味は保証するわ、ラストスタンドだもの。
 #. de: Wir haben ordentlich eingekauft und dachten, du magst vielleicht einen Happen mit uns teilen? Ist aus dem Café, also wirklich lecker!
@@ -7574,7 +7577,7 @@ msgstr "Может, мне просто нужно ещё потренирова
 # aeria-terms: {"Noumenon":"8810a40a8a75"}
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008580_ALPHINAUD:1"
 msgid "You unearthed it from the depths of Noumenon, I presume?"
-msgstr "Ты, должно быть, нашёл её в глубинах Ноумена?"
+msgstr "Ты, должно быть, <if $gn4>нашла<else>нашёл</if> её в глубинах Ноумена?"
 
 #. ja: 正解、あそこには山ほど魔道書があるからな。<br>ひとりで残ったときに、その……必要があったんだ。
 #. de: Richtig. Darin türmen sich die Schriften und Bücher wie Berge, yalmenhoch bis an die Decke. Der Zauber war<nbsp>... eine Notwendigkeit.
@@ -7590,7 +7593,7 @@ msgstr "Ага, среди целой горы древних магически
 #. speaker: ALISAIE
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008600_ALISAIE:1"
 msgid "Or, to put it simply, you used it to sneak around the forbidden archives."
-msgstr "Или, попросту говоря, ты пользовался им, чтобы пробираться в запретные архивы."
+msgstr "Или, попросту говоря, ты <if $gn4>пользовалась<else>пользовался</if> им, чтобы пробираться в запретные архивы."
 
 #. ja: あー……いや、その……うん……
 #. de: A-Also<nbsp>... Ich weiß nicht, ob ich<nbsp>...
@@ -7696,7 +7699,7 @@ msgstr "Тогда ещё по чашечке чая. Дикон сказал, �
 #. speaker: KRILE
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008690_KRILE:1"
 msgid "Why else did you think we were here? Surrender to thy fate, O champion!"
-msgstr "А зачем, по-твоему, мы здесь собрались? Смирись со своей судьбой, о герой!"
+msgstr "А зачем, по-твоему, мы здесь собрались? Смирись со своей судьбой, о <if $gn4>героиня<else>герой</if>!"
 
 #. ja: ここにいましたか。<br>生身でその格好だと冷えません？<br>まあどうでもいいんですけど。
 #. de: Ach, hier steckt Ihr also. Wollt Ihr Euch nicht noch etwas überziehen? Sonst holt Ihr Euch noch den Tod! Nicht, dass das noch groß eine Rolle spielen würde<nbsp>...
@@ -7747,7 +7750,7 @@ msgstr "Если они продолжат возиться с башнями, �
 #. speaker: ZENOS
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008750_ZENOS:1"
 msgid "Our foe is bold enough. Of that, I can assure you."
-msgstr "Наш враг достаточно смел. Уж в этом можете не сомневаться."
+msgstr "<if $gn4>Наша противница достаточно смела<else>Наш враг достаточно смел</if>. Уж в этом можете не сомневаться."
 
 #. ja: 左様ですか……。<br>じゃあ精々、足止めの方法でも考えておくとしましょう。
 #. de: Ist das so<nbsp>... Nun, lasst uns zumindest darüber nachdenken, wie wir sie aufhalten wollen.
@@ -7830,7 +7833,7 @@ msgstr "Не знаю, завидовать вам или жалеть..."
 #. speaker: ZENOS
 msgctxt "cut_scene/060/VoiceMan_06000:TEXT_VOICEMAN_06000_008850_ZENOS:1"
 msgid "You question my disinterest, but what of yours? Despite your noisome antics, I sense you take little pleasure in this endeavor."
-msgstr "Ты спрашиваешь, почему мне всё безразлично. А сам-то? Столько шумишь, столько суетишься, но, по-моему, это дело тебя совсем не радует."
+msgstr "Ты спрашиваешь, почему мне всё безразлично. А <if $gn4>сама<else>сам</if>-то? Столько шумишь, столько суетишься, но, по-моему, это дело тебя совсем не радует."
 
 #. ja: うわ怖い……。<br>あれだけ無視しておきながら、そういうこと言っちゃいます？
 #. de: Uah, gruselig. Da ignoriert Ihr mich die ganze Zeit über hartnäckig, nur um mich plötzlich mit einer so messerscharfen Beobachtung zu konfrontieren!

@@ -16,7 +16,7 @@ msgstr ""
 #. column 41: 0
 msgctxt "CraftLeveTalk:1:0:36"
 msgid "Did ya bring it?"
-msgstr "Принёс?"
+msgstr "<if $gn4>Принесла<else>Принёс</if>?"
 
 #. ja: ありがとう！
 #. de: Danke sehr!
@@ -125,7 +125,7 @@ msgstr "Спасибо за всё!"
 # aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "CraftLeveTalk:3:0:36"
 msgid "Here for the job, are you? Then there's no need for pleasantries. Show me your work."
-msgstr "Ты по заказу? Тогда без церемоний. Показывай, что сделал."
+msgstr "Ты по заказу? Тогда без церемоний. Показывай, что <if $gn4>сделала<else>сделал</if>."
 
 #. ja: ありがとう！<br>あなたが信頼できる人でよかった。<br>さあ、報酬だよ。
 #. de: Huh, erstaunlich. Auf dich ist ja Verlass. Dann nimm, was du dir verdient hast. Hier, bitte.
@@ -160,9 +160,10 @@ msgstr "Пока не выполнишь заказ, нам не о чем го�
 #. column 39: 0
 #. column 40: 0
 #. column 41: 0
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:4:0:36"
 msgid "Ah, you must be the adventurer the guild said they would send. I have been ever so eagerly awaiting your arrival. Might you have the delivery on your person?"
-msgstr "А, ты, должно быть, тот самый искатель приключений, которого обещала прислать гильдия. Я так ждала твоего прихода! Заказ при тебе?"
+msgstr "А, <if $gn4>ты, должно быть, та самая искательница приключений, которую<else>ты, должно быть, тот самый искатель приключений, которого</if> обещала прислать гильдия. Я так ждала твоего прихода! Заказ при тебе?"
 
 #. ja: 品物をお届けくださり、感謝します。<br>今、報酬をお出ししますわ。
 #. de: Vielen Dank. Du hast mir einen großen Gefallen getan. Hier, dein Lohn.
@@ -187,7 +188,7 @@ msgstr "Прекрасно. Тебя стоит похвалить, <if $gn4>м�
 #. column 41: 0
 msgctxt "CraftLeveTalk:4:0:38"
 msgid "Well, then. Take your time. I do not wish to see you sacrifice quality if it only means I save a few bells. You know where I will be."
-msgstr "Ну что ж, не торопись. Не хочу, чтобы ты жертвовал качеством ради пары лишних монет. Ты знаешь, где меня найти."
+msgstr "Ну что ж, не торопись. Не хочу, чтобы ты <if $gn4>жертвовала<else>жертвовал</if> качеством ради пары лишних монет. Ты знаешь, где меня найти."
 
 #. ja: 連絡のあった匠の先生ですね？<br>お品の準備はよろしいでしょうか？
 #. de: Ah, dein Kommen wurde mir schon angekündigt. Hast du mitgebracht, was ich benötige?
@@ -202,7 +203,7 @@ msgstr "Ну что ж, не торопись. Не хочу, чтобы ты ж
 #. macro: <if ($gn11 < 17)>day<else>night</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "CraftLeveTalk:5:0:36"
 msgid "Your arrival here this <if ($gn11 < 12)><if ($gn11 < 4)>night<else>morn</if><else><if ($gn11 < 17)>day<else>night</if></if> was foretold in the stars. You have something to...deliver, don't you?"
-msgstr "Звёзды предсказали, что ты придёшь сюда этой <if ($gn11 < 12)><if ($gn11 < 4)>ночью<else>утром</if><else><if ($gn11 < 17)>днём<else>ночью</if></if>. Ты что-то... принёс, верно?"
+msgstr "Звёзды предсказали, что ты придёшь сюда этой <if ($gn11 < 12)><if ($gn11 < 4)>ночью<else>утром</if><else><if ($gn11 < 17)>днём<else>ночью</if></if>. Ты что-то... <if $gn4>принесла<else>принёс</if>, верно?"
 
 #. ja: すばらしい品です。確かに拝領いたしました。
 #. de: Hervorragende Arbeit. Wirklich hervorragend.
@@ -273,6 +274,7 @@ msgstr "Тысячу благодарностей, дитя моё! До нов�
 #. column 39: Now, if it is further employment that you seek, I would be willing to make you a similar offer for more of the same item. What say you?
 #. column 40: Very well. You know where to find me, should you come to your senses.
 #. column 41: My thanks, adventurer. Good <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>day</if><else><if ($gn11 < 17)>day<else>evening</if></if>.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:6:0:36"
 msgid "Have you completed my request? I know you adventurers are the busy sort, but I, too, have deadlines to meet."
 msgstr "Мой заказ готов? Знаю, у вас, искателей приключений, дел невпроворот, но и у меня сроки поджимают."
@@ -339,6 +341,7 @@ msgstr "Что ж, как знаешь. Если одумаешься, ты зн
 #. macro: <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>day</if><else><if ($gn11 < 17)>day<else>evening</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 4)>evening<else>day</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 17)>day<else>evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:6:0:41"
 msgid "My thanks, adventurer. Good <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>day</if><else><if ($gn11 < 17)>day<else>evening</if></if>."
 msgstr "Спасибо, искатель приключений. Хорошего <if ($gn11 < 12)><if ($gn11 < 4)>вечера<else>дня</if><else><if ($gn11 < 17)>дня<else>вечера</if></if>."
@@ -353,7 +356,7 @@ msgstr "Спасибо, искатель приключений. Хорошег�
 #. column 41: 0
 msgctxt "CraftLeveTalk:7:0:36"
 msgid "So it is you that accepted my unit's request. Very well, then. Let us see what you have brought us."
-msgstr "Так это ты принял заказ моего отряда. Хорошо. Посмотрим, что ты нам принёс."
+msgstr "Так это <if $gn4>ты приняла<else>ты принял</if> заказ моего отряда. Хорошо. Посмотрим, что ты нам <if $gn4>принесла<else>принёс</if>."
 
 #. ja: うむ、まさしくこれは我が隊が発注した品だ。<br>その手並み……なかなかのものだな。<br>君の尽力に対し、我が隊を代表して礼を言わせてくれ。
 #. de: Na, geht doch! Genau, was wir wollten, und nicht mal schlechte Qualität. Dann danke ich dir im Namen von uns allen.
@@ -419,6 +422,7 @@ msgstr "Готово? Дай-ка взглянуть.<br>Да... Да... Оче�
 #. column 39: And, I believe they would be even <i>more</i> pleased if I were to return to the warehouses with a healthy surplus of the requested goods. You seem competent enough in your chosen trade. Would you consider contributing a few more whacks of the proverbial hammer in service of Brugaire?
 #. column 40: I see. Off with you then. I am a busy man, and my clients are waiting.
 #. column 41: You have served the Consortium well. I shall duly note your contributions in my log. Good <if ($gn11 < 12)><if ($gn11 < 4)>night<else>day</if><else><if ($gn11 < 17)>day<else>night</if></if>, then.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:8:0:38"
 msgid "The Brugaire Consortium is known for the expediency with which it fills its orders. If you refuse to complete the items I have requested, I will simply hire another adventurer to do my bidding. Gods know there are more than enough of you running around this city to choose from."
 msgstr "Консорциум Брюгера славится тем, что быстро выполняет заказы. Не хочешь сделать то, о чём я попросил, — найму другого искателя приключений. Богов ради, в городе их полно."
@@ -462,7 +466,7 @@ msgstr "Понятно. Тогда ступай. Я занятой челове�
 #. macro: <if ($gn11 < 17)>day<else>night</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "CraftLeveTalk:8:0:41"
 msgid "You have served the Consortium well. I shall duly note your contributions in my log. Good <if ($gn11 < 12)><if ($gn11 < 4)>night<else>day</if><else><if ($gn11 < 17)>day<else>night</if></if>, then."
-msgstr "Ты хорошо послужил консорциуму. Я отмечу твой вклад в журнале. Что ж, доброй <if ($gn11 < 12)><if ($gn11 < 4)>ночи<else>доброго дня</if><else><if ($gn11 < 17)>доброго дня<else>ночи</if></if>."
+msgstr "Ты хорошо <if $gn4>послужила<else>послужил</if> консорциуму. Я отмечу твой вклад в журнале. Что ж, доброй <if ($gn11 < 12)><if ($gn11 < 4)>ночи<else>доброго дня</if><else><if ($gn11 < 17)>доброго дня<else>ночи</if></if>."
 
 #. ja: アンタが、冒険者ギルドから来た人だね？<br>さっそくだが、依頼品を出してもらおうか。
 #. de: Danke, dass du gekommen bist. Ich bin ja selbst keine ungeschickte Handwerkerin, aber manchmal ist es einfach rentabler, jemanden anzustellen.
@@ -474,7 +478,7 @@ msgstr "Ты хорошо послужил консорциуму. Я отмеч
 #. column 41: 0
 msgctxt "CraftLeveTalk:9:0:36"
 msgid "I thank you very much for accepting my request. I fancy myself a decent craftswoman, yet there are some fields in which I have found employing the services of another can often prove most fortuitous for both parties."
-msgstr "Спасибо, что согласился выполнить мой заказ. Сама я вроде неплохо управляюсь с ремеслом, но в некоторых делах нанять другого мастера бывает выгоднее для всех."
+msgstr "Спасибо, что <if $gn4>согласилась<else>согласился</if> выполнить мой заказ. Сама я вроде неплохо управляюсь с ремеслом, но в некоторых делах нанять другого мастера бывает выгоднее для всех."
 
 #. ja: ふむ、確かに依頼したとおりの品だ。<br>これなら問題ない、約束通りの報酬を渡そう。<br>また依頼を見つけたら、請け負ってくれ。
 #. de: Wirklich solide Arbeit. Heutzutage wird viel zu viel für die Müllhalden produziert ... Ich werde dich wieder beauftragen, wenn du Zeit und Lust hast.
@@ -496,6 +500,7 @@ msgstr "Чудесно! О твоём качестве работы я уже н
 #. column 39: 0
 #. column 40: 0
 #. column 41: 0
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:9:0:38"
 msgid "Have you completed my request? I know you adventurers are the busy sort, but I, too, have deadlines to meet."
 msgstr "Мой заказ готов? Знаю, у вас, искателей приключений, дел невпроворот, но и у меня сроки поджимают."
@@ -511,7 +516,7 @@ msgstr "Мой заказ готов? Знаю, у вас, искателей п
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "CraftLeveTalk:10:0:36"
 msgid "Hmph. You don't have the look of a crafts<if $gn4>woman<else>man</if>. Then again, I am not paying for looks. Make me what I have requested and all parties shall be satisfied."
-msgstr "Хм. На ремесленника ты не похож<if $gn4>а<else></if>. Впрочем, я плачу не за внешность. Сделай, что я заказал, и все останутся довольны."
+msgstr "Хм. На ремесленника ты не <if $gn4>похожа<else>похож</if>. Впрочем, я плачу не за внешность. Сделай, что я заказал, и все останутся довольны."
 
 #. ja: いいね、いいね。<br>これでまた、ひと商売ができそうだ。<br>俺の依頼を見かけたら、また頼むぜ、相棒。
 #. de: Ja, das entspricht meinen Vorstellungen. Wenn du weiter so gute Arbeit lieferst, werden wir gut zu<shy>sammen<shy>arbeiten.
@@ -563,7 +568,7 @@ msgstr "<if $gn4>Ты та девушка, которую<else>Ты тот па�
 #. column 41: Such fine work! You are either a master at your craft, or a master at finding someone who's a master at their craft to make you look like a master at your craft. Either way, the Princess gets her supplies, and you get your reward. Everyone wins!
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"job":"a9421a81ecaa"}
+# aeria-terms: {"adventurer":"48df264ad5ec","job":"a9421a81ecaa"}
 msgctxt "CraftLeveTalk:11:0:37"
 msgid "Everything seems to be in order; a fine job, if I do say so myself. You ever think about hanging up your adventurer's britches, let me know. There might be a place for you on the <i>Princess</i>."
 msgstr "Всё в порядке, работа на славу — уж я-то знаю. Если когда-нибудь решишь завязать с приключениями, дай знать. На <i>«Принцессе»</i> для тебя найдётся место."
@@ -639,7 +644,7 @@ msgstr "Где тебя носило, в кишках Тала?! Дел полн
 #. column 41: Excellent. Master Gegeruju always says, “Why have one of anything when you can have a dozen?”
 msgctxt "CraftLeveTalk:12:0:37"
 msgid "Finally done, are we? Couldn't remember if you were quenching or cross-stitching, is that it? Hand it over, then! Pleasure doing business and all that!"
-msgstr "Наконец-то! Не помню уже, что ты там делал — ковал или вышивал. Давай сюда! Приятно иметь с тобой дело и всё такое!"
+msgstr "Наконец-то! Не помню уже, что ты там <if $gn4>делала<else>делал</if> — ковал или вышивал. Давай сюда! Приятно иметь с тобой дело и всё такое!"
 
 #. ja: ……ところで、依頼品はどちらに？<br>まさか、まだ手を付けていないなどということは、<br>ありません……よね？
 #. de: Gut Ding will Weile haben, aber die Weile ist nun langsam rum ... Wird das noch was?
@@ -664,7 +669,7 @@ msgstr "Ты за работу возьмёшься или мне тебя по�
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "CraftLeveTalk:12:0:39"
 msgid "Oh, wait. Where are you going? I wasn't finished. Would a <if $gn4>woman<else>man</if> of your means be interested in whipping up a few more of those fine items? The master likes to see that he's always prepared."
-msgstr "Постой, куда собрался? Я ещё не закончил. Не хочешь сделать ещё несколько таких замечательных вещей? Мастеру важно быть готовым ко всему."
+msgstr "Постой, куда <if $gn4>собралась<else>собрался</if>? Я ещё не <if $gn4>закончила<else>закончил</if>. Не хочешь сделать ещё несколько таких замечательных вещей? Мастеру важно быть готовым ко всему."
 
 #. ja: なるほど、冒険者は冒険者なりに<br>都合というものがあるのでしょうね。
 #. de: Nein? Ich weiß nicht, wie der Meister darauf reagieren wird ... Aber gut, es ist deine Entscheidung.
@@ -704,6 +709,7 @@ msgstr "Прекрасно. Мастер Гегерую всегда говор�
 #. macro: <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morning</if><else><if ($gn11 < 17)>afternoon<else>evening</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 4)>evening<else>morning</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 17)>afternoon<else>evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:13:0:36"
 msgid "Good <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morning</if><else><if ($gn11 < 17)>afternoon<else>evening</if></if>, adventurer. Handing in or picking up? One moment, please."
 msgstr "Добрый <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>утро</if><else><if ($gn11 < 17)>день<else>вечер</if></if>, искатель приключений. Сдаёшь заказ или забираешь? Одну минуту, пожалуйста."
@@ -846,7 +852,7 @@ msgstr "Хм. Полагаю, сойдёт. Вы сделали то, за че�
 #. column 41: 0
 msgctxt "CraftLeveTalk:15:0:38"
 msgid "You waltzed in here empty-handed? I oughta box your ears, you cheeky git. Now start craftin' or start bleedin'. Your choice."
-msgstr "Ты явился с пустыми руками? Я бы надавала тебе по ушам, наглец! А ну, принимайся за дело, а не то получишь. Выбирай."
+msgstr "Ты <if $gn4>явилась<else>явился</if> с пустыми руками? Я бы надавала тебе по ушам, наглец! А ну, принимайся за дело, а не то получишь. Выбирай."
 
 #. ja: ……あんた、本当に職人？<br>アマルジャのスパイじゃないでしょうね？
 #. de: Wer bist du? Was machst du hier? Ach, du bist <if $gn4>die Handwerkerin<else>der Handwerker</if>, <if $gn4>die<else>den</if> diese Gilde geschickt hat. Wie hieß sie noch? Ich weiß, die Aben<shy>teurer<shy>gilde. Worum ging es noch mal? Ach ja, der Auftrag!
@@ -856,7 +862,7 @@ msgstr "Ты явился с пустыми руками? Я бы надавал
 #. column 39: Oh, but before you go off to wherever it is you adventurers go, might I ask that you make me some more? I have this sinking feeling I might just...er, misplace the ones you've already submitted.
 #. column 40: No? Oh... Well, I'm certain you have your reasons... Whatever they might be.
 #. column 41: Wonderful... I think. This <i>is</i> what I ordered, right?
-# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95"}
+# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95","adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:16:0:36"
 msgid "Yes, and how may I help you? ...Oh! Oh, an adventurer! From that guild! Which one was it now? Ah, yes! The Adventurers' Guild! And why were you here again? Ah, the order!"
 msgstr "Да, чем могу помочь? ...О! О, искатель приключений! Из той гильдии! Как же она называлась? Ах да! Гильдия авантюристов! И зачем вы пришли? Ах да, заказ!"
@@ -871,7 +877,7 @@ msgstr "Да, чем могу помочь? ...О! О, искатель прик
 #. column 41: Wonderful... I think. This <i>is</i> what I ordered, right?
 msgctxt "CraftLeveTalk:16:0:37"
 msgid "Er... Are you sure this is what I asked for? Whatever was I thinki─ Ah? Oh, no matter, I'm sure it will come to me! My thanks!"
-msgstr "Э... Ты уверен, что это я просила? О чём я только думала... А? Да ладно, может, ещё вспомню! Спасибо!"
+msgstr "Э... Ты <if $gn4>уверена<else>уверен</if>, что это я просила? О чём я только думала... А? Да ладно, может, ещё вспомню! Спасибо!"
 
 #. ja: ふぅん、なかなか完成に漕ぎ着けなくて、せめて<br>誠意だけでも見せようと、このキャンプまで来ました、と……<br>どこまで信じていいのかしら？
 #. de: Du bist noch nicht fertig? Du wirst ja wohl meine Bestellung nicht vergessen haben? Ein gutes Gedächtnis ist unentbehrlich für jeden Geschäftsmann. Also, gib mir die bestellte Ware. Ach, du bist noch nicht fertig? Du hast doch wohl meine Bestellung nicht vergessen? Ein gutes Gedächtnis ... Hm, ich glaube, ich hatte gerade ein Déjà vu. Seltsames Gefühl. Wovon hatten wir gesprochen?
@@ -884,7 +890,7 @@ msgstr "Э... Ты уверен, что это я просила? О чём я �
 # aeria-terms: {"trap":"ab60efffb927"}
 msgctxt "CraftLeveTalk:16:0:38"
 msgid "Don't tell me you've forgotten to bring the order! My memory is like a steel trap, you see. Can't abide forgetfulness. Hm? Oh yes, the order! Did you bring it? No? Well then, craft away!"
-msgstr "Только не говори, что забыл заказ! У меня-то память что стальной капкан — терпеть не могу, когда забывают. А? Заказ! Ты его принёс? Нет? Тогда за работу!"
+msgstr "Только не говори, что <if $gn4>забыла<else>забыл</if> заказ! У меня-то память что стальной капкан — терпеть не могу, когда забывают. А? Заказ! Ты его <if $gn4>принесла<else>принёс</if>? Нет? Тогда за работу!"
 
 #. ja: あの……もしよかったら、追加注文を……<br>お願い、信じられるのは、あなただけなの！
 #. de: Würdest du mir noch mehr davon herstellen? Nur für den Fall, dass ich etwas verlegen sollte. Das kommt aber nie vor. So gut wie nie. Eigentlich nur selten. Manchmal, wenn ich viel zu tun habe. Oder müde werde, am Nachmittag.
@@ -894,9 +900,10 @@ msgstr "Только не говори, что забыл заказ! У мен�
 #. column 38: Don't tell me you've forgotten to bring the order! My memory is like a steel trap, you see. Can't abide forgetfulness. Hm? Oh yes, the order! Did you bring it? No? Well then, craft away!
 #. column 40: No? Oh... Well, I'm certain you have your reasons... Whatever they might be.
 #. column 41: Wonderful... I think. This <i>is</i> what I ordered, right?
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:16:0:39"
 msgid "Oh, but before you go off to wherever it is you adventurers go, might I ask that you make me some more? I have this sinking feeling I might just...er, misplace the ones you've already submitted."
-msgstr "Постой, прежде чем уходить... Не мог бы ты сделать мне ещё немного? Боюсь, я... э-э... куда-нибудь задевала то, что ты уже принёс."
+msgstr "Постой, прежде чем уходить... Не <if $gn4>могла<else>мог</if> бы ты сделать мне ещё немного? Боюсь, я... э-э... куда-нибудь задевала то, что ты уже принёс."
 
 #. ja: 追加注文くらい、応えられないの？<br>あんた、職人なんでしょ、一応？
 #. de: Nicht? Dann passe ich eben besonders gut auf. Auf den ... die ... Was war es noch gleich?
@@ -1018,7 +1025,7 @@ msgstr "Ты из гильдии? Сказали, кто-то принесёт �
 #. column 39: You adventurers are a Twelvesend! But do you know what I appreciate most of your lot? That you are always willing to do more work, should there be extra coin in it for you. Oh, and look here. I have extra coin! Might you be willing to procure more items?
 #. column 40: Did I mention I had coin? Well, no matter, then. I have what I need for the time being. If I require more, I suppose I can simply find myself another adventurer.
 #. column 41: Yes, yes. This is exactly what I needed. Perhaps with the profits made from this surplus I can finally purchase that snow wolf jacket I've had my eye on. Any extra layer is welcome in this cold.
-# aeria-terms: {"Ishgardian":"f12ebd287b95","dragon":"28d27f6328d0"}
+# aeria-terms: {"Ishgardian":"f12ebd287b95","adventurer":"48df264ad5ec","dragon":"28d27f6328d0"}
 msgctxt "CraftLeveTalk:18:0:37"
 msgid "Splendid! Working as a sutler for the Ishgardians can be both a curse and a blessing. While the seemingly endless conflict with the dragons makes for good business, the extreme location of this conflict makes it difficult to maintain my stock. You adventurers are a Twelvesend!"
 msgstr "Прекрасно! Быть торговцем при ишгардцах — и проклятие, и благословение. Бесконечная, кажется, война с драконами приносит прибыль, но из-за того, что идёт она на отшибе, пополнять запасы непросто. Вы, искатели приключений, прямо посланы Двенадцатью!"
@@ -1043,6 +1050,7 @@ msgstr "Говорят, терпение приносит награду. Вид
 #. column 38: I believe someone once said good things come to those who wait. Obviously that person did not have orders to fill.
 #. column 40: Did I mention I had coin? Well, no matter, then. I have what I need for the time being. If I require more, I suppose I can simply find myself another adventurer.
 #. column 41: Yes, yes. This is exactly what I needed. Perhaps with the profits made from this surplus I can finally purchase that snow wolf jacket I've had my eye on. Any extra layer is welcome in this cold.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:18:0:39"
 msgid "You adventurers are a Twelvesend! But do you know what I appreciate most of your lot? That you are always willing to do more work, should there be extra coin in it for you. Oh, and look here. I have extra coin! Might you be willing to procure more items?"
 msgstr "Вы, искатели приключений, прямо посланы Двенадцатью! А знаешь, что мне в вас нравится больше всего? Всегда готовы поработать ещё, если за это доплатят. И гляди-ка, у меня как раз есть лишние монеты! Принесёшь ещё товара?"
@@ -1055,6 +1063,7 @@ msgstr "Вы, искатели приключений, прямо посланы
 #. column 38: I believe someone once said good things come to those who wait. Obviously that person did not have orders to fill.
 #. column 39: You adventurers are a Twelvesend! But do you know what I appreciate most of your lot? That you are always willing to do more work, should there be extra coin in it for you. Oh, and look here. I have extra coin! Might you be willing to procure more items?
 #. column 41: Yes, yes. This is exactly what I needed. Perhaps with the profits made from this surplus I can finally purchase that snow wolf jacket I've had my eye on. Any extra layer is welcome in this cold.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:18:0:40"
 msgid "Did I mention I had coin? Well, no matter, then. I have what I need for the time being. If I require more, I suppose I can simply find myself another adventurer."
 msgstr "Говорил, что у меня есть монеты? Ладно, неважно. Пока мне хватит. Если понадобится ещё, найду другого искателя приключений."
@@ -1129,6 +1138,7 @@ msgstr "Самые тяжелораненые рыцари могут не ус�
 #. column 38: The very lives of the men and women of this place ride on whether or not I can provide them with quality materiel in a timely manner. If you are incapable of fulfilling my request, then might I suggest finding someone who can?
 #. column 39: The most ill-stricken of the knights may not be fortunate enough to find me before my stock is depleted once more. You see, no matter how much I procure, the demand is always greater than the supply. Now, if there were some way to increase my stock...
 #. column 41: Thank you for the extra effort, <if $gn4>good lady<else>good sir</if>. Knowing that the work we do might save even a single life... It makes this all worthwhile.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:19:0:40"
 msgid "Oh, I understand. There is more to life as an adventurer than seeing knights are properly equipped so that they might return to their families alive, rather than in several pieces."
 msgstr "Понимаю. В жизни искателя приключений есть дела поважнее, чем снабжать рыцарей, чтобы те вернулись к семьям живыми, а не по кускам."
@@ -1154,7 +1164,7 @@ msgstr "Спасибо за дополнительный труд, <if $gn4>ми
 #. column 39: I do believe that is everything on the list I left with the guild. Now, there's the matter of this <i>other</i> list─a list that is similar to the one given by me to the Adventurers' Guild, but with a few more items on it. Nothing fancy, mind you, just more of the same. If only there were someone standing directly before me with the skills necessary to complete the new order. Oh, but there is!
 #. column 40: Well then... I suppose the blame is on me for not adding the additional items to the original list. I shall make a note to do so next time.
 #. column 41: Allow me to fetch you a rag to wipe the grease from those elbows of yours! The Sons of Saint Coinach thank you, adventurer!
-# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95"}
+# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95","adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:20:0:36"
 msgid "You must be the adventurer from that guild...what was it called again? Oh yes, the Adventurers' Guild! I must write that down somewhere. Ah, but to business. Did you have any trouble finding us out here? Are the items I requested in that nebulous bag of yours? Are you going to stop me? Because if you do not, I may keep talking until one of us collapses."
 msgstr "Ты, должно быть, искатель приключений из той гильдии... Как же её? Ах да, Гильдия авантюристов! Надо бы записать. Но к делу. Трудно было нас найти? Заказанные вещи лежат в твоей загадочной сумке? Может, остановишь меня? А то я буду говорить, пока один из нас не свалится."
@@ -1167,7 +1177,7 @@ msgstr "Ты, должно быть, искатель приключений и�
 #. column 39: I do believe that is everything on the list I left with the guild. Now, there's the matter of this <i>other</i> list─a list that is similar to the one given by me to the Adventurers' Guild, but with a few more items on it. Nothing fancy, mind you, just more of the same. If only there were someone standing directly before me with the skills necessary to complete the new order. Oh, but there is!
 #. column 40: Well then... I suppose the blame is on me for not adding the additional items to the original list. I shall make a note to do so next time.
 #. column 41: Allow me to fetch you a rag to wipe the grease from those elbows of yours! The Sons of Saint Coinach thank you, adventurer!
-# aeria-terms: {"the Sons of Saint Coinach":"f67032248dbc"}
+# aeria-terms: {"adventurer":"48df264ad5ec","the Sons of Saint Coinach":"f67032248dbc"}
 msgctxt "CraftLeveTalk:20:0:37"
 msgid "I do believe that is everything on the list I left with the guild. The Sons of Saint Coinach thank you, adventurer!"
 msgstr "Кажется, это всё, что было в списке, оставленном мной в гильдии. От имени Сынов святого Койнаха благодарю тебя, искатель приключений!"
@@ -1221,10 +1231,10 @@ msgstr "Что ж... Пожалуй, сам виноват, что не доба
 #. column 38: You <i>do</i> remember what it is you have been asked to craft, do you not? Because I, uh, do not. I am certain the list is around here somewhere, but if I had time to look for it, I wouldn't be here talking with you now, would I? How is that for logic, eh?
 #. column 39: I do believe that is everything on the list I left with the guild. Now, there's the matter of this <i>other</i> list─a list that is similar to the one given by me to the Adventurers' Guild, but with a few more items on it. Nothing fancy, mind you, just more of the same. If only there were someone standing directly before me with the skills necessary to complete the new order. Oh, but there is!
 #. column 40: Well then... I suppose the blame is on me for not adding the additional items to the original list. I shall make a note to do so next time.
-# aeria-terms: {"the Sons of Saint Coinach":"f67032248dbc"}
+# aeria-terms: {"adventurer":"48df264ad5ec","the Sons of Saint Coinach":"f67032248dbc"}
 msgctxt "CraftLeveTalk:20:0:41"
 msgid "Allow me to fetch you a rag to wipe the grease from those elbows of yours! The Sons of Saint Coinach thank you, adventurer!"
-msgstr "Позволь принести тряпку, чтобы ты вытер масло с локтей! От имени Сынов святого Койнаха благодарю тебя, искатель приключений!"
+msgstr "Позволь принести тряпку, чтобы ты <if $gn4>вытерла<else>вытер</if> масло с локтей! От имени Сынов святого Койнаха благодарю тебя, искатель приключений!"
 
 #. ja: おう、お前さんが、俺の依頼を受けた漁師だな？<br>頼んでおいた品は捕れたかい？
 #. de: Ha, du musst <if $gn4>die Fischerin<else>der Fischer</if> sein, auf <if $gn4>die<else>den</if> ich gewartet habe! Bitte enttäusche mich nicht.
@@ -1246,6 +1256,7 @@ msgstr "Давай без любезностей, а? Ты даёшь мне р�
 #. column 39: ...But will it be <i>enough</i>? I suppose it can't hurt to have <i>too</i> much of a good thing. So, what of it, adventurer? Cast your line one more time for ol' Unsynwilf?
 #. column 40: Well then, I won't press you. Maybe next time, eh?
 #. column 41: Hah hah! Tonight's stew will be the greatest culinary creation in the history of Limsa Lominsa─no, the history of man! And I have you to thank, adventurer!
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:21:0:37"
 msgid "Yes! This will add the needed flavor to my next masterpiece! My taste buds thank you, adventurer!"
 msgstr "Вот оно! С ним моё следующее блюдо станет ещё вкуснее! Мои вкусовые рецепторы благодарят тебя, искатель приключений!"
@@ -1258,7 +1269,7 @@ msgstr "Вот оно! С ним моё следующее блюдо стане
 #. column 39: ...But will it be <i>enough</i>? I suppose it can't hurt to have <i>too</i> much of a good thing. So, what of it, adventurer? Cast your line one more time for ol' Unsynwilf?
 #. column 40: Well then, I won't press you. Maybe next time, eh?
 #. column 41: Hah hah! Tonight's stew will be the greatest culinary creation in the history of Limsa Lominsa─no, the history of man! And I have you to thank, adventurer!
-# aeria-terms: {"Wawalago":"62c90804ac21"}
+# aeria-terms: {"Wawalago":"62c90804ac21","adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:21:0:38"
 msgid "I'm used to that crooked Wawalago making me wait, but didn't expect the same from an adventurer. Are you sure you're using the right bait?"
 msgstr "Я привык, что этот проныра Вавалаго заставляет меня ждать, но от искателя приключений такого не ожидал. Ты точно на правильную наживку ловишь?"
@@ -1273,7 +1284,7 @@ msgstr "Я привык, что этот проныра Вавалаго зас�
 #. column 41: Hah hah! Tonight's stew will be the greatest culinary creation in the history of Limsa Lominsa─no, the history of man! And I have you to thank, adventurer!
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Unsynwilf":"b603bd5e6a5b"}
+# aeria-terms: {"Unsynwilf":"b603bd5e6a5b","adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:21:0:39"
 msgid "...But will it be <i>enough</i>? I suppose it can't hurt to have <i>too</i> much of a good thing. So, what of it, adventurer? Cast your line one more time for ol' Unsynwilf?"
 msgstr "...Но хватит ли этого? Пожалуй, чего доброго не бывает <i>слишком</i> <i>много</i>. Ну что скажешь, искатель приключений? Забросишь удочку ещё разок для старого Унсинвильфа?"
@@ -1298,7 +1309,7 @@ msgstr "Что ж, не стану настаивать. Может, в друг
 #. column 38: I'm used to that crooked Wawalago making me wait, but didn't expect the same from an adventurer. Are you sure you're using the right bait?
 #. column 39: ...But will it be <i>enough</i>? I suppose it can't hurt to have <i>too</i> much of a good thing. So, what of it, adventurer? Cast your line one more time for ol' Unsynwilf?
 #. column 40: Well then, I won't press you. Maybe next time, eh?
-# aeria-terms: {"Limsa Lominsa":"d423c1a01f1a"}
+# aeria-terms: {"Limsa Lominsa":"d423c1a01f1a","adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:21:0:41"
 msgid "Hah hah! Tonight's stew will be the greatest culinary creation in the history of Limsa Lominsa─no, the history of man! And I have you to thank, adventurer!"
 msgstr "Ха-ха! Сегодняшняя похлёбка станет величайшим кулинарным творением в истории Лимсы Ломинсы... нет, в истории человечества! И всё благодаря тебе, искатель приключений!"
@@ -1314,7 +1325,7 @@ msgstr "Ха-ха! Сегодняшняя похлёбка станет вели
 # aeria-terms: {"hold":"4662ae098b11"}
 msgctxt "CraftLeveTalk:22:0:36"
 msgid "Hold it right there. You say you're the one sent to deliver the items I requested? Hmmm."
-msgstr "Постой-ка. Ты говоришь, что это ты принёс заказанные мной товары? Хм-м..."
+msgstr "Постой-ка. Ты говоришь, что это ты <if $gn4>принесла<else>принёс</if> заказанные мной товары? Хм-м..."
 
 #. ja: うんうん、摘み食いなさらずに、<br>ちゃんと頼んでおいた品を持ってきてくださったのね？<br>さあ、約束していた報酬をお渡ししますよ。
 #. de: Danke! Hoffentlich hast du nicht zu sehr daran rumgetatscht.
@@ -1338,7 +1349,7 @@ msgstr "Надеюсь, среди этого улова не найдётся �
 #. column 41: It appears my suspicions were unwarranted. It truly has been a pleasure working with you...this time. I make no guarantees for the next.
 msgctxt "CraftLeveTalk:22:0:38"
 msgid "You are here, yet you have naught to deliver. I suppose you can avail yourself of my generosity and spend a few more moments about the water's edge, but just remember: I have my eye on you."
-msgstr "Ты пришёл, а принести нечего. Ну что ж, можешь воспользоваться моей добротой и ещё немного порыбачить у воды. Только помни: я за тобой слежу."
+msgstr "Ты <if $gn4>пришла<else>пришёл</if>, а принести нечего. Ну что ж, можешь воспользоваться моей добротой и ещё немного порыбачить у воды. Только помни: я за тобой слежу."
 
 #. ja: 素晴らしいですわ！<br>この調子で、追加注文をお願いしたいくらい……<br>もちろん報酬は増額しますから、いかがかしら？
 #. de: Auch wenn ich etwas Angst davor habe, dass du meine Bestellung zu sehr antatschst, hätte ich gerne noch mehr davon.
@@ -1388,7 +1399,7 @@ msgstr "Похоже, я зря подозревала тебя. Работат�
 #. macro: <if $gn4>lass<else>laddie</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "CraftLeveTalk:23:0:36"
 msgid "Ye here to deliver me fish, <if $gn4>lass<else>laddie</if>?"
-msgstr "Ты принёс мне рыбку, <if $gn4>красавица<else>дружок</if>?"
+msgstr "Ты <if $gn4>принесла<else>принёс</if> мне рыбку, <if $gn4>красавица<else>дружок</if>?"
 
 #. ja: わぁ！　本当に捕ってきてくれたのね！<br>ありがとう～～！！
 #. de: Wow, toll! Vielen, vielen Dank!
@@ -1450,7 +1461,7 @@ msgstr "Кстати, насчёт спора... Неужели мне нужн�
 #. column 40: Ah, about that bet... I don't need to tell a cultured <if $gn4>woman<else>man</if> as yerself that was but a figure of speech, now, do I?
 msgctxt "CraftLeveTalk:23:0:41"
 msgid "Ye came through! I never doubted ye would, mind ye."
-msgstr "Ты справился! Я ни капли в тебе не сомневалась, вот увидишь."
+msgstr "Ты <if $gn4>справилась<else>справился</if>! Я ни капли в тебе не сомневалась, вот увидишь."
 
 #. ja: 冒険者ギルドから派遣された漁師さんだよね？<br>ねぇねぇ、お願いした品は用意できたのかしら？
 #. de: Hallo, du musst <if $gn4>die Fischerin<else>der Fischer</if> sein, auf <if $gn4>die<else>den</if> ich gewartet habe. Hast du alles dabei?
@@ -1472,6 +1483,7 @@ msgstr "Принесли улов? Как мило с вашей стороны!
 #. column 39: Before I thank you for today's catch, how about we discuss the possibility of extending our agreement. My stalls always do better when they are full, just as I am sure that <i>you</i> do better when your <i>pockets</i> are full.
 #. column 40: Interesting. It is rare to find an adventurer unwilling to do...just about anything when there is coin to be had. I apologize for judging you otherwise.
 #. column 41: Good. Very good, Very, very good. The order is, what you would say, “in order.” Thank you again for your extra time, adventurer.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:24:0:37"
 msgid "Good. Very good. Very, very good. Everything seems to be in order. You have done me and my customers a great service, adventurer."
 msgstr "Прекрасно. Очень хорошо. Чудесно. Всё в полном порядке. Вы оказали мне и моим покупателям большую услугу, искатель приключений."
@@ -1513,6 +1525,7 @@ msgstr "Прежде чем поблагодарить вас за сегодн�
 #. column 38: Ah, yet it seems <i>you</i> have yet to fulfill <i>your</i> end of the bargain. <i>You</i> are free to take as long as <i>you</i> like, though in the meantime, <i>I</i> shall hold on to this reward.
 #. column 39: Before I thank you for today's catch, how about we discuss the possibility of extending our agreement. My stalls always do better when they are full, just as I am sure that <i>you</i> do better when your <i>pockets</i> are full.
 #. column 41: Good. Very good, Very, very good. The order is, what you would say, “in order.” Thank you again for your extra time, adventurer.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:24:0:40"
 msgid "Interesting. It is rare to find an adventurer unwilling to do...just about anything when there is coin to be had. I apologize for judging you otherwise."
 msgstr "Любопытно. Редко встретишь искателя приключений, который отказывается делать... почти что угодно за звонкую монету. Прошу прощения, что судил о вас иначе."
@@ -1525,6 +1538,7 @@ msgstr "Любопытно. Редко встретишь искателя пр�
 #. column 38: Ah, yet it seems <i>you</i> have yet to fulfill <i>your</i> end of the bargain. <i>You</i> are free to take as long as <i>you</i> like, though in the meantime, <i>I</i> shall hold on to this reward.
 #. column 39: Before I thank you for today's catch, how about we discuss the possibility of extending our agreement. My stalls always do better when they are full, just as I am sure that <i>you</i> do better when your <i>pockets</i> are full.
 #. column 40: Interesting. It is rare to find an adventurer unwilling to do...just about anything when there is coin to be had. I apologize for judging you otherwise.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:24:0:41"
 msgid "Good. Very good, Very, very good. The order is, what you would say, “in order.” Thank you again for your extra time, adventurer."
 msgstr "Прекрасно. Очень хорошо. Просто замечательно. Заказ, как говорится, в полном порядке. Ещё раз благодарю за помощь, искатель приключений."
@@ -1578,7 +1592,7 @@ msgstr "О боги, нет! Разве вам не сказали, как эт�
 #. column 38: Oh, gods, no! Were you not informed of the urgency!? Dive in the water and use your hands if you must, but make haste! Haste, I say! Master Gegeruju does not tolerate three things in this world: being made to wait, being made to wait, and being made to wait!
 #. column 40: Then I can only pray that Master is too busy cuddling with his latest courtesan to notice the lack of cuisine.
 #. column 41: Oh, the relief! The last time I forgot to double an order of fish for the master, he had me stand in a corner with a ten-ponze bucket of offal on my head for five bells straight. And that was only because he was feeling merciful.
-# aeria-terms: {"Gegeruju":"697cda42ccb0"}
+# aeria-terms: {"Gegeruju":"697cda42ccb0","adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:25:0:39"
 msgid "I have some good news, and some bad news. The bad news is, in my haste to find an adventurer who could obtain the items Master Gegeruju requested, I failed to remember one of his many mottos─why have one of anything when you can have a dozen? The good news is, there is more coin to be made if you are interested. Say you are interested!"
 msgstr "У меня для вас хорошие и плохие новости. Плохая в том, что, спеша найти искателя приключений, который добудет заказанные господином Гегерую товары, я забыл одно из его любимых изречений: зачем брать одну вещь, если можно взять дюжину? Хорошая новость — на этом можно заработать ещё монет. Если, конечно, вы согласны. Скажите, что согласны!"
@@ -1642,10 +1656,10 @@ msgstr "Благодаря вашему усердию несколько сем
 #. column 40: That is alright. With the number of dragon attacks increasing by the day, there is no guarantee these families will even live to see tomorrow.
 #. column 41: I thank you, and Coerthas thanks you...though it may not readily seem like it.
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95","Sea of Clouds":"b332bc36488d"}
+# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95","Sea of Clouds":"b332bc36488d","adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:26:0:38"
 msgid "I am but a lone skyfisher, and the Sea of Clouds can oft prove a harsh mistress. It is why I turn to the Adventurers' Guild to help me see my contracts with the valley families are met and that they do not starve. If the adventurer sent by the guild cannot complete <if $gn4>her<else>his</if> end of the agreement, then I may be forced to look elsewhere."
-msgstr "Я один промышляю небесной рыбалкой, а Море облаков порой бывает суровой хозяйкой. Потому я и обращаюсь в Гильдию авантюристов: она помогает мне выполнять договоры с семьями из долины, чтобы те не голодали. Если присланный гильдией искатель приключений не выполнит <if $gn4>свою<else>свою</if> часть сделки, мне, возможно, придётся искать кого-то ещё."
+msgstr "Я один промышляю небесной рыбалкой, а Море облаков порой бывает суровой хозяйкой. Потому я и обращаюсь в Гильдию авантюристов: она помогает мне выполнять договоры с семьями из долины, чтобы те не голодали. Если присланный гильдией искатель приключений не выполнит свою часть сделки, мне, возможно, придётся искать кого-то ещё."
 
 #. ja: 助かったよ、ありがとう。<br>ところで、追加注文をしたいんだが、<br>受けてはもらえるだろうか？
 #. de: Du hast doch sicher noch ein Weilchen Zeit, um noch mehr davon zu besorgen, oder?
@@ -1734,7 +1748,7 @@ msgstr "Мне всё равно, сколько времени займёт в�
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "CraftLeveTalk:27:0:39"
 msgid "Now that I have seen true you are a <if $gn4>woman<else>man</if> for your word, might I suggest we increase the contract? The guild need not know. I am saved the hassle, and you can have their exorbitant finder's fee."
-msgstr "Теперь я вижу: вы <if $gn4>женщина<else>мужчина</if>, которая держит слово. Может, увеличим заказ? Гильдии знать необязательно. Мне не придётся хлопотать, а вы получите их непомерную плату за посредничество."
+msgstr "Теперь я вижу: вы <if $gn4>женщина, которая<else>мужчина, который</if> держит слово. Может, увеличим заказ? Гильдии знать необязательно. Мне не придётся хлопотать, а вы получите их непомерную плату за посредничество."
 
 #. ja: ふむ、それでは致し方あるまい。<br>別の手で仕入れることにしよう。
 #. de: Die Kälte verwirrt deine Gedanken. Das passiert hier so manchem.
@@ -1831,6 +1845,7 @@ msgstr "Может, я просто не так сформулировал пр�
 #. column 38: My colleagues cannot be expected to make the discovery of a lifetime if forced to constantly battle hunger pangs. Find us those fish, friend, so that we may fill our bellies and fuel our minds.
 #. column 39: My powers of deduction tell me you are quite adept with that rod of yours. Could I convince you to pull it out and take it in hand once more to service the Sons of Saint Coinach?
 #. column 40: Might it have been how I worded the request?
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "CraftLeveTalk:28:0:41"
 msgid "Rarely am I wrong, but that does not make it feel any less good when I am right, and oh, how I was right to ask you to increase the order. Well done, adventurer. I have your reward right here."
 msgstr "Я редко ошибаюсь, но от этого не меньше приятно оказаться правым. И как же я был прав, попросив вас увеличить заказ! Отличная работа, искатель приключений. Вот ваша награда."
@@ -2077,7 +2092,7 @@ msgstr "От имени клиента благодарю вас. Дополни
 # aeria-terms: {"fisher":"81f592778d31"}
 msgctxt "CraftLeveTalk:32:0:36"
 msgid "You must be the fisher what agreed to help with the levequest! 'Tis kind souls like yourself what keep this realm from fallin' into chaos. Once you've bagged the catch, bring 'er to me and I'll see 'er where she needs to be."
-msgstr "Ты, должно быть, рыбак, согласившийся помочь с поручением! Такие добрые души, как ты, не дают миру погрязнуть в хаосе. Наловишь рыбы — приноси её мне, а уж я позабочусь, чтобы она попала куда надо."
+msgstr "Ты, должно быть, рыбак, <if $gn4>согласившаяся<else>согласившийся</if> помочь с поручением! Такие добрые души, как ты, не дают миру погрязнуть в хаосе. Наловишь рыбы — приноси её мне, а уж я позабочусь, чтобы она попала куда надо."
 
 #. ja: うんうん、依頼品は全部そろっているようです。<br>お疲れ様でした、報酬をお渡ししますね！
 #. de: Jau, sieht alles gut aus. Und hier ist auch die versproch'ne Belohnung. Soll ja keiner umsonst arbeit'n.
@@ -2138,7 +2153,7 @@ msgstr "Ну ладно, не беда. Клюнет кто-нибудь дру�
 # aeria-terms: {"Thal":"be12f06c2386","fisher":"81f592778d31"}
 msgctxt "CraftLeveTalk:32:0:41"
 msgid "Never seen a more able fisher than you, friend. I fancy you had these in your nets in less time than it takes to fillet a flounder. And no, I don't just say that to all me clients. Swear it on Thal's left ball!"
-msgstr "Ещё не встречал рыбака искуснее тебя, дружище. Спорю, ты поймал эту рыбину быстрее, чем успевают разделать камбалу. И нет, я не каждому клиенту такое говорю. Клянусь левым яйцом Тала!"
+msgstr "Ещё не встречал рыбака искуснее тебя, дружище. Спорю, ты <if $gn4>поймала<else>поймал</if> эту рыбину быстрее, чем успевают разделать камбалу. И нет, я не каждому клиенту такое говорю. Клянусь левым яйцом Тала!"
 
 #. ja: 指定された品は完成したかい？<br>製作が終わったら、ここに持ってきておくれ！
 #. de: Hast du deine Arbeit erledigt? Ich nehme alles entgegen, was du für die Manufaktur herstellst.
@@ -2405,7 +2420,7 @@ msgstr "Потеряли в сумке? Не волнуйтесь, я буду �
 #. column 41: 0
 msgctxt "CraftLeveTalk:38:0:36"
 msgid "Hallo, friend! Have any fish for me?"
-msgstr "Здорово, друг! Есть для меня рыбка?"
+msgstr "Здорово, <if $gn4>подруга<else>друг</if>! Есть для меня рыбка?"
 
 #. ja: 頼んでいたもので間違いないようだね！<br>お仕事おつかれさま、報酬をどうぞ！
 #. de: Ja, das sieht doch genau richtig aus! Hier, nimm das als kleine Anerkennung.

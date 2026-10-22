@@ -110,7 +110,7 @@ msgstr "Что за церемония союза без уз... э-э, коле
 #. macro: <if ($n3 == 0)>his<else>her</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "PublicContentTextData:1012:0:0"
 msgid "Ahem! <split \" \" 1><player-name $n1></split> here has toiled day and night, night and day─give or take a few days and nights─to create a truly <i>unique</i> symbol of <if ($n3 == 0)>his<else>her</if> devotion."
-msgstr "Кхм! <split \" \" 1><player-name $n1></split> день и ночь, ночь и день — ну, почти — трудился, чтобы создать поистине <i>уникальный</i> символ своей любви."
+msgstr "Кхм! <split \" \" 1><player-name $n1></split> день и ночь, ночь и день — ну, почти — <if $gn4>трудилась<else>трудился</if>, чтобы создать поистине <if $gn4>уникальный<else>уникальный</if> символ своей любви."
 
 #. ja: <player-name $n1>さんの指輪は、<br>お知り合いに頼んで作ってもらったと聞いたクポ！
 #. de: <player-name $n1> hat den Ring von einem guten Bekannten herstellen lassen, wie ich höre! Ein echtes Unikat, kupo!
@@ -502,7 +502,7 @@ msgstr "Какие символы любви они навсегда сохра�
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "PublicContentTextData:1060:0:0"
 msgid "<split \" \" 1><player-name $n1></split> has toiled long to craft this flawless band."
-msgstr "<split \" \" 1><player-name $n1></split> долго трудил<if $gn4>ась<else>ся</if>, чтобы создать это безупречное кольцо."
+msgstr "<split \" \" 1><player-name $n1></split> долго <if $gn4>трудилась<else>трудился</if>, чтобы создать это безупречное кольцо."
 
 #. ja: <player-name $n1>さんは、<br>この指輪を、親しい方に製作していただいたとか。
 #. de: <player-name $n1> hat sich vertrauensvoll an einen geschickten Goldschmied gewandt, der  <if ($n3 == 0)>ihm<else>ihr</if> dieses edle Meisterstück erstellte.
@@ -511,7 +511,7 @@ msgstr "<split \" \" 1><player-name $n1></split> долго трудил<if $gn4
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "PublicContentTextData:1061:0:0"
 msgid "<split \" \" 1><player-name $n1></split> oversaw the creation of this flawless band."
-msgstr "<split \" \" 1><player-name $n1></split> проследил<if $gn4>а<else></if> за созданием этого безупречного кольца."
+msgstr "<split \" \" 1><player-name $n1></split> <if $gn4>проследила<else>проследил</if> за созданием этого безупречного кольца."
 
 #. ja: <player-name $n1>さんは、<br>たくわえた資金でこの指輪を準備したそうです。
 #. de: <player-name $n1> hat keine Kosten gescheut und den besten Ring gekauft, den <if ($n3 == 0)>sein<else>ihr</if>e Ersparnisse zuließen. Ein würdiges Opfer an die Kaufleute Nald'thal.
@@ -520,7 +520,7 @@ msgstr "<split \" \" 1><player-name $n1></split> проследил<if $gn4>а<e
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "PublicContentTextData:1062:0:0"
 msgid "<split \" \" 1><player-name $n1></split> has brought today this flawless band."
-msgstr "<split \" \" 1><player-name $n1></split> принёс<if $gn4>ла<else></if> сегодня это безупречное кольцо."
+msgstr "<split \" \" 1><player-name $n1></split> <if $gn4>принесла<else>принёс</if> сегодня это безупречное кольцо."
 
 #. ja: <player-name $n1>さんが贈るのは、<br>この日のために準備した、特別な指輪。
 #. de: <player-name $n1> hätte keinen besseren Ring wählen können. <if ($n3 == 0)>Er<else>Sie</if> gibt diesen Ring mit der Liebe, die Menphina uns lehrt.
@@ -539,7 +539,7 @@ msgstr "<split \" \" 1><player-name $n1></split> преподносит это �
 #. macro: <if ($n4 == 0)>his<else>her</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 == 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "PublicContentTextData:1064:0:0"
 msgid "<split \" \" 1><player-name $n2></split> has called upon <if ($n4 == 0)>his<else>her</if> inner talents to forge <if ($n4 == 0)>his<else>her</if> partner's ring."
-msgstr "<split \" \" 1><player-name $n2></split> призвал<if ($n4 == 0)> свои<else> свои</if> таланты и выковал кольцо для своей пары."
+msgstr "<split \" \" 1><player-name $n2></split> призвал свои таланты и выковал кольцо для своей пары."
 
 #. ja: <player-name $n2>さんもまた、<br>親しい方に、指輪製作を依頼されたとか。
 #. de: <player-name $n2> ließ sich von der Lotsin leiten und wählte einen begabten Goldschmied aus, um diesen Ring zu fertigen.
@@ -855,6 +855,7 @@ msgstr "Купо, выкованное собственными руками <if
 #. fr: Ce quelqu'un doit être un camarade d'aventure, parce que l'anneau est vraiment magnifique, kupo<nbsp>!
 #. macro: <split " " 1><player-name $n2></split> — one part of the content split at a separator, such as a first name; text = text with macros, separator =  , part = 1 (game data: keep it; it may move or repeat)
 #. macro: <player-name $n2> — the name of a player character; player = number parameter 2 (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "PublicContentTextData:1105:0:0"
 msgid "Crafted by a fellow adventurer under <split \" \" 1><player-name $n2></split>'s strict supervision, kupo."
 msgstr "Купо, кольцо выковал другой искатель приключений под строгим надзором <split \" \" 1><player-name $n2></split>."
@@ -960,7 +961,7 @@ msgstr "А вместе с ним клянётся в нерушимой вер�
 #. macro: <if ($n3 == 0)>his<else>her</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "PublicContentTextData:1118:0:0"
 msgid "And with it signifies <if ($n3 == 0)>his<else>her</if> commitment to provide for <if ($n3 == 0)>his<else>her</if> partner, no matter the cost."
-msgstr "А вместе с ним обещает <if ($n3 == 0)>обеспечивать<else>обеспечивать</if> своего спутника, чего бы это ни стоило."
+msgstr "А вместе с ним обещает обеспечивать своего спутника, чего бы это ни стоило."
 
 #. ja: こちらを手にするまでの苦労話は、<br>のちほど、ご本人の口からお聞きいただけるでしょう。
 #. de: Ich habe schon so manchen Bund geschlossen, aber so einen göttlichen Ring habe ich selten gesehen.

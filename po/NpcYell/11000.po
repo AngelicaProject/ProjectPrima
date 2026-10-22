@@ -227,7 +227,7 @@ msgstr "Бякко вполне способен околдовать любог
 # aeria-terms: {"Byakko":"dec6791c141c","warrior":"0afc8a69aa3c"}
 msgctxt "NpcYell:11030:0:13"
 msgid "Byakko is on his last legs! The noble warrior's victory is imminent!"
-msgstr "Бякко на последнем издыхании! Победа доблестного воина близка!"
+msgstr "Бякко на последнем издыхании! Победа <if $gn4>доблестной воительницы<else>доблестного воина</if> близка!"
 
 #. ja: 見事、白虎は討ち倒され、<br>これにて当地の邪気は払われましてございます！
 #. de: Byakko ist besiegt und damit das Böse aus der Welt geschafft!
@@ -743,7 +743,7 @@ msgstr "Ах, наконец-то я покончила с прошлым..."
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "NpcYell:11101:0:13"
 msgid "Wait... Was it <i>you</i> who created that familiar!?"
-msgstr "Постой... Это <i>ты</i> создал того фамильяра?!"
+msgstr "Постой... Это <i>ты</i> <if $gn4>создала<else>создал</if> того фамильяра?!"
 
 #. ja: 今のところ<br>材料集めは順調だな！
 #. de: Unsere Zutatenjagd ist bislang ja ein voller Erfolg!
@@ -876,7 +876,7 @@ msgstr "Значит, последние штрихи — силой? Забав
 #. fr: On dirait que cette cochonne a un sale caractère... un peu comme celle qui l'a créée.
 msgctxt "NpcYell:11118:0:13"
 msgid "A pugnacious specimen...just like its creator."
-msgstr "Задиристый экземпляр... прямо как его создательница."
+msgstr "Задиристый экземпляр... прямо как его <if $gn4>создательница<else>создатель</if>."
 
 #. ja: あの豚、服まで<br>着せる必要あった…？
 #. de: Warum<nbsp>... Wozu denn die Klamotten<nbsp>...?
@@ -2225,7 +2225,7 @@ msgstr "Пусть наконец обретёте покой."
 #. fr: Ils sont coriaces<nbsp>!
 msgctxt "NpcYell:11306:0:13"
 msgid "Fall, damn you!"
-msgstr "Да пади же ты, проклятый!"
+msgstr "Да пади же ты, <if $gn4>проклятая<else>проклятый</if>!"
 
 #. ja: いくぞッ！
 #. de: Aaaar!
@@ -3415,7 +3415,7 @@ msgstr "Гра-а-а-р-р!"
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "NpcYell:11467:0:13"
 msgid "Owww, that hurts! Seriously, <split \" \" 1><string $gs1></split>, you're a <if $gn4>woman<else>man</if> after my own heart!"
-msgstr "Ай, больно! Ну ты и силач, <split \" \" 1><string $gs1></split>! <if $gn4>Такая женщина<else>Такой мужчина</if> мне по душе!"
+msgstr "Ай, больно! Ну ты и <if $gn4>силачка<else>силач</if>, <split \" \" 1><string $gs1></split>! <if $gn4>Такая женщина<else>Такой мужчина</if> мне по душе!"
 
 #. ja: ハァ、ハァ…<br>力が入らねぇ…
 #. de: Puh, ich hab einfach nicht die Kraft ...
@@ -3594,7 +3594,7 @@ msgstr "Какая огневая мощь... Всем отступить! От�
 #. fr: <if $gn4>L'héroïne<else>Le héros</if> d'Ishgard<nbsp>! Quel honneur<nbsp>!
 msgctxt "NpcYell:11492:0:13"
 msgid "From the savior's own hands... Such an honor this is!"
-msgstr "Из рук самого спасителя... Какая честь!"
+msgstr "Из рук <if $gn4>самой спасительницы<else>самого спасителя</if>... Какая честь!"
 
 #. ja: これは、最新の道具…！
 #. de: Sind das etwa die neuesten Werkzeuge? Woher wusstest du ...?
@@ -4184,6 +4184,7 @@ msgstr "Только посмотрите! Какие они красивые, �
 #. ja: 俺だって冒険者なんだ…！<br>よぉし、やるぜー！
 #. de: Ich bin auch dabei! Das ist doch Abenteurerehrensache!
 #. fr: L'union des aventuriers fait la forrrce de l'été<nbsp>!
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "NpcYell:11574:0:13"
 msgid "On my honor as an adventurer, I will quell this icy menace!"
 msgstr "Честью приключенца клянусь, я остановлю эту ледяную напасть!"
@@ -5640,7 +5641,7 @@ msgstr "ГРО-А-А-А-А-Р-Р-Р!"
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "NpcYell:11782:0:13"
 msgid "Oho, we meet again, <split \" \" 1><string $gs1></split>! Still fighting up a storm, I hear. You really ought to join us. I'd see to it you want for nothing."
-msgstr "Ого, <split \" \" 1><string $gs1></split>, снова встретились! Слыхал, ты всё ещё знатно крушишь врагов. Вот бы ты к нам примкнул. Уж я бы позаботился, чтобы тебе ни в чём не нуждаться."
+msgstr "Ого, <split \" \" 1><string $gs1></split>, снова встретились! Слыхал, ты всё ещё знатно крушишь врагов. Вот бы ты к нам <if $gn4>примкнула<else>примкнул</if>. Уж я бы позаботился, чтобы тебе ни в чём не нуждаться."
 
 #. ja: だけどな、オレもそろそろ勧誘を諦めることにするぜッ……！<br>やられっぱなしじゃ、メンツに関わるんでなッ！
 #. de: Ich weiß, du würdest niemals überlaufen. Deswegen kann es nur ein Ende geben.
@@ -6183,7 +6184,7 @@ msgstr "Моя красная магия... Ею же против меня — 
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "NpcYell:11855:0:13"
 msgid "Yet I wonder...have you mastered <i>all</i> my secrets?<br>Dare you unleash the fires of the Crimson Scourge!?"
-msgstr "И всё же... ты овладела <i>всеми</i> моими секретами?<br>Осмелишься призвать пламя Багровой кары!?"
+msgstr "И всё же... ты <if $gn4>овладела<else>овладел</if> <i>всеми</i> моими секретами?<br>Осмелишься призвать пламя Багровой кары!?"
 
 #. ja: この魔力の高まりは……まさかッ！？<br>みなさん、離れてッ！！
 #. de: Er bündelt gewaltige Massen an Äther. Alle zurück!
@@ -6263,7 +6264,7 @@ msgstr "Видите его оружие?<br>Это Ловро, один из К
 # aeria-terms: {"face":"9a4aea3bb0ee"}
 msgctxt "NpcYell:11865:0:13"
 msgid "You dare face me again, foul pretender to the red mantle!?"
-msgstr "Снова ты! Подлая самозванка, присвоившая красную мантию!"
+msgstr "Снова ты! <if $gn4>Подлая самозванка, присвоившая<else>Подлый самозванец, присвоивший</if> красную мантию!"
 
 #. ja: ロヴロ……私は、この再戦の機会を待っていました。
 #. de: Ja, schon wieder ich, und diesmal bring ich es zu Ende.

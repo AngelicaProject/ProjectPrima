@@ -81,7 +81,7 @@ msgstr "Путешественника с детёнышем опо-опо."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_BADERON_000_010:1"
 msgid "If it ain't me old pal <split \" \" 1><string $gs1></split>. 'Ere to beg the old bird fer guidance, too, are ye?"
-msgstr "Да это ж мой старый приятель <split \" \" 1><string $gs1></split>! Тоже пришёл просить совета у Старой Птицы?"
+msgstr "Да это ж <if $gn4>моя старая подруга<else>мой старый приятель</if> <split \" \" 1><string $gs1></split>! Тоже <if $gn4>пришла<else>пришёл</if> просить совета у Старой Птицы?"
 
 #. ja: ス・ホジュビから聞いたぜ。<br>なんでも、今回の新生祭の花火に協力したそうじゃないか。<br>相変わらずの仕事ぶりで、なによりだ。
 #. de: Ich hab von S'dhodjbi gehört, dass du dieses Jahr bei der Planung des großen Feuerwerks zum Jubiläumsfest geholfen hast. Fleißig wie eh und je, so kennt man dich ja!
@@ -104,7 +104,7 @@ msgstr "Так это ты <if $gn4>та искательница приключ
 #. fr: Une de mes employées, S'dhodjbi, m'a raconté qu'elle avait été abordée à la Camelotade par une personne correspondant pile-poil à ta description. Une histoire de sondage sur les feux d'artifice, si j'ai bien compris.
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_BADERON_000_013:1"
 msgid "My servin' wench told me all about ye. One to look out fer, she said. Proper public-spirited, like."
-msgstr "Моя работница всё о тебе рассказала. Сказала, на тебя можно положиться. И что ты всегда готов помочь людям."
+msgstr "Моя работница всё о тебе рассказала. Сказала, на тебя можно положиться. И что ты всегда <if $gn4>готова<else>готов</if> помочь людям."
 
 #. ja: ス・ホジュビには店の買い出しを頼んでたんだが……。<br>「あらためて、霊災のときに助けてくれた礼だ」って、<br>自腹で上等な酒を買って寄越しやがったんだよ。
 #. de: Du hast S'dhodjbi ja bereits auf der Handelsstraße kennengelernt, nicht wahr? Stell dir vor, sie kam doch tatsächlich mit einer feinen Flasche Schnaps zurück und hat sich bei mir bedankt, weil ich ihr damals nach der Siebten Katastrophe das Leben gerettet habe.
@@ -158,12 +158,12 @@ msgstr "Ну и ну. Вышел подышать свежим воздухом,
 # aeria-terms: {"Llymlaen":"8db1fb54bad8","face":"9a4aea3bb0ee"}
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_LYNGSATH_000_021:1"
 msgid "Well, well, well. I come to feel Llymlaen's breath on me face, only to find the faithless besom whisperin' in the ear of another!"
-msgstr "Ну и ну. Вышел подышать свежим воздухом, почувствовать дыхание Лимлейн на лице, а тут — искатель приключений уже занял моё место!"
+msgstr "Ну и ну. Вышел подышать свежим воздухом, почувствовать дыхание Лимлейн на лице, а тут — <if $gn4>искательница приключений уже заняла<else>искатель приключений уже занял</if> моё место!"
 
 #. ja: 待てよ、その容姿。<br>ああそうか、アヨヨが言ってたのはお前さんのことか。
 #. de: Moment mal<nbsp>... Du siehst aus wie <if $gn4>die fleißige Helferin<else>der fleißige Helfer</if>, <if $gn4>von der<else>von dem</if> Ayoyo mir erzählt hat. Liege ich mit der Vermutung richtig?
 #. fr: Mais attends une seconde... ce ne serait pas toi qui as participé à l'élaboration de ces nouveaux feux d'artifice, par hasard<nbsp>?
-# aeria-terms: {"Ayoyo":"c990132526fd"}
+# aeria-terms: {"Ayoyo":"c990132526fd","adventurer":"48df264ad5ec"}
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_LYNGSATH_000_022:1"
 msgid "'Old on, you're that adventurer Ayoyo told me about, ain't ye?"
 msgstr "Погоди-ка... Ты ведь и есть <if $gn4>та самая искательница<else>тот самый искатель</if> приключений, о ком говорила Аёё?"
@@ -183,14 +183,15 @@ msgstr "Слышал, это тебе мы обязаны фейерверком
 # aeria-terms: {"Yellowjacket":"f5b1cfe4e22c","the Bismarck":"c752070af78f"}
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_LYNGSATH_000_024:1"
 msgid "What? Surprised I know 'er? Limsa's a small place, <if $gn4>lass<else>lad</if>. 'Ardly a day goes by I don't see a Yellowjacket or several in the Bismarck─whether it's to sup on the finest food and wine this side o' the sea, or to clap the irons on those who've tapped the casks a touch too thirstily."
-msgstr "Что? Удивлён, что я её знаю? Лимса — городок маленький, <if $gn4>красавица<else>красавец</if>. Едва ли проходит день, чтобы Жёлтые мундиры не заглянули в «Бисмарке»: отведать лучшей еды и вина по эту сторону моря или надеть кандалы на тех, кто чересчур жадно прикладывался к бочкам."
+msgstr "Что? <if $gn4>Удивлена<else>Удивлён</if>, что я её знаю? Лимса — городок маленький, <if $gn4>красавица<else>красавец</if>. Едва ли проходит день, чтобы Жёлтые мундиры не заглянули в «Бисмарке»: отведать лучшей еды и вина по эту сторону моря или надеть кандалы на тех, кто чересчур жадно прикладывался к бочкам."
 
 #. ja: 冒険者として各地を回ってると気づかないかもしれないが、<br>連中は、海都の民にとっては頼れる「馴染み」なのさ。
 #. de: Als <if $gn4>Abenteurerin<else>Abenteurer</if> hält man sich selten lange an einem Ort auf, daher wird es dir nicht aufgefallen sein, aber entgegen ihrem Ruf genießen die Gelbjacken durchaus Respekt und Vertrauen in der Bevölkerung.
 #. fr: Vous, les aventuriers, vous êtes trop occupés à chasser la gloire aux quatre coins du monde pour remarquer ce genre de détails, mais pour les gens du coin, les casaques jaunes sont un peu comme de bons voisins sur lesquels on peut compter en cas de problème.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_LYNGSATH_000_025:1"
 msgid "S'pose an adventurer like you mightn't've noticed, always comin' an' goin' as ye are, but stick around in the city fer a while an' you'll see─the 'Jackets ain't just axes fer 'ire, they're true friends o' the common folk."
-msgstr "Ты, наверное, этого не замечал: вечно в разъездах. Но поживи в городе подольше и увидишь — жёлтые куртки не просто наёмники с топорами, они настоящие друзья простого люда."
+msgstr "Ты, наверное, этого не <if $gn4>замечала<else>замечал</if>: вечно в разъездах. Но поживи в городе подольше и увидишь — жёлтые куртки не просто наёмники с топорами, они настоящие друзья простого люда."
 
 #. ja: アヨヨは霊災前、ある冒険者のリテイナーをやってたらしい。<br>どこぞで拾ってきた花火ばかり大量に預けられて、<br>一日中バザーに立ってたこともあるって、笑ってたっけな。
 #. de: Vor der Siebten Katastrophe war Ayoyo als Gehilfin eines Abenteurers tätig, der aus sämtlichen Regionen des Landes Feuerwerkskörper mitbrachte. Tag und Nacht sah man sie unten auf dem Markt, wo sie mit ihrem strahlenden Lächeln die Passanten grüßte und ihre Waren verkaufte.
@@ -253,7 +254,7 @@ msgstr "За всех, кто отправляется в новые стран�
 #. fr: Nombre de vies ont été perdues à la bataille de Carteneau, et plus encore pendant le Fléau qui lui a succédé... Pour les proches des victimes, et même, pour tous les Éorzéens, la fête de la Commémoration joue un rôle irremplaçable.
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_MERLWYB_000_033:1"
 msgid "And a salute to the fallen, too, was it not? Many and more lost their lives on the fields of Carteneau─the men and women of the Black Sails chief among them. I thank you for giving those who survived them this chance to put their grief to more productive ends."
-msgstr "И за павших тоже, не так ли? Многие погибли на полях Картено, особенно моряки Чёрных Парусов. Спасибо, что помог тем, кто пережил их, найти достойное применение своей скорби."
+msgstr "И за павших тоже, не так ли? Многие погибли на полях Картено, особенно моряки Чёрных Парусов. Спасибо, что <if $gn4>помогла<else>помог</if> тем, кто пережил их, найти достойное применение своей скорби."
 
 #. ja: ゆえに此度の花火については、「海都の新生祭」の風物として、<br>次回以降も引き継げるよう、各所に打診しておいた。
 #. de: Ich werde mich höchst<shy>persön<shy>lich dafür einsetzen, dass dieses Fest mitsamt seinem prächtigen Feuerwerk auch in Zukunft mit der nötigen Priorität behandelt und durchgeführt werden kann.
@@ -263,7 +264,7 @@ msgstr "И за павших тоже, не так ли? Многие погиб
 # aeria-terms: {"Limsa Lominsa":"d423c1a01f1a"}
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_MERLWYB_000_034:1"
 msgid "I thank you for giving the celebrations an unmistakable touch of salt, too. This year's Rising was not merely <i>in</i> Limsa Lominsa, but <i>of</i> her. I look forward to seeing how future host cities follow our example."
-msgstr "Спасибо и за то, что придал празднику истинно лимсийский дух. В этом году Новолетие проходило не просто <i>в</i> Лимсе Ломинсе, оно было <i>нашим</i>. Жду не дождусь, как другие города-хозяева продолжат эту традицию."
+msgstr "Спасибо и за то, что <if $gn4>придала<else>придал</if> празднику истинно лимсийский дух. В этом году Новолетие проходило не просто <i>в</i> Лимсе Ломинсе, оно было <i>нашим</i>. Жду не дождусь, как другие города-хозяева продолжат эту традицию."
 
 #. ja: さて……長話で貴公を拘束するのは悪い。<br>リムレーンの秘石を詣でたのち、私は公務に戻らせてもらおう。
 #. de: So, aber ich will uns beide nicht länger von unseren Pflichten abhalten. Ich muss Llymlaen um Rat ersuchen und mich dann wieder auf den Weg machen.
@@ -289,7 +290,7 @@ msgstr "Прощай, <split \" \" 1><string $gs1></split>. Желаю тебе 
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/008/FesAnv2024LlymlaenStone_00854:TEXT_FESANV2024LLYMLAENSTONE_00854_SICARD_000_040:1"
 msgid "If it isn't my old mate <split \" \" 1><string $gs1></split>! I heard you had a hand in the fireworks, but I thought you'd be long gone by now."
-msgstr "Да это ж мой старый приятель <split \" \" 1><string $gs1></split>! Слышал, ты приложил руку к фейерверку, а я-то думал, ты уже давно уехал."
+msgstr "Да это ж <if $gn4>моя старая подруга<else>мой старый приятель</if> <split \" \" 1><string $gs1></split>! Слышал, ты <if $gn4>приложила<else>приложил</if> руку к фейерверку, а я-то думал, ты уже давно <if $gn4>уехала<else>уехал</if>."
 
 #. ja: 丁度いい、ひとつ礼をさせてくれや。
 #. de: Freut mich, dass ich mich geirrt habe! So kann ich mich noch persönlich bei dir bedanken.

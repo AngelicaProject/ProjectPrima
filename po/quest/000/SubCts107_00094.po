@@ -19,7 +19,7 @@ msgstr "Блёзон хочет попросить вас об одолжени�
 #. de: Laut Bloezoeng ist Kommandant Reyner von den Gelbjacken auf der Suche nach einem fähigen Abenteurer für eine Aufgabe, die ein echter Härtetest zu werden verspricht. Begib dich zum Korallenturm auf den Oberen Decks von Limsa Lominsa und sprich dort mit dem Kommandanten.
 #. fr: Apparemment, le commandant Reyner Hansred a besoin de l'aide d'un aventurier d'expérience. Allez lui parler à la tour de Corail, à Limsa Lominsa pour qu'il vous dise ce qu'il attend.
 #. kind: journal
-# aeria-terms: {"Bloezoeng":"ff42d4a74d5a","Coral Tower":"8de3910f9613","Limsa Lominsa":"d423c1a01f1a","Reyner":"8a27b9f3f007","Upper Deck":"ffb884b82dae","Upper Decks":"c7deaefc2e00","the Yellowjackets":"e47264644f04"}
+# aeria-terms: {"Bloezoeng":"ff42d4a74d5a","Coral Tower":"8de3910f9613","Limsa Lominsa":"d423c1a01f1a","Reyner":"8a27b9f3f007","Upper Deck":"ffb884b82dae","Upper Decks":"c7deaefc2e00","adventurer":"48df264ad5ec","the Yellowjackets":"e47264644f04"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_SEQ_01:1"
 msgid "According to Bloezoeng, Commodore Reyner of the Yellowjackets has need of a capable adventurer for what promises to be a grueling task. If you would answer the call, make your way to Limsa Lominsa and present yourself before the commodore at the Coral Tower on the upper decks."
 msgstr "Блёзон говорит, что коммодору Рейнеру из Жёлтых мундиров нужен умелый искатель приключений для опасного задания. Если готовы откликнуться, отправляйтесь в Лимсу Ломинсу и явитесь к коммодору в Коралловую башню на Верхних палубах."
@@ -121,7 +121,7 @@ msgstr "Доложите Рейнеру в Эльпорте."
 #. speaker: BLOEZOENG
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
-# aeria-terms: {"mine":"41391a1f82c3"}
+# aeria-terms: {"adventurer":"48df264ad5ec","mine":"41391a1f82c3"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_BLOEZOENG_000_000:1"
 msgid "By the onion, you're <split \" \" 1><string $gs1></split>! You couldn't have come at a better time. A friend of mine sent word that he needs a capable adventurer, you see, and I naturally thought of you."
 msgstr "Да чтоб мне луковицей быть, да это же <split \" \" 1><string $gs1></split>! Вы как раз вовремя. Друг написал, что ему нужен умелый искатель приключений, и я сразу подумал о вас."
@@ -198,6 +198,7 @@ msgstr "Несмотря на все наши усилия, пираты зах�
 #. de: Ich habe eine Gruppe von Abenteurern damit beauftragt, die Gefahr in Augenschein zu nehmen und wenn möglich zu beseitigen, doch sie haben sich als äußerst untauglich erwiesen.
 #. fr: J'ai déjà envoyé un groupe d'aventuriers, mais ils se sont découragés et ont rapidement abandonné la mission. Je cherche donc à monter une nouvelle expédition avec des membres plus compétents.
 #. speaker: REYNER
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_REYNER_000_013:1"
 msgid "I dispatched a party of adventurers to identify and eliminate the threat, but it would seem their courage failed them."
 msgstr "Я отправил отряд искателей приключений выяснить, кто там засел, и устранить угрозу, но, похоже, им не хватило духу."
@@ -209,7 +210,7 @@ msgstr "Я отправил отряд искателей приключений
 # aeria-terms: {"D'perjha":"9ef3cf784e8d","Sastasha":"59d00a7bd2b9","entrance":"77785fe93bba"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_REYNER_000_014:1"
 msgid "But they were not you, my friend. You will fare better against whatever awaits within Sastasha, of that I have no doubt. If you would be willing to assist us, pray report to D'perjha, who stands guard by the entrance to the caverns."
-msgstr "Но они — не вы, друг мой. Уверен, вам удастся справиться с тем, что ждёт в Састаше. Если согласны помочь, отправляйтесь к Д'Пержхе, он охраняет вход в пещеры."
+msgstr "Но они — не вы, <if $gn4>подруга моя<else>друг мой</if>. Уверен, вам удастся справиться с тем, что ждёт в Састаше. Если согласны помочь, отправляйтесь к Д'Пержхе, он охраняет вход в пещеры."
 
 #. ja: ……どうか、急ぎ浸食洞を奪還してほしい。<br>詳しい状況は、サスタシャ浸食洞前にいる、<br>「デ・ページャ」から聞いてくれ。
 #. de: Ich wäre dir sehr dankbar, wenn du die Gefahr in Sastasha untersuchen und beseitigen könntest. Wenn du gewillt bist, uns zu helfen, dann melde dich bitte bei D'perjha am Eingang zu Sastasha.
@@ -232,6 +233,7 @@ msgstr "А, это вы! Значит, снова пришли нам помоч
 #. de: Siehst du diese Abenteurer da drüben? Die haben wir zuerst reingeschickt, aber sie konnten unseren Erwartungen nicht gerecht werden. Genau genommen haben sie es gerade mal fünf Minuten da drinnen ausgehalten, bevor sie wieder nach draußen stürmten und nach Luft schnappten wie Fische an Land. Und ich brauche wohl kaum zu erwähnen, dass sie auf ihrem kurzen Abstecher nichts von Bedeutung entdeckt haben.
 #. fr: Le grrroupe d'aventuriers que tu vois là a tenté de reprendre les lieux, mais ils ont vite pris leurs jambes à leur cou. Ce n'était pas très glorieux, mais au moins nous savons que les occupants de la grotte ne sont pas à prendre à la légère.
 #. speaker: DPERJHA
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_DPERJHA_000_021:1"
 msgid "You see those adventurers yonder? We sent them in first, but it soon became clear that they were unequal to the task. By my count, they lasted just under a minute inside before staggering back out, sucking for air like fish out of water. As such, we're no closer to ascertaining the nature of the threat, let alone eliminating it."
 msgstr "Вон видите тех искателей приключений? Мы отправили их первыми, но вскоре стало ясно, что им не справиться. По моим подсчётам, они продержались внутри меньше минуты, а потом, пошатываясь, выскочили наружу и хватали ртом воздух, словно рыбы на суше. Так что мы по-прежнему не знаем, кто там засел, не говоря уж о том, чтобы устранить угрозу."
@@ -272,7 +274,7 @@ msgstr "<i>Уф!</i> Исцеление всё не приходило… <i>П�
 # aeria-terms: {"hold":"4662ae098b11"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_GENJYUTU00094_000_025:1"
 msgid "Ye'd better not be blamin' me for that fiasco. In case ye missed it, fearless leader, I was busy dodgin' razor-sharp pincers at the time. <i>Someone</i> couldn't hold the monsters' attention like he was s'posed to."
-msgstr "И не вздумай сваливать на меня этот провал! Если не заметил, бесстрашный наш командир, я уворачивалась от этих острых, как бритва, клешней. <i>Кто-то</i> должен был отвлечь на себя чудовищ, как полагается."
+msgstr "И не вздумай сваливать на меня этот провал! Если <if $gn4>не заметила, бесстрашная наша командирша<else>не заметил, бесстрашный наш командир</if>, я уворачивалась от этих острых, как бритва, клешней. <i>Кто-то</i> должен был отвлечь на себя чудовищ, как полагается."
 
 #. ja: ぎゃはははは、アンタたちはノロマね！<br>楽しくやりましょうよ、楽しく！
 #. de: Muhahaha! Ihr beiden seid so lahm, ihr würdet ein Wettrennen gegen eine Baumschnecke verlieren!
@@ -280,7 +282,7 @@ msgstr "И не вздумай сваливать на меня этот про�
 #. speaker: KYUJYUTU00094
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"archer":"562cfe2accad"}
+# aeria-terms: {"adventurer":"48df264ad5ec","archer":"562cfe2accad"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_KYUJYUTU00094_000_25:1"
 msgid "Bwahahaha! You're <i>both</i> sorry excuses for adventurers! Hells, I'm hardly a paragon among archers myself, being─hic!─partial to the odd drink... But what does it matter!? We're here to have fun, so let's have some, eh!?"
 msgstr "Бва-ха-ха-ха! Да вы оба — горе, а не искатели приключений! Чтоб мне икнуть, я и среди лучников так себе — выпить-то люблю... Но какая разница?! Мы же сюда веселиться пришли, так давайте веселиться!"
@@ -349,7 +351,7 @@ msgstr "Отправляйтесь в Эльпорт. Коммодор Рейн�
 #. de: Pah, wie konnten wir nur zulassen, dass <if $gn4>irgendeine andere Abenteurerin<else>irgendein anderer Abenteurer</if> hier einfach so aufkreuzt und den Ruhm einheimst? Wenn wir doch nur eine fähigere Heilerin hätten ...
 #. fr: On nous a devancés<nbsp>! Si seulement nous avions une soigneuse un peu plus réactive...
 #. speaker: KENJYUTU00094
-# aeria-terms: {"job":"a9421a81ecaa"}
+# aeria-terms: {"adventurer":"48df264ad5ec","job":"a9421a81ecaa"}
 msgctxt "quest/000/SubCts107_00094:TEXT_SUBCTS107_00094_KENJYUTU00094_000_035:1"
 msgid "Gah, how could we let some other adventurer waltz in and finish the job? If only we had a more competent healer..."
 msgstr "Проклятье, как мы позволили другому искателю приключений явиться и закончить дело? Вот бы нам целителя получше..."

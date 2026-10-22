@@ -49,7 +49,7 @@ msgstr "С возвращением, <split \" \" 1><string $gs1></split>!<br>П
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_GREETING_ANDEN_000_004:1"
 msgid "<split \" \" 1><string $gs1></split>! Always so good to see you, my friend."
-msgstr "<split \" \" 1><string $gs1></split>! Всегда так рад тебя видеть, друг мой."
+msgstr "<split \" \" 1><string $gs1></split>! Всегда так рад тебя видеть, <if $gn4>подруга моя<else>друг мой</if>."
 
 #. ja: 何をする？
 #. de: Was möchtest du tun?
@@ -270,7 +270,7 @@ msgstr "Ого! Какая прелесть. Спасибо тебе, <split \" 
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_JUDGEMENT_ANDEN_000_001:1"
 msgid "Your generosity is humbling, <split \" \" 1><string $gs1></split>. Truly, I thank you!"
-msgstr "Это всё мне, <split \" \" 1><string $gs1></split>? Ты так щедр... Огромное спасибо!"
+msgstr "Это всё мне, <split \" \" 1><string $gs1></split>? Ты так <if $gn4>щедра<else>щедр</if>... Огромное спасибо!"
 
 #. ja: ん！？　待って、待って！<br>用意してくれたの、とんでもなくいいものだね！？<br><split " " 1><string $gs1></split>の丁寧な仕事ぶりに感謝……！
 #. de: Ha!? M-Moment, ganz kurz! Ich wusste gar nicht, dass man etwas so Hochwertiges überhaupt herstellen kann! <split " " 1><string $gs1></split>, du weißt gar nicht, wie dankbar ich dir bin<nbsp>...
@@ -303,7 +303,7 @@ msgstr "Освободите место в инвентаре и ещё раз �
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_BEFRANKUP_ANDEN_000_000:1"
 msgid "You have brought me so many nice things─it's a shame I can't put any of them to use. I daresay I'm far closer to sheep nourish<i>ment</i> than nourish<i>er</i> in my current state."
-msgstr "Ты принёс мне столько хороших вещей — жаль, что я не могу ими пользоваться. В нынешнем виде я скорее овечий корм, чем овцевод."
+msgstr "Ты <if $gn4>принесла<else>принёс</if> мне столько хороших вещей — жаль, что я не могу ими пользоваться. В нынешнем виде я скорее овечий корм, чем овцевод."
 
 #. ja: でも、自分で使えなくて残念なくらい馴染みがある気はするし、<br>見ているだけでも、頭にかかった霧が晴れていくような……！<br>むむっ、むむむむ！　何か……思い出せそう……かもっ！
 #. de: Aber neben meiner immensen Enttäuschung spüre ich da noch etwas<nbsp>... Vertrautheit? Nur durchs Ansehen dieser Gegenstände lichtet sich der Nebel in meinem Kopf ein bisschen<nbsp>...! Ich<nbsp>... Ich glaube, ich<nbsp>... kann mich an etwas<nbsp>... erinnern!
@@ -833,7 +833,7 @@ msgstr "...Постойте, а чего они так испугались, к�
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_LCUT_RANKUP_EOTYR_001_100:1"
 msgid "Now you're sounding more like yourself! You did so love mingling with your sheepies, after all. Snuggling up in a sea of fluffy wool and happy bleating...although I doubt they'd let you snuggle looking like <i>that</i>."
-msgstr "Вот теперь ты говоришь совсем как прежде! Ты ведь так любил возиться со своими овечками. Уютно устроиться среди мягкой шерсти, слушать их радостное блеяние... Только в таком виде вряд ли они дадут тебе себя обнять."
+msgstr "Вот теперь ты говоришь совсем как прежде! Ты ведь так <if $gn4>любила<else>любил</if> возиться со своими овечками. Уютно устроиться среди мягкой шерсти, слушать их радостное блеяние... Только в таком виде вряд ли они дадут тебе себя обнять."
 
 #. ja: う～～ん、そう言われてみると、<br>羊に抱きついて、暖を取っていたこともあったような……？
 #. de: Hmm, jetzt, wo du's erwähnst, es fühlt sich so an, als ob ich oft mit den Schafen gekuschelt habe, um mich zu wärmen<nbsp>...
@@ -949,7 +949,7 @@ msgstr "Анден доволен вашими стараниями. Тепер�
 # aeria-terms: {"Anden":"1867eb0312e8"}
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_RANKUPINFO_000_001:1"
 msgid "Anden is delighted with your efforts. He now considers you a <ui-color 500><ui-edge-color 501>Tentatively True <if $gn4>Tradeswoman<else>Tradesman</if></ui-edge-color></ui-color>!"
-msgstr "Анден в восторге от ваших стараний. Теперь он считает вас <ui-color 500><ui-edge-color 501>возможно, искусным ремесленником <if $gn4>или ремесленницей<else></if></ui-edge-color></ui-color>!"
+msgstr "Анден в восторге от ваших стараний. Теперь он считает вас <ui-color 500><ui-edge-color 501><if $gn4>возможно, искусной ремесленницей<else>возможно, искусным ремесленником</if></ui-edge-color></ui-color>!"
 
 #. ja: <sheet ENpcResident $n1 0>の信頼ランクが上昇しました！<br>あなたのことを「きっと親切な旅人」と感じているようです！
 #. de: Dein Zufrieden<shy>heits<shy>rang bei Anden ist gestiegen! Er hält dich für <if $gn4>eine sicherlich freundliche Reisende<else>einen sicherlich freundlichen Reisenden</if>.
@@ -961,7 +961,7 @@ msgstr "Анден в восторге от ваших стараний. Теп�
 # aeria-terms: {"Anden":"1867eb0312e8"}
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_RANKUPINFO_000_002:1"
 msgid "Anden is overjoyed with your efforts. He now considers you a <ui-color 500><ui-edge-color 501>Just and Generous Journeyer</ui-edge-color></ui-color>!"
-msgstr "Анден чрезвычайно доволен вашими стараниями. Теперь он считает вас <ui-color 500><ui-edge-color 501>справедливым и щедрым путником</ui-edge-color></ui-color>!"
+msgstr "Анден чрезвычайно доволен вашими стараниями. Теперь он считает вас <ui-color 500><ui-edge-color 501><if $gn4>справедливой и щедрой путницей<else>справедливым и щедрым путником</if></ui-edge-color></ui-color>!"
 
 #. ja: <sheet ENpcResident $n1 0>の信頼ランクが上昇しました！<br>あなたのことを「どこか友達と似ている人」、<br>と感じているようです！
 #. de: Dein Zufrieden<shy>heits<shy>rang bei Anden ist gestiegen! Er hält dich für <if $gn4>eine Freundes-ähnliche Bekannte<else>einen Freundes-ähnlichen Bekannten</if>.
@@ -1018,7 +1018,7 @@ msgstr "Стало доступно новое задание из истори�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_RANKUP_ANDEN_001_000:1"
 msgid "Thank you for bringing me so many nice things, <split \" \" 1><string $gs1></split>."
-msgstr "Спасибо, что принёс столько всего хорошего, <split \" \" 1><string $gs1></split>!"
+msgstr "Спасибо, что <if $gn4>принесла<else>принёс</if> столько всего хорошего, <split \" \" 1><string $gs1></split>!"
 
 #. ja: それに、こうやって君とおしゃべりできるのも嬉しいんだよねぇ！<br>ほら、ここにいると話し相手ってピクシーたちだからさぁ、<br>遊ばれてばっかりなんだよぉ……。
 #. de: Ja genau, es macht auch Spaß, einfach nur mit dir zu plaudern! Außer dir sind hier nichts als Pixies, und die haben bei ihrem Spieltrieb nicht viel übrig fürs Reden<nbsp>...
@@ -1095,7 +1095,7 @@ msgstr "<i>А</i> вот мне было интересно, так что я с
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_RANKUP_ANDEN_004_002:1"
 msgid "I've been positively sick with guilt, watching you accept your recompense with such innocent joy, unaware that it's all been nothing but contraband. Forgive me, <split \" \" 1><string $gs1></split>... Now you share my pain!"
-msgstr "Меня прямо совесть мучила: ты так радовался награде и не знал, что всё это контрабанда. Прости, <split \" \" 1><string $gs1></split>... Теперь и ты разделишь мою боль!"
+msgstr "Меня прямо совесть мучила: ты так <if $gn4>радовалась<else>радовался</if> награде и <if $gn4>не знала<else>не знал</if>, что всё это контрабанда. Прости, <split \" \" 1><string $gs1></split>... Теперь и ты разделишь мою боль!"
 
 #. ja: <split " " 1><string $gs1></split>……。<br>最近、エオ＝ティルが自分の若木になれって、<br>す～～っごく迫ってくるんだけどさぁ、先達としてどう思う！？
 #. de: <split " " 1><string $gs1></split><nbsp>... In letzter Zeit wird Eo immer aufdringlicher damit, mich zu ihrem Bäumchen machen zu wollen! Ja genau, du bist doch auch ein Bäumchen, hast du nicht irgendwelche Tipps für mich?!
@@ -1105,7 +1105,7 @@ msgstr "Меня прямо совесть мучила: ты так радов�
 # aeria-terms: {"Eo Tyr":"33cf35fc3e2c"}
 msgctxt "custom/008/CtsSfsCharacter9_00815:TEXT_CTSSFSCHARACTER9_00815_RANKUP_ANDEN_005_000:1"
 msgid "Might I ask for some advice, <split \" \" 1><string $gs1></split>? Recently, Eo Tyr has been absolutely adamant that I become their sapling... As someone who took the leap, what do you think?"
-msgstr "Можно попросить совета, <split \" \" 1><string $gs1></split>? В последнее время Эо Тир всё настаивает, чтобы я стал её молодым деревцем... Ты ведь тоже решился на это. Что думаешь?"
+msgstr "Можно попросить совета, <split \" \" 1><string $gs1></split>? В последнее время Эо Тир всё настаивает, чтобы я стал её молодым деревцем... Ты ведь тоже <if $gn4>решилась<else>решился</if> на это. Что думаешь?"
 
 #. ja: 妖精王の若木、聞いて！<br>私が契約しましょうって言っているのに、<br>アンデンさんったら、ぜんぜん受け入れてくれないのよっ！
 #. de: Bäumchen unseres Königs, hör mich an! Obwohl ich die ganze Zeit einen Pakt mit Anden eingehen will, lässt er mich einfach nicht ran!

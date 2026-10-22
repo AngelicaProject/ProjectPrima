@@ -342,18 +342,19 @@ msgstr "За какую бы работу ни пришлось взяться, 
 #. macro: <if $gn4>Miss<else>Mister</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
-# aeria-terms: {"Koharu":"8b4d8de9f329"}
+# aeria-terms: {"Koharu":"8b4d8de9f329","adventurer":"48df264ad5ec"}
 msgctxt "quest/013/GaiUse208_01352:TEXT_GAIUSE208_01352_YOUZAN_000_029:1"
 msgid "Hey, <if $gn4>Miss<else>Mister</if> <split \" \" 1><string $gs1></split>! Koharu and I want to know why you became an adventurer!"
-msgstr "Эй, <if $gn4>мисс<else>мистер</if> <split \" \" 1><string $gs1></split>! Мы с Кохару хотим узнать, почему вы стали искателем приключений!"
+msgstr "Эй, <if $gn4>мисс<else>мистер</if> <split \" \" 1><string $gs1></split>! Мы с Кохару хотим узнать, почему вы стали <if $gn4>искательницей приключений<else>искателем приключений</if>!"
 
 #. ja: なんで、冒険者になったの！？
 #. de: Warum bist du Abenteurer<if $gn4>in</if> geworden?
 #. fr: Que répondez-vous<nbsp>?
 #. speaker: Q1
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/013/GaiUse208_01352:TEXT_GAIUSE208_01352_Q1_000_000:1"
 msgid "Why did you become an adventurer?"
-msgstr "Почему вы стали искателем приключений?"
+msgstr "Почему вы стали <if $gn4>искательницей приключений<else>искателем приключений</if>?"
 
 #. ja: 力を求めて
 #. de: Um Stärke zu erlangen.
@@ -577,7 +578,7 @@ msgstr "Покупать оружие и доспехи у Ровены."
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/013/GaiUse208_01352:TEXT_GAIUSE208_01352_YOUZAN_000_040:1"
 msgid "Of course! To be a better adventurer, you need to go <i>adventuring</i>!"
-msgstr "Конечно! Хочешь стать хорошим искателем приключений — отправляйся в <i>приключения</i>!"
+msgstr "Конечно! Хочешь стать <if $gn4>хорошей искательницей приключений<else>хорошим искателем приключений</if> — отправляйся в <i>приключения</i>!"
 
 #. ja: さっきの魔物みたいなやつ！？<br>あんなやつを、いっぱい倒してるの！？<br><if $gn4>ねえちゃん<else>にいちゃん</if>は、すげーなー！
 #. de: Waren die alle so stark wie das Monster gerade? Irre! Wie viele hast du denn schon besiegt? Hundert, tausend, äh, millonten?

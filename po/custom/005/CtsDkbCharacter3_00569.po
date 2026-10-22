@@ -413,7 +413,7 @@ msgstr "Он отказывается есть, пока я или кто-ниб
 # aeria-terms: {"Skip":"9ae628b09f61"}
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_BETHRIC_000_358:1"
 msgid "It's all right, Skip. <split \" \" 1><string $gs1></split> prepared this especially for you."
-msgstr "Всё хорошо, Скип. <split \" \" 1><string $gs1></split> приготовил это специально для тебя."
+msgstr "Всё хорошо, Скип. <split \" \" 1><string $gs1></split> <if $gn4>приготовила<else>приготовил</if> это специально для тебя."
 
 #. ja: こうして自力で食べることができれば、<br>体力もすぐに戻ることでしょう。
 #. de: Puh, es scheint ihm zu schmecken. Da bin ich aber erleichtert. Damit steht seiner vollständigen Genesung nichts mehr im Wege.
@@ -500,7 +500,7 @@ msgstr "Кхррр..."
 #. fr: <split " " 1><string $gs1></split>, je sais que je me répète, mais je tiens à dire que vous m'épatez chaque jour davantage. Merci infiniment d'être <if $gn4>la préparatrice<else>le préparateur</if> de génie que vous êtes<nbsp>!
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_BETHRIC_000_370:1"
 msgid "I suspect you hear this quite often, but I cannot thank you enough for all your help. Were it in my power, I would hire you as my personal apothecary."
-msgstr "Наверное, вы слышите это часто, но я не устану благодарить вас за помощь. Будь моя воля, я бы нанял вас своим личным аптекарем."
+msgstr "Наверное, вы слышите это часто, но я не устану благодарить вас за помощь. Будь моя воля, я бы нанял вас <if $gn4>своей личной аптекаркой<else>своим личным аптекарем</if>."
 
 #. ja: 情けない話ですが……私、自分で作った薬餌を、<br>アマロたちに与えるのが怖くてですね……はは。
 #. de: \<hust> Es ist mir etwas unangenehm, aber ich habe nicht das Selbst<shy>ver<shy>trauen, den Amaros das Futter herzustellen.
@@ -837,7 +837,7 @@ msgstr "Почти целый век я тосковал по дружбе с л
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_SKIP_000_563:1"
 msgid "Then I thought of <split \" \" 1><string $gs1></split>, and the food <if $gn4>she<else>he</if> so lovingly made for me. It reminded me of my youth, and the partner with whom I once explored the world."
-msgstr "Потом я вспомнил <split \" \" 1><string $gs1></split> и еду, которую <if $gn4>она<else>он</if> так заботливо для меня приготовила. Вспомнил молодость и спутника, с которым когда-то исследовал мир."
+msgstr "Потом я вспомнил <split \" \" 1><string $gs1></split> и еду, которую <if $gn4>она так заботливо для меня приготовила<else>он так заботливо для меня приготовил</if>. Вспомнил молодость и спутника, с которым когда-то исследовал мир."
 
 #. ja: ねえ僕は、やっぱりヒトが好きだ。<br>とくに、<split " " 1><string $gs1></split>がとびきり大好き。<br>美味しいもの作ってくれるし、すごく安心する！
 #. de: Ich wusste, dass meine Liebe für die Ungefiederten nicht ganz erloschen war. Besonders gegenüber <split " " 1><string $gs1></split> spürte ich ein tiefes Vertrauen. Jemand, der solch köstliches Amaro-Futter macht, muss ein großes Herz haben!
@@ -882,7 +882,7 @@ msgstr "Спасибо! Спасибо!"
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_BETHRIC_000_568:1"
 msgid "Think nothing of it...<br>Ah! A thought occurs to me. If you were to stay here at the stables, would you be able to tell us what the other amaro are thinking?"
-msgstr "Да бросьте...<br>О! Кажется, мне пришла в голову мысль. Если бы ты остался здесь, в конюшнях, то смог бы рассказать нам, о чём думают остальные амаро?"
+msgstr "Да бросьте...<br>О! Кажется, мне пришла в голову мысль. Если бы ты <if $gn4>осталась<else>остался</if> здесь, в конюшнях, то <if $gn4>смогла<else>смог</if> бы рассказать нам, о чём думают остальные амаро?"
 
 #. ja: え、うーん…………<br>みんなは、僕だけが美味しい物を貰っていたから、<br>羨ましがっているみたい……。
 #. de: Öhm, nun ja, sie sind ein wenig neidisch, dass ich so leckere Sachen essen darf<nbsp>...
@@ -912,7 +912,7 @@ msgstr "Э-э... А с чего бы им о вас говорить?"
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_SKIP_000_572:1"
 msgid "Speaking of foods─<split \" \" 1><string $gs1></split>, is there any chance you could prepare any of the foods from my homeland? I'm sure they would love it."
-msgstr "Кстати о еде... <split \" \" 1><string $gs1></split>, а не мог бы ты приготовить что-нибудь из блюд моей родины? Уверен, им бы понравилось."
+msgstr "Кстати о еде... <split \" \" 1><string $gs1></split>, а не <if $gn4>могла<else>мог</if> бы ты приготовить что-нибудь из блюд моей родины? Уверен, им бы понравилось."
 
 #. ja: おおお、それはいいですね！<br>他のアマロと近付くきっかけにもなりそうです。<br>きっと、すぐにみんなとも打ち解けられるでしょう。
 #. de: Eine ausgezeichnete Idee! Das sollte auch die anderen Amaros freundlicher stimmen. Wir werden uns im Nu beliebt machen!
@@ -954,7 +954,7 @@ msgstr "Разве голос Скипа не прекрасен? Я бы слу
 # aeria-terms: {"Skip":"9ae628b09f61"}
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_BETHRIC_000_650:1"
 msgid "You've outdone yourself, <split \" \" 1><string $gs1></split>. You don't mind if I have a taste, do you?<br>Mmm. It tastes exactly as Skip said it would! Your prowess continues to inspire."
-msgstr "Ты превзошёл себя, <split \" \" 1><string $gs1></split>. Не возражаешь, если я попробую?<br>М-м-м. Точь-в-точь как рассказывал Скип! Твоё мастерство не перестаёт меня восхищать."
+msgstr "Ты <if $gn4>превзошла<else>превзошёл</if> себя, <split \" \" 1><string $gs1></split>. Не возражаешь, если я попробую?<br>М-м-м. Точь-в-точь как рассказывал Скип! Твоё мастерство не перестаёт меня восхищать."
 
 #. ja: ありがとうございます、念のため試食させてもらいましたが、<br>このように美味で栄養満点な餌が存在していいものでしょうか。<br>あなたの技術力の高さには驚かされるばかりです……。
 #. de: Vielen Dank. Lass es mich kurz inspizieren, nur um sicher zu gehen. Faszinierend. Wäre ich ein Amaro, würde ich platzen vor Freunde. Nahrhaft und wohlschmeckend. Perfekte Balance. Du bist wahrlich <if $gn4>eine Meisterin<else>ein Meister</if> deines Fachs!
@@ -964,7 +964,7 @@ msgstr "Ты превзошёл себя, <split \" \" 1><string $gs1></split>. 
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_BETHRIC_000_651:1"
 msgid "You've outdone yourself, <split \" \" 1><string $gs1></split>. You don't mind if I have a taste, do you?<br>Goodness me! The amaro of Berube must have lived like kings! Your prowess continues to inspire."
-msgstr "Ты превзошёл себя, <split \" \" 1><string $gs1></split>. Не возражаешь, если я попробую?<br>Ну и ну! Берубе-амаро, должно быть, жил как король! Твоё мастерство не перестаёт меня восхищать."
+msgstr "Ты <if $gn4>превзошла<else>превзошёл</if> себя, <split \" \" 1><string $gs1></split>. Не возражаешь, если я попробую?<br>Ну и ну! Берубе-амаро, должно быть, жил как король! Твоё мастерство не перестаёт меня восхищать."
 
 #. ja: ありがとうございます！<br>これだけの量があれば、牧場のアマロたちにも十分でしょう。<br>さっそく、厩務員たちに渡しておきますね！
 #. de: Ich denke, das ist auch genug, um die Amaros der Brutstation für eine Weile satt zu machen. Ich werde es den Wärtern bei meiner nächsten Visite überreichen.
@@ -1007,7 +1007,7 @@ msgstr "Что скажете?"
 #. fr: Vous auriez cer<shy>tai<shy>ne<shy>ment trouvé un moyen<nbsp>!
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_A2_000_001:1"
 msgid "I'm certain you'll find a way."
-msgstr "Уверен, ты найдёшь способ."
+msgstr "Уверен, <if $gn4>ты найдёшь<else>ты найдёшь</if> способ."
 
 #. ja: 鬼のベスリクならどうする？
 #. de: Was ist mit dem legendären „Bethric der Dämon“ passiert, der noch jede Heraus<shy>forde<shy>rung gemeistert hat, hm?
@@ -1054,7 +1054,7 @@ msgstr "Доступно новое задание из истории Бетр�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_BETHRIC_000_750:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>. Checking up on me, are you?"
-msgstr "А, <split \" \" 1><string $gs1></split>. Решил проведать меня?"
+msgstr "А, <split \" \" 1><string $gs1></split>. <if $gn4>Решила<else>Решил</if> проведать меня?"
 
 #. ja: ンッフフ…………ヒミツでっす！
 #. de: \<kicher> Aber das ist ein Geheimnis!
@@ -1096,7 +1096,7 @@ msgstr "Обновлён список заказов Бетрика в Крис�
 # aeria-terms: {"Amaro":"5c3759c584e3","Bethric":"5e800a8f620a"}
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_SYSTEM_000_910:1"
 msgid "Bethric is pleased with your efforts. He now considers you an <ui-color 500><ui-edge-color 501>Amaro Enthusiast</ui-edge-color></ui-color>!"
-msgstr "Бетрик доволен вашими трудами. Теперь он считает вас <ui-color 500><ui-edge-color 501>другом амаро</ui-edge-color></ui-color>!"
+msgstr "Бетрик доволен вашими трудами. Теперь он считает вас <ui-color 500><ui-edge-color 501><if $gn4>подругой амаро<else>другом амаро</if></ui-edge-color></ui-color>!"
 
 #. ja: 食薬科の貢献ランクが上昇しました！<br>ベスリクはあなたのことを、<br>「アマロの回復を担う者」と感じているようです！
 #. de: Dein Beitragsrang für den Kräuter- und Gewürzhändler „Kräuter, Düfte & Aromen“ ist gestiegen! Bethric ist beeindruckt von deiner Leistung und sieht dich als <if $gn4>Heilerin<else>Heiler</if> der Amaros.
@@ -1108,7 +1108,7 @@ msgstr "Бетрик доволен вашими трудами. Теперь о
 # aeria-terms: {"Amaro":"5c3759c584e3","Bethric":"5e800a8f620a"}
 msgctxt "custom/005/CtsDkbCharacter3_00569:TEXT_CTSDKBCHARACTER3_00569_SYSTEM_000_920:1"
 msgid "Bethric is delighted with your efforts. He now considers you an <ui-color 500><ui-edge-color 501>Amaro Lover</ui-edge-color></ui-color>!"
-msgstr "Бетрик в восторге от ваших трудов. Теперь он считает вас <ui-color 500><ui-edge-color 501>любителем амаро</ui-edge-color></ui-color>!"
+msgstr "Бетрик в восторге от ваших трудов. Теперь он считает вас <ui-color 500><ui-edge-color 501><if $gn4>любительницей амаро<else>любителем амаро</if></ui-edge-color></ui-color>!"
 
 #. ja: 食薬科の貢献ランクが上昇しました！<br>ベスリクはあなたのことを、<br>「アマロと心を通わす者」と感じているようです！
 #. de: Dein Beitragsrang für den Kräuter- und Gewürzhändler „Kräuter, Düfte & Aromen“ ist gestiegen! Bethric ist beeindruckt von deiner Leistung und hält dich für <if $gn4>eine<else>einen</if> Amaro-<if $gn4>Versteherin<else>Versteher</if>.

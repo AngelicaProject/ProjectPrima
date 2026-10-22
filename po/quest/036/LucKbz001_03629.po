@@ -13,7 +13,7 @@ msgstr ""
 # aeria-terms: {"Glynard":"1623cf8506cf"}
 msgctxt "quest/036/LucKbz001_03629:TEXT_LUCKBZ001_03629_SEQ_00:1"
 msgid "Glynard is overjoyed to welcome the conquering hero's return."
-msgstr "Глинард с восторгом встречает героя, одолевшего врагов."
+msgstr "Глинард с восторгом встречает <if $gn4>победительницу<else>победителя</if>, одолевшую врагов."
 
 #. ja: サイエラから、悪しき存在の討伐を依頼された。クリスタリウムの天蓋の座で「サイエラ」と話そう。
 #. de: Die Kellnerin Cyella bittet dich, eine „Existenz des Bösen“ zu beseitigen, einen Schandfleck der Geschichte um die Kardinal<shy>tugenden. Was kann sie bloß meinen? Sprich zunächst am Baldachin mit ihr, um mehr zu erfahren.
@@ -31,7 +31,7 @@ msgstr "Четыре добродетели повержены — вы и ох�
 # aeria-terms: {"Cyella":"b3d97e85f78f"}
 msgctxt "quest/036/LucKbz001_03629:TEXT_LUCKBZ001_03629_SEQ_02:1"
 msgid "Who is Cyella to speak of long-forgotten heroes and villains? What is her part in all of this? These are fair questions to ask, and so she explains that she was the one who gathered the Virtue-hunters together, and marked you as potential ally. She alone understood what was needed to see this century-spanning tale of tragedy and betrayal to an end. But like many tales, it demands to be told in full."
-msgstr "Кто такая Сиэлла, чтобы рассуждать о давно забытых героях и злодеях? И какое место она занимает во всём этом? Вопросы вполне справедливые. Она объясняет, что именно собрала охотников на добродетели и приметила вас как возможного союзника. Только она понимала, что нужно сделать, чтобы положить конец этой трагической истории, тянущейся уже целый век. Но такие истории нужно рассказывать целиком."
+msgstr "Кто такая Сиэлла, чтобы рассуждать о давно забытых героях и злодеях? И какое место она занимает во всём этом? Вопросы вполне справедливые. Она объясняет, что именно собрала охотников на добродетели и приметила вас как <if $gn4>возможную союзницу<else>возможного союзника</if>. Только она понимала, что нужно сделать, чтобы положить конец этой трагической истории, тянущейся уже целый век. Но такие истории нужно рассказывать целиком."
 
 #. ja: すべての元凶とは、かつてアルバートたちと旅をともにしていたシルヴァだという。アム・アレーンのアンバーフィールドで「サイエラ」と話そう。
 #. de: An dem Ort, an dem Ardbert zum ersten Mal Lamitt traf, offenbart Cyella dir, dass es eine sechste in der Gruppe um Ardbert gab, eine Elfin namens Cylva. Sie zog mit Ardbert und den anderen Kriegern des Lichts aus, um das Böse zu bekämpfen, doch sie sollte zum Schandfleck der Geschichte werden. Folge Cyella in die Bernsteinfelder von Amh Araeng, um mehr über die Geschichte zu erfahren.
@@ -175,7 +175,7 @@ msgstr "Поговорить с Сиэллой в Кристариуме."
 #. macro: <if $gn4>herself<else>himself</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/036/LucKbz001_03629:TEXT_LUCKBZ001_03629_GLYNARD_000_000:1"
 msgid "Well, if it isn't the great hunter <if $gn4>herself<else>himself</if>!"
-msgstr "Ну и ну, сама охотница пожаловала!"
+msgstr "Ну и ну, <if $gn4>сама великая охотница<else>сам великий охотник</if> пожаловала!"
 
 #. ja: なんだ、忘れちまったのか？<br>この酒場から「四使徒」を倒す英雄が現れたら、<br>俺としても誇らしいって話をしたことをよ！
 #. de: Ach komm, du weißt genau, was ich meine. Dein Sieg über die vier Kardinal<shy>tugenden war eine Heldentat, über die man noch so manches Gedicht schreiben wird. Und ein paar Trinklieder noch dazu!
@@ -185,7 +185,7 @@ msgstr "Ну и ну, сама охотница пожаловала!"
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/036/LucKbz001_03629:TEXT_LUCKBZ001_03629_GLYNARD_000_001:1"
 msgid "As if you don't know! All four of the Cardinal Virtues laid low, all with your help. You're the talk of the Stairs, <split \" \" 1><string $gs1></split>!"
-msgstr "Да ладно, ты же всё знаешь! Ты помогла повергнуть все четыре добродетели. О тебе теперь на Лестнице только и говорят, <split \" \" 1><string $gs1></split>!"
+msgstr "Да ладно, ты же всё знаешь! Ты <if $gn4>помогла<else>помог</if> повергнуть все четыре добродетели. О тебе теперь на Лестнице только и говорят, <split \" \" 1><string $gs1></split>!"
 
 #. ja: あの時は「夜」の訪れで舞い上がってたから、<br>冗談半分で言ったんだが、まさかすべての使徒を倒すとはな！<br>まさしく英雄……いや、大英雄だぜ！
 #. de: Ich hatte es halb im Scherz gesagt, dass du alle vier besiegen wirst. Ich war schließlich noch ganz von Sinnen, weil doch der Nachthimmel gerade erst zurückgekehrt war. Aber du hast es tatsächlich geschafft. Was für eine Heldentat. Was für eine Heldentat!
@@ -309,7 +309,7 @@ msgstr "И где Сиэлла, когда она нужна? Убежала п�
 #. speaker: CYELLA
 msgctxt "quest/036/LucKbz001_03629:TEXT_LUCKBZ001_03629_CYELLA_000_030:1"
 msgid "You came, as I knew you would. Never met a mystery you could leave well enough alone─or a demon that you could let live, am I right?"
-msgstr "Ты пришла, как я и знала. Не могла же ты оставить загадку без ответа... Или позволить демону жить, верно?"
+msgstr "Ты <if $gn4>пришла<else>пришёл</if>, как я и знала. Не <if $gn4>могла<else>мог</if> же ты оставить загадку без ответа... Или позволить демону жить, верно?"
 
 #. ja: 倒すべき悪しき存在がいると知れば無視はできず、<br>助けを求められれば、つい手を差し伸べてしまう。<br>やはり、貴方は「良い人」です……。
 #. de: Du würdest niemals einen Aufruf zur Verteidigung dieser Welt ignorieren. Denn du bist <if $gn4>eine<else>einer</if> von den Guten, <if $gn4>eine wahre Heldin<else>ein wahrer Held</if>.
@@ -317,7 +317,7 @@ msgstr "Ты пришла, как я и знала. Не могла же ты о
 #. speaker: CYELLA
 msgctxt "quest/036/LucKbz001_03629:TEXT_LUCKBZ001_03629_CYELLA_000_031:1"
 msgid "And this demon is undeniably deserving of death. Make no mistake. To cut them down would be just and proper. The act of a goodly person─and that is just what you are. I can see that..."
-msgstr "Ты ведь не смогла бы пройти мимо угрозы или оставить кого-то без помощи. Такая уж ты... добрая душа."
+msgstr "Ты ведь не <if $gn4>смогла бы<else>смог бы</if> пройти мимо угрозы или оставить кого-то без помощи. Такая уж ты... добрая душа."
 
 #. ja: フフ、そう身構えないでくださいな。<br>討伐すべき悪しき存在がいるという話は、嘘などではありません。<br>しかも、あの四使徒が生まれる要因となった者なのです。
 #. de: Sei nicht so bescheiden. Du weißt, dass es so ist. Doch jetzt lass mich dir von dem Schandfleck der Geschichte berichten, welcher die vier Kardinal<shy>tugenden überhaupt erst möglich gemacht hat.
@@ -1407,4 +1407,4 @@ msgstr "К счастью, чтобы рассказать о подвигах �
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/036/LucKbz001_03629:TEXT_LUCKBZ001_03629_CYELLA_000_412:1"
 msgid "Thank you for accompanying me on my journey of remembrance, <split \" \" 1><string $gs1></split>. May your deeds ever be remembered and celebrated, as all heroes deserve."
-msgstr "Спасибо, что прошёл со мной этот путь воспоминаний, <split \" \" 1><string $gs1></split>. Пусть о твоих подвигах помнят и слагают песни, как и подобает героям."
+msgstr "Спасибо, что прошёл со мной этот путь воспоминаний, <split \" \" 1><string $gs1></split>. Пусть о твоих подвигах помнят и слагают песни, как и подобает <if $gn4>героине<else>герою</if>."

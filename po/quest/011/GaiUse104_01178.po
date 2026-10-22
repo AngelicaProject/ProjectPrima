@@ -28,7 +28,7 @@ msgstr "Ф'ламинн ждёт вашей помощи."
 # aeria-terms: {"F'lhaminn":"518cd94eb0da","Wineport":"1035cc5a7c89"}
 msgctxt "quest/011/GaiUse104_01178:TEXT_GAIUSE104_01178_SEQ_01:1"
 msgid "<ui-color 533><ui-edge-color 534><icon 63> This quest has been adjusted. Please abandon the quest and restart it by speaking to F'lhaminn in Wineport.</ui-edge-color></ui-color><br><br>※The Main Scenario Guide shows the next available quest. You can toggle it on and off in Character Configuration, under UI Settings."
-msgstr "<ui-color 533><ui-edge-color 534><icon 63>Это задание было изменено. Откажитесь от него и примите заново у Ф'ламинн в Вайнпорте.</ui-edge-color></ui-color><br><br>※Следующее задание основного сюжета можно найти в путеводителе. Его отображение настраивается в разделе «Настройки интерфейса» меню «Настройки персонажа»."
+msgstr "<ui-color 533><ui-edge-color 534><icon 63>Это задание было изменено. Откажитесь от него и примите заново у Ф'ламинн в Вайнпорте.</ui-color></ui-edge-color><br><br>※Следующее задание основного сюжета можно найти в путеводителе. Его отображение настраивается в разделе «Настройки интерфейса» меню «Настройки персонажа»."
 
 #. ja: <sheet EventItem 2001072 0>を手に入れた。<sheet BNpcName 688 0>をおびき出すため、<sheet EObj 2002842 0>に「<sheet EventItem 2001072 0>」を設置しよう。
 #. de: Du hast genügend <noun-de EventItem 5 2001072 2 4 1> zusammen. Leg diese Köder am Zielort aus, um <noun-de BNpcName 2 688 1 4 1> anzuziehen.
@@ -366,7 +366,7 @@ msgstr "Я думала, их больше не делают. Тебе приш�
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/011/GaiUse104_01178:TEXT_GAIUSE104_01178_FLHAMINN_000_042:1"
 msgid "It was no trouble to me, my darling. I fear I cannot say the same for <split \" \" 1><string $gs1></split>, however. I could not have made it without <if $gn4>her<else>him</if>."
-msgstr "Да что вы, милая. Это мне нужно благодарить <split \" \" 1><string $gs1></split>. Без <if $gn4>неё<else>него</if> я бы не справилась."
+msgstr "Да что вы, <if $gn4>милая<else>милый</if>. Это мне нужно благодарить <split \" \" 1><string $gs1></split>. Без <if $gn4>неё<else>него</if> я бы не справилась."
 
 #. ja: ありがとう、<split " " 1><string $gs1></split>。
 #. de: Schon wieder stehe ich in deiner Schuld, <split " " 1><string $gs1></split>. Vielen Dank.
@@ -376,7 +376,7 @@ msgstr "Да что вы, милая. Это мне нужно благодар�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/011/GaiUse104_01178:TEXT_GAIUSE104_01178_MINFILIA_000_043:1"
 msgid "Thank you, <split \" \" 1><string $gs1></split>. Thank you both."
-msgstr "Спасибо, <split \" \" 1><string $gs1></split>. Спасибо вам обеим."
+msgstr "Спасибо, <split \" \" 1><string $gs1></split>. Спасибо вам обоим."
 
 #. ja: それに、これ。
 #. de: Hier, das ist auch für dich.
@@ -473,7 +473,7 @@ msgstr "Нет, Асилия, всё в порядке! Наоборот! Я х�
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/011/GaiUse104_01178:TEXT_GAIUSE104_01178_FLHAMINN_000_054:1"
 msgid "You and your allies have accomplished more than I could ever have hoped. You have succeeded where I failed, and made me so <i>proud</i> that...that words fail me."
-msgstr "Ты и твои товарищи добились большего, чем я могла надеяться. Ты сумела там, где я потерпела неудачу, и я так тобой <i>горжусь</i>, что... что не могу подобрать слов."
+msgstr "Ты и твои товарищи добились большего, чем я могла надеяться. Ты <if $gn4>сумела<else>сумел</if> там, где я потерпела неудачу, и я так тобой <i>горжусь</i>, что... что не могу подобрать слов."
 
 #. ja: 私の「母」としての役目は終わったのね。<br>アシリア……あなたはもう、立派に独立した女性よ。
 #. de: Du bist jetzt diejenige, die uns alle beschützt. Das ist deine Aufgabe.
@@ -484,7 +484,7 @@ msgstr "Ты и твои товарищи добились большего, ч�
 # aeria-terms: {"Scion":"c86bbbc0c0a1","Ul'dah":"68f80cffa0d5"}
 msgctxt "quest/011/GaiUse104_01178:TEXT_GAIUSE104_01178_FLHAMINN_000_055:1"
 msgid "But even as I marvel at the woman you've become, and at all the many things you've done, I cannot help but think of that which you have yet to do, and of what it may entail. Ascilia...Daughter─you cannot stay here anymore. You and the Scions <i>must</i> leave Ul'dah."
-msgstr "Но, глядя на то, какой женщиной ты стала и чего добилась, я думаю и о том, что тебе ещё предстоит сделать. Асилия... доченька, тебе больше нельзя оставаться здесь. Ты и Наследники <i>должны</i> покинуть Уль'ду."
+msgstr "Но, глядя на то, <if $gn4>какой женщиной ты стала и чего добилась<else>каким мужчиной ты стал и чего добился</if>, я думаю и о том, что тебе ещё предстоит сделать. Асилия... доченька, тебе больше нельзя оставаться здесь. Ты и Наследники <i>должны</i> покинуть Уль'ду."
 
 #. ja: ……ラミン。
 #. de: Aber Mutter ... Ich weiß nicht, ob ich ...

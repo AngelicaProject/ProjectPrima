@@ -51,7 +51,7 @@ msgstr "<split \" \" 1><string $gs1></split>, рад тебя видеть! Бл
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_GREETING_ADKIRAGH_000_004:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>, my most dependable partner. What brings you here today? Have you a delivery to make? Perhaps new garb for yours truly to try? Whichever it is, it does me well to see you."
-msgstr "А, <split \" \" 1><string $gs1></split>, мой верный друг! Чем порадуешь сегодня? Принёс заказ? А может, новый наряд для меня? Что бы там ни было, я всегда рад тебя видеть!"
+msgstr "А, <split \" \" 1><string $gs1></split>, <if $gn4>моя верная подруга<else>мой верный друг</if>! Чем порадуешь сегодня? <if $gn4>Принесла<else>Принёс</if> заказ? А может, новый наряд для меня? Что бы там ни было, я всегда рад тебя видеть!"
 
 #. ja: 何をする？
 #. de: Was möchtest du tun?
@@ -164,7 +164,7 @@ msgstr "М-м-м, какой чудесный аромат! Из местных 
 # aeria-terms: {"succulent":"fb2f316c4fe3"}
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_KNOWLEDGE_ADKIRAGH_001_002:1"
 msgid "Great buuz requires great ingredients. With what you have brought, I can make buuz the equal of any found in my homeland, the dough irresistibly fluffy and the filling tantalizingly succulent."
-msgstr "Чтобы приготовить отменные буузы, нужны отменные ингредиенты. С тем, что ты принёс, я сделаю буузы не хуже тех, что готовят у меня на родине: с воздушным тестом и сочной начинкой."
+msgstr "Чтобы приготовить отменные буузы, нужны отменные ингредиенты. С тем, что ты <if $gn4>принесла<else>принёс</if>, я сделаю буузы не хуже тех, что готовят у меня на родине: с воздушным тестом и сочной начинкой."
 
 #. ja: この店の内装とよく合うように作ってくれたのだな。<br>統一感のある備品を揃えれば、くつろぎの空間を演出できるのだ。<br>客が一日の終わりに帰りたいと思える店、崖っぷち亭に最適である！
 #. de: Danke, der Einrichtungsgegenstand passt perfekt zum Klippenhänger! Damit wird es hier so richtig schön gemütlich. Man fühlt sich sofort dazu eingeladen, nach einem harten Tag die Seele baumeln zu lassen.
@@ -358,7 +358,7 @@ msgstr "Спасибо, что заглянули! Будем рады виде�
 #. fr: Bien, bien<nbsp>! Tu t'es vite habituée à ton nouvel emploi<nbsp>! J'aurais bien émis quelques réserves sur ton costume, mais vu l'accoutrement du patron...
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_MAPOPO_001_002:1"
 msgid "You really are a natural at this. But...er, don't you think it's about time you shed with that outfit?"
-msgstr "Ты так быстро освоилась! Но... может, уже пора снять этот костюм? Хотя после наряда хозяина мне ли тебе говорить..."
+msgstr "Ты так быстро <if $gn4>освоилась<else>освоился</if>! Но... может, уже пора снять этот костюм? Хотя после наряда хозяина мне ли тебе говорить..."
 
 #. ja: ふふっ。<br>追っ手が来た時に、いつでも変装できるようにしているのですよ。<br>それに、店長とおそろいで、お気に入りなのです！
 #. de: Haha, ja, ich möchte mich jederzeit schnell verkleiden können, falls hier wieder Schläger aus Ishgard aufkreuzen, um nach mir zu suchen. Außerdem macht es mir Spaß, mich wie der Wirt zu verkleiden. So fühl ich mich dem Klippenhänger gleich viel verbundener.
@@ -534,7 +534,7 @@ msgstr "Мы с детства поклялись служить вожаку д
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_ADKIRAGH_002_010:1"
 msgid "H-How can this be? How can you learn the truth of my illustrious identity and not be surprised? <i>Impressed</i>?"
-msgstr "К-как такое может быть? Ты узнал о моём блистательном происхождении и даже не удивился? <i>Не впечатлился</i>?"
+msgstr "К-как такое может быть? Ты <if $gn4>узнала<else>узнал</if> о моём блистательном происхождении и даже не <if $gn4>удивилась<else>удивился</if>? <i><if $gn4>Не впечатлилась<else>Не впечатлился</if></i>?"
 
 #. ja: 何と答える？
 #. de: Was antwortest du?
@@ -548,7 +548,7 @@ msgstr "Что ответите?"
 #. fr: Ton petit frère te cherchait dans la Steppe d'Azim.
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_A1_002_001:1"
 msgid "I met your brother on the Steppe."
-msgstr "Я встретил твоего брата в Степи."
+msgstr "Я <if $gn4>встретила<else>встретил</if> твоего брата в Степи."
 
 #. ja: 過去を詮索する気はない
 #. de: Deine Ver<shy>gangen<shy>heit geht mich nichts an.
@@ -562,7 +562,7 @@ msgstr "Я не лезу в чужое прошлое."
 #. fr: T'as rencontré mon frère<nbsp>!? Et il me cherchait, en plus<nbsp>!? Ben, ça alors...
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_ADKIRAGH_002_011:1"
 msgid "You met my brother? And he's searching for me, you say? That is...not wholly unexpected."
-msgstr "Ты встретил моего брата? И он меня ищет? Что ж... не сказать, чтобы я совсем этого не ожидал."
+msgstr "Ты <if $gn4>встретила<else>встретил</if> моего брата? И он меня ищет? Что ж... не сказать, чтобы я совсем этого не ожидал."
 
 #. ja: ふ、ふむ……さすがは流れ者の冒険者だな。<br>イディルシャイアの住人ともども、不要な詮索をせぬのは、<br>助かるというものだ。
 #. de: Hm, du bist wohl selbst <if $gn4>eine Vertriebene<else>ein Vertriebener</if> wie die meisten hier in Frohehalde. Hier zählen nicht die Taten der Ver<shy>gangen<shy>heit, sondern nur das, was wir für die Zukunft dieser Siedlung leisten.
@@ -582,7 +582,7 @@ msgstr "А вы двое как узнали, что я здесь?"
 #. ja: 最近、再会の市に冒険者が入ってきやしてね。<br>そいつらを介して、崖っぷち亭と、<br>その店主「アドキラー」の評判が伝わったってわけでさァ。
 #. de: Nun ja, in letzter Zeit kommen viele Reisende nach Reunion. Einer erzählte uns von einer Gaststätte weit im Westen, in der angeblich jemand namens Adkiragh die Getränke zapft. Du kannst dir denken, wie überrascht wir waren!
 #. fr: De plus en plus d'aventuriers font halte au Ralliement, der<shy>niè<shy>re<shy>ment. Parmi eux, il y en a pas mal qui vantent la bonne cuisine du Bord du gouffre. C'est là-bas qu'on a entendu ton nom.
-# aeria-terms: {"Adkiragh":"43ea83d6d16c","Reunion":"6211ba068e52"}
+# aeria-terms: {"Adkiragh":"43ea83d6d16c","Reunion":"6211ba068e52","adventurer":"48df264ad5ec"}
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_ALGHU_002_014:1"
 msgid "Well, chief, many adventurers come through Reunion these days. Through them, we heard tell of a tavern far to the west. Imagine our surprise when we learned that the proprietor was a man named Adkiragh!"
 msgstr "В последнее время в Воссоединение часто заглядывают искатели приключений. Через них мы и услышали о трактире далеко на западе. Представляете наше удивление, когда узнали, что хозяина зовут Адкираг!"
@@ -621,12 +621,12 @@ msgstr "К-кхм! Да неважно. Только другим ничего �
 #. fr: Nos clients viennent de plus en plus loin pour goûter nos buuz nouvelle recette<nbsp>! En plus, les produits inédits que tu nous livres nous permettent d'affiner nos talents de cuisiniers. C'est pas beau ça<nbsp>!?
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_ADKIRAGH_003_000:1"
 msgid "People are coming from near and far for our special buuz. This would not have been possible without you to supply the ingredients─and my illustrious self to make the mouthwatering stuff, of course!"
-msgstr "За нашими особыми буузами теперь приезжают издалека! И всё благодаря тебе: ты раздобыл ингредиенты, а я, разумеется, приготовил эту вкуснятину!"
+msgstr "За нашими особыми буузами теперь приезжают издалека! И всё благодаря тебе: ты <if $gn4>раздобыла<else>раздобыл</if> ингредиенты, а я, разумеется, приготовил эту вкуснятину!"
 
 #. ja: それはそうと、少々気になることがあってな。<br>メロディーちゃんが、街でアウラ族の男を見たと言うのだ。<br>冒険者には見えなかったらしいのだが……。
 #. de: Es gibt allerdings auch eine Sache, die mich beunruhigt. Melodie hat mir von einem fremden Au Ra hier in Frohehalde erzählt, den sie nicht für einen Abenteurer hält.
 #. fr: La taverne tourne bien, par contre, la petite Melodie m'a parlé d'un truc qui m'inquiète un peu. Elle aurait vu un Ao Ra en ville, et d'après elle, il avait pas la tête d'un aventurier...
-# aeria-terms: {"Idyllshire":"1df33a871678","Melodie":"2e2f78753106","Xaela":"00add8e2e712"}
+# aeria-terms: {"Idyllshire":"1df33a871678","Melodie":"2e2f78753106","Xaela":"00add8e2e712","adventurer":"48df264ad5ec"}
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_ADKIRAGH_003_001:1"
 msgid "But to another matter. There is something with which I require your...discreet assistance. Recently, Melodie claims to have seen a Xaela man here in Idyllshire. By her judgment, he did not appear to be an adventurer."
 msgstr "Но это ещё не всё. Мне нужна ваша... деликатная помощь. Недавно Мелоди сказала, что видела в Идиллшире мужчину-зайла. По её словам, на искателя приключений он не походил."
@@ -702,7 +702,7 @@ msgstr "Но успех господина Адкирага вдохновил �
 #. ja: 私からも、お礼を言わせてください。<br>崖っぷち亭が繁盛したおかげで、<br>イディルシャイアの街にも、冒険者が戻りつつあるのです。
 #. de: Auch von mir herzlichen Dank! Der gute Ruf des Klippenhängers zieht immer mehr Abenteurer nach Frohehalde.
 #. fr: Je vous suis re<shy>con<shy>nais<shy>sante, moi aussi. Idyllée connaît un nouvel essor depuis que le Bord du gouffre a gagné en popularité.
-# aeria-terms: {"Hard Place":"ace3f2d4906e","Idyllshire":"1df33a871678"}
+# aeria-terms: {"Hard Place":"ace3f2d4906e","Idyllshire":"1df33a871678","adventurer":"48df264ad5ec"}
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_GEIMLONA_004_006:1"
 msgid "Allow me to express my gratitude too, adventurer. With the Hard Place prosperin' again, your fellow adventurers're startin' to return to Idyllshire."
 msgstr "И я тоже хочу поблагодарить вас, искатель приключений. Благодаря успеху «Трудного положения» в Идиллшир понемногу возвращаются искатели приключений."
@@ -802,7 +802,7 @@ msgstr "Вот это настрой! И каламбур заодно!"
 #. fr: Alors comme ça, on est dans les petits papiers du chef<nbsp>? Il garde le secret depuis un bail, comment tu t'es débrouillé<if $gn4>e</if> pour qu'il t'accorde sa confiance si facilement<nbsp>?
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_ALGHU_002_100:1"
 msgid "For as long as we can remember, the chief has always hidden his true identity to others. It's unheard of for him to trust an outsider."
-msgstr "Сколько себя помню, вождь всегда скрывал от чужаков своё истинное имя. Невиданное дело, чтобы он доверился постороннему."
+msgstr "Сколько себя помню, вождь всегда скрывал от чужаков своё истинное имя. Невиданное дело, чтобы он доверился <if $gn4>посторонней<else>постороннему</if>."
 
 #. ja: <split " " 1><string $gs1></split>のおかげで今この店があるのだ。<br>貴様らも、我の店に居座るつもりなら、<br>何か貢献してみせるがよい！
 #. de: <split " " 1><string $gs1></split> hat sich mein Vertrauen mehrfach verdient. Ohne <if $gn4>ihre<else>seine</if> Hilfe gäb es diesen Laden nicht mehr. Und wenn ihr zwei noch länger hier herumhängen wollt, rate ich euch verdammt noch mal, auch einen Beitrag zu leisten!
@@ -812,7 +812,7 @@ msgstr "Сколько себя помню, вождь всегда скрыва
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/005/CtsSfsCharacter4_00541:TEXT_CTSSFSCHARACTER4_00541_LCUT_RANKUP_ADKIRAGH_002_101:1"
 msgid "<split \" \" 1><string $gs1></split> has earned my trust thrice over. It is by virtue of <if $gn4>her<else>his</if> help that this tavern still exists, and if you two mean to remain here, then I expect you to make a contribution as well."
-msgstr "<split \" \" 1><string $gs1></split> заслужил моё доверие втройне. Благодаря <if $gn4>её<else>его</if> помощи эта таверна ещё существует. А если вы двое собираетесь и дальше тут сидеть, то и вы внесите свой вклад!"
+msgstr "<split \" \" 1><string $gs1></split> <if $gn4>заслужила<else>заслужил</if> моё доверие втройне. Благодаря <if $gn4>её<else>его</if> помощи эта таверна ещё существует. А если вы двое собираетесь и дальше тут сидеть, то и вы внесите свой вклад!"
 
 #. ja: それなら、いい案があるぜェ親分！<br>故郷の伝統料理、ボーズ作りなら俺たちに任せてくれよ！<br>最近モル族を中心に流行中の、新具材ボーズを伝授するぜ！
 #. de: Tja, Chef, ich hätte da so eine Idee. Ich hab gehört, dass die Mol ihre traditionellen Buuds mit besonderen Zutaten anreichern. Mit deiner Erlaubnis könnten wir in die Azim-Steppe zurückkehren und das Rezept in Erfahrung bringen.

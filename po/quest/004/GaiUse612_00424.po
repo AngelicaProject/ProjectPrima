@@ -114,7 +114,7 @@ msgstr "Вы уже знаете, что делать. Найдите подхо
 #. macro: <if $gn4>lady<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/004/GaiUse612_00424:TEXT_GAIUSE612_00424_SCIENTIST00423_000_011:1"
 msgid "We will be here all <if ($gn11 < 12)><if ($gn11 < 4)>night<else>morning</if><else><if ($gn11 < 17)>day<else>night</if></if> if you do not leave me be, young <if $gn4>lady<else>man</if>!"
-msgstr "Если не оставите меня в покое, мы здесь проведём <if ($gn11 < 12)><if ($gn11 < 4)>всю ночь<else>всё утро</if><else><if ($gn11 < 17)>весь день<else>всю ночь</if></if>, юная <if $gn4>леди<else>господин</if>!"
+msgstr "Если не оставите меня в покое, мы здесь проведём <if ($gn11 < 12)><if ($gn11 < 4)>всю ночь<else>всё утро</if><else><if ($gn11 < 17)>весь день<else>всю ночь</if></if>, <if $gn4>юная леди<else>юный господин</if>!"
 
 #. ja: さすがは「ウルズの泉」、高い値だが……<br>第六星暦末期に計測された記録と比較すると、<br>やはり、エーテル濃度は低下している。
 #. de: Hmm ... wie zu erwarten war, liegen die Werte hier weit über dem Durchschnitt, aber trotzdem ... Verglichen mit denjenigen zum Ende der Sechsten Ära des Lichts ist die Ätherkonzentration deutlich gesunken.
@@ -149,7 +149,7 @@ msgstr "Что-то... ещё..."
 # aeria-terms: {"Scion":"c86bbbc0c0a1"}
 msgctxt "quest/004/GaiUse612_00424:TEXT_GAIUSE612_00424_SCIENTIST00423_000_015:1"
 msgid "Scion! Scion, come here! I-I need you!"
-msgstr "Наследник! Наследник, сюда! Я-я нуждаюсь в помощи!"
+msgstr "<if $gn4>Наследница<else>Наследник</if>! <if $gn4>Наследница<else>Наследник</if>, сюда! Я-я нуждаюсь в помощи!"
 
 #. ja: 何事ですか……！？
 #. de: <split " " 1><string $gs1></split>! Was ist los?! Das ist doch eine Kristallstreiter-Uniform!
@@ -260,7 +260,7 @@ msgstr "Боги, какая страшная потеря... Оставьте �
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/004/GaiUse612_00424:TEXT_GAIUSE612_00424_MINFILIA_000_040:1"
 msgid "<split \" \" 1><string $gs1></split>, you are returned! And you seem troubled. Did the role of escort chafe so?"
-msgstr "<split \" \" 1><string $gs1></split>, ты вернулся! И вид у тебя встревоженный. Неужели сопровождать учёного было так тяжело?"
+msgstr "<split \" \" 1><string $gs1></split>, ты <if $gn4>вернулась<else>вернулся</if>! И вид у тебя <if $gn4>встревоженная<else>встревоженный</if>. Неужели сопровождать учёного было так тяжело?"
 
 #. ja: ……な、なんですって？<br>クリスタルブレイブのウィルレッドさんが！？
 #. de: Was sagst du da?! Wilred?! Bei den Zwölf!
@@ -306,7 +306,7 @@ msgstr "Прости, <split \" \" 1><string $gs1></split>. Наверняка �
 #. speaker: MINFILIA
 msgctxt "quest/004/GaiUse612_00424:TEXT_GAIUSE612_00424_MINFILIA_000_051:1"
 msgid "Pray take some time for yourself─I daresay you have more than earned a respite. After all, we will be most busy with preparations as the banquet draws near. Should other adventures summon you elsewhere, perhaps now is the time to heed their call?"
-msgstr "Отдохни немного, ты это заслужил. Скоро нам будет не до отдыха — с приближением праздника хлопот прибавится. Если тебя ждут другие приключения, самое время откликнуться на зов."
+msgstr "Отдохни немного, ты это <if $gn4>заслужила<else>заслужил</if>. Скоро нам будет не до отдыха — с приближением праздника хлопот прибавится. Если тебя ждут другие приключения, самое время откликнуться на зов."
 
 #. ja: 次のメインクエストに進むためには、<br>「クロニクルクエスト：クリスタルタワー」を、<br>特定のクエストまで完了する必要があります。
 #. de: Um mit dem Hauptszenario fortfahren zu können, muss die Auftragsreihe „Kristallturm“ aus den Chroniken der neuen Ära abgeschlossen sein.

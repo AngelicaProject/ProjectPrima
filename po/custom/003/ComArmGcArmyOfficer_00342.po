@@ -333,7 +333,7 @@ msgstr "Если в эскадроне уже восемь бойцов — пр
 #. macro: <if ($gn52 > 0)>Maelstrom</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn53 > 0)>Order of the Twin Adder</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>Immortal Flames</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
-# aeria-terms: {"Immortal Flame":"1559968add53","Immortal Flames":"dedd5e2f714e","Maelstrom":"70ae9d937d2f","Order of the Twin Adder":"e530e1459309"}
+# aeria-terms: {"Immortal Flame":"1559968add53","Immortal Flames":"dedd5e2f714e","Maelstrom":"70ae9d937d2f","Order of the Twin Adder":"e530e1459309","adventurer":"48df264ad5ec"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_SYSTEM_000_300:1"
 msgid "Squadron missions are duties that have been assigned to your adventurer recruits by the <if ($gn52 > 0)>Maelstrom</if><if ($gn53 > 0)>Order of the Twin Adder</if><if ($gn54 > 0)>Immortal Flames</if>. To undertake a mission, you must select four squadron members for deployment."
 msgstr "Задания для эскадрона — это поручения, которые <if ($gn52 > 0)>Водоворот</if><if ($gn53 > 0)>Орден Двух Змей</if><if ($gn54 > 0)>Бессмертное пламя</if> поручает вашим новобранцам. Чтобы выполнить такое задание, выберите четырёх бойцов эскадрона и отправьте их на вылазку."
@@ -679,10 +679,10 @@ msgstr "Прежде всего нам нужно увеличить число 
 #. ja: <split " " 1><string $gs1></split>小隊長殿が、冒険者として活躍すれば、<br>その姿を見た者たちが「志願兵」として現れることでしょう。<br>その中から、新たな小隊員を選ぶのです！
 #. de: Wenn du dich als <if $gn4>Abenteurerin<else>Abenteurer</if> hervortust, wirst du andere dazu inspirieren, deinem Kommando beizutreten. Es werden Bewerbungen von neuen Anwärtern eingehen, aus denen du neue Soldaten rekrutieren kannst. Und je mehr Soldaten du hast, desto besser kannst du die richtigen für einen Einsatz auswählen. Also vergiss nicht, regelmäßig auf Abenteuer zu gehen!
 #. fr: Plus vous serez acti<if $gn4>ve<else>f</if> en Éorzéa, plus les gens vous verront à l'œuvre. Ça donnera sans doute envie à certains de rejoindre votre escouade. Le choix sera cer<shy>tai<shy>ne<shy>ment difficile, mais je suis sûr que vous trouverez votre bonheur<nbsp>!
-# aeria-terms: {"enlistment papers":"38318133cd3e"}
+# aeria-terms: {"adventurer":"48df264ad5ec","enlistment papers":"38318133cd3e"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_000_137:1"
 msgid "Your own deeds as an adventurer should serve to attract new recruits. All you need to do is choose from the hopefuls who submit their enlistment papers."
-msgstr "Ваши подвиги в роли искателя приключений привлекут новых новобранцев. Вам останется выбрать среди тех, кто подаст заявление о вступлении."
+msgstr "Ваши подвиги в роли <if $gn4>искательницы приключений<else>искателя приключений</if> привлекут новых новобранцев. Вам останется выбрать среди тех, кто подаст заявление о вступлении."
 
 #. ja: 「攻略手帳」の項目を達成していくことで、<br>まれに「志願兵」が現れることがあります。
 #. de: Manchmal, wenn du bestimmte Aufgaben der Aktuellen Agenda absolvierst, inspirierst du NPCs dazu, sich für dein Kommando zu bewerben.
@@ -1073,7 +1073,7 @@ msgstr "Нам пришло послание от <if ($gn52 > 0)>Штаба В�
 #. macro: <if ($gn53 > 0)>first serpent lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>first flame lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_000_197:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>first storm lieutenant</if><if ($gn53 > 0)>first serpent lieutenant</if><if ($gn54 > 0)>first flame lieutenant</if>. Effective immediately.</i>"
 msgstr "<i>За выдающиеся заслуги в развитии эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим повышается в звании до <if ($gn52 > 0)>первого младшего офицера Водоворота</if><if ($gn53 > 0)>первого младшего офицера ордена Двух Змей</if><if ($gn54 > 0)>первого младшего офицера Бессмертных</if>. Вступает в силу немедленно.</i>"
@@ -1084,7 +1084,7 @@ msgstr "<i>За выдающиеся заслуги в развитии эска
 # aeria-terms: {"commander":"0365fb5402fb"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_000_198:1"
 msgid "A letter of promotion! Congratulations, Commander! And very well deserved, I must say!"
-msgstr "Приказ о повышении! Поздравляю, командир! Заслужили, ничего не скажешь!"
+msgstr "Пришло письмо о повышении! Поздравляю, командир! И вполне заслуженно, должен сказать!"
 
 #. ja: <if ($gn52 > 0)>黒渦団：軍令部</if><if ($gn53 > 0)>双蛇党：統合司令部</if><if ($gn54 > 0)>不滅隊：作戦本部</if>より、伝言を預かっているのです。<br>さっそく読み上げましょう。
 #. de: Kommandoführer<if $gn4>in</if> <split " " 2><string $gs1></split>! Es ist eine dringende Nachricht <if ($gn52 > 0)>aus dem Flotten<shy>kommando</if><if ($gn53 > 0)>von der Priesterschaft</if><if ($gn54 > 0)>der Stabsoffiziere</if> eingetroffen. Ich lese sie dir vor.
@@ -1111,9 +1111,10 @@ msgstr "Нам пришло послание из <if ($gn52 > 0)>Штаба В�
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_000_331:1"
 msgid "<i>For ongoing excellence in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>'s squadron is hereby granted authorization to undertake command missions. Effective immediately.</i>"
-msgstr "<i>За выдающиеся заслуги в развитии эскадрилий искателей приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим получает разрешение командовать эскадрильей в боевых операциях. Вступает в силу немедленно.</i>"
+msgstr "<i>За неизменные успехи в деле развития эскадронов искателя приключений эскадрон <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим получает разрешение выполнять особые задания под командованием своего командира. Приказ вступает в силу немедленно.</i>"
 
 #. ja: なんと、新しい任務とは！<br>我が部隊の実力が、認められたということですね！
 #. de: Operationen! Sie werden dich an die gefährlichsten Orte von ganz Eorzea führen, vielleicht sogar in noch entferntere Regionen. Ich gratuliere.
@@ -1194,7 +1195,7 @@ msgstr "Нам пришло послание от <if ($gn52 > 0)>Штаба В�
 #. macro: <if ($gn53 > 0)>first serpent lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>first flame lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_000_222:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>first storm lieutenant</if><if ($gn53 > 0)>first serpent lieutenant</if><if ($gn54 > 0)>first flame lieutenant</if>. Effective immediately.</i>"
 msgstr "<i>За выдающиеся заслуги в развитии эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим повышается в звании до <if ($gn52 > 0)>первого младшего офицера Водоворота</if><if ($gn53 > 0)>первого младшего офицера ордена Двух Змей</if><if ($gn54 > 0)>первого младшего офицера Бессмертных</if>. Вступает в силу немедленно.</i>"
@@ -1234,10 +1235,10 @@ msgstr "У нас уже есть трое отличных новобранце
 #. ja: <split " " 1><string $gs1></split>小隊長殿が、冒険者として活躍すれば、<br>その姿を見た者たちが「志願兵」として現れることでしょう。<br>その中から、新たな小隊員を選ぶのです！
 #. de: Wenn du dich als <if $gn4>Abenteurerin<else>Abenteurer</if> hervortust, wirst du andere dazu inspirieren, deinem Kommando beizutreten. Es werden Bewerbungen von neuen Anwärtern eingehen, aus denen du neue Soldaten rekrutieren kannst. Und je mehr Soldaten du hast, desto besser kannst du die richtigen für einen Einsatz auswählen. Also vergiss nicht, regelmäßig auf Abenteuer zu gehen!
 #. fr: Il vous suffit de jeter un œil à la pile de candidatures pour voir si on vous a écrit. Et s'il n'y a rien de nouveau de ce côté-là, il existe un moyen simple de pousser les gens à le faire<nbsp>: poursuivre vos activités en Éorzéa. Vous voir en pleine action devrait encourager des personnes à postuler.
-# aeria-terms: {"enlistment papers":"38318133cd3e"}
+# aeria-terms: {"adventurer":"48df264ad5ec","enlistment papers":"38318133cd3e"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_000_251:1"
 msgid "Your own deeds as an adventurer should serve to attract new recruits─all you need to do is choose from the hopefuls who submit their enlistment papers."
-msgstr "Ваши подвиги искателя приключений привлекут новых бойцов. Останется только выбрать из тех, кто подаст заявление о вступлении."
+msgstr "Ваши подвиги <if $gn4>искательницы приключений<else>искателя приключений</if> привлекут новых бойцов. Останется только выбрать из тех, кто подаст заявление о вступлении."
 
 #. ja: 「攻略手帳」の項目を達成していくことで、<br>まれに「志願兵」が現れることがあります。
 #. de: Manchmal, wenn du bestimmte Aufgaben der Aktuellen Agenda absolvierst, inspirierst du NPCs dazu, sich für dein Kommando zu bewerben.
@@ -1326,10 +1327,10 @@ msgstr "Для начала нужно увеличить численность
 #. ja: <split " " 1><string $gs1></split>小隊長殿が、冒険者として活躍すれば、<br>その姿を見た者たちが「志願兵」として現れることでしょう。<br>その中から、新たな小隊員を選ぶのです！
 #. de: Wenn du dich als <if $gn4>Abenteurerin<else>Abenteurer</if> hervortust, wirst du andere dazu inspirieren, deinem Kommando beizutreten. Es werden Bewerbungen von neuen Anwärtern eingehen, aus denen du neue Soldaten rekrutieren kannst. Und je mehr Soldaten du hast, desto besser kannst du die richtigen für einen Einsatz auswählen. Also vergiss nicht, regelmäßig auf Abenteuer zu gehen!
 #. fr: Plus vous serez acti<if $gn4>ve<else>f</if> en Éorzéa, plus les gens vous verront à l'œuvre. Ça donnera sans doute envie à certains de rejoindre votre escouade. Le choix sera cer<shy>tai<shy>ne<shy>ment difficile, mais je suis sûr que vous trouverez votre bonheur<nbsp>!
-# aeria-terms: {"enlistment papers":"38318133cd3e"}
+# aeria-terms: {"adventurer":"48df264ad5ec","enlistment papers":"38318133cd3e"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_100_137:1"
 msgid "Your own deeds as an adventurer should serve to attract new recruits. All you need to do is choose from the hopefuls who submit their enlistment papers."
-msgstr "Ваши подвиги искателя приключений должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подаст заявление о вступлении."
+msgstr "Ваши подвиги <if $gn4>искательницы приключений<else>искателя приключений</if> должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подаст заявление о вступлении."
 
 #. ja: いよいよ、初の「小隊任務」ですね！<br>通常は、いくつかの任務から派遣すべきものを、<br>小隊長殿に選んでいただくのですが……。
 #. de: Es geht also los! Dein erster Einsatz!
@@ -1513,7 +1514,7 @@ msgstr "Нам пришло послание от <if ($gn52 > 0)>Штаба В�
 #. macro: <if ($gn53 > 0)>first serpent lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>first flame lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_100_197:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>first storm lieutenant</if><if ($gn53 > 0)>first serpent lieutenant</if><if ($gn54 > 0)>first flame lieutenant</if>. Effective immediately.</i>"
 msgstr "<i>За выдающиеся заслуги в развитии эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим повышается в звании до <if ($gn52 > 0)>первого младшего офицера Водоворота</if><if ($gn53 > 0)>первого младшего офицера ордена Двух Змей</if><if ($gn54 > 0)>первого младшего офицера Бессмертных</if>. Вступает в силу немедленно.</i>"
@@ -1551,6 +1552,7 @@ msgstr "Нам пришло послание из <if ($gn52 > 0)>Штаба В�
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_100_331:1"
 msgid "<i>For ongoing excellence in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>'s squadron is hereby granted authorization to undertake command missions. Effective immediately.</i>"
 msgstr "<i>За выдающиеся заслуги в развитии эскадрилий искателей приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим получает разрешение командовать эскадрильей в боевых операциях. Вступает в силу немедленно.</i>"
@@ -1613,7 +1615,7 @@ msgstr "Нам пришло послание от <if ($gn52 > 0)>Штаба В�
 #. macro: <if ($gn53 > 0)>first serpent lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>first flame lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_100_222:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>first storm lieutenant</if><if ($gn53 > 0)>first serpent lieutenant</if><if ($gn54 > 0)>first flame lieutenant</if>. Effective immediately.</i>"
 msgstr "<i>За выдающиеся заслуги в развитии эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим повышается в звании до <if ($gn52 > 0)>первого младшего офицера Водоворота</if><if ($gn53 > 0)>первого младшего офицера ордена Двух Змей</if><if ($gn54 > 0)>первого младшего офицера Бессмертных</if>. Вступает в силу немедленно.</i>"
@@ -1653,10 +1655,10 @@ msgstr "У нас уже есть трое отличных новобранце
 #. ja: <split " " 1><string $gs1></split>小隊長殿が、冒険者として活躍すれば、<br>その姿を見た者たちが「志願兵」として現れることでしょう。<br>その中から、新たな小隊員を選ぶのです！
 #. de: Wenn du dich als <if $gn4>Abenteurerin<else>Abenteurer</if> hervortust, wirst du andere dazu inspirieren, deinem Kommando beizutreten. Es werden Bewerbungen von neuen Anwärtern eingehen, aus denen du neue Soldaten rekrutieren kannst. Und je mehr Soldaten du hast, desto besser kannst du die richtigen für einen Einsatz auswählen. Also vergiss nicht, regelmäßig auf Abenteuer zu gehen!
 #. fr: Il vous suffit de jeter un œil à la pile de candidatures pour voir si on vous a écrit. Et s'il n'y a rien de nouveau de ce côté-là, il existe un moyen simple de pousser les gens à le faire<nbsp>: poursuivre vos activités en Éorzéa. Vous voir en pleine action devrait encourager des personnes à postuler.
-# aeria-terms: {"enlistment papers":"38318133cd3e"}
+# aeria-terms: {"adventurer":"48df264ad5ec","enlistment papers":"38318133cd3e"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_100_251:1"
 msgid "Your own deeds as an adventurer should serve to attract new recruits─all you need to do is choose from the hopefuls who submit their enlistment papers."
-msgstr "Ваши подвиги искателя приключений должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подаст заявление о вступлении."
+msgstr "Ваши подвиги <if $gn4>искательницы приключений<else>искателя приключений</if> должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подаст заявление о вступлении."
 
 #. ja: 「訓練」とは、我が小隊の「小隊総合能力」を鍛えるもの。<br>個人の成長も促せますが、基本は小隊そのものの強さに影響します。
 #. de: Lass dein Kommando eine Ausbildung absolvieren, um die individuellen Fä<shy>hig<shy>kei<shy>ten der Soldaten zu verbessern und die Schlagkraft des ganzen Kommandos zu erhöhen.
@@ -1730,10 +1732,10 @@ msgstr "Для начала нужно увеличить численность
 #. ja: <split " " 1><string $gs1></split>小隊長殿が、冒険者として活躍すれば、<br>その姿を見た者たちが「志願兵」として現れることでしょう。<br>その中から、新たな小隊員を選ぶのです！
 #. de: Wenn du dich als <if $gn4>Abenteurerin<else>Abenteurer</if> hervortust, wirst du andere dazu inspirieren, deinem Kommando beizutreten. Es werden Bewerbungen von neuen Anwärtern eingehen, aus denen du neue Soldaten rekrutieren kannst. Und je mehr Soldaten du hast, desto besser kannst du die richtigen für einen Einsatz auswählen. Also vergiss nicht, regelmäßig auf Abenteuer zu gehen!
 #. fr: Plus vous serez acti<if $gn4>ve<else>f</if> en Éorzéa, plus les gens vous verront à l'œuvre. Ça donnera sans doute envie à certains de rejoindre votre escouade. Le choix sera cer<shy>tai<shy>ne<shy>ment difficile, mais je suis sûr que vous trouverez votre bonheur<nbsp>!
-# aeria-terms: {"enlistment papers":"38318133cd3e"}
+# aeria-terms: {"adventurer":"48df264ad5ec","enlistment papers":"38318133cd3e"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_200_137:1"
 msgid "Your own deeds as an adventurer should serve to attract new recruits. All you need to do is choose from the hopefuls who submit their enlistment papers."
-msgstr "Ваши подвиги искателя приключений должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подаст заявление о вступлении."
+msgstr "Ваши подвиги <if $gn4>искательницы приключений<else>искателя приключений</if> должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подаст заявление о вступлении."
 
 #. ja: いよいよ、初の「小隊任務」ですね！<br>通常は、いくつかの任務から派遣すべきものを、<br>小隊長殿に選んでいただくのですが……。
 #. de: Es geht also los! Dein erster Einsatz!
@@ -1917,7 +1919,7 @@ msgstr "Нам пришло послание от <if ($gn52 > 0)>Штаба В�
 #. macro: <if ($gn53 > 0)>first serpent lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>first flame lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_200_197:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>first storm lieutenant</if><if ($gn53 > 0)>first serpent lieutenant</if><if ($gn54 > 0)>first flame lieutenant</if>. Effective immediately.</i>"
 msgstr "<i>За выдающиеся заслуги в деле развития эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим производится в звание <if ($gn52 > 0)>первого младшего офицера Водоворота</if><if ($gn53 > 0)>первого младшего офицера ордена Двух Змей</if><if ($gn54 > 0)>первого младшего офицера Бессмертных</if>. Приказ вступает в силу немедленно.</i>"
@@ -1955,6 +1957,7 @@ msgstr "Нам пришло послание от <if ($gn52 > 0)>Штаба В�
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_200_331:1"
 msgid "<i>For ongoing excellence in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>'s squadron is hereby granted authorization to undertake command missions. Effective immediately.</i>"
 msgstr "<i>За неизменные успехи в деле развития эскадронов искателя приключений эскадрон <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим получает разрешение выполнять особые задания под командованием своего командира. Приказ вступает в силу немедленно.</i>"
@@ -2017,7 +2020,7 @@ msgstr "Нам пришло послание от <if ($gn52 > 0)>Штаба В�
 #. macro: <if ($gn53 > 0)>first serpent lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>first flame lieutenant</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame lieutenant":"7cb8bb1d898e","serpent lieutenant":"7118435d6b91","storm lieutenant":"ce5750a0d1f9"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_200_222:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>first storm lieutenant</if><if ($gn53 > 0)>first serpent lieutenant</if><if ($gn54 > 0)>first flame lieutenant</if>. Effective immediately.</i>"
 msgstr "<i>За выдающиеся заслуги в деле развития эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим производится в звание <if ($gn52 > 0)>первого младшего офицера Водоворота</if><if ($gn53 > 0)>первого младшего офицера ордена Двух Змей</if><if ($gn54 > 0)>первого младшего офицера Бессмертных</if>. Приказ вступает в силу немедленно.</i>"
@@ -2057,10 +2060,10 @@ msgstr "У нас есть три бойца, готовых вступить в
 #. ja: <split " " 1><string $gs1></split>小隊長殿が、冒険者として活躍すれば、<br>その姿を見た者たちが「志願兵」として現れることでしょう。<br>その中から、新たな小隊員を選ぶのです！
 #. de: Wenn du dich als <if $gn4>Abenteurerin<else>Abenteurer</if> hervortust, wirst du andere dazu inspirieren, deinem Kommando beizutreten. Es werden Bewerbungen von neuen Anwärtern eingehen, aus denen du neue Soldaten rekrutieren kannst. Und je mehr Soldaten du hast, desto besser kannst du die richtigen für einen Einsatz auswählen. Also vergiss nicht, regelmäßig auf Abenteuer zu gehen!
 #. fr: Il vous suffit de jeter un œil à la pile de candidatures pour voir si on vous a écrit. Et s'il n'y a rien de nouveau de ce côté-là, il existe un moyen simple de pousser les gens à le faire<nbsp>: poursuivre vos activités en Éorzéa. Vous voir en pleine action devrait encourager des personnes à postuler.
-# aeria-terms: {"enlistment papers":"38318133cd3e"}
+# aeria-terms: {"adventurer":"48df264ad5ec","enlistment papers":"38318133cd3e"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_PLATOONINSTRUCTOR_200_251:1"
 msgid "Your own deeds as an adventurer should serve to attract new recruits─all you need to do is choose from the hopefuls who submit their enlistment papers."
-msgstr "Ваши подвиги искателя приключений должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подал заявление о вступлении."
+msgstr "Ваши подвиги <if $gn4>искательницы приключений<else>искателя приключений</if> должны привлечь новых бойцов. Вам останется лишь выбрать из тех, кто подал заявление о вступлении."
 
 #. ja: 「訓練」とは、我が小隊の「小隊総合能力」を鍛えるもの。<br>個人の成長も促せますが、基本は小隊そのものの強さに影響します。
 #. de: Lass dein Kommando eine Ausbildung absolvieren, um die individuellen Fä<shy>hig<shy>kei<shy>ten der Soldaten zu verbessern und die Schlagkraft des ganzen Kommandos zu erhöhen.
@@ -2178,7 +2181,7 @@ msgstr "Маршал Двух Змей Брукстоун! Чем обязаны
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_SWETHRYKBROOKSTONE_000_414:1"
 msgid "I heard word the lieutenant had just returned from <if $gn4>her<else>his</if> mission, and I wished to speak with our decorated hero in person."
-msgstr "Я услышал, что лейтенант только что вернулся<if $gn4>лась</if> с задания, и захотел лично поговорить с нашим героем<if $gn4>иней</if>."
+msgstr "Я услышал, что лейтенант только что <if $gn4>вернулась<else>вернулся</if> с задания, и захотел лично поговорить с <if $gn4>нашей героиней<else>нашим героем</if>."
 
 #. ja: 昨今の情勢が、極めて厳しいものであることは承知のとおりだ。<br>そんな状況だからこそ、君たちの小隊の活躍は、<br>多くの将兵にとって希望となっている。
 #. de: Wir leben in finsteren Zeiten, aber der Heldenmut, den du und deine Kommando<shy>soldaten an den Tag legen, ist ein Hoffnungs<shy>schimmer.
@@ -2211,7 +2214,7 @@ msgstr "Поэтому мы приняли решение отметить ва�
 #. macro: <if ($gn53 > 0)>serpent captain</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>flame captain</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame captain":"437622636c48","serpent captain":"378cc50533c5","storm captain":"4b34cb9d4a93"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame captain":"437622636c48","serpent captain":"378cc50533c5","storm captain":"4b34cb9d4a93"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_SWETHRYKBROOKSTONE_000_417:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>storm captain</if><if ($gn53 > 0)>serpent captain</if><if ($gn54 > 0)>flame captain</if>. May your deeds be guided by the will of the elementals.</i>"
 msgstr "<i>За выдающиеся заслуги в деле развития эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим производится в звание <if ($gn52 > 0)>капитана Мальстрёма</if><if ($gn53 > 0)>капитана Двух Змей</if><if ($gn54 > 0)>капитана Бессмертного пламени</if>. Да сопутствует вам воля элементалей!</i>"
@@ -2279,7 +2282,7 @@ msgstr "Маршал Буревестников Слафирсин! Чем об�
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_EYNZAHRSLAFYRSYN_100_414:1"
 msgid "I'd heard the lieutenant here had returned from <if $gn4>her<else>his</if> mission, and I wished to speak with <if $gn4>her<else>him</if> in person."
-msgstr "Я слышал, что лейтенант вернулся<if $gn4>лась</if> с задания, и хотел лично поговорить с ним<if $gn4>ней</if>."
+msgstr "Я слышал, что лейтенант <if $gn4>вернулась<else>вернулся</if> с задания, и хотел лично поговорить с <if $gn4>ней<else>ним</if>."
 
 #. ja: 昨今の情勢が、極めて厳しいってことは、わかっているだろう？<br>そんな状況だからな、お前たちの小隊の活躍は、<br>多くの連中にとっての希望になっているんだ。
 #. de: Wir leben in finsteren Zeiten, aber der Heldenmut, den du und deine Kommando<shy>soldaten an den Tag legen, ist ein Hoffnungs<shy>schimmer.
@@ -2313,7 +2316,7 @@ msgstr "Посоветовавшись с коллегами, мы решили,
 #. macro: <if ($gn53 > 0)>serpent captain</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>flame captain</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Maelstrom":"70ae9d937d2f","flame captain":"437622636c48","serpent captain":"378cc50533c5","storm captain":"4b34cb9d4a93"}
+# aeria-terms: {"Maelstrom":"70ae9d937d2f","adventurer":"48df264ad5ec","flame captain":"437622636c48","serpent captain":"378cc50533c5","storm captain":"4b34cb9d4a93"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_EYNZAHRSLAFYRSYN_100_417:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>storm captain</if><if ($gn53 > 0)>serpent captain</if><if ($gn54 > 0)>flame captain</if>. May your deeds see the Maelstrom through the rough seas ahead.</i>"
 msgstr "<i>За выдающиеся заслуги в деле развития эскадронов искателей приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> присваивается звание <if ($gn52 > 0)>капитана Мальстрёма</if><if ($gn53 > 0)>капитана Двух Змей</if><if ($gn54 > 0)>капитана Бессмертного пламени</if>. Пусть ваши подвиги помогут Водовороту пройти через грядущие бури.</i>"
@@ -2382,7 +2385,7 @@ msgstr "Маршал Бессмертного пламени Ривер! Чем 
 #. macro: <if $gn4>her<else>him</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_STILLRIVER_200_414:1"
 msgid "I'd heard the lieutenant here had returned from <if $gn4>her<else>his</if> mission, and wanted a word with <if $gn4>her<else>him</if> in person."
-msgstr "Я слышал, что лейтенант вернулся<if $gn4>лась</if> с задания, и захотел лично поговорить с ним<if $gn4>ней</if>."
+msgstr "Я слышал, что лейтенант <if $gn4>вернулась<else>вернулся</if> с задания, и захотел лично поговорить с <if $gn4>ней<else>ним</if>."
 
 #. ja: 昨今の情勢が、極めて厳しいものであることは承知のとおり。<br>そんな状況だからこそ、君たちの小隊の活躍は、<br>多くの将兵にとって希望となっています。
 #. de: Wir leben in finsteren Zeiten, doch euer Heldenmut ist ein Hoffnungs<shy>schimmer.
@@ -2416,7 +2419,7 @@ msgstr "Я обсудил это с коллегами из Зала Пламе�
 #. macro: <if ($gn53 > 0)>serpent captain</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn54 > 0)>flame captain</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"flame captain":"437622636c48","serpent captain":"378cc50533c5","storm captain":"4b34cb9d4a93"}
+# aeria-terms: {"adventurer":"48df264ad5ec","flame captain":"437622636c48","serpent captain":"378cc50533c5","storm captain":"4b34cb9d4a93"}
 msgctxt "custom/003/ComArmGcArmyOfficer_00342:TEXT_COMARMGCARMYOFFICER_00342_STILLRIVER_200_417:1"
 msgid "<i>For outstanding efforts in the Adventurer Squadron initiative, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> is hereby promoted to <if ($gn52 > 0)>storm captain</if><if ($gn53 > 0)>serpent captain</if><if ($gn54 > 0)>flame captain</if>. May your fire burn ever bright and steady.</i>"
 msgstr "<i>За выдающиеся заслуги в деле развития эскадронов искателя приключений <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split> настоящим производится в звание <if ($gn52 > 0)>капитана Мальстрёма</if><if ($gn53 > 0)>капитана Двух Змей</if><if ($gn54 > 0)>капитана Бессмертного пламени</if>. Пусть ваш огонь горит ярко и ровно!</i>"

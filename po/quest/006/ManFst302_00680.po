@@ -221,16 +221,17 @@ msgstr "Меня зовут <string $gs1>. Кажется, меня здесь �
 #. speaker: A2
 msgctxt "quest/006/ManFst302_00680:TEXT_MANFST302_00680_A2_000_2:1"
 msgid "I am here to enlist, if you will have me."
-msgstr "Я пришёл вступить в Орден, если вы меня примете."
+msgstr "Я <if $gn4>пришла<else>пришёл</if> вступить в Орден, если вы меня примете."
 
 #. ja: あなたが、<split " " 2><string $gs1></split>さんでしたか！<br>既に連絡は受けておりますよ。<br>「双蛇党」に迎え入れることができ嬉しく思います！
 #. de: Ah, du bist <string $gs1>! Sehr erfreut! Uns wurde berichtet, dass du der Bruderschaft beitreten möchtest.
 #. fr: Oh, mais vous êtes <string $gs1><nbsp>! On m'a prévenu de votre venue. Sachez que nous sommes ravis et honorés de vous accueillir dans nos rangs.
 #. speaker: SERPENTPERSONNEL
 #. macro: <if $gn4>herself<else>himself</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst302_00680:TEXT_MANFST302_00680_SERPENTPERSONNEL_000_21:1"
 msgid "Ah, the great adventurer <if $gn4>herself<else>himself</if>! Yes, our recruitment officer sent word that you were on your way. It is a pleasure and an honor both to welcome you to our ranks, friend."
-msgstr "Так это же сам прославленный искатель приключений <if $gn4>собственной персоной<else>собственной персоной</if>! Да, вербовщик предупредил, что вы придёте. Для меня большая честь приветствовать вас в наших рядах, друг мой."
+msgstr "Так это же <if $gn4>сама прославленная искательница приключений<else>сам прославленный искатель приключений</if>! Да, вербовщик предупредил, что вы придёте. Для меня большая честь приветствовать вас в наших рядах, <if $gn4>подруга моя<else>друг мой</if>."
 
 #. ja: ようこそ「双蛇党」へ！<br><split " " 2><string $gs1></split>さんですね！<br>既に連絡は受けておりますよ。
 #. de: Nichts lieber als das! <string $gs1>, richtig? Dein Beitrittsgesuch wurde uns bereits übermittelt.
@@ -390,7 +391,7 @@ msgstr "Спокойно, друг, мы не причиним вам вреда
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/006/ManFst302_00680:TEXT_MANFST302_00680_SERPENTLIEUTENANT_000_43:1"
 msgid "And you are <string $gs1>, I presume. I was told to expect an “honorary” Serpent. My thanks for your aid, friend."
-msgstr "А вы, должно быть, <string $gs1>. Мне сказали ждать «почётного» Змея. Спасибо за помощь, друг."
+msgstr "А вы, должно быть, <string $gs1>. Мне сказали ждать «почётного» Змея. Спасибо за помощь, <if $gn4>подруга<else>друг</if>."
 
 #. ja: いつのまに、このような新型の飛空艇を……。<br>シド・ナン・ガーロンドめ、<br>どこまで帝国に仇するつもりだ。
 #. de: Seit wann seid ihr Würmer in der Lage, solche modernen Luftschiffe zu bauen? Das ist wohl wieder eines von Cid Garlonds Spielzeugen, mit denen er sein Vaterland necken will.
@@ -637,7 +638,7 @@ msgstr "Мне только что сообщили из Девяти плюще
 # aeria-terms: {"Biggs":"871575e8cf77","Garlean":"10a4f7e7e06a"}
 msgctxt "quest/006/ManFst302_00680:TEXT_MANFST302_00680_SERPENTPERSONNEL_000_82:1"
 msgid "The lieutenant informs me that you were instrumental in the mission's success. Had you not found Engineer Biggs when you did, and helped us to rout the Garleans, things might have been very different."
-msgstr "Лейтенант говорит, что именно благодаря вам задание увенчалось успехом. Если бы вы вовремя не нашли инженера Биггса и не помогли нам одолеть гарлеанцев, всё могло бы закончиться совсем иначе."
+msgstr "Лейтенант говорит, что именно благодаря вам задание увенчалось успехом. Если бы вы вовремя не нашли инженера Биггсa и не помогли нам одолеть гарлеанцев, всё могло бы закончиться совсем иначе."
 
 #. ja: それにしても、噂以上の逸材である様子。<br>我々「双蛇党」に志願してくれたことを、<br>本当に嬉しく思います。
 #. de: Ach ja, <string $gs1>, was hätten wir nur ohne dich gemacht? Ich bin heilfroh, dass du dich für die Bruderschaft der Morgenviper entschieden hast.

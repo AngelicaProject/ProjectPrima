@@ -13,7 +13,7 @@ msgstr ""
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/004/RegHin3WanderingMinstrel_00421:TEXT_REGHIN3WANDERINGMINSTREL_00421_MINSTREL_GREETING_000:1"
 msgid "Ah, something heroic this way comes! How fare you, <split \" \" 1><string $gs1></split>? As ever, I am seeking inspiration to draw upon for my work. If you have any new experiences to share, I should very much like to hear them."
-msgstr "О, да это же сам герой пожаловал! Как поживаете, <split \" \" 1><string $gs1></split>? Я всё ищу вдохновение для своих произведений. Если у вас найдутся новые истории, буду очень рад их услышать."
+msgstr "О, да это же <if $gn4>сама героиня пожаловала<else>сам герой пожаловал</if>! Как поживаете, <split \" \" 1><string $gs1></split>? Я всё ищу вдохновение для своих произведений. Если у вас найдутся новые истории, буду очень рад их услышать."
 
 #. ja: 「<if ($n1 == 20047)>豪神スサノオ<else><if ($n1 == 20049)>美神ラクシュミ<else><if ($n1 == 20050)>神龍<else><if ($n1 == 30057)>龍神バハムート<else><if ($n1 == 30067)>アルテマウェポン<else><if ($n1 == 20052)>白虎<else><if ($n1 == 20056)>夜神ツクヨミ<else><if ($n1 == 20058)>朱雀<else><if ($n1 == 20061)>青龍<else><if ($n1 == 30086)>アレキサンダー</if></if></if></if></if></if></if></if></if></if>」の話をする
 #. de: Vom Kampf gegen <if ($n1 == 20047)>Susano<else><if ($n1 == 20049)>Lakshmi<else><if ($n1 == 20050)>Shinryu<else><if ($n1 == 30057)>Bahamut<else><if ($n1 == 30067)>die Ultima-Waffe<else><if ($n1 == 20052)>Byakko<else><if ($n1 == 20056)>Tsukuyomi<else><if ($n1 == 20058)>Suzaku<else><if ($n1 == 20061)>Seiryu<else><if ($n1 == 30086)>Alexander</if></if></if></if></if></if></if></if></if></if> erzählen
@@ -146,7 +146,7 @@ msgstr "Схватка с легендарным ками... Слова сами
 # aeria-terms: {"Lord of the Revel":"89d188d0ba1f","Susano":"2410b18c61cf"}
 msgctxt "custom/004/RegHin3WanderingMinstrel_00421:TEXT_REGHIN3WANDERINGMINSTREL_00421_WANDERINGMINSTREL_000_022:1"
 msgid "As this song is about you, however, 'tis only meet that you are the first to hear it. Lend your ears, then, to the tale of your furious encounter with Susano, the Lord of the Revel!"
-msgstr "Но раз эта песнь о вас, справедливо, чтобы первым её услышали именно вы. Внимайте же рассказу о вашей яростной схватке с Сусано, Повелителем веселья!"
+msgstr "Но раз эта песнь о вас, справедливо, чтобы <if $gn4>первой<else>первым</if> её услышали именно вы. Внимайте же рассказу о вашей яростной схватке с Сусано, Повелителем веселья!"
 
 #. ja: 『東の海に　伝わる神器　三種そろいて　神とならん<br>　豪の神は　神剣掲げ　心躍らせ　海をも割らん』
 #. de: <i>♪ Wenn dreifacher Schatz sich vereinet ♪</i><br><i>♪ Und unbändiger Gott erscheinet ♪</i><br><i>♪ Wird das Meer des Ostens gespalten ♪</i><br><i>♪ Von der Klinge des Gottes Gewalt. ♪</i>
@@ -163,7 +163,7 @@ msgstr "На восточных морях три сокровища слили�
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "custom/004/RegHin3WanderingMinstrel_00421:TEXT_REGHIN3WANDERINGMINSTREL_00421_WANDERINGMINSTREL_000_024:1"
 msgid "From western lands, a challenger comes─a hero from afar,♪<br>Whose radiant blade sets souls ablaze and outshines the very stars.♪"
-msgstr "Из дальних западных земель пришёл герой на бой,♪<br>Чей светлый меч зажёг сердца и звёзды заслонил собой.♪"
+msgstr "Из дальних западных земель <if $gn4>пришла героиня<else>пришёл герой</if> на бой,♪<br><if $gn4>Чья<else>Чей</if> светлый меч зажёг сердца и звёзды заслонил собой.♪"
 
 #. ja: さて、スサノオの豪胆さ、荒々しさは表現できていたかな？<br>僕なりの想像を以って、脚色を加えてみたのだが……。<br>よければ、君も、当時の激戦を振り返ってみてくれたまえ。
 #. de: Habe ich die Wildheit des Kojin-Gottes glaubhaft wiedergegeben? Versetz dich noch einmal zurück in deinen Kampf gegen ihn<nbsp>... Nun?
@@ -241,7 +241,7 @@ msgstr "Два человека искали силу, но каждый по с
 #. fr: Mon ami<if $gn4>e</if>, j'imagine que vos aventures n'en sont pas encore à leur conclusion, et que vous allez poursuivre vos pérégrinations. Dans ce cas, j'espère que vous viendrez me conter le récit de vos futurs exploits.
 msgctxt "custom/004/RegHin3WanderingMinstrel_00421:TEXT_REGHIN3WANDERINGMINSTREL_00421_WANDERINGMINSTREL_000_036:1"
 msgid "Now, you, my friend─you will continue your fight, will you not? I pray that you will again regale me with such accounts of your experiences."
-msgstr "А вы, друг мой, продолжите сражаться, не так ли? Надеюсь, однажды вы снова расскажете мне о своих приключениях."
+msgstr "А вы, <if $gn4>подруга моя<else>друг мой</if>, продолжите сражаться, не так ли? Надеюсь, однажды вы снова расскажете мне о своих приключениях."
 
 #. ja: 英雄譚の陰に潜む、悲しき真実……<br>それを後世に伝えるため、僕も詠い続けていきたいんだ。
 #. de: Den Moment des Triumphes, aber auch die schweren Stunden der Prüfung, die unweigerlich davor liegen. Ich verspreche dir, solange du dich dem Bösen entgegenstellst, werde auch ich deine Balladen singen!
@@ -437,7 +437,7 @@ msgstr "А, оружие «Ультима». Сколько лун прошло 
 # aeria-terms: {"Eorzea":"4e5e8c295294"}
 msgctxt "custom/004/RegHin3WanderingMinstrel_00421:TEXT_REGHIN3WANDERINGMINSTREL_00421_WANDERINGMINSTREL_000_071:1"
 msgid "One might say that your victory set in motion events that reshaped the world in countless ways great and small. Given this, I would fain hear the firsthand account of the savior of Eorzea, and see what details are become more vivid in retrospect."
-msgstr "Можно сказать, ваша победа запустила события, что изменили мир — и в большом, и в малом. Потому мне хотелось бы услышать рассказ из первых уст, от спасителя Эорзеи, и взглянуть, какие подробности теперь вспоминаются ярче."
+msgstr "Можно сказать, ваша победа запустила события, что изменили мир — и в большом, и в малом. Потому мне хотелось бы услышать рассказ из первых уст, от <if $gn4>спасительницы<else>спасителя</if> Эорзеи, и взглянуть, какие подробности теперь вспоминаются ярче."
 
 #. ja: ……やはり『究極幻想』と謳われた兵器との激戦は、<br>聞くだけで心が震えるね。<br>貴重な話を、聞かせてくれてありがとう。
 #. de: Wahrlich ein Kampf, der das Prädikat <i>ultimativ</i> verdient! Ich zittere noch jetzt vor Aufregung!
@@ -839,7 +839,7 @@ msgstr "Но в кромешной тьме забрезжил луч надеж
 # aeria-terms: {"Alexander":"67908d1e9487"}
 msgctxt "custom/004/RegHin3WanderingMinstrel_00421:TEXT_REGHIN3WANDERINGMINSTREL_00421_WANDERINGMINSTREL_000_137:1"
 msgid "...Why, yes. That should serve most nicely. Much as the Alexander you did battle with spread wide the wings of time, I too have taken flight on the wings of imagination to spin a tale based upon your exploits in the far reaches of the West, with inspiration taken from the time-honored legends of our friends in the East."
-msgstr "...Да, пожалуй, выйдет как нельзя лучше. Александр, с которым ты сражался, расправил крылья времени, а я взлетел на крыльях воображения и сочинил историю по мотивам твоих подвигов на далёком западе, вдохновившись древними преданиями наших восточных друзей."
+msgstr "...Да, пожалуй, выйдет как нельзя лучше. Александр, с которым ты <if $gn4>сражалась<else>сражался</if>, расправил крылья времени, а я взлетел на крыльях воображения и сочинил историю по мотивам твоих подвигов на далёком западе, вдохновившись древними преданиями наших восточных друзей."
 
 #. ja: つまりこれは恋人たちの物語であり、<br>機械の神が、ただひとりの「人」に希望を託す物語でもある。<br>どうだい、気に入ってくれたかな？
 #. de: Im Kern ist das alles eine unglaublich romantische Liebesgeschichte. Der mechanische Gott legt seine ganze Hoffnung, sein Schicksal und das Schicksal der Welt in die Hände einer einzigen, besonderen Person.

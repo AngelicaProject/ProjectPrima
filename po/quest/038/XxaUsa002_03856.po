@@ -84,16 +84,16 @@ msgstr "Чтобы принять это задание, вам нужно от�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/038/XxaUsa002_03856:TEXT_XXAUSA002_03856_VORSAILE_000_000:1"
 msgid "Well! If it isn't <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, reporting for duty. That's the zeal I like to see from an enterprising young Serpent."
-msgstr "А вот и <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, готовый служить. Вот это рвение! Так держать, молодой служитель Ордена Двух Змей."
+msgstr "А вот и <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split>, <if $gn4>готовая<else>готовый</if> служить. Вот это рвение! Так держать, молодой служитель Ордена Двух Змей."
 
 #. ja: ここは、グランドカンパニー「双蛇党」の統合司令部だがね。<br>入党志願かな？　冒険者くん。
 #. de: Sei gegrüßt, Abenteurer<if $gn4>in</if>. Bist du gewillt, dein Schicksal mit dem der Bruderschaft zu verflechten?
 #. fr: Vous êtes au quartier général de l'ordre des Deux Vipères. Souhaitez-vous vous enrôler<nbsp>?
 #. speaker: VORSAILE
-# aeria-terms: {"Adders' Nest":"fd8be7fb5386"}
+# aeria-terms: {"Adders' Nest":"fd8be7fb5386","adventurer":"48df264ad5ec"}
 msgctxt "quest/038/XxaUsa002_03856:TEXT_XXAUSA002_03856_VORSAILE_000_001:1"
 msgid "Hail, adventurer. I bid you welcome to the Adders' Nest. Do you seek to entwine your destiny with the Twin Adder?"
-msgstr "Приветствую, искатель приключений. Добро пожаловать в Змеиное гнездо. Хотите связать свою судьбу с Орденом Двух Змей?"
+msgstr "Приветствую, <if $gn4>искательница приключений<else>искатель приключений</if>. Добро пожаловать в Змеиное гнездо. Хотите связать свою судьбу с Орденом Двух Змей?"
 
 #. ja: やっほー！<br>ざんねんだけど、今日は別件だよ。
 #. de: Guten <if ($gn11 < 12)><if ($gn11 < 4)>Abend<else>Morgen</if><else><if ($gn11 < 17)>Tag<else>Abend</if></if>, Kommandant. Wir würden Euch <split " " 1><string $gs1></split> ja gerne für die Aufgaben der Bruderschaft überlassen, aber leider führt uns heute eine andere Angelegenheit her.

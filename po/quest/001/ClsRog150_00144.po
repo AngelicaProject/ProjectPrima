@@ -195,7 +195,7 @@ msgstr "Мы расспросили беднягу и выяснили, что �
 # aeria-terms: {"Guardhouse":"426ab59d9c42"}
 msgctxt "quest/001/ClsRog150_00144:TEXT_CLSROG150_00144_CLIENT00144_000_006:1"
 msgid "We dispatched a patrol to confirm the tale, and found the village almost completely destroyed. 'Twas a meager settlement without so much as a guardhouse─thus did its unkind fate escape our notice until now..."
-msgstr "Мы отправили туда дозорных проверить его рассказ и обнаружили почти полностью разрушенную деревню. Жалкое поселение, даже без караульни, — вот почему мы ничего не знали о его печальной участи..."
+msgstr "Мы отправили туда дозорных проверить его рассказ и обнаружили почти полностью разрушенную деревню. Жалкое поселение, даже без караульни, — вот почему мы ничего не знали о её печальной участи..."
 
 #. ja: 海賊による奴隷売買……酷い話ですね……。<br>それに、犯人の海賊は、複数の「掟」を破っている……。
 #. de: Man könnte meinen, diese Piraten hätten noch nie etwas von dem Kodex gehört.
@@ -316,7 +316,7 @@ msgstr "Под ногами, В'кеббе. Вы двое помогите Во�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/001/ClsRog150_00144:TEXT_CLSROG150_00144_JACKE_000_020:1"
 msgid "<split \" \" 1><string $gs1></split>, yer comin' with me. I think yer ready for the next step of yer education."
-msgstr "<split \" \" 1><string $gs1></split>, ты идёшь со мной. Думаю, ты готова к следующему этапу обучения."
+msgstr "<split \" \" 1><string $gs1></split>, ты идёшь со мной. Думаю, ты <if $gn4>готова<else>готов</if> к следующему этапу обучения."
 
 #. ja: 禁忌とされる掟を平気で破る「クフサド商船団」は、<br>必ずシメないといけませんね。
 #. de: Diese Schädelpiraten werden nichts mehr zu lachen haben, wenn ich sie erst mal am Schlafittchen packe.
@@ -459,7 +459,7 @@ msgstr "Будь я работорговцем и направлялся на ю
 # aeria-terms: {"Jacke":"47e6b853c219"}
 msgctxt "quest/001/ClsRog150_00144:TEXT_CLSROG150_00144_SWARSYNT_000_075:1"
 msgid "You said Jacke was on his way, yes? You'd best go on ahead, and I'll point him in the right direction when he gets here."
-msgstr "Ты говорил, Джек уже в пути, верно? Тогда отправляйся вперёд, а я укажу ему дорогу, когда он прибудет."
+msgstr "<if $gn4>Ты говорила<else>Ты говорил</if>, Джек уже в пути, верно? Тогда отправляйся вперёд, а я укажу ему дорогу, когда он прибудет."
 
 #. ja: 船が隠れて接岸するとしたら、港よりも浜を選ぶはず。<br>奴らを取り逃がさんように見張っておくんだ……！<br>ジャックが来たら、そこで合流するよう伝えておく。
 #. de: Suche die Küste entlang des Salzstrandes ab und finde diese Sklavenhändler. Jack sollte bald hier eintreffen, dann schicke ich ihn dir sofort hinterher.
@@ -812,7 +812,7 @@ msgstr "Я только что прочёл отчёт: вы не только �
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/001/ClsRog150_00144:TEXT_CLSROG150_00144_JACKE_000_140:1"
 msgid "Not a bad night's work, eh, <split \" \" 1><string $gs1></split>?"
-msgstr "Ну что, неплохо поработала, <split \" \" 1><string $gs1></split>?"
+msgstr "Ну что, <if $gn4>неплохо поработала<else>неплохо поработал</if>, <split \" \" 1><string $gs1></split>?"
 
 #. ja: たった今、拐われた貧民の引き渡しがすんだ。<br>「クフサド商船団」の海賊も、きっちり始末をつけたところだ。
 #. de: Der Mahlstrom wird sich um die armen Leute, die wir befreit haben, kümmern und ich habe sichergestellt, dass keiner der Piraten, die wir erledigt haben, wieder auf die Beine kommt.
@@ -840,7 +840,7 @@ msgstr "А что до <i>«Весёлого купца»</i>, его коман
 #. macro: <if $gn4>lass<else>lad</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/001/ClsRog150_00144:TEXT_CLSROG150_00144_JACKE_000_143:1"
 msgid "Right, me natty <if $gn4>lass<else>lad</if>! Our part in this is done! Time to head back to the Sisters."
-msgstr "Ну что, моя бойкая <if $gn4>девчонка<else>парень</if>! Мы своё дело сделали. Пора возвращаться в Гильдию разбойников."
+msgstr "Ну что, <if $gn4>моя бойкая девчонка<else>мой бойкий парень</if>! Мы своё дело сделали. Пора возвращаться в Гильдию разбойников."
 
 #. ja: あ、あの……！<br>私たちを助けてくださった方、ですよね……？
 #. de: Entschuldigung ... Seid ihr diejenigen, die uns befreit haben?
@@ -960,7 +960,7 @@ msgstr "На открытой местности часто приходится
 #. macro: <if $gn4>lass<else>lad</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/001/ClsRog150_00144:TEXT_CLSROG150_00144_JACKE_000_157:1"
 msgid "An' I'm sure a canny <if $gn4>lass<else>lad</if> like yerself'll figure all sorts o' uses for a well-thrown dagger. Just keep it in mind for when we hunt down the rest o' them slavers!"
-msgstr "Уверен, такая сообразительная <if $gn4>девчонка<else>парень</if>, как ты, придумает кинжалу много применений. Пригодится, когда будем выслеживать остальных работорговцев!"
+msgstr "Уверен, <if $gn4>такая сообразительная девчонка<else>такой сообразительный парень</if>, как ты, придумает кинжалу много применений. Пригодится, когда будем выслеживать остальных работорговцев!"
 
 #. ja: クフサド商船団の海賊を倒し、貧民を解放しろ！
 #. de: Besiege die Schädelpiraten und befreie die Gefangenen!
@@ -997,7 +997,7 @@ msgstr "Цели за этими дверями.<br>Не попадитесь Ж
 #. macro: <br> — a line break (may be added or dropped)
 msgctxt "quest/001/ClsRog150_00144:TEXT_CLSROG150_00144_JACKE_BATTLETALK_05:1"
 msgid "That looks to be the last of 'em.<br>An' ye didn't even need my help!"
-msgstr "Похоже, это был последний.<br>И ты даже без моей помощи справилась!"
+msgstr "Похоже, это был последний.<br>И ты даже без моей помощи <if $gn4>справилась<else>справился</if>!"
 
 #. ja: それじゃ、ずらかるか……。
 #. de: Zurück in die Schatten, <if $gn4>Mädel<else>Junge</if> ...

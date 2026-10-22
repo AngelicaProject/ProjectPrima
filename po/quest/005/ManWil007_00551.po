@@ -28,7 +28,7 @@ msgstr "Взяв с вас слово хранить тайну, Момоди р
 #. de: Owyne bestätigt, dass es sich um eine Lösegeldforderung handelt. Der schuldbewusste Palastwächter sieht keinen anderen Weg, als die Bedingungen der Diebe zu erfüllen, und will deshalb zum Unheiligen Erben in Zentral-Thanalan reisen, um ihnen dort zu übergeben, was sie fordern. Warte am Unheiligen Erben auf Owyne und sorg dafür, dass alles gut über die Bühne geht.
 #. fr: Owyne vous a expliqué que la missive provenait bien des brigands. Ils seraient prêts à rendre la couronne sous certaines conditions. Désireux de blanchir son nom, il a décidé de rencontrer les criminels au Damné, dans le Thanalan central, et vous a demandé de le rejoindre là-bas au cas où l'échange tournerait mal.
 #. kind: journal
-# aeria-terms: {"Central Thanalan":"e4fd359a8b17","Owyne":"1f99effd814f","Sultansworn":"4bedec9cc917","the Unholy Heir":"c922e5c21fed"}
+# aeria-terms: {"Central Thanalan":"e4fd359a8b17","Owyne":"1f99effd814f","Sultansworn":"4bedec9cc917","Unholy Heir":"28470e6b61e5"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_SEQ_02:1"
 msgid "Owyne confirms that the letter is a ransom note from the thieves, stating their demands for the return of the crown. Believing there to be no other way, the guilt-ridden Sultansworn decides to give the criminals what they want. Rendezvous with him at the Unholy Heir in central Thanalan and ensure the exchange goes as planned."
 msgstr "Оуайн подтверждает: письмо — это требование выкупа за корону. Не видя другого выхода, терзаемый чувством вины Присягнувший султанше соглашается выполнить условия преступников. Встретьтесь с ним у Нечестивого наследника в Центральном Таналане и проследите, чтобы обмен прошёл как надо."
@@ -73,7 +73,7 @@ msgstr "Отнесите письмо Оуайну."
 #. de: Am Unheiligen Erben mit Owyne treffen
 #. fr: Retrouver Owyne au Damné
 #. kind: objective
-# aeria-terms: {"Owyne":"1f99effd814f","the Unholy Heir":"c922e5c21fed"}
+# aeria-terms: {"Owyne":"1f99effd814f","Unholy Heir":"28470e6b61e5"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_TODO_01:1"
 msgid "Rendezvous with Owyne at the Unholy Heir."
 msgstr "Встретьтесь с Оуайном у Нечестивого наследника."
@@ -154,7 +154,7 @@ msgstr "А Оуайн... Оуайн — Присягнувший султанш�
 #. speaker: MOMODI
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_MOMODI_000_6:1"
 msgid "I'd bet anythin' this letter was written by the bastards who made off with the crown."
-msgstr "Готова поспорить, это письмо написали мерзавцы, укравшие корону."
+msgstr "<if $gn4>Готова<else>Готов</if> поспорить, это письмо написали мерзавцы, укравшие корону."
 
 #. ja: 事件の噂が立った後に、その人に宛て、<br>銀冑団にまで届けに行かせる……。<br>わざと目立つようにしてるのが、どうも引っかかるの。
 #. de: Das kann kein Zufall sein, dass einer, der bekannterweise mit Dieben gemeinsame Sache gemacht hat, ausgerechnet jetzt und ausgerechnet für Owyne einen Brief hat.
@@ -234,18 +234,19 @@ msgstr "Нет"
 #. speaker: SULTANSWORMA
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Momodi":"8f425cdaf942"}
+# aeria-terms: {"Momodi":"8f425cdaf942","adventurer":"48df264ad5ec"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_SULTANSWORMA_000_12:1"
 msgid "What are you playing at, adventurer? Did Momodi truly send you? If this is some sort of prank, there <i>will</i> be consequences!"
-msgstr "Что вы задумали, приключенец? Вас и вправду прислала Момоди? Если это какая-то шутка, последствия <i>будут</i> серьёзными!"
+msgstr "Что вы задумали, <if $gn4>искательница приключений<else>искатель приключений</if>? Вас и вправду прислала Момоди? Если это какая-то шутка, последствия <i>будут</i> серьёзными!"
 
 #. ja: いかにも、私がオワインだ。<br>冒険者が銀冑団に用があるのか？
 #. de: Hallo, Abenteurer<if $gn4>in</if>. Du willst mich sprechen?
 #. fr: Salutations, <if $gn4>aventurière<else>aventurier</if>. On me dit que vous désirez me parler<nbsp>?
 #. speaker: OWYNE
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_OWYNE_000_20:1"
 msgid "Well met, adventurer. What business brings you here this day?"
-msgstr "Приветствую, приключенец. Что привело вас сюда?"
+msgstr "Приветствую, <if $gn4>искательница приключений<else>искатель приключений</if>. Что привело вас сюда?"
 
 #. ja: 私に手紙だと？<br>なぜ冒険者が届けに来るのだ。<br>……ともかく、受け取ろう。
 #. de: Ein Brief? Bitte, zeig nur her.
@@ -259,9 +260,10 @@ msgstr "...Письмо? Хорошо, покажите."
 #. de: ... H-Hast du ihn gelesen, Abenteurer<if $gn4>in</if>?
 #. fr: ... L'avez-vous lue<nbsp>?
 #. speaker: OWYNE
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_OWYNE_000_22:1"
 msgid "...Have you read this, adventurer?"
-msgstr "...Вы читали его, приключенец?"
+msgstr "...Вы читали его, <if $gn4>искательница приключений<else>искатель приключений</if>?"
 
 #. ja: そうか、ならいい……。<br>お前が心ある冒険者でよかったよ。
 #. de: Ah, ähm. Gut. Aber du weißt ungefähr über den Inhalt Bescheid?
@@ -328,7 +330,7 @@ msgstr "И как бы мне ни было тяжело это признава
 #. de: Ich werde zum Unheiligen Erben reisen und dort übergeben, was sie fordern.
 #. fr: Bien sûr, je serais stupide d'aller les rencontrer seul, mais je ne peux pas non plus emmener une troupe de casques d'argent.
 #. speaker: OWYNE
-# aeria-terms: {"the Unholy Heir":"c922e5c21fed"}
+# aeria-terms: {"Unholy Heir":"28470e6b61e5"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_OWYNE_000_30:1"
 msgid "I will travel to the Unholy Heir and pay them their ransom."
 msgstr "Я отправлюсь к Нечестивому наследнику и отдам им выкуп."
@@ -365,7 +367,7 @@ msgstr "От имени всех, кто ещё хранит верность с
 #. de: Bitte geh zum Unheiligen Erben in Zentral-Thanalan, östlich vom Kohlenstaub-Bahnhof. Wenn uns die Götter wohlgesinnt sind, dann wird die Übergabe ohne Probleme vonstattengehen ...
 #. fr: Retrouvez-moi au Damné dans le Thanalan central, à l'est de la gare de Roncenoire. Si les Dieux sont avec nous, l'échange se fera sans heurt...
 #. speaker: OWYNE
-# aeria-terms: {"Black Brush Station":"78ecc51df3d0","Central Thanalan":"e4fd359a8b17","the Unholy Heir":"c922e5c21fed"}
+# aeria-terms: {"Black Brush Station":"78ecc51df3d0","Central Thanalan":"e4fd359a8b17","Unholy Heir":"28470e6b61e5"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_OWYNE_000_40:1"
 msgid "Pray meet me at the Unholy Heir in central Thanalan, east of Black Brush Station. If the gods are good, the exchange will proceed without incident..."
 msgstr "Встретьтесь со мной у Нечестивого наследника в Центральном Таналане, к востоку от Станции Чёрной щётки. Если боги будут к нам благосклонны, обмен пройдёт без происшествий..."
@@ -501,7 +503,7 @@ msgstr "Нет... нет, не может быть! Что же я надела�
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_GARIBALD_000_61:1"
 msgid "Surely you must have wondered what it was that you were handing over─what it was that seemed as valuable to us as the crown seemed to you? Or did you assume we were feeling <i>charitable</i>?"
-msgstr "Неужели ты не задумался, что именно передаёшь нам? Что может быть для нас столь же ценным, как для вас корона? Или ты решил, что мы просто хотим сделать доброе дело?"
+msgstr "Неужели ты не <if $gn4>задумалась<else>задумался</if>, что именно передаёшь нам? Что может быть для нас столь же ценным, как для вас корона? Или ты <if $gn4>решила<else>решил</if>, что мы просто хотим сделать доброе дело?"
 
 #. ja: 貴様は、本当に不名誉な男だな！<br>不名誉過ぎて、生きているのも辛かろう！？
 #. de: Aah ... du musst dich ja schrecklich fühlen, dass du uns so leichthin geliefert hast, was damals Sil'dihs Untergang war. Keine Sorge, Junge, wir werden dir die Schande ersparen und dich umlegen, bevor du zur Rechenschaft gezogen wirst.
@@ -624,7 +626,7 @@ msgstr "Теперь ясно, откуда у тебя такая сила..."
 # aeria-terms: {"golem":"686cb15588c4"}
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_MASKEDMAGUS_000_78:1"
 msgid "You may have bested the golem, but you will not fare so well this day."
-msgstr "Ты одолел голема, но сегодня тебе так не повезёт."
+msgstr "<if $gn4>Ты одолела<else>Ты одолел</if> голема, но сегодня тебе так не повезёт."
 
 #. ja: <ui-color 547>示せ、創世の理の嘆き声よ。<br>空虚に有りし夾雑の御霊を呼び出さん……。<br>出よ、深淵の悍魂よ！</ui-color>
 #. de: <ui-color 547>Zürnende Stimme der Schöpfung! Sende mir empor eine Kreatur aus deiner unfassbaren, unergründlichen Tiefe!</ui-color>
@@ -643,7 +645,7 @@ msgstr "<ui-color 547>О скорбный голос творения! Пошл�
 #. speaker: MASKEDMAGUS
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_MASKEDMAGUS_000_80:1"
 msgid "Your very being imperils the plan. You cannot be suffered to live."
-msgstr "Ты опасен для наших планов. Тебе нельзя жить."
+msgstr "Ты <if $gn4>опасна<else>опасен</if> для наших планов. Тебе нельзя жить."
 
 #. ja: 我ら「天使い」の……秘術が……。<br>……打ち破られるとは……。
 #. de: Nächstes Mal ... wird dich die Macht der Himmelsboten ... ver...nichten.
@@ -698,7 +700,7 @@ msgstr "Хм? Неужели мы, шаарлейцы, уже сталкивал
 #. speaker: THANCRED
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_THANCRED_000_95:1"
 msgid "Ah, yes, that's right─you're one of the gifted."
-msgstr "Ах да, ты ведь один из одарённых."
+msgstr "Ах да, ты ведь <if $gn4>одна из одарённых<else>один из одарённых</if>."
 
 #. ja: 嫌な気配を感じて来てみれば、<br>こんなことになっていたなんてな。<br>……でも、お陰で収穫があったよ。
 #. de: Weißt du, immer wenn ich dich sehe, steckst du gerade in Schwie<shy>rig<shy>keiten. Du scheinst Probleme geradezu anzuziehen.
@@ -822,7 +824,7 @@ msgstr "Да здравствует Нанамо! Слава султане! Д�
 #. speaker: NANAMOULNAMO
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_400040_NANAMOULNAMO:1"
 msgid "They regaled me with tales of a champion amongst champions, one whose tireless service to the crown merited the highest honor we might bestow."
-msgstr "Мне рассказывали о величайшем из героев, что неустанно служит короне и заслужил высочайшую из почестей, какие мы можем даровать."
+msgstr "Мне рассказывали о <if $gn4>величайшей из героинь, которая неустанно служит короне и заслужила<else>величайшем из героев, что неустанно служит короне и заслужил</if> высочайшую из почестей, какие мы можем даровать."
 
 #. ja: 礼を言いにきた。<br>褒めてつかわすぞ！
 #. de: Dafür möchte ich mich erkenntlich zeigen. Man reiche <if $gn4>ihr<else>ihm</if> die Belohnung!
@@ -864,7 +866,7 @@ msgstr "Да, ваше величество."
 #. speaker: NANAMOULNAMO
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_400090_NANAMOULNAMO:1"
 msgid "See to it that our champion is my personal guest at the banquet."
-msgstr "Позаботься о том, чтобы наш герой стал моим почётным гостем на банкете."
+msgstr "Позаботься о том, чтобы <if $gn4>наша героиня стала моей почётной гостьей<else>наш герой стал моим почётным гостем</if> на банкете."
 
 #. ja: 仰せのとおりに。
 #. de: Wie Ihr wünscht, Eure Majestät.
@@ -1131,7 +1133,7 @@ msgstr "Победите мага в маске!"
 #. kind: other
 msgctxt "quest/005/ManWil007_00551:TEXT_MANWIL007_00551_QIB_MASKEDMAGUS_BATTLETALK_001:1"
 msgid "Soon, you shall take your vile gifts to the grave!"
-msgstr "Скоро ты отправишь в могилу и свой поганый дар!"
+msgstr "Скоро ты <if $gn4>отправишь<else>отправишь</if> в могилу и свой поганый дар!"
 
 #. ja: ハハハッ！　その猛毒で、もがき苦しむがいい！
 #. de: Ahahaha!<br>Spürst du, wie sich das Gift langsam durch deine Adern frisst?

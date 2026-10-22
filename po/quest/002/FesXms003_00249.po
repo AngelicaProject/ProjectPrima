@@ -118,6 +118,7 @@ msgstr "Найдите любую ёлку звёздного света в Ку
 #. de: ... Ach ja, ich sollte vielleicht erwähnen, dass es neben den Bäumen, die wir Freiwilligen selbst aufgestellt haben, auch noch so einige Exemplare in den Gärten deiner Abenteurerkollegen gibt.
 #. fr: ... Ah, un petit détail. En plus des arbres que nous avons installés ici, tu pourras aussi en trouver dans les jardins privés des aventuriers qui habitent dans le quartier résidentiel.
 #. speaker: VOLUNTEER65785
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/002/FesXms003_00249:TEXT_FESXMS003_00249_VOLUNTEER65785_000_002:1"
 msgid "...Ah, I should mention that, aside from the trees that we volunteers placed ourselves, there are sentinels to be found within the gardens of your fellow adventurers."
 msgstr "...Ах да, чуть не забыла: кроме ёлок, которые поставили мы, добровольцы, есть и такие, что стоят в садах на участках других искателей приключений."
@@ -162,7 +163,7 @@ msgstr "За раз можно получить только одно празд
 #. de: Sieh dich im Wohngebiet um und suche einen der Sternenlichtbäume auf. Aber sammle ja keine Botschaft auf, ohne vorher deine Sternenlichttunika angelegt zu haben! Der Anblick eines blutverschmierten Abenteurers in dicker Rüstung zerstört die Illusion eines friedlichen Sternenlichtfests, wenn du verstehst, was ich meine.
 #. fr: Choisis un sapin dans le quartier et apporte-moi la lettre que tu trouveras à son pied. Tu dois impérativement porter ta tunique des étoiles, sinon tu risquerais de briser les rêves de nos charmants bambins.
 #. speaker: VOLUNTEER65785
-# aeria-terms: {"Starlight sentinel":"8c73039023f9"}
+# aeria-terms: {"Starlight sentinel":"8c73039023f9","adventurer":"48df264ad5ec"}
 msgctxt "quest/002/FesXms003_00249:TEXT_FESXMS003_00249_VOLUNTEER65785_000_005:1"
 msgid "Head out into the ward and visit one of the Starlight sentinels. But do not collect a message without first donning your scarlet tunic! The sight of an armor-clad, bloodstained adventurer fails to inspire the same level of innocent wonder, you understand."
 msgstr "Найдите ёлку звёздного света в жилом районе. Только сначала наденьте алую тунику! Вид закованного в броню, перепачканного кровью искателя приключений вряд ли подарит детям ощущение чуда. Понимаете?"
@@ -227,7 +228,7 @@ msgstr "Вы получили тунику Звёздного света."
 #. speaker: VOLUNTEER65785
 msgctxt "quest/002/FesXms003_00249:TEXT_FESXMS003_00249_VOLUNTEER65785_000_020:1"
 msgid "Quickly, now, let's see what you've brought."
-msgstr "Ну же, покажи, что принёс."
+msgstr "Ну же, покажи, что <if $gn4>принесла<else>принёс</if>."
 
 #. ja: 回収できたのね、お疲れさま。<br>次は「聖人の従者」の扮装をして、<br>この近くにいる子どもに、贈物を届けてちょうだい。
 #. de: Haha, ja, das wird mal ein echter Ul'dahner. Kaum zu glauben, dass manche dieser Jünglinge versuchen, ein paar zusätzliche Geschenke auszuhandeln! Früh übt sich! Hier, bitte bring dieses Geschenk zu unserem angehenden Händler hier in der Nähe.
@@ -286,7 +287,7 @@ msgstr "Ура! Это мой любимый праздник в году!"
 #. macro: <if $gn4>miss<else>mister</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/002/FesXms003_00249:TEXT_FESXMS003_00249_CHILDC65785_000_034:1"
 msgid "I waited and waited and waited and now you're finally here! May I have my present now, <if $gn4>miss<else>mister</if> little helper?"
-msgstr "Я так долго ждала, так долго ждала, и вот ты наконец пришёл! Можно мне уже подарок, <if $gn4>мисс<else>мистер</if> помощник?"
+msgstr "Я так долго ждала, так долго ждала, и вот ты наконец <if $gn4>пришла<else>пришёл</if>! Можно мне уже подарок, <if $gn4>мисс<else>мистер</if> помощник?"
 
 #. ja: えへへ～、本当に贈物もらっちゃった！<br>私、一生大事にしますわ！
 #. de: Juhu! Ich werde dich niemals vergessen, Kleines Helferlein!
@@ -363,7 +364,7 @@ msgstr "Вы получили тунику Звёздного света."
 #. speaker: VOLUNTEER65785
 msgctxt "quest/002/FesXms003_00249:TEXT_FESXMS003_00249_VOLUNTEER65785_000_040:1"
 msgid "Gift giving all taken care of? Very good."
-msgstr "С подарком разобрался? Прекрасно."
+msgstr "С подарком <if $gn4>разобралась<else>разобрался</if>? Прекрасно."
 
 #. ja: ……そうだ、この催しの出資者が誰か、あなた知ってるかしら？<br>実は、あたしたち実行委員も、その正体を知らないのよね。
 #. de: Ich wüsste nicht, was wir ohne so gütige Seelen wie dich machen würden ... und ohne unseren mysteriösen Wohltäter natürlich.
@@ -405,7 +406,7 @@ msgstr "Но что это я задерживаю тебя своими пус�
 #. speaker: VOLUNTEER65785
 msgctxt "quest/002/FesXms003_00249:TEXT_FESXMS003_00249_VOLUNTEER65785_000_045:1"
 msgid "Placed the present in eager little hands, have you? Very good. Feel free to return to me for another task should you be struck by the desire to volunteer once more."
-msgstr "Отнёс подарок в ждущие маленькие ручки? Отлично. Если захочешь помочь ещё, заходи за новым заданием."
+msgstr "<if $gn4>Отнесла<else>Отнёс</if> подарок в ждущие маленькие ручки? Отлично. Если захочешь помочь ещё, заходи за новым заданием."
 
 #. ja: 全ての冒険者居住区で「星芒祭実行委員」に協力しました！<br>ラベンダーベッドのヤイヌ・パーの円庭にいる、<br>「アム・ガランジ」に報告に行きましょう。
 #. de: Du hast in allen Wohngebieten bei den Feierlichkeiten zum Sternenlichtfest geholfen! Erstatte Amh Garanjy in den Lavendelbeeten Bericht.

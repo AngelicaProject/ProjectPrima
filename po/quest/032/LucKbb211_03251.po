@@ -508,7 +508,7 @@ msgstr "Вы ещё не видели таких танцоров..."
 # aeria-terms: {"dancer":"9c6b0b0dbe96"}
 msgctxt "quest/032/LucKbb211_03251:TEXT_LUCKBB211_03251_A2_000_000:1"
 msgid "I'm more than just a dancer, you know..."
-msgstr "Я не просто танцор, знаете ли..."
+msgstr "Я не просто <if $gn4>искательница приключений<else>танцор</if>, знаете ли..."
 
 #. ja: うーむ……そうも、はっきりと仰るのなら、<br>もし荒事になったとしても、信じるしかなさそうですね。
 #. de: Also gut. Dann vertraue ich darauf, dass ihr Vorsicht walten lasst und uns nicht noch mehr Probleme bereitet, als wir ohnehin schon haben.
@@ -524,10 +524,10 @@ msgstr "Что ж. Тогда поверю вам на слово, хотя не
 #. fr: Je vois, vous avez suf<shy>fi<shy>sam<shy>ment d'expérience pour vous débrouiller, même face à une émeute...
 #. speaker: BRASSBLADE03251
 #. macro: <if $gn4>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-# aeria-terms: {"Ul'dah":"68f80cffa0d5"}
+# aeria-terms: {"Ul'dah":"68f80cffa0d5","adventurer":"48df264ad5ec"}
 msgctxt "quest/032/LucKbb211_03251:TEXT_LUCKBB211_03251_BRASSBLADE03251_000_090:1"
 msgid "An adventurer? And one who knows <if $gn4>her<else>his</if> way around Ul'dah, you say? Perhaps you are fit to investigate the matter after all..."
-msgstr "Авантюрист? И, говорите, Уль'ду знаете как свои пять пальцев? Пожалуй, вам и правда можно поручить расследование..."
+msgstr "<if $gn4>Искательница приключений<else>Авантюрист</if>? И, говорите, Уль'ду знаете как свои пять пальцев? Пожалуй, вам и правда можно поручить расследование..."
 
 #. ja: でしたら、貧民窟へ向かうことはお止めしませんが、<br>どうか無茶だけはなさらぬよう……！
 #. de: Ich kann euch nicht verbieten, den Slum zu betreten. Aber seid gewarnt: Wenn ihr uns Ärger bereitet, schmeißen wir euch schneller aus Ul'dah, als ihr „Tutu“ sagen könnt!
@@ -602,7 +602,7 @@ msgstr "Ну наконец-то! Давай начнём. Для начала �
 # aeria-terms: {"Nashmeira":"8635e0fbe418"}
 msgctxt "quest/032/LucKbb211_03251:TEXT_LUCKBB211_03251_RANAAMIHGO_000_121:1"
 msgid "Don't tell me you're worried about that silly promise I made to Mistress Nashmeira? Come now, <split \" \" 1><string $gs1></split>. Clearly she worries overmuch. You saw me on the stage─do I look like someone who can't take care of herself?"
-msgstr "Неужели ты переживаешь из-за того дурацкого обещания, которое я дала госпоже Нашмейре? Да ладно тебе, <split \" \" 1><string $gs1></split>. Она просто слишком волнуется. Ты же видел меня на сцене — неужели я похожа на ту, кто не может о себе позаботиться?"
+msgstr "Неужели ты переживаешь из-за того дурацкого обещания, которое я дала госпоже Нашмейре? Да ладно тебе, <split \" \" 1><string $gs1></split>. Она просто слишком волнуется. Ты же <if $gn4>видела<else>видел</if> меня на сцене — неужели я похожа на ту, кто не может о себе позаботиться?"
 
 #. ja: 貧民窟の人たちから話を聞き終えたら、またここに集合！<br>それじゃ、後でね！
 #. de: Lass uns später wieder hier treffen und uns darüber austauschen, was wir herausgefunden haben, ja?
@@ -706,7 +706,7 @@ msgstr "(-Встревоженная беднячка-)Последнее, чт�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/032/LucKbb211_03251:TEXT_LUCKBB211_03251_RANAAMIHGO_000_200:1"
 msgid "Oh, <split \" \" 1><string $gs1></split>! You really saved my skin. This man told me he'd take me to the rioters' hideout. He led me here, and then... Well, to be honest, I'm still unsure entirely what I witnessed."
-msgstr "О, <split \" \" 1><string $gs1></split>! Ты спас меня. Этот человек сказал, что отведёт меня в убежище бунтовщиков. Привёл сюда, а потом... Если честно, я до сих пор не уверена, что именно видела."
+msgstr "О, <split \" \" 1><string $gs1></split>! Ты <if $gn4>спасла<else>спас</if> меня. Этот человек сказал, что отведёт меня в убежище бунтовщиков. Привёл сюда, а потом... Если честно, я до сих пор не уверена, что именно видела."
 
 #. ja: それにしても、こいつら変だったよ。<br>私がここに着いたとき、妙な動きをしていたんだ。<br>不気味な動きを繰り返して……まるで舞を踊るように……。
 #. de: Diese Typen waren irgendwie komisch. Als wir hier ankamen, begannen sie plötzlich, sich merkwürdig zu bewegen. Immer wieder die gleichen Bewegungsabläufe. Es wirkte wie ein<nbsp>... Tanz!
@@ -844,7 +844,7 @@ msgstr "Кригтанц может вдохновлять и воодушевл
 # aeria-terms: {"dancer":"9c6b0b0dbe96"}
 msgctxt "quest/032/LucKbb211_03251:TEXT_LUCKBB211_03251_NASHMEIRA_000_248:1"
 msgid "<split \" \" 1><string $gs1></split> was able to display <if $gn4>her<else>his</if> skills as a dancer in battle today, and I suspect it is for that very reason that your would-be captors...but never mind that."
-msgstr "Сегодня <split \" \" 1><string $gs1></split> показал<if $gn4>а<else></if> себя в бою как танцор. И подозреваю, именно поэтому похитители... Ладно, неважно."
+msgstr "Сегодня <split \" \" 1><string $gs1></split> <if $gn4>показала<else>показал</if> себя в бою как танцор. И подозреваю, именно поэтому похитители... Ладно, неважно."
 
 #. ja: とにかく、あなたの問題は失敗したことじゃないわ。<br>自尊心を満たしたいがため、先走って軽率な行動をしたこと。
 #. de: Dein Problem ist nicht dein Versagen. Es war allein dein Stolz und deine Gier nach Anerkennung, die dich dazu getrieben haben, alleine und leichtsinnig zu handeln.
@@ -936,7 +936,7 @@ msgstr "А теперь мне нужно готовиться к предсто
 #. speaker: NASHMEIRA
 msgctxt "quest/032/LucKbb211_03251:TEXT_LUCKBB211_03251_NASHMEIRA_000_258:1"
 msgid "Meanwhile, perhaps it would be best if you, too, returned to your training. If you and Ranaa truly mean to bring out the best in one another, both of you will need work harder than ever before. Farewell for now, and let us meet up again when it is time to move on."
-msgstr "А тебе пока стоит вернуться к тренировкам. Если вы с Ранаа и правда хотите помочь друг другу стать лучше, вам обеим придётся работать усерднее, чем когда-либо. До встречи. Увидимся, когда придёт пора отправляться дальше."
+msgstr "А тебе пока стоит вернуться к тренировкам. Если вы с Ранаа и правда хотите помочь друг другу стать лучше, вам <if $gn4>обеим<else>обоим</if> придётся работать усерднее, чем когда-либо. До встречи. Увидимся, когда придёт пора отправляться дальше."
 
 #. ja: 不気味な舞、か。<br>……自分の目で確認する必要がありそうね。
 #. de: Ich glaube, es ist an der Zeit, dass ich selbst auch ein paar Nach<shy>for<shy>schungen betreibe<nbsp>...

@@ -193,7 +193,7 @@ msgstr "Не можем же мы позволить пиратам приста
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/021/FesSum104_02127:TEXT_FESSUM104_02127_POBYANO_000_020:1"
 msgid "I've a mind to go speak with him myself. But, you saw how angry he was─I dare not go alone! Please accompany me, <split \" \" 1><string $gs1></split>. Go ahead and I'll catch up after I've found someone to look after the stall."
-msgstr "Я сама поговорю с ним. Но ты видел, как он разозлился — одной мне страшновато! Пойдём со мной, <split \" \" 1><string $gs1></split>. Иди пока вперёд, а я найду кого-нибудь на прилавок и догоню."
+msgstr "Я сама поговорю с ним. Но ты <if $gn4>видела<else>видел</if>, как он разозлился — одной мне страшновато! Пойдём со мной, <split \" \" 1><string $gs1></split>. Иди пока вперёд, а я найду кого-нибудь на прилавок и догоню."
 
 #. ja: 私、あの海賊と話をしてみようと思う。<br>でも、ちょっぴり怖いから、一緒に来てほしいの。<br>店番の代わりを頼んでから行くから、先に探しに行ってくれる？
 #. de: Kannst du versuchen, den tobenden Piraten zu finden? Ich komme dann nach, sobald ich jemanden gefunden habe, der mich hier vertritt.
@@ -330,7 +330,7 @@ msgstr "Ты... Кто ты, к чертям собачьим?"
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/021/FesSum104_02127:TEXT_FESSUM104_02127_POBYANO_000_052:1"
 msgid "<split \" \" 1><string $gs1></split>'s been kind enough to help out around the faire!"
-msgstr "Это <split \" \" 1><string $gs1></split>, искатель приключений. Он помогает нам на празднике!"
+msgstr "Это <split \" \" 1><string $gs1></split>, <if $gn4>искательница приключений<else>искатель приключений</if>. <if $gn4>Она<else>Он</if> помогает нам на празднике!"
 
 #. ja: <split " " 1><string $gs1></split>！？<br>最近各地で名を馳せている、冒険者じゃないか！<br>あんたが、あの<string $gs1>なのか！
 #. de: <string $gs1> ... Doch nicht etwa <i><if $gn4>die<else>der</if></i> <string $gs1>?
@@ -409,7 +409,7 @@ msgstr "Даже не думал об этом... Но раз ты говори�
 #. speaker: WUNTHYLL
 msgctxt "quest/021/FesSum104_02127:TEXT_FESSUM104_02127_WUNTHYLL_100_057:1"
 msgid "You're right, I'll only find out by tryin'. Gotta start from the bottom. Ain't no value without hard work, I suppose."
-msgstr "Ты прав... Не попробуешь — не узнаешь. Начинать придётся с самого низа. Без труда ничего не добьёшься."
+msgstr "Ты <if $gn4>права<else>прав</if>... Не попробуешь — не узнаешь. Начинать придётся с самого низа. Без труда ничего не добьёшься."
 
 #. ja: この紅蓮祭は、冒険者ギルドの広報活動でもあるのよ。<br>大人しく参加してくれれば、追い出したりしないし、<br>冒険者ギルドの仕事を紹介するわ。
 #. de: Es ist ganz im Sinne des Feuermond-Reigens, Interessierten die Aben<shy>teurer<shy>gilde näherzubringen. Bring deine Freunde mit und feiert mit uns, dann stell ich euch allen vor.
@@ -434,7 +434,7 @@ msgstr "Вот оно как... Дай обдумать твоё предлож�
 #. speaker: POBYANO
 msgctxt "quest/021/FesSum104_02127:TEXT_FESSUM104_02127_POBYANO_000_060:1"
 msgid "Well, that was the most thrilling part of my day! Thankfully you were by my side, else I would've forgotten what to say!"
-msgstr "Ух, вот это денёк! Хорошо, что ты был рядом, а то я бы и слова не вымолвила!"
+msgstr "Ух, вот это денёк! Хорошо, что ты <if $gn4>была<else>был</if> рядом, а то я бы и слова не вымолвила!"
 
 #. ja: さて、戻って「紅蓮祭」の運営を続けなくちゃ。<br>次は海賊にも、しっかり冒険者ギルドの活動を広めないと！<br>約束の特別報酬を渡すわ、あなたもお祭りを楽しんでね！
 #. de: Und hier ist das Geschenk, das ich dir die ganze Zeit über geben wollte. Zieh's gleich mal an, es steht dir bestimmt prima und es ist genau das Richtige, um den Feuermond-Reigen zu feiern. Also, genieß das Fest! Man sieht sich!
@@ -443,4 +443,4 @@ msgstr "Ух, вот это денёк! Хорошо, что ты был ряд�
 # aeria-terms: {"Adventurers' Guild":"0d7ad9038d95"}
 msgctxt "quest/021/FesSum104_02127:TEXT_FESSUM104_02127_POBYANO_000_061:1"
 msgid "Well, I suppose it's time to return to hosting the stall. The Adventurers' Guild will do its best to welcome even pirates with open arms. And for all your help, I suppose you finally deserve your reward. You've earned it!"
-msgstr "Ну что ж, пора возвращаться к прилавку. Гильдия авантюристов постарается принять и пиратов с распростёртыми объятиями. А вот и обещанная награда за твою помощь. Ты её заслужил!"
+msgstr "Ну что ж, пора возвращаться к прилавку. Гильдия авантюристов постарается принять и пиратов с распростёртыми объятиями. А вот и обещанная награда за твою помощь. Ты её <if $gn4>заслужила<else>заслужил</if>!"

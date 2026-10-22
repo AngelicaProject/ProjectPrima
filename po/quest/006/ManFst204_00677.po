@@ -109,7 +109,7 @@ msgstr "Простите, что перебиваю, Матушка Миунна
 #. macro: <if ($gn11 < 17)>day<else>evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/006/ManFst204_00677:TEXT_MANFST204_00677_MIOUNNE_000_6:1"
 msgid "And good <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morrow</if><else><if ($gn11 < 17)>day<else>evening</if></if> to you too, Bowlord! Your need must be pressing indeed for you to honor us with a visit. The good news is: your journey hasn't been wasted. I'm pleased to report that we have a volunteer at last, and one who comes highly recommended, at that."
-msgstr "И вам доброго <if ($gn11 < 12)><if ($gn11 < 4)>вечера<else>утра</if><else><if ($gn11 < 17)>дня<else>вечера</if></if>, господин капитан! Раз вы сами пришли, значит, дело и правда срочное. Но хорошая новость: вы не зря проделали путь. Наконец-то нашёлся доброволец, да ещё и с отличной рекомендацией."
+msgstr "И вам доброго <if ($gn11 < 12)><if ($gn11 < 4)>вечера<else>утра</if><else><if ($gn11 < 17)>дня<else>вечера</if></if>, господин капитан! Раз вы сами пришли, значит, дело и правда срочное. Но хорошая новость: вы не зря проделали путь. Наконец-то <if $gn4>нашлась доброволица<else>нашёлся доброволец</if>, да ещё и с отличной рекомендацией."
 
 #. ja: おお、誰かと思えば！<br><split " " 2><string $gs1></split>ではないか！<br>お前が来てくれるとは心強い！
 #. de: Oh, das freut mich fürwahr! <string $gs1>, du hast Gridania schon einige Dienste erwiesen. Zu dir habe ich vollstes Vertrauen!
@@ -120,7 +120,7 @@ msgstr "И вам доброго <if ($gn11 < 12)><if ($gn11 < 4)>вечера<e
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/006/ManFst204_00677:TEXT_MANFST204_00677_LEWIN_000_7:1"
 msgid "Well, if it isn't our very own <if $gn4>woman<else>man</if> for all seasons! You certainly have a knack for appearing when you're most needed, <split \" \" 1><string $gs1></split>. My thanks for answering the call."
-msgstr "А вот и наш человек на все случаи жизни! Ты всегда появляешься как раз тогда, когда нужнее всего, <split \" \" 1><string $gs1></split>. Спасибо, что откликнулся."
+msgstr "А вот и наш человек на все случаи жизни! Ты всегда появляешься как раз тогда, когда нужнее всего, <split \" \" 1><string $gs1></split>. Спасибо, что <if $gn4>откликнулась<else>откликнулся</if>."
 
 #. ja: おお、よく来てくれた。<br>わしはグリダニアの国防を担う神勇隊の隊長、リュウィン。<br>今回の依頼を出した者だ。
 #. de: Oh, das freut mich fürwahr! Danke, dass du uns helfen willst. Ich bin Lewin, der Kommandant von Nophicas Schar, und als solcher für den Schutz Gridanias verantwortlich.
@@ -469,7 +469,7 @@ msgstr "Я и не сомневалась в тебе. Ты так часто д
 # aeria-terms: {"Baderon":"e0afd334b0f9"}
 msgctxt "quest/006/ManFst204_00677:TEXT_MANFST204_00677_MIOUNNE_000_72:1"
 msgid "Nor did I expect anything less. Baderon's ringing endorsement left me in little doubt as to your capabilities. Even so, you are to be commended."
-msgstr "Я и не сомневалась в тебе. Бадерон отзывался о тебе так горячо, что я не сомневалась в твоих способностях. Но всё равно — ты заслужил похвалы."
+msgstr "Я и не сомневалась в тебе. Бадерон отзывался о тебе так горячо, что я не сомневалась в твоих способностях. Но всё равно — ты <if $gn4>заслужила<else>заслужил</if> похвалы."
 
 #. ja: リュウィン隊長も、礼を言っていたよ。<br>本当におつかれさま！
 #. de: Lewin ist im Augenblick nicht hier, aber ich danke dir auch in seinem Namen. Du hast uns einen großen Dienst erwiesen!

@@ -145,10 +145,10 @@ msgstr "Доложите Хаэрмаге."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Haermaga":"d25dc6aa1b48"}
+# aeria-terms: {"Haermaga":"d25dc6aa1b48","adventurer":"48df264ad5ec"}
 msgctxt "quest/021/FesSum202_02137:TEXT_FESSUM202_02137_JNANGHO_000_000:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>! What a pleasant surprise! Haermaga mentioned an adventurer would be along to assist the Posing Rangers with their training, but he never said it would be <i>you</i>. Well, you're right on time!"
-msgstr "О, <split \" \" 1><string $gs1></split>! Вот так приятный сюрприз! Хаэрмага говорил, что к нам заглянет один искатель приключений помочь с тренировками рейнджеров, но не сказал, что это будете именно <i>вы</i>. А вы как раз вовремя!"
+msgstr "О, <split \" \" 1><string $gs1></split>! Вот так приятный сюрприз! Хаэрмага говорил, что к нам заглянет <if $gn4>искательница приключений<else>один искатель приключений</if> помочь с тренировками рейнджеров, но не сказал, что это будете именно <i>вы</i>. А вы как раз вовремя!"
 
 #. ja: 紅蓮祭への参加、ありがとう！<br>火消しの戦士「レッドウォーリア」の援軍志願ね？
 #. de: Hallo, <split " " 1><string $gs1></split>! Du bist doch bestimmt hier, um den Bombattanten bei ihrem Training zu helfen, oder? Ausgezeichnet! Dann lass uns direkt loslegen!
@@ -190,10 +190,10 @@ msgstr "Вунтхилл... Помните его? Он был пиратом, �
 #. de: Er hat eine ziemlich bewegte Ver<shy>gangen<shy>heit, aber nun ist er eines der am härtesten arbeitenden Gildenmitglieder. Das hat er vor allem der Inspiration <if $gn4>einer Abenteurerin<else>eines Abenteurers</if> wie dir zu verdanken!
 #. fr: “Wunthyll”... Ce nom vous dit peut-être quelque chose<nbsp>? C'était un pirate avant, mais je ne pense pas que vous ayez déjà croisé sa route. Il a abandonné sa vie de boucanier pour intégrer la guilde l'année passée. Il paraît que sa vie a changé quand il a vu de quoi les aven<shy>tu<shy>rrriers étaient capables.
 #. speaker: JNANGHO
-# aeria-terms: {"Wunthyll":"7e3c7c1ef960"}
+# aeria-terms: {"Wunthyll":"7e3c7c1ef960","adventurer":"48df264ad5ec"}
 msgctxt "quest/021/FesSum202_02137:TEXT_FESSUM202_02137_JNANGHO_000_005:1"
 msgid "Wunthyll has something of a murky past, but he is now one of our guild's most hardworking members. In fact, the reason he's so dedicated is because he was inspired by an adventurer much like yourself!"
-msgstr "У Вунтхилла было непростое прошлое, но теперь он один из самых усердных членов нашей гильдии. И всё потому, что его вдохновил такой же искатель приключений, как вы!"
+msgstr "У Вунтхилла было непростое прошлое, но теперь он один из самых усердных членов нашей гильдии. И всё потому, что его вдохновил <if $gn4>такая же искательница приключений<else>такой же искатель приключений</if>, как вы!"
 
 #. ja: おお、<split " " 1><string $gs1></split>じゃねーか！？<br>また会えるなんて、夢みたいだ！！
 #. de: <split " " 1><string $gs1></split>? Nein. Das kann nicht wahr sein! Ich muss wohl träumen. A-Aber dieser kräftige Schritt, dieses Lächeln ... Bei den Sieben Höllen! Du bist es wirklich, oder?
@@ -212,7 +212,7 @@ msgstr "<split \" \" 1><string $gs1></split>? Да ну, не может быт�
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/021/FesSum202_02137:TEXT_FESSUM202_02137_WUNTHYLL_000_011:1"
 msgid "I didn't think I'd ever see you again! Before I forget, I just want to say thank you for all that you've done for me─it ain't no ordinary <if $gn4>woman<else>man</if> what can convince a pirate to renounce his ol' ways and up and join a guild! "
-msgstr "Не думал, что мы ещё увидимся! Пока не забыл, хочу сказать спасибо за всё, что вы для меня сделали. Не каждый <if $gn4>женщина<else>мужчина</if> сумеет убедить пирата бросить старые привычки и вступить в гильдию!"
+msgstr "Не думал, что мы ещё увидимся! Пока не забыл, хочу сказать спасибо за всё, что вы для меня сделали. Не <if $gn4>каждая женщина<else>каждый мужчина</if> сумеет убедить пирата бросить старые привычки и вступить в гильдию!"
 
 #. ja: 紅蓮祭への参加、ありがとうございます！！<br>レッドウォーリアの掃討任務の援軍ですね？<br>では、エルブストを用意します！
 #. de: Wie kann ich dir heute helfen?
@@ -386,7 +386,7 @@ msgstr "Я думал, что на этот раз всё под контрол�
 #. speaker: HAERMAGA
 msgctxt "quest/021/FesSum202_02137:TEXT_FESSUM202_02137_HAERMAGA_000_062:1"
 msgid "Yes, I know! Improvement doesn't happen overnight. Hells! I can't even begin to imagine how long it took you to achieve what you have, but I had hoped to, at the very least, conquer the fear that defeated me before."
-msgstr "Да, знаю! Сразу лучше не станешь. Чтоб меня! Даже представить не могу, сколько времени вам понадобилось, чтобы стать таким, как сейчас. А я надеялся хотя бы побороть страх, который одолел меня сегодня."
+msgstr "Да, знаю! Сразу лучше не станешь. Чтоб меня! Даже представить не могу, сколько времени вам понадобилось, чтобы стать <if $gn4>такой<else>таким</if>, как сейчас. А я надеялся хотя бы побороть страх, который одолел меня сегодня."
 
 #. ja: それには、もっと過酷な修行を己に課さねばならん。<br>火力を一層強めるつもりだから、ぜひとも協力を頼む。<br>ヘールマガにも、今回の成果を伝えておいてくれ。
 #. de: Ich muss meine Anstrengungen verdoppeln, sonst war all deine Hilfe vergebens. Sag Haermaga, dass wir diesmal zwar nicht erfolgreich waren, aber schon morgen die Flammen höher schlagen werden und ich härter und schneller als je zuvor auf sie einschlagen werde!

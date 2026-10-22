@@ -267,7 +267,7 @@ msgstr "Ход выполнения задания «Хроники новой �
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_GUIDEOFTHEPENDANTS_000_010:1"
 msgid "Ah, <if $gn4>Mistress<else>Master</if> <split \" \" 2><string $gs1></split>. Will you be venturing forth today?"
-msgstr "А, госпожа <split \" \" 2><string $gs1></split>. Собрались куда-то сегодня?"
+msgstr "А, <split \" \" 2><string $gs1></split>. Собрались куда-то сегодня?"
 
 #. ja: ああいえ、遅まきながら、<br>燃える星の雨が降ったと聞きまして……<br>外出される方には、念のため注意を促していたのです。
 #. de: Nicht, dass ich Euch nachspionieren möchte. Ich schätze die Privatsphäre unserer Gäste sehr. Es ist nur so, dass mir dieser Sternenregen nicht ganz geheuer ist, wisst Ihr? Er soll zwar keinerlei Schäden verursacht haben, aber man kann nicht vorsichtig genug sein, wenn Ihr mich fragt.
@@ -945,7 +945,7 @@ msgstr "(-Аркил-)<i>А-а!</i> Неужели вы...?"
 # aeria-terms: {"Warrior of Darkness":"2430b8547f26"}
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_RIQITIO_000_099:1"
 msgid "...The Warrior of Darkness!?"
-msgstr "...Воин тьмы?!"
+msgstr "...<if $gn4>Воительница<else>Воин</if> тьмы?!"
 
 #. ja: わたし、わたしね、リキ・ティオっていうの！<br>みんなのこと、助けたいの！
 #. de: I-Ich heiße Riqi-Tio und<nbsp>... und ich will auch die Welt retten!
@@ -1021,7 +1021,7 @@ msgstr "Эм... ты меня помнишь?"
 # aeria-terms: {"Exarch":"90995d52ecb9"}
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_ARKIL_000_136:1"
 msgid "When you returned from the sea with the Exarch, I asked you how you became so strong."
-msgstr "Когда вы вернулись из моря с экзархом, я спросил, как вы стали таким сильным."
+msgstr "Когда вы вернулись из моря с экзархом, я спросил, как вы стали <if $gn4>такой сильной<else>таким сильным</if>."
 
 #. ja: あのね、えっとね、わたしねっ、<br>街のみんなが言ってる「光の戦士」になりたいの。<br>でもね、剣で戦うやつじゃないんだよ！
 #. de: Weißt du, ich würde auch gerne eine Kriegerin des Lichts werden, so wie die anderen Erwachsenen in der Stadt. Aber keine, die mit Schwertern kämpft!
@@ -1148,7 +1148,7 @@ msgstr "Правда? Огромное спасибо, Воин тьмы! Уви
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_ALPHINAUD_000_154:1"
 msgid "I know you are a busy <if $gn4>woman<else>man</if>, but we can't well leave them without guidance. And it would only be for a little while."
-msgstr "Знаю, ты занята, но нельзя же оставить детей без присмотра. И это ненадолго."
+msgstr "Знаю, ты <if $gn4>занята<else>занят</if>, но нельзя же оставить детей без присмотра. И это ненадолго."
 
 #. ja: さあ、みんな、医療館へ移動できるかな？<br>「闇の戦士」の<if $gn4>お姉さん<else>お兄さん</if>を困らせないよう、寄り道せずにね。
 #. de: Ich schätze, ihr kennt den Weg in die Spagyrik, nicht wahr? Und dass ihr <if $gn4>der Kriegerin<else>dem Krieger</if> der Dunkelheit ja keine Umstände bereitet!
@@ -1383,7 +1383,7 @@ msgstr "Вот это энергии! Хотя не знаю, справится
 # aeria-terms: {"Gracine":"d116f6f23107","Sweetsieve":"394d951c50ef"}
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_CHESSAMILE_000_218:1"
 msgid "My apologies, but would you mind accompanying her? When you arrive at Sweetsieve, speak with a woman named Gracine, and she will point you in the right direction."
-msgstr "Прости, но не могла бы ты пойти с ней? Когда доберётесь до «Сладкого сита», поговори с Грасин, и она подскажет, что делать."
+msgstr "Прости, но <if $gn4>не могла бы ты<else>не мог бы ты</if> пойти с ней? Когда доберётесь до «Сладкого сита», поговори с Грасин, и она подскажет, что делать."
 
 #. ja: そういうことなら、私にも手伝わせてくれ。<br>彼女を医療館に連れていこうと提案した身としてね。
 #. de: Ich werde mitkommen. Schließlich war ich derjenige, der die Idee hatte, sie in Chessamiles Obhut zu geben.
@@ -1472,7 +1472,7 @@ msgstr "Мы никуда не уйдём, пока вы не вернётесь
 # aeria-terms: {"Riqi-Tio":"3277450bb54b"}
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_CHESSAMILE_000_250:1"
 msgid "Thank you, sweetie. I feel better knowing that you're keeping an eye on Riqi-Tio."
-msgstr "Спасибо, милая. Теперь я спокойна, раз ты присмотришь за Рики-Тио."
+msgstr "Спасибо, <if $gn4>милая<else>милый</if>. Теперь я спокойна, раз ты присмотришь за Рики-Тио."
 
 #. ja: ああ、先に材料の収穫を進めているよ。<br>大丈夫、ノルヴラントに来てから、<br>こういう仕事にもずいぶん慣れたんだ。
 #. de: Ah, da bist du ja. Wir müssen noch ein paar der Früchte ernten. Irgendwie habe ich mich bereits an diese Arbeit gewöhnt, seit wir nach Norvrandt gekommen sind.
@@ -1559,7 +1559,7 @@ msgstr "Я собрал весь мелкий виноград, какой см�
 #. speaker: RIQITIO
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_RIQITIO_000_300:1"
 msgid "Oh, you're here too? We're picking little grapes. It's quite fun!"
-msgstr "Ой, ты тоже пришла? Мы собираем маленькие виноградины. Весело!"
+msgstr "Ой, ты тоже <if $gn4>пришла<else>пришёл</if>? Мы собираем маленькие виноградины. Весело!"
 
 #. ja: わっ、もう集めたの！？<br>「闇の戦士」さまはすごいねぇ、えらいねぇ！
 #. de: Boah, du hast ja schon richtig viele gesammelt. Ich wünschte, ich wäre auch so geschickt wie du!
@@ -1567,7 +1567,7 @@ msgstr "Ой, ты тоже пришла? Мы собираем маленьки
 #. speaker: RIQITIO
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_RIQITIO_000_301:1"
 msgid "Wow, you've picked this many already!? Amazing!"
-msgstr "Ух ты, уже столько собрала?! Вот это да!"
+msgstr "Ух ты, уже столько <if $gn4>собрала<else>собрал</if>?! Вот это да!"
 
 #. ja: 私の方も、採り終わったよ。<br>リキ・ティオ、一緒にシェッサミールさんのところへ運ぼう。
 #. de: Ich glaube, wir haben jetzt genug gesammelt. Ich schlage vor, wir bringen die kleinen Gaben gleich zu Chessamile.
@@ -1819,7 +1819,7 @@ msgstr "Пусть это было всего лишь простое поруч
 # aeria-terms: {"Warrior of Darkness":"2430b8547f26"}
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_RIQITIO_000_350:1"
 msgid "Thanks for helping with the grapes, Warrior of Darkness. In return, I promise to brew you a potion one day!"
-msgstr "Спасибо, что помогли собрать виноград, Воин тьмы. А я однажды сварю для вас зелье!"
+msgstr "Спасибо, что помогли собрать виноград, <if $gn4>Воительница тьмы<else>Воин тьмы</if>. А я однажды сварю для вас зелье!"
 
 #. ja: リキ・ティオのやつ、大丈夫だった……？<br>苦い草汁とか、飲まされてない？
 #. de: Riqi hat dir nicht einen ihrer scheußlichen Gras-Tränke gebraut, oder?
@@ -1827,7 +1827,7 @@ msgstr "Спасибо, что помогли собрать виноград, �
 #. speaker: ARKIL
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_ARKIL_000_355:1"
 msgid "Riqi didn't make you drink one of her grass potions, did she?"
-msgstr "Рики не заставила тебя выпить своё зелье из трав?"
+msgstr "Рики не <if $gn4>заставила<else>заставил</if> тебя выпить своё зелье из трав?"
 
 #. ja: あっ、帰ってきた！<br>よーし……！
 #. de: Juhu, du bist zurück! Fangen wir jetzt an, ja?!
@@ -1835,7 +1835,7 @@ msgstr "Рики не заставила тебя выпить своё зель
 #. speaker: EIRWEL
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_EIRWEL_000_360:1"
 msgid "Huzzah, you're back! We're ready to start learning!"
-msgstr "Ура, ты вернулась! Мы готовы учиться!"
+msgstr "Ура, ты <if $gn4>вернулась<else>вернулся</if>! Мы готовы учиться!"
 
 #. ja: おかえりなさい、手を貸してくれてありがとうねぇ……。<br>おかげで、無事に材料を受け取ることができたわぁ……。
 #. de: Vielen Dank für deine freundliche Hilfe, <split " " 1><string $gs1></split>. Mit den Trauben können wir nun loslegen.
@@ -1843,7 +1843,7 @@ msgstr "Ура, ты вернулась! Мы готовы учиться!"
 #. speaker: CHESSAMILE
 msgctxt "quest/037/LucKmi101_03771:TEXT_LUCKMI101_03771_CHESSAMILE_000_370:1"
 msgid "My thanks for your kind help, sweetie. We now have all the ingredients we require."
-msgstr "Спасибо, что помогли, милая. Теперь у нас есть все нужные ингредиенты."
+msgstr "Спасибо, что помогли, <if $gn4>милая<else>милый</if>. Теперь у нас есть все нужные ингредиенты."
 
 #. ja: このグレープでお酢を作って、エルフグラスなんかと混ぜてね、<br>疲労回復のためのシロップを作るの。<br>今のクリスタリウムには欠かせない薬なのよぉ……？
 #. de: Wir werden daraus einen Essig herstellen, dem wir Elfenkraut hinzumischen sowie eine Reihe anderer Zutaten. Das Ganze wird dann zu einem aufmunternden Sirup verkocht, der leider grausig schmeckt, aber unschlagbar effektiv ist. Lyna kann davon ein Lied singen. Hehe.

@@ -10,7 +10,7 @@ msgstr ""
 #. de: Zazarikku ist auf der Suche nach einem Abenteurer, der eine Bestellung bei der Gold<shy>schmiede<shy>gilde abholen kann.
 #. fr: Zazarikku, un jeune gladiateur sur le point de faire ses débuts, semble bien confiant à l'approche de son premier combat.
 #. kind: journal
-# aeria-terms: {"Goldsmiths' Guild":"30368502c270","Zazarikku":"fd7c3cfd4698"}
+# aeria-terms: {"Goldsmiths' Guild":"30368502c270","Zazarikku":"fd7c3cfd4698","adventurer":"48df264ad5ec"}
 msgctxt "quest/001/SubWil006_00165:TEXT_SUBWIL006_00165_SEQ_00:1"
 msgid "Zazarikku needs an adventurer to pick up an order from the Goldsmiths' Guild."
 msgstr "Зазарикку нужен искатель приключений, чтобы забрать заказ из Гильдии ювелиров."
@@ -66,7 +66,7 @@ msgstr "Поговорите с Кривым Древком."
 #. kind: other
 msgctxt "quest/001/SubWil006_00165:TEXT_SUBWIL006_00165_ZAZARIKKU_000:1"
 msgid "Have you come to wish me luck? I appreciate the thought, but there's no need to worry."
-msgstr "Пришёл пожелать мне удачи? Очень мило, но не волнуйся, всё будет хорошо."
+msgstr "<if $gn4>Пришла<else>Пришёл</if> пожелать мне удачи? Очень мило, но не волнуйся, всё будет хорошо."
 
 #. ja: おや、僕を知らないだって……？<br>今度剣闘士としてこのコロセウムでデビューする、<br>噂の超大物ルーキー、ザザリックとはズバリ僕のことさ！
 #. de: Was!? Du weißt nicht, wer ich bin!? Der nächste große Star im Kolosseum!
@@ -93,7 +93,7 @@ msgstr "Меня зовут Зазарикку, и в ближайшие дни 
 # aeria-terms: {"Goldsmiths' Guild":"30368502c270"}
 msgctxt "quest/001/SubWil006_00165:TEXT_SUBWIL006_00165_ZAZARIKKU_003:1"
 msgid "Ah, which reminds me─I have yet to collect the circlet I commissioned from the Goldsmiths' Guild. You wouldn't mind picking it up for me, would you?"
-msgstr "Кстати, я ещё не забрал диадему, которую заказал в Гильдии ювелиров. Не мог бы ты получить её за меня?"
+msgstr "Кстати, я ещё не забрал диадему, которую заказал в Гильдии ювелиров. Не <if $gn4>могла бы<else>мог бы</if> ты получить её за меня?"
 
 #. ja: 仕事が終わって、気持ちよく一杯ってところを、<br>なんだよイキナリ……。
 #. de: Mir steht der Sinn nach einem Bierchen, also beeil dich und sag mir, worum es geht.
@@ -138,6 +138,7 @@ msgstr "Ладно, сделаю всё, чтобы этот щенок полу
 #. macro: <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morrow</if><else><if ($gn11 < 17)>day<else>evening</if></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 12 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 4)>evening<else>morrow</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 4 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn11 < 17)>day<else>evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/001/SubWil006_00165:TEXT_SUBWIL006_00165_TALK_JEMIME_000:1"
 msgid "Good <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morrow</if><else><if ($gn11 < 17)>day<else>evening</if></if> to you, adventurer. How may I be of service?"
 msgstr "Доброго <if ($gn11 < 12)><if ($gn11 < 4)>вечера<else>утра</if><else><if ($gn11 < 17)>дня<else>вечера</if></if>, искатель приключений. Чем могу помочь?"

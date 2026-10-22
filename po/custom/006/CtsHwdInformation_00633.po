@@ -21,7 +21,7 @@ msgstr "Вам чего? Если вы здесь, чтобы поглазеть
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_000:1"
 msgid "Right, <split \" \" 1><string $gs1></split>. If you're gonna lend us a hand, a little explanation is in order."
-msgstr "Ну что, <split \" \" 1><string $gs1></split>. Раз уж решил нам помочь, надо кое-что объяснить."
+msgstr "Ну что, <split \" \" 1><string $gs1></split>. Раз уж <if $gn4>решила<else>решил</if> нам помочь, надо кое-что объяснить."
 
 #. ja: まず、あんたに覚えておいてほしいのが、<br>この「<sheet EObj 2010775 0>」だ。<br>蒼天街に関する、復興事業の情報を貼っつけてある。
 #. de: Also, das Wichtigste zuerst. Das Ding gleich neben mir ist das Schwarze Brett der Himmelsstadt. Dort steht geschrieben, an welchem Projekt gerade gearbeitet wird.
@@ -98,7 +98,7 @@ msgstr "Поткин вон там расскажет, какие припасы
 # aeria-terms: {"Potkin":"4c26a36bafcc"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_030_000:1"
 msgid "Saw you talkin' with Potkin. The way the lad turned red as a beet, you'd think he'd never met a hero before!"
-msgstr "Видел, как ты с Поткиным разговаривал. Парень аж покраснел как рак — будто до сих пор ни разу с героем не встречался!"
+msgstr "Видел, как ты с Поткиным <if $gn4>разговаривала<else>разговаривал</if>. Парень аж покраснел как рак — будто до сих пор ни разу с <if $gn4>героиней<else>героем</if> не встречался!"
 
 #. ja: そうだ、ついでに「エニー」にも話を聞いたらいい。<br>あいつは、職人向けの商品を扱ってるんだ。
 #. de: Dann wäre da auch noch Enie. Ihr solltest du ebenfalls einen Besuch abstatten, denn <i>sie</i> ist für die Vergütung aller helfenden Hände zuständig.
@@ -122,7 +122,7 @@ msgstr "Поткин уже рассказывал тебе про Купо уд
 # aeria-terms: {"Flotpassant":"8d3a472d0dd9"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_140_000:1"
 msgid "Have you heard about the new way we're sourcin' materials? If not, you can get all the particulars from Flotpassant."
-msgstr "Слышал про новый способ добывать материалы? Если нет, Флотпассан расскажет всё в подробностях."
+msgstr "<if $gn4>Слышала<else>Слышал</if> про новый способ добывать материалы? Если нет, Флотпассан расскажет всё в подробностях."
 
 #. ja: ディアデム諸島に関しては、<br>そりゃあもう「オールヴァエル」坊ちゃんがいっとう詳しいぜ。<br>もう話は聞いてきたか？
 #. de: Wenn du zum Diadem willst, ist Aurvael der Elezen deines Vertrauens. Meld dich bei ihm, er freut sich sicher.
@@ -130,7 +130,7 @@ msgstr "Слышал про новый способ добывать матер�
 # aeria-terms: {"Aurvael":"300a29e8cb3f","the Diadem":"2cd7a31f446c"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_150_000:1"
 msgid "If you want to know about the Diadem, Aurvael's your man. Go and speak with him if you haven't done so already."
-msgstr "Если хочешь узнать про Диадему, Орваэль тебе всё расскажет. Загляни к нему, если ещё не заходил."
+msgstr "Если хочешь узнать про Диадему, Орваэль тебе всё расскажет. Загляни к нему, если ещё не <if $gn4>заходила<else>заходил</if>."
 
 #. ja: あんたが職人として高みを目指すなら……<br>「ルドブラン」って貴族に、声をかけてみるといい。<br>面白い話が聞けるはずだぜ？
 #. de: Hast du dich schon mit unserem Ludovraint bekannt gemacht? Er ist ein adeliger Exzentriker mit einem scharfen Auge für die Handwerkskunst<nbsp>... Deswegen bewertet er jetzt alles, was für den Wieder<shy>aufbau gespendet wird.
@@ -181,7 +181,7 @@ msgstr "Чтобы на работу собралось побольше люд�
 #. fr: S'il y a un ouvrage collectif dans les tuyaux alors que vous avez les mains dans les poches, j'espère qu'on pourra compter sur vous.
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_050:1"
 msgid "If there're works scheduled and you're not busy, we'd be glad for your help."
-msgstr "Так что поглядывай на доску. Если работы назначены, а ты свободен, будем рады твоей помощи."
+msgstr "Так что поглядывай на доску. Если работы назначены, а ты <if $gn4>свободна<else>свободен</if>, будем рады твоей помощи."
 
 #. ja: んなわけで、あんたの活躍を期待してるぜ！<br>英雄でありながら、復興にも参加してくれるなんて奇特な、<br><split " " 1><string $gs1></split>さんよ！
 #. de: Aber dir muss ich das sowieso nicht zweimal sagen, oder? Ist schon irgendwie komisch, <if $gn4><i>die</i> Heldin<else><i>den</i> Helden</if> von Ishgard nun hier als <if $gn4>handwerkliche Helferin<else>handwerklichen Helfer</if> zu sehen.
@@ -190,7 +190,7 @@ msgstr "Так что поглядывай на доску. Если работ�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_060:1"
 msgid "And that's all from me for now. I'll let you run along, but let me just say this: for a famous hero like you to help us here on the ground... You're a good sort, <split \" \" 1><string $gs1></split>."
-msgstr "Вот и всё, пока. Не буду тебя задерживать, но скажу напоследок: знаменитый герой вроде тебя, который пришёл нам помогать... Ты славный человек, <split \" \" 1><string $gs1></split>."
+msgstr "Вот и всё, пока. Не буду тебя задерживать, но скажу напоследок: <if $gn4>знаменитая героиня вроде тебя, которая пришла нам помогать... Ты славный человек<else>знаменитый герой вроде тебя, который пришёл нам помогать... Ты славный человек</if>, <split \" \" 1><string $gs1></split>."
 
 #. ja: 「復興共同作業」は、<br>クラフター、ギャザラーのクラスで参加できる、<br>蒼天街内のコンテンツです。
 #. de: An den Aufbauprojekten der Himmelsstadt können sowohl Handwerker- als auch Sammlerklassen teilnehmen.
@@ -221,7 +221,7 @@ msgstr "На эфирите в Фундаменте можно телепорт�
 #. fr: Si la suite des opérations à Azurée n'a plus de secrets pour vous, félicitations<nbsp>! Nous avons tellement de nouveaux collaborateurs et de projets en parallèle que j'ai parfois moi-même du mal à m'y retrouver.
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_100:1"
 msgid "So, you got a rough idea of what's goin' on now? Given the various parties what are involved, I don't blame you if you find it all a bit confusin'."
-msgstr "Ну что, примерно разобрался, чем мы тут занимаемся? Участвует столько разных организаций, что неудивительно, если всё кажется запутанным."
+msgstr "Ну что, примерно <if $gn4>разобралась<else>разобрался</if>, чем мы тут занимаемся? Участвует столько разных организаций, что неудивительно, если всё кажется запутанным."
 
 #. ja: わかんねぇことがあったら、<br>だいたいは<sheet EObj 2010775 0>に書いてあるから、確認してみてくれ。<br>無理せず、自分の力量にあった作業に参加してくれな。
 #. de: Wende dich ans Schwarze Brett der Himmelsstadt, wenn dir irgendwas über den Kopf zu wachsen droht. Dort ist alles knapp und bündig erklärt.
@@ -244,7 +244,7 @@ msgstr "Конечно, можешь в любой момент спросить
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_130:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>! You couldn't have come at a better time─for us, that is. We're startin' up the next phase of the restoration effort, and we could use our best skybuilder."
-msgstr "<split \" \" 1><string $gs1></split>! Очень вовремя — для нас, конечно. Мы начинаем новый этап восстановления, и нам не обойтись без лучшего строителя небес."
+msgstr "<split \" \" 1><string $gs1></split>! Очень вовремя — для нас, конечно. Мы начинаем новый этап восстановления, и нам не обойтись без <if $gn4>лучшей строительницы небес<else>лучшего строителя небес</if>."
 
 #. ja: 素材は引き続きディアデム諸島で採集できるが……<br>事業の内容が変われば、当然、求められる資材も変わる。
 #. de: Das Material dafür lässt sich weiterhin im Diadem einsammeln, aber für verschiedene Arbeiten werden natürlich auch verschiedene Materialien benötigt.
@@ -278,7 +278,7 @@ msgstr "Эни и Лизбет тоже постарались на славу �
 # aeria-terms: {"Risensong Quarter":"4976154ae483"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_170:1"
 msgid "Well, if it ain't <split \" \" 1><string $gs1></split>! As always, you're a sight for sore eyes. We're just about to get started in on rebuildin' the Risensong Quarter─the final phase of the reconstruction effort, if you can believe it─an' to say we could use your help would be an understatement for the ages."
-msgstr "Ну и ну, кто пришёл! <split \" \" 1><string $gs1></split>, всегда рад тебя видеть. Мы вот-вот начнём восстановление Квартала Восходящей песни — это уже последний этап, представляешь? Нам понадобится твоя помощь, это ещё мягко сказано."
+msgstr "Ну и ну, кто <if $gn4>пришла<else>пришёл</if>! <split \" \" 1><string $gs1></split>, всегда рад тебя видеть. Мы вот-вот начнём восстановление Квартала Восходящей песни — это уже последний этап, представляешь? Нам понадобится твоя помощь, это ещё мягко сказано."
 
 #. ja: 依頼している物資に変更が入っているから、確認を頼む。<br>第三次までの事業計画の物資の納品も引き続き受けつけているが、<br>急務の第四次事業ほどの謝礼は渡せないから、気をつけてくれ。
 #. de: Ach, bevor ich es vergesse<nbsp>... Denke daran, dass die Materialien, die wir für das dritte Großprojekt verwendet haben, nicht für die vierte und letzte Wieder<shy>aufbauphase gebraucht werden können. Das heißt aber nicht, dass dein altes Material nutzlos geworden ist. Du kannst es immer noch eintauschen. Wir werden es für die Instandsetzung der bereits errichteten Viertel verwenden.
@@ -545,7 +545,7 @@ msgstr "Осталось только построить дома. Думаю, �
 #. fr: C'est à présent au tour des bâtiments du Nichoir, et nous devrons surtout veiller à ce qu'ils protègent con<shy>ve<shy>na<shy>ble<shy>ment du froid grâce à une bonne isolation des murs. Si tout le monde s'applique, ça devrait aller comme sur des roulettes.
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_200_020:1"
 msgid "Soon, my friend─soon folk will be able to call this place home again!"
-msgstr "Совсем скоро, друг мой, люди снова смогут назвать это место своим домом!"
+msgstr "Совсем скоро, <if $gn4>подруга моя<else>друг мой</if>, люди снова смогут назвать это место своим домом!"
 
 #. ja: 職人がたのおかげで、今期の復興計画は完遂だ！<br>ニューネスト居住区には、いま続々と移住者がやってきてるぜ。<br>立派な家を見て、みんな安心した表情するんだ。
 #. de: Alles fertig! Komplett! Meine Güte, der Eifer unserer Helferinnen und Helfer lässt mich wirklich staunen. Und schon jetzt erfreut sich das Genist haufenweise neuer Anwohner, die die brandneuen Häuser bewohnen wollen. Der Anblick rauchender Schlote ist unser Lohn.
@@ -570,7 +570,7 @@ msgstr "Приятно видеть, как у людей загораются �
 #. fr: Au fait, n'hésitez pas à continuer de nous procurer des ressources d'ici la prochaine étape car nous n'en avons jamais assez. Merci encore pour votre coopération, héro<if $gn4>ïne<else>s</if> d'Ishgard<nbsp>!
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_210_020:1"
 msgid "Of course, we ain't done with the restoration just yet. Hope to keep seein' you around these parts, my friend!"
-msgstr "Но восстановление ещё не закончено. Надеюсь, мы ещё увидимся здесь, друг мой!"
+msgstr "Но восстановление ещё не закончено. Надеюсь, мы ещё увидимся здесь, <if $gn4>подруга моя<else>друг мой</if>!"
 
 #. ja: そうだ、「ポットキン」の話はよく聞いてくれな。<br>資材の調達や納品に協力してくれるなら、<br>聞きもらしがあると困るからよ。
 #. de: Ach ja. Bitte sprich mit Potkin. Der erklärt dir alles über die Materiallieferungen. Immerhin musst du wissen, wie das <i>genau</i> funktioniert, richtig?
@@ -578,7 +578,7 @@ msgstr "Но восстановление ещё не закончено. Над
 # aeria-terms: {"Potkin":"4c26a36bafcc"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_120_000:1"
 msgid "Say, you spoken with Potkin yet? If not, best sort that out now. He can tell you things you need to know."
-msgstr "Слушай, ты уже говорил с Поткиным? Если нет, лучше сделай это сейчас. Он расскажет, что тебе нужно знать."
+msgstr "Слушай, ты уже <if $gn4>говорила<else>говорил</if> с Поткиным? Если нет, лучше сделай это сейчас. Он расскажет, что тебе нужно знать."
 
 #. ja: そうだ、あんた採集にも通じてるなら、<br>「オールヴァエル」坊ちゃんに詳しい話を聞いてきてくれな。<br>あの人はちょいとそそっかしいから、伝え忘れがあるといけねぇ。
 #. de: Du bist auch <if $gn4>eine begnadete Sammlerin<else>ein begnadeter Sammler</if>, oder nicht? Dann solltest du dich unbedingt an Aurvael wenden. Er ist ein bisschen schüchtern, deswegen verlässt er sich glaube ich darauf, dass ich die Leute zu ihm schicke, anstatt sie direkt anzusprechen<nbsp>...
@@ -611,7 +611,7 @@ msgstr "<split \" \" 1><string $gs1></split>! Как видите, восста�
 #. fr: À cause du dénivelé important qu'on rencontre dans les environs, il y a beaucoup de pentes et d'escaliers, donc les ouvriers pourront désormais travailler dans de bien meilleures conditions.
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_230_010:1"
 msgid "As you've no doubt noticed, the hilly terrain and abundance of stairwells in these parts makes it tricky to get around. Which means that paving safe and walkable paths is of the highest priority."
-msgstr "Как ты наверняка заметил, из-за холмов и бесчисленных лестниц тут непросто передвигаться. Поэтому в первую очередь надо проложить ровные и безопасные дорожки."
+msgstr "Как ты наверняка <if $gn4>заметила<else>заметил</if>, из-за холмов и бесчисленных лестниц тут непросто передвигаться. Поэтому в первую очередь надо проложить ровные и безопасные дорожки."
 
 #. ja: <split " " 1><string $gs1></split>、よく来てくれたな！<br>フェザーフォール商業区の整備は完了して、<br>いまはアバカス通りの修繕に着手している状態だ。
 #. de: Schön, dass du da bist, <split " " 1><string $gs1></split>! Die Arbeiten am Federfall-Quartier sind nun abgeschlossen, jetzt geht es mit der Ausbesserung der Allee des Abakus weiter.
@@ -629,7 +629,7 @@ msgstr "<split \" \" 1><string $gs1></split>! Пришли посмотреть,
 # aeria-terms: {"Mendicant's Court":"724ff750fafe","Skysteel Manufactory":"03229906becd"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_240_010:1"
 msgid "Speakin' of which, have you noticed the impressive-lookin' structure that's gone up in the Mendicant's Court? That's goin' to serve as a branch office of the Skysteel Manufactory."
-msgstr "Кстати, заметил внушительное здание на Площади нищих? Там будет филиал Мануфактуры небесной стали."
+msgstr "Кстати, <if $gn4>заметила<else>заметил</if> внушительное здание на Площади нищих? Там будет филиал Мануфактуры небесной стали."
 
 #. ja: 最先端の機工技術で、復興事業に協力してくれているんだ。<br>エーテルオーガーもあそこで量産されているし、<br>こう……ロマンがあるよな！
 #. de: Mit ihrer hochmodernen Ingenieurskunst werden sie den Wieder<shy>aufbau unterstützen. Auch Ätherschütz wird dort in Massen produziert, ist das nicht fantastisch?
@@ -670,7 +670,7 @@ msgstr "Гляньте-ка, <split \" \" 1><string $gs1></split>! Хотя на
 # aeria-terms: {"debris":"92edef1ae2f6"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_260_010:1"
 msgid "To think that those crumblin' walls and debris-strewn streets would one day look like this, eh? Just goes to show that with cooperation and hard work, there's nothin' that ain't possible. Anyhow, go get yourself some rest─I reckon you've earned it more than any!"
-msgstr "Кто бы мог подумать, что из развалин и заваленных обломками улиц получится такая красота! Вот что значит вместе трудиться и не лениться. Ну а ты ступай отдохни — заслужил как никто другой."
+msgstr "Кто бы мог подумать, что из развалин и заваленных обломками улиц получится такая красота! Вот что значит вместе трудиться и не лениться. Ну а ты ступай отдохни — <if $gn4>заслужила<else>заслужил</if> как никто другой."
 
 #. ja: ついに第四次復興事業計画が開始したな。<br>今回は、リズンソング文化区西、詩伯門、<br>そして文化区東の順で復興を進めていく予定だ。
 #. de: Die Arbeiten am vierten Großprojekt haben begonnen, <split " " 1><string $gs1></split>! Das neue Unterfangen hat die Errichtung eines Kulturviertels namens „Himmelsang“ zum Ziel. Es ist wie üblich in mehrere kleinere Wieder<shy>aufbauprojekte unterteilt, darunter die Quartiere des westlichen Himmelsangs, des östlichen Himmelsangs und einer verbindenden Straße, die sich „Balladenpassage“ nennt.
@@ -686,7 +686,7 @@ msgstr "Рад сообщить, что мы наконец приступили
 # aeria-terms: {"First":"d13bb98c2410"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_270_010:1"
 msgid "First, we'll need to prepare the western area of the quarter for further construction. We're countin' on you to set a proper example, my skybuilder friend!"
-msgstr "Для начала надо подготовить западную часть квартала к дальнейшему строительству. Рассчитываем на тебя, друг мой, покажи всем пример!"
+msgstr "Для начала надо подготовить западную часть квартала к дальнейшему строительству. Рассчитываем на тебя, <if $gn4>подруга моя<else>друг мой</if>, покажи всем пример!"
 
 #. ja: よう、<split " " 1><string $gs1></split>！<br>いまはリズンソング文化区西の住居を建設中だ。<br>復興共同作業の際は、蒼天街の案内人に案内を頼むといい。
 #. de: Hallo, <split " " 1><string $gs1></split>! Die Arbeiten am westlichen Himmelsang und seinen Gebäuden sind in vollem Gange. Sprich mit dem entsprechenden Vorarbeiter, wenn du dich an den Wieder<shy>aufbauarbeiten beteiligen möchtest.
@@ -696,7 +696,7 @@ msgstr "Для начала надо подготовить западную ч�
 # aeria-terms: {"Risensong Quarter":"4976154ae483"}
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_280_000:1"
 msgid "<split \" \" 1><string $gs1></split>! You're back, and not a moment too soon. We're just about to start in on concerted works to raise the new residential district in the west of the Risensong Quarter. If you're willin' to lend a hand, my colleague over there would more than welcome your presence."
-msgstr "<split \" \" 1><string $gs1></split>! Ты вернулся как раз вовремя. Мы вот-вот начнём совместные работы по строительству жилого квартала на западе Квартала Восходящей песни. Если хочешь помочь, мой коллега вон там будет тебе очень рад."
+msgstr "<split \" \" 1><string $gs1></split>! Ты <if $gn4>вернулась<else>вернулся</if> как раз вовремя. Мы вот-вот начнём совместные работы по строительству жилого квартала на западе Квартала Восходящей песни. Если хочешь помочь, мой коллега вон там будет тебе очень рад."
 
 #. ja: 現在修繕中の詩伯門は、イシュガルドの上層に繋がっている。<br>ここが完成すれば、市民の交通が良くなるな。
 #. de: Die Arbeiten an der Balladenpassage sind in vollem Gange. Sie soll den Zugang zum neuen Quartier erleichtern.
@@ -757,4 +757,4 @@ msgstr "С праздником тут так оживлённо! Когда м�
 #. fr: Tiens donc, <if $gn4>ma très chère<else>mon très cher</if> <split " " 1><string $gs1></split><nbsp>! Même si votre travail à Azurée est terminé, c'est toujours un immense plaisir de vous revoir parmi nous.
 msgctxt "custom/006/CtsHwdInformation_00633:TEXT_CTSHWDINFORMATION_00633_AUGEBERT_350_010:1"
 msgid "To that end, I hope we can keep on countin' on your contributions. But whether you're here to help out or just stopping by, it's always a pleasure to see you, my friend."
-msgstr "Потому надеюсь и дальше рассчитывать на твою помощь. Но неважно, пришёл ты помочь или просто заглянуть, я всегда рад тебя видеть, друг мой."
+msgstr "Потому надеюсь и дальше рассчитывать на твою помощь. Но неважно, <if $gn4>пришла<else>пришёл</if> ты помочь или просто заглянуть, я всегда рад тебя видеть, <if $gn4>подруга моя<else>друг мой</if>."
