@@ -10,6 +10,7 @@ msgstr ""
 #. de: Adalberta hat einen neuen Auftrag für dich.
 #. fr: Adalberta aimerait vous confier une nouvelle tâche pour votre ap<shy>pren<shy>tis<shy>sage de l'extraction minière.
 #. kind: journal
+# aeria-terms: {"Adalberta":"a28228958ad0"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_SEQ_00:1"
 msgid "Adalberta wants to teach you the importance of knowing the land."
 msgstr "Адалберта хочет научить вас понимать, что скрывает земля."
@@ -18,7 +19,7 @@ msgstr "Адалберта хочет научить вас понимать, ч
 #. de: In Anerkennung deiner Fortschritte hat Adalberta dir einen neuen Auftrag erteilt. Um dir die Bedeutung des Wissens über das Land einzuschärfen, bittet die Gildenmeisterin dich, 10 <noun-de Item 5 5432 2 4 1> zu erlangen. Baue die erforderliche Menge ab und bringe sie zu Adalberta.
 #. fr: Reconnaissant que vous avez fait des progrès dans le maniement de la pioche, Adalberta a décidé de vous donner un exercice destiné à vous apprendre à choisir ce que vous voulez extraire du sol. Obtenez dix <noun-fr Item 12 5432 2 1> du côté de la porte de Thal, et rapportez-les-lui.
 #. kind: journal
-#, aeria-term-model-exception: Mine 687ef955c508
+# aeria-terms: {"Adalberta":"a28228958ad0","Gate of Nald":"3e3393c52ac9","Mine":"41391a1f82c3"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_SEQ_01:1"
 msgid "In recognition of your progress, Adalberta has set you a new task. Wishing to impress upon you the importance of knowing the land, the guildmaster bids you procure ten bone chips. Mine the required quantity beyond the Gate of Nald and deliver them to her."
 msgstr "Адалберта довольна вашими успехами и поручает новое задание. Чтобы вы поняли, как важно знать свой край, глава гильдии просит добыть десять осколков кости. Добудьте их за Вратами Нальда и принесите ей."
@@ -28,6 +29,7 @@ msgstr "Адалберта довольна вашими успехами и п�
 #. fr: Vous avez remis les dix <noun-fr Item 12 5432 2 1> à Adalberta. Celle-ci vous a expliqué que ce que vous aviez appris jusqu'à présent n'était qu'une infime partie des techniques et con<shy>nais<shy>san<shy>ces utilisées en extraction minière, mais qu'il était essentiel de les mettre en pratique.<br>* Adalberta propose la prochaine quête aux mineurs de niveau 10.
 #. kind: journal
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Adalberta":"a28228958ad0","Gathering Log":"9a4809c3c26f","miner":"57d025c08b0e"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_SEQ_02:1"
 msgid "After counting your bone chips, Adalberta explains that knowledge acquired through practical experience is what allows a miner to grow. With your trusty gathering log to guide you, venture forth into the wilderness in search of further riches, and amass a wealth of knowledge in so doing.<br><br>※The next miner quest will be available from Adalberta upon reaching level 10."
 msgstr "Адалберта пересчитала осколки и объяснила: шахтёру помогают расти знания, добытые на практике. Возьмите с собой Журнал сбора и отправляйтесь в глушь за новыми богатствами. Там вы и наберётесь опыта.<br><br>※ Следующее задание шахтёра станет доступно у Адалберты, когда вы достигнете 10-го уровня."
@@ -36,6 +38,7 @@ msgstr "Адалберта пересчитала осколки и объясн
 #. de: <capitalize><noun-de Item 5 5432 2 4 1></capitalize> bei Adalberta abliefern
 #. fr: Donner 10 <noun-fr Item 12 5432 2 1> à Adalberta
 #. kind: objective
+# aeria-terms: {"Adalberta":"a28228958ad0"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_TODO_00:1"
 msgid "Deliver bone chips to Adalberta."
 msgstr "Отдать осколки кости Адалберте."
@@ -48,7 +51,7 @@ msgstr "Отдать осколки кости Адалберте."
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_0:1"
 msgid "Hello there, <split \" \" 1><string $gs1></split>. 'Tis good to see you again."
-msgstr "О, явился, <split \" \" 1><string $gs1></split>. Рада тебя видеть!"
+msgstr "О, <if $gn4>явилась<else>явился</if>, <split \" \" 1><string $gs1></split>. Рада тебя видеть!"
 
 #. ja: その様子なら、次のシゴトを任せられそうね。<br>今回のシゴトで覚えてもらうのは「掘らないこと」……<br>ああ、もちろん休むって意味じゃないからね。
 #. de: Den Blasen an deinen Händen nach zu urteilen, hast du ordentlich Gebrauch von deiner Spitzhacke gemacht. Mir scheint, du bist bereit für deine nächste Lektion.
@@ -56,12 +59,13 @@ msgstr "О, явился, <split \" \" 1><string $gs1></split>. Рада теб�
 #. speaker: ADALBERTA
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_1:1"
 msgid "Judging by the blisters on your hands, it's plain you've been hard at it with your pickaxe. Good. You're ready for the next stage of your training."
-msgstr "По мозолям на руках видно, что ты не выпускал кирку. Отлично. Пора переходить к следующему этапу обучения."
+msgstr "По мозолям на руках видно, что ты <if $gn4>не выпускала<else>не выпускал</if> кирку. Отлично. Пора переходить к следующему этапу обучения."
 
 #. ja: 闇雲に掘るんじゃなくて、<br>欲しい物に合わせて、採掘場を選べってことよ。<br>そういうコトを学んでほしいの。
 #. de: Eorzea ist eine weitläufige Welt mit höchst unter<shy>schied<shy>lichen Umgebungen. Daher variieren die Mineralreichtümer von Region zu Region recht deutlich.
 #. fr: Non, ce que je veux dire, c'est que tu ne vas pas creuser n'importe où, mais juste là où il faut. En d'autres mots, je veux que tu saches choisir les bons filons.
 #. speaker: ADALBERTA
+# aeria-terms: {"Eorzea":"4e5e8c295294"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_3:1"
 msgid "Eorzea's a vast realm filled with diverse environments, and her mineral wealth varies from region to region."
 msgstr "Эорзея огромна, и края в ней совсем разные. А богатства её недр от края к краю меняются."
@@ -70,6 +74,7 @@ msgstr "Эорзея огромна, и края в ней совсем разн
 #. de: Selbst innerhalb Thanalans gibt es erhebliche Unterschiede zwischen Ost und West.
 #. fr: Les matériaux que recèle le sol varient en fonction des régions.
 #. speaker: ADALBERTA
+# aeria-terms: {"Thanalan":"90760cfb71bd"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_4:1"
 msgid "Even within Thanalan, there's a marked difference between east and west."
 msgstr "Даже в Таналане между востоком и западом огромная разница."
@@ -78,6 +83,7 @@ msgstr "Даже в Таналане между востоком и западо
 #. de: Wenn du <if $gn4>eine erfolgreiche Mi<shy>nen<shy>ar<shy>bei<shy>te<shy>rin<else>ein erfolgreicher Minenarbeiter</if> werden möchtest, musst du wissen, wo du was finden kannst.
 #. fr: Si je prends l'exemple du Thanalan, on trouve des minerais com<shy>plè<shy>te<shy>ment différents entre les parties orientale et occidentale.
 #. speaker: ADALBERTA
+# aeria-terms: {"miner":"57d025c08b0e"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_5:1"
 msgid "If you want to be a successful miner, it's essential that you know where to look for what."
 msgstr "Хочешь стать толковым шахтёром — надо знать, где что искать."
@@ -86,6 +92,7 @@ msgstr "Хочешь стать толковым шахтёром — надо �
 #. de: Du musst dich mit Eorzea vertraut machen, sonst wird dir das Land seine tiefsten Geheimnisse nicht offenbaren.
 #. fr: Il est donc important de savoir quel type de ressources est caché dans chaque zone. C'est ce genre de savoir qui sépare les amateurs des mineurs de métier.
 #. speaker: ADALBERTA
+# aeria-terms: {"Eorzea":"4e5e8c295294"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_6:1"
 msgid "And for that, you have to become intimate with Eorzea. How else can you expect her to reveal her innermost secrets to you?"
 msgstr "А для этого нужно изучить Эорзею. Иначе как земля откроет тебе свои сокровенные тайны?"
@@ -94,6 +101,7 @@ msgstr "А для этого нужно изучить Эорзею. Иначе 
 #. de: Bis dahin ist es ein langer Weg, aber auch mit kleinen Schritten kommt man ans Ziel. Du solltest damit anfangen, dass du zehn <noun-de Item 5 5432 2 4 1> für mich beschaffst.
 #. fr: C'est ce que j'espère te faire comprendre cette fois. Je te demande donc de m'extraire et m'apporter dix <noun-fr Item 12 5432 2 1>.
 #. speaker: ADALBERTA
+# aeria-terms: {"Yalm":"7ef5fca3189b"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_7:1"
 msgid "Getting to know her every square malm is no small undertaking, of course, but the yalms soon add up─as I'm sure you'll find with my next task. I'd like you to seek out ten bone chips for me."
 msgstr "Узнать её всю — дело нешуточное, конечно, но ялмы понемногу набегают — вот и в следующем задании убедишься. Для начала добудь для меня десять осколков кости."
@@ -102,6 +110,7 @@ msgstr "Узнать её всю — дело нешуточное, конечн
 #. de: Damit du nicht völlig im Dunkeln tappst, hier ein kleiner Hinweis: Du findest sie nicht am gleichen Ort wie Kupfererz. Und nun los mit dir, Glück auf!
 #. fr: Je te donne quand même un petit indice. Ce n'est pas là où tu avais déniché les morceaux de minerai de cuivre de la dernière fois. Je te conseille plutôt d'aller du côté de la porte de Thal.
 #. speaker: ADALBERTA
+# aeria-terms: {"Gate of Nald":"3e3393c52ac9"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_8:1"
 msgid "Just so you don't go about it completely blind, here's a hint: you'll find these just beyond the Gate of Nald. Off you go now, and happy digging!"
 msgstr "Чтобы не ходить вслепую, вот подсказка: они лежат за Вратами Нальда. Ну, ступай, и удачной добычи!"
@@ -128,7 +137,6 @@ msgstr "Так-так, ровно десять осколков кости. Мо
 #. de: Zweifelsohne hattest du zunächst Schwie<shy>rig<shy>keiten, welche zu finden, aber mit jedem gefundenen Stück wuchs deine Erfahrung.
 #. fr: Dis-toi cependant que ce n'est pas peine perdue. Cette tâche t'a sûrement apporté un savoir qui te servira dans ta carrière de mineu<if $gn4>se<else>r</if>.
 #. speaker: ADALBERTA
-#, aeria-term-model-exception: First fb156eba0883
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_22:1"
 msgid "No doubt you had trouble tracking these down at first, but each chip you found added to your understanding."
 msgstr "Наверняка сперва было нелегко их найти, но каждый осколок прибавил тебе знаний."
@@ -137,7 +145,7 @@ msgstr "Наверняка сперва было нелегко их найти,
 #. de: Dank deiner Bemühungen kennst du nun die besten Orte, um nach <noun-de Item 5 5432 2 3 1> zu suchen. Und dieses Wissen macht dich zu <if $gn4>einer erfahreneren Mi<shy>nen<shy>ar<shy>bei<shy>te<shy>rin<else>einem erfahreneren Minenarbeiter</if>.
 #. fr: En effet, tu n'auras par exemple aucun mal à chercher les filons adéquats la prochaine fois qu'il te faudra des <noun-fr Item 12 5432 2 1>.
 #. speaker: ADALBERTA
-#, aeria-term-model-exception: Mine 687ef955c508
+# aeria-terms: {"mine":"41391a1f82c3"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_23:1"
 msgid "For your efforts, you've come to know where best to search for bone chips. And so it goes for everything else we mine."
 msgstr "Теперь ты знаешь, где искать осколки кости. А так и со всем остальным, что мы добываем."
@@ -156,6 +164,7 @@ msgstr "И мало знать, <i>где</i> искать материалы. �
 #. de: Plattner und Grobschmiede haben einen hohen Bedarf an Metallerzen, während Goldschmiede nur an Gold und Edelsteinen interessiert sind.
 #. fr: En tant que mineu<if $gn4>se<else>r</if>, les forgerons et les armuriers seront pro<shy>ba<shy>ble<shy>ment tes meilleurs clients parce qu'ils ont besoin des minerais que tu sais extraire.
 #. speaker: ADALBERTA
+# aeria-terms: {"armorer":"024e3bb204bd","blacksmith":"52cb2577923b","goldsmith":"1b735164df1c"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_41:1"
 msgid "For instance, armorers and blacksmiths are our best customers when it comes to ores, while goldsmiths would struggle to ply their trade if we didn't supply them with gold and gemstones."
 msgstr "Например, руды у нас охотно берут кузнецы и бронники. А ювелирам нужны золото и самоцветы, без них им не обойтись."
@@ -164,6 +173,7 @@ msgstr "Например, руды у нас охотно берут кузне�
 #. de: Ach ja, nicht zu vergessen die Alchemisten, die brauchen zum Beispiel Steinsalz und Menninge.
 #. fr: De même, les orfèvres t'achèteront tes pierres précieuses, et les alchimistes pourront te demander de leur procurer des morceaux de sel gemme ou des pincées de minium. Penses-y bien lorsque tu creuses la roche.
 #. speaker: ADALBERTA
+# aeria-terms: {"alchemist":"f4325a973ec0"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_42:1"
 msgid "Oh, and I mustn't forget the alchemists. Those fellows can never have too much rock salt and cinnabar, and we often rub shoulders with them."
 msgstr "А ещё алхимики — им вечно нужны каменная соль и киноварь. Мы с ними часто пересекаемся."
@@ -182,6 +192,7 @@ msgstr "Словом, знай, откуда что берётся и куда �
 #. speaker: ADALBERTA
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"Gathering Log":"9a4809c3c26f"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_28:1"
 msgid "Oh, don't look so glum! Just be thankful you don't have to bleeding <i>memorize</i> all that information─you have a gathering log for such stuff. Make good use of it, and you can't go wrong."
 msgstr "Да не хмурься ты! Хорошо ещё, что всё это не надо <i>зубрить</i> — для того и есть Журнал сбора. Пользуйся им как следует, и не ошибёшься."
@@ -190,7 +201,7 @@ msgstr "Да не хмурься ты! Хорошо ещё, что всё это
 #. de: Das wär's fürs Erste. Mach weiter so und suche mich erneut auf, wenn du mehr Zeit in der Wildnis verbracht hast. Später habe ich dann einen weiteren Auftrag für dich.
 #. fr: Tu l'auras compris, tout est question d'expérience, en fin de compte. Je compte sur toi pour continuer à t'entraîner, et je te donnerai une nouvelle tâche lorsque je jugerai que tu es prêt<if $gn4>e</if>.
 #. speaker: ADALBERTA
-#, aeria-term-model-exception: wilds 825cf8edb307
+# aeria-terms: {"wilds":"c5dbcb6ea690"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_ADALBERTA_000_29:1"
 msgid "That's all for now. Keep up your efforts, and visit me again when you've spent more time in the wilds, with pickaxe in hand. I'll have another task for you when you've perfected your swing."
 msgstr "На этом пока всё. Продолжай работать и загляни ко мне, когда ещё побудешь в глуши с киркой в руках. Когда отточишь мастерство, я дам тебе новое задание."
@@ -203,6 +214,7 @@ msgstr "На этом пока всё. Продолжай работать и з
 #. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"Gathering Log":"9a4809c3c26f","miner":"57d025c08b0e"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_SYSTEM_000_30:1"
 msgid "For every fifth level you reach as a miner, you will gain the ability to detect higher-level mineral deposits. When this occurs, any new items that are available through gathering will be added to your <ui-color 500><ui-edge-color 501>gathering log</ui-edge-color></ui-color>."
 msgstr "Каждые пять уровней шахтёра вы сможете обнаруживать месторождения более высокого уровня. Новые доступные для добычи предметы появятся в вашем <ui-color 500><ui-edge-color 501>Журнале сбора</ui-edge-color></ui-color>."
@@ -215,6 +227,7 @@ msgstr "Каждые пять уровней шахтёра вы сможете 
 #. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"miner":"57d025c08b0e"}
 msgctxt "quest/006/ClsMin050_00600:TEXT_CLSMIN050_00600_SYSTEM_000_31:1"
 msgid "You can use the <ui-color 500><ui-edge-color 501>Lay of the Land</ui-edge-color></ui-color> miner action to help you locate the nearest mineral deposits within your skill range."
 msgstr "Умение шахтёра <ui-color 500><ui-edge-color 501>«Оценка местности»</ui-edge-color></ui-color> поможет найти ближайшие месторождения, доступные вашему уровню."

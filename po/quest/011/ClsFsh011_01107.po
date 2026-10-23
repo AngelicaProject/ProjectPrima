@@ -10,6 +10,7 @@ msgstr ""
 #. de: Um Mitglied in der Fischergilde zu werden, muss man ein gewisses Prozedere durchlaufen. Teile N'nmulika an der Rezeption deine Absichten mit.
 #. fr: N'nmulika attend que vous lui fassiez part de votre décision quant à votre inscription à la guilde des pêcheurs.
 #. kind: journal
+# aeria-terms: {"Fishermen's Guild":"5d0a6e13926e","N'nmulika":"73ec98290ff5"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SEQ_00:1"
 msgid "N'nmulika would have you reaffirm your desire to join the Fishermen's Guild."
 msgstr "Н'Нмулика хочет, чтобы вы подтвердили намерение вступить в Гильдию рыбаков."
@@ -18,7 +19,7 @@ msgstr "Н'Нмулика хочет, чтобы вы подтвердили н�
 #. de: Um offizielles Mitglied zu werden, brauchst du die Zustimmung von Sisipu. Sprich in der Fischergilde mit ihr.
 #. fr: Afin d'officialiser votre entrée chez les pêcheurs, N'nmulika vous a demandé de vous adresser à Sisipu.
 #. kind: journal
-#, aeria-term-model-exception: First fb156eba0883
+# aeria-terms: {"N'nmulika":"73ec98290ff5","Sisipu":"1cfe34f693a2"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SEQ_01:1"
 msgid "N'nmulika has informed you that all would-be guild members must first meet with the approval of Sisipu, the acting guildmaster. Seek her out and see what she has to say."
 msgstr "Н'Нмулика объяснила, что сперва каждый кандидат должен получить одобрение Сисипу, исполняющей обязанности главы гильдии. Найдите её и поговорите."
@@ -27,7 +28,7 @@ msgstr "Н'Нмулика объяснила, что сперва каждый �
 #. de: Sisipu heißt dich in der Gilde willkommen. Nach einem kurzen Gespräch erhältst du <noun-de Item 1 "　2571" 1 4 1>. Leg sie an und sprich danach erneut mit ihr.
 #. fr: Sisipu s'est réjouie de votre engouement pour la pêche et vous a accueilli<if $gn4>e</if> les bras ouverts à la guilde. Prenez <noun-fr Item 2 "　2571" 1 1> qu'elle vous a offert<if "<sheet Item "　2571" 6>">e</if> et parlez-lui de nouveau.
 #. kind: journal
-#, aeria-term-model-exception: hold f77e37217d83
+# aeria-terms: {"Fishermen's Guild":"5d0a6e13926e","Sisipu":"1cfe34f693a2","hold":"4662ae098b11"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SEQ_02:1"
 msgid "Sisipu cheerfully grants you entry into the ranks of the Fishermen's Guild, and offers to fill you in on the fundamentals of fishing. Take hold of your fishing rod and speak with Sisipu once more."
 msgstr "Сисипу с радостью приняла вас в Гильдию рыбаков и предложила рассказать об основах рыбной ловли. Возьмите удочку и снова поговорите с ней."
@@ -36,6 +37,7 @@ msgstr "Сисипу с радостью приняла вас в Гильдию
 #. de: In der Fischergilde mit Sisipu sprechen
 #. fr: Parler à Sisipu
 #. kind: objective
+# aeria-terms: {"Sisipu":"1cfe34f693a2"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_TODO_00:1"
 msgid "Speak with Sisipu."
 msgstr "Поговорить с Сисипу."
@@ -46,7 +48,7 @@ msgstr "Поговорить с Сисипу."
 #. speaker: NNMULIKA
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_NNMULIKA_000_000:1"
 msgid "I'd hate to hear you'd had a change of heart. You haven't, have you?"
-msgstr "Не передумал вступать в гильдию? А то было бы обидно."
+msgstr "Не <if $gn4>передумала<else>передумал</if> вступать в гильдию? А то было бы обидно."
 
 #. ja: あれ、違うんですか？<br>てっきり決心したものかと……。
 #. de: Was, du willst kein Mitglied werden? Hat dir mein Vortrag etwa keine Lust auf mehr gemacht?
@@ -69,9 +71,10 @@ msgstr "Ну что ж, можешь гоняться за водопадами,
 #. fr: Ah, voilà<nbsp>! Rien ne me fait plus plaisir que d'assurer une prrrise<nbsp>! Il ne te reste plus qu'à te présenter à la personne qui gère tout ici.
 #. speaker: NNMULIKA
 #. macro: <if $gn4>woman<else>man</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"fisher":"81f592778d31"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_NNMULIKA_000_020:1"
 msgid "Spoken truly like a true bespoke fisher<if $gn4>woman<else>man</if>! Well, then, it's time you met the guildmaster!"
-msgstr "Вот это я понимаю — ответ настоящего рыбака! Ну что ж, пора познакомить тебя с главой гильдии!"
+msgstr "Вот это я понимаю — ответ <if $gn4>настоящей рыбачки<else>настоящего рыбака</if>! Ну что ж, пора познакомить тебя с главой гильдии!"
 
 #. ja: 現在、漁師ギルドでは色々理由がありまして……<br>本来の責任者であるギルドマスター「ワワラゴ」さんが、<br>実務を担当してないんです。
 #. de: Du musst wissen, in unserer Gilde ist zurzeit viel los. Unser eigentlicher Gildenmeister, Wawalago, ist ... wie soll ich es sagen ... im Moment nicht wie sonst ins Tagesgeschäft involviert.
@@ -85,6 +88,7 @@ msgstr "Но наш хитрый глава рыбацкой артели сей
 #. de: Sisipu hat seine Aufgaben bis auf Weiteres übernommen.
 #. fr: C'est donc ma<shy>de<shy>moi<shy>sel<shy>le Sisipu qui assume ces res<shy>pon<shy>sa<shy>bi<shy>li<shy>tés et qui perrrmet à notre guilde de fonctionner normalement.
 #. speaker: NNMULIKA
+# aeria-terms: {"Sisipu":"1cfe34f693a2"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_NNMULIKA_000_022:1"
 msgid "So Sisipu tends to tend to tasks that require tending to."
 msgstr "Так что Сисипу и берёт на себя все заботы."
@@ -101,6 +105,7 @@ msgstr "В том числе решает, суждено тебе утонут�
 #. de: Sie steht da drüben am Becken. Sprich sie einfach an und steh ihr Rede und Antwort.
 #. fr: Tiens, elle est là-bas, près des viviers. Va donc lui parler et lui montrer à quel point tu désires devenir l'un<if $gn4>e</if> des nôtrrres.
 #. speaker: NNMULIKA
+# aeria-terms: {"Sisipu":"1cfe34f693a2"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_NNMULIKA_000_024:1"
 msgid "Sisipu's presiding over those pools, whenever you decidedly decide to say hello. She might seem somewhat standoffish, but she's only keeping an eye out for sharks. Be yourself and you have nothing to worry about!"
 msgstr "Сисипу вон у садка. Как только надумаешь поздороваться, подходи. Она может показаться холодной, но просто высматривает акул. Будь собой — и беспокоиться не о чем!"
@@ -109,6 +114,7 @@ msgstr "Сисипу вон у садка. Как только надумаеш�
 #. de: Aha, du willst also unserer Gilde beitreten. Deine Unterhaltung mit N'nmulika habe ich mitbekommen. Ich bin Sisipu. Freut mich, dich kennenzulernen.
 #. fr: Oh, vous m'avez l'air de quelqu'un qui s'est fait harponner par N'nmulika et qui a décidé de rejoindre notre guilde après avoir écouté ses ex<shy>pli<shy>ca<shy>tions. Moi, je suis Sisipu. Enchantée de faire votre con<shy>nais<shy>san<shy>ce.
 #. speaker: SISIPU
+# aeria-terms: {"N'nmulika":"73ec98290ff5"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SISIPU_000_030:1"
 msgid "Yes, yes, save your breath. I heard every word between you and N'nmulika, so I know she told you my role here."
 msgstr "Да-да, не надо объясняться. Я слышала весь ваш разговор с Н'Нмуликой и знаю, что она уже рассказала тебе о моих обязанностях."
@@ -119,6 +125,7 @@ msgstr "Да-да, не надо объясняться. Я слышала ве�
 #. speaker: SISIPU
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"Wawalago":"62c90804ac21"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SISIPU_000_031:1"
 msgid "As she said, Wawalago's <i>supposed</i> to be guildmaster, but apparently he has bigger fish to fry, so all his work falls to me."
 msgstr "Как она и сказала, Вавалаго вроде как должен быть главой гильдии, но, похоже, у него дела поважнее. Так что вся работа на мне."
@@ -139,7 +146,7 @@ msgstr "А заодно я проверяю, чтобы наши новые <i>�
 #. speaker: SISIPU
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SISIPU_000_033:1"
 msgid "...You've passed the first test by not laughing at that awful joke. Now you only need the right answer to this question: are you prepared to fish like you've never fished before?"
-msgstr "...Ты прошёл первое испытание: не рассмеялся над этой ужасной шуткой. Осталось только ответить на один вопрос: готов ли ты ловить рыбу, как никогда прежде?"
+msgstr "...Ты <if $gn4>прошла<else>прошёл</if> первое испытание: не <if $gn4>рассмеялась<else>рассмеялся</if> над этой ужасной шуткой. Осталось только ответить на один вопрос: <if $gn4>готова<else>готов</if> ли ты ловить рыбу, как никогда прежде?"
 
 #. ja: 漁師ギルドに入門しますか？
 #. de: Willst du der Fischergilde beitreten?
@@ -195,7 +202,7 @@ msgstr "Правда, учиться будет непросто, имей в в
 #. speaker: SISIPU
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SISIPU_000_052:1"
 msgid "Nevertheless, you're still going to need that pole and prayer, so I can at least provide you with the former. Here you go. One out of two isn't bad. I'll even throw in these lugworms, since you're not like to get far without bait."
-msgstr "Но одной удочки и молитвы для удачной рыбалки маловато. Удочку я тебе дам, а за наживкой придётся поохотиться самому. Вот, держи."
+msgstr "Но одной удочки и молитвы для удачной рыбалки маловато. Удочку я тебе дам, а за наживкой придётся поохотиться <if $gn4>самой<else>самому</if>. Вот, держи."
 
 #. ja: 入門したばかりの人には、<br>この初心者用の竿を使ってもらうことにしているの。<br>いきなり高価な竿を渡しても、使いこなせないしね。
 #. de: Klangvoller Name, nicht wahr? <if $gn4>Einer Anfängerin<else>Einem Anfänger</if> wie dir sofort eine Spitzenangel in die Hand zu drücken, wäre allerdings unverantwortlich. Sie würde dich nur verwirren.
@@ -209,7 +216,7 @@ msgstr "Удочки для новичков ничего не стоят — в
 #. de: Außerdem ist es leichter zu verkraften, wenn dir eine billige Angel aus der Hand rutscht, um auf Nimmer<shy>wieder<shy>sehen im Meer zu verschwinden.<br>Auf geht's, leg deine neue Angelrute an. Wollen wir doch mal sehen, ob sie dir steht. Sprich mich einfach wieder an, wenn du damit ausgerüstet bist.
 #. fr: Commencez par prendre <noun-fr Item 2 "　2571" 1 1> en main pour vous habituer à la tenir, et adressez-moi la parole lorsque vous serez prêt<if $gn4>e</if> à faire vos premiers pas.
 #. speaker: SISIPU
-#, aeria-term-model-exception: hold f77e37217d83
+# aeria-terms: {"hold":"4662ae098b11"}
 msgctxt "quest/011/ClsFsh011_01107:TEXT_CLSFSH011_01107_SISIPU_000_054:1"
 msgid "But in the meantime, let's see if you can figure out how to hold your pole. Ready the one I gave you and your lessons can begin."
 msgstr "А пока попробуй разобраться, как обращаться с удочкой. Возьми ту, что я тебе дала, и начнём занятия."

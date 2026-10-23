@@ -13,7 +13,7 @@ msgstr ""
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_000:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>. Once again, you are openly staring."
-msgstr "А, <split \" \" 1><string $gs1></split>. Опять уставился на меня во все глаза."
+msgstr "А, <split \" \" 1><string $gs1></split>. Опять <if $gn4>уставилась<else>уставился</if> на меня во все глаза."
 
 #. ja: 何をする？
 #. de: Was möchtest du machen?
@@ -25,6 +25,7 @@ msgstr "Что желаете сделать?"
 #. ja: 「ソーチョーの幻想盤」に挑戦する
 #. de: Die Traumtafel ausprobieren
 #. fr: Jouer à Touché-tourné
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_A1_000_001:1"
 msgid "Play Faux Hollows."
 msgstr "Сыграть в «Ложные дупла»."
@@ -39,6 +40,7 @@ msgstr "Обменять листья."
 #. ja: 「ソーチョーの幻想盤」について聞く
 #. de: Mehr über die Traumtafel erfahren
 #. fr: Se renseigner sur Touché-tourné
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_A1_000_003:1"
 msgid "Ask about Faux Hollows."
 msgstr "Расспросить о «Ложных дуплах»."
@@ -60,6 +62,7 @@ msgstr "Назад"
 #. ja: それならまずは、オレに物語を聞かせるのが先だ。<br>強敵との戦いについて、今まさに戦ってきた！ってくらい<br>しっかりと思い起こしてから、語りに来てくれ。
 #. de: Um mit der Traumtafel zu spielen, musst du dich zuerst meiner Traumprüfung stellen. Wundere dich nicht, wenn dir die Prüfung beim erneuten Durchleben noch gefährlicher vorkommt. Die Erinnerung spielt einem manchmal eigenartige Streiche. Aber das ist auch gut so, denn nur dann kannst du mir von der Begegnung mit deinen ärgsten Feinden berichten, als wäre es das erste Mal: eine lebens<shy>ge<shy>fähr<shy>liche Grenzerfahrung mit ungewissem Ausgang. Aber jetzt geh und durchlebe sie noch einmal, und komm dann zurück und erzähle mir davon.
 #. fr: Si tu veux que je te laisse jouer à Touché-tourné, tu vas d'abord devoir me raconter une histoire épique pleine de re<shy>bon<shy>dis<shy>se<shy>ments<nbsp>! Plus les ennemis que tu y affronteras seront farouches, plus mon imagination atteindra des sommets<nbsp>!
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_001:1"
 msgid "Yes, yes, I sympathize─Faux Hollows is a delight, if I do say so myself. But that is the very purpose of the enticement, child. To entice. If you would play, you must bring me a worthy tale in return."
 msgstr "Да-да, понимаю. «Ложные дупла» — отличная забава, уж поверьте. Но на то она и приманка, чтобы заманивать. Хотите сыграть — сперва расскажите мне достойную историю."
@@ -79,6 +82,7 @@ msgstr "Благодарю за рвение, но я ещё не закончи
 #. macro: <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($hour < 12)>a.m.<else>p.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 < 12 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"Faux Hollows":"b0ed898eed78","faux commander":"515ad7e8d5c8"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_SYSTEM_000_003:1"
 msgid "The faux commander will grant access to Faux Hollows once per week, beginning <reset-time 17 2><switch $weekday><case>Sunday<case>Monday<case>Tuesday<case>Wednesday<case>Thursday<case>Friday<case>Saturday</switch> at <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour < 12)>a.m.<else>p.m.</if> (Earth time), upon completion of an unreal trial."
 msgstr "Мистер Фо позволит сыграть в «Ложные дупла» раз в неделю — после прохождения нереального испытания, начиная с <reset-time 17 2><switch $weekday><case>воскресенья<case>понедельника<case>вторника<case>среды<case>четверга<case>пятницы<case>субботы</switch>, в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour < 12)>утра<else>дня</if> (по земному времени)."
@@ -86,6 +90,7 @@ msgstr "Мистер Фо позволит сыграть в «Ложные ду
 #. ja: 幻想盤は一度開始すると中断ができません。<br>幻想盤の挑戦中にコンテンツへの突入等を行うと、<br>挑戦の権利を失ってしまいますのでご注意ください。
 #. de: Bitte beachte, dass die Traumtafel nicht verlassen werden kann, sobald sie aktiviert wurde. Solltest du eine Instanz verlassen, bevor die Aufgabe abgeschlossen wurde, steht dir die Traumtafel den Rest der laufenden Woche nicht mehr zur Verfügung.
 #. fr: Les parties de Touché-tourné ne peuvent pas être suspendues. Toute action entraînant l'interruption d'une partie provoque la perte de l'essai en cours.
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_SYSTEM_100_003:1"
 msgid "Please be advised that Faux Hollows cannot be abandoned once commenced. Furthermore, in the event you enter an instanced duty before completing Faux Hollows, your attempt will be forfeit for the remainder of the week."
 msgstr "Учтите: начав игру в «Ложные дупла», вы уже не сможете её прервать. Если до конца игры вы войдёте в подземелье или другое отдельное испытание, попытка пропадёт, и сыграть снова на этой неделе уже не получится."
@@ -101,6 +106,7 @@ msgstr "Учтите: начав игру в «Ложные дупла», вы �
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <if ($n1 > 850)><br><ui-color 508><ui-edge-color 509>※You are currently carrying near to the maximum amount of faux leaves, and may be unable to receive all fau… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 > 850 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_SYSTEM_000_004:1"
 msgid "Play Faux Hollows?<br>(Faux leaves held: <kilo $n1 \",\">/1,000)<if ($n1 == 1000)><br><ui-color 508><ui-edge-color 509>※You are currently carrying the maximum amount of faux leaves, and will not be able to obtain more.</ui-edge-color></ui-color><else><if ($n1 > 850)><br><ui-color 508><ui-edge-color 509>※You are currently carrying near to the maximum amount of faux leaves, and may be unable to receive all faux leaves awarded.</ui-edge-color></ui-color></if></if>"
 msgstr "Сыграть в «Ложные дупла»?<br>(Ложных листьев: <kilo $n1 \",\">/1000)<if ($n1 == 1000)><br><ui-color 508><ui-edge-color 509>※ Вы уже носите максимальное количество ложных листьев и не сможете получить больше.</ui-edge-color></ui-color><else><if ($n1 > 850)><br><ui-color 508><ui-edge-color 509>※ У вас почти максимальное количество ложных листьев. Возможно, вы не сможете забрать всю награду.</ui-edge-color></ui-color></if></if>"
@@ -115,6 +121,7 @@ msgstr "Есть что рассказать? Наверняка историю 
 #. ja: おお……そいつはすげぇ！<br>「テンゼンの鬼退治」に勝るとも劣らねぇ大活劇だ！<br>約束通り、幻想盤に挑戦していっていいぞ。
 #. de: Eine unglaubliche Geschichte! Sie steht Tenzen und seiner Dämonenvertreibung in Nichts nach! Du bist wirklich <if $gn4>die richtige Abenteurerin<else>der richtige Abenteurer</if>, um meine Teegesellschaft mit neuem Gesprächsstoff zu versorgen.
 #. fr: Ouah<nbsp>! Alors là, je suis vraiment im<shy>pres<shy>sion<shy>né. Ça ne vaut pas tout à fait la légende de Tenzen, mais c'est pas loin<nbsp>! Tu as bien mérité une petite partie de Touché-tourné<nbsp>!
+# aeria-terms: {"Tenzen":"c66911c195b8"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_006:1"
 msgid "A superb flight of fancy! From the colorful characters to their narrow escapes, I daresay it rivals even the Tale of Tenzen! As promised, you shall have your game."
 msgstr "Вот это полёт фантазии! Яркие герои, опасные передряги... Спорю, даже «Сказание о Тэндзэне» не лучше! Как и обещал, можете сыграть."
@@ -152,6 +159,7 @@ msgstr "О чём спросите?"
 #. ja: ソーチョーについて
 #. de: Wer bist du?
 #. fr: Votre interlocuteur
+# aeria-terms: {"Aymeric":"0d3b7030a8f4","chocobo":"7a909e5229a9"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_A2_000_001:1"
 msgid "You look like Ser Aymeric...if he were sat on by a chocobo. Why?"
 msgstr "Вы вылитый сир Эймерик... если бы его усадили на чокобо. Почему?"
@@ -159,6 +167,7 @@ msgstr "Вы вылитый сир Эймерик... если бы его уса
 #. ja: 幻想盤について
 #. de: Woher kommt die Traumtafel?
 #. fr: Touché-tourné
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_A2_000_002:1"
 msgid "What is all this “Faux Hollows” business, anyway?"
 msgstr "Что это ещё за «Ложные дупла»?"
@@ -173,7 +182,7 @@ msgstr "Назад"
 #. ja: だからオレはソーチョーじゃねぇ、ソウタンだ。<br>そもそもこの顔は、ヒトと話しやすい姿に化けているだけだ。
 #. de: Mein Name ist Sotan. Nicht etwa Großmeister Reineke, den Namen haben mir die Kinder aus Ishgard gegeben. Es soll wohl ein Scherz sein, aber es stört mich auch nicht weiter. Klingt doch eigentlich ganz gut, oder?
 #. fr: Je le répète pour la énième fois, je ne suis hélas pas le président d'Idyllée, et encore moins du sanctuaire Reisen. Je m'appelle Sotan, et j'ai pris l'apparence d'un renard pour que les humains me trouvent mignon, mais tout aussi malin. C'est réussi, non<nbsp>?
-#, aeria-term-model-exception: face 7d91d5daccc3
+# aeria-terms: {"face":"9a4aea3bb0ee"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_009:1"
 msgid "This face is indeed a work of enchantment designed to make me more endearing to children of man, but I assure you that any resemblance to real or fictional personages─sat upon or otherwise─is entirely coincidental."
 msgstr "Эта внешность и правда — результат волшебства: так я кажусь людям симпатичнее. Но уверяю вас, сходство с настоящими или вымышленными персонажами — хоть с теми, на кого уселся чокобо, хоть с кем — чистая случайность."
@@ -190,6 +199,7 @@ msgstr "...Что, удивлены, что я постарался выгляд
 #. ja: 中でも、クロが創った空想物語は格別だ。<br>それでオレもここで、いろんな話を集めることにしたんだ。<br>茶は出せねぇが、話し相手になってくれよな。
 #. de: Als ich auf Khloe traf, wusste ich, dass ich den richtigen Ort gefunden hatte, um die aufregendsten Abenteuergeschichten zu hören, die dieser Kontinent zu bieten hat. Sie gibt sich wirklich rührende Mühe, die Geschichten für ihre Kinder zu sammeln<nbsp>- aber das weißt du ja bereits. Ich freue mich schon darauf, noch mehr von deinen unglaublichen Erlebnissen zu hören!
 #. fr: Les contes et légendes de Khloe ont attiré mon attention, et c'est ainsi que je suis venu à sa rencontre. Je n'ai pas ramené mon attirail pour la cérémonie du thé, mais il suffira simplement à mon futur public de faire un effort d'imagination sup<shy>plé<shy>men<shy>tai<shy>re, et ce sera comme à la maison<nbsp>!
+# aeria-terms: {"Elezen boy":"46776b3187aa","Khloe":"430cb69880ec"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_011:1"
 msgid "In all my years, however, I have encountered few with such fascinating stories as Khloe and her friends─yes, you included. If your baffling insistence on comparing my visage to that of some Elezen boy is the price I must pay for good fiction, then I suppose I shall suffer it...though not gladly."
 msgstr "За все свои годы я встречал мало кого, чьи истории могли бы сравниться с рассказами Хлои и её друзей. Да, и с вашими тоже. Если за хорошие истории мне придётся терпеть ваши бесконечные сравнения с каким-то мальчиком-элезеном, что ж, придётся смириться... хоть и без особой радости."
@@ -197,6 +207,7 @@ msgstr "За все свои годы я встречал мало кого, ч�
 #. ja: ここイディルシャイアにもっと冒険者を集めるため、<br>ロウェナの嬢ちゃんが、幻想盤を考案してな。<br>クロの手も借りて、新たな景品をいろいろと用意したんだ。
 #. de: Die Traumtafel ist Khloes Erfindung. Sie weiß, wie man Abenteurer dazu bringt, ihre Geschichten mit anderen zu teilen. Die Belohnungen hat Frau Rowena beigesteuert, denn wir wollen sichergehen, dass die mutigen Mitglieder der Aben<shy>teurer<shy>gilde auch auf ansprechende Weise für ihre Strapazen entlohnt werden.
 #. fr: Figure-toi que c'est une idée de Rowena<nbsp>! Elle m'a dit que ça attirerait le chaland, c'est-à-dire les aventuriers comme toi. Et si je peux vous proposer autant de magnifiques récompenses, c'est avant tout grâce à Khloe.
+# aeria-terms: {"Idyllshire":"1df33a871678","Rowena":"99ac2df20835","adventurer":"48df264ad5ec"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_012:1"
 msgid "It was in fact Rowena's idea to create a new diversion that would encourage a wider variety of adventurers to pay visit to Idyllshire."
 msgstr "Вообще-то это Ровена придумала новую забаву, чтобы побольше разных искателей приключений заглядывали в Идиллшир."
@@ -204,6 +215,7 @@ msgstr "Вообще-то это Ровена придумала новую за
 #. ja: しかし、既知のトームストーンや収集品を納品されても、<br>さすがに割に合わないと気づいて、さぁ困った。
 #. de: Eins verrate ich vorweg: Einen neuen Handel mit Allagischen Steinen betreiben wir nicht. Die sind schließlich nicht so einfach zu beschaffen.
 #. fr: Il faut dire que les mémoquartz allagois de toutes sortes, vous commenciez un peu à en avoir soupé, pas vrai<nbsp>? Sans oublier qu'il ne suffit pas de claquer des doigts pour s'en procurer.
+# aeria-terms: {"Tomestone":"96896fb93991"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_013:1"
 msgid "She quickly realized, however, that without a special currency or indeed some form of unique challenge, such a thing would attract naught but the usual crowd─those “up to their eyeballs in tomestones,” as she put it."
 msgstr "Но вскоре она поняла, что без особой валюты или необычного испытания привлечёт только привычную публику — тех, кто, как она выразилась, по уши завален томстоунами."
@@ -211,6 +223,7 @@ msgstr "Но вскоре она поняла, что без особой вал
 #. ja: そこに現れたのが、このオレ、点茶のソウタンだ！<br>聞けば、ここには多くの冒険者の物語が集まるという。<br>そいつはちょうどいいと、オレに店を任せてもらうことにした。
 #. de: Ich werde das Handelsgeschäft über<shy>nehmen und habe auch eine eigene Währung dafür mitgebracht. Schließlich bin ich es auch, der die Geschichten über beinah überirdische Kämpfe hören möchte.
 #. fr: J'ai donc décidé d'apporter ma pierre à l'édifice et de créer ma propre monnaie pour cette occasion unique. Puisque je tiens tant que ça à vibrer en écoutant des histoires de cape et d'épée, c'est la moindre des choses.
+# aeria-terms: {"Khloe":"430cb69880ec"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_014:1"
 msgid "So it was that I stepped in to offer my ingenuity and arcane talents. My condition: that the central challenge be the telling of worthy stories. This she readily agreed to, as it is not dissimilar to what Khloe had already pioneered."
 msgstr "Тут-то и появился я — Тэнтэ из Сонтэна! Предложил свои таланты и магию. Моё условие: главное испытание — достойная история. Ровена согласилась без раздумий: Хлоя уже придумала нечто похожее."
@@ -218,7 +231,7 @@ msgstr "Тут-то и появился я — Тэнтэ из Сонтэна! �
 #. ja: つまりオレは、冒険者からおもしれぇ物語が聞ける。<br>冒険者は、ロウェナ商会から景品がもらえる。<br>ロウェナ商会は、オレから神通力で業務の援助が受けられる。
 #. de: Ich bekomme Geschichten, die Abenteurer neue Ausrüstung und Rowena<nbsp>... sagen wir, dass ich ihrem Geschäft mit göttlichen Wunderkräften unter die Arme greife.
 #. fr: Rowena fournit des lots aux aventuriers, qui me racontent leurs faits d'armes, et moi... j'aide l'entreprise de Rowena avec mes miraculeux pouvoirs divins<nbsp>! Voilà, la boucle est bouclée<nbsp>!
-#, aeria-term-model-exception: First fb156eba0883
+# aeria-terms: {"Khloe":"430cb69880ec","Rowena":"99ac2df20835"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_015:1"
 msgid "Khloe herself has been most helpful in this endeavor. She had evidently been at work designing prizes ever since Rowena first spoke the word “game,” and is an excellent storyteller in her own right. She also has an extensive collection of resources─or “friends,” if you prefer."
 msgstr "Хлоя очень помогла в этом деле. Едва Ровена заговорила об игре, как Хлоя принялась придумывать призы. И сама она — отличная рассказчица. А уж сколько у неё всего припасено... или, если хотите, сколько у неё «друзей»."
@@ -226,6 +239,7 @@ msgstr "Хлоя очень помогла в этом деле. Едва Ров
 #. ja: ま、そんな感じで、三方それぞれ得をするってもんよ。<br>街全体が賑わえば、ロウェナの嬢ちゃんも本望だろうしな。<br>気にせずどんどん景品を持っていってくれ。
 #. de: So bekommt jeder, was er braucht. Ist doch ein tierisch gutes Geschäft, oder?
 #. fr: Chacun y trouve son compte, et c'est le plus important. Avec tous les aventuriers qui vont et viennent à Idyllée depuis le début de ma petite attraction, je suis certain que les autres commerçants sont tout aussi ravis.
+# aeria-terms: {"Faux Hollows":"b0ed898eed78","Idyllshire":"1df33a871678","Rowena's House of Splendors":"b827b60dab10"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_016:1"
 msgid "So here we are. Faux Hollows, operating under the─ahem─auspices of Rowena's House of Splendors. Much like everything else in Idyllshire, if I understand correctly."
 msgstr "Вот так и появились Ложные дупла под эгидой... кхм... Дома великолепия Ровены. Как, впрочем, и многое другое в Идиллшире."
@@ -254,6 +268,7 @@ msgstr "Только уж постарайтесь, чтобы вторая ис
 #. ja: ボーナスチャンスを獲得しました！<br>再度、幻討滅戦をコンプリートすることで、<br>さらに「ソーチョーの幻想盤」に挑戦することができます。
 #. de: Du hast eine Extraprüfung freigeschaltet. Absolviere die Traumprüfung ein weiteres Mal, um deinen Gewinn an Traumblättern zu optimieren.
 #. fr: Vous pouvez retenter votre chance<nbsp>! Accomplissez un défi irréel et revenez auprès du “président” pour jouer à Touché-tourné.
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_SYSTEM_100_021:1"
 msgid "You have earned a retelling! Complete an unreal trial once more for another chance to play Faux Hollows."
 msgstr "Вы получили дополнительную попытку! Пройдите нереальное испытание ещё раз, чтобы снова сыграть в «Ложные дупла»."
@@ -280,6 +295,7 @@ msgstr "Если я не ошибся — а за последние неско�
 #. ja: まずまずの結果ってところか。<br>その運を見込んで、さらにもう一度、挑戦させてやろう。<br>ただし、もう一度、激闘の話を聞かせてくれたら、だ。
 #. de: Nicht schlecht. Das sind ziemlich viele Geschichten. Vielleicht schaffst du es ja beim nächsten Mal, die Bilder auf meiner Tafel komplett aufzudecken. Das wär doch was!
 #. fr: C'était très bien, mais il te reste encore du chemin à parcourir. Je serai heureux de te donner une autre chance dès que l'occasion se présentera<nbsp>!
+# aeria-terms: {"Khloe":"430cb69880ec"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_FAUXCOMMANDER_000_024:1"
 msgid "Ah, by the illustration you sought, I see that you're keen to tell me another tale ere long. I cannot deny that you have earned it, so I will make ready. Perhaps Khloe can lend a hand in the transcription, though I admit her handwriting leaves much to be desired..."
 msgstr "Неплохо. Судя по картинке, которую вы выбрали, скоро вы захотите рассказать мне ещё одну историю. Не стану отказывать — подготовлюсь. Может, Хлоя поможет с записью, хотя почерк у неё, скажем так, не из лучших..."
@@ -294,6 +310,7 @@ msgstr "Надеюсь, вам понравилось. А теперь, если
 #. ja: ボーナスチャンスを獲得できなかったため、<br>今週はこれ以上、幻想盤に挑戦することはできません。
 #. de: Du hast leider keine Extraprüfung freischalten können und darfst diese Woche daher keine weitere Traumprüfung absolvieren.
 #. fr: Vous n'avez malheureusement pas obtenu d'essai bonus et ne pouvez donc pas retenter votre chance cette semaine.
+# aeria-terms: {"Faux Hollows":"b0ed898eed78"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_SYSTEM_000_050:1"
 msgid "As you have earned no retellings, you cannot access Faux Hollows again until next week."
 msgstr "Вы не получили дополнительную попытку, поэтому до следующей недели сыграть в «Ложные дупла» снова не сможете."
@@ -306,7 +323,7 @@ msgstr "Вы не получили дополнительную попытку, 
 #. macro: <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($hour < 12)>a.m.<else>p.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 < 12 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: commander bce158d6a15c
+# aeria-terms: {"commander":"0365fb5402fb"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_SYSTEM_000_051:1"
 msgid "Please return after <reset-time 17 2><switch $weekday><case>Sunday<case>Monday<case>Tuesday<case>Wednesday<case>Thursday<case>Friday<case>Saturday</switch> at <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour < 12)>a.m.<else>p.m.</if> (Earth time) and speak with the Faux Commander once you have completed an unreal trial."
 msgstr "Возвращайтесь после <reset-time 17 2><switch $weekday><case>воскресенья<case>понедельника<case>вторника<case>среды<case>четверга<case>пятницы<case>субботы</switch>, в <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if>:00 <if ($hour < 12)>утра<else>дня</if> (по земному времени), пройдите нереальное испытание и поговорите с Мистером Фо."
@@ -328,6 +345,7 @@ msgstr "Погодите-ка. Сейчас для новых историй в�
 #. ja: 現在、「幻討滅戦」が開催期間外のため、<br>「ソーチョーの幻想盤」にも挑戦することができません。<br>アップデートをお待ちください。
 #. de: Die Traumtafel kann momentan nicht benutzt werden, da keine Traumprüfungen aktiv sind. Der Inhalt wird mit einer späteren Aktualisierung wieder zugänglich gemacht werden.
 #. fr: Vous ne pouvez pas jouer à Touché-tourné car aucun défi irréel n'est ac<shy>tu<shy>el<shy>le<shy>ment disponible. Veuillez patienter jusqu'à la prochaine mise à jour.
+# aeria-terms: {"Faux Hollows":"b0ed898eed78","faux commander":"515ad7e8d5c8"}
 msgctxt "custom/006/CmnCntWeeklyPuzzle_00675:TEXT_CMNCNTWEEKLYPUZZLE_00675_SYSTEM_000_031:1"
 msgid "Faux Hollows is currently closed. The faux commander will reopen for business when the next unreal trial is made available in a future update."
 msgstr "«Ложные дупла» сейчас закрыты. Мистер Фо снова откроет лавочку, когда в одном из будущих обновлений появится новое нереальное испытание."

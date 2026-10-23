@@ -10,10 +10,10 @@ msgstr ""
 #. de: Dieser Auftrag kann nur mit einem Krieger oder Magier fortgesetzt werden, der mindestens Stufe 90 erreicht hat. (Beschränkte Jobs sind ausgeschlossen.)
 #. fr: Il est nécessaire d'être dans une classe ou un job de combattant ou de mage de niveau 90 ou plus (sauf jobs restreints) pour commencer cette quête.
 #. speaker: SYSTEM
-#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическими
+# aeria-terms: {"Disciple of War":"41d5bc9dce64","job":"a9421a81ecaa"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_SYSTEM_100_000:1"
 msgid "In order to undertake this quest, you must be a Disciple of War or Magic of level 90 or above. Limited jobs are not permitted."
-msgstr "Чтобы начать это задание, ваш класс или профессия должны быть физическими или магическими и иметь уровень не ниже 90-го. Ограниченные профессии не подходят."
+msgstr "Чтобы начать это задание, ваш класс или профессия должны относиться к физическим или магическим классам не ниже 90-го уровня. Ограниченные профессии не подходят."
 
 #. ja: おや……？<br>もしやあなたは、<split " " 1><string $gs1></split>さんでは？
 #. de: Hallo, wie kann ich dir helf...<br>Moment mal, du bist <string $gs1>, nicht wahr?
@@ -36,6 +36,7 @@ msgstr "Ага! Я так и думал, что где-то видел этот 
 #. de: Wie schön, dich zu treffen. Mein Name ist Osmon.
 #. fr: Enchanté<nbsp>! Je m'appelle Osmon. Je suis un glaneur spécialisé dans la collection de livres rares.
 #. speaker: OSMON
+# aeria-terms: {"Osmon":"84cf22ea3c82"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_OSMON_000_003:1"
 msgid "How wonderful to meet you! The name's Osmon."
 msgstr "Как же я рад знакомству! Меня зовут Осмон."
@@ -72,7 +73,7 @@ msgstr "Вот я и подумал: «Послушай, а зачем сето�
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_OSMON_000_007:1"
 msgid "Which is why I'm so excited to be speaking with the vaunted champion, <split \" \" 1><string $gs1></split>! If I could convince you to share some of the minutiae of your adventures, it would lend my fiction an undeniable authenticity!"
-msgstr "Вот почему я так рад беседе с прославленным героем — <split \" \" 1><string $gs1></split>! Если бы вы поделились со мной некоторыми подробностями своих приключений, мои истории стали бы куда правдоподобнее!"
+msgstr "Вот почему я так рад беседе с <if $gn4>прославленной героиней<else>прославленным героем</if> — <split \" \" 1><string $gs1></split>! Если бы вы поделились со мной некоторыми подробностями своих приключений, мои истории стали бы куда правдоподобнее!"
 
 #. ja: 何と言う？
 #. de: Was möchtest du sagen?
@@ -88,12 +89,13 @@ msgstr "Что вы ответите?"
 #. speaker: A1
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_A1_100_001:1"
 msgid "Let me tell you about the time I was just starting out..."
-msgstr "Расскажу, как только начинал свой путь..."
+msgstr "Расскажу, как <if $gn4>только начинала<else>только начинал</if> свой путь..."
 
 #. ja: 自分が見た竜詩戦争について
 #. de: Hier ist eine Geschichte über den Drachenkrieg, die du womöglich noch nie gehört hast<nbsp>...
 #. fr: De la Guerre du chant des dragons, telle que vous l'avez vécue
 #. speaker: A1
+# aeria-terms: {"Dragonsong War":"83e2d839c7c3"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_A1_100_002:1"
 msgid "Here's a story of the Dragonsong War you may not have heard..."
 msgstr "Вот история о Войне Песни дракона, которую вы, возможно, ещё не слышали..."
@@ -102,9 +104,10 @@ msgstr "Вот история о Войне Песни дракона, кото�
 #. de: Also, als ich an der Seite des Widerstands in Ala Mhigo stand, und später in Doma<nbsp>...
 #. fr: Du rôle que vous avez joué dans la libération d'Ala Mhigo et de Doma
 #. speaker: A1
+# aeria-terms: {"Ala Mhigo":"45d9b3032c70","Doma":"f8be28f2d416","Resistance fighter":"645376b2aeb7","the Resistance":"1ff5b6ee910f"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_A1_100_003:1"
 msgid "Well, when I stood beside the Resistance fighters of Ala Mhigo, and later, of Doma..."
-msgstr "О том, как я помогал опытным повстанцам Сопротивления в Ала Миго, а потом и в Доме..."
+msgstr "О том, как я <if $gn4>помогала<else>помогал</if> опытным повстанцам Сопротивления в Ала Миго, а потом и в Доме..."
 
 #. ja: 実は、異世界や過去にも旅をしたことがある
 #. de: Es gibt eine Menge zu bedenken, wenn man eine andere Welt besucht<nbsp>... oder die Welt der Ver<shy>gangen<shy>heit<nbsp>...
@@ -120,6 +123,7 @@ msgstr "Когда попадаешь в другой мир... или в про
 #. speaker: SHALLOWMOOR
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
+# aeria-terms: {"Osmon":"84cf22ea3c82","scholar":"ba4c83091a00"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_SHALLOWMOOR_000_010:1"
 msgid "(-???-)Well, that was a complete waste of─ Osmon? Are you actually <i>chatting</i>!? Scholar above, it's a miracle! And here I thought you capable of little more than grunts and sighs!"
 msgstr "(-???-)Ну и пустая же была затея... Осмон? Ты что, и правда <i>болтаешь</i>!? Учёный, да это же чудо! А я-то думала, ты умеешь только бурчать да вздыхать!"
@@ -128,6 +132,7 @@ msgstr "(-???-)Ну и пустая же была затея... Осмон? Ты
 #. de: Uff ... Dürfte ich dir Seichtes Moor vorstellen? Sie ist meine Kollegin und ein elender Quälgeist.
 #. fr: Shallow Moor... Évidemment, il fallait que tu reviennes pile au meilleur moment...
 #. speaker: OSMON
+# aeria-terms: {"Shallow Moor":"f5e7c96303a4"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_OSMON_000_011:1"
 msgid "Ugh... May I introduce Shallow Moor, my colleague and eternal tormentor."
 msgstr "Уф... Позвольте представить Шэллоу-Мур, мою коллегу и вечную мучительницу."
@@ -136,6 +141,7 @@ msgstr "Уф... Позвольте представить Шэллоу-Мур, �
 #. de: Ach, komm schon, ich mach doch nur ein bisschen Spaß. Trisassant und ich könnten etwas Aufmunterung gebrauchen, nachdem wir es nicht geschafft haben, unsere Beute aufzuspüren<nbsp>...
 #. fr: Rhô allez, me fais pas la gueule<nbsp>! Déjà que Trisassant et moi, on a couru partout sans retrouver la moindre trace de notre <if $gn4>héroïne<else>héros</if>...
 #. speaker: SHALLOWMOOR
+# aeria-terms: {"Trisassant":"c7925d812558"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_SHALLOWMOOR_000_012:1"
 msgid "Oh, come now, it's just a bit of playful banter. Trisassant and I could use some good humor after failing to track down our quarry..."
 msgstr "Да ладно тебе, я же просто шучу. Нам с Трисассаном не помешало бы немного поднять настроение после того, как мы не смогли найти нашу цель..."
@@ -194,7 +200,7 @@ msgstr "Но теперь всё это позади, и работы почти
 #. de: Daher ist unsere Gilde in all ihrer Weisheit eine Partnerschaft mit der Aben<shy>teurer<shy>gilde eingegangen. Wir haben jetzt ein System, bei dem Gelegenheitsaufträge aus anderen Ländern hierher zu uns nach Sharlayan geleitet werden können!
 #. fr: C'est là que le collège des glaneurs a eu une riche idée, celle de collaborer avec les guildes d'aventuriers des autres pays<nbsp>! Concrètement, ça veut dire qu'on reçoit toutes sortes de pro<shy>po<shy>si<shy>tions d'emploi venues de l'étranger. Ils appellent ça des “requêtes ex<shy>traor<shy>di<shy>nai<shy>res”<nbsp>!
 #. speaker: SHALLOWMOOR
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95","job":"a9421a81ecaa"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_SHALLOWMOOR_100_019:1"
 msgid "Thus the guildship, in its wisdom, has forged a partnership with the Adventurers' Guild. We now have a system in place where odd jobs from other countries can be funneled here to us in Sharlayan!"
 msgstr "Вот Гильдия собирателей и решила объединиться с Гильдией авантюристов. Теперь к нам, в Шарлаян, перенаправляют странные поручения из других стран!"
@@ -211,7 +217,7 @@ msgstr "Большинство таких поручений вполне по �
 #. de: Es gibt jedoch einen Kunden, der speziell nach dir gefragt hat. Und da die Aben<shy>teurer<shy>gilde keine offizielle Präsenz in unserer Stadt hat, haben wir uns bereit erklärt, diese Anfrage zu unterstützen<nbsp>- wir sind nun quasi ihre Zweigstelle in Sharlayan.
 #. fr: En l'occurrence, un client a déposé une requête pour toi, et toi <if $gn4>seule<else>seul</if>. Et comme il n'y a pas de guilde des aventuriers à Sharlayan, c'est nous qui la relayons. On fait office de, en quelque sorte.
 #. speaker: SHALLOWMOOR
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95","job":"a9421a81ecaa"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_SHALLOWMOOR_000_021:1"
 msgid "There is one client, however, who has asked for you specifically. And as the Adventurers' Guild has no official presence in our city, we agreed to the “odd job” of facilitating that request─think of us as their substitute Sharlayan branch, if you will."
 msgstr "Но один заказчик попросил именно вас. А поскольку в нашем городе нет отделения Гильдии авантюристов, мы согласились передавать такие поручения — считайте, что мы её шарлаянский филиал."
@@ -228,7 +234,7 @@ msgstr "Я буду здесь, за стойкой, и всё вам расск
 #. de: Oh, und schau dir unbedingt auch mal Trisassants Waren an. Er hat eine spezielle Auswahl für alle, die sich an unseren Unternehmungen beteiligen!
 #. fr: Ah, et j'allais oublier<nbsp>: Trisassant ici présent propose tout un tas d'articles exclusifs, réservés à nos collaborateurs. Jettes-y un œil, ça mange pas de pain<nbsp>!
 #. speaker: SHALLOWMOOR
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"Trisassant":"c7925d812558","job":"a9421a81ecaa"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_SHALLOWMOOR_000_023:1"
 msgid "Oh, and be sure to browse Trisassant's wares. He has a special selection available for anyone who takes part in our odd job enterprise!"
 msgstr "И загляните заодно к Трисассану. У него есть особый товар для тех, кто берётся за наши поручения!"
@@ -239,6 +245,7 @@ msgstr "И загляните заодно к Трисассану. У него 
 #. speaker: OSMON
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"Shallow Moor":"f5e7c96303a4"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_OSMON_000_024:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>...? I didn't quite get the chance before Shallow Moor commandeered the conversation, but I wanted to thank you for indulging me with your stories."
 msgstr "Эм, <split \" \" 1><string $gs1></split>... Я не успел поблагодарить вас до того, как Шэллоу-Мур перехватила разговор. Спасибо, что поделились со мной историями."
@@ -247,7 +254,7 @@ msgstr "Эм, <split \" \" 1><string $gs1></split>... Я не успел поб�
 #. de: Meinst du, wir könnten uns mal wieder unterhalten? Ich würde liebend gerne erfahren, was für Abenteuer du bei diesem seltsamen Auftrag wohl erleben wirst!
 #. fr: Vous allez répondre à cette fameuse requête ex<shy>traor<shy>di<shy>nai<shy>re<nbsp>? Si c'est le cas, n'oubliez pas de revenir m'en toucher un mot après coup<nbsp>!
 #. speaker: OSMON
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_OSMON_100_024:1"
 msgid "Do you think we might talk again sometime? I should love to hear how this odd job of yours turns out!"
 msgstr "Как думаете, мы ещё побеседуем? Мне бы очень хотелось узнать, чем закончится ваше странное поручение!"
@@ -256,7 +263,7 @@ msgstr "Как думаете, мы ещё побеседуем? Мне бы о�
 #. de: Dank der Partnerschaft zwischen der Aben<shy>teurer<shy>gilde und der Klaubergilde kannst du nun Gelegenheitsaufträge von Seichtes Moor im Peristyl annehmen.
 #. fr: Une requête ex<shy>traor<shy>di<shy>nai<shy>re est disponible<nbsp>! Parlez à Shallow Moor, au péristyle, pour la débuter.
 #. speaker: SYSTEM
-#, aeria-term-model-exception: job 42a26c762529
+# aeria-terms: {"Adventurers' Guild":"0d7ad9038d95","Shallow Moor":"f5e7c96303a4","job":"a9421a81ecaa","peristyle":"219a2bbdc286"}
 msgctxt "quest/046/AktKva001_04651:TEXT_AKTKVA001_04651_SYSTEM_100_025:1"
 msgid "As a result of the partnership between the Adventurers' Guild and the gleaners' guildship, you are now able to accept an odd job from Shallow Moor at the peristyle."
-msgstr "Благодаря сотрудничеству Гильдии авантюристов и Гильдии собирателей вы можете брать странные поручения у Шэллоу-Мур в перистиле."
+msgstr "Благодаря сотрудничеству Гильдии авантюристов и Гильдии собирателей вы можете брать странные поручения у Шэллоу-Мур в Перистиле."

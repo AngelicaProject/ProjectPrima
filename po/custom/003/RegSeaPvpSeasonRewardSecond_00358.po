@@ -12,7 +12,7 @@ msgstr ""
 #. macro: <if ($n1 >= 1)>Crystalline Conflict's<else>the Feast's</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 >= 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_000:1"
 msgid "Ah, I see one of <if ($n1 >= 1)>Crystalline Conflict's<else>the Feast's</if> more vicious wolves has returned to the den, belly full and eyes gleaming. Come to claim your prize, have you?"
-msgstr "А, да это же один из самых свирепых бойцов <if ($n1 >= 1)>«Кристального конфликта»<else>«Пира»</if> вернулся в логово — брюхо набито, глаза горят! За наградой пришёл, да?"
+msgstr "А, да это же <if $gn4>одна из самых свирепых бойцов<else>один из самых свирепых бойцов</if> <if ($n1 >= 1)>«Кристального конфликта»<else>«Пира»</if> <if $gn4>вернулась<else>вернулся</if> в логово — брюхо набито, глаза горят! За наградой <if $gn4>пришла<else>пришёл</if>, да?"
 
 #. ja: <if ($n1 >= 1)>現在、クリスタルコンフリクトではシーズン<num $n1>を開催中です。<else>現在、クリスタルコンフリクトはプレシーズン期間中です。</if><br><if ($n2 >= 1)>こちらでは、前シーズンのシーズン報酬をお渡ししています。<else>前シーズンは、プレシーズンのため、報酬は配布しておりません。</if><br>そのほか、報酬に関する不明点などにも、お答えいたします。
 #. de: <if ($n1 >= 1)>Derzeit läuft die <num $n1>. Saison von „Crystalline Conflict“!<else>Derzeit läuft die Vorsaison von „Crystalline Conflict“.</if><br><if ($n2 >= 1)>Als Versorgungsoffizier ist es meine Pflicht und zugleich mein Privileg, dafür zu sorgen, dass die erfolgreichen Teilnehmer der vergangenen Saison ihre rechtmäßigen Belohnungen erhalten.<else>Da die vergangene Saison eine Vorsaison war, werden keine Belohnungen dafür ausgegeben.</if><br>Ich kann dir gerne mehr darüber erzählen, wie Belohnungen verteilt werden.
@@ -127,7 +127,7 @@ msgstr "Но я всё равно с радостью вручу тебе наг
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_112:1"
 msgid "Congratulations! You must've triumphed in nigh on endless conflicts to rise this high in the rankings. Never fear─I am more than happy to present you your rewards ere you <i>even consider</i> wresting them from my grasp by force."
-msgstr "Поздравляю! Чтобы подняться так высоко в рейтинге, тебе пришлось одержать победу в бесчисленных сражениях. Не волнуйся, я с радостью вручу награды, пока ты <i>даже не задумался</i> о том, чтобы силой вырвать их из моих рук."
+msgstr "Поздравляю! Чтобы подняться так высоко в рейтинге, тебе пришлось одержать победу в бесчисленных сражениях. Не волнуйся, я с радостью вручу награды, пока ты <i><if $gn4>даже не задумалась<else>даже не задумался</if></i> о том, чтобы силой вырвать их из моих рук."
 
 #. ja: おめでとうございます！！<br>大いに活躍した者へ送られる報酬をお受け取りください。<br>新たなシーズンではさらに上位に入れるよう、応援しております！
 #. de: Herzlichen Glückwunsch! Deine wilden Instinkte haben dir einen Platz in der Nähe des Gipfels eingebracht, sodass der kühle Glanz des Ruhmes auch auf dich fällt. Doch schon in der neuen Saison kannst du dich weiter nach oben kämpfen! Lass das Rudel hinter dir und sichere dir einen der vordersten Plätze!
@@ -141,7 +141,7 @@ msgstr "Поздравляю! Вот тебе награда за отличны
 #. fr: C'est tout bonnement fantastique<nbsp>! Tu as atteint le sommet de la hiérarchie du Festin, un exploit qui restera gravé à tout jamais dans les annales. Voici pour toi, la plus prrrestigieuse de toutes les récompenses<nbsp>!
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_010:1"
 msgid "Congratulations! You have seized the throne at the head of the table, and the finest spoils of the Feast are yours!"
-msgstr "Поздравляю! Ты занял трон во главе стола — и теперь лучшие трофеи «Пира» твои!"
+msgstr "Поздравляю! Ты <if $gn4>заняла<else>занял</if> трон во главе стола — и теперь лучшие трофеи «Пира» твои!"
 
 #. ja: （★未使用／削除予定★）
 #. de: （★未使用／削除予定★）
@@ -161,7 +161,7 @@ msgstr "Поздравляю! До главного места за столом
 #. fr: Toutes mes félicitations, tu as réalisé une grande performance<nbsp>! Tiens, voici la récompense réserrrvée aux loups qui ont réussi à se distinguer du reste de la meute.
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_013:1"
 msgid "Congratulations! Your savagery has gained you a place near the table, and a small share of the Feast's bounty."
-msgstr "Поздравляю! Благодаря своей свирепости ты оказался за столом, и тебе досталась малая доля пира."
+msgstr "Поздравляю! Благодаря своей свирепости ты <if $gn4>оказалась<else>оказался</if> за столом, и тебе досталась малая доля пира."
 
 #. ja: ブロンズ階級への到達、おめでとうございます！<br>新たなシーズンでは、さらに輝かしい階級に到達できるよう、<br>ご活躍を期待しております！
 #. de: Ich gratuliere zum Erreichen der Kampfklasse Bronze! Kämpfe in der neuen Saison noch härter, und vielleicht winkt dir dann ein noch wertvolleres Metall!
@@ -194,6 +194,7 @@ msgstr "Поздравляю с достижением платинового р
 #. ja: ダイヤモンド階級への到達、おめでとうございます！<br>新たなシーズンでも、同様の好戦績を……<br>いえ、さらに上のクリスタル階級を目指して頑張ってください！
 #. de: Ich gratuliere zum Erreichen der Kampfklasse Diamant! So viel Eifer begeistert, doch nun solltest du deinen scharfen Blick auf den Kristall höchstselbst richten<nbsp>...
 #. fr: Toutes mes félicitations, tu as atteint l'échelon de diamant<nbsp>! J'espère que tu feras aussi bien, voirrre mieux, lors de la prochaine saison<nbsp>!
+# aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_024:1"
 msgid "Congratulations on attaining the Diamond tier─but never should you allow its glittering beauty to lull you into complacency! Many another contest awaits at the Wolves' Den, so you'll need to keep those fangs sharp."
 msgstr "Поздравляю с достижением ранга «Алмаз»! Не дай блеску драгоценного камня усыпить бдительность. В Логове волков впереди ещё немало битв, так что не выпускай клыки!"
@@ -201,7 +202,7 @@ msgstr "Поздравляю с достижением ранга «Алмаз»
 #. ja: クリスタル階級への到達、おめでとうございます！！<br>ここまで来たら、ぜひ新シーズンでは、<br>一握りの人だけに許された特別な階級を目指してみてください！
 #. de: Ich gratuliere zum Erreichen der Kampfklasse Kristall! Doch solltest du dich von dessen Ruhmesglanz nicht einlullen lassen. Auch in der neuen Saison wird der Kampf um die besten Belohnungen wieder gnadenlos sein! Richte deinen Blick auf ein neues Ziel!
 #. fr: Toutes mes félicitations, tu as atteint l'échelon de cristal<nbsp>! J'ai toujourrrs su que tu en étais capable. Mais seras-tu digne des échelons réservés à l'élite lors de la prochaine saison<nbsp>? À toi de jouer<nbsp>!
-#, aeria-term-model-exception: crystal d52910d7a118
+# aeria-terms: {"crystal":"b6e3734412aa"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_025:1"
 msgid "Congratulations on attaining the Crystal tier! Needless to say, we have the highest of hopes for your performance in the upcoming season. Perhaps you will stand among the rare few whose martial prowess sees them rise further through the ever more unforgiving ranks of competition."
 msgstr "Поздравляю с достижением кристального ранга! В следующем сезоне мы ждём от тебя ещё больших успехов. Кто знает, может, ты окажешься среди немногих, кому хватит боевого мастерства подняться на ещё более суровые ступени соревнований."
@@ -209,6 +210,7 @@ msgstr "Поздравляю с достижением кристального 
 #. ja: オメガ階級、おめでとうございます！！！<br>並み居る強豪を退けての到達、本当にお見事……！<br>あなたならきっと、新シーズンで究極の階級を目指せるはずです！
 #. de: Ich gratuliere zum Erreichen der Omega-Klasse! Du hast dich gegen extrem starke Kontrahenten durchgesetzt. In der neuen Saison hast du die Ultima-Klasse als Ziel vor dir. Lass dich nicht von der gewaltigen Aufgabe einschüchtern!
 #. fr: Toutes mes félicitations, tu as atteint l'échelon Oméga<nbsp>!!! C'est un véritable exploit d'avoir réussi à prendre le dessus sur tant d'ennemis rrredoutables<nbsp>! Mais il te reste encore une <i>ultime</i> marche à franchir, en seras-tu capable<nbsp>?
+# aeria-terms: {"Omega":"35d4a0415f13"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_100_025:1"
 msgid "Congratulations on attaining the Omega tier! Rarely do we see fighters with the hunger to claw their way to the top and stand so clearly above the pack. Even so, I can tell your thirst for battle is not yet sated. Press on, and you may yet find yourself in a league all your own."
 msgstr "Поздравляю с достижением ранга «Омега»! Мало кому хватает азарта, чтобы пробиться на вершину и оставить остальных далеко позади. Но я вижу, что жажда битвы у тебя ещё не утолена. Продолжай — и, возможно, окажешься в собственном классе."
@@ -216,7 +218,7 @@ msgstr "Поздравляю с достижением ранга «Омега»
 #. ja: アルテマ階級への到達、おめでとうございます！！！<br>あなたの活躍は、その名どおりまさに究極の伝説……<br>新たなシーズンでも同様に、目覚ましい活躍を期待しております！
 #. de: Meinen herzlichsten Glückwunsch zum Erreichen der Ultima-Klasse! Du bist wahrlich eine ultimative Legende, wie der Name schon sagt. Ich zähle drauf, dass deine Leistungen in der neuen Saison genauso bemerkenswert sein werden!
 #. fr: Toutes mes félicitations, tu as atteint l'échelon Ultima<nbsp>!!! Tu fais partie des trrrès rares élus qui ont réussi à se hisser au sommet de la hiérarchie, une prouesse qui restera grrravée dans les mémoires<nbsp>! Sauras-tu rééditer cet exploit, la prochaine saison<nbsp>?
-#, aeria-term-model-exception: Ultima 820e1c8bb733
+# aeria-terms: {"Ultima":"99da0c215cbc"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_200_025:1"
 msgid "Congratulations on attaining the Ultima tier! I daresay you are the very spirit of battle made manifest. May you continue to serve as the apex to which all challengers might aspire."
 msgstr "Поздравляю с достижением ранга «Ультима»! Похоже, ты само воплощение боевого духа. Пусть и дальше твои успехи будут примером для всех соперников."
@@ -224,7 +226,7 @@ msgstr "Поздравляю с достижением ранга «Ультим
 #. ja: 前シーズンにランクマッチをプレイされていないか、<br>ブロンズ以上の階級に到達されていないため、<br>残念ながら、お渡しできる報酬はございません。
 #. de: Leider gibt es keine Belohnung für Welpen, die keine gewerteten Kämpfe bestritten oder nicht einmal die Kampfklasse Bronze erreicht haben. Tut mir leid, aber diesmal gehst du wohl oder übel leer aus.
 #. fr: Tu n'as atteint aucun échelon à l'issue de la derrrnière saison et ne peux par conséquent pas recevoir de récompense. Désolé<nbsp>!
-#, aeria-term-model-exception: fang c3ef19ff36eb
+# aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SEASONREWARD_000_026:1"
 msgid "I am afraid there is no reward for pups that failed to participate in the previous season or attain at least Bronze tier. Sink your fangs into the foe next season, and these sumptuous spoils could be yours as well!"
 msgstr "Боюсь, щенкам, которые не участвовали в прошлом сезоне или не достигли хотя бы бронзового ранга, награда не полагается. В следующем сезоне вцепись в противника покрепче — и такие щедрые трофеи могут достаться и тебе!"
@@ -246,6 +248,7 @@ msgstr "Как следует из названия, награды за мес�
 #. ja: シーズン終了時に、<br>データセンターごとに集計されたランキングの、<br>上位入賞者が対象となります。
 #. de: Am Ende einer Saison können die besten Spieler jedes Datenzentrums eine Ranglisten-Belohnung erhalten.
 #. fr: Sur chaque centre de données, les meilleurs joueurs du classement ont droit à une récompense.
+# aeria-terms: {"Data Center":"9a4e1a7d43ae"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SYSTEM_000_032:1"
 msgid "At the end of a season, the top ranked players for each data center are eligible to receive ranking rewards."
 msgstr "По окончании сезона награды за место в рейтинге могут получить лучшие игроки каждого Дата-центра."
@@ -253,6 +256,7 @@ msgstr "По окончании сезона награды за место в �
 #. ja: ランキング報酬の対象者には、<br>モグレターにて、証明書となるアイテム「証」が送付されます。<br>これをシーズン報酬支給官に渡すことで報酬と称号が得られます。
 #. de: Siegreiche Kämpfer erhalten Preiscoupons über die Mogry-Post, die sie dann beim Versorgungsoffizier des Mahlstroms gegen Belohnungen und Titel eintauschen können.
 #. fr: Les joueurs concernés recevront un certificat via le service de courrier mog. Il leur suffira de le remettre à l'officier magasinier du Maelstrom pour obtenir leur récompense et un titre spécial.
+# aeria-terms: {"moogle":"3cb3a993929e","seasonal quartermaster":"b968f21cad85"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SYSTEM_000_033:1"
 msgid "Victorious combatants will receive vouchers via moogle delivery service, which can then be handed to the seasonal quartermaster in exchange for rewards and titles."
 msgstr "Победители получат ваучеры через службу доставки муглов. Передайте их сезонному интенданту, чтобы обменять на награды и звания."
@@ -302,6 +306,7 @@ msgstr "Награды за ранг за прошлый сезон уже по�
 #. ja: 所持品がいっぱいのため、報酬を受け取れません。<br>所持品を整理して、再度、シーズン報酬支給官に、<br>話しかけてください。
 #. de: Du konntest die Vergütung nicht aufnehmen, weil dein Inventar voll ist. Schaff etwas Platz und sprich den Zuständigen noch einmal an.
 #. fr: Impossible de recevoir la récompense. Il n'y a pas assez de place dans votre inventaire.
+# aeria-terms: {"seasonal quartermaster":"b968f21cad85"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SYSTEM_000_101:1"
 msgid "Inventory is full. Make room in your inventory and speak with the seasonal quartermaster once again to claim your reward."
 msgstr "Инвентарь переполнен. Освободите место и снова поговорите с сезонным интендантом, чтобы получить награду."
@@ -324,6 +329,7 @@ msgstr "За места в рейтинге во время межсезонья
 #. de: Du kannst keine weiteren Kristalltrophäen annehmen, da du ansonsten die maximale Anzahl überschreitest. Sprich erneut mit dem Versorgungsoffizier, sobald du mindestens Platz für <kilo $n1 "."> <if ($n1 == 1)>Kristalltrophäe<else>Kristalltrophäen</if> geschaffen hast.
 #. fr: Impossible de recevoir la récompense, car vous dépasseriez la limite de cristaux-trophées cumulables. Veuillez faire de la place pour au moins <kilo $n1 "<nbsp>"> cristaux-trophées, puis adressez-vous une nouvelle fois à l'officier magasinier du Maelstrom.
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
+# aeria-terms: {"Trophy Crystals":"d3d5ea132b93","seasonal quartermaster":"b968f21cad85"}
 msgctxt "custom/003/RegSeaPvpSeasonRewardSecond_00358:TEXT_REGSEAPVPSEASONREWARDSECOND_00358_SYSTEM_000_104:1"
 msgid "Unable to obtain Trophy Crystals. Make room for at least <kilo $n1 \",\"> Trophy Crystals and speak with the seasonal quartermaster once again to claim your reward."
 msgstr "Не удалось получить трофейные кристаллы. Освободите место как минимум для <kilo $n1 \",\"> трофейных кристаллов и снова поговорите с сезонным интендантом."

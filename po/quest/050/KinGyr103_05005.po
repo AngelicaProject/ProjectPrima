@@ -10,7 +10,7 @@ msgstr ""
 #. de: Eine exzentrisch wirkende Wissenschaftlerin mustert dich vielsagend.
 #. fr: Cette chercheuse excentrique semble avoir quelque chose à vous proposer.
 #. kind: journal
-#, aeria-term-model-rendering: eccentric researcher 8db9e6d32f75 эксцентричной, aeria-term-model-rendering: eccentric researcher 8db9e6d32f75 исследовательницы
+# aeria-terms: {"eccentric researcher":"27b1d87b2de5"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_SEQ_00:1"
 msgid "The eccentric researcher has an eccentric proposition."
 msgstr "У эксцентричной исследовательницы есть эксцентричное предложение."
@@ -19,7 +19,7 @@ msgstr "У эксцентричной исследовательницы ест�
 #. de: Mit der exzentrischen Wissenschaftlerin sprechen
 #. fr: Parler à la chercheuse excentrique
 #. kind: objective
-#, aeria-term-model-rendering: eccentric researcher 8db9e6d32f75 эксцентричной, aeria-term-model-rendering: eccentric researcher 8db9e6d32f75 исследовательницей
+# aeria-terms: {"eccentric researcher":"27b1d87b2de5"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_TODO_00:1"
 msgid "Speak with the eccentric researcher."
 msgstr "Поговорите с эксцентричной исследовательницей."
@@ -30,9 +30,10 @@ msgstr "Поговорите с эксцентричной исследоват�
 #. speaker: ENGINEERA05005
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"Solution Nine":"5a265040c105"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_000_000:1"
 msgid "Pardon me, but you wouldn't happen to be <split \" \" 1><string $gs1></split>, would you? The very same <split \" \" 1><string $gs1></split> who saved Solution Nine?"
-msgstr "Простите, вы случайно не <split \" \" 1><string $gs1></split>? Та самая <split \" \" 1><string $gs1></split>, что спасла Решение Девять?"
+msgstr "Простите, вы случайно не <split \" \" 1><string $gs1></split>? <if $gn4>Та самая <split \" \" 1><string $gs1></split>, что спасла Решение Девять<else>Тот самый <split \" \" 1><string $gs1></split>, что спас Решение Девять</if>?"
 
 #. ja: クハハハ、ここで相まみえるとは、なんたる僥倖！<br>貴公には、私が軍用に考案した、<br>超高耐久人形の使用を許可しようではないか！
 #. de: Mwahaha, was für ein unglaubliches Glück, gerade dir hier zu begegnen. Exakt <i>dir</i>, <if $gn4>die die ganze Stadt als waghalsige Kämpferin<else>den die ganze Stadt als waghalsigen Kämpfer</if> kennenlernen durfte, will ich meine speziell entwickelte, ultraresistente Kriegspuppe überlassen! Du darfst dich jetzt geehrt fühlen.
@@ -42,13 +43,12 @@ msgstr "Простите, вы случайно не <split \" \" 1><string $gs1
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_000_001:1"
 msgid "Ahahaha, I knew it! You, my heroic friend, are in luck, for I'm granting you permission to test your might against my indomitable dummies. Usually they're reserved for military research, but I'm willing to make an exception for one of <i>your</i> talents!"
-msgstr "Ха-ха-ха! Я так и знала! Вам повезло, мой героический друг: я разрешаю испытать силы на моих несокрушимых манекенах. Обычно они предназначены для военных исследований, но для <i>вас</i> я сделаю исключение!"
+msgstr "Ха-ха-ха! Я так и знала! Вам повезло, <if $gn4>моя героическая подруга<else>мой героический друг</if>: я разрешаю испытать силы на моих несокрушимых манекенах. Обычно они предназначены для военных исследований, но для <i>вас</i> я сделаю исключение!"
 
 #. ja: ……む、どうした？<br>降って湧いた好待遇に感極まり、<br>思考停止してしまったか……？
 #. de: Ahahaha, du musst dich jetzt nicht <i>so</i> geehrt fühlen, dass du gar kein Wort mehr hervorbringst, <split " " 1><string $gs1></split>!
 #. fr: Hmm<nbsp>? Que t'arrive-t-il<nbsp>? Se pourrait-il que la joie qu'a fait naître en toi cette opportunité impensable et inattendue bloque le fonc<shy>tion<shy>ne<shy>ment normal de tes méninges<nbsp>?
 #. speaker: ENGINEERA05005
-#, aeria-term-model-exception: Nothing 98b6b2a6ba3c
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_000_002:1"
 msgid "Hmm? Nothing to say? Ah, of course. You've been struck dumb by my overwhelming generosity."
 msgstr "Хм? Что молчите? А, конечно. Вас ошеломила моя невероятная щедрость."
@@ -57,9 +57,10 @@ msgstr "Хм? Что молчите? А, конечно. Вас ошеломил
 #. de: Also gut, um dich aus deinem Stupor zu befreien, werde ich dir die Sache wohl in ihrer Gänze erklären müssen. Triff mich doch in den Außenbezirken, ja?
 #. fr: Dans ce cas, je n'ai d'autre choix que de tout t'expliquer en détail. Mais histoire de ne pas gaspiller inutilement mon précieux temps et ma salive, tu vas donc me rejoindre aux Faubourgs, à L'Hoirie recouvrée<nbsp>! Ne me fais pas faux bond, <string $gs1><nbsp>!
 #. speaker: ENGINEERA05005
+# aeria-terms: {"outskirts":"a2cfec971112"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_000_003:1"
 msgid "Not to worry, for I will ease you in with a thorough explanation. Once you've returned to your senses, come meet me in the outskirts."
-msgstr "Не волнуйтесь, я всё подробно объясню. Когда придёте в себя, встретимся на окраине."
+msgstr "Не волнуйтесь, я всё подробно объясню. Когда придёте в себя, встретимся в Окраинах."
 
 #. ja: クハハハ、よく来た！<br>約束どおり、説明しようではないか！
 #. de: Ah, da bist du ja! Wunderbar, dann fangen wir doch gleich an.
@@ -73,6 +74,7 @@ msgstr "Ха-ха-ха! Вот и вы! Надеюсь, вы уже оправи
 #. de: Vielleicht sollte ich mich erst einmal vorstellen. Ich gehöre nämlich dem Vergessen an und bin eine Elektrob-Ingenieurin, aber während Zoraal Jas Herrschaft habe ich mich vor allem angestrengt, ungesehen aus den Schatten heraus zu operieren. Deswegen sind wir uns auch bislang nicht über den Weg gelaufen.
 #. fr: Tout d'abord, laisse-moi te dire que mon auguste personne est à la fois une ingénieure spécialiste de l'électrope et aussi un membre d'Oblivion. J'ai longtemps infiltré les rangs de l'armée de Zoraal Ja, et participé aux recherches et au développement de matériaux de protection.
 #. speaker: ENGINEERA05005
+# aeria-terms: {"Oblivion":"778b4c94cb59","Zoraal Ja":"dcadeebfda95"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_100_010:1"
 msgid "I am a researcher for Oblivion, namely in the field of electrope engineering. During Zoraal Ja's reign, I survived within the ranks of his army by helping to research and develop protective materials."
 msgstr "Я исследую электроп в составе организации «Забвение». Во времена правления Зораала Джа я служила в его армии и занималась разработкой защитных материалов."
@@ -81,6 +83,7 @@ msgstr "Я исследую электроп в составе организа�
 #. de: Jetzt zu meinem wunderbaren Projekt: Meine ultraresistenten Kriegspuppen sind, im wahrsten Sinne des Wortes, ultraresistent. In erster Linie wurden sie daher genutzt, um die vernichtende Schlagkraft ganz unter<shy>schied<shy>licher Waffen und Kriegsmaschinerie zu testen. Und dabei trugen sie kaum einen Kratzer davon, ha!
 #. fr: Les mannequins d'en<shy>traî<shy>ne<shy>ment super blindés que j'ai créés à cette occasion ont pour particularité d'être très résistants. Ils permettent notamment de mesurer le potentiel offensif de toute une panoplie d'armes et se sont avérés très utiles pour les manœuvres militaires.
 #. speaker: ENGINEERA05005
+# aeria-terms: {"Arsenal":"4e28b9103ebe"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_000_011:1"
 msgid "One of my many projects was these indomitable dummies, and as their name implies, their durability is second to none. They were used to measure the offensive potential of an entire arsenal of weapons to great effect."
 msgstr "Один из моих многочисленных проектов — несокрушимые манекены. Как следует из названия, прочности им не занимать. Их использовали, чтобы измерять наступательную мощь целого арсенала оружия."
@@ -89,6 +92,7 @@ msgstr "Один из моих многочисленных проектов —
 #. de: Wie du nun aber wohl selbst am besten weißt, ist die Militärindustrie mehr oder minder gänzlich eingeschlafen, seitdem Zoraal Ja verschwunden ist. Und der Frieden, den wir gerade genießen dürfen, wirkt auch nicht so brüchig, dass man vorsorglich weiter produzieren müsste.
 #. fr: Toutefois, à la suite des récents événements, le roi Zoraal Ja a perdu la vie et la paix est revenue dans notre beau royaume, ce qui a forcément un impact négatif sur le développement des armements. Et par conséquent, mes chefs-d'œuvre technologiques sont désormais abandonnés à la rouille.
 #. speaker: ENGINEERA05005
+# aeria-terms: {"Zoraal Ja":"dcadeebfda95"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_000_012:1"
 msgid "But now Zoraal Ja is no more, and peace has returned to our home. A preferable outcome, of course, but it does mean that my masterworks have been left to rust..."
 msgstr "Но теперь Зораала Джа нет, и в нашем доме воцарился мир. Это, конечно, лучше, но из-за этого мои шедевры теперь ржавеют без дела..."
@@ -105,6 +109,7 @@ msgstr "И я не могу простить такого оскорбления
 #. de: Deswegen bist du, <if $gn4>meine schlagkräftige Retterin in Not<else>mein schlag<shy>kräf<shy>tiger Retter in Not</if>, meine allerletzte Hoffnung! Bitte nutze die Übungsspitze und tobe dich an meinen Puppen aus!
 #. fr: Pour remédier à cet injuste gâchis du produit de ma suprême in<shy>tel<shy>li<shy>gence, j'ai donc décidé de t'accorder l'accès à la tour des Épreuves du fait de ton im<shy>pres<shy>sion<shy>nante puissance offensive<nbsp>! Tu es libre de frapper et de maltraiter mes précieux mannequins d'en<shy>traî<shy>ne<shy>ment autant que tu le voudras<nbsp>!
 #. speaker: ENGINEERA05005
+# aeria-terms: {"Spire of Trial":"45ab83ec0aeb","the Spire":"1d02b2f86d0b"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_ENGINEERA05005_000_014:1"
 msgid "And so I grant you, who seems to possess might equal to an entire squadron of hardened troops, access to the Spire of Trial."
 msgstr "Именно поэтому я предоставляю вам, чья мощь, похоже, не уступает целому отряду бывалых солдат, доступ к Шпилю испытаний."
@@ -131,7 +136,7 @@ msgstr "Вы снова вдохнули в меня смысл, <split \" \" 1>
 #. de: Du hast nun Zugang zur Übungsspitze. Dieses Trainingsgelände kann betreten werden, indem du mit der exzentrischen Wissenschaftlerin sprichst.
 #. fr: Vous pouvez désormais participer aux en<shy>traî<shy>ne<shy>ments sur mannequin.<br>Ce contenu est accessible en vous adressant à la chercheuse excentrique et non pas via l'outil de mission.
 #. speaker: SYSTEM05005
-#, aeria-term-model-rendering: eccentric researcher 8db9e6d32f75 эксцентричной, aeria-term-model-rendering: eccentric researcher 8db9e6d32f75 исследовательницей
+# aeria-terms: {"Heritage Found":"213223eea61a","Spire of Trial":"45ab83ec0aeb","Stone, Sky, Sea":"b63ff821c6d2","eccentric researcher":"27b1d87b2de5","the Spire":"1d02b2f86d0b"}
 msgctxt "quest/050/KinGyr103_05005:TEXT_KINGYR103_05005_SYSTEM05005_000_020:1"
 msgid "You now have access to the Spire of Trial─an expansion of Stone, Sky, Sea. This training ground can be accessed by speaking with the eccentric researcher in Heritage Found."
 msgstr "Теперь вам доступен Шпиль испытаний — расширение «Камень, небо, море». Чтобы попасть на эту тренировочную площадку, поговорите с эксцентричной исследовательницей в Обретённом наследии."
