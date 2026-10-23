@@ -1141,7 +1141,7 @@ msgstr "Невозможно выполнить команду. Не все уч
 #. macro: <if ($gs1 == $gs3)>do<else>does</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6985:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>do<else>does</if> not meet all the conditions required for this duty."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> не выполн<if ($gs1 == $gs3)>или<else>ил</if> все условия для участия в задании"
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if> не выполняете<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> не выполняет</if></capitalize> все условия для участия в задании"
 
 #. ja: ロットが完了していないため、実行できません。
 #. de: Die Beute wurde noch nicht vollständig verteilt.
@@ -1216,7 +1216,7 @@ msgstr "Невозможно выполнить команду. Одному и�
 #. macro: <if ($gs1 == $gs3)>need<else>needs</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6995:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>need<else>needs</if> a timeout."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>нужно подождать<else>нужно подождать</if>"
+msgstr "<capitalize><if ($gs1 == $gs3)>Вы должны подождать<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> <if $gn8><if \"<sheet BNpcName $gn8 6>\">должна<else>должен</if><else><if $gn6>должна<else>должен</if></if> подождать</if></capitalize>"
 
 #. ja: アライアンス申請状態のため、実行できません。
 #. de: Nicht möglich, bis die Allianz vollständig ist.
@@ -1241,7 +1241,7 @@ msgstr "Невозможно выполнить команду, пока не с
 #. macro: <if $gn6>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 6 (1 when the player named by $gs3 is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6997:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>place<else>places</if> <if ($gs1 == $gs3)>your<else><if $gn8><if \"<sheet BNpcName $gn8 6>\">her<else>his</if><else><if $gn6>her<else>his</if></if></if> hand on the gate."
-msgstr "<capitalize><if ($gs1 == $gs3)>Вы<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>кладёте руку<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> кладёт <if \"<sheet BNpcName $gn8 6>\">свою<else>свою</if> руку</if> на ворота"
+msgstr "<capitalize><if ($gs1 == $gs3)>Вы кладёте руку<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> кладёт руку</if></capitalize> на ворота"
 
 #. ja:  「<switch $n1><case>第二<case>第三<case>第四<case>第五<case>第六<case>最終</switch>区画」への扉が開いた！
 #. de: Das Tor zur <switch $n1><case>zweiten<case>dritten<case>vierten<case>fünften<case>sechsten<case>letzten</switch> Kammer öffnet sich.

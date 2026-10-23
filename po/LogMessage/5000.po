@@ -41,7 +41,7 @@ msgstr "Размер отображения всех питомцев измен
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5180:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>cast your<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">casts her<else>casts his</if><else><if $gn5>casts her<else>casts his</if></if></if> lot for <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else>the <num $n2> <noun-en Item 3 $n1 2 1></if>."
-msgstr "<if ($gs1 == $gs2)>Вы бросили кубики за<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> <if $gn7><if \"<sheet BNpcName $gn7 6>\">бросила<else>бросил</if><else><if $gn5>бросила<else>бросил</if></if> кубики за</if> <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы бросили кубики за<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> <if $gn7><if \"<sheet BNpcName $gn7 6>\">бросила<else>бросил</if><else><if $gn5>бросила<else>бросил</if></if> кубики за</if></capitalize> <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if>"
 
 #. ja: ロットルールが<ui-color 500><ui-edge-color 501>「マスタールート」</ui-edge-color></ui-color>に設定されています。
 #. de: Die Beuteregel ist „<ui-color 500><ui-edge-color 501>Anführer</ui-edge-color></ui-color>“.
@@ -147,7 +147,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы забираете<else><if $gn7><no
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5189:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>have<else>has</if> already claimed <noun-en Item 1 $n1 1 1> for this loot period."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы уже забрали<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> уже забрал</if></capitalize> <noun-en Item 1 $n1 1 1> за этот период распределения добычи"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы уже забрали<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> уже <if $gn7><if \"<sheet BNpcName $gn7 6>\">забрала<else>забрал</if><else><if $gn5>забрала<else>забрал</if></if></if></capitalize> <noun-en Item 1 $n1 1 1> за этот период распределения добычи"
 
 #. ja: このロットルールではNEEDすることができません。
 #. de: Bei dieser Verteilungsregel ist „Bedarf“ nicht wählbar.
@@ -215,7 +215,7 @@ msgstr "Нельзя назначить <if ($gs1 == $gs2)>себя<else><if $gn
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5197:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> can't have this item because reasons."
-msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> не можете получить этот предмет"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>не можете<else>не может</if> получить этот предмет"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<if ($n2 <= 1)><sheet Item $n1 0><else><sheet Item $n1 0>×<num $n2></if>にロットする権利がないため分配できません。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>bist<else>ist</if> nicht berechtigt, um  <if ($n2 <= 1)><noun-de Item 2 $n1 1 4 1><else><noun-de Item 2 $n1 2 4 1></if> zu würfeln,<br>daher ist die Zuteilung nicht möglich.
@@ -234,7 +234,7 @@ msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{
 #. macro: <if $gn5>She<else>He</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 5 (1 when the player named by $gs2 is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:5198:0:5"
 msgid "Unable to designate <if ($gs1 == $gs2)>yourself<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if></if> recipient of <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else>the <num $n2> <noun-en Item 3 $n1 2 1></if>. <if ($gs1 == $gs2)>You<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">She<else>He</if><else><if $gn5>She<else>He</if></if></if> cannot accept the item."
-msgstr "Нельзя назначить получателем <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if> для <if ($gs1 == $gs2)>вас<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if></if>. <if ($gs1 == $gs2)>Вы<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">Она<else>Он</if><else><if $gn5>Она<else>Он</if></if></if> не можете принять предмет"
+msgstr "Нельзя назначить получателем <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if> <if ($gs1 == $gs2)>себя<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if></if>. <if ($gs1 == $gs2)>Вы не можете<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">Она<else>Он</if><else><if $gn5>Она<else>Он</if></if> не может</if> принять предмет"
 
 #. ja: 戦利品の表示が上限に達しているため、<br><if ($n2 <= 1)><sheet Item $n1 0><else><sheet Item $n1 0>×<num $n2></if>に<if ($n4 <= 1)><sheet Item $n3 0><else><sheet Item $n3 0>×<num $n4></if>が上書きされました。
 #. de: <capitalize><if ($n2 == 1)><noun-de Item 2 $n1 1 1 1> wurde<else><num $n2> <noun-de Item 5 $n1 2 1 1> wurden</if></capitalize> mit <if ($n4 == 1)><noun-de Item 1 $n3 1 3 1><else><num $n4> <noun-de Item 5 $n3 2 3 1></if> überschrieben, weil die Beutegut-Liste voll war.
@@ -766,7 +766,7 @@ msgstr "В атаку!"
 #. macro: <if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:5257:0:5"
 msgid "Countdown canceled by <if ($n1 == 0)><else><switch $n1><case><case><case><case><case><case></switch></if><if ($gs1 == $gs3)>you<else><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></if>."
-msgstr "<if ($n1 == 0)><else><switch $n1><case><case><case><case><case><case></switch></if><if ($gs1 == $gs3)>Вы<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if> отменили обратный отсчёт"
+msgstr "<capitalize><if ($n1 == 0)><else><switch $n1><case><case><case><case><case><case></switch></if><if ($gs1 == $gs3)>Вы отменили обратный отсчёт<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> отменил обратный отсчёт</if></capitalize>"
 
 #. ja: 戦闘中に戦闘開始カウントを開始することはできません。
 #. de: Im Kampf kann kein Countdown gestartet werden.
@@ -2782,7 +2782,7 @@ msgstr "Не клюёт"
 #. macro: <if ($gs1 == $gs2)>were<else>was</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:5508:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>were<else>was</if> able to salvage some ingredients."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы смогли<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> смог</if></capitalize> спасти часть материалов"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы смогли<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> <if $gn7><if \"<sheet BNpcName $gn7 6>\">смогла<else>смог</if><else><if $gn5>смогла<else>смог</if></if></if></capitalize> спасти часть материалов"
 
 #. ja: <sheet ENpcResident $n1 0>は<string $gs1>の<switch $n2><case>収集品を受け取った！<case>収集品を喜んで受け取った！<case>収集品を感動しつつ受け取った！</switch>
 #. de: <capitalize><sheet ENpcResident $n1 0></capitalize> nimmt deine Lieferung<switch $n2><case><case> dankend<case> begeistert</switch> entgegen.
@@ -3536,7 +3536,7 @@ msgstr "Вы изменили основное занятие сообществ
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5615:0:5"
 msgid "<if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> removed from fellowship blacklist."
-msgstr "<if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> удалили участника из чёрного списка сообщества"
+msgstr "<if ($gs1 == $gs2)>Вы удалены<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> <if $gn7><if \"<sheet BNpcName $gn7 6>\">удалена<else>удалён</if><else><if $gn5>удалена<else>удалён</if></if></if> из чёрного списка сообщества"
 
 #. ja: フェローシップ「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」を解散しました。
 #. de: Der Zirkel „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“ wurde aufgelöst.
@@ -3791,7 +3791,7 @@ msgstr "Вы отклонили приглашение в сообщество �
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5644:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize>'s fellowship invite has been withdrawn."
-msgstr "Приглашение игрока <if ($gs1 == $gs2)>вас<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> в сообщество отозвано"
+msgstr "<capitalize><if ($gs1 == $gs2)>Ваше приглашение<else>Приглашение <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> в сообщество отозвано"
 
 #. ja: アンケートに回答しました。
 #. de: Du hast an der Umfrage teilgenommen.
@@ -3808,7 +3808,7 @@ msgstr "Вы ответили на опрос"
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:5646:0:5"
 msgid "<if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if> invites you to a fellowship."
-msgstr "<if ($gs1 == $gs2)>Вы пригласили себя<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> пригласил вас</if> в сообщество"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы приглашаете себя<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> приглашает вас</if></capitalize> в сообщество"
 
 #. ja: フェローシップ「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」からの勧誘がキャンセルされました。
 #. de: Die Einladung in den Zirkel <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> wurde zurückgezogen.

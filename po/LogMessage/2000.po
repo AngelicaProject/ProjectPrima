@@ -2130,7 +2130,7 @@ msgstr "Открываются врата в пустоту.."
 #. macro: <if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:2260:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> is splashed with digestive fluid!"
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> окатывает пищеварительной жидкостью!"
+msgstr "<capitalize><if ($gs1 == $gs3)>На вас попала пищеварительная жидкость<else>На <if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> попала пищеварительная жидкость</if>!</capitalize>"
 
 #. ja: カトブレパスの瞳が、青く輝いた！
 #. de: Catblepus' Augen leuchten blau auf!
@@ -4139,7 +4139,7 @@ msgstr "Взрыв открывает новый проход"
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2547:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is destroyed!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> уничтожен!"
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> <if \"<sheet BNpcName $n1 6>\">уничтожена<else>уничтожен</if>!"
 
 #. ja: <sheet BNpcName $n1 0>の爆発により、進路が開けた……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist explodiert und hat einen Weg freigegeben ...
@@ -6655,7 +6655,7 @@ msgstr "Шестерни механизма начинают вращаться"
 # aeria-terms: {"falcon":"a7e2044525ed"}
 msgctxt "LogMessage:2865:0:5"
 msgid "The <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falcons</ui-edge-color></ui-color>'<else><ui-color 544><ui-edge-color 545>Ravens</ui-edge-color></ui-color>'</if> <noun-en BNpcName 3 $n2 1 1> is destroyed!"
-msgstr "Уничтожен <if ($n1 == 0)><ui-color 542><ui-edge-color 543>отряд Соколов</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>отряд Воронов</ui-edge-color></ui-color></if> <noun-en BNpcName 3 $n2 1 1>!"
+msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Отряд Соколов</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Отряд Воронов</ui-edge-color></ui-color></if> <noun-en BNpcName 3 $n2 1 1> уничтожен!"
 
 #. ja: <if ($n1 == 0)><ui-color 542><ui-edge-color 543>チーム・ファルコン</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>チーム・レイヴン</ui-edge-color></ui-color></if>が<sheet EObj $n3 0>を占拠した！
 #. de: Die <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falken</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Raben</ui-edge-color></ui-color></if> haben <noun-de EObj 2 $n3 1 4 1> erobert!
@@ -7000,7 +7000,7 @@ msgstr "Ваша связь почти угасла.."
 # aeria-terms: {"energy":"95b2ab08778c"}
 msgctxt "LogMessage:2901:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is gathering aetherial energy..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> накапливает эфирную энергию.."
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> накапливает эфирную энергию..."
 
 #. ja: 「金の針」が色で満たされ、実体化した！
 #. de: 「金の針」が色で満たされ、実体化した！
@@ -7677,7 +7677,7 @@ msgstr "Долиодус вступает в бой!"
 #. macro: <sheet BNpcName $n1 0> — a value from a game data sheet, such as a name; sheet = BNpcName, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2990:0:5"
 msgid "<sheet BNpcName $n1 0> is gathering its strength..."
-msgstr "<sheet BNpcName $n1 0> набирает силы.."
+msgstr "<sheet BNpcName $n1 0> набирает силы..."
 
 #. ja: ロンカの石像が妖しく輝き始めた……！
 #. de: Die Statue am Tor beginnt bedrohlich zu leuchten!
