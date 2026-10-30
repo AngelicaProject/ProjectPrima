@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.10.06.0000.0000\n"
+"X-Game-Version: 2026.10.16.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 「<string $s1>」の表示サイズを『<switch $n2><case>小<case>中<case>大</switch>』に変更しました。
@@ -556,7 +556,6 @@ msgstr "Вы провалили испытание..."
 #. ja: コンテンツの範囲外に出ました。一定時間内に範囲内に戻らない場合、コンテンツが終了します。
 #. de: Du hast das Trainingsareal verlassen.<br>Wenn du nicht innerhalb des Zeitlimits dorthin zurückkehrst, wird der Inhalt abgebrochen.
 #. fr: Vous êtes sorti<if $gn4>e</if> de l'arène de combat.<br>Si vous n'y retournez pas dans le délai imparti, l'en<shy>traî<shy>ne<shy>ment sera au<shy>to<shy>ma<shy>ti<shy>que<shy>ment annulé.
-#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "LogMessage:5235:0:5"
 msgid "You have strayed too far from the striking dummy. Return immediately or the trial will end."
 msgstr "Вы отошли слишком далеко от тренировочного манекена. Немедленно вернитесь, иначе испытание завершится."
@@ -722,7 +721,6 @@ msgstr "У вас больше нет места для <noun-en Item 3 $n1 2 1>
 #. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 #. macro: <sound 1 95> — plays a sound effect; kind = 1, sound = 95 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:5255:0:5"
 msgid "Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>!<br>(<if ($n2 == 0)><else><switch $n2><case><case><case><case><case><case></switch></if><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
 msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>!<br>(<if ($n2 == 0)><else><switch $n2><case><case><case><case><case><case></switch></if><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
@@ -730,7 +728,6 @@ msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунд
 #. ja: 戦闘開始！
 #. de: Start!
 #. fr: À l'attaque<nbsp>!
-#, aeria-term-model-exception: Engage 2e70f1a2f27f
 msgctxt "LogMessage:5256:0:5"
 msgid "Engage!"
 msgstr "В атаку!"
@@ -768,7 +765,6 @@ msgstr "Не удалось начать обратный отсчёт."
 #. fr: Début du combat dans <num $n1> seconde<if ($n1 <= 1)><else>s</if><nbsp>!
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <if ($n1 == 1)>second<else>seconds</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:5260:0:5"
 msgid "Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>!"
 msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>!"
@@ -778,7 +774,6 @@ msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунд
 #. fr: Début du combat dans <num $n1> seconde<if ($n1 <= 1)><else>s</if><nbsp>!
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <if ($n1 == 1)>second<else>seconds</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:5261:0:5"
 msgid "Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>!"
 msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>!"
@@ -794,7 +789,6 @@ msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунд
 #. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 #. macro: <sound 1 95> — plays a sound effect; kind = 1, sound = 95 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:5262:0:5"
 msgid "Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>!<br>(<if ($n2 == 0)><else><switch $n2><case><case><case><case><case><case></switch></if><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
 msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>!<br>(<if ($n2 == 0)><else><switch $n2><case><case><case><case><case><case></switch></if><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
@@ -804,7 +798,6 @@ msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунд
 #. fr: Début du combat dans <num $n1> seconde<if ($n1 <= 1)><else>s</if><nbsp>!
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <if ($n1 == 1)>second<else>seconds</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: Battle 80eb12dfb1f9
 msgctxt "LogMessage:5263:0:5"
 msgid "Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>!"
 msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>!"
@@ -812,7 +805,6 @@ msgstr "Бой начнётся через <num $n1> <if ($n1 == 1)>секунд
 #. ja: 戦闘開始！
 #. de: Start!
 #. fr: À l'attaque<nbsp>!
-#, aeria-term-model-exception: Engage 2e70f1a2f27f
 msgctxt "LogMessage:5264:0:5"
 msgid "Engage!"
 msgstr "В атаку!"
@@ -867,7 +859,6 @@ msgstr "Здесь нельзя использовать этот предмет
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: crystal d52910d7a118
 msgctxt "LogMessage:5270:0:5"
 msgid "You obtain <if ($n1 == 1)><ui-color 506><ui-edge-color 507>pinch of treated crystal sand</ui-edge-color></ui-color><else><num $n1> <ui-color 506><ui-edge-color 507>pinches of treated crystal sand</ui-edge-color></ui-color></if>."
 msgstr "Вы получаете <if ($n1 == 1)><ui-color 506><ui-edge-color 507>щепотку обработанного кристаллического песка</ui-edge-color></ui-color><else><num $n1> <ui-color 506><ui-edge-color 507>щепоток обработанного кристаллического песка</ui-edge-color></ui-color></if>."
@@ -879,7 +870,6 @@ msgstr "Вы получаете <if ($n1 == 1)><ui-color 506><ui-edge-color 507>
 #. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
-#, aeria-term-model-exception: crystal d52910d7a118
 msgctxt "LogMessage:5271:0:5"
 msgid "You cannot create any more <ui-color 506><ui-edge-color 507>treated crystal sand</ui-edge-color></ui-color> until allocating what you already possess."
 msgstr "Больше нельзя получить <ui-color 506><ui-edge-color 507>обработанный кристаллический песок</ui-edge-color></ui-color>, пока вы не распределите уже имеющийся."
@@ -898,7 +888,6 @@ msgstr "Ожившая анима стала сильнее."
 #. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
-#, aeria-term-model-exception: crystal d52910d7a118
 msgctxt "LogMessage:5273:0:5"
 msgid "You do not have enough <ui-color 506><ui-edge-color 507>treated crystal sand</ui-edge-color></ui-color>."
 msgstr "У вас недостаточно <ui-color 506><ui-edge-color 507>обработанного кристаллического песка</ui-edge-color></ui-color>."
@@ -926,7 +915,6 @@ msgstr "Характеристики ожившей анимы перерасп�
 #. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
-#, aeria-term-model-exception: crystal d52910d7a118
 msgctxt "LogMessage:5276:0:5"
 msgid "Unable to create any more <ui-color 506><ui-edge-color 507>treated crystal sand</ui-edge-color></ui-color>."
 msgstr "Больше нельзя получить <ui-color 506><ui-edge-color 507>обработанный кристаллический песок</ui-edge-color></ui-color>."
@@ -1344,7 +1332,6 @@ msgstr "Под руководством Ростнсталя ты освоил �
 #. ja: 歴代の占星術師の叡智が、心の内に流れ込む！
 #. de: Das astrologische Wissen vieler Jahrhunderte widerhallt tief in dir!
 #. fr: La sagesse des anciens astromanciens résonne pro<shy>fon<shy>dé<shy>ment en vous<nbsp>!
-#, aeria-term-model-exception: Echo a8596410ddf7
 msgctxt "LogMessage:5339:0:5"
 msgid "Divinations of astrologians transcended echo deep within your soul!"
 msgstr "Предсказания астрологов былых времён звучат в глубине твоей души!"
@@ -1647,7 +1634,6 @@ msgstr "Среди трепещущих останков могучего пох
 #. ja: 襲ってきた獣から「<sheet EventItem 2002233 0>」を手に入れた！
 #. de: Du hast ein Lederhalsband an der erlegten Bestie gefunden!
 #. fr: Vous avez récupéré <noun-fr EventItem 1 2002233 1 1> sur l'un des monstres<nbsp>!
-#, aeria-term-model-exception: fallen guard 611debb2374e
 msgctxt "LogMessage:5389:0:5"
 msgid "You recover a leather collar from the fallen guard beast!"
 msgstr "Ты снял кожаный ошейник с поверженного зверя-стража!"
@@ -1679,7 +1665,6 @@ msgstr "<sheet ENpcResident $n1 0> <switch $n2><case>принимает вашу
 #. de: Iola hält dich jetzt für <switch $n1><case>den Hoffnungs<shy>schimmer<case>das verborgene Juwel<case>die Trumpfkarte<case>die Geheimwaffe</switch> der Schmiede.
 #. fr: Iola vous considère maintenant comme <switch $n1><case><if $gn4>une<else>un</if> fidèle<case>la botte secrète<case>un atout majeur<case>l'arme ultime</switch> de la Soufflerie d'airain<nbsp>!
 #. macro: <switch $n1><case>Iron Bellows' Lifeline<case>Iron Bellows' Hidden Gem<case>Iron Bellows' Ace in the Hole<case>Iron Bellows' Greatest Weapon</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: the Hole 2c002ca174e8
 msgctxt "LogMessage:5393:0:5"
 msgid "Iola now considers you the “<switch $n1><case>Iron Bellows' Lifeline<case>Iron Bellows' Hidden Gem<case>Iron Bellows' Ace in the Hole<case>Iron Bellows' Greatest Weapon</switch>.”"
 msgstr "Иола теперь считает вас «<switch $n1><case>опорой кузни „Меха“<case>сокровищем кузни „Меха“<case>козырем кузни „Меха“<case>главным оружием кузни „Меха“</switch>»."
@@ -1688,7 +1673,6 @@ msgstr "Иола теперь считает вас «<switch $n1><case>опор
 #. de: Thiuna hält dich jetzt für <switch $n1><case><if $gn4>eine Unterstützerin<else>einen Unterstützer</if><case><if $gn4>eine Meisterin<else>einen Meister</if><case>eine lebende Legende<case><if $gn4>die Schutzpatronin<else>den Schutzpatron</if></switch> der Erinnerungswerkstatt.
 #. fr: Thiuna vous considère maintenant comme <switch $n1><case><if $gn4>une<else>un</if> partenaire<case><if $gn4>une experte<else>un expert</if><case><if $gn4>une tutrice<else>un tuteur</if><case><if $gn4>une bienfaitrice<else>un bienfaiteur</if></switch> d'Aux précieux souvenirs<nbsp>!
 #. macro: <switch $n1><case>Supporter of Cherished Memories<case>Restorer of Cherished Memories<case>Custodian of Cherished Memories<case>Savior of Cherished Memories</sw… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: supporter 1ddd1ecb4e56
 msgctxt "LogMessage:5394:0:5"
 msgid "Thiuna now considers you a “<switch $n1><case>Supporter of Cherished Memories<case>Restorer of Cherished Memories<case>Custodian of Cherished Memories<case>Savior of Cherished Memories</switch>.”"
 msgstr "Тиуна теперь считает вас <switch $n1><case><if $gn4>союзницей<else>союзником</if> дорогих сердцу воспоминаний<case><if $gn4>мастерицей<else>мастером</if> дорогих сердцу воспоминаний<case><if $gn4>хранительницей<else>хранителем</if> дорогих сердцу воспоминаний<case><if $gn4>спасительницей<else>спасителем</if> дорогих сердцу воспоминаний</switch>."
@@ -1713,7 +1697,6 @@ msgstr "Кеши-Рей теперь считает вас <switch $n1><case><if
 #. de: Frithrik hält dich jetzt für <switch $n1><case><if $gn4>seine einzige Unterstützerin<else>seinen einzigen Unterstützer</if><case><if $gn4>seine engste Vertraute<else>seinen engsten Vertrauten</if><case>eine gleichgesinnte <if $gn4>Fischerinnenseele<else>Fischerseele</if><case><if $gn4>eine Pionierin<else>einen Pionier</if> der Verbesserung und Ausweitung</switch> der Abteilung Fischerei.
 #. fr: Frithrik vous considère maintenant comme <switch $n1><case><if $gn4>une camarade de pêche compréhensive<else>un camarade de pêche compréhensif</if><case><if $gn4>une camarade de pêche fiable<else>un camarade de pêche fiable</if><case><if $gn4>une camarade de pêche réformatrice<else>un camarade de pêche réformateur</if><case><if $gn4>une camarade de pêche innovatrice<else>un camarade de pêche innovateur</if></switch><nbsp>!
 #. macro: <switch $n1><case>a “Fisherman's Friend.”<case>a “Piscatorial Pioneer.”<case>an “Apex Angler.”<case>an “Aquatic Artisan.”</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: angler 3e914944df3e
 msgctxt "LogMessage:5397:0:5"
 msgid "Frithrik now considers you <switch $n1><case>a “Fisherman's Friend.”<case>a “Piscatorial Pioneer.”<case>an “Apex Angler.”<case>an “Aquatic Artisan.”</switch>"
 msgstr "Фритрик теперь считает вас <switch $n1><case><if $gn4>подругой рыбака<else>другом рыбака</if><case><if $gn4>первопроходчицей<else>первопроходцем</if> в рыболовстве<case><if $gn4>лучшей рыбачкой<else>лучшим рыбаком</if><case><if $gn4>мастерицей водного ремесла<else>мастером водного ремесла</if></switch>."
@@ -1728,7 +1711,6 @@ msgstr "Вы выполнили все поручения Иолы! Теперь
 #. ja: すべての依頼を達成し、トゥナは<string $gs1>のことを「絆の修復師」と感じているようだ！
 #. de: Du hast alle Aufträge für Thiuna erfüllt! Überglücklich ernennt sie dich damit <if $gn4>zur Restaurateurin<else>zum Restaurateur</if> der Familienbande!
 #. fr: Vous avez honoré toutes les commandes de l'association. Thiuna vous considère maintenant comme <if $gn4>une restauratrice<else>un restaurateur</if> de souvenirs honoraire<nbsp>!
-#, aeria-term-model-exception: bonds 078c870c8f54
 msgctxt "LogMessage:5399:0:5"
 msgid "You have completed all of Thiuna's tasks! She now considers you a Restorer of Bonds!"
 msgstr "Вы выполнили все поручения Тиуны! Теперь она считает вас <if $gn4>восстановительницей<else>восстановителем</if> связей."
@@ -1771,7 +1753,6 @@ msgstr "После тяжёлой битвы вы освоили новую те
 #. ja: 観客の「心の闇」を打ち砕き、新たな踊りを修得した！
 #. de: Du hast die Bedrohung des Schwarzen Herzens gebannt und eine neue Choreographie gelernt!
 #. fr: Vaincre le sentiment de désespoir du public vous a permis d'apprendre une nouvelle technique<nbsp>!
-#, aeria-term-model-exception: audience 9e88b0dcc1a3, aeria-term-model-exception: shadow ea4747ce0e77
 msgctxt "LogMessage:5405:0:5"
 msgid "In chasing the shadows from the hearts of your audience, you have learned a new dance!"
 msgstr "Разогнав тени в сердцах зрителей, вы освоили новый танец!"
@@ -1864,7 +1845,6 @@ msgstr "Хинагэси теперь считает вас <switch $n1><case><i
 #. de: T'laqa Tia betrachtet dich jetzt als <switch $n1><case><if $gn4>hilfsbereite Probensammlerin<else>hilfsbereiten Probensammler</if><case><if $gn4>wissenschaftliche Hilfskraft<else>wissenschaftliche Hilfskraft</if><case><if $gn4>verlässliche Forschungsassistentin<else>verlässlichen Forschungsassistenten</if><case><if $gn4>vertrauensvolle Forschungsberaterin<else>vertrauensvollen Forschungsberater</if></switch> der Ätherologie!
 #. fr: T'laqa Tia vous considère maintenant comme <switch $n1><case><if $gn4>une adjointe<else>un adjoint</if><case><if $gn4>une coopératrice<else>un coopérateur</if><case><if $gn4>une associée<else>un associé</if><case><if $gn4>la gardienne<else>le gardien</if></switch> des jeunes éthérologues<nbsp>!
 #. macro: <switch $n1><case>a “Dependable Fisher.”<case>a “Formidable Fisher.”<case>a “Seasoned Fisher.”<case>a “Fantastic Fisher.”</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: Formidable b57960f47e50
 msgctxt "LogMessage:5417:0:5"
 msgid "T'laqa Tia now considers you <switch $n1><case>a “Dependable Fisher.”<case>a “Formidable Fisher.”<case>a “Seasoned Fisher.”<case>a “Fantastic Fisher.”</switch>"
 msgstr "Т'лака Тиа теперь считает вас <switch $n1><case><if $gn4>надёжной помощницей<else>надёжным помощником</if><case><if $gn4>замечательной рыбачкой<else>замечательным рыбаком</if><case><if $gn4>опытной рыбачкой<else>опытным рыбаком</if><case><if $gn4>великолепной рыбачкой<else>великолепным рыбаком</if></switch>."
@@ -2090,7 +2070,6 @@ msgstr "<icon 63>Вы потеряли Мервиб. Поговорите с н�
 #. de: <icon 63>Die Beschattung ist gescheitert! Beginne von vorne!
 #. fr: Vous avez perdu de vue la personne. Retournez la chercher au point de départ.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "LogMessage:5444:0:5"
 msgid "<icon 63>You failed to follow your objective. Return to your starting point."
 msgstr "<icon 63>Вам не удалось проследить за целью. Вернитесь к месту начала."
@@ -2099,7 +2078,6 @@ msgstr "<icon 63>Вам не удалось проследить за целью
 #. de: <icon 63>Du hast deine Begleitperson verloren! Beginne von vorne!
 #. fr: Vous avez perdu de vue la cible que vous suiviez. Retournez au point de départ.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "LogMessage:5445:0:5"
 msgid "<icon 63>You failed to follow your objective. Return to your starting point."
 msgstr "<icon 63>Вам не удалось проследить за целью. Вернитесь к месту начала."
@@ -2108,7 +2086,6 @@ msgstr "<icon 63>Вам не удалось проследить за целью
 #. de: <icon 63>Du hast dich zu weit von der Zielperson entfernt. Die Beschattung ist gescheitert! Beginne von vorne!
 #. fr: Vous vous êtes trop éloigné<if $gn4>e</if> de la personne et l'avez perdue de vue. Recommencez depuis le point de départ.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "LogMessage:5446:0:5"
 msgid "<icon 63>You failed to follow your objective. Return to your starting point."
 msgstr "<icon 63>Вам не удалось проследить за целью. Вернитесь к месту начала."
@@ -2141,7 +2118,6 @@ msgstr "<icon 63>Вы потеряли Эймерика. Поговорите с
 #. de: <icon 63>Du hast deine Begleitperson verloren! Beginne von vorne!
 #. fr: La personne qui vous suivait vous a perdu<if $gn4>e</if> de vue. Retournez la chercher au point de départ.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "LogMessage:5450:0:5"
 msgid "<icon 63>You failed to follow your objective. Return to your starting point."
 msgstr "<icon 63>Вам не удалось проследить за целью. Вернитесь к месту начала."
@@ -2174,7 +2150,6 @@ msgstr "<icon 63>Вы потеряли Паддингвея. Поговорит�
 #. de: <icon 63>Du hast die blauhaarige Studentin verloren! Beginne von vorne!
 #. fr: <icon 63>Vous vous êtes trop éloigné<if $gn4>e</if> de la femme aux cheveux bleus. Retournez la chercher.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-rendering: blue-haired student 0cb53778e997 синеволосую, aeria-term-model-rendering: blue-haired student 0cb53778e997 студентку
 msgctxt "LogMessage:5454:0:5"
 msgid "<icon 63>You have lost sight of the blue-haired student. Speak with her again to reform your party."
 msgstr "<icon 63>Вы потеряли синеволосую студентку. Поговорите с ней, чтобы снова взять её в отряд."
@@ -2191,7 +2166,6 @@ msgstr "<icon 63>Вы потеряли пропавшую девочку. Пог
 #. de: <icon 63>Du hast die blonde Soldatin verloren! Beginne von vorne!
 #. fr: <icon 63>Vous vous êtes trop éloigné<if $gn4>e</if> de la factionnaire aux cheveux blonds. Retournez la chercher.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-rendering: commissary officer c1399c397020 златоволосую, aeria-term-model-rendering: commissary officer c1399c397020 интендантку
 msgctxt "LogMessage:5456:0:5"
 msgid "<icon 63>You have lost sight of the commissary officer. Speak with her again to reform your party."
 msgstr "<icon 63>Вы потеряли златоволосую интендантку. Поговорите с ней, чтобы снова взять её в отряд."
@@ -2216,7 +2190,6 @@ msgstr "<icon 63>Вы потеряли Дебруа. Поговорите с н�
 #. de: <icon 63>Die Beschattung ist gescheitert! Beginne von vorne!
 #. fr: <icon 63>La mission de filature a échoué. Recommencez-la en retournant au point de départ.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "LogMessage:5459:0:5"
 msgid "<icon 63>You failed to follow your objective. Return to your starting point."
 msgstr "<icon 63>Вам не удалось проследить за целью. Вернитесь к месту начала."
@@ -2225,7 +2198,6 @@ msgstr "<icon 63>Вам не удалось проследить за целью
 #. de: <icon 63>Die Beschattung ist gescheitert! Beginne von vorne!
 #. fr: <icon 63>La mission de filature a échoué. Recommencez-la en retournant au point de départ.
 #. macro: <icon 63> — an inline icon of the game font; icon = 63 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Return 51912bf1523a
 msgctxt "LogMessage:5460:0:5"
 msgid "<icon 63>You failed to follow your objective. Return to your starting point."
 msgstr "<icon 63>Вам не удалось проследить за целью. Вернитесь к месту начала."
@@ -2577,7 +2549,6 @@ msgstr "<sheet ENpcResident $n1 0> <switch $n2><case>принимает вашу
 #. fr: <sheet ENpcResident $n1 0> vous considère maintenant comme <switch $n2><case><if $gn4>une contributrice active<else>un contributeur actif</if> au redressement<case><if $gn4>une inconditionnelle<else>un inconditionnel</if> au redressement<case><if $gn4>une protectrice<else>un protecteur</if> au redressement<case><if $gn4>la sauveuse<else>le sauveur</if></switch> du Bord du gouffre<nbsp>!
 #. macro: <sheet ENpcResident $n1 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <switch $n2><case>Friend of the Hard Place<case>Supporter of the Hard Place<case>Cornerstone of the Hard Place<case>Savior of the Hard Place</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: supporter 1ddd1ecb4e56
 msgctxt "LogMessage:5503:0:5"
 msgid "<sheet ENpcResident $n1 0> now considers you a “<switch $n2><case>Friend of the Hard Place<case>Supporter of the Hard Place<case>Cornerstone of the Hard Place<case>Savior of the Hard Place</switch>.”"
 msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>подругой<else>другом</if> Трудного положения<case><if $gn4>помощницей<else>помощником</if> Трудного положения<case><if $gn4>благодетельницей<else>благодетелем</if> Трудного положения<case><if $gn4>спасительницей<else>спасителем</if> Трудного положения</switch>."
@@ -2610,7 +2581,6 @@ msgstr "<capitalize><noun-en Item 3 $n1 2 1></capitalize> заметили ва�
 #. ja: 何もかからなかった……。
 #. de: Du hast nichts gefangen.
 #. fr: Vous n'avez pas réussi à ferrer le poisson...
-#, aeria-term-model-exception: Nothing 98b6b2a6ba3c
 msgctxt "LogMessage:5507:0:5"
 msgid "Nothing bites."
 msgstr "Не клюёт."
@@ -2934,7 +2904,6 @@ msgstr "<sheet ENpcResident $n1 0> <switch $n2><case>принимает вашу
 #. macro: <sheet ENpcResident $n1 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <switch $n2><case>Probably Proper Person<case>Tentatively True <if $gn4>Tradeswoman<else>Tradesman</if><case>Just and Generous Journeyer<case>Familiar Friend-li… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if $gn4>Tradeswoman<else>Tradesman</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: face 7d91d5daccc3
 msgctxt "LogMessage:5548:0:5"
 msgid "<sheet ENpcResident $n1 0> now considers you a “<switch $n2><case>Probably Proper Person<case>Tentatively True <if $gn4>Tradeswoman<else>Tradesman</if><case>Just and Generous Journeyer<case>Familiar Friend-like Face</switch>.”"
 msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>вероятно, приятной собеседницей<else>вероятно, приятным собеседником</if><case>возможно, <if $gn4>талантливой торговкой<else>талантливым торговцем</if><case>наверняка <if $gn4>доброй путешественницей<else>добрым путешественником</if><case>кем-то, кто напоминает <if $gn4>старую подругу<else>старого друга</if></switch>."
@@ -3224,7 +3193,6 @@ msgstr "<sheet ENpcResident $n1 0> <switch $n2><case>принимает вашу
 #. fr: <sheet ENpcResident $n1 0> vous considère maintenant comme <switch $n2><case><if $gn4>une sous-traitante compétente<else>un sous-traitant compétent</if><case><if $gn4>une partenaire précieuse<else>un partenaire précieux</if><case>un des piliers de la compagnie<case><if $gn4>une sauveuse providentielle<else>un sauveur providentiel</if></switch><nbsp>!
 #. macro: <sheet ENpcResident $n1 0> — a value from a game data sheet, such as a name; sheet = ENpcResident, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <switch $n2><case>a “Marriage Mediator<case>a “Customer Caretaker<case>an “Engineering Advocate<case>a “Savior of the Railing</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-exception: caretaker bc95fc3c83a0
 msgctxt "LogMessage:5588:0:5"
 msgid "<sheet ENpcResident $n1 0> now considers you <switch $n2><case>a “Marriage Mediator<case>a “Customer Caretaker<case>an “Engineering Advocate<case>a “Savior of the Railing</switch>.“"
 msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n2><case><if $gn4>умелой посредницей<else>умелым посредником</if> в семейных делах<case><if $gn4>заботливой мастерицей<else>заботливым мастером</if><case>защитой для инженерного дела<case><if $gn4>спасительницей перил<else>спасителем перил</if></switch>."
@@ -3697,7 +3665,6 @@ msgstr "Название сообщества скопировано в буфе
 #. ja: フリートライアル中は、フェローシップに所属して14日以上経過するまで、掲示板への書き込みはできません。
 #. de: Spieler der in Testspielzeit können in den ersten 14 Tagen als Zirkel-Mitglieder keine Nachrichten auf dem Schwarzen Brett hinterlassen.
 #. fr: Les personnages de la version d'essai gratuit doivent faire partie de la communauté depuis au moins 14 jours avant de pouvoir laisser un message sur le panneau d'affichage.
-#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5654:0:5"
 msgid "Characters on the free trial cannot post to the message board during their first 14 days as a fellowship member."
 msgstr "Персонажи с бесплатной пробной версией не могут писать на доске объявлений, пока не пробудут в сообществе 14 дней."
@@ -4074,7 +4041,6 @@ msgstr "Вы получаете <num $n2> <noun-en Item 1 $n1 $n2 1>."
 #. ja: モグモグ★コレクションの目標が更新されました。<br>モグモグガイドブックを開き直して、目標を確認してください。
 #. de: Die Ziele der Mog Mog-Kollektion wurden aktualisiert.<br>Prüfe das Mogpendium, um sie dir anzusehen.
 #. fr: Vos objectifs de la Collection Mog Mog ont été actualisés.<br>Pensez à ouvrir de nouveau votre Guide Mog Mog afin de les consulter.
-#, aeria-term-model-exception: Treasure c987231fd5de
 msgctxt "LogMessage:5777:0:5"
 msgid "The Moogle Treasure Trove objectives have been updated. Open the Mogpendium again to view them."
 msgstr "Цели Сокровищницы Муглов обновлены. Откройте Муглепедию, чтобы посмотреть их."
@@ -4082,7 +4048,6 @@ msgstr "Цели Сокровищницы Муглов обновлены. От�
 #. ja: モグモグ★コレクションの開催状況に変更がありました。<br>モグモグガイドブックを開き直して、目標を確認してください。
 #. de: Der Status der Mog Mog-Kollektion wurde aktualisiert.<br>Prüfe das Mogpendium, um dir die Ziele anzusehen.
 #. fr: Les in<shy>for<shy>ma<shy>tions sur la Collection Mog Mog ont été actualisées.<br>Pensez à ouvrir de nouveau votre Guide Mog Mog afin d'en consulter les objectifs.
-#, aeria-term-model-exception: Treasure c987231fd5de
 msgctxt "LogMessage:5778:0:5"
 msgid "The status of the Moogle Treasure Trove has changed. Open the Mogpendium again to view the objectives."
 msgstr "Состояние Сокровищницы Муглов изменилось. Откройте Муглепедию, чтобы посмотреть цели."
@@ -4209,7 +4174,6 @@ msgstr "Не удалось закрепить жетон поручения в 
 #. de: Der Vorgang kann nicht ausgeführt werden, da der Charakter gerade das Datenzentrum <string $s1> bereist.
 #. fr: Impossible d'exécuter cette commande. Le personnage se trouve dans un autre centre de traitement de données (<string $s1>).
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
-#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5800:0:5"
 msgid "Unable to execute command. Character is currently visiting the <string $s1> data center."
 msgstr "Не удалось выполнить команду. Персонаж сейчас путешествует по дата-центру <string $s1>."
@@ -4267,7 +4231,6 @@ msgstr "Данные для <string $s1> получены."
 #. ja: キャラクターの情報は取得済みです。
 #. de: Die Charakterdaten sind aktuell.
 #. fr: Les données du personnage ont déjà été obtenues.
-#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5808:0:5"
 msgid "Character data has already been retrieved."
 msgstr "Данные персонажа уже получены."
@@ -4282,7 +4245,6 @@ msgstr "Подождите немного, прежде чем снова зап
 #. ja: キャラクターの情報を取得するコマンドは現在使えません。
 #. de: Das Kommando kann gegenwärtig nicht ausgeführt werden.
 #. fr: Impossible d'obtenir les données de ce personnage pour le moment.
-#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5810:0:5"
 msgid "Character data retrieval is currently unavailable."
 msgstr "Сейчас данные персонажа получить нельзя."
@@ -4440,7 +4402,6 @@ msgstr "Шкалы «<sheet Hud $n1 ADDONHUD_NAME>» и «<sheet Hud $n2 ADDONHU
 #. ja: ポートレートに正しくキャラクターが映っていないため保存できません。
 #. de: Speichern nicht möglich. Der Charakter ist nicht korrekt im Bild zu sehen.
 #. fr: Sauvegarde impossible. Le personnage n'apparaît pas cor<shy>rec<shy>te<shy>ment sur le portrait.
-#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5850:0:5"
 msgid "Unable to save portrait. Character is not in frame."
 msgstr "Не удалось сохранить портрет: персонаж не помещается в кадр."
@@ -4513,7 +4474,6 @@ msgstr "Не удалось показать профиль персонажа.<
 #. ja: ポートレートの範囲内に正しくキャラクターの表情が映っていないため保存できません。
 #. de: Speichern nicht möglich. Der Ge<shy>sichts<shy>aus<shy>druck des Charakters ist nicht korrekt im Bildbereich zu sehen.
 #. fr: Sauvegarde impossible. L'expression du personnage n'est pas visible sur le portrait.
-#, aeria-term-model-exception: Character d016b0422e08
 msgctxt "LogMessage:5861:0:5"
 msgid "Unable to save portrait. Character's expression is not in frame."
 msgstr "Не удалось сохранить портрет: выражение лица персонажа не помещается в кадр."

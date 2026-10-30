@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.10.06.0000.0000\n"
+"X-Game-Version: 2026.10.16.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: 突入条件を満たしていないパーティメンバーがいるため、実行できません。
@@ -200,7 +200,6 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
-#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:6025:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> neither a Disciple of War nor Magic (excluding limited jobs)."
 msgstr "<if-self $n1>Вы не относитесь<else><capitalize><player-name $n1></capitalize> не относится</if-self> ни к физическому, ни к магическому классу. Ограниченные профессии не учитываются."
@@ -305,7 +304,6 @@ msgstr "Не удалось выполнить действие. У вас не�
 #. ja: リミテッドジョブを除くファイター、もしくはソーサラーがレベル60以上ではないため、実行できません。
 #. de: Nicht möglich, weil du kein Krieger oder Magier der Stufe 60 oder höher bist. (Beschränkte Jobs sind ausgeschlossen.)
 #. fr: Action impossible. Vous utilisez un job restreint, ou vous n'êtes pas un<if $gn4>e</if> disciple de la guerre ou de la magie de niveau 60 ou plus.
-#, aeria-term-model-rendering: Disciple of War 380d8badaeae физический
 msgctxt "LogMessage:6037:0:5"
 msgid "Unable to execute command. You are not a level 60 Disciple of War or Magic (excluding limited jobs)."
 msgstr "Не удалось выполнить действие. Ваш физический или магический класс должен быть не ниже 60-го уровня. Ограниченные профессии не учитываются."
@@ -778,7 +776,6 @@ msgstr "Вы поместили в раму отпечаток <noun-en Item 1 $
 #. ja: 魚拓を取り除いた。
 #. de: Der Fischdruck wurde entfernt.
 #. fr: Vous avez retiré l'ichtyogramme.
-#, aeria-term-model-exception: angler 3e914944df3e
 msgctxt "LogMessage:6095:0:5"
 msgid "You remove an angler's print from the frame."
 msgstr "Вы сняли отпечаток рыбы с рамы."
@@ -786,7 +783,6 @@ msgstr "Вы сняли отпечаток рыбы с рамы."
 #. ja: 魚拓が設定されていないため、この操作はできません。
 #. de: Nicht möglich, da kein Fischdruck angebracht ist.
 #. fr: Action impossible. Aucun ichtyogramme n'a été placé.
-#, aeria-term-model-exception: angler 3e914944df3e
 msgctxt "LogMessage:6096:0:5"
 msgid "Unable to execute. An angler's print has not been set in the frame."
 msgstr "Нельзя выполнить действие. В раме нет отпечатка рыбы."
@@ -1075,7 +1071,6 @@ msgstr "Невозможно выполнить команду. Вы не вып
 #. ja: ファイター＆ソーサラークラスではないため、実行できません。
 #. de: Du musst in einer Krieger- oder Magierklasse sein.
 #. fr: Action impossible. Vous devez être un disciple de la guerre ou de la magie.
-#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическом
 msgctxt "LogMessage:6981:0:5"
 msgid "Unable to execute command. You must be a Disciple of War or Magic."
 msgstr "Невозможно выполнить команду. Вы должны быть в физическом или магическом классе."
@@ -1137,7 +1132,6 @@ msgstr "Невозможно выполнить команду. Все учас�
 #. macro: <noun-en ObjStr 2 $gn8 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gs1 == $gs3)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
-#, aeria-term-model-rendering: Disciple of War 380d8badaeae физическому
 msgctxt "LogMessage:6989:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> not a Disciple of War or Magic."
 msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не относитесь<else>не относится</if> ни к физическому, ни к магическому классу."
