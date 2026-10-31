@@ -83,7 +83,7 @@ msgstr "Похвалив вашу храбрость, <if ($gn70 == 1)>Я'Што
 #. de: Auf deinen Reisen hast du schon unzählige Eorzäer getroffen und so manche gerettet. Das hat offenbar großen Eindruck bei der jungen Druidin Edda hinterlassen, die dir gesteht, dass du sie inspiriert hast, ihr Abenteurerleben wieder aufzunehmen. Auch du selbst hast da so eine Vorahnung, dass dir eine größere Heraus<shy>forde<shy>rung bevorsteht. Frag zunächst einmal Momodi, was es mit dem Bund der Morgenröte auf sich hat.
 #. fr: Lors de vos aventures dans les trois cités, vous avez eu l'occasion de croiser divers aventuriers. Parmi eux, une jeune fille du nom d'Edda semble avoir été touchée par vos hauts faits. Elle dit vouloir prendre un nouveau départ en tant qu'aventurière. Peut-être qu'il est aussi temps pour vous de prendre un nouveau départ, avec de nouveaux compagnons. <if ($gn70 == 1)>Y'shtola vous a justement parlé<else><if ($gn70 == 2)>Yda et Papalymo vous ont justement parlé<else><if ($gn70 == 3)>Thancred vous a justement parlé<else> </if></if></if> d'une certaine or<shy>ga<shy>ni<shy>sa<shy>tion qui s'intéresse aux personnes possédant des dons spéciaux. Lorsque vous serez prêt<if $gn4>e</if>, retournez voir Momodi et interrogez-la au sujet des Héritiers de la Septième Aube.
 #. kind: journal
-# aeria-terms: {"Edda":"5e919b2c536f","Momodi":"8f425cdaf942","conjurer":"ad8b3d4ffa53"}
+# aeria-terms: {"Edda":"5e919b2c536f","Momodi":"8f425cdaf942","adventurer":"48df264ad5ec","conjurer":"ad8b3d4ffa53"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_SEQ_07:1"
 msgid "In the course of your travels, you have crossed paths with myriad individuals, some of whom you have positively influenced. One such individual is the young conjurer Edda, who reveals that you have inspired her to embark upon a new journey as an adventurer. You sense that you, too, must soon embark upon a new journey of your own. Speak with Momodi again when you have resolved to take the first step."
 msgstr "В своих странствиях вы встречали самых разных людей и многим помогли. Одна из них, молодой чародей Эдда, призналась, что вы вдохновили её начать новую жизнь искательницы приключений. Чувствуете, что и вам скоро предстоит новый путь. Когда решитесь сделать первый шаг, снова поговорите с Момоди."
@@ -162,7 +162,7 @@ msgstr "Ох, солнце сегодня так припекало, что я �
 #. de: Ah, Papashan! <if $gn4>Die Abenteurerin<else>Der Abenteurer</if>, <if $gn4>die<else>der</if> deinen Auftrag über<shy>nehmen will, ist gerade hier.
 #. fr: <if ($gn11 < 12)><if ($gn11 < 4)>Bonsoir<else>Bonjour</if><else><if ($gn11 < 17)>Bonjour<else>Bonsoir</if></if><nbsp>! Vous tombez bien, l'aventuri<if $gn4>ère<else>er</if> à qui je voulais confier votre mission vient justement d'arriver.
 #. speaker: MOMODI
-# aeria-terms: {"Papashan":"8b5010800f7d"}
+# aeria-terms: {"Papashan":"8b5010800f7d","adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_MOMODI_000_5:1"
 msgid "Excellent timin', Papashan. It just so happens the adventurer who'll be handlin' your petition is here."
 msgstr "А вот и ты, Папашан. Как раз вовремя! <if $gn4>Искательница приключений, которая<else>Искатель приключений, который</if> займётся твоим заказом, уже здесь."
@@ -191,10 +191,10 @@ msgstr "Рад, что именно вы нам поможете. От души 
 #. speaker: PAPASHAN
 #. macro: <if $gn4>winsome lass<else>strapping young lad</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if $gn4>she<else>he</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
-# aeria-terms: {"strapping young lad":"9835033b8973"}
+# aeria-terms: {"adventurer":"48df264ad5ec","strapping young lad":"9835033b8973"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_PAPASHAN_000_8:1"
 msgid "So this <if $gn4>winsome lass<else>strapping young lad</if> is the much-lauded adventurer, is <if $gn4>she<else>he</if>? Marvelous, marvelous!"
-msgstr "Так это и есть <if $gn4>та самая прославленная авантюристка, такая очаровательная девушка<else>тот самый прославленный авантюрист, такой крепкий юноша</if>? Чудесно, чудесно!"
+msgstr "Так это и есть <if $gn4>та самая прославленная искательница приключений, такая очаровательная девушка<else>тот самый прославленный искатель приключений, такой крепкий юноша</if>? Чудесно, чудесно!"
 
 #. ja: 私は元銀冑団のパパシャンと申す者。<br>依頼を受けてくださって感謝しますぞ。
 #. de: Es freut mich überaus, deine Bekanntschaft zu machen. Ich bin Papashan, ein ehemaliger Gardist der Palastwache. Danke, dass du uns helfen willst!
@@ -379,6 +379,7 @@ msgstr "Ищете Расписную Месу? Вот он я!"
 #. de: Ich hab vorhin mitgehört. Du bist also <if $gn4>die Abenteurerin<else>der Abenteurer</if>, <if $gn4>die<else>der</if> in der Kupferglocken-Mine für Ruhe sorgen will?
 #. fr: Vous êtes la personne envoyée pour neutraliser les hécatonchires, n'est-ce pas<nbsp>?
 #. speaker: PAINTEDMESA
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_PAINTEDMESA_000_31:1"
 msgid "So you're the adventurer who's volunteered to deal with the mess down in Copperbell, are you?"
 msgstr "Так вы <if $gn4>та самая искательница приключений<else>тот самый искатель приключений</if>, кто вызвался разобраться с бедой в Медных колоколах?"
@@ -441,6 +442,7 @@ msgstr "В Медноколокольных шахтах случилось пр
 #. de: Wie? Du hast dich freiwillig gemeldet, die Hekatoncheiren zur Räson zu bringen?! Haha, du musst verrückt sein ... oder lebensmüde ... oder beides.
 #. fr: Hum<nbsp>? Quoi, c'est Papashan qui vous envoie pour mettre un point final à la rébellion des géants, sur la demande de la compagnie<nbsp>?
 #. speaker: STONETORCH
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_STONETORCH_000_41:1"
 msgid "What? You're the adventurer who's volunteered to quell the hecatoncheires?"
 msgstr "Как? Вы <if $gn4>та самая искательница приключений<else>тот самый искатель приключений</if>, кто вызвался усмирить гекатонхейров?"
@@ -467,10 +469,10 @@ msgstr "Великаны пока бесчинствуют внутри, но р
 #. de: Ich habe viele Jahre als Abenteurer verbracht und einige weltbewegende Ereignisse hautnah erlebt. Früher war natürlich alles besser, aber im Kern sind alle Abenteurer gleich<nbsp>- damals wie heute.
 #. fr: Cela fait longtemps que je suis aventurier. Mais au final, les époques se succèdent et les aventures ne changent guère.
 #. speaker: ISILDAURE
-# aeria-terms: {"witness":"4610f4a7a357"}
+# aeria-terms: {"adventurer":"48df264ad5ec","witness":"4610f4a7a357"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_ISILDAURE_000_50:1"
 msgid "I have been an adventurer for long years, and borne witness to many a pivotal moment in history. Though the times may have changed, the essence of our trade has not."
-msgstr "Я уже много лет странствую как авантюрист и повидал немало судьбоносных событий. Времена меняются, но суть нашего ремесла остаётся прежней."
+msgstr "Я уже много лет странствую как искатель приключений и повидал немало судьбоносных событий. Времена меняются, но суть нашего ремесла остаётся прежней."
 
 #. ja: 冒険者とは本来、「冒険」それ自体のために、<br>挑戦を試みる者たちのことだ。
 #. de: Wir alle suchen die Heraus<shy>forde<shy>rung, um uns selbst zu vervollkommnen.
@@ -484,9 +486,10 @@ msgstr "Авантюристы всегда стремились стать лу
 #. de: Unser Sinn für Gerechtigkeit und unsere Bereitschaft zur Selbstaufopferung wachsen mit unserer Erfahrung.
 #. fr: Les aventuriers progressent avec le temps, développant des qualités telles que la modestie, la bravoure, le dévouement, et bien sûr le sens de la justice.
 #. speaker: ISILDAURE
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_ISILDAURE_000_52:1"
 msgid "As an adventurer becomes more experienced, he will naturally acquire a love of justice, and an understanding of the spirit of self-sacrifice."
-msgstr "С опытом авантюрист учится ценить справедливость и понимать, что значит пожертвовать собой ради других."
+msgstr "С опытом искатель приключений учится ценить справедливость и понимать, что значит пожертвовать собой ради других."
 
 #. ja: それらは、数字では現れるものではない。<br>だが、人と人の絆に着実に根付き、<br>自分という存在を大きくしていく。
 #. de: Diese Entwicklung verläuft unbewusst und lässt sich nicht in Zahlen messen, aber sie formt uns zu unserem wahren Ich.
@@ -550,10 +553,10 @@ msgstr "Надежда всей страны на ваших плечах, др�
 #. de: Viel Glück, <if $gn4>Abenteurerin<else>Abenteurer</if>, bei der Jagd nach den Hekatoncheiren. Wir Eisenschein-Soldaten werden dafür sorgen, dass keiner ins Freie entkommt.
 #. fr: Je compte sur vous pour maîtriser la rébellion des hécatonchires. Je m'occuperai de surveiller l'extérieur et d'empêcher les importuns d'entrer dans la mine.
 #. speaker: STONETORCH
-# aeria-terms: {"Stone Torch":"36685ff5c04d","Stone Torches":"c11dae3f97a5"}
+# aeria-terms: {"Stone Torch":"36685ff5c04d","Stone Torches":"c11dae3f97a5","adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_STONETORCH_000_67:1"
 msgid "Good luck in there, adventurer. We Stone Torches will continue our vigil here, lest the foe slip by you."
-msgstr "Удачи там, <if $gn4>авантюристка<else>авантюрист</if>. Мы, Каменные факелы, продолжим охранять вход, чтобы враг не проскользнул мимо вас."
+msgstr "Удачи там, <if $gn4>искательница приключений<else>искатель приключений</if>. Мы, Каменные факелы, продолжим охранять вход, чтобы враг не проскользнул мимо вас."
 
 #. ja: クエスト「カッパーベルで消える夢」のバトルを開始しますか？
 #. de: Willst du den Kampf für „Zu tief gegraben“ beginnen?
@@ -681,9 +684,10 @@ msgstr "П-помогите кто-нибудь!"
 #. de: B-Bitte, <if $gn4>Abenteurerin<else>Abenteurer</if>! Ich flehe dich an, rette mich vor diesem Unhold!
 #. fr: Je vous en supplie, faites quelque chose<nbsp>!
 #. speaker: POORDRESS
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_POORDRESS_000_108:1"
 msgid "P-Please, adventurer! Help me, I beg o' ye!"
-msgstr "П-пожалуйста, авантюрист! Помогите мне, умоляю!"
+msgstr "П-пожалуйста, <if $gn4>искательница приключений<else>искатель приключений</if>! Помогите мне, умоляю!"
 
 #. ja: 私は何もしていません！<br>本当に、ちゃんと買ったものなんです！
 #. de: Ich schwöre bei dem Grab meiner Mutter, dass ich nichts gestohlen habe! Ich habe lange auf das Fleisch gespart ... \<schluchz> um meinen Kindern einmal ein anständiges Essen zu bieten.
@@ -732,6 +736,7 @@ msgstr "(-Отвратительный торговец-)Эй! Куда это �
 #. de: Danke, <if $gn4>meine Retterin<else>mein Retter</if>! Tausend Dank!
 #. fr: Merci... vous m'avez sauvée.
 #. speaker: POORDRESS
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_POORDRESS_000_122:1"
 msgid "Thank ye, kind adventurer! Thank ye thrice over!"
 msgstr "Спасибо, <if $gn4>добрая искательница приключений<else>добрый искатель приключений</if>! Трижды спасибо!"
@@ -975,9 +980,10 @@ msgstr "(-Отвратительный торговец-)Чёрт! Ладно, �
 #. de: Gesegnet seist du, <if $gn4>meine Retterin<else>mein Retter</if>! Wer weiß, was mir dieser Widerling angetan hätte, wenn du mir nicht geholfen hättest.
 #. fr: Merci encore, aventuri<if $gn4>ère<else>er</if>. Vous m'avez sauvé la vie.
 #. speaker: POORDRESS
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_POORDRESS_000_166:1"
 msgid "Gods bless ye, adventurer! If ye hadn't come along when ye did, who knows what that monster might've done!? It don't bear thinkin' about..."
-msgstr "Боги благословят вас, авантюрист! Если бы вы не подоспели, кто знает, что этот изверг мог бы натворить?! Даже думать об этом не хочется..."
+msgstr "Боги благословят вас, <if $gn4>искательница приключений<else>искатель приключений</if>! Если бы вы не подоспели, кто знает, что этот изверг мог бы натворить?! Даже думать об этом не хочется..."
 
 #. ja: (-？？？？-)一件落着……だね！
 #. de: (-???-)Jeden Tag eine gute Tat!
@@ -1025,9 +1031,10 @@ msgstr "Но главное, ты всегда <if $gn4>была готова<el
 #. de: Kurzum: Du besitzt alle Eigenschaften, die wir von <if $gn4>einer Abenteurerin<else>einem Abenteurer</if> erwarten.
 #. fr: Ce sont des qualités primordiales pour un aventurier, et tu les possèdes.
 #. speaker: PAPALYMO
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_PAPALYMO_000_175:1"
 msgid "You are possessed of all the qualities we seek in an adventurer, of this we are convinced."
-msgstr "Мы уверены: у тебя есть все качества, которые мы ищем в авантюристах."
+msgstr "Мы уверены: у тебя есть все качества, которые мы ищем в искателях приключений."
 
 #. ja: ま、さっきのは、どっちかってゆーと<br>巻き込まれてたけど。
 #. de: Na ja, wenn wir mal ehrlich sind, bist du in den Streit mit dem Dodo-Fleisch eher hineingestolpert.
@@ -1240,6 +1247,7 @@ msgstr "Но мне больше всего запомнилась твоя го
 #. de: Du fragst dich vielleicht, worauf ich hinaus möchte. Nun, ich will damit meine Überzeugung zum Ausdruck bringen, dass du all die Qualitäten besitzt, die man von <if $gn4>einer Abenteurerin<else>einem Abenteurer</if> erwarten kann.
 #. fr: L'humilité, le courage, l'altruisme... ce sont là des qualités es<shy>sen<shy>tielles pour un aventurier, et je sais à présent que vous les possédez. Je pense même que vous avez l'étoffe des aventuriers d'exception.
 #. speaker: THANCRED
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_THANCRED_000_215:1"
 msgid "...All of which leads me to conclude that you are indeed the one whom I have been looking for─an adventurer possessed of a very rare set of qualities."
 msgstr "...И всё это убеждает меня, что ты именно <if $gn4>та, кого я искал: искательница приключений с редким набором достоинств<else>тот, кого я искал: искатель приключений с редким набором достоинств</if>."
@@ -1274,9 +1282,10 @@ msgstr "Так уж вышло, что я знаю женщину с таким 
 #. de: Wir sind eine eingeschworene Gemeinschaft von Idealisten, die für Eorzea kämpfen. Wenn du uns hilfst, werden wir dir bei deinen zukünftigen Abenteuern unter die Arme greifen.
 #. fr: Des gens comme vous, notamment. Acceptez de nous rejoindre, et nous vous aiderons dans vos aventures, si vous le souhaitez.
 #. speaker: THANCRED
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_THANCRED_000_219:1"
 msgid "Naturally, there are benefits to being part of such a collective. For one, we should be glad to assist you in realizing your potential as an adventurer."
-msgstr "Разумеется, у такой компании есть свои преимущества. Например, мы с радостью поможем тебе раскрыть свой потенциал авантюриста."
+msgstr "Разумеется, у такой компании есть свои преимущества. Например, мы с радостью поможем тебе раскрыть свой потенциал искателя приключений."
 
 #. ja: これから、冒険者ギルドへ報告に戻るんだろ？<br>クイックサンドのモモディさんには話を通してある。<br>興味があるなら、彼女に話を聞いてみてくれ。
 #. de: Du musst dich nicht sofort entscheiden. Überleg es dir und sprich bei Gelegenheit im Treibsand mit Momodi darüber. Sie ist eingeweiht und kann dir sagen, wo du uns findest.
@@ -1329,6 +1338,7 @@ msgstr "...Хотя я <i>и правда</i> люблю иногда послу
 #. speaker: MOMODI
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_MOMODI_000_233:1"
 msgid "Ah, <split \" \" 1><string $gs1></split>! Sorry to keep you waitin'─I was just providin' guidance to a fresh-off-the-carriage adventurer."
 msgstr "А, <split \" \" 1><string $gs1></split>! Прости, что заставила ждать. Я как раз помогала новичку, только что прибывшему в город."
@@ -1381,16 +1391,16 @@ msgstr "С-спасибо, что нашли для меня время. Мы с
 #. de: Ich war Mitglied einer Aben<shy>teurer<shy>gruppe<nbsp>- zugegeben mit wenig Erfahrung, doch hehren Zielen. Wir hatten uns so viel vorgenommen, aber dann hat es unseren Anführer in Gridania erwischt. \<schluchz> ... Avere ist tot.
 #. fr: Je ne sais pas si vous vous souvenez de moi, mais je voyageais avec un groupe de nouveaux aventuriers, et nous nous sommes croisé<if $gn4>e</if>s auparavant. Mon groupe était mené par un homme du nom d'Avere. Hélas<nbsp>! Il a perdu la vie à Gridania...
 #. speaker: EDDA
-# aeria-terms: {"Edda":"5e919b2c536f","Gridania":"126b6bab8bfc"}
+# aeria-terms: {"Edda":"5e919b2c536f","Gridania":"126b6bab8bfc","adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_EDDA_000_239:1"
 msgid "My name is Edda. I'm an adventurer like you, though I'm not very good at being one, if truth be told. Anyway, I was adventuring with my friends in Gridania when...when... I-I'm sorry. We were in Gridania...when the leader of our party was killed."
-msgstr "Меня зовут Эдда. Я тоже авантюристка, хотя, если честно, получается у меня не очень. В общем, я путешествовала с друзьями по Гридании, когда... когда... Простите. Мы были в Гридании, и там убили нашего лидера."
+msgstr "Меня зовут Эдда. Я тоже искательница приключений, хотя, если честно, получается у меня не очень. В общем, я путешествовала с друзьями по Гридании, когда... когда... Простите. Мы были в Гридании, и там убили нашего лидера."
 
 #. ja: アヴィールは、最初にあなたを見かけてから、<br>ずっとあなたの話をしていました。<br>……あの冒険者は、きっとできるやつだって。
 #. de: Avere und ich wollten im Frühling heiraten. Als er noch lebte, hat er einmal mit dir gesprochen, auch wenn du dich vielleicht nicht mehr daran erinnerst. Die Begegnung mit dir hatte ihn tief beeindruckt und danach hat er ständig davon geschwärmt, was für <if $gn4>eine tolle Abenteurerin<else>ein toller Abenteurer</if> du bist.
 #. fr: Vous aviez fait une grande impression sur notre pauvre Avere. Il n'arrêtait pas de parler de vous, depuis qu'il vous avait vu<if $gn4>e</if> à l'œuvre. Il disait que vous aviez l'étoffe des grands aventuriers, et qu'il aimerait être comme vous un jour.
 #. speaker: EDDA
-# aeria-terms: {"Avere":"67d8e1c3297d"}
+# aeria-terms: {"Avere":"67d8e1c3297d","adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_EDDA_000_240:1"
 msgid "His name was Avere, and he and I were to be wed in the spring. You may not remember him, but to say that he remembered you would be an understatement. He would sing your praises from dawn to dusk. He saw you for what you are, you see─an adventurer's adventurer─and swore that he would be like you one day."
 msgstr "Его звали Авер, и весной мы должны были пожениться. Может, вы его и не помните, но он вас не забывал. С утра до ночи только о вас и говорил. Он сразу понял, кто вы: <if $gn4>настоящая искательница приключений<else>настоящий искатель приключений</if>. И поклялся однажды стать таким же."
@@ -1417,9 +1427,10 @@ msgstr "Но когда я думаю о том, какая вы <if $gn4>жен
 #. de: Das brachte mich dazu, meinen Entschluss zu überdenken. Ich werde in mein Heimatdorf zurückkehren, um dort Tag und Nacht zu trainieren<nbsp>- bis ich eines Tages so stark und geschickt bin wie du.
 #. fr: Pour cela, je vais retourner dans ma campagne natale et reprendre mon en<shy>traî<shy>ne<shy>ment depuis le début. Je fais le serment de faire honneur à la mémoire de mon fiancé, et pour cela, vous serez mon modèle.
 #. speaker: EDDA
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_EDDA_000_243:1"
 msgid "And so I've decided to start again as an adventurer. I will go back to the village of my birth and begin my training anew."
-msgstr "Я решила начать всё сначала и вернуться к жизни авантюристки. Вернусь в родную деревню и начну тренироваться с нуля."
+msgstr "Я решила начать всё сначала и вернуться к жизни искательницы приключений. Вернусь в родную деревню и начну тренироваться с нуля."
 
 #. ja: 最後に、お名前を伺ってもいいですか？
 #. de: Doch vorher wollte ich dich noch einmal sehen und dich nach deinem Namen fragen. Würdest du ihn mir verraten?
@@ -1524,9 +1535,10 @@ msgstr "<i>Бээ...</i> Я сам с ним разберусь. А вы, ост
 #. de: Hm, nicht schlecht ... für <if $gn4>eine Abenteurerin<else>einen Abenteurer</if>.
 #. fr: Pas si mal, pour un<if $gn4>e</if> aventuri<if $gn4>ère<else>er</if>.
 #. kind: other
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/006/ManFst205_00660:TEXT_MANFST205_00660_QIB_HEAVYA_BATTLETALK_002:1"
 msgid "Hmph! Not bad...for an adventurer!"
-msgstr "Хм! Для авантюриста неплохо..."
+msgstr "Хм! Для искателя приключений неплохо..."
 
 #. ja: あ、あれ？　ちょっと調子が悪りいな……。
 #. de: Oh ...? Mir wird ganz schummrig ...

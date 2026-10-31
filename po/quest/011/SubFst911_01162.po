@@ -117,10 +117,10 @@ msgstr "Доложите Люкело."
 #. de: He, du! Ja, du!<br>Die goldgelben Federn zwischen deinen Aus<shy>rüs<shy>tungs<shy>teilen ... Der, äh, romantische Geruch nach Dung ... Du bist <if $gn4>die stolze Besitzerin<else>der stolze Besitzer</if> eines Chocobos, nicht wahr?
 #. fr: (snif) (snif)... Vous sentez le chocobo, aventuri<if $gn4>ère<else>er</if>. Je suppose que vous disposez de votre propre monture, n'est-ce pas ?
 #. speaker: DOCETTE
-# aeria-terms: {"chocobo":"7a909e5229a9"}
+# aeria-terms: {"adventurer":"48df264ad5ec","chocobo":"7a909e5229a9"}
 msgctxt "quest/011/SubFst911_01162:TEXT_SUBFST911_01162_DOCETTE_000_001:1"
 msgid "\\<sniff> \\<sniff> The unmistakable smell of chocobo clings to you, adventurer. Would I be correct in assuming that you have your own trusty steed?"
-msgstr "<i>Нюх-нюх...</i> От вас так и пахнет чокобо, искатель приключений. Верно я понимаю, что у вас есть собственный верный чокобо?"
+msgstr "<i>Нюх-нюх...</i> От вас так и пахнет чокобо, <if $gn4>искательница приключений<else>искатель приключений</if>. Верно я понимаю, что у вас есть собственный верный чокобо?"
 
 #. ja: 旅から旅への冒険者生活なのでしょうけど、<br>もう少し臭いにも気を配ったらどうかしら……。
 #. de: Ich verstehe ja, dass ihr Abenteurer immer auf Achse seid ... Aber jemand von deinem Ansehen sollte ein bisschen mehr auf <if $gn4>ihr<else>sein</if> Äußeres achten, meinst du nicht?
@@ -150,9 +150,10 @@ msgstr "Этот ишгардец — настоящий знаток всего
 #. macro: <if ($gn11 < 17)>day<else>evening</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 11 < 17 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/011/SubFst911_01162:TEXT_SUBFST911_01162_LUQUELOT_000_010:1"
 msgid "<switch $gn70><case>Greetings, adventurer<case>Good <if ($gn11 < 12)><if ($gn11 < 4)>evening<else>morrow</if><else><if ($gn11 < 17)>day<else>evening</if></if> to you, <split \" \" 1><string $gs1></split><case>Greetings, adventurer</switch>. Is there something you need?"
-msgstr "<switch $gn70><case>Приветствую, искатель приключений<case>Добрый <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>утро</if><else><if ($gn11 < 17)>день<else>вечер</if></if>, <split \" \" 1><string $gs1></split><case>Приветствую, искатель приключений</switch>. Чем могу помочь?"
+msgstr "<switch $gn70><case>Приветствую, <if $gn4>искательница приключений<else>искатель приключений</if><case>Добрый <if ($gn11 < 12)><if ($gn11 < 4)>вечер<else>утро</if><else><if ($gn11 < 17)>день<else>вечер</if></if>, <split \" \" 1><string $gs1></split><case>Приветствую, <if $gn4>искательница приключений<else>искатель приключений</if></switch>. Чем могу помочь?"
 
 #. ja: その微妙に漂うチョコボ臭さ……<br>さぞや「マイチョコボ」を愛しておられるのでしょうね。<br>そんなあなたになら、喜んで教えて差し上げますよ。
 #. de: \<atmet tief ein> ... Mmh, ja, du bist <if $gn4>eine Chocobo-Liebhaberin<else>ein Chocobo-Liebhaber</if>, da besteht kein Zweifel ... Schlaft ihr auch manchmal getrennt?

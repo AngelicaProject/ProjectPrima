@@ -9,6 +9,7 @@ msgstr ""
 #. ja: メンターとビギナー・リターナーが同一パーティになったため、取得経験値にボーナスが適用されます。<br>ボーナスはレベル90に到達するまで適用されます。
 #. de: Aufgrund der Gruppenzusammensetzung erhältst du einen Routine-Bonus<br>für Klassen bis Stufe 90.
 #. fr: La configuration de votre équipe vous permet de bénéficier d'un bonus de points d'expérience.<br>Ce dernier prendra fin au<shy>to<shy>ma<shy>ti<shy>que<shy>ment une fois le niveau 90 atteint.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7000:0:5"
 msgid "New adventurer, returner, and mentor party members will now receive an EXP bonus until attaining level 90."
 msgstr "Новички, вернувшиеся игроки и наставники получают бонус к опыту до достижения 90-го уровня"
@@ -103,6 +104,7 @@ msgstr "Не удалось пригласить в канал новичков:
 #. macro: <if ($n2 == 1)><icon 77>new adventurer/<icon 95>returner<else><icon 77>new adventurers/<icon 95>returners</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <icon 77> — an inline icon of the game font; icon = 77 (game data: keep it; it may move or repeat)
 #. macro: <icon 95> — an inline icon of the game font; icon = 95 (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7011:0:5"
 msgid "Novice - You've joined the Novice Network.<br>There <if ($n1 == 1)>is currently <num $n1> <icon 78>mentor<else>are currently <num $n1> <icon 78>mentors</if> (max. 100) and <num $n2> <if ($n2 == 1)><icon 77>new adventurer/<icon 95>returner<else><icon 77>new adventurers/<icon 95>returners</if> (max. 412) participating.<br>There are no language restrictions on this channel."
 msgstr "Новичок — вы присоединились к каналу новичков<br>Сейчас в канале <num $n1> <icon 78><if ($n1 == 1)>наставник<else>наставников</if> (максимум 100) и <num $n2> <if ($n2 == 1)><icon 77>новичок/<icon 95>вернувшийся игрок<else><icon 77>новички/<icon 95>вернувшиеся игроки</if> (максимум 412)<br>В этом канале можно общаться на любом языке"
@@ -121,6 +123,7 @@ msgstr "Нельзя отказаться от статуса наставник
 #. macro: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn7 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7013:0:5"
 msgid "Novice - You have accepted an invitation to the Novice Network by <icon 78><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>.<br>The Novice Network is a chat channel where new adventurers can ask<br>gameplay questions to veteran players known as <icon 78>mentors."
 msgstr "Новичок — вы приняли приглашение в канал новичков от <icon 78><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if><br>В канале новички могут задавать вопросы об игре опытным игрокам — наставникам <icon 78>"
@@ -163,6 +166,7 @@ msgstr "Сейчас нельзя пригласить в канал нович�
 #. ja: 対象キャラクターがビギナー・リターナーではないため、招待できませんでした。
 #. de: Dieser Charakter kann nicht in den Neulings-Chat eingeladen werden,<br>da er kein Neuling oder Rückkehrer ist.
 #. fr: Action impossible. Ce joueur n'est pas un novice ou un rappelé.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7019:0:5"
 msgid "Unable to invite to Novice Network. That player is not a new adventurer or returner."
 msgstr "Не удалось пригласить в канал новичков: этот игрок не новичок и не вернувшийся игрок"
@@ -227,7 +231,7 @@ msgstr "Новичок — вы покинули канал новичков и�
 #. macro: <if ($n2 == 1)><icon 77>new adventurer/<icon 95>returner<else><icon 77>new adventurers/<icon 95>returners</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <icon 77> — an inline icon of the game font; icon = 77 (game data: keep it; it may move or repeat)
 #. macro: <icon 95> — an inline icon of the game font; icon = 95 (game data: keep it; it may move or repeat)
-# aeria-terms: {"Player Search":"10434c5a5d19"}
+# aeria-terms: {"Player Search":"10434c5a5d19","adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7027:0:5"
 msgid "Novice - You've joined the Novice Network.<br>There <if ($n1 == 1)>is currently <num $n1> <icon 78>mentor<else>are currently <num $n1> <icon 78>mentors</if> (max. 100) and <num $n2> <if ($n2 == 1)><icon 77>new adventurer/<icon 95>returner<else><icon 77>new adventurers/<icon 95>returners</if> (max. 412) participating.<br><br>Use the Player Search to find new adventurers/returners and invite them to the network.<br>There are no language restrictions on this channel."
 msgstr "Новичок — вы присоединились к каналу новичков<br>Сейчас в канале <num $n1> <icon 78><if ($n1 == 1)>наставник<else>наставников</if> (максимум 100) и <num $n2> <if ($n2 == 1)><icon 77>новичок/<icon 95>вернувшийся игрок<else><icon 77>новички/<icon 95>вернувшиеся игроки</if> (максимум 412)<br><br>Найдите новичков и вернувшихся игроков через Поиск игроков и приглашайте их в канал<br>В этом канале можно общаться на любом языке"
@@ -235,6 +239,7 @@ msgstr "Новичок — вы присоединились к каналу н�
 #. ja: 冒険者としての経験が認められ、ビギナーを卒業しました！<br>ベテラン冒険者やメンターを目指して、さらなる冒険を楽しんでください！
 #. de: Du hast genug Erfahrung gesammelt und bist nun kein Neuling mehr.<br>Tritt in die Fußstapfen deiner Mentoren und genieße die zahllosen Abenteuer, die auf dich warten!
 #. fr: Fé<shy>li<shy>ci<shy>ta<shy>tions, vous n'avez plus rien d'un<if $gn4>e</if> novice<nbsp>! Il ne tient qu'à vous de parcourir Éorzéa pour devenir <if $gn4>la<else>le</if> plus brave des aventuriers ou encore un mentor qui conseillera ses cadets.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7028:0:5"
 msgid "Congratulations! You have proven your knowledge of adventuring and need no longer carry the title of new adventurer!"
 msgstr "Поздравляем! Вы доказали, что освоились в роли искателя приключений, и больше не новичок!"
@@ -242,6 +247,7 @@ msgstr "Поздравляем! Вы доказали, что освоились
 #. ja: メンターになったため、ビギナー・リターナーステータスが解除されました。
 #. de: Der Neulings- bzw. Rückkehrer-Status wurde aufgehoben, weil du ein Mentor geworden bist.
 #. fr: L'état en ligne “Novice” ou “Rappelé(e)” a été retiré, car vous avez acquis le statut de mentor.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7029:0:5"
 msgid "New Adventurer/Returner status removed. You are now a mentor."
 msgstr "Статус новичка/вернувшегося игрока снят. Теперь вы наставник"
