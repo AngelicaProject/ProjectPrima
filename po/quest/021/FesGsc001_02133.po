@@ -355,9 +355,10 @@ msgstr "А, так это же <if $gn4>госпожа<else>господин</if
 #. macro: <if $gn4>Mistress<else>Master</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "quest/021/FesGsc001_02133:TEXT_FESGSC001_02133_ROLAND_000_030:1"
 msgid "And it would seem you already have a capable aide! The profession of adventurer demands <i>some</i> aptitude at deduction, certainly. What was your name, friend? Well then, <if $gn4>Mistress<else>Master</if> <split \" \" 2><string $gs1></split>, what say you? Will you aid us in bringing a criminal to justice?"
-msgstr "А у вас, похоже, уже есть помощник с головой на плечах! Профессия искателя приключений требует <i>хоть какой-то</i> смекалки. Как вас зовут, друг мой? Что ж, <if $gn4>госпожа<else>господин</if> <split \" \" 2><string $gs1></split>, поможете нам предать преступника правосудию?"
+msgstr "А у вас, похоже, уже есть помощник с головой на плечах! Профессия <if $gn4>искательницы приключений<else>искателя приключений</if> требует <i>хоть какой-то</i> смекалки. Как вас зовут, друг мой? Что ж, <if $gn4>госпожа<else>господин</if> <split \" \" 2><string $gs1></split>, поможете нам предать преступника правосудию?"
 
 #. ja: ありがとうございます！<br>オリアー、君は<split " " 2><string $gs1></split>様の助力をするのです！
 #. de: Ich danke dir. Ollier, tu alles, was du kannst, um <if $gn4>der Abenteurerin<else>dem Abenteurer</if> bei der Aufklärung des Falls zu helfen.
@@ -930,10 +931,10 @@ msgstr "Похоже, покойный любил выпить, особенно
 #. de: Kokomui hat das Folgende ausgesagt:
 #. fr: Voici le témoignage de Kokomui.
 #. speaker: OLLIER
-# aeria-terms: {"Lalafell":"401fa54566e1"}
+# aeria-terms: {"Lalafell":"f34826b195a4"}
 msgctxt "quest/021/FesGsc001_02133:TEXT_FESGSC001_02133_OLLIER_200_040:1"
 msgid "That Lalafell seems to have taken a keen interest in how this affair will play out. Nonetheless, he provided us with valuable insight into our victim's favored pastime."
-msgstr "Этот лалафелл, похоже, с большим интересом следит за тем, чем закончится дело. Впрочем, он рассказал нам кое-что важное о любимом развлечении покойного."
+msgstr "Этот лалафель, похоже, с большим интересом следит за тем, чем закончится дело. Впрочем, он рассказал нам кое-что важное о любимом развлечении покойного."
 
 #. ja: 「ここの常連だから、ゴンカールとは顔見知りでしたよ。<br>　僕は、相当な額のMGPを擦ってしまったんですけど、<br>　彼は稼ぎまくってて……それは羨ましかったですよ……」
 #. de: „Natürlich kenne ich Goncquard, ich bin ja auch Stammgast hier. Wir haben uns oft am Glückskaktor-Schalter getroffen. Er hat die Gold Saucer-Punkte eimerweise nach Hause getragen, während mein letzter Gewinn so lange zurückliegt, dass ich mich gar nicht mehr daran erinnern kann. Ich hab's ihm ja gegönnt, aber wie es aussieht, hat seine Glückssträhne jetzt ein jähes Ende genommen.“
@@ -1343,10 +1344,10 @@ msgstr "Зачем Сеньору Саботендеру убивать?"
 #. de: Die steife Haltung, die stachelige Art ... total suspekt!
 #. fr: Mon instinct d'aventuri<if $gn4>ère<else>er</if> ne me trompe jamais<nbsp>!
 #. speaker: A7
-# aeria-terms: {"Trust":"d48df965bd19"}
+# aeria-terms: {"Trust":"d48df965bd19","adventurer":"48df264ad5ec"}
 msgctxt "quest/021/FesGsc001_02133:TEXT_FESGSC001_02133_A7_000_001:1"
 msgid "Trust me, an adventurer knows these things."
-msgstr "Поверьте, авантюрист такое сразу чует."
+msgstr "Поверьте, <if $gn4>искательница приключений<else>искатель приключений</if> такое сразу чует."
 
 #. ja: つい、言ってみたくなってしまって……
 #. de: Ha ha, reingefallen. Das war natürlich nur ein Scherz!
@@ -1521,10 +1522,10 @@ msgstr "Кокомей!? Внутри Сеньора Саботендера!?"
 #. speaker: KOKOMUI
 #. macro: <i> — italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Goncquard":"045583e8f0cb","Lalafell":"401fa54566e1","sabotender":"55e698abe03a"}
+# aeria-terms: {"Goncquard":"045583e8f0cb","Lalafell":"f34826b195a4","sabotender":"55e698abe03a"}
 msgctxt "quest/021/FesGsc001_02133:TEXT_FESGSC001_02133_KOKOMUI_000_091:1"
 msgid "So that's the way your mind works, is it? Let's accuse the nearest Lalafell of murder, on account of he's the size of a sabotender? You'll need to do better than that! Why in the hells would <i>I</i> kill Goncquard? I barely knew the man!"
-msgstr "Вот, значит, как вы рассуждаете? Обвиним первого попавшегося лалафелла, потому что он ростом с Сеньора Саботендера? Придётся постараться получше! С какой стати <i>мне</i> убивать Гонкарда? Я его едва знал!"
+msgstr "Вот, значит, как вы рассуждаете? Обвиним первого попавшегося лалафеля, потому что он ростом с Сеньора Саботендера? Придётся постараться получше! С какой стати <i>мне</i> убивать Гонкарда? Я его едва знал!"
 
 #. ja: ココムイの動機は？
 #. de: Was für ein Motiv hat Kokomui für den Mord?

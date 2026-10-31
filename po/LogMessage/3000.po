@@ -5700,9 +5700,10 @@ msgstr "Нельзя начать задание, пока вы без созн�
 #. de: Der Kampf kann nicht begonnen werden, weil „<sheet Leve $n1 0>“ noch läuft.
 #. fr: Impossible de commencer cette bataille de quête. Vous devez d'abord finir le mandat “<sheet Leve $n1 0>”.
 #. macro: <sheet Leve $n1 0> — a value from a game data sheet, such as a name; sheet = Leve, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Levequest":"be0be8c12a9c"}
 msgctxt "LogMessage:3721:0:5"
 msgid "Unable to commence duty until the levequest “<sheet Leve $n1 0>” is complete."
-msgstr "Нельзя начать задание, пока не завершено поручение «<sheet Leve $n1 0>»"
+msgstr "Нельзя начать задание, пока не завершено поручение гильдии «<sheet Leve $n1 0>»"
 
 #. ja: コンテンツ中のため、このクエストバトルを開始できません。
 #. de: Der Kampf kann nicht während eines anderen Spielinhalts begonnen werden.
@@ -6482,31 +6483,35 @@ msgstr "Нельзя назначить это действие: неподхо�
 #. ja: ビギナーステータスを解除しました。
 #. de: Der Neulings-Status wurde deaktiviert.
 #. fr: Désactivation réussie. Votre personnage ne porte plus le statut de novice.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:3815:0:5"
 msgid "New Adventurer status has been removed."
-msgstr "Статус новичка снят"
+msgstr "Статус нового искателя приключений снят"
 
 #. ja: ビギナーステータスを解除できませんでした。
 #. de: Der Neulings-Status konnte nicht deaktiviert werden.
 #. fr: L'état en ligne “Novice” n'a pas pu être désactivé.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:3816:0:5"
 msgid "Unable to remove New Adventurer status."
-msgstr "Не удалось снять статус новичка"
+msgstr "Не удалось снять статус нового искателя приключений"
 
 #. ja: ビギナーステータスを<if ($n1 == 0)>解除<else>有効に</if>しました。
 #. de: Du hast den Neulings-Status <if ($n1 == 0)>deaktiviert<else>aktiviert</if>.
 #. fr: Vous avez <if ($n1 == 0)>désactivé<else>activé</if> l'état en ligne “Novice”.
 #. macro: <if ($n1 == 0)>Removed<else>Activated</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 0 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:3817:0:5"
 msgid "<if ($n1 == 0)>Removed<else>Activated</if> New Adventurer status."
-msgstr "Статус новичка <if ($n1 == 0)>снят<else>включён</if>"
+msgstr "Статус нового искателя приключений <if ($n1 == 0)>снят<else>включён</if>"
 
 #. ja: ビギナーステータスを変更できませんでした。
 #. de: Der Neulings-Status konnte nicht geändert werden.
 #. fr: Vous n'avez pas pu modifier l'état en ligne “Novice”.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:3818:0:5"
 msgid "Unable to change New Adventurer status."
-msgstr "Не удалось изменить статус новичка"
+msgstr "Не удалось изменить статус нового искателя приключений"
 
 #. ja: ビギナー条件を満たしていないため設定できませんでした。
 #. de: Diese Einstellung ist nicht möglich, weil du die Voraus<shy>setzungen für den Neulings-Status nicht erfüllst.
@@ -6614,9 +6619,10 @@ msgstr "Статус вернувшегося игрока снят"
 #. ja: ビギナー・リターナーではないため、実行できません。
 #. de: Kommando kann nicht ausgeführt werden. Du bist kein Neuling oder Rückkehrer.
 #. fr: Action impossible. Vous n'êtes ni novice ni rappelé<if $gn4>e</if>.
+# aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:3834:0:5"
 msgid "Unable to execute command. You are not a new adventurer/returner."
-msgstr "Нельзя выполнить команду: вы не новичок и не вернувшийся игрок"
+msgstr "Нельзя выполнить команду: вы не новичок и не <if $gn4>вернувшаяся искательница приключений<else>вернувшийся искатель приключений</if>"
 
 #. ja: ビギナーチャンネルへの勧誘を「<if ($n1 == 1)>受け付ける<else>断る</if>」ように設定しました。
 #. de: Einladungen zum Neulings-Chat werden nun automatisch <if ($n1 == 1)>angenommen<else>abgelehnt</if>.
@@ -6880,9 +6886,10 @@ msgstr "Наклон камеры изменён на <num $n1>"
 #. ja: 指定されたミラージュプレートの番号が間違っています。
 #. de: Ungültige Nummer für die Pro<shy>jektions<shy>platte.
 #. fr: Numéro de planche mirage invalide.
+# aeria-terms: {"Glamour Plate":"622ccbe2b0c4"}
 msgctxt "LogMessage:3868:0:5"
 msgid "Incorrect glamour plate number."
-msgstr "Неверный номер плиты иллюзий"
+msgstr "Неверный номер набора иллюзий"
 
 #. ja: マウント騎乗中のBGM再生を<if ($n1 == 1)>有効<else>無効</if>にしました。
 #. de: Musik beim Reiten <if ($n1 == 0)>stumm<else>wieder ein</if>geschaltet
@@ -7374,16 +7381,18 @@ msgstr "Нельзя начать задание: отряд уже на зад�
 #. ja: 小隊任務実行中のため、訓練を開始できません。
 #. de: Die Ausbildung kann nicht begonnen werden, da das Kommando auf einem Einsatz ist.
 #. fr: Action impossible. Votre escouade est en mission.
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3924:0:5"
 msgid "Unable to commence training regimen while squadron is on a mission."
-msgstr "Нельзя начать тренировку: отряд выполняет задание"
+msgstr "Нельзя начать тренировку: эскадрон выполняет задание"
 
 #. ja: 訓練実行中のため、小隊任務を開始できません。
 #. de: Der Einsatz kann nicht begonnen werden, da das Kommando gerade ausgebildet wird.
 #. fr: Action impossible. Votre escouade suit ac<shy>tu<shy>el<shy>le<shy>ment un en<shy>traî<shy>ne<shy>ment.
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3925:0:5"
 msgid "Unable to commence new mission while squadron is training."
-msgstr "Нельзя начать задание: отряд тренируется"
+msgstr "Нельзя начать задание: эскадрон тренируется"
 
 #. ja: 訓練実行中のため、訓練を開始できません。
 #. de: Das Kommando befindet sich bereits in Ausbildung.
@@ -7398,9 +7407,10 @@ msgstr "Нельзя начать тренировку: отряд уже тре
 #. macro: <sheet GcArmyExpeditionType "<sheet GcArmyExpedition $n1 7>" 0> — a value from a game data sheet, such as a name; sheet = GcArmyExpeditionType, row = text with macros, column = 0 (game data: keep it; it may move or repeat)
 #. macro: <sheet GcArmyExpedition $n1 7> — a value from a game data sheet, such as a name; sheet = GcArmyExpedition, row = number parameter 1, column = 7 (game data: keep it; it may move or repeat)
 #. macro: <sheet GcArmyExpedition $n1 8> — a value from a game data sheet, such as a name; sheet = GcArmyExpedition, row = number parameter 1, column = 8 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3927:0:5"
 msgid "Squadron deployed. (<sheet GcArmyExpeditionType \"<sheet GcArmyExpedition $n1 7>\" 0> - <sheet GcArmyExpedition $n1 8>)"
-msgstr "Отряд отправлен. (<sheet GcArmyExpeditionType \"<sheet GcArmyExpedition $n1 7>\" 0> — <sheet GcArmyExpedition $n1 8>)"
+msgstr "Эскадрон отправлен. (<sheet GcArmyExpeditionType \"<sheet GcArmyExpedition $n1 7>\" 0> — <sheet GcArmyExpedition $n1 8>)"
 
 #. ja: <sheet GcArmyTraining $n1 4>を開始しました。
 #. de: Die <sheet GcArmyTraining $n1 4> beginnt!
@@ -7427,9 +7437,10 @@ msgstr "Тренировка отменена"
 #. ja: この訓練では、小隊総合能力は変動しません。
 #. de: Die Schlagkraft des Kommandos ändert sich durch diese Ausbildung nicht.
 #. fr: Cet en<shy>traî<shy>ne<shy>ment n'aura aucun effet sur les capacités globales de l'escouade.
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3931:0:5"
 msgid "The selected training regimen will not affect squadron attributes."
-msgstr "Выбранная тренировка не повлияет на характеристики отряда"
+msgstr "Выбранная тренировка не повлияет на характеристики эскадрона"
 
 #. ja: レベルが上限に達しているため、この訓練では、何も効果はありません。
 #. de: Mit dieser Ausbildung wird keine Verbesserung erzielt,<br>da die Obergrenze bereits erreicht ist.
@@ -7448,9 +7459,10 @@ msgstr "Нельзя начать задание: недостаточно пе�
 #. ja: 小隊任務の任務遂行レベルに達している小隊員がいないため、小隊任務を開始できません。
 #. de: Keiner der Soldaten hat die erforderliche Stufe für den gewählten Einsatz.
 #. fr: Action impossible. Aucun des membres de l'escouade n'a atteint le niveau requis pour cette mission.
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3934:0:5"
 msgid "Unable to commence mission. No squadron members meet minimum level requirements."
-msgstr "Нельзя начать задание: ни один участник отряда не достиг требуемого уровня"
+msgstr "Нельзя начать задание: ни один участник эскадрона не достиг требуемого уровня"
 
 #. ja: 小隊任務が完了しました。兵舎へ行って結果を確認しましょう。
 #. de: Dein Kommando ist von seinem Einsatz zurückgekehrt.
@@ -7498,6 +7510,7 @@ msgstr "Решение о зачислении <noun-en ENpcResident 2 $n1 1 1> 
 #. de: Du hast <sheet ENpcResident $n1 0> in dein Kommando aufgenommen!
 #. fr: Vous avez incorporé <sheet ENpcResident $n1 0> dans votre escouade.
 #. macro: <noun-en ENpcResident 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = ENpcResident, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3940:0:5"
 msgid "<noun-en ENpcResident 2 $n1 1 1> recruited to your squadron."
 msgstr "<noun-en ENpcResident 2 $n1 1 1> принят<if ($n1 == 1)>а<else>ы</if> в эскадрон"
@@ -7507,6 +7520,7 @@ msgstr "<noun-en ENpcResident 2 $n1 1 1> принят<if ($n1 == 1)>а<else>ы</
 #. fr: Vous avez démobilisé <sheet ENpcResident $n1 0> afin d'incorporer <sheet ENpcResident $n2 0> dans votre escouade.
 #. macro: <noun-en ENpcResident 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = ENpcResident, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <noun-en ENpcResident 2 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = ENpcResident, form = 2, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3941:0:5"
 msgid "<noun-en ENpcResident 2 $n1 1 1> discharged and <noun-en ENpcResident 2 $n2 1 1> recruited to your squadron."
 msgstr "<noun-en ENpcResident 2 $n1 1 1> уволен<if ($n1 == 1)>а<else>ы</if>, <noun-en ENpcResident 2 $n2 1 1> принят<if ($n2 == 1)>а<else>ы</if> в эскадрон"
@@ -7546,6 +7560,7 @@ msgstr "Нельзя сменить класс. У вас нет предмет�
 #. de: Kommandorang <num $n1>
 #. fr: Rang<nbsp>: <num $n1>
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3946:0:5"
 msgid "Squadron Rank <num $n1>"
 msgstr "Ранг эскадрона <num $n1>"
@@ -7582,6 +7597,7 @@ msgstr "Сейчас нельзя сменить класс бойца"
 #. ja: 現在任務中のため、除隊できません。
 #. de: Der Soldat kann nicht entlassen werden, da sich das Kommando auf einem Einsatz befindet.
 #. fr: Impossible de démobiliser un soldat parti en mission.
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3951:0:5"
 msgid "Unable to discharge squadron member while mission is underway."
 msgstr "Нельзя уволить бойца эскадрона, пока он выполняет задание"
@@ -7653,6 +7669,7 @@ msgstr "Нельзя начать задание: состав отряда не
 #. ja: 攻略任務を開始するには、小隊員を3名編制してください。
 #. de: Das Kommando ist nicht vollständig.
 #. fr: Veuillez sélectionner trois membres d'escouade pour cette incursion.
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3961:0:5"
 msgid "Select three squadron members to begin the mission."
 msgstr "Выберите трёх бойцов эскадрона для выполнения задания"
@@ -7690,9 +7707,10 @@ msgstr "Не удалось начать задание"
 #. ja: 小隊員のレベルより装備レベルが高いため、投影できません。
 #. de: Projektion nicht möglich. Die Stufe des Gegenstands ist höher als die Stufe des Soldaten.
 #. fr: Action impossible. Le niveau de la pièce d'équipement est supérieur à celui du membre d'escouade.
+# aeria-terms: {"Cast Glamour":"fdfaa9badcf2","Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3966:0:5"
 msgid "Unable to cast glamour. Squadron member level cannot be lower than that of the glamour cast."
-msgstr "Нельзя наложить иллюзорный доспех: уровень бойца эскадрона ниже уровня предмета"
+msgstr "Нельзя применить иллюзию: уровень бойца эскадрона ниже уровня предмета"
 
 #. ja: 現在作戦を指示できる状態ではありません。
 #. de: Die Strategie kann momentan nicht geändert werden.
@@ -7943,6 +7961,7 @@ msgstr "Нельзя получить награду во время прохо�
 #. de: Deine Soldaten setzen <string $s1> ein.
 #. fr: Vos soldats utilisent <string $s1>.
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Squadron":"d3417b5aa48a"}
 msgctxt "LogMessage:3997:0:5"
 msgid "Your squadron uses <string $s1>."
 msgstr "Ваш эскадрон использует «<string $s1>»"

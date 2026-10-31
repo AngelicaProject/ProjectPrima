@@ -29,10 +29,10 @@ msgstr "Брангвайн готова отдать вам загадочную
 #. de: Du hast die Hinterlassenschaft eines Abenteurers gefunden. Bring sie zu Brangwine in Geisterzoll.
 #. fr: Vous avez trouvé un petit sac contenant des affaires ayant pro<shy>ba<shy>ble<shy>ment appartenu à un aventurier. Donnez-le sans attendre à Brangwine.
 #. kind: journal
-# aeria-terms: {"Brangwine":"c57cae60f6eb","Return":"238a1989fdee","Revenant's Toll":"7cb65cf683e9","personal effects":"0fac9562bbf0"}
+# aeria-terms: {"Brangwine":"c57cae60f6eb","Return":"238a1989fdee","Revenant's Toll":"7cb65cf683e9","adventurer":"48df264ad5ec","personal effects":"0fac9562bbf0"}
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_SEQ_02:1"
 msgid "You have acquired a sack bearing the personal effects of some hapless adventurer. Return to Revenant's Toll and present it to Brangwine."
-msgstr "Вы нашли мешок с личными вещами какого-то незадачливого приключенца. Возвращайтесь в Звон ревенантов и отдайте его Брангвайн."
+msgstr "Вы нашли мешок с личными вещами какого-то незадачливого искателя приключений. Возвращайтесь в Звон ревенантов и отдайте его Брангвайн."
 
 #. ja: ブラングワインに冒険者の遺留品を渡した。遺留品から得た儲けは、夕飯に還元されることだろう……。また機会があったら、彼女の頼みに応じよう。<br><br>※本クエストは、繰り返しの攻略が可能です。最大で毎日1回ずつコンプリートすることができ、コンプリートした日は、クエストを再度受注することができません。クエストを受注した状態で日をまたぎ、翌日にコンプリートした場合は、コンプリートした日の受注権が消費されます。<br><br>※次回の攻略は、（地球時間）毎日、<reset-time 0><if ($hour >= 12)>午後<else>午前</if><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{0}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{0}</if>時から、受注可能です。リセット日までお待ちください。
 #. de: Brangwine ist begeistert von deinem Fund. Aus dem zerfetzten Umhang will sie ein paar Kissenbezüge nähen. Ein viel<shy>ver<shy>sprechender Anfang für eure hoffentlich langanhaltende Ge<shy>schäfts<shy>be<shy>zie<shy>hung ...<br><br>※ Dieser Auftrag kann täglich einmal abgeschlossen werden. Um den Auftrag erneut abzuschließen, musst du bis zum Folgetag warten. Das gilt auch, wenn du den Auftrag an einem späteren Tag als dem Annahmetag abschließt.<br><br>※ Den Auftrag kannst du täglich ab <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{13}<case>{14}<case>{15}<case>{16}<case>{17}<case>{18}<case>{19}<case>{20}<case>{21}<case>{22}<case>{23}</switch><else>{0}</if>:00 Uhr (Erdenzeit) erneut annehmen.
@@ -43,28 +43,28 @@ msgstr "Вы нашли мешок с личными вещами какого-�
 #. macro: <if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4… — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = hour of the set time, 0–23 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($hour >= 12)>p.m.<else>a.m.</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = hour of the set time, 0–23 >= 12 (condition: may be reworded, restructured, added, or dropped)
-# aeria-terms: {"Brangwine":"c57cae60f6eb"}
+# aeria-terms: {"Brangwine":"c57cae60f6eb","adventurer":"48df264ad5ec"}
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_SEQ_03:1"
 msgid "You hand over the sack of adventurer's effects to Brangwine, and for your troubles receive a mysterious map. Now you, too, can be king of your kitchen...if indeed that is your heart's desire.<br><br>※This repeatable quest can be undertaken once daily. Upon completing the quest, it will become available again the following day at <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>p.m.<else>a.m.</if> (Earth time)."
-msgstr "Вы отдаёте Брангвайн мешок с вещами приключенца и получаете взамен загадочную карту. Теперь и вы можете стать <if $gn4>королевой<else>королём</if> чистоты на кухне... если, конечно, именно этого желает ваше сердце.<br><br>※Это повторяющееся задание можно выполнять раз в день. После выполнения оно снова станет доступно на следующий день в <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>после полудня<else>до полудня</if> по земному времени."
+msgstr "Вы отдаёте Брангвайн мешок с вещами искателя приключений и получаете взамен загадочную карту. Теперь и вы можете стать <if $gn4>королевой<else>королём</if> чистоты на кухне... если, конечно, именно этого желает ваше сердце.<br><br>※Это повторяющееся задание можно выполнять раз в день. После выполнения оно снова станет доступно на следующий день в <reset-time 0><if $hour><switch $hour><case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}<case>{12}<case>{1}<case>{2}<case>{3}<case>{4}<case>{5}<case>{6}<case>{7}<case>{8}<case>{9}<case>{10}<case>{11}</switch><else>{12}</if> <if ($hour >= 12)>после полудня<else>до полудня</if> по земному времени."
 
 #. ja: コンテンツルーレット：ハイレベリングを攻略して<br>冒険者の遺留品を入手
 #. de: An einem „Zufallsinhalt: Hohe Stufen“ teilnehmen
 #. fr: Réussir une “mission aléatoire<nbsp>: donjons avancés” pour obtenir des affaires perdues
 #. kind: objective
-# aeria-terms: {"Dungeon":"cb5eed075de1","Dungeons":"2374167bd231","Duty Roulette":"a9a1eb5a15e5","High":"b74304021aac"}
+# aeria-terms: {"Dungeon":"cb5eed075de1","Dungeons":"2374167bd231","Duty Roulette":"a9a1eb5a15e5","High":"b74304021aac","adventurer":"48df264ad5ec"}
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_TODO_00:1"
 msgid "Obtain a sack of adventurer's effects by clearing a dungeon via Duty Roulette: High-level Dungeons."
-msgstr "Получить мешок с вещами приключенца, пройдя подземелье через «Рулетку активностей: подземелья высокого уровня»."
+msgstr "Получить мешок с вещами искателя приключений, пройдя подземелье через «Рулетку активностей: подземелья высокого уровня»."
 
 #. ja: ブラングワインに冒険者の遺留品を渡す
 #. de: Brangwine die Hinterlassenschaft bringen
 #. fr: Donner le lot d'affaires perdues à Brangwine
 #. kind: objective
-# aeria-terms: {"Brangwine":"c57cae60f6eb"}
+# aeria-terms: {"Brangwine":"c57cae60f6eb","adventurer":"48df264ad5ec"}
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_TODO_01:1"
 msgid "Deliver the sack of adventurer's effects to Brangwine."
-msgstr "Отдать мешок с вещами приключенца Брангвайн."
+msgstr "Отдать мешок с вещами искателя приключений Брангвайн."
 
 #. ja: おばちゃんの持ってる「謎めいた地図」が欲しいなら、<br>「冒険者の遺留品」と交換しないかい？
 #. de: Du willst eine meiner Karten, ich weiß. Doch von nichts kommt nichts, <if $gn4>meine Liebe<else>mein Lieber</if>. Zeige mir, dass du so fleißig wie mein kleiner Ealdwine bist!
@@ -87,10 +87,10 @@ msgstr "Как я уже говорила, такие вещи обычно по
 #. de: Begib dich an einen gefährlichen Ort, besorge dort die Hinterlassenschaft eines Abenteurers und bring sie mir! Dann trete ich dir gerne eine meiner Putzkarten ab. All deine Abenteurerkollegen werden dich um dein blitzblankes Rüstzeug und Reisegeschirr beneiden!
 #. fr: N'hésitez pas à faire les poches des cadavres qui gisent sur le sol. Croyez-moi, là où ils sont, ils n'ont plus besoin de leurs gils ou de leurs beaux bijoux<nbsp>! Hé hé hé...
 #. speaker: BRANGWINE
-# aeria-terms: {"personal effects":"0fac9562bbf0"}
+# aeria-terms: {"adventurer":"48df264ad5ec","personal effects":"0fac9562bbf0"}
 msgctxt "quest/011/JobRel006_01141:TEXT_JOBREL006_01141_BRANGWINE_000_010:1"
 msgid "The personal effects of slain adventurers are like to turn up where the deadliest creatures prowl. I promise to have your mysterious map waiting for you upon your return. Then you, too, can enjoy a spotless kitchen!"
-msgstr "Личные вещи погибших приключенцев обычно попадаются там, где бродят самые опасные твари. Вернётесь — и загадочная карта будет вас ждать. Тогда и вы сможете наслаждаться безупречной чистотой на кухне!"
+msgstr "Личные вещи погибших искателей приключений обычно попадаются там, где бродят самые опасные твари. Вернётесь — и загадочная карта будет вас ждать. Тогда и вы сможете наслаждаться безупречной чистотой на кухне!"
 
 #. ja: あぁ、アンタかい。<br>どうだい、「冒険者の遺留品」は手に入ったかい？
 #. de: Ah, du bist's! Und, fündig geworden?
