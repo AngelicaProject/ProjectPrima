@@ -433,7 +433,7 @@ msgstr "Нельзя посетить Зал новичков, пока вы с�
 #. ja: クラフター、ギャザラーは初心者の館を使用できません。
 #. de: Handwerker und Sammler können die Anfänger-Arena nicht nutzen.
 #. fr: Impossible d'utiliser la Salle des novices avec une classe d'artisan ou de récolteur.
-# aeria-terms: {"Disciples of the Land":"2c38938abbdb","Hall of the Novice":"6ad828dd77fa"}
+# aeria-terms: {"Disciple of the Land":"7f052092bd51","Disciples of the Land":"2c38938abbdb","Hall of the Novice":"6ad828dd77fa"}
 msgctxt "LogMessage:7108:0:5"
 msgid "Disciples of the Land and Hand are currently not allowed access to the Hall of the Novice."
 msgstr "Ученикам земли и ремесленникам сейчас нельзя посещать Зал новичков"
@@ -819,7 +819,7 @@ msgstr "Вы не относитесь ни к физическому, ни к �
 #. macro: <sheet DeepDungeonItem $n1 9> — a value from a game data sheet, such as a name; sheet = DeepDungeonItem, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7220:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> a <lower><sheet DeepDungeonItem $n1 9></lower>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <lower><sheet DeepDungeonItem $n1 9></lower>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> предмет <lower><sheet DeepDungeonItem $n1 9></lower>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>たちは、<sheet DeepDungeonItem $n1 9>を手に入れた！
 #. de: Ihr habt ein <sheet DeepDungeonItem $n1 9> erhalten!
@@ -2357,7 +2357,7 @@ msgstr "Не удалось вступить в группу, пока вы жд
 #. fr: Impossible d'obtenir les données. Les réglages de la recherche d'équipe ne le permettent pas.
 msgctxt "LogMessage:7479:0:5"
 msgid "Unable to obtain information while waiting to visit another World."
-msgstr "Не удалось получить данные из-за настроек набора в группу"
+msgstr "Не удалось получить сведения, пока вы ждёте посещения другого мира"
 
 #. ja: 身に着けている装備品の中に、耐久度の低いものがあります。
 #. de: Ein oder mehrere angelegte Aus<shy>rüs<shy>tungs<shy>teile sind in schlechtem Zustand.
@@ -2403,7 +2403,7 @@ msgstr "Данные персонажа этого игрока обновлен
 #. macro: <if ($gn78 == 3)>option<else>Alt</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 3 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:7485:0:5"
 msgid "Message to <string $s1> could not be sent.<br>That character is on another World server and not on your friend list. Use <if ($gn78 == 3)>option<else>Alt</if>+R to reply to a Party Finder message."
-msgstr "Не удалось отправить послание игроку <string $s1><br>Этот персонаж находится на другом сервере и не состоит у вас в друзьях. Чтобы ответить на сообщение из поиска группы, нажмите <if ($gn78 == 3)>option<else>Alt</if>+R"
+msgstr "Не удалось отправить сообщение игроку <string $s1><br>Этот персонаж находится на другом сервере и не состоит у вас в друзьях. Чтобы ответить на сообщение из поиска группы, нажмите <if ($gn78 == 3)>option<else>Alt</if>+R"
 
 #. ja: 該当のパーティ募集はすでに終了しているため、Tellを送信できませんでした。<br>パーティ募集経由の他ワールドキャラクターとのTellは募集中のみ利用可能です。
 #. de: Flüstern konnte nicht gesendet werden, da diese Gruppen<shy>suche bereits beendet ist.
@@ -2763,7 +2763,7 @@ msgstr "Не удалось оседлать боевую машину"
 # aeria-terms: {"ceruleum engine":"b5c932424b2c"}
 msgctxt "LogMessage:7531:0:5"
 msgid "Ceruleum engine departing from <noun-en PlaceName 2 $n1 2 1> in 30 seconds."
-msgstr "Церулеумный локомотив отправится от <sheet PlaceName $n1 0> через 30 секунд"
+msgstr "Церулеумный локомотив отправится из <sheet PlaceName $n1 0> через 30 секунд"
 
 #. ja: 青燐機関車が、<sheet PlaceName $n1 0>方面から出現した！
 #. de: Der Erdseim-Zug ist vom <sheet PlaceName $n1 0> abgefahren.
@@ -2812,7 +2812,7 @@ msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-co
 # aeria-terms: {"goblin mercenary":"2882388dcba7"}
 msgctxt "LogMessage:7535:0:5"
 msgid "Goblin mercenary departing <noun-en PlaceName 2 $n1 2 1> in 30 seconds."
-msgstr "Гоблин-наёмник покинет <sheet PlaceName $n1 0> через 30 секунд"
+msgstr "Гоблин-наёмник отправится из <sheet PlaceName $n1 0> через 30 секунд"
 
 #. ja: ゴブリン・マーシナリーが、<sheet PlaceName $n1 0>に出現した！
 #. de: Goblin-Söldner haben <sheet PlaceName $n1 0> verlassen.
@@ -3143,7 +3143,7 @@ msgstr "Время регистрации на активности истекл
 # aeria-terms: {"chocobo":"7a909e5229a9"}
 msgctxt "LogMessage:7574:0:5"
 msgid "Race-ready chocobo registered."
-msgstr "Зарегистрирован боевой чокобо"
+msgstr "Зарегистрирован гоночный чокобо"
 
 #. ja: 前回中断した時のパーティ構成と異なる
 #. de: Die Gruppe ist nicht die gleiche wie beim letzten Mal.
@@ -3175,7 +3175,7 @@ msgstr "Участники группы находятся на разных э�
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:7578:0:5"
 msgid "Gear does not meet the following strength requirements:<br>Aetherpool arm: <num $n1><br>Aetherpool armor: <num $n2>"
-msgstr "Экипировка не соответствует требованиям усиления:<br>Рука Акваполиса: <num $n1><br>Доспех Акваполиса: <num $n2>"
+msgstr "Экипировка не соответствует требованиям усиления:<br>Аквапоручень: <num $n1><br>Аквадоспех: <num $n2>"
 
 #. ja: セーブデータスロットに空きがない
 #. de: Kein freier Speicherplatz vorhanden.
