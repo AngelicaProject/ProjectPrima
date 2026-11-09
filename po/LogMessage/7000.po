@@ -9,7 +9,7 @@ msgstr ""
 #. ja: メンターとビギナー・リターナーが同一パーティになったため、取得経験値にボーナスが適用されます。<br>ボーナスはレベル90に到達するまで適用されます。
 #. de: Aufgrund der Gruppenzusammensetzung erhältst du einen Routine-Bonus<br>für Klassen bis Stufe 90.
 #. fr: La configuration de votre équipe vous permet de bénéficier d'un bonus de points d'expérience.<br>Ce dernier prendra fin au<shy>to<shy>ma<shy>ti<shy>que<shy>ment une fois le niveau 90 atteint.
-# aeria-terms: {"adventurer":"48df264ad5ec"}
+# aeria-terms: {"Party":"66ce98c91d3e","adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:7000:0:5"
 msgid "New adventurer, returner, and mentor party members will now receive an EXP bonus until attaining level 90."
 msgstr "Новички, вернувшиеся игроки и наставники получают бонус к опыту до достижения 90-го уровня"
@@ -346,10 +346,10 @@ msgstr "Вы снова выполнили условия для получен�
 #. ja: コンテンツ参加申請中にメンター認定手続きを行うことはできません。
 #. de: Während der Nutzung der Inhaltssuche kannst du nicht den Mentoren-Status erhalten.
 #. fr: Impossible de faire une demande d'accréditation de mentor pendant l'enregistrement à une mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7042:0:5"
 msgid "Unable to apply for mentor certification while using the Duty Finder."
-msgstr "Нельзя подать заявку на статус наставника, пока вы используете Поиск активностей"
+msgstr "Нельзя подать заявку на статус наставника, пока вы используете Поиск миссий"
 
 #. ja: リターナーとしての活動支援を保留しました。<br>次回ログイン時に再度確認画面が表示されます。
 #. de: Beim nächsten Login werden dir die Rückkehrer-Belohnungen erneut angeboten.
@@ -417,18 +417,18 @@ msgstr "Сейчас воспользоваться этим нельзя"
 #. ja: コンテンツ参加申請中のため、初心者の館を使用できません。
 #. de: Die Anfänger-Arena kann nicht genutzt werden,<br>während du für die Teilnahme an einem Inhalt registriert bist.
 #. fr: Impossible d'utiliser la Salle des novices en étant enregistré pour participer à une mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376","Hall of the Novice":"6ad828dd77fa"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9","Hall of the Novice":"6ad828dd77fa"}
 msgctxt "LogMessage:7106:0:5"
 msgid "Unable to visit the Hall of the Novice while using the Duty Finder."
-msgstr "Нельзя посетить Зал новичков, пока вы используете Поиск активностей"
+msgstr "Нельзя посетить Зал новичков, пока вы используете Поиск миссий"
 
 #. ja: パーティを組んでいるため、初心者の館を使用できません。
 #. de: Die Anfänger-Arena kann nicht genutzt werden, während du dich in einer Gruppe befindest.
 #. fr: Impossible d'utiliser la Salle des novices en étant dans une équipe.
-# aeria-terms: {"Hall of the Novice":"6ad828dd77fa"}
+# aeria-terms: {"Hall of the Novice":"6ad828dd77fa","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7107:0:5"
 msgid "Unable to visit the Hall of the Novice while in a party."
-msgstr "Нельзя посетить Зал новичков, пока вы состоите в группе"
+msgstr "Нельзя посетить Зал новичков, пока вы состоите в отряде"
 
 #. ja: クラフター、ギャザラーは初心者の館を使用できません。
 #. de: Handwerker und Sammler können die Anfänger-Arena nicht nutzen.
@@ -479,9 +479,10 @@ msgstr "Не удалось выполнить команду: нет данны
 #. ja: マッチングパーティのセーブデータをコンバートすることはできません。
 #. de: Speicherdaten von zufälligen Gruppen können nicht konvertiert werden.
 #. fr: Impossible de convertir une sauvegarde de progression en groupement automatique.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7122:0:5"
 msgid "Unable to convert matched party save data."
-msgstr "Нельзя преобразовать данные сохранения группы, собранной автоматически"
+msgstr "Нельзя преобразовать данные сохранения отряда, собранного автоматически"
 
 #. ja: 所持品に空きがないため、アイテムを入手できません。
 #. de: Du kannst den Gegenstand nicht annehmen, weil du keinen Platz im Inventar hast.
@@ -635,9 +636,10 @@ msgstr "В седельной сумке осталось мест: <num $n1>"
 #. ja: パーティメンバーの数が参加条件に合わないため、実行できません。
 #. de: Nicht möglich, weil die Anzahl der Grup<shy>pen<shy>mit<shy>glieder<br>nicht den Teilnahmevoraussetzungen entspricht.
 #. fr: Action impossible. Le nombre d'équipiers requis n'est pas atteint.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7200:0:5"
 msgid "Unable to execute command. You do not meet the party requirements for this duty."
-msgstr "Нельзя выполнить команду: группа не соответствует требованиям задания"
+msgstr "Нельзя выполнить команду: отряд не соответствует требованиям миссии"
 
 #. ja: リミテッドジョブを除くファイター、またはソーサラーではないため、実行できません。
 #. de: Nicht möglich, weil ein Grup<shy>pen<shy>mit<shy>glied weder Krieger noch Magier ist. (Beschränkte Jobs sind ausgeschlossen.)
@@ -650,24 +652,26 @@ msgstr "Нельзя выполнить команду: вы не относит
 #. ja: 前回中断時とパーティ構成が異なるため、実行できません。
 #. de: Nicht möglich, da sich die Gruppenzusammensetzung<br>seit dem letzten Betreten geändert hat.
 #. fr: Action impossible. La composition de l'équipe diffère de celle de l'incursion précédente.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7202:0:5"
 msgid "Unable to execute command. Party makeup differs from last campaign."
-msgstr "Нельзя выполнить команду: состав группы отличается от предыдущего прохождения"
+msgstr "Нельзя выполнить команду: состав отряда отличается от предыдущего прохождения"
 
 #. ja: 前回中断時とクラス・ジョブ構成が異なるため、実行できません。
 #. de: Nicht möglich, da sich die Klassen/Jobs der Gruppe<br>seit dem letzten Betreten geändert haben.
 #. fr: Action impossible. Les jobs et classes des équipiers diffèrent de ceux de l'incursion précédente.
-# aeria-terms: {"job":"a9421a81ecaa"}
+# aeria-terms: {"Party":"66ce98c91d3e","job":"a9421a81ecaa"}
 msgctxt "LogMessage:7203:0:5"
 msgid "Unable to execute command. Party class/job makeup differs from last campaign."
-msgstr "Нельзя выполнить команду: классы и профессии в группе отличаются от предыдущего прохождения"
+msgstr "Нельзя выполнить команду: классы и профессии в отряде отличаются от предыдущего прохождения"
 
 #. ja: 踏破状況が異なるパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil der Fortschritt eines Grup<shy>pen<shy>mit<shy>glieds abweicht.
 #. fr: Action impossible. Un ou plusieurs équipiers ont une progression différente.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7204:0:5"
 msgid "Unable to execute command. Floor progression differs between party members."
-msgstr "Нельзя выполнить команду: у участников группы разный прогресс прохождения"
+msgstr "Нельзя выполнить команду: у участников отряда разный прогресс прохождения"
 
 #. ja: 専用装備の強化値が規定の値に達していないため、実行できません。<br>必要強化値（武器・盾）：<num $n1>、必要強化値（防具）：<num $n2>
 #. de: Nicht möglich, weil deine Ausrüstung nicht ausreichend verstärkt ist.<br>Erfordert Waffe der Stufe <num $n1> und Rüstung der Stufe <num $n2>.
@@ -682,31 +686,34 @@ msgstr "Нельзя выполнить команду: экипировка н�
 #. ja: 踏破状況のデータに空きがないパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil ein Grup<shy>pen<shy>mit<shy>glied keinen freien Speicherplatz<br>für den Fortschritt mehr hat.
 #. fr: Action impossible. Un ou plusieurs équipiers n'ont aucune sauvegarde libre pour enregistrer la progression.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7206:0:5"
 msgid "Unable to execute command. One or more party members does not have an open progression data slot."
-msgstr "Нельзя выполнить команду: у одного или нескольких участников группы нет свободной ячейки для данных прохождения"
+msgstr "Нельзя выполнить команду: у одного или нескольких участников отряда нет свободной ячейки для данных прохождения"
 
 #. ja: コンテンツ参加申請中のパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil ein Grup<shy>pen<shy>mit<shy>glied für einen anderen Inhalt registriert ist.
 #. fr: Action impossible. Un ou plusieurs équipiers sont enregistrés pour participer à une mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7207:0:5"
 msgid "Unable to execute command. One or more party members is currently using the Duty Finder."
-msgstr "Нельзя выполнить команду: один или несколько участников группы используют Поиск активностей"
+msgstr "Нельзя выполнить команду: один или несколько участников отряда используют Поиск миссий"
 
 #. ja: フリートライアルのパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil ein Grup<shy>pen<shy>mit<shy>glied sich in der kostenlosen Testspielzeit befindet.
 #. fr: Action impossible. Un ou plusieurs équipiers bénéficient de l'essai gratuit.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7208:0:5"
 msgid "Unable to execute command. One or more party members is on the free trial."
-msgstr "Нельзя выполнить команду: один или несколько участников группы играют в пробную версию"
+msgstr "Нельзя выполнить команду: один или несколько участников отряда играют в пробную версию"
 
 #. ja: 踏破状況のデータを持たないパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil ein Grup<shy>pen<shy>mit<shy>glied bisher keinen Fortschritt gespeichert hat.
 #. fr: Action impossible. Un ou plusieurs équipiers ne possèdent aucune donnée de progression.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7209:0:5"
 msgid "Unable to execute command. Floor progression differs between party members."
-msgstr "Нельзя выполнить команду: у участников группы разный прогресс прохождения"
+msgstr "Нельзя выполнить команду: у участников отряда разный прогресс прохождения"
 
 #. ja: <player-name $n1>は、ファイターもしくはソーサラーではありません。
 #. de: <if-self $n1>Du bist<else><capitalize><player-name $n1></capitalize> ist</if-self> weder Krieger noch Magier.
@@ -736,9 +743,10 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <if-self $n1>Your<else><capitalize><player-name $n1></capitalize>'s</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7212:0:5"
 msgid "<if-self $n1>Your<else><capitalize><player-name $n1></capitalize>'s</if-self> progression data differs from the rest of the party."
-msgstr "<if-self $n1>Ваши данные<else>Данные прохождения персонажа <capitalize><player-name $n1></capitalize></if-self> отличаются от данных остальных участников группы"
+msgstr "<if-self $n1>Ваши данные<else>Данные прохождения персонажа <capitalize><player-name $n1></capitalize></if-self> отличаются от данных остальных участников отряда"
 
 #. ja: <player-name $n1>は、強化値が規定の値に達していません。
 #. de: Die Padjal-Ausrüstung von <if-self $n1>dir<else><capitalize><player-name $n1></capitalize></if-self> hat nicht die erforderliche Verstärkungsstufe.
@@ -766,10 +774,10 @@ msgstr "<if-self $n1>У вас<else>У персонажа <capitalize><player-na
 #. macro: <if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7215:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> using the Duty Finder."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> используете Поиск активностей"
+msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> используете Поиск миссий"
 
 #. ja: <player-name $n1>は、フリートライアル中です。
 #. de: <player-name $n1> befindet sich in der kostenlosen Testspielzeit.
@@ -794,10 +802,10 @@ msgstr "<if-self $n1>У вас<else>У персонажа <capitalize><player-na
 #. ja: コンテンツ参加申請中のため、実行できません。
 #. de: Nicht möglich, weil du gerade für einen anderen Inhalt registriert bist.
 #. fr: Action impossible. Vous êtes enregistré<if $gn4>e</if> pour participer à une mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7218:0:5"
 msgid "Unable to execute command while using the Duty Finder."
-msgstr "Нельзя выполнить команду, пока вы используете Поиск активностей"
+msgstr "Нельзя выполнить команду, пока вы используете Поиск миссий"
 
 #. ja: ファイターもしくはソーサラーではありません。
 #. de: Du bist kein Krieger oder Magier.
@@ -826,9 +834,10 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. fr: <capitalize><if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></capitalize> <if ($gs1 == $gs2)>et vos compagnons avez<else>et ses compagnons ont</if> obtenu <noun-fr DeepDungeonItem 1 $n1 1 1>.
 #. macro: <lower><sheet DeepDungeonItem $n1 9></lower> — the content in lower case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <sheet DeepDungeonItem $n1 9> — a value from a game data sheet, such as a name; sheet = DeepDungeonItem, row = number parameter 1, column = 9 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7221:0:5"
 msgid "The party obtains a <lower><sheet DeepDungeonItem $n1 9></lower>."
-msgstr "Группа получает: <lower><sheet DeepDungeonItem $n1 9></lower>"
+msgstr "Отряд получает: <lower><sheet DeepDungeonItem $n1 9></lower>"
 
 #. ja: <sheet DeepDungeonItem $n1 9>はこれ以上、持つことができないようだ。宝箱に戻した……
 #. de: Du kannst kein weiteres <sheet DeepDungeonItem $n1 9> aufnehmen und legst es in die Truhe zurück.
@@ -1276,9 +1285,10 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <if ($gs1 == $gs2)>Your party obtains<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>'s party obtains</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn7 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7276:0:5"
 msgid "<if ($gs1 == $gs2)>Your party obtains<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>'s party obtains</if> a piece of the Accursed Hoard."
-msgstr "<if ($gs1 == $gs2)>Ваша группа получает<else>Группа <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> получает</if> часть проклятого клада"
+msgstr "<if ($gs1 == $gs2)>Ваш отряд получает<else>Отряд <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> получает</if> часть проклятого клада"
 
 #. ja: <player-name $n1>の魔器装備が、さらなる輝きを帯びた！
 #. de: <if-self $n1>Deine Ausrüstung<else>Die Ausrüstung von <player-name $n1></if-self> erstrahlt noch heller!
@@ -1318,9 +1328,10 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы обнаруживаете<else><if 
 #. macro: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn7 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7280:0:5"
 msgid "<if ($gs1 == $gs2)>Your party discovers<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>'s party discovers</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<if ($gs1 == $gs2)>Ваша группа находит<else>Группа <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> находит</if> <noun-en Item 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Ваш отряд находит<else>Отряд <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if> находит</if> <noun-en Item 1 $n1 1 1>"
 
 #. ja: 一つしか持てないアイテムをすでに持っているため、実行できません。
 #. de: Nicht möglich, weil du bereits ein Exemplar von diesem Gegenstand besitzt.
@@ -1342,9 +1353,10 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. ja: そのセーブデータは、チャレンジコンテンツの階層まで進行しているためコンバートすることはできません。
 #. de: Diese Speicherdaten können aufgrund des Fortschritts nicht konvertiert werden.
 #. fr: Impossible de convertir cette sauvegarde car la phase de défi a déjà été atteinte.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7283:0:5"
 msgid "Unable to convert. Save data has progressed to levels that require a fixed party."
-msgstr "Невозможно перенести данные: сохранение дошло до этапов, для которых нужна постоянная группа"
+msgstr "Невозможно перенести данные: сохранение дошло до этапов, для которых нужен постоянный отряд"
 
 #. ja: 所持品の空きがないため、鑑定できません。
 #. de: Begutachtung nicht möglich, weil dein Inventar voll ist.
@@ -1463,18 +1475,20 @@ msgstr "Это действие недоступно"
 #. ja: パーティリーダーではないため、合奏レディチェックを実行できません。
 #. de: Du kannst die Bereitschaftsanfrage nicht durchführen, da du nicht der Gruppenanführer bist.
 #. fr: Seul le chef d'équipe peut activer le mode orchestral.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7313:0:5"
 msgid "Unable to perform ready check. You are not the party leader."
-msgstr "Невозможно провести проверку готовности: вы не лидер группы"
+msgstr "Невозможно провести проверку готовности: вы не лидер отряда"
 
 #. ja: <sound 0 47>パーティの状態が変化したため、合奏レディチェックを中断しました。
 #. de: <sound 0 47>Die Gruppenzusammenstellung hat sich geändert. Die Bereitschaftsanfrage wurde unterbrochen.
 #. fr: <sound 0 47>Appel de préparation annulé. Le chef d'équipe a changé.
 #. macro: <sound 0 47> — plays a sound effect; kind = 0, sound = 47 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7314:0:5"
 msgid "<sound 0 47>The status of the party has changed.<br>The ensemble mode ready check will be canceled."
-msgstr "<sound 0 47>Состав группы изменился<br>Проверка готовности в ансамблевом режиме отменена"
+msgstr "<sound 0 47>Состав отряда изменился<br>Проверка готовности в ансамблевом режиме отменена"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>をカスタムマッチ参加申請に勧誘しました。
 #. de: Du hast <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> zu einem Schaukampf eingeladen.
@@ -1533,16 +1547,18 @@ msgstr "Матч по собственным правилам готов. Зав
 #. ja: パーティリーダーではないため、誘えませんでした。
 #. de: Einladung nicht möglich, weil der Charakter kein Gruppenanführer ist.
 #. fr: Invitation impossible. Ce joueur n'est pas chef d'équipe.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7326:0:5"
 msgid "Unable to invite. That player is not a party leader."
-msgstr "Не удалось пригласить: этот игрок не лидер группы"
+msgstr "Не удалось пригласить: этот игрок не лидер отряда"
 
 #. ja: 勧誘先のパーティ人数が不正なため、誘えませんでした。
 #. de: Einladung nicht möglich, weil die eingeladene Gruppe nicht die richtige Anzahl<br>an Mitgliedern hat.
 #. fr: Invitation impossible. L'équipe invitée ne comporte pas un nombre adéquat de membres.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7327:0:5"
 msgid "Unable to invite. Party size is incorrect."
-msgstr "Не удалось пригласить: в группе неправильное число участников"
+msgstr "Не удалось пригласить: в отряде неподходящее число участников"
 
 #. ja: すでにカスタムマッチ参加申請に参加中のキャラクターのため、誘えませんでした。
 #. de: Einladung nicht möglich, weil der Charakter bereits an dem Schaukampf teilnimmt.
@@ -1589,10 +1605,10 @@ msgstr "Не удалось пригласить игрока: у него ст�
 #. ja: コンテンツ参加申請中のキャラクターのため、誘えませんでした。
 #. de: Einladung nicht möglich, weil sich der Spieler für einen Inhalt angemeldet hat.
 #. fr: Invitation impossible. Ce joueur s'est enregistré pour participer à une mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7334:0:5"
 msgid "Unable to invite player using the Duty Finder."
-msgstr "Не удалось пригласить игрока: он использует Поиск активностей"
+msgstr "Не удалось пригласить игрока: он использует Поиск миссий"
 
 #. ja: 異なるエリアにいるキャラクターのため、誘えませんでした。
 #. de: Einladung nicht möglich, weil sich der Charakter in einem anderen Areal aufhält.
@@ -1604,16 +1620,18 @@ msgstr "Не удалось пригласить: этот игрок наход
 #. ja: 自パーティ内にバディが呼び出されているため、誘えませんでした。
 #. de: Einladung nicht möglich, weil sich ein Mitstreiter in der eigenen Gruppe befindet.
 #. fr: Invitation impossible. Un joueur de votre équipe a appelé son compagnon.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7336:0:5"
 msgid "Unable to invite while a companion summoned in your party."
-msgstr "Не удалось пригласить: в вашей группе призван спутник"
+msgstr "Не удалось пригласить: в вашем отряде призван спутник"
 
 #. ja: 勧誘したパーティ内にバディが呼び出されているため、誘えませんでした。
 #. de: Einladung nicht möglich, weil sich ein Mitstreiter in der anderen Gruppe befindet.
 #. fr: Invitation impossible. Un joueur de cette équipe a appelé son compagnon.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7337:0:5"
 msgid "Unable to invite while a companion summoned in their party."
-msgstr "Не удалось пригласить: в их группе призван спутник"
+msgstr "Не удалось пригласить: в их отряде призван спутник"
 
 #. ja: カスタムマッチ参加申請に誘えませんでした。
 #. de: Einladung zum Schaukampf nicht möglich.
@@ -1653,30 +1671,34 @@ msgstr "Не удалось пригласить. У вас статус «Не 
 #. ja: 自パーティのパーティ人数が不正なため、誘えませんでした。
 #. de: Einladung nicht möglich, weil deine Gruppe nicht die richtige Anzahl an<br>Mitgliedern hat.
 #. fr: Invitation impossible. Votre équipe ne comporte pas un nombre adéquat de membres.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7343:0:5"
 msgid "Unable to invite. Your party size is incorrect."
-msgstr "Не удалось пригласить. В вашей группе неподходящее число участников"
+msgstr "Не удалось пригласить. В вашем отряде неподходящее число участников"
 
 #. ja: 勧誘先パーティにログアウトしているキャラクターがいるため、誘えませんでした。
 #. de: Einladung nicht möglich, weil ein Mitglied der anderen Gruppe ausgeloggt ist.
 #. fr: Invitation impossible. Un ou plusieurs membres de l'équipe invitée ne sont pas en ligne.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7344:0:5"
 msgid "Unable to invite party to custom match. One or more members have gone offline."
-msgstr "Не удалось пригласить группу на пользовательский бой. Один или несколько участников не в сети"
+msgstr "Не удалось пригласить отряд на пользовательский бой. Один или несколько участников не в сети"
 
 #. ja: 自パーティ内にログアウトしているキャラクターがいるため、誘えませんでした。
 #. de: Einladung nicht möglich, weil ein Mitglied der eigenen Gruppe ausgeloggt ist.
 #. fr: Invitation impossible. Un ou plusieurs de vos équipiers ne sont pas en ligne.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7345:0:5"
 msgid "Unable to invite party to custom match. One or more members of your party have gone offline."
-msgstr "Не удалось пригласить группу на пользовательский бой. Один или несколько участников вашей группы не в сети"
+msgstr "Не удалось пригласить отряд на пользовательский бой. Один или несколько участников вашего отряда не в сети"
 
 #. ja: パーティ数が足りない、もしくは各パーティの人数が不正なため、カスタムマッチ参加申請を行えませんでした。
 #. de: Schaukampf kann nicht begonnen werden, weil die Anzahl der Gruppen oder<br>die Anzahl der Grup<shy>pen<shy>mit<shy>glieder nicht richtig ist.
 #. fr: L'enregistrement a échoué. Le nombre d'équipes est insuffisant ou l'une d'entre elles ne comporte pas un nombre adéquat de membres.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7346:0:5"
 msgid "Unable to organize custom match. Party requirements have not been met."
-msgstr "Не удалось создать пользовательский бой. Не соблюдены требования к группам"
+msgstr "Не удалось создать пользовательский бой. Не соблюдены требования к отрядам"
 
 #. ja: 対戦チーム全員の同意が得られたため、再戦を開始します。
 #. de: Alle Teilnehmer wollen weiterkämpfen! Ein neuer Schaukampf beginnt.
@@ -1727,16 +1749,18 @@ msgstr "Не удалось отправить сообщение. Вам огр
 #. ja: 募集に設定されているコンテンツの申請条件を満たしていないため、パーティ募集に参加できませんでした。
 #. de: Keine Gruppen<shy>suche möglich, weil nicht alle Teilnahmebedingungen für diesen Inhalt erfüllt sind.
 #. fr: Impossible de rejoindre la recherche d'équipe. Vous ne remplissez pas certaines conditions de par<shy>ti<shy>ci<shy>pa<shy>tion.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7390:0:5"
 msgid "Unable to join party. You do not meet the requirements specified to participate."
-msgstr "Не удалось вступить в группу. Вы не соответствуете требованиям для участия"
+msgstr "Не удалось вступить в отряд. Вы не соответствуете требованиям для участия"
 
 #. ja: 募集に設定されているコンテンツの申請条件を満たしていないメンバーがいるため、パーティ募集に参加できませんでした。
 #. de: Keine Gruppen<shy>suche möglich, weil ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder nicht die Teilnahmebedingungen erfüllen.
 #. fr: Impossible de rejoindre la recherche d'équipe. Un ou plusieurs équipiers ne remplissent pas certaines conditions de par<shy>ti<shy>ci<shy>pa<shy>tion.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7391:0:5"
 msgid "Unable to join. One or more party members do not meet the requirements specified to participate."
-msgstr "Не удалось вступить в группу. Один или несколько её участников не соответствуют требованиям для участия"
+msgstr "Не удалось вступить в отряд. Один или несколько его участников не соответствуют требованиям для участия"
 
 #. ja: 申請中のコンテンツのステージが切り替わったため、参加申請がキャンセルされました。
 #. de: Die Anmeldung wurde zurückgezogen, da sich die Arena für den registrierten Inhalt geändert hat.
@@ -1771,17 +1795,18 @@ msgstr "<if ($n1 > 0)><string $s2><else>Нет комментария</if>"
 #. ja: ■コンテンツファインダー参加条件設定
 #. de: ■ Bedingungen der Inhaltssuche
 #. fr: ■ Conditions de l'outil de mission
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7397:0:5"
 msgid "■Duty Finder Settings"
-msgstr "■Настройки «Поиска активностей»"
+msgstr "■Настройки «Поиска миссий»"
 
 #. ja: 募集中のコンテンツの開催期間が終了したため、パーティ募集を終了しました。
 #. de: Die Gruppen<shy>suche wurde beendet, weil dieser saisonale Inhalt nicht mehr verfügbar ist.
 #. fr: La mission pour laquelle vous recrutez n'étant plus disponible, le recrutement a pris fin.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7398:0:5"
 msgid "Party recruitment ended. The applicable duty is no longer available."
-msgstr "Набор в группу завершён. Выбранный контент больше недоступен"
+msgstr "Набор в отряд завершён. Выбранная миссия больше недоступна"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>にデュエル申請を申し込みました。
 #. de: Du hast <if ($gs1 == $gs3)><switch 4><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 4 1><else>{$gs3}</if></if> zum Duell herausgefordert.
@@ -1955,6 +1980,7 @@ msgstr "Не удалось вызвать на дуэль. Противник �
 #. ja: デュエル申請の相手と離れるとデュエル申請はキャンセルされます。
 #. de: Die Heraus<shy>forde<shy>rung wird annulliert, wenn du dich zu weit von dem anderen Spieler entfernst.
 #. fr: S'éloigner de l'autre joueur annulera la demande de combat singulier.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7421:0:5"
 msgid "If either party stray too far from the other, the duel will be canceled."
 msgstr "Если вы или противник отойдёте слишком далеко, вызов на дуэль будет отменён"
@@ -2103,17 +2129,19 @@ msgstr "Неверный пароль. Не удалось зарегистри�
 #. ja: 募集者がオフラインのため、パーティ募集に参加できませんでした。
 #. de: Teilnahme nicht möglich. Der Spieler, der die Suche gestartet hat, hat sich ausgeloggt.
 #. fr: Impossible de rejoindre cette équipe. Le recruteur s'est déconnecté.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7443:0:5"
 msgid "Unable to join party. Recruiter is offline."
-msgstr "Не удалось вступить в группу. Организатор не в сети"
+msgstr "Не удалось вступить в отряд. Организатор не в сети"
 
 #. ja: クロスワールドパーティを作成しました。<br>クロスワールドパーティは通常パーティと異なるため、パーティに対して影響するアクションの効果が得られなくなります。
 #. de: Du bildest eine weltenübergreifende Gruppe. Außerhalb von Instanzen wirken<br>Statuseffekte, die normalerweise die ganze Gruppe betreffen, nur auf den Wirkenden.
 #. fr: Une équipe inter-Monde a été formée. <br>Les effets de certaines actions ne s'appliqueront pas aux équipiers.
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7444:0:5"
 msgid "Cross-world party formed.<br>Party-wide spells and actions will behave differently."
-msgstr "Сформирована межмировая группа<br>Заклинания и умения, действующие на всю группу, будут работать иначе"
+msgstr "Сформирован межмировой отряд<br>Заклинания и умения, действующие на весь отряд, будут работать иначе"
 
 #. ja: 登録できる限界数に達しているため、パーティ募集を登録することができませんでした。
 #. de: Eine weitere Suche ist nicht möglich, da die maximale Anzahl erreicht ist.
@@ -2126,114 +2154,128 @@ msgstr "Достигнут лимит регистраций. Набор в гр
 #. de: Du bist einer weltenübergreifenden Gruppe beigetreten. Außerhalb von Instanzen wirken<br>Statuseffekte, die normalerweise die ganze Gruppe betreffen, nur auf den Wirkenden.
 #. fr: Vous avez rejoint une équipe inter-Monde. <br>Les effets de certaines actions ne s'appliqueront pas aux équipiers.
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7446:0:5"
 msgid "Cross-world party joined.<br>Party-wide spells and actions will behave differently."
-msgstr "Вы вступили в межмировую группу<br>Заклинания и умения, действующие на всю группу, будут работать иначе"
+msgstr "Вы вступили в межмировой отряд<br>Заклинания и умения, действующие на весь отряд, будут работать иначе"
 
 #. ja: <sound 0 71>クロスワールドパーティを解散しました。
 #. de: <sound 0 71>Du hast die weltenübergreifende Gruppe aufgelöst.
 #. fr: <sound 0 71>L'équipe inter-Monde est dissoute.
 #. macro: <sound 0 71> — plays a sound effect; kind = 0, sound = 71 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7447:0:5"
 msgid "<sound 0 71>You dissolve the cross-world party."
-msgstr "<sound 0 71>Вы распустили межмировую группу"
+msgstr "<sound 0 71>Вы распустили межмировой отряд"
 
 #. ja: <sound 0 71>クロスワールドパーティが解散されました。
 #. de: <sound 0 71>Die weltenübergreifende Gruppe wurde aufgelöst.
 #. fr: <sound 0 71><sound 0 71>L'équipe inter-Monde a été dissoute.
 #. macro: <sound 0 71> — plays a sound effect; kind = 0, sound = 71 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7448:0:5"
 msgid "<sound 0 71>The cross-world party has been disbanded."
-msgstr "<sound 0 71>Межмировая группа распущена"
+msgstr "<sound 0 71>Межмировой отряд распущен"
 
 #. ja: パーティ募集サーバーに問題が発生しました。
 #. de: Es gab ein Problem mit dem Server für die Gruppen<shy>suche.
 #. fr: Une erreur s'est produite au niveau du serveur gérant les recrutements.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7449:0:5"
 msgid "A party server error has occurred."
-msgstr "Ошибка сервера набора в группу"
+msgstr "Ошибка сервера набора в отряд"
 
 #. ja: コンテンツに参加申請中のため、パーティ募集に参加できませんでした。
 #. de: Du kannst nicht an der Gruppen<shy>suche teilnehmen, da die Inhaltssuche aktiv ist.
 #. fr: Impossible de rejoindre une équipe en étant enregistré pour participer à une mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7450:0:5"
 msgid "Unable to join party while using the Duty Finder."
-msgstr "Не удалось вступить в группу, пока вы используете Поиск активностей"
+msgstr "Не удалось вступить в отряд, пока вы используете Поиск миссий"
 
 #. ja: パーティ募集の人数を満たしたため終了します。
 #. de: Es wurden genügend Grup<shy>pen<shy>mit<shy>glieder gefunden und die Suche daher beendet.
 #. fr: Le nombre de personnages ayant été atteint, le recrutement d'équipiers est terminé.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7451:0:5"
 msgid "Party recruitment ended. All places have been filled."
-msgstr "Набор в группу завершён. Все места заняты"
+msgstr "Набор в отряд завершён. Все места заняты"
 
 #. ja: パーティ募集の人数を満たしたため終了します。
 #. de: Es wurden genügend Grup<shy>pen<shy>mit<shy>glieder gefunden und die Suche daher beendet.
 #. fr: Le nombre de personnages ayant été atteint, le recrutement d'équipiers est terminé.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7452:0:5"
 msgid "Party recruitment ended. All places have been filled."
-msgstr "Набор в группу завершён. Все места заняты"
+msgstr "Набор в отряд завершён. Все места заняты"
 
 #. ja: 募集に設定されているコンテンツを開放していないため、パーティ募集に参加できませんでした。
 #. de: Du kannst der Gruppe nicht beitreten, da du den Inhalt noch nicht freigespielt hast.
 #. fr: Impossible de rejoindre cette équipe. Vous n'avez pas accès à la mission qui fait l'objet du recrutement.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7453:0:5"
 msgid "Unable to join party. Required duty not yet commenced."
-msgstr "Не удалось вступить в группу. Требуемый контент ещё не открыт"
+msgstr "Не удалось вступить в отряд. Требуемая миссия ещё не открыта"
 
 #. ja: 募集に設定されているコンテンツをコンプリートしていないため、パーティ募集に参加できませんでした。
 #. de: Du kannst der Gruppe nicht beitreten, da du den Inhalt noch nicht abgeschlossen hast.
 #. fr: Impossible de rejoindre cette équipe. Vous n'avez pas terminé la mission qui fait l'objet du recrutement.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7454:0:5"
 msgid "Unable to join party. Required duty not yet complete."
-msgstr "Не удалось вступить в группу. Вы ещё не прошли требуемый контент"
+msgstr "Не удалось вступить в отряд. Вы ещё не прошли требуемую миссию"
 
 #. ja: コンテンツ「<string $s2>：<string $s3>」、<br>募集者<string $s1>のパーティ募集に参加しました。
 #. de: Du trittst der Gruppe von <string $s1> bei. (<string $s2>: <string $s3>)
 #. fr: Vous avez rejoint l'équipe recrutée par <string $s1> pour la mission “<string $s2><nbsp>: <string $s3>”.
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <string $s3> — a text value passed to the string; value = text parameter 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7455:0:5"
 msgid "You join <string $s1>'s party for <string $s3>."
-msgstr "Вы вступили в группу <string $s1> для прохождения «<string $s3>»"
+msgstr "Вы вступили в отряд <string $s1> для прохождения «<string $s3>»"
 
 #. ja: コンテンツ「<string $s2>」、募集者<string $s1>のパーティ募集に参加しました。
 #. de: Du trittst der Gruppe von <string $s1> bei. (<string $s2>)
 #. fr: Vous avez rejoint l'équipe recrutée par <string $s1> pour la mission “<string $s2>”.
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <string $s2> — a text value passed to the string; value = text parameter 2 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7456:0:5"
 msgid "You join <string $s1>'s party for <string $s2>."
-msgstr "Вы вступили в группу <string $s1> для прохождения «<string $s2>»"
+msgstr "Вы вступили в отряд <string $s1> для прохождения «<string $s2>»"
 
 #. ja: 勧誘を行ったキャタクターがすでにパーティから離脱しているため、パーティ参加ができませんでした。
 #. de: Der Beitritt ist fehlgeschlagen. Der einladende Spieler hat die Gruppe verlassen.
 #. fr: Impossible de rejoindre cette équipe. Le personnage qui a envoyé l'invitation l'a quittée.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7457:0:5"
 msgid "Unable to join party. The player who invited you has left the party."
-msgstr "Не удалось вступить в группу. Пригласивший вас игрок покинул её"
+msgstr "Не удалось вступить в отряд. Пригласивший вас игрок покинул его"
 
 #. ja: 参加先のクロスワールドパーティが定員に達したため、参加できませんでした。
 #. de: Der Beitritt ist fehlgeschlagen. Die weltenübergreifende Gruppe ist bereits komplett.
 #. fr: Impossible de rejoindre cette équipe inter-Monde. Le nombre de par<shy>ti<shy>ci<shy>pants maximum a été atteint.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7458:0:5"
 msgid "Unable to join cross-world party. The party is now full."
-msgstr "Не удалось вступить в межмировую группу. В ней больше нет мест"
+msgstr "Не удалось вступить в межмировой отряд. В нём больше нет мест"
 
 #. ja: クロスワールドパーティへの参加に失敗しました。
 #. de: Der Beitritt zu der weltenübergreifenden Gruppe ist fehlgeschlagen.
 #. fr: L'intégration à l'équipe inter-Monde a échoué.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7459:0:5"
 msgid "Unable to join cross-world party."
-msgstr "Не удалось вступить в межмировую группу"
+msgstr "Не удалось вступить в межмировой отряд"
 
 #. ja: 募集内容が変更されたため、参加がキャンセルされました。
 #. de: Du kannst nicht beitreten, weil die Suchkriterien geändert wurden.
 #. fr: Participation annulée. Les critères de recrutement ont été modifiés.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7460:0:5"
 msgid "Party requirements updated. Participation denied."
-msgstr "Требования к группе изменились. Вступление отменено"
+msgstr "Требования к отряду изменились. Вступление отменено"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>がエリアチェンジ中などの理由により、参加申請できませんでした。
 #. de: Teilnahme nicht möglich. <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> wechselt gerade das Areal.
@@ -2263,16 +2305,18 @@ msgstr "Не удалось выбрать этот контент. Устано
 #. ja: パーティ募集用アライアンスを作成しました。<br>アライアンスは通常パーティと異なるため、パーティに対して影響するアクションの効果が得られなくなります。
 #. de: Du hast eine weltenübergreifende Gruppe gebildet.<br>Außerhalb von Instanzen wirken Statuseffekte, die normalerweise<br>die ganze Gruppe betreffen, nur auf den Wirkenden.
 #. fr: Une alliance a été formée dans le cadre d'un recrutement. <br>Les effets de certaines actions ne s'appliqueront pas aux membres.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7464:0:5"
 msgid "Party Finder alliance formed. Party-wide spells and actions will behave differently."
-msgstr "Сформирован альянс через поиск группы. Заклинания и умения, действующие на всю группу, будут работать иначе"
+msgstr "Сформирован альянс через поиск группы. Заклинания и умения, действующие на весь отряд, будут работать иначе"
 
 #. ja: パーティ募集用アライアンスに参加しました。<br>アライアンスは通常パーティと異なるため、パーティに対して影響するアクションの効果が得られなくなります。
 #. de: Du bist einer weltenübergreifenden Gruppe beigetreten.<br>Außerhalb von Instanzen wirken Statuseffekte, die normalerweise<br>die ganze Gruppe betreffen, nur auf den Wirkenden.
 #. fr: Vous avez rejoint une alliance dans le cadre d'un recrutement. <br>Les effets de certaines actions ne s'appliqueront pas aux membres.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7465:0:5"
 msgid "Party Finder alliance joined. Party-wide spells and actions will behave differently."
-msgstr "Вы вступили в альянс через поиск группы. Заклинания и умения, действующие на всю группу, будут работать иначе"
+msgstr "Вы вступили в альянс через поиск группы. Заклинания и умения, действующие на весь отряд, будут работать иначе"
 
 #. ja: コンテンツ「<string $s2>：<string $s3>」、<br>募集者<string $s1>のパーティ募集の<string $s4>に参加しました。
 #. de: Du bist der Gruppe „<string $s4>“ (Gruppen<shy>suche von <string $s1> für <string $s2>: <string $s3>) beigetreten.
@@ -2296,6 +2340,7 @@ msgstr "Вы вступили в альянс игрока <string $s1> для <
 #. de: <sound 0 71>Die Allianz für die Gruppen<shy>suche wurde aufgelöst.
 #. fr: <sound 0 71>Vous avez dissous l'alliance créée pour le recrutement.
 #. macro: <sound 0 71> — plays a sound effect; kind = 0, sound = 71 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7468:0:5"
 msgid "<sound 0 71>You dissolve the Party Finder alliance."
 msgstr "<sound 0 71>Вы распустили альянс, созданный через поиск группы"
@@ -2304,6 +2349,7 @@ msgstr "<sound 0 71>Вы распустили альянс, созданный �
 #. de: <sound 0 71>Die Allianz für die Gruppen<shy>suche wurde aufgelöst.
 #. fr: <sound 0 71>L'alliance créée pour le recrutement est dissoute.
 #. macro: <sound 0 71> — plays a sound effect; kind = 0, sound = 71 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7469:0:5"
 msgid "<sound 0 71> The Party Finder alliance has been disbanded."
 msgstr "<sound 0 71> Альянс, созданный через поиск группы, распущен"
@@ -2311,9 +2357,10 @@ msgstr "<sound 0 71> Альянс, созданный через поиск гр
 #. ja: 募集に設定されているコンテンツをコンプリート済みのため、パーティ募集に参加できませんでした。
 #. de: Teilnahme nicht möglich. Du hast den Inhalt bereits abgeschlossen.
 #. fr: Impossible de rejoindre cette équipe. Vous avez déjà terminé la mission qui fait l'objet du recrutement.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7470:0:5"
 msgid "Unable to join party. You have already completed the duty specified in the Party Finder's requirements."
-msgstr "Не удалось вступить в группу. Вы уже прошли контент, указанный в требованиях набора"
+msgstr "Не удалось вступить в отряд. Вы уже прошли миссию, указанную в требованиях набора"
 
 #. ja: 現在の状態では、その操作はできません。
 #. de: Diese Aktion ist momentan nicht möglich.
@@ -2326,9 +2373,10 @@ msgstr "Невозможно выполнить действие в текуще
 #. de: Der Gruppen-Chat steht in Allianzen in öffentlichen Arealen nicht zur Verfügung. Bitte benutze<br>den Allianz-Chat. Der Gruppen-Chat wird verfügbar, sobald die Instanz betreten wird.
 #. fr: Le mode de discussion “équipe” n'est pas disponible lors de la formation d'une alliance dans un espace public. <br>Veuillez utiliser le mode de discussion “alliance” pour communiquer avec les autres membres. <br>(Le mode discussion “équipe” est disponible après le début de la mission.)
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7472:0:5"
 msgid "The party chat channel is unavailable while forming an alliance in public areas.<br>Please use the alliance channel.<br>The party channel will become available once the duty has commenced."
-msgstr "В альянсе, созданном в открытой зоне, нельзя писать в канал группы<br>Общайтесь с участниками альянса в канале альянса<br>Канал группы станет доступен после начала контента"
+msgstr "В альянсе, созданном в открытой зоне, нельзя писать в канал отряда<br>Общайтесь с участниками альянса в канале альянса<br>Канал отряда станет доступен после начала миссии"
 
 #. ja: アライアンス募集に参加しました。<br>パブリックフィールドでのアライアンスメンバーとの会話は、アライアンス会話を使用してください。
 #. de: Du bist einer Allianz beigetreten.<br>Benutze in öffentlichen Arealen den Allianz-Chat, um mit anderen Mitgliedern zu kommunizieren.
@@ -2341,16 +2389,18 @@ msgstr "Вы вступили в альянс. Общайтесь с его уч
 #. ja: クロスワールドパーティに切り替わったため<br>パーティ勧誘が取り下げられました。
 #. de: Die Einladung wurde zurückgezogen, weil die Gruppe eine weltenübergreifende Gruppe geworden ist.
 #. fr: L'équipe étant désormais inter-Monde, l'invitation a été annulée.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7474:0:5"
 msgid "Party status now cross-world. Invites canceled."
-msgstr "Группа стала межмировой. Приглашения отменены"
+msgstr "Отряд стал межмировым. Приглашения отменены"
 
 #. ja: ワールド間テレポ申請中のため、パーティ募集に参加できませんでした。
 #. de: Keine Gruppen<shy>suche möglich, da du dich auf eine Weltenreise vorbereitest.
 #. fr: Impossible de rejoindre cette équipe. Une demande de voyage inter-Monde est en cours de traitement.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7478:0:5"
 msgid "Unable to join party while waiting to visit another World."
-msgstr "Не удалось вступить в группу, пока вы ждёте посещения другого мира"
+msgstr "Не удалось вступить в отряд, пока вы ждёте посещения другого мира"
 
 #. ja: パーティ募集の設定により、情報が取得できませんでした。
 #. de: Mit den aktuellen Einstellungen der Gruppen<shy>suche sind keine Daten abrufbar.
@@ -2369,17 +2419,18 @@ msgstr "Прочность одной или нескольких надетых
 #. ja: パーティを組んで参加申請したため、フロントライン参加時に所属グランドカンパニーの制限なくマッチングされます。
 #. de: Weil ihr euch als Gruppe registriert habt, wird die Spielersuche unabhängig von der Staatlichen Ge<shy>sell<shy>schaft durchgeführt.
 #. fr: L'enregistrement ayant été fait en équipe, le groupement automatique se fera sans restriction d'allégeance à une grande compagnie.
-# aeria-terms: {"Frontline":"69b33670ba7b","Grand Company":"3e02ab7f2123"}
+# aeria-terms: {"Frontline":"69b33670ba7b","Grand Company":"3e02ab7f2123","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7481:0:5"
 msgid "You registered while in a party. Grand Company allegiance will be ignored during Frontline matchmaking."
-msgstr "Вы зарегистрировались в составе группы. При подборе участников для режима «Фронтлайн» принадлежность к Великой компании не учитывается"
+msgstr "Вы зарегистрировались в составе отряда. При подборе участников для режима «Фронтлайн» принадлежность к Великой компании не учитывается"
 
 #. ja: パーティ募集が未開放のため、使用できません。
 #. de: Die Gruppen<shy>suche ist noch nicht freigeschaltet.
 #. fr: Utilisation impossible. L'outil de mission n'a pas été débloqué.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7482:0:5"
 msgid "Unable to recruit party members at present."
-msgstr "Набор в группу пока недоступен"
+msgstr "Набор в отряд пока недоступен"
 
 #. ja: 申請先のキャラクターがオフラインのため、フレンド申請ができませんでした。
 #. de: Keine Freundesanfrage möglich. Der andere Charakter ist nicht angemeldet.
@@ -2401,6 +2452,7 @@ msgstr "Данные персонажа этого игрока обновлен
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
 #. macro: <if ($gn78 == 3)>option<else>Alt</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 78 == 3 (condition: may be reworded, restructured, added, or dropped)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7485:0:5"
 msgid "Message to <string $s1> could not be sent.<br>That character is on another World server and not on your friend list. Use <if ($gn78 == 3)>option<else>Alt</if>+R to reply to a Party Finder message."
 msgstr "Не удалось отправить сообщение игроку <string $s1><br>Этот персонаж находится на другом сервере и не состоит у вас в друзьях. Чтобы ответить на сообщение из поиска группы, нажмите <if ($gn78 == 3)>option<else>Alt</if>+R"
@@ -2408,9 +2460,10 @@ msgstr "Не удалось отправить сообщение игроку <
 #. ja: 該当のパーティ募集はすでに終了しているため、Tellを送信できませんでした。<br>パーティ募集経由の他ワールドキャラクターとのTellは募集中のみ利用可能です。
 #. de: Flüstern konnte nicht gesendet werden, da diese Gruppen<shy>suche bereits beendet ist.
 #. fr: Impossible d'envoyer le murmure. Le recrutement est terminé. <br>Les personnages d'autres Mondes ne peuvent être contactés que lors des recrutements.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7486:0:5"
 msgid "Unable to send /tell. That party is no longer accepting members."
-msgstr "Не удалось отправить послание. Эта группа уже не набирает участников"
+msgstr "Не удалось отправить послание. Этот отряд уже не набирает участников"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>へフレンド申請をしました。<br>申請の回答が得られないまま1週間が経過すると、自動的に申請は取り下げられます。
 #. de: Du hast <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if> eine Freund<shy>schaftsanfrage gesendet.<br>Wenn die Anfrage eine Woche lang unbeantwortet bleibt, wird sie automatisch zurückgezogen.
@@ -2454,6 +2507,7 @@ msgstr "Запрос в друзья отменён: на него не отве
 #. ja: この場所では、パーティ募集の表示ができません。
 #. de: Am aktuellen Ort kann die Gruppen<shy>suche nicht angezeigt werden.
 #. fr: Impossible d'afficher l'outil de mission ici.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7491:0:5"
 msgid "The Party Finder cannot be viewed in this location."
 msgstr "Здесь нельзя открыть поиск группы"
@@ -2469,35 +2523,39 @@ msgstr "Не удалось присоединиться. В группе мож
 #. ja: クロスワールドパーティ結成処理を行えませんでした。
 #. de: Die weltenübergreifende Gruppe konnte nicht erstellt werden.
 #. fr: La formation de l'équipe inter-Monde n'a pas pu être traitée.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7493:0:5"
 msgid "Could not form a cross-world party."
-msgstr "Не удалось собрать межмировую группу"
+msgstr "Не удалось собрать межмировой отряд"
 
 #. ja: 参加できないクラス・ジョブのメンバーがいるため、パーティ募集に参加できませんでした。
 #. de: Beitritt nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder haben nicht die geforderten Jobs.
 #. fr: Impossible de rejoindre la recherche d'équipe. Certains jobs ou classes ne pouvant participer sont présents.
-# aeria-terms: {"job":"a9421a81ecaa"}
+# aeria-terms: {"Party":"66ce98c91d3e","job":"a9421a81ecaa"}
 msgctxt "LogMessage:7494:0:5"
 msgid "Unable to join. One or more party members do not match the jobs specified in the Party Finder's requirements."
-msgstr "Не удалось присоединиться. Один или несколько участников группы не соответствуют требованиям Поиска группы по классам и профессиям"
+msgstr "Не удалось присоединиться. Один или несколько участников отряда не соответствуют требованиям Поиска группы по классам и профессиям"
 
 #. ja: 参加条件を満たしていないメンバーがいるため、パーティ募集に参加できませんでした。
 #. de: Beitritt nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder erfüllen nicht die Teilnahmebedingungen.
 #. fr: Impossible de rejoindre la recherche d'équipe. Certains membres ne remplissent pas les conditions de par<shy>ti<shy>ci<shy>pa<shy>tion.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7495:0:5"
 msgid "Unable to join. One or more party members do not meet the requirements specified to participate."
-msgstr "Не удалось присоединиться. Один или несколько участников группы не соответствуют требованиям"
+msgstr "Не удалось присоединиться. Один или несколько участников отряда не соответствуют требованиям"
 
 #. ja: 募集に設定されているコンテンツを開放していないメンバーがいるため、パーティ募集に参加できませんでした。
 #. de: Beitritt nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder haben den Spielinhalt noch nicht freigeschaltet.
 #. fr: Impossible de rejoindre la recherche d'équipe. Certains membres n'ont pas débloqué les missions sé<shy>lec<shy>tion<shy>nées.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7496:0:5"
 msgid "Unable to join. One or more party members has yet to unlock the selected duty."
-msgstr "Не удалось присоединиться. Один или несколько участников группы ещё не открыли выбранное подземелье"
+msgstr "Не удалось присоединиться. Один или несколько участников отряда ещё не открыли выбранное подземелье"
 
 #. ja: パーティ加入を許可しない状態もしくは操作を行っているメンバーがいるため、募集に参加できませんでした。
 #. de: Beitritt nicht möglich. Entweder liegt keine Einladung vor oder die Gruppeneinstellungen wurden geändert.
 #. fr: Impossible de rejoindre la recherche d'équipe. Certains membres ne sont pas en mesure de rejoindre l'équipe pour le moment.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7497:0:5"
 msgid "Unable to join. Additional party members are not permitted."
 msgstr "Не удалось присоединиться. Набор дополнительных участников запрещён"
@@ -2505,16 +2563,18 @@ msgstr "Не удалось присоединиться. Набор допол�
 #. ja: パーティ募集への参加に失敗したプレイヤーがいるため、パーティへの加入処理が行えませんでした。
 #. de: Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder konnten der Gruppe nicht beitreten.
 #. fr: L'équipe n'a pas pu être formée. Un ou plusieurs joueurs n'ont pas répondu.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7498:0:5"
 msgid "One or more party members failed to join the party."
-msgstr "Не удалось собрать группу: один или несколько участников не смогли присоединиться"
+msgstr "Не удалось собрать отряд: один или несколько участников не смогли присоединиться"
 
 #. ja: ストーリーの進行状況等の理由により、パーティ募集に参加できませんでした。
 #. de: Beitritt nicht möglich. Fortschritt im Hauptszenario möglicherweise nicht ausreichend.
 #. fr: Impossible de rejoindre l'équipe. L'étape de l'épopée où vous vous trouvez ne le permet pas.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7499:0:5"
 msgid "Unable to join party due to current quest progression."
-msgstr "Не удалось присоединиться к группе из-за текущего этапа задания"
+msgstr "Не удалось присоединиться к отряду из-за текущего этапа задания"
 
 #. ja: このコマンドは「クリスタルコンフリクト」に<br>対戦者として参加しているときのみ使用できます。
 #. de: Dieses Kommando kann nur in „Crystalline Conflict“ verwendet werden.
@@ -2744,9 +2804,10 @@ msgstr "Неверная цель"
 #. ja: パーティメンバーがいません。
 #. de: Keine Grup<shy>pen<shy>mit<shy>glieder vorhanden.
 #. fr: Il n'y a pas d'équipiers.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7529:0:5"
 msgid "There are no party members."
-msgstr "В группе нет участников"
+msgstr "В отряде нет участников"
 
 #. ja: 条件を満たしていないため、搭乗できません。
 #. de: Du kannst die Kriegsmaschine nicht steuern. Eine Bedingung ist nicht erfüllt.
@@ -2961,14 +3022,15 @@ msgstr "Выход по-прежнему закрыт. Может, буквы с
 #. ja: 募集に設定されているコンテンツの週制限報酬を取得済みのため、パーティ募集に参加できませんでした。
 #. de: Beitritt nicht möglich. Teilnahmebedingung des Inhalts ist, dass das Wochenlimit für Vergütungen noch nicht erreicht wurde.
 #. fr: Impossible de rejoindre cette équipe.<br>Elle requiert que la récompense hebdomadaire de cette mission n'ait pas déjà été obtenue.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7552:0:5"
 msgid "Unable to join party. You have already claimed the weekly reward for the selected duty."
-msgstr "Не удалось присоединиться к группе. Вы уже получили еженедельную награду за выбранное подземелье"
+msgstr "Не удалось присоединиться к отряду. Вы уже получили еженедельную награду за выбранное подземелье"
 
 #. ja: クリスタル階級では、パーティでの参加申請を行えません。
 #. de: Gruppenregistrierung mit Mitgliedern der Kampfklasse „Kristall“ nicht möglich.
 #. fr: Impossible de s'inscrire en équipe en étant à l'échelon de cristal.
-# aeria-terms: {"crystal":"b6e3734412aa"}
+# aeria-terms: {"Party":"66ce98c91d3e","crystal":"b6e3734412aa"}
 msgctxt "LogMessage:7553:0:5"
 msgid "Unable to register for duty as a party while in the Crystal tier."
 msgstr "Нельзя подать групповую заявку, находясь в кристаллическом дивизионе"
@@ -2976,17 +3038,18 @@ msgstr "Нельзя подать групповую заявку, находя�
 #. ja: クリスタル階級のメンバーがいるため、パーティでの参加申請を行えません。
 #. de: Registrierung fehlgeschlagen. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder befinden sich in der  Kampfklasse „Kristall“.
 #. fr: L'enregistrement a échoué. L'équipe compte un ou plusieurs membres à l'échelon de cristal.
-# aeria-terms: {"crystal":"b6e3734412aa"}
+# aeria-terms: {"Party":"66ce98c91d3e","crystal":"b6e3734412aa"}
 msgctxt "LogMessage:7554:0:5"
 msgid "Unable to register. A party member is in the Crystal tier."
-msgstr "Не удалось подать заявку. Один из участников группы находится в кристаллическом дивизионе"
+msgstr "Не удалось подать заявку. Один из участников отряда находится в кристаллическом дивизионе"
 
 #. ja: パーティメンバーと階級・階位が離れすぎているため、パーティでの参加申請を行えません。
 #. de: Registrierung fehlgeschlagen. Die Ränge und Kampfklassen der Grup<shy>pen<shy>mit<shy>glieder weichen zu weit voneinander ab.
 #. fr: L'enregistrement a échoué. Les échelons des équipiers sont trop éloignés.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7555:0:5"
 msgid "Unable to register. Party members' tiers or risers are too far apart."
-msgstr "Не удалось подать заявку. Слишком велика разница в дивизионах или рангах участников группы"
+msgstr "Не удалось подать заявку. Слишком велика разница в дивизионах или рангах участников отряда"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<kilo $n1 ",">ポイントのシリーズEXPを得た。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <kilo $n1 "."> Serien-Routine erhalten.
@@ -3081,9 +3144,10 @@ msgstr "Не удалось подать заявку. Средний урове
 #. ja: 参加条件を満たしていないパーティ人数のため、参加申請できませんでした。
 #. de: Registrierung nicht möglich. Die Zahl der Mitglieder entspricht nicht den Voraus<shy>setzungen.
 #. fr: Enregistrement impossible. Le nombre d'équipiers ne convient pas.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7566:0:5"
 msgid "Unable to register. Party member requirements unmet."
-msgstr "Не удалось подать заявку. Число участников группы не соответствует требованиям"
+msgstr "Не удалось подать заявку. Число участников отряда не соответствует требованиям"
 
 #. ja: ペナルティ状態のため、参加申請できませんでした。
 #. de: Registrierung nicht möglich. Eine vor<shy>über<shy>gehende Sperre ist aktiv.
@@ -3095,10 +3159,10 @@ msgstr "Не удалось подать заявку: действует штр
 #. ja: コンテンツを開放していないため、参加申請できませんでした。
 #. de: Registrierung nicht möglich. Der Inhalt ist noch nicht freigeschaltet.
 #. fr: Enregistrement impossible. L'accès à la mission n'a pas été obtenu.
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:7568:0:5"
 msgid "Unable to register. Duty not yet unlocked."
-msgstr "Не удалось подать заявку. Активности ещё не открыты"
+msgstr "Не удалось подать заявку. Миссия ещё не открыта"
 
 #. ja: 参加申請者と異なるエリアにいる
 #. de: Registrierung nicht möglich. Du befindest dich in einem anderen Areal als der Gruppenanführer.
@@ -3124,18 +3188,18 @@ msgstr "Нельзя подать заявку, пока вы уже запис�
 #. ja: コンテンツの参加申請可能時間外のため、参加申請できませんでした。
 #. de: Registrierung nicht möglich. Die Frist für diesen Inhalt ist abgelaufen.
 #. fr: Enregistrement impossible en dehors des horaires.
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:7572:0:5"
 msgid "Unable to register. Duty registration has ended."
-msgstr "Не удалось подать заявку. Время регистрации на активности истекло"
+msgstr "Не удалось подать заявку. Время регистрации на миссию истекло"
 
 #. ja: コンテンツの参加申請可能時間外
 #. de: Registrierung nicht möglich. Die Frist für diesen Inhalt ist abgelaufen.
 #. fr: Enregistrement impossible en dehors des horaires.
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:7573:0:5"
 msgid "Duty registration has ended."
-msgstr "Время регистрации на активности истекло"
+msgstr "Время регистрации на миссию истекло"
 
 #. ja: 出走可能な競走羽を登録済み
 #. de: Registrierter Renn-Chocobo erforderlich
@@ -3148,24 +3212,26 @@ msgstr "Зарегистрирован гоночный чокобо"
 #. ja: 前回中断した時のパーティ構成と異なる
 #. de: Die Gruppe ist nicht die gleiche wie beim letzten Mal.
 #. fr: La composition de l'équipe diffère de celle de l'incursion précédente.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7575:0:5"
 msgid "Party makeup differs from last campaign."
-msgstr "Состав группы отличается от того, что был при последнем выходе"
+msgstr "Состав отряда отличается от того, что был при последнем выходе"
 
 #. ja: 前回中断した時のクラス・ジョブ構成と異なる
 #. de: Der Job bzw. die Klasse ist nicht die gleiche wie beim letzten Mal.
 #. fr: Les jobs et classes de l'équipe diffèrent de ceux de l'incursion précédente.
-# aeria-terms: {"job":"a9421a81ecaa"}
+# aeria-terms: {"Party":"66ce98c91d3e","job":"a9421a81ecaa"}
 msgctxt "LogMessage:7576:0:5"
 msgid "Party class/job makeup differs from last campaign."
-msgstr "Состав классов и профессий отличается от того, что был при последнем выходе"
+msgstr "Состав классов и профессий отряда отличается от того, что был при последнем выходе"
 
 #. ja: 踏破状況に差異がある
 #. de: Der Fortschritt ist nicht der gleiche.
 #. fr: Les membres de l'équipe ne sont pas tous au même étage.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7577:0:5"
 msgid "Floor progression differs between party members."
-msgstr "Участники группы находятся на разных этажах"
+msgstr "Участники отряда находятся на разных этажах"
 
 #. ja: 専用装備の強化値が条件を満たしていない<br>必要強化値（武器・盾）：<num $n1>、必要強化値（防具）：<num $n2>
 #. de: Die Verstärkung der Ausrüstung reicht nicht aus.<br>Erfordert Waffe der Stufe <num $n1> und Rüstung der Stufe <num $n2>.
@@ -3209,9 +3275,10 @@ msgstr "Вы не соответствуете требованиям для н�
 #. ja: コンテンツに参加中、オフラインなどのメンバーがいるため、参加申請できません。
 #. de: Registrierung nicht möglich. Mindestens ein Grup<shy>pen<shy>mit<shy>glied ist nicht eingeloggt oder in einem anderen Inhalt.
 #. fr: Enregistrement impossible. Un ou plusieurs membres de l'équipe participent déjà à une mission ou sont déconnectés.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7583:0:5"
 msgid "Unable to register. One or more party members are offline or bound by another duty."
-msgstr "Не удалось подать заявку. Один или несколько участников группы не в сети или проходят другое подземелье"
+msgstr "Не удалось подать заявку. Один или несколько участников отряда не в сети или проходят другое подземелье"
 
 #. ja: コンテンツ参加申請中のため、その操作はできません。
 #. de: Aktion nicht möglich, weil du für einen Inhalt registriert bist.
@@ -3230,16 +3297,18 @@ msgstr "Не удалось подать заявку. Не выполнены �
 #. ja: ２箇所以上の対応コンテンツへの参加条件を満たす
 #. de: Bedingungen für mindestens zwei Inhalte sind erfüllt
 #. fr: Remplir les conditions nécessaires pour au moins deux missions.
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:7586:0:5"
 msgid "Fulfill the requirements for two or more duties."
-msgstr "Выполните требования как минимум для двух подземелий"
+msgstr "Выполните требования как минимум для двух миссий"
 
 #. ja: クロスワールドパーティ中のため、参加申請できませんでした。
 #. de: Registrierung nicht möglich. Du bist in einer weltenübergreifenden Gruppe.
 #. fr: Enregistrement impossible. Vous êtes dans une équipe inter-Monde.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7587:0:5"
 msgid "Unable to register while participating in a cross-world party."
-msgstr "Нельзя подать заявку, находясь в межмировой группе"
+msgstr "Нельзя подать заявку, находясь в межмировом отряде"
 
 #. ja: 開催時間内の対象G.A.T.E.に参加していない<br>※開催時間内で既に参加済みです。
 #. de: - du bereits an dem GATE teilnimmst.
@@ -3379,23 +3448,23 @@ msgstr "Изменения отменены"
 #. ja: パーティリーダーではないため、PvPチーム結成の申請は行えません。
 #. de: Gründung des Teams nicht möglich. Du bist nicht der Gruppenanführer.
 #. fr: Action impossible. Seul le chef d'équipe peut proposer de former une <ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color>.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7611:0:5"
 msgid "Unable to execute command. Only a party leader can create a PvP team."
-msgstr "Создать PvP-команду может только лидер группы"
+msgstr "Создать PvP-команду может только лидер отряда"
 
 #. ja: すでにPvPチーム加入者がパーティにいるため、PvPチーム結成の申請は行えません。
 #. de: Gründung des Teams nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder sind bereits in einem PvP-Team.
 #. fr: Action impossible. Un ou plusieurs équipiers appartiennent déjà à une <ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color>.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7612:0:5"
 msgid "Unable to create PvP team. One or more party members already belong to a PvP team."
-msgstr "В группе уже есть участник PvP-команды"
+msgstr "В отряде уже есть участник PvP-команды"
 
 #. ja: PvPチームを結成するための人数が揃っていないため、PvPチーム結成の申請は行えません。
 #. de: Gründung des Teams nicht möglich. Nicht genügend Grup<shy>pen<shy>mit<shy>glieder.
 #. fr: Action impossible. Le nombre d'équipiers requis pour former une <ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color> n'est pas atteint.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7613:0:5"
 msgid "Unable to create PvP team. Insufficient party members."
 msgstr "Для команды PvP не хватает участников"
@@ -3403,26 +3472,26 @@ msgstr "Для команды PvP не хватает участников"
 #. ja: フリートライアルのメンバーがいるため、PvPチーム結成の申請は行えません。
 #. de: Gründung des Teams nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder befinden sich in der kostenlosen Testspielzeit.
 #. fr: Action impossible. Un ou plusieurs équipiers utilisent la version d'essai gratuit.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7614:0:5"
 msgid "Unable to create PvP team. One or more party members are on the free trial."
-msgstr "Нельзя создать команду PvP: в группе есть участник бесплатной пробной версии"
+msgstr "Нельзя создать команду PvP: в отряде есть участник бесплатной пробной версии"
 
 #. ja: PvPコンテンツを開放していないメンバーがいるため、PvPチーム結成の申請は行えません。
 #. de: Gründung des Teams nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glied haben die PvP-Inhalte noch nicht freigeschaltet.
 #. fr: Action impossible. Un ou plusieurs équipiers n'ont pas accès aux missions de combat JcJ.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7615:0:5"
 msgid "Unable to create PvP team. One or more party members have yet to unlock PvP."
-msgstr "Кто-то из участников группы ещё не открыл PvP"
+msgstr "Кто-то из участников отряда ещё не открыл PvP"
 
 #. ja: ほかのPvPチームから勧誘を受けているメンバーがいるため、PvPチーム結成の申請は行えません。
 #. de: Gründung des Teams nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder wurden von einem anderen PvP-Team eingeladen.
 #. fr: Action impossible. Un ou plusieurs équipiers ont été invités à rejoindre une autre <ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color>.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7616:0:5"
 msgid "Unable to create PvP team. One or more party members have yet to decline invites to other PvP teams."
-msgstr "Кто-то из участников группы ещё не отклонил приглашение в другую PvP-команду"
+msgstr "Кто-то из участников отряда ещё не отклонил приглашение в другую PvP-команду"
 
 #. ja: すでに同名のPvPチームがあります。別の名称を指定してください。
 #. de: Bitte wähle einen anderen Namen. Der Name ist bereits vergeben.
@@ -3527,10 +3596,10 @@ msgstr "Не все участники дали согласие. Создать
 #. ja: PvPチームの結成に失敗しました。<br>全員がエリア移動をすることでこの問題が解消される可能性があります。
 #. de: Gründung des Teams nicht möglich.<br>Möglicherweise kann das Problem behoben werden, indem alle Mitglieder das Areal wechseln.
 #. fr: La formation de l'<ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color> a échoué.<br>Le problème peut éventuellement être résolu si tous les équipiers changent de zone.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7629:0:5"
 msgid "Unable to create PvP team. Please move party to a different area and try again."
-msgstr "Не удалось создать PvP-команду<br>Попробуйте перейти всей группой в другую локацию"
+msgstr "Не удалось создать PvP-команду<br>Попробуйте перейти всем отрядом в другую локацию"
 
 #. ja: フリートライアルのため、PvPチーム結成に同意できませんでした。
 #. de: Zustimmung nicht möglich. Du befindest dich in der kostenlosen Testspielzeit.
@@ -4071,10 +4140,10 @@ msgstr "Нельзя подать новую заявку на создание 
 #. ja: PvPチームの結成に失敗しました。<br>全員がエリア移動をすることでこの問題が解消される可能性があります。
 #. de: Gründung des Teams nicht möglich.<br>Möglicherweise kann das Problem behoben werden, indem alle Mitglieder das Areal wechseln.
 #. fr: La formation de l'<ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color> a échoué.<br>Le problème peut éventuellement être résolu si tous les équipiers changent de zone.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:7698:0:5"
 msgid "Unable to create PvP team.  Please move party to a different area and try again."
-msgstr "Не удалось создать PvP-команду. Попробуйте перейти всей группой в другую локацию"
+msgstr "Не удалось создать PvP-команду. Попробуйте перейти всем отрядом в другую локацию"
 
 #. ja: PvPチームの加入に失敗しました。<br>エリア移動をすることでこの問題が解消される可能性があります。
 #. de: Beitritt zum PvP-Team ist fehlgeschlagen.<br>Möglicherweise kann das Problem behoben werden, indem du das Areal wechselst.
@@ -4426,10 +4495,10 @@ msgstr "Нельзя выполнить команду во время прос�
 #. ja: コンテンツ参加確認中のため、その操作はできません。
 #. de: Aktion kann nicht ausgeführt werden, während das Bestätigungsfenster der Inhaltssuche aktiv ist.
 #. fr: Impossible d'exécuter cette commande durant la confirmation de par<shy>ti<shy>ci<shy>pa<shy>tion.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7759:0:5"
 msgid "Unable to execute command while waiting for Duty Finder."
-msgstr "Нельзя выполнить команду, пока вы подтверждаете участие через «Поиск активностей»"
+msgstr "Нельзя выполнить команду, пока вы подтверждаете участие через «Поиск миссий»"
 
 #. ja: キャラクターメイキング中のため、その操作はできません。
 #. de: Aktion kann während der Charaktererschaffung nicht ausgeführt werden.
@@ -4477,6 +4546,7 @@ msgstr "Нельзя выполнить команду, пока вы несёт
 #. ja: パーティ募集中のため、その操作はできません。
 #. de: Aktion kann während der Gruppen<shy>suche nicht ausgeführt werden.
 #. fr: Impossible d'exécuter cette commande lors d'un recrutement d'équipiers.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7766:0:5"
 msgid "Unable to execute command while using the Party Finder."
 msgstr "Нельзя выполнить команду во время набора группы"
@@ -4592,9 +4662,10 @@ msgstr "Нельзя выполнить команду, пока вы ожида
 #. ja: クロスワールドパーティ中もしくはアライアンス参加中のため、その操作はできません。
 #. de: Aktion kann in einer weltenübergreifenden Gruppe oder Allianz nicht ausgeführt werden.
 #. fr: Impossible d'exécuter cette commande en étant dans une équipe inter-Monde ou une alliance.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7784:0:5"
 msgid "Unable to execute command while participating in a cross-world party or alliance."
-msgstr "Нельзя выполнить команду, находясь в межмировой группе или альянсе"
+msgstr "Нельзя выполнить команду, находясь в межмировом отряде или альянсе"
 
 #. ja: 現在の状態では使用できません。
 #. de: Kann im derzeitigen Zustand nicht verwendet werden.
@@ -4676,9 +4747,10 @@ msgstr "Нельзя выполнить команду во время прох�
 #. ja: ワールド内限定のパーティ募集中は、その操作はできません。
 #. de: Aktion nicht möglich, während du eine Gruppe erstellst, die auf eine Welt begrenzt ist.
 #. fr: Impossible d'exécuter cette commande pendant un recrutement limité à ce Monde.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7796:0:5"
 msgid "Unable to execute command while recruiting for a non-cross-world party."
-msgstr "Нельзя выполнить команду во время набора группы только для своего мира"
+msgstr "Нельзя выполнить команду во время набора отряда только для своего мира"
 
 #. ja: 衣替状態のため、その操作はできません。
 #. de: Aktion nicht möglich, da du noch verkleidet bist.
@@ -4788,10 +4860,10 @@ msgstr "Рейтинг уже сброшен"
 #. ja: コンテンツファインダー申請中はリセットできません。
 #. de: Wertung kann nicht zurückgesetzt werden, da die Gruppen<shy>suche aktiv ist.
 #. fr: Impossible de réinitialiser la cote en étant enregistré dans l'outil de mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7907:0:5"
 msgid "Unable to reset rating while using the Duty Finder."
-msgstr "Нельзя сбросить рейтинг, пока вы используете «Поиск активностей»"
+msgstr "Нельзя сбросить рейтинг, пока вы используете «Поиск миссий»"
 
 #. ja: 推奨解像度を満たしていなかった為、ウィンドウサイズを60％に縮小しました。
 #. de: Du verwendest nicht die empfohlene Bildschirmauflösung. Die Benutzeroberfläche wurde daher auf 60 % verkleinert.
@@ -4843,23 +4915,26 @@ msgstr "Загружен набор «<string $s1>»"
 #. ja: パーティリーダーではないため募集はできません。
 #. de: Suche kann nur von Gruppenanführern gestartet werden.
 #. fr: Seul le chef d'équipe peut lancer un recrutement d'équipiers.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7923:0:5"
 msgid "Only the party leader can recruit members."
-msgstr "Только лидер группы может набирать участников"
+msgstr "Только лидер отряда может набирать участников"
 
 #. ja: すでにパーティ募集中です。
 #. de: Du nutzt die Gruppen<shy>suche bereits.
 #. fr: Vous êtes déjà en cours de recrutement.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7924:0:5"
 msgid "Party recruitment is already in progress."
-msgstr "Набор группы уже идёт"
+msgstr "Набор отряда уже идёт"
 
 #. ja: メンバーが規定人数を満たしていません。
 #. de: Nicht genug Mitglieder.
 #. fr: Votre équipe ne compte pas le nombre de par<shy>ti<shy>ci<shy>pants requis.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7925:0:5"
 msgid "The party does not meet the size requirement."
-msgstr "В группе недостаточно участников"
+msgstr "В отряде недостаточно участников"
 
 #. ja: 自分のジョブが青魔道士ではありません。
 #. de: Du bist aktuell <if $gn4>keine Blaumagierin<else>kein Blaumagier</if>.
@@ -4872,10 +4947,10 @@ msgstr "Вы сейчас не синий маг"
 #. ja: メンバー全員を青魔道士で構成してください。
 #. de: Alle Grup<shy>pen<shy>mit<shy>glieder müssen Blaumagier sein.
 #. fr: Un ou plusieurs membres de votre équipe ne sont pas mages bleus.
-# aeria-terms: {"blue mage":"06ef4411b9db"}
+# aeria-terms: {"Party":"66ce98c91d3e","blue mage":"06ef4411b9db"}
 msgctxt "LogMessage:7927:0:5"
 msgid "All party members must be blue mages."
-msgstr "Все участники группы должны быть синими магами"
+msgstr "Все участники отряда должны быть синими магами"
 
 #. ja: アクティブセットの名称を変更しました。
 #. de: Name des Kommando-Sets geändert.
@@ -4923,38 +4998,42 @@ msgstr "Маршрут «Рубин» открыт"
 #. ja: パーティリーダーでないため実行できません。
 #. de: Der Vorgang ist nicht möglich, weil du nicht der Gruppenanführer bist.
 #. fr: Opération impossible. Vous n'êtes pas le chef d'équipe.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7952:0:5"
 msgid "Unable to convert. You are not the party leader."
-msgstr "Преобразование невозможно: вы не лидер группы"
+msgstr "Преобразование невозможно: вы не лидер отряда"
 
 #. ja: パーティメンバー全員が同一エリアにいないため実行できません。
 #. de: Der Vorgang ist nicht möglich, weil nicht alle Grup<shy>pen<shy>mit<shy>glieder im gleichen Areal sind.
 #. fr: Opération impossible. Tous les membres de l'équipe ne sont pas dans la même zone.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7953:0:5"
 msgid "Unable to convert. Party members are in different areas."
-msgstr "Преобразование невозможно: участники группы находятся в разных зонах"
+msgstr "Преобразование невозможно: участники отряда находятся в разных зонах"
 
 #. ja: パーティ募集中のため実行できません。
 #. de: Der Vorgang ist nicht möglich, weil aktiv für diese Gruppe rekrutiert wird.
 #. fr: Opération impossible. Un recrutement est en cours.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7954:0:5"
 msgid "Unable to convert while using the Party Finder."
-msgstr "Преобразование невозможно во время поиска группы"
+msgstr "Преобразование невозможно во время поиска отряда"
 
 #. ja: クロスワールドパーティ状態でのみ利用できます。
 #. de: Der Vorgang kann nur von einer weltenübergreifenden Gruppe durchgeführt werden.
 #. fr: Vous ne pouvez effectuer cette opération qu'au sein d'une équipe inter-Monde.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7955:0:5"
 msgid "Command available for cross-world parties only."
-msgstr "Команда доступна только для межмировых групп"
+msgstr "Команда доступна только для межмировых отрядов"
 
 #. ja: コンテンツファインダー申請中のため実行できません。
 #. de: Der Vorgang ist nicht möglich, weil die Inhaltssuche aktiv ist.
 #. fr: Opération impossible. Un enregistrement est en cours dans l'outil de mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7956:0:5"
 msgid "Unable to convert while using the Duty Finder."
-msgstr "Преобразование невозможно во время использования «Поиска активностей»"
+msgstr "Преобразование невозможно во время использования «Поиска миссий»"
 
 #. ja: 現在の状態では実行できません。
 #. de: Der Vorgang kann im aktuellen Zustand nicht durchgeführt werden.
@@ -4966,16 +5045,18 @@ msgstr "Сейчас эту команду выполнить нельзя"
 #. ja: パーティリーダーがパーティ構成の変更を行いました。<br>クロスワールドパーティをワールド内パーティに変更します。
 #. de: Der Gruppenanführer hat die Gruppenart von „weltenübergreifend“ zu „gleiche Welt“ geändert.
 #. fr: Le chef d'équipe a modifié le type d'équipe. L'équipe inter-Monde va devenir une équipe classique.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7958:0:5"
 msgid "The party leader has converted your cross-world party to an in-world party."
-msgstr "Лидер группы преобразовал межмировую группу в группу одного мира"
+msgstr "Лидер отряда преобразовал межмировой отряд в отряд одного мира"
 
 #. ja: パーティ構成の変更に失敗したため、一部のプレイヤーがパーティから離脱しました。
 #. de: Die Gruppenart konnte nicht geändert werden und einige Grup<shy>pen<shy>mit<shy>glieder wurden ausgeschlossen.
 #. fr: Le type d'équipe n'a pas pu être changé. Certains joueurs ont été exclus de l'équipe.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7959:0:5"
 msgid "Conversion to in-world party failed. Some players were removed from the party."
-msgstr "Не удалось преобразовать группу в группу одного мира. Некоторые игроки покинули группу"
+msgstr "Не удалось преобразовать отряд в отряд одного мира. Некоторые игроки покинули отряд"
 
 #. ja: ボール発射後は実行できません。
 #. de: Kann direkt nach dem Feuern nicht ausgeführt werden.
@@ -5032,9 +5113,10 @@ msgstr "Все печати проставлены. Отнесите дневн�
 #. ja: 印が１つも付けられていない、またはすべてのコンテンツをコンプリート済みのため、<br>セカンドチャンス「リトライ」を実行できません。
 #. de: Nicht möglich, weil noch kein Feld oder bereits alle Felder mit Aufklebern versehen sind.
 #. fr: Action impossible. Soit aucune vignette n'a encore été collée, soit toutes les aventures ont été réussies.
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:7969:0:5"
 msgid "Retry cannot be selected when no seals have been applied to the journal, or all duties are complete."
-msgstr "Нельзя воспользоваться повторной попыткой, если в дневнике ещё нет печатей или все задания уже завершены"
+msgstr "Нельзя воспользоваться повторной попыткой, если в дневнике ещё нет печатей или все миссии уже завершены"
 
 #. ja: 所持品がいっぱいのため、ご褒美を受け取れません。
 #. de: Vergütung kann nicht angenommen werden, weil das Inventar voll ist.
@@ -5076,9 +5158,10 @@ msgstr "Нельзя воспользоваться перемешиванием
 #. de: Du hast zusätzliche Chance-Punkte (<num $n1>/9) bekommen,<br>weil ein Mitglied den Inhalt zum ersten Mal abgeschlossen hat.
 #. fr: Un équipier ayant réussi cette mission pour la première fois, le nombre de points de chance dans le carnet de Khloe a augmenté. (<num $n1>/9)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:7975:0:5"
 msgid "One or more party members have yet to complete this duty. Second Chance points added to your journal. (<num $n1>/9)"
-msgstr "Некоторые участники группы ещё не проходили это задание. В дневник добавлены очки второго шанса. (<num $n1>/9)"
+msgstr "Некоторые участники отряда ещё не проходили это задание. В дневник добавлены очки второго шанса. (<num $n1>/9)"
 
 #. ja: 「クロの空想帳」対象コンテンツのコンプリート条件を満たしました。<br>「クロの空想帳」に印を付けることができます。
 #. de: Du hast einen Inhalt für Khloes Aben<shy>teuer<shy>album abgeschlossen und kannst nun einen Aufkleber erhalten.
@@ -5249,10 +5332,10 @@ msgstr "Нельзя открыть во время прохождения за�
 #. ja: コンテンツファインダーの対象コンテンツでないため開けません。
 #. de: Dieser Inhalt kann nicht über die Inhaltssuche betreten werden.
 #. fr: Accès impossible par l'outil de mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:7995:0:5"
 msgid "This duty or category cannot be accessed via the Duty Finder."
-msgstr "Это задание или категория недоступны через «Поиск активностей»"
+msgstr "Это задание или категория недоступны через «Поиск миссий»"
 
 #. ja: 対象コンテンツが未開放のため開けません。
 #. de: Dieser Inhalt wurde noch nicht freigespielt.
