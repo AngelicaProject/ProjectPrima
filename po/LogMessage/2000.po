@@ -174,9 +174,10 @@ msgstr "Появился выход. В этой области осталось
 #. ja: 1人用コンテンツ参加中のため、パーティから離脱しました。
 #. de: Du hast deine Gruppe verlassen. Diesen Einsatz musst du alleine ausführen.
 #. fr: Vous avez été évincé<if $gn4>e</if> de l'équipe car vous participez à une mission qui doit être effectuée en solo.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2019:0:5"
 msgid "You leave your party. This duty must be performed alone."
-msgstr "Вы покидаете группу. Это задание нужно проходить в одиночку"
+msgstr "Вы покидаете отряд. Это задание нужно проходить в одиночку"
 
 #. ja: 御用邸の道化師が、血文字の紙片を落とした。
 #. de: Der Hofnarr lässt ein Stück blutiges Pergament fallen.
@@ -868,16 +869,18 @@ msgstr "Вам нечего возложить на Весы правосуди�
 #. ja: パーティメンバーが彫像を取ろうとしている……
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied nimmt gerade eine Statuette auf.
 #. fr: Un autre équipier essaie aussi de prendre une statuette.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2103:0:5"
 msgid "Another party member is also attempting to remove the statuette."
-msgstr "Другой участник группы уже пытается забрать статуэтку"
+msgstr "Другой участник отряда уже пытается забрать статуэтку"
 
 #. ja: パーティメンバーが彫像を置こうとしている……
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied legt gerade eine Statuette ab.
 #. fr: Un autre équipier essaie aussi de poser une statuette.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2104:0:5"
 msgid "Another party member is also attempting to place the statuette."
-msgstr "Другой участник группы уже пытается поставить статуэтку"
+msgstr "Другой участник отряда уже пытается поставить статуэтку"
 
 #. ja: トンベリがランタンオイルを落とした。
 #. de: Der Tomberry hat ein Fläschchen Laternenöl fallen lassen.
@@ -1336,9 +1339,10 @@ msgstr "Вы не допущены к управлению этой магите
 #. de: Weil ein Charakter diesen Inhalt noch nicht beendet hat, <br>erhalten alle Teilnehmer bei Abschluss einen Bonus auf die Vergütung.
 #. fr: Un ou plusieurs par<shy>ti<shy>ci<shy>pants n'ont pas encore accompli cette mission.<br>Un bonus sera accordé en cas de réussite.
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2162:0:5"
 msgid "One or more party members are new to this duty.<br>A bonus will be awarded for swift completion of objectives."
-msgstr "В группе есть участники, впервые проходящие это задание<br>За быстрое выполнение целей полагается бонус"
+msgstr "В отряде есть участники, впервые проходящие это задание<br>За быстрое выполнение целей полагается бонус"
 
 #. ja: 初回制覇の参加メンバーがいるためボーナスがつき、<if ($n1 > 0)><kilo $n1 ",">ポイントの経験値と</if><kilo $n2 ",">ギルを得た。
 #. de: Als Bonus für den ersten erfolgreichen Abschluss eines Teilnehmers hast du <kilo $n1 "."> Routine und <kilo $n2 "."> Gil erhalten.
@@ -2016,9 +2020,10 @@ msgstr "Нельзя воспользоваться. Сначала активи
 #. macro: <if ($n1 > 0)><kilo $n1 ","> experience points and </if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
+# aeria-terms: {"Duty Roulette":"fa070e972ae7"}
 msgctxt "LogMessage:2246:0:5"
 msgid "A bonus of <if ($n1 > 0)><kilo $n1 \",\"> experience points and </if><kilo $n2 \",\"> gil has been awarded for using the duty roulette."
-msgstr "За прохождение случайного подземелья вы получаете <if ($n1 > 0)><kilo $n1 \",\"> оч. опыта и </if><kilo $n2 \",\"> гил"
+msgstr "За прохождение Рулетки миссий вы получаете <if ($n1 > 0)><kilo $n1 \",\"> оч. опыта и </if><kilo $n2 \",\"> гил"
 
 #. ja: 魔法障壁発動器が操作可能になった！
 #. de: Der Elementarumwandler ist betriebsbereit!
@@ -2745,9 +2750,10 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> — shows the first branch when the character is the player reading the text, otherwise the branch after <else>; player = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <capitalize><player-name $n1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2338:0:5"
 msgid "<if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> proceeded further in the duty than the party leader."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> продвинулись дальше лидера группы в этом испытании"
+msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> продвинулись дальше лидера отряда в этой миссии"
 
 #. ja: <player-name $n1>は、中毒防止制限中です。
 #. de: <if-self $n1>Du kannst<else><capitalize><player-name $n1></capitalize> kann</if-self> vor<shy>über<shy>gehend nicht teilnehmen.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -2773,9 +2779,10 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. ja: 同意が得られなかったため、突入を中断します。
 #. de: Die Teilnahme wurde abgebrochen, weil nicht alle bereit waren.
 #. fr: Un ou plusieurs équipiers n'ont pas donné leur accord.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2341:0:5"
 msgid "Canceling battle commencement. One or more party members have voted to wait."
-msgstr "Начало сражения отменено: кто-то из группы решил подождать"
+msgstr "Начало сражения отменено: кто-то из отряда решил подождать"
 
 #. ja: 突入の確認が、中断されました。
 #. de: Die Anfrage über die Teilnahme wurde abgebrochen.
@@ -2788,9 +2795,10 @@ msgstr "Голосование за начало сражения отменен
 #. ja: 同意が得られたため、突入の準備をおこないます。
 #. de: Die Teilnahme wird vorbereitet. Alle haben angegeben, bereit zu sein.
 #. fr: Les équipiers ont donné leur accord. Préparez-vous à accéder à la mission.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2343:0:5"
 msgid "All party members have voted to commence the battle. Now entering the instance."
-msgstr "Все участники группы готовы к сражению. Входим в область"
+msgstr "Все участники отряда готовы к сражению. Входим в область"
 
 #. ja: 一定時間が経過したため、突入の確認を中断します。
 #. de: Die Anfrage über die Teilnahme wurde abgebrochen, da zu viel Zeit verstrichen ist.
@@ -5045,10 +5053,10 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> разбивает
 #. macro: <switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <if ($n1 == 1)>party<else>parties</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
-# aeria-terms: {"Grand Company":"3e02ab7f2123"}
+# aeria-terms: {"Grand Company":"3e02ab7f2123","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2656:0:5"
 msgid "As each Grand Company will dispatch only <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> <if ($n1 == 1)>party<else>parties</if> to the campaign, tomelith activation patterns will differ."
-msgstr "В поход от каждой Великой компании отправится <if $n1><if ($n1 <= 10)><switch $n1><case>одна<case>две<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if> <if ($n1 == 1)>группа<else>групп</if>, поэтому схемы активации томелитов будут различаться"
+msgstr "В поход от каждой Великой компании отправится <if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if> <if ($n1 == 1)>отряд<else>отрядов</if>, поэтому схемы активации томелитов будут различаться"
 
 #. ja: <player-name $n1>は死刑判決を受けた……
 #. de: Über <if-self $n1>dich<else><player-name $n1></if-self> wurde die Todesstrafe verhängt ...
@@ -5754,10 +5762,10 @@ msgstr "Вы входите в полуразрушенный трюм"
 #. ja: 床に影の力が集束していく……
 #. de: Schatten sammeln sich auf dem Boden.
 #. fr: Le pouvoir des ombres se concentre sur le sol...
-# aeria-terms: {"shadow":"fcb0cce350c7"}
+# aeria-terms: {"shadow":"e0b4ba2595af"}
 msgctxt "LogMessage:2747:0:5"
 msgid "Shadows gather on the floor."
-msgstr "Тени Прото-Озмы сгущаются на полу"
+msgstr "Тени сгущаются на полу"
 
 #. ja: オーバータイム開始！
 #. de: Verlängerung!
@@ -5856,10 +5864,10 @@ msgstr "Заполняйте шкалу оценки задания, участ�
 #. ja: 緊急任務発生中につき、コンテンツの制限時間が15分（地球時間）延長されました。
 #. de: Eine Notmission hat soeben begonnen, daher wurde die Zeit für den Inhalt um 15 Minuten (Erdenzeit) verlängert!
 #. fr: Une mission critique s'est produite. Le temps imparti pour la mission est prolongé de 15 minutes (temps réel).
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:2763:0:5"
 msgid "Emergency mission commenced. Duty duration extended 15 minutes (Earth time)."
-msgstr "Началось срочное задание. Время активности увеличено на 15 минут (земного времени)"
+msgstr "Началось срочное задание. Время миссии увеличено на 15 минут (земного времени)"
 
 #. ja: 封印石が傷つき、妖獣王の気配が漂い始めた……。
 #. de: Der erste Bindestein ist gelöst -<br>du spürst einen Hauch von Buers Präsenz ...
@@ -5895,10 +5903,10 @@ msgstr "Во время срочного задания нельзя смени�
 #. ja: 緊急任務が発生したため、コンテンツの制限時間が15分（地球時間）延長された！
 #. de: Eine Notmission hat soeben begonnen, daher wurde die Zeit für den Inhalt um 15 Minuten (Erdenzeit) verlängert!
 #. fr: Une mission critique s'est produite. Le temps imparti pour la mission est prolongé de 15 minutes (temps réel).
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:2768:0:5"
 msgid "Duty duration extended 15 minutes (Earth time)."
-msgstr "Время активности увеличено на 15 минут (земного времени)"
+msgstr "Время миссии увеличено на 15 минут (земного времени)"
 
 #. ja: 妖獣王の封印が解かれようとしている。魔導通路が起動した！
 #. de: Das leuchtende Siegel droht zu brechen. Das Portal wurde aktiviert!
@@ -7121,6 +7129,7 @@ msgstr "Альфа достаёт карту!"
 #. ja: コンテンツ進行に必要な人数に満たないため、コンテンツから強制退出されました。
 #. de: Du wurdest aus dem Inhalt entfernt, weil die Mindest<shy>teil<shy>nehmer<shy>zahl nicht erreicht ist.
 #. fr: Vous avez été expulsé<if $gn4>e</if> de l'instance, car votre équipe ne comptait pas le nombre de par<shy>ti<shy>ci<shy>pants requis.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2917:0:5"
 msgid "You were expelled from the duty. Party requirements not met."
 msgstr "Вас исключили из задания: не набралось нужное число участников"
@@ -7415,6 +7424,7 @@ msgstr "Воздух вокруг древнего змея начинает п�
 #. de: Kampfunfähige Teilnehmer werden automatisch wiederbelebt.<br>Achtung: Die Jagd scheitert, wenn drei Mal ein Teilnehmer kampfunfähig geworden ist.
 #. fr: Les équipiers mis K.O. durant cette bataille sont au<shy>to<shy>ma<shy>ti<shy>que<shy>ment ranimés.<br>Toutefois, la mission échouera s'il se produit plus de trois K.O. au total.
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2956:0:5"
 msgid "When KO'd, players will automatically be prompted to revive, and be able to rejoin the battle.<br>The duty is failed when the party records its third individual player KO."
 msgstr "После нокаута игроки смогут воскреснуть и вернуться в бой<br>Третье индивидуальное поражение игрока означает провал задания"
@@ -7590,10 +7600,10 @@ msgstr "Мустадио ищет брешь в вашей защите"
 #. macro: <ui-edge-color 501> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 501 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Duty Action":"7ad746834000","Garuda":"98edb590934d"}
+# aeria-terms: {"Duty Action":"bd4de5007680","Garuda":"98edb590934d"}
 msgctxt "LogMessage:2977:0:5"
 msgid "Use the duty action <ui-color 500><ui-edge-color 501>Warp-strike</ui-edge-color></ui-color> to attack Garuda from a distance and move swiftly around the battlefield."
-msgstr "Используйте действие задания <ui-color 500><ui-edge-color 501>Сдвиг-удар</ui-edge-color></ui-color>, чтобы атаковать Гаруду издалека и быстро перемещаться по полю боя"
+msgstr "Используйте действие миссии <ui-color 500><ui-edge-color 501>Сдвиг-удар</ui-edge-color></ui-color>, чтобы атаковать Гаруду издалека и быстро перемещаться по полю боя"
 
 #. ja: ノクティスとタイミングを合わせて「シフトブレイク」を放ち、<br>「リンクアタック」を狙え！
 #. de: Führe im richtigen Moment zusammen mit Noctis einen Warp-Angriff aus,<br>um eine starke Kombo-Attacke auszulösen!

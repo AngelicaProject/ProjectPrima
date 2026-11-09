@@ -214,34 +214,34 @@ msgstr "Идёт получение предметов из инвентаря. 
 #. ja: パーティメンバーが同じPvPチームに所属していないため、パーティ募集の登録ができません。
 #. de: Rekrutierung nicht möglich, da nicht alle Mitglieder der Gruppe im selben PvP-Team sind.
 #. fr: Impossible d'enregistrer le recrutement. Un ou plusieurs membres n'appartient pas à l'<ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color>.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:1026:0:5"
 msgid "Unable to complete party recruitment registration. One or more party members are not on the same PvP team."
-msgstr "Не удалось зарегистрировать набор в группу. Не все участники состоят в одной команде PvP"
+msgstr "Не удалось зарегистрировать набор в отряд. Не все участники состоят в одной команде PvP"
 
 #. ja: PvPチームに所属していないため、パーティ募集の登録ができません。
 #. de: Rekrutierung nicht möglich, da du dich nicht in einem PvP-Team befindest.
 #. fr: Impossible d'enregistrer le recrutement. Vous ne faites pas partie d'une <ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color>.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:1027:0:5"
 msgid "Unable to complete party recruitment registration. You do not belong to a PvP team."
-msgstr "Не удалось зарегистрировать набор в группу. Вы не состоите в команде PvP"
+msgstr "Не удалось зарегистрировать набор в отряд. Вы не состоите в команде PvP"
 
 #. ja: PvPチームに所属していないため、参加できません。
 #. de: Beitritt nicht möglich, da du dich nicht in einem PvP-Team befindest.
 #. fr: Participation impossible. Vous ne faites pas partie d'une <ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color>.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:1028:0:5"
 msgid "Unable to join party. You do not belong to a PvP team."
-msgstr "Не удалось вступить в группу. Вы не состоите в команде PvP"
+msgstr "Не удалось вступить в отряд. Вы не состоите в команде PvP"
 
 #. ja: パーティリーダーのPvPチームに所属していないため、パーティに参加できません。
 #. de: Beitritt nicht möglich, da du dich nicht im PvP-Team des Gruppenanführers befindest.
 #. fr: Participation impossible. Vous ne faites pas partie de l'<ui-color 506><ui-edge-color 507>équipe JcJ</ui-edge-color></ui-color> du chef d'équipe.
-# aeria-terms: {"PvP":"95f81aceb7d8"}
+# aeria-terms: {"Party":"66ce98c91d3e","PvP":"95f81aceb7d8"}
 msgctxt "LogMessage:1029:0:5"
 msgid "Unable to join party. You do not belong to the leader's PvP team."
-msgstr "Не удалось вступить в группу. Вы не состоите в команде PvP лидера"
+msgstr "Не удалось вступить в отряд. Вы не состоите в команде PvP лидера"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はステータス異常のため、採掘を行えません。
 #. de: Unter dem derzeitigen Status kannst du nicht abbauen.
@@ -2375,9 +2375,10 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы отмечаете<else><if $gn7><no
 #. ja: パーティリーダーが同一エリアにいないため、設定できませんでした。
 #. de: Setzen der Markierung nicht möglich, da sich der Anführer der Gruppe in einem anderen Areal befindet.
 #. fr: Impossible de placer le signe. Le chef d'équipe est dans une zone différente.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1292:0:5"
 msgid "Unable to register sign. Your party leader is in a different area."
-msgstr "Не удалось установить метку. Лидер вашей группы находится в другой зоне"
+msgstr "Не удалось установить метку. Лидер вашего отряда находится в другой зоне"
 
 #. ja: ターゲットマーカーを設定できませんでした。
 #. de: Markierung konnte nicht gesetzt werden.
@@ -2704,9 +2705,10 @@ msgstr "Нельзя призвать миньона, пока рядом спу
 #. ja: パーティメンバーがいっぱいのためバディを呼び出せません。
 #. de: Die Gruppe ist bereits voll, daher kannst du keinen Mitstreiter herbeirufen.
 #. fr: Impossible d'appeler un compagnon. L'équipe est au complet.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1332:0:5"
 msgid "Party full. Unable to summon companion."
-msgstr "Группа полная. Нельзя призвать спутника"
+msgstr "Отряд полон. Нельзя призвать спутника"
 
 #. ja: バディの呼び出しに失敗しました。
 #. de: Der Mitstreiter konnte nicht herbeigerufen werden. Du verlierst <noun-de Item 2 $n1 1 4 1>.
@@ -3115,9 +3117,10 @@ msgstr "«<sheet Leve $n1 0>» можно начать только <if \"<sheet
 #. de: „<sheet Leve $n1 0>“ kann nicht begonnen werden. Jemand in deiner Gruppe ist zu weit entfernt.
 #. fr: Impossible de commencer “<sheet Leve $n1 0>”. Un ou plusieurs équipiers sont trop loin.
 #. macro: <sheet Leve $n1 0> — a value from a game data sheet, such as a name; sheet = Leve, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1381:0:5"
 msgid "Cannot initiate “<sheet Leve $n1 0>.” One or more party members are too far away."
-msgstr "Нельзя начать поручение «<sheet Leve $n1 0>»: один или несколько участников группы слишком далеко"
+msgstr "Нельзя начать поручение «<sheet Leve $n1 0>»: один или несколько участников отряда слишком далеко"
 
 #. ja: 「<string $gs56>」を遂行中のため、リーヴを開始できません。
 #. de: Der Freibrief kann nicht begonnen werden, da du gerade beschäftigt bist.
@@ -3131,17 +3134,18 @@ msgstr "Нельзя начать поручение гильдии: сейча�
 #. ja: パーティメンバーが任務を遂行中のため、リーヴを開始できません。
 #. de: Der Freibrief kann nicht begonnen werden, da jemand in deiner Gruppe gerade beschäftigt ist.
 #. fr: Impossible de commencer le mandat, car un équipier effectue ac<shy>tu<shy>el<shy>le<shy>ment la mission “<string $gs56>”.
-# aeria-terms: {"Levequest":"be0be8c12a9c"}
+# aeria-terms: {"Levequest":"be0be8c12a9c","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1383:0:5"
 msgid "Cannot initiate levequest. One or more party members are bound by another duty."
-msgstr "Нельзя начать поручение гильдии: один или несколько участников группы заняты другим заданием"
+msgstr "Нельзя начать поручение гильдии: один или несколько участников отряда заняты другим заданием"
 
 #. ja: ギルドリーヴ「採集稼業」は、パーティを組んだ状態では開始できません。
 #. de: Sammelerlasse können nicht begonnen werden, während du in einer Gruppe bist.
 #. fr: Les mandats de récolte ne peuvent pas se faire en équipe.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1384:0:5"
 msgid "Fieldcraft leves cannot be initiated when in a party."
-msgstr "Поручения собирателей нельзя начинать в группе"
+msgstr "Поручения собирателей нельзя начинать в отряде"
 
 #. ja: <sheet Item $n1 0>を修理した。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> wurde repariert.
@@ -3283,10 +3287,10 @@ msgstr "Сегодня вы уже слишком много работали. �
 #. ja: グランドカンパニーリーヴは、パーティを組んだ状態では開始できません。
 #. de: Du kannst keinen Staatserlass annehmen, während du in einer Gruppe bist.
 #. fr: Vous ne pouvez pas commencer un mandat de compagnie en étant dans une équipe.
-# aeria-terms: {"Grand Company":"3e02ab7f2123","Levequest":"be0be8c12a9c"}
+# aeria-terms: {"Grand Company":"3e02ab7f2123","Levequest":"be0be8c12a9c","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1401:0:5"
 msgid "You cannot commence a Grand Company levequest while in a party."
-msgstr "Нельзя начинать поручение Великой компании в группе"
+msgstr "Нельзя начинать поручение Великой компании в отряде"
 
 #. ja: 一定時間が過ぎたため、参加していたコンテンツに復帰できませんでした。
 #. de: Die Zeit für den Spielinhalt ist abgelaufen.
@@ -3298,10 +3302,10 @@ msgstr "Не удалось вернуться в задание: прошло �
 #. ja: パーティメンバーが製作中のため、リーヴの任務を開始できません。
 #. de: Der Freibrief kann nicht begonnen werden, weil jemand in deiner Gruppe gerade mit Synthese beschäftigt ist.
 #. fr: Impossible de commencer le mandat. Un équipier effectue une synthèse.
-# aeria-terms: {"Levequest":"be0be8c12a9c"}
+# aeria-terms: {"Levequest":"be0be8c12a9c","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1403:0:5"
 msgid "Unable to commence levequest. One or more party members are engaged in synthesis."
-msgstr "Нельзя начать поручение гильдии: один или несколько участников группы заняты созданием предметов"
+msgstr "Нельзя начать поручение гильдии: один или несколько участников отряда заняты созданием предметов"
 
 #. ja: その文字数の名前は使用できません。
 #. de: Diese Namenslänge ist nicht möglich.
@@ -3379,10 +3383,10 @@ msgstr "Нельзя воспользоваться услугами носил�
 #. ja: パーティメンバーがポーター利用中のため、リーヴの任務を開始できません。
 #. de: Der Freibrief kann nicht begonnen werden, weil ein Grup<shy>pen<shy>mit<shy>glied gerade auf einem Linien-Reittier reitet.
 #. fr: Impossible de commencer le mandat. Un équipier utilise le service de relais à montures.
-# aeria-terms: {"Levequest":"be0be8c12a9c","porter":"a7428dc88d7f"}
+# aeria-terms: {"Levequest":"be0be8c12a9c","Party":"66ce98c91d3e","porter":"a7428dc88d7f"}
 msgctxt "LogMessage:1414:0:5"
 msgid "Unable to initiate levequest. One or more party members are using a porter."
-msgstr "Нельзя начать поручение гильдии: один или несколько участников группы едут на носильщике"
+msgstr "Нельзя начать поручение гильдии: один или несколько участников отряда едут на носильщике"
 
 #. ja: 特別優遇・優遇ワールドでのボーナス条件を達成したことにより、<sheet Item $n1 0>を手に入れた。
 #. de: Du hast <noun-de Item 1 $n1 1 4 1> erhalten, weil du die Prämienvoraussetzungen von bevorzugten Welten+ oder bevorzugten Welten erfüllt hast.
@@ -3514,10 +3518,10 @@ msgstr "Настройки не сохранены: не используетс�
 #. de: Das Grup<shy>pen<shy>mit<shy>glied, das „<sheet Leve $n1 0>“ besaß, ist verschwunden. Der Freibrief ist fehlgeschlagen.
 #. fr: Le mandat “<sheet Leve $n1 0>” a échoué. L'équipier qui le détenait a disparu.
 #. macro: <sheet Leve $n1 0> — a value from a game data sheet, such as a name; sheet = Leve, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1430:0:5"
 msgid "The party member holding the guildleve for “<sheet Leve $n1 0>” has disappeared. Duty abandoned."
-msgstr "Участник группы с поручением «<sheet Leve $n1 0>» пропал. Активность прервана"
+msgstr "Участник отряда с поручением «<sheet Leve $n1 0>» пропал. Активность прервана"
 
 #. ja: リーヴ『<sheet Leve $n1 0>』の任務が中止されました。
 #. de: Der Freibrief „<sheet Leve $n1 0>“ wurde abgebrochen.
@@ -3558,23 +3562,26 @@ msgstr "Нельзя начать поручение гильдии: не над
 #. ja: このパーティ募集は、クロスワールドパーティ状態では参加できません。
 #. de: Dieser Gruppe kann man nicht als Teil einer weltenübergreifenden Gruppe beitreten.
 #. fr: Impossible de rejoindre en étant dans équipe inter-Monde.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1435:0:5"
 msgid "Unable to join as a cross-world party."
-msgstr "Нельзя присоединиться к группе из другого мира"
+msgstr "Нельзя присоединиться к отряду из другого мира"
 
 #. ja: パーティメンバーがイベント中のため、パーティ募集への参加に失敗しました。
 #. de: Das Grup<shy>pen<shy>mit<shy>glied nimmt gerade an einem Ereignis teil. Daher ist der Beitritt in die Gruppe fehlgeschlagen.
 #. fr: Impossible de rejoindre la recherche d'équipe. Un membre regarde ac<shy>tu<shy>el<shy>le<shy>ment une cinématique.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1436:0:5"
 msgid "Unable to commence party recruitment. One or more party members is occupied."
-msgstr "Нельзя присоединиться к набору группы: один или несколько участников заняты"
+msgstr "Нельзя присоединиться к набору отряда: один или несколько участников заняты"
 
 #. ja: パーティ構成に変更があったため、パーティ募集への参加に失敗しました。
 #. de: Da sich die Gruppenzusammensetzung geändert hat, ist der Beitritt in die Gruppe fehlgeschlagen.
 #. fr: La structure de l'équipe ayant changé, la recherche d'équipe a été annulée.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1437:0:5"
 msgid "Unable to commence party recruitment. Party makeup has changed."
-msgstr "Нельзя присоединиться к набору группы: состав группы изменился"
+msgstr "Нельзя присоединиться к набору отряда: состав отряда изменился"
 
 #. ja: <kilo $n1 ",">個所持しています。
 #. de: Du besitzt <kilo $n1 "."> Stück.
@@ -4330,10 +4337,10 @@ msgstr "Вы покидаете инстанс"
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
-# aeria-terms: {"Disciple of War":"41d5bc9dce64"}
+# aeria-terms: {"Disciple of War":"41d5bc9dce64","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1526:0:5"
 msgid "A party of <num $n4> Disciples of War or Magic level <num $n3> or higher is required to challenge <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if>."
-msgstr "Чтобы пройти <if ($n2 == 0)>это сражение по заданию<else><sheet InstanceContent $n2 3></if>, соберите группу из <num $n4> физических или магических классов ур. <num $n3> и выше"
+msgstr "Чтобы пройти <if ($n2 == 0)>это сражение по заданию<else><sheet InstanceContent $n2 3></if>, соберите отряд из <num $n4> физических или магических классов ур. <num $n3> и выше"
 
 #. ja: <sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』を開始するためには、<br>『<sheet InstanceContent $n3 3>』を達成する必要があります。
 #. de: „<sheet InstanceContent $n3 3>“ muss erfolgreich abgeschlossen werden,<br>um an <sheet InstanceContentTextData $n1 0> „<sheet InstanceContent $n2 3>“ teilnehmen zu können.
@@ -4348,9 +4355,10 @@ msgstr "Чтобы пройти <sheet InstanceContent $n2 3>, сначала з
 #. de: Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder erfüllen nicht die notwendigen Voraus<shy>setzungen,<br>um an „<sheet InstanceContent $n3 3>“ teilnehmen zu können.<br>Es muss eine bestimmte Zeit verstreichen, bis sich die Gruppe erneut dieser Heraus<shy>forde<shy>rung stellen kann.
 #. fr: Un ou plusieurs membres de l'équipe ne remplissent pas les conditions. Un certain délai doit s'écouler avant de pouvoir retenter <sheet InstanceContent $n3 3>.
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1528:0:5"
 msgid "One or more party members are not eligible for <sheet InstanceContent $n2 3>. You must wait before reattempting the duty."
-msgstr "Не все участники группы могут пройти «<sheet InstanceContent $n2 3>». Перед новой попыткой нужно подождать"
+msgstr "Не все участники отряда могут пройти «<sheet InstanceContent $n2 3>». Перед новой попыткой нужно подождать"
 
 #. ja: 混雑のため、<if ($n2 == 0)>このクエストバトル<else><sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』</if>を開始できません。
 #. de: <if ($n2 == 0)>Dieser Auftragskampf<else><sheet InstanceContentTextData $n1 0> „<sheet InstanceContent $n2 3>“ konnte nicht gestartet werden</if>
@@ -4475,27 +4483,30 @@ msgstr "Чтобы пройти <if ($n3 == 0)>этот квестовый бо�
 #. fr: Impossible de commencer <if ($n2 == 0)>cette bataille de quête<else><sheet InstanceContent $n2 3></if>. Un ou plusieurs équipiers sont inconscients.
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1542:0:5"
 msgid "One or more party members are incapacitated, preventing you from challenging <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if>."
-msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников группы без сознания"
+msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников отряда без сознания"
 
 #. ja: 距離が離れているパーティメンバーがいるため、<if ($n2 == 0)>このクエストバトル<else><sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』</if>を開始できません。
 #. de: <if ($n2 == 0)>Dieser Auftragskampf<else><sheet InstanceContentTextData $n1 0> „<sheet InstanceContent $n2 3>“</if> kann nicht gestartet werden, da jemand in deiner Gruppe zu weit entfernt ist.
 #. fr: Impossible de commencer <if ($n2 == 0)>cette bataille de quête<else><sheet InstanceContent $n2 3></if>. Un ou plusieurs équipiers sont trop loin.
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1543:0:5"
 msgid "One or more party members are too far away to participate in <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if>."
-msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников группы слишком далеко"
+msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников отряда слишком далеко"
 
 #. ja: 条件を満たしていないパーティメンバーがいるため、<if ($n2 == 0)>このクエストバトル<else><sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』</if>を開始できません。
 #. de: <if ($n2 == 0)>Dieser Auftragskampf<else><sheet InstanceContentTextData $n1 0> „<sheet InstanceContent $n2 3>“</if> kann nicht gestartet werden, da jemand in deiner Gruppe die notwendigen Voraus<shy>setzungen nicht erfüllt.
 #. fr: Impossible de commencer <if ($n2 == 0)>cette bataille de quête<else><sheet InstanceContent $n2 3></if>. Un ou plusieurs équipiers ne remplissent pas les conditions.
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1544:0:5"
 msgid "One or more party members do not meet the requirements to participate in <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if>."
-msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников группы не отвечает требованиям"
+msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников отряда не отвечает требованиям"
 
 #. ja: <sheet BNpcName $n1 0>の雄叫びを聞き、魔物が集まってきた！
 #. de: Mehrere neue Gegner sind auf den Ruf von <noun-de BNpcName 2 $n1 1 3 1> erschienen!
@@ -4774,18 +4785,20 @@ msgstr "Вода в луже наэлектризовалась!"
 #. fr: Impossible de commencer <if ($n2 == 0)>cette bataille de quête<else><sheet InstanceContent $n2 3></if>. Un ou plusieurs équipiers n'ont pas encore accès à cette mission.
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1585:0:5"
 msgid "One or more party members do not have access to <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if>."
-msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: у кого-то из участников группы нет доступа<br>"
+msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: у кого-то из участников отряда нет доступа<br>"
 
 #. ja: ほかのコンテンツに参加中のパーティメンバーがいるため、<br><if ($n2 == 0)>このクエストバトル<else><sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』</if>を開始できません。
 #. de: Der Zutritt zu <if ($n2 == 0)>diesem Auftragskampf<else>„<sheet InstanceContent $n2 3>“</if> wurde verweigert. <br>Jemand in der Gruppe ist mit einem anderen Inhalt beschäftigt.
 #. fr: Impossible de commencer <if ($n2 == 0)>cette bataille de quête<else><sheet InstanceContent $n2 3></if>. Un ou plusieurs équipiers participent à une autre mission.
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1586:0:5"
 msgid "Entry to <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> denied. One or more party members are bound by another duty."
-msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников группы занят другим заданием<br>"
+msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников отряда занят другим заданием<br>"
 
 #. ja: 中毒防止状態のため、ギルドオーダーに参加することができません
 #. de: Die Teilnahme an Gildengeheißen ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -4800,18 +4813,20 @@ msgstr "Сейчас вы не можете участвовать в трени
 #. fr: Impossible de commencer <if ($n2 == 0)>cette bataille de quête<else><sheet InstanceContent $n2 3></if>. Le chef d'équipe doit parler au PNJ.
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1588:0:5"
 msgid "Only the party leader may initiate entry into <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if>."
-msgstr "Начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if> может только лидер группы"
+msgstr "Начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if> может только лидер отряда"
 
 #. ja: パーティリーダーの進行度より先の進行度をもつパーティメンバーがいるため、<br><if ($n2 == 0)>このクエストバトル<else><sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』</if>を開始できません。
 #. de: Der Zutritt zu <if ($n2 == 0)>diesem Auftragskampf<else>„<sheet InstanceContent $n2 3>“</if> wurde verweigert. <br>Jemand in der Gruppe ist in diesem Inhalt bereits weiter fortgeschritten als der Gruppenanführer.
 #. fr: Impossible de commencer <if ($n2 == 0)>cette bataille de quête<else><sheet InstanceContent $n2 3></if>. La progression d'un ou plusieurs équipiers est plus avancée que le chef d'équipe.
 #. macro: <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet InstanceContent $n2 3> — a value from a game data sheet, such as a name; sheet = InstanceContent, row = number parameter 2, column = 3 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1589:0:5"
 msgid "Entry to <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if> denied. One or more party members have progressed further than the leader."
-msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников группы продвинулся дальше лидера"
+msgstr "Невозможно начать <if ($n2 == 0)>этот квестовый бой<else><sheet InstanceContent $n2 3></if>: кто-то из участников отряда продвинулся дальше лидера"
 
 #. ja: 進行度がリセットされました。再度、話しかけてください。
 #. de: Du konntest die Verschlungenen Schatten von Bahamut nicht betreten. Sprich noch einmal mit dem NPC.
@@ -5065,10 +5080,10 @@ msgstr "Это задание уже завершено"
 #. ja: コンテンツ参加申請中はクエストバトルを開始できません。
 #. de: Du kannst keinen Auftragskampf beginnen,<br>während du für die Teilnahme an einem Inhalt registriert bist.
 #. fr: Impossible de commencer une bataille de quête en étant enregistré pour participer à une mission.
-# aeria-terms: {"Duty Finder":"e156f77e2376"}
+# aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:1620:0:5"
 msgid "Unable to join quest battles while using the Duty Finder."
-msgstr "Нельзя начать квестовый бой, пока вы записаны в Поиск активностей"
+msgstr "Нельзя начать квестовый бой, пока вы записаны в Поиск миссий"
 
 #. ja: バトル開始までお待ちください。
 #. de: Warte bitte, bis der Kampf beginnt.
@@ -5205,9 +5220,10 @@ msgstr "Вы завершили главу «<sheet QuestRedoChapterUI $n1 8>».
 #. ja: 対戦メンバーが揃わなかったため、試合不成立として全員退出されます。
 #. de: Der Kampf wurde abgebrochen, da die gegnerische Gruppe nicht zustande kam.
 #. fr: Le combat a été annulé par manque d'adversaires.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1638:0:5"
 msgid "Opponents unable to complete party. Match canceled."
-msgstr "Не удалось собрать команду противника. Матч отменён"
+msgstr "Не удалось собрать отряд противника. Матч отменён"
 
 #. ja: PvPチームの情報が取得できなかったため、試合不成立として全員退出されます。
 #. de: Der Kampf wurde abgebrochen, da die Daten des PvP-Teams nicht abgerufen werden konnten.
@@ -5331,18 +5347,18 @@ msgstr "Вы больше не участвуете в F.A.T.E."
 #. ja: このF.A.T.E.では、EXホットバーに設定された専用アクションを使用します。<br>参加する場合は、コンテンツ情報から「JOIN F.A.T.E.」ボタンを押してください。
 #. de: Wenn du an diesem FATE teilnimmst, wird deinem Kommandomenü ein spezielles Kommando hinzugefügt. Wähle „An FATE teilnehmen“, um am FATE teilzunehmen.
 #. fr: Cet ALÉA nécessite de se servir d'une action placée dans la barre de raccourcis spéciale.<br>Sélectionnez “Participer” pour y prendre part.
-# aeria-terms: {"Duty Action":"7ad746834000","FATE":"863fbe7726c9"}
+# aeria-terms: {"Duty Action":"bd4de5007680","FATE":"863fbe7726c9"}
 msgctxt "LogMessage:1656:0:5"
 msgid "A duty action will be assigned to your hotbar upon joining this FATE. Select Join FATE to proceed."
-msgstr "При участии в этом F.A.T.E. на панель быстрого доступа добавится действие задания. Чтобы присоединиться, выберите «Участвовать в F.A.T.E.»"
+msgstr "При участии в этом F.A.T.E. на панель быстрого доступа добавится действие миссии. Чтобы присоединиться, выберите «Участвовать в F.A.T.E.»"
 
 #. ja: パーティメンバーがカットシーン中のため、リーヴの任務を開始できません。
 #. de: Der Freibrief kann nicht begonnen werden, weil jemand in deiner Gruppe gerade in einer Videosequenz ist.
 #. fr: Impossible de commencer le mandat. Un équipier regarde ac<shy>tu<shy>el<shy>le<shy>ment une scène cinématique.
-# aeria-terms: {"Levequest":"be0be8c12a9c"}
+# aeria-terms: {"Levequest":"be0be8c12a9c","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1657:0:5"
 msgid "Unable to initiate levequest. One or more party members are viewing a cutscene."
-msgstr "Нельзя начать поручение гильдии: один или несколько участников группы смотрят видеоролик"
+msgstr "Нельзя начать поручение гильдии: один или несколько участников отряда смотрят видеоролик"
 
 #. ja: 実行できません。
 #. de: Aktion kann nicht ausgeführt werden.
@@ -5354,9 +5370,10 @@ msgstr "Команду выполнить не удалось"
 #. ja: テレポが実行できないパーティメンバーがいます。テレポの勧誘ができませんでした。
 #. de: Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder konnten nicht zum Teleport eingeladen werden.
 #. fr: Un ou plusieurs équipiers ne peuvent pas se téléporter.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1662:0:5"
 msgid "One or more party members were unable to teleport."
-msgstr "Не удалось телепортировать одного или нескольких участников группы"
+msgstr "Не удалось телепортировать одного или нескольких участников отряда"
 
 #. ja: 指定したエーテライトに到達していないため、テレポはできません。
 #. de: Teleport nicht möglich. Du hast den als Ziel ausgewählten Ätheryten noch nicht besucht.
@@ -5369,10 +5386,10 @@ msgstr "Не удалось телепортироваться: вы не нас
 #. ja: 指定したエーテライトに到達していないパーティメンバーがいます。テレポの勧誘ができませんでした。
 #. de: Teleport nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder haben den als Ziel ausgewählten Ätheryten noch nicht besucht.
 #. fr: Un ou plusieurs équipiers ne sont pas harmonisés avec cette éthérite et ne peuvent pas se téléporter.
-# aeria-terms: {"aetheryte":"d74d1728b70e"}
+# aeria-terms: {"Party":"66ce98c91d3e","aetheryte":"d74d1728b70e"}
 msgctxt "LogMessage:1664:0:5"
 msgid "Unable to teleport. One or more party members are not attuned to that aetheryte."
-msgstr "Не удалось телепортировать одного или нескольких участников группы: они не настроились на этот эфирит"
+msgstr "Не удалось телепортировать одного или нескольких участников отряда: они не настроились на этот эфирит"
 
 #. ja: 別のテレポが実行中のため、テレポはできません。
 #. de: Teleport nicht möglich. Ein anderer Teleport wird bereits ausgeführt.
@@ -5384,9 +5401,10 @@ msgstr "Не удалось телепортироваться: уже выпо�
 #. ja: 別のテレポを実行中のパーティメンバーがいます。テレポの勧誘ができませんでした。
 #. de: Teleport nicht möglich. Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder führen bereits einen anderen Teleport aus.
 #. fr: Un ou plusieurs équipiers ont déjà une téléportation en cours et ne peuvent pas se téléporter.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1666:0:5"
 msgid "Unable to teleport. One or more party members already have another teleport underway."
-msgstr "Не удалось телепортировать одного или нескольких участников группы: они уже телепортируются"
+msgstr "Не удалось телепортировать одного или нескольких участников отряда: они уже телепортируются"
 
 #. ja: 戦闘不能のためテレポはできません。
 #. de: Teleport nicht möglich, da du k. o. bist.
@@ -5398,9 +5416,10 @@ msgstr "Не удалось телепортироваться: вы без со
 #. ja: 戦闘不能のパーティメンバーがいます。テレポの勧誘ができませんでした。
 #. de: Teleport nicht möglich, da ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder k. o. sind.
 #. fr: Un ou plusieurs équipiers sont inconscients et ne peuvent pas se téléporter.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1668:0:5"
 msgid "Unable to teleport. One or more party members are unconscious."
-msgstr "Не удалось телепортировать одного или нескольких участников группы: они без сознания"
+msgstr "Не удалось телепортировать одного или нескольких участников отряда: они без сознания"
 
 #. ja: 所持金が足りないため、テレポはできません。
 #. de: Teleport nicht möglich, da du nicht genug Gil übrig hast.
@@ -5412,9 +5431,10 @@ msgstr "Не удалось телепортироваться: не хвата�
 #. ja: 別のエリアにいるパーティメンバーがいます。テレポの勧誘ができませんでした。
 #. de: Teleport nicht möglich, da ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder nicht im selben Areal sind.
 #. fr: Un ou plusieurs équipiers sont dans une autre zone et ne peuvent pas se téléporter.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1670:0:5"
 msgid "Unable to teleport. One or more party members are in another area."
-msgstr "Не удалось телепортировать одного или нескольких участников группы: они находятся в другой области"
+msgstr "Не удалось телепортировать одного или нескольких участников отряда: они находятся в другой области"
 
 #. ja: 条件を満たしていないため、テレポの勧誘を受けることができませんでした。
 #. de: Teleport nicht möglich. Die vorausgesetzten Bedingungen sind nicht erfüllt.
@@ -6321,68 +6341,68 @@ msgstr "Поблизости нет никаких следов <noun-en BNpcNam
 #. fr: Vous placez <noun-fr Item 1 $n1 1 1> dans le coffre.
 #. macro: <capitalize><noun-en Item 1 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1851:0:5"
 msgid "<capitalize><noun-en Item 1 $n1 1 1></capitalize> is placed into the company chest."
-msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> помещён в сундук свободной компании"
+msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> помещён в сундук вольной компании"
 
 #. ja: <sheet Item $n1 0>×<num $n2>をカンパニーチェストに入れました。
 #. de: <if ($n2 == 1)><capitalize><noun-de Item 1 $n1 1 1 1></capitalize> wurde<else><num $n2> <noun-de Item 5 $n1 2 1 1> wurden</if> in der Truhe abgelegt.
 #. fr: Vous placez <kilo $n2 "<nbsp>"> <noun-fr Item 12 $n1 2 1> dans le coffre.
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 #. macro: <noun-en Item 1 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1852:0:5"
 msgid "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> are placed into the company chest."
-msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> помещено в сундук свободной компании"
+msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> помещено в сундук вольной компании"
 
 #. ja: <kilo $n1 ",">ギルをカンパニーチェストに入れました。
 #. de: <if ($n1 == 1)>1 Gil wurde<else><kilo $n1 "."> Gil wurden</if> in die Truhe gelegt.
 #. fr: Vous placez <kilo $n1 "<nbsp>"> <if ($n1 <= 1)>gil<else>gils</if> dans le coffre.
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1853:0:5"
 msgid "<kilo $n1 \",\"> gil is placed into the company chest."
-msgstr "<kilo $n1 \",\"> гил помещено в сундук свободной компании"
+msgstr "<kilo $n1 \",\"> гил помещено в сундук вольной компании"
 
 #. ja: <sheet Item $n1 0>をカンパニーチェストから取り出しました。
 #. de: <capitalize><noun-de Item 1 $n1 1 1 1></capitalize> wurde aus der Truhe entnommen.
 #. fr: Vous retirez <noun-fr Item 1 $n1 1 1> du coffre.
 #. macro: <capitalize><noun-en Item 1 $n1 1 1></capitalize> — the content with its first letter in upper case (letter case: game data inside it, such as a name the game stores in lower case, shows in this case only through it, so keep a case transform around game data, with <capitalize> in place of <title-case> where your language capitalizes only the first word; around text you write it may be dropped)
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1854:0:5"
 msgid "<capitalize><noun-en Item 1 $n1 1 1></capitalize> is removed from the company chest."
-msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> взят из сундука свободной компании"
+msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> взят из сундука вольной компании"
 
 #. ja: <sheet Item $n1 0>×<num $n2>をカンパニーチェストから取り出しました。
 #. de: <if ($n2 == 1)><capitalize><noun-de Item 1 $n1 1 1 1></capitalize> wurde<else><num $n2> <noun-de Item 5 $n1 2 1 1> wurden</if> aus der Truhe entnommen.
 #. fr: Vous retirez <kilo $n2 "<nbsp>"> <noun-fr Item 12 $n1 2 1> du coffre.
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 #. macro: <noun-en Item 1 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1855:0:5"
 msgid "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> are removed from the company chest."
-msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> взято из сундука свободной компании"
+msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> взято из сундука вольной компании"
 
 #. ja: <kilo $n1 ",">ギルをカンパニーチェストから取り出しました。
 #. de: <if ($n1 == 1)>1 Gil wurde<else><kilo $n1 "."> Gil wurden</if> aus der Truhe entnommen.
 #. fr: Vous retirez <kilo $n1 "<nbsp>"> <if ($n1 <= 1)>gil<else>gils</if> du coffre.
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1856:0:5"
 msgid "<kilo $n1 \",\"> gil is removed from the company chest."
-msgstr "<kilo $n1 \",\"> гил взято из сундука свободной компании"
+msgstr "<kilo $n1 \",\"> гил взято из сундука вольной компании"
 
 #. ja: ボックス [<num $n1>]の名前を「<sheet FCChestName $n2 0>」に変更しました。
 #. de: Der Name von Fach <num $n1> wurde zu „<sheet FCChestName $n2 0>“ geändert.
 #. fr: Vous avez changé le nom du compartiment “<num $n1>” en “<sheet FCChestName $n2 0>”.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet FCChestName $n2 0> — a value from a game data sheet, such as a name; sheet = FCChestName, row = number parameter 2, column = 0 (game data: keep it; it may move or repeat)
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1857:0:5"
 msgid "The name of company chest compartment [<num $n1>] has been changed to “<sheet FCChestName $n2 0>.”"
-msgstr "Название ячейки сундука свободной компании [<num $n1>] изменено на «<sheet FCChestName $n2 0>»"
+msgstr "Название ячейки сундука вольной компании [<num $n1>] изменено на «<sheet FCChestName $n2 0>»"
 
 #. ja: スタックできなかった分のアイテムは所持品に戻りました。
 #. de: Die Gegenstände, die nicht mehr auf den Stapel passten, wurden wieder in dein Inventar zurückgelegt.
@@ -6394,42 +6414,42 @@ msgstr "Предметы, которые не удалось сложить в �
 #. ja: スタックできなかった分のアイテムはカンパニーチェストに戻りました。
 #. de: Die Gegenstände, die nicht mehr auf den Stapel in deinem Inventar passten, wurden wieder in die Truhe zurückgelegt.
 #. fr: Les objets qui n'ont pas pu être empilés dans votre inventaire ont été remis dans le coffre.
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1859:0:5"
 msgid "Unstackable items were returned to the company chest."
-msgstr "Предметы, которые не удалось сложить в стопку, возвращены в сундук свободной компании"
+msgstr "Предметы, которые не удалось сложить в стопку, возвращены в сундук вольной компании"
 
 #. ja: カンパニーチェストのデータ取得に失敗しました。
 #. de: Die Daten der Truhe konnten nicht geladen werden.
 #. fr: Les données du coffre de compagnie n'ont pas pu être obtenues.
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1860:0:5"
 msgid "Unable to obtain company chest data."
-msgstr "Не удалось получить данные сундука свободной компании"
+msgstr "Не удалось получить данные сундука вольной компании"
 
 #. ja: カンパニーチェストの処理に失敗しました。
 #. de: Der Vorgang konnte nicht ausgeführt werden.
 #. fr: L'opération a échoué.
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1861:0:5"
 msgid "Unable to complete company chest action."
-msgstr "Не удалось выполнить действие с сундуком свободной компании"
+msgstr "Не удалось выполнить действие с сундуком вольной компании"
 
 #. ja: フリーカンパニーに所属していないため使用できません。
 #. de: Du gehörst der Freien Ge<shy>sell<shy>schaft nicht an und kannst diesen Vorgang daher nicht ausführen.
 #. fr: Seuls les membres de la compagnie libre peuvent utiliser le coffre.
-# aeria-terms: {"Free Company":"0abe2b4130cb","company chest":"cd9328b642c7"}
+# aeria-terms: {"Free Company":"0abe2b4130cb","company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1862:0:5"
 msgid "Unable to access company chest. You are not a member of this free company."
-msgstr "Нельзя открыть сундук свободной компании: вы не состоите в этой вольной компании"
+msgstr "Нельзя открыть сундук вольной компании: вы не состоите в этой вольной компании"
 
 #. ja: カンパニーチェストは現在使用できません。
 #. de: Die Truhe ist momentan nicht zugänglich.
 #. fr: L'utilisation des coffres de compagnie est temporairement suspendue.
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1863:0:5"
 msgid "The company chest is inaccessible at this time."
-msgstr "Сейчас сундук свободной компании недоступен"
+msgstr "Сейчас сундук вольной компании недоступен"
 
 #. ja: このボックスへのアクセス権限がありません。
 #. de: Du hast kein Zugriffsrecht auf dieses Fach.
@@ -6441,18 +6461,18 @@ msgstr "Доступ к этой ячейке ограничен"
 #. ja: 装備中のアイテムを入れることはできません。
 #. de: Gegenstände, die du angelegt hast, kannst du nicht in die Truhe legen.
 #. fr: Impossible de placer un objet équipé.
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1865:0:5"
 msgid "Equipped items cannot be stored in the company chest."
-msgstr "Нельзя хранить в сундуке свободной компании надетые предметы"
+msgstr "Нельзя хранить в сундуке вольной компании надетые предметы"
 
 #. ja: RARE属性または他人に渡せないアイテムを入れることはできません。
 #. de: Persönliche, seltene und bindende Gegenstände kannst du nicht in der Truhe ablegen.
 #. fr: Impossible de placer des objets personnels, uniques ou liés.
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1866:0:5"
 msgid "Unique, untradable, or bound items cannot be stored in the company chest."
-msgstr "Нельзя хранить в сундуке свободной компании редкие, привязанные и непередаваемые предметы"
+msgstr "Нельзя хранить в сундуке вольной компании редкие, привязанные и непередаваемые предметы"
 
 #. ja: すでに他のアイテムが入っているため入れることができません。
 #. de: Der Platz ist bereits von einem anderen Gegenstand belegt.
@@ -6485,10 +6505,10 @@ msgstr "Не удалось забрать предмет: стопка в ин�
 #. ja: ギルが上限に達しているため出し入れできません。
 #. de: Transaktion ist nicht möglich. Der maximale Betrag an Gil ist bereits erreicht.
 #. fr: Opération impossible. Le nombre maximum de gils cumulables a été atteint.
-# aeria-terms: {"company chest":"cd9328b642c7","hold":"4662ae098b11"}
+# aeria-terms: {"company chest":"bf8b36620cf9","hold":"4662ae098b11"}
 msgctxt "LogMessage:1871:0:5"
 msgid "The company chest can hold no more gil."
-msgstr "В сундуке свободной компании больше нет места для гил"
+msgstr "В сундуке вольной компании больше нет места для гил"
 
 #. ja: 所持品に空きがありません。
 #. de: Du hast keinen Platz im Inventar.
@@ -6521,10 +6541,10 @@ msgstr "Не удалось изменить название ячейки"
 #. ja: 権限「<sheet FCAuthority 4 0>」がありません。
 #. de: Du hast nicht das Recht, Einstellungen der Truhe vorzunehmen.
 #. fr: Vous ne disposez pas du droit “Gestion du coffre”.
-# aeria-terms: {"company chest":"cd9328b642c7"}
+# aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1876:0:5"
 msgid "You are not authorized to change company chest settings."
-msgstr "У вас нет прав на изменение настроек сундука свободной компании"
+msgstr "У вас нет прав на изменение настроек сундука вольной компании"
 
 #. ja: クレスト貼り付けに失敗しました。
 #. de: Das Wappen konnte nicht angebracht werden.
@@ -7343,16 +7363,18 @@ msgstr "Сейчас нельзя изменить настройки"
 #. ja: オフラインなどでメンバーが揃っていないため、リプレイレディチェックを開始できません。
 #. de: Die Bereitschaftsanfrage für die Rückblende konnte nicht gestellt werden, da ein oder mehrere Mitglieder entweder offline oder nicht verfügbar sind.
 #. fr: Impossible de lancer l'appel d'enregistrement. Un ou plusieurs membres de l'équipe sont déconnectés ou indisponibles.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1977:0:5"
 msgid "Unable to initiate record ready check. One or more party members are offline or otherwise unavailable."
-msgstr "Нельзя начать проверку готовности к записи: кто-то из группы не в сети или недоступен"
+msgstr "Нельзя начать проверку готовности к записи: кто-то из отряда не в сети или недоступен"
 
 #. ja: コンテンツの規定人数が揃っていないため、リプレイの記録を開始できませんでした。
 #. de: Die Aufzeichnung der Rückblende konnte nicht gestartet werden, da die vorgesehene Teilnehmerzahl für diesen Inhalt nicht erfüllt ist.
 #. fr: Impossible de lancer l'enregistrement de mission. L'équipe ne compte pas le nombre de joueurs nécessaires pour participer à la mission.
+# aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1978:0:5"
 msgid "Unable to start duty record. The party does not meet the size requirement for this duty."
-msgstr "Нельзя начать запись испытания: в группе недостаточно или слишком много участников"
+msgstr "Нельзя начать запись испытания: в отряде недостаточно или слишком много участников"
 
 #. ja: これより先にチャプターはありません。
 #. de: Keine weiteren Szenen vorhanden.
@@ -7446,10 +7468,10 @@ msgstr "Кто-то из группы отказался. Запись отме�
 #. macro: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 #. macro: <sound 1 95> — plays a sound effect; kind = 1, sound = 95 (game data: keep it; it may move or repeat)
-# aeria-terms: {"Battle":"6b90e6bb1791","Duty":"513dae999130"}
+# aeria-terms: {"Battle":"6b90e6bb1791","Duty":"bce761328714"}
 msgctxt "LogMessage:1990:0:5"
 msgid "Duty record started. Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
-msgstr "Запись активности началась. Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
+msgstr "Запись миссии началась. Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
 
 #. ja: リプレイデータが存在しないため再生できません。
 #. de: Wiedergabe nicht möglich, weil keine Daten vorhanden sind.
@@ -7486,18 +7508,18 @@ msgstr "Нельзя воспроизвести запись: произошла
 #. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:1995:0:5"
 msgid "Duty record conditions met. Commence the <ui-color 506><ui-edge-color 507>record ready check</ui-edge-color></ui-color> to begin recording."
-msgstr "Условия для записи активности выполнены. Начните <ui-color 506><ui-edge-color 507>проверку готовности к записи</ui-edge-color></ui-color>, чтобы начать запись"
+msgstr "Условия для записи миссии выполнены. Начните <ui-color 506><ui-edge-color 507>проверку готовности к записи</ui-edge-color></ui-color>, чтобы начать запись"
 
 #. ja: リプレイ記録待機中のキャッシュ上限を超えたため、リプレイの記録待機を解除します。
 #. de: Der Aufnahmevorgang wurde abgebrochen, weil der Zwischenspeicher voll ist.
 #. fr: Limite de la mémoire cache dépassée. Attente d'enregistrement annulée.
-# aeria-terms: {"Duty":"513dae999130"}
+# aeria-terms: {"Duty":"bce761328714"}
 msgctxt "LogMessage:1996:0:5"
 msgid "Duty record data cache limit exceeded. Unpausing recorder."
-msgstr "Превышен лимит кэша записи активности. Запись возобновлена"
+msgstr "Превышен лимит кэша записи миссии. Запись возобновлена"
 
 #. ja: リプレイデータを保存できるだけの容量（210MB）が確保できませんでした。<br><if ($gn0 == 99)>リプレイの記録を停止します。<else>リプレイの記録は行われません。</if>
 #. de: <if ($gn0 == 99)>Die Aufnahme wurde abgebrochen<else>Die Aufnahme ist nicht möglich</if>, weil nicht genügend Speicherplatz (210 MB) vorhanden ist.
