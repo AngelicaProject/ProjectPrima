@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"X-Game-Version: 2026.10.16.0000.0000\n"
+"X-Game-Version: 2026.11.03.0000.0000\n"
 "X-Source-Language: en\n"
 
 #. ja: サーチ情報の表示
@@ -5804,8 +5804,8 @@ msgid "Defeat <num $n8> notorious <if ($n8 == 1)>monster<else>monsters</if> in <
 msgstr "Победите <num $n8> <if ($n8 == 1)>знаменитого монстра<else>знаменитых монстров</if> в локации «<sheet PublicContent $n5 3>»."
 
 #. ja: <if ($n20 == 8)><sheet PublicContent $n5 3>のクリティカルエンゲージメント<else>「<sheet DynamicEvent $n5 11>」</if>を<num $n8>回コンプリートする。
-#. de: <if ($n20 == 8)><if ($n8 == 1)>Ein kritisches Gefecht<else><num $n8> kritische Gefechte</if> <if ($n5 == 735)>an der Südfront von Bozja<else>in Zadnor</if><else>Das kritische Gefecht „<sheet DynamicEvent $n5 11>“</if> abschließen.
-#. fr: Remporter 8 fois <if ($n20 == 8)>un af<shy>fron<shy>te<shy>ment crucial dans la mission “<sheet PublicContent $n5 3>”<else>l'af<shy>fron<shy>te<shy>ment crucial “<sheet DynamicEvent $n5 11>”</if>.
+#. de: <if ($n20 == 8)><if ($n8 == 1)>Ein kritisches Gefecht<else><num $n8> kritische Gefechte</if> <if ($n5 == 27)>an der Südfront von Bozja<else>in Zadnor</if><else>Das kritische Gefecht „<sheet DynamicEvent $n5 11>“</if> abschließen.
+#. fr: Remporter <num $n8> fois <if ($n20 == 8)>un af<shy>fron<shy>te<shy>ment crucial dans la mission “<sheet PublicContent $n5 3>”<else>l'af<shy>fron<shy>te<shy>ment crucial “<sheet DynamicEvent $n5 11>”</if>.
 #. macro: <if ($n20 == 8)>Complete <num $n8> critical <if ($n8 == 1)>engagement<else>engagements</if> <if ($n5 == 27)>on the Bozjan southern front<else>in Zadnor</if><els… — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 20 == 8 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n8> — a number; value = number parameter 8 (game data: keep it; it may move or repeat)
 #. macro: <if ($n8 == 1)>engagement<else>engagements</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 8 == 1 (condition: may be reworded, restructured, added, or dropped)
@@ -5853,12 +5853,12 @@ msgstr "<if ($n1 > 0)>Карнавал масок<else>???</if><br>Ур. <num $n
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <sheet Addon 15957 0 $n4 $n3> — a value from a game data sheet, such as a name; sheet = Addon, row = 15957, column = 0, parameter = number parameter 4, parameter = number parameter 3 (game data: keep it; it may move or repeat)
-#. macro: <if ($n2 == 3)>area<else>floor</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 3 (condition: may be reworded, restructured, added, or dropped)
+#. macro: <if ($n2 == 3)>area<else>set of floors</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 3 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <num $n5> — a number; value = number parameter 5 (game data: keep it; it may move or repeat)
 #. macro: <if ($n5 == 1)>time<else>times</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 5 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:15955:0:0"
-msgid "Clear <if ($n3 > 0)><switch $n2><case>floor <num $n3><case>floor <num $n3><case>area <num $n3></switch> of <string $s1>. <sheet Addon 15957 0 $n4 $n3><else>any <if ($n2 == 3)>area<else>floor</if> of <string $s1> <num $n5> <if ($n5 == 1)>time<else>times</if>. <sheet Addon 15957 0 $n4 $n3></if>"
-msgstr "<if ($n3 > 0)>Завершите <switch $n2><case>этаж <num $n3><case>этаж <num $n3><case>зону <num $n3></switch> подземелья «<string $s1>». <sheet Addon 15957 0 $n4 $n3><else>Завершите любой <if ($n2 == 3)>зону<else>этаж</if> подземелья «<string $s1>» <num $n5> <if ($n5 == 1)>раз<else>раз</if>. <sheet Addon 15957 0 $n4 $n3></if>"
+msgid "Clear <if ($n3 > 0)><switch $n2><case>floor <num $n3><case>floor <num $n3><case>area <num $n3></switch> of <string $s1>. <sheet Addon 15957 0 $n4 $n3><else>any <if ($n2 == 3)>area<else>set of floors</if> of <string $s1> <num $n5> <if ($n5 == 1)>time<else>times</if>. <sheet Addon 15957 0 $n4 $n3></if>"
+msgstr "<if ($n3 > 0)>Завершите <switch $n2><case>этаж <num $n3><case>этаж <num $n3><case>зону <num $n3></switch> подземелья «<string $s1>». <sheet Addon 15957 0 $n4 $n3><else>Завершите любой <if ($n2 == 3)>зону<else>набор этажей</if> подземелья «<string $s1>» <num $n5> <if ($n5 == 1)>раз<else>раз</if>. <sheet Addon 15957 0 $n4 $n3></if>"
 
 #. ja: ※31層以降はマッチングパーティによる突入はできません。
 #. de: ※ Ab Ebene 31 kann der Inhalt nicht mehr mit einer zufälligen Gruppe betreten werden.
