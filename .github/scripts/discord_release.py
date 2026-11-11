@@ -107,7 +107,7 @@ def make_payload(release, commits, comparison_url=None, previous=None, role_id='
     if role_id:
         if not re.fullmatch(r'[0-9]{17,20}', role_id):
             raise ValueError('DISCORD_RELEASE_ROLE_ID must be a Discord role ID')
-        payload['content'] = f'<@&{role_id}> — новый релиз Prima.'
+        payload['content'] = f'<@&{role_id}>'
         payload['allowed_mentions']['roles'] = [role_id]
     return payload
 
