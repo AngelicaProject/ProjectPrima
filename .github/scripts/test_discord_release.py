@@ -23,9 +23,9 @@ class ReleaseTests(unittest.TestCase):
     def test_readable_subjects_and_merge_filter(self):
         self.assertIsNone(notifier.readable_subject(commit('Merge pull request #48', 2)))
         self.assertEqual(notifier.readable_subject(commit('fix(Addon): сократить подсказки\n\nInternal notes')),
-                         'Исправления (Addon): сократить подсказки')
+                         'fix(Addon): сократить подсказки')
         self.assertEqual(notifier.readable_subject(commit('Update to game version 2026.11.03')),
-                         'Адаптация к версии игры 2026.11.03')
+                         'Update to game version 2026.11.03')
 
     def test_all_non_merge_commits_are_kept_regardless_of_convention(self):
         for subject in ['ci: configure Discord', 'build: update tools',
@@ -51,9 +51,20 @@ class ReleaseTests(unittest.TestCase):
         self.assertLessEqual(len(embed['description']), 4096)
         self.assertLess(len(str(payload)), 6000)
 
-    def test_subjects_are_deduplicated(self):
+    def test_separate_commits_with_identical_subjects_are_kept(self):
         payload = notifier.make_payload(self.release, [commit('fix: опечатки')] * 3)
-        self.assertEqual(payload['embeds'][0]['description'].count('опечатки'), 1)
+        self.assertEqual(payload['embeds'][0]['description'].count('fix: опечатки'), 3)
+
+    def test_only_configured_role_can_be_pinged(self):
+        role_id = '1569985612352847902'
+        payload = notifier.make_payload(self.release, [commit('fix: @everyone')], role_id=role_id)
+        self.assertEqual(payload['content'], f'<@&{role_id}> — новый релиз Prima.')
+        self.assertEqual(payload['allowed_mentions'], {'parse': [], 'roles': [role_id]})
+
+    def test_missing_or_invalid_role_configuration(self):
+        self.assertNotIn('content', notifier.make_payload(self.release, []))
+        with self.assertRaises(ValueError):
+            notifier.make_payload(self.release, [], role_id='@everyone')
 
     def test_previous_release_uses_same_channel_not_api_order(self):
         old = dict(self.release, tag_name='harmonia/2026.11.05.0001', published_at='2026-11-05T00:00:00Z')

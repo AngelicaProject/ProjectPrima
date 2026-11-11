@@ -37,6 +37,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_RELEASE_ROLE_ID: ${{ vars.DISCORD_RELEASE_ROLE_ID }}
           RELEASE_TAG: ${{ inputs.tag }}
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: python3 .github/scripts/discord_release.py
