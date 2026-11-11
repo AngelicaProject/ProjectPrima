@@ -58,7 +58,7 @@ class ReleaseTests(unittest.TestCase):
     def test_only_configured_role_can_be_pinged(self):
         role_id = '1569985612352847902'
         payload = notifier.make_payload(self.release, [commit('fix: @everyone')], role_id=role_id)
-        self.assertEqual(payload['content'], f'<@&{role_id}> — новый релиз Prima.')
+        self.assertEqual(payload['content'], f'<@&{role_id}>')
         self.assertEqual(payload['allowed_mentions'], {'parse': [], 'roles': [role_id]})
 
     def test_missing_or_invalid_role_configuration(self):
