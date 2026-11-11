@@ -64,32 +64,21 @@ def readable_subject(commit):
     if len(commit.get('parents', [])) > 1:
         return None
     subject = commit['commit']['message'].splitlines()[0].strip()
-    game_version = re.fullmatch(r'Update to game version (.+)', subject, re.I)
-    if game_version:
-        subject = f'Адаптация к версии игры {game_version[1]}'
-    else:
-        match = re.match(r'^(fix|edit|translate|feat|refactor|style)(?:\(([^)]*)\))?!?:\s*(.+)', subject, re.I)
-        if match:
-            kind, scope, text = match.groups()
-            prefix = {'fix': 'Исправления', 'edit': 'Вычитка и правки',
-                      'translate': 'Перевод', 'feat': 'Улучшения',
-                      'refactor': 'Улучшения', 'style': 'Оформление'}[kind.lower()]
-            subject = f'{prefix}{f" ({scope})" if scope else ""}: {text}'
     # Commit subjects are data: prevent formatting, links and mentions in the card.
     subject = subject.replace('@', '@\u200b')
     subject = re.sub(r'([\\`*_~<>\[\]|])', r'\\\1', subject)
     return subject[:240]
 
 
-def make_payload(release, commits, comparison_url=None, previous=None):
-    subjects = list(dict.fromkeys(filter(None, map(readable_subject, commits))))
+def make_payload(release, commits, comparison_url=None, previous=None, role_id=''):
+    subjects = list(filter(None, map(readable_subject, commits)))
     lines = [f'• {subject}' for subject in subjects[:10]]
     if len(subjects) > 10:
         lines.append(f'…и ещё {len(subjects) - 10} изменений — по ссылке ниже.')
     if not lines:
         lines = ['• Опубликована новая сборка перевода.']
-    description = ('**Что изменилось:**\n' + '\n'.join(lines)
-                   + '\n\nПеревод обновляется автоматически через Harmonia.')
+    description = ('Перевод обновляется автоматически через Harmonia.\n\n'
+                   + '**Что изменилось:**\n' + '\n'.join(lines))
     fields = [{
         'name': 'Обновление перевода',
         'value': f"[Открыть релиз]({release['html_url']})",
@@ -102,7 +91,7 @@ def make_payload(release, commits, comparison_url=None, previous=None):
     footer = 'Автоматическая сводка по коммитам'
     if previous:
         footer += ' · с ' + previous['tag_name'].removeprefix('harmonia/')
-    return {
+    payload = {
         'username': 'Prima · Перевод',
         'allowed_mentions': {'parse': []},
         'embeds': [{
@@ -115,6 +104,12 @@ def make_payload(release, commits, comparison_url=None, previous=None):
             'footer': {'text': footer[:2048]},
         }],
     }
+    if role_id:
+        if not re.fullmatch(r'[0-9]{17,20}', role_id):
+            raise ValueError('DISCORD_RELEASE_ROLE_ID must be a Discord role ID')
+        payload['content'] = f'<@&{role_id}> — новый релиз Prima.'
+        payload['allowed_mentions']['roles'] = [role_id]
+    return payload
 
 
 def send(payload):
@@ -157,7 +152,8 @@ def main():
         raise RuntimeError('Only published harmonia/ releases can be announced')
     previous = previous_release(release)
     commits, comparison_url = compare(previous, release) if previous else ([], None)
-    payload = make_payload(release, commits, comparison_url, previous)
+    role_id = os.environ.get('DISCORD_RELEASE_ROLE_ID', '').strip()
+    payload = make_payload(release, commits, comparison_url, previous, role_id)
     print(json.dumps(payload, ensure_ascii=False, indent=2))
     if os.environ.get('DRY_RUN', 'false').lower() != 'true':
         send(payload)
