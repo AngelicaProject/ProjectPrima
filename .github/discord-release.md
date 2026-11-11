@@ -5,9 +5,11 @@ The existing Aeria/Harmonia publishing process is unchanged. The webhook URL
 is stored only in the Actions secret `DISCORD_WEBHOOK_URL`.
 
 The card lists commit subjects since the previous published release in the
-same channel (stable or prerelease). Merge commits and conventional
-`ci/build/chore/test/docs` commits are omitted, repeated subjects are combined,
+same channel (stable or prerelease). Only actual merge commits (more than one
+parent) are omitted. All other commits are included, with or without a naming
+convention, including `ci/build/chore/test/docs`. Repeated subjects are combined,
 and at most ten subjects are shown with a link to the full comparison.
+The card includes a short note that Harmonia updates the translation automatically.
 The summaries quote commit subjects; they do not infer counts of proofread
 strings, include internal commit bodies, or require manually written release notes.
 

@@ -22,11 +22,23 @@ class ReleaseTests(unittest.TestCase):
 
     def test_readable_subjects_and_merge_filter(self):
         self.assertIsNone(notifier.readable_subject(commit('Merge pull request #48', 2)))
-        self.assertIsNone(notifier.readable_subject(commit('ci: configure Discord')))
         self.assertEqual(notifier.readable_subject(commit('fix(Addon): сократить подсказки\n\nInternal notes')),
                          'Исправления (Addon): сократить подсказки')
         self.assertEqual(notifier.readable_subject(commit('Update to game version 2026.11.03')),
                          'Адаптация к версии игры 2026.11.03')
+
+    def test_all_non_merge_commits_are_kept_regardless_of_convention(self):
+        for subject in ['ci: configure Discord', 'build: update tools',
+                        'chore: maintenance', 'test: add coverage', 'docs: installation',
+                        'Поправили название предмета', 'Merge terminology lists']:
+            with self.subTest(subject=subject):
+                self.assertEqual(notifier.readable_subject(commit(subject)), subject)
+
+    def test_card_has_automatic_update_note_without_recurring_slogan(self):
+        description = notifier.make_payload(self.release, [commit('Исправлены опечатки')])['embeds'][0]['description']
+        self.assertTrue(description.startswith('**Что изменилось:**'))
+        self.assertNotIn('Продолжаем вычитку', description)
+        self.assertIn('Перевод обновляется автоматически через Harmonia.', description)
 
     def test_untrusted_subjects_and_discord_limits(self):
         commits = [commit(f'fix: @everyone [link](https://example.com) {i} ' + '*' * 300)
