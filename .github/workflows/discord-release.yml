@@ -1,0 +1,42 @@
+name: Prima release to Discord
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Published release tag to announce (empty = latest stable)"
+        required: false
+        type: string
+      dry_run:
+        description: "Preview without sending to Discord"
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: discord-release-${{ github.event.release.tag_name || inputs.tag || 'latest' }}
+  cancel-in-progress: false
+
+jobs:
+  announce:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.release.tag_name, 'harmonia/')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Use the maintained script, including when announcing an older release.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+      - name: Compose release notes and announce
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: python3 .github/scripts/discord_release.py
