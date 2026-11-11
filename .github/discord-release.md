@@ -30,3 +30,17 @@ Discord. Without the variable, announcements have no ping. Manual sends also
 ping the role, so keep `dry_run=true` when testing or previewing older releases.
 
 Tests: `python -m unittest discover -s .github/scripts -p 'test_*.py'`.
+
+## Commit activity
+
+`discord-commits.yml` sends a separate message for each non-merge commit newly
+added to `main`, including commits brought in by merging a PR. PR events and
+feature-branch pushes do not send messages. Every commit's original subject,
+author, short SHA, and link are shown; internal message bodies are excluded.
+Commit cards always disable all mentions, independently of the release role.
+They use the same webhook/channel as releases.
+
+The full pushed range is fetched with pagination so multi-commit pushes are
+not collapsed to the last commit. Runs are not cancelled or replaced by newer
+pushes. A manual run accepts full `before` and `after` SHAs and defaults to dry
+run; turning it off or rerunning a successful push will post duplicate cards.
