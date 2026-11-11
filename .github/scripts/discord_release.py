@@ -64,8 +64,6 @@ def readable_subject(commit):
     if len(commit.get('parents', [])) > 1:
         return None
     subject = commit['commit']['message'].splitlines()[0].strip()
-    if re.match(r'^(Merge\b|(?:chore|ci|build|test|docs)(?:\([^)]*\))?!?:)', subject, re.I):
-        return None
     game_version = re.fullmatch(r'Update to game version (.+)', subject, re.I)
     if game_version:
         subject = f'Адаптация к версии игры {game_version[1]}'
@@ -90,7 +88,8 @@ def make_payload(release, commits, comparison_url=None, previous=None):
         lines.append(f'…и ещё {len(subjects) - 10} изменений — по ссылке ниже.')
     if not lines:
         lines = ['• Опубликована новая сборка перевода.']
-    description = 'Продолжаем вычитку и улучшение перевода.\n\n**В этом обновлении:**\n' + '\n'.join(lines)
+    description = ('**Что изменилось:**\n' + '\n'.join(lines)
+                   + '\n\nПеревод обновляется автоматически через Harmonia.')
     fields = [{
         'name': 'Обновление перевода',
         'value': f"[Открыть релиз]({release['html_url']})",
