@@ -11,7 +11,7 @@ convention, including `ci/build/chore/test/docs`. Subjects are used as written,
 without translating prefixes, rewriting text, or combining identical subjects.
 Only Discord markup is escaped; subjects are limited to 240 characters, and
 at most ten are shown with a link to the full comparison.
-The card includes a short note that Harmonia updates the translation automatically.
+The card starts with a short note that Harmonia updates the translation automatically.
 The summaries quote commit subjects; they do not infer counts of proofread
 strings, include internal commit bodies, or require manually written release notes.
 

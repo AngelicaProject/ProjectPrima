@@ -77,8 +77,8 @@ def make_payload(release, commits, comparison_url=None, previous=None, role_id='
         lines.append(f'…и ещё {len(subjects) - 10} изменений — по ссылке ниже.')
     if not lines:
         lines = ['• Опубликована новая сборка перевода.']
-    description = ('**Что изменилось:**\n' + '\n'.join(lines)
-                   + '\n\nПеревод обновляется автоматически через Harmonia.')
+    description = ('Перевод обновляется автоматически через Harmonia.\n\n'
+                   + '**Что изменилось:**\n' + '\n'.join(lines))
     fields = [{
         'name': 'Обновление перевода',
         'value': f"[Открыть релиз]({release['html_url']})",

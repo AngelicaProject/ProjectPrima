@@ -36,9 +36,9 @@ class ReleaseTests(unittest.TestCase):
 
     def test_card_has_automatic_update_note_without_recurring_slogan(self):
         description = notifier.make_payload(self.release, [commit('Исправлены опечатки')])['embeds'][0]['description']
-        self.assertTrue(description.startswith('**Что изменилось:**'))
+        self.assertTrue(description.startswith('Перевод обновляется автоматически через Harmonia.\n\n**Что изменилось:**'))
         self.assertNotIn('Продолжаем вычитку', description)
-        self.assertIn('Перевод обновляется автоматически через Harmonia.', description)
+        self.assertEqual(description.count('Перевод обновляется автоматически через Harmonia.'), 1)
 
     def test_untrusted_subjects_and_discord_limits(self):
         commits = [commit(f'fix: @everyone [link](https://example.com) {i} ' + '*' * 300)
