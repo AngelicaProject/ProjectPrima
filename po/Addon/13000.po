@@ -229,7 +229,7 @@ msgstr "Исследование"
 #. macro: <ui-edge-color 509> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 509 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-edge-color> — end of: text outline color from the UIColor sheet; </ui-edge-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
-# aeria-terms: {"Duty":"bce761328714","Duty Finder":"2875aea7daf9","Party":"66ce98c91d3e","Revisit":"2506a53a90e2","job":"a9421a81ecaa","mount":"3943e4b3f165"}
+# aeria-terms: {"Duty":"bce761328714","Duty Finder":"2875aea7daf9","Minion":"a1a617f9cd83","Party":"66ce98c91d3e","Revisit":"2506a53a90e2","job":"a9421a81ecaa","mount":"3943e4b3f165"}
 msgctxt "Addon:13039:0:0"
 msgid "Revisit a dungeon in its completed state.<br><br>Explorer Mode allows access to the following:<br>・Explorer Mode-exclusive actions<br>・Minions, mounts, and fashion accessories<br>・Changing jobs (excluding DoL/DoH classes)<br>・Performance actions<br><br><ui-color 508><ui-edge-color 509>※Available only for selected duties completed by the player.<br>※Only the party leader's settings are applicable.<br>※Enabling Explorer Mode will disable all other Duty Finder participation requirement settings.</ui-edge-color></ui-color>"
 msgstr "Заново пройти уже завершённое подземелье.<br><br>В режиме исследования доступны:<br>・Особые действия режима исследования<br>・Призыв миньонов, маунтов и модных аксессуаров<br>・Смена профессии (кроме классов собирателей и ремесленников)<br>・Игра на музыкальных инструментах<br><br><ui-color 508><ui-edge-color 509>※ Доступно только для выбранных завершённых миссий.<br>※ Для отряда действуют настройки его лидера.<br>※ При включении режима исследования все остальные настройки допуска в поиск миссий отключаются.</ui-edge-color></ui-color>"
@@ -929,6 +929,7 @@ msgstr "Я"
 #. ja: 自分のミニオン
 #. de: Eigene Familiare
 #. fr: Sa mascotte
+# aeria-terms: {"Minion":"a1a617f9cd83"}
 msgctxt "Addon:13144:0:0"
 msgid "Player's Minion"
 msgstr "Свой миньон"
@@ -957,6 +958,7 @@ msgstr "Питомец"
 #. ja: ミニオン
 #. de: Begleiter
 #. fr: Mascottes
+# aeria-terms: {"Minion":"a1a617f9cd83"}
 msgctxt "Addon:13148:0:0"
 msgid "Minion"
 msgstr "Миньон"
@@ -992,6 +994,7 @@ msgstr "Питомец"
 #. ja: ミニオン
 #. de: Begleiter
 #. fr: Mascottes
+# aeria-terms: {"Minion":"a1a617f9cd83"}
 msgctxt "Addon:13153:0:0"
 msgid "Minion"
 msgstr "Миньон"
@@ -1093,7 +1096,7 @@ msgstr "Только игроков"
 #. ja: バディ／ペット／ミニオンのみ表示
 #. de: Nur Mitstreiter, Familiare und Begleiter
 #. fr: Compagnons, familiers et mascottes
-# aeria-terms: {"Companions":"bf7e452e405c"}
+# aeria-terms: {"Companions":"bf7e452e405c","Minion":"a1a617f9cd83"}
 msgctxt "Addon:13167:0:0"
 msgid "Companions, Pets, and Minions Only"
 msgstr "Только спутников, питомцев и миньонов"
@@ -3123,57 +3126,64 @@ msgstr "Массовая установка материи продвинуто�
 #. de: Die riskante Technik wird so oft wiederholt, bis die Materia erfolgreich eingesetzt wurde. Dafür <if ($n1 == 1)>wird eine Materia aus deinem Besitz<else>werden maximal <num $n1> Materia aus deinem Besitz</if> verwendet.
 #. fr: Le processus <if ($n1 <= 1)>utilisera la matéria que vous possédez pour tenter de sertir l'objet.<else>puisera dans les <num $n1> matérias que vous possédez pour recommencer jusqu'à la réussite du sertissage.</if>
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
+# aeria-terms: {"Advanced Materia Melding":"df88ea0639c4"}
 msgctxt "Addon:13581:0:0"
 msgid "The <num $n1> in your possession will be used in succession until advanced materia melding succeeds."
-msgstr "Вся материя (<num $n1> шт.) будет использоваться по очереди, пока установка материи продвинутого уровня не удастся."
+msgstr "Вся материя (<num $n1> шт.) будет использоваться по очереди, пока Продвинутая вставка материи не удастся."
 
 #. ja: まとめて禁断装着を依頼する
 #. de: Materia mit der riskanten Technik wiederholt einsetzen lassen.
 #. fr: Demander de sertir en enchaînant les tentatives
+# aeria-terms: {"Advanced Materia Melding":"df88ea0639c4"}
 msgctxt "Addon:13582:0:0"
 msgid "Request advanced materia melding in bulk."
-msgstr "Запросить массовую установку материи продвинутого уровня"
+msgstr "Запросить массовую Продвинутую вставку материи"
 
 #. ja: 所持しているマテリア（<num $n1>個）を使用し、<br>禁断のマテリア装着が成功するまで依頼します。<br>報酬は成否の回数に関わらず1回分となります。
 #. de: Die riskante Technik wird so oft wiederholt, bis die Materia erfolgreich eingesetzt wurde. Dafür <if ($n1 == 1)>wird eine Materia aus deinem Besitz<else>werden maximal <num $n1> Materia aus deinem Besitz</if> verwendet.<br>Unabhängig von der Anzahl der Versuche wird nur einmal die Belohnung fällig.
 #. fr: Le processus <if ($n1 <= 1)>utilisera la matéria que vous possédez pour tenter de sertir l'objet.<else>puisera dans les <num $n1> matérias que vous possédez pour recommencer jusqu'à la réussite du sertissage.</if> La récompense sera payée une seule fois, quel que soit le nombre de tentatives et l'issue du sertissage.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Advanced Materia Melding":"df88ea0639c4"}
 msgctxt "Addon:13583:0:0"
 msgid "The <num $n1> in your possession will be used in succession until advanced materia melding succeeds.<br>A reward will be offered only once regardless of the number of materia used."
-msgstr "Вся материя (<num $n1> шт.) будет использоваться по очереди, пока установка материи продвинутого уровня не удастся.<br>Награда будет выдана только один раз, сколько бы материи ни было использовано."
+msgstr "Вся материя (<num $n1> шт.) будет использоваться по очереди, пока Продвинутая вставка материи не удастся.<br>Награда будет выдана только один раз, сколько бы материи ни было использовано."
 
 #. ja: まとめて禁断装着を依頼中
 #. de: Materia wird mit der riskanten Technik wiederholt eingesetzt.
 #. fr: Demande de sertissage en cours
+# aeria-terms: {"Advanced Materia Melding":"df88ea0639c4"}
 msgctxt "Addon:13584:0:0"
 msgid "Requesting advanced materia melding in bulk."
-msgstr "Запрошена массовая установка материи продвинутого уровня."
+msgstr "Запрошена массовая Продвинутая вставка материи."
 
 #. ja: 所持しているマテリア（<num $n1>個）を使用し、<br>禁断のマテリア装着が成功するまで依頼します。<br>報酬は成否の回数に関わらず1回分となります。
 #. de: Die riskante Technik wird so oft wiederholt, bis die Materia erfolgreich eingesetzt wurde. Dafür <if ($n1 == 1)>wird eine Materia aus deinem Besitz<else>werden maximal <num $n1> Materia aus deinem Besitz</if> verwendet.<br>Unabhängig von der Anzahl der Versuche wird nur einmal die Belohnung fällig.
 #. fr: Le processus <if ($n1 <= 1)>utilisera la matéria que vous possédez pour tenter de sertir l'objet.<else>puisera dans les <num $n1> matérias que vous possédez pour recommencer jusqu'à la réussite du sertissage.</if> La récompense sera payée une seule fois, quel que soit le nombre de tentatives et l'issue du sertissage.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Advanced Materia Melding":"df88ea0639c4"}
 msgctxt "Addon:13585:0:0"
 msgid "The <num $n1> in your possession will be used in succession until advanced materia melding succeeds.<br>A reward will be offered only once regardless of the number of materia used."
-msgstr "Вся материя (<num $n1> шт.) будет использоваться по очереди, пока установка материи продвинутого уровня не удастся.<br>Награда будет выдана только один раз, сколько бы материи ни было использовано."
+msgstr "Вся материя (<num $n1> шт.) будет использоваться по очереди, пока Продвинутая вставка материи не удастся.<br>Награда будет выдана только один раз, сколько бы материи ни было использовано."
 
 #. ja: まとめて禁断装着を依頼されています。
 #. de: Materia mit riskanter Technik wiederholt einsetzen.
 #. fr: Accepter la demande de sertissage<nbsp>?
+# aeria-terms: {"Advanced Materia Melding":"df88ea0639c4"}
 msgctxt "Addon:13586:0:0"
 msgid "Accept request for advanced materia melding in bulk."
-msgstr "Принять запрос на массовую установку материи продвинутого уровня"
+msgstr "Принять запрос на массовую Продвинутую вставку материи"
 
 #. ja: 相手が所持しているマテリア（<num $n1>個）を使用して実行し、<br>結果や試行回数に関わらず、以下の報酬が支払われます。
 #. de: Du erhältst <num $n1> Versuche, um den Auftrag erfolgreich auszuführen. Jeder Versuch verbraucht eine Materia aus dem Besitz des Auftraggebers.<br>Unabhängig von der Anzahl der Versuche und vom Ergebnis erhältst du die folgende Belohnung:
 #. fr: Vous aurez <num $n1> tentative<if ($n1 <= 1)><else>s</if> pour sertir l'objet. La récompense sera payée une seule fois, quel que soit le nombre de tentatives et l'issue du sertissage.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"Advanced Materia Melding":"df88ea0639c4"}
 msgctxt "Addon:13587:0:0"
 msgid "You will be given <num $n1> attempts to successfully complete advanced materia melding.<br>You will be rewarded only once regardless of the number of materia used."
-msgstr "Вам даётся <num $n1> попыток для установки материи продвинутого уровня.<br>Награда выдаётся только один раз, сколько бы материи ни было использовано."
+msgstr "Вам даётся <num $n1> попыток для Продвинутой вставки материи.<br>Награда выдаётся только один раз, сколько бы материи ни было использовано."
 
 #. ja: まだ魚を釣っていません。
 #. de: Du hast noch keinen Fisch gefangen.
@@ -4498,10 +4508,10 @@ msgstr "Набор в сопротивление"
 #. ja: ボズヤクラスター
 #. de: Bozja-Polykristalle
 #. fr: Cristaux bozjiens
-# aeria-terms: {"Bozjan Cluster":"d3bdaada4f23"}
+# aeria-terms: {"Bozjan Cluster":"f87e259099b4"}
 msgctxt "Addon:13822:0:0"
 msgid "Bozjan Clusters"
-msgstr "Бозья"
+msgstr "Бозжанские кластеры"
 
 #. ja: 非常に難易度の高いバトルコンテンツです。<br>それでも挑戦のために名乗りを上げますか？
 #. de: Dies ist ein sehr schwieriger Kampfinhalt.<br>Trotzdem teilnehmen?
@@ -5455,6 +5465,7 @@ msgstr "Фильтр достижений с наградой-маунтом"
 #. ja: ミニオン報酬付きアチーブメントの絞り込み表示を設定します。
 #. de: Errungenschaften anzeigen, die Begleiter gewähren
 #. fr: Filtrer les hauts faits offrant une mascotte
+# aeria-terms: {"Minion":"a1a617f9cd83"}
 msgctxt "Addon:13963:0:0"
 msgid "Filter achievements with minion rewards."
 msgstr "Показывать достижения с наградой в виде миньона."
@@ -5519,9 +5530,10 @@ msgstr "Маунты"
 #. ja: ミニオン
 #. de: Begleiter
 #. fr: Mascottes
+# aeria-terms: {"Minion":"a1a617f9cd83"}
 msgctxt "Addon:13972:0:0"
 msgid "Minions"
-msgstr "Спутники"
+msgstr "Миньоны"
 
 #. ja: 装備品
 #. de: Ausrüstung
