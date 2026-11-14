@@ -1,10 +1,7 @@
 # Project Prima
 
 Неофициальная русская локализация Final Fantasy XIV. Перевод показывается в игре
-плагином [Harmonia](https://github.com/AngelicaProject/Harmonia) для Dalamud;
-проект создается и поддерживается в [Aeria](https://github.com/AngelicaProject/Aeria).
-
-Project Prima, Harmonia и Aeria находятся на ранних стадиях разработки и могут содержать ошибки.
+плагином [Harmonia](https://github.com/AngelicaProject/Harmonia) для Dalamud.
 
 `https://angelicaproject.github.io/ProjectPrima/harmonia/feed-v1.json`
 
@@ -28,18 +25,11 @@ Project Prima, Harmonia и Aeria находятся на ранних стади
 | Путь | Что это |
 | --- | --- |
 | `po/` | текст игры и его перевод: по PO-файлу на лист игры |
-| `aeria-knowledge/style.md` | решения по стилю: обращение, имена, интерфейс |
-| `aeria-knowledge/terms.csv` | термины проекта и запрещённые варианты |
-| `aeria.json` | языки проекта и версия игры |
-| `aeria-pack.json`, `aeria-fonts.json`, `fonts/` | настройки пакета и шрифты для букв, которых нет в игре |
+| `fonts/` | шрифты для букв, которых нет в игре |
 
-## Участие
+## Поддержка
 
-[Discord](https://discord.gg/B9T9qVhcxh) развития и поддержки проекта
-
-Проект открыт и нуждается в людях для вычитки и правок.
-
-Краткая информация по вкладу - [CONTRIBUTING.md](CONTRIBUTING.md).
+[Discord](https://discord.gg/B9T9qVhcxh) поддержки проекта.
 
 ## Лицензия
 
