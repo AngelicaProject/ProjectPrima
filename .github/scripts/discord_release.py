@@ -74,7 +74,7 @@ def make_payload(release, commits, comparison_url=None, previous=None, role_id='
     subjects = list(filter(None, map(readable_subject, commits)))
     lines = [f'• {subject}' for subject in subjects[:10]]
     if len(subjects) > 10:
-        lines.append(f'…и ещё {len(subjects) - 10} изменений — по ссылке ниже.')
+        lines.append(f'...и ещё {len(subjects) - 10} изменений — по ссылке ниже.')
     if not lines:
         lines = ['• Опубликована новая сборка перевода.']
     description = ('Перевод обновляется автоматически через Harmonia.\n\n'

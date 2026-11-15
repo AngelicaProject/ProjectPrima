@@ -13,7 +13,7 @@ msgstr ""
 # aeria-terms: {"Treasure":"e1db39864450","treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:11000:0:5"
 msgid "Should you wish to hunt for additional treasure, first open the treasure coffer, then use <noun-en EventItem 1 $n1 1 1>."
-msgstr "Чтобы продолжить поиски сокровищ, сначала откройте сундук сокровищ, а затем используйте <noun-en EventItem 1 $n1 1 1>"
+msgstr "Чтобы продолжить поиски сокровищ, сначала откройте сундук, затем используйте предмет «<sheet EventItem $n1 0>»"
 
 #. ja: クレセントアイル解説に「<sheet DescriptionString 1224 0 23>」などのページが追加されました。
 #. de: Der Eintrag „<sheet DescriptionString 1224 0 23>“ wurde den Erklärungen zu Kreszentia hinzugefügt.
@@ -22,7 +22,7 @@ msgstr "Чтобы продолжить поиски сокровищ, снач�
 # aeria-terms: {"Occult Crescent":"1528dc547052"}
 msgctxt "LogMessage:11001:0:5"
 msgid "“<sheet DescriptionString 1224 0 23>” has been added to the Occult Crescent guide."
-msgstr "В руководство по Оккультному месяцу добавлен раздел „<sheet DescriptionString 1224 0 23>“"
+msgstr "В руководство по Оккультному месяцу добавлен раздел «<sheet DescriptionString 1224 0 23>»"
 
 #. ja: 以下のクリティカルエンカウントに参加しました。<br><sheet DynamicEvent $n1 11>
 #. de: Du nimmst an der kritischen Begegnung „<sheet DynamicEvent $n1 11>“ teil.
@@ -30,7 +30,7 @@ msgstr "В руководство по Оккультному месяцу до�
 #. macro: <sheet DynamicEvent $n1 11> — a value from a game data sheet, such as a name; sheet = DynamicEvent, row = number parameter 1, column = 11 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11002:0:5"
 msgid "You have joined the critical encounter “<sheet DynamicEvent $n1 11>.”"
-msgstr "Вы присоединились к критическому столкновению „<sheet DynamicEvent $n1 11>“"
+msgstr "Вы присоединились к критическому столкновению «<sheet DynamicEvent $n1 11>»"
 
 #. ja: 戦闘不能状態のため、クリティカルエンカウントに参加できません。
 #. de: Du kannst nicht an der kritischen Begegnung teilnehmen, da du kampfunfähig bist.
@@ -50,7 +50,7 @@ msgstr "Вы без сознания и не можете участвовать
 #. macro: <noun-en Item 3 $n2 3 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = 3, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11004:0:5"
 msgid "You offer <if ($n1 == 1)><noun-en Item 1 $n2 1 1><else><kilo $n1 \",\"><if ($n3 == 0)><else>(+<num $n3>%)</if> <noun-en Item 3 $n2 3 1></if>."
-msgstr "Вы предлагаете <if ($n1 == 1)><noun-en Item 1 $n2 1 1><else><kilo $n1 \",\"><if ($n3 == 0)><else>(+<num $n3>%)</if> <noun-en Item 3 $n2 3 1></if>"
+msgstr "Предложено: <sheet Item $n2 0><if ($n1 == 1)><else> × <kilo $n1 \",\"><if ($n3 == 0)><else>(+<num $n3>%)</if></if>"
 
 #. ja: 「<sheet Status $n1 0>」を獲得した！
 #. de: Du erhältst den Status „<sheet Status $n1 0>“!
@@ -58,7 +58,7 @@ msgstr "Вы предлагаете <if ($n1 == 1)><noun-en Item 1 $n2 1 1><else
 #. macro: <sheet Status $n1 0> — a value from a game data sheet, such as a name; sheet = Status, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11005:0:5"
 msgid "You are granted <sheet Status $n1 0>!"
-msgstr "Вы получили статус „<sheet Status $n1 0>“!"
+msgstr "Вы получили статус «<sheet Status $n1 0>»!"
 
 #. ja: 既定の参加人数を超えたため、使用した<sheet Item $n1 0>が返還されました。
 #. de: Da es mehr Teilnehmer als offene Plätze gab, erhältst du <if ($n1 == 1)><noun-de Item 3 $n2 1 4 1><else><noun-de Item 3 $n2 2 4 1></if> zurück.
@@ -69,7 +69,7 @@ msgstr "Вы получили статус „<sheet Status $n1 0>“!"
 #. macro: <if ($n1 == 1)>has<else>have</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11006:0:5"
 msgid "The number of participants exceeded capacity─the <if ($n1 == 1)><noun-en Item 3 $n2 1 1><else><noun-en Item 3 $n2 3 1></if> you offered <if ($n1 == 1)>has<else>have</if> been returned."
-msgstr "Участников оказалось больше, чем мест. Предложенный предмет возвращён: <if ($n1 == 1)><noun-en Item 3 $n2 1 1><else><noun-en Item 3 $n2 3 1></if>"
+msgstr "Участников оказалось больше, чем мест. Предложенные предметы возвращены: <noun-en Item 3 $n2 1 1>"
 
 #. ja: <sheet BNpcName $n1 0>に対する「ぬすむ」の成果を得た！
 #. de: Du hast <noun-de BNpcName 2 $n1 1 4 1> erfolgreich bestohlen!
@@ -100,7 +100,7 @@ msgstr "Вы не соответствуете требованиям для у�
 # aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "LogMessage:11012:0:5"
 msgid "You have mastered the phantom job <sheet MKDSupportJob $n1 0>!"
-msgstr "Вы освоили фантомную профессию „<sheet MKDSupportJob $n1 0>“!"
+msgstr "Вы освоили фантомную профессию «<sheet MKDSupportJob $n1 0>»!"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、サポートジョブ「<sheet MKDSupportJob $n1 0>」のマスターになった。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> Meis<shy>ter<shy>schaft über den Phantomjob <if ($gn4 == 0)><sheet MKDSupportJob $n1 0><else><sheet MKDSupportJob $n1 2></if> erlangt!
@@ -149,7 +149,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы осваиваете<else><if $gn7><
 # aeria-terms: {"Occult Crescent":"1528dc547052"}
 msgctxt "LogMessage:11016:0:5"
 msgid "“<sheet DescriptionString 1213 0 23>” has been added to the Occult Crescent guide."
-msgstr "В руководство по Оккультному месяцу добавлен раздел „<sheet DescriptionString 1213 0 23>“"
+msgstr "В руководство по Оккультному месяцу добавлен раздел «<sheet DescriptionString 1213 0 23>»"
 
 #. ja: 人数が上限を超えたため、コンテンツに参加できませんでした。
 #. de: Du kannst nicht am Inhalt teilnehmen, da es mehr Teilnehmer als offene Plätze gab.
@@ -164,7 +164,7 @@ msgstr "Не удалось присоединиться: в эфирном уз
 #. macro: <sheet ContentRoulette $n1 0> — a value from a game data sheet, such as a name; sheet = ContentRoulette, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11018:0:5"
 msgid "You have not unlocked <sheet ContentRoulette $n1 0>."
-msgstr "Вы ещё не открыли „<sheet ContentRoulette $n1 0>“"
+msgstr "Вы ещё не открыли «<sheet ContentRoulette $n1 0>»"
 
 #. ja: ラーニング可能な青魔法が存在します。<br>サポート青魔道士の特性を確認してみましょう。
 #. de: Neue Blaumagie kann erlernt werden. Überprüfe die Eigenschaften deines Phantom-Blaumagiers.
@@ -232,7 +232,7 @@ msgstr "Боевые воспоминания: <string $s1>"
 # aeria-terms: {"Memories":"580f84036d64"}
 msgctxt "LogMessage:11026:0:5"
 msgid "Martial Memories: All objectives in the <string $s1> category complete!"
-msgstr "Боевые воспоминания: выполнены все цели категории „<string $s1>“!"
+msgstr "Боевые воспоминания: выполнены все цели категории «<string $s1>»!"
 
 #. ja: 抽選の結果「フォークタワー：魔の塔」の攻略に参加することができませんでした。
 #. de: Du wurdest dieses Mal nicht für den „Fork-Turm - Magie“ ausgewählt.
@@ -246,7 +246,7 @@ msgstr "Вас не выбрали для входа в Башню Развил�
 #. fr: Le pollen a attiré des papillons géants venimeux...
 msgctxt "LogMessage:11028:0:5"
 msgid "The pollen has attracted venomous vilekin..."
-msgstr "Пыльца привлекла ядовитых мотыльков.."
+msgstr "Пыльца привлекла ядовитых мотыльков..."
 
 #. ja: 戦闘の記憶の全ての項目を達成した！
 #. de: Der Wissenskristall wurde komplett mit Kampferinnerungen gefüllt!
@@ -263,7 +263,7 @@ msgstr "Кристалл знаний полностью заполнен бое
 # aeria-terms: {"Occult Crescent":"1528dc547052"}
 msgctxt "LogMessage:11030:0:5"
 msgid "“<sheet DescriptionString 1654 0 23>” has been added to the Occult Crescent guide."
-msgstr "В руководство по Оккультному месяцу добавлена страница „<sheet DescriptionString 1654 0 23>“"
+msgstr "В руководство по Оккультному месяцу добавлена страница «<sheet DescriptionString 1654 0 23>»"
 
 #. ja: クレセントアイル解説に「<sheet DescriptionString 1657 0 23>」のページが追加されました。
 #. de: Der Eintrag „<sheet DescriptionString 1657 0 23>“ wurde den Erklärungen zu Kreszentia hinzugefügt.
@@ -272,7 +272,7 @@ msgstr "В руководство по Оккультному месяцу до�
 # aeria-terms: {"Occult Crescent":"1528dc547052"}
 msgctxt "LogMessage:11031:0:5"
 msgid "“<sheet DescriptionString 1657 0 23>” has been added to the Occult Crescent guide."
-msgstr "В руководство по Оккультному месяцу добавлена страница „<sheet DescriptionString 1657 0 23>“"
+msgstr "В руководство по Оккультному месяцу добавлена страница «<sheet DescriptionString 1657 0 23>»"
 
 #. ja: ナレッジレベルが「40」に達していないため、突入できません。
 #. de: Der Inhalt kann nicht betreten werden, da deine Wissensstufe unter 40 liegt.
@@ -288,7 +288,7 @@ msgstr "Для входа нужен уровень знаний 40"
 # aeria-terms: {"Occult Crescent":"1528dc547052"}
 msgctxt "LogMessage:11033:0:5"
 msgid "“<sheet DescriptionString 1659 0 23>” has been added to the Occult Crescent guide."
-msgstr "В руководство по Оккультному месяцу добавлена страница „<sheet DescriptionString 1659 0 23>“"
+msgstr "В руководство по Оккультному месяцу добавлена страница «<sheet DescriptionString 1659 0 23>»"
 
 #. ja: 条件を満たしていないため、「フォークタワー：魔の塔」の攻略に参加できませんでした。<br>参加には、ナレッジレベル「40」および特定クエストのコンプリートが必要です。
 #. de: „Fork-Turm - Magie“ kann nicht betreten werden, da bestimmte Bedingungen nicht erfüllt sind.<br>Um an diesem Inhalt teilnehmen zu können, muss Wissensstufe 40 erreicht sowie bestimmte Aufträge abgeschlossen worden sein.
@@ -302,7 +302,7 @@ msgstr "Вы не соответствуете требованиям для у�
 #. fr: Les bouches dévorent les papillons...
 msgctxt "LogMessage:11035:0:5"
 msgid "Multiple mouths make short work of the vilekin..."
-msgstr "Многочисленные пасти быстро расправляются с мотыльками.."
+msgstr "Многочисленные пасти быстро расправляются с мотыльками..."
 
 #. ja: 毒蛾を捕食した口から、毒霧が溢れ出る……
 #. de: Ein toxischer Ausstoß quillt aus den gesättigten Mäulern hervor<nbsp>...
@@ -310,7 +310,7 @@ msgstr "Многочисленные пасти быстро расправля�
 # aeria-terms: {"mist":"f4995d379512"}
 msgctxt "LogMessage:11036:0:5"
 msgid "The gaping maws spit forth a toxic mist..."
-msgstr "Из разинутых пастей вырывается ядовитый туман.."
+msgstr "Из разинутых пастей вырывается ядовитый туман..."
 
 #. ja: クレセントアイル解説に「<sheet DescriptionString 1758 0 23>」のページが追加されました。
 #. de: Der Eintrag „<sheet DescriptionString 1758 0 23>“ wurde den Erklärungen zu Kreszentia hinzugefügt.
@@ -319,7 +319,7 @@ msgstr "Из разинутых пастей вырывается ядовиты
 # aeria-terms: {"Occult Crescent":"1528dc547052"}
 msgctxt "LogMessage:11037:0:5"
 msgid "“<sheet DescriptionString 1758 0 23>” has been added to the Occult Crescent guide."
-msgstr "В руководство по Оккультному месяцу добавлена страница „<sheet DescriptionString 1758 0 23>“"
+msgstr "В руководство по Оккультному месяцу добавлена страница «<sheet DescriptionString 1758 0 23>»"
 
 #. ja: 加えてこのコンテンツでは、<br>キャラクターのナレッジレベルが20を超えている場合、<br>ナレッジレベル20に自動調整されます。
 #. de: Falls deine Wissensstufe höher als 20 ist, wird sie automatisch auf diesen Wert herabgesetzt.
@@ -345,7 +345,7 @@ msgstr "Можно выбрать только предметы с прочно�
 # aeria-terms: {"market board":"223dc2f41751"}
 msgctxt "LogMessage:11101:0:5"
 msgid "<capitalize><noun-en Item 3 $n1 1 1></capitalize> has been added to your market board favorites. (<num $n2>/<num $n3>)"
-msgstr "<capitalize><noun-en Item 3 $n1 1 1></capitalize> добавлен в избранное на торговой доске. (<num $n2>/<num $n3>)"
+msgstr "В избранное на торговой доске добавлено: <sheet Item $n1 0> (<num $n2>/<num $n3>)"
 
 #. ja: マーケットボードの「ブックマーク」がいっぱいのため登録できません。
 #. de: Aktion nicht möglich. Deine Merkliste hat die maximale Anzahl an Einträgen bereits erreicht.
@@ -353,7 +353,7 @@ msgstr "<capitalize><noun-en Item 3 $n1 1 1></capitalize> добавлен в и
 # aeria-terms: {"market board":"223dc2f41751"}
 msgctxt "LogMessage:11102:0:5"
 msgid "Unable to add to your market board favorites. Your favorites list is full."
-msgstr "Не удалось добавить в избранное на торговую доску: список заполнен"
+msgstr "Не удалось добавить в избранное на торговой доске: список заполнен"
 
 #. ja: <sheet Item $n1 0>をマーケットボードの「ブックマーク」から削除しました。（<num $n2>/<num $n3>）
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> wurde von der Merkliste entfernt. (<num $n2>/<num $n3>)
@@ -365,7 +365,7 @@ msgstr "Не удалось добавить в избранное на торг
 # aeria-terms: {"market board":"223dc2f41751"}
 msgctxt "LogMessage:11103:0:5"
 msgid "<capitalize><noun-en Item 3 $n1 1 1></capitalize> has been removed from your market board favorites. (<num $n2>/<num $n3>)"
-msgstr "<capitalize><noun-en Item 3 $n1 1 1></capitalize> удалён из избранного на торговой доске. (<num $n2>/<num $n3>)"
+msgstr "Из избранного на торговой доске удалено: <sheet Item $n1 0> (<num $n2>/<num $n3>)"
 
 #. ja: 新たなエモートアクション「<sheet Emote 191 0>」「<sheet Emote 295 0>」を修得しました。
 #. de: Du hast die Emotes „<sheet Emote 191 0>“ und „<sheet Emote 295 0>“ erlernt.
@@ -374,7 +374,7 @@ msgstr "<capitalize><noun-en Item 3 $n1 1 1></capitalize> удалён из из
 #. macro: <sheet Emote 295 0> — a value from a game data sheet, such as a name; sheet = Emote, row = 295, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11130:0:5"
 msgid "You learn the emotes “<sheet Emote 191 0>” and “<sheet Emote 295 0>.”"
-msgstr "Вы выучили эмоции „<sheet Emote 191 0>“ и „<sheet Emote 295 0>“"
+msgstr "Вы изучили эмоции «<sheet Emote 191 0>» и «<sheet Emote 295 0>»"
 
 #. ja: 新たなエモートアクション「<sheet Emote 207 0>」「<sheet Emote 296 0>」を修得しました。
 #. de: Du hast die Emotes „<sheet Emote 207 0>“ und „<sheet Emote 296 0>“ erlernt.
@@ -383,7 +383,7 @@ msgstr "Вы выучили эмоции „<sheet Emote 191 0>“ и „<sheet 
 #. macro: <sheet Emote 296 0> — a value from a game data sheet, such as a name; sheet = Emote, row = 296, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11131:0:5"
 msgid "You learn the emotes “<sheet Emote 207 0>” and “<sheet Emote 296 0>.”"
-msgstr "Вы выучили эмоции „<sheet Emote 207 0>“ и „<sheet Emote 296 0>“"
+msgstr "Вы изучили эмоции «<sheet Emote 207 0>» и «<sheet Emote 296 0>»"
 
 #. ja: 護竜アルシュベルドから剥ぎ取りが可能になりました！
 #. de: Untersuche den Kadaver des Wächter-Arkvelds!
@@ -436,7 +436,7 @@ msgstr "Больше этого ингредиента не нужно"
 #. macro: <sheet ValentionSweetsMaterial $n1 0> — a value from a game data sheet, such as a name; sheet = ValentionSweetsMaterial, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11138:0:5"
 msgid "You artfully decorate the cake with <sheet ValentionSweetsMaterial $n1 0>!"
-msgstr "Вы украсили торт материалом „<sheet ValentionSweetsMaterial $n1 0>“!"
+msgstr "Вы украсили торт материалом «<sheet ValentionSweetsMaterial $n1 0>»!"
 
 #. ja: 制限時間が、残り半分以下となりました。
 #. de: Die Hälfte deiner Zeit ist rum.
@@ -470,7 +470,7 @@ msgstr "Если вас заметит маммет-кондитер, испол
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:11142:0:5"
 msgid "The <lower><sheet Addon $n1 0></lower> has been filled with a bonus <kilo $n2 \",\"> <if ($n2 == 1)>unit<else>units</if> of aether."
-msgstr "В <lower><sheet Addon $n1 0></lower> накоплено <kilo $n2 \",\"> бонусных единиц эфира"
+msgstr "Накоплен бонусный эфир. Вместилище — <sheet Addon $n1 0>. Единиц эфира: <kilo $n2 \",\">"
 
 #. ja: <sheet Addon $n1 0>に<kilo $n2 ",">ポイント分のエーテルが蓄積された。
 #. de: Die <sheet Addon $n1 0> wurde mit <kilo $n2 ","> <if ($n2 <= 1)>Einheit<else>Einheiten</if> Äther befüllt.
@@ -482,7 +482,7 @@ msgstr "В <lower><sheet Addon $n1 0></lower> накоплено <kilo $n2 \",\"
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:11143:0:5"
 msgid "The <lower><sheet Addon $n1 0></lower> has been filled with <kilo $n2 \",\"> <if ($n2 == 1)>unit<else>units</if> of aether."
-msgstr "В <lower><sheet Addon $n1 0></lower> накоплено <kilo $n2 \",\"> единиц эфира"
+msgstr "Накоплен эфир. Вместилище — <sheet Addon $n1 0>. Единиц эфира: <kilo $n2 \",\">"
 
 #. ja: <sound 1 171><sheet Addon $n1 0>が、眩い輝きを放った！！！
 #. de: <sound 1 171> Die <sheet Addon $n1 0> erstrahlt in leuchtendem Glanz!
@@ -515,7 +515,7 @@ msgstr "Вихрь разрастается в ураган!"
 #. fr: Les moustaches de la grossièreté pardonnée se mettent à luire...
 msgctxt "LogMessage:11147:0:5"
 msgid "The beast's whiskers begin to glow..."
-msgstr "Усы чудовища начинают светиться.."
+msgstr "Усы чудовища начинают светиться..."
 
 #. ja: 護竜アルシュベルドがさらなる力を解き放つ……！
 #. de: Der Wächter-Arkveld setzt immer mehr Energie frei<nbsp>...
@@ -539,7 +539,7 @@ msgstr "Список нужных ингредиентов и украшений
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11150:0:5"
 msgid "Unable to obtain <noun-en Item 2 $n1 1 1>. You may only carry one of that item."
-msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>. Такой предмет можно носить только в одном экземпляре"
+msgstr "Не удалось получить: <sheet Item $n1 0>. Такой предмет можно носить только в одном экземпляре"
 
 #. ja: <sheet Item $n1 0>は入手できませんでした。
 #. de: Du konntest <noun-de Item 2 $n1 1 4 1> nicht erhalten.
@@ -547,7 +547,7 @@ msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>. Тако�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11151:0:5"
 msgid "Unable to obtain <noun-en Item 2 $n1 1 1>."
-msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>"
+msgstr "Не удалось получить: <sheet Item $n1 0>"
 
 #. ja: 新たなコスモミッションが発行された！
 #. de: Neue Stellarmissionen verfügbar!
@@ -569,7 +569,7 @@ msgstr "Список ежедневных достижений обновилс�
 #. macro: <sheet WKSMissionUnit $n1 0> — a value from a game data sheet, such as a name; sheet = WKSMissionUnit, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11154:0:5"
 msgid "The stellar mission “<sheet WKSMissionUnit $n1 0>” is now underway."
-msgstr "Началась звёздная миссия „<sheet WKSMissionUnit $n1 0>“"
+msgstr "Началась звёздная миссия «<sheet WKSMissionUnit $n1 0>»"
 
 #. ja: ギミックによる移動処理がキャンセルされました。
 #. de: Der Transport musste abgebrochen werden.
@@ -584,7 +584,7 @@ msgstr "Перемещение отменено"
 #. macro: <sheet WKSAchievement $n1 0> — a value from a game data sheet, such as a name; sheet = WKSAchievement, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11156:0:5"
 msgid "You achieved the “<sheet WKSAchievement $n1 0>” daily success!"
-msgstr "Вы выполнили ежедневное достижение „<sheet WKSAchievement $n1 0>“!"
+msgstr "Вы выполнили ежедневное достижение «<sheet WKSAchievement $n1 0>»!"
 
 #. ja: 現在の状態では、搭乗を確定できません。
 #. de: Ein Einstieg ist im aktuellen Zustand nicht möglich.
@@ -599,7 +599,7 @@ msgstr "Нельзя сесть в транспорт"
 #. macro: <sheet WKSCosmoToolName $n1 0> — a value from a game data sheet, such as a name; sheet = WKSCosmoToolName, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11158:0:5"
 msgid "You completed the “<sheet WKSCosmoToolName $n1 0>” data set, upgrading your tool!"
-msgstr "Вы собрали набор данных „<sheet WKSCosmoToolName $n1 0>“ и улучшили инструмент!"
+msgstr "Вы собрали набор данных «<sheet WKSCosmoToolName $n1 0>» и улучшили инструмент!"
 
 #. ja: 研究データの報告処理に失敗しました。
 #. de: Bericht der Daten fehlgeschlagen.
@@ -628,7 +628,7 @@ msgstr "Вы получили бронзовую звезду"
 #. macro: <sheet DescriptionString 1289 0 24> — a value from a game data sheet, such as a name; sheet = DescriptionString, row = 1289, column = 0, parameter = 24 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11164:0:5"
 msgid "Further details on participation can be found under “<sheet DescriptionString 1289 0 24>” in your exotablet."
-msgstr "Подробнее об участии читайте в разделе „<sheet DescriptionString 1289 0 24>“ на экзопланшете"
+msgstr "Подробнее об участии читайте в разделе «<sheet DescriptionString 1289 0 24>» на экзопланшете"
 
 #. ja: ミッションの制限時間まで、残り<if ($n1 > 0)><num $n1>分</if><if ($n2 > 0)><num $n2>秒</if>以下となりました。
 #. de: Weniger als<if ($n1 > 0)> <num $n1> Min.</if><if ($n2 > 0)> <num $n2> Sek.</if> bis Missionsende.
@@ -640,7 +640,7 @@ msgstr "Подробнее об участии читайте в разделе 
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11165:0:5"
 msgid "<if ($n1 > 0)><if ($n1 == 1)><num $n1> minute<else><num $n1> minutes</if></if><if ($n2 > 0)><num $n2> seconds</if> remaining to complete the mission."
-msgstr "<if ($n1 > 0)><if ($n1 == 1)><num $n1> минута<else><num $n1> мин</if></if><if ($n2 > 0)> <num $n2> сек</if> до конца миссии"
+msgstr "До конца миссии: <if ($n1 > 0)><num $n1> мин.</if><if ($n2 > 0)> <num $n2> с</if>"
 
 #. ja: 現在進入できないエリアにいたため、エリア移動しました。
 #. de: Aktueller Bereich wurde aufgrund von Betreten eines nicht zugänglichen Bereiches gewechselt.
@@ -689,7 +689,7 @@ msgstr "Не удалось переместиться в область инс�
 #. macro: <if ($n2 <= 1)><else>s</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 <= 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11171:0:5"
 msgid "You earn a score of <num $n1><if ($n3 > 0)>(+<num $n3>%)</if> for achieving <num $n2> successive chain<if ($n2 <= 1)><else>s</if>."
-msgstr "За <num $n2> успешных сборов подряд вы получаете <num $n1><if ($n3 > 0)>(+<num $n3>%)</if> очков"
+msgstr "Серия успешных сборов: <num $n2>. Получено: <num $n1><if ($n3 > 0)> (+<num $n3>%)</if> оч."
 
 #. ja: 獲得数ボーナス発生により、評価値<num $n1><if ($n2 > 0)>(+<num $n2>%)</if>を獲得しました。
 #. de: Für das Auslösen von Stückzahl-Boni wurden <num $n1><if ($n2 > 0)>(+<num $n2>%)</if> Punkte erhalten.
@@ -712,7 +712,7 @@ msgstr "За удачу сборщика вы получаете <num $n1><if ($
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11173:0:5"
 msgid "You earn a score of <num $n1><if ($n4 > 0)>(+<num $n4>%)</if> for achieving <num $n3> successive chain<if ($n3 <= 1)><else>s</if> and a score of <num $n2><if ($n4 > 0)>(+<num $n4>%)</if> from Gatherer's Boon."
-msgstr "За <num $n3> успешных сборов подряд вы получаете <num $n1><if ($n4 > 0)>(+<num $n4>%)</if> очков, а за удачу сборщика — <num $n2><if ($n4 > 0)>(+<num $n4>%)</if> очков"
+msgstr "Серия успешных сборов: <num $n3>. Получено: <num $n1><if ($n4 > 0)> (+<num $n4>%)</if> оч. За удачу сборщика: <num $n2><if ($n4 > 0)> (+<num $n4>%)</if> оч."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はコスモミッションでGP<num $n1>を消費した（合計<num $n2>）
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <num $n1> SP während der Stellarmission verbraucht. (Gesamt: <num $n2>)
@@ -726,7 +726,7 @@ msgstr "За <num $n3> успешных сборов подряд вы полу�
 # aeria-terms: {"GP":"4750f1f001df"}
 msgctxt "LogMessage:11174:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> consumed <num $n1> GP. (<num $n2> GP consumed in total during the stellar mission.)"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> потратили <num $n1> GP. (Всего за звёздную миссию потрачено GP: <num $n2>.)"
+msgstr "<if ($gs1 == $gs2)>Потрачено GP:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> тратит GP:</if> <num $n1>. Всего за звёздную миссию потрачено GP: <num $n2>"
 
 #. ja: コスモミッションで使用したGP<num $n1>を回復しました。
 #. de: Die <num $n1> SP, die während der Stellarmission verbraucht worden sind, wurden regeneriert.
@@ -742,7 +742,7 @@ msgstr "Вы восстановили все <num $n1> GP, потраченны�
 #. fr: Utilisez la Transcendance<nbsp>!
 msgctxt "LogMessage:11176:0:5"
 msgid "Execute limit break!"
-msgstr "Используйте «Предел»!"
+msgstr "Примените Предельный прорыв!"
 
 #. ja: ターゲットを吸引した！
 #. de: Das Ziel vor dir wurde eingesaugt!
@@ -826,7 +826,7 @@ msgstr "Плазменная глотка заряжена!"
 # aeria-terms: {"Index":"73365e16128a"}
 msgctxt "LogMessage:11187:0:5"
 msgid "<if ($n1 > 0)>The entry “<sheet-sub WKSPioneeringTrail $n2 $n3 3 WKSPioneeringTrailString 1>” and <num $n1> <if ($n1 == 1)>other<else>others</if> have been added to the Infrastructure Index.<else>The entry “<sheet-sub WKSPioneeringTrail $n2 $n3 3 WKSPioneeringTrailString 1>” has been added to the Infrastructure Index.</if>"
-msgstr "<if ($n1 > 0)>Запись „<sheet-sub WKSPioneeringTrail $n2 $n3 3 WKSPioneeringTrailString 1>“ и ещё <num $n1> <if ($n1 == 1)>запись<else>записей</if> добавлены в Индекс<else>В Индекс добавлена запись „<sheet-sub WKSPioneeringTrail $n2 $n3 3 WKSPioneeringTrailString 1>“</if>"
+msgstr "В Индекс первопроходца добавлена запись «<sheet-sub WKSPioneeringTrail $n2 $n3 3 WKSPioneeringTrailString 1>»<if ($n1 > 0)>. Других добавленных записей: <num $n1></if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>を取り外した！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de EventItem 1 $n1 1 4 1> entnommen!
@@ -839,7 +839,7 @@ msgstr "<if ($n1 > 0)>Запись „<sheet-sub WKSPioneeringTrail $n2 $n3 3 WK
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11188:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>remove<else>removes</if> <noun-en Item 2 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы снимаете <noun-en Item 2 $n1 1 1><else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> снимает <noun-en Item 2 $n1 1 1></if></capitalize>"
+msgstr "<if ($gs1 == $gs2)>Снято:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> снимает:</if> <noun-en Item 2 $n1 1 1>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>を満タンに充填した！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de EventItem 2 $n1 1 4 1> komplett aufgeladen!
@@ -852,7 +852,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы снимаете <noun-en Item 2 $n1
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11189:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>charge<else>charges</if> <noun-en Item 2 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы заряжаете <noun-en Item 2 $n1 1 1><else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> заряжает <noun-en Item 2 $n1 1 1></if></capitalize>"
+msgstr "<if ($gs1 == $gs2)>Заряжено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> заряжает:</if> <noun-en Item 2 $n1 1 1>"
 
 #. ja: 設定を変更しました。
 #. de: Die Einstellungen wurden aktualisiert.
@@ -927,7 +927,7 @@ msgstr "Начато задание класса ниже A. Счётчик за
 #. fr: Le produit pharmaceutique trouble vos sens et vous empêche de prévoir les attaques ennemies<nbsp>!
 msgctxt "LogMessage:11201:0:5"
 msgid "Your senses are dulled, preventing you from predicting attacks..."
-msgstr "Чувства притупились — теперь вам труднее предугадывать атаки.."
+msgstr "Чувства притупились — теперь вам труднее предугадывать атаки..."
 
 #. ja: 光と闇のエーテルが中和されたようだ……
 #. de: Licht und Dunkelheit stehen im Gleichklang<nbsp>...
@@ -935,21 +935,21 @@ msgstr "Чувства притупились — теперь вам трудн
 # aeria-terms: {"darkness":"8506c2e6be5c"}
 msgctxt "LogMessage:11202:0:5"
 msgid "Light and Darkness neutralize each other..."
-msgstr "Свет и Тьма нейтрализовали друг друга.."
+msgstr "Свет и Тьма нейтрализовали друг друга..."
 
 #. ja: 深淵の焔が具現した……
 #. de: Die Flamme des Abgrunds nimmt Form an<nbsp>...
 #. fr: Le feu abyssal émerge...
 msgctxt "LogMessage:11203:0:5"
 msgid "An abyssal blaze erupts..."
-msgstr "Пламя бездны вспыхивает.."
+msgstr "Пламя бездны вспыхивает..."
 
 #. ja: 硝子窓が破壊された……
 #. de: Das Fenster ist geborsten<nbsp>...
 #. fr: La fenêtre de verre est brisée...
 msgctxt "LogMessage:11204:0:5"
 msgid "Glass shatters in a hail of color..."
-msgstr "Стекло разлетается сверкающими осколками.."
+msgstr "Стекло разлетается сверкающими осколками..."
 
 #. ja: エーテルを喰らい、エミネントグリーフが体力を回復した……
 #. de: Die Eminente Trauer nährt sich am Äther<nbsp>...
@@ -957,7 +957,7 @@ msgstr "Стекло разлетается сверкающими осколк�
 # aeria-terms: {"Eminent Grief":"5306312ffc1c","aether":"121cf0f81f85"}
 msgctxt "LogMessage:11205:0:5"
 msgid "Eminent Grief rejuvenates by devouring aether..."
-msgstr "Великое горе поглощает эфир и восстанавливает силы.."
+msgstr "Великое горе поглощает эфир и восстанавливает силы..."
 
 #. ja: 次元の裂け目から、ヴォイドの瘴気が溢れ出す……
 #. de: Fäulnis quillt aus den Nichtsspalten<nbsp>...
@@ -965,7 +965,7 @@ msgstr "Великое горе поглощает эфир и восстана�
 # aeria-terms: {"rift":"f9bd7b6aea1e"}
 msgctxt "LogMessage:11206:0:5"
 msgid "Miasma seeps in from beyond the rift..."
-msgstr "Из-за Разлома сочатся миазмы.."
+msgstr "Из-за Разлома сочатся миазмы..."
 
 #. ja: フォーギヴン・エミュレーションの足元に光が集う……
 #. de: Unter dem geläuterten Wetteifer sammelt sich sündenhafte Energie<nbsp>...
@@ -973,14 +973,14 @@ msgstr "Из-за Разлома сочатся миазмы.."
 # aeria-terms: {"forgiven emulation":"c95fde072a40"}
 msgctxt "LogMessage:11207:0:5"
 msgid "The forgiven emulation gathers Light to its feet..."
-msgstr "Прощённое подражание собирает Свет у своих ног.."
+msgstr "Прощённое подражание собирает Свет у своих ног..."
 
 #. ja: 薬液射出装置が起動した……
 #. de: Psychotika werden vorbereitet ...
 #. fr: Les diffuseurs pharmaceutiques ont été activés.
 msgctxt "LogMessage:11208:0:5"
 msgid "Liquid chemical dispensers whir into action..."
-msgstr "Распылители химикатов запускаются.."
+msgstr "Распылители химикатов запускаются..."
 
 #. ja: <sheet BNpcName $n1 0>が力を溜めている……！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> sammelt Energie<nbsp>...
@@ -998,7 +998,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> накаплива
 # aeria-terms: {"Enemy":"d3725f2b4d0e","Memories":"580f84036d64"}
 msgctxt "LogMessage:11211:0:5"
 msgid "Memories of an enemy bombardment are made manifest..."
-msgstr "Явились воспоминания о вражеской бомбардировке.."
+msgstr "Явились воспоминания о вражеской бомбардировке..."
 
 #. ja: 犠牲になった人々の記憶が具現化した……
 #. de: Erinnerungen der im Krieg Umgekommenen materialisieren sich ...
@@ -1006,7 +1006,7 @@ msgstr "Явились воспоминания о вражеской бомба
 # aeria-terms: {"Memories":"580f84036d64"}
 msgctxt "LogMessage:11212:0:5"
 msgid "Memories of war casualties are made manifest..."
-msgstr "Явились воспоминания о жертвах войны.."
+msgstr "Явились воспоминания о жертвах войны..."
 
 #. ja: フォーギヴン・エミュレーションが狙いを定めた……
 #. de: Der geläuterte Wetteifer hat sein Opfer gefunden<nbsp>...
@@ -1014,21 +1014,21 @@ msgstr "Явились воспоминания о жертвах войны.."
 # aeria-terms: {"forgiven emulation":"c95fde072a40"}
 msgctxt "LogMessage:11213:0:5"
 msgid "The forgiven emulation takes aim..."
-msgstr "Прощённое подражание прицеливается.."
+msgstr "Прощённое подражание прицеливается..."
 
 #. ja: 死出の道行きは、歩むほどに死が近づく……
 #. de: Der Weg des Todes kennt nur ein Ziel<nbsp>... den Tod.
 #. fr: La mort attend ceux qui poursuivent leur chemin...
 msgctxt "LogMessage:11214:0:5"
 msgid "Death approaches all who dare tread forth..."
-msgstr "Смерть приближается ко всем, кто осмелится двинуться вперёд.."
+msgstr "Смерть приближается ко всем, кто осмелится двинуться вперёд..."
 
 #. ja: 光を拒む者に死出の道行きが定められた……
 #. de: Wer das Licht meidet, setzt Fuß auf den Weg des Todes<nbsp>...
 #. fr: Tous ceux qui rejettent la Lumière sont condamnés à mort...
 msgctxt "LogMessage:11215:0:5"
 msgid "All who deny Light are condemned to death..."
-msgstr "Всех, кто отвергает Свет, ждёт смерть.."
+msgstr "Всех, кто отвергает Свет, ждёт смерть..."
 
 #. ja: 光を受け入れ、死出の道行きから逃れた！
 #. de: Wer das Licht sucht, entrinnt dem Weg des Todes!
@@ -1043,7 +1043,7 @@ msgstr "Приняв Свет, вы избежали смерти!"
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:11217:0:5"
 msgid "No pact can be forged with this target..."
-msgstr "С этой целью нельзя заключить пакт.."
+msgstr "С этой целью нельзя заключить пакт..."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>を「とらえる」のはとても難しいようだ。
 #. de: Einen Pakt mit dieser Bestie zu schließen, dürfte sehr schwierig sein.
@@ -1091,7 +1091,7 @@ msgstr "С этим зверем можно подружиться без вся
 # aeria-terms: {"aether":"121cf0f81f85","devoured eater":"33cfe3d77dd5"}
 msgctxt "LogMessage:11223:0:5"
 msgid "The devoured eater rejuvenates by consuming aether..."
-msgstr "Пожранный пожиратель восстанавливает силы, поглощая эфир.."
+msgstr "Пожранный пожиратель восстанавливает силы, поглощая эфир..."
 
 #. ja: 飛空艇が破壊される前に、飛び移れ！
 #. de: Spring vom Luftschiff, bevor es in Schutt und Asche gelegt wird!
@@ -1121,7 +1121,7 @@ msgstr "Вы выбрались из бездны!"
 #. fr: Vous êtes <if $gn4>entraînée<else>entraîné</if> dans l'abîme...
 msgctxt "LogMessage:11227:0:5"
 msgid "You have been dragged into the abyss..."
-msgstr "Вас затянуло в бездну.."
+msgstr "Вас затянуло в бездну..."
 
 #. ja: 永遠の闇がエーテルを取り込んだ……
 #. de: Das Ewige Dunkel hat sich am Äther gelabt ...
@@ -1129,14 +1129,14 @@ msgstr "Вас затянуло в бездну.."
 # aeria-terms: {"Necron":"f831edd26887","aether":"121cf0f81f85"}
 msgctxt "LogMessage:11228:0:5"
 msgid "Necron draws in aether..."
-msgstr "Некрон поглощает эфир.."
+msgstr "Некрон поглощает эфир..."
 
 #. ja: フォーギヴン・ナイヴテイたちが噴射の構えを見せた……
 #. de: Die geläuterte Naivität steht kurz vor dem Ausbruch<nbsp>...
 #. fr: Vos ennemis préparent leur jet...
 msgctxt "LogMessage:11229:0:5"
 msgid "Your finned foes prepare to spout..."
-msgstr "Ваши плавниковые противники готовятся извергнуть струю.."
+msgstr "Ваши плавниковые противники готовятся извергнуть струю..."
 
 #. ja: 現在のクラス・ジョブが対象に含まれていません。
 #. de: Für die momentane Klasse/Job nicht möglich.
@@ -1152,14 +1152,14 @@ msgstr "Это действие недоступно для текущего к�
 # aeria-terms: {"darkness":"8506c2e6be5c"}
 msgctxt "LogMessage:11231:0:5"
 msgid "Darkness grows..."
-msgstr "Тьма сгущается.."
+msgstr "Тьма сгущается..."
 
 #. ja: 光が増大する……
 #. de: Das Licht wächst ...
 #. fr: La Lumière s'amplifie...
 msgctxt "LogMessage:11232:0:5"
 msgid "Light grows..."
-msgstr "Свет усиливается.."
+msgstr "Свет усиливается..."
 
 #. ja: 次元の裂け目から、膨大な瘴気が溢れ出す……！
 #. de: Eine gewaltige Welle Nichtsfäule quillt aus dem Spalt!
@@ -1200,7 +1200,7 @@ msgstr "Отряд ощущает прилив бодрящей энергии!"
 #. macro: <if ($gs1 == $gs2)>feel<else>feels</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11242:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>feel<else>feels</if> all ailments disperse and the presence of a protective barrier."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы ощущаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> ощущает</if></capitalize>, как рассеиваются все недуги, и чувствуете защиту барьера."
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы ощущаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> ощущает</if></capitalize>, как рассеиваются все недуги, и чувствуете защиту барьера"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>たちの状態異常が解除され、一時的に受け付けなくなった！
 #. de: Die Gruppe fühlt sich von negativen Effekten befreit!
@@ -1215,14 +1215,14 @@ msgstr "Отряд избавился от всех недугов и получ
 #. fr: Vous détectez une aura étrange au loin...
 msgctxt "LogMessage:11244:0:5"
 msgid "Far off, you detect something unusual..."
-msgstr "Вдалеке вы почувствовали что-то необычное.."
+msgstr "Вдалеке вы почувствовали что-то необычное..."
 
 #. ja: 灯火の温かさに似た、不思議な気配がする……
 #. de: Du spürst Wärme, wie von einer Flamme oder Kerze<nbsp>...
 #. fr: Vous ressentez une chaleur semblable à celle d'une flamme...
 msgctxt "LogMessage:11245:0:5"
 msgid "Something calls out for warmth..."
-msgstr "Что-то зовёт, маня теплом.."
+msgstr "Что-то зовёт, маня теплом..."
 
 #. ja: この<switch $gn109><case>階層<case>階層<case>階層<case>巡礼路</switch>では効果がないようだ……
 #. de: Dies hat hier keine Wirkung ...
@@ -1231,7 +1231,7 @@ msgstr "Что-то зовёт, маня теплом.."
 #. macro: <switch $gn109><case>floor<case>floor<case>floor<case>area</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = global number 109 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11246:0:5"
 msgid "That is ineffective <if ($gn109 == 4)>in<else>on</if> this <switch $gn109><case>floor<case>floor<case>floor<case>area</switch>..."
-msgstr "Здесь это не действует, <switch $gn109><case>на этом этаже<case>на этом этаже<case>на этом этаже<case>в этой зоне</switch>.."
+msgstr "Здесь это не действует, <switch $gn109><case>на этом этаже<case>на этом этаже<case>на этом этаже<case>в этой зоне</switch>..."
 
 #. ja: 妖精トラップが発動した……
 #. de: Eine Feenfalle wurde ausgelöst ...
@@ -1239,7 +1239,7 @@ msgstr "Здесь это не действует, <switch $gn109><case>на э�
 # aeria-terms: {"trap":"ab60efffb927"}
 msgctxt "LogMessage:11247:0:5"
 msgid "The fae trap is triggered..."
-msgstr "Сработала ловушка фей.."
+msgstr "Сработала ловушка фей..."
 
 #. ja: ヒルディブランドから雷力が供給され、ハードスパークが無制限に放てるようになった！
 #. de: Mit Hildibrands Blitzenergie kannst du unbegrenzt Hart aber schmerzlich ausführen!
@@ -1254,7 +1254,7 @@ msgstr "Хильдибранд передаёт вам заряд энергии
 #. fr: Une des têtes prépare quelque chose...
 msgctxt "LogMessage:11249:0:5"
 msgid "One of the heads prepares to strike..."
-msgstr "Одна из голов готовится нанести удар.."
+msgstr "Одна из голов готовится нанести удар..."
 
 #. ja: <player-name $n1>は、<sheet DeepDungeonMagicStone $n2 9>を焚き、妖精王の分体を呼んだ！
 #. de: <if-self $n1>Du verbrennst<else><capitalize><player-name $n1></capitalize> verbrennt</if-self> <noun-de DeepDungeonMagicStone 1 $n2 1 4 1>, um Feo Ul zu rufen!
@@ -1312,7 +1312,7 @@ msgstr "Открыть сундук сокровищ после завершен
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11255:0:5"
 msgid "You obtain your reward, thereby expending <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if>."
-msgstr "Вы получаете награду, потратив <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if>"
+msgstr "Награда получена. Потрачено: <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: T99に到達したことで、イル・メグの「ヴァンサウ」に<br>練習用コンテンツ「エミネントグリーフ討滅戦」が追加されました！<br><br>詳細は、ディープダンジョンの説明からご確認ください。
 #. de: Du hast Ebene 99 erreicht und den Inhalt „Eminente Trauer“ freigeschaltet.<br>Sprich mit Vanthau, um mehr zu erfahren.
@@ -1396,7 +1396,7 @@ msgstr "Лихорадочный сон закончился"
 # aeria-terms: {"hypnoslot machine":"0e39201ac80f"}
 msgctxt "LogMessage:11266:0:5"
 msgid "The hypnoslot machine emits a mysterious light..."
-msgstr "Гипнослотный автомат испускает загадочное сияние.."
+msgstr "Гипнослотный автомат испускает загадочное сияние..."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は、ドリームスロットを操作した……
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>spielst<else>spielt</if> am Hypno-Automaten.
@@ -1451,7 +1451,7 @@ msgstr "Все враги повержены!"
 #. macro: <sheet Emote 303 0> — a value from a game data sheet, such as a name; sheet = Emote, row = 303, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11271:0:5"
 msgid "You learn the emotes “<sheet Emote 298 0>,” “<sheet Emote 299 0>,” “<sheet Emote 300 0>,” “<sheet Emote 301 0>,” “<sheet Emote 302 0>,” and “<sheet Emote 303 0>.”"
-msgstr "Вы выучили эмоции «<sheet Emote 298 0>», «<sheet Emote 299 0>», «<sheet Emote 300 0>», «<sheet Emote 301 0>», «<sheet Emote 302 0>» и «<sheet Emote 303 0>»"
+msgstr "Вы изучили эмоции «<sheet Emote 298 0>», «<sheet Emote 299 0>», «<sheet Emote 300 0>», «<sheet Emote 301 0>», «<sheet Emote 302 0>» и «<sheet Emote 303 0>»"
 
 #. ja: 新たなエモートアクション「<sheet Emote 305 0>」「<sheet Emote 306 0>」を修得しました。
 #. de: Du hast die Emotes „<sheet Emote 305 0>“ und „<sheet Emote 306 0>“ erlernt.
@@ -1460,7 +1460,7 @@ msgstr "Вы выучили эмоции «<sheet Emote 298 0>», «<sheet Emote
 #. macro: <sheet Emote 306 0> — a value from a game data sheet, such as a name; sheet = Emote, row = 306, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11272:0:5"
 msgid "You learn the emotes “<sheet Emote 305 0>” and “<sheet Emote 306 0>.”"
-msgstr "Вы выучили эмоции «<sheet Emote 305 0>» и «<sheet Emote 306 0>»"
+msgstr "Вы изучили эмоции «<sheet Emote 305 0>» и «<sheet Emote 306 0>»"
 
 #. ja: 「輝く袋」を<num $n1>個取得した！
 #. de: Du hast <num $n1> <if ($n1 == 1)>schimmernden Sack<else>schimmernde Säcke</if> erhalten!
@@ -1479,21 +1479,21 @@ msgstr "Получено сияющих мешков: <num $n1>!"
 # aeria-terms: {"treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:11274:0:5"
 msgid "You collected <if ($n1 == 1)><num $n1> shining sack<else><num $n1> shining sacks</if> and receive a <switch $n2><case>gold treasure coffer<case>silver treasure coffer<case>bronze treasure coffer</switch> as your reward!"
-msgstr "Вы собрали <num $n1> сияющих мешков и получили в награду <switch $n2><case>золотой сундук сокровищ<case>серебряный сундук сокровищ<case>бронзовый сундук сокровищ</switch>!"
+msgstr "Собрано сияющих мешков: <num $n1>. Получена награда: <switch $n2><case>золотой сундук сокровищ<case>серебряный сундук сокровищ<case>бронзовый сундук сокровищ</switch>!"
 
 #. ja: 騒ぎに乗じ、風精が現れた……
 #. de: Eine Windfee ist erschienen!
 #. fr: Un élémentaire de vent est apparu<nbsp>!
 msgctxt "LogMessage:11275:0:5"
 msgid "Drawn by the scent of chaos, a spirit wanders into the bedchamber..."
-msgstr "На запах хаоса в спальню забрёл дух.."
+msgstr "На запах хаоса в спальню забрёл дух..."
 
 #. ja: 悪戯な妖精が現れた……
 #. de: Eine böse Fee ist erschienen!
 #. fr: Une fée malveillante est apparue<nbsp>!
 msgctxt "LogMessage:11276:0:5"
 msgid "A spirit draws near, eager to work mischief..."
-msgstr "Дух приближается, желая учинить проказу.."
+msgstr "Дух приближается, желая учинить проказу..."
 
 #. ja: 巨大な怪鳥が、恩を返しに現れた！
 #. de: Ein großer Vogel kommt dir zu Hilfe!
@@ -1507,14 +1507,14 @@ msgstr "Огромная птица прилетела вам на помощь!
 #. fr: Pari a lancé un sort d'illusion...
 msgctxt "LogMessage:11278:0:5"
 msgid "The pari conjures an illusion..."
-msgstr "Пари создаёт иллюзию.."
+msgstr "Пари создаёт иллюзию..."
 
 #. ja: 火精ペリが呪いを振りまいた……
 #. de: Die Sengende Pari hat einen Fluch ausgesprochen<nbsp>...
 #. fr: Pari a jeté une malédiction...
 msgctxt "LogMessage:11279:0:5"
 msgid "The pari weaves a curse..."
-msgstr "Пари насылает проклятие.."
+msgstr "Пари насылает проклятие..."
 
 #. ja: グラシャラボラスの口に雷気が集う……
 #. de: Der Doomtrain öffnet seinen Schlund<nbsp>...
@@ -1522,7 +1522,7 @@ msgstr "Пари насылает проклятие.."
 # aeria-terms: {"Doomtrain":"80243a07b25d","energy":"95b2ab08778c"}
 msgctxt "LogMessage:11280:0:5"
 msgid "Energy crackles between the Doomtrain's jaws..."
-msgstr "Между челюстями Поезда рока потрескивает энергия.."
+msgstr "Между челюстями Поезда рока потрескивает энергия..."
 
 #. ja: グラシャラボラスの前照灯が怪しく光る……
 #. de: Das Spitzensignal leuchtet unheilvoll<nbsp>...
@@ -1530,7 +1530,7 @@ msgstr "Между челюстями Поезда рока потрескива
 # aeria-terms: {"Doomtrain":"80243a07b25d"}
 msgctxt "LogMessage:11281:0:5"
 msgid "The Doomtrain's headlamp glows ominously..."
-msgstr "Фара Поезда рока зловеще светится.."
+msgstr "Фара Поезда рока зловеще светится..."
 
 #. ja: グラシャラボラスが腕部に魔力を込める……
 #. de: Der Doomtrain sammelt Äther in seinen Armen<nbsp>...
@@ -1538,14 +1538,14 @@ msgstr "Фара Поезда рока зловеще светится.."
 # aeria-terms: {"Doomtrain":"80243a07b25d","aether":"121cf0f81f85"}
 msgctxt "LogMessage:11282:0:5"
 msgid "Aether condenses between the Doomtrain's hands..."
-msgstr "Между руками Поезда рока сгущается эфир.."
+msgstr "Между руками Поезда рока сгущается эфир..."
 
 #. ja: 異空間に飲み込まれる……
 #. de: Du wirst in eine andere Dimension entführt<nbsp>...
 #. fr: Vous êtes aspiré<if $gn4>e</if> dans une dimension parallèle...
 msgctxt "LogMessage:11283:0:5"
 msgid "You are transported..."
-msgstr "Вас переносит.."
+msgstr "Вас переносит..."
 
 #. ja: 全滅したことのあるセーブデータのため、コンバートすることができません。
 #. de: Konvertierung nicht möglich, weil die Gruppe dieses<br>Speicherstands mindestens einmal kampfunfähig war.
@@ -1566,14 +1566,14 @@ msgstr "Вы слышите скрежет металла... Он приближ
 #. fr: Un globe de sable a disparu...
 msgctxt "LogMessage:11286:0:5"
 msgid "The spheres of sand fade out of sight..."
-msgstr "Песчаные сферы исчезают из виду.."
+msgstr "Песчаные сферы исчезают из виду..."
 
 #. ja: 崖の方角から地響きが聞こえる……
 #. de: Aus der Richtung der Klippen ertönt ein tiefes Grollen<nbsp>...
 #. fr: Vous entendez des grondements en provenance de la falaise...
 msgctxt "LogMessage:11287:0:5"
 msgid "A deep rumbling sound comes from the cliffs..."
-msgstr "Со стороны скал доносится глухой грохот.."
+msgstr "Со стороны скал доносится глухой грохот..."
 
 #. ja: 怪樹の実はまだ食べられないようだ……
 #. de: Du kannst keine weitere Frucht essen<nbsp>...
@@ -1581,7 +1581,7 @@ msgstr "Со стороны скал доносится глухой грохо�
 # aeria-terms: {"morbol fruit":"d10d677c9288"}
 msgctxt "LogMessage:11288:0:5"
 msgid "You cannot eat the morbol fruit..."
-msgstr "Вы пока не можете съесть плод морбола.."
+msgstr "Вы пока не можете съесть плод морбола..."
 
 #. ja: 選択された対象はアイコンに設定できません。
 #. de: Kann nicht als Icon registriert werden.
@@ -1611,7 +1611,7 @@ msgstr "Ремонт отменён"
 # aeria-terms: {"fallen rock":"eb2d6975189a"}
 msgctxt "LogMessage:11300:0:5"
 msgid "The fallen rocks crumble..."
-msgstr "Упавшие глыбы рассыпаются.."
+msgstr "Упавшие глыбы рассыпаются..."
 
 #. ja: <num $n2>秒後に<switch $n1><case>ランクB<case>ランクA<case>ランクS</switch>の<sheet PlaceName $n3 0>が制圧可能状態になるようだ……！
 #. de: <sheet PlaceName $n3 0> (<switch $n1><case>Rang B<case>Rang A<case>Rang S</switch>) wird in <num $n2> <if ($n2 <= 1)>Sekunde<else>Sekunden</if> besetzbar!
@@ -1665,7 +1665,7 @@ msgstr "<sheet PlaceName $n1 0> теперь не действует"
 #. fr: Des globes de sable grossissent...
 msgctxt "LogMessage:11305:0:5"
 msgid "The spheres of sand grow massive in size..."
-msgstr "Песчаные сферы становятся огромными.."
+msgstr "Песчаные сферы становятся огромными..."
 
 #. ja: 「決戦」が解除され、ブルーヘッドを攻撃できるようになった！
 #. de: Das Ende der Ent<shy>schei<shy>dungs<shy>schlacht erlaubt es dir nun, den blauen Kopf anzugreifen!
@@ -1701,7 +1701,7 @@ msgstr "Прошло 15 минут. Одновременно активных т
 #. fr: On dirait que la neige va bientôt tomber...
 msgctxt "LogMessage:11310:0:5"
 msgid "Snow is threatening to fall..."
-msgstr "Вот-вот пойдёт снег.."
+msgstr "Вот-вот пойдёт снег..."
 
 #. ja: 「リミットゲージ増加」状態になった！
 #. de: Dein Limitrausch-Balken beginnt, sich zu füllen!
@@ -1716,7 +1716,7 @@ msgstr "Шкала предела начала заполняться!"
 # aeria-terms: {"Aurora":"cc315ed25a8e"}
 msgctxt "LogMessage:11312:0:5"
 msgid "Auroras are beginning to form..."
-msgstr "Начинают появляться полярные сияния.."
+msgstr "Начинают появляться полярные сияния..."
 
 #. ja: 高ランクの戦略目標地が出現しやすくなった！
 #. de: Triumphpunkte mit hohen Rängen erscheinen nun häufiger!
@@ -1731,7 +1731,7 @@ msgstr "Точки триумфа высокого ранга стали поя�
 #. fr: Action impossible. Âme d'élagueur insuffisante.
 msgctxt "LogMessage:11314:0:5"
 msgid "You lack the cleaning spirit required for the Spriganator..."
-msgstr "Не хватает духа уборки для Сприганатора.."
+msgstr "Не хватает духа уборки для Сприганатора..."
 
 #. ja: 草刈り魂が蓄積し、大回転刈りが使えるようになった！<sound 0 78>
 #. de: Deine Mähwut nimmt zu! Zeit für ein Sensenmassaker! <sound 0 78>
@@ -1790,7 +1790,7 @@ msgstr "Заросли повержены. Вперёд!"
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11322:0:5"
 msgid "<if ($n1 > 0)><if ($n1 == 1)><num $n1> minute<else><num $n1> minutes</if></if><if ($n2 > 0)><num $n2> seconds</if> remaining..."
-msgstr "Осталось <if ($n1 > 0)><num $n1> <if ($n1 == 1)>минута<else><if ($n1 >= 2)><if ($n1 <= 4)>минуты<else>минут</if><else>минут</if></if></if><if ($n2 > 0)><num $n2> <if ($n2 == 1)>секунда<else><if ($n2 >= 2)><if ($n2 <= 4)>секунды<else>секунд</if><else>секунд</if></if></if>.."
+msgstr "Осталось: <if ($n1 > 0)><num $n1> мин. </if><if ($n2 > 0)><num $n2> с</if>..."
 
 #. ja: <sheet Item $n1 0>は所持数の上限に達しているため、受け取れませんでした。
 #. de: Kann nicht noch mehr <noun-de Item 5 $n1 2 1 1> erhalten.
@@ -1798,7 +1798,7 @@ msgstr "Осталось <if ($n1 > 0)><num $n1> <if ($n1 == 1)>минута<els
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11323:0:5"
 msgid "Unable to obtain any more <noun-en Item 3 $n1 2 1>."
-msgstr "Не удалось получить больше <noun-en Item 3 $n1 2 1>"
+msgstr "Достигнут предел количества предмета: <sheet Item $n1 0>"
 
 #. ja: 『若き商人と護衛が向かうのは、美しき海辺……』
 #. de: „Und so machten sich der junge Händler und <if $gn4>seine Leibwächterin<else>sein Leibwächter</if> auf den Weg zu der Bucht, deren Schönheit in aller Munde war.“
@@ -1866,7 +1866,7 @@ msgstr "Задание отменено. Счёт золота на этой з�
 #. macro: <noun-en Item 1 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11331:0:5"
 msgid "You obtain <if ($n1 > 1)><kilo $n1 \",\"><if ($n3 > 0)>(+<num $n3>)</if> <noun-en Item 3 $n2 2 1><else><noun-en Item 1 $n2 1 1></if>."
-msgstr "Получено: <if ($n1 > 1)><kilo $n1 \",\"><if ($n3 > 0)> (+<num $n3>)</if> <noun-en Item 3 $n2 2 1><else><noun-en Item 1 $n2 1 1></if>"
+msgstr "Получено: <sheet Item $n2 0><if ($n1 > 1)> × <kilo $n1 \",\"><if ($n3 > 0)> (+<num $n3>)</if><else></if>"
 
 #. ja: 騎乗中のため、支給された釣り餌を装着できませんでした。
 #. de: Der Köder kann während des Reitens nicht automatisch ausgerüstet werden.
@@ -1906,7 +1906,7 @@ msgstr "Красная тревога продолжается, доступны
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:11336:0:5"
 msgid "You obtained <noun-en EventItem 1 $n2 1 1>! Use it to supply aether to <noun-en EObj 2 $n1 1 1>."
-msgstr "Вы получили <noun-en EventItem 1 $n2 1 1>! Передайте эфир <noun-en EObj 2 $n1 1 1>"
+msgstr "Получено: <sheet EventItem $n2 0>! Используйте этот предмет, чтобы передать эфир объекту «<noun-en EObj 2 $n1 1 1>»"
 
 #. ja: <sheet EventItem $n2 0>は、「<sheet EObj $n1 0>」に吸収され、消えた！<br>「<sheet EObj $n3 0>」から新たな<sheet EventItem $n2 0>を受け取ろう。
 #. de: <capitalize><noun-de EventItem 2 $n2 1 1 1></capitalize> wurde verbraucht. Hol dir am <noun-de EObj 5 $n3 1 3 1> einen neuen!
@@ -1917,7 +1917,7 @@ msgstr "Вы получили <noun-en EventItem 1 $n2 1 1>! Передайте 
 #. macro: <noun-en EObj 3 $n3 2 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 3, row = number parameter 3, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11337:0:5"
 msgid "<capitalize><noun-en EObj 2 $n1 1 1></capitalize> has absorbed <noun-en EventItem 2 $n2 1 1>! Seek out <noun-en EObj 3 $n3 2 1> for more!"
-msgstr "<capitalize><noun-en EObj 2 $n1 1 1></capitalize> поглотил <noun-en EventItem 2 $n2 1 1>! Найдите ещё у <noun-en EObj 3 $n3 2 1>!"
+msgstr "Объект «<noun-en EObj 2 $n1 1 1>» поглощает предмет «<sheet EventItem $n2 0>»! Новые запасы ищите у объектов «<noun-en EObj 3 $n3 2 1>»!"
 
 #. ja: 「<sheet EObj $n1 0>」に<sheet EventItem $n2 0>のエーテルを伝えよう！
 #. de: Leite die Kraft <noun-de EventItem 2 $n2 1 2 1> in <noun-de EObj 1 $n1 1 4 1>!
@@ -1927,7 +1927,7 @@ msgstr "<capitalize><noun-en EObj 2 $n1 1 1></capitalize> поглотил <noun
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:11338:0:5"
 msgid "Use <noun-en EventItem 3 $n2 2 1> to supply aether to <noun-en EObj 2 $n1 1 1>."
-msgstr "Передайте эфир <noun-en EObj 2 $n1 1 1> с помощью <noun-en EventItem 3 $n2 2 1>"
+msgstr "Передайте эфир объекту «<noun-en EObj 2 $n1 1 1>» с помощью предмета «<sheet EventItem $n2 0>»"
 
 #. ja: 活性剤を使って、劣化した結晶体を活性化させよう。
 #. de: Behandle die Kristallauswüchse mithilfe des Aktivatormittels.
@@ -2087,7 +2087,7 @@ msgstr "<i>На их пути возникла чудовищная птица, 
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:11355:0:5"
 msgid "<i>Though the bird was laid low, the path ahead was treacherous still.</i>"
-msgstr "<i>Птица повержена, но впереди их ждёт опасный путь..</i>"
+msgstr "<i>Птица повержена, но впереди их ждёт опасный путь...</i>"
 
 #. ja: 『旅の果て、渓谷の最奥で商人たちを待ち受けていたのは……』
 #. de: „Doch dann wurde ihrer Erkundung ein jähes Ende gesetzt<nbsp>...“
@@ -2104,7 +2104,7 @@ msgstr "<i>В самой глубине долины их ждало опасн�
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11357:0:5"
 msgid "You were unable to receive all the <noun-en Item 3 $n1 2 1>."
-msgstr "Не удалось получить все <noun-en Item 3 $n1 2 1>"
+msgstr "Не удалось получить все предметы: <sheet Item $n1 0>"
 
 #. ja: 商客物語 探索記に「<sheet VVDNotebookContents $n1 2>」が記された！
 #. de: „<capitalize><sheet VVDNotebookContents $n1 2></capitalize>“ wurde der Folkloresammlung hinzugefügt.
@@ -2113,7 +2113,7 @@ msgstr "Не удалось получить все <noun-en Item 3 $n1 2 1>"
 #. macro: <sheet VVDNotebookContents $n1 2> — a value from a game data sheet, such as a name; sheet = VVDNotebookContents, row = number parameter 1, column = 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11358:0:5"
 msgid "“<capitalize><sheet VVDNotebookContents $n1 2></capitalize>” is added to the folklore record."
-msgstr "„<capitalize><sheet VVDNotebookContents $n1 2></capitalize>“ добавлено в сборник преданий"
+msgstr "«<capitalize><sheet VVDNotebookContents $n1 2></capitalize>» добавлено в сборник преданий"
 
 #. ja: 『コルヴォ随一の護衛を伴に、若き商人の旅が始まった』
 #. de: „In Begleitung <if $gn4>der besten Leibwächterin<else>des besten Leibwächters</if> von ganz Corvos brach der junge Händler auf.“
@@ -2204,14 +2204,14 @@ msgstr "Снежные духи создали снеговиков!"
 #. fr: La neige a cessé de tomber...
 msgctxt "LogMessage:11368:0:5"
 msgid "The snow has stopped falling..."
-msgstr "Снег перестал идти.."
+msgstr "Снег перестал идти..."
 
 #. ja: 天候が変わり、オーロラは消え去った……
 #. de: Die Aurora ist wieder verschwunden<nbsp>...
 #. fr: Les aurores boréales ont disparu...
 msgctxt "LogMessage:11369:0:5"
 msgid "The auroras have faded..."
-msgstr "Полярные сияния погасли.."
+msgstr "Полярные сияния погасли..."
 
 #. ja: 『この道が続く先にて、商人たちは何を得るのだろうか』
 #. de: „Ob sie auf diesem Weg wohl fündig werden?“
@@ -2228,7 +2228,7 @@ msgstr "<i>Что ждёт их в конце пути?</i>"
 # aeria-terms: {"Vamp Fatale":"6e19334f8525","audience":"73768e3b45e9"}
 msgctxt "LogMessage:11371:0:5"
 msgid "Feasting on the audience has strengthened Vamp Fatale's attacks!"
-msgstr "Питание за счёт слушателей усилило атаки Вамп Фаталь.."
+msgstr "Питание за счёт слушателей усилило атаки Вамп Фаталь..."
 
 #. ja: 「エーテル超増強」により、ヴァンプ・ファタールが限界を超えた……！
 #. de: Vom Ätherrausch beflügelt überschreitet Vamp Fatale ihre Grenzen<nbsp>...!
@@ -2337,7 +2337,7 @@ msgstr "<i>Враг повержен, но их путешествие ещё д
 #. fr: Dandan s'apprête à attaquer du fond de la mer...
 msgctxt "LogMessage:11385:0:5"
 msgid "The Dandan moves to attack from beneath the water's surface..."
-msgstr "Дандан готовится атаковать из-под воды.."
+msgstr "Дандан готовится атаковать из-под воды..."
 
 #. ja: 「惑星の遺物」の解析を開始した……。
 #. de: Artefaktanalyse begonnen ...
@@ -2345,7 +2345,7 @@ msgstr "Дандан готовится атаковать из-под воды.
 # aeria-terms: {"artifact":"cd4398ff68b9"}
 msgctxt "LogMessage:11386:0:5"
 msgid "Starting artifact appraisal..."
-msgstr "Начинается оценка артефакта.."
+msgstr "Начинается оценка артефакта..."
 
 #. ja: 共有コードをクリップボードにコピーしました。
 #. de: Der Code wurde in die Zwischenablage kopiert.
@@ -2359,7 +2359,7 @@ msgstr "Код для общего доступа скопирован в буф
 #. fr: Un léger vent commence à souffler...
 msgctxt "LogMessage:11388:0:5"
 msgid "A faint wind stirs..."
-msgstr "Подул лёгкий ветерок.."
+msgstr "Подул лёгкий ветерок..."
 
 #. ja: 風が急激に強まる……！
 #. de: Der Wind wird schlagartig stärker<nbsp>...!
@@ -2417,7 +2417,7 @@ msgstr "Нельзя выполнить команду: стратдоска у�
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11395:0:5"
 msgid "<noun-en Item 1 $n1 1 1> x<num $n2>"
-msgstr "<noun-en Item 1 $n1 1 1> ×<num $n2>"
+msgstr "<sheet Item $n1 0> × <num $n2>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、<sheet Pet $n1 0>種の魔獣と契約することに成功した！
 #. de: Du hast einen Pakt mit einer Bestie aus der Familie „<sheet Pet $n1 0>“ geschlossen!
@@ -2441,7 +2441,7 @@ msgstr "Недостаточно жетонов территории"
 #. macro: <noun-en XBMItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11402:0:5"
 msgid "Unable to purchase. You already possess <noun-en XBMItem 1 $n1 1 1>."
-msgstr "Покупка невозможна. У вас уже есть <noun-en XBMItem 1 $n1 1 1>"
+msgstr "Покупка невозможна: у вас уже есть предмет «<sheet XBMItem $n1 3>»"
 
 #. ja: 満腹度が最大値に達しているため、フィードを与えることはできません。
 #. de: Diese Bestie ist satt und kann nicht weiter gefüttert werden.
@@ -2456,7 +2456,7 @@ msgstr "Ваш питомец сыт и больше не может есть"
 #. macro: <noun-en XBMItem 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11404:0:5"
 msgid "Your familiar will not consume another <noun-en XBMItem 3 $n1 1 1>."
-msgstr "Питомец не станет есть ещё <noun-en XBMItem 3 $n1 1 1>"
+msgstr "Питомец не станет повторно есть предмет «<sheet XBMItem $n1 3>»"
 
 #. ja: 「<sheet XBMItem $n1 3>」は、「<switch $n2><case>百獣綱<case>百蟲綱<case>有翼綱<case>草木綱<case>水棲綱<case>甲鱗綱<case>呪具綱<case>死屍綱</switch>」のペットに与えることはできません。
 #. de: <switch $n2><case>Biestlinge<case>Gezieferlinge<case>Wölklinge<case>Saatlinge<case>Woglinge<case>Schupplinge<case>Ätherlinge<case>Todlinge</switch> fressen keine <noun-de XBMItem 5 $n1 2 4 1>.
@@ -2464,7 +2464,7 @@ msgstr "Питомец не станет есть ещё <noun-en XBMItem 3 $n1 
 #. macro: <switch $n2><case>beastkin<case>vilekin<case>cloudkin<case>seedkin<case>wavekin<case>scalekin<case>soulkin<case>ashkin</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11405:0:5"
 msgid "Your selection is not suitable feed for <switch $n2><case>beastkin<case>vilekin<case>cloudkin<case>seedkin<case>wavekin<case>scalekin<case>soulkin<case>ashkin</switch>..."
-msgstr "Эта еда не подходит <switch $n2><case>зверям<case>насекомым<case>облачным<case>растениям<case>водным<case>чешуйчатым<case>эфирным<case>мёртвым</switch>.."
+msgstr "Эта еда не подходит <switch $n2><case>зверям<case>насекомым<case>облачным<case>растениям<case>водным<case>чешуйчатым<case>эфирным<case>мёртвым</switch>..."
 
 #. ja: ビーストコイン<num $n2>枚で<sheet XBMItem $n1 3>を購入しました。
 #. de: Du hast für <kilo $n2 "."> Bestientaler <noun-de XBMItem 1 $n1 1 4 1> erworben.
@@ -2474,7 +2474,7 @@ msgstr "Эта еда не подходит <switch $n2><case>зверям<case>
 #. macro: <if ($n2 <= 1)>token<else>tokens</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 <= 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11406:0:5"
 msgid "You purchase <noun-en XBMItem 1 $n1 1 1> for <kilo $n2 \",\"> territory <if ($n2 <= 1)>token<else>tokens</if>."
-msgstr "Вы купили <noun-en XBMItem 1 $n1 1 1> за <kilo $n2 \",\"> жетонов территории"
+msgstr "Куплено: <sheet XBMItem $n1 3>. Потрачено жетонов территории: <kilo $n2 \"<nbsp>\">"
 
 #. ja: <sheet XBMItem $n1 3>をビーストコイン<num $n2>枚で購入し、「<sheet Pet "<sheet XBMPet $n3 0>" 0>」に食べさせました。
 #. de: Du hast für <kilo $n2 "."> Bestientaler <noun-de XBMItem 1 $n1 1 4 1> erworben und an folgende Bestie verfüttert: <sheet Pet "<sheet XBMPet $n3 0>" 0>.
@@ -2486,7 +2486,7 @@ msgstr "Вы купили <noun-en XBMItem 1 $n1 1 1> за <kilo $n2 \",\"> же
 #. macro: <sheet XBMPet $n3 0> — a value from a game data sheet, such as a name; sheet = XBMPet, row = number parameter 3, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11407:0:5"
 msgid "You spend <kilo $n2 \",\"> territory <if ($n2 <= 1)>token<else>tokens</if> on <noun-en XBMItem 2 $n1 1 1>, which you feed to your <sheet Pet \"<sheet XBMPet $n3 0>\" 0>."
-msgstr "Вы потратили <kilo $n2 \",\"> жетонов территории на <noun-en XBMItem 2 $n1 1 1> и накормили им питомца <sheet Pet \"<sheet XBMPet $n3 0>\" 0>"
+msgstr "Питомец <sheet Pet \"<sheet XBMPet $n3 0>\" 0> накормлен предметом «<sheet XBMItem $n1 3>». Потрачено жетонов территории: <kilo $n2 \"<nbsp>\">"
 
 #. ja: テントで休息したことで、<sheet Pet "<sheet XBMPet $n1 0>" 0>のＨＰが<num $n2>回復しました。
 #. de: Beim Rasten hat folgende Bestie <kilo $n2 "."> LP regeneriert: <sheet Pet "<sheet XBMPet $n1 0>" 0>.
@@ -2497,7 +2497,7 @@ msgstr "Вы потратили <kilo $n2 \",\"> жетонов территор
 # aeria-terms: {"Campsite":"a5dfa77a41dc","HP":"b764955d4efa"}
 msgctxt "LogMessage:11408:0:5"
 msgid "Your <sheet Pet \"<sheet XBMPet $n1 0>\" 0> recovers <kilo $n2 \",\"> HP by resting at the campsite."
-msgstr "Ваш питомец <sheet Pet \"<sheet XBMPet $n1 0>\" 0> восстановил <kilo $n2 \",\"> HP, пока отдыхал в Лагере"
+msgstr "Ваш питомец <sheet Pet \"<sheet XBMPet $n1 0>\" 0> восстановил <kilo $n2 \"<nbsp>\"> HP, пока отдыхал в Лагере"
 
 #. ja: 所持品に空きがないため、<sheet XBMItem $n1 3>を購入できませんでした。
 #. de: Weil nicht genug Platz in deinem Inventar ist, konntest du <noun-de XBMItem 2 $n1 1 4 1> nicht erwerben.
@@ -2505,7 +2505,7 @@ msgstr "Ваш питомец <sheet Pet \"<sheet XBMPet $n1 0>\" 0> восст�
 #. macro: <noun-en XBMItem 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11409:0:5"
 msgid "Unable to purchase <noun-en XBMItem 2 $n1 1 1>. Your inventory is full."
-msgstr "Не удалось купить <noun-en XBMItem 2 $n1 1 1>. Инвентарь заполнен"
+msgstr "Не удалось купить: <sheet XBMItem $n1 3>. Инвентарь заполнен"
 
 #. ja: ビーストギアはこれ以上持てません。所持品を整理するか、取得をスキップしてください。
 #. de: Mehr Bestienausrüstung kannst du nicht tragen. Schaffe Platz in deinem Inventar oder verzichte auf die Beute.
@@ -2520,7 +2520,7 @@ msgstr "Вы не можете нести больше снаряжения дл
 #. macro: <noun-en XBMItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11411:0:5"
 msgid "You already have <noun-en XBMItem 1 $n1 1 1> and cannot possess duplicates. Please make room in your inventory or pass on acquisition."
-msgstr "У вас уже есть <noun-en XBMItem 1 $n1 1 1>, повторно получить этот предмет нельзя. Освободите место в инвентаре или откажитесь от добычи"
+msgstr "У вас уже есть уникальный предмет «<sheet XBMItem $n1 3>». Освободите место в инвентаре или откажитесь от добычи"
 
 #. ja: クルーシブルアイテムはこれ以上持てません。所持品を整理するか、取得をスキップしてください。
 #. de: Mehr Bändigerutensilien kannst du nicht tragen. Schaffe Platz in deinem Inventar oder verzichte auf die Beute.
@@ -2543,7 +2543,7 @@ msgstr "Вы не можете нести больше снаряжения дл
 #. macro: <noun-en XBMItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11414:0:5"
 msgid "<if ($n2 == 0)>You obtain <noun-en XBMItem 1 $n1 1 1> as loot.<else>You obtain <noun-en XBMItem 1 $n1 1 1> as loot thanks to increased drop rate!</if>"
-msgstr "<if ($n2 == 0)>Вы получаете <noun-en XBMItem 1 $n1 1 1> в качестве добычи<else>Вы получаете <noun-en XBMItem 1 $n1 1 1> в качестве добычи благодаря повышенному шансу выпадения!</if>"
+msgstr "Получена добыча: <sheet XBMItem $n1 3><if ($n2 == 0)><else> (благодаря повышенному шансу выпадения!)</if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は戦利品として、ビーストコイン<num $n1>枚<if ($n2 == 0)><else>(+<num $n2>%)</if>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <kilo $n1 "."> Bestientaler<if ($n2 == 0)><else> =+<num $n2>%)</if> erhalten.
@@ -2554,7 +2554,7 @@ msgstr "<if ($n2 == 0)>Вы получаете <noun-en XBMItem 1 $n1 1 1> в к
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11415:0:5"
 msgid "You obtain <kilo $n1 \",\"> territory <if ($n1 <= 1)>token<else>tokens</if><if ($n2 == 0)><else> (+<num $n2>%)</if> as loot."
-msgstr "Вы получаете в добычу <kilo $n1 \",\"> территориальных жетонов<if ($n2 == 0)><else> (+<num $n2>%)</if>"
+msgstr "Получена добыча. Жетоны территории: <kilo $n1 \",\"><if ($n2 == 0)><else> (+<num $n2>%)</if>"
 
 #. ja: テントで休息したため、<sheet Pet "<sheet XBMPet $n1 0>" 0>のフィード効果が消失しました。
 #. de: Folgende Bestie hat in einem Zelt gerastet und deshalb ihre Futtereffekte verloren: <sheet Pet "<sheet XBMPet $n1 0>" 0>.
@@ -2581,7 +2581,7 @@ msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> теряет действие п�
 #. macro: <noun-en XBMItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11418:0:5"
 msgid "You already have <noun-en XBMItem 1 $n1 1 1> and cannot possess duplicates. Please select a different item."
-msgstr "У вас уже есть <noun-en XBMItem 1 $n1 1 1>. Нельзя иметь несколько таких предметов. Выберите другой предмет"
+msgstr "У вас уже есть уникальный предмет «<sheet XBMItem $n1 3>». Выберите другой предмет"
 
 #. ja: ビーストギアはこれ以上持てません。他のアイテムを選択するか、所持品を整理してください。
 #. de: Mehr Bestienausrüstung kannst du nicht tragen. Wähle einen anderen Gegenstand oder schaffe Platz in deinem Inventar.
@@ -2610,7 +2610,7 @@ msgstr "Вы не можете нести больше снаряжения дл
 #. macro: <noun-en XBMItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11422:0:5"
 msgid "You obtain <noun-en XBMItem 1 $n1 1 1>."
-msgstr "Вы получаете <noun-en XBMItem 1 $n1 1 1>"
+msgstr "Получено: <sheet XBMItem $n1 3>"
 
 #. ja: 癒やしの指輪を使い、<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はＨＰを<num $n1>回復した！
 #. de: Der Ring der Heilung pulsiert. <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <kilo $n1 "."> LP regeneriert!
@@ -2619,7 +2619,7 @@ msgstr "Вы получаете <noun-en XBMItem 1 $n1 1 1>"
 # aeria-terms: {"HP":"b764955d4efa"}
 msgctxt "LogMessage:11423:0:5"
 msgid "The ring of curing pulses. You recover <kilo $n1 \",\"> HP!"
-msgstr "Кольцо исцеления пульсирует. Вы восстанавливаете <kilo $n1 \",\"> HP!"
+msgstr "Кольцо исцеления пульсирует. Вы восстанавливаете <kilo $n1 \"<nbsp>\"> HP!"
 
 #. ja: 選択しているペットの数が多すぎます。このテントでは、ペットを<num $n1>体までしか休ませることができません。
 #. de: In diesem Zelt <if ($n1 <= 1)>kann nur<else>können maximal</if> <num $n1> <if ($n1 <= 1)>Bestie<else>Bestien</if> mit dir rasten. Passe deine Auswahl an.
@@ -2629,7 +2629,7 @@ msgstr "Кольцо исцеления пульсирует. Вы восста�
 # aeria-terms: {"Campsite":"a5dfa77a41dc"}
 msgctxt "LogMessage:11424:0:5"
 msgid "This campsite can only accommodate <num $n1> <if ($n1 <= 1)>familiar<else>familiars</if>."
-msgstr "В этом Лагере можно разместить не больше <num $n1> <if ($n1 <= 1)>питомца<else>питомцев</if>"
+msgstr "Вместимость лагеря (питомцы): <num $n1>"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は魔獣図鑑に登録済みなため、「とらえる」ことができない。
 #. de: Mit dieser Bestie hast du bereits einen Pakt geschlossen.
@@ -2645,7 +2645,7 @@ msgstr "Вы уже подружились с этим зверем"
 # aeria-terms: {"bone knight":"66ae13e5439a"}
 msgctxt "LogMessage:11426:0:5"
 msgid "The bone knight raises its shield..."
-msgstr "Костяной рыцарь поднимает щит.."
+msgstr "Костяной рыцарь поднимает щит..."
 
 #. ja: 爆発により、お芋ちゃんに<num $n2>ダメージを与えた！
 #. de: Die Explosion erteilt Töffelchen <num $n2> <if ($n2 <= 1)>Punkt<else>Punkte</if> Schaden!
@@ -2655,7 +2655,7 @@ msgstr "Костяной рыцарь поднимает щит.."
 # aeria-terms: {"Chewchum Popoto":"df8f5fd1323d"}
 msgctxt "LogMessage:11427:0:5"
 msgid "Chewchum Popoto suffers <kilo $n2 \",\"> <if ($n2 == 1)>point<else>points</if> of damage from the explosion!"
-msgstr "Картошечка Чьючам получает от взрыва <kilo $n2 \",\"> <if ($n2 == 1)>единицу<else>единиц</if> урона!"
+msgstr "Картошечка Чьючам получает от взрыва <kilo $n2 \"<nbsp>\"> ед. урона!"
 
 #. ja: 短剣に込められた魔力で、鉄像が動き始めた……
 #. de: Die Magie des Dolches erweckt die Statue zum Leben!
@@ -2681,7 +2681,7 @@ msgstr "Влага сдерживает распространение спор!
 # aeria-terms: {"mogmugger piece":"37ccc210ee08"}
 msgctxt "LogMessage:11430:0:5"
 msgid "The mogmugger piece steals <num $n1> territory <if ($n1 <= 1)>token<else>tokens</if>..."
-msgstr "Фигурка купограбителя крадёт <num $n1> <if ($n1 <= 1)>жетон<else>жетона</if> территории.."
+msgstr "Фигурка купограбителя крадёт жетоны территории: <num $n1>..."
 
 #. ja: モグマッガー・ピースからビーストコインを<num $n1>枚取り戻した！
 #. de: Du hast <num $n1> Bestientaler von dem Klaukupo zurückerobert!
@@ -2691,7 +2691,7 @@ msgstr "Фигурка купограбителя крадёт <num $n1> <if ($n
 # aeria-terms: {"mogmugger piece":"37ccc210ee08"}
 msgctxt "LogMessage:11431:0:5"
 msgid "You recover <num $n1> territory <if ($n1 <= 1)>token<else>tokens</if> from the mogmugger piece!"
-msgstr "Вы возвращаете <num $n1> территориальных жетонов, отнятых фигуркой купограбителя!"
+msgstr "Жетоны территории, отнятые фигуркой купограбителя, возвращены: <num $n1>!"
 
 #. ja: モグマッガー・ピースが逃走し、<num $n1>枚のビーストコインは永遠に失われた……
 #. de: Der Klaukupo ist mit <num $n1> deiner Bestientaler getürmt!
@@ -2701,7 +2701,7 @@ msgstr "Вы возвращаете <num $n1> территориальных ж�
 # aeria-terms: {"mogmugger piece":"37ccc210ee08"}
 msgctxt "LogMessage:11432:0:5"
 msgid "The mogmugger piece absconds with <num $n1> territory <if ($n1 <= 1)>token<else>tokens</if>..."
-msgstr "Фигурка купограбителя уносит <num $n1> <if ($n1 <= 1)>жетон<else>жетона</if> территории.."
+msgstr "Фигурка купограбителя скрывается с жетонами территории. Украдено: <num $n1>..."
 
 #. ja: 現在「<sheet Pet "<sheet XBMPet $n1 0>" 0>」は満腹のため、これ以上フィードを食べられません。
 #. de: Diese Bestie ist momentan satt und mag nichts mehr fressen.
@@ -2720,7 +2720,7 @@ msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> не голоден и отказ
 #. macro: <noun-en XBMItem 3 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 3, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11434:0:5"
 msgid "Your <sheet Pet \"<sheet XBMPet $n1 0>\" 0> desires variety in its diet. It will not consume another <noun-en XBMItem 3 $n2 1 1>."
-msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> хочет разнообразия в рационе и не станет есть ещё один предмет «<noun-en XBMItem 3 $n2 1 1>»"
+msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> хочет разнообразия в рационе и не станет есть ещё один предмет «<sheet XBMItem $n2 3>»"
 
 #. ja: 「<sheet Pet "<sheet XBMPet $n1 0>" 0>」は「<sheet XBMItem $n2 3>」を食べられません。
 #. de: Bestien der Familie „<sheet Pet "<sheet XBMPet $n1 0>" 0>“ fressen keine <noun-de XBMItem 5 $n2 2 4 1>.
@@ -2730,7 +2730,7 @@ msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> хочет разнообрази
 #. macro: <noun-en XBMItem 2 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = XBMItem, form = 2, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11435:0:5"
 msgid "Your <sheet Pet \"<sheet XBMPet $n1 0>\" 0> looks askance at <noun-en XBMItem 2 $n2 1 1> and refuses to consume it."
-msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> косится на <noun-en XBMItem 2 $n2 1 1> и отказывается есть этот предмет"
+msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> отказывается есть предмет «<sheet XBMItem $n2 3>»"
 
 #. ja: 魅惑のパドスールのHPが<num $n1>回復した。
 #. de: Die Seelenlose hat <kilo $n1 "."> LP regeneriert.
@@ -2739,7 +2739,7 @@ msgstr "<sheet Pet \"<sheet XBMPet $n1 0>\" 0> косится на <noun-en XBMI
 # aeria-terms: {"HP":"b764955d4efa","Pas de Seul":"47695f43bd1e"}
 msgctxt "LogMessage:11436:0:5"
 msgid "Pas de Seul recovers <kilo $n1 \",\"> HP..."
-msgstr "Па де Сёль восстанавливает <kilo $n1 \",\"> HP.."
+msgstr "Па де Сёль восстанавливает <kilo $n1 \",\"> HP..."
 
 #. ja: ナイト・ピースが防御態勢を解除した！
 #. de: Der Knochen-Ritter kämpft nicht länger defensiv!
@@ -2794,7 +2794,7 @@ msgstr "Нельзя войти в Горнило Несломленных, по
 # aeria-terms: {"this beast":"d7f53ae997c4"}
 msgctxt "LogMessage:11443:0:5"
 msgid "You are not yet strong enough to befriend this beast..."
-msgstr "Вы пока недостаточно сильны, чтобы подружиться с этим зверем.."
+msgstr "Вы пока недостаточно сильны, чтобы подружиться с этим зверем..."
 
 #. ja: <sheet BNpcName $n1 0>に魔力が注がれる……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> saugt Äther in sich auf.
@@ -2804,7 +2804,7 @@ msgstr "Вы пока недостаточно сильны, чтобы подр
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:11444:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> gorges on aether..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> жадно поглощает эфир.."
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> жадно поглощает эфир..."
 
 #. ja: <sheet BNpcName $n1 0>の能力が高まった……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist bei vollen Kräften!
@@ -2821,7 +2821,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> достигает
 # aeria-terms: {"manticore piece":"240cee636f42"}
 msgctxt "LogMessage:11446:0:5"
 msgid "The manticore piece gathers strength to its arm..."
-msgstr "Фигура мантикоры собирает силу в лапе.."
+msgstr "Фигура мантикоры собирает силу в лапе..."
 
 #. ja: このアイテムは盤面移動中でのみ使えます。
 #. de: Dieser Gegenstand kann nur auf dem Brett der Bestie benutzt werden.
@@ -2850,7 +2850,7 @@ msgstr "Пол пульсирует очищающим светом!"
 # aeria-terms: {"Chewchum Popoto":"df8f5fd1323d"}
 msgctxt "LogMessage:11450:0:5"
 msgid "Chewchum Popoto takes aim from underground..."
-msgstr "Картошечка Чьючам целится из-под земли.."
+msgstr "Картошечка Чьючам целится из-под земли..."
 
 #. ja: テントで休息したことで、<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>のＨＰが<num $n1>回復しました。
 #. de: Durch die Rast hast du <kilo $n1 "."> LP regeneriert.
@@ -2859,14 +2859,14 @@ msgstr "Картошечка Чьючам целится из-под земли.
 # aeria-terms: {"Campsite":"a5dfa77a41dc","HP":"b764955d4efa"}
 msgctxt "LogMessage:11451:0:5"
 msgid "You recover <kilo $n1 \",\"> HP by resting at the campsite."
-msgstr "Во время отдыха в Лагере вы восстанавливаете <kilo $n1 \",\"> HP"
+msgstr "Во время отдыха в Лагере вы восстанавливаете <kilo $n1 \"<nbsp>\"> HP"
 
 #. ja: 床面に、浄化の光が集う……！
 #. de: Läuterndes Licht sammelt sich auf dem Boden ...
 #. fr: La lumière purificatrice se concentre dans le sol<nbsp>!
 msgctxt "LogMessage:11452:0:5"
 msgid "Purifying light flickers upon the floor..."
-msgstr "Очищающий свет мерцает на полу.."
+msgstr "Очищающий свет мерцает на полу..."
 
 #. ja: 時の砂の効果が発動し、時間が巻き戻る！
 #. de: Der Sand der Zeit wirkt und dreht die Zeit zurück!
@@ -2880,7 +2880,7 @@ msgstr "Пески времени обращают время вспять!"
 #. fr: Un ennemi s'est échappé de l'artefact magique...
 msgctxt "LogMessage:11454:0:5"
 msgid "From a magicked vessel breaks a formidable foe..."
-msgstr "Из зачарованного сосуда вырывается грозный враг.."
+msgstr "Из зачарованного сосуда вырывается грозный враг..."
 
 #. ja: このペットはすでに仲間にしているため使用できません。
 #. de: Mit dieser Bestie hast du bereits einen Pakt geschlossen.
@@ -2896,7 +2896,7 @@ msgstr "Нельзя использовать. Вы уже подружилис�
 # aeria-terms: {"zu piece":"b57a0e53afae"}
 msgctxt "LogMessage:11456:0:5"
 msgid "The zu piece grows irate..."
-msgstr "Фигурка зу всё больше злится.."
+msgstr "Фигурка зу всё больше злится..."
 
 #. ja: ズー・ピースの怒りが爆発した！！
 #. de: Der Zorn des Montisaurus-Ebenbildes entlädt sich!
@@ -2922,14 +2922,14 @@ msgstr "Питомец достиг 25-го ранга зверя! Теперь 
 #. macro: <if ($n1 <= 1)>token<else>tokens</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 <= 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:11459:0:5"
 msgid "You sell <noun-en XBMItem 2 $n1 1 1> for <kilo $n2 \",\"> territory <if ($n1 <= 1)>token<else>tokens</if>."
-msgstr "Вы продаёте <noun-en XBMItem 2 $n1 1 1> за <kilo $n2 \",\"> <if ($n1 <= 1)>жетон<else>жетона</if> территории"
+msgstr "Продано: <sheet XBMItem $n1 3>. Получено жетонов территории: <kilo $n2 \",\">"
 
 #. ja: アイテムの効果により、バトルから逃走しました。
 #. de: Du fliehst aus dem Kampf ...
 #. fr: L'effet de l'objet vous permet de fuir le combat.
 msgctxt "LogMessage:11460:0:5"
 msgid "You flee from battle..."
-msgstr "Вы сбегаете с поля боя.."
+msgstr "Вы сбегаете с поля боя..."
 
 #. ja: 戦闘不能状態のペットをテントで休ませることはできません。他のペットを選択してください。
 #. de: Kampfunfähige Bestien können nicht mit dir rasten. Ändere deine Auswahl.
@@ -2967,7 +2967,7 @@ msgstr "Недееспособные питомцы не могут отдыха
 # aeria-terms: {"gargoyle piece":"d8355bf85492"}
 msgctxt "LogMessage:11465:0:5"
 msgid "Magic swells within the gargoyle piece..."
-msgstr "В фигурке горгульи нарастает магическая сила.."
+msgstr "В фигурке горгульи нарастает магическая сила..."
 
 #. ja: 闘獣練ランキングの開催期間が終了したためランキング参加状態でコンテンツを開始することはできません。
 #. de: Momentan werden Partien auf dem Brett der Bestie nicht gewertet.
@@ -2982,7 +2982,7 @@ msgstr "Нельзя участвовать. Сезон рейтинга Гор�
 # aeria-terms: {"administrator piece":"729dff96aa52"}
 msgctxt "LogMessage:11467:0:5"
 msgid "The administrator piece's combat functionality increases..."
-msgstr "Боевые способности фигурки администратора усиливаются.."
+msgstr "Боевые способности фигурки администратора усиливаются..."
 
 #. ja: ボギーマン・ピースが姿を隠した……
 #. de: Das Butzemann-Ebenbild hat sich versteckt ...
@@ -2990,7 +2990,7 @@ msgstr "Боевые способности фигурки администра�
 # aeria-terms: {"boogyman piece":"21d5f3f23594"}
 msgctxt "LogMessage:11468:0:5"
 msgid "The boogyman piece conceals itself..."
-msgstr "Фигурка бугимена скрывается.."
+msgstr "Фигурка бугимена скрывается..."
 
 #. ja: ボギーマン・ピースに光が当たり、闇のヴェールが剥ぎ取られた！
 #. de: Licht trifft auf das Butzemann-Ebenbild und zerschlägt seinen dunklen Schleier!
@@ -3017,7 +3017,7 @@ msgstr "Недееспособных питомцев нельзя назнач�
 # aeria-terms: {"HP":"b764955d4efa"}
 msgctxt "LogMessage:11471:0:5"
 msgid "Your <sheet Pet \"<sheet XBMPet $n1 0>\" 0> consumes <noun-en XBMItem 2 $n2 1 1> and recovers <kilo $n3 \",\"> HP."
-msgstr "Ваш <sheet Pet \"<sheet XBMPet $n1 0>\" 0> съедает <noun-en XBMItem 2 $n2 1 1> и восстанавливает <kilo $n3 \",\"> HP"
+msgstr "<capitalize><sheet Pet \"<sheet XBMPet $n1 0>\" 0></capitalize> съедает предмет «<sheet XBMItem $n2 3>» и восстанавливает <kilo $n3 \",\"> HP"
 
 #. ja: 闘獣練ランキングへの参加はホームワールドのみ可能です。
 #. de: Punkte für die Brettranglisten können nur auf der Heimatwelt gesammelt werden.
@@ -3234,7 +3234,7 @@ msgstr "Действие отменено. Вы отошли от механич
 # aeria-terms: {"Aethernet shard":"18dfa8501e1e"}
 msgctxt "LogMessage:11506:0:5"
 msgid "There are one or more unattuned Aethernet shards in the area."
-msgstr "В этой области есть осколки эфирнета, на которые вы ещё не настроились."
+msgstr "В этой области есть осколки эфирнета, на которые вы ещё не настроились"
 
 #. ja: 新たに星内エーテライトが設置されました。<br>地図から場所を確認してみましょう！
 #. de: Das Intraplanetar-Ätheryten<shy>netz wurde erweitert.<br>Standorte können auf der Karte eingesehen werden!
@@ -3333,21 +3333,21 @@ msgstr "Барьер разрушен!"
 # aeria-terms: {"claret dragon":"dc3b382c6efb"}
 msgctxt "LogMessage:11519:0:5"
 msgid "The claret dragon's power has reached its apex..."
-msgstr "Сила бордового дракона достигла предела.."
+msgstr "Сила бордового дракона достигла предела..."
 
 #. ja: 棚に置かれていた爆弾を濡らしてしまった……。
 #. de: Der Sprengstoff im Regal ist komplett durchnässt<nbsp>...
 #. fr: L'étagère d'explosifs est com<shy>plè<shy>te<shy>ment mouillée...
 msgctxt "LogMessage:11520:0:5"
 msgid "The explosives are drenched in water..."
-msgstr "Взрывчатка промокла.."
+msgstr "Взрывчатка промокла..."
 
 #. ja: 周囲の磁場が変化したようだ……。
 #. de: Das Magnetfeld scheint sich verändert zu haben<nbsp>...
 #. fr: Le champ magnétique ambiant a été modifié...
 msgctxt "LogMessage:11521:0:5"
 msgid "The magnetism of the atmosphere shifts..."
-msgstr "Меняется магнитное поле.."
+msgstr "Меняется магнитное поле..."
 
 #. ja: クラフター・ギャザラークラスではないため、アクセスできません。
 #. de: Nur mit Handwerker- oder Sammlerklasse möglich.
@@ -3386,7 +3386,7 @@ msgstr "Общий доступ в реальном времени отменё�
 # aeria-terms: {"North Horn":"285e1e146bb2"}
 msgctxt "LogMessage:11527:0:5"
 msgid "A mystical presence has withdrawn from the North Horn..."
-msgstr "Мистическое присутствие покинуло Северный Рог.."
+msgstr "Мистическое присутствие покинуло Северный Рог..."
 
 #. ja: 三日月島北部の希少な魔物が消え去り、個人戦利品が出現した！
 #. de: Eine mystische Präsenz hat sich aus dem nördlichen Kreszentia zurückgezogen und persönliche Beute ist erschienen!
@@ -3425,14 +3425,14 @@ msgstr "Используйте «Линьку питона», чтобы укл�
 #. fr: Les talismans maudits libèrent leur énergie...
 msgctxt "LogMessage:11534:0:5"
 msgid "The cursed constructs unleash their magicks..."
-msgstr "Проклятые изваяния высвобождают магию.."
+msgstr "Проклятые изваяния высвобождают магию..."
 
 #. ja: 死のルーレットが回りはじめた……
 #. de: Das Todesroulette beginnt sich zu drehen<nbsp>...
 #. fr: La roulette de la mort se met à tourner...
 msgctxt "LogMessage:11535:0:5"
 msgid "The deathly roulette begins to spin..."
-msgstr "Рулетка смерти начинает вращаться.."
+msgstr "Рулетка смерти начинает вращаться..."
 
 #. ja: 「サブジュゲーターの魔核」を壊せ！
 #. de: Zerstöre den Kern des Unterwerfers!
@@ -3454,7 +3454,7 @@ msgstr "Число доступных воскрешений восстанов�
 #. fr: Votre niveau de savoir a été altéré...
 msgctxt "LogMessage:11538:0:5"
 msgid "Your knowledge level has been altered..."
-msgstr "Ваш уровень знаний изменился.."
+msgstr "Ваш уровень знаний изменился..."
 
 #. ja: <if ($n1 == 0)>チーム・アストラ<else>チーム・アンブラ</if>が、マナレーンを出現させた！
 #. de: <if ($n1 == 0)>Team Astra<else>Team Umbra</if> hat eine Ätherbrücke erschaffen!
@@ -3481,7 +3481,7 @@ msgstr "<if ($n1 == 0)>Команда «Астра»<else>Команда «Ум�
 # aeria-terms: {"Sightseeing Log":"04971e153291"}
 msgctxt "LogMessage:11541:0:5"
 msgid "“<sheet DescriptionString 1175 0 26>” has been added to the Sightseeing Log guide."
-msgstr "В руководство по Журналу достопримечательностей добавлен раздел „<sheet DescriptionString 1175 0 26>“"
+msgstr "В руководство по Журналу достопримечательностей добавлен раздел «<sheet DescriptionString 1175 0 26>»"
 
 #. ja: 「ハードアクション」でバインド状態を解除せよ……！
 #. de: Befreie dich mit Harte Landung von der Fessel!
@@ -3546,7 +3546,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11549:0:5"
 msgid "You obtain <kilo $n2 \",\"><if ($n3 > 0)>(+<kilo $n3 \",\">)</if> <sheet ClassJob $n1 0> tool mastery points."
-msgstr "Получено <kilo $n2 \",\"><if ($n3 > 0)> (+<kilo $n3 \",\">)</if> очков мастерства ремесла за класс <sheet ClassJob $n1 0>"
+msgstr "Получено <kilo $n2 \",\"><if ($n3 > 0)> (+<kilo $n3 \",\">)</if> оч. мастерства ремесла за класс <sheet ClassJob $n1 0>"
 
 #. ja: <sheet EventItem $n2 0>を散布し、<sheet EObj $n1 0>を3つ活性化しよう。
 #. de: Verwende <noun-de EventItem 5 $n2 2 3 1>, um 3 <noun-de EObj 5 $n1 2 4 1> zu revitalisieren.
@@ -3555,7 +3555,7 @@ msgstr "Получено <kilo $n2 \",\"><if ($n3 > 0)> (+<kilo $n3 \",\">)</if>
 #. macro: <noun-en EObj 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11550:0:5"
 msgid "Disperse <noun-en EventItem 3 $n2 2 1> on three <noun-en EObj 3 $n1 2 1> to spur their growth."
-msgstr "Рассыпьте <noun-en EventItem 3 $n2 2 1> вокруг трёх объектов <noun-en EObj 3 $n1 2 1>, чтобы ускорить их рост"
+msgstr "Чтобы ускорить рост, рассыпьте предметы «<sheet EventItem $n2 0>» вокруг трёх объектов «<noun-en EObj 3 $n1 2 1>»"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、<sheet EventItem $n2 0>をすべて散布した！<br><sheet EObj $n1 0>で補充しよう。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> die Aufgabe abgeschlossen.<br>Das Wachstumsmittel wurde aufgebraucht. Besorge neues an der Nachfüllstation.
@@ -3565,7 +3565,7 @@ msgstr "Рассыпьте <noun-en EventItem 3 $n2 2 1> вокруг трёх �
 #. macro: <noun-en EObj 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11551:0:5"
 msgid "You have used all <noun-en EventItem 2 $n2 2 1>.<br>Refill them at <noun-en EObj 1 $n1 1 1>."
-msgstr "Все <noun-en EventItem 2 $n2 2 1> израсходованы<br>Пополните запас у <noun-en EObj 1 $n1 1 1>"
+msgstr "Запас предметов «<sheet EventItem $n2 0>» израсходован<br>Пополните его у объекта «<noun-en EObj 1 $n1 1 1>»"
 
 #. ja: <sheet EObj $n1 0>に<sheet EventItem $n2 0>を散布し、活性化しよう。
 #. de: Verwende <noun-de EventItem 5 $n2 2 3 1>, um <noun-de EObj 2 $n1 2 4 1> zu revitalisieren.
@@ -3574,7 +3574,7 @@ msgstr "Все <noun-en EventItem 2 $n2 2 1> израсходованы<br>По�
 #. macro: <noun-en EObj 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11552:0:5"
 msgid "Disperse <noun-en EventItem 3 $n2 2 1> on <noun-en EObj 3 $n1 2 1> to spur their growth."
-msgstr "Рассыпьте <noun-en EventItem 3 $n2 2 1> вокруг объекта <noun-en EObj 3 $n1 2 1>, чтобы ускорить его рост"
+msgstr "Чтобы ускорить рост, рассыпьте предметы «<sheet EventItem $n2 0>» вокруг объектов «<noun-en EObj 3 $n1 2 1>»"
 
 #. ja: <sheet EventItem $n2 0>3つを、<sheet EObj $n1 0>に取り付けよう。
 #. de: Verbaue <noun-de EventItem 5 $n2 2 4 1> an <noun-de EObj 2 $n1 2 3 1>.
@@ -3583,7 +3583,7 @@ msgstr "Рассыпьте <noun-en EventItem 3 $n2 2 1> вокруг объек
 #. macro: <noun-en EObj 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11553:0:5"
 msgid "Install three <noun-en EventItem 3 $n2 2 1> on <noun-en EObj 3 $n1 2 1>."
-msgstr "Установите три <noun-en EventItem 3 $n2 2 1> на <noun-en EObj 3 $n1 2 1>"
+msgstr "Установите предмет «<sheet EventItem $n2 0>» × 3 на объект «<noun-en EObj 3 $n1 2 1>»"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、入手した<sheet EventItem $n2 0>をすべて取り付けた！<br><sheet EObj $n1 0>で<sheet EventItem $n2 0>を受け取ろう。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> die Aufgabe abgeschlossen.<br>Die Drohnenteile wurden aufgebraucht. Besorge neue aus dem Drohnenteil-Behälter.
@@ -3592,7 +3592,7 @@ msgstr "Установите три <noun-en EventItem 3 $n2 2 1> на <noun-en 
 #. macro: <noun-en EObj 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11554:0:5"
 msgid "You have installed all <noun-en EventItem 2 $n2 2 1> you can carry. Obtain more from <noun-en EObj 1 $n1 1 1>."
-msgstr "Вы установили все <noun-en EventItem 2 $n2 2 1>, которые могли унести. Получите ещё у <noun-en EObj 1 $n1 1 1>"
+msgstr "Все предметы «<sheet EventItem $n2 0>», которые вы могли унести, установлены. Получите ещё у объекта «<noun-en EObj 1 $n1 1 1>»"
 
 #. ja: <sheet EventItem $n2 0>を<sheet EObj $n1 0>に取り付けよう。
 #. de: Verbaue <noun-de EventItem 5 $n2 2 4 1> an <noun-de EObj 2 $n1 2 3 1>.
@@ -3601,7 +3601,7 @@ msgstr "Вы установили все <noun-en EventItem 2 $n2 2 1>, кото
 #. macro: <noun-en EventItem 2 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 2, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11555:0:5"
 msgid "Upgrade <noun-en EObj 2 $n1 2 1> with <noun-en EventItem 2 $n2 2 1>."
-msgstr "Улучшите <noun-en EObj 2 $n1 2 1> с помощью <noun-en EventItem 2 $n2 2 1>"
+msgstr "Улучшите объект «<noun-en EObj 2 $n1 2 1>» с помощью предметов «<sheet EventItem $n2 0>»"
 
 #. ja: <sheet EObj $n1 0>を得た！「<sheet EObj $n2 0>」に<sheet EObj $n1 0>のエネルギーを伝えよう！
 #. de: <capitalize><noun-de EObj 1 $n1 1 4 1></capitalize> gefunden. Bringe es zu einem der <noun-de EObj 5 $n2 1 3 1>.
@@ -3698,7 +3698,7 @@ msgstr "Появился волшебный горшок!"
 #. fr: Un puissant monstre s'approche...
 msgctxt "LogMessage:11567:0:5"
 msgid "A powerful foe marches forth..."
-msgstr "Появился могучий противник.."
+msgstr "Появился могучий противник..."
 
 #. ja: ルブルムドラゴンが魔法障壁を展開した……
 #. de: Der Rubrum-Drache errichtet eine magische Barriere<nbsp>...!
@@ -3706,7 +3706,7 @@ msgstr "Появился могучий противник.."
 # aeria-terms: {"claret dragon":"dc3b382c6efb"}
 msgctxt "LogMessage:11568:0:5"
 msgid "The claret dragon has conjured a magical barrier..."
-msgstr "Бордовый дракон создал магический барьер.."
+msgstr "Бордовый дракон создал магический барьер..."
 
 #. ja: 申請のキャンセルに失敗したためログアウトを中止します。
 #. de: Der Logout schlug fehl, da die Inhaltssuche nicht abgebrochen werden konnte.
@@ -3797,7 +3797,7 @@ msgstr "Вы получили контейнер с реагентом<br>«Но
 #. macro: <noun-en Item 3 $n3 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11580:0:5"
 msgid "Exchanged <num $n2> <if ($n2 == 1)><noun-en Item 3 $n1 1 1><else><noun-en Item 3 $n1 2 1></if> for <num $n2> <if ($n2 == 1)><noun-en Item 3 $n3 1 1><else><noun-en Item 3 $n3 2 1></if>."
-msgstr "Обменяли <num $n2> <if ($n2 == 1)><noun-en Item 3 $n1 1 1><else><noun-en Item 3 $n1 2 1></if> на <num $n2> <if ($n2 == 1)><noun-en Item 3 $n3 1 1><else><noun-en Item 3 $n3 2 1></if>"
+msgstr "Обменено: <sheet Item $n1 0> × <num $n2> → <sheet Item $n3 0> × <num $n2>"
 
 #. ja: コンテンツの状態に変化があったため、再マッチングを行います。
 #. de: Die Inhaltsbedingungen haben sich geändert und die Suche von neuem begonnen.
@@ -3824,7 +3824,7 @@ msgstr "Встаньте рядом с резервуаром с формуло�
 #. macro: <noun-en Item 1 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11583:0:5"
 msgid "You receive <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if>."
-msgstr "Вы получили <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if>"
+msgstr "Получено: <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: マルファスの妖糸に操られた……
 #. de: Malphas' Fäden haben dich erfasst!
@@ -3832,7 +3832,7 @@ msgstr "Вы получили <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num 
 # aeria-terms: {"Malphas":"832e20e900ea"}
 msgctxt "LogMessage:11586:0:5"
 msgid "You are ensnared by Malphas's tendrils..."
-msgstr "Вы попались в щупальца Малфаса.."
+msgstr "Вы попались в щупальца Малфаса..."
 
 #. ja: 目標を達成したため、制限時間が<if ($n1 > 0)><num $n1>分</if><if ($n2 > 0)><num $n2>秒</if>延長され、得られる評価値が<num $n3>％増加した！
 #. de: Missionsboni erhalten. Zeitlimit wurde um <if ($n1 > 0)><num $n1> Min.</if><if ($n2 > 0)><num $n2> Sek.</if> und Wertungs-Multiplikator um <num $n3> % angehoben.
@@ -3846,7 +3846,7 @@ msgstr "Вы попались в щупальца Малфаса.."
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11587:0:5"
 msgid "You have reached an objective. Your time limit has increased by<if ($n1 > 0)> <num $n1> <if ($n1 == 1)>minute<else>minutes</if></if><if ($n2 > 0)> <num $n2> <if ($n2 == 1)>second<else>seconds</if></if> and a <num $n3>% score multiplier has been applied!"
-msgstr "Цель достигнута! Лимит времени увеличен на<if ($n1 > 0)> <num $n1> мин</if><if ($n2 > 0)> <num $n2> с</if> Множитель оценки увеличен на <num $n3>%!"
+msgstr "Цель достигнута! Лимит времени увеличен на<if ($n1 > 0)> <num $n1> мин.</if><if ($n2 > 0)> <num $n2> с</if>. К оценке применён множитель <num $n3>%!"
 
 #. ja: 新たなエモートアクション「<sheet Emote 330 0>」「<sheet Emote 331 0>」を修得しました。
 #. de: Du hast die Emotes „<sheet Emote 330 0>“ und „<sheet Emote 331 0>“ erlernt.
@@ -3855,7 +3855,7 @@ msgstr "Цель достигнута! Лимит времени увеличе�
 #. macro: <sheet Emote 331 0> — a value from a game data sheet, such as a name; sheet = Emote, row = 331, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11588:0:5"
 msgid "You learn the emotes “<sheet Emote 330 0>” and “<sheet Emote 331 0>.”"
-msgstr "Вы выучили эмоции «<sheet Emote 330 0>» и «<sheet Emote 331 0>»"
+msgstr "Вы изучили эмоции «<sheet Emote 330 0>» и «<sheet Emote 331 0>»"
 
 #. ja: マスターシップミッションが開放されました。<br>詳細はエクスプローラータブレット「<sheet DescriptionString 1665 0 24>」をご確認ください。
 #. de: Meistermissionen sind nun verfügbar.<br>Einzelheiten im Exotablet unter „<sheet DescriptionString 1665 0 24>“.
@@ -3871,7 +3871,7 @@ msgstr "Теперь вам доступны задания на мастерс�
 #. fr: <if ($gs1 == $gs2)>Votre résistance aux Ténèbres<else>La résistance aux Ténèbres de <if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></if> est réduite...
 msgctxt "LogMessage:11590:0:5"
 msgid "Your dark resistance has been reduced..."
-msgstr "Ваша сопротивляемость тьме снижена.."
+msgstr "Ваша сопротивляемость тьме снижена..."
 
 #. ja: 足元の属性エーテルが、爆発的に高まる……！
 #. de: Der Äther, der durch den Boden strömt, droht zu explodieren!
@@ -3887,7 +3887,7 @@ msgstr "Эфир, текущий под ногами, вот-вот взорвё
 # aeria-terms: {"gale":"39e26b29862e"}
 msgctxt "LogMessage:11592:0:5"
 msgid "You sense a powerful gale approaches..."
-msgstr "Вы чувствуете приближение мощного шквала.."
+msgstr "Вы чувствуете приближение мощного шквала..."
 
 #. ja: マウントアクション「フォーミュラスプレッダー」を使おう。
 #. de: Zeit, den Vitalsprüher zu verwenden!
@@ -3902,7 +3902,7 @@ msgstr "Используйте умение «Распылитель форму�
 # aeria-terms: {"energy":"95b2ab08778c","phantom hydra":"ff31ccb63f38"}
 msgctxt "LogMessage:11594:0:5"
 msgid "The phantom hydra is gathering energy..."
-msgstr "Призрачная гидра накапливает энергию.."
+msgstr "Призрачная гидра накапливает энергию..."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0><if ($n2 > 1)>×<num $n2></if>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <if ($n2 > 1)><noun-de Item 1 $n1 $n2 4 1><else><noun-de Item 1 $n1 1 4 1></if> erhalten.
@@ -3918,7 +3918,7 @@ msgstr "Призрачная гидра накапливает энергию.."
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11595:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0><if ($n2 > 1)>×<num $n2></if>を手に入れたが、所持品に空き枠がないため<num $n3>個のみ手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <if ($n2 > 1)><noun-de Item 1 $n1 $n2 4 1><else><noun-de Item 1 $n1 1 4 1></if> erhalten, <if ($gs1 == $gs2)>kannst<else>kann</if> davon aber nur <num $n3> behalten, weil nicht mehr Platz im Inventar ist.
@@ -3933,7 +3933,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11596:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <num $n3> of a possible <num $n2> <noun-en Item 3 $n1 2 1> due to a full inventory."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <num $n3> из возможных <num $n2> <noun-en Item 3 $n1 2 1>. Инвентарь переполнен"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0> × <num $n3> из <num $n2> возможных. Инвентарь переполнен"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は所持品に空き枠がないため、<sheet Item $n1 0>を手に入れることができませんでした。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> nicht genug Platz im Inventar und <if ($gs1 == $gs2)>kannst<else>kann</if> <noun-de Item 2 $n1 1 4 1> deshalb nicht entgegennehmen.
@@ -3941,7 +3941,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11597:0:5"
 msgid "Unable to obtain <noun-en Item 2 $n1 1 1>. You cannot carry any more items in your inventory."
-msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>: в инвентаре больше нет места"
+msgstr "В инвентаре нет места. Не удалось получить: <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<kilo $n1 ","><if ($n2 == 0)><else>(+<num $n2>%)</if>MGPを手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <kilo $n1 "."><if ($n2 == 0)><else> (+<num $n2> %)</if> MGP erhalten.
@@ -3957,7 +3957,7 @@ msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>: в инв
 # aeria-terms: {"MGP":"cb19ca506076"}
 msgctxt "LogMessage:11598:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <kilo $n1 \",\"><if ($n2 == 0)><else> (+<num $n2>%)</if> MGP."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <kilo $n1 \",\"><if ($n2 == 0)><else> (+<num $n2>%)</if> МГП"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <kilo $n1 \"<nbsp>\"><if ($n2 == 0)><else> (+<num $n2>%)</if> МГП"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<kilo $n1 ","><if ($n2 == 0)><else>(+<num $n2>%)</if>MGPを手に入れたが、最大所持数に達したため<num $n3>MGPのみ手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <kilo $n1 "."><if ($n2 == 0)><else> (+<num $n2> %)</if> MGP erhalten, <if ($gs1 == $gs2)>kannst<else>kann</if> davon aus Kapazitätsgründen aber nur <num $n3> behalten.
@@ -3975,7 +3975,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 # aeria-terms: {"MGP":"cb19ca506076"}
 msgctxt "LogMessage:11599:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <num $n3> of a possible <kilo $n1 \",\"><if ($n2 == 0)><else> (+<num $n2>%)</if> MGP and <if ($gs1 == $gs2)>are<else>is</if> unable to carry any more."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <num $n3> из возможных <kilo $n1 \",\"><if ($n2 == 0)><else> (+<num $n2>%)</if> МГП. Больше МГП не вместить"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <num $n3> из возможных <kilo $n1 \"<nbsp>\"><if ($n2 == 0)><else> (+<num $n2>%)</if> МГП. Больше МГП не вместить"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は所持数の上限に達しているため、<sheet Item $n1 0>を手に入れることができませんでした。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> nicht genug Platz im Inventar und <if ($gs1 == $gs2)>kannst<else>kann</if> <noun-de Item 2 $n1 1 4 1> deshalb nicht entgegennehmen.
@@ -3983,7 +3983,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11600:0:5"
 msgid "Unable to obtain any more <noun-en Item 3 $n1 2 1>, as the maximum limit has been reached."
-msgstr "Не удалось получить больше <noun-en Item 3 $n1 2 1>: достигнут предел"
+msgstr "Достигнут предел количества предмета: <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0><if ($n2 > 1)>×<num $n2></if>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <if ($n2 > 1)><noun-de Item 1 $n1 $n2 4 1><else><noun-de Item 1 $n1 1 4 1></if> erhalten.
@@ -3997,7 +3997,7 @@ msgstr "Не удалось получить больше <noun-en Item 3 $n1 2 
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11601:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <num $n2> <noun-en Item 3 $n1 $n2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <num $n2> <noun-en Item 3 $n1 $n2 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0> × <num $n2>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0><if ($n2 > 1)>×<num $n2></if>を手に入れたが、最大所持数に達したため<num $n3>クレジットのみ手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <if ($n2 > 1)><noun-de Item 1 $n1 $n2 4 1><else><noun-de Item 1 $n1 1 4 1></if> erhalten, <if ($gs1 == $gs2)>kannst<else>kann</if> davon aus Platzgründen aber nur <num $n3> behalten.
@@ -4020,7 +4020,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:11603:0:5"
 msgid "Unable to obtain any more <noun-en Item 3 $n1 2 1>, as the maximum limit has been reached."
-msgstr "Не удалось получить больше <noun-en Item 3 $n1 2 1>: достигнут предел"
+msgstr "Достигнут предел количества предмета: <sheet Item $n1 0>"
 
 #. ja: 蘇生可能回数が回復した！
 #. de: Die mögliche Anzahl an Wiederbelebungen hat sich regeneriert!
@@ -4090,7 +4090,7 @@ msgstr "Тайный знак в Потайном уголке ярко сияе
 #. fr: <if ($gs1 == $gs2)>Votre résistance à la Lumière<else>La résistance à la Lumière de <if ($gs1 == $gs2)>vous<else><if $gn7><noun-fr ObjStr 2 $gn7 1 1><else><if (2 == 9)><if $gn66>d'<else>de<nbsp></if><string $gs2><else><if $gn5><sheet Attributive 2 36><string $gs2><else><sheet Attributive 2 28><string $gs2></if></if></if></if></if> est réduite...
 msgctxt "LogMessage:11612:0:5"
 msgid "Your light resistance has been reduced..."
-msgstr "Ваша сопротивляемость свету снижена.."
+msgstr "Ваша сопротивляемость свету снижена..."
 
 #. ja: 募集ロールを、高難易度に適した構成に変更しました。
 #. de: Die Rollenverteilung wurde der Empfehlung für schwierige Inhalte angepasst.
@@ -4137,7 +4137,7 @@ msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else
 #. fr: Attaque fatale dans 5 secondes...
 msgctxt "LogMessage:11618:0:5"
 msgid "Five seconds until fatal onslaught..."
-msgstr "Через пять секунд — смертоносная атака.."
+msgstr "Через пять секунд — смертоносная атака..."
 
 #. ja: 残りのサンダーメーカーが緊急対応モードに入った……
 #. de: Die übrigen Donnermacher haben ihren Notfallmodus aktiviert<nbsp>...
@@ -4145,7 +4145,7 @@ msgstr "Через пять секунд — смертоносная атака
 # aeria-terms: {"storm generator":"48be1795126d"}
 msgctxt "LogMessage:11619:0:5"
 msgid "The remaining storm generators have activated emergency protocols..."
-msgstr "Оставшиеся грозогенераторы перешли в аварийный режим.."
+msgstr "Оставшиеся грозогенераторы перешли в аварийный режим..."
 
 #. ja: スライムの群れが出現した……
 #. de: Mehrere Gruppen an Schleimen sind aufgetaucht<nbsp>...
@@ -4153,7 +4153,7 @@ msgstr "Оставшиеся грозогенераторы перешли в а
 # aeria-terms: {"slime":"a1e0321f3fc0"}
 msgctxt "LogMessage:11620:0:5"
 msgid "A slew of slimes has emerged..."
-msgstr "Появилась целая толпа слаймов.."
+msgstr "Появилась целая толпа слаймов..."
 
 #. ja: 光の魔力が具現化した……
 #. de: Der Lichtäther nimmt Form an<nbsp>...
@@ -4161,7 +4161,7 @@ msgstr "Появилась целая толпа слаймов.."
 # aeria-terms: {"energy":"95b2ab08778c"}
 msgctxt "LogMessage:11621:0:5"
 msgid "Light energy has taken material form..."
-msgstr "Энергия света обрела плоть.."
+msgstr "Энергия света обрела плоть..."
 
 #. ja: 異質な光線が、バリアのエーテルを分解した……！
 #. de: Ein merkwürdiger Lichtstrahl hat den Äther der Barriere aufgelöst!
@@ -4176,7 +4176,7 @@ msgstr "Чужеродный луч света пробил барьер!"
 # aeria-terms: {"aether":"121cf0f81f85","energy":"95b2ab08778c"}
 msgctxt "LogMessage:11623:0:5"
 msgid "The energy tower discharges its aether..."
-msgstr "Эфир из энергетической башни рассеивается.."
+msgstr "Эфир из энергетической башни рассеивается..."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の攻撃  <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>はブロックした！<num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if>ＨＰ吸収。
 #. de: Geblockt!<br><capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>triffst<else>trifft</if> <if ($gs1 == $gs3)><switch 4><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 4 1><else>{$gs3}</if></if>, aber der Schaden wird als <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> LP absorbiert.
@@ -4228,14 +4228,14 @@ msgstr "Не удалось получить предмет обстановки
 #. fr: Veuillez attendre que tous les par<shy>ti<shy>ci<shy>pants soient disponibles...
 msgctxt "LogMessage:11642:0:5"
 msgid "Searching for players..."
-msgstr "Поиск игроков.."
+msgstr "Поиск игроков..."
 
 #. ja: 一定時間操作がなかったため、コンテンツから強制退出されました。
 #. de: Da du über längere Zeit inaktiv warst, wurdest du aus diesem Spielinhalt entfernt.
 #. fr: Votre personnage va être expulsé de cette mission car il est inactif depuis un certain temps.
 msgctxt "LogMessage:11665:0:5"
 msgid "You were expelled from the duty due to extended inactivity."
-msgstr "Вас исключили из активности из-за долгого бездействия"
+msgstr "Вас исключили из миссии за долгое бездействие"
 
 #. ja: 闘獣練の解説に「<sheet DescriptionString 1700 0 28>」の項目が追加されました。
 #. de: Dem Regelwerk für das Brett der Bestie wurde die Sektion „<sheet DescriptionString 1700 0 28>“ hinzugefügt.
@@ -4244,7 +4244,7 @@ msgstr "Вас исключили из активности из-за долго
 # aeria-terms: {"Crucible of the Unbroken":"f30d9f98a731"}
 msgctxt "LogMessage:11676:0:5"
 msgid "“<sheet DescriptionString 1700 0 28>” has been added to the Crucible of the Unbroken guide."
-msgstr "В руководство по Горнилу Несломленных добавлен раздел „<sheet DescriptionString 1700 0 28>“"
+msgstr "В руководство по Горнилу Несломленных добавлен раздел «<sheet DescriptionString 1700 0 28>»"
 
 #. ja: 闘獣練の解説に「<sheet DescriptionString 1762 0 28>」の項目が追加されました。
 #. de: Dem Regelwerk für das Brett der Bestie wurde die Sektion „<sheet DescriptionString 1762 0 28>“ hinzugefügt.
@@ -4253,7 +4253,7 @@ msgstr "В руководство по Горнилу Несломленных �
 # aeria-terms: {"Crucible of the Unbroken":"f30d9f98a731"}
 msgctxt "LogMessage:11677:0:5"
 msgid "“<sheet DescriptionString 1762 0 28>” has been added to the Crucible of the Unbroken guide."
-msgstr "В руководство по Горнилу Несломленных добавлен раздел „<sheet DescriptionString 1762 0 28>“"
+msgstr "В руководство по Горнилу Несломленных добавлен раздел «<sheet DescriptionString 1762 0 28>»"
 
 #. ja: コンテンツの攻略が終了したため、インスタンスの制限時間が変化しました。
 #. de: Der Inhalt wurde beendet. Die Zeitbegrenzung der Instanz wurde angepasst.

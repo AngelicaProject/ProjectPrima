@@ -12,7 +12,7 @@ msgstr ""
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:6000:0:5"
 msgid "Unable to execute command. One or more party members have not met all the conditions required for this duty."
-msgstr "Не удалось выполнить действие. У одного или нескольких участников отряда не выполнены условия для входа в это подземелье"
+msgstr "Не удалось выполнить команду. Не все участники отряда выполнили условия для этой миссии"
 
 #. ja: 「<sheet ExVersion $n1 0>」が未登録のパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil mindestens ein Grup<shy>pen<shy>mit<shy>glied<br>„<sheet ExVersion $n1 0>“ nicht registriert hat.
@@ -38,7 +38,7 @@ msgstr "Не удалось выполнить действие. Начать п
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:6003:0:5"
 msgid "Unable to execute command. One or more party members do not possess <noun-en Item 1 $n1 1 1>."
-msgstr "Не удалось выполнить действие. У одного или нескольких участников отряда нет <noun-en Item 1 $n1 1 1>"
+msgstr "Не удалось выполнить команду. У одного или нескольких участников отряда нет предмета «<sheet Item $n1 0>»"
 
 #. ja: 再挑戦時間が経過していないパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil mindestens ein Grup<shy>pen<shy>mit<shy>glied den Inhalt erst kürzlich betreten hat.
@@ -78,7 +78,7 @@ msgstr "Не удалось выполнить действие. У одного
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:6008:0:5"
 msgid "Unable to execute command. One or more party members are incapacitated."
-msgstr "Не удалось выполнить действие. Один или несколько участников отряда выведены из строя"
+msgstr "Не удалось выполнить команду. Один или несколько участников отряда без сознания"
 
 #. ja: 距離が離れているパーティメンバーがいるため、実行できません。
 #. de: Nicht möglich, weil mindestens ein Grup<shy>pen<shy>mit<shy>glied zu weit entfernt ist.
@@ -108,7 +108,7 @@ msgstr "Не удалось выполнить действие по неизв�
 #. fr: Action impossible. Une alliance est en cours de formation.
 msgctxt "LogMessage:6013:0:5"
 msgid "Unable to execute command until alliance is formed."
-msgstr "Не удалось выполнить действие, пока формируется альянс"
+msgstr "Нельзя выполнить команду, пока не собран альянс"
 
 #. ja: パーティが結成されていないため、実行できません。
 #. de: Nicht möglich, weil du nicht in einer Gruppe bist.
@@ -156,7 +156,7 @@ msgstr "Не удалось выполнить действие. У одного
 # aeria-terms: {"voyage control panel":"5ca9fd681905"}
 msgctxt "LogMessage:6019:0:5"
 msgid "Unable to access voyage control panel. Another member is currently using it."
-msgstr "Нельзя открыть панель управления путешествием: другой игрок уже ею пользуется"
+msgstr "Нельзя открыть панель управления экспедициями: другой участник уже её использует"
 
 #. ja: <player-name $n1>は、突入条件を満たしていません。
 #. de: <player-name $n1> erfüllt die Voraus<shy>setzungen nicht.
@@ -166,7 +166,7 @@ msgstr "Нельзя открыть панель управления путеш
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6020:0:5"
 msgid "<if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> not met all the conditions required for this duty."
-msgstr "<if-self $n1>Вы не выполнили<else><capitalize><player-name $n1></capitalize> не выполнил</if-self> все условия для участия в этом задании"
+msgstr "<if-self $n1>Вы не соответствуете всем условиям этой миссии<else><capitalize><player-name $n1></capitalize> не соответствует всем условиям этой миссии</if-self>"
 
 #. ja: <player-name $n1>は、「<sheet ExVersion $n2 0>」が未登録です。
 #. de: <if-self $n1>Du hast<else><player-name $n1> hat</if-self> „<sheet ExVersion $n2 0>“ nicht registriert.
@@ -188,7 +188,7 @@ msgstr "<if-self $n1>Вы не установили<else><capitalize><player-nam
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6022:0:5"
 msgid "<if-self $n1>You do<else><capitalize><player-name $n1></capitalize> does</if-self> not possess <noun-en Item 1 $n1 1 1>."
-msgstr "<if-self $n1>У вас<else>У персонажа <capitalize><player-name $n1></capitalize></if-self> нет <noun-en Item 1 $n1 1 1>"
+msgstr "<if-self $n1>У вас нет предмета «<noun-en Item 1 $n1 1 1>»<else><capitalize><player-name $n1></capitalize> не имеет предмета «<noun-en Item 1 $n1 1 1>»</if-self>"
 
 #. ja: <player-name $n1>は、再挑戦時間が経過していません。
 #. de: <player-name $n1> hat diesen Inhalt erst kürzlich betreten.
@@ -239,7 +239,7 @@ msgstr "<if-self $n1>Вашего<else><capitalize><player-name $n1></capitalize
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6027:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> KO'd."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> небоеспособны"
+msgstr "<if-self $n1>Вы сейчас без сознания<else><capitalize><player-name $n1></capitalize> сейчас без сознания</if-self>"
 
 #. ja: <player-name $n1>は、他のコンテンツに参加しています。
 #. de: <player-name $n1> nimmt gerade an einem anderen Inhalt teil.
@@ -249,7 +249,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6028:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> currently bound by another duty."
-msgstr "<if-self $n1>Вы уже участвуете<else><capitalize><player-name $n1></capitalize> уже участвует</if-self> в другом задании"
+msgstr "<if-self $n1>Вы уже участвуете в другой миссии<else><capitalize><player-name $n1></capitalize> уже участвует в другой миссии</if-self>"
 
 #. ja: <player-name $n1>は、中毒防止制限中です。
 #. de: <if-self $n1>Du kannst<else><capitalize><player-name $n1></capitalize> kann</if-self> vor<shy>über<shy>gehend nicht teilnehmen.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -269,7 +269,7 @@ msgstr "<if-self $n1>Вам<else><capitalize><player-name $n1></capitalize> ну
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6030:0:5"
 msgid "<if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> not unlocked this duty."
-msgstr "<if-self $n1>Вы ещё не открыли<else><capitalize><player-name $n1></capitalize> ещё не открыл</if-self> это подземелье"
+msgstr "<if-self $n1>Вы ещё не открыли эту миссию<else><capitalize><player-name $n1></capitalize> ещё не имеет доступа к этой миссии</if-self>"
 
 #. ja: <player-name $n1>は、突入できる平均アイテムレベルに達していません。
 #. de: Nicht möglich, weil die Ausrüstung von <player-name $n1><br>nicht die erforderliche Gegen<shy>stands<shy>stufe hat.
@@ -286,7 +286,7 @@ msgstr "<if-self $n1>Вы не соответствуете<else><capitalize><pl
 #. fr: Action impossible. Vous ne remplissez pas les conditions de par<shy>ti<shy>ci<shy>pa<shy>tion pour cette mission.
 msgctxt "LogMessage:6032:0:5"
 msgid "Unable to execute command. You have not met all the conditions required for this duty."
-msgstr "Не удалось выполнить действие. Вы не выполнили все условия для входа в это подземелье"
+msgstr "Не удалось выполнить команду. Вы не выполнили все условия для этой миссии"
 
 #. ja: 『雲海探索 ディアデム諸島』を開始するためには、<br>「<sheet ExVersion $n1 0>」が登録されている必要があります。
 #. de: Um Expeditionen zum Diadem zu unternehmen,<br>ist die Registrierung von „<sheet ExVersion $n1 0>“ erforderlich.
@@ -316,7 +316,7 @@ msgstr "Не удалось выполнить действие. Вы сейча
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6036:0:5"
 msgid "Unable to execute command. You do not possess <noun-en Item 1 $n1 1 1>."
-msgstr "Не удалось выполнить действие. У вас нет <noun-en Item 1 $n1 1 1>"
+msgstr "Не удалось выполнить действие. У вас нет предмета «<sheet Item $n1 0>»"
 
 #. ja: リミテッドジョブを除くファイター、もしくはソーサラーがレベル60以上ではないため、実行できません。
 #. de: Nicht möglich, weil du kein Krieger oder Magier der Stufe 60 oder höher bist. (Beschränkte Jobs sind ausgeschlossen.)
@@ -369,7 +369,7 @@ msgstr "Подойдите к панели управления путешест
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6043:0:5"
 msgid "You purchase <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> for <kilo $n3 \",\"> gil."
-msgstr "Вы покупаете <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> за <kilo $n3 \",\"> гил"
+msgstr "Куплено: <sheet Item $n1 0><if ($n2 == 1)><else> × <kilo $n2 \"<nbsp>\"></if> за <kilo $n3 \"<nbsp>\"> гил"
 
 #. ja: 他のキャラクターが管制卓を利用中のため、アクセスできません。
 #. de: Der Zugriff ist nicht möglich, weil ein anderer Spieler gerade das Planungspult benutzt.
@@ -377,7 +377,7 @@ msgstr "Вы покупаете <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><ki
 # aeria-terms: {"voyage control panel":"5ca9fd681905"}
 msgctxt "LogMessage:6044:0:5"
 msgid "Unable to access voyage control panel. Another member is currently using it."
-msgstr "Нельзя открыть панель управления путешествием: другой участник уже ею пользуется"
+msgstr "Нельзя открыть панель управления экспедициями: другой участник уже её использует"
 
 #. ja: 「メインクエスト：蒼天のイシュガルド」のクエスト「蒼天のイシュガルド」をコンプリートしていないため、実行できません。
 #. de: Nicht möglich, weil du erst den Hauptszenario-Auftrag „Himmelwärts“ abschließen musst.
@@ -553,7 +553,7 @@ msgstr "Обнаружено новое место назначения подв
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6062:0:5"
 msgid "<i><capitalize><string $s1></capitalize></i> attains rank <num $n2>!"
-msgstr "<i><capitalize><string $s1></capitalize></i> достигла ранга <num $n2>!"
+msgstr "<i><capitalize><string $s1></capitalize></i> достигает ранга <num $n2>!"
 
 #. ja: 潜水艦「<string $s1>」の探索によって<num $n2>機目の潜水艦が登録できるようになりました。
 #. de: Ein zusätzliches Tauchboot kann nun registriert werden!
@@ -637,7 +637,7 @@ msgstr "Это послание уже удалено"
 #. fr: Action impossible. Les conditions ne sont pas remplies.
 msgctxt "LogMessage:6073:0:5"
 msgid "Unable to execute command."
-msgstr "Не удалось выполнить действие"
+msgstr "Не удалось выполнить команду"
 
 #. ja: 権限「<sheet FCAuthority $n1 0>」がありません。
 #. de: Du hast das folgende Recht nicht: <sheet FCAuthority $n1 0>.
@@ -667,7 +667,7 @@ msgstr "Не удалось оставить послание"
 #. fr: Impossible de laisser un message. Il n'y a plus d'emplacement libre.
 msgctxt "LogMessage:6077:0:5"
 msgid "Unable to leave message. The book is full."
-msgstr "Не удалось оставить послание. Книга заполнена"
+msgstr "Не удалось оставить послание: книга заполнена"
 
 #. ja: 自分のハウス、個室、アパルトメントの交流帳には、「いいね」をできません。
 #. de: In dem Diarium deiner eigenen Unterkunft kannst du kein „Gefällt mir“ hinterlassen.
@@ -682,7 +682,7 @@ msgstr "Нельзя поставить отметку «Нравится» в �
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6079:0:5"
 msgid "You purchase <noun-en Item 1 $n1 1 1>."
-msgstr "Вы покупаете <noun-en Item 1 $n1 1 1>"
+msgstr "Куплено: <sheet Item $n1 0>"
 
 #. ja: マネキンから、複数のアイテムを合計<kilo $n1 ",">ギルで購入しました。
 #. de: Mehrere Gegenstände zum Preis von <kilo $n1 "."> Gil von der Kleiderpuppe erworben.
@@ -690,7 +690,7 @@ msgstr "Вы покупаете <noun-en Item 1 $n1 1 1>"
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6080:0:5"
 msgid "You purchase multiple items for a grand total of <kilo $n1 \",\"> gil."
-msgstr "Вы покупаете несколько предметов на общую сумму <kilo $n1 \",\"> гил"
+msgstr "Вы покупаете несколько предметов на общую сумму <kilo $n1 \"<nbsp>\"> гил"
 
 #. ja: マネキンで出品した<sheet Item $n1 0>が売れ、<kilo $n2 ",">ギルを入手しました。
 #. de: Eine Kleiderpuppe hat <noun-de Item 1 $n1 1 4 1> für <kilo $n2 "."> Gil verkauft.
@@ -701,7 +701,7 @@ msgstr "Вы покупаете несколько предметов на об�
 # aeria-terms: {"mannequin":"bb9fcc1b8da9"}
 msgctxt "LogMessage:6081:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> you put up for sale on your mannequin has sold for <kilo $n2 \",\"> gil."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize>, выставленный на продажу через манекен, продан за <kilo $n2 \",\"> гил"
+msgstr "Продано через манекен: <sheet Item $n1 0> — <kilo $n2 \"<nbsp>\"> гил"
 
 #. ja: マネキンで出品した複数のアイテムが売れ、合計<kilo $n1 ",">ギルを入手しました。
 #. de: Eine Kleiderpuppe hat mehrere Gegenstände für <kilo $n1 "."> Gil verkauft.
@@ -710,7 +710,7 @@ msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize>, выставленн�
 # aeria-terms: {"mannequin":"bb9fcc1b8da9"}
 msgctxt "LogMessage:6082:0:5"
 msgid "Multiple items put up for sale on your mannequin have sold for <kilo $n1 \",\"> gil."
-msgstr "Несколько предметов, выставленных на продажу на вашем манекене, проданы за <kilo $n1 \",\"> гил"
+msgstr "Несколько предметов, выставленных на продажу на вашем манекене, проданы за <kilo $n1 \"<nbsp>\"> гил"
 
 #. ja: マネキンを設置するには、リテイナーを雇用する必要があります。
 #. de: Die Kleiderpuppe kann nicht aufgestellt werden. Mindestens ein Gehilfe ist erforderlich.
@@ -750,7 +750,7 @@ msgstr "Нельзя менять настройки манекена, пока 
 # aeria-terms: {"mannequin":"bb9fcc1b8da9"}
 msgctxt "LogMessage:6087:0:5"
 msgid "Mannequin class set to <sheet ClassJob $n1 0>."
-msgstr "Класс манекена изменён на <sheet ClassJob $n1 0>"
+msgstr "Класс манекена изменён на «<sheet ClassJob $n1 0>»"
 
 #. ja: リテイナーとの雇用契約が切れているため、設置できません。
 #. de: Die Kleiderpuppe kann nicht aufgestellt werden. Der Gehilfenvertrag ist ausgelaufen.
@@ -806,7 +806,7 @@ msgstr "Нельзя отправить подводную лодку. Недо�
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6094:0:5"
 msgid "You set a print of <noun-en Item 1 $n1 1 1> in the frame."
-msgstr "Вы поместили в раму отпечаток <noun-en Item 1 $n1 1 1>"
+msgstr "В раму помещён отпечаток: <sheet Item $n1 0>"
 
 #. ja: 魚拓を取り除いた。
 #. de: Der Fischdruck wurde entfernt.
@@ -875,7 +875,7 @@ msgstr "Нельзя покупать участок от имени Вольн�
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6103:0:5"
 msgid "Unable to share an estate with <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>. This character is blacklisted."
-msgstr "Нельзя делить поместье с <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>: этот персонаж в вашем чёрном списке"
+msgstr "Нельзя разделить поместье: <if ($gs1 == $gs3)>вы<else><capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize></if> в вашем чёрном списке"
 
 #. ja: 入場が制限されているため、移動できません。
 #. de: Es wurde dir untersagt, diesen Bereich zu betreten.
@@ -978,21 +978,21 @@ msgstr "Обстановка в доме сохранена"
 # aeria-terms: {"resident caretaker":"0de1b2dc3d3f"}
 msgctxt "LogMessage:6118:0:5"
 msgid "Room #<num $n1> has been demolished. All possessions can be retrieved from a resident caretaker."
-msgstr "Комнату №<num $n1> снесли. Все вещи можно забрать у смотрителя жилого района."
+msgstr "Комнату №<num $n1> снесли. Все вещи можно забрать у смотрителя жилого района"
 
 #. ja: 撤去対象の室内にいるため撤去できません。
 #. de: Das Zimmer kann nicht aufgelöst werden, solange du dich darin befindest.
 #. fr: Impossible de détruire la chambre, car vous vous trouvez à l'intérieur de celle-ci.
 msgctxt "LogMessage:6119:0:5"
 msgid "Unable to demolish room while you are still inside."
-msgstr "Нельзя снести комнату, пока вы в ней."
+msgstr "Нельзя снести комнату, пока вы в ней"
 
 #. ja: ハウスの状態が変化したため、室外に移動しました。
 #. de: Aufgrund von Änderungen am Gebäude wurdest du nach draußen teleportiert.
 #. fr: Un changement ayant été effectué dans le logement, vous avez été transporté<if $gn4>e</if> à l'extérieur.
 msgctxt "LogMessage:6120:0:5"
 msgid "Teleported outside. Changes have been made to the estate."
-msgstr "В поместье произошли изменения. Вас переместили наружу."
+msgstr "В поместье произошли изменения. Вас переместили наружу"
 
 #. ja: <sheet Item $n1 0>はマーケット取引不可のため、ブックマーク登録できません。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> kann nicht auf dem Marktbrett gehandelt und daher auch nicht der Merkliste hinzugefügt werden.
@@ -1006,7 +1006,7 @@ msgstr "Предметы, запрещённые к продаже, нельзя
 #. fr: Le verrou a résisté, mais vous pouvez encore tenter de l'ouvrir.
 msgctxt "LogMessage:6965:0:5"
 msgid "The lock is unchanged..."
-msgstr "Замок не поддался.."
+msgstr "Замок не поддался..."
 
 #. ja: <switch $n1><case>1回目<case>2回目<case>3回目<case>4回目<case>最後</switch>の解除に挑んだ！
 #. de: Die Falle fordert euch zur <switch $n1><case>erste<case>zweite<case>dritte<case>vierte<case>letzte</switch>n Verlockung heraus.
@@ -1031,7 +1031,7 @@ msgstr "Ловушка Игрока срабатывает!"
 #. fr: Vous décidez de ne pas tenter d'ouvrir le verrou...
 msgctxt "LogMessage:6968:0:5"
 msgid "The Gambler's Lure will tempt no one this day..."
-msgstr "Сегодня ловушка Игрока никого не прельстит.."
+msgstr "Сегодня ловушка Игрока никого не прельстит..."
 
 #. ja: 強欲の罠の解除に成功し、財宝の数が開始時の<num $n1>倍に増加した！
 #. de: Der Schatz wurde vermehrt!<br>(Vergütung x <num $n1>)
@@ -1044,7 +1044,7 @@ msgstr "Сегодня ловушка Игрока никого не прель�
 # aeria-terms: {"Treasure":"e1db39864450"}
 msgctxt "LogMessage:6969:0:5"
 msgid "The lock clicks! <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> times the treasure is yours for the taking!"
-msgstr "Замок щёлкнул! Сокровища умножены в <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> раз — забирайте!"
+msgstr "Замок щёлкнул! Множитель сокровищ: ×<num $n1> — забирайте!"
 
 #. ja: 強欲の罠の解除を中断し、開始時の<num $n1>倍の財宝を入手した！
 #. de: Ihr lehnt ab und sichert euch den Schatz!<br>(Vergütung x <num $n1>)
@@ -1068,21 +1068,21 @@ msgstr "Ловушка Игрока исчезает, а вы забираете
 # aeria-terms: {"Treasure":"e1db39864450"}
 msgctxt "LogMessage:6971:0:5"
 msgid "The final lock clicks, and <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> times the treasure is yours for the taking!"
-msgstr "Последний замок щёлкнул! Сокровища умножены в <if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if> раз — забирайте!"
+msgstr "Последний замок щёлкнул! Множитель сокровищ: ×<num $n1> — забирайте!"
 
 #. ja: 強欲の罠の解除に失敗し、財宝を失ってしまった……
 #. de: Ihr verliert das Spiel und damit den gesamten Schatz ...
 #. fr: Vous n'avez pas réussi à ouvrir le verrou et perdez tout le contenu du trésor...
 msgctxt "LogMessage:6972:0:5"
 msgid "The lock jams, and the coffer vanishes before your very eyes..."
-msgstr "Замок заклинило, и сундук исчез у вас на глазах.."
+msgstr "Замок заклинило, и сундук исчез у вас на глазах..."
 
 #. ja: 宝箱に強欲の罠が仕掛けられているようだ……
 #. de: Du bist nicht befugt, dich der Heraus<shy>forde<shy>rung zu stellen.
 #. fr: Ce coffre au trésor semble être protégé par la tentation du flambeur...
 msgctxt "LogMessage:6973:0:5"
 msgid "The Gambler's Lure has already tempted another..."
-msgstr "Похоже, ловушка Игрока уже кого-то соблазнила.."
+msgstr "Похоже, ловушка Игрока уже кого-то соблазнила..."
 
 #. ja: 解錠成功率アップ！ 開かない<switch $n1><case>左の<case>右の<case>中央の</switch>扉が消灯した！
 #. de: Das <switch $n1><case>linke<case>rechte<case>mittlere</switch> Tor führt nach draußen!
@@ -1114,7 +1114,7 @@ msgstr "Ворота <switch $n1><case>слева<case>справа</switch> н�
 # aeria-terms: {"Duty Finder":"2875aea7daf9"}
 msgctxt "LogMessage:6977:0:5"
 msgid "Unable to execute command while using the Duty Finder."
-msgstr "Невозможно выполнить команду во время использования «Поиска миссий»"
+msgstr "Нельзя выполнить команду, пока вы используете Поиск миссий"
 
 #. ja: 扉には鍵が掛けられている……
 #. de: Das Tor ist versperrt.
@@ -1128,14 +1128,14 @@ msgstr "Ворота заперты"
 #. fr: La porte est solidement fermée.
 msgctxt "LogMessage:6979:0:5"
 msgid "The gate is sealed tight."
-msgstr "Ворота крепко запечатаны"
+msgstr "Врата наглухо запечатаны"
 
 #. ja: 突入条件を満たしていないため、実行できません。
 #. de: Du erfüllst nicht alle Bedingungen für die Teilnahme.
 #. fr: Action impossible. Vous ne remplissez pas les conditions de par<shy>ti<shy>ci<shy>pa<shy>tion pour cette mission.
 msgctxt "LogMessage:6980:0:5"
 msgid "Unable to execute command. You have not met all the conditions required for this duty."
-msgstr "Невозможно выполнить команду. Вы не выполнили все условия для участия в задании"
+msgstr "Не удалось выполнить команду. Вы не выполнили все условия для этой миссии"
 
 #. ja: ファイター＆ソーサラークラスではないため、実行できません。
 #. de: Du musst in einer Krieger- oder Magierklasse sein.
@@ -1166,7 +1166,7 @@ msgstr "Невозможно выполнить команду. В комнат�
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:6984:0:5"
 msgid "Unable to execute command. One or more party members have not met all the conditions required for this duty."
-msgstr "Невозможно выполнить команду. Не все участники отряда выполнили условия для участия в задании"
+msgstr "Не удалось выполнить команду. Не все участники отряда выполнили условия для этой миссии"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は、突入条件を満たしていません。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>erfüllst<else>erfüllt</if> nicht alle Bedingungen für die Teilnahme.
@@ -1217,7 +1217,7 @@ msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:6990:0:5"
 msgid "Unable to execute command. One or more party members are incapacitated."
-msgstr "Невозможно выполнить команду. Один или несколько участников отряда выведены из строя"
+msgstr "Не удалось выполнить команду. Один или несколько участников отряда без сознания"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は、戦闘不能状態です。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>bist<else>ist</if> kampfunfähig.
@@ -1266,7 +1266,7 @@ msgstr "<capitalize><if ($gs1 == $gs3)>Вы должны подождать<else
 #. fr: Action impossible. Une alliance est en cours de formation.
 msgctxt "LogMessage:6996:0:5"
 msgid "Unable to execute command until alliance is formed."
-msgstr "Невозможно выполнить команду, пока не собран альянс"
+msgstr "Нельзя выполнить команду, пока не собран альянс"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>は、扉に手を掛けた。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>versuchst<else>versucht</if>, das Tor zu öffnen.

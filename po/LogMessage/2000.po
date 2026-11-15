@@ -77,7 +77,7 @@ msgstr "Эфирное поле, защищающее чётки культис�
 # aeria-terms: {"Enemy":"d3725f2b4d0e"}
 msgctxt "LogMessage:2009:0:5"
 msgid "<if ($n2 == 1)>An enemy approaches<else><num $n2> enemies approach</if>!"
-msgstr "<if ($n2 == 1)>Появился враг<else><num $n2> врагов появилось</if>!"
+msgstr "Приближаются враги! Численность: <num $n2>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>を入手した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>erhältst<else>erhält</if> <noun-de Item 1 $n1 1 4 1>.
@@ -90,7 +90,7 @@ msgstr "<if ($n2 == 1)>Появился враг<else><num $n2> врагов п�
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2010:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <noun-en Item 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <noun-en Item 1 $n1 1 1>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>×<num $n2>を入手した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>erhältst<else>erhält</if> <noun-de Item 1 $n1 $n2 4 1>.
@@ -106,7 +106,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2011:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <noun-en Item 1 $n1 1 1><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: <sheet PlaceName $n1 0>の封鎖まであと<num $n2>秒
 #. de: Noch <num $n2> <if ($n2 == 1)>Sekunde<else>Sekunden</if>, bis sich <sheet PlaceName $n1 8 3> schließt.
@@ -117,7 +117,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <if ($n2 == 1)>second<else>seconds</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:2012:0:5"
 msgid "<capitalize><noun-en PlaceName 2 $n1 2 1></capitalize> will be sealed off in <num $n2> <if ($n2 == 1)>second<else>seconds</if>!"
-msgstr "<capitalize><sheet PlaceName $n1 0></capitalize> — закрытие через <num $n2> <if ($n2 == 1)>секунду<else>секунд</if>!"
+msgstr "<capitalize><sheet PlaceName $n1 0></capitalize> — закрытие через <num $n2> с!"
 
 #. ja: <sheet PlaceName $n1 0>が封鎖された！
 #. de: <capitalize><sheet PlaceName $n1 8 3></capitalize> hat sich geschlossen.
@@ -169,7 +169,7 @@ msgstr "Ваш уровень намного выше рекомендуемог
 # aeria-terms: {"exit":"9b72bf563ed4"}
 msgctxt "LogMessage:2018:0:5"
 msgid "An exit has appeared. You have less than <num $n1> <if ($n1 == 1)>minute<else>minutes</if> remaining in the area."
-msgstr "Появился выход. В этой области осталось меньше <num $n1> <if ($n1 == 1)>минуты<else>минут</if>"
+msgstr "Появился выход. В этой области осталось меньше <num $n1> мин."
 
 #. ja: 1人用コンテンツ参加中のため、パーティから離脱しました。
 #. de: Du hast deine Gruppe verlassen. Diesen Einsatz musst du alleine ausführen.
@@ -273,7 +273,7 @@ msgstr "В пороховую камеру, похоже, поместится 1
 #. macro: <noun-en EventItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2031:0:5"
 msgid "You obtain <noun-en EventItem 1 $n1 1 1>."
-msgstr "Вы получаете <noun-en EventItem 1 $n1 1 1>"
+msgstr "Получено: <sheet EventItem $n1 0>"
 
 #. ja: <sheet EventItem $n1 0>×<num $n2>を入手した。
 #. de: Du hast <noun-de EventItem 1 $n1 $n2 4 1> erhalten.
@@ -282,14 +282,14 @@ msgstr "Вы получаете <noun-en EventItem 1 $n1 1 1>"
 #. macro: <noun-en EventItem 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2032:0:5"
 msgid "You obtain <num $n2> <noun-en EventItem 3 $n1 $n2 1>."
-msgstr "Вы получаете <num $n2> <noun-en EventItem 3 $n1 $n2 1>"
+msgstr "Получено: <sheet EventItem $n1 0> × <num $n2>"
 
 #. ja: スイッチらしきものがあるが、今は操作できない……。
 #. de: Da ist ein Schalter, aber er scheint noch nicht zu funktionieren.
 #. fr: Vous découvrez un bouton, mais il n'a pas l'air de fonctionner pour l'instant.
 msgctxt "LogMessage:2033:0:5"
 msgid "You discover a switch, but it does not appear to function at this time..."
-msgstr "Вы нашли какой-то переключатель, но он пока не работает.."
+msgstr "Вы нашли какой-то переключатель, но он пока не работает..."
 
 #. ja: どこかで何かが動いたようだ……。
 #. de: Irgendwo hat sich etwas bewegt ...
@@ -311,7 +311,7 @@ msgstr "Вас окатило ядом!"
 # aeria-terms: {"door":"404e1962b5a7"}
 msgctxt "LogMessage:2036:0:5"
 msgid "The door is locked tight."
-msgstr "Дверь заперта на замок"
+msgstr "Дверь наглухо заперта"
 
 #. ja: 特殊な鍵が必要なようだ。
 #. de: Nur ein spezieller Schlüssel kann die Türe aufschließen.
@@ -469,7 +469,7 @@ msgstr "Айатар спускается в джунгли"
 # aeria-terms: {"Aiatar":"4e58639468f1"}
 msgctxt "LogMessage:2056:0:5"
 msgid "Aiatar takes to the sky..."
-msgstr "Айатар взмывает в небо.."
+msgstr "Айатар взмывает в небо..."
 
 #. ja: <sheet BNpcName $n1 0>は、不協和音を発した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> stößt einen dissonanten Schrei aus!
@@ -487,7 +487,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> издаёт пр�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2058:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> is placed upon the scales."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> кладут на весы"
+msgstr "На весы помещено: <noun-en Item 2 $n1 1 1>"
 
 #. ja: 「<sheet PlaceName $n1 0>」が開いた！
 #. de: <capitalize><sheet PlaceName $n1 8 3></capitalize> hat sich geöffnet.
@@ -579,7 +579,7 @@ msgstr "Дверь наглухо заперта"
 #. macro: <noun-en EventItem 1 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 1, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2069:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> drops <noun-en EventItem 1 $n2 1 1>."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> роняет <noun-en EventItem 1 $n2 1 1>"
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> роняет предмет «<sheet EventItem $n2 0>»"
 
 #. ja: 推奨レベルから<num $n1>以上離れています。<br>参加する場合は、コンテンツ情報からレベルシンクしてください。
 #. de: Deine Stufe weicht um <num $n1> oder mehr von der empfohlenen ab.<br>Damit dein Einsatz zählt, musst du über die Aufgabenliste eine Stufenanpassung durchführen.
@@ -602,7 +602,7 @@ msgstr "Ваш уровень выше рекомендуемого для F.A.T
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2071:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <noun-en Item 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>×<num $n2>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 $n2 4 1> erhalten.
@@ -616,7 +616,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2072:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <num $n2> <noun-en Item 3 $n1 $n2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <num $n2> <noun-en Item 3 $n1 $n2 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0> × <num $n2>"
 
 #. ja: 推奨レベルを大きく超えているため、アイテムを入手できませんでした。
 #. de: Da deine Stufe zu weit über der empfohlenen liegt, konntest du keinen Gegenstand bekommen.
@@ -645,14 +645,14 @@ msgstr "Нельзя взаимодействовать. Ваш уровень �
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2075:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are<else>is</if> unable to obtain <noun-en Item 2 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете получить<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> не может получить</if></capitalize> <noun-en Item 2 $n1 1 1>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете получить<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> не может получить</if></capitalize> <sheet Item $n1 0>"
 
 #. ja: 刻まれた文字は、風化していて読めない……
 #. de: Die Inschrift ist so verwittert, dass man sie nicht entziffern kann.
 #. fr: Les ins<shy>crip<shy>tions sur le monument sont trop abîmées pour être déchiffrées...
 msgctxt "LogMessage:2076:0:5"
 msgid "The engraving is too worn to decipher..."
-msgstr "Надпись стёрлась от времени, её не разобрать.."
+msgstr "Надпись стёрлась от времени, её не разобрать..."
 
 #. ja: 仕掛けが動き、壁が消え去った！
 #. de: Der Mechanismus setzt sich in Bewegung und die Wand verschwindet!
@@ -748,7 +748,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> больше не 
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2088:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is invulnerable to attack!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> снова неуязвим для атак!"
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> получает неуязвимость к атакам!"
 
 #. ja: <sheet BNpcName $n1 0>が種子をばら撒いた！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> hat Samen verstreut.
@@ -766,7 +766,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает �
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2090:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> takes a moment to reconsider..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> на миг задумался.."
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> на миг задумался..."
 
 #. ja: モルボルの苗床を除去した……
 #. de: Du hast das Morbol-Beet gründlich gejätet.
@@ -803,7 +803,7 @@ msgstr "У вас пробежал холодок по спине!"
 #. fr: Vous sentez le sol trembler sous vos pieds...
 msgctxt "LogMessage:2095:0:5"
 msgid "The earth begins to tremble..."
-msgstr "Земля начинает дрожать.."
+msgstr "Земля начинает дрожать..."
 
 #. ja: <sheet BNpcName $n1 0>の危機を察知し、<sheet BNpcName $n2 0>が出現した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist in Bedrängnis und <noun-de BNpcName 1 $n2 1 1 1> eilt zu Hilfe!
@@ -856,7 +856,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> больше не 
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2101:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is invulnerable to attack!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> неуязвим(о) для атак!"
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> получает неуязвимость к атакам!"
 
 #. ja: 「審理の天秤」に置けるものを持っていない……
 #. de: Du hast nichts, was du auf die Waage des Urteils legen könntest.
@@ -952,7 +952,7 @@ msgstr "Пехотинец Иллюминатов призывает клюв г
 #. macro: <if ($n1 == 1)>click<else>clicks</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:2113:0:5"
 msgid "Charge complete in...<num $n1> <if ($n1 == 1)>click<else>clicks</if>."
-msgstr "До завершения «Натиска»... <num $n1> <if ($n1 == 1)>щелчок<else>щелчков</if>"
+msgstr "До завершения заряда осталось щелчков: <num $n1>"
 
 #. ja: チャージ完了　発動シマス
 #. de: Aufladung abgeschlossen - Programm wird initialisiert.
@@ -1015,7 +1015,7 @@ msgstr "С неба сыплются бесчисленные перья"
 #. fr: Des mirages de Garuda se matérialisent...
 msgctxt "LogMessage:2121:0:5"
 msgid "The air around you begins to warp and bend..."
-msgstr "Воздух вокруг вас начинает искажаться.."
+msgstr "Воздух вокруг вас начинает искажаться..."
 
 #. ja: <sheet BNpcName $n1 0>が死の淵から甦った！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist dem Tod entronnen!
@@ -1096,7 +1096,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выбирает �
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2131:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> begins to growl..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает рычать.."
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает рычать..."
 
 #. ja: <sheet BNpcName $n1 0>は追跡に疲れ、まどろみに落ちた……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist das Verfolgen leid und schläft erschöpft ein ...
@@ -1319,7 +1319,7 @@ msgstr "Замок двери Командного зала отключён"
 #. fr: Vous n'avez pas d'explosifs...
 msgctxt "LogMessage:2159:0:5"
 msgid "You do not have any explosives..."
-msgstr "У вас нет взрывчатки.."
+msgstr "У вас нет взрывчатки..."
 
 #. ja: 認証鍵を持っていない……
 #. de: Du hast keinen Kennschlüssel.
@@ -1354,7 +1354,7 @@ msgstr "В отряде есть участники, впервые проход
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2163:0:5"
 msgid "A bonus of <if ($n1 > 0)><kilo $n1 \",\"> experience points and </if><kilo $n2 \",\"> gil has been awarded for swift first-time completion of duty objectives."
-msgstr "За быстрое первое выполнение целей задания начислен бонус: <if ($n1 > 0)><kilo $n1 \",\"> очков опыта и </if><kilo $n2 \",\"> гил"
+msgstr "За быстрое первое выполнение целей задания начислен бонус: <if ($n1 > 0)><kilo $n1 \"<nbsp>\"> оч. опыта и </if><kilo $n2 \"<nbsp>\"> гил"
 
 #. ja: <sheet Item $n2 0>を<num $n1>個手に入れた。
 #. de: Du hast <if ($n1 == 1)><noun-de Item 1 $n2 1 4 1><else><num $n1> <noun-de Item 5 $n2 2 4 1></if> erhalten.
@@ -1363,7 +1363,7 @@ msgstr "За быстрое первое выполнение целей зад�
 #. macro: <noun-en Item 3 $n2 $n1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = number parameter 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2164:0:5"
 msgid "You obtain <num $n1> <noun-en Item 3 $n2 $n1 1>."
-msgstr "Вы получаете <num $n1> <noun-en Item 3 $n2 $n1 1>"
+msgstr "Получено: <sheet Item $n2 0> × <num $n1>"
 
 #. ja: <sheet Item $n2 0>を<num $n1>個手に入れた。
 #. de: Du hast <if ($n1 == 1)><noun-de Item 1 $n2 1 4 1><else><num $n1> <noun-de Item 5 $n2 2 4 1></if> erhalten.
@@ -1372,7 +1372,7 @@ msgstr "Вы получаете <num $n1> <noun-en Item 3 $n2 $n1 1>"
 #. macro: <noun-en Item 3 $n2 $n1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = number parameter 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2165:0:5"
 msgid "You obtain <num $n1> <noun-en Item 3 $n2 $n1 1>."
-msgstr "Вы получаете <num $n1> <noun-en Item 3 $n2 $n1 1>"
+msgstr "Получено: <sheet Item $n2 0> × <num $n1>"
 
 #. ja: 推奨レベルを大きく超えているため、攻撃することができません。
 #. de: Du kannst nicht angreifen, weil deine Stufe zu hoch ist.
@@ -1436,7 +1436,7 @@ msgstr "Корпус штурмового корабля повреждён!"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2173:0:5"
 msgid "You cannot carry any more <noun-en Item 3 $n1 2 1>."
-msgstr "Вы не можете нести больше <noun-en Item 3 $n1 2 1>"
+msgstr "Достигнут предел количества предмета: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>は週の所持数の上限に達しているため受け取れません。
 #. de: Du kannst diese Woche nicht noch mehr <noun-de Item 5 $n1 2 4 1> erhalten.
@@ -1444,7 +1444,7 @@ msgstr "Вы не можете нести больше <noun-en Item 3 $n1 2 1>"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2174:0:5"
 msgid "You cannot receive any more <noun-en Item 3 $n1 2 1> this week."
-msgstr "На этой неделе больше нельзя получить <noun-en Item 3 $n1 2 1>"
+msgstr "На этой неделе достигнут предел получения предмета: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>は所持数の上限に達しているため受け取れません。
 #. de: Du kannst nicht noch mehr <noun-de Item 5 $n1 2 4 1> tragen.
@@ -1452,7 +1452,7 @@ msgstr "На этой неделе больше нельзя получить <n
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2175:0:5"
 msgid "You cannot carry any more <noun-en Item 3 $n1 2 1>."
-msgstr "Вы не можете нести больше <noun-en Item 3 $n1 2 1>"
+msgstr "Достигнут предел количества предмета: <sheet Item $n1 0>"
 
 #. ja: <sheet BNpcName $n1 0>は魔導ミサイルの発射態勢に入った！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> bringt die Magitek-Geschosse in Position!
@@ -1725,7 +1725,7 @@ msgstr "Взорвите Гогмагоголема буровой бомбой!
 # aeria-terms: {"waymaker bomb":"4750e5a0ff53"}
 msgctxt "LogMessage:2209:0:5"
 msgid "Waymaker bomb detonating in 10 seconds..."
-msgstr "Буровая бомба взорвётся через 10 секунд.."
+msgstr "Буровая бомба взорвётся через 10 секунд..."
 
 #. ja: 削岩爆弾の爆発まで5秒……
 #. de: Die Felsenbombe explodiert in 5 Sekunden ...
@@ -1733,7 +1733,7 @@ msgstr "Буровая бомба взорвётся через 10 секунд.
 # aeria-terms: {"waymaker bomb":"4750e5a0ff53"}
 msgctxt "LogMessage:2210:0:5"
 msgid "Waymaker bomb detonating in 5 seconds..."
-msgstr "Буровая бомба взорвётся через 5 секунд.."
+msgstr "Буровая бомба взорвётся через 5 секунд..."
 
 #. ja: 燃え盛る足場の炎で、フランボーが引火した！
 #. de: Der brennende Untergrund zieht einen Flambeau an!
@@ -1789,7 +1789,7 @@ msgstr "Появился безднавый червь!"
 # aeria-terms: {"abyss worm":"75e7cc78c3cd"}
 msgctxt "LogMessage:2217:0:5"
 msgid "The abyss worm is searching for fodder."
-msgstr "Безднавый червь ищет добычу.."
+msgstr "Безднавый червь ищет добычу..."
 
 #. ja: アビスウォームが結晶石の匂いを嗅ぎつけた！
 #. de: Der Abyss-Wurm witterte den kristallisierten Felsen.
@@ -1900,7 +1900,7 @@ msgstr "Красный зал теперь открыт"
 #. fr: Seule une clef spéciale peut ouvrir cette serrure.
 msgctxt "LogMessage:2231:0:5"
 msgid "Perhaps there is a key which could open it."
-msgstr "Похоже, эту дверь откроет особый ключ"
+msgstr "Похоже, эту дверь можно открыть особым ключом"
 
 #. ja: 御用邸のクラヴィジャーが鬼哭隊の隊士を生贄に、妖異を召喚した！
 #. de: Die Schlüsselträgerin hat den Pikenier vom Klageregiment als Opfergabe benutzt, um einen Nichts<shy>gesand<shy>ten herbeizurufen!
@@ -1924,7 +1924,7 @@ msgstr "Ключница поместья злобно косится на Ле�
 # aeria-terms: {"void lamp":"37fcb9578e83"}
 msgctxt "LogMessage:2234:0:5"
 msgid "The flame within the void lamp gutters out..."
-msgstr "Пламя в пустотном фонаре гаснет.."
+msgstr "Пламя в пустотном фонаре гаснет..."
 
 #. ja: 御用邸の守衛が牢獄の扉を開き、妖異を解き放った！
 #. de: Der Wachposten öffnet die Tür zum Verlies und setzt eine Kreatur des Nichts frei!
@@ -1947,7 +1947,7 @@ msgstr "В Подвале не осталось исчадий пустоты. �
 #. fr: Les œufs de zu sont sur le point d'éclore
 msgctxt "LogMessage:2237:0:5"
 msgid "The egg is threatening to hatch."
-msgstr "Яйцо вот-вот вылупится.."
+msgstr "Яйцо вот-вот вылупится..."
 
 #. ja: グラナイト・ジェイルが硬化した！
 #. de: Das granitene Gefängnis verhärtet sich.
@@ -1979,7 +1979,7 @@ msgstr "Вы нашли крошечный ключ"
 # aeria-terms: {"the Fury":"171a2adf3db2","zu":"f783978e170e"}
 msgctxt "LogMessage:2241:0:5"
 msgid "The fury of the zu is somewhat quelled."
-msgstr "Ярость зу, кажется, утихла.."
+msgstr "Ярость зу, кажется, утихла..."
 
 #. ja: 御用邸の彫像が小さな鍵を落とした。
 #. de: Die Statue verliert einen kleinen Schlüssel.
@@ -2006,7 +2006,7 @@ msgstr "Запертая дверь открывается"
 # aeria-terms: {"adventurer":"48df264ad5ec"}
 msgctxt "LogMessage:2244:0:5"
 msgid "A bonus of <if ($n1 > 0)><kilo $n1 \",\"> experience points and </if><kilo $n2 \",\"> gil has been awarded for being an adventurer in need."
-msgstr "За участие в приключении в роли, которой не хватает, вы получаете <if ($n1 > 0)><kilo $n1 \",\"> оч. опыта и </if><kilo $n2 \",\"> гил"
+msgstr "За участие в приключении в роли, которой не хватает, вы получаете <if ($n1 > 0)><kilo $n1 \"<nbsp>\"> оч. опыта и </if><kilo $n2 \"<nbsp>\"> гил"
 
 #. ja: ほかの転移装置を起動させなければ、利用できないようだ。
 #. de: Du kannst diese Transportvorrichtung erst nutzen, wenn du mindestens ein Gegenstück aktiviert hast.
@@ -2025,7 +2025,7 @@ msgstr "Нельзя воспользоваться. Сначала активи
 # aeria-terms: {"Duty Roulette":"fa070e972ae7"}
 msgctxt "LogMessage:2246:0:5"
 msgid "A bonus of <if ($n1 > 0)><kilo $n1 \",\"> experience points and </if><kilo $n2 \",\"> gil has been awarded for using the duty roulette."
-msgstr "За прохождение Рулетки миссий вы получаете <if ($n1 > 0)><kilo $n1 \",\"> оч. опыта и </if><kilo $n2 \",\"> гил"
+msgstr "За прохождение Рулетки миссий вы получаете <if ($n1 > 0)><kilo $n1 \"<nbsp>\"> оч. опыта и </if><kilo $n2 \"<nbsp>\"> гил"
 
 #. ja: 魔法障壁発動器が操作可能になった！
 #. de: Der Elementarumwandler ist betriebsbereit!
@@ -2065,7 +2065,7 @@ msgstr "Колония плесени зашевелилась!"
 # aeria-terms: {"barricade":"069f215cbb03"}
 msgctxt "LogMessage:2251:0:5"
 msgid "The moldy barricade falls away..."
-msgstr "Плесневая баррикада рушится.."
+msgstr "Плесневая баррикада рушится..."
 
 #. ja: 地面に腐汁が広がり、周囲の魔物が興奮し始めた！
 #. de: Die Verwesungssäfte stacheln die Monster noch mehr an!
@@ -2103,7 +2103,7 @@ msgstr "Появился волшебный мост!"
 # aeria-terms: {"Sanctum of Dreams":"9a172d93298b"}
 msgctxt "LogMessage:2256:0:5"
 msgid "Entering the Sanctum of Dreams."
-msgstr "Вход в Святилище грёз.."
+msgstr "Вход в Святилище грёз..."
 
 #. ja: 腐敗した市街地へ移動した……
 #. de: Du hast das Zentrum von Amdapor betreten.
@@ -2111,7 +2111,7 @@ msgstr "Вход в Святилище грёз.."
 # aeria-terms: {"Central Amdapor":"49e7e82e751e"}
 msgctxt "LogMessage:2257:0:5"
 msgid "Returning to Central Amdapor."
-msgstr "Возвращение в Центральный Амдапор.."
+msgstr "Возвращение в Центральный Амдапор..."
 
 #. ja: 何も反応がないようだ……
 #. de: Nichts geschieht.
@@ -2126,7 +2126,7 @@ msgstr "Никакой реакции"
 # aeria-terms: {"void":"9cc7d6a257df"}
 msgctxt "LogMessage:2259:0:5"
 msgid "A gate to the void opens."
-msgstr "Открываются врата в пустоту.."
+msgstr "Открываются врата в пустоту..."
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>の身体に消化液が付着した！
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> wurde von Magensäure getroffen!
@@ -2176,7 +2176,7 @@ msgstr "Абсолютная опутанность рассеялась!"
 #. fr: L'automate est en train de recharger son énergie...
 msgctxt "LogMessage:2265:0:5"
 msgid "The mammet is charging its magicks."
-msgstr "Маммет заряжает магию.."
+msgstr "Маммет заряжает магию..."
 
 #. ja: 魔法人形の魔力充填が完了した！
 #. de: Die Marionette ist vollkommen aufgeladen!
@@ -2219,14 +2219,14 @@ msgstr "Ариох учуял запах чешуйчатых хлопьев в�
 # aeria-terms: {"Arioch":"c016d1da5529"}
 msgctxt "LogMessage:2270:0:5"
 msgid "Arioch loses the scent of its prey..."
-msgstr "Ариох потерял след добычи.."
+msgstr "Ариох потерял след добычи..."
 
 #. ja: 認証エラー……迎撃システム群起動中……
 #. de: Identifikationsfehler - aktiviere Abwehrsystem ...
 #. fr: Erreur d'identification... Le système de contre-attaque est déclenché...
 msgctxt "LogMessage:2271:0:5"
 msgid "Authentication error... Activating defense system..."
-msgstr "Ошибка аутентификации... Запуск системы защиты.."
+msgstr "Ошибка аутентификации... Запуск системы защиты..."
 
 #. ja: 戦闘を感知したため、<sheet PlaceName $n1 0>の射出機構を停止します。
 #. de: Kampf-Aktivitäten registriert. Ring-Teleporter <sheet PlaceName $n1 8 2> wird deaktiviert.
@@ -2284,7 +2284,7 @@ msgstr "Ламия-прозектор отдаёт мелюзине свою ж�
 #. fr: Des mines ont été répandues...
 msgctxt "LogMessage:2278:0:5"
 msgid "Landmines have been scattered..."
-msgstr "Разбросаны мины.."
+msgstr "Разбросаны мины..."
 
 #. ja: 増援のドレッドノートが現れた！
 #. de: Ein Brummonaut kommt zu Hilfe!
@@ -2346,7 +2346,7 @@ msgstr "Этот замок откроет только особый ключ"
 # aeria-terms: {"void":"9cc7d6a257df"}
 msgctxt "LogMessage:2286:0:5"
 msgid "This way lies the void."
-msgstr "Похоже, здесь путь в пустоту.."
+msgstr "Похоже, здесь путь в пустоту..."
 
 #. ja: VI号ゴブリタンクが後退していった……
 #. de: Gobmaschine VI zieht sich zurück!
@@ -2480,7 +2480,7 @@ msgstr "Прибытие в Сектор VIII"
 #. fr: Intrusion détectée... Le système de contre-attaque est déclenché...
 msgctxt "LogMessage:2303:0:5"
 msgid "Unauthorized personnel detected... Activating defense system..."
-msgstr "Обнаружен посторонний... Запуск системы защиты.."
+msgstr "Обнаружен посторонний... Запуск системы защиты..."
 
 #. ja: 双胴船の手すりが破壊された！
 #. de: Die Reling des Schiffs wurde weggerissen!
@@ -2601,7 +2601,7 @@ msgstr "Преобразователь эфира заработал!"
 # aeria-terms: {"aether converter":"db0bae9528c6"}
 msgctxt "LogMessage:2319:0:5"
 msgid "The aether converter begins to sputter..."
-msgstr "Преобразователь эфира начинает барахлить.."
+msgstr "Преобразователь эфира начинает барахлить..."
 
 #. ja: エーテル変換器がショートしてしまった……
 #. de: Der Ätherkonverter ist nicht mehr funktionsfähig.
@@ -2714,7 +2714,7 @@ msgstr "<if-self $n1>Вы не относитесь<else><capitalize><player-nam
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2334:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> KO'd."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> выведены из строя"
+msgstr "<if-self $n1>Вы сейчас без сознания<else><capitalize><player-name $n1></capitalize> сейчас без сознания</if-self>"
 
 #. ja: <player-name $n1>は、コンテンツを開放していません。
 #. de: <player-name $n1> hat diesen Spielinhalt noch nicht freigespielt.
@@ -2724,7 +2724,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2335:0:5"
 msgid "<if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> not unlocked this duty."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> ещё не открыли это испытание"
+msgstr "<if-self $n1>Вы ещё не открыли эту миссию<else><capitalize><player-name $n1></capitalize> ещё не имеет доступа к этой миссии</if-self>"
 
 #. ja: <player-name $n1>は、ほかのコンテンツに参加しています。
 #. de: <player-name $n1> ist mit einem anderen Spielinhalt beschäftigt.
@@ -2734,7 +2734,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2336:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> currently bound by another duty."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> уже участвуете в другом испытании"
+msgstr "<if-self $n1>Вы уже участвуете в другой миссии<else><capitalize><player-name $n1></capitalize> уже участвует в другой миссии</if-self>"
 
 #. ja: <player-name $n1>は、突入の条件を満たしていません。
 #. de: <player-name $n1> erfüllt die Bedingungen für die Teilnahme nicht.
@@ -2744,7 +2744,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2337:0:5"
 msgid "<if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> not met all the conditions required for this duty."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> не выполнили все условия для участия в этом испытании"
+msgstr "<if-self $n1>Вы не соответствуете всем условиям этой миссии<else><capitalize><player-name $n1></capitalize> не соответствует всем условиям этой миссии</if-self>"
 
 #. ja: <player-name $n1>の進行度が、パーティリーダーの進行度より進んでいます。
 #. de: <player-name $n1> ist in diesem Spielinhalt weiter fortgeschritten als der Gruppenanführer.
@@ -2755,7 +2755,7 @@ msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-se
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2338:0:5"
 msgid "<if-self $n1>You have<else><capitalize><player-name $n1></capitalize> has</if-self> proceeded further in the duty than the party leader."
-msgstr "<if-self $n1>Вы<else><capitalize><player-name $n1></capitalize></if-self> продвинулись дальше лидера отряда в этой миссии"
+msgstr "<if-self $n1>Вы опережаете главу отряда по прогрессу этой миссии<else><capitalize><player-name $n1></capitalize> опережает главу отряда по прогрессу этой миссии</if-self>"
 
 #. ja: <player-name $n1>は、中毒防止制限中です。
 #. de: <if-self $n1>Du kannst<else><capitalize><player-name $n1></capitalize> kann</if-self> vor<shy>über<shy>gehend nicht teilnehmen.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -2953,7 +2953,7 @@ msgstr "Попугай улетел!"
 # aeria-terms: {"sealed door":"ecc232168315"}
 msgctxt "LogMessage:2363:0:5"
 msgid "The sealed door opens."
-msgstr "Запертая дверь открылась"
+msgstr "Запертая дверь открывается"
 
 #. ja: 泥濘が取り除かれ、進路が確保された
 #. de: Ein Schlammwall bricht weg und gibt einen Weg frei!
@@ -3086,7 +3086,7 @@ msgstr "Из земли вырвался эфирный поток!"
 #. fr: Des vibrations désagréables se font sentir à travers le sol...
 msgctxt "LogMessage:2385:0:5"
 msgid "The ground begins to rumble..."
-msgstr "Земля начинает гулко дрожать.."
+msgstr "Земля начинает гулко дрожать..."
 
 #. ja: 活性化した心核を破壊した！
 #. de: Du hast den Kern zerstört!
@@ -3101,14 +3101,14 @@ msgstr "Сердцевина уничтожена!"
 # aeria-terms: {"needle":"cce527fe5e56","sabotender emperatriz":"576283389500"}
 msgctxt "LogMessage:2387:0:5"
 msgid "The sabotender emperatriz begins counting needles..."
-msgstr "Саботендер-императрица начинает считать иглы.."
+msgstr "Саботендер-императрица начинает считать иглы..."
 
 #. ja: アーゼマヴァイスジェレントの剣が、不吉な輝きを帯び始めた……
 #. de: Die Schwerter des Statthalters beginnen, ein unheilvolles Licht auszustrahlen ...
 #. fr: Les épées de l'adjoint de la Gardienne émettent une lueur maléfique...
 msgctxt "LogMessage:2388:0:5"
 msgid "The vicegerent's sword emits an impure light..."
-msgstr "Меч наместника начинает зловеще мерцать.."
+msgstr "Меч наместника начинает зловеще мерцать..."
 
 #. ja: 亡者の棺桶が現れた！
 #. de: Mehrere Sarkophage erscheinen!
@@ -3175,7 +3175,7 @@ msgstr "Кто-то приближается!"
 #. fr: Vous avez un mauvais pres<shy>sen<shy>ti<shy>ment...
 msgctxt "LogMessage:2398:0:5"
 msgid "A chill runs down your spine..."
-msgstr "По спине пробегает холодок.."
+msgstr "По спине пробегает холодок..."
 
 #. ja: <sheet BNpcName $n1 0>の緊急システムが作動した……
 #. de: Das Notaggregat <noun-de BNpcName 2 $n1 1 2 1> wurde aktiviert.
@@ -3210,7 +3210,7 @@ msgstr "Вы получили ключ от тюрьмы"
 # aeria-terms: {"needle":"cce527fe5e56","sabotender emperatriz":"576283389500"}
 msgctxt "LogMessage:2402:0:5"
 msgid "The sabotender emperatriz begins counting needles again..."
-msgstr "Саботендер-императрица снова начинает считать иглы.."
+msgstr "Саботендер-императрица снова начинает считать иглы..."
 
 #. ja: サボテンダー・エンペラトリスは、またまた針の数を数え始めた……
 #. de: Die Sabotender-Kaiserin beginnt schon wieder, ihre Nadeln zu zählen ...
@@ -3218,14 +3218,14 @@ msgstr "Саботендер-императрица снова начинает 
 # aeria-terms: {"needle":"cce527fe5e56","sabotender emperatriz":"576283389500"}
 msgctxt "LogMessage:2403:0:5"
 msgid "The sabotender emperatriz begins counting needles yet again..."
-msgstr "Саботендер-императрица опять принимается считать иглы.."
+msgstr "Саботендер-императрица опять принимается считать иглы..."
 
 #. ja: 封鎖が解かれた……
 #. de: Die Barriere ist aufgehoben!
 #. fr: La barrière s'est dissoute.
 msgctxt "LogMessage:2404:0:5"
 msgid "The barrier is no more..."
-msgstr "Преграды больше нет.."
+msgstr "Преграды больше нет..."
 
 #. ja: 魔導フィールドが解除された……
 #. de: Das Magitek-Feld ist aufgehoben.
@@ -3300,7 +3300,7 @@ msgstr "Саботендер-императрица сбилась со счёт
 #. fr: Seule une clef spéciale peut ouvrir cette serrure.
 msgctxt "LogMessage:2420:0:5"
 msgid "Perhaps there is a key which could open it."
-msgstr "Похоже, эту дверь может открыть особый ключ"
+msgstr "Похоже, эту дверь можно открыть особым ключом"
 
 #. ja: クラーケンの腕が荒々しい風の流れを巻き起こす！
 #. de: Der Aquadon lässt mit seinen Fangarmen einen Wirbel entstehen!
@@ -3383,7 +3383,7 @@ msgstr "Цербер утолил голод"
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2430:0:5"
 msgid "The duration of all current enhancements and enfeeblements has been extended <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if>fold."
-msgstr "Длительность всех действующих на вас положительных и отрицательных эффектов увеличилась в <num $n1> раз"
+msgstr "Длительность всех действующих на вас положительных и отрицательных эффектов увеличена. Множитель: ×<num $n1>"
 
 #. ja: 魔導ガンシップが急襲してきた！
 #. de: Ein Magitek-Kanonenschiff feuert ohne Vorwarnung!
@@ -3436,42 +3436,42 @@ msgstr "Головы молнии и яда начинают яростно ме
 # aeria-terms: {"dragon":"28d27f6328d0"}
 msgctxt "LogMessage:2437:0:5"
 msgid "The dragon inhales..."
-msgstr "Дракон делает глубокий вдох.."
+msgstr "Дракон делает глубокий вдох..."
 
 #. ja: クラッシュダウンまで　150
 #. de: 150 Sekunden bis zum Zusammenbruch ...
 #. fr: Éblouissement dans 150 secondes<nbsp>!
 msgctxt "LogMessage:2438:0:5"
 msgid "150 seconds to Crash Down..."
-msgstr "До Обрушения 150 секунд.."
+msgstr "До Обрушения 150 секунд..."
 
 #. ja: クラッシュダウンまで　90
 #. de: 90 Sekunden bis zum Zusammenbruch ...
 #. fr: Éblouissement dans 90 secondes<nbsp>!
 msgctxt "LogMessage:2439:0:5"
 msgid "90 seconds to Crash Down..."
-msgstr "До Обрушения 90 секунд.."
+msgstr "До Обрушения 90 секунд..."
 
 #. ja: クラッシュダウンまで　30
 #. de: 30 Sekunden bis zum Zusammenbruch ...
 #. fr: Éblouissement dans 30 secondes<nbsp>!
 msgctxt "LogMessage:2440:0:5"
 msgid "30 seconds to Crash Down..."
-msgstr "До Обрушения 30 секунд.."
+msgstr "До Обрушения 30 секунд..."
 
 #. ja: クラッシュダウンまで　10
 #. de: 10 Sekunden bis zum Zusammenbruch ...
 #. fr: Éblouissement dans 10 secondes<nbsp>!
 msgctxt "LogMessage:2441:0:5"
 msgid "10 seconds to Crash Down..."
-msgstr "До Обрушения 10 секунд.."
+msgstr "До Обрушения 10 секунд..."
 
 #. ja: クラッシュダウンまで　5
 #. de: 5 Sekunden bis zum Zusammenbruch ...
 #. fr: Éblouissement dans 5 secondes<nbsp>!
 msgctxt "LogMessage:2442:0:5"
 msgid "5 seconds to Crash Down..."
-msgstr "До Обрушения 5 секунд.."
+msgstr "До Обрушения 5 секунд..."
 
 #. ja: 光鱗のモラージャジャが光鱗戦闘団の戦旗を配置した！
 #. de: Manxome Molaa Ja Ja errichtet ein Kriegsbanner der Silberschuppen!
@@ -3506,7 +3506,7 @@ msgstr "Цель ещё вне досягаемости магической л�
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:2446:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 2 1></capitalize> begins channeling aether to <noun-en BNpcName 2 $n2 2 1>."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 2 1></capitalize> начинает направлять эфир к <noun-en BNpcName 2 $n2 2 1>"
+msgstr "<capitalize><noun-en BNpcName 2 $n1 2 1></capitalize> начинает передачу эфира. Получатель — <noun-en BNpcName 2 $n2 2 1>"
 
 #. ja: HPが全快したことで、死の宣告が解けた！
 #. de: Du hast deine Lebenspunkte aufgefüllt. Die Todesstrafe wurde aufgehoben.
@@ -3564,7 +3564,7 @@ msgstr "Вы перемещаетесь на нижний этаж"
 #. fr: Seul un objet spécial peut ouvrir cette porte.
 msgctxt "LogMessage:2454:0:5"
 msgid "Perhaps there is a key which could open it."
-msgstr "Похоже, эту дверь может открыть особый ключ"
+msgstr "Похоже, эту дверь можно открыть особым ключом"
 
 #. ja: 閲兵ホールの扉を開いた！
 #. de: Der Zugang zum Paradeplatz öffnet sich.
@@ -3595,7 +3595,7 @@ msgstr "Дверь в Ставку лорда-командира открыва�
 #. fr: Cet endroit semble servir aux offrandes...
 msgctxt "LogMessage:2458:0:5"
 msgid "An offering can be placed here..."
-msgstr "Здесь можно оставить подношение.."
+msgstr "Здесь можно оставить подношение..."
 
 #. ja: 周囲に雷が落ち始めた！
 #. de: Die Luft beginnt zu knistern.
@@ -3701,7 +3701,7 @@ msgstr "Начинается расширение реальности"
 # aeria-terms: {"Defense":"208f5689871b"}
 msgctxt "LogMessage:2489:0:5"
 msgid "Defense protocol V1 disengaging..."
-msgstr "Отключение протокола защиты V1.."
+msgstr "Отключение протокола защиты V1..."
 
 #. ja: エメラルド防衛機構が停止した……
 #. de: Die grüne Sicherheitssperre wurde aufgehoben!
@@ -3709,7 +3709,7 @@ msgstr "Отключение протокола защиты V1.."
 # aeria-terms: {"Defense":"208f5689871b"}
 msgctxt "LogMessage:2490:0:5"
 msgid "Defense protocol G1 disengaging..."
-msgstr "Отключение протокола защиты G1.."
+msgstr "Отключение протокола защиты G1..."
 
 #. ja: クリムゾン防衛機構が停止した……
 #. de: Die rote Sicherheitssperre wurde aufgehoben!
@@ -3717,7 +3717,7 @@ msgstr "Отключение протокола защиты G1.."
 # aeria-terms: {"Defense":"208f5689871b"}
 msgctxt "LogMessage:2491:0:5"
 msgid "Defense protocol R1 disengaging..."
-msgstr "Отключение протокола защиты R1.."
+msgstr "Отключение протокола защиты R1..."
 
 #. ja: ビブリオタフの封印が解かれた！
 #. de: Das Siegel des Bibliotaphen ist gebrochen!
@@ -3905,7 +3905,7 @@ msgstr "Вас медленно затягивает в Разлом, созда
 #. fr: Verrouillage de la zone de confinement dans... 20...
 msgctxt "LogMessage:2515:0:5"
 msgid "Area lockdown in 20..."
-msgstr "Изоляция зоны начнётся через 20.."
+msgstr "Изоляция зоны начнётся через 20..."
 
 #. ja: ワウッケオンが風の力を蓄えている……
 #. de: Waukkeon sammelt die Kraft des Windes ...
@@ -3913,7 +3913,7 @@ msgstr "Изоляция зоны начнётся через 20.."
 # aeria-terms: {"waukkeon":"da7a4f5d03e3"}
 msgctxt "LogMessage:2516:0:5"
 msgid "The waukkeon begins gathering the wind..."
-msgstr "Вауккеон начинает накапливать силу ветра.."
+msgstr "Вауккеон начинает накапливать силу ветра..."
 
 #. ja: ワウッケオンが強風の渦をまとった！
 #. de: Waukkeon entfesselt die Kraft des Windes!
@@ -3936,14 +3936,14 @@ msgstr "Поднимается божественный вихрь!"
 #. fr: Verrouillage de la zone de confinement dans... 10...
 msgctxt "LogMessage:2519:0:5"
 msgid "Area lockdown in 10..."
-msgstr "Изоляция зоны начнётся через 10.."
+msgstr "Изоляция зоны начнётся через 10..."
 
 #. ja: 「強制隔離区域」の閉鎖まで　5
 #. de: Abriegelung in 5 Zeiteinheiten<nbsp>...
 #. fr: Verrouillage de la zone de confinement dans... 5...
 msgctxt "LogMessage:2520:0:5"
 msgid "Area lockdown in 5..."
-msgstr "Изоляция зоны начнётся через 5.."
+msgstr "Изоляция зоны начнётся через 5..."
 
 #. ja: 庁内庭園へ移動した……
 #. de: Du begibst dich zum Wassergarten.
@@ -3991,7 +3991,7 @@ msgstr "Почерневшая статуя разлетается вдребе�
 # aeria-terms: {"mustard gas":"8278d5a1a48e"}
 msgctxt "LogMessage:2526:0:5"
 msgid "The mustard gas has begun to swell..."
-msgstr "Горчичный газ начинает раздуваться.."
+msgstr "Горчичный газ начинает раздуваться..."
 
 #. ja: ニーズヘッグが、大きく肺を膨らませた！
 #. de: Nidhogg atmet tief ein ...
@@ -3999,7 +3999,7 @@ msgstr "Горчичный газ начинает раздуваться.."
 # aeria-terms: {"Nidhogg":"fa78cde9246a"}
 msgctxt "LogMessage:2527:0:5"
 msgid "Nidhogg inhales deeply..."
-msgstr "Нидхёгг делает глубокий вдох.."
+msgstr "Нидхёгг делает глубокий вдох..."
 
 #. ja: 対竜バリスタが発射不可能になった……
 #. de: Die Harpunenschleuder ist unbrauchbar geworden ...
@@ -4015,7 +4015,7 @@ msgstr "Бисмарк выводит из строя драконобои"
 # aeria-terms: {"demon tome":"8a62d7094d3c"}
 msgctxt "LogMessage:2529:0:5"
 msgid "The demon tome begins to glow..."
-msgstr "Демонический фолиант начинает светиться.."
+msgstr "Демонический фолиант начинает светиться..."
 
 #. ja: <sheet BNpcName $n1 0>を捕食し、体力が回復した！
 #. de: Durch die Vertilgung <noun-de BNpcName 1 $n1 1 2 1> hat der Minotaurus Lebenskraft regeneriert!
@@ -4055,7 +4055,7 @@ msgstr "Гьяскутус завизжал от восторга, когда я
 # aeria-terms: {"Bismarck":"f705dde0aef0"}
 msgctxt "LogMessage:2534:0:5"
 msgid "Bismarck seizes control of the clouds..."
-msgstr "Бисмарк подчинил себе облака.."
+msgstr "Бисмарк подчинил себе облака..."
 
 #. ja: ラーヴァナが闘志を燃やし、火の加護を受けた！
 #. de: Flammen der Kampflust lodern in Ravanas Körper und Geist!
@@ -4070,7 +4070,7 @@ msgstr "Пламя боевого рвения охватило тело и ду
 #. fr: Le levier est brisé et ne permet pas de faire fonctionner le mécanisme.
 msgctxt "LogMessage:2536:0:5"
 msgid "The winch lever is missing..."
-msgstr "Рычаг лебёдки пропал.."
+msgstr "Рычаг лебёдки пропал..."
 
 #. ja: 船倉へ移動した……
 #. de: Du gelangst in den Laderaum ...
@@ -4239,7 +4239,7 @@ msgstr "Зубец пилы кормится!"
 #. fr: Une odeur putride envahit la pièce...
 msgctxt "LogMessage:2557:0:5"
 msgid "The air in the room grows thick..."
-msgstr "Воздух в помещении тяжелеет.."
+msgstr "Воздух в помещении тяжелеет..."
 
 #. ja: 新たな進路が開かれた……
 #. de: Ein neuer Pfad hat sich eröffnet!
@@ -4320,7 +4320,7 @@ msgstr "Короткое замыкание устранено"
 #. fr: De l'air contaminé se répand petit à petit...
 msgctxt "LogMessage:2569:0:5"
 msgid "Impure air slowly gathers..."
-msgstr "Постепенно сгущается нечистый воздух.."
+msgstr "Постепенно сгущается нечистый воздух..."
 
 #. ja: 妖毒濃度が高まった……
 #. de: Die Luft ist mit giftigen Dünsten geschwängert!
@@ -4460,7 +4460,7 @@ msgstr "<if ($n1 == $gs1)>Вы находите<else><capitalize><player-name $n
 # aeria-terms: {"treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:2585:0:5"
 msgid "A gold treasure coffer is discovered upon defeating <noun-en BNpcName 2 $n1 1 1>."
-msgstr "После победы над <noun-en BNpcName 2 $n1 1 1> найден золотой сундук сокровищ"
+msgstr "Одержана победа. Противник — <noun-en BNpcName 2 $n1 1 1>. Найден золотой сундук с сокровищами"
 
 #. ja: <sheet BNpcName $n1 0>に勝利した！　周辺から白銀の宝箱を発見した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> wurde besiegt! Eine silberne Schatztruhe ist in der Nähe erschienen.
@@ -4469,7 +4469,7 @@ msgstr "После победы над <noun-en BNpcName 2 $n1 1 1> найден
 # aeria-terms: {"treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:2586:0:5"
 msgid "A silver treasure coffer is discovered upon defeating <noun-en BNpcName 2 $n1 1 1>."
-msgstr "После победы над <noun-en BNpcName 2 $n1 1 1> найден серебряный сундук сокровищ"
+msgstr "Одержана победа. Противник — <noun-en BNpcName 2 $n1 1 1>. Найден серебряный сундук с сокровищами"
 
 #. ja: <sheet BNpcName $n1 0>に勝利した！　周辺から青銅の宝箱を発見した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> wurde besiegt! Eine bronzene Schatztruhe ist in der Nähe erschienen.
@@ -4478,7 +4478,7 @@ msgstr "После победы над <noun-en BNpcName 2 $n1 1 1> найден
 # aeria-terms: {"treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:2587:0:5"
 msgid "A bronze treasure coffer is discovered upon defeating <noun-en BNpcName 2 $n1 1 1>."
-msgstr "После победы над <noun-en BNpcName 2 $n1 1 1> найден бронзовый сундук сокровищ"
+msgstr "Одержана победа. Противник — <noun-en BNpcName 2 $n1 1 1>. Найден бронзовый сундук с сокровищами"
 
 #. ja: 罠が作動し、魔物を誘引する臭いが立ちこめた！
 #. de: Ein süßlicher Geruch strömt aus der Falle und lockt Gegner an!
@@ -4486,7 +4486,7 @@ msgstr "После победы над <noun-en BNpcName 2 $n1 1 1> найден
 # aeria-terms: {"trap":"ab60efffb927"}
 msgctxt "LogMessage:2588:0:5"
 msgid "The trap triggers, releasing a musky scent to the wind..."
-msgstr "Ловушка срабатывает, и в воздухе разносится мускусный запах.."
+msgstr "Ловушка срабатывает, и в воздухе разносится мускусный запах..."
 
 #. ja: 目標「<sheet BNpcName $n1 0>を倒す」をコンプリートした！
 #. de: Du hast die Aufgabe „<noun-de BNpcName 5 $n1 2 4 1> besiegen“ erfüllt!
@@ -4633,7 +4633,7 @@ msgstr "Вас изгнали из задания, потому что у вас
 #. macro: <noun-en PlaceName 2 a 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = a, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2608:0:5"
 msgid "You find nothing <if \"<sheet PlaceName a 1>\"><switch \"<sheet PlaceName a 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 a 2 1>."
-msgstr "Вы ничего не находите <if \"<sheet PlaceName a 1>\"><switch \"<sheet PlaceName a 1>\"><case>в <case>на </switch><else>у </if><noun-en PlaceName 2 a 2 1>"
+msgstr "Поиск ничего не дал. Место — <noun-en PlaceName 2 a 2 1>"
 
 #. ja: 制限時間に達したため、「<string $gs56>」の探索を終了した。
 #. de: Die Zeit ist um. Die Expedition <string $gs56> wurde beendet.
@@ -4763,14 +4763,14 @@ msgstr "Порогго затягивают общую песню"
 # aeria-terms: {"Ziggy":"6821d46fa1e1"}
 msgctxt "LogMessage:2624:0:5"
 msgid "Ziggy takes careful aim..."
-msgstr "Зигги тщательно целится.."
+msgstr "Зигги тщательно прицеливается..."
 
 #. ja: 人形が合体する！
 #. de: Die Puppen vereinigen sich zu einer verwunschenen Riesenpuppe!
 #. fr: Les poupées se rassemblent...
 msgctxt "LogMessage:2625:0:5"
 msgid "The dolls begin to gather..."
-msgstr "Куклы начинают собираться.."
+msgstr "Куклы начинают собираться..."
 
 #. ja: 人形にな～れ！
 #. de: Lasst die Puppen tanzen!
@@ -4792,7 +4792,7 @@ msgstr "Калькобрина готовится к следующей атак
 #. fr: 30 secondes avant la phase de carnage...
 msgctxt "LogMessage:2628:0:5"
 msgid "30 seconds until the Culling Time."
-msgstr "До начала Времени резни осталось 30 секунд.."
+msgstr "До начала Времени резни осталось 30 секунд..."
 
 #. ja: デンジャータイム開始！
 #. de: Der Blutrausch hat begonnen!
@@ -4835,7 +4835,7 @@ msgstr "Время резни подошло к концу"
 # aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "LogMessage:2633:0:5"
 msgid "<capitalize><player-name $n3></capitalize> of <if ($n1 == 0)><if ($n4 == 0)>the Claws<else><string $gs81></if><else><if ($n4 == 0)>the Fangs<else><string $gs82></if></if> obtains an offense kit."
-msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 == 0)>Когтей<else><string $gs81></if><else><if ($n4 == 0)>Клыков<else><string $gs82></if></if> получает набор для атаки"
+msgstr "<capitalize><player-name $n3></capitalize> (команда «<if ($n1 == 0)><if ($n4 == 0)>Когти<else><string $gs81></if><else><if ($n4 == 0)>Клыки<else><string $gs82></if></if>») получает набор для атаки"
 
 #. ja: <if ($n1 == 0)><if ($n4 == 0)>チーム・クロウ<else><string $gs81></if><else><if ($n4 == 0)>チーム・ファング<else><string $gs82></if></if>の<player-name $n3>は、ディフェンスキットを拾った！
 #. de: <capitalize><player-name $n3></capitalize> von <if ($n1 == 0)><if ($n4 == 0)>den Klauen<else>Team „<string $gs81>“</if><else><if ($n4 == 0)>den Fängen<else>Team „<string $gs82>“</if></if> hat ein Defensiv-Depot ausgehoben.
@@ -4850,7 +4850,7 @@ msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 
 # aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "LogMessage:2634:0:5"
 msgid "<capitalize><player-name $n3></capitalize> of <if ($n1 == 0)><if ($n4 == 0)>the Claws<else><string $gs81></if><else><if ($n4 == 0)>the Fangs<else><string $gs82></if></if> obtains a defense kit."
-msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 == 0)>Когтей<else><string $gs81></if><else><if ($n4 == 0)>Клыков<else><string $gs82></if></if> получает набор для защиты"
+msgstr "<capitalize><player-name $n3></capitalize> (команда «<if ($n1 == 0)><if ($n4 == 0)>Когти<else><string $gs81></if><else><if ($n4 == 0)>Клыки<else><string $gs82></if></if>») получает набор для защиты"
 
 #. ja: <if ($n1 == 0)><if ($n4 == 0)>チーム・クロウ<else><string $gs81></if><else><if ($n4 == 0)>チーム・ファング<else><string $gs82></if></if>の<player-name $n3>は、メディカルキットを拾った！
 #. de: <capitalize><player-name $n3></capitalize> von <if ($n1 == 0)><if ($n4 == 0)>den Klauen<else>Team „<string $gs81>“</if><else><if ($n4 == 0)>den Fängen<else>Team „<string $gs82>“</if></if> hat ein Medizin-Depot ausgehoben.
@@ -4897,7 +4897,7 @@ msgstr "<capitalize><player-name $n3></capitalize> — <if ($n1 == 0)><if ($n4 =
 # aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "LogMessage:2637:0:5"
 msgid "<capitalize><player-name $n3></capitalize> of <if ($n1 == 0)><if ($n4 == 0)>the Claws<else><string $gs81></if><else><if ($n4 == 0)>the Fangs<else><string $gs82></if></if> earns <num $n2> <if ($n2 == 1)>medal<else>medals</if>."
-msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 == 0)>Когтей<else><string $gs81></if><else><if ($n4 == 0)>Клыков<else><string $gs82></if></if> получает <num $n2> <if ($n2 == 1)>медаль<else>медалей</if>"
+msgstr "<capitalize><player-name $n3></capitalize> (команда «<if ($n1 == 0)><if ($n4 == 0)>Когти<else><string $gs81></if><else><if ($n4 == 0)>Клыки<else><string $gs82></if></if>») получает медали: <num $n2>"
 
 #. ja: <if ($n1 == 0)><if ($n4 == 0)>チーム・クロウ<else><string $gs81></if><else><if ($n4 == 0)>チーム・ファング<else><string $gs82></if></if>の<player-name $n3>は、メダルを<num $n2>枚落とした……
 #. de: <capitalize><player-name $n3></capitalize> von <if ($n1 == 0)><if ($n4 == 0)>den Klauen<else>Team „<string $gs81>“</if><else><if ($n4 == 0)>den Fängen<else>Team „<string $gs82>“</if></if> hat <num $n2> Medaille<if ($n2 == 1)><else>n</if> verloren.
@@ -4914,7 +4914,7 @@ msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 
 # aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "LogMessage:2638:0:5"
 msgid "<capitalize><player-name $n3></capitalize> of <if ($n1 == 0)><if ($n4 == 0)>the Claws<else><string $gs81></if><else><if ($n4 == 0)>the Fangs<else><string $gs82></if></if> drops <num $n2> <if ($n2 == 1)>medal<else>medals</if>."
-msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 == 0)>Когтей<else><string $gs81></if><else><if ($n4 == 0)>Клыков<else><string $gs82></if></if> теряет <num $n2> <if ($n2 == 1)>медаль<else>медалей</if>"
+msgstr "<capitalize><player-name $n3></capitalize> (команда «<if ($n1 == 0)><if ($n4 == 0)>Когти<else><string $gs81></if><else><if ($n4 == 0)>Клыки<else><string $gs82></if></if>») теряет медали: <num $n2>"
 
 #. ja: <if ($n1 == 0)><if ($n4 == 0)>チーム・クロウ<else><string $gs81></if><else><if ($n4 == 0)>チーム・ファング<else><string $gs82></if></if>の<player-name $n3>は、メダルを<num $n2>枚回収した！
 #. de: <capitalize><player-name $n3></capitalize> von <if ($n1 == 0)><if ($n4 == 0)>den Klauen<else>Team „<string $gs81>“</if><else><if ($n4 == 0)>den Fängen<else>Team „<string $gs82>“</if></if> hat <num $n2> Medaille<if ($n2 == 1)><else>n</if> wiedererlangt.
@@ -4931,7 +4931,7 @@ msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 
 # aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "LogMessage:2639:0:5"
 msgid "<capitalize><player-name $n3></capitalize> of <if ($n1 == 0)><if ($n4 == 0)>the Claws<else><string $gs81></if><else><if ($n4 == 0)>the Fangs<else><string $gs82></if></if> retrieves <num $n2> <if ($n2 == 1)>medal<else>medals</if>."
-msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 == 0)>Когтей<else><string $gs81></if><else><if ($n4 == 0)>Клыков<else><string $gs82></if></if> подбирает <num $n2> <if ($n2 == 1)>медаль<else>медалей</if>"
+msgstr "<capitalize><player-name $n3></capitalize> (команда «<if ($n1 == 0)><if ($n4 == 0)>Когти<else><string $gs81></if><else><if ($n4 == 0)>Клыки<else><string $gs82></if></if>») подбирает медали: <num $n2>"
 
 #. ja: 最上下層へ移動した……
 #. de: Du gelangst nach oben ...
@@ -4962,7 +4962,7 @@ msgstr "Вы поднимаетесь по лестнице, ведущей вн
 # aeria-terms: {"fang":"355a01abc91e"}
 msgctxt "LogMessage:2642:0:5"
 msgid "<capitalize><player-name $n3></capitalize> of <if ($n1 == 0)><if ($n4 == 0)>the Claws<else><string $gs81></if><else><if ($n4 == 0)>the Fangs<else><string $gs82></if></if> loses <num $n2> <if ($n2 == 1)>medal<else>medals</if> for leaving the match."
-msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 == 0)>Когтей<else><string $gs81></if><else><if ($n4 == 0)>Клыков<else><string $gs82></if></if> покидает матч и теряет <num $n2> <if ($n2 == 1)>медаль<else>медалей</if>"
+msgstr "<capitalize><player-name $n3></capitalize> (команда «<if ($n1 == 0)><if ($n4 == 0)>Когти<else><string $gs81></if><else><if ($n4 == 0)>Клыки<else><string $gs82></if></if>») покидает матч и теряет медали: <num $n2>"
 
 #. ja: <sheet ColosseumMatchRank $n1 0>に昇級した！
 #. de: Du bist in die Kampfklasse <sheet ColosseumMatchRank $n1 0> aufgestiegen!
@@ -4984,7 +4984,7 @@ msgstr "Отборочный бой начался!"
 #. fr: Vous avez raté l'occasion d'être promu<if $gn4>e</if><nbsp>!
 msgctxt "LogMessage:2645:0:5"
 msgid "Your promotion has been denied..."
-msgstr "Вам отказано в повышении.."
+msgstr "Вам отказано в повышении..."
 
 #. ja: <sheet ColosseumMatchRank $n1 0>に降級した……
 #. de: Du wurdest zur Kampfklasse „<sheet ColosseumMatchRank $n1 0>“ degradiert.
@@ -4999,21 +4999,21 @@ msgstr "Вы понижены до лиги «<sheet ColosseumMatchRank $n1 0>»
 #. fr: Vous sentez que vos chairs commencent à brûler à cause de la chaleur...
 msgctxt "LogMessage:2647:0:5"
 msgid "You sense an intense heat..."
-msgstr "Вы чувствуете сильный жар.."
+msgstr "Вы чувствуете сильный жар..."
 
 #. ja: 猛烈な息苦しさを感じる……
 #. de: Du kannst kaum atmen ...
 #. fr: Vous êtes envahi<if $gn4>e</if> d'une violente sensation d'étouffement...
 msgctxt "LogMessage:2648:0:5"
 msgid "You struggle to breathe..."
-msgstr "Вам трудно дышать.."
+msgstr "Вам трудно дышать..."
 
 #. ja: 凍えるような寒さを感じる……
 #. de: Du fühlst eisige Kälte ...
 #. fr: Vous sentez le froid mordre au plus profond de vos chairs...
 msgctxt "LogMessage:2649:0:5"
 msgid "You sense an intense cold..."
-msgstr "Вы чувствуете сильный холод.."
+msgstr "Вы чувствуете сильный холод..."
 
 #. ja: 地面の穴から有毒なガスが噴出している。早く塞がなくては……
 #. de: Giftiges Gas strömt aus dem Boden. Die Löcher müssen rasch versiegelt werden ...
@@ -5058,7 +5058,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> разбивает
 # aeria-terms: {"Grand Company":"3e02ab7f2123","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:2656:0:5"
 msgid "As each Grand Company will dispatch only <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> <if ($n1 == 1)>party<else>parties</if> to the campaign, tomelith activation patterns will differ."
-msgstr "В поход от каждой Великой компании отправится <if $n1><if ($n1 <= 10)><switch $n1><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if> <if ($n1 == 1)>отряд<else>отрядов</if>, поэтому схемы активации томелитов будут различаться"
+msgstr "Количество отрядов от каждой Великой компании ограничено: <num $n1>. Поэтому схема активации томелитов изменена"
 
 #. ja: <player-name $n1>は死刑判決を受けた……
 #. de: Über <if-self $n1>dich<else><player-name $n1></if-self> wurde die Todesstrafe verhängt ...
@@ -5155,14 +5155,14 @@ msgstr "Озма проглатывает вас!"
 #. fr: Fin du monde dans 20 secondes...
 msgctxt "LogMessage:2669:0:5"
 msgid "Doomsday impact in 20..."
-msgstr "До удара Гибельного луча 20.."
+msgstr "До удара Гибельного луча 20..."
 
 #. ja: ドゥームデイ着弾まで　10
 #. de: Todestribunal in 10 Sekunden ...
 #. fr: Fin du monde dans 10 secondes...
 msgctxt "LogMessage:2670:0:5"
 msgid "Doomsday impact in 10..."
-msgstr "До удара Гибельного луча 10.."
+msgstr "До удара Гибельного луча 10..."
 
 #. ja:  新たな進路が開けたようだ……
 #. de: Ein neuer Pfad hat sich geöffnet.
@@ -5215,7 +5215,7 @@ msgstr "Генератор барьера активирован"
 # aeria-terms: {"Calofisteri":"34662286478d"}
 msgctxt "LogMessage:2677:0:5"
 msgid "Calofisteri's hair begins to take on another shape..."
-msgstr "Волосы Калофистери начинают менять форму.."
+msgstr "Волосы Калофистери начинают менять форму..."
 
 #. ja: カロフィステリが魔髪を放った……
 #. de: Calofisteri schüttelt verfilztes Haar ab.
@@ -5266,14 +5266,14 @@ msgstr "Все ключевые узлы разрезаны!"
 #. fr: Fin d'accumulation d'énergie dans 30 secondes...
 msgctxt "LogMessage:2683:0:5"
 msgid "Magic charge complete in 30..."
-msgstr "До полного заряда магии 30.."
+msgstr "До полного заряда магии 30..."
 
 #. ja: 魔力充填完了まで　10
 #. de: Energieladung komplett in 10 Sekunden.
 #. fr: Fin d'accumulation d'énergie dans 10 secondes...
 msgctxt "LogMessage:2684:0:5"
 msgid "Magic charge complete in 10..."
-msgstr "До полного заряда магии 10.."
+msgstr "До полного заряда магии 10..."
 
 #. ja: ヴォイド・ファイアが出現した！
 #. de: Ein Nichtsfeuer ist erschienen!
@@ -5327,7 +5327,7 @@ msgstr "Открылся новый путь"
 #. fr: La passerelle est levée...
 msgctxt "LogMessage:2689:0:5"
 msgid "The drawbridge rises..."
-msgstr "Подъёмный мост поднимается.."
+msgstr "Подъёмный мост поднимается..."
 
 #. ja: 跳ね橋が降りて、新たな進路が開かれた！
 #. de: Die Zugbrücke wird herabgelassen und gibt einen Pfad frei.
@@ -5341,7 +5341,7 @@ msgstr "Подъёмный мост опускается!"
 #. fr: Vous n'avez pas de flammèche pour allumer la citrouille-lanterne...
 msgctxt "LogMessage:2691:0:5"
 msgid "You cannot light the lantern without a coal..."
-msgstr "Без уголька фонарь не зажечь.."
+msgstr "Без уголька фонарь не зажечь..."
 
 #. ja: デュエルエリアに入った！
 #. de: Du hast ein Duell-Areal betreten.
@@ -5402,7 +5402,7 @@ msgstr "Клинок Ализе ярче сияет, впитывая ваш э�
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:2706:0:5"
 msgid "You feel the aether welling up within you..."
-msgstr "Вы чувствуете, как внутри вас нарастает эфир.."
+msgstr "Вы чувствуете, как внутри вас нарастает эфир..."
 
 #. ja: 科学的万能処刑場に移動した……
 #. de: Du wirst zum Multi-Martyrium überstellt ...
@@ -5594,14 +5594,14 @@ msgstr "Равновесие между грехом и наказанием с�
 #. fr: Vous allez subir le Jugement divin, auquel vous ne pourrez résister<nbsp>!
 msgctxt "LogMessage:2726:0:5"
 msgid "Divine judgment imminent..."
-msgstr "Божественный суд близится.."
+msgstr "Божественный суд близится..."
 
 #. ja: 戦闘空間を再生成……第2モードへ移行……
 #. de: Kampfraum wird neu generiert ... Modus 2 aktiv!
 #. fr: Recréation du champ de bataille... Activation du mode 2...
 msgctxt "LogMessage:2727:0:5"
 msgid "Initializing second mode... Generating strike zone..."
-msgstr "Запуск второго режима... Создание зоны удара.."
+msgstr "Запуск второго режима... Создание зоны удара..."
 
 #. ja: 限界を突破し、聖なる審判に備えよ！
 #. de: Grenzwert erreicht ... Erwartet das Göttliche Urteil!
@@ -5622,7 +5622,7 @@ msgstr "Запуск третьего режима... Принудительно
 #. fr: Recréation du champ de bataille... Activation du mode terminal...
 msgctxt "LogMessage:2730:0:5"
 msgid "Initializing final mode... Generating strike zone..."
-msgstr "Запуск финального режима... Создание зоны удара.."
+msgstr "Запуск финального режима... Создание зоны удара..."
 
 #. ja: イクサル風の扉を開いた！
 #. de: Du hast das Ixal-Tor geöffnet!
@@ -5654,7 +5654,7 @@ msgstr "Клинок Ализе ослепительно сияет!"
 # aeria-terms: {"Magus of Darkness":"a65787668f8f","aether":"121cf0f81f85","comrades":"bcd203901f2a"}
 msgctxt "LogMessage:2734:0:5"
 msgid "The Magus of Darkness begins to harness the aether of his comrades..."
-msgstr "Маг Тьмы начинает поглощать эфир своих товарищей.."
+msgstr "Маг Тьмы начинает поглощать эфир своих товарищей..."
 
 #. ja: <player-name $n1>は見破りの煙玉を当てたが、不正解の宝箱だったようだ……
 #. de: <player-name $n1> hat eine Rauchgranate eingesetzt, aber die Truhe ist bloß eine gewöhnliche Kürbistruhe.
@@ -5665,7 +5665,7 @@ msgstr "Маг Тьмы начинает поглощать эфир своих 
 # aeria-terms: {"smoke bomb":"1d7e7285d9be"}
 msgctxt "LogMessage:2735:0:5"
 msgid "<if-self $n1>You throw<else><capitalize><player-name $n1></capitalize> throws</if-self> a smoke bomb, but the chest is just a chest..."
-msgstr "<if-self $n1>Вы бросаете<else><capitalize><player-name $n1></capitalize> бросает</if-self> дымовую бомбу, но сундук как сундук.."
+msgstr "<if-self $n1>Вы бросаете<else><capitalize><player-name $n1></capitalize> бросает</if-self> дымовую бомбу, но сундук как сундук..."
 
 #. ja: <player-name $n1>は見破りの煙玉を当てて、正解の宝箱を見つけた！
 #. de: <player-name $n1> hat eine Rauchgranate eingesetzt und den Imp gefunden!
@@ -5683,7 +5683,7 @@ msgstr "<if-self $n1>Вы бросаете дымовую бомбу и нахо
 #. fr: Un esprit guetteur vous a lancé un sort, ce qui a compromis votre santé mentale...
 msgctxt "LogMessage:2737:0:5"
 msgid "A Circus apparition has damaged your sanity..."
-msgstr "Призрак из цирка подорвал ваше рассудок.."
+msgstr "Призрак из цирка подорвал ваше рассудок..."
 
 #. ja: 見破りの煙玉を使わないと、開けられないようだ……
 #. de: Ohne Rauchgranate lässt sich der Kürbis nicht öffnen.
@@ -5691,7 +5691,7 @@ msgstr "Призрак из цирка подорвал ваше рассудо�
 # aeria-terms: {"smoke bomb":"1d7e7285d9be"}
 msgctxt "LogMessage:2738:0:5"
 msgid "You cannot open the chest without using a smoke bomb..."
-msgstr "Без дымовой бомбы сундук не открыть.."
+msgstr "Без дымовой бомбы сундук не открыть..."
 
 #. ja: カボチャ型金庫をターゲットして、「Say」モードで暗証番号を唱えましょう！
 #. de: Visiere den Kürbistresor an und gib im Sagen-Chatmodus die fünfstellige Zahlenkombination ein!
@@ -5705,14 +5705,14 @@ msgstr "Выберите сундук и введите комбинацию в 
 #. fr: Vous avez déclenché un piège, ce qui a compromis votre santé mentale...
 msgctxt "LogMessage:2740:0:5"
 msgid "Opening the wrong chest has damaged your sanity..."
-msgstr "Открытие не того сундука подорвало ваш рассудок.."
+msgstr "Открытие не того сундука подорвало ваш рассудок..."
 
 #. ja: 間違えた暗証番号を唱え、正気を失った……
 #. de: Das Aussprechen einer falschen Zahlenkombination hat deinen Geisteszustand geschwächt ...
 #. fr: Le code erroné a déclenché un piège, ce qui a compromis votre santé mentale...
 msgctxt "LogMessage:2741:0:5"
 msgid "Uttering the wrong combination has damaged your sanity..."
-msgstr "Неверная комбинация подорвала ваш рассудок.."
+msgstr "Неверная комбинация подорвала ваш рассудок..."
 
 #. ja: 見破りの煙玉を手に入れた！
 #. de: Du hast eine enthüllende Rauchgranate erhalten.
@@ -5751,7 +5751,7 @@ msgstr "Вы перемещаетесь на Зубчатую стену"
 # aeria-terms: {"fang":"355a01abc91e","wolf's heart":"783186503f55"}
 msgctxt "LogMessage:2745:0:5"
 msgid "<capitalize><player-name $n3></capitalize> of <if ($n1 == 0)><if ($n4 == 0)>the Claws<else><string $gs81></if><else><if ($n4 == 0)>the Fangs<else><string $gs82></if></if> obtains a wolf's heart kit."
-msgstr "<capitalize><player-name $n3></capitalize> из <if ($n1 == 0)><if ($n4 == 0)>Когтей<else><string $gs81></if><else><if ($n4 == 0)>Клыков<else><string $gs82></if></if> получает набор «Сердце волка»"
+msgstr "<capitalize><player-name $n3></capitalize> (команда «<if ($n1 == 0)><if ($n4 == 0)>Когти<else><string $gs81></if><else><if ($n4 == 0)>Клыки<else><string $gs82></if></if>») получает набор «Сердце волка»"
 
 #. ja: 城塞内部へ移動した……
 #. de: Du betrittst die Befestigung.
@@ -5877,7 +5877,7 @@ msgstr "Началось срочное задание. Время миссии 
 # aeria-terms: {"binding stone":"5753454c4be9"}
 msgctxt "LogMessage:2764:0:5"
 msgid "The first binding stone is desecrated. A faint roar can be heard in the distance..."
-msgstr "Первый камень сковывания осквернён. Вдалеке слышится слабый рёв.."
+msgstr "Первый камень сковывания осквернён. Вдалеке слышится слабый рёв..."
 
 #. ja: 封印石が傷つき、妖獣王が覚醒し始めた……。
 #. de: Der zweite Bindestein ist gelöst -<br>Buers Aura ist nun deutlich zu spüren ...
@@ -5885,7 +5885,7 @@ msgstr "Первый камень сковывания осквернён. Вд�
 # aeria-terms: {"binding stone":"5753454c4be9"}
 msgctxt "LogMessage:2765:0:5"
 msgid "The second binding stone is desecrated. The roaring grows louder..."
-msgstr "Второй камень сковывания осквернён. Рёв становится громче.."
+msgstr "Второй камень сковывания осквернён. Рёв становится громче..."
 
 #. ja: 封印石が傷つき、妖獣王の復活が目前に迫っている……。
 #. de: Der dritte Bindestein ist gelöst -<br>Buer wird jeden Moment erscheinen!
@@ -5893,7 +5893,7 @@ msgstr "Второй камень сковывания осквернён. Рё�
 # aeria-terms: {"binding stone":"5753454c4be9"}
 msgctxt "LogMessage:2766:0:5"
 msgid "The final binding stone is desecrated. The air is thick with musk..."
-msgstr "Последний камень сковывания осквернён. Воздух пропитан мускусным запахом.."
+msgstr "Последний камень сковывания осквернён. Воздух пропитан мускусным запахом..."
 
 #. ja: 緊急任務の攻略中は、ギャザラー・クラフタークラス、もしくはLv60未満のバトルクラスにはチェンジできません。
 #. de: Während einer Notmission ist der Wechsel zu einer Sammler- oder Handwerkerklasse<br>oder zu einer Krieger-Klasse unter Stufe 60 nicht möglich.
@@ -5942,7 +5942,7 @@ msgstr "Началось срочное задание!<br>В случае ги�
 #. macro: <if ($n1 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:2772:0:5"
 msgid "<num $n1> <if ($n1 == 1)>minute<else>minutes</if> remaining until emergency mission completion."
-msgstr "До завершения срочного задания осталось <num $n1> <if ($n1 == 1)>минута<else><if ($n1 >= 2)><if ($n1 <= 4)>минуты<else>минут</if><else>минут</if></if>"
+msgstr "До завершения срочного задания осталось <num $n1> мин."
 
 #. ja: 制限時間に達したため、緊急任務の攻略を終了した。
 #. de: Die Zeit für die Notmission ist abgelaufen. Inhalt wird beendet.
@@ -5986,7 +5986,7 @@ msgstr "Улитка-морок окутывает вас скрывающей �
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:2778:0:5"
 msgid "The snail has exhausted its reserves of aether..."
-msgstr "У улитки иссякли запасы эфира.."
+msgstr "У улитки иссякли запасы эфира..."
 
 #. ja: 氷属性増幅クリスタルが破壊された！<br>妖獣王ブエルへの魔力供給が減少した！
 #. de: Der elementar verstärkte Eiskristall zerspringt! Buer kann seine Energie nicht mehr nutzen.
@@ -6109,7 +6109,7 @@ msgstr "Бесконечное Мучение сковывает тело и д�
 # aeria-terms: {"Infinity":"4cc1c46a9405"}
 msgctxt "LogMessage:2793:0:5"
 msgid "The seal is broken! Infinity fades..."
-msgstr "Печать разрушена! Бесконечность угасает.."
+msgstr "Печать разрушена! Бесконечность угасает..."
 
 #. ja: 苔が崩れ、新たな進路が開かれた！
 #. de: Das Moos ist in sich zusammengefallen, und ein neuer Pfad ist freigeworden!
@@ -6156,7 +6156,7 @@ msgstr "Бахамут Прайм выпускает наружу свой Пе�
 # aeria-terms: {"Shinryu":"0b29f108a307","aether":"121cf0f81f85"}
 msgctxt "LogMessage:2799:0:5"
 msgid "Shinryu gathers aether to create a new star..."
-msgstr "Синрю собирает эфир, чтобы создать новую звезду.."
+msgstr "Синрю собирает эфир, чтобы создать новую звезду..."
 
 #. ja: プロトスター発動まで　6　秒！
 #. de: 6 Sekunden bis zur Entstehung des Protosterns.
@@ -6272,35 +6272,35 @@ msgstr "Вы не прошли испытание Бардэма"
 # aeria-terms: {"ovoo":"781f173a7ac0"}
 msgctxt "LogMessage:2817:0:5"
 msgid "Claiming the ovoo in 5 seconds..."
-msgstr "До захвата ово осталось 5 секунд.."
+msgstr "До захвата ово осталось 5 секунд..."
 
 #. ja: 儀式完了まで　20
 #. de: Noch 20 Sekunden, bis das Ritual abgeschlossen ist ...
 #. fr: 20 secondes avant la fin de la cérémonie...
 msgctxt "LogMessage:2818:0:5"
 msgid "Ritual completion in 20 seconds..."
-msgstr "До завершения ритуала осталось 20 секунд.."
+msgstr "До завершения ритуала осталось 20 секунд..."
 
 #. ja: 儀式完了まで　10
 #. de: Noch 10 Sekunden, bis das Ritual abgeschlossen ist ...
 #. fr: 10 secondes avant la fin de la cérémonie...
 msgctxt "LogMessage:2819:0:5"
 msgid "Ritual completion in 10 seconds..."
-msgstr "До завершения ритуала осталось 10 секунд.."
+msgstr "До завершения ритуала осталось 10 секунд..."
 
 #. ja: 儀式完了まで　5
 #. de: Noch 5 Sekunden, bis das Ritual abgeschlossen ist ...
 #. fr: 5 secondes avant la fin de la cérémonie...
 msgctxt "LogMessage:2820:0:5"
 msgid "Ritual completion in 5 seconds..."
-msgstr "До завершения ритуала осталось 5 секунд.."
+msgstr "До завершения ритуала осталось 5 секунд..."
 
 #. ja: 儀式を阻止できなかった……
 #. de: Ihr konntet nicht verhindern, dass das Ritual abgeschlossen wird.
 #. fr: Vous n'avez pas réussi à interrompre la cérémonie...
 msgctxt "LogMessage:2821:0:5"
 msgid "You have failed to prevent the ritual..."
-msgstr "Вам не удалось прервать ритуал.."
+msgstr "Вам не удалось прервать ритуал..."
 
 #. ja: 間欠泉が吹き出しそうだ……。
 #. de: Der Geysir stößt bald eine Fontäne aus ...
@@ -6308,14 +6308,14 @@ msgstr "Вам не удалось прервать ритуал.."
 # aeria-terms: {"geyser":"d5b3bf1ead80"}
 msgctxt "LogMessage:2822:0:5"
 msgid "The geyser is about to erupt..."
-msgstr "Гейзер вот-вот извергнется.."
+msgstr "Гейзер вот-вот извергнется..."
 
 #. ja: 大型コンテナが動き出した……
 #. de: Ein großer Container gleitet heran ...
 #. fr: Le grand conteneur s'est mis à bouger.
 msgctxt "LogMessage:2823:0:5"
 msgid "The large container begins to move..."
-msgstr "Большой контейнер начинает двигаться.."
+msgstr "Большой контейнер начинает двигаться..."
 
 #. ja: インフェルノの右腕「ラフ」が強化された……
 #. de: Infernos rechter Arm, Rahu, wird stärker.
@@ -6339,7 +6339,7 @@ msgstr "Левая рука Инферно, Кету, становится си�
 # aeria-terms: {"Amikiri":"9f397f3808f3","energy":"95b2ab08778c"}
 msgctxt "LogMessage:2826:0:5"
 msgid "Amikiri rears upright in an attempt to conserve energy."
-msgstr "Амикири встаёт во весь рост, собирая энергию.."
+msgstr "Амикири встаёт во весь рост, собирая энергию..."
 
 #. ja: 粘液により移動が封じられた……。
 #. de: Der Schleim behindert deine Bewegungen ...
@@ -6354,7 +6354,7 @@ msgstr "Слизь не даёт вам двигаться!"
 # aeria-terms: {"Kamikiri":"7923e6460007"}
 msgctxt "LogMessage:2828:0:5"
 msgid "Kamikiri emerges..."
-msgstr "Появляется Камикири.."
+msgstr "Появляется Камикири..."
 
 #. ja: 不気味な煙により、老人の姿に変化した！
 #. de: Der Tamatebako öffnet sich und ein seltsamer Rauch strömt heraus, der dich altern lässt!
@@ -6425,7 +6425,7 @@ msgstr "Ваш врил воспламеняется!"
 # aeria-terms: {"vril":"f496cc9dbfee"}
 msgctxt "LogMessage:2837:0:5"
 msgid "Your vril dissipates..."
-msgstr "Ваш врил рассеивается.."
+msgstr "Ваш врил рассеивается..."
 
 #. ja: <sheet BNpcName $n1 0>が現れた！
 #. de: Der Geruch des Todes lockt <noun-de BNpcName 1 $n1 1 4 1> an!
@@ -6442,7 +6442,7 @@ msgstr "Запах смерти приманил <noun-en BNpcName 1 $n1 1 1> н
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2839:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> dissipates..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> рассеивается.."
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> рассеивается..."
 
 #. ja: XLIII式小臼砲が操作可能になった！
 #. de: Das Kleingeschütz XLIII ist einsatzbereit!
@@ -6564,7 +6564,7 @@ msgstr "Законы Вселенной пришли в беспорядок!"
 # aeria-terms: {"energy":"95b2ab08778c"}
 msgctxt "LogMessage:2854:0:5"
 msgid "The land's energy gathers..."
-msgstr "Энергия земли сгущается.."
+msgstr "Энергия земли сгущается..."
 
 #. ja: 次元の裂け目に吸い込まれそうだ……
 #. de: Der Ätherspalt zieht dich an ...
@@ -6643,7 +6643,7 @@ msgstr "Магитехническое поле вокруг <if ($n1 == 0)><ui-
 # aeria-terms: {"graven image":"5017bfdaaab3"}
 msgctxt "LogMessage:2863:0:5"
 msgid "Power builds in the graven image..."
-msgstr "Идол наполняется силой.."
+msgstr "Идол наполняется силой..."
 
 #. ja: 労働歯車が出現した！
 #. de: Die Zahnräder der Konstruktion setzen sich in Bewegung.
@@ -6727,14 +6727,14 @@ msgstr "<noun-en EObj 3 $n2 1 1> уже захвачен <if ($n1 == 0)><ui-colo
 #. macro: <if ($n2 == 1)>unit<else>units</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:2870:0:5"
 msgid "<if-self $n1>You retrieve<else><capitalize><player-name $n1></capitalize> retrieves</if-self> <num $n2> <if ($n2 == 1)>unit<else>units</if> of ceruleum."
-msgstr "<if-self $n1>Вы собираете<else><capitalize><player-name $n1></capitalize> собирает</if-self> <num $n2> <if ($n2 == 1)>единицу<else>единиц</if> церулеума"
+msgstr "<if-self $n1>Вы собираете<else><capitalize><player-name $n1></capitalize> собирает</if-self> церулеум: <num $n2> ед."
 
 #. ja: 現在の状態ではイベントアクションを完了できません。
 #. de: Der Vorgang kann momentan nicht abgeschlossen werden.
 #. fr: Impossible de terminer l'action de mission dans l'état actuel.
 msgctxt "LogMessage:2871:0:5"
 msgid "Unable to complete interaction."
-msgstr "Не удаётся выполнить действие"
+msgstr "Не удалось выполнить действие"
 
 #. ja: 砂球が出現した！
 #. de: Ein Sandwirbel ist erschienen!
@@ -6791,7 +6791,7 @@ msgstr "Синрю получает <num $n1> ед. урона!"
 # aeria-terms: {"tail":"a1950baa6654"}
 msgctxt "LogMessage:2877:0:5"
 msgid "Tail withdrawing in 10 seconds..."
-msgstr "До того, как хвост втянется, осталось 10 секунд.."
+msgstr "До того, как хвост втянется, осталось 10 секунд..."
 
 #. ja: 神龍が尾を引き抜くまで　5　秒！
 #. de: Shinryu zieht in 5 Sekunden seinen Hinterleib heraus!
@@ -6799,7 +6799,7 @@ msgstr "До того, как хвост втянется, осталось 10 �
 # aeria-terms: {"tail":"a1950baa6654"}
 msgctxt "LogMessage:2878:0:5"
 msgid "Tail withdrawing in 5 seconds..."
-msgstr "До того, как хвост втянется, осталось 5 секунд.."
+msgstr "До того, как хвост втянется, осталось 5 секунд..."
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は、ブリザガ・ピラーの魔力によりスノーマンに変化した……。
 #. de: Die Eisga-Säule verwandelt <if ($gs1 == $gs2)>dich<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if></if> in einen Schneemann!
@@ -6980,28 +6980,28 @@ msgstr "Ветер меняет направление!"
 #. fr: Votre jauge d'affinité a été entamée...
 msgctxt "LogMessage:2897:0:5"
 msgid "Your Affinity has begun to diminish..."
-msgstr "Ваша связь начинает слабеть.."
+msgstr "Ваша связь начинает слабеть..."
 
 #. ja: 絆の力が、弱まってきている……
 #. de: Die Liebe wird schwächer ..
 #. fr: Votre jauge d'affinité a déjà légèrement baissé...
 msgctxt "LogMessage:2898:0:5"
 msgid "Your Affinity has diminished further..."
-msgstr "Ваша связь ослабла ещё сильнее.."
+msgstr "Ваша связь ослабла ещё сильнее..."
 
 #. ja: 絆の力が、さらに弱まってきている……
 #. de: Die Liebe ist sehr schwach ...
 #. fr: Votre jauge d'affinité a grandement été réduite...
 msgctxt "LogMessage:2899:0:5"
 msgid "Your Affinity has diminished considerably..."
-msgstr "Ваша связь заметно ослабла.."
+msgstr "Ваша связь заметно ослабла..."
 
 #. ja: 絆の力が、ほとんど失われてしまった……
 #. de: Die Liebe ist beinah erloschen ...
 #. fr: Votre jauge d'affinité est presque vide<nbsp>!
 msgctxt "LogMessage:2900:0:5"
 msgid "Your Affinity is almost gone..."
-msgstr "Ваша связь почти угасла.."
+msgstr "Ваша связь почти угасла..."
 
 #. ja: <sheet BNpcName $n1 0>は力を溜めている……！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> sammelt ätherische Kräfte<nbsp>...
@@ -7085,7 +7085,7 @@ msgstr "Устройство не реагирует"
 #. fr: Vous accédez à un wagon de voyageurs...
 msgctxt "LogMessage:2911:0:5"
 msgid "Entering a passenger car..."
-msgstr "Переход в пассажирский вагон.."
+msgstr "Переход в пассажирский вагон..."
 
 #. ja: 貨車に移動した……
 #. de: Du kehrst zum Frachtwaggon zurück ...
@@ -7093,7 +7093,7 @@ msgstr "Переход в пассажирский вагон.."
 # aeria-terms: {"Freight Car":"e8f4d5b717f4"}
 msgctxt "LogMessage:2912:0:5"
 msgid "Returning to the freight car..."
-msgstr "Возвращение в грузовой вагон.."
+msgstr "Возвращение в грузовой вагон..."
 
 #. ja: 魔列車に<num $n1>ダメージを与えた！
 #. de: Der Phantomzug erleidet <num $n1> <if ($n1 == 1)>Punkt<else>Punkte</if> Schaden!
@@ -7103,14 +7103,14 @@ msgstr "Возвращение в грузовой вагон.."
 # aeria-terms: {"The Phantom Train":"a8cf9eac850a"}
 msgctxt "LogMessage:2913:0:5"
 msgid "The Phantom Train suffers <num $n1> <if ($n1 == 1)>point<else>points</if> of damage!"
-msgstr "Призрачный поезд получает <num $n1> <if ($n1 == 1)>единицу<else>единиц</if> урона!"
+msgstr "Призрачный поезд получает <num $n1> ед. урона!"
 
 #. ja: 猛烈な息苦しさを感じる……
 #. de: Das Atmen fällt dir schwer ...
 #. fr: Vous avez le plus grand mal à respirer...
 msgctxt "LogMessage:2914:0:5"
 msgid "You struggle to breathe..."
-msgstr "Вам трудно дышать.."
+msgstr "Вам трудно дышать..."
 
 #. ja: 「エアフォース」が色で満たされ、実体化した！
 #. de: Luftwaffe wird von Farbe erfüllt und manifestiert sich!
@@ -7335,7 +7335,7 @@ msgstr "Вас поглощает Разлом"
 #. fr: Une boule d'eau contrôlée par une énergie mystique vous attaque<nbsp>!
 msgctxt "LogMessage:2944:0:5"
 msgid "Water coalesces into strange, undulating shapes..."
-msgstr "Вода собирается в странные колышущиеся сгустки.."
+msgstr "Вода собирается в странные колышущиеся сгустки..."
 
 #. ja: 月の魔力を身に受けた……！
 #. de: Du fällst unter den Bann des Mondes<nbsp>...
@@ -7397,7 +7397,7 @@ msgstr "В зале раздаётся шорох корней и лиан"
 #. fr: Le sol se met à trembler...
 msgctxt "LogMessage:2952:0:5"
 msgid "The earth begins to tremble..."
-msgstr "Земля начинает дрожать.."
+msgstr "Земля начинает дрожать..."
 
 #. ja: 泥を浴びるほど、泥の塊は大きくなりそうだ……。
 #. de: Der Schlammball wächst und wächst und wird immer größer!
@@ -7439,7 +7439,7 @@ msgstr "После нокаута игроки смогут воскреснут
 #. macro: <player-name $n1> — the name of a player character; player = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2957:0:5"
 msgid "<if-self $n1>You are<else><capitalize><player-name $n1></capitalize> is</if-self> KO'd."
-msgstr "<if-self $n1>Вы выбываете из строя<else><capitalize><player-name $n1></capitalize> выбывает из строя</if-self>"
+msgstr "<if-self $n1>Вы сейчас без сознания<else><capitalize><player-name $n1></capitalize> сейчас без сознания</if-self>"
 
 #. ja: ミドガルズオルムは魔力を解き放った！
 #. de: Midgardsormr entfesselt seine magische Macht!
@@ -7510,7 +7510,7 @@ msgstr "Эфир свободно устремляется в оптически
 # aeria-terms: {"Midgardsormr":"f66d1f0be126","aether":"121cf0f81f85"}
 msgctxt "LogMessage:2966:0:5"
 msgid "Midgardsormr draws in the ambient aether..."
-msgstr "Мидгардсормр поглощает эфир вокруг себя.."
+msgstr "Мидгардсормр поглощает эфир вокруг себя..."
 
 #. ja: ミドガルズオルムは、さらに魔力を溜めはじめた！
 #. de: Midgardsormr sammelt noch mehr magische Energie!
@@ -7518,7 +7518,7 @@ msgstr "Мидгардсормр поглощает эфир вокруг себ
 # aeria-terms: {"Midgardsormr":"f66d1f0be126","aether":"121cf0f81f85"}
 msgctxt "LogMessage:2967:0:5"
 msgid "Midgardsormr draws in the ambient aether once more..."
-msgstr "Мидгардсормр снова поглощает эфир вокруг себя.."
+msgstr "Мидгардсормр снова поглощает эфир вокруг себя..."
 
 #. ja: ヒエンの体力を回復しろ！
 #. de: Kümmere dich um Hiens Wunden!
@@ -7704,28 +7704,28 @@ msgstr "Статуя Ронка начинает зловеще светитьс
 #. fr: Vous entendez un bruit sinistre venir du fond de la grotte<nbsp>!
 msgctxt "LogMessage:2992:0:5"
 msgid "A faint cry echoes through the temple..."
-msgstr "Из глубины храма доносится тихий крик.."
+msgstr "Из глубины храма доносится тихий крик..."
 
 #. ja: 洞窟の奥から、叫び声のようなものが聞こえてきた……
 #. de: Der Schrei aus der Tiefe des Tempels bringt eine Felswand zum Einsturz!
 #. fr: Un mugissement terrifiant s'échappe du fond de la grotte<nbsp>!
 msgctxt "LogMessage:2993:0:5"
 msgid "An unsettling cry rings out through the temple..."
-msgstr "По храму разносится тревожный крик.."
+msgstr "По храму разносится тревожный крик..."
 
 #. ja: 洞窟の奥から、またもや叫び声が聞こえた……！
 #. de: Aus dem Tempel dröhnt wieder ein lauter Schrei!
 #. fr: Vous entendez de nouveau un beuglement au fond de la grotte<nbsp>!
 msgctxt "LogMessage:2994:0:5"
 msgid "A piercing cry rings out through the temple..."
-msgstr "По храму разносится пронзительный крик.."
+msgstr "По храму разносится пронзительный крик..."
 
 #. ja: 叫び声の主は、近くにいるようだ……！
 #. de: Wieder der Schrei, diesmal ganz nah!
 #. fr: Les hurlements se rapprochent<nbsp>!
 msgctxt "LogMessage:2995:0:5"
 msgid "A deafening cry rings out through the temple..."
-msgstr "По храму разносится оглушительный крик.."
+msgstr "По храму разносится оглушительный крик..."
 
 #. ja: ドン・ヴァウスリーの祝福により、敵が光輝のリングを得た！
 #. de: Vauthrys Segnung hat eure Feinde mit einem Heiligenschein versehen!
