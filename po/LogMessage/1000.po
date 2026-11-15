@@ -16,7 +16,7 @@ msgstr ""
 # aeria-terms: {"hunting log":"701d2c7b451f"}
 msgctxt "LogMessage:1001:0:5"
 msgid "Record of <noun-en BNpcName 3 $n2 1 1> kill (<num $n3>/<num $n4>) added to hunting log entry <sheet MonsterNote $n1 9>."
-msgstr "В журнал охоты добавлена запись о победе над <noun-en BNpcName 3 $n2 1 1> (<num $n3>/<num $n4>) в разделе «<sheet MonsterNote $n1 9>»"
+msgstr "В журнал охоты добавлена запись о победе. Цель — <noun-en BNpcName 3 $n2 1 1> (<num $n3>/<num $n4>) в разделе «<sheet MonsterNote $n1 9>»"
 
 #. ja: 討伐手帳に「<sheet BNpcName $n2 0>」の討伐完了を記録した。
 #. de: Genügend <noun-de BNpcName 5 $n2 2 4 1> für dein Bestiarium besiegt!
@@ -44,7 +44,7 @@ msgstr "Раздел журнала охоты «<sheet MonsterNote $n1 9>» з�
 # aeria-terms: {"hunting log":"701d2c7b451f"}
 msgctxt "LogMessage:1004:0:5"
 msgid "All rank <num $n2> hunting log entries for <sheet ClassJob $n1 0> complete!"
-msgstr "Завершены все записи журнала охоты для <sheet ClassJob $n1 0>, ранг <num $n2>!"
+msgstr "Завершены все записи журнала охоты для класса «<sheet ClassJob $n1 0>», ранг <num $n2>!"
 
 #. ja: 討伐手帳『<sheet GrandCompany $n1 0>ランク<num $n2>』をコンプリートした！
 #. de: Alle Einträge für Rang <num $n2> deines <noun-de GrandCompany 5 $n1 1 1 1>-Bestiariums vollständig!
@@ -371,7 +371,7 @@ msgstr "Здесь больше нельзя собирать растения"
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1049:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <noun-en Item 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>×<num $n2>を入手した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 $n2 4 1> erhalten.
@@ -387,7 +387,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1050:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>получаете<else>получает</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は何も入手できなかった。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> nichts erhalten.
@@ -419,7 +419,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1053:0:5"
 msgid "You obtain <noun-en Item 1 $n1 1 1>."
-msgstr "Вы получаете <noun-en Item 1 $n1 1 1>"
+msgstr "Получено: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>×<num $n2>
 #. de: <capitalize><noun-de Item 1 $n1 $n2 1 1></capitalize>
@@ -428,7 +428,7 @@ msgstr "Вы получаете <noun-en Item 1 $n1 1 1>"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1054:0:5"
 msgid "You obtain <kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1>."
-msgstr "Вы получаете <kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1>"
+msgstr "Получено: <sheet Item $n1 0> × <kilo $n2 \",\">"
 
 #. ja: 何も入手できなかった。
 #. de: Du hast nichts erhalten.
@@ -489,7 +489,7 @@ msgstr "Растительность истощилась"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1062:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> cannot carry any more <noun-en Item 3 $n1 2 1>. Attempt abandoned."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете нести больше<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> не может нести больше</if></capitalize> <noun-en Item 3 $n1 2 1>. Сбор прерван"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете нести больше<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> не может нести больше</if></capitalize> <sheet Item $n1 0>. Сбор прерван"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は採掘を開始した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>beginnst<else>beginnt</if> abzubauen.
@@ -562,7 +562,7 @@ msgstr "«<sheet Item $n1 9>» внесено в Журнал сбора"
 #. macro: <noun-en Item 3 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1072:0:5"
 msgid "You are now able to gather <noun-en Item 3 $n2 2 1>."
-msgstr "Теперь вы можете собирать: <noun-en Item 3 $n2 2 1>"
+msgstr "Теперь вы можете собирать: <sheet Item $n2 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は戦闘不能になったため、採掘が中断されました。
 #. de: Abbauen wurde unterbrochen, da <if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if> k. o. gegangen <if ($gs1 == $gs2)>bist<else>ist</if>.
@@ -640,7 +640,7 @@ msgstr "Взрослые деревья и густая растительнос
 # aeria-terms: {"Yalm":"7ef5fca3189b"}
 msgctxt "LogMessage:1086:0:5"
 msgid "You sense a grade <num $n3> <sheet GatheringPointName $n4 0> <num $n2> <if ($n2 == 1)>yalm<else>yalms</if> to the <string $s1>."
-msgstr "Вы чувствуете: место сбора «<sheet GatheringPointName $n4 0>» уровня <num $n3> — на расстоянии <num $n2> <if ($n2 == 1)>ялма<else>ялмов</if> к <string $s1>"
+msgstr "Вы чувствуете место сбора «<sheet GatheringPointName $n4 0>» (ур. <num $n3>) к <string $s1>. Расстояние: <num $n2> ялм."
 
 #. ja: 「<sheet Status $n1 0>」中ではないので、木や草を見つけられません。
 #. de: Solange <sheet Status $n1 0> nicht aktiv ist, kannst du keine Nutzbäume und üppige Vegetation aufspüren.
@@ -709,7 +709,7 @@ msgstr "В Журнал сбора добавлена страница о бот
 #. fr: Vous ne pouvez pas récolter davantage. Peut-être est-il temps de faire une pause<nbsp>?
 msgctxt "LogMessage:1095:0:5"
 msgid "You cannot gather any more. Perhaps it is time for a break."
-msgstr "Вы больше не можете собирать. Пожалуй, пора отдохнуть"
+msgstr "Сейчас больше нельзя собирать ресурсы. Пожалуй, пора отдохнуть"
 
 #. ja: 採集場所の特質が、獲得率に影響を及ぼした！
 #. de: Diese Sammelstelle beeinflusst deine Sammelrate!
@@ -833,7 +833,7 @@ msgstr "Сейчас нельзя рыбачить"
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1110:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>cast your<else>casts <if $gn7><if \"<sheet BNpcName $gn7 6>\">her<else>his</if><else><if $gn5>her<else>his</if></if></if> line <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы забрасываете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> забрасывает</if></capitalize> удочку <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>на </switch><else>у </if><sheet PlaceName $n1 0>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы забрасываете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> забрасывает</if></capitalize> удочку. Место рыбалки — <sheet PlaceName $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は釣りを終えた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> das Fischen beendet.
@@ -874,7 +874,7 @@ msgstr "Рыбалка прервана. Вы вступили в бой"
 # aeria-terms: {"Fish Guide":"264b08920cd9"}
 msgctxt "LogMessage:1114:0:5"
 msgid "Data on <noun-en Item 2 $n1 1 1> is added to your fish guide."
-msgstr "В Справочник рыб добавлена запись о <noun-en Item 2 $n1 1 1>"
+msgstr "В справочник рыб добавлена запись: <sheet Item $n1 0>"
 
 #. ja: 釣り手帳に新しい釣り場「<sheet PlaceName $n1 0>」の情報を記録した！
 #. de: Die neue Angelstelle „<sheet PlaceName $n1 0>“ wurde in deinem Fischer-Notizbuch vermerkt.
@@ -897,7 +897,7 @@ msgstr "Есть поклёвка!"
 #. fr: L'appât a disparu...
 msgctxt "LogMessage:1117:0:5"
 msgid "You lose your bait..."
-msgstr "Наживка пропала.."
+msgstr "Наживка пропала..."
 
 #. ja: いつの間にか<sheet Item $n1 0>をロストしてしまった！
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> ist davongeschwommen.
@@ -905,14 +905,14 @@ msgstr "Наживка пропала.."
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1118:0:5"
 msgid "You lose your <noun-en Item 3 $n1 1 1>..."
-msgstr "Вы потеряли <noun-en Item 3 $n1 1 1>.."
+msgstr "Потеряно: <sheet Item $n1 0>..."
 
 #. ja: 釣り針にかかった魚に逃げられてしまった……。
 #. de: Der Fisch konnte sich vom Haken reißen.
 #. fr: Le poisson a réussi à se défaire de l'hameçon...
 msgctxt "LogMessage:1119:0:5"
 msgid "The fish gets away..."
-msgstr "Рыба сорвалась с крючка.."
+msgstr "Рыба сорвалась с крючка..."
 
 #. ja: ラインブレイク！！
 #. de: Die Leine ist gerissen!
@@ -965,7 +965,7 @@ msgstr "Вы чувствуете, что под водой кто-то плещ
 #. fr: Vous sentez qu'il y a des poissons ici, mais vous n'arrivez pas à voir où ils se cachent...
 msgctxt "LogMessage:1125:0:5"
 msgid "You can sense something swimming below, but are uncertain where."
-msgstr "Вы чувствуете, что рыба здесь есть, но не знаете, где она прячется.."
+msgstr "Вы чувствуете, что рыба здесь есть, но не знаете, где она прячется..."
 
 #. ja: ここには魚がいないようだ……。
 #. de: Hier scheint es keine Fische zu geben.
@@ -1101,7 +1101,7 @@ msgstr "Нельзя заниматься ремеслом: ваш уровен�
 #. fr: Synthèse impossible. Vous n'avez pas les matériaux nécessaires.
 msgctxt "LogMessage:1144:0:5"
 msgid "Unable to craft. You do not have the required materials."
-msgstr "Нельзя заниматься ремеслом: не хватает материалов"
+msgstr "Не удалось изготовить предмет: не хватает материалов"
 
 #. ja: クリスタルが足りないため、製作が行えません。
 #. de: Synthese nicht möglich, da du die benötigten Kristalle nicht besitzt.
@@ -1146,7 +1146,7 @@ msgstr "Здесь нельзя заниматься ремеслом"
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1150:0:5"
 msgid "You begin synthesizing <noun-en Item 1 $n1 1 1>."
-msgstr "Вы начинаете изготовление: <noun-en Item 1 $n1 1 1>"
+msgstr "Начато изготовление: <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>×<num $n2>の製作を開始した。
 #. de: Du hast begonnen, durch Synthese <noun-de Item 1 $n1 $n2 4 1> herzustellen.
@@ -1157,7 +1157,7 @@ msgstr "Вы начинаете изготовление: <noun-en Item 1 $n1 1 
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1151:0:5"
 msgid "You begin synthesizing <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "Вы начинаете изготовление: <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "Начато изготовление: <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の「<sheet CraftAction $n1 0>」
 #. de: Du setzt „<sheet CraftAction $n1 0>“ ein.
@@ -1202,7 +1202,7 @@ msgstr "Вы применяете действие «<sheet CraftAction $n1 0>»
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1156:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>synthesize<else>synthesizes</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>изготавливаете<else>изготавливает</if> <noun-en Item 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Изготовлено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> изготавливает:</if> <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>×<num $n2>を完成させた！
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> erfolgreich <noun-de Item 1 $n1 $n2 4 1> hergestellt.
@@ -1218,7 +1218,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1157:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>synthesize<else>synthesizes</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>изготавливаете<else>изготавливает</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "<if ($gs1 == $gs2)>Изготовлено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> изготавливает:</if> <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: <sheet Item $n1 0>を完成させた！
 #. de: <capitalize><noun-de Item 1 $n1 1 4 1></capitalize> hergestellt.
@@ -1226,7 +1226,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1158:0:5"
 msgid "You synthesize <noun-en Item 1 $n1 1 1>."
-msgstr "Вы изготовили <noun-en Item 1 $n1 1 1>"
+msgstr "Изготовлено: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を完成させた！
 #. de: <capitalize><noun-de Item 1 $n1 $n2 4 1></capitalize> hergestellt.
@@ -1237,7 +1237,7 @@ msgstr "Вы изготовили <noun-en Item 1 $n1 1 1>"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1159:0:5"
 msgid "You synthesize <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "Вы изготовили <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "Изготовлено: <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は製作に失敗した……
 #. de: Deine Synthese ist fehlgeschlagen!
@@ -1308,7 +1308,7 @@ msgstr "   Прочность снижена на <num $n1>"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1168:0:5"
 msgid "<num $n2> <noun-en Item 3 $n1 $n2 1>"
-msgstr "<num $n2> <noun-en Item 3 $n1 $n2 1>"
+msgstr "<sheet Item $n1 0> × <num $n2>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は所持品から材料を取り出した。
 #. de: Du hast folgendes Material aus deinem Inventar genommen:
@@ -1557,7 +1557,7 @@ msgstr "Нельзя заниматься ремеслом: недостаточ
 #. macro: <noun-en Item 2 $n3 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 3, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1200:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> successfully <if ($gs1 == $gs2)>extract<else>extracts</if> <noun-en Item 1 $n1 1 1> from <noun-en Item 2 $n3 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы успешно извлекаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> успешно извлекает</if></capitalize> <noun-en Item 1 $n1 1 1> из <noun-en Item 2 $n3 1 1>"
+msgstr "<if ($gs1 == $gs2)>Извлечено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> извлекает:</if> <sheet Item $n1 0> из предмета «<sheet Item $n3 0>»"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>に<sheet Item $n2 0>を装着した！<if ($n3 > 0)><br>  その過程で<sheet Item $n2 0><num $n3>個が粉々に砕け散った……</if>
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast <noun-de Item 2 $n2 1 4 1> in <noun-de Item 2 $n1 1 4 1><else>hat <noun-de Item 1 $n2 1 4 1> in <noun-de Item 1 $n1 1 4 1></if> eingesetzt!<if ($n3 > 0)> Dabei wurde<if ($n3 == 1)><else>n</if> <num $n3> Materia verbraucht.</if>
@@ -1574,7 +1574,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы успешно извлекаете<
 #. macro: <if ($n3 > 1)>were<else>was</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1201:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> successfully <if ($gs1 == $gs2)>attach<else>attaches</if> <noun-en Item 1 $n2 1 1> to <noun-en Item 2 $n1 1 1>.<if ($n3 > 0)> <num $n3> materia <if ($n3 > 1)>were<else>was</if> lost in the process.</if>"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы успешно устанавливаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> успешно устанавливает</if></capitalize> <noun-en Item 1 $n2 1 1> на <noun-en Item 2 $n1 1 1><if ($n3 > 0)> В процессе разбилось материи: <num $n3></if>"
+msgstr "<if ($gs1 == $gs2)>Вы устанавливаете<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> устанавливает</if> материю «<sheet Item $n2 0>» в предмет «<sheet Item $n1 0>»<if ($n3 > 0)>. Потеряно материи: <num $n3></if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>へのマテリア装着に失敗した……<br>  <sheet Item $n2 0><num $n3>個が粉々に砕け散った……
 #. de: Einsetzen von Materia in <if ($gs1 == $gs2)><noun-de Item 2 $n1 1 4 1><else><noun-de Item 1 $n1 1 4 1></if> fehlgeschlagen. <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>verlierst dabei <if ($n3 == 1)>eine<else><num $n3></if> <noun-de Item 5 $n2 1 4 1><else>verliert dabei <if ($n3 == 1)>eine<else><num $n3></if> <noun-de Item 5 $n2 1 4 1></if>.
@@ -1590,7 +1590,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы успешно устанавлив�
 #. macro: <if ($n3 > 1)>were<else>was</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1202:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are<else>is</if> unable to attach <noun-en Item 1 $n2 1 1> to <noun-en Item 2 $n1 1 1>. <num $n3> materia <if ($n3 > 1)>were<else>was</if> lost in the process."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете установить<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> не может установить</if></capitalize> <noun-en Item 1 $n2 1 1> на <noun-en Item 2 $n1 1 1>. Потеряно материи: <num $n3>"
+msgstr "<if ($gs1 == $gs2)>Вы не можете установить<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> не может установить</if> материю «<sheet Item $n2 0>» в предмет «<sheet Item $n1 0>». Потеряно материи: <num $n3>"
 
 #. ja: <sheet Item $n1 0>を持っていません。
 #. de: Du hast <noun-de Item 4 $n1 1 4 1>.
@@ -1598,7 +1598,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете установит
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1203:0:5"
 msgid "To attach that materia, you require <noun-en Item 1 $n1 1 1>."
-msgstr "Чтобы вставить материю, вам понадобится <noun-en Item 1 $n1 1 1>"
+msgstr "Для установки материи требуется: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を復元した！<br>  <sheet Item $n3 0>×<num $n2>を手に入れた。
 #. de: Du hast <noun-de Item 1 $n1 $n2 4 1> wieder<shy>her<shy>gestellt und erhältst <noun-de Item 1 $n3 $n2 4 1>.
@@ -1613,7 +1613,7 @@ msgstr "Чтобы вставить материю, вам понадобитс�
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:1204:0:5"
 msgid "You restore the aether to <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if> and obtain <if ($n2 == 1)><noun-en Item 1 $n3 1 1><else><num $n2> <noun-en Item 1 $n3 $n2 1></if>."
-msgstr "Вы возвращаете эфир в <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if> и получаете <if ($n2 == 1)><noun-en Item 1 $n3 1 1><else><num $n2> <noun-en Item 1 $n3 $n2 1></if>"
+msgstr "Эфир восстановлен: <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if>. Получено: <sheet Item $n3 0><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: マテリア外しに必要なギルが足りません。
 #. de: Du hast nicht genug Gil, um die Materia zu entfernen.
@@ -1628,7 +1628,7 @@ msgstr "Вам не хватает денег, чтобы вынуть мате�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1206:0:5"
 msgid "The materia attached to <noun-en Item 2 $n1 1 1> was successfully removed, but destroyed in the process."
-msgstr "Материя в <noun-en Item 2 $n1 1 1> успешно извлечена, но при этом разрушена"
+msgstr "Материя извлечена из предмета «<sheet Item $n1 0>», но разрушилась при извлечении"
 
 #. ja: 採集場所の特質が、HIDDENアイテム出現率に影響を及ぼした！
 #. de: Dieser Ort erhöht die Chance, verborgene Gegenstände zu finden!
@@ -1670,14 +1670,14 @@ msgstr "Материя успешно вставлена по запросу!"
 #. fr: La demande de sertissage a échoué...
 msgctxt "LogMessage:1212:0:5"
 msgid "The materia meld fails..."
-msgstr "Не удалось вставить материю по запросу.."
+msgstr "Не удалось вставить материю по запросу..."
 
 #. ja: 依頼されたマテリア装着に失敗した…
 #. de: Das Einsetzen der Materia ist fehlgeschlagen.
 #. fr: Vous avez échoué le sertissage qui vous a été demandé...
 msgctxt "LogMessage:1213:0:5"
 msgid "The materia meld fails..."
-msgstr "Не удалось вставить материю по запросу.."
+msgstr "Не удалось вставить материю по запросу..."
 
 #. ja: <sheet Item $n1 0>に装着されていた不活性マテリアをすべて復元しました。
 #. de: Alle an <noun-de Item 2 $n1 1 4 1> angebrachte inaktive Materia wurde aktiviert.
@@ -1685,7 +1685,7 @@ msgstr "Не удалось вставить материю по запросу.
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1214:0:5"
 msgid "The cracked materia melded to <noun-en Item 2 $n1 1 1> has been restored."
-msgstr "Разрушенная материя, вставленная в <noun-en Item 2 $n1 1 1>, восстановлена"
+msgstr "Треснувшая материя в предмете «<sheet Item $n1 0>» восстановлена"
 
 #. ja: <sheet Item $n1 0>を<sheet Item $n2 0>×<kilo $n3 ",">と交換しました。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> wurde in <kilo $n3 "."> <noun-de Item 1 $n2 $n3 4 1> umgetauscht.
@@ -1695,7 +1695,7 @@ msgstr "Разрушенная материя, вставленная в <noun-e
 #. macro: <noun-en Item 3 $n2 $n3 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = number parameter 3, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1215:0:5"
 msgid "You exchange <noun-en Item 2 $n1 1 1> for <kilo $n3 \",\"> <noun-en Item 3 $n2 $n3 1>."
-msgstr "Вы обменяли <noun-en Item 2 $n1 1 1> на <kilo $n3 \",\"> <noun-en Item 3 $n2 $n3 1>"
+msgstr "Обменено: <sheet Item $n1 0> → <sheet Item $n2 0> × <kilo $n3 \"<nbsp>\">"
 
 #. ja: マテリア装着依頼がキャンセルされました。
 #. de: Die Anfrage zum Einsetzen von Materia wurde zurückgezogen.
@@ -1711,7 +1711,7 @@ msgstr "Запрос на вставку материи отменён"
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1217:0:5"
 msgid "You receive a materia meld request from <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>."
-msgstr "Вам пришёл запрос на вставку материи от <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>"
+msgstr "<capitalize><if ($gs1 == $gs3)>вы<else><capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize></if></capitalize> <if ($gs1 == $gs3)>запрашиваете<else>запрашивает</if> установку материи"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>がクラスを変更したため、マテリア装着依頼がキャンセルされました。
 #. de: Da <if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if> die Klasse gewechselt hat, wurde die Materia-Anfrage zurückgezogen.
@@ -1753,7 +1753,7 @@ msgstr "У вас нет нужных материалов в инвентаре
 #. fr: Synthèse interrompue. Vous n'avez pas les matériaux nécessaires pour poursuivre l'opération.
 msgctxt "LogMessage:1222:0:5"
 msgid "Unable to craft. You do not have the required materials."
-msgstr "Не удалось изготовить предмет. У вас нет нужных материалов"
+msgstr "Не удалось изготовить предмет: не хватает материалов"
 
 #. ja: 所持品に完成品を入れる空き枠がないため、製作は中断されました。
 #. de: Du hast nicht genug Platz im Inventar. Die Synthese wurde abgebrochen.
@@ -1803,7 +1803,7 @@ msgstr "Вы уже изучили рецепты из этого фолиант
 #. macro: <if ($n2 == 1)>recipe<else>recipes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1228:0:5"
 msgid "You learn <if ($n2 == 1)>a<else>multiple</if> master <sheet ClassJob $n1 0> <if ($n2 == 1)>recipe<else>recipes</if>."
-msgstr "Вы изучаете <if ($n2 == 1)>рецепт<else>рецепты</if> мастера <sheet ClassJob $n1 0>"
+msgstr "<if ($n2 == 1)>Изучен рецепт мастера<else>Изучены рецепты мастера</if> для класса «<sheet ClassJob $n1 0>»"
 
 #. ja: この秘伝書を使うには<sheet ClassJob $n1 0>のレベルが足りません。
 #. de: Deine Stufe als <if ($gn4 == 0)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 2></if> ist nicht hoch genug, um die Rezepte dieses Buches zu lernen.
@@ -1829,7 +1829,7 @@ msgstr "Ваш уровень класса <sheet ClassJob $n1 0> недоста
 #. macro: <num $n3> — a number; value = number parameter 3 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1231:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>roll<else>rolls</if> <string $s2> on <if ($n4 == 1)><noun-en Item 2 $n1 1 1><else>the <num $n4> <noun-en Item 3 $n1 $n4 1></if>. <num $n3>!"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы выбрасываете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> выбрасывает</if></capitalize> <num $n3> на «<string $s2>» (<if ($n4 == 1)><noun-en Item 2 $n1 1 1><else><num $n4> <noun-en Item 3 $n1 $n4 1></if>)!"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы выбрасываете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> выбрасывает</if></capitalize> <num $n3> на «<string $s2>» (<sheet Item $n1 0><if ($n4 == 1)><else> × <num $n4></if>)!"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>を手に入れた。<if ($n2 == 1)>（リミテッドタイムボーナス効果発動！）</if>
 #. de: <if ($n2 == 1)>Kurzzeitbonus! </if><capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 1 4 1> erhalten.
@@ -1843,7 +1843,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы выбрасываете<else><if $g
 #. macro: <if ($n2 == 1)> (Limited-time bonus activated!)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1232:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n1 1 1>.<if ($n2 == 1)> (Limited-time bonus activated!)</if>"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <noun-en Item 1 $n1 1 1><if ($n2 == 1)> Сработал бонус за ограниченное время!</if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0><if ($n2 == 1)> (Активирован временный бонус!)</if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>×<num $n2>を手に入れた。<if ($n3 == 1)>（リミテッドタイムボーナス効果発動！）</if>
 #. de: <if ($n3 == 1)>Kurzzeitbonus! </if><capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 $n2 4 1> erhalten.
@@ -1860,7 +1860,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <if ($n3 == 1)> (Limited-time bonus activated!)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1233:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>.<if ($n3 == 1)> (Limited-time bonus activated!)</if>"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if><if ($n3 == 1)> Сработал бонус за ограниченное время!</if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if><if ($n3 == 1)> (Активирован временный бонус!)</if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の所持品に空きがありません。
 #. de: <if ($gs1 == $gs2)>Du hast<else><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if> hat</if> keinen Platz im Inventar.
@@ -1891,7 +1891,7 @@ msgstr "Не удалось получить предмет: в инвентар
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1236:0:5"
 msgid "Unable to obtain <noun-en Item 2 $n1 1 1>."
-msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>"
+msgstr "Не удалось получить: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を手に入れることができなかった。
 #. de: Du konntest <if ($n2 == 1)><noun-de Item 2 $n1 1 4 1><else><noun-de Item 1 $n1 $n2 4 1></if> nicht erhalten.
@@ -1902,7 +1902,7 @@ msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1237:0:5"
 msgid "Unable to obtain <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else>the <num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "Не удалось получить <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "Не удалось получить: <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: <sheet Item $n1 0>を使って宝箱を開いた。
 #. de: Du hast die Schatztruhe mithilfe <noun-de Item 2 $n1 1 2 1> geöffnet.
@@ -1910,7 +1910,7 @@ msgstr "Не удалось получить <if ($n2 == 1)><noun-en Item 2 $n1 
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1238:0:5"
 msgid "You use <noun-en Item 1 $n1 1 1> to open the chest."
-msgstr "Вы открываете сундук с помощью предмета <noun-en Item 1 $n1 1 1>"
+msgstr "Вы открываете сундук с помощью предмета «<sheet Item $n1 0>»"
 
 #. ja: このアイテムをロットする権利がありません。ジャーナルを確認してください。
 #. de: Du bist nicht berechtigt, auf diesen Gegenstand zu würfeln. Überprüfe bitte dein Archiv.
@@ -1987,7 +1987,7 @@ msgstr "Выберите «Нужда», чтобы получить приор�
 # aeria-terms: {"First":"d13bb98c2410"}
 msgctxt "LogMessage:1248:0:5"
 msgid "First obtain <noun-en Item 2 $n1 1 1> to examine it."
-msgstr "Сначала получите <noun-en Item 2 $n1 1 1>, чтобы осмотреть его"
+msgstr "Сначала получите предмет «<sheet Item $n1 0>», чтобы осмотреть его"
 
 #. ja: 距離が遠すぎます。
 #. de: Zu weit entfernt.
@@ -2035,7 +2035,7 @@ msgstr "За сегодня вы уже слишком часто выбирал
 #. macro: <if ($n3 == 1)> (Limited-time bonus activated!)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1254:0:5"
 msgid "<if ($n2 == 1)><capitalize><noun-en Item 1 $n1 1 1></capitalize> has<else><num $n2> <noun-en Item 3 $n1 2 1> have</if> been added to the loot list.<if ($n3 == 1)> (Limited-time bonus activated!)</if>"
-msgstr "<if ($n2 == 1)><capitalize><noun-en Item 1 $n1 1 1></capitalize> добавлен<else><num $n2> <noun-en Item 3 $n1 2 1> добавлены</if> в список добычи<if ($n3 == 1)> (Бонус ограниченного времени активирован!)</if>"
+msgstr "В список добычи добавлено: <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if><if ($n3 == 1)> (Активирован временный бонус!)</if>"
 
 #. ja: 所持品に空きがないなどの理由により、<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は戦利品を入手できなかった。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>konntest<else>konnte</if> das Beutegut nicht erhalten. Möglicherweise ist kein Platz im Inventar.
@@ -2046,7 +2046,7 @@ msgstr "<if ($n2 == 1)><capitalize><noun-en Item 1 $n1 1 1></capitalize> доб�
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1255:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> cannot carry any more items, or already possess this item. Loot abandoned."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> не можете нести больше предметов или уже владеете этим предметом. Добыча оставлена"
+msgstr "<if ($gs1 == $gs2)>Вы не можете получить<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> не может получить</if> добычу: в инвентаре нет места или такой уникальный предмет уже есть. Добыча оставлена"
 
 #. ja: グループポーズを起動しました。以下の機能を実行すると設定メニューが表示されます。<br><if ($gn80 > 0)><icon2 10>ボタン、オートラン<string $s1>、サブコマンド<string $s2><else>オートラン<string $s1>、サブコマンド<string $s2>、<icon2 10>ボタン</if>
 #. de: Gruppenfotomodus aktiviert. Benutze die folgenden Kommandos, um die Einstellungen zu öffnen:<br><if ($gn80 > 0)><icon2 10>, <string $s1> (Autom. Rennen),<br><string $s2> (Untermenü)<else><string $s1> Autom. Rennen),<br><string $s2> (Untermenü), <icon2 10></if>
@@ -2065,7 +2065,7 @@ msgstr "Включён режим групповой позы. Чтобы отк
 #. fr: Impossible d'obtenir les gils.
 msgctxt "LogMessage:1257:0:5"
 msgid "Unable to obtain gil."
-msgstr "Не удалось получить гилы"
+msgstr "Не удалось получить гил"
 
 #. ja: <kilo $n1 ",">ギルを手に入れた。
 #. de: Du hast <kilo $n1 "."> Gil erhalten.
@@ -2073,7 +2073,7 @@ msgstr "Не удалось получить гилы"
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1258:0:5"
 msgid "You obtain <kilo $n1 \",\"> gil."
-msgstr "Вы получаете <kilo $n1 \",\"> гил"
+msgstr "Вы получаете <kilo $n1 \"<nbsp>\"> гил"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<if ($n2 <= 1)><sheet EventItem $n1 0><else><sheet EventItem $n1 0>×<num $n2></if>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <if ($n2 <= 1)><noun-de EventItem 1 $n1 1 4 1><else><noun-de EventItem 1 $n1 $n2 4 1></if> erhalten.
@@ -2089,7 +2089,7 @@ msgstr "Вы получаете <kilo $n1 \",\"> гил"
 #. macro: <noun-en EventItem 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1259:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n2 <= 1)><noun-en EventItem 1 $n1 1 1><else><num $n2> <noun-en EventItem 3 $n1 2 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <if ($n2 <= 1)><noun-en EventItem 1 $n1 1 1><else><num $n2> <noun-en EventItem 3 $n1 2 1></if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet EventItem $n1 0><if ($n2 <= 1)><else> × <num $n2></if>"
 
 #. ja: 中毒防止のため、マテリア装着が禁止中です。
 #. de: Das Anbringen von Materia ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -2154,7 +2154,7 @@ msgstr "Благодаря эффекту действия вы получили
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1268:0:5"
 msgid "Unable to obtain <noun-en Item 2 $n1 1 1>. You already possess one."
-msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>. У вас уже есть один такой предмет"
+msgstr "У вас уже есть такой предмет. Не удалось получить: <sheet Item $n1 0>"
 
 #. ja: 既に修得済みのため、<sheet Item $n1 0>を入手できませんでした。
 #. de: Du hast schon einmal <noun-de Item 1 $n1 1 4 1> benutzt<br>und konntest den Gegenstand daher nicht erneut aufnehmen.
@@ -2162,7 +2162,7 @@ msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>. У вас
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1269:0:5"
 msgid "Unable to obtain <noun-en Item 2 $n1 1 1>. You already have received one."
-msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>. Вы уже получали такой предмет"
+msgstr "Вы уже получали этот предмет. Не удалось получить: <sheet Item $n1 0>"
 
 #. ja: 製作設備を利用した！
 #. de: Du nutzt eine Syntheseeinrichtung!
@@ -2242,7 +2242,7 @@ msgstr "Не удалось удалить рецепт из избранног�
 #. fr: Cette commande n'est pas disponible ac<shy>tu<shy>el<shy>le<shy>ment.
 msgctxt "LogMessage:1279:0:5"
 msgid "Unable to execute command at this time."
-msgstr "Сейчас эту команду выполнить нельзя"
+msgstr "Сейчас нельзя выполнить эту команду"
 
 #. ja: 製作を中止しています。しばらくお待ちください。
 #. de: Die Eilsynthese wird abgebrochen. Bitte warte einen Moment.
@@ -2262,7 +2262,7 @@ msgstr "Отмена быстрой синтезации. Подождите н�
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1281:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>change<else>changes</if> to <sheet ClassJob $n1 0> (specialist)."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы переключаетесь<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> переключается</if></capitalize> на <sheet ClassJob $n1 0> (специалист)"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы переключаетесь<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> переключается</if></capitalize> на класс «<sheet ClassJob $n1 0>» (специалист)"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 1 4 1> erhalten.
@@ -2275,7 +2275,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы переключаетесь<else><i
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1282:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <noun-en Item 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>を返上した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 1 4 1> zurückgegeben.
@@ -2288,7 +2288,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1283:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>return<else>returns</if> <noun-en Item 2 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы возвращаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> возвращает</if></capitalize> <noun-en Item 2 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Возвращено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> возвращает:</if> <sheet Item $n1 0>"
 
 #. ja: 作業精度または加工精度が足りないため、簡易製作が行えません。
 #. de: Die Eilsynthese konnte nicht ausgeführt werden, weil Kunst<shy>fer<shy>tig<shy>keit oder Kontrolle nicht ausreichen.
@@ -2337,7 +2337,7 @@ msgstr "Добавлена справка «<ui-color 571><ui-edge-color 572><sh
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1288:0:5"
 msgid "Unable to obtain <noun-en Item 2 $n1 1 1>. Your inventory is full."
-msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>. В инвентаре нет места"
+msgstr "В инвентаре нет места. Не удалось получить: <sheet Item $n1 0>"
 
 #. ja: 所持品に空きがないため、<sheet Item $n1 0>×<num $n2>を入手できませんでした。
 #. de: <capitalize><noun-de Item 1 $n1 $n2 1 1></capitalize> konnten nicht aufgenommen werden. Du hast keinen Platz im Inventar.
@@ -2346,7 +2346,7 @@ msgstr "Не удалось получить <noun-en Item 2 $n1 1 1>. В инв
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1289:0:5"
 msgid "Unable to obtain <num $n2> <noun-en Item 3 $n1 $n2 1>. Your inventory is full."
-msgstr "Не удалось получить <num $n2> <noun-en Item 3 $n1 $n2 1>. В инвентаре нет места"
+msgstr "В инвентаре нет места. Не удалось получить: <sheet Item $n1 0> × <num $n2>"
 
 #. ja: 納刀／抜刀状態が切り替わったため、キャンセルされました。
 #. de: Gruppenfotomodus wurde abgebrochen, da du deine Waffe gezogen bzw. weggesteckt hast.
@@ -2443,7 +2443,7 @@ msgstr "Персонаж переместился. Команда отменен
 # aeria-terms: {"Storm":"99cffd55128f"}
 msgctxt "LogMessage:1300:0:5"
 msgid "You obtain <kilo $n2 \",\"><if ($n3 == 0)><else>(+<num $n3>%)</if> <if ($n1 == 1)>Storm<else><if ($n1 == 2)>Serpent<else>Flame</if></if> <if ($n2 == 1)>Seal<else>Seals</if>."
-msgstr "Вы получаете <kilo $n2 \",\"><if ($n3 == 0)><else> (+<num $n3>%)</if> <if ($n1 == 1)>печать Бури<else><if ($n1 == 2)>печать Ордена Двух Змей<else>печать Пламени</if></if>"
+msgstr "Получено: <if ($n1 == 1)>штормовая печать<else><if ($n1 == 2)>змеиная печать<else>пламенная печать</if></if> × <kilo $n2 \",\"><if ($n3 == 0)><else> (+<num $n3>%)</if>"
 
 #. ja: 軍票の所持数が上限に達したため、すべての軍票は受け取れませんでした。
 #. de: Du konntest nicht alle Staatstaler aufnehmen, weil du die Obergrenze bereits erreicht hast.
@@ -2479,7 +2479,7 @@ msgstr "Добыча получена. Следующую можно будет 
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1305:0:5"
 msgid "You have already received <noun-en Item 1 $n1 1 1> and cannot obtain another until the next reset."
-msgstr "Вы уже получили <noun-en Item 1 $n1 1 1> и не сможете получить ещё один до следующего сброса"
+msgstr "Вы уже получили предмет «<sheet Item $n1 0>». Следующий экземпляр можно получить только после сброса ограничения"
 
 #. ja: 「<sheet PlaceName $n1 0>」における、地上でのマウント移動速度が<if ($n2 == 0)>上昇しました。<else>さらに上昇しました。</if>
 #. de: Die Reit<shy>tier<shy>geschwindig<shy>keit in der Region „<sheet PlaceName $n1 0>“ wurde<if ($n2 == 0)><else> weiter</if> erhöht.
@@ -2492,7 +2492,7 @@ msgstr "Вы уже получили <noun-en Item 1 $n1 1 1> и не сможе
 # aeria-terms: {"Mount Speed":"32c4eff0a84d"}
 msgctxt "LogMessage:1306:0:5"
 msgid "Mount speed <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1> <if ($n2 == 0)>has increased<else>has increased further</if>."
-msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>в </switch><else>в </if><sheet PlaceName $n1 0> <if ($n2 == 0)>увеличилась<else>увеличилась ещё больше</if>"
+msgstr "Скорость маунта <if ($n2 == 0)>увеличена<else>увеличена ещё больше</if>. Область — <sheet PlaceName $n1 0>"
 
 #. ja: 「<sheet PlaceName $n1 0>」における、地上でのマウント移動速度がさらに上昇しました。
 #. de: Die Reit<shy>tier<shy>geschwindig<shy>keit in der Region „<sheet PlaceName $n1 0>“ wurde weiter erhöht.
@@ -2504,7 +2504,7 @@ msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"
 # aeria-terms: {"Mount Speed":"32c4eff0a84d"}
 msgctxt "LogMessage:1307:0:5"
 msgid "Mount speed <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n1 2 1> has increased further."
-msgstr "Скорость маунта <if \"<sheet PlaceName $n1 1>\"><switch \"<sheet PlaceName $n1 1>\"><case>в <case>в </switch><else>в </if><sheet PlaceName $n1 0> увеличилась ещё больше"
+msgstr "Скорость маунта увеличена ещё больше. Область — <sheet PlaceName $n1 0>"
 
 #. ja: 現在の位置からは実行できません。
 #. de: Hier kannst du diese Aktion nicht ausführen.
@@ -2951,7 +2951,7 @@ msgstr "Время на поручение «<sheet Leve $n1 0>» истекло
 #. macro: <if ($n1 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1361:0:5"
 msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> <if ($n1 == 1)>minute<else>minutes</if> remaining."
-msgstr "<if $n1><if ($n1 <= 10)><switch $n1><case>Одна<case>Две<case>Три<case>Четыре<case>Пять<case>Шесть<case>Семь<case>Восемь<case>Девять<case>Десять</switch><else><num $n1></if><else><num $n1></if> <if ($n1 == 1)>минута<else>минут</if> осталось"
+msgstr "Осталось <num $n1> мин."
 
 #. ja: 任地「<if ($n3 > 0)><sheet PlaceName $n1 0><else>？？？？</if>」の『<sheet Leve $n2 0>』を受け取った。
 #. de: „<sheet Leve $n2 0>“ für das Areal <if ($n3 > 0)><sheet PlaceName $n1 8 2><else>???</if> angenommen.
@@ -3007,7 +3007,7 @@ msgstr "Вы побеждаете <noun-en BNpcName 1 $n1 1 1>. (<num $n2>/<num 
 #. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1368:0:5"
 msgid "You obtain <num $n2> <noun-en EventItem 3 $n1 $n2 1>. (<num $n3>/<num $n4>)"
-msgstr "Получено: <num $n2> <noun-en EventItem 3 $n1 $n2 1>. (<num $n3>/<num $n4>)"
+msgstr "Получено: <sheet EventItem $n1 0> × <num $n2>. (<num $n3>/<num $n4>)"
 
 #. ja: <sheet BNpcName $n1 0><if ($n2 == 1)><else><if ($n3 == 0)><else>等</if><num $n2>体</if>が出現！
 #. de: <num $n2> <if ($n2 == 1)>Gegner erscheint<else>Gegner erscheinen</if>!
@@ -3021,7 +3021,7 @@ msgstr "Получено: <num $n2> <noun-en EventItem 3 $n1 $n2 1>. (<num $n3>/
 # aeria-terms: {"Enemy":"d3725f2b4d0e"}
 msgctxt "LogMessage:1369:0:5"
 msgid "<capitalize><if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if></capitalize> new <if ($n2 == 1)>enemy appears<else>enemies appear</if>!"
-msgstr "<if $n2><if ($n2 <= 10)><switch $n2><case>Появился один<case>Появились два<case>Появились три<case>Появились четыре<case>Появились пять<case>Появились шесть<case>Появились семь<case>Появились восемь<case>Появились девять<case>Появились десять</switch><else>Появились <num $n2></if><else>Появились <num $n2></if> <if ($n2 == 1)>противник<else>противников</if>!"
+msgstr "<if ($n2 == 1)>Появился новый враг<else>Появились новые враги: <num $n2></if>!"
 
 #. ja: 仲間との合流を阻止せよ！
 #. de: Hindere die Gegner daran, sich zusammenzuschließen!
@@ -3113,7 +3113,7 @@ msgstr "Из-за ограничений на игровое время нель
 #. macro: <noun-en PlaceName 2 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1380:0:5"
 msgid "“<sheet Leve $n1 0>” can only be initiated <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 $n2 2 1>."
-msgstr "«<sheet Leve $n1 0>» можно начать только <if \"<sheet PlaceName $n2 1>\"><switch \"<sheet PlaceName $n2 1>\"><case>в <case>на </switch><else>в </if><sheet PlaceName $n2 0>"
+msgstr "Поручение «<sheet Leve $n1 0>» можно начать только в месте «<sheet PlaceName $n2 0>»"
 
 #. ja: パーティメンバーがリーヴ『<sheet Leve $n1 0>』の任地にいないため、開始できません。
 #. de: „<sheet Leve $n1 0>“ kann nicht begonnen werden. Jemand in deiner Gruppe ist zu weit entfernt.
@@ -3156,7 +3156,7 @@ msgstr "Поручения собирателей нельзя начинать 
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1385:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> is repaired."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> починен"
+msgstr "Отремонтировано: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>の修理ができませんでした。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> konnte nicht repariert werden.
@@ -3164,7 +3164,7 @@ msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> починен"
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1386:0:5"
 msgid "Unable to repair <noun-en Item 2 $n1 1 1>."
-msgstr "Не удалось починить <noun-en Item 2 $n1 1 1>"
+msgstr "Не удалось починить: <sheet Item $n1 0>"
 
 #. ja: 修理に必要なギルが足りません。
 #. de: Du hast nicht genug Gil, um diesen Gegenstand reparieren zu lassen.
@@ -3195,7 +3195,7 @@ msgstr "Починено предметов: <num $n1>"
 #. macro: <if ($n2 == 33)>an <sheet ClassJob $n2 0><else>a <sheet ClassJob $n2 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 33 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1389:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> can only be repaired by <if ($n2 == 10)>an <sheet ClassJob $n2 0><else><if ($n2 == 14)>an <sheet ClassJob $n2 0><else><if ($n2 == 5)>an <sheet ClassJob $n2 0><else><if ($n2 == 26)>an <sheet ClassJob $n2 0><else><if ($n2 == 33)>an <sheet ClassJob $n2 0><else>a <sheet ClassJob $n2 0></if></if></if></if></if>."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> можно починить только с помощью <sheet ClassJob $n2 0>"
+msgstr "Для ремонта предмета «<sheet Item $n1 0>» требуется класс «<sheet ClassJob $n2 0>»"
 
 #. ja: 修理ができるレベルに達していません。
 #. de: Deine Er<shy>fah<shy>rungs<shy>stufe ist nicht hoch genug, um diesen Gegenstand zu reparieren.
@@ -3210,7 +3210,7 @@ msgstr "Ваш уровень слишком низок, чтобы почини
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1391:0:5"
 msgid "You do not have <noun-en Item 1 $n1 1 1>."
-msgstr "У вас нет <noun-en Item 1 $n1 1 1>"
+msgstr "У вас нет предмета «<sheet Item $n1 0>»"
 
 #. ja: 修理に必要なダークマターを持っていません。
 #. de: Du besitzt nicht die für die Reparatur notwendige Dunkelmaterie.
@@ -3226,7 +3226,7 @@ msgstr "У вас нет тёмной материи, необходимой д�
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1393:0:5"
 msgid "Materials: <num $n2> <noun-en Item 3 $n1 $n2 1>."
-msgstr "Материалы: <num $n2> <noun-en Item 3 $n1 $n2 1>"
+msgstr "Материалы: <sheet Item $n1 0> × <num $n2>"
 
 #. ja: <sheet Item $n1 0>は修理の必要がありません。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> muss nicht repariert werden.
@@ -3235,14 +3235,14 @@ msgstr "Материалы: <num $n2> <noun-en Item 3 $n1 $n2 1>"
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1394:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> does not require repairs."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> не нуждается в починке"
+msgstr "Предмет «<sheet Item $n1 0>» не нуждается в ремонте"
 
 #. ja: 応急修理中です。
 #. de: Notreparatur im Gange ...
 #. fr: Réparation en cours...
 msgctxt "LogMessage:1395:0:5"
 msgid "Repairing..."
-msgstr "Идёт починка.."
+msgstr "Идёт починка..."
 
 #. ja: 必要なギル：<kilo $n1 ",">ギル
 #. de: Anfallende Kosten: <kilo $n1 "."> Gil
@@ -3250,7 +3250,7 @@ msgstr "Идёт починка.."
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1396:0:5"
 msgid "Cost: <kilo $n1 \",\"> gil."
-msgstr "Стоимость: <kilo $n1 \",\"> гил"
+msgstr "Стоимость: <kilo $n1 \"<nbsp>\"> гил"
 
 #. ja: <sheet Item $n1 0>の耐久度が0%になった。
 #. de: Der Zustand von <noun-de Item 3 $n1 1 3 1> ist auf 0<nbsp>% gesunken!
@@ -3260,7 +3260,7 @@ msgstr "Стоимость: <kilo $n1 \",\"> гил"
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1397:0:5"
 msgid "The condition of <if \"<sheet Item $n1 7>\"><else>your </if><noun-en Item 3 $n1 1 1> is now 0%."
-msgstr "Прочность <if \"<sheet Item $n1 7>\"><else>вашего </if><noun-en Item 3 $n1 1 1> упала до 0%"
+msgstr "Прочность предмета «<sheet Item $n1 0>» упала до 0%"
 
 #. ja: <sheet Item $n1 0>の耐久度が10%以下になった。
 #. de: Der Zustand von <noun-de Item 3 $n1 1 3 1> ist auf unter 10<nbsp>% gesunken!
@@ -3270,7 +3270,7 @@ msgstr "Прочность <if \"<sheet Item $n1 7>\"><else>вашего </if><n
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1398:0:5"
 msgid "The condition of <if \"<sheet Item $n1 7>\"><else>your </if><noun-en Item 3 $n1 1 1> has dropped to 10%."
-msgstr "Прочность <if \"<sheet Item $n1 7>\"><else>вашего </if><noun-en Item 3 $n1 1 1> упала до 10%"
+msgstr "Прочность предмета «<sheet Item $n1 0>» упала до 10%"
 
 #. ja: ここでは修理はできません。
 #. de: Du kannst hier keine Reparaturen durchführen.
@@ -3396,7 +3396,7 @@ msgstr "Нельзя начать поручение гильдии: один и
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1415:0:5"
 msgid "You obtain <noun-en Item 1 $n1 1 1> as a Preferred+ or Preferred World bonus."
-msgstr "Получено: <noun-en Item 1 $n1 1 1> — бонус за мир с особым или предпочтительным статусом"
+msgstr "Получено: <sheet Item $n1 0> — бонус за мир с особым или предпочтительным статусом"
 
 #. ja: 特別優遇・優遇ワールドでのボーナス条件を達成したことにより、<sheet Item $n1 0>×<num $n2>を手に入れた。
 #. de: Du hast <num $n2> <if ($n2 == 1)><noun-de Item 5 $n1 1 4 1><else><noun-de Item 5 $n1 2 4 1></if> erhalten, weil du die Prämienvoraussetzungen von bevorzugten Welten+ oder bevorzugten Welten erfüllt hast.
@@ -3405,7 +3405,7 @@ msgstr "Получено: <noun-en Item 1 $n1 1 1> — бонус за мир с
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1416:0:5"
 msgid "You obtain <num $n2> <noun-en Item 3 $n1 $n2 1> as a Preferred+ or Preferred World bonus."
-msgstr "Получено: <num $n2> <noun-en Item 3 $n1 $n2 1> — бонус за мир с особым или предпочтительным статусом"
+msgstr "Получено: <sheet Item $n1 0> × <num $n2> — бонус за мир с особым или предпочтительным статусом"
 
 #. ja: 特別優遇ワールドでのボーナス条件を達成したことにより、<kilo $n1 ",">ギルを手に入れた。
 #. de: Du hast <kilo $n1 "."> Gil erhalten, weil du die Prämienvoraussetzungen von bevorzugten Welten+ erfüllt hast.
@@ -3413,7 +3413,7 @@ msgstr "Получено: <num $n2> <noun-en Item 3 $n1 $n2 1> — бонус з
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1417:0:5"
 msgid "You obtain <kilo $n1 \",\"> gil as a Preferred+ World bonus."
-msgstr "Получено: <kilo $n1 \",\"> гил — бонус за мир с особым статусом"
+msgstr "Получено: <kilo $n1 \"<nbsp>\"> гил — бонус за мир с особым статусом"
 
 #. ja: 戦闘が開始されたため、キャラクターの表示設定を解除します。
 #. de: Die Anzeigeeinstellungen wurden aufgehoben, da ein Kampf begonnen hat.
@@ -3456,7 +3456,7 @@ msgstr "Выполнено целей: <num $n1>/<num $n2>!"
 #. macro: <num $n4> — a number; value = number parameter 4 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1422:0:5"
 msgid "You obtain <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>. (<num $n3>/<num $n4>)"
-msgstr "Получено: <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>. (<num $n3>/<num $n4>)"
+msgstr "Получено: <noun-en Item 1 $n1 1 1><if ($n2 == 1)><else> × <num $n2></if>. (<num $n3>/<num $n4>)"
 
 #. ja: 採集結果を記録した <num $n1>/<num $n2>
 #. de: Das Sammelergebnis wurde im Notizbuch vermerkt. (<num $n1>/<num $n2>)
@@ -3543,7 +3543,7 @@ msgstr "Поручение «<sheet Leve $n1 0>» отменено"
 #. macro: <if ($n2 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 2 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1432:0:5"
 msgid "You have no leve allowances remaining. You will earn three new allowances in approximately <if $n1><if ($n1 == 1)><num $n1> hour and <else><num $n1> hours and </if></if><num $n2> <if ($n2 == 1)>minute<else>minutes</if>."
-msgstr "У вас не осталось разрешений на поручения. Новые появятся примерно через <if $n1><num $n1> ч. </if><num $n2> <if ($n2 == 1)>минуту<else>минуты</if>"
+msgstr "У вас не осталось разрешений на поручения. Новые появятся примерно через <if $n1><num $n1> ч. </if><num $n2> мин."
 
 #. ja: 対応する主道具を装備していないため、開始できません。
 #. de: Du hast nicht das entsprechende Hauptwerkzeug angelegt.
@@ -3593,7 +3593,7 @@ msgstr "Нельзя присоединиться к набору отряда: 
 # aeria-terms: {"crystal":"b6e3734412aa"}
 msgctxt "LogMessage:1438:0:5"
 msgid "<kilo $n1 \",\"> <if ($n1 == 1)>crystal<else>crystals</if> found in your inventory."
-msgstr "<kilo $n1 \",\"> <if ($n1 == 1)>кристалл<else>кристаллов</if> в инвентаре"
+msgstr "Кристаллов в инвентаре: <kilo $n1 \",\">"
 
 #. ja: <string $s1><if ($n4 > 0)>[契約切れ]</if>は<kilo $n3 ",">個所持しています。
 #. de: <string $s1><if ($n4 > 0)> [Vertrag ausgelaufen]</if> besitzt <kilo $n3 "."> Stück.
@@ -3605,7 +3605,7 @@ msgstr "<kilo $n1 \",\"> <if ($n1 == 1)>кристалл<else>кристалло
 # aeria-terms: {"crystal":"b6e3734412aa"}
 msgctxt "LogMessage:1439:0:5"
 msgid "<kilo $n3 \",\"> <if ($n3 == 1)>crystal<else>crystals</if> found in <string $s1>'s inventory.<if ($n4 > 0)> =Contract suspended</if>"
-msgstr "<kilo $n3 \",\"> <if ($n3 == 1)>кристалл<else>кристаллов</if> в инвентаре персонажа <string $s1><if ($n4 > 0)> Контракт приостановлен</if>"
+msgstr "Кристаллов в инвентаре: <kilo $n3 \",\">. Владелец — <string $s1><if ($n4 > 0)>. Контракт приостановлен</if>"
 
 #. ja: <sheet Item $n1 0>の所持状況を確認します。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> wird gesucht.
@@ -3613,7 +3613,7 @@ msgstr "<kilo $n3 \",\"> <if ($n3 == 1)>кристалл<else>кристалло
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1440:0:5"
 msgid "Searching for <noun-en Item 3 $n1 2 1>..."
-msgstr "Поиск: <noun-en Item 3 $n1 2 1>…"
+msgstr "Поиск: <sheet Item $n1 0>..."
 
 #. ja: 合計<kilo $n1 ",">個見つかりました。
 #. de: Die Suche ergab <kilo $n1 "."> Treffer.
@@ -3647,7 +3647,7 @@ msgstr "Сейчас надето в ячейку «<string $s1>»"
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1444:0:5"
 msgid "<kilo $n2 \",\"> <if ($n2 == 1)>item<else>items</if> found in the <string $s1> section of your Armoury Chest."
-msgstr "В разделе «<string $s1>» оружейной комнаты найдено: <kilo $n2 \",\"> предметов"
+msgstr "В разделе «<string $s1>» арсенала найдено предметов: <kilo $n2 \",\">"
 
 #. ja: 所持品ブロック<num $n1>に<kilo $n2 ",">個あります。
 #. de: <kilo $n2 "."> <if ($n2 == 1)>Exemplar wurde<else>Exemplare wurden</if> auf Seite <num $n1> deines Inventars gefunden.
@@ -3669,7 +3669,7 @@ msgstr "Во вкладке «<switch $n1><case>1-я<case>2-я<case>3-я<case>4-
 #. macro: <if ($n4 > 0)> (Contract suspended)</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 > 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1446:0:5"
 msgid "<kilo $n3 \",\"> <if ($n3 == 1)>item<else>items</if> found in the <switch $n2><case>1st<case>2nd<case>3rd<case>4th<case>5th<case>6th<case>7th<case>8th<case>9th<case>10th</switch> tab of <string $s1>'s inventory.<if ($n4 > 0)> (Contract suspended)</if>"
-msgstr "Во вкладке «<switch $n2><case>1-я<case>2-я<case>3-я<case>4-я<case>5-я<case>6-я<case>7-я<case>8-я<case>9-я<case>10-я</switch>» инвентаря персонажа <string $s1> найдено предметов: <kilo $n3 \",\"><if ($n4 > 0)> Контракт приостановлен</if>"
+msgstr "Во вкладке «<switch $n2><case>1-я<case>2-я<case>3-я<case>4-я<case>5-я<case>6-я<case>7-я<case>8-я<case>9-я<case>10-я</switch>» инвентаря персонажа <string $s1> найдено предметов: <kilo $n3 \",\"><if ($n4 > 0)>. Контракт приостановлен</if>"
 
 #. ja: 愛蔵品キャビネット「<string $s1>」に<kilo $n2 ",">個あります。
 #. de: <kilo $n2 "."> <if ($n2 == 1)>Exemplar wurde<else>Exemplare wurden</if> in deinem Kostbarkeitenkabinett unter „<string $s1>“ gefunden.
@@ -3690,7 +3690,7 @@ msgstr "В шкафчике для ценностей, в разделе «<stri
 #. macro: <if ($n4 > 0)> =Contract suspended</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 4 > 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1448:0:5"
 msgid "Currently equipped to <string $s2> slot by <string $s1>.<if ($n4 > 0)> =Contract suspended</if>"
-msgstr "Сейчас надето в ячейку «<string $s2>» у персонажа <string $s1><if ($n4 > 0)> Контракт приостановлен</if>"
+msgstr "Сейчас надето в ячейку «<string $s2>» у персонажа <string $s1><if ($n4 > 0)>. Контракт приостановлен</if>"
 
 #. ja: クリスタル所持状況の確認は現在のバージョンではできません。
 #. de: In dieser Version kannst du deinen Kristallbesitz nicht einsehen.
@@ -3709,7 +3709,7 @@ msgstr "В этой версии нельзя проверить количес�
 #. macro: <if ($n3 > 0)> =Contract suspended</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 3 > 0 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1450:0:5"
 msgid "<kilo $n2 \",\"> <if ($n2 == 1)>item<else>items</if> found in the <switch $n1><case>1st<case>2nd<case>3rd<case>4th<case>5th<case>6th<case>7th<case>8th<case>9th<case>10th</switch> tab of your saddlebag.<if ($n3 > 0)> =Contract suspended</if>"
-msgstr "В <switch $n1><case>1-й<case>2-й<case>3-й<case>4-й<case>5-й<case>6-й<case>7-й<case>8-й<case>9-й<case>10-й</switch> вкладке седельной сумки найдено предметов: <kilo $n2 \",\"><if ($n3 > 0)> Контракт приостановлен</if>"
+msgstr "В <switch $n1><case>1-й<case>2-й<case>3-й<case>4-й<case>5-й<case>6-й<case>7-й<case>8-й<case>9-й<case>10-й</switch> вкладке седельной сумки найдено предметов: <kilo $n2 \"<nbsp>\"><if ($n3 > 0)>. Контракт приостановлен</if>"
 
 #. ja: チョコボかばんに<kilo $n1 ",">個あります。
 #. de: <kilo $n1 "."> <if ($n1 == 1)>Exemplar wurde<else>Exemplare wurden</if> in der Satteltasche gefunden.
@@ -3718,7 +3718,7 @@ msgstr "В <switch $n1><case>1-й<case>2-й<case>3-й<case>4-й<case>5-й<case>6
 #. macro: <if ($n1 == 1)>item<else>items</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1451:0:5"
 msgid "<kilo $n1 \",\"> <if ($n1 == 1)>item<else>items</if> found in saddlebag."
-msgstr "В седельной сумке найдено предметов: <kilo $n1 \",\">"
+msgstr "В седельной сумке найдено предметов: <kilo $n1 \"<nbsp>\">"
 
 #. ja: ミラージュドレッサーに<kilo $n1 ",">個あります。
 #. de: <kilo $n1 "."> <if ($n1 == 1)>Exemplar wurde<else>Exemplare wurden</if> in der Pro<shy>jektions<shy>kommode gefunden.
@@ -3728,7 +3728,7 @@ msgstr "В седельной сумке найдено предметов: <kil
 # aeria-terms: {"glamour dresser":"7efa2c015317"}
 msgctxt "LogMessage:1452:0:5"
 msgid "<kilo $n1 \",\"> <if ($n1 == 1)>item<else>items</if> found in glamour dresser."
-msgstr "В Комоде иллюзий найдено: <kilo $n1 \",\"> <if ($n1 == 1)>предмет<else>предметов</if>"
+msgstr "Предметов в комоде иллюзий: <kilo $n1 \",\">"
 
 #. ja: 最新の情報ではない可能性があります。
 #. de: Die Daten sind möglicherweise nicht aktuell.
@@ -3761,7 +3761,7 @@ msgstr "Праздник скоро закончится. Успейте сда�
 #. fr: Action impossible. Les conditions ne sont pas remplies.
 msgctxt "LogMessage:1456:0:5"
 msgid "Cannot perform action during this phase."
-msgstr "Во время этой фазы действие недоступно"
+msgstr "На этом этапе действие недоступно"
 
 #. ja: ウーリーヤクに対して、エーテルクリッパーを発射しよう
 #. de: Benutze die Ätherschere, um das Woll-Yak zu scheren.
@@ -3837,7 +3837,7 @@ msgstr "Удача! Вы нашли игрушку-счастливчика. С�
 # aeria-terms: {"present box":"c2c5bae0e87a"}
 msgctxt "LogMessage:1464:0:5"
 msgid "This appears to be the wrong present box..."
-msgstr "Похоже, это не та подарочная коробка…"
+msgstr "Похоже, это не та подарочная коробка..."
 
 #. ja: <sheet BNpcName $n1 0>からプレゼントボックスを受け取り、<if ($n1 == 10080)>職人たち<else><if ($n1 == 10081)>商人たち<else>子供たち</if></if>に配ろう
 #. de: Nimm vom <noun-de BNpcName 2 $n1 1 3 1> Geschenke entgegen und liefere sie an <if ($n1 == 10080)>die Handwerker<else><if ($n1 == 10081)>die Händler<else>die Kinder</if></if>.
@@ -3848,7 +3848,7 @@ msgstr "Похоже, это не та подарочная коробка…"
 # aeria-terms: {"merchant":"c21a70778174"}
 msgctxt "LogMessage:1465:0:5"
 msgid "Obtain presents from <noun-en BNpcName 2 $n1 1 1> and give them to <if ($n1 == 10080)>the artisans<else><if ($n1 == 10081)>the merchants<else>the children</if></if>."
-msgstr "Получите подарки у <noun-en BNpcName 2 $n1 1 1> и раздайте их <if ($n1 == 10080)>ремесленникам<else><if ($n1 == 10081)>торговцам<else>детям</if></if>"
+msgstr "<noun-en BNpcName 2 $n1 1 1> выдаёт подарки. Раздайте их <if ($n1 == 10080)>ремесленникам<else><if ($n1 == 10081)>торговцам<else>детям</if></if>"
 
 #. ja: このF.A.T.E.に参加する場合は、コンテンツ情報から「JOIN F.A.T.E.」ボタンを押してください。
 #. de: Um an diesem Ereignis teilzunehmen, klicke auf FATE in der Aufgabenliste.
@@ -4025,7 +4025,7 @@ msgstr "В прозвище есть запрещённые слова"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1486:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are refunded<else>is refunded</if> <if ($n2 <= 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете обратно<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает обратно</if></capitalize> <if ($n2 <= 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 2 1></if>"
+msgstr "<if ($gs1 == $gs2)>Возвращено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает обратно:</if> <sheet Item $n1 0><if ($n2 <= 1)><else> × <num $n2></if>"
 
 #. ja: 並び変えた内容を初期化しました。
 #. de: Die Sortierung wurde zurückgesetzt.
@@ -4097,7 +4097,7 @@ msgstr "Недостаточно места в инвентаре. Не удал
 #. macro: <noun-en Item 1 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1495:0:5"
 msgid "You receive <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if>."
-msgstr "Вы получаете <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if>"
+msgstr "Получено: <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: 所持品がいっぱいのため、モグモグ★コレクションの報酬を受け取れません。
 #. de: Du konntest die Mog Mog-Belohnung nicht annehmen, weil dein Inventar voll ist.
@@ -4261,7 +4261,7 @@ msgstr "Дверь открылась"
 # aeria-terms: {"Enemy":"d3725f2b4d0e"}
 msgctxt "LogMessage:1517:0:5"
 msgid "<if ($n2 == 1)>An enemy appears<else><capitalize><if $n2><if ($n2 <= 10)><switch $n2><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n2></if><else><num $n2></if> enemies appear</capitalize></if>!"
-msgstr "<if ($n2 == 1)>Появился враг<else>Появилось <if $n2><if ($n2 <= 10)><switch $n2><case>один<case>два<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n2></if><else><num $n2></if> врагов</if>!"
+msgstr "<if ($n2 == 1)>Появился враг<else>Появились враги: <num $n2></if>!"
 
 #. ja: 敵の増援が出現！
 #. de: Der Gegner hat Verstärkung bekommen!
@@ -4269,7 +4269,7 @@ msgstr "<if ($n2 == 1)>Появился враг<else>Появилось <if $n2
 # aeria-terms: {"Enemy":"d3725f2b4d0e"}
 msgctxt "LogMessage:1518:0:5"
 msgid "Enemy reinforcements appear!"
-msgstr "Враг получил подкрепление!"
+msgstr "Прибыло подкрепление врага!"
 
 #. ja: 花粉塊が砕け、毒花粉霧が立ちこめた！
 #. de: Ein Staubgefäß hat sich geöffnet und gibt giftige Pollen frei.
@@ -4324,7 +4324,7 @@ msgstr "Время на «<sheet InstanceContent $n1 3>» истекло"
 #. macro: <if ($n1 == 1)>minute<else>minutes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:1524:0:5"
 msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> <if ($n1 == 1)>minute<else>minutes</if> remaining."
-msgstr "Осталось <capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>одна<case>две<case>три<case>четыре<case>пять<case>шесть<case>семь<case>восемь<case>девять<case>десять</switch><else><num $n1></if><else><num $n1></if></capitalize> <if ($n1 == 1)>минута<else>минут</if>"
+msgstr "Осталось <num $n1> мин."
 
 #. ja: ギルドオーダーを終了して帰還します。
 #. de: Das Gildengeheiß ist abgeschlossen. Du verlässt die Instanz.
@@ -4343,7 +4343,7 @@ msgstr "Вы покидаете инстанс"
 # aeria-terms: {"Disciple of War":"41d5bc9dce64","Party":"66ce98c91d3e"}
 msgctxt "LogMessage:1526:0:5"
 msgid "A party of <num $n4> Disciples of War or Magic level <num $n3> or higher is required to challenge <if ($n2 == 0)>this quest battle<else><sheet InstanceContent $n2 3></if>."
-msgstr "Чтобы пройти <if ($n2 == 0)>это сражение по заданию<else><sheet InstanceContent $n2 3></if>, соберите отряд из <num $n4> физических или магических классов ур. <num $n3> и выше"
+msgstr "Чтобы пройти <if ($n2 == 0)>это сражение по заданию<else><sheet InstanceContent $n2 3></if>, соберите отряд. Требуются боевые или магические классы. Минимум участников: <num $n4>, уровень: <num $n3> или выше"
 
 #. ja: <sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』を開始するためには、<br>『<sheet InstanceContent $n3 3>』を達成する必要があります。
 #. de: „<sheet InstanceContent $n3 3>“ muss erfolgreich abgeschlossen werden,<br>um an <sheet InstanceContentTextData $n1 0> „<sheet InstanceContent $n2 3>“ teilnehmen zu können.
@@ -4402,7 +4402,7 @@ msgstr "Начато: <capitalize><string $gs56></capitalize>"
 #. macro: <string $gs56> — a text value passed to the string; value = global text 56 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1532:0:5"
 msgid "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if></capitalize> <if ($n1 == 1)>minute<else>minutes</if> remaining to complete <string $gs56>."
-msgstr "<capitalize><if $n1><if ($n1 <= 10)><switch $n1><case>Одна<case>Две<case>Три<case>Четыре<case>Пять<case>Шесть<case>Семь<case>Восемь<case>Девять<case>Десять</switch><else><num $n1></if><else><num $n1></if></capitalize> <if ($n1 == 1)>минута<else>минут</if> осталось до завершения задания «<string $gs56>»"
+msgstr "До завершения миссии «<string $gs56>» осталось <num $n1> мин."
 
 #. ja: 制限時間に達したため、「<string $gs56>」のコンテンツを終了した。
 #. de: Zeit abgelaufen. Der Inhalt „<string $gs56>“ wird beendet.
@@ -4444,7 +4444,7 @@ msgstr "Магический барьер разрушен!"
 # aeria-terms: {"cultist orb":"39cd57d539c7"}
 msgctxt "LogMessage:1537:0:5"
 msgid "The light of the cultist orb fades..."
-msgstr "Свет в сфере культиста гаснет.."
+msgstr "Свет в сфере культиста гаснет..."
 
 #. ja: 脱出地点が出現した。
 #. de: Ein Ausgang ist erschienen.
@@ -4460,7 +4460,7 @@ msgstr "Появился выход"
 # aeria-terms: {"abyssal cocoon":"acab5d68d8ed","aether":"121cf0f81f85"}
 msgctxt "LogMessage:1539:0:5"
 msgid "You stop the flow of aether to the abyssal cocoon..."
-msgstr "Поток эфира к бездне кокона прерван.."
+msgstr "Поток эфира к бездне кокона прерван..."
 
 #. ja: 深淵のマユから、絶対王ガルヴァンスが現れた！
 #. de: Großkönig Galvanth ist aus dem Kokon erschienen!
@@ -4532,7 +4532,7 @@ msgstr "Ворота открываются!"
 #. fr: Vous ressentez une présence hostile<nbsp>!
 msgctxt "LogMessage:1553:0:5"
 msgid "You sense a hostile presence!"
-msgstr "Вы чувствуете чьё-то враждебное присутствие!"
+msgstr "Вы чувствуете присутствие врага!"
 
 #. ja: 小さな鍵を拾った。
 #. de: Du hast einen kleinen Schlüssel gefunden.
@@ -4587,7 +4587,7 @@ msgstr "Похоже, дверь заперта"
 #. fr: Seule une clef spéciale peut ouvrir cette serrure.
 msgctxt "LogMessage:1560:0:5"
 msgid "Perhaps there is a key which could open it."
-msgstr "Может, эту дверь откроет особый ключ"
+msgstr "Похоже, эту дверь можно открыть особым ключом"
 
 #. ja: 扉を解錠した。小さな鍵は壊れたようだ。
 #. de: Die Tür ist entriegelt, aber der Schlüssel ist im Schloss abgebrochen.
@@ -4635,14 +4635,14 @@ msgstr "Дверь Розы открыта"
 # aeria-terms: {"void lamp":"37fcb9578e83"}
 msgctxt "LogMessage:1566:0:5"
 msgid "The flame within the void lamp gutters out..."
-msgstr "Пламя в пустотном фонаре гаснет.."
+msgstr "Пламя в пустотном фонаре гаснет..."
 
 #. ja: 辺りに不気味な冷気が流れ込んだ……
 #. de: Du spürst einen eisigen Luftzug ...
 #. fr: L'air se refroidit...
 msgctxt "LogMessage:1567:0:5"
 msgid "The air grows colder..."
-msgstr "Вокруг становится холоднее.."
+msgstr "Вокруг становится холоднее..."
 
 #. ja: オーブの光が失われた……
 #. de: Die Kristallkugel hat ihren Glanz verloren ...
@@ -4650,7 +4650,7 @@ msgstr "Вокруг становится холоднее.."
 # aeria-terms: {"crystal ball":"12915d7ea38b"}
 msgctxt "LogMessage:1568:0:5"
 msgid "The crystal ball has lost its luster..."
-msgstr "Хрустальный шар утратил блеск.."
+msgstr "Хрустальный шар утратил блеск..."
 
 #. ja: 辺りから妖しい気配が消え去った……
 #. de: Du fühlst keine beunruhigende Präsenz mehr.
@@ -4724,7 +4724,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выпустил �
 # aeria-terms: {"herb patch":"f1d22939da1b"}
 msgctxt "LogMessage:1577:0:5"
 msgid "<capitalize><noun-en Item 1 $n1 1 1></capitalize> is required to light the herb patch on fire."
-msgstr "Чтобы поджечь заросли травы, потребуется <noun-en Item 1 $n1 1 1>"
+msgstr "Чтобы поджечь заросли травы, нужен предмет «<noun-en Item 1 $n1 1 1>»"
 
 #. ja: 睡眠ガスが発生した！
 #. de: Die Kräuter beginnen zu brennen und einschläfernder Qualm steigt auf.
@@ -4885,7 +4885,7 @@ msgstr "Эту дверь можно открыть только особым к
 #. macro: <noun-en EventItem 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1596:0:5"
 msgid "Using <noun-en EventItem 2 $n1 1 1> in this area will have no effect."
-msgstr "Здесь <noun-en EventItem 2 $n1 1 1> ничего не даст"
+msgstr "Здесь использование предмета «<sheet EventItem $n1 0>» не даст результата"
 
 #. ja: <if ($n2 == 0)>このクエストバトル<else><sheet InstanceContentTextData $n1 0>『<sheet InstanceContent $n2 3>』</if>は、ギャザラー・クラフタークラス、もしくはパーティを組んだ状態では開始できません。
 #. de: <if ($n2 == 0)>Auftragskampf<else><sheet InstanceContentTextData $n1 0> „<sheet InstanceContent $n2 3>“</if> kann nur alleine und als Krieger/Magier begonnen werden.
@@ -4956,7 +4956,7 @@ msgstr "Задание «<sheet Quest $n1 0>» отменено"
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1605:0:5"
 msgid "You obtain <kilo $n1 \",\"> gil."
-msgstr "Вы получили <kilo $n1 \",\"> гил"
+msgstr "Вы получили <kilo $n1 \"<nbsp>\"> гил"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n2 0>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n2 1 4 1> erhalten.
@@ -4969,7 +4969,7 @@ msgstr "Вы получили <kilo $n1 \",\"> гил"
 #. macro: <noun-en Item 1 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1606:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n2 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <noun-en Item 1 $n2 1 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n2 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n2 0>×<num $n3>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n2 $n3 4 1> erhalten.
@@ -4985,7 +4985,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <noun-en Item 3 $n2 $n3 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = number parameter 3, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1607:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n3 == 1)><noun-en Item 1 $n2 1 1><else><kilo $n3 \",\"> <noun-en Item 3 $n2 $n3 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <if ($n3 == 1)><noun-en Item 1 $n2 1 1><else><kilo $n3 \",\"> <noun-en Item 3 $n2 $n3 1></if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n2 0><if ($n3 == 1)><else> × <kilo $n3 \"<nbsp>\"></if>"
 
 #. ja: クエストを破棄することができませんでした。
 #. de: Der Auftrag konnte nicht entfernt werden.
@@ -5108,7 +5108,7 @@ msgstr "Сегодня вы уже не можете брать ежедневн
 #. macro: <noun-en ENpcResident 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = ENpcResident, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1623:0:5"
 msgid "You have accepted all the allied society daily quests available today from <noun-en ENpcResident 2 $n1 1 1>."
-msgstr "Вы уже взяли все ежедневные задания союзного племени, которые сегодня можно получить у <noun-en ENpcResident 2 $n1 1 1>"
+msgstr "Вы уже взяли все доступные на сегодня ежедневные задания союзного племени. Задания выдаёт <noun-en ENpcResident 2 $n1 1 1>"
 
 #. ja: PvPアクションを初期化しました。
 #. de: PvP-Kommandos wurden zurückgesetzt.
@@ -5139,7 +5139,7 @@ msgstr "Нельзя сменить класс или профессию на т
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1627:0:5"
 msgid "You do not possess <noun-en Item 1 $n1 1 1>."
-msgstr "У вас нет <noun-en Item 1 $n1 1 1>"
+msgstr "У вас нет предмета «<sheet Item $n1 0>»"
 
 #. ja: 「<string $s1>」を含む所持アイテムは<num $n2>種類見つかりました。先頭<num $n3>件のみ表示します。
 #. de: Die Suche nach „<string $s1>“ ergab <num $n2> Treffer.<if ($n3 <= 1)><else> Nur die ersten <num $n3> werden angezeigt</if>.
@@ -5195,7 +5195,7 @@ msgstr "<i>Сказания о приключениях</i> можно испо�
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1634:0:5"
 msgid "You use <noun-en Item 1 $n1 1 1>. Now logging out to update character data."
-msgstr "Вы использовали <noun-en Item 1 $n1 1 1><br>Сейчас произойдёт выход из игры, чтобы обновить данные персонажа"
+msgstr "Использовано: <sheet Item $n1 0><br>Выход из игры для обновления данных персонажа"
 
 #. ja: クエスト『<sheet Quest $n1 0>』をコンプリートしているため、使用できません。
 #. de: Aktion nicht möglich. Der Auftrag „<sheet Quest $n1 0>“ ist bereits abgeschlossen.
@@ -5313,7 +5313,7 @@ msgstr "<switch $n1><case>Сейчас<case>во время выполнения
 #. fr: Impossible d'exécuter cette commande.
 msgctxt "LogMessage:1651:0:5"
 msgid "Unable to execute command."
-msgstr "Команду выполнить не удалось"
+msgstr "Не удалось выполнить команду"
 
 #. ja: リキャスト中のためデジョンは実行できません。
 #. de: Du musst warten, bevor du Rückführung erneut einsetzen kannst.
@@ -5337,7 +5337,7 @@ msgstr "Сейчас нельзя использовать «Возвращен�
 # aeria-terms: {"FATE":"863fbe7726c9"}
 msgctxt "LogMessage:1654:0:5"
 msgid "You have joined a FATE."
-msgstr "Вы участвуете в F.A.T.E."
+msgstr "Вы участвуете в F.A.T.E"
 
 #. ja: F.A.T.E.参加状態が解除されました。
 #. de: Du nimmst nicht länger an dem FATE teil.
@@ -5345,7 +5345,7 @@ msgstr "Вы участвуете в F.A.T.E."
 # aeria-terms: {"FATE":"863fbe7726c9"}
 msgctxt "LogMessage:1655:0:5"
 msgid "You are no longer participating in a FATE."
-msgstr "Вы больше не участвуете в F.A.T.E."
+msgstr "Вы больше не участвуете в F.A.T.E"
 
 #. ja: このF.A.T.E.では、EXホットバーに設定された専用アクションを使用します。<br>参加する場合は、コンテンツ情報から「JOIN F.A.T.E.」ボタンを押してください。
 #. de: Wenn du an diesem FATE teilnimmst, wird deinem Kommandomenü ein spezielles Kommando hinzugefügt. Wähle „An FATE teilnehmen“, um am FATE teilzunehmen.
@@ -5368,7 +5368,7 @@ msgstr "Нельзя начать поручение гильдии: один и
 #. fr: Impossible d'exécuter cette commande.
 msgctxt "LogMessage:1661:0:5"
 msgid "Unable to execute command."
-msgstr "Команду выполнить не удалось"
+msgstr "Не удалось выполнить команду"
 
 #. ja: テレポが実行できないパーティメンバーがいます。テレポの勧誘ができませんでした。
 #. de: Ein oder mehrere Grup<shy>pen<shy>mit<shy>glieder konnten nicht zum Teleport eingeladen werden.
@@ -5496,7 +5496,7 @@ msgstr "Нельзя использовать: не выполнены треб�
 # aeria-terms: {"Ishgardian":"f12ebd287b95"}
 msgctxt "LogMessage:1678:0:5"
 msgid "You donate resources to the Ishgardian restoration effort! (<num $n1> <if ($n1 == 1)>point<else>points</if>)"
-msgstr "Вы внесли материалы в ишгардский проект восстановления! (<num $n1> <if ($n1 == 1)>очко<else>очков</if>)"
+msgstr "Вы внесли материалы в ишгардский проект восстановления! (<num $n1> оч.)"
 
 #. ja: 設定を変更しました。
 #. de: Änderungen wurden übernommen.
@@ -5510,21 +5510,21 @@ msgstr "Настройки сохранены"
 #. fr: Transaction impossible.<br>Vous n'avez pas assez de place dans votre inventaire.
 msgctxt "LogMessage:1681:0:5"
 msgid "Unable to complete transaction. Insufficient inventory space."
-msgstr "Не удалось совершить покупку: в инвентаре нет места"
+msgstr "Не удалось совершить сделку: в инвентаре недостаточно места"
 
 #. ja: ギルが足りません。購入できませんでした。
 #. de: Du hast nicht genug Gil.
 #. fr: Transaction impossible.<br>Vous n'avez pas assez de gils.
 msgctxt "LogMessage:1682:0:5"
 msgid "Unable to complete transaction. Insufficient gil."
-msgstr "Не удалось совершить покупку: не хватает гил"
+msgstr "Не удалось совершить сделку: не хватает гил"
 
 #. ja: 1つしか持てないアイテムです。購入できませんでした。
 #. de: Seltener Gegenstand bereits vorhanden.
 #. fr: Transaction impossible.<br>Vous possédez déjà cet objet unique.
 msgctxt "LogMessage:1683:0:5"
 msgid "Unable to complete transaction. You may only carry one of that item."
-msgstr "Не удалось совершить покупку: можно носить только один такой предмет"
+msgstr "Не удалось совершить сделку: этот предмет может быть только в одном экземпляре"
 
 #. ja: 売却に失敗しました。
 #. de: Bei der Transaktion ist ein Fehler aufgetreten.
@@ -5557,7 +5557,7 @@ msgstr "Не удалось совершить покупку: вы не мож�
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1687:0:5"
 msgid "You purchase <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> for <kilo $n3 \",\"> gil."
-msgstr "Вы купили <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> за <kilo $n3 \",\"> гил"
+msgstr "Куплено: <sheet Item $n1 0><if ($n2 == 1)><else> × <kilo $n2 \"<nbsp>\"></if> за <kilo $n3 \"<nbsp>\"> гил"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<kilo $n3 ",">ギルで売却しました。
 #. de: Du hast <noun-de Item 1 $n1 $n2 4 1> für <kilo $n3 "."> Gil verkauft.
@@ -5569,7 +5569,7 @@ msgstr "Вы купили <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1688:0:5"
 msgid "You sell <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> for <kilo $n3 \",\"> gil."
-msgstr "Вы продали <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> за <kilo $n3 \",\"> гил"
+msgstr "Продано: <sheet Item $n1 0><if ($n2 == 1)><else> × <kilo $n2 \"<nbsp>\"></if> за <kilo $n3 \"<nbsp>\"> гил"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<kilo $n3 ",">ギルで買い戻しました。
 #. de: Du hast <noun-de Item 1 $n1 $n2 4 1> für <kilo $n3 "."> Gil zurückgekauft.
@@ -5581,7 +5581,7 @@ msgstr "Вы продали <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1689:0:5"
 msgid "You buy back <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> for <kilo $n3 \",\"> gil."
-msgstr "Вы выкупили <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> за <kilo $n3 \",\"> гил"
+msgstr "Выкуплено: <sheet Item $n1 0><if ($n2 == 1)><else> × <kilo $n2 \"<nbsp>\"></if> за <kilo $n3 \"<nbsp>\"> гил"
 
 #. ja: イベントアイテムは売却できません。
 #. de: Schlüsselgegenstände können nicht verkauft werden.
@@ -5595,7 +5595,7 @@ msgstr "Не удалось совершить сделку: ключевые п
 #. fr: Transaction impossible. Vous avez déjà obtenu un exemplaire de cet objet personnel.
 msgctxt "LogMessage:1691:0:5"
 msgid "Unable to complete transaction. You cannot carry more than one of this untradable item."
-msgstr "Не удалось совершить покупку: этот непередаваемый предмет у вас уже есть"
+msgstr "Не удалось совершить сделку: этот непередаваемый предмет у вас уже есть"
 
 #. ja: 収集品は売却できません。
 #. de: Sammlerstücke können nicht verkauft werden.
@@ -5617,7 +5617,7 @@ msgstr "Диковинки нельзя продавать"
 #. macro: <noun-en Item 3 $n4 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 4, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1693:0:5"
 msgid "Quality of <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> lowered into <if ($n2 == 1)><noun-en Item 1 $n4 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n4 $n2 1></if>."
-msgstr "Качество <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if> снизилось, теперь это <if ($n2 == 1)><noun-en Item 1 $n4 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n4 $n2 1></if>"
+msgstr "Качество снижено: <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if> → <sheet Item $n4 0><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: 受注数の上限に達しているため、これ以上クエストを受注できません。
 #. de: Du konntest den Auftrag nicht annehmen, weil du das Maximum an aktiven Aufträgen erreicht hast.
@@ -5639,7 +5639,7 @@ msgstr "Событие отменено: в инвентаре больше не
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1698:0:5"
 msgid "Unable to accept <noun-en Item 2 $n1 1 1>. You can only carry one of this item."
-msgstr "Не удалось принять <noun-en Item 2 $n1 1 1>. Такой предмет можно носить только в одном экземпляре"
+msgstr "Не удалось принять: <sheet Item $n1 0>. Такой предмет можно носить только в одном экземпляре"
 
 #. ja: 現在の状態では、中断データを削除できません。
 #. de: Im Moment kann der Zwischenspeicherstand nicht gelöscht werden.
@@ -5653,7 +5653,7 @@ msgstr "Сейчас нельзя удалить данные текущего �
 #. fr: Impossible d'obtenir l'objet. Votre inventaire est plein.
 msgctxt "LogMessage:1767:0:5"
 msgid "Unable to obtain item. Insufficient inventory space."
-msgstr "Не удалось получить предмет: в инвентаре нет места"
+msgstr "Не удалось получить предмет: в инвентаре недостаточно места"
 
 #. ja: 設定を変更しました。
 #. de: Die Einstellungen wurden geändert.
@@ -5674,21 +5674,21 @@ msgstr "Изменения отменены"
 #. fr: Il n'y a pas assez de place dans l'inventaire.
 msgctxt "LogMessage:1770:0:5"
 msgid "Insufficient inventory space."
-msgstr "В инвентаре нет места"
+msgstr "В инвентаре недостаточно места"
 
 #. ja: コンテンツ中のため表示できません。
 #. de: Die gewünschte Aktion ist in Inhalten nicht möglich.
 #. fr: Affichage impossible durant une mission.
 msgctxt "LogMessage:1772:0:5"
 msgid "Unable to display while bound by duty."
-msgstr "Нельзя просмотреть во время задания"
+msgstr "Нельзя открыть во время прохождения миссии"
 
 #. ja: そのコマンドは、現在使用できません。
 #. de: Das Kommando kann momentan nicht ausgeführt werden.
 #. fr: Cette commande n'est pas disponible ac<shy>tu<shy>el<shy>le<shy>ment.
 msgctxt "LogMessage:1773:0:5"
 msgid "Unable to execute command at this time."
-msgstr "Сейчас эту команду выполнить нельзя"
+msgstr "Сейчас нельзя выполнить эту команду"
 
 #. ja: 今週の納品は終了しています。
 #. de: Die wöchentliche Liefergrenze ist bereits erreicht.
@@ -5733,7 +5733,7 @@ msgstr "У вас нет предметов для обмена"
 #. fr: Transaction impossible.<br>Il n'y a pas assez de place dans l'inventaire.
 msgctxt "LogMessage:1780:0:5"
 msgid "Unable to complete transaction. Insufficient inventory space."
-msgstr "Не удалось совершить обмен: в инвентаре нет места"
+msgstr "Не удалось совершить сделку: в инвентаре недостаточно места"
 
 #. ja: 軍票が足りません。交換できませんでした。
 #. de: Du hast nicht genügend Staatstaler.
@@ -5747,7 +5747,7 @@ msgstr "Не удалось совершить обмен: не хватает �
 #. fr: Transaction impossible.<br>Vous possédez déjà cet objet unique.
 msgctxt "LogMessage:1782:0:5"
 msgid "Unable to complete transaction. You may only carry one of that item."
-msgstr "Не удалось совершить обмен: можно носить только один такой предмет"
+msgstr "Не удалось совершить сделку: этот предмет может быть только в одном экземпляре"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<kilo $n3 ",">枚の軍票と交換して入手しました。
 #. de: Du hast <kilo $n3 "."> Staatstaler gegen <if ($n2 == 1)><noun-de Item 1 $n1 1 4 1><else><kilo $n2 "."> <noun-de Item 5 $n1 2 4 1></if> eingetauscht.
@@ -5760,7 +5760,7 @@ msgstr "Не удалось совершить обмен: можно носит
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1783:0:5"
 msgid "You exchange <kilo $n3 \",\"> <if ($n3 == 1)>seal<else>seals</if> for <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "Вы обмениваете <kilo $n3 \",\"> <if ($n3 == 1)>печать<else>печати</if> на <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if>"
+msgstr "Обменено печатей: <kilo $n3 \"<nbsp>\">. Получено: <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: 交換に必要な階級に達していません。
 #. de: Du hast noch nicht den erforderlichen Rang, um Staatstaler einzutauschen.
@@ -5882,7 +5882,7 @@ msgstr "Открыта новая видеосцена с участием <shee
 #. macro: <kilo $n1 ","> — a number with a thousands separator; value = number parameter 1, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1798:0:5"
 msgid "You receive <kilo $n1 \",\"> gil."
-msgstr "Вы получаете <kilo $n1 \",\"> гил"
+msgstr "Вы получаете <kilo $n1 \"<nbsp>\"> гил"
 
 #. ja: <sheet ENpcResident $n1 0>は<string $gs1><switch $n2><case>を「優しい職人さん」と感じ始めた！<case>を「頼れる職人さん」と感じ始めた！<case>を「孤児院の救い手」と感じ始めた！<case>を「孤児院の家族」と感じ始めた！</switch>
 #. de: <capitalize><sheet ENpcResident $n1 0></capitalize> hält dich nun für <switch $n2><case><if $gn4>eine zuverlässige Lieferantin<else>einen zuverlässigen Lieferanten</if><case><if $gn4>eine liebenswürdige Lieferantin<else>einen liebens<shy>würdigen Lieferanten</if><case><if $gn4>eine Förderin<else>einen Förderer</if><case><if $gn4>die Retterin<else>den Retter</if></switch> des Waisenhauses.
@@ -5902,7 +5902,7 @@ msgstr "<sheet ENpcResident $n1 0> теперь считает вас <switch $n
 #. macro: <noun-en Item 1 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1800:0:5"
 msgid "You receive <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if>."
-msgstr "Вы получаете <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 1 $n1 $n2 1></if>"
+msgstr "Получено: <sheet Item $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: ターゲットは任務の対象ではないため、<sheet EventItem $n1 0>を使用できません。
 #. de: Du kannst <noun-de EventItem 2 $n1 1 4 1> nicht benutzen, da dein Ziel nicht Gegenstand des Freibriefs ist.
@@ -5911,7 +5911,7 @@ msgstr "Вы получаете <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><nu
 # aeria-terms: {"Levequest":"be0be8c12a9c","target":"8eae8022ec78"}
 msgctxt "LogMessage:1802:0:5"
 msgid "Cannot use <noun-en EventItem 2 $n1 1 1> on non-levequest targets."
-msgstr "Нельзя использовать <noun-en EventItem 2 $n1 1 1> на цели, не связанной с поручением гильдии"
+msgstr "Предмет «<sheet EventItem $n1 0>» можно использовать только на целях поручения гильдии"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>を入手した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>erhältst<else>erhält</if> <noun-de EventItem 1 $n1 1 4 1>.
@@ -5924,7 +5924,7 @@ msgstr "Нельзя использовать <noun-en EventItem 2 $n1 1 1> на
 #. macro: <noun-en EventItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1803:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en EventItem 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <noun-en EventItem 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet EventItem $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>×<num $n2>を入手した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>erhältst<else>erhält</if> <noun-de EventItem 1 $n1 $n2 4 1>.
@@ -5940,7 +5940,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><no
 #. macro: <noun-en EventItem 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1804:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n2 == 1)><noun-en EventItem 1 $n1 1 1><else><num $n2> <noun-en EventItem 3 $n1 $n2 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <if ($n2 == 1)><noun-en EventItem 1 $n1 1 1><else><num $n2> <noun-en EventItem 3 $n1 $n2 1></if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet EventItem $n1 0><if ($n2 == 1)><else> × <num $n2></if>"
 
 #. ja: <sheet BNpcName $n1 0>を手懐けた。　<num $n2>/<num $n3>
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> wurde gezähmt. (<num $n2>/<num $n3>)
@@ -6036,7 +6036,7 @@ msgstr "Иллюзия <noun-en BNpcName 2 $n1 1 1> рассеивается!"
 #. macro: <noun-en BNpcName 2 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1814:0:5"
 msgid "<capitalize><noun-en EventItem 2 $n1 1 1></capitalize> has no effect on <noun-en BNpcName 2 $n2 1 1>."
-msgstr "<capitalize><noun-en EventItem 2 $n1 1 1></capitalize> не действует на <noun-en BNpcName 2 $n2 1 1>"
+msgstr "Предмет «<sheet EventItem $n1 0>» не действует на цель «<noun-en BNpcName 2 $n2 1 1>»"
 
 #. ja: 目的地に到達した！
 #. de: Du hast den Zielort erreicht.
@@ -6101,7 +6101,7 @@ msgstr "Чудовище из <i>Некролога</i> уничтожено! (<
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1821:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> begins moving towards <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> направляется к <if ($gs1 == $gs2)>вам<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>"
+msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> приближается. Цель — <if ($gs1 == $gs2)>вы<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize></if>"
 
 #. ja: <sheet BNpcName $n1 0>との距離が離れているため、反応がなかった。
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> reagiert nicht. Du bist zu weit weg.
@@ -6183,7 +6183,7 @@ msgstr "Вы не получили очки опыта, так как ваш к�
 #. macro: <noun-en EventItem 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1830:0:5"
 msgid "You obtain <noun-en EventItem 1 $n1 1 1>."
-msgstr "Вы получаете <noun-en EventItem 1 $n1 1 1>"
+msgstr "Получено: <sheet EventItem $n1 0>"
 
 #. ja: 不穏な気配がする
 #. de: Du spürst eine beunruhigende Präsenz.
@@ -6268,7 +6268,7 @@ msgstr "Используйте указанный ключевой предме�
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:1841:0:5"
 msgid "It appears that the target has <noun-en EventItem 1 $n1 1 1>."
-msgstr "Похоже, у цели есть <noun-en EventItem 1 $n1 1 1>"
+msgstr "Похоже, у цели есть предмет «<sheet EventItem $n1 0>»"
 
 #. ja: <sheet BNpcName $n1 0>は何も反応しなかった……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> zeigt keine Reaktion.
@@ -6321,7 +6321,7 @@ msgstr "Все <noun-en BNpcName 1 $n1 2 1> потеряны..."
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:1847:0:5"
 msgid "The leve target is drawn from hiding by <noun-en EventItem 2 $n1 1 1>!"
-msgstr "Цель заказа вышла из укрытия, привлечённая предметом <noun-en EventItem 2 $n1 1 1>!"
+msgstr "Предмет «<sheet EventItem $n1 0>» выманивает цель поручения из укрытия!"
 
 #. ja: 付近に<sheet BNpcName $n1 0>の気配がする……
 #. de: <capitalize><noun-de BNpcName 1 $n1 1 1 1></capitalize> scheint in der Nähe zu sein!
@@ -6347,7 +6347,7 @@ msgstr "Поблизости нет никаких следов <noun-en BNpcNam
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1851:0:5"
 msgid "<capitalize><noun-en Item 1 $n1 1 1></capitalize> is placed into the company chest."
-msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> помещён в сундук вольной компании"
+msgstr "В сундук Вольной компании помещено: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>×<num $n2>をカンパニーチェストに入れました。
 #. de: <if ($n2 == 1)><capitalize><noun-de Item 1 $n1 1 1 1></capitalize> wurde<else><num $n2> <noun-de Item 5 $n1 2 1 1> wurden</if> in der Truhe abgelegt.
@@ -6357,7 +6357,7 @@ msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> помещён в су
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1852:0:5"
 msgid "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> are placed into the company chest."
-msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> помещено в сундук вольной компании"
+msgstr "В сундук Вольной компании помещено: <sheet Item $n1 0> × <kilo $n2 \"<nbsp>\">"
 
 #. ja: <kilo $n1 ",">ギルをカンパニーチェストに入れました。
 #. de: <if ($n1 == 1)>1 Gil wurde<else><kilo $n1 "."> Gil wurden</if> in die Truhe gelegt.
@@ -6366,7 +6366,7 @@ msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> помещено в сунд
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1853:0:5"
 msgid "<kilo $n1 \",\"> gil is placed into the company chest."
-msgstr "<kilo $n1 \",\"> гил помещено в сундук вольной компании"
+msgstr "<kilo $n1 \"<nbsp>\"> гил помещено в сундук вольной компании"
 
 #. ja: <sheet Item $n1 0>をカンパニーチェストから取り出しました。
 #. de: <capitalize><noun-de Item 1 $n1 1 1 1></capitalize> wurde aus der Truhe entnommen.
@@ -6376,7 +6376,7 @@ msgstr "<kilo $n1 \",\"> гил помещено в сундук вольной 
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1854:0:5"
 msgid "<capitalize><noun-en Item 1 $n1 1 1></capitalize> is removed from the company chest."
-msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> взят из сундука вольной компании"
+msgstr "Из сундука Вольной компании получено: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>×<num $n2>をカンパニーチェストから取り出しました。
 #. de: <if ($n2 == 1)><capitalize><noun-de Item 1 $n1 1 1 1></capitalize> wurde<else><num $n2> <noun-de Item 5 $n1 2 1 1> wurden</if> aus der Truhe entnommen.
@@ -6386,7 +6386,7 @@ msgstr "<capitalize><noun-en Item 1 $n1 1 1></capitalize> взят из сунд
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1855:0:5"
 msgid "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> are removed from the company chest."
-msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> взято из сундука вольной компании"
+msgstr "Из сундука Вольной компании получено: <sheet Item $n1 0> × <kilo $n2 \"<nbsp>\">"
 
 #. ja: <kilo $n1 ",">ギルをカンパニーチェストから取り出しました。
 #. de: <if ($n1 == 1)>1 Gil wurde<else><kilo $n1 "."> Gil wurden</if> aus der Truhe entnommen.
@@ -6395,7 +6395,7 @@ msgstr "<kilo $n2 \",\"> <noun-en Item 1 $n1 $n2 1> взято из сундук
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "LogMessage:1856:0:5"
 msgid "<kilo $n1 \",\"> gil is removed from the company chest."
-msgstr "<kilo $n1 \",\"> гил взято из сундука вольной компании"
+msgstr "<kilo $n1 \"<nbsp>\"> гил взято из сундука вольной компании"
 
 #. ja: ボックス [<num $n1>]の名前を「<sheet FCChestName $n2 0>」に変更しました。
 #. de: Der Name von Fach <num $n1> wurde zu „<sheet FCChestName $n2 0>“ geändert.
@@ -6518,7 +6518,7 @@ msgstr "В сундуке вольной компании больше нет м
 #. fr: Il n'y a pas assez de place dans l'inventaire.
 msgctxt "LogMessage:1872:0:5"
 msgid "Your inventory is full."
-msgstr "Ваш инвентарь заполнен"
+msgstr "Инвентарь заполнен"
 
 #. ja: 他のプレイヤーが処理中のためアイテムの移動に失敗しました。
 #. de: Der Gegenstand konnte nicht verschoben werden, weil ein anderer Spieler gerade auf die Truhe zugreift.
@@ -6621,7 +6621,7 @@ msgstr "Вы приглашаете <if ($gs1 == $gs2)>себя<else><if $gn7><n
 # aeria-terms: {"Free Company":"0abe2b4130cb"}
 msgctxt "LogMessage:1885:0:5"
 msgid "You have received a free company invite from <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>."
-msgstr "Вам пришло приглашение в вольную компанию от <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>"
+msgstr "Получено приглашение в Вольную компанию. Отправитель — <if ($gs1 == $gs3)>вы<else><capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize></if>"
 
 #. ja: FreeCompany - 「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」に加入しました。
 #. de: Du bist der Freien Ge<shy>sell<shy>schaft „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“ beigetreten.
@@ -6730,7 +6730,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы исключены<else><if $gn7><no
 # aeria-terms: {"Free Company":"0abe2b4130cb"}
 msgctxt "LogMessage:1895:0:5"
 msgid "Free company invite from <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> canceled."
-msgstr "Приглашение в вольную компанию от <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> отменено"
+msgstr "Приглашение в Вольную компанию отменено. Отправитель — <if ($gs1 == $gs3)>вы<else><capitalize><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></capitalize></if>"
 
 #. ja: <sheet Item $n1 0>にクレストを貼り付けました。
 #. de: Du hast das Ge<shy>sell<shy>schaftswappen an <noun-de Item 2 $n1 1 3 1> angebracht.
@@ -6738,7 +6738,7 @@ msgstr "Приглашение в вольную компанию от <if $gn8>
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1896:0:5"
 msgid "You apply the company crest to <noun-en Item 2 $n1 1 1>."
-msgstr "Вы наносите герб компании на <noun-en Item 2 $n1 1 1>"
+msgstr "Герб компании нанесён на предмет «<sheet Item $n1 0>»"
 
 #. ja: あわせて<num $n1>点のアイテムにクレストを貼り付けました。
 #. de: Du hast das Ge<shy>sell<shy>schaftswappen an <if ($n1 == 1)>einem Gegenstand<else><num $n1> Gegenständen</if> angebracht.
@@ -6749,7 +6749,7 @@ msgstr "Вы наносите герб компании на <noun-en Item 2 $n1
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1897:0:5"
 msgid "You apply the company crest to <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> items."
-msgstr "Вы наносите герб компании на <if ($n1 == 1)>один предмет<else><if ($n1 == 2)>два предмета<else><if ($n1 == 3)>три предмета<else><if ($n1 == 4)>четыре предмета<else><if ($n1 == 5)>пять предметов<else><if ($n1 == 6)>шесть предметов<else><if ($n1 == 7)>семь предметов<else><if ($n1 == 8)>восемь предметов<else><if ($n1 == 9)>девять предметов<else><if ($n1 == 10)>десять предметов<else><num $n1> предметов</if></if></if></if></if></if></if></if></if></if>"
+msgstr "Герб компании нанесён. Обработано предметов: <num $n1>"
 
 #. ja: <sheet Item $n1 0>のクレストをはがしました。
 #. de: Du hast das Ge<shy>sell<shy>schaftswappen von <noun-de Item 2 $n1 1 3 1> entfernt.
@@ -6757,7 +6757,7 @@ msgstr "Вы наносите герб компании на <if ($n1 == 1)>од
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1898:0:5"
 msgid "You remove the company crest from <noun-en Item 2 $n1 1 1>."
-msgstr "Вы снимаете герб компании с <noun-en Item 2 $n1 1 1>"
+msgstr "Герб компании удалён с предмета «<sheet Item $n1 0>»"
 
 #. ja: あわせて<num $n1>点のアイテムのクレストをはがしました。
 #. de: Du hast das Ge<shy>sell<shy>schaftswappen von <if ($n1 == 1)>einem Gegenstand<else><num $n1> Gegenständen</if> entfernt.
@@ -6768,7 +6768,7 @@ msgstr "Вы снимаете герб компании с <noun-en Item 2 $n1 1
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1899:0:5"
 msgid "You remove the company crest from <if $n1><if ($n1 <= 10)><switch $n1><case>one<case>two<case>three<case>four<case>five<case>six<case>seven<case>eight<case>nine<case>ten</switch><else><num $n1></if><else><num $n1></if> items."
-msgstr "Вы снимаете герб компании с <if ($n1 == 1)>одного предмета<else><if ($n1 == 2)>двух предметов<else><if ($n1 == 3)>трёх предметов<else><if ($n1 == 4)>четырёх предметов<else><if ($n1 == 5)>пяти предметов<else><if ($n1 == 6)>шести предметов<else><if ($n1 == 7)>семи предметов<else><if ($n1 == 8)>восьми предметов<else><if ($n1 == 9)>девяти предметов<else><if ($n1 == 10)>десяти предметов<else><num $n1> предметов</if></if></if></if></if></if></if></if></if></if>"
+msgstr "Герб компании удалён. Обработано предметов: <num $n1>"
 
 #. ja: ギアセット<num $n2>「<string $s1>」に装備変更しましたが、武具投影の異なる装備品が適用されました。
 #. de: Ausrüstungsset <num $n2> „<string $s1>“ wurde angelegt, wobei ein Teil mit anderer Projektion als ursprünglich verwendet wurde.
@@ -6998,7 +6998,7 @@ msgstr "Не удалось обновить короткое сообщение
 #. macro: <noun-en Item 3 $n1 3 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 3, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1930:0:5"
 msgid "<if ($n2 == 1)>One company credit<else><kilo $n2 \",\"> company credits</if> exchanged for <if ($n3 == 1)><noun-en Item 1 $n1 1 1><else><num $n3> <noun-en Item 3 $n1 3 1></if>."
-msgstr "Обменено: <if ($n2 == 1)>1 кредит компании<else><kilo $n2 \",\"> кредита компании</if> на <if ($n3 == 1)><noun-en Item 1 $n1 1 1><else><num $n3> <noun-en Item 3 $n1 3 1></if>"
+msgstr "Обменено оч. вклада Вольной компании: <kilo $n2 \"<nbsp>\">. Получено: <sheet Item $n1 0><if ($n3 > 1)> × <num $n3></if>"
 
 #. ja: スクリーンショットを保存しました。
 #. de: Der Screenshot wurde gespeichert.
@@ -7068,7 +7068,7 @@ msgstr "Прежнее снаряжение надето, но свойства 
 #. macro: <noun-en Item 3 $n1 3 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 3, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1938:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>exchange<else>exchanges</if> <if ($n2 == 1)> company credit<else><kilo $n2 \",\"> company credits</if> for <if ($n3 == 1)><noun-en Item 1 $n1 1 1><else><num $n3> <noun-en Item 3 $n1 3 1></if>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы обмениваете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> обменивает</if></capitalize> <if ($n2 == 1)>1 кредит компании<else><kilo $n2 \",\"> кредитов компании</if> на <if ($n3 == 1)><noun-en Item 1 $n1 1 1><else><num $n3> <noun-en Item 3 $n1 3 1></if>"
+msgstr "<if ($gs1 == $gs2)>Вы обмениваете<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> обменивает</if> очки вклада Вольной компании: <kilo $n2 \"<nbsp>\">. Получено: <sheet Item $n1 0><if ($n3 > 1)> × <num $n3></if>"
 
 #. ja: これ以上<sheet Item $n1 0>を受け取ることはできません。交換できませんでした。
 #. de: Austausch nicht möglich, weil du keine <noun-de Item 5 $n1 2 4 1> mehr aufnehmen kannst.
@@ -7076,21 +7076,21 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы обмениваете<else><if $gn7
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1939:0:5"
 msgid "Unable to complete exchange. You cannot carry any more <noun-en Item 3 $n1 2 1>."
-msgstr "Обмен не удался. У вас больше нет места для <noun-en Item 3 $n1 2 1>"
+msgstr "Обмен не удался. У вас больше нет места для предмета «<sheet Item $n1 0>»"
 
 #. ja: 所持品に空きがありません。交換できませんでした。
 #. de: Austausch nicht möglich, weil du keinen Platz im Inventar hast.
 #. fr: Échange impossible. Votre inventaire est plein.
 msgctxt "LogMessage:1940:0:5"
 msgid "Unable to complete exchange. Insufficient inventory space."
-msgstr "Обмен не удался. В инвентаре недостаточно места"
+msgstr "Не удалось совершить обмен: в инвентаре недостаточно места"
 
 #. ja: 交換に必要なアイテムが足りません。交換できませんでした。
 #. de: Austausch nicht möglich, weil nicht genügend der erforderlichen Gegenstände vorhanden sind.
 #. fr: Échange impossible. Vous n'avez pas les objets nécessaires à la transaction.
 msgctxt "LogMessage:1941:0:5"
 msgid "Unable to complete exchange. Insufficient items."
-msgstr "Обмен не удался. Не хватает нужных предметов"
+msgstr "Не удалось совершить обмен: не хватает предметов"
 
 #. ja: <sheet Item $n1 0>が足りません。交換できませんでした。
 #. de: Austausch nicht möglich, weil nicht genügend <noun-de Item 5 $n1 2 1 1> vorhanden sind.
@@ -7098,14 +7098,14 @@ msgstr "Обмен не удался. Не хватает нужных пред�
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1942:0:5"
 msgid "Unable to complete exchange. Insufficient <noun-en Item 3 $n1 2 1>."
-msgstr "Обмен не удался. Не хватает <noun-en Item 3 $n1 2 1>"
+msgstr "Обмен не удался. Не хватает предмета «<sheet Item $n1 0>»"
 
 #. ja: 1つしか持てないアイテムです。交換できませんでした。
 #. de: Austausch nicht möglich, weil du nur ein Exemplar dieses Gegenstands besitzen kannst.
 #. fr: Échange impossible. Vous ne pouvez posséder qu'un seul exemplaire de cet objet.
 msgctxt "LogMessage:1943:0:5"
 msgid "Unable to complete exchange. You can only possess one of that item."
-msgstr "Обмен не удался. Такой предмет можно иметь только в одном экземпляре"
+msgstr "Не удалось совершить обмен: этот предмет может быть только в одном экземпляре"
 
 #. ja: 交換に失敗しました。
 #. de: Austausch fehlgeschlagen.
@@ -7121,7 +7121,7 @@ msgstr "Не удалось совершить обмен"
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1945:0:5"
 msgid "Unable to complete trade. <capitalize><noun-en Item 2 $n1 1 1></capitalize> is currently equipped."
-msgstr "Обмен не удался. <capitalize><noun-en Item 2 $n1 1 1></capitalize> сейчас надет"
+msgstr "Обмен невозможен: предмет «<sheet Item $n1 0>» сейчас экипирован"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<sheet Item $n3 0>×<num $n4>と交換しました。
 #. de: <num $n2> <noun-de Item 5 $n1 $n2 4 1> gegen <num $n4> <noun-de Item 5 $n3 $n4 4 1> getauscht.
@@ -7132,7 +7132,7 @@ msgstr "Обмен не удался. <capitalize><noun-en Item 2 $n1 1 1></capi
 #. macro: <noun-en Item 3 $n3 $n4 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = number parameter 4, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1946:0:5"
 msgid "<num $n2> <noun-en Item 3 $n1 $n2 1> exchanged for <num $n4> <noun-en Item 3 $n3 $n4 1>."
-msgstr "<num $n2> <noun-en Item 3 $n1 $n2 1> обменяно на <num $n4> <noun-en Item 3 $n3 $n4 1>"
+msgstr "Обменено: <sheet Item $n1 0> × <num $n2> → <sheet Item $n3 0> × <num $n4>"
 
 #. ja: アイテムを交換できませんでした。
 #. de: Der Gegenstand konnte nicht getauscht werden.
@@ -7150,7 +7150,7 @@ msgstr "Не удалось совершить обмен"
 #. macro: <noun-en Item 3 $n3 $n4 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 3, count = number parameter 4, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1948:0:5"
 msgid "<num $n2> <noun-en Item 3 $n1 $n2 1> exchanged for <num $n4> <noun-en Item 3 $n3 $n4 1>."
-msgstr "<num $n2> <noun-en Item 3 $n1 $n2 1> обменяно на <num $n4> <noun-en Item 3 $n3 $n4 1>"
+msgstr "Обменено: <sheet Item $n1 0> × <num $n2> → <sheet Item $n3 0> × <num $n4>"
 
 #. ja: 現在の状態では、<sheet Item $n1 0>×<num $n2>を渡せません。
 #. de: Du kannst momentan <if ($n2 == 1)><noun-de Item 4 $n1 1 4 1><else><noun-de Item 4 $n1 2 4 1></if> abgeben.
@@ -7166,7 +7166,7 @@ msgstr "Не удалось совершить обмен"
 #. macro: <noun-en Item 3 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1950:0:5"
 msgid "Unable to use <noun-en Item 2 $n1 1 1>. You cannot carry more than one <noun-en Item 3 $n2 1 1>."
-msgstr "Нельзя использовать <noun-en Item 2 $n1 1 1>. У вас уже есть <noun-en Item 3 $n2 1 1>, который можно иметь только в одном экземпляре"
+msgstr "Нельзя использовать предмет «<sheet Item $n1 0>»: у вас уже есть уникальный предмет «<sheet Item $n2 0>»"
 
 #. ja: <sheet Item $n1 0>の中には、現在のクラス・ジョブで装備可能なアイテムが入っていないため使用できません。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> kann nicht benutzt werden. Darin ist Ausrüstung enthalten, die mit deiner aktuellen Klasse/Job nicht angelegt werden kann.
@@ -7176,7 +7176,7 @@ msgstr "Нельзя использовать <noun-en Item 2 $n1 1 1>. У ва�
 # aeria-terms: {"job":"a9421a81ecaa"}
 msgctxt "LogMessage:1951:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> contains gear unequippable by your current class/job."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> содержит снаряжение, которое не подходит вашему текущему классу или профессии"
+msgstr "В предмете «<sheet Item $n1 0>» содержится экипировка, недоступная вашему текущему классу или профессии"
 
 #. ja: <sheet Item $n1 0>は、都市やフィールドで使用可能です。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> kann nur in Städten<br>und außerhalb von instanziierten Arealen benutzt werden.
@@ -7185,7 +7185,7 @@ msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> содержит сн�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1952:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> can be used in both large settlements and non-instanced areas."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> можно использовать в поселениях и неинстансовых зонах"
+msgstr "Предмет «<sheet Item $n1 0>» можно использовать в крупных поселениях и открытых областях"
 
 #. ja: <string $gs1>は<sheet Item $n1 0>からマテリアを取り外した。
 #. de: Du hast die Materia von <noun-de Item 2 $n1 1 3 1> entfernt.
@@ -7193,7 +7193,7 @@ msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> можно испол�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1953:0:5"
 msgid "You attempt to remove the materia from <noun-en Item 2 $n1 1 1>."
-msgstr "Вы пытаетесь извлечь материю из предмета <noun-en Item 2 $n1 1 1>"
+msgstr "Вы пытаетесь извлечь материю из предмета «<sheet Item $n1 0>»"
 
 #. ja: <sheet Item $n1 0>の回収に成功した！
 #. de: Du hast <noun-de Item 2 $n1 1 4 1> zurückgewonnen!
@@ -7201,7 +7201,7 @@ msgstr "Вы пытаетесь извлечь материю из предме�
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1954:0:5"
 msgid "You receive <noun-en Item 1 $n1 1 1>."
-msgstr "Вы получили <noun-en Item 1 $n1 1 1>"
+msgstr "Получено: <sheet Item $n1 0>"
 
 #. ja: <sheet Item $n1 0>は粉々に砕け散った……。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> zerfällt zu wertlosem Staub<nbsp>...
@@ -7210,7 +7210,7 @@ msgstr "Вы получили <noun-en Item 1 $n1 1 1>"
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1955:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> shatters..."
-msgstr "<capitalize><noun-en Item 2 $n1 1 1></capitalize> рассыпается в прах..."
+msgstr "<sheet Item $n1 0> рассыпается в прах..."
 
 #. ja: マテリア回収が正常に実行できませんでした。
 #. de: Die Materia-Zurückgewinnung konnte nicht durchgeführt werden.
@@ -7225,7 +7225,7 @@ msgstr "Не удалось извлечь материю"
 #. macro: <noun-en Item 1 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1957:0:5"
 msgid "You obtain <noun-en Item 1 $n1 $n2 1>."
-msgstr "Вы получили <noun-en Item 1 $n1 $n2 1>"
+msgstr "Получено: <sheet Item $n1 0><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: これ以上<sheet Item $n1 0>を受け取ることはできません。
 #. de: Du kannst keine <noun-de Item 5 $n1 2 4 1> mehr aufnehmen.
@@ -7233,7 +7233,7 @@ msgstr "Вы получили <noun-en Item 1 $n1 $n2 1>"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1958:0:5"
 msgid "You cannot carry any more <noun-en Item 3 $n1 2 1>."
-msgstr "У вас больше нет места для <noun-en Item 3 $n1 2 1>"
+msgstr "Достигнут предел количества предмета: <sheet Item $n1 0>"
 
 #. ja: これ以上、マテリア装着できません。
 #. de: Dieser Gegenstand hat bereits die maximale Anzahl an Materia erreicht.
@@ -7250,7 +7250,7 @@ msgstr "На этот предмет больше нельзя установи�
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1960:0:5"
 msgid "Unable to use the copy of <i>Tales of Adventure</i>. You cannot carry more than one <noun-en Item 3 $n1 1 1>."
-msgstr "Нельзя использовать копию «<i>Сказаний о приключениях</i>». У вас уже есть <noun-en Item 3 $n1 1 1>, который можно иметь только в одном экземпляре"
+msgstr "Нельзя использовать «<i>Сказания о приключениях</i>»: у вас уже есть уникальный предмет «<sheet Item $n1 0>»"
 
 #. ja: チャプター「<sheet QuestRedoChapterUI $n1 8>」の内容が更新されたため、<br>つよくてニューゲームの中断データを削除しました。
 #. de: Aufgrund von Anpassungen im Kapitel „<sheet QuestRedoChapterUI $n1 8>“ wurden die Fortschrittsdaten von Neues Spiel+ gelöscht.
@@ -7276,7 +7276,7 @@ msgstr "Нельзя прочитать <i>Сказания о приключе�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1963:0:5"
 msgid "Unable to use <noun-en Item 2 $n1 1 1> during feature maintenance. Visit the Lodestone for details."
-msgstr "Нельзя использовать <noun-en Item 2 $n1 1 1> во время обслуживания этой функции. Подробности — в новостях на Камне возвращения"
+msgstr "Предмет «<sheet Item $n1 0>» недоступен во время технического обслуживания этой функции. Подробности — на Lodestone"
 
 #. ja: 所持品に空きがないため、<sheet Item $n1 0>を使用できません。
 #. de: <capitalize><noun-de Item 2 $n1 1 1 1></capitalize> kann nicht benutzt werden. Nicht genug Platz im Inventar.
@@ -7284,7 +7284,7 @@ msgstr "Нельзя использовать <noun-en Item 2 $n1 1 1> во вр
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1964:0:5"
 msgid "Unable to use <noun-en Item 2 $n1 1 1>. Insufficient inventory space."
-msgstr "Нельзя использовать <noun-en Item 2 $n1 1 1>. В инвентаре недостаточно места"
+msgstr "В инвентаре нет места. Нельзя использовать предмет «<sheet Item $n1 0>»"
 
 #. ja: リミテッドジョブを除くファイター、またはソーサラーではないため、使用できません。
 #. de: Kann nur von einer Krieger- oder Magierklasse ausgeführt werden, die kein beschränkter Job ist.
@@ -7337,7 +7337,7 @@ msgstr "Связь комплекта снаряжения с набором и�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1971:0:5"
 msgid "Unable to use <noun-en Item 2 $n1 1 1>. Character data exceeds its effects."
-msgstr "Нельзя использовать <noun-en Item 2 $n1 1 1>. Данные персонажа уже превышают её эффект"
+msgstr "Предмет «<sheet Item $n1 0>» не действует: данные персонажа уже превышают предусмотренные им значения"
 
 #. ja: 上書き禁止に設定しました。
 #. de: Schreibschutz aktiviert.
@@ -7395,7 +7395,7 @@ msgstr "Больше глав нет"
 #. fr: Action impossible dans l'état actuel.
 msgctxt "LogMessage:1980:0:5"
 msgid "Unable to execute command in this state."
-msgstr "Сейчас нельзя выполнить эту команду"
+msgstr "Нельзя выполнить команду в текущем состоянии"
 
 #. ja: リプレイレディチェックが実行中のため開始できません。
 #. de: Aktion ist während einer Bereitschaftsanfrage für Rückblenden nicht möglich.
@@ -7478,7 +7478,7 @@ msgstr "Кто-то из группы отказался. Запись отме�
 # aeria-terms: {"Battle":"6b90e6bb1791","Duty":"bce761328714"}
 msgctxt "LogMessage:1990:0:5"
 msgid "Duty record started. Battle commencing in <num $n1> <if ($n1 == 1)>second<else>seconds</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
-msgstr "Запись миссии началась. Бой начнётся через <num $n1> <if ($n1 == 1)>секунду<else>секунд</if>! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
+msgstr "Запись миссии началась. Бой начнётся через <num $n1> с! (<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>)<sound 1 95>"
 
 #. ja: リプレイデータが存在しないため再生できません。
 #. de: Wiedergabe nicht möglich, weil keine Daten vorhanden sind.
