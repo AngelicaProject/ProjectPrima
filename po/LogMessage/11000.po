@@ -552,9 +552,10 @@ msgstr "Не удалось получить: <sheet Item $n1 0>"
 #. ja: 新たなコスモミッションが発行された！
 #. de: Neue Stellarmissionen verfügbar!
 #. fr: De nouvelles missions cosmiques sont disponibles !
+# aeria-terms: {"stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11152:0:5"
 msgid "A new stellar mission is available!"
-msgstr "Доступна новая звёздная миссия!"
+msgstr "Доступна новая космическая миссия!"
 
 #. ja: デイリー実績が更新されたため、画面を閉じました。<br>再度エクスプローラータブレットから開いてください。
 #. de: Tägliche Errungenschaften wurden aktualisiert. Öffne sie über die Schaltfläche deines Exotablets erneut.
@@ -567,9 +568,10 @@ msgstr "Список ежедневных достижений обновилс�
 #. de: Stellarmission „<sheet WKSMissionUnit $n1 0>“ gestartet.
 #. fr: Vous avez commencé la mission “<sheet WKSMissionUnit $n1 0>”.
 #. macro: <sheet WKSMissionUnit $n1 0> — a value from a game data sheet, such as a name; sheet = WKSMissionUnit, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+# aeria-terms: {"stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11154:0:5"
 msgid "The stellar mission “<sheet WKSMissionUnit $n1 0>” is now underway."
-msgstr "Началась звёздная миссия «<sheet WKSMissionUnit $n1 0>»"
+msgstr "Началась космическая миссия «<sheet WKSMissionUnit $n1 0>»"
 
 #. ja: ギミックによる移動処理がキャンセルされました。
 #. de: Der Transport musste abgebrochen werden.
@@ -659,10 +661,10 @@ msgstr "Регистрация на задание отменена: вас вы
 #. ja: ローダー搭乗プログラムにより、コスモミッションが破棄されました。
 #. de: Aufgrund der Einsatzvorbereitungen des Mechas musste die aktive Stellarmission abgebrochen werden.
 #. fr: Vous avez été sélectionné<if $gn4>e</if> comme pilote. La mission cosmique en cours a été abandonnée.
-# aeria-terms: {"Mech Ops":"92f00d57b4d7"}
+# aeria-terms: {"Mech Ops":"92f00d57b4d7","stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11168:0:5"
 msgid "Stellar mission canceled. You have boarded a vehicle for mech ops."
-msgstr "Звёздная миссия отменена: вы сели в транспорт для Механоопераций"
+msgstr "Космическая миссия отменена: вы сели в транспорт для Механоопераций"
 
 #. ja: エクスプローラータブレットに「コスモリサーチ」が開放されました！
 #. de: Der Menüpunkt „Kosmo-Forschung“ ist jetzt im Exotablet anwählbar.
@@ -723,19 +725,19 @@ msgstr "Серия успешных сборов: <num $n3>. Получено: <
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
-# aeria-terms: {"GP":"4750f1f001df"}
+# aeria-terms: {"GP":"4750f1f001df","stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11174:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> consumed <num $n1> GP. (<num $n2> GP consumed in total during the stellar mission.)"
-msgstr "<if ($gs1 == $gs2)>Потрачено GP:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> тратит GP:</if> <num $n1>. Всего за звёздную миссию потрачено GP: <num $n2>"
+msgstr "<if ($gs1 == $gs2)>Потрачено GP:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> тратит GP:</if> <num $n1>. Всего за космическую миссию потрачено GP: <num $n2>"
 
 #. ja: コスモミッションで使用したGP<num $n1>を回復しました。
 #. de: Die <num $n1> SP, die während der Stellarmission verbraucht worden sind, wurden regeneriert.
 #. fr: Les <num $n1> PR dépensés lors de la mission cosmique ont été récupérés.
 #. macro: <num $n1> — a number; value = number parameter 1 (game data: keep it; it may move or repeat)
-# aeria-terms: {"GP":"4750f1f001df"}
+# aeria-terms: {"GP":"4750f1f001df","stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11175:0:5"
 msgid "You recovered all <num $n1> GP consumed during the stellar mission."
-msgstr "Вы восстановили все <num $n1> GP, потраченные за звёздную миссию"
+msgstr "Вы восстановили все <num $n1> GP, потраченные за космическую миссию"
 
 #. ja: 「リミットブレイク」を使え！
 #. de: Führe den Limitrausch aus!
@@ -1886,17 +1888,19 @@ msgstr "Многокрючковая снасть принесла дополн�
 #. de: Alarmstufe Rot wurde ausgerufen und Notfallmissionen angesetzt!<br>Du findest sie im entsprechenden Reiter unter „Stellarmissionen“ in deinem Exotablet.
 #. fr: L'alerte rouge a été donnée, des missions critiques sont désormais disponibles<nbsp>! Pour plus de détails, veuillez consulter “Missions cosmiques” à partir de votre tablette cosmique.
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11334:0:5"
 msgid "A red alert has been issued, and critical missions are now available.<br>You may undertake these missions via the Stellar Missions section of the exotablet."
-msgstr "Объявлена красная тревога! Доступны критические задания<br>Взять их можно в разделе «Звёздные задания» на экзопланшете"
+msgstr "Объявлена красная тревога! Доступны критические задания<br>Взять их можно в разделе «Космические миссии» на экзопланшете"
 
 #. ja: 緊急状況中につき、緊急ミッションの参加要請が届いています。<br>エクスプローラータブレットの「コスモミッション」から、「緊急ミッション」の受注が可能です。
 #. de: Alarmstufe Rot ist in vollem Gange und Notfallmissionen wurden angesetzt!<br>Du findest sie im entsprechenden Reiter unter „Stellarmissionen“ in deinem Exotablet.
 #. fr: L'alerte rouge est en cours, des missions critiques sont ac<shy>tu<shy>el<shy>le<shy>ment disponibles. Pour plus de détails, veuillez consulter “Missions cosmiques” à partir de votre tablette cosmique.
 #. macro: <br> — a line break (may be added or dropped)
+# aeria-terms: {"stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11335:0:5"
 msgid "A red alert is in effect, and critical missions are currently available.<br>You may undertake these missions via the Stellar Missions section of the exotablet."
-msgstr "Красная тревога продолжается, доступны критические задания<br>Взять их можно в разделе «Звёздные задания» на экзопланшете"
+msgstr "Красная тревога продолжается, доступны критические задания<br>Взять их можно в разделе «Космические миссии» на экзопланшете"
 
 #. ja: <sheet EventItem $n2 0>を取り出した！「<sheet EObj $n1 0>」に<sheet EventItem $n2 0>のエーテルを伝えよう！
 #. de: Du holst <noun-de EventItem 1 $n2 1 4 1> hervor. Leite seine Kraft in <noun-de EObj 1 $n1 1 4 1>!
@@ -3533,6 +3537,7 @@ msgstr "Цель достигнута!<br>Лимит времени увелич
 #. macro: <noun-en ObjStr 2 $gn7 1 1> — an English noun from a game data sheet, with article and number; sheet = ObjStr, form = 2, row = global number 7 (the ObjStr row of what $gs2 names when it is not a player, such as a character or an object; 0 for a player), count = 1, case = 1 (game data: keep it; it may move or repeat)
 #. macro: <if ($gs1 == $gs2)>complete<else>completes</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet WKSMissionUnit $n1 0> — a value from a game data sheet, such as a name; sheet = WKSMissionUnit, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
+# aeria-terms: {"stellar mission":"93cc5b5e57e3"}
 msgctxt "LogMessage:11548:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>complete<else>completes</if> the stellar mission “<sheet WKSMissionUnit $n1 0>”!"
 msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>выполняете<else>выполняет</if> космическую миссию «<sheet WKSMissionUnit $n1 0>»!"
