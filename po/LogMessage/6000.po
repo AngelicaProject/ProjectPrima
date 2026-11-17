@@ -188,7 +188,7 @@ msgstr "<if-self $n1>Вы не установили<else><capitalize><player-nam
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6022:0:5"
 msgid "<if-self $n1>You do<else><capitalize><player-name $n1></capitalize> does</if-self> not possess <noun-en Item 1 $n1 1 1>."
-msgstr "<if-self $n1>У вас нет предмета «<noun-en Item 1 $n1 1 1>»<else><capitalize><player-name $n1></capitalize> не имеет предмета «<noun-en Item 1 $n1 1 1>»</if-self>"
+msgstr "<if-self $n1>У вас нет предмета «<noun-en Item 3 $n1 1 1>»<else><capitalize><player-name $n1></capitalize> не имеет предмета «<noun-en Item 3 $n1 1 1>»</if-self>"
 
 #. ja: <player-name $n1>は、再挑戦時間が経過していません。
 #. de: <player-name $n1> hat diesen Inhalt erst kürzlich betreten.
@@ -438,7 +438,7 @@ msgstr "Подводная лодка №<num $n2> «<i><string $s1></i>» за�
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6052:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>register<else>registers</if> company submersible No. <num $n1> - </i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы регистрируете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> регистрирует</if></capitalize> подводную лодку №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы регистрируете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> регистрирует</if></capitalize> подводную лодку №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»"
 
 #. ja: <num $n2>機目の潜水艦名を「<string $s1>」に変更しました。
 #. de: Du hast den Namen von Tauchboot Nr. <num $n2> zu <capitalize><i><string $s1></capitalize></i> geändert.
@@ -476,7 +476,7 @@ msgstr "Подводная лодка №<num $n2> «<i><string $s1></i>» ра�
 #. macro: <sheet ObjStr $gn8 0> — a value from a game data sheet, such as a name; sheet = ObjStr, row = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player), column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:6055:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>dismantle<else>dismantles</if> company submersible No. <num $n1> - </i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы разбираете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> разбирает</if></capitalize> подводную лодку №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы разбираете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> разбирает</if></capitalize> подводную лодку №<num $n1> «<i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>»"
 
 #. ja: 潜水艦のランクが足りないため実行できません。
 #. de: Die Erkundung kann nicht gestartet werden. Der Rang des Tauchboots ist nicht hoch genug.
@@ -532,7 +532,7 @@ msgstr "Путешествие подводной лодки «<i><capitalize><s
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:6060:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>finalize<else>finalizes</if> the subaquatic voyage for <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы завершаете<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> завершает</if></capitalize> исследовательский поход подводной лодки <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы завершаете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> завершает</if></capitalize> исследовательский поход подводной лодки <i><if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if></i>"
 
 #. ja: 目的地「<sheet SubmarineExploration $n1 0>」を発見しました！
 #. de: Neues Erkundungsgebiet entdeckt: <capitalize><sheet SubmarineExploration $n1 0></capitalize>!
@@ -1179,7 +1179,7 @@ msgstr "Не удалось выполнить команду. Не все уч�
 #. macro: <if ($gs1 == $gs3)>do<else>does</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6985:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>do<else>does</if> not meet all the conditions required for this duty."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if> не выполняете<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> не выполняет</if></capitalize> все условия для участия в задании"
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>Вы</if> не выполняете<else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if> не выполняет</if></capitalize> все условия для участия в задании"
 
 #. ja: ロットが完了していないため、実行できません。
 #. de: Die Beute wurde noch nicht vollständig verteilt.
@@ -1209,7 +1209,7 @@ msgstr "Невозможно выполнить команду. Все учас�
 # aeria-terms: {"Disciple of War":"41d5bc9dce64"}
 msgctxt "LogMessage:6989:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> not a Disciple of War or Magic."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не относитесь<else>не относится</if> ни к физическому, ни к магическому классу"
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не относитесь<else>не относится</if> ни к физическому, ни к магическому классу"
 
 #. ja: 戦闘不能状態のパーティメンバーがいるため、実行できません。
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied ist kampfunfähig.
@@ -1230,7 +1230,7 @@ msgstr "Не удалось выполнить команду. Один или �
 #. macro: <if ($gs1 == $gs3)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6991:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>are<else>is</if> incapacitated."
-msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не можете действовать<else>не может действовать</if>"
+msgstr "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>Вы</if><else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>не можете действовать<else>не может действовать</if>"
 
 #. ja: パーティメンバーが同じエリアにいないため、実行できません。
 #. de: Ein Grup<shy>pen<shy>mit<shy>glied befindet sich nicht im selben Areal.
@@ -1259,7 +1259,7 @@ msgstr "Невозможно выполнить команду. Одному и�
 #. macro: <if ($gs1 == $gs3)>need<else>needs</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6995:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>need<else>needs</if> a timeout."
-msgstr "<capitalize><if ($gs1 == $gs3)>Вы должны подождать<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> <if $gn8><if \"<sheet BNpcName $gn8 6>\">должна<else>должен</if><else><if $gn6>должна<else>должен</if></if> подождать</if></capitalize>"
+msgstr "<capitalize><if ($gs1 == $gs3)>Вы должны подождать<else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if> <if $gn8><if \"<sheet BNpcName $gn8 6>\">должна<else>должен</if><else><if $gn6>должна<else>должен</if></if> подождать</if></capitalize>"
 
 #. ja: アライアンス申請状態のため、実行できません。
 #. de: Nicht möglich, bis die Allianz vollständig ist.
@@ -1284,7 +1284,7 @@ msgstr "Нельзя выполнить команду, пока не собра
 #. macro: <if $gn6>her<else>his</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 6 (1 when the player named by $gs3 is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:6997:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>place<else>places</if> <if ($gs1 == $gs3)>your<else><if $gn8><if \"<sheet BNpcName $gn8 6>\">her<else>his</if><else><if $gn6>her<else>his</if></if></if> hand on the gate."
-msgstr "<capitalize><if ($gs1 == $gs3)>Вы кладёте руку<else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> кладёт руку</if></capitalize> на ворота"
+msgstr "<capitalize><if ($gs1 == $gs3)>Вы кладёте руку<else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if> кладёт руку</if></capitalize> на ворота"
 
 #. ja:  「<switch $n1><case>第二<case>第三<case>第四<case>第五<case>第六<case>最終</switch>区画」への扉が開いた！
 #. de: Das Tor zur <switch $n1><case>zweiten<case>dritten<case>vierten<case>fünften<case>sechsten<case>letzten</switch> Kammer öffnet sich.

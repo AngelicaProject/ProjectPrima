@@ -77,7 +77,7 @@ msgstr "Эфирное поле, защищающее чётки культис�
 # aeria-terms: {"Enemy":"d3725f2b4d0e"}
 msgctxt "LogMessage:2009:0:5"
 msgid "<if ($n2 == 1)>An enemy approaches<else><num $n2> enemies approach</if>!"
-msgstr "Приближаются враги! Численность: <num $n2>"
+msgstr "<if ($n2 == 1)>Приближается враг!<else>Приближаются враги! (×<num $n2> )</if>!"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>を入手した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>erhältst<else>erhält</if> <noun-de Item 1 $n1 1 4 1>.
@@ -90,7 +90,7 @@ msgstr "Приближаются враги! Численность: <num $n2>"
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2010:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <noun-en Item 1 $n1 1 1>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <noun-en Item 3 $n1 1 1>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet EventItem $n1 0>×<num $n2>を入手した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>erhältst<else>erhält</if> <noun-de Item 1 $n1 $n2 4 1>.
@@ -106,7 +106,7 @@ msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en 
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2011:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>."
-msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <noun-en Item 1 $n1 1 1><if ($n2 > 1)> × <num $n2></if>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <noun-en Item 3 $n1 1 1><if ($n2 > 1)> × <num $n2></if>"
 
 #. ja: <sheet PlaceName $n1 0>の封鎖まであと<num $n2>秒
 #. de: Noch <num $n2> <if ($n2 == 1)>Sekunde<else>Sekunden</if>, bis sich <sheet PlaceName $n1 8 3> schließt.
@@ -126,7 +126,7 @@ msgstr "<capitalize><sheet PlaceName $n1 0></capitalize> — закрытие ч
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2013:0:5"
 msgid "<capitalize><noun-en PlaceName 2 $n1 2 1></capitalize> is sealed off!"
-msgstr "<capitalize><sheet PlaceName $n1 0></capitalize> перекрыта!"
+msgstr "<capitalize><sheet PlaceName $n1 0></capitalize> — доступ перекрыт!"
 
 #. ja: <sheet PlaceName $n1 0>の封鎖が解かれた……
 #. de: <capitalize><sheet PlaceName $n1 8 3></capitalize> öffnet sich wieder.
@@ -328,7 +328,7 @@ msgstr "Этот замок откроет только особый ключ"
 #. macro: <noun-en BNpcName 2 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2038:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> releases <noun-en BNpcName 2 $n2 2 1>!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выпускает <noun-en BNpcName 2 $n2 2 1>!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> выпускает <noun-en BNpcName 3 $n2 2 1>!"
 
 #. ja: 特に何もないようだ……。
 #. de: Da ist nichts Ungewöhnliches zu sehen.
@@ -359,7 +359,7 @@ msgstr "Зловещее присутствие исчезло"
 #. macro: <noun-en BNpcName 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2042:0:5"
 msgid "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> appears!"
-msgstr "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> появляется!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> появляется!"
 
 #. ja: 鉄鎖のウインチを引きあげた。ライトニングスプライトが出現した！
 #. de: Als du an der Kette ziehst, erscheinen Blitz-Exergone!
@@ -478,7 +478,7 @@ msgstr "Айатар взмывает в небо..."
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2057:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> emits a discordant shrill."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> издаёт пронзительный диссонансный звук"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> издаёт пронзительный диссонансный звук"
 
 #. ja: 「<sheet EventItem $n1 0>」を設置した……
 #. de: Du hast <noun-de EventItem 2 $n1 1 4 1> angebracht.
@@ -487,7 +487,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> издаёт пр�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2058:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> is placed upon the scales."
-msgstr "На весы помещено: <noun-en Item 2 $n1 1 1>"
+msgstr "На весы помещено: <noun-en Item 3 $n1 1 1>"
 
 #. ja: 「<sheet PlaceName $n1 0>」が開いた！
 #. de: <capitalize><sheet PlaceName $n1 8 3></capitalize> hat sich geöffnet.
@@ -553,7 +553,7 @@ msgstr "Шахта Е1 расчищена"
 #. macro: <noun-en BNpcName 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2066:0:5"
 msgid "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> is attempting to break through the wall."
-msgstr "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> пытается пробить стену"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> пытается пробить стену"
 
 #. ja: スプリガン・クエンチャーがブラスティング・グレネードを狙っている！
 #. de: Der Spriggan-Quetscher hat es auf die explosive Granate abgesehen!
@@ -579,7 +579,7 @@ msgstr "Дверь наглухо заперта"
 #. macro: <noun-en EventItem 1 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = EventItem, form = 1, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2069:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> drops <noun-en EventItem 1 $n2 1 1>."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> роняет предмет «<sheet EventItem $n2 0>»"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> роняет предмет «<sheet EventItem $n2 0>»"
 
 #. ja: 推奨レベルから<num $n1>以上離れています。<br>参加する場合は、コンテンツ情報からレベルシンクしてください。
 #. de: Deine Stufe weicht um <num $n1> oder mehr von der empfohlenen ab.<br>Damit dein Einsatz zählt, musst du über die Aufgabenliste eine Stufenanpassung durchführen.
@@ -602,7 +602,7 @@ msgstr "Ваш уровень выше рекомендуемого для F.A.T
 #. macro: <noun-en Item 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2071:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en Item 1 $n1 1 1>."
-msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>×<num $n2>を手に入れた。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> <noun-de Item 1 $n1 $n2 4 1> erhalten.
@@ -616,7 +616,7 @@ msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en 
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2072:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <num $n2> <noun-en Item 3 $n1 $n2 1>."
-msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0> × <num $n2>"
+msgstr "<if ($gs1 == $gs2)>Получено:<else><capitalize><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></capitalize> получает:</if> <sheet Item $n1 0> × <num $n2>"
 
 #. ja: 推奨レベルを大きく超えているため、アイテムを入手できませんでした。
 #. de: Da deine Stufe zu weit über der empfohlenen liegt, konntest du keinen Gegenstand bekommen.
@@ -645,7 +645,7 @@ msgstr "Нельзя взаимодействовать. Ваш уровень �
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2075:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are<else>is</if> unable to obtain <noun-en Item 2 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете получить<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if> не может получить</if></capitalize> <sheet Item $n1 0>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете получить<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> не может получить</if></capitalize> <sheet Item $n1 0>"
 
 #. ja: 刻まれた文字は、風化していて読めない……
 #. de: Die Inschrift ist so verwittert, dass man sie nicht entziffern kann.
@@ -721,7 +721,7 @@ msgstr "Запертые врата открылись!"
 #. macro: <noun-en BNpcName 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2085:0:5"
 msgid "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> appears!"
-msgstr "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> появляется!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> появляется!"
 
 #. ja: <sheet EObj $n1 0>　カウントダウン完了
 #. de: <capitalize><noun-de EObj 2 $n1 1 1 1></capitalize> - Countdown beendet.
@@ -739,7 +739,7 @@ msgstr "<capitalize><noun-en EObj 3 $n1 1 1></capitalize>: обратный от
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2087:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is no longer invulnerable to attack!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> больше не неуязвим для атак!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> больше не неуязвим для атак!"
 
 #. ja: <sheet BNpcName $n1 0>は無敵に戻った……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist wieder unverwundbar.
@@ -748,7 +748,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> больше не 
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2088:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is invulnerable to attack!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> получает неуязвимость к атакам!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> получает неуязвимость к атакам!"
 
 #. ja: <sheet BNpcName $n1 0>が種子をばら撒いた！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> hat Samen verstreut.
@@ -757,7 +757,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> получает �
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2089:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> begins sowing its seeds."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает рассеивать семена"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> начинает рассеивать семена"
 
 #. ja: <sheet BNpcName $n1 0>は考え直した……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> hat es sich anders überlegt.
@@ -766,7 +766,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает �
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2090:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> takes a moment to reconsider..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> на миг задумался..."
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> на миг задумался..."
 
 #. ja: モルボルの苗床を除去した……
 #. de: Du hast das Morbol-Beet gründlich gejätet.
@@ -813,7 +813,7 @@ msgstr "Земля начинает дрожать..."
 #. macro: <noun-en BNpcName 3 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 3, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2096:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> senses danger and summons an army of <noun-en BNpcName 3 $n2 2 1>."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> чует опасность и призывает армию <noun-en BNpcName 3 $n2 2 1>"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> чует опасность и призывает армию <noun-en BNpcName 3 $n2 2 1>"
 
 #. ja: <sheet BNpcName $n1 0>の山羊頭は、眼に禍々しい光を宿した！
 #. de: Die Augen des Widders blitzen bedrohlich auf!
@@ -838,7 +838,7 @@ msgstr "Драконьи очи вспыхнули фиолетовым"
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:2099:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize>'s eyes focus on a single target."
-msgstr "У <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> взгляд устремлён на одну цель"
+msgstr "У <capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> взгляд устремлён на одну цель"
 
 #. ja: <sheet BNpcName $n1 0>の無敵が解けた！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist nicht mehr unverwundbar.
@@ -847,7 +847,7 @@ msgstr "У <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> взгляд у
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2100:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is no longer invulnerable to attack!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> больше не неуязвим для атак!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> больше не неуязвим для атак!"
 
 #. ja: <sheet BNpcName $n1 0>が無敵になった！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist jetzt unverwundbar!
@@ -856,7 +856,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> больше не 
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2101:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is invulnerable to attack!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> получает неуязвимость к атакам!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> получает неуязвимость к атакам!"
 
 #. ja: 「審理の天秤」に置けるものを持っていない……
 #. de: Du hast nichts, was du auf die Waage des Urteils legen könntest.
@@ -905,7 +905,7 @@ msgstr "Механизм заржавел и не работает"
 #. macro: <noun-en BNpcName 3 $n2 2 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 3, row = number parameter 2, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2107:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> senses danger and summons an army of <noun-en BNpcName 3 $n2 2 1>."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> чует опасность и призывает армию <noun-en BNpcName 3 $n2 2 1>"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> чует опасность и призывает армию <noun-en BNpcName 3 $n2 2 1>"
 
 #. ja: ブルートジャスティスの耐久力が全快した……
 #. de: Brutalus' Widerstandskräfte sind wieder völlig hergestellt.
@@ -967,7 +967,7 @@ msgstr "Натиск завершён. Запуск программы"
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2115:0:5"
 msgid "Do not allow <noun-en BNpcName 2 $n1 1 1> to catch you!"
-msgstr "Не дайте <noun-en BNpcName 2 $n1 1 1> вас поймать!"
+msgstr "Не дайте <noun-en BNpcName 3 $n1 1 1> вас поймать!"
 
 #. ja: <sheet BNpcName $n1 0>が不気味に震え、合図を送った！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> vibriert und gibt ein Zeichen!
@@ -977,7 +977,7 @@ msgstr "Не дайте <noun-en BNpcName 2 $n1 1 1> вас поймать!"
 # aeria-terms: {"Minion":"a1a617f9cd83"}
 msgctxt "LogMessage:2116:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> begins quivering in time, as if sending a message to her minions."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает ритмично дрожать, будто посылая сигнал своим миньонам"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> начинает ритмично дрожать, будто посылая сигнал своим миньонам"
 
 #. ja: 石塔に隠れ、ガルーダの大旋風に備えろ！
 #. de: Versteck dich zwischen den Steinsäulen, um dem Wirbelwind zu entgehen.
@@ -1024,7 +1024,7 @@ msgstr "Воздух вокруг вас начинает искажаться..
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2122:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> claws back up from the seven hells."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выкарабкивается из семи кругов ада"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> выкарабкивается из семи кругов ада"
 
 #. ja: 妖異たちは「刮目の陣形」を組んだ……
 #. de: Die Camios haben die Formation Stechender Blick gebildet!
@@ -1069,7 +1069,7 @@ msgstr "Сила кристалла начинает угасать"
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2128:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is attempting to flee!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> пытается сбежать!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> пытается сбежать!"
 
 #. ja: <sheet BNpcName $n1 0>は溜めていた力を解放した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> hat die gespeicherte Kraft freigesetzt!
@@ -1078,7 +1078,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> пытается �
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2129:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> unleashes his fury."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> обрушивает на вас свою ярость"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> обрушивает на вас свою ярость"
 
 #. ja: <sheet BNpcName $n1 0>が狙いを定めた！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> hat sein Ziel anvisiert!
@@ -1087,7 +1087,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> обрушивае
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2130:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> chooses his next victim."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выбирает следующую жертву"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> выбирает следующую жертву"
 
 #. ja: <sheet BNpcName $n1 0>から不気味な気配を感じた！！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> beginnt zu knurren!
@@ -1096,7 +1096,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выбирает �
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2131:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> begins to growl..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает рычать..."
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> начинает рычать..."
 
 #. ja: <sheet BNpcName $n1 0>は追跡に疲れ、まどろみに落ちた……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist das Verfolgen leid und schläft erschöpft ein ...
@@ -1106,7 +1106,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает �
 # aeria-terms: {"darkness":"724c1e4c4ace"}
 msgctxt "LogMessage:2132:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> tires of the chase and returns to the darkness."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> устаёт от погони и возвращается во тьму"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> устаёт от погони и возвращается во тьму"
 
 #. ja: <sheet BNpcName $n1 0>は、ヴォイドの汚泥をまき散らした！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 3 1></capitalize> verbreitet düstere Schwaden des Nichts!
@@ -1116,7 +1116,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> устаёт от 
 # aeria-terms: {"void pitch":"083107ca7f31"}
 msgctxt "LogMessage:2133:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> spews void pitch at his feet."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> изрыгает у своих ног жижу Бездны"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> изрыгает у своих ног жижу Бездны"
 
 #. ja: 警戒ターミナルを操作して、基地内の警戒状態を解除しながら進行せよ！
 #. de: Deaktiviere die Alarmscheinwerfer und finde einen Weg ins Castrum, ohne zu viel Aufsehen zu erregen.
@@ -1217,7 +1217,7 @@ msgstr "Штурмовой корабль уничтожен!"
 # aeria-terms: {"bomb boulder":"6db8e4765312"}
 msgctxt "LogMessage:2146:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> strikes the earth, bringing a shower of bomb boulders!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> бьёт по земле — сверху сыплются бомбовые валуны!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> бьёт по земле — сверху сыплются бомбовые валуны!"
 
 #. ja: <sheet BNpcName $n1 0>は追跡を諦め、帰っていった……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> gibt die Verfolgung auf und verzieht sich in seine Höhle.
@@ -1226,7 +1226,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> бьёт по зе
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2147:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> gives up chase and returns to his lair."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> бросает погоню и возвращается в своё логово"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> бросает погоню и возвращается в своё логово"
 
 #. ja: トンベリたちの怨みが、トンベリキングに蓄積されていく……
 #. de: Der gesamte Groll der Tomberrys hat sich auf den Anführer übertragen.
@@ -1462,7 +1462,7 @@ msgstr "Достигнут предел количества предмета: <
 # aeria-terms: {"magitek missile":"973395b78a88"}
 msgctxt "LogMessage:2176:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is readying magitek missiles!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> готовит магитек-ракеты!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> готовит магитек-ракеты!"
 
 #. ja: <sheet BNpcName $n1 0>は攻撃命令を発した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> gibt den Befehl zum Angriff!
@@ -1471,7 +1471,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> готовит м�
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2177:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> gives the order to attack!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> отдаёт приказ атаковать!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> отдаёт приказ атаковать!"
 
 #. ja: 迫撃砲弾を調べ、魔導ローダーに装填させろ！
 #. de: Heb die Mörsergranate auf den Magitek-Belader!
@@ -2080,7 +2080,7 @@ msgstr "Зловонная жижа приводит окрестных монс
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2253:0:5"
 msgid "The fetid fluid sends <noun-en BNpcName 2 $n1 1 1> into a fit of frenzy!"
-msgstr "Зловонная жижа приводит <noun-en BNpcName 2 $n1 1 1> в ярость!"
+msgstr "Зловонная жижа приводит <noun-en BNpcName 3 $n1 1 1> в ярость!"
 
 #. ja: 白魔法の石塔を破壊した！
 #. de: Du hast die weißmagische Steinsäule zerstört.
@@ -2138,7 +2138,7 @@ msgstr "Открываются врата в пустоту..."
 #. macro: <if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 8 (the ObjStr row of what $gs3 names when it is not a player, such as a character or an object; 0 for a player) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:2260:0:5"
 msgid "<capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> is splashed with digestive fluid!"
-msgstr "<capitalize><if ($gs1 == $gs3)>На вас попала пищеварительная жидкость<else>На <if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if> попала пищеварительная жидкость</if>!</capitalize>"
+msgstr "<capitalize><if ($gs1 == $gs3)>На вас попала пищеварительная жидкость<else>На <if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if> попала пищеварительная жидкость</if>!</capitalize>"
 
 #. ja: カトブレパスの瞳が、青く輝いた！
 #. de: Catblepus' Augen leuchten blau auf!
@@ -2203,7 +2203,7 @@ msgstr "Появился скипетр Тала!"
 # aeria-terms: {"decaying gourmand":"6957c280e3f0"}
 msgctxt "LogMessage:2268:0:5"
 msgid "The decaying gourmand begins devouring <if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if>!"
-msgstr "Гниющий гурман начинает пожирать <if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>вас</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if>!"
+msgstr "Гниющий гурман начинает пожирать <if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>вас</if><else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if></if>!"
 
 #. ja: アリオクが「妖鱗粉」の香りを嗅ぎつけた！
 #. de: Arioch wittert den Erosionsstaub!
@@ -3506,7 +3506,7 @@ msgstr "Цель ещё вне досягаемости магической л�
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:2446:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 2 1></capitalize> begins channeling aether to <noun-en BNpcName 2 $n2 2 1>."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 2 1></capitalize> начинает передачу эфира. Получатель — <noun-en BNpcName 2 $n2 2 1>"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 2 1></capitalize> начинает передачу эфира. Получатель — <noun-en BNpcName 3 $n2 2 1>"
 
 #. ja: HPが全快したことで、死の宣告が解けた！
 #. de: Du hast deine Lebenspunkte aufgefüllt. Die Todesstrafe wurde aufgehoben.
@@ -4024,7 +4024,7 @@ msgstr "Демонический фолиант начинает светить�
 # aeria-terms: {"minotaur":"7b5b2c887db7"}
 msgctxt "LogMessage:2530:0:5"
 msgid "The minotaur devours <noun-en BNpcName 2 $n1 1 1>, restoring his strength!"
-msgstr "Минотавр пожирает <noun-en BNpcName 2 $n1 1 1> и восстанавливает силы!"
+msgstr "Минотавр пожирает <noun-en BNpcName 3 $n1 1 1> и восстанавливает силы!"
 
 #. ja: 衝撃により、魔導フィールド発生器が一時的に使用できなくなった……
 #. de: Der Magitek-Feldgenerator ist durch die Erschütterung fürs Erste außer Betrieb gesetzt.
@@ -4150,7 +4150,7 @@ msgstr "Взрыв открывает новый проход"
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2547:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is destroyed!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> <if \"<sheet BNpcName $n1 6>\">уничтожена<else>уничтожен</if>!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> <if \"<sheet BNpcName $n1 6>\">уничтожена<else>уничтожен</if>!"
 
 #. ja: <sheet BNpcName $n1 0>の爆発により、進路が開けた……
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist explodiert und hat einen Weg freigegeben ...
@@ -4160,7 +4160,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> <if \"<sheet BNpcN
 # aeria-terms: {"Passage":"24ca1d5e42c3"}
 msgctxt "LogMessage:2548:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> explodes, revealing a passage."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> взрывается, открывая проход"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> взрывается, открывая проход"
 
 #. ja: <sheet BNpcName $n1 0>が稼働を開始した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> setzt sich in Betrieb!
@@ -4169,7 +4169,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> взрываетс
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2549:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> hums to life."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> оживает"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> оживает"
 
 #. ja: <sheet BNpcName $n1 0>が生体エーテル吸収し、姿を変えた！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> saugt den Äther auf und verwandelt sich!
@@ -4179,7 +4179,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> оживает"
 # aeria-terms: {"aether":"121cf0f81f85"}
 msgctxt "LogMessage:2550:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> absorbs aether, changing its form."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> поглощает эфир и меняет облик"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> поглощает эфир и меняет облик"
 
 #. ja: エーテル管が破損し、偏属性エーテルが噴出した！
 #. de: Die Ätherleitung bricht und setzt denaturierten Äther frei!
@@ -4196,7 +4196,7 @@ msgstr "Эфирный клапан прорвало!"
 # aeria-terms: {"corrupted aether":"f59fb769dd25"}
 msgctxt "LogMessage:2552:0:5"
 msgid "The corrupted aether filling the chamber materializes into <noun-en BNpcName 1 $n1 1 1>!"
-msgstr "Порченый эфир в помещении сгущается и принимает облик <noun-en BNpcName 1 $n1 1 1>!"
+msgstr "Порченый эфир в помещении сгущается и принимает облик <noun-en BNpcName 3 $n1 1 1>!"
 
 #. ja: <sheet BNpcName $n1 0>の死骸が、エーテル管の穴を塞いだ……
 #. de: Die Überreste <noun-de BNpcName 1 $n1 1 2 1> haben das Loch in der Ätherleitung verschlossen ...
@@ -4206,7 +4206,7 @@ msgstr "Порченый эфир в помещении сгущается и п
 # aeria-terms: {"corrupted aether":"f59fb769dd25"}
 msgctxt "LogMessage:2553:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize>'s corpse blocks the flow of corrupted aether into the chamber!"
-msgstr "Труп <noun-en BNpcName 2 $n1 1 1> перекрыл поток порченого эфира в помещение!"
+msgstr "Труп <noun-en BNpcName 3 $n1 1 1> перекрыл поток порченого эфира в помещение!"
 
 #. ja: <sheet BNpcName $n1 0>の死骸が消え去り、偏属性エーテルが噴出した！
 #. de: Die Überreste <noun-de BNpcName 1 $n1 1 2 1> lösen sich auf und aus dem Loch strömt erneut denaturierter Äther!
@@ -4216,7 +4216,7 @@ msgstr "Труп <noun-en BNpcName 2 $n1 1 1> перекрыл поток пор
 # aeria-terms: {"Lifestream":"591254ffe0b8","corrupted aether":"f59fb769dd25"}
 msgctxt "LogMessage:2554:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize>'s corpse returns to the Lifestream, allowing corrupted aether to once again flow freely into the chamber!"
-msgstr "Труп <noun-en BNpcName 2 $n1 1 1> возвращается в Реку Жизни, и порченый эфир снова свободно льётся в помещение!"
+msgstr "Труп <noun-en BNpcName 3 $n1 1 1> возвращается в Реку Жизни, и порченый эфир снова свободно льётся в помещение!"
 
 #. ja: イルミンスールが養分を吸い、成長を遂げた！
 #. de: Irminsul saugt Nährstoffe auf und wächst!
@@ -4418,7 +4418,7 @@ msgstr "Чисто-чёрный кристалл остаётся мутным"
 #. macro: <noun-en BNpcName 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2581:0:5"
 msgid "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> appears!"
-msgstr "<capitalize><noun-en BNpcName 1 $n1 1 1></capitalize> появляется!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> появляется!"
 
 #. ja: <player-name $n1>は、黄金の宝箱を発見した！
 #. de: <if ($n1 == $gs1)>Du hast<else><player-name $n1> hat</if> eine goldene Schatztruhe entdeckt!
@@ -4460,7 +4460,7 @@ msgstr "<if ($n1 == $gs1)>Вы находите<else><capitalize><player-name $n
 # aeria-terms: {"treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:2585:0:5"
 msgid "A gold treasure coffer is discovered upon defeating <noun-en BNpcName 2 $n1 1 1>."
-msgstr "Одержана победа. Противник — <noun-en BNpcName 2 $n1 1 1>. Найден золотой сундук с сокровищами"
+msgstr "Одержана победа. Противник — <noun-en BNpcName 3 $n1 1 1>. Найден золотой сундук с сокровищами"
 
 #. ja: <sheet BNpcName $n1 0>に勝利した！　周辺から白銀の宝箱を発見した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> wurde besiegt! Eine silberne Schatztruhe ist in der Nähe erschienen.
@@ -4469,7 +4469,7 @@ msgstr "Одержана победа. Противник — <noun-en BNpcName 
 # aeria-terms: {"treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:2586:0:5"
 msgid "A silver treasure coffer is discovered upon defeating <noun-en BNpcName 2 $n1 1 1>."
-msgstr "Одержана победа. Противник — <noun-en BNpcName 2 $n1 1 1>. Найден серебряный сундук с сокровищами"
+msgstr "Одержана победа. Противник — <noun-en BNpcName 3 $n1 1 1>. Найден серебряный сундук с сокровищами"
 
 #. ja: <sheet BNpcName $n1 0>に勝利した！　周辺から青銅の宝箱を発見した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> wurde besiegt! Eine bronzene Schatztruhe ist in der Nähe erschienen.
@@ -4478,7 +4478,7 @@ msgstr "Одержана победа. Противник — <noun-en BNpcName 
 # aeria-terms: {"treasure coffer":"d9ce7afb173b"}
 msgctxt "LogMessage:2587:0:5"
 msgid "A bronze treasure coffer is discovered upon defeating <noun-en BNpcName 2 $n1 1 1>."
-msgstr "Одержана победа. Противник — <noun-en BNpcName 2 $n1 1 1>. Найден бронзовый сундук с сокровищами"
+msgstr "Одержана победа. Противник — <noun-en BNpcName 3 $n1 1 1>. Найден бронзовый сундук с сокровищами"
 
 #. ja: 罠が作動し、魔物を誘引する臭いが立ちこめた！
 #. de: Ein süßlicher Geruch strömt aus der Falle und lockt Gegner an!
@@ -4494,7 +4494,7 @@ msgstr "Ловушка срабатывает, и в воздухе разнос
 #. macro: <noun-en BNpcName 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2589:0:5"
 msgid "You have completed the mission objective “Slay <noun-en BNpcName 1 $n1 2 1>.”"
-msgstr "Вы выполнили цель задания: «Убить <noun-en BNpcName 1 $n1 2 1>»"
+msgstr "Вы выполнили цель задания: «Убить <noun-en BNpcName 3 $n1 2 1>»"
 
 #. ja: 目標「埋もれた宝箱を探索」をコンプリートした！
 #. de: Du hast die Aufgabe „Vergrabene Schatztruhen finden“ erfüllt!
@@ -4594,7 +4594,7 @@ msgstr "Транспортный отсек полностью заряжен!"
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2602:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> shatters, revealing a fell creature!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> рассыпается, и появляется чудовище!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> рассыпается, и появляется чудовище!"
 
 #. ja: どこか不穏な気配を感じた……。
 #. de: Irgendwie hast du ein ungutes Gefühl ...
@@ -4633,7 +4633,7 @@ msgstr "Вас изгнали из задания, потому что у вас
 #. macro: <noun-en PlaceName 2 a 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = a, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2608:0:5"
 msgid "You find nothing <if \"<sheet PlaceName a 1>\"><switch \"<sheet PlaceName a 1>\"><case>in <case>on </switch><else>at </if><noun-en PlaceName 2 a 2 1>."
-msgstr "Поиск ничего не дал. Место — <noun-en PlaceName 2 a 2 1>"
+msgstr "Поиск ничего не дал. Место — <noun-en PlaceName 3 a 2 1>"
 
 #. ja: 制限時間に達したため、「<string $gs56>」の探索を終了した。
 #. de: Die Zeit ist um. Die Expedition <string $gs56> wurde beendet.
@@ -4705,7 +4705,7 @@ msgstr "Статуи оживают!"
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2617:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> releases a cloud of Neura Squamae."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выпускает облако нейросквам"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> выпускает облако нейросквам"
 
 #. ja: <sheet BNpcName $n1 0>が、毒素の鱗粉をまき散らした！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> hat Giftschuppen in die Luft geblasen!
@@ -4714,7 +4714,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выпускает
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2618:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> releases a cloud of Toxic Squamae."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выпускает облако токсичных сквам"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> выпускает облако токсичных сквам"
 
 #. ja: <sheet BNpcName $n1 0>が、魅了の鱗粉をまき散らした！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> hat Psychoschuppen in die Luft geblasen!
@@ -4723,7 +4723,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выпускает
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2619:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> releases a cloud of Psycho Squamae."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> выпускает облако психоскам"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> выпускает облако психоскам"
 
 #. ja: 地面に魔法痕跡が刻まれた！
 #. de: Magische Zeichen sind am Boden erschienen!
@@ -4747,7 +4747,7 @@ msgstr "Следы магии начинают расширяться!"
 # aeria-terms: {"Holy":"01ca35e159bd"}
 msgctxt "LogMessage:2622:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> begins casting Holy."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> начинает читать заклинание Святость"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> начинает читать заклинание Святость"
 
 #. ja: ポロッゴたちの歌声が響き渡る！
 #. de: Die Poroggos stimmen in einen Chor ein.
@@ -5036,7 +5036,7 @@ msgstr "В этой области нельзя использовать это�
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2652:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> activates and begins to emit heat."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> активируется и начинает выделять тепло"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> активируется и начинает выделять тепло"
 
 #. ja: <sheet BNpcName $n1 0>が破壊された！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> ist zerstört!
@@ -5045,7 +5045,7 @@ msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> активируе
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2653:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> shatters!"
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> разбивается вдребезги!"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> разбивается вдребезги!"
 
 #. ja: 参加人数が、<num $n1>パーティ×3部隊のため、アイスドトームリスの出現パターンが変更されます。
 #. de: Jede Staatliche Ge<shy>sell<shy>schaft hat <num $n1> <if ($n1 == 1)>Gruppe<else>Gruppen</if> entsandt, daher wird die Aktivierung der Echolithen entsprechend angepasst.
@@ -6433,7 +6433,7 @@ msgstr "Ваш врил рассеивается..."
 #. macro: <noun-en BNpcName 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2838:0:5"
 msgid "The smell of death has drawn <noun-en BNpcName 1 $n1 1 1> to the battlefield!"
-msgstr "Запах смерти приманил <noun-en BNpcName 1 $n1 1 1> на поле боя!"
+msgstr "Запах смерти приманил <noun-en BNpcName 3 $n1 1 1> на поле боя!"
 
 #. ja: <sheet BNpcName $n1 0>を倒した！
 #. de: <capitalize><noun-de BNpcName 2 $n1 1 1 1></capitalize> verschwindet ...
@@ -6442,7 +6442,7 @@ msgstr "Запах смерти приманил <noun-en BNpcName 1 $n1 1 1> н
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2839:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> dissipates..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> рассеивается..."
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> рассеивается..."
 
 #. ja: XLIII式小臼砲が操作可能になった！
 #. de: Das Kleingeschütz XLIII ist einsatzbereit!
@@ -6682,7 +6682,7 @@ msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Отряд Соколо�
 # aeria-terms: {"falcon":"a7e2044525ed"}
 msgctxt "LogMessage:2866:0:5"
 msgid "The <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falcons</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Ravens</ui-edge-color></ui-color></if> claim <noun-en EObj 2 $n3 1 1>!"
-msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Вороны</ui-edge-color></ui-color></if> захватывают <noun-en EObj 2 $n3 1 1>!"
+msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Вороны</ui-edge-color></ui-color></if> захватывают <noun-en EObj 3 $n3 1 1>!"
 
 #. ja: <sheet EObj $n2 0>が中立状態になった！
 #. de: <capitalize><noun-de EObj 2 $n2 1 1 1></capitalize> ist wieder neutral!
@@ -6691,7 +6691,7 @@ msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-co
 #. macro: <noun-en EObj 2 $n2 1 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 2, row = number parameter 2, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2867:0:5"
 msgid "<capitalize><noun-en EObj 2 $n2 1 1></capitalize> is no longer claimed."
-msgstr "<capitalize><noun-en EObj 2 $n2 1 1></capitalize> больше никому не принадлежит"
+msgstr "<capitalize><noun-en EObj 3 $n2 1 1></capitalize> больше никому не принадлежит"
 
 #. ja: <sheet EObj $n1 0>の占拠状態が移行した直後のため、占拠を行えません。
 #. de: <capitalize><noun-de EObj 2 $n1 1 1 1></capitalize> kann noch nicht wieder erobert werden.
@@ -6699,7 +6699,7 @@ msgstr "<capitalize><noun-en EObj 2 $n2 1 1></capitalize> больше нико�
 #. macro: <noun-en EObj 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = EObj, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2868:0:5"
 msgid "Unable to claim <noun-en EObj 2 $n1 1 1>."
-msgstr "<noun-en EObj 2 $n1 1 1> нельзя захватить"
+msgstr "<noun-en EObj 3 $n1 1 1> нельзя захватить"
 
 #. ja: この<sheet EObj $n2 0>は、既に<if ($n1 == 0)><ui-color 542><ui-edge-color 543>チーム・ファルコン</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>チーム・レイヴン</ui-edge-color></ui-color></if>によって占拠されています。
 #. de: <capitalize><noun-de EObj 2 $n2 1 1 1></capitalize> ist schon von den <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falken</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Raben</ui-edge-color></ui-color></if> erobert.
@@ -6758,7 +6758,7 @@ msgstr "Материализуется песчаная сфера!"
 # aeria-terms: {"falcon":"a7e2044525ed"}
 msgctxt "LogMessage:2873:0:5"
 msgid "The <if ($n1 == 0)><ui-color 542><ui-edge-color 543>Falcons</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Ravens</ui-edge-color></ui-color></if> activate <noun-en BNpcName 2 $n2 1 1>!"
-msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Вороны</ui-edge-color></ui-color></if> активируют <noun-en BNpcName 2 $n2 1 1>!"
+msgstr "<if ($n1 == 0)><ui-color 542><ui-edge-color 543>Соколы</ui-edge-color></ui-color><else><ui-color 544><ui-edge-color 545>Вороны</ui-edge-color></ui-color></if> активируют <noun-en BNpcName 3 $n2 1 1>!"
 
 #. ja: ワープクリスタルが輝き始めた！
 #. de: Der Transportkristall beginnt zu leuchten!
@@ -6811,7 +6811,7 @@ msgstr "До того, как хвост втянется, осталось 5 с
 #. macro: <if ($gs1 == $gs2)>are<else>is</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 2 (the name of the person or thing a message is about, such as who joins the party; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:2879:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>are<else>is</if> engulfed in snow!"
-msgstr "<capitalize><if ($gs1 == $gs2)>Снег накрывает вас<else>Снег накрывает: <if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize>!"
+msgstr "<capitalize><if ($gs1 == $gs2)>Снег накрывает вас<else>Снег накрывает: <if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize>!"
 
 #. ja: ガラムサイズ水路へ移動した……
 #. de: Du stürzt hinab in die Garamseys-Kanalisation.
@@ -7011,7 +7011,7 @@ msgstr "Ваша связь почти угасла..."
 # aeria-terms: {"energy":"95b2ab08778c"}
 msgctxt "LogMessage:2901:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> is gathering aetherial energy..."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> накапливает эфирную энергию..."
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> накапливает эфирную энергию..."
 
 #. ja: 「金の針」が色で満たされ、実体化した！
 #. de: 「金の針」が色で満たされ、実体化した！
@@ -7750,7 +7750,7 @@ msgstr "Сияющее кольцо ускоряет поток магическ
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2998:0:5"
 msgid "Fully heal <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> before it's too late!"
-msgstr "Нужно полностью восстановить HP <capitalize><noun-en BNpcName 2 $n1 1 1></capitalize>, пока не стало слишком поздно!"
+msgstr "Нужно полностью восстановить HP <capitalize><noun-en BNpcName 3 $n1 1 1></capitalize>, пока не стало слишком поздно!"
 
 #. ja: 死の宣告により、<sheet BNpcName $n1 0>は力尽きた……
 #. de: Das Verhängnis hat <noun-de BNpcName 2 $n1 1 4 1> geschwächt.
@@ -7759,4 +7759,4 @@ msgstr "Нужно полностью восстановить HP <capitalize><n
 #. macro: <noun-en BNpcName 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BNpcName, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:2999:0:5"
 msgid "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> has been incapacitated by the curse."
-msgstr "<capitalize><noun-en BNpcName 2 $n1 1 1></capitalize> больше не может сражаться из-за проклятия"
+msgstr "<capitalize><noun-en BNpcName 3 $n1 1 1></capitalize> больше не может сражаться из-за проклятия"
