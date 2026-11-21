@@ -376,7 +376,7 @@ msgstr "Обмен не состоялся. В инвентаре недоста
 #. macro: <if ($gs1 == $gs3)>do<else>does</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global text 1 (the name of the player character) == global text 3 (the name of a second person or thing a message is about; it is the player character when it equals $gs1) (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:40:0:5"
 msgid "Trade not complete. <capitalize><if ($gs1 == $gs3)><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>you</if><else><if $gn8><noun-en ObjStr 2 $gn8 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>do<else>does</if> not have sufficient inventory space."
-msgstr "Обмен не завершён. <capitalize><if ($gs1 == $gs3)>У вас недостаточно места в инвентаре<else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if> не хватает места в инвентаре</if></capitalize>"
+msgstr "Обмен не завершён. <capitalize><if ($gs1 == $gs3)>У вас недостаточно места в инвентаре<else><if $gn8><noun-en ObjStr 3 $gn8 1 1><else>{$gs3}</if> не может принять предметы: в инвентаре недостаточно места</if></capitalize>"
 
 #. ja: 耐久度が100％アイテムのみトレード可能です。
 #. de: Nur Gegenstände mit einem Zustand von 100 % können gehandelt werden.
@@ -556,7 +556,7 @@ msgstr "<sound 0 65><capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en O
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:61:0:5"
 msgid "<sound 0 65>You join <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s party."
-msgstr "<sound 0 65>Вы вступили в отряд <if ($gs1 == $gs2)>себя<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if>"
+msgstr "<sound 0 65>Вы вступили в <if ($gs1 == $gs2)>свой отряд<else>отряд, который возглавляет <capitalize><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></capitalize></if>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>はパーティ参加を辞退しました。
 #. de: <if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if> hat die Einladung in die Gruppe abgelehnt.
@@ -643,7 +643,7 @@ msgstr "<sound 0 71><if ($gs1 == $gs2)>Вас исключили из отряд
 # aeria-terms: {"Party":"66ce98c91d3e"}
 msgctxt "LogMessage:68:0:5"
 msgid "<sound 0 71>You leave <if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s party."
-msgstr "<sound 0 71>Вы покидаете отряд <if ($gs1 == $gs2)>себя<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if>"
+msgstr "<sound 0 71>Вы покидаете <if ($gs1 == $gs2)>свой отряд<else>отряд, который возглавляет <capitalize><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></capitalize></if>"
 
 #. ja: <sound 0 71><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>がパーティから離脱しました。
 #. de: <sound 0 71><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if> hat die Gruppe verlassen.
@@ -6034,7 +6034,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы отменяете использо�
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:540:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> is interrupted."
-msgstr "Действие «<string $s1>» персонажа <capitalize><if ($gs1 == $gs2)>вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> прервано"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>прерываете<else>прерывает</if> выполнение действия «<string $s1>»"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は「<string $s1>」の詠唱を中断された。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>wurdest<else>wurde</if> beim Wirken von <string $s1> unterbrochen.
@@ -6047,7 +6047,7 @@ msgstr "Действие «<string $s1>» персонажа <capitalize><if ($g
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:541:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> is interrupted."
-msgstr "Применение заклинания «<string $s1>» прервано у <if ($gs1 == $gs2)>вас<else><capitalize><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></capitalize></if>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>прерываете<else>прерывает</if> чтение заклинания «<string $s1>»"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<sheet Item $n1 0>の使用を中断された。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>wurdest<else>wurde</if> beim Verwenden <noun-de Item 2 $n1 1 2 1> unterbrochen.
@@ -6074,7 +6074,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:543:0:5"
 msgid "Target out of range. <capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> was canceled."
-msgstr "Цель вне зоны досягаемости. Действие «<string $s1>» персонажа <capitalize><if ($gs1 == $gs2)>вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> прервано"
+msgstr "Цель вне зоны досягаемости. <capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>прекращаете<else>прекращает</if> выполнение действия «<string $s1>»"
 
 #. ja: ターゲットが範囲外のため、<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の「<string $s1>」の詠唱は中断された。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>bist<else>ist</if> außer Reichweite. <string $s1> <if ($gs1 == $gs2)>von dir<else>von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if></if> wurde unterbrochen.
@@ -6088,7 +6088,7 @@ msgstr "Цель вне зоны досягаемости. Действие «<s
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:544:0:5"
 msgid "Target out of range. <capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> was canceled."
-msgstr "Цель вне зоны досягаемости. Чтение заклинания «<string $s1>» персонажа <capitalize><if ($gs1 == $gs2)>вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> прервано"
+msgstr "Цель вне зоны досягаемости. <capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>прекращаете<else>прекращает</if> чтение заклинания «<string $s1>»"
 
 #. ja: ターゲットが範囲外のため、<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の<sheet Item $n1 0>使用は中断された。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>bist<else>ist</if> außer Reichweite. <if ($gs1 == $gs2)>Dein Einsatz <noun-de Item 1 $n1 1 2 1><else>Der Einsatz <noun-de Item 1 $n1 1 2 1> durch <if ($gs1 == $gs2)><switch 4><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 4 1><else>{$gs2}</if></if></if> wurde unterbrochen.
@@ -6116,7 +6116,7 @@ msgstr "Цель слишком далеко. <capitalize><if ($gs1 == $gs2)>В�
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:546:0:5"
 msgid "Target is unconscious. <capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> was canceled."
-msgstr "Цель без сознания. Действие «<string $s1>» персонажа <capitalize><if ($gs1 == $gs2)>вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> прервано"
+msgstr "Цель без сознания. <capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>прекращаете<else>прекращает</if> выполнение действия «<string $s1>»"
 
 #. ja: ターゲットが戦闘不能のため、<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の「<string $s1>」の詠唱は中断された。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>bist<else>ist</if> k. o. <string $s1> <if ($gs1 == $gs2)>von dir<else>von <if ($gs1 == $gs2)><switch 3><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 3 1><else>{$gs2}</if></if></if> wurde unterbrochen.
@@ -6130,7 +6130,7 @@ msgstr "Цель без сознания. Действие «<string $s1>» пе
 # aeria-terms: {"target":"8eae8022ec78"}
 msgctxt "LogMessage:547:0:5"
 msgid "Target is unconscious. <capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> was canceled."
-msgstr "Цель без сознания. Чтение заклинания «<string $s1>» персонажа <capitalize><if ($gs1 == $gs2)>вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> прервано"
+msgstr "Цель без сознания. <capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>прекращаете<else>прекращает</if> чтение заклинания «<string $s1>»"
 
 #. ja: ターゲットが戦闘不能のため、<if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>の<sheet Item $n1 0>使用は中断された。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>bist<else>ist</if> k. o. <if ($gs1 == $gs2)>Dein Einsatz <noun-de Item 1 $n1 1 2 1><else>Der Einsatz <noun-de Item 1 $n1 1 2 1> durch <if ($gs1 == $gs2)><switch 4><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 4 1><else>{$gs2}</if></if></if> wurde unterbrochen.
@@ -6314,7 +6314,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:561:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>change<else>changes</if> to <sheet ClassJob $n1 0>."
-msgstr "<if ($gs1 == $gs2)>Вы теперь можете играть за<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> меняет класс на</if> <sheet ClassJob $n1 0>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>меняете<else>меняет</if> класс на «<sheet ClassJob $n1 0>»"
 
 #. ja: ターゲットが見えないため使用できません。
 #. de: Du kannst das Ziel nicht sehen.
@@ -6563,7 +6563,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы достигаете<else><if $gn7><
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:591:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>attain<else>attains</if> <sheet ClassJob $n1 0> level <num $n2>!"
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы повышаете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> повышает</if></capitalize> уровень класса <sheet ClassJob $n1 0> до <num $n2>!"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы повышаете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> повышает</if></capitalize> уровень класса «<sheet ClassJob $n1 0>» до <num $n2>!"
 
 #. ja: イベント中のため使用できません。
 #. de: Kann während Ereignissen nicht verwendet werden.
@@ -6672,7 +6672,7 @@ msgstr "   Промах!"
 # aeria-terms: {"HP":"b764955d4efa"}
 msgctxt "LogMessage:601:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> restores <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> of <if ($gs1 == $gs2)>your<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">her<else>his</if><else><if $gn5>her<else>his</if></if></if> HP."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы восстановили<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">восстановила<else>восстановил</if><else><if $gn5>восстановила<else>восстановил</if></if></if> <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> HP благодаря «<string $s1>». <if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>восстанавливаете<else>восстанавливает</if> <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> HP благодаря действию «<string $s1>»"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は「<string $s1>」により<num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if>ＭＰ回復。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>regenerierst<else>regeneriert</if> dank „<string $s1>“ <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> MP.
@@ -6695,7 +6695,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы восстановили<else><if $g
 # aeria-terms: {"MP":"ae3eb83e6636"}
 msgctxt "LogMessage:602:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>Your<else><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if>'s</if></capitalize> <string $s1> restores <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> of <if ($gs1 == $gs2)>your<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">her<else>his</if><else><if $gn5>her<else>his</if></if></if> MP."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы восстановили<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">восстановила<else>восстановил</if><else><if $gn5>восстановила<else>восстановил</if></if></if> <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> MP благодаря «<string $s1>». <if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>восстанавливаете<else>восстанавливает</if> <num $n2><if ($n3 == 0)><else><if ($n3 > 0)>(+<num $n3>%)<else>(<num $n3>%)</if></if> MP благодаря действию «<string $s1>»"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>に「<sheet Status $n2 0><if $n4><switch $n4><case><icon 117><case><icon 118><case><icon 119></switch></if>」の効果。
 #. de: <capitalize><if ($gs1 == $gs3)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn8><noun-de ObjStr 2 $gn8 1 1 1><else>{$gs3}</if></if></capitalize> <if ($gs1 == $gs3)>erhältst<else>erhält</if> den Effekt von <sheet Status $n2 0><if $n4><switch $n4><case><icon 117><case><icon 118><case><icon 119></switch></if>.
@@ -6793,7 +6793,7 @@ msgstr "Этот миньон уже получен"
 # aeria-terms: {"Minion":"a1a617f9cd83"}
 msgctxt "LogMessage:609:0:5"
 msgid "You can now summon <if ($n1 == 287)><sheet Companion $n1 0><else><if ($n1 == 289)><sheet Companion $n1 0><else><if ($n1 == 337)><sheet Companion $n1 0><else><if ($n1 == 369)><sheet Companion $n1 0><else><if ($n1 == 370)><sheet Companion $n1 0><else><if ($n1 == 375)><sheet Companion $n1 0><else><if ($n1 == 492)><sheet Companion $n1 0><else><if ($n1 == 516)><sheet Companion $n1 0><else><if ($n1 == 536)><sheet Companion $n1 0><else>the <sheet Companion $n1 0></if></if></if></if></if></if></if></if></if> minion."
-msgstr "Теперь можно призвать миньона <sheet Companion $n1 0>"
+msgstr "Теперь можно призвать миньона «<sheet Companion $n1 0>»"
 
 #. ja: マウント呼び出しアクション「<sheet Mount $n1 0>」を修得した。
 #. de: „<capitalize><noun-de Mount 5 $n1 1 1 1></capitalize>“ wurde deinem Reittier-Verzeichnis hinzugefügt.
@@ -7917,7 +7917,7 @@ msgstr "Достигнут предел связи с предметом «<shee
 #. macro: <kilo $n5 ","> — a number with a thousands separator; value = number parameter 5, separator = , (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:745:0:5"
 msgid "<capitalize><if ($n3 == 1)><noun-en Item 2 $n2 1 1><else>The <kilo $n3 \",\"> <noun-en Item 3 $n2 $n3 1></if></capitalize> you put up for sale in the <sheet Town $n1 0> markets <if ($n3 == 1)>has<else>have</if> sold for <kilo $n5 \",\"> gil (after fees)."
-msgstr "На рынке <sheet Town $n1 0> продано <sheet Item $n2 0><if ($n3 == 1)><else> × <kilo $n3 \"<nbsp>\"></if> за <kilo $n5 \"<nbsp>\"> гил (за вычетом сборов)"
+msgstr "На рынке «<sheet Town $n1 0>» продано: <sheet Item $n2 0><if ($n3 == 1)><else> × <kilo $n3 \"<nbsp>\"></if> за <kilo $n5 \"<nbsp>\"> гил (за вычетом сборов)"
 
 #. ja: 耐久度が100%ではないアイテムはマーケットへ出品できません。
 #. de: Nur Gegenstände, deren Zustand 100 % ist, können auf dem Markt angeboten werden.

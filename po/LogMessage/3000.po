@@ -1000,7 +1000,7 @@ msgstr "Получено право «<sheet FCRights $n1 0>»!"
 # aeria-terms: {"Free Company":"0abe2b4130cb"}
 msgctxt "LogMessage:3125:0:5"
 msgid "Free company standing with the <sheet GrandCompany $n1 0> has increased to “<sheet FCReputation $n2 4>.”"
-msgstr "Отношения вольной компании с великим домом <sheet GrandCompany $n1 0> улучшились: «<sheet FCReputation $n2 4>»"
+msgstr "Отношения вольной компании с великим домом «<sheet GrandCompany $n1 0>» улучшились: «<sheet FCReputation $n2 4>»"
 
 #. ja: カンパニーアクション「<sheet CompanyAction $n1 0>」発動！
 #. de: Das Ge<shy>sell<shy>schaftskommando „<sheet CompanyAction $n1 0>“ wurde eingesetzt!
@@ -1824,7 +1824,7 @@ msgstr "Сейчас не до разговоров!"
 #. macro: <sheet BeastReputationRank $n1 1> — a value from a game data sheet, such as a name; sheet = BeastReputationRank, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:3230:0:5"
 msgid "Your reputation has increased to <sheet BeastReputationRank $n1 1>."
-msgstr "Ваша репутация выросла до ранга <sheet BeastReputationRank $n1 1>"
+msgstr "Ваша репутация выросла до ранга «<sheet BeastReputationRank $n1 1>»"
 
 #. ja: 「<sheet BeastTribe $n1 11>」の友好度が<num $n2>上昇した。
 #. de: Die Verbundenheit zwischen dir und <noun-de BeastTribe 2 $n1 2 3 1> ist um <num $n2> gestiegen.
@@ -2930,7 +2930,7 @@ msgstr "Право собственности на участок <num $n3> в �
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:3368:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>build<else>builds</if> <if ($n4 == 262163)>an <else><if ($n4 == 262164)>an <else><if ($n4 == 262165)>an <else><if ($n4 == 262166)>an <else><if ($n4 == 262167)>an <else><if ($n4 == 262168)>an <else><if ($n4 == 262169)>an <else><if ($n4 == 262170)>an <else><if ($n4 == 262171)>an <else>a </if></if></if></if></if></if></if></if></if><sheet HousingPreset $n4 0> on plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы построили<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> <if $gn7><if \"<sheet BNpcName $gn7 6>\">построила<else>построил</if><else><if $gn5>построила<else>построил</if></if></if></capitalize> <sheet HousingPreset $n4 0> на участке №<num $n3>, квартал №<num $n2>, <sheet PlaceName $n1 0>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы построили<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> <if $gn7><if \"<sheet BNpcName $gn7 6>\">построила<else>построил</if><else><if $gn5>построила<else>построил</if></if></if></capitalize> дом типа «<sheet HousingPreset $n4 0>» на участке №<num $n3>, квартал №<num $n2>, <sheet PlaceName $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」を撤去しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“ entfernt.
@@ -3009,7 +3009,7 @@ msgstr "Право собственности компании на участо
 #. macro: <noun-en PlaceName 2 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = PlaceName, form = 2, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:3373:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>build<else>builds</if> <if ($n4 == 262163)>an <else><if ($n4 == 262164)>an <else><if ($n4 == 262165)>an <else><if ($n4 == 262166)>an <else><if ($n4 == 262167)>an <else><if ($n4 == 262168)>an <else><if ($n4 == 262169)>an <else><if ($n4 == 262170)>an <else><if ($n4 == 262171)>an <else>a </if></if></if></if></if></if></if></if></if><sheet HousingPreset $n4 0> at plot <num $n3>, ward <num $n2>, <noun-en PlaceName 2 $n1 2 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> построил<if ($gs1 == $gs2)>и<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">а<else></if><else><if $gn5>а<else></if></if></if> <sheet HousingPreset $n4 0> на участке №<num $n3>, квартал №<num $n2>, <sheet PlaceName $n1 0>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> построил<if ($gs1 == $gs2)>и<else><if $gn7><if \"<sheet BNpcName $gn7 6>\">а<else></if><else><if $gn5>а<else></if></if></if> дом типа «<sheet HousingPreset $n4 0>» на участке №<num $n3>, квартал №<num $n2>, <sheet PlaceName $n1 0>"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>が「<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>」を撤去しました。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>hast<else>hat</if> das Gebäude „<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>“ der Freien Ge<shy>sell<shy>schaft entfernt.
@@ -3491,7 +3491,7 @@ msgstr "Подождите немного и попробуйте ещё раз"
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:3433:0:5"
 msgid "<i><sheet Orchestrion $n1 0></i> is now playing."
-msgstr "Сейчас играет <i><sheet Orchestrion $n1 0></i>"
+msgstr "Сейчас играет <i>«<sheet Orchestrion $n1 0>»</i>"
 
 #. ja: <player-name $n1>が「<sheet Orchestrion $n2 0>」を再生しました。
 #. de: <player-name $n1> hat eingestellt, dass „<sheet Orchestrion $n2 0>“ wiedergegeben wird.
@@ -3503,7 +3503,7 @@ msgstr "Сейчас играет <i><sheet Orchestrion $n1 0></i>"
 # aeria-terms: {"orchestrion":"36173a98c4df"}
 msgctxt "LogMessage:3434:0:5"
 msgid "<player-name $n1> sets the estate orchestrion to play <i><sheet Orchestrion $n2 0></i>."
-msgstr "<player-name $n1> включил<if ($n1 == $gs1)>и</if> оркестрион в поместье: <i><sheet Orchestrion $n2 0></i>"
+msgstr "<player-name $n1> включил<if ($n1 == $gs1)>и</if> оркестрион в поместье: <i>«<sheet Orchestrion $n2 0>»</i>"
 
 #. ja: 「<sheet Orchestrion $n1 0>」を停止しました。
 #. de: Die Wiedergabe von „<sheet Orchestrion $n1 0>“ wurde angehalten.
@@ -3546,7 +3546,7 @@ msgstr "У вас нет права управлять оркестрионом 
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:3439:0:5"
 msgid "Now sampling <i><sheet Orchestrion $n1 0></i>."
-msgstr "Звучит отрывок: <i><sheet Orchestrion $n1 0></i>"
+msgstr "Звучит отрывок: <i>«<sheet Orchestrion $n1 0>»</i>"
 
 #. ja: 中毒防止制限中のため、実行できません。
 #. de: Diese Aktion ist vor<shy>über<shy>gehend nicht möglich.<br>Dies ist eine Maßnahme zur Suchtprävention.
@@ -3706,7 +3706,7 @@ msgstr "Список воспроизведения обновлён"
 #. macro: <switch $n1><case>Play All<case>Shuffle<case>Repeat</switch> — shows the case whose position equals the value: the first <case> for 1, the second for 2, …; value = number parameter 1 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "LogMessage:3463:0:5"
 msgid "<i><sheet Orchestrion $n2 0></i> is now playing. (Play Mode: <switch $n1><case>Play All<case>Shuffle<case>Repeat</switch>)"
-msgstr "Сейчас играет <i><sheet Orchestrion $n2 0></i>. (Режим: <switch $n1><case>По порядку<case>Перемешать<case>Повтор</switch>)"
+msgstr "Сейчас играет <i>«<sheet Orchestrion $n2 0>»</i>. (Режим: <switch $n1><case>По порядку<case>Перемешать<case>Повтор</switch>)"
 
 #. ja: <switch $n1><case>曲順再生<case>シャッフル再生<case>1曲再生</switch>に変更しました。
 #. de: Der Wiedergabemodus wurde zu „<switch $n1><case>Alle wiedergeben<case>Zufällige Wiedergabe<case>Ein Titel</switch>“ geändert.
@@ -3771,7 +3771,7 @@ msgstr "Содержимое аквариума обновлено"
 # aeria-terms: {"orchestrion":"36173a98c4df"}
 msgctxt "LogMessage:3471:0:5"
 msgid "<player-name $n1> sets the estate orchestrion to play <i><sheet Orchestrion $n3 0></i>. (Play Mode: <switch $n2><case>Play All<case>Shuffle<case>Repeat</switch>)"
-msgstr "<player-name $n1> включил Оркестрион в поместье: <i><sheet Orchestrion $n3 0></i>. (Режим: <switch $n2><case>По порядку<case>Перемешать<case>Повтор</switch>)"
+msgstr "<player-name $n1> включил Оркестрион в поместье: <i>«<sheet Orchestrion $n3 0>»</i>. (Режим: <switch $n2><case>По порядку<case>Перемешать<case>Повтор</switch>)"
 
 #. ja: <sheet Item $n1 0>を飾った。
 #. de: <capitalize><noun-de Item 2 $n1 1 4 1></capitalize> wurde eingerahmt.
@@ -3797,7 +3797,7 @@ msgstr "Картина снята с рамы"
 #. macro: </i> — end of: italic text (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "LogMessage:3474:0:5"
 msgid "Now playing <i><sheet Orchestrion $n1 0></i>."
-msgstr "Сейчас играет <i><sheet Orchestrion $n1 0></i>"
+msgstr "Сейчас играет <i>«<sheet Orchestrion $n1 0>»</i>"
 
 #. ja: 絵画が飾られていないため、この操作はできません。
 #. de: Das Objekt enthält kein Gemälde.
@@ -4073,7 +4073,7 @@ msgstr "Точка сбора «<noun-en GatheringPointName 3 $n1 1 1>» исч�
 #. macro: <sheet GatheringPointName $n1 1> — a value from a game data sheet, such as a name; sheet = GatheringPointName, row = number parameter 1, column = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:3508:0:5"
 msgid "<capitalize><noun-en GatheringPointName 2 $n1 1 1></capitalize> <if \"<sheet GatheringPointName $n1 1>\">are<else>is</if> already spent..."
-msgstr "<capitalize><noun-en GatheringPointName 3 $n1 1 1></capitalize> уже истощено (<sheet GatheringPointName $n1 1>)..."
+msgstr "Точка сбора «<capitalize><noun-en GatheringPointName 3 $n1 1 1></capitalize>» уже истощена..."
 
 #. ja: リーチゲージがないため、効果がなかった。
 #. de: Das Kommando hat keine Wirkung, weil es keine unerreichbaren Gegenstände gibt.
@@ -4210,7 +4210,7 @@ msgstr "Наживка закончилась"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:3524:0:5"
 msgid "Unable to gather. <capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> cannot carry any more <noun-en Item 3 $n1 2 1>."
-msgstr "Нельзя собирать: <capitalize><if ($gs1 == $gs2)>вы не можете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> не может</if></capitalize> нести больше <sheet Item $n1 0>"
+msgstr "Нельзя собирать: <capitalize><if ($gs1 == $gs2)>вы не можете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> не может</if></capitalize> нести больше предметов «<sheet Item $n1 0>»"
 
 #. ja: <sheet Item $n1 0>を釣り上げたが、これ以上持てないためリリースした。
 #. de: Du hast <noun-de Item 1 $n1 1 4 1> geangelt, musst deinen Fang aber wieder freilassen, weil du nicht mehr davon besitzen kannst.
@@ -4230,7 +4230,7 @@ msgstr "Достигнут предел количества предмета «
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:3526:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> cannot gather any more <noun-en Item 3 $n1 2 1> at this time."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> не может</if></capitalize> сейчас собирать <sheet Item $n1 0>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> не может</if></capitalize> сейчас собирать предмет «<sheet Item $n1 0>»"
 
 #. ja: 釣り上げるには獲得力が足りなかったようだ。
 #. de: Dein Sammelgeschick war zu niedrig, um diesen Fang an Land zu ziehen.
@@ -4372,7 +4372,7 @@ msgstr "<capitalize><if ($gs1 == $gs2)>Вы обнаружили<else><if $gn7><
 # aeria-terms: {"Gathering Log":"9a4809c3c26f"}
 msgctxt "LogMessage:3544:0:5"
 msgid "A page on <sheet GatheringSubCategory $n1 5> has been added to <if ($gs1 == $gs2)>your<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>'s</if> gathering log."
-msgstr "В <if ($gs1 == $gs2)>ваш Журнал сбора<else>Журнал сбора, который ведёт <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if></if> добавлена запись о <sheet GatheringSubCategory $n1 5>"
+msgstr "В <if ($gs1 == $gs2)>ваш Журнал сбора<else>Журнал сбора, который ведёт <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>,</if> добавлена запись: <sheet GatheringSubCategory $n1 5>"
 
 #. ja: <sheet GatheringSubCategory $n1 5>を、魚類図鑑に記した！
 #. de: Deinem Fischer-Notizbuch wurde ein <sheet GatheringSubCategory $n1 5> hinzugefügt.
@@ -4384,7 +4384,7 @@ msgstr "В <if ($gs1 == $gs2)>ваш Журнал сбора<else>Журнал �
 # aeria-terms: {"Fish Guide":"264b08920cd9"}
 msgctxt "LogMessage:3545:0:5"
 msgid "A page on <sheet GatheringSubCategory $n1 5> has been added to <if ($gs1 == $gs2)>your<else><if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>'s</if> fish guide."
-msgstr "В <if ($gs1 == $gs2)>ваш Справочник рыб<else>Справочник рыб, который ведёт <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if></if> добавлена запись о <sheet GatheringSubCategory $n1 5>"
+msgstr "В <if ($gs1 == $gs2)>ваш Справочник рыб<else>Справочник рыб, который ведёт <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>,</if> добавлена запись: <sheet GatheringSubCategory $n1 5>"
 
 #. ja: <sheet Item $n1 0>はすでに受け継いでいるので、使えません。
 #. de: Du hast <noun-de Item 2 $n1 1 4 1> bereits erhalten.
@@ -6094,7 +6094,7 @@ msgstr "Вы одолели всех врагов, привлечённых ло
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:3766:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> crumbles into dust."
-msgstr "<noun-en Item 3 $n1 1 1> рассыпается в прах"
+msgstr "Предмет «<noun-en Item 3 $n1 1 1>» рассыпается в прах"
 
 #. ja: すでにイベントアイテム「<sheet EventItem $n1 0>」を所持しているため、解読は行えません。
 #. de: Du kannst keine neue Schatzkarte entziffern,<br>weil sich bereits <noun-de EventItem 1 $n1 1 1 1> unter deinen Schlüsselgegenständen befindet.

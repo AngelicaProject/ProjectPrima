@@ -45,7 +45,7 @@ msgstr "Кол-во"
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11005:0:0"
 msgid "Open <noun-en Item 2 $n1 1 1>?<br><br><capitalize><noun-en Item 3 $n1 2 1></capitalize> remaining: <num $n3><br>Attempts remaining: <num $n2>"
-msgstr "Открыть <noun-en Item 3 $n1 1 1>?<br><br><capitalize><noun-en Item 3 $n1 2 1></capitalize> осталось: <num $n3><br>Попыток осталось: <num $n2>"
+msgstr "Открыть предмет «<noun-en Item 3 $n1 1 1>»?<br><br>Предмет «<capitalize><noun-en Item 3 $n1 2 1></capitalize>»: осталось <num $n3><br>Попыток осталось: <num $n2>"
 
 #. ja: <sheet Item $n1 0>×<num $n4>を使用して<br>アイテム鑑定を行います。よろしいですか？<br><br>あと<num $n2>回可能です。（所持数：<num $n3>）
 #. de: <capitalize><noun-de Item 5 $n1 2 1 1></capitalize> in Besitz: <kilo $n3 "."><br><br>Möchtest du <noun-de Item 1 $n1 $n4 4 1> öffnen lassen?<br><br>(Noch <num $n2> Mal möglich.)
@@ -58,7 +58,7 @@ msgstr "Открыть <noun-en Item 3 $n1 1 1>?<br><br><capitalize><noun-en Ite
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11006:0:0"
 msgid "Open <noun-en Item 2 $n1 2 1>?<br><br><capitalize><noun-en Item 3 $n1 2 1></capitalize> remaining: <num $n3><br>Attempts remaining: <num $n2>"
-msgstr "Открыть <noun-en Item 3 $n1 2 1>?<br><br><capitalize><noun-en Item 3 $n1 2 1></capitalize> осталось: <num $n3><br>Попыток осталось: <num $n2>"
+msgstr "Открыть предмет «<noun-en Item 3 $n1 2 1>»?<br><br>Предмет «<capitalize><noun-en Item 3 $n1 2 1></capitalize>»: осталось <num $n3><br>Попыток осталось: <num $n2>"
 
 #. ja: APPRAISAL RESULTS
 #. de: ERGEBNIS
@@ -407,7 +407,7 @@ msgstr "TP: <num $n1>%!<sound 1 99>"
 #. macro: <sound 1 101> — plays a sound effect; kind = 1, sound = 101 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11054:0:0"
 msgid "Attacking <lower><sheet ClassJob $n1 0></lower>! <sound 1 101>"
-msgstr "Атакую <lower><sheet ClassJob $n1 0></lower>!<sound 1 101>"
+msgstr "Атакую <lower>противника класса «<sheet ClassJob $n1 0>»</lower>!<sound 1 101>"
 
 #. ja: <sheet ClassJob $n1 0>を妨害します。<sound 1 102>
 #. de: Ich halte <if ($n1 == 37)>die<else>den</if> <if ($n1 == 6)>Druiden<else><if ($n1 == 7)>Thaumaturgen<else><if ($n1 == 14)>Alchemisten<else><if ($n1 == 23)>Barden<else><if ($n1 == 28)>Gelehrten<else><if ($n1 == 29)>Schurken<else><if ($n1 == 31)>Maschinisten<else><if ($n1 == 33)>Astrologen<else><if ($n1 == 40)>Weisen<else><sheet ClassJob $n1 0></if></if></if></if></if></if></if></if></if> auf!<sound 1 102>
@@ -417,7 +417,7 @@ msgstr "Атакую <lower><sheet ClassJob $n1 0></lower>!<sound 1 101>"
 #. macro: <sound 1 102> — plays a sound effect; kind = 1, sound = 102 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11055:0:0"
 msgid "Blocking <lower><sheet ClassJob $n1 0></lower>! <sound 1 102>"
-msgstr "Мешаю <lower><sheet ClassJob $n1 0></lower>!<sound 1 102>"
+msgstr "Мешаю <lower>противнику класса «<sheet ClassJob $n1 0>»</lower>!<sound 1 102>"
 
 #. ja: <sheet Action $n1 0> - <if ($n2 == 0)>使用可能！<sound 1 98><else>再使用可能まで<num $n2>秒<sound 1 99></if>
 #. de: <sheet Action $n1 0> <if ($n2 == 0)>ist bereit!<sound 1 98><else>ist in <num $n2> Sekunden bereit!<sound 1 99></if>
@@ -439,7 +439,7 @@ msgstr "<capitalize><sheet Action $n1 0></capitalize> <if ($n2 == 0)>готов�
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11057:0:0"
 msgid "Focus on the <lower><sheet ClassJob $n1 0></lower>!"
-msgstr "Сосредоточиться на <lower><sheet ClassJob $n1 0></lower>!"
+msgstr "Сосредоточиться на <lower>противнике класса «<sheet ClassJob $n1 0>»</lower>!"
 
 #. ja: 集中攻撃を中止します！<sound 1 99>
 #. de: Angriff auf Hauptziel beenden! <sound 1 99>
@@ -1127,7 +1127,7 @@ msgstr "<capitalize><sheet ClassJob $n1 0></capitalize>"
 #. macro: <sheet Hud $n1 ADDONHUD_NAME> — a value from a game data sheet, such as a name; sheet = Hud, row = number parameter 1, column = ADDONHUD_NAME (game data: keep it; it may move or repeat)
 msgctxt "Addon:11181:0:0"
 msgid "<sheet Hud $n1 ADDONHUD_NAME> unlocked!"
-msgstr "<sheet Hud $n1 ADDONHUD_NAME> открыта!"
+msgstr "Открыт элемент интерфейса «<sheet Hud $n1 ADDONHUD_NAME>»!"
 
 #. ja: JOB HUD INFO
 #. de: JOB-BALKEN
@@ -1204,7 +1204,7 @@ msgstr "Обмен предметов"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11194:0:0"
 msgid "Exchange <kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1> for the following item?"
-msgstr "Обменять <kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1> на указанный предмет?"
+msgstr "Обменять предмет «<noun-en Item 3 $n1 $n2 1>» (<kilo $n2 \",\"> шт.) на указанный предмет?"
 
 #. ja: 以下のアイテムを<br><sheet Item $n3 0>×<kilo $n4 ",">と交換します。<br><br><sheet Item $n1 0>×<kilo $n2 ",">
 #. de: Den folgenden Gegenstand gegen <kilo $n4 ","> <noun-de Item 5 $n3 $n4 4 1> tauschen?<br><br><capitalize><kilo $n2 ","> <noun-de Item 5 $n1 $n2 4 1></capitalize>
@@ -1217,7 +1217,7 @@ msgstr "Обменять <kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1> на ука
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:11195:0:0"
 msgid "Exchange <kilo $n4 \",\"> <noun-en Item 3 $n3 2 1> for the following item?<br><br><title-case><sheet Item $n1 0></title-case> x <kilo $n2 \",\">"
-msgstr "Обменять <kilo $n4 \",\"> <noun-en Item 3 $n3 2 1> на указанный предмет?<br><br><title-case><sheet Item $n1 0></title-case> × <kilo $n2 \",\">"
+msgstr "Обменять предмет «<noun-en Item 3 $n3 2 1>» (<kilo $n4 \",\"> шт.) на указанный предмет?<br><br><title-case><sheet Item $n1 0></title-case> × <kilo $n2 \",\">"
 
 #. ja: CHEAP DUNGEON
 #. de: ANTIKES GEWÖLBE
@@ -2092,7 +2092,7 @@ msgstr "Отряд"
 #. fr: Camp
 msgctxt "Addon:11341:0:0"
 msgid "Team"
-msgstr "Ком."
+msgstr "Команда"
 
 #. ja: ファルコン
 #. de: Falken
@@ -2753,7 +2753,7 @@ msgstr "Требуется <switch $n1><case>достижение<case>зада�
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11437:0:0"
 msgid "Claim <if ($n2 == 1)><noun-en Item 2 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>?"
-msgstr "Забрать <if ($n2 == 1)><noun-en Item 3 $n1 1 1><else><num $n2> <noun-en Item 3 $n1 $n2 1></if>?"
+msgstr "Забрать <if ($n2 == 1)>предмет «<noun-en Item 3 $n1 1 1>»<else>предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.)</if>?"
 
 #. ja: 未達成
 #. de: Nicht erfüllt
@@ -3239,7 +3239,7 @@ msgstr "Купить"
 #. macro: <kilo $n4 ","> — a number with a thousands separator; value = number parameter 4, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:11513:0:0"
 msgid "Purchase <num $n2> <noun-en Item 3 $n1 $n2 1> for <kilo $n3 \",\"> gil<if ($n4 > 0)> (<kilo $n4 \",\"> fee included)</if>?"
-msgstr "Купить <num $n2> <noun-en Item 3 $n1 $n2 1> за <kilo $n3 \",\"><if ($n4 > 0)> (включая комиссию <kilo $n4 \",\">)</if>?"
+msgstr "Купить предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) за <kilo $n3 \",\"><if ($n4 > 0)> (включая комиссию <kilo $n4 \",\">)</if>?"
 
 #. ja: ハイクオリティ品を渡す
 #. de: HQ-Ware tauschen
@@ -3592,7 +3592,7 @@ msgstr "Нет предметов для выкупа"
 #. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:11590:0:0"
 msgid "Reclaim <noun-en Item 2 $n1 2 1>?<br><ui-color 506><ui-edge-color 507>※Gratuity price has been updated to include a small transaction fee.<br>※Reclaimed items will no longer contribute to the enclave's reconstruction.<br>※Reclaiming donations will not increase or otherwise affect the weekly budget.<ui-color 506><ui-edge-color 507>"
-msgstr "Вернуть <noun-en Item 3 $n1 2 1>?<br><ui-color 506><ui-edge-color 507>※В сумму чаевых включена небольшая комиссия за операцию.<br>※Возвращённые предметы больше не будут способствовать восстановлению анклава.<br>※Возврат пожертвования не увеличит и никак не изменит недельный бюджет.<ui-color 506><ui-edge-color 507>"
+msgstr "Вернуть предмет «<noun-en Item 3 $n1 2 1>»?<br><ui-color 506><ui-edge-color 507>※В сумму чаевых включена небольшая комиссия за операцию.<br>※Возвращённые предметы больше не будут способствовать восстановлению анклава.<br>※Возврат пожертвования не увеличит и никак не изменит недельный бюджет.<ui-color 506><ui-edge-color 507>"
 
 #. ja: 選択したアイテムを<br><kilo $n1 ",">で譲渡します。<br>よろしいですか？
 #. de: Den Inhalt der Sammelkiste für <kilo $n1 "."> spenden?
@@ -3626,7 +3626,7 @@ msgstr "<ui-color 508><ui-edge-color 509>Превышение недельног
 #. macro: <ui-edge-color 507> — text outline color from the UIColor sheet; </ui-edge-color> restores the previous color; color = 507 (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:11593:0:0"
 msgid "You already possess another <noun-en Item 3 $n1 1 1>. Reclaim <if ($n2 == 1)>it<else>them</if> anyway?<br><ui-color 506><ui-edge-color 507>※Gratuity price has been updated to include a small transaction fee.<br>※Reclaimed items will no longer contribute to the enclave's reconstruction.<br>※Reclaiming donations will not increase or otherwise affect the weekly budget.<ui-color 506><ui-edge-color 507>"
-msgstr "У вас уже есть другой <noun-en Item 3 $n1 1 1>. Всё равно вернуть <if ($n2 == 1)>его<else>их</if>?<br><ui-color 506><ui-edge-color 507>※В сумму чаевых включена небольшая комиссия за операцию.<br>※Возвращённые предметы больше не будут способствовать восстановлению анклава.<br>※Возврат пожертвования не увеличит и никак не изменит недельный бюджет.<ui-color 506><ui-edge-color 507>"
+msgstr "У вас уже есть ещё один предмет «<noun-en Item 3 $n1 1 1>». Всё равно вернуть <if ($n2 == 1)>его<else>их</if>?<br><ui-color 506><ui-edge-color 507>※В сумму чаевых включена небольшая комиссия за операцию.<br>※Возвращённые предметы больше не будут способствовать восстановлению анклава.<br>※Возврат пожертвования не увеличит и никак не изменит недельный бюджет.<ui-color 506><ui-edge-color 507>"
 
 #. ja: 譲渡する
 #. de: Spenden
@@ -4209,7 +4209,7 @@ msgstr "Отмена"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:11675:0:0"
 msgid "Leave gear as is?<br>※<if ($n2 == 1)><capitalize><noun-en Item 2 $n1 1 1></capitalize><else>The <num $n2> <noun-en Item 3 $n1 $n2 1></if> used will be lost."
-msgstr "Оставить экипировку как есть?<br>※ Использованные <if ($n2 == 1)><capitalize><noun-en Item 3 $n1 1 1></capitalize><else><num $n2> <noun-en Item 3 $n1 $n2 1></if> будут потеряны."
+msgstr "Оставить экипировку как есть?<br>※ Будут потеряны использованные предметы: <if ($n2 == 1)>«<capitalize><noun-en Item 3 $n1 1 1></capitalize>»<else>«<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.)</if>."
 
 #. ja: このまま新しい性能を適用します。よろしいですか？
 #. de: Parameter auf die Eureka-Waffe anwenden?
@@ -4636,7 +4636,7 @@ msgstr "PvP-ком."
 #. fr: Score
 msgctxt "Addon:11752:0:0"
 msgid "Rating"
-msgstr "Рейт."
+msgstr "Рейтинг"
 
 #. ja: 階級
 #. de: Kampfklasse
@@ -6181,7 +6181,7 @@ msgstr "<ui-color 506><ui-edge-color 507>Этот предмет сохранё�
 # aeria-terms: {"glamour dresser":"3952b49b93be"}
 msgctxt "Addon:11994:0:0"
 msgid "Using <noun-en Item 1 $n1 1 1> on the selected item and placing it into the glamour dresser will reset its spiritbond to 0% and condition to 100%, as well as remove customization including glamours, dyes, crests, signatures, materia, and most aetherial bonuses. The item will also be bound to you upon removal. Proceed?"
-msgstr "Применение <noun-en Item 3 $n1 1 1> к выбранному предмету и помещение его в комод иллюзий сбросит прочность связи с предметом до 0%, а состояние — до 100%. При этом будут сняты все улучшения: иллюзии, краска, эмблемы, подписи, материи и большинство эфирных бонусов. Когда вы заберёте предмет, он станет персональным. Продолжить?"
+msgstr "Применение предмета «<noun-en Item 3 $n1 1 1>» к выбранному предмету и помещение его в комод иллюзий сбросит прочность связи с предметом до 0%, а состояние — до 100%. При этом будут сняты все улучшения: иллюзии, краска, эмблемы, подписи, материи и большинство эфирных бонусов. Когда вы заберёте предмет, он станет персональным. Продолжить?"
 
 #. ja: <sheet Item $n1 0>を<num $n2>個使用して<br>選択したアイテムをまとめて幻影化し、<br>ミラージュドレッサーに保管します。よろしいですか？<br><br>装備アイテムを幻影化すると、以下のようになります。<br>　・銘、装着マテリア、エーテリアルアイテムの<br>　　一部ボーナスがクリア<br>　・染色情報、武具投影、クレストがクリア<br>　・錬精度は0%、耐久度は100%にそれぞれリセット<br>　・取り出す際にBIND属性が付加
 #. de: Wenn ein Gegenstand in eine Projektion verwandelt wird, gehen alle Anpassungen (z. B. Materia, Ätherboni, Signaturen, Projektionen, Färbungen und Wappen) verloren und die Bindung wird auf 0<nbsp>% und der Zustand auf 100<nbsp>% zurückgesetzt. Bei Entnahme aus der Kommode und Zurückverwandlung in einen Gegenstand wird dieser persönlich gebunden.<br><num $n2> <capitalize><noun-de Item 5 $n1 2 4 1></capitalize> verbrauchen und fortfahren, um die ausgewählten Gegenstände gemeinsam in eine Projektion zu verwandeln?
@@ -6191,7 +6191,7 @@ msgstr "Применение <noun-en Item 3 $n1 1 1> к выбранному п
 # aeria-terms: {"glamour dresser":"3952b49b93be"}
 msgctxt "Addon:11995:0:0"
 msgid "Using <num $n2> <noun-en Item 3 $n1 $n2 1> on the selected items and placing them into the glamour dresser will reset their spiritbond to 0% and condition to 100%, as well as remove customization including glamours, dyes, crests, signatures, materia, and most aetherial bonuses. The items will also be bound to you upon removal. Proceed?"
-msgstr "Применение <num $n2> <noun-en Item 3 $n1 $n2 1> к выбранным предметам и помещение их в комод иллюзий сбросит прочность связи до 0%, а состояние — до 100%. При этом будут сняты все улучшения: иллюзии, краска, эмблемы, подписи, материи и большинство эфирных бонусов. Когда вы заберёте предметы, они станут персональными. Продолжить?"
+msgstr "Применение предмета «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) к выбранным предметам и помещение их в комод иллюзий сбросит прочность связи до 0%, а состояние — до 100%. При этом будут сняты все улучшения: иллюзии, краска, эмблемы, подписи, материи и большинство эфирных бонусов. Когда вы заберёте предметы, они станут персональными. Продолжить?"
 
 #. ja: まとめて幻影化する
 #. de: Ja

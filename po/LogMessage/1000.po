@@ -54,7 +54,7 @@ msgstr "Завершены все записи журнала охоты для 
 # aeria-terms: {"hunting log":"701d2c7b451f"}
 msgctxt "LogMessage:1005:0:5"
 msgid "All rank <num $n2> hunting log entries for the <sheet GrandCompany $n1 0> complete!"
-msgstr "Завершены все записи журнала охоты для <sheet GrandCompany $n1 0>, ранг <num $n2>!"
+msgstr "Завершены все записи журнала охоты для великой компании «<sheet GrandCompany $n1 0>», ранг <num $n2>!"
 
 #. ja: 討伐手帳に槍術士の頁が追加されました。
 #. de: Deinem Bestiarium wurde eine Pikenier-Seite hinzugefügt.
@@ -96,7 +96,7 @@ msgstr "В журнал охоты добавлена новая страниц�
 # aeria-terms: {"hunting log":"701d2c7b451f"}
 msgctxt "LogMessage:1011:0:5"
 msgid "Hunting log difficulty rank <num $n2> unlocked for <sheet ClassJob $n1 0>."
-msgstr "Открыт ранг <num $n2> журнала охоты для класса <sheet ClassJob $n1 0>"
+msgstr "Открыт ранг <num $n2> журнала охоты для класса «<sheet ClassJob $n1 0>»"
 
 #. ja: 討伐手帳『<sheet GrandCompany $n1 0>ランク<num $n2>』が開放されました。
 #. de: Du hast Rang <num $n2> des <noun-de GrandCompany 5 $n1 1 1 1>-Bestiariums freigespielt.
@@ -106,7 +106,7 @@ msgstr "Открыт ранг <num $n2> журнала охоты для кла�
 # aeria-terms: {"hunting log":"701d2c7b451f"}
 msgctxt "LogMessage:1012:0:5"
 msgid "Hunting log difficulty rank <num $n2> unlocked for the <sheet GrandCompany $n1 0>."
-msgstr "Открыт ранг <num $n2> журнала охоты для <sheet GrandCompany $n1 0>"
+msgstr "Открыт ранг <num $n2> журнала охоты для великой компании «<sheet GrandCompany $n1 0>»"
 
 #. ja: 討伐手帳に格闘士の頁が追加されました。
 #. de: Deinem Bestiarium wurde eine Faustkämpfer-Seite hinzugefügt.
@@ -489,7 +489,7 @@ msgstr "Растительность истощилась"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1062:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> cannot carry any more <noun-en Item 3 $n1 2 1>. Attempt abandoned."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы не можете нести больше<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> не может нести больше</if></capitalize> <sheet Item $n1 0>. Сбор прерван"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>не можете<else>не может</if> нести больше предметов «<sheet Item $n1 0>». Сбор прерван"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は採掘を開始した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>beginnst<else>beginnt</if> abzubauen.
@@ -958,7 +958,7 @@ msgstr "Нельзя рыбачить. Вы не выбрали наживку"
 #. macro: <sheet Trait $n1 0> — a value from a game data sheet, such as a name; sheet = Trait, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1124:0:5"
 msgid "You can sense something swimming below, but must first learn <sheet Trait $n1 0> before you can try catching it."
-msgstr "Вы чувствуете, что под водой кто-то плещется, но для рыбалки нужно освоить свойство <sheet Trait $n1 0>"
+msgstr "Вы чувствуете, что под водой кто-то плещется, но для рыбалки нужно освоить свойство «<sheet Trait $n1 0>»"
 
 #. ja: 魚の気配は感じるが、どこに潜んでいるか見当もつかない……。
 #. de: Hier scheint es Fische zu geben, aber du kannst nicht erkennen, wo sie sich verstecken.
@@ -1811,7 +1811,7 @@ msgstr "<if ($n2 == 1)>Изучен рецепт мастера<else>Изуче�
 #. macro: <sheet ClassJob $n1 0> — a value from a game data sheet, such as a name; sheet = ClassJob, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1229:0:5"
 msgid "Your <sheet ClassJob $n1 0> level is not high enough to learn the recipes within this tome."
-msgstr "Ваш уровень класса <sheet ClassJob $n1 0> недостаточно высок, чтобы изучить рецепты из этого фолианта"
+msgstr "Ваш уровень класса «<sheet ClassJob $n1 0>» недостаточно высок, чтобы изучить рецепты из этого фолианта"
 
 #. ja: <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>は<if ($n4 <= 1)><sheet Item $n1 0><else><sheet Item $n1 0>×<num $n4></if>に<string $s2>のダイスで<num $n3>を出した。
 #. de: <capitalize><if ($gs1 == $gs2)><switch 1><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>würfelst<else>würfelt</if> mit „<string $s2>“ eine <num $n3> auf <if ($n4 <= 1)><noun-de Item 2 $n1 1 4 1><else><noun-de Item 2 $n1 2 4 1></if>.
@@ -2613,7 +2613,7 @@ msgstr "Нельзя перейти в эту область без устано
 #. macro: <noun-en BuddyEquip 1 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = BuddyEquip, form = 1, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1321:0:5"
 msgid "<capitalize><if ($gs1 == $gs2)>you<else><if $gn7><noun-en ObjStr 2 $gn7 1 1><else>{$gs2}</if></if></capitalize> <if ($gs1 == $gs2)>obtain<else>obtains</if> <noun-en BuddyEquip 1 $n1 1 1>."
-msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> <noun-en BuddyEquip 3 $n1 1 1>"
+msgstr "<capitalize><if ($gs1 == $gs2)>Вы получаете<else><if $gn7><noun-en ObjStr 3 $gn7 1 1><else>{$gs2}</if> получает</if></capitalize> предмет «<noun-en BuddyEquip 3 $n1 1 1>»"
 
 #. ja: 該当するスキルリストのスキルレベルが0のため、アクションが実行できません。
 #. de: Die Fähigkeitsstufe deines Mitstreiters ist zu niedrig, um dieses Kommando auszuführen.
@@ -5775,7 +5775,7 @@ msgstr "Не удалось совершить обмен: недостаточ�
 #. macro: <sheet GrandCompany $n1 0> — a value from a game data sheet, such as a name; sheet = GrandCompany, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1785:0:5"
 msgid "Unable to complete transaction. You are not a member of the <sheet GrandCompany $n1 0>."
-msgstr "Не удалось совершить обмен: вы не состоите в <sheet GrandCompany $n1 0>"
+msgstr "Не удалось совершить обмен: вы не состоите в великой компании «<sheet GrandCompany $n1 0>»"
 
 #. ja: シロ・アリアポーに対する「武具投影」が開放されました！
 #. de: Du kannst Zhloes Aussehen nun mit Projektionen ändern!
@@ -6592,7 +6592,7 @@ msgstr "Компания «<if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>» р�
 #. macro: <sheet GrandCompany $n1 0> — a value from a game data sheet, such as a name; sheet = GrandCompany, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1882:0:5"
 msgid "Your company now pledges its allegiance to the <sheet GrandCompany $n1 0>."
-msgstr "Теперь ваша компания служит <sheet GrandCompany $n1 0>"
+msgstr "Теперь ваша компания служит великой компании «<sheet GrandCompany $n1 0>»"
 
 #. ja: FreeCompany - 「<sheet GrandCompany $n1 0>」に移籍しました。
 #. de: Die Freie Ge<shy>sell<shy>schaft ist nun mit <noun-de GrandCompany 2 $n1 1 3 1> affiliiert.
@@ -6600,7 +6600,7 @@ msgstr "Теперь ваша компания служит <sheet GrandCompany 
 #. macro: <sheet GrandCompany $n1 0> — a value from a game data sheet, such as a name; sheet = GrandCompany, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1883:0:5"
 msgid "The company now pledges its allegiance to the <sheet GrandCompany $n1 0>."
-msgstr "Компания теперь служит <sheet GrandCompany $n1 0>"
+msgstr "Компания теперь служит великой компании «<sheet GrandCompany $n1 0>»"
 
 #. ja: FreeCompany - <if $gn7><sheet ObjStr $gn7 0><else>{$gs2}</if>を招待しました。
 #. de: Du hast <if ($gs1 == $gs2)><switch 4><case>du<case>deiner<case>dir<case>dich</switch><else><if $gn7><noun-de ObjStr 2 $gn7 1 4 1><else>{$gs2}</if></if> in die Ge<shy>sell<shy>schaft eingeladen.
@@ -7210,7 +7210,7 @@ msgstr "Получено: <sheet Item $n1 0>"
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "LogMessage:1955:0:5"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> shatters..."
-msgstr "<sheet Item $n1 0> рассыпается в прах..."
+msgstr "Предмет «<sheet Item $n1 0>» рассыпается в прах..."
 
 #. ja: マテリア回収が正常に実行できませんでした。
 #. de: Die Materia-Zurückgewinnung konnte nicht durchgeführt werden.

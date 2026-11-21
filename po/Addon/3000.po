@@ -1008,7 +1008,7 @@ msgstr "Надеть"
 #. macro: <if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 33 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:3194:0:0"
 msgid "Gear suitible for <if ($n1 == 10)>an <sheet ClassJob $n1 0><else><if ($n1 == 14)>an <sheet ClassJob $n1 0><else><if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if></if></if></if> has been equipped from your Armoury Chest."
-msgstr "Надето из арсенала: <if ($n1 == 10)>экипировка для <sheet ClassJob $n1 0><else><if ($n1 == 14)>экипировка для <sheet ClassJob $n1 0><else><if ($n1 == 5)>экипировка для <sheet ClassJob $n1 0><else><if ($n1 == 26)>экипировка для <sheet ClassJob $n1 0><else><if ($n1 == 33)>экипировка для <sheet ClassJob $n1 0><else>экипировка для <sheet ClassJob $n1 0></if></if></if></if></if>."
+msgstr "Из арсенала надета экипировка для класса «<sheet ClassJob $n1 0>»."
 
 #. ja: <sheet ClassJob $n1 0>に応じた、<br>さいきょうはアーマリーチェストにありません。
 #. de: Dein Arsenal enthält keine passende Ausrüstung für die Klasse bzw. den Job <sheet ClassJob $n1 0>.
@@ -1021,7 +1021,7 @@ msgstr "Надето из арсенала: <if ($n1 == 10)>экипировка
 #. macro: <if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 33 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:3195:0:0"
 msgid "Your Armoury Chest does not contain any gear suitable for <if ($n1 == 10)>an <sheet ClassJob $n1 0><else><if ($n1 == 14)>an <sheet ClassJob $n1 0><else><if ($n1 == 5)>an <sheet ClassJob $n1 0><else><if ($n1 == 26)>an <sheet ClassJob $n1 0><else><if ($n1 == 33)>an <sheet ClassJob $n1 0><else>a <sheet ClassJob $n1 0></if></if></if></if></if>."
-msgstr "В арсенале нет подходящей экипировки для <if ($n1 == 10)><sheet ClassJob $n1 0><else><if ($n1 == 14)><sheet ClassJob $n1 0><else><if ($n1 == 5)><sheet ClassJob $n1 0><else><if ($n1 == 26)><sheet ClassJob $n1 0><else><if ($n1 == 33)><sheet ClassJob $n1 0><else><sheet ClassJob $n1 0></if></if></if></if></if>."
+msgstr "В арсенале нет подходящей экипировки для класса «<sheet ClassJob $n1 0>»."
 
 #. ja: CURRENT EQUIPMENT
 #. de: Momentane Ausrüstung
@@ -1175,7 +1175,7 @@ msgstr "<if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case>
 # aeria-terms: {"Teleport":"3229474126da","aetheryte":"d74d1728b70e"}
 msgctxt "Addon:3217:0:0"
 msgid "Teleport to <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1> for <kilo $n2 \",\"> gil?<br>※This fee is waived when using an aetheryte ticket."
-msgstr "Телепортироваться к <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if><sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0> за <kilo $n2 \",\"> гил?<br>※Билет на эфирит отменяет плату."
+msgstr "Телепортироваться в <if $n3><switch $n3><case><icon 68><case><icon 67><case><icon 120><case><icon 123><case><icon 63><case><icon 121><case><icon 122><case><icon 184></switch></if>локацию «<sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0>» за <kilo $n2 \",\"> гил?<br>※Билет на эфирит отменяет плату."
 
 #. ja: <sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>未開放
 #. de: <sheet PlaceName "<sheet Aetheryte $n1 8>" 0><br>Nicht harmonisiert
@@ -1426,7 +1426,7 @@ msgstr "Маг. защита"
 #. fr: Attributs physiques
 msgctxt "Addon:3247:0:0"
 msgid "Physical Properties"
-msgstr "Физ. свойства"
+msgstr "Физические свойства"
 
 #. ja: 物理攻撃力
 #. de: Stärke der Attacke
@@ -1477,7 +1477,7 @@ msgstr "Дробящий"
 #. fr: Attributs magiques
 msgctxt "Addon:3254:0:0"
 msgid "Mental Properties"
-msgstr "Маг. свойства"
+msgstr "Магические свойства"
 
 #. ja: 攻撃魔法威力
 #. de: Offensivmagie
@@ -1725,7 +1725,7 @@ msgstr "Роль"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3290:0:0"
 msgid "Exchange <kilo $n3 \",\"> <if ($n3 == 1)>seal<else>seals</if> for <if ($n2 == 1)><noun-en Item 1 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if>?"
-msgstr "Обменять <kilo $n3 \",\"> <if ($n3 == 1)>печать<else>печати</if> на <if ($n2 == 1)><noun-en Item 3 $n1 1 1><else><kilo $n2 \",\"> <noun-en Item 3 $n1 $n2 1></if>?"
+msgstr "Обменять печати (<kilo $n3 \",\"> шт.) на <if ($n2 == 1)>предмет «<noun-en Item 3 $n1 1 1>»<else>предмет «<noun-en Item 3 $n1 $n2 1>» (<kilo $n2 \",\"> шт.)</if>?"
 
 #. ja: 戻る
 #. de: Zurück
@@ -1743,7 +1743,7 @@ msgstr "Назад"
 #. macro: <if ($n1 == 2)>serpent<else>flame</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = number parameter 1 == 2 (condition: may be reworded, restructured, added, or dropped)
 msgctxt "Addon:3292:0:0"
 msgid "Only members of the <sheet GrandCompany $n1 0> are allowed to exchange <if ($n1 == 1)>storm<else><if ($n1 == 2)>serpent<else>flame</if></if> seals for goods and services."
-msgstr "Только члены <sheet GrandCompany $n1 0> могут обменивать <if ($n1 == 1)>штормовые<else><if ($n1 == 2)>змеиные<else>пламенные</if></if> печати на товары и услуги."
+msgstr "Только члены великой компании «<sheet GrandCompany $n1 0>» могут обменивать <if ($n1 == 1)>штормовые<else><if ($n1 == 2)>змеиные<else>пламенные</if></if> печати на товары и услуги."
 
 #. ja: ホットバー登録モード
 #. de: Kommandomenü belegen
@@ -2276,7 +2276,7 @@ msgstr "Запас"
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:3406:0:0"
 msgid "Purchase <num $n2> <noun-en Item 3 $n1 $n2 1> for <kilo $n3 \",\"> gil?"
-msgstr "Купить <num $n2> <noun-en Item 3 $n1 $n2 1> за <kilo $n3 \",\"> гил?"
+msgstr "Купить предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) за <kilo $n3 \",\"> гил?"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を、<kilo $n3 ",">で売却します。<br>よろしいですか？
 #. de: <capitalize><noun-de Item 1 $n1 $n2 4 1></capitalize> für <kilo $n3 "."> Gil verkaufen?
@@ -2286,7 +2286,7 @@ msgstr "Купить <num $n2> <noun-en Item 3 $n1 $n2 1> за <kilo $n3 \",\"> 
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:3407:0:0"
 msgid "Sell <num $n2> <noun-en Item 3 $n1 $n2 1> for <kilo $n3 \",\"> gil?"
-msgstr "Продать <num $n2> <noun-en Item 3 $n1 $n2 1> за <kilo $n3 \",\"> гил?"
+msgstr "Продать предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) за <kilo $n3 \",\"> гил?"
 
 #. ja: 店員にアイテムを売却します。
 #. de: An den Händler verkaufen
@@ -2381,7 +2381,7 @@ msgstr "У вас нет права использовать действия в
 #. fr: Bienfaits actifs
 msgctxt "Addon:3430:0:0"
 msgid "Active Actions"
-msgstr "Актив. действия"
+msgstr "Активные действия"
 
 #. ja: Reserved Action
 #. de: Inaktive Kommandos
@@ -2604,7 +2604,7 @@ msgstr "Инвентарь"
 #. macro: <kilo $n2 ","> — a number with a thousands separator; value = number parameter 2, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:3473:0:0"
 msgid "Purchase <if ($n3 == 1)><noun-en Item 2 $n1 1 1><else><num $n3> <noun-en Item 3 $n1 3 1></if> for <if ($n2 == 1)><kilo $n2 \",\"> company credit<else><kilo $n2 \",\"> company credits</if>?"
-msgstr "Купить <if ($n3 == 1)><noun-en Item 3 $n1 1 1><else><num $n3> <noun-en Item 3 $n1 3 1></if> за <kilo $n2 \",\"> кредит<if ($n2 == 1)><else>ов</if> компании?"
+msgstr "Купить <if ($n3 == 1)>предмет «<noun-en Item 3 $n1 1 1>»<else>предмет «<noun-en Item 3 $n1 3 1>» (<num $n3> шт.)</if> за <kilo $n2 \",\"> кред. компании?"
 
 #. ja: 下記のアイテムにクレストを貼り付けますか？<br><sheet Item $n1 0><br>費用:<num $n2>
 #. de: Das Ge<shy>sell<shy>schaftswappen für <kilo $n2 "."> Gil an <noun-de Item 2 $n1 1 3 1> anbringen?
@@ -2613,7 +2613,7 @@ msgstr "Купить <if ($n3 == 1)><noun-en Item 3 $n1 1 1><else><num $n3> <nou
 #. macro: <num $n2> — a number; value = number parameter 2 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3474:0:0"
 msgid "Add your company crest to <noun-en Item 2 $n1 1 1> for <num $n2> gil?"
-msgstr "Нанести знак компании на <noun-en Item 3 $n1 1 1> за <num $n2> гил?"
+msgstr "Нанести знак компании на предмет «<noun-en Item 3 $n1 1 1>» за <num $n2> гил?"
 
 #. ja: 表示されているすべてのアイテムにクレストを<br>貼り付けますか？<br>費用:<num $n1>
 #. de: Das Ge<shy>sell<shy>schaftswappen für <kilo $n1 "."> Gil an diesen Gegenständen anbringen?
@@ -2629,7 +2629,7 @@ msgstr "Нанести знак компании на указанные пре�
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3476:0:0"
 msgid "Remove your company crest from <noun-en Item 2 $n1 1 1>?"
-msgstr "Снять знак компании с предмета <noun-en Item 3 $n1 1 1>?"
+msgstr "Снять знак компании с предмета «<noun-en Item 3 $n1 1 1>»?"
 
 #. ja: 表示されているすべてのアイテムからクレストを<br>はがしますか？
 #. de: Das Ge<shy>sell<shy>schaftswappen von diesen Gegenständen entfernen?
@@ -3751,7 +3751,7 @@ msgstr "Возврат имущества поместья"
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3696:0:0"
 msgid "Retrieve <noun-en Item 2 $n1 1 1>?"
-msgstr "Забрать <noun-en Item 3 $n1 1 1>?"
+msgstr "Забрать предмет «<noun-en Item 3 $n1 1 1>»?"
 
 #. ja: 受け取れるアイテムはありません。
 #. de: Keine zurücknehmbaren Gegenstände vorhanden.
@@ -3797,7 +3797,7 @@ msgstr "Применить иллюзию"
 #. fr: Base
 msgctxt "Addon:3703:0:0"
 msgid "Base"
-msgstr "Осн."
+msgstr "Основной"
 
 #. ja: MIRAGE PRISM ITEM
 #. de: Projektion
@@ -3818,7 +3818,7 @@ msgstr "Вещь"
 #. fr: Nv
 msgctxt "Addon:3706:0:0"
 msgid "Lv."
-msgstr "Ур."
+msgstr "Уровень"
 
 #. ja: 武具投影可能なアイテムがありません。
 #. de: Du besitzt nichts, was als Basisgegenstand für eine Projektion dienen könnte.
@@ -3875,7 +3875,7 @@ msgstr "Применить иллюзию"
 #. fr: Base
 msgctxt "Addon:3715:0:0"
 msgid "Base"
-msgstr "Осн."
+msgstr "Основной"
 
 #. ja: MIRAGE PRISM ITEM
 #. de: Projektion
@@ -3905,7 +3905,7 @@ msgstr "Наложить"
 # aeria-terms: {"Return":"238a1989fdee"}
 msgctxt "Addon:3719:0:0"
 msgid "Return"
-msgstr "Возв."
+msgstr "Вернуть"
 
 #. ja: 必要な触媒を所持してないため、投影できません。
 #. de: Da du den benötigten Katalysator nicht besitzt, kann die Projektion nicht durchgeführt werden.
@@ -3948,7 +3948,7 @@ msgstr "Снять"
 # aeria-terms: {"Return":"238a1989fdee"}
 msgctxt "Addon:3726:0:0"
 msgid "Return"
-msgstr "Возв."
+msgstr "Вернуть"
 
 #. ja: 必要な触媒を所持してないため、投影解除できません。
 #. de: Da du den benötigten Katalysator nicht besitzt, kann die Projektion nicht durchgeführt werden.
@@ -3964,7 +3964,7 @@ msgstr "У вас нет подходящего катализатора, что
 #. macro: <noun-en Item 2 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 2, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3728:0:0"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> will be bound to you."
-msgstr "<capitalize><noun-en Item 3 $n1 1 1></capitalize> будет привязан к вам."
+msgstr "Предмет «<capitalize><noun-en Item 3 $n1 1 1></capitalize>» будет привязан к вам."
 
 #. ja: 装備できないアイテムを投影しようとしています。<br>装備できない場合は投影が反映されません。
 #. de: Die Projektion ist nur möglich, wenn du sowohl Basis- als auch Projektionsgegenstand anlegen kannst.
@@ -4058,7 +4058,7 @@ msgstr "Функция доступна, только когда призван 
 #. macro: <sheet Hud $n1 ADDONHUD_NAME> — a value from a game data sheet, such as a name; sheet = Hud, row = number parameter 1, column = ADDONHUD_NAME (game data: keep it; it may move or repeat)
 msgctxt "Addon:3740:0:0"
 msgid "Restore all settings for <sheet Hud $n1 ADDONHUD_NAME> to their default?"
-msgstr "Вернуть настройки элемента <sheet Hud $n1 ADDONHUD_NAME> к исходным?"
+msgstr "Вернуть настройки элемента «<sheet Hud $n1 ADDONHUD_NAME>» к исходным?"
 
 #. ja: 個別初期化
 #. de: Element zurück
@@ -4796,7 +4796,7 @@ msgstr "<br><num $n1> × <num $n2> = <num $n3>"
 #. macro: <kilo $n3 ","> — a number with a thousands separator; value = number parameter 3, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:3872:0:0"
 msgid "Buy back <num $n2> <noun-en Item 3 $n1 $n2 1> for <kilo $n3 \",\"> gil?"
-msgstr "Выкупить <num $n2> <noun-en Item 3 $n1 $n2 1> за <kilo $n3 \",\"> гил?"
+msgstr "Выкупить предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) за <kilo $n3 \",\"> гил?"
 
 #. ja: 商品の販売価格が変わりました。
 #. de: Der für den Artikel verlangte Preis hat sich geändert.
@@ -4818,7 +4818,7 @@ msgstr "Цена продажи этого предмета изменилась
 #. macro: <noun-en Item 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3881:0:0"
 msgid "The asking price for <noun-en Item 1 $n1 2 1> has changed. Do you still wish to complete the transaction?"
-msgstr "Цена покупки <noun-en Item 3 $n1 2 1> изменилась. Всё равно завершить сделку?"
+msgstr "Цена покупки предмета «<noun-en Item 3 $n1 2 1>» изменилась. Всё равно завершить сделку?"
 
 #. ja: <sheet Item $n1 0>の価格は在庫状態に変化があったため変更されています。このまま売却してよろしいですか？
 #. de: Der für <noun-de Item 2 $n1 1 4 1> gebotene Preis hat sich geändert. Trotzdem verkaufen?
@@ -4826,7 +4826,7 @@ msgstr "Цена покупки <noun-en Item 3 $n1 2 1> изменилась. �
 #. macro: <noun-en Item 1 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 1, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:3882:0:0"
 msgid "The buying price for <noun-en Item 1 $n1 2 1> has changed. Do you still wish to complete the transaction?"
-msgstr "Цена продажи <noun-en Item 3 $n1 2 1> изменилась. Всё равно завершить сделку?"
+msgstr "Цена продажи предмета «<noun-en Item 3 $n1 2 1>» изменилась. Всё равно завершить сделку?"
 
 #. ja: ショップメニュー
 #. de: Etwas kaufen/verkaufen
