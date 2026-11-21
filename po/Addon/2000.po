@@ -948,7 +948,7 @@ msgstr "<set-time $n1><if ($gn77 == 3)><num $day>.<num $month>.<num $year><else>
 #. macro: <noun-en Item 3 $n1 1 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 1, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2191:0:0"
 msgid "<kilo $n2 \",\"> <noun-en Item 3 $n1 1 1>"
-msgstr "<kilo $n2 \",\"> <noun-en Item 3 $n1 1 1>"
+msgstr "<noun-en Item 3 $n1 1 1> × <kilo $n2 \",\">"
 
 #. ja: <kilo $n1 ",">
 #. de: <kilo $n1 ".">
@@ -2010,7 +2010,7 @@ msgstr "Странствия"
 # aeria-terms: {"Venture":"8997351e8888"}
 msgctxt "Addon:2332:0:0"
 msgid "Venture"
-msgstr "Стран."
+msgstr "Странствие"
 
 #. ja: 個数
 #. de: Menge
@@ -2096,7 +2096,7 @@ msgstr "Странствия"
 # aeria-terms: {"Venture":"8997351e8888"}
 msgctxt "Addon:2345:0:0"
 msgid "Venture"
-msgstr "Стран."
+msgstr "Странствие"
 
 #. ja: 獲得経験値
 #. de: Routine
@@ -3218,7 +3218,7 @@ msgstr "<if ($n1 > 0)>[Получено/зарегистрировано]<else>[
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2499:0:0"
 msgid "[Use to obtain <if ($n1 > 0)><kilo $n2 \",\"> <if ($n2 == 1)><noun-en Item 3 $n1 1 1><else><noun-en Item 3 $n1 2 1></if><else>a specific item</if>.]"
-msgstr "[Используйте, чтобы получить <if ($n1 > 0)><kilo $n2 \",\"> <if ($n2 == 1)><noun-en Item 3 $n1 1 1><else><noun-en Item 3 $n1 2 1></if><else>определённый предмет</if>.]"
+msgstr "[Используйте, чтобы получить <if ($n1 > 0)><if ($n2 == 1)>«<noun-en Item 3 $n1 1 1>»<else>«<noun-en Item 3 $n1 2 1>»</if> (<kilo $n2 \",\"> шт.)<else>определённый предмет</if>.]"
 
 #. ja: CONTENTS FINDER
 #. de: INHALTSSUCHE
@@ -5286,7 +5286,7 @@ msgstr "Справка"
 #. macro: <noun-en Item 3 $n1 2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2837:0:0"
 msgid "※The number of <noun-en Item 3 $n1 2 1> received will vary based on match results."
-msgstr "※ Количество <noun-en Item 3 $n1 2 1>, которое вы получите, зависит от результатов матча."
+msgstr "※ Количество предметов «<noun-en Item 3 $n1 2 1>», которое вы получите, зависит от результатов матча."
 
 #. ja: <br>　勝利：<num $n1>個<br>　敗北：<num $n2>個<br>　引き分け：<num $n3>個
 #. de: 　Sieg: <num $n1><br>　Niederlage: <num $n2><br>　Unentschieden: <num $n3><br>
@@ -5389,7 +5389,7 @@ msgstr "Выход"
 #. macro: <string $s1> — a text value passed to the string; value = text parameter 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2850:0:0"
 msgid "Assign <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> the rank <string $s1>?"
-msgstr "Назначить <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> ранг «<string $s1>»?"
+msgstr "Присвоить ранг «<string $s1>» игроку <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>?"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>を新しい<string $s1>としてすべての権限を委譲します。<br><string $s1>を委譲するとあなたの階級は<string $s2>となり、<ui-color 508><ui-edge-color 509>あなた自身は元に戻すことはできません。<br>本当によろしいですか？</ui-edge-color></ui-color>
 #. de: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> die Meisterrechte übertragen? Du wirst dadurch in den Rang „<string $s2>“ versetzt. <ui-color 508><ui-edge-color 509>Du kannst dies nicht rückgängig machen.</ui-edge-color></ui-color>
@@ -5405,7 +5405,7 @@ msgstr "Назначить <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> ра�
 #. macro: </ui-color> — end of: text color from the UIColor sheet; </ui-color> restores the previous color (formatting: may be added, dropped, or moved; close what you open, as the source does)
 msgctxt "Addon:2851:0:0"
 msgid "Assign <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> the rank <string $s1>?<br>Doing so will change your rank to <string $s2>.<br><ui-color 508><ui-edge-color 509>This cannot be undone.</ui-edge-color></ui-color>"
-msgstr "Назначить <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> ранг «<string $s1>»?<br>Ваш ранг изменится на «<string $s2>».<br><ui-color 508><ui-edge-color 509>Отменить это изменение будет нельзя.</ui-edge-color></ui-color>"
+msgstr "Присвоить ранг «<string $s1>» игроку <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>?<br>Ваш ранг изменится на «<string $s2>».<br><ui-color 508><ui-edge-color 509>Отменить это изменение будет нельзя.</ui-edge-color></ui-color>"
 
 #. ja: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if>をカンパニーから除名します。<br>除名者の個室は自動撤去されます。<br>除名者の育成中チョコボは厩舎から引き出されます。<br>除名者がハウスに配置したリテイナーは自動撤去されません。<br>よろしいですか？
 #. de: <if $gn8><sheet ObjStr $gn8 0><else>{$gs3}</if> aus der Freien Ge<shy>sell<shy>schaft entlassen? Beim Entlassen werden persönliche Zimmer automatisch geräumt und untergebrachte Chocobos aus dem Stall entfernt. Eventuelle Gehilfen verbleiben auf dem Anwesen.
@@ -5627,7 +5627,7 @@ msgstr "Отключить «<sheet CompanyAction $n1 0>»?"
 #. macro: <sheet CompanyAction $n1 0> — a value from a game data sheet, such as a name; sheet = CompanyAction, row = number parameter 1, column = 0 (game data: keep it; it may move or repeat)
 msgctxt "Addon:2877:0:0"
 msgid "Execute “<sheet CompanyAction $n1 0>”?"
-msgstr "Казнить «<sheet CompanyAction $n1 0>»?"
+msgstr "Применить действие компании «<sheet CompanyAction $n1 0>»?"
 
 #. ja: カンパニーアクション「<sheet CompanyAction $n1 0>」を破棄します。よろしいですか？
 #. de: „<sheet CompanyAction $n1 0>“ entfernen?
@@ -5727,7 +5727,7 @@ msgstr "<switch $n1><case><case><case><case><case></switch> <shee
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "Addon:2891:0:0"
 msgid "Store <noun-en Item 1 $n1 1 1> in the company chest?"
-msgstr "Положить <noun-en Item 3 $n1 1 1> в сундук ВК?"
+msgstr "Положить предмет «<noun-en Item 3 $n1 1 1>» в сундук ВК?"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<br>カンパニーチェストに入れます。よろしいですか？
 #. de: <capitalize><num $n2> <noun-de Item 5 $n1 $n2 4 1></capitalize> in die Truhe legen?
@@ -5737,7 +5737,7 @@ msgstr "Положить <noun-en Item 3 $n1 1 1> в сундук ВК?"
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "Addon:2892:0:0"
 msgid "Store <num $n2> <noun-en Item 3 $n1 $n2 1> in the company chest?"
-msgstr "Положить <num $n2> <noun-en Item 3 $n1 $n2 1> в сундук ВК?"
+msgstr "Положить предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) в сундук ВК?"
 
 #. ja: フリーカンパニーに所属していないため<br>この機能は使用できません。
 #. de: Nur Mitglieder haben Zugriff auf die Truhe der Freien Ge<shy>sell<shy>schaft.
@@ -5762,7 +5762,7 @@ msgstr "Сундук вольной компании сейчас недосту
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "Addon:2895:0:0"
 msgid "Remove <noun-en Item 1 $n1 1 1> from the company chest?"
-msgstr "Забрать <noun-en Item 3 $n1 1 1> из сундука ВК?"
+msgstr "Забрать предмет «<noun-en Item 3 $n1 1 1>» из сундука ВК?"
 
 #. ja: <sheet Item $n1 0>×<num $n2>を<br>カンパニーチェストから取り出します。よろしいですか？
 #. de: <capitalize><num $n2> <noun-de Item 5 $n1 $n2 4 1></capitalize> aus der Truhe entnehmen?
@@ -5772,7 +5772,7 @@ msgstr "Забрать <noun-en Item 3 $n1 1 1> из сундука ВК?"
 # aeria-terms: {"company chest":"bf8b36620cf9"}
 msgctxt "Addon:2896:0:0"
 msgid "Remove <num $n2> <noun-en Item 3 $n1 $n2 1> from the company chest?"
-msgstr "Забрать <num $n2> <noun-en Item 3 $n1 $n2 1> из сундука ВК?"
+msgstr "Забрать предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) из сундука ВК?"
 
 #. ja: 入れる個数を指定してください。
 #. de: Wähle die Menge:

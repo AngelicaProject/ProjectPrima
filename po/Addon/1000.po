@@ -472,7 +472,7 @@ msgstr "Удача: <if ($n1 > 0)>+<num $n1><else><num $n1></if>"
 #. macro: <noun-en Item 3 $n1 $n2 1> — an English noun from a game data sheet, with article and number; sheet = Item, form = 3, row = number parameter 1, count = number parameter 2, case = 1 (game data: keep it; it may move or repeat)
 msgctxt "Addon:1067:0:0"
 msgid "<num $n2> <noun-en Item 3 $n1 $n2 1>"
-msgstr "<num $n2> <noun-en Item 3 $n1 $n2 1>"
+msgstr "<noun-en Item 3 $n1 $n2 1> × <num $n2>"
 
 #. ja: パーツ性能
 #. de: Bauteil-Eigenschaften
@@ -1399,7 +1399,7 @@ msgstr "Закрепить/открепить значки панели кома
 # aeria-terms: {"Limit Break":"94bc4ce0661d"}
 msgctxt "Addon:1190:0:0"
 msgid "Limit Break"
-msgstr "Пред. прорыв"
+msgstr "Предельный прорыв"
 
 #. ja: 保存せずに終了すると、変更内容が破棄されます。<br>よろしいですか？
 #. de: Die Änderungen wurden nicht gespeichert und gehen verloren. Wirklich beenden?
@@ -3173,7 +3173,7 @@ msgstr "Износ"
 #. fr: Rareté
 msgctxt "Addon:1458:0:0"
 msgid "Rarity"
-msgstr "Редк."
+msgstr "Редкость"
 
 #. ja: 収集品採集
 #. de: Sammeln
@@ -5171,7 +5171,7 @@ msgstr "Используется на Островном святилище."
 # aeria-terms: {"Teleport":"3229474126da"}
 msgctxt "Addon:1800:0:0"
 msgid "Accept Teleport to <noun-en PlaceName 2 \"<sheet Aetheryte $n1 8>\" 2 1>?"
-msgstr "Принять Телепорт в <sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0>?"
+msgstr "Принять телепортацию в локацию «<sheet PlaceName \"<sheet Aetheryte $n1 8>\" 0>»?"
 
 #. ja: 受諾
 #. de: Ja
@@ -5413,7 +5413,7 @@ msgstr "Закрыть"
 # aeria-terms: {"Desynthesis":"e54aedfd87a4"}
 msgctxt "Addon:1839:0:0"
 msgid "<capitalize><noun-en Item 2 $n1 1 1></capitalize> is currently equipped. Proceed with desynthesis?"
-msgstr "<capitalize><noun-en Item 3 $n1 1 1></capitalize> сейчас надето. Разобрать предмет?"
+msgstr "Предмет «<capitalize><noun-en Item 3 $n1 1 1></capitalize>» сейчас надет. Разобрать предмет?"
 
 #. ja: <sheet ClassJob $n1 0>
 #. de: <capitalize><sheet ClassJob $n1 0></capitalize>
@@ -5469,7 +5469,7 @@ msgstr "У вас нет предметов, которые можно разо�
 # aeria-terms: {"Desynthesis":"e54aedfd87a4"}
 msgctxt "Addon:1846:0:0"
 msgid "Reset your desynthesis skill for <sheet ClassJob $n1 0>?"
-msgstr "Сбросить навык десинтеза для класса <sheet ClassJob $n1 0>?"
+msgstr "Сбросить навык десинтеза для класса «<sheet ClassJob $n1 0>»?"
 
 #. ja: 収集品を分解する
 #. de: Sammlerstück verwerten
@@ -6288,7 +6288,7 @@ msgstr "Сейчас вы не можете надеть этот предмет
 #. macro: <kilo $n4 ","> — a number with a thousands separator; value = number parameter 4, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:1963:0:0"
 msgid "Purchase <num $n2> <noun-en Item 3 $n1 $n2 1> for <kilo $n3 \",\"> gil<if ($n4 > 0)> (<kilo $n4 \",\"> fee included)</if>?"
-msgstr "Купить <num $n2> <noun-en Item 3 $n1 $n2 1> за <kilo $n3 \",\"> gil<if ($n4 > 0)> (включая сбор <kilo $n4 \",\">)</if>?"
+msgstr "Купить предмет «<noun-en Item 3 $n1 $n2 1>» (<num $n2> шт.) за <kilo $n3 \",\"><if ($n4 > 0)> (включая сбор <kilo $n4 \",\">)</if>?"
 
 #. ja: <sheet Item $n1 0>を、<br><kilo $n3 ","><if ($n4 > 0)>(手数料<kilo $n4 ",">を含む)</if>で購入します。
 #. de: <capitalize><noun-de Item 1 $n1 1 4 1></capitalize> für <kilo $n3 "."> Gil kaufen? <if ($n4 > 0)>(<kilo $n4 "."> an Gebühren enthalten)</if>
@@ -6299,7 +6299,7 @@ msgstr "Купить <num $n2> <noun-en Item 3 $n1 $n2 1> за <kilo $n3 \",\">�
 #. macro: <kilo $n4 ","> — a number with a thousands separator; value = number parameter 4, separator = , (game data: keep it; it may move or repeat)
 msgctxt "Addon:1964:0:0"
 msgid "Purchase <noun-en Item 1 $n1 1 1> for <kilo $n3 \",\"> gil<if ($n4 > 0)> (<kilo $n4 \",\"> fee included)</if>?"
-msgstr "Купить <noun-en Item 3 $n1 1 1> за <kilo $n3 \",\"> gil<if ($n4 > 0)> (включая сбор <kilo $n4 \",\">)</if>?"
+msgstr "Купить предмет «<noun-en Item 3 $n1 1 1>» за <kilo $n3 \",\"><if ($n4 > 0)> (включая сбор <kilo $n4 \",\">)</if>?"
 
 #. ja: 防具/アクセサリ
 #. de: Rüstung/Accessoires
@@ -6362,7 +6362,7 @@ msgstr "Кол."
 #. fr: Acheteur
 msgctxt "Addon:1975:0:0"
 msgid "Buyer"
-msgstr "Покуп."
+msgstr "Покупатель"
 
 #. ja: 取引時刻
 #. de: Zeitpunkt
