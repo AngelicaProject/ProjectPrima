@@ -82,6 +82,7 @@ msgstr "Эта рада снова видеть <if $gn4>искательниц�
 #. speaker: PAPALYMO
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-name-cases: 50222ba893bb first=nom
 msgctxt "quest/007/GaiUsa402_00744:TEXT_GAIUSA402_00744_PAPALYMO_000_052:1"
 msgid "Ah, there you are, <split \" \" 1><string $gs1></split>. We have just been hearing tell of your deeds of derring-do. Well done!"
 msgstr "А, вот и ты, <split \" \" 1><string $gs1></split>. Только что слышали о твоих смелых подвигах. Молодец!"
@@ -368,6 +369,7 @@ msgstr "Это для этой большая честь. Пусть ходяч�
 #. speaker: FRIXIO
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-name-cases: d74186ffc7ff first=nom
 msgctxt "quest/007/GaiUsa402_00744:TEXT_GAIUSA402_00744_FRIXIO_000_083:1"
 msgid "Please wait, walking one <split \" \" 1><string $gs1></split>."
 msgstr "Постойте, <if $gn4>ходячая<else>ходячий</if> <split \" \" 1><string $gs1></split>."
@@ -486,6 +488,7 @@ msgstr "Вдалеке видны порабощённые сильфы. Пох�
 #. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+# aeria-name-cases: 3ee78480a500 first=nom family=nom first=nom
 # aeria-terms: {"sylphs":"53aff4c20c03"}
 msgctxt "quest/007/GaiUsa402_00744:TEXT_GAIUSA402_00744_VORSAILE_000_020:1"
 msgid "Ah, <if ($gn52 > 0)>if it isn't <split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else>if it isn't <split \" \" 1><string $gs1></split></if></if>. How went the meeting with the sylphs?"
@@ -544,6 +547,7 @@ msgstr "Старшая Провидица будет рада узнать, чт
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
 #. macro: <if ($gn52 > 0)>On behalf of all Gridanians, I give you my thanks<else><if ($gn53 > 0)>It will not be forgotten<else>On behalf of all Gridanians, I give you my … — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 52 (the player's rank in the Maelstrom, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <if ($gn53 > 0)>It will not be forgotten<else>On behalf of all Gridanians, I give you my thanks</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 53 (the player's rank in the Order of the Twin Adder, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
+# aeria-name-cases: 9c0c3ae85174 family=nom family=nom
 msgctxt "quest/007/GaiUsa402_00744:TEXT_GAIUSA402_00744_VORSAILE_000_025:1"
 msgid "<if ($gn52 > 0)>You have done this nation a great service, my friend<else><if ($gn53 > 0)>You have done our nation a great service, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else>You have done this nation a great service, my friend</if></if>. <if ($gn52 > 0)>On behalf of all Gridanians, I give you my thanks<else><if ($gn53 > 0)>It will not be forgotten<else>On behalf of all Gridanians, I give you my thanks</if></if>."
 msgstr "<if ($gn52 > 0)><if $gn4>Ты оказала нашей стране большую услугу, подруга<else>Ты оказал нашей стране большую услугу, друг</if><else><if ($gn53 > 0)><if $gn4>Ты оказала нашей стране большую услугу, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split><else>Ты оказал нашей стране большую услугу, <capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split></if><else><if $gn4>Ты оказала нашей стране большую услугу, подруга<else>Ты оказал нашей стране большую услугу, друг</if></if></if>. <if ($gn52 > 0)>От имени всех жителей Гридании благодарю тебя<else><if ($gn53 > 0)>Мы этого не забудем<else>От имени всех жителей Гридании благодарю тебя</if></if>."

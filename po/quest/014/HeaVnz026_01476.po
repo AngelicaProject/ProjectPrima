@@ -166,6 +166,7 @@ msgstr "Мало кто из синоби после столь тяжёлого
 #. macro: <if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 54 (the player's rank in the Immortal Flames, 0 when not a member) > 0 (condition: may be reworded, restructured, added, or dropped)
 #. macro: <sheet GCRankUldahMaleText $gn54 8> — a value from a game data sheet, such as a name; sheet = GCRankUldahMaleText, row = global number 54 (the player's rank in the Immortal Flames, 0 when not a member), column = 8 (game data: keep it; it may move or repeat)
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
+# aeria-name-cases: d77cc780086b first=nom first=nom family=nom
 msgctxt "quest/014/HeaVnz026_01476:TEXT_HEAVNZ026_01476_SWIFT_000_020:1"
 msgid "Greetings, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><split \" \" 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split></if></if>. What is that you have there?"
 msgstr "Приветствую, <if ($gn52 > 0)><split \" \" 1><string $gs1></split><else><if ($gn53 > 0)><split \" \" 1><string $gs1></split><else><capitalize><if ($gn52 > 0)><sheet GCRankLimsaMaleText $gn52 8></if><if ($gn53 > 0)><sheet GCRankGridaniaMaleText $gn53 8></if><if ($gn54 > 0)><sheet GCRankUldahMaleText $gn54 8></if></capitalize> <split \" \" 2><string $gs1></split></if></if>. Что у вас там?"
@@ -298,6 +299,7 @@ msgstr "...Беженец из павшей страны, он поднялся 
 #. macro: <if $gn4>Mistress<else>Master</if> — shows the first branch when the condition holds, otherwise the branch after <else>; condition = global number 4 (1 when the player character is female, 0 when male) (condition: may be reworded, restructured, added, or dropped)
 #. macro: <split " " 2><string $gs1></split> — the last name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-name-cases: a4e079d82c9d family=nom
 # aeria-terms: {"the Fury":"a0b0f2fb6016"}
 msgctxt "quest/014/HeaVnz026_01476:TEXT_HEAVNZ026_01476_SAMPLEKIHEI_000_040:1"
 msgid "By the Fury, is that you, <if $gn4>Mistress<else>Master</if> <split \" \" 2><string $gs1></split>? Forgive me, but...what reason could you possibly have for returning to this godsforsaken place?"
@@ -534,6 +536,7 @@ msgstr "«Друзья, искупление ещё возможно! Идите
 #. speaker: MARCECHAMP
 #. macro: <split " " 1><string $gs1></split> — the first name of the player character (game data: keep it; it may move or repeat)
 #. macro: <string $gs1> — a text value passed to the string; value = global text 1 (the name of the player character) (game data: keep it; it may move or repeat)
+# aeria-name-cases: 44932eb05b6d first=nom
 msgctxt "quest/014/HeaVnz026_01476:TEXT_HEAVNZ026_01476_MARCECHAMP_000_086:1"
 msgid "...I think, <split \" \" 1><string $gs1></split>, that deep down, most folk want to do right by themselves an' by others. An' they try, oh how they try. You do, certainly. An' so did she."
 msgstr "...Мне кажется, <split \" \" 1><string $gs1></split>, в глубине души большинство людей хотят поступать правильно — и с собой, и с другими. И стараются, ещё как стараются. Ты — точно. И она тоже."
